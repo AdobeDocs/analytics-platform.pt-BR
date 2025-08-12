@@ -6,10 +6,10 @@ role: User, Admin
 hide: true
 hidefromtoc: true
 exl-id: 6656b34a-ae1e-4f9f-9c6d-13c54e49625c
-source-git-commit: f0ef310f120e278685893308315902e32c54e35e
+source-git-commit: bee6c3420511dc944c74e9818d77f6424fcb9cc8
 workflow-type: tm+mt
-source-wordcount: '2385'
-ht-degree: 13%
+source-wordcount: '2770'
+ht-degree: 11%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 13%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta a Visualização de mapa no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consulte o [Mapa](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) da versão_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
+_Este artigo documenta a Visualização de mapa no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consulte o [Mapa](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) da versão_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 
@@ -59,7 +59,7 @@ A visualização do ![Globo](/help/assets/icons/Globe.svg) **[!UICONTROL Mapa]**
 
 Nas configurações de visualizações de dados do Customer Journey Analytics, os administradores podem adicionar [rótulos de contexto](/help/data-views/component-settings/overview.md) a uma dimensão ou métrica, e serviços do Customer Journey Analytics, como o [!UICONTROL mapa], podem usar esses rótulos para suas finalidades.
 
-#### Rótulos de contexto necessários para a visualização do mapa
+#### Rótulos de contexto necessários para latitude e longitude na visualização do mapa
 
 Rótulos de contexto são necessários para que a visualização de mapa funcione. Sem os rótulos de contexto a seguir, a visualização do mapa não funciona, pois não há dados de latitude e longitude para trabalhar.
 
@@ -72,13 +72,27 @@ Para adicionar esses rótulos de contexto:
 
 1. Na página Visualizações de dados, selecione a visualização de dados que contém os dados que você deseja analisar na visualização de mapa.
 
-1. Selecione a guia **[!UICONTROL Componentes]** e selecione a dimensão que contém os dados de longitude.
+1. Selecione a guia **[!UICONTROL Componentes]**.
 
-1. Na seção **[!UICONTROL Configurações do componente]** no painel direito, no campo **[!UICONTROL Rótulos de contexto]**, comece digitando `Longitude` e selecione-o no menu suspenso.
+1. (Condicional) Se você estiver usando o Web SDK e tiver configurado a latitude e a longitude para serem preenchidas no fluxo de dados, ou se estiver usando o Analytics Source Connector para preencher dados de evento, os campos de latitude e longitude já deverão estar disponíveis no esquema e preenchidos com os rótulos de contexto corretos.
 
-   ![Rótulos de contexto de latitude e longitude](assets/map-context-labels-lat-long.png)
+   Localize estes campos de esquema **[!UICONTROL Latitude]** e **[!UICONTROL Longitude]** (em **[!UICONTROL Conjuntos de dados de eventos]** > **[!UICONTROL placeContext]** > **[!UICONTROL geo]** > **[!UICONTROL _schema]**) e arraste-os para sua visualização de dados como dimensões, se ainda não estiverem presentes.
 
-1. Repita esse processo para adicionar o rótulo de contexto **[!UICONTROL Latitude]** à dimensão que contém os dados de latitude.
+   Quando esses campos de esquema existem como dimensões na visualização de dados, seus rótulos de contexto são aplicados automaticamente e a visualização de mapa os usa sem qualquer configuração adicional.
+
+   ![Adicionar campos de esquema de latitude e longitude à visualização de dados](assets/dataview-lat-long-default.png)
+
+1. (Condicional) Se você tiver dimensões personalizadas que deseja usar para dados de latitude e longitude, poderá configurar os rótulos de contexto nos campos personalizados:
+
+   1. Na seção **[!UICONTROL Dimensões]**, selecione a dimensão que contém os dados de longitude.
+
+   1. Na seção **[!UICONTROL Configurações do componente]** no painel direito, no campo **[!UICONTROL Rótulos de contexto]**, comece digitando `Longitude` e selecione-o no menu suspenso.
+
+      ![Rótulos de contexto de latitude e longitude](assets/map-context-labels-lat-long.png)
+
+   1. Repita esse processo para adicionar o rótulo de contexto **[!UICONTROL Latitude]** à dimensão que contém os dados de latitude.
+
+   1. (Opcional) Por padrão, essas dimensões são precisas ao nível da cidade ou do CEP na visualização do mapa e mostram 2 casas decimais nos relatórios do Workspace. É possível ajustá-los para serem precisos em um único metro na visualização do mapa e para mostrar 5 casas decimais nos relatórios do Workspace. Para obter mais informações sobre como ajustar o nível de precisão, consulte [Configurar locais precisos para dimensões](#configure-precise-locations-for-dimensions).
 
 1. Selecione **[!UICONTROL Salvar e continuar]** > **[!UICONTROL Salvar e concluir]**.
 
@@ -102,13 +116,25 @@ Para adicionar esses rótulos de contexto:
 
 1. Na página Visualizações de dados, selecione a visualização de dados que contém os dados que você deseja analisar com modelos pré-construídos que usam a visualização de mapa. Nesta visualização de dados, você escolherá cinco dimensões: uma com os dados do país, uma com os dados da região, uma com os dados da cidade, uma com os dados do estado e uma com os dados do DMA. Em seguida, você rotulará essas dimensões com o rótulo de contexto correspondente.
 
-1. Selecione a guia **[!UICONTROL Componentes]** e selecione a dimensão que contém os dados do país.
+1. Selecione a guia **[!UICONTROL Componentes]**.
 
-1. Na seção **[!UICONTROL Configurações do componente]** no painel direito, no campo **[!UICONTROL Rótulos de contexto]**, comece digitando `Geo Country` e selecione-o no menu suspenso.
+1. (Condicional) Se estiver usando o Web SDK e tiver configurado campos geográficos para serem preenchidos no fluxo de dados ou se estiver usando o Analytics Source Connector para preencher dados de evento, os campos geográficos já deverão estar disponíveis no esquema e preenchidos com os rótulos de contexto corretos.
 
-   ![Rótulos de contexto de modelos](assets/map-context-labels-templates.png)
+   Localize os campos de esquema apropriados, como **[!UICONTROL Cidade]**, **[!UICONTROL CEP]**, **[!UICONTROL Estado ou província]** (em **[!UICONTROL Conjuntos de dados de eventos]** > **[!UICONTROL placeContext]** > **[!UICONTROL geo]**) e arraste-os para a exibição de dados como dimensões, se ainda não estiverem presentes.
 
-1. Repita esse processo para adicionar o rótulo de contexto **[!UICONTROL Geo: Geo Region]**, **[!UICONTROL Geo: Geo City]**, **[!UICONTROL Geo: Geo State]** e **[!UICONTROL Geo: Dma]** a cada dimensão que contenha os dados correspondentes.
+   Quando esses campos de esquema existem como dimensões na visualização de dados, seus rótulos de contexto são aplicados automaticamente e os modelos geográficos os usam sem qualquer configuração adicional.
+
+   ![Adicionar campos de esquema geográfico à exibição de dados](assets/dataview-geo-default.png)
+
+1. (Condicional) Se você tiver dimensões personalizadas que deseja usar para dados geográficos, será possível configurar os rótulos de contexto nos campos personalizados:
+
+   1. Selecione a dimensão que contém os dados do país.
+
+   1. Na seção **[!UICONTROL Configurações do componente]** no painel direito, no campo **[!UICONTROL Rótulos de contexto]**, comece digitando `Geo Country` e selecione-o no menu suspenso.
+
+      ![Rótulos de contexto de modelos](assets/map-context-labels-templates.png)
+
+   1. Repita esse processo para adicionar o rótulo de contexto **[!UICONTROL Geo: Geo Region]**, **[!UICONTROL Geo: Geo City]**, **[!UICONTROL Geo: Geo State]** e **[!UICONTROL Geo: Dma]** a cada dimensão que contenha os dados correspondentes.
 
 1. Selecione **[!UICONTROL Salvar e continuar]** > **[!UICONTROL Salvar e concluir]**.
 
@@ -255,7 +281,7 @@ Se você tiver conjuntos de dados personalizados com precisão profunda, poderá
 
 1. Na visualização de dados, selecione a guia **[!UICONTROL Componentes]**.
 
-1. Selecione a dimensão que deseja configurar.
+1. Selecione as dimensões que você está usando para a latitude e a longitude que deseja configurar. Para obter mais informações sobre quais dimensões você está usando, consulte [Rótulos de contexto obrigatórios para latitude e longitude na visualização de mapa](#required-context-labels-for-latitude-and-longitude-in-the-map-visualization).
 
 1. Configure o nível de precisão para a dimensão:
 
