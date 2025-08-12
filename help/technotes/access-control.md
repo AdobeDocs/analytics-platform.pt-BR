@@ -6,9 +6,9 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+source-git-commit: 8da8d22d35e0b4a77da010d0ba5fb230946ccce5
 workflow-type: tm+mt
-source-wordcount: '1549'
+source-wordcount: '1560'
 ht-degree: 21%
 
 ---
@@ -57,6 +57,7 @@ Além de ser adicionado como administrador de produto no **Perfil de produto do 
 
   | Categoria | Permissão | Descrição |
   |---|---|---|
+  | [!UICONTROL Sandboxes] | [!UICONTROL Pelo menos um] | Acesso a sandboxes relevantes para conexões do CJA. |
   | [!UICONTROL Modelagem de dados] | [!UICONTROL Visualizar esquemas] | Acesso somente leitura a esquemas e recursos relacionados. |
   | [!UICONTROL Modelagem de dados] | [!UICONTROL Gerenciar esquemas] | Acesso para ler, criar, editar e excluir esquemas e recursos relacionados. |
   | [!UICONTROL Gerenciamento de dados] | [!UICONTROL Visualizar conjuntos de dados] | Acesso somente leitura para conjuntos de dados e esquemas. |
@@ -64,7 +65,7 @@ Além de ser adicionado como administrador de produto no **Perfil de produto do 
   | [!UICONTROL Ingestão de dados] | [!UICONTROL Gerenciar fontes] | Acesso para ler, criar, editar e desativar fontes. |
   | [!UICONTROL Identity Management] | [!UICONTROL Exibir namespaces de identidade] | Acesso somente leitura para namespaces de identidade. |
 
-  Para obter mais informações sobre permissões do Experience Platform, consulte [Gerenciar permissões de um perfil de produto](https://experienceleague.adobe.com/pt-br/docs/experience-platform/access-control/ui/permissions).
+  Para obter mais informações sobre permissões do Experience Platform, consulte [Gerenciar permissões de um perfil de produto](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/permissions).
 
 
 * Se o Adobe Journey Optimizer foi integrado ao CJA, onde existem Conexões do AJO, permissões do Jornada também devem ser adicionadas para acessar Conexões:
@@ -85,13 +86,13 @@ Além de ser adicionado como administrador de produto no **Perfil de produto do 
   | [!UICONTROL Destinos] | [!UICONTROL Gerenciar destinos] | Acesso para ler, criar e excluir conexões e contas de destino. |
   | [!UICONTROL Destinos] | [!UICONTROL Ativar Destinos] | Permitir que os usuários ativem segmentos para destinos existentes. Ativa a etapa de mapeamento no fluxo de trabalho de ativação. Essa permissão também exige que a permissão Exibir destinos seja concedida ao usuário que deseja ativar dados para destinos. |
 
-  Para obter mais informações sobre permissões do Experience Platform, consulte [Gerenciar permissões de um perfil de produto](https://experienceleague.adobe.com/pt-br/docs/experience-platform/access-control/ui/permissions).
+  Para obter mais informações sobre permissões do Experience Platform, consulte [Gerenciar permissões de um perfil de produto](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/permissions).
 
 * Usar a [extensão de BI](../data-views/bi-extension.md)
 
   Para que os usuários usem a extensão BI, um Administrador de produto
 
-   * deve garantir que as permissões do Experience Platform para o usuário incluam uma função que tenha o recurso Serviço de consulta com as opções Gerenciar consultas e Gerenciar integração do serviço de consulta. Para obter mais informações sobre permissões do Experience Platform, consulte [Gerenciar permissões de um perfil de produto](https://experienceleague.adobe.com/pt-br/docs/experience-platform/access-control/ui/permissions).
+   * deve garantir que as permissões do Experience Platform para o usuário incluam uma função que tenha o recurso Serviço de consulta com as opções Gerenciar consultas e Gerenciar integração do serviço de consulta. Para obter mais informações sobre permissões do Experience Platform, consulte [Gerenciar permissões de um perfil de produto](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/permissions).
 
      | Categoria | Permissão | Descrição |
      |---|---|---| 
@@ -130,7 +131,7 @@ A guia **[!UICONTROL Permissões]** faz parte de cada perfil de produto no [Admi
 | [!UICONTROL Ferramentas de relatório] | [!UICONTROL Visualização de público] | Permitir que os usuários visualizem [públicos-alvo](/help/components/audiences/audiences-overview.md). |
 | [!UICONTROL Ferramentas de relatório] | [!UICONTROL Criação de público] | Permitir que os usuários criem [públicos-alvo](/help/components/audiences/audiences-overview.md). |
 | [!UICONTROL Ferramentas de relatório] | [!UICONTROL Acesso aos logs de auditoria] | Imponha a verificação de permissão na [API](https://developer.adobe.com/cja-apis/docs/endpoints/auditlogs/) e na interface dos logs de auditoria. |
-| [!UICONTROL Ferramentas de relatório] | [!UICONTROL Compartilhar Links De Projeto Com Qualquer Pessoa] | Permitir que os usuários [compartilhem projetos com qualquer pessoa.](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-workspace/curate-share/share-projects) |
+| [!UICONTROL Ferramentas de relatório] | [!UICONTROL Compartilhar Links De Projeto Com Qualquer Pessoa] | Permitir que os usuários [compartilhem projetos com qualquer pessoa.](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/curate-share/share-projects) |
 | [!UICONTROL Ferramentas de relatório] | [!UICONTROL Previsão] | Permitir que os usuários acessem o recurso [Previsão](../analysis-workspace/c-forecast/forecasting.md) no Analysis Workspace |
 | [!UICONTROL Ferramentas de relatório] | [!UICONTROL Assistente de IA: Conhecimento do Produto] | Permitir que os usuários acessem o [Assistente de IA](../ai-assistant.md) para obter conhecimento sobre o produto. |
 | [!UICONTROL Ferramentas de relatório] | [!UICONTROL Legendas inteligentes] | Permitir que os usuários acessem [Legendas inteligentes](/help/analysis-workspace/visualizations/intelligent-captions.md). |
