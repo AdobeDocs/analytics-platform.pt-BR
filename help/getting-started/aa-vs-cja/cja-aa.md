@@ -5,10 +5,10 @@ exl-id: be19aa27-58aa-438d-806c-e27c9a289797
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 144caa157e1a7161595e2b4fc0da60cd63de50bd
-workflow-type: ht
-source-wordcount: '2694'
-ht-degree: 100%
+source-git-commit: 7f44c7497a48e8377ca26cb194f828c3c8836f98
+workflow-type: tm+mt
+source-wordcount: '2709'
+ht-degree: 98%
 
 ---
 
@@ -112,9 +112,10 @@ A tabela a seguir lista os recursos que estão disponíveis no Customer Journey 
 | **Regras de processamento, regras VISTA e regras de processamento de canal de marketing** | Compatível usando a funcionalidade de preparo de dados da Adobe Experience Platform e os [campos derivados](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-dataviews/derived-fields) de conjuntos de dados baseados no WebSDK e dados do conector de origem do Analytics. |
 | **Variável de produtos** | Na Experience Platform, é possível usar uma matriz de objetos dentro de um esquema do conjunto de dados para atender a esse caso de uso. No Customer Journey Analytics, clientes podem usar qualquer número de variáveis de produto e não estão restritos a uma única variável, como no Adobe Analytics. |
 | **Compartilhamento de projeto** | O compartilhamento de projetos só é permitido entre usuários do Customer Journey Analytics. Não é possível compartilhar projetos entre o Customer Journey Analytics e o Analysis Workspace tradicional. |
+| **Relatório em tempo real** | O relatório em tempo real no Customer Journey Analytics exibe e atualiza dados e visualizações em um ou mais painéis no Analysis Workspace em tempo real. |
 | **Report Builder** | Compatível com um novo plug-in do Office 365 para Microsoft Excel. |
 | **Permissões do usuário/Controles de acesso de dados** | O Customer Journey Analytics distingue entre admins de produto do [Adobe Admin Console](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/administration/admin-tool-experience-cloud), admins de perfil de produto e usuários. Somente administradores de produto podem criar, atualizar e excluir conexões, projetos, segmentos ou métricas calculadas que outros usuários criaram. Os administradores de produto e de perfil de produto podem editar visualizações de dados. Há permissões de usuário adicionais disponíveis para criar métricas calculadas, segmentos ou anotações. |
-| **Visualizações** | Todas as visualizações do Workspace são compatíveis, exceto a visualização Mapa. |
+| **Visualizações** | Todas as visualizações do Workspace são compatíveis. |
 | **Compilação entre dispositivos/canais** | Compatível com conjuntos de dados de evento que contêm informações de identidade. Consulte [Compilação](../../stitching/overview.md). |
 
 ## Suporte parcial {#partial}
@@ -127,7 +128,6 @@ A tabela a seguir lista os recursos que estão disponíveis no Customer Journey 
 
 | Recurso | Notas |
 | --- | --- |
-| **Relatório em tempo real** | Suporte planejado. |
 | **Fontes de dados de IDs de transação** | Suporte planejado. |
 
 ## Sem suporte; ainda não planejado {#not-planned}
