@@ -5,10 +5,10 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: 3c3fd6b814485871f2fd9249b0ffa9a0b24a360c
+source-git-commit: 82b36895fe5186f0133c128d434470ea7f875677
 workflow-type: tm+mt
 source-wordcount: '2371'
-ht-degree: 83%
+ht-degree: 98%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 83%
 >
 >O Data Insights Agent está disponível para clientes elegíveis por um período limitado. O acesso ao Data Insights Agent terminará em 30 de novembro de 2025. Para continuar usando o Data Insights Agent sem interrupção, entre em contato com o representante de conta da Adobe para saber mais sobre a licença do Data Insights Agent.
 
-O Data Insights Agent, acessível pelo Assistente de IA no Customer Journey Analytics, é um agente de conversação de IA generativa que responde de forma rápida e eficiente a perguntas sobre seus dados. Ele cria visualizações relevantes no Analysis Workspace usando componentes da visualização de dados e seus dados reais.
+O Data Insights Agent, acessível pelo [Assistente de IA](/help/ai-assistant.md) no Customer Journey Analytics, é um agente de conversação de IA generativo que responde de forma rápida e eficiente a perguntas sobre seus dados. Ele cria visualizações relevantes no Analysis Workspace usando componentes da visualização de dados e seus dados reais.
 
 Usar o Data Insights Agent para responder a perguntas centradas em dados no Analysis Workspace pode economizar inúmeras horas gastas com a criação manual de visualizações e a familiarização com componentes de visualização de dados.
 
@@ -232,21 +232,21 @@ Following the thumbs up or thumbs down selection, please make a selection for th
 
 ## Práticas recomendadas de configuração
 
-Abaixo estão as práticas recomendadas para a configuração do Customer Journey Analytics (visualização de dados, métricas calculadas, segmentos e muito mais) para garantir que o Data Insights Agent possa localizar os componentes corretos e retornar respostas mais limpas sem precisar solicitar informações adicionais.
+Abaixo estão as práticas recomendadas para a configuração do Customer Journey Analytics (visualização de dados, métricas calculadas, segmentos e mais) para garantir que o Data Insights Agent possa localizar os componentes corretos e retornar respostas aprimoradas sem precisar solicitar informações adicionais.
 
-* **Equilibre quais componentes são necessários**. Não adicione todos os campos dos conjuntos de dados como métricas ou componentes de dimensão à visualização de dados. Especialmente, aqueles que você certamente não usará em sua análise. Por outro lado, não se limite estritamente apenas aos campos que você antecipa que são necessários para a análise. Uma visualização de dados muito limitada restringe a flexibilidade da análise e da funcionalidade do Data Insights Agent.
-* **Sempre usar nomes para exibição amigáveis**. Certifique-se de que todos os campos definidos na visualização de dados, como uma métrica ou componente de dimensão, tenham um nome de componente amigável. O processo de renomear campos com um nome amigável é especialmente relevante para campos de conjuntos de dados do conector de origem do Adobe Analytics. Esses campos geralmente têm nomes não amigáveis não identificáveis, como `eVar41` ou `prop25`.
-* **Usar nomes distintos**. Nomes distintos são especialmente relevantes quando você usa o mesmo campo como uma métrica e um componente de dimensão em sua visualização de dados. Ou quando você usa um campo em vários componentes do mesmo tipo (como em duas métricas diferentes), cada um com configurações de componente diferentes.
-* **Usar uma convenção de nomenclatura de componente**. Você pode usar uma convenção de nomenclatura de componente para agrupar componentes. Por exemplo, **[!UICONTROL Pedidos | Produto]** e **[!UICONTROL Pedidos | O cliente]** pode distinguir entre métricas de ordem diferentes que podem existir em seus dados.
-* **Usar o Dicionário de Dados**. Adicione a descrição e outros dados relevantes para os componentes no Dicionário de dados. Atualmente, o Agente de Insight de dados não usa a descrição e as tags do Dicionário de dados, mas pode ser que use no futuro.
-* **Usar métricas calculadas aprovadas**. Concorde com um processo para usar somente métricas calculadas aprovadas como componentes em sua visualização de dados e evite usar métricas calculadas experimentais.
-* **Compartilhar segmentos necessários**. Compartilhe segmentos e torne visíveis os segmentos necessários aos prompts do Data Insights Agent.
-* **Padronizar nomes de componentes em visualizações de dados**. Se você usar os mesmos campos que um componente em várias visualizações de dados, certifique-se de usar um único nome simples e um único identificador para esse componente. Um único nome e identificador permite que o Data Insights Agent alterne as visualizações de dados sem perder o contexto.
+* **Equilibre quais componentes são necessários**. Não adicione todos os campos dos conjuntos de dados como métricas ou componentes de dimensão à visualização de dados. Especialmente aqueles que você certamente não usará na análise. Por outro lado, não se limite estritamente apenas aos campos que você pensa serem necessários para a análise. Uma visualização de dados muito limitada restringe a flexibilidade da análise e a funcionalidade do Data Insights Agent.
+* **Use sempre nomes de exibição intuitivos**. Certifique-se de que todos os campos definidos na visualização de dados, como uma métrica ou componente de dimensão, tenham um nome de componente intuitivo. O processo de renomear campos com um nome intuitivo é especialmente relevante para campos de conjuntos de dados do conector de origem do Adobe Analytics. Esses campos geralmente têm nomes não intuitivos e não identificáveis, como `eVar41` ou `prop25`.
+* **Use nomes distintos**. Nomes distintos são especialmente relevantes ao usar o mesmo campo como uma métrica e como um componente de dimensão na visualização de dados. Ou ao usar um campo em vários componentes do mesmo tipo (como em duas métricas diferentes), cada um com configurações de componente diferentes.
+* **Use uma convenção de nomenclatura de componente**. É possível usar uma convenção de nomenclatura de componente para agrupar componentes. Por exemplo, **[!UICONTROL Pedidos | Produto]** e **[!UICONTROL Pedidos | Cliente]** podem distinguir entre métricas de pedido diferentes que podem existir nos dados.
+* **Use o dicionário de dados**. Adicione a descrição e outros dados relevantes para os componentes no Dicionário de dados. Atualmente, o Data Insights Agent não usa a descrição e as tags do Dicionário de dados, mas pode ser que use no futuro.
+* **Use métricas calculadas aprovadas**. Concorde com um processo para usar somente métricas calculadas aprovadas como componentes na visualização de dados e evite usar métricas calculadas experimentais.
+* **Compartilhe segmentos necessários**. Certifique-se de compartilhar segmentos e tornar visíveis os segmentos necessários aos prompts do Data Insights Agent.
+* **Padronizar nomes de componentes em visualizações de dados**. Se você usa os mesmos campos como um componente em várias visualizações de dados, certifique-se de inserir um único nome intuitivo e um único identificador para esse componente. Um único nome e identificador permite que o Data Insights Agent alterne as visualizações de dados sem perder o contexto.
 
 >[!MORELIKETHIS]
 >
 >[Configurações de componente](/help/data-views/component-settings/overview.md)
->&#x200B;>[Dicionário de Dados](/help/components/data-dictionary/data-dictionary-overview.md)
->&#x200B;>[Aprovar métrica calculada](/help/components/calc-metrics/cm-workflow/cm-approving.md)
->&#x200B;>[Compartilhar segmentos](/help/components/segments/seg-share.md)
+>>[Dicionário de dados](/help/components/data-dictionary/data-dictionary-overview.md)
+>>[Aprovar métricas calculadas](/help/components/calc-metrics/cm-workflow/cm-approving.md)
+>>[Compartilhar segmentos](/help/components/segments/seg-share.md)
 >
