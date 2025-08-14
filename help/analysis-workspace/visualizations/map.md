@@ -4,9 +4,9 @@ title: Mapa
 feature: Visualizations
 role: User, Admin
 exl-id: 6656b34a-ae1e-4f9f-9c6d-13c54e49625c
-source-git-commit: 0aac2739e03044c03a2561535846f1355054f45f
+source-git-commit: 71d5326f5d80f196504178855dacdf01f60fb81c
 workflow-type: tm+mt
-source-wordcount: '2770'
+source-wordcount: '2761'
 ht-degree: 11%
 
 ---
@@ -45,7 +45,7 @@ ht-degree: 11%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta a Visualização de mapa no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consulte o [Mapa](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) da versão_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
+_Este artigo documenta a Visualização de mapa no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consulte o [Mapa](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) da versão_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 
@@ -112,13 +112,13 @@ Para adicionar esses rótulos de contexto:
 
 1. No Customer Journey Analytics, selecione **[!UICONTROL Gerenciamento de dados]** > **[!UICONTROL Visualizações de dados]**.
 
-1. Na página Visualizações de dados, selecione a visualização de dados que contém os dados que você deseja analisar com modelos pré-construídos que usam a visualização de mapa. Nesta visualização de dados, você escolherá cinco dimensões: uma com os dados do país, uma com os dados da região, uma com os dados da cidade, uma com os dados do estado e uma com os dados do DMA. Em seguida, você rotulará essas dimensões com o rótulo de contexto correspondente.
+1. Na página Visualizações de dados, selecione a visualização de dados que contém os dados que você deseja analisar com modelos pré-construídos que usam a visualização de mapa. Nesta visualização de dados, escolha cinco dimensões: uma com os dados do país, uma com os dados da região, uma com os dados da cidade, uma com os dados do estado e uma com os dados do DMA. Em seguida, rotule essas dimensões com o rótulo de contexto correspondente.
 
 1. Selecione a guia **[!UICONTROL Componentes]**.
 
 1. (Condicional) Se estiver usando o Web SDK e tiver configurado campos geográficos para serem preenchidos no fluxo de dados ou se estiver usando o Analytics Source Connector para preencher dados de evento, os campos geográficos já deverão estar disponíveis no esquema e preenchidos com os rótulos de contexto corretos.
 
-   Localize os campos de esquema apropriados, como **[!UICONTROL Cidade]**, **[!UICONTROL CEP]**, **[!UICONTROL Estado ou província]** (em **[!UICONTROL Conjuntos de dados de eventos]** > **[!UICONTROL placeContext]** > **[!UICONTROL geo]**) e arraste-os para a exibição de dados como dimensões, se ainda não estiverem presentes.
+   Localize os campos de esquema apropriados, como **[!UICONTROL Cidade]**, **[!UICONTROL CEP]**, **[!UICONTROL Estado ou província]** (em **[!UICONTROL Conjuntos de dados de eventos]** > **[!UICONTROL placeContext]** > **[!UICONTROL geo]**), e arraste-os para sua visualização de dados como dimensões, se ainda não estiverem presentes.
 
    Quando esses campos de esquema existem como dimensões na visualização de dados, seus rótulos de contexto são aplicados automaticamente e os modelos geográficos os usam sem qualquer configuração adicional.
 
@@ -153,7 +153,7 @@ A visualização de mapa no Customer Journey Analytics difere da visualização 
 | Criar uma tendência a partir de uma seleção | Crie uma visualização de gráfico de linhas de tendência com base em uma área específica selecionada na visualização de mapa. <p>Para obter mais informações, consulte [Criar um gráfico de linhas de tendência a partir da visualização de mapa](#create-a-trended-line-chart-from-the-map-visualization). <!-- is this correct? --> | Não é possível criar uma tendência na visualização de mapa. |
 | Adicionar um detalhamento de uma seleção | Detalhe um item de dimensão, métrica, segmento ou intervalo de datas específico em uma área específica selecionada na visualização de mapa. <p>Para obter mais informações, consulte [Adicionar um detalhamento da visualização de mapa](#add-a-breakdown-from-the-map-visualization). | Não é possível adicionar um detalhamento da visualização do mapa. |
 
-## Começar a criar uma visualização de mapa {#begin-building-map}
+## Criar uma visualização de mapa {#begin-building-map}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -185,7 +185,7 @@ A visualização de mapa no Customer Journey Analytics difere da visualização 
 
    * **[!UICONTROL Adicionar segmento]**: (opcional) na lista suspensa de segmentos, selecione um segmento. Ou arraste um segmento da lista de segmentos.
 
-   Você pode atualizar essas informações depois que a visualização for criada selecionando o ícone de edição ![Editar](/help/assets/icons/Edit.svg) no cabeçalho da visualização.
+   Você pode atualizar essas informações depois que a visualização for criada selecionando o ícone Editar ![Editar](/help/assets/icons/Edit.svg) no cabeçalho da visualização.
 
 1. Selecione **[!UICONTROL Criar]**.
 
@@ -197,7 +197,7 @@ A visualização de mapa no Customer Journey Analytics difere da visualização 
 
 ## Exibir uma visualização de mapa
 
-1. Caso ainda não o tenha feito, crie uma visualização de mapa conforme descrito em [Comece a criar uma visualização de mapa](#begin-building-a-map-visualization).
+1. Caso ainda não o tenha feito, crie uma visualização de mapa conforme descrito em [Criar uma visualização de mapa](#begin-building-a-map-visualization).
 
 1. Na visualização de mapa no Analysis Workspace, siga um destes procedimentos:
 
@@ -250,7 +250,7 @@ A visualização de mapa no Customer Journey Analytics difere da visualização 
 
 Para definir as configurações da visualização de mapa:
 
-1. No Analysis Workspace, abra uma visualização de mapa existente ou [comece a criar uma nova](#begin-building-a-map-visualization).
+1. No Analysis Workspace, abra uma visualização de mapa existente ou [crie uma nova](#begin-building-a-map-visualization).
 
 1. Passe o mouse sobre a visualização do mapa, em seguida, selecione o ícone Configurações ![Configuração](/help/assets/icons/Setting.svg) no cabeçalho da visualização.
 
