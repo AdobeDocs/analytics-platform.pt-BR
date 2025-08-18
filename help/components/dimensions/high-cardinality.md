@@ -1,11 +1,11 @@
 ---
 title: Dimensões de alta cardinalidade
-description: Explique como o Customer Journey Analytics lida com dimensões com muitos valores únicos.
+description: Explica como o Customer Journey Analytics lida com dimensões com muitos valores únicos.
 feature: Dimensions
 solution: Customer Journey Analytics
 exl-id: 17b275a5-c2c2-48ee-b663-e7fe76f79456
 role: User
-source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
+source-git-commit: 1e9ec546ceee728116b4a679b78f53f20e06d37c
 workflow-type: tm+mt
 source-wordcount: '544'
 ht-degree: 7%
