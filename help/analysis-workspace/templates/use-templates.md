@@ -5,9 +5,9 @@ feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
 source-git-commit: df069a7a67c65db9eb70900869495202f63abd05
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '20276'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -1067,23 +1067,23 @@ Estes são os modelos disponíveis:
 
 >[!CONTEXTUALHELP]
 >id="cja-template--b2b-account-engagement"
->title="Veja o nível de atividade das suas contas em eventos, pessoas e oportunidades."
->abstract="**Isso pode ajudar** a entender melhor se o engajamento no nível de contas está aumentando ou diminuindo, comparar a atividade entre as contas e decidir onde concentrar os esforços de retenção ou aquisição.<br/>**Com base no que você aprender, será possível** fazer várias coisas, como redirecionar sua atenção para as contas menos engajadas, mas que exigem mais atenção devido à sua importância."
+>title="Confira o nível de atividade das suas contas em eventos, pessoas e oportunidades."
+>abstract="**Isso pode ajudar** a entender melhor se o engajamento no nível das contas está aumentando ou diminuindo, comparar a atividade entre as contas e decidir onde concentrar os esforços de retenção ou aquisição.<br/>**Com base no que você aprender, será possível**, entre outras coisas, redirecionar sua atenção para as contas menos engajadas, mas que exigem mais atenção devido à sua importância."
 
 >[!CONTEXTUALHELP]
 >id="cja-template--b2b-opportunity-engagement"
 >title="Monitore o engajamento no nível das oportunidades e destaque as negociações que estão ganhando ou perdendo tração."
->abstract="**Isso pode ajudar** a prever com mais precisão a progressão dos negócios e a focar a habilitação nos casos em que há picos ou interrupções no engajamento.<br/>**Com base no que você aprender, será possível** fazer várias coisas, como dedicar alguns esforços adicionais a negócios que estão quase fechados e pesquisar por que outros negócios estão perdendo tração."
+>abstract="**Isso pode ajudar** a prever com mais precisão a progressão dos negócios e a focar sua atenção nos casos em que há picos ou interrupções no engajamento.<br/>**Com base no que você aprender, será possível**, entre outras coisas, dedicar alguns esforços adicionais a ofertas que estão quase fechadas e pesquisar por que outras ofertas estão perdendo tração."
 
 >[!CONTEXTUALHELP]
 >id="cja-template--b2b-buying-group-activity"
 >title="Visualize a atividade de grupos de compra em cada conta para informar as opções de marketing por conta e por grupo de compra."
->abstract="**Isso pode ajudar** a visualizar quais grupos de compras e quais pessoas dentro deles estão mais engajadas, destacando as lacunas na participação dos grupos.<br/>**Com base no que você aprender, será possível** fazer várias coisas, como tentar engajar mais as pessoas em grupos de compra que parecem não estar engajados."
+>abstract="**Isso pode ajudar** a visualizar quais grupos de compra e quais pessoas dentro desses grupos estão mais engajadas, destacando as lacunas na participação dos grupos.<br/>**Com base no que você aprender, será possível**, entre outras coisas, tentar engajar mais as pessoas em grupos de compra que parecem não estar engajados."
 
 Estes são os modelos disponíveis:
 
 | Nome do modelo | Por que usar este modelo <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- | 
-| [!UICONTROL **Visão geral do Envolvimento da Conta B2B**] | Veja o nível de atividade das suas contas em eventos, pessoas e oportunidades.<p>**Isso pode ajudar** a entender melhor se o engajamento no nível de contas está aumentando ou diminuindo, comparar a atividade entre as contas e decidir onde concentrar os esforços de retenção ou aquisição.</p><p>**Com base no que você aprender, será possível** fazer várias coisas, como redirecionar sua atenção para as contas menos engajadas, mas que exigem mais atenção devido à sua importância.</p> |
-| [!UICONTROL **Visão geral do Compromisso de Oportunidade B2B**] | Monitore o engajamento no nível das oportunidades e destaque as negociações que estão ganhando ou perdendo tração.<p>**Isso pode ajudar** a prever com mais precisão a progressão dos negócios e a focar a habilitação nos casos em que há picos ou interrupções no engajamento.</p><p>**Com base no que você aprender, será possível** fazer várias coisas, como dedicar alguns esforços adicionais a negócios que estão quase fechados e pesquisar por que outros negócios estão perdendo tração.</p> |
-| [!UICONTROL **Atividade de Grupo de Compras B2B**] | Visualize a atividade de grupos de compra em cada conta para informar as opções de marketing por conta e por grupo de compra.<p>**Isso pode ajudar** a visualizar quais grupos de compras e quais pessoas dentro deles estão mais engajadas, destacando as lacunas na participação dos grupos.</p><p>**Com base no que você aprender, será possível** fazer várias coisas, como tentar engajar mais as pessoas em grupos de compra que parecem não estar engajados.</p> |
+| [!UICONTROL **Visão geral do engajamento de contas B2B**] | Confira o nível de atividade das suas contas em eventos, pessoas e oportunidades.<p>**Isso pode ajudar** a entender melhor se o engajamento no nível das contas está aumentando ou diminuindo, comparar a atividade entre as contas e decidir onde concentrar os esforços de retenção ou aquisição.</p><p>**Com base no que você aprender, será possível**, entre outras coisas, redirecionar sua atenção para as contas menos engajadas, mas que exigem mais atenção devido à sua importância.</p> |
+| [!UICONTROL **Visão geral do engajamento de oportunidades B2B**] | Monitore o engajamento no nível das oportunidades e destaque as negociações que estão ganhando ou perdendo tração.<p>**Isso pode ajudar** a prever com mais precisão a progressão dos negócios e a focar sua atenção nos casos em que há picos ou interrupções no engajamento.</p><p>**Com base no que você aprender, será possível**, entre outras coisas, dedicar alguns esforços adicionais a ofertas que estão quase fechadas e pesquisar por que outras ofertas estão perdendo tração.</p> |
+| [!UICONTROL **Atividade de grupos de compra B2B**] | Visualize a atividade de grupos de compra em cada conta para informar as opções de marketing por conta e por grupo de compra.<p>**Isso pode ajudar** a visualizar quais grupos de compra e quais pessoas dentro desses grupos estão mais engajadas, destacando as lacunas na participação dos grupos.</p><p>**Com base no que você aprender, será possível**, entre outras coisas, tentar engajar mais as pessoas em grupos de compra que parecem não estar engajados.</p> |
