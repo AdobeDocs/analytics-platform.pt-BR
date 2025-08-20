@@ -56,10 +56,10 @@ A ilustração também enfatiza que os relatórios em tempo real usam um conjunt
 
 | | Coleção de dados | Latência do relatório em tempo real | Latência de relatório padrão |
 |:---:|---|--:|--:|
-| 1 | Edge Network SDK/APIs na Edge Network | &amp;aprox; &lt; 00h:06m:30s | &amp;aprox; &lt; 01h:35m:00s |
-| 2 | Conectores de transmissão | &amp;aprox; &lt; 00h:16m:30s | &amp;aprox; &lt; 01h:45m:00s |
-| 3 | Conector de origem do Adobe Analytics | &amp;aprox; &lt; 00h:16m:30s | &amp;aprox; &lt; 01h:45m:00s |
-| 4 | Outros conectores de origem nos conectores de origem (incluindo dados em lote) | &amp;aprox; &lt; 24h:01m:30s | &amp;aprox; &lt; 25h:30m:00s |
+| 1 | Edge Network SDK/APIs na Edge Network | &aprox; &lt; 00h:06m:30s | &aprox; &lt; 01h:35m:00s |
+| 2 | Conectores de transmissão | &aprox; &lt; 00h:16m:30s | &aprox; &lt; 01h:45m:00s |
+| 3 | Conector de origem do Adobe Analytics | &aprox; &lt; 00h:16m:30s | &aprox; &lt; 01h:45m:00s |
+| 4 | Outros conectores de origem nos conectores de origem (incluindo dados em lote) | &aprox; &lt; 24h:01m:30s | &aprox; &lt; 25h:30m:00s |
 
 ## Limitações
 
