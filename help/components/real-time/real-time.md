@@ -7,7 +7,7 @@ hidefromtoc: true
 role: User
 badgePremium: label="Beta"
 exl-id: 12fbb760-936d-4e30-958f-764febca5ae7
-source-git-commit: b34cf8d95080cb333cd497450f5881f0418b8ae9
+source-git-commit: 2461804f788b7a1417c4d7faa1d7133d8808cad5
 workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 4%
@@ -42,17 +42,18 @@ Você deseja validar, por exemplo:
 
 Não considere a geração de relatórios em tempo real para casos de uso de monitoramento de operações. Por exemplo, para responder à pergunta se um site está funcionando corretamente. Como o [botão de atualização em tempo real](use-real-time.md) é desabilitado automaticamente depois de 30 minutos e o relatório em tempo real para de ser atualizado, você não deve usar um relatório em tempo real como uma fonte confiável para esses casos de uso.
 
+## Como funciona
 
-## Latências
-
-A maneira como você coleta dados determina a latência dos relatórios em tempo real no Customer Journey Analytics. A ilustração e a tabela abaixo mostram latências aproximadas para vários cenários de coleta de dados ao usar relatórios padrão em tempo real e (para comparação).
-
-A ilustração também enfatiza que os relatórios em tempo real usam um conjunto de dados consolidado que é completamente separado do [conjunto de dados consolidado (combinado)](/help/connections/combined-dataset.md) usado para relatórios padrão. Você usa o [botão de atualização em tempo real](use-real-time.md) para alternar entre:
+Os relatórios em tempo real usam um conjunto de dados consolidado que é completamente separado do [conjunto de dados consolidado (combinado)](/help/connections/combined-dataset.md) usado para relatórios padrão. Você usa o [botão de atualização em tempo real](use-real-time.md) para alternar entre:
 
 * Relatórios em tempo real em um conjunto de dados consolidado que contém até 24 horas de dados contínuos.
 * Emissão de relatórios padrão no conjunto de dados consolidado que contém até 13 meses de dados contínuos (ou mais, caso você tenha licenciado o Complemento de capacidade de dados estendida).
 
 ![Relatório em tempo real](assets/real-time-reporting-latencies.svg){zoomable="yes"}
+
+### Latências
+
+A maneira como você coleta dados determina a latência dos relatórios em tempo real no Customer Journey Analytics. A ilustração acima e a tabela abaixo mostram latências aproximadas para vários cenários de coleta de dados ao usar relatórios padrão em tempo real e (para comparação).
 
 | | Coleção de dados | Latência de relatório em tempo real <br/>(aprox. menor que) | Latência de relatório padrão <br/>(aprox. menor que) |
 |:---:|---|--:|--:|

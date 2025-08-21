@@ -7,10 +7,10 @@ hidefromtoc: true
 role: User
 badgePremium: label="Beta"
 exl-id: 6e7dba80-5fb9-4554-b989-85eb54a4bd6a
-source-git-commit: b833914e7066fa660f856737d6b8a6392aae2feb
+source-git-commit: 2461804f788b7a1417c4d7faa1d7133d8808cad5
 workflow-type: tm+mt
-source-wordcount: '197'
-ht-degree: 14%
+source-wordcount: '225'
+ht-degree: 12%
 
 ---
 
@@ -30,7 +30,7 @@ Para usar o relatório em tempo real, habilite a opção **[!UICONTROL Atualiza�
 * [Atribuição](/help/analysis-workspace/c-panels/attribution.md)
 * [Próximo item ou anterior](/help/analysis-workspace/c-panels/next-previous.md)
 
-Você verá uma mensagem com o carimbo de data e hora da atualização mais recente dos dados. Por exemplo: [!UICONTROL &#x200B; *Última atualização às 07:55 pm*].
+Você verá uma mensagem com o carimbo de data e hora da atualização mais recente dos dados. Por exemplo: [!UICONTROL  *Última atualização às 07:55 pm*].
 
 Selecione o período em tempo real que deseja relatar no menu suspenso. As opções disponíveis são:
 
@@ -47,3 +47,5 @@ Como exemplo, veja abaixo um instantâneo de um **[!UICONTROL Painel de relatór
 ![Atualização em tempo real](assets/real-time-refresh.gif)
 
 Após 30 minutos ou assim que a guia do navegador se tornar inativa, a opção **[!UICONTROL Atualização em tempo real]** será desabilitada automaticamente e as atualizações em tempo real serão interrompidas.
+
+Assim que o botão Atualização em tempo real estiver desativado, o painel (e todas as visualizações nele contidas) retornará para [usar os dados e recursos padrão de relatório do Customer Journey Analytics](real-time.md#how-it-works).
