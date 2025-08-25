@@ -5,10 +5,10 @@ title: Visão geral das visualizações
 feature: Visualizations
 exl-id: ca9e0561-7a54-487a-9fdc-3bcf34f9bdb1
 role: User
-source-git-commit: 9c05319ceacb7287af7f15cfe56b8048a718559d
+source-git-commit: 4599a058cef79a28bd6f9b788c2b202c8235298d
 workflow-type: tm+mt
-source-wordcount: '1622'
-ht-degree: 95%
+source-wordcount: '1738'
+ht-degree: 89%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 95%
 
 O Workspace oferece várias visualizações que permitem criar representações visuais dos seus dados. Como gráficos de barras, gráficos de rosca, histogramas, gráficos de linhas, mapas, gráficos de dispersão, entre outros.
 
-## Tipos
+##  Tipos
 
 Os seguintes tipos de visualização estão disponíveis no Analysis Workspace:
 
@@ -67,6 +67,22 @@ Os seguintes tipos de visualização estão disponíveis no Analysis Workspace:
    * Use o menu **[!UICONTROL Inserir]** do Workspace para inserir uma visualização.
 
    * No menu de contexto de uma tabela de forma livre, selecione **[!UICONTROL Visualizar]**. Em seguida, selecione a visualização no submenu. Com base na seleção atual na tabela, o Workspace determina qual visualização oferecer e interpreta os dados para criar a visualização solicitada.
+
+Quando você adiciona uma visualização simples, por exemplo, uma visualização de [Linha](line.md) de [Barra](bar.md), a visualização usa a tabela de forma livre mais próxima como fonte de dados. Você sempre pode modificar a [fonte de dados](#data-source) de suas visualizações.
+
+
+## Gerenciar visualizações
+
+É possível gerenciar uma visualização ao passar o mouse sobre a visualização ou selecioná-la.
+
+![Gerenciar visualização](assets/manage-visualization.png)
+
+* Para recolher uma visualização, selecione ![DivisaInferior](/help/assets/icons/ChevronDown.svg).
+* Para revelar uma visualização recolhida, selecione ![ChevronLeft](/help/assets/icons/ChevronLeft.svg).
+* Para excluir uma visualização, selecione ![CrossSize400](/help/assets/icons/CrossSize400.svg). Para desfazer, selecione **[!UICONTROL Editar]** > **[!UICONTROL Desfazer]** (**[!UICONTROL *cmd+z *]**|**[!UICONTROL * ctrl+z *]**).
+* Para retornar uma visualização à altura padrão, selecione ![ImageResize](/help/assets/icons/Resize.svg).
+* Para mover uma visualização dentro de um painel, arraste-a e solte-a sempre que um ![Mover](/help/assets/icons/Move.svg) estiver visível (normalmente quando você passa o mouse sobre o cabeçalho).
+
 
 
 ## Legenda

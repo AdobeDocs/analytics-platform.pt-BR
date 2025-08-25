@@ -4,10 +4,10 @@ title: Totais
 feature: Visualizations
 exl-id: ba14b88c-44c2-45f6-b68f-f5c1263a89dd
 role: User
-source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
+source-git-commit: 4599a058cef79a28bd6f9b788c2b202c8235298d
 workflow-type: tm+mt
-source-wordcount: '488'
-ht-degree: 91%
+source-wordcount: '494'
+ht-degree: 88%
 
 ---
 
@@ -34,7 +34,7 @@ Nas Tabelas de forma livre, aparece uma linha total em cada nível de detalhamen
 Em ![Configurações](/help/assets/icons/Setting.svg) **[!UICONTROL Configurações de coluna]**, há opções para **[!UICONTROL Mostrar totais]** e **[!UICONTROL Mostrar total geral]**. Se essas configurações não estiverem marcadas, os totais serão removidos da tabela, o que pode ser desejado em casos em que os totais não fazem sentido.
 
 
-[Os totais de linha estática](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md) se comportam de forma diferente e são controlados usando ![Configuração](/help/assets/icons/Setting.svg) **[!UICONTROL Configurações de linha]**.
+Em uma tabela de forma livre que contém [linhas estáticas](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md), os totais se comportam de maneira diferente. E são controlados usando ![Configuração](/help/assets/icons/Setting.svg) **[!UICONTROL Configurações de Linha]**.
 
 | Opção | Descrição |
 |---|---|
