@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: e5cb55e7-aed0-4598-a727-72e6488f5aa8
-source-git-commit: 98432804b71805c3714423dff577bbf80d5c92d1
+source-git-commit: 1ee282d0bf91c1a2f27073d0755cf404148d4d5b
 workflow-type: tm+mt
-source-wordcount: '1779'
+source-wordcount: '1784'
 ht-degree: 15%
 
 ---
@@ -21,7 +21,7 @@ Na compilação em campo, você especifica um conjunto de dados de evento, bem c
 
 ## IdentityMap
 
-A compilação baseada em campo oferece suporte ao uso do [`identityMap` grupo de campos](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/schema/composition#identity) nos seguintes cenários:
+A compilação baseada em campo oferece suporte ao uso do [`identityMap` grupo de campos](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity) nos seguintes cenários:
 
 - Uso da identidade primária no namespace `identityMap` para definir a persistentID:
    - Se várias identidades primárias forem encontradas em namespaces diferentes, as identidades nos namespaces serão classificadas de forma lexigáfica e a primeira identidade será selecionada.
@@ -57,10 +57,10 @@ A compilação baseada em campo oferece suporte ao uso do [`identityMap` grupo d
 
 
 - Uso do namespace `identityMap` para definir persistentID, transientID ou ambos:
-   - Se vários valores de persistentID ou transientID forem encontrados em um namespace `identityMap`, o primeiro valor lexicográfico disponível será usado.
+   - Se vários valores para persistentID ou transientID forem encontrados em um namespace `identityMap`, o primeiro valor lexicográfico disponível será usado.
    - Os namespaces para persistentID e transientID devem ser mutuamente exclusivos.
 
-  No exemplo abaixo, os namespaces e as identidades resultam em uma lista de identidades classificadas para o namespace selecionado (ECID) e, por fim, na identidade selecionada.
+  No exemplo abaixo, você selecionou ECID como o namespace a ser usado para a compilação em campo. Essa seleção resulta em uma lista de identidades classificadas e, por fim, na identidade selecionada.
 
   <table style="table-layout:auto">
      <tr>
@@ -142,7 +142,7 @@ A atribuição funciona quando a variável personalizada de identificação est�
 
 Os dados atrasados (dados com um carimbo de data e hora superior a 24 horas) são tratados com base no &quot;melhor esforço&quot;, priorizando a compilação de dados atuais para obter a mais alta qualidade.
 
-+++
++++ 
 
 ### Etapa 2: Repetir a compilação
 
@@ -174,7 +174,7 @@ A tabela a seguir representa os mesmos dados acima, mas mostra números diferent
 
 A atribuição funciona quando a variável personalizada de identificação está vinculada a um dispositivo. No exemplo acima, o evento 1 e 10 são compilados como resultado da repetição, deixando apenas o evento 8 e o 9 não compilados. E reduzindo a métrica de pessoas (cumulativa) para 2.
 
-+++
++++ 
 
 ### Etapa 3: Solicitação de privacidade
 
@@ -202,7 +202,7 @@ A tabela a seguir representa os mesmos dados acima, mas mostra o efeito que uma 
 | 12 | 2023-05-12 12:12 | `81911` | - | **`Bob`** | `Bob` | - | `81911` |
 | | | **3 dispositivos** | | **4 pessoas**:<br/>246, `Bob`, `3579`, `81911` | **2 pessoas**:<br/>Bob, `3579` |  | **3 pessoas**:<br/>`246`, `3579`, `81911` |
 
-+++
++++ 
 
 ## Pré-requisitos
 
@@ -214,7 +214,7 @@ Os seguintes pré-requisitos se aplicam especificamente à compilação em campo
    - Uma **ID transitória**, um identificador disponível em apenas algumas linhas. Por exemplo, um nome de usuário ou endereço de email com hash quando um visitante é autenticado. Você pode usar praticamente qualquer identificador que desejar. A compilação considera esse campo como mantendo as informações reais da ID de pessoa. Para obter melhores resultados de compilação, uma ID transitória deve ser enviada nos eventos do conjunto de dados pelo menos uma vez para cada ID persistente. Se você planeja incluir esse conjunto de dados em uma conexão do Customer Journey Analytics, é preferível que os outros conjuntos de dados também tenham um identificador comum semelhante.
 
 <!--
-- Both columns (persistent ID and transient ID) must be defined as an identity field with an identity namespace in the schema for the dataset you want to stitch. When using identity stitching in Real-time Customer Data Platform, using the [`identityMap` field group](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/schema/composition#identity), you still need to add identity fields with an identity namespace. This identification of identity fields is required as Customer Journey Analytics stitching does not support the `identityMap` field group. When adding an identity field in the schema, while also using the `identityMap` field group, do not set the additional identity field as a primary identity. Setting an additional identity field as primary identity interferes with the `identityMap` field group used for Real-time Customer Data Platform.
+- Both columns (persistent ID and transient ID) must be defined as an identity field with an identity namespace in the schema for the dataset you want to stitch. When using identity stitching in Real-time Customer Data Platform, using the [`identityMap` field group](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity), you still need to add identity fields with an identity namespace. This identification of identity fields is required as Customer Journey Analytics stitching does not support the `identityMap` field group. When adding an identity field in the schema, while also using the `identityMap` field group, do not set the additional identity field as a primary identity. Setting an additional identity field as primary identity interferes with the `identityMap` field group used for Real-time Customer Data Platform.
 
 -->
 

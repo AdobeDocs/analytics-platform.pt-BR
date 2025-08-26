@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: ea5c9114-1fc3-4686-b184-2850acb42b5c
-source-git-commit: 98432804b71805c3714423dff577bbf80d5c92d1
+source-git-commit: 1ee282d0bf91c1a2f27073d0755cf404148d4d5b
 workflow-type: tm+mt
-source-wordcount: '1540'
+source-wordcount: '1542'
 ht-degree: 7%
 
 ---
@@ -21,9 +21,9 @@ Na compilação baseada em gráfico, você especifica um conjunto de dados de ev
 
 ## IdentityMap
 
-A compilação baseada em gráfico oferece suporte ao uso do [`identityMap` grupo de campos](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/schema/composition#identity) nos seguintes cenários:
+A compilação baseada em gráfico oferece suporte ao uso do [`identityMap` grupo de campos](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity) nos seguintes cenários:
 
-- Uso da identidade primária no namespace `identityMap` para definir a persistentID:
+- Uso da identidade primária em `identityMap` namespaces para definir a persistentID:
    - Se várias identidades primárias forem encontradas em namespaces diferentes, as identidades nos namespaces serão classificadas de forma lexigáfica e a primeira identidade será selecionada.
    - Se várias identidades primárias forem encontradas em um único namespace, a primeira identidade primária lexicográfica disponível será selecionada.
 
@@ -56,9 +56,9 @@ A compilação baseada em gráfico oferece suporte ao uso do [`identityMap` grup
   </table>
 
 - Uso do namespace `identityMap` para definir a persistentID:
-   - Se vários valores de persistentID forem encontrados em um namespace `identityMap`, a primeira identidade lexicográfica disponível será usada.
+   - Se vários valores para persistentID forem encontrados em um namespace `identityMap`, a primeira identidade lexicográfica disponível será usada.
 
-  No exemplo abaixo, os namespaces e as identidades resultam em uma lista de identidades classificadas para o namespace selecionado (ECID) e, por fim, na identidade selecionada.
+  No exemplo abaixo, você selecionou ECID como o namespace a ser usado. Essa seleção resulta em uma lista de identidades classificadas e, por fim, na identidade selecionada.
 
   <table style="table-layout:auto">
      <tr>
@@ -113,7 +113,7 @@ Considere os dois gráficos de identidade a seguir para a ID persistente `246` e
 ![Gráfico de identidade 246](assets/identity-graph-246.svg)
 ![Gráfico de identidade 3579](assets/identity-graph-3579.svg)
 
-Você pode exibir um gráfico de identidade ao longo do tempo para um perfil específico usando o [Visualizador de Gráficos de Identidade](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/features/identity-graph-viewer). Consulte também [Lógica de vinculação do serviço de identidade](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/features/identity-linking-logic) para entender melhor a lógica usada ao vincular identidades.
+Você pode exibir um gráfico de identidade ao longo do tempo para um perfil específico usando o [Visualizador de Gráficos de Identidade](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-viewer). Consulte também [Lógica de vinculação do serviço de identidade](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-linking-logic) para entender melhor a lógica usada ao vincular identidades.
 
 ### Etapa 1: compilação em tempo real
 
@@ -144,7 +144,7 @@ Em intervalos regulares (dependendo da janela de pesquisa escolhida), a repetiç
 
 +++ Detalhes
 
-Com uma repetição da compilação ocorrendo às 16:30 do dia 2023-05-13, com uma configuração de janela de retrospectiva de 24 horas, alguns eventos da amostra são recompilados (indicado por ![Reproduzir](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg)).
+Com uma repetição da compilação em 2023-05-13 16:30, com uma configuração de janela de retrospectiva de 24 horas, alguns eventos da amostra são recompilados (indicado por ![Reproduzir](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg)).
 
 | | Hora | ID Persistente<br/>`ECID` | Namespace<br/>`Email` ![Gráfico](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) | ID compilada<br/> (após compilação em tempo real) | ID compilada<br/> (após 24 horas de repetição) |
 |---|---|---|---|---|---|
@@ -158,7 +158,7 @@ Com uma repetição da compilação ocorrendo às 16:30 do dia 2023-05-13, com u
 {style="table-layout:auto"}
 
 
-Com a repetição da compilação em 2023-05-13 às 16:30, com uma configuração de janela de retrospectiva de 7 dias, todos os eventos da amostra são recompilados.
+Com a repetição da compilação em 2023-05-13 16:30, com uma configuração de janela de retrospectiva de 7 dias, todos os eventos da amostra são recompilados.
 
 
 | | Hora | ID Persistente<br/>`ECID` | Namespace<br/>`Email` ![Gráfico](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) | ID compilada<br/> (após compilação em tempo real) | ID compilada<br/> (após 7 dias de repetição) |
@@ -181,7 +181,7 @@ Ao receber uma solicitação de acesso a dados pessoais, a ID compilada é exclu
 
 +++ Detalhes
 
-A tabela a seguir representa os mesmos dados acima, mas mostra o efeito que uma solicitação de privacidade (por exemplo, em 2023-05-13 18:00) tem nos eventos de amostra.
+A tabela a seguir representa os mesmos dados acima, mas mostra o efeito que uma solicitação de privacidade (por exemplo, em 2023-05-13 18:00) tem nos eventos de exemplo.
 
 | | Hora | ID Persistente<br/>`ECID` | Namespace<br/>`Email` ![Gráfico](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) | ID com título (após solicitação de privacidade) |
 |--:|---|---|---|---|
@@ -217,7 +217,7 @@ As seguintes limitações se aplicam especificamente à compilação baseada em 
 - Os carimbos de data e hora não são considerados ao consultar a ID transitória usando o namespace especificado. Portanto, é possível que uma ID persistente seja compilada com uma ID transitória de um registro que tenha um carimbo de data e hora anterior.
 - Em cenários de dispositivos compartilhados, em que o namespace no gráfico contém várias identidades, a primeira identidade lexicográfica é usada. Se as prioridades e os limites de namespace forem configurados como parte do lançamento das regras de vinculação de gráficos, a identidade do último usuário autenticado será usada. Consulte [Dispositivos compartilhados](/help/use-cases/stitching/shared-devices.md) para obter mais informações.
 - Há um limite rígido de três meses de preenchimento retroativo de identidades no gráfico de identidade. Você usaria o preenchimento retroativo de identidades caso não estivesse usando um aplicativo da Experience Platform, como a Real-time Customer Data Platform, para preencher o gráfico de identidade.
-- As [medidas de proteção do Serviço de identidade](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/guardrails) se aplicam. Consulte, por exemplo, os [seguintes limites estáticos](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/guardrails#static-limits):
+- As [medidas de proteção do Serviço de identidade](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails) se aplicam. Consulte, por exemplo, os [seguintes limites estáticos](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails#static-limits):
    - Número máximo de identidades em um gráfico: 50.
    - Número máximo de links para uma identidade para uma única assimilação de lote: 50.
    - Número máximo de identidades em um registro XDM para assimilação de gráfico: 20.
