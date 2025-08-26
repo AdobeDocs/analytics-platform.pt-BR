@@ -4,9 +4,9 @@ title: Projetos agendados
 feature: Components
 exl-id: fa7c5a0f-4983-40ee-b9c1-3e10aab3fc28
 role: User
-source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
+source-git-commit: 9d293854ab1da90ea22865392daf9204679f4fd3
 workflow-type: tm+mt
-source-wordcount: '787'
+source-wordcount: '796'
 ht-degree: 41%
 
 ---
@@ -60,7 +60,7 @@ As ações a seguir são comuns no Gerenciador de projetos agendados. Você pode
 | Ícone | Ação | Descrição |
 |:---:|---|---|
 | ![Fechar](/help/assets/icons/Close.svg) | **[!UICONTROL *x *selecionado]** | Selecione para desmarcar os projetos agendados selecionados. |
-| ![Excluir](/help/assets/icons/Delete.svg) | **[!UICONTROL Excluir]** | Excluir os projetos agendados selecionados para o projeto; os projetos não são excluídos. |
+| ![Excluir](/help/assets/icons/Delete.svg) | **[!UICONTROL Excluir]** | Excluir os projetos agendados selecionados para o projeto; os projetos não são excluídos.  <p>Para obter informações sobre como excluir um projeto, consulte [Visão geral dos projetos](/help/analysis-workspace/build-workspace-project/freeform-overview.md).</p> |
 | ![Rótulos](/help/assets/icons/Labels.svg) | **[!UICONTROL Tag]** | Marcar os projetos agendados selecionados. Em **[!UICONTROL Marcar projetos agendados]**, selecione marcas e **[!UICONTROL Salvar]** para salvar. |
 | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **[!UICONTROL Aprovar]** | Aprovar os projetos agendados selecionados. |
 | ![FileCSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL Exportar para CSV]** | Exportar os projetos agendados selecionados para um arquivo chamado `Export Scheduled Projects List.csv`. |
