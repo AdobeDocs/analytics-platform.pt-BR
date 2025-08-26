@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: e5cb55e7-aed0-4598-a727-72e6488f5aa8
-source-git-commit: 1ee282d0bf91c1a2f27073d0755cf404148d4d5b
+source-git-commit: 00f6eeac173ad606885fce5567c82db8a9d107de
 workflow-type: tm+mt
-source-wordcount: '1784'
+source-wordcount: '1781'
 ht-degree: 15%
 
 ---
@@ -21,9 +21,9 @@ Na compilação em campo, você especifica um conjunto de dados de evento, bem c
 
 ## IdentityMap
 
-A compilação baseada em campo oferece suporte ao uso do [`identityMap` grupo de campos](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/schema/composition#identity) nos seguintes cenários:
+A compilação baseada em campo oferece suporte ao uso do [`identityMap` grupo de campos](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity) nos seguintes cenários:
 
-- Uso da identidade primária no namespace `identityMap` para definir a persistentID:
+- Uso da identidade primária em `identityMap` namespaces para definir a persistentID:
    - Se várias identidades primárias forem encontradas em namespaces diferentes, as identidades nos namespaces serão classificadas de forma lexigáfica e a primeira identidade será selecionada.
    - Se várias identidades primárias forem encontradas em um único namespace, a primeira identidade primária lexicográfica disponível será selecionada.
 
@@ -60,7 +60,7 @@ A compilação baseada em campo oferece suporte ao uso do [`identityMap` grupo d
    - Se vários valores para persistentID ou transientID forem encontrados em um namespace `identityMap`, o primeiro valor lexicográfico disponível será usado.
    - Os namespaces para persistentID e transientID devem ser mutuamente exclusivos.
 
-  No exemplo abaixo, você selecionou ECID como o namespace a ser usado para a compilação em campo. Essa seleção resulta em uma lista de identidades classificadas e, por fim, na identidade selecionada.
+  No exemplo abaixo, você selecionou ECID como o namespace a ser usado. Essa seleção resulta em uma lista de identidades classificadas e, por fim, na identidade selecionada.
 
   <table style="table-layout:auto">
      <tr>
@@ -94,7 +94,7 @@ A compilação faz um mínimo de duas passagens de dados em um determinado conju
 
 - **Compilação em tempo real**: tenta compilar cada ocorrência (evento) à medida que elas chegam. As ocorrências de dispositivos que são &quot;novas&quot; para o conjunto de dados (nunca foram autenticadas) normalmente não são compiladas neste nível. As ocorrências de dispositivos já reconhecidos são compiladas imediatamente.
 
-- **Repetir compilação**: &quot;repete&quot; dados com base em identificadores exclusivos (IDs transitórias) que ele aprendeu. É nesse estágio que as ocorrências de dispositivos desconhecidos anteriormente (IDs persistentes) são compiladas (em IDs transitórias). A repetição é determinada por dois parâmetros: **frequência** e **janela de pesquisa**. A Adobe oferece as seguintes combinações desses parâmetros:
+- **Repetir compilação**: *repete* dados com base em identificadores exclusivos (IDs transitórias) que ele aprendeu. É nesse estágio que as ocorrências de dispositivos desconhecidos anteriormente (IDs persistentes) são compiladas (em IDs transitórias). A repetição é determinada por dois parâmetros: **frequência** e **janela de pesquisa**. A Adobe oferece as seguintes combinações desses parâmetros:
    - **Pesquisa diária em uma frequência diária**: os dados são repetidos todos os dias com uma janela de pesquisa de 24 horas. Essa opção tem a vantagem de que as repetições são muito mais frequentes, mas os visitantes não autenticados devem se autenticar no mesmo dia em que visitam o site.
    - **Pesquisa semanal em uma frequência semanal**: os dados são repetidos uma vez por semana com uma janela de pesquisa semanal (consulte [opções](#options)). Essa opção tem uma vantagem que permite que sessões não autenticadas tenham um tempo muito mais tolerante para autenticação. No entanto, os dados não compilados com menos de uma semana não são reprocessados até a próxima repetição semanal.
    - **Pesquisa quinzenal em uma frequência semanal**: os dados são repetidos uma vez por semana com uma janela de pesquisa quinzenal (consulte [opções](#options)). Essa opção tem uma vantagem que permite que sessões não autenticadas tenham um tempo muito mais tolerante para autenticação. No entanto, os dados não compilados com menos de duas semanas não são reprocessados até a próxima repetição semanal.
@@ -214,7 +214,7 @@ Os seguintes pré-requisitos se aplicam especificamente à compilação em campo
    - Uma **ID transitória**, um identificador disponível em apenas algumas linhas. Por exemplo, um nome de usuário ou endereço de email com hash quando um visitante é autenticado. Você pode usar praticamente qualquer identificador que desejar. A compilação considera esse campo como mantendo as informações reais da ID de pessoa. Para obter melhores resultados de compilação, uma ID transitória deve ser enviada nos eventos do conjunto de dados pelo menos uma vez para cada ID persistente. Se você planeja incluir esse conjunto de dados em uma conexão do Customer Journey Analytics, é preferível que os outros conjuntos de dados também tenham um identificador comum semelhante.
 
 <!--
-- Both columns (persistent ID and transient ID) must be defined as an identity field with an identity namespace in the schema for the dataset you want to stitch. When using identity stitching in Real-time Customer Data Platform, using the [`identityMap` field group](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/schema/composition#identity), you still need to add identity fields with an identity namespace. This identification of identity fields is required as Customer Journey Analytics stitching does not support the `identityMap` field group. When adding an identity field in the schema, while also using the `identityMap` field group, do not set the additional identity field as a primary identity. Setting an additional identity field as primary identity interferes with the `identityMap` field group used for Real-time Customer Data Platform.
+- Both columns (persistent ID and transient ID) must be defined as an identity field with an identity namespace in the schema for the dataset you want to stitch. When using identity stitching in Real-time Customer Data Platform, using the [`identityMap` field group](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity), you still need to add identity fields with an identity namespace. This identification of identity fields is required as Customer Journey Analytics stitching does not support the `identityMap` field group. When adding an identity field in the schema, while also using the `identityMap` field group, do not set the additional identity field as a primary identity. Setting an additional identity field as primary identity interferes with the `identityMap` field group used for Real-time Customer Data Platform.
 
 -->
 
