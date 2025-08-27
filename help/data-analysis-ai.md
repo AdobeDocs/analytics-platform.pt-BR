@@ -5,18 +5,14 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: 82b36895fe5186f0133c128d434470ea7f875677
+source-git-commit: c8d9eddd1ce11975dec16f715a5f5888cd4d6ffa
 workflow-type: tm+mt
-source-wordcount: '2371'
+source-wordcount: '2316'
 ht-degree: 98%
 
 ---
 
 # Visualizar dados com o Data Insights Agent
-
->[!AVAILABILITY]
->
->A funcionalidade descrita neste artigo está disponível para todos os clientes elegíveis como parte de uma versão em fases com data inicial em 28 de maio de 2025 e pode não estar disponível ainda em seu ambiente. Essa observação será removida quando a funcionalidade estiver em disponibilidade geral. Para obter informações sobre o processo de lançamento do Customer Journey Analytics, consulte [Lançamentos de recursos do Customer Journey Analytics](/help/release-notes/releases.md).
 
 >[!AVAILABILITY]
 >
@@ -246,7 +242,7 @@ Abaixo estão as práticas recomendadas para a configuração do Customer Journe
 >[!MORELIKETHIS]
 >
 >[Configurações de componente](/help/data-views/component-settings/overview.md)
->&#x200B;>[Dicionário de dados](/help/components/data-dictionary/data-dictionary-overview.md)
->&#x200B;>[Aprovar métricas calculadas](/help/components/calc-metrics/cm-workflow/cm-approving.md)
->&#x200B;>[Compartilhar segmentos](/help/components/segments/seg-share.md)
+>>[Dicionário de dados](/help/components/data-dictionary/data-dictionary-overview.md)
+>>[Aprovar métricas calculadas](/help/components/calc-metrics/cm-workflow/cm-approving.md)
+>>[Compartilhar segmentos](/help/components/segments/seg-share.md)
 >
