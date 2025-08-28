@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 7a4f15c4-7fd6-4a6a-9b83-7c1f3b95be16
 source-git-commit: 82b36895fe5186f0133c128d434470ea7f875677
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '648'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ O Assistente de IA do Customer Journey Analytics está disponível para todos os
 
 O Data Insights Agent, acessível pelo Assistente de IA no Customer Journey Analytics, é um agente de conversação de IA generativa que responde de forma rápida e eficiente a perguntas sobre seus dados. Ele cria visualizações relevantes no Analysis Workspace usando componentes da visualização de dados e seus dados reais.
 
-Para obter mais informações sobre como usar o Data Insights Agent no Assistente de IA, consulte [Visualizar dados com o Data Insights Agent](/help/data-analysis-ai.md).
+Para mais informações sobre como usar o Data Insights Agent dentro do Assistente de IA, consulte [Visualizar dados com o Data Insights Agent](/help/data-analysis-ai.md).
 
 ## Acesso ao recurso
 
