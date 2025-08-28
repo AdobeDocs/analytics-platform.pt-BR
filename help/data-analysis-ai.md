@@ -8,7 +8,7 @@ exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
 source-git-commit: c8d9eddd1ce11975dec16f715a5f5888cd4d6ffa
 workflow-type: tm+mt
 source-wordcount: '2316'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 98%
 >
 >O Data Insights Agent está disponível para clientes elegíveis por um período limitado. O acesso ao Data Insights Agent terminará em 30 de novembro de 2025. Para continuar usando o Data Insights Agent sem interrupção, entre em contato com o representante de conta da Adobe para saber mais sobre a licença do Data Insights Agent.
 
-O Data Insights Agent, acessível pelo [Assistente de IA](/help/ai-assistant.md) no Customer Journey Analytics, é um agente de conversação de IA generativo que responde de forma rápida e eficiente a perguntas sobre seus dados. Ele cria visualizações relevantes no Analysis Workspace usando componentes da visualização de dados e seus dados reais.
+O Data Insights Agent, acessível por meio do [Assistente de IA](/help/ai-assistant.md) no Customer Journey Analytics, é um agente de conversação com IA generativa que responde de forma rápida e eficiente a perguntas sobre os seus dados. Ele cria visualizações relevantes no Analysis Workspace usando componentes da visualização de dados e seus dados reais.
 
 Usar o Data Insights Agent para responder a perguntas centradas em dados no Analysis Workspace pode economizar inúmeras horas gastas com a criação manual de visualizações e a familiarização com componentes de visualização de dados.
 
@@ -242,7 +242,7 @@ Abaixo estão as práticas recomendadas para a configuração do Customer Journe
 >[!MORELIKETHIS]
 >
 >[Configurações de componente](/help/data-views/component-settings/overview.md)
->&#x200B;>[Dicionário de dados](/help/components/data-dictionary/data-dictionary-overview.md)
->&#x200B;>[Aprovar métricas calculadas](/help/components/calc-metrics/cm-workflow/cm-approving.md)
->&#x200B;>[Compartilhar segmentos](/help/components/segments/seg-share.md)
+>>[Dicionário de dados](/help/components/data-dictionary/data-dictionary-overview.md)
+>>[Aprovar métricas calculadas](/help/components/calc-metrics/cm-workflow/cm-approving.md)
+>>[Compartilhar segmentos](/help/components/segments/seg-share.md)
 >
