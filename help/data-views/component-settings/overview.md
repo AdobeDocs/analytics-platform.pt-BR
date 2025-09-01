@@ -5,9 +5,9 @@ exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 9e263d638d483194424a492b0494672ef0f62e71
+source-git-commit: aa635d52007a3032d8c3f90a779d1b70213dee9e
 workflow-type: tm+mt
-source-wordcount: '3739'
+source-wordcount: '3738'
 ht-degree: 55%
 
 ---
@@ -90,7 +90,7 @@ Os benefícios dos rótulos de contexto são:
 * **Consistência**: todas as pessoas na sua organização que trabalham em um ou mais projetos baseados em uma visualização de dados que usa rótulos de contexto têm o mesmo comportamento.
 * **Visibilidade de recursos e modelos**: certas visualizações e recursos só aparecem quando o rótulo de contexto adequado é atribuído. Por exemplo:
 
-   * Uma visualização de [Mapa](/help/analysis-workspace/visualizations/map.md) é exibida corretamente somente quando o Customer Journey Analytics sabe quais campos representam latitude e longitude.
+   * Uma visualização de [Mapa](/help/analysis-workspace/visualizations/map.md) é exibida corretamente somente quando o Customer Journey Analytics sabe quais componentes representam latitude e longitude.
    * Os [modelos](/help/analysis-workspace/templates/use-templates.md) específicos ficam visíveis somente quando os rótulos de contexto corretos são aplicados e os componentes associados ficam disponíveis.
 
 Os rótulos de contexto podem ser necessários nas seguintes situações:
@@ -105,7 +105,7 @@ Os rótulos de contexto podem ser necessários nas seguintes situações:
 
   **Observação**: a visualização de mapa está na fase de teste limitado da versão e pode ainda não estar disponível em seu ambiente.
 
-* Quando você usa [modelos fornecidos pelo Adobe](/help/analysis-workspace/templates/use-templates.md). Alguns modelos fornecidos pelo Adobe podem não funcionar porque determinados componentes não estão na visualização de dados.
+* Para revelar [modelos fornecidos pelo Adobe](/help/analysis-workspace/templates/use-templates.md). Alguns modelos fornecidos pelo Adobe podem não funcionar porque determinados componentes não estão na visualização de dados.
 
   Para cada componente ausente, um rótulo de contexto correspondente está disponível na visualização de dados. Você precisa adicionar o rótulo de contexto correspondente a um componente que já esteja em sua visualização de dados. Ou você precisa adicionar um novo componente à visualização de dados e adicionar o rótulo de contexto ao componente (se ainda não tiver sido fornecido automaticamente).
 
