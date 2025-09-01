@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: b9b73926-6502-4a48-ba73-c784f80950d3
-source-git-commit: a37542e4df80048c0750964bb979d77625813ebe
+source-git-commit: d9a65774fa5ab8c6b7fdd018f5d345dc7eb9e9de
 workflow-type: tm+mt
 source-wordcount: '1181'
 ht-degree: 0%
@@ -46,7 +46,7 @@ Além disso, é necessário adicionar duas métricas de compilação que são ba
 
 1. Use o campo que contém a ID de pessoa do conjunto de dados compilado para configurar uma métrica que define se uma ID de pessoa está definida. Adicione essa ID de pessoa mesmo se estiver usando a compilação baseada em gráfico, pois a ID de pessoa ajuda a estabelecer uma linha de base. Caso a ID de pessoa não esteja contida no conjunto de dados, sua linha de base é 0%.
 
-   No exemplo abaixo, `personalEmail.address` serve como identidade e é usado para criar a métrica **[!UICONTROL _Conjunto de emails]**.
+   No exemplo abaixo, `personalEmail.address` serve como a identidade e é usado para criar a métrica **[!UICONTROL _Conjunto de emails]**.
    ![Métrica do conjunto de emails](assets/emailset-metric.png)
 
 1. Use o campo `stitchedID.namespae.code` para criar uma dimensão de **[!UICONTROL Namespace compilado por email]**. Certifique-se de especificar [Configurações do componente de valores de Inclusão e Exclusão](/help/data-views/component-settings/include-exclude-values.md), de modo que você considere apenas valores do namespace para o qual está tentando elevar linhas de dados.
