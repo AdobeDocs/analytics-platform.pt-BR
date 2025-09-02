@@ -5,9 +5,9 @@ feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
 source-git-commit: 4599a058cef79a28bd6f9b788c2b202c8235298d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2193'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -81,10 +81,10 @@ Você pode gerenciar um painel das seguintes maneiras:
 
 ![Gerenciar painel](assets/manage-panel.png)
 
-* Para recolher um painel, selecione ![DivisaInferior](/help/assets/icons/ChevronDown.svg).
-* Para revelar um painel recolhido, selecione ![DivisaEsquerda](/help/assets/icons/ChevronLeft.svg).
+* Para recolher um painel, selecione ![ChevronDown](/help/assets/icons/ChevronDown.svg).
+* Para revelar um painel recolhido, selecione ![ChevronLeft](/help/assets/icons/ChevronLeft.svg).
 * Para excluir um painel, selecione ![CrossSize400](/help/assets/icons/CrossSize200.svg). Para desfazer, selecione **[!UICONTROL Editar]** > **[!UICONTROL Desfazer]** (**[!UICONTROL *cmd+z *]**|**[!UICONTROL * ctrl+z *]**).
-* Para mover um painel, arraste e solte o painel sempre que um ![Move](/help/assets/icons/Move.svg) estiver visível (normalmente quando você passa o mouse sobre o cabeçalho).
+* Para mover um painel, arraste e solte o painel sempre que uma opção ![Mover](/help/assets/icons/Move.svg) estiver visível (geralmente, quando você passa o mouse sobre o cabeçalho).
 
 
 ## Visualização de dados
@@ -167,7 +167,7 @@ Para obter mais informações, consulte [Segmentos rápidos](/help/components/se
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Segmentos suspensos](https://video.tv.adobe.com/v/30816?quality=12&learn=on&captions=por_br){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Segmentos suspensos](https://video.tv.adobe.com/v/23877?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
 
 {{videoaa}}
 
