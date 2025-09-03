@@ -720,6 +720,6 @@ Esse cálculo é feito para cada conjunto de dados na conexão.
 
 >[!MORELIKETHIS]
 >
->Blog: [como aproveitar os conjuntos de dados de evento, pesquisa e perfil no Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-to-leverage-event-lookup-and-profile-datasets-in-adobe/ba-p/681478)
+>Blog: [como aproveitar os conjuntos de dados de evento, pesquisa e perfil no Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-to-leverage-event-lookup-and-profile-datasets-in-adobe/ba-p/681478?profile.language=pt)
 
 ![Compartilhar](/help/assets/icons/Share.svg)
