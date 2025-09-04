@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: 50599b36d333cae3735c6d4fd1b0af6fcabe9177
-workflow-type: ht
-source-wordcount: '735'
-ht-degree: 100%
+source-git-commit: 9774e0e3af024823a03dbcd8d6766877f55e95d8
+workflow-type: tm+mt
+source-wordcount: '792'
+ht-degree: 93%
 
 ---
 
@@ -68,6 +68,20 @@ Não confunda a compilação com:
 - A mesclagem de dois ou mais conjuntos de dados. A compilação se aplica a apenas um conjunto de dados. A mesclagem de conjuntos de dados ocorre ao configurar uma conexão do Customer Journey Analytics e selecionar a mesma ID de pessoa nos conjuntos de dados selecionados na conexão.
 
 - A associação de dois conjuntos de dados. No Customer Journey Analytics, uma associação é frequentemente usada para pesquisas ou classificações no Analysis Workspace. Embora a compilação use a funcionalidade de associação, o próprio processo envolve mais do que associações.
+
+
+## Conjuntos de dados do Journey Optimizer
+
+A compilação oferece suporte aos seguintes conjuntos de dados do Journey Optimizer gerados automaticamente:
+
+- Eventos de etapa de Jornada do AJO
+- Conjunto de dados do evento de atividade de entrada do AJO
+- Conjunto de dados do AJO Surfaces
+- Conjunto de dados do evento de feedback de mensagens da AJO* Conjunto de dados do evento de experiência de rastreamento de push do AJO
+- Conjunto de dados de evento de experiência de rastreamento de email do AJO
+- Conjunto de dados do evento de feedback CCO do AJO
+- Conjunto de dados do evento de feedback de atividades do AJO Live
+- Conjunto de Dados de Evento de Decisão ExD do AJO
 
 >[!MORELIKETHIS]
 >

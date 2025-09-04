@@ -3,16 +3,16 @@ title: Notas de versão atuais do Customer Journey Analytics
 description: Exibir as notas de versão mais recentes do Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: a54029648c9295e7a81243cb44e8fd1a85db294a
+source-git-commit: f09937e6babca5549b9b78e9c90462673750a4b3
 workflow-type: tm+mt
-source-wordcount: '1057'
-ht-degree: 98%
+source-wordcount: '1077'
+ht-degree: 96%
 
 ---
 
 # Notas de versão atuais do Adobe Customer Journey Analytics (agosto de 2025)
 
-**Última atualização**: 14 de agosto de 2025
+**Última atualização**: sexta-feira, 4 de setembro de 2025
 
 
 Essas notas de versão abrangem o período de lançamento de 13 de agosto a 16 de setembro de 2025. As versões do Adobe Customer Journey Analytics operam em um [modelo de entrega contínua](releases.md) que permite uma abordagem escalável e em fases para a implantação de recursos. Sendo assim, essas notas de versão são atualizadas várias vezes por mês. Verifique-as regularmente.
@@ -21,6 +21,7 @@ Essas notas de versão abrangem o período de lançamento de 13 de agosto a 16 d
 
 | Recurso | Descrição | [Início da implantação](releases.md) | [Disponibilidade geral](releases.md) |
 | ----------- | ---------- | ------- | ---- |
+| **Atualizações na interface de Uso** | A [interface de uso](/help/connections/manage-connections.md#usage) agora adiciona informações sobre o volume de dados principal e o tamanho médio da linha. | | sexta-feira, 4 de setembro de 2025 |
 | **Visualização de mapa** | A visualização de mapa no Analysis Workspace permite criar um mapa visual de qualquer métrica (incluindo as métricas calculadas). É útil para identificar e comparar dados de métricas em diferentes regiões geográficas.<p>Anteriormente, a visualização de mapa estava disponível somente no Adobe Analytics.</p><p>A visualização de mapa no Customer Journey Analytics contém as seguintes melhorias em relação à visualização de mapa no Adobe Analytics:</p><ul><li>Use qualquer segmento da visualização de dados como uma fonte de dados.</li><li>Precisão de até um metro ao configurar a dimensão na visualização de dados.</li><li>Uma nova ferramenta de seleção permite criar um segmento, público-alvo, tendência ou detalhamento a partir de qualquer área selecionada na visualização.</li></ul><p>Para obter mais informações, consulte [Mapa](/help/analysis-workspace/visualizations/map.md).</p> | 13 de agosto de 2025 | 25 de agosto de 2025 |
 | **Modelos B2B** | Se você licenciar o Customer Journey Analytics B2B Edition, os seguintes modelos B2B adicionais estarão disponíveis na interface de modelos da Adobe: <ul><li>Visão geral do engajamento de contas B2B</li><li>Visão geral do engajamento de oportunidades B2B</li><li>Atividade de grupo de compra B2B</li></ul><p>Para obter mais informações, consulte [Modelos B2B](/help/analysis-workspace/templates/use-templates.md#b2b-templates) em [Usar modelos](/help/analysis-workspace/templates/use-templates.md).</p> |  | 15 de agosto de 2025 |
 | **Projetos baixados como PDFs são enviados para a sua estação de trabalho** | Ao baixar um projeto como PDF, ele é enviado para a pasta de downloads na sua estação de trabalho.  <p>Anteriormente, o download de um projeto como PDF iniciava o PDF em uma nova guia do navegador com um URL exclusivo. </p><p>Para obter mais informações, consulte [Baixar projetos e dados](/help/analysis-workspace/export/download-send.md).</p> |  | 25 de agosto de 2025 |
