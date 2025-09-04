@@ -86,8 +86,8 @@ A compilação oferece suporte aos seguintes conjuntos de dados do Journey Optim
 >[!MORELIKETHIS]
 >
 >[Compilação baseada em campos](fbs.md)
->>[Compilação baseada em gráficos](gbs.md)
->>[Usar compilação](use-stitching.md)
->>[Validar compilação](validate.md)
->>[Perguntas frequentes sobre compilação](faq.md)
+>&#x200B;>[Compilação baseada em gráficos](gbs.md)
+>&#x200B;>[Usar compilação](use-stitching.md)
+>&#x200B;>[Validar compilação](validate.md)
+>&#x200B;>[Perguntas frequentes sobre compilação](faq.md)
 
