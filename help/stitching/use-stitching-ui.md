@@ -7,9 +7,9 @@ role: Admin
 hide: true
 hidefromtoc: true
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
-source-git-commit: 4bca14492374939cd1ea6508c774720db61a6283
+source-git-commit: c4aea74807be15af56413522d9e6fbf5f18a37a0
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '368'
 ht-degree: 3%
 
 ---
@@ -44,9 +44,19 @@ Para habilitar a compilação, na seção de conjunto de dados do evento da caix
    * Habilitar **[!UICONTROL Usar namespace de identidade primário]** para usar o namespace de identidade primário.
    * Selecione um namespace no menu suspenso **[!UICONTROL Namespace]**.
 
-   Se você selecionar **[!UICONTROL Gráfico de identidade]** para a ID de pessoa, será necessário selecionar um namespace. Antes disso, uma caixa de diálogo **[!UICONTROL Alterar para gráfico de identidade]** é exibida para garantir que você concluiu a configuração do gráfico de identidade antes de usar o gráfico de identidade para compilação. Selecione **[!UICONTROL Continuar]** para continuar.
+
+   Se você selecionar **[!UICONTROL Gráfico de identidade]** para a ID de pessoa, será necessário selecionar um namespace.
+
+   >[!NOTE]
+   >
+   >Você deve ter o direito de usar o gráfico de identidade.
+   >
+
+   Antes disso, uma caixa de diálogo **[!UICONTROL Alterar para gráfico de identidade]** é exibida para garantir que você [concluiu a configuração do gráfico de identidade para o conjunto de dados](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service) antes de usar o gráfico de identidade para compilação. Selecione **[!UICONTROL Continuar]** para continuar.
 
    * Selecione um namespace no menu suspenso **[!UICONTROL Namespace]**.
 
 
-1. Selecione uma janela de retrospectiva no menu suspenso **[!UICONTROL Janela de retrospectiva]**. As opções são **[!UICONTROL 1 dia]**, **[!UICONTROL 7 dias]**, **[!UICONTROL 14 dias]** ou **[!UICONTROL 30 dias]**.
+1. Selecione uma janela de retrospectiva no menu suspenso **[!UICONTROL Janela de retrospectiva]**. As opções disponíveis dependem do pacote do Customer Journey Analytics ao qual você está habilitado.
+
+Depois de salvar uma conexão que contém conjuntos de dados habilitados para a compilação de identidade, o processo de compilação de cada conjunto de dados começa quando a assimilação de dados desse conjunto de dados começa.

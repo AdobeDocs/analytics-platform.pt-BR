@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: f4115164-7263-40ad-9706-3b98d0bb7905
 role: Admin
-source-git-commit: 1a003b38ef26eb811b19cd091c6e089f33ddb6f6
+source-git-commit: c4aea74807be15af56413522d9e6fbf5f18a37a0
 workflow-type: tm+mt
-source-wordcount: '1918'
-ht-degree: 28%
+source-wordcount: '2041'
+ht-degree: 26%
 
 ---
 
@@ -23,8 +23,8 @@ Aqui estão algumas perguntas frequentes sobre a compilação:
 Você pode usar uma visualização de Fluxo com a dimensão ID de conjunto de dados.
 
 1. Faça logon no [Customer Journey Analytics](https://analytics.adobe.com) e crie um projeto do Workspace em branco.
-2. Selecione a guia **[!UICONTROL ** Visualizações **]** à esquerda e arraste uma visualização de **[!UICONTROL **&#x200B; Fluxo &#x200B;**]** para a tela à direita.
-3. Selecione a guia **[!UICONTROL ** Componentes **]** à esquerda e arraste a dimensão **[!UICONTROL ** ID de conjunto de dados **]** para o local central rotulado **[!UICONTROL **&#x200B; Dimension ou Item &#x200B;**]**.
+2. Selecione a guia **[!UICONTROL ** Visualizações **]** à esquerda e arraste uma visualização de **[!UICONTROL ** Fluxo **]** para a tela à direita.
+3. Selecione a guia **[!UICONTROL ** Componentes **]** à esquerda e arraste a dimensão **[!UICONTROL ** ID de conjunto de dados **]** para o local central rotulado **[!UICONTROL ** Dimension ou Item **]**.
 4. Este relatório de fluxo é interativo. Para expandir os fluxos para páginas subsequentes ou anteriores, selecione qualquer um dos valores. Use o menu de clique com o botão direito do mouse para expandir ou recolher colunas. Dimensões diferentes também podem ser usadas no mesmo relatório de fluxo.
 
 Se você quiser renomear itens de dimensão da ID de conjunto de dados, poderá usar um conjunto de dados de pesquisa.
@@ -75,7 +75,7 @@ A compilação em tempo real está disponível aproximadamente uma semana depois
 
 +++ Qual é a diferença entre a análise entre dispositivos (um recurso no Analytics tradicional) e a análise entre canais?
 
-A [Análise entre dispositivos](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=pt-BR) é um recurso específico do Adobe Analytics tradicional que permite compreender como as pessoas operam entre dispositivos. Ela oferece dois workflows para vincular dados do dispositivo: compilação em campo e gráfico do dispositivo.
+A [Análise entre dispositivos](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=pt-BR) é um recurso específico do Adobe Analytics tradicional que permite compreender como as pessoas operam entre dispositivos. Ela oferece dois fluxos de trabalho para vincular dados do dispositivo: compilação em campo e gráfico do dispositivo.
 
 A análise entre canais é um caso de uso específico do Customer Journey Analytics que permite entender como as pessoas operam em dispositivos e canais. Ela compila a ID de pessoa de um conjunto de dados, permitindo que esse conjunto de dados seja combinado perfeitamente com outros conjuntos de dados. Esse recurso opera em design de forma semelhante à compilação em campo da análise entre dispositivos, mas a implementação é diferente devido à arquitetura de dados diferente entre o Analytics tradicional e o Customer Journey Analytics. Consulte [Costura](overview.md) e o caso de uso [análise entre canais](../use-cases/cross-channel/cross-channel.md) para obter mais informações.
 
@@ -242,4 +242,37 @@ Não se seguir as etapas descritas acima. Caso contrário, solicite suporte adic
 
 +++
 
+## Habilitar um conjunto de dados para o Serviço de identidade
 
++++ Como habilitar um conjunto de dados somente para o Serviço de identidade? 
+
+Você deve garantir que um conjunto de dados esteja ativado para que o Serviço de identidade use o conjunto de dados na compilação baseada em gráfico.
+
+Não é necessário ter uma licença para que o Real-Time Customer Data Platform use a compilação baseada em gráficos. A compilação baseada em gráficos é baseada em um gráfico de identidade disponível e não em perfis de clientes em tempo real.
+
+Para habilitar um conjunto de dados apenas para o Serviço de Identidade, use uma solicitação `POST` para o ponto de extremidade `/datasets` que usa apenas a marca `unifiedIdentity`. Por exemplo:
+
+```shell
+curl -X POST \
+  https://platform.adobe.io/data/foundation/catalog/dataSets \
+  -H 'Content-Type: application/json' \
+  -H 'Authorization: Bearer {ACCESS_TOKEN}' \
+  -H 'x-api-key: {API_KEY}' \
+  -H 'x-gw-ims-org-id: {ORG_ID}' \
+  -H 'x-sandbox-name: {SANDBOX_NAME}' \
+  -d '{
+    "schemaRef": {
+        "id": "https://ns.adobe.com/{TENANT_ID}/schemas/31670881463308a46f7d2cb09762715",
+        "contentType": "application/vnd.adobe.xed-full-notext+json; version=1"
+    },
+    "tags": {
+       "unifiedIdentity": ["enabled:true"]
+    }
+  }'
+```
+
+Qualquer uso da tag `unifiedProfile` na solicitação, enquanto você não estiver licenciado para o Perfil de dados do cliente em tempo real, retornará um erro.
+
+Consulte [Criar um conjunto de dados habilitado para Perfil e Identidade](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/enable-for-profile#create-a-dataset-enabled-for-profile-and-identity) para obter mais informações.
+
++++ 
