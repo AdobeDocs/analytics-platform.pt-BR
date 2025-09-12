@@ -3,19 +3,19 @@ title: Notas de versão atuais do Customer Journey Analytics
 description: Exibir as notas de versão mais recentes do Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: eb860cf67f8174838837816a781f3f5ef9015683
+source-git-commit: 79e120b4362fe226debaeaea94da7e6b52c7e24a
 workflow-type: tm+mt
-source-wordcount: '943'
-ht-degree: 56%
+source-wordcount: '944'
+ht-degree: 55%
 
 ---
 
-# Notas de versão atuais do Adobe Customer Journey Analytics (agosto de 2025)
+# Notas da versão atual do Adobe Customer Journey Analytics (setembro de 2025)
 
-**Última atualização**: sexta-feira, 4 de setembro de 2025
+**Última atualização**: sexta-feira, 11 de setembro de 2025
 
 
-Essas notas de versão abrangem o período de lançamento de 13 de agosto a 16 de setembro de 2025. As versões do Adobe Customer Journey Analytics operam em um [modelo de entrega contínua](releases.md) que permite uma abordagem escalável e em fases para a implantação de recursos. Sendo assim, essas notas de versão são atualizadas várias vezes por mês. Verifique-as regularmente.
+Essas notas de versão abrangem o período de lançamento de setembro até o início de outubro de 2025. As versões do Adobe Customer Journey Analytics operam em um [modelo de entrega contínua](releases.md) que permite uma abordagem escalável e em fases para a implantação de recursos. Sendo assim, essas notas de versão são atualizadas várias vezes por mês. Verifique-as regularmente.
 
 ## Recursos novos ou atualizados
 
