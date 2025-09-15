@@ -6,9 +6,9 @@ feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
 source-git-commit: 9774e0e3af024823a03dbcd8d6766877f55e95d8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '792'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -74,20 +74,20 @@ Não confunda a compilação com:
 
 A compilação oferece suporte aos seguintes conjuntos de dados do Journey Optimizer gerados automaticamente:
 
-- Eventos de etapa de Jornada do AJO
+- Eventos de etapa da jornada do AJO
 - Conjunto de dados do evento de atividade de entrada do AJO
-- Conjunto de dados do AJO Surfaces
-- Conjunto de dados do evento de feedback de mensagens da AJO* Conjunto de dados do evento de experiência de rastreamento de push do AJO
+- Conjunto de dados de superfícies do AJO
+- Conjunto de dados do evento de feedback de mensagens do AJO* Conjunto de dados do evento de experiência de rastreamento de push do AJO
 - Conjunto de dados de evento de experiência de rastreamento de email do AJO
-- Conjunto de dados do evento de feedback CCO do AJO
-- Conjunto de dados do evento de feedback de atividades do AJO Live
-- Conjunto de Dados de Evento de Decisão ExD do AJO
+- Conjunto de dados do evento de feedback BCC do AJO
+- Conjunto de dados do evento de feedback de atividades em tempo real do AJO
+- Conjunto de dados de evento de decisão ExD do AJO
 
 >[!MORELIKETHIS]
 >
 >[Compilação baseada em campos](fbs.md)
->&#x200B;>[Compilação baseada em gráficos](gbs.md)
->&#x200B;>[Usar compilação](use-stitching.md)
->&#x200B;>[Validar compilação](validate.md)
->&#x200B;>[Perguntas frequentes sobre compilação](faq.md)
+>>[Compilação baseada em gráficos](gbs.md)
+>>[Usar compilação](use-stitching.md)
+>>[Validar compilação](validate.md)
+>>[Perguntas frequentes sobre compilação](faq.md)
 
