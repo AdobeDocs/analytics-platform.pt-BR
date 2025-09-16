@@ -5,10 +5,10 @@ exl-id: cab218c0-009c-4669-9dfb-f8872a7f066b
 solution: Customer Journey Analytics
 feature: Basics
 role: User
-source-git-commit: 7b824c914187854e9779ebdc51c5f5d6e77f6b16
-workflow-type: ht
+source-git-commit: 6aa6605d12263110ad41523bf838d7a8702f89a2
+workflow-type: tm+mt
 source-wordcount: '786'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -39,4 +39,4 @@ O Customer Journey Analytics está disponível para clientes que
 
 ## Guias de início rápido
 
-A seção [Assimilação de dados](../data-ingestion/data-ingestion.md) fornece guias de início rápido sobre o fluxo de trabalho acima. Esses guias de início rápido ilustram como assimilar dados de uma variedade de fontes (incluindo o Adobe Analytics) na Adobe Experience Platform e, em seguida, usar esses dados no Customer Journey Analytics.
+A seção [Ingestão de dados](../data-ingestion/data-ingestion.md) fornece guias de início rápido sobre o fluxo de trabalho acima. Esses guias de início rápido ilustram como assimilar dados de uma variedade de fontes (incluindo o Adobe Analytics) na Adobe Experience Platform e, em seguida, usar esses dados no Customer Journey Analytics.
