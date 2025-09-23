@@ -5,10 +5,10 @@ title: Exportar Tabelas Completas Para A Nuvem
 feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
-source-git-commit: e3037b3981ce128f67165d6caca0b4dc5df04773
+source-git-commit: 0b6afd5639234f6305c99267d3b1624279c97368
 workflow-type: tm+mt
-source-wordcount: '2449'
-ht-degree: 73%
+source-wordcount: '2482'
+ht-degree: 72%
 
 ---
 
@@ -56,15 +56,6 @@ Use o processo a seguir para exportar tabelas completas para a nuvem:
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="export-manifest"
->title="Arquivo manifest"
->abstract="Quando habilitada, um arquivo de manifesto é incluído em toda entrega de exportação bem-sucedida. O arquivo de manifesto permite confirmar se todos os arquivos foram entregues com êxito. "
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
 >id="cja-export-details"
 >title="Detalhes"
 >abstract="Especifique um nome para a exportação. Também é possível adicionar uma descrição e tags. Essas informações ajudam a identificar a exportação na tabela de exportações e nas notificações por email."
@@ -78,7 +69,16 @@ Use o processo a seguir para exportar tabelas completas para a nuvem:
 >title="Estrutura de dados"
 >abstract="Esta é a tabela de forma livre que você está exportando. Você pode modificar a estrutura de dados arrastando componentes do painel esquerdo para a tabela. Você pode aplicar um filtro arrastando um componente para a área de filtro. A tabela é atualizada dinamicamente à medida que você adiciona componentes à tela."
 
-<!-- markdownlint-enable MD034 -->ß
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="export-manifest"
+>title="Arquivo manifest"
+>abstract="Quando selecionado, um arquivo de manifesto é incluído com qualquer delivery de exportação bem-sucedida. O arquivo de manifesto permite confirmar se todos os arquivos foram entregues com êxito. "
+
+<!-- markdownlint-enable MD034 -->
 
 <!-- markdownlint-disable MD034 -->
 
@@ -96,6 +96,15 @@ Use o processo a seguir para exportar tabelas completas para a nuvem:
 >id="cja-export-destination"
 >title="Destino"
 >abstract="Selecione a conta da nuvem e o local para onde deseja enviar os dados. Você pode escolher uma conta e um local existentes ou selecionar &quot;Adicionar novo&quot; para criá-los. Especifique usuários e grupos para notificar sobre exportações com falha ou que estão expirando."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-export-file-format"
+>title="Formato de arquivo"
+>abstract="Ao escolher o formato de arquivo Parquet, alguns caracteres especiais incluídos nos nomes de componentes são substituídos por um sublinhado (_). Consulte o link abaixo para obter uma lista completa dos caracteres que são substituídos."
 
 <!-- markdownlint-enable MD034 -->
 
