@@ -259,7 +259,7 @@ Abaixo estão as práticas recomendadas para a configuração do Customer Journe
 >[!MORELIKETHIS]
 >
 >[Configurações de componente](/help/data-views/component-settings/overview.md)
->>[Dicionário de dados](/help/components/data-dictionary/data-dictionary-overview.md)
->>[Aprovar métricas calculadas](/help/components/calc-metrics/cm-workflow/cm-approving.md)
->>[Compartilhar segmentos](/help/components/segments/seg-share.md)
+>&#x200B;>[Dicionário de dados](/help/components/data-dictionary/data-dictionary-overview.md)
+>&#x200B;>[Aprovar métricas calculadas](/help/components/calc-metrics/cm-workflow/cm-approving.md)
+>&#x200B;>[Compartilhar segmentos](/help/components/segments/seg-share.md)
 >
