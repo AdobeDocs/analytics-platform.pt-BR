@@ -5,10 +5,10 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: 8eb57617cc089dee0df73171feb1118f35d4c960
+source-git-commit: cd92bde10b9cb473c4df791e91296a2a43b2ad84
 workflow-type: tm+mt
-source-wordcount: '2381'
-ht-degree: 98%
+source-wordcount: '2463'
+ht-degree: 94%
 
 ---
 
@@ -163,6 +163,14 @@ Por fim, vamos analisar a receita por categoria de produto.
 
 ![Rosca](/help/assets/ai-asst-result3.png)
 
+## Acessar o Data Insights Agent em aplicativos Experience Cloud
+
+O Adobe Experience Platform Agent Orchestrator permite acessar a funcionalidade do Data Insights Agent em vários aplicativos da Adobe Experience Cloud, como o Adobe Journey Optimizer e o Real-Time CDP.
+
+O Agent Orchestrator interpreta sua solicitação, determina quais agentes especializados são necessários e os coordena para fornecer a resposta correta. Ela rastreia o contexto em interações de várias voltas, para que você possa criar consultas anteriores naturalmente.
+
+Para obter mais informações, consulte [Adobe Experience Platform Agent Orchestrator](http://www.adobe.com/go/agent-orchestrator-home).
+
 ## Exemplo de prompts de visualização de dados
 
 Veja a seguir alguns exemplos de prompts comuns e as visualizações usadas pelo Data Insights Agent para responder a esses prompts.
@@ -251,7 +259,7 @@ Abaixo estão as práticas recomendadas para a configuração do Customer Journe
 >[!MORELIKETHIS]
 >
 >[Configurações de componente](/help/data-views/component-settings/overview.md)
->&#x200B;>[Dicionário de dados](/help/components/data-dictionary/data-dictionary-overview.md)
->&#x200B;>[Aprovar métricas calculadas](/help/components/calc-metrics/cm-workflow/cm-approving.md)
->&#x200B;>[Compartilhar segmentos](/help/components/segments/seg-share.md)
+>>[Dicionário de dados](/help/components/data-dictionary/data-dictionary-overview.md)
+>>[Aprovar métricas calculadas](/help/components/calc-metrics/cm-workflow/cm-approving.md)
+>>[Compartilhar segmentos](/help/components/segments/seg-share.md)
 >
