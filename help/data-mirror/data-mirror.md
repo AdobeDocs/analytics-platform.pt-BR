@@ -7,9 +7,10 @@ role: Admin
 hide: true
 hidefromtoc: true
 badgePremium: label="Beta"
-source-git-commit: 9bd124ad651274b48052edc56bfb72358aa2d79a
+exl-id: f40e1263-1f4a-416c-a045-15fbe68ce509
+source-git-commit: a6cdade9790ef4bc222eb5979b7370f7403b5ad5
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '399'
 ht-degree: 1%
 
 ---
@@ -44,7 +45,7 @@ Consulte também a documentação do Experience Platform no Data Mirror.
 
 >[!NOTE]
 >
->O recurso Experience Platform Data Mirror para Customer Journey Analytics está disponível em um **beta público** até 25 de março de 2026. Durante o período beta, as atualizações de captura de dados de alteração (CDC) são limitadas a 0,5% das linhas de dados mensais de sua organização. As linhas de dados mensais são baseadas no direito anual para linhas de dados divididas por 12. A Adobe se reserva o direito de encerrar o acesso beta ao recurso Experience Platform Data Mirror for Customer Journey Analytics caso sua organização exceda esse limite.
+>O recurso Experience Platform Data Mirror para Customer Journey Analytics está disponível em um **beta público** até 25 de março de 2026. Durante o período beta, as atualizações de captura de dados de alteração (CDC) são limitadas a um direito de 10 milhões de linhas de alteração diárias para o Customer Journey Analytics. A Adobe se reserva o direito de encerrar o acesso beta à funcionalidade do Experience Platform Data Mirror caso sua organização exceda esse limite. Para obter informações adicionais sobre o recurso, incluindo implicações de faturamento, consulte esta seção da documentação do Experience League.
 >
 
 O recurso Experience Platform Data Mirror for Customer Journey Analytics está disponível para soluções nativas de data warehouse selecionadas ([!DNL Azure Databricks], [!DNL Google BigQuery] e [!DNL Snowflake]). A versão Customer Journey Analytics do recurso Data Mirror requer uma instalação e configuração adequadas de vários componentes:
@@ -56,5 +57,5 @@ O recurso Experience Platform Data Mirror for Customer Journey Analytics está d
 
 >[!MORELIKETHIS]
 >
->[Guia de início rápido do Data Mirror: espelhar e usar dados baseados em modelo](data-mirror.md)
+>[Guia de início rápido do Data Mirror: espelhar e usar dados baseados em modelo](model-based.md)
 >

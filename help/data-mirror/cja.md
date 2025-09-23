@@ -7,15 +7,17 @@ role: Admin
 hide: true
 hidefromtoc: true
 badgePremium: label="Beta"
-source-git-commit: 9bd124ad651274b48052edc56bfb72358aa2d79a
+exl-id: f7687bba-efbe-4a2c-8ad1-cf216554a1e9
+source-git-commit: b585187f112c2081a8e51bd84d9f95e75ceebdc3
 workflow-type: tm+mt
 source-wordcount: '231'
 ht-degree: 2%
 
 ---
 
-
 # Configurar Customer Journey Analytics
+
+{{release-limited-testing}}
 
 Para usar o recurso Experience Platform Data Mirror para Customer Journey Analytics, é necessário criar ou atualizar conexões, visualizações de dados e projetos do espaço de trabalho para usar dados baseados em modelo.
 
@@ -37,5 +39,5 @@ Configure projetos do Workspace que usem métricas e dimensões de seus dados ba
 
 >[!MORELIKETHIS]
 >
->[Guia de início rápido do Data Mirror: espelhar e usar dados baseados em modelo](data-mirror.md)
+>[Guia de início rápido do Data Mirror: espelhar e usar dados baseados em modelo](model-based.md)
 >

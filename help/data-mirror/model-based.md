@@ -7,15 +7,17 @@ role: Admin
 hide: true
 hidefromtoc: true
 badgePremium: label="Beta"
-source-git-commit: 9bd124ad651274b48052edc56bfb72358aa2d79a
+exl-id: 17f72954-085c-46a8-bc28-6af0a4eb159a
+source-git-commit: a6cdade9790ef4bc222eb5979b7370f7403b5ad5
 workflow-type: tm+mt
-source-wordcount: '2272'
+source-wordcount: '2271'
 ht-degree: 14%
 
 ---
 
-
 # Espelhar e usar dados baseados em modelo
+
+{{release-limited-testing}}
 
 Este guia de início rápido explica como usar o recurso [Experience Platform Data Mirror for Customer Journey Analytics](data-mirror.md) para espelhar dados baseados em modelo a partir de uma solução nativa de data warehouse no Adobe Experience Platform. E então usar aqueles dados no Customer Journey Analytics.
 
@@ -180,7 +182,7 @@ Defina um esquema que modele esses dados. Para configurar o esquema:
 
      ![Descritor de pessoa](assets/platform-schema-personid.png)
 
-   * O campo **[!UICONTROL carimbo de data/hora]** está configurado, junto com o campo **[!UICONTROL personid]** como a **[!UICONTROL Chave primária]**&#x200B;y. O campo **[!UICONTROL carimbo de data/hora]** também está configurado como **[!UICONTROL descritor de carimbo de data/hora]**. Você só precisa definir um campo como **[!UICONTROL Descritor de carimbo de data/hora]** para dados baseados em modelo de série temporal.
+   * O campo **[!UICONTROL carimbo de data/hora]** está configurado, junto com o campo **[!UICONTROL personid]** como a **[!UICONTROL Chave primária]**. O campo **[!UICONTROL carimbo de data/hora]** também está configurado como **[!UICONTROL descritor de carimbo de data/hora]**. Você só precisa definir um campo como **[!UICONTROL Descritor de carimbo de data/hora]** para dados baseados em modelo de série temporal.
 
      ![Descritor de carimbo de data/hora](assets/platform-schema-timestamp.png)
 
@@ -218,7 +220,7 @@ Na etapa **[!UICONTROL Autenticação]**, selecione:
 
    1. Selecione **[!UICONTROL Próximo]**.
 
-  Consulte a documentação do Experience Platform para obter detalhes sobre como conectar e autenticar quando você usa o [Azure Databricks](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/databases/databricks) ou o conector [Snowflake](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/databases/snowflake).
+  Consulte a documentação do Experience Platform para obter detalhes sobre como conectar e autenticar quando você usa o [Azure Databricks](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/databricks) ou o conector [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake).
 
 
 ### Selecionar dados
