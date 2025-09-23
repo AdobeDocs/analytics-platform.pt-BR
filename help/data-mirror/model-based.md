@@ -180,7 +180,7 @@ Defina um esquema que modele esses dados. Para configurar o esquema:
 
      ![Descritor de pessoa](assets/platform-schema-personid.png)
 
-   * O campo **[!UICONTROL carimbo de data/hora]** está configurado, junto com o campo **[!UICONTROL personid]** como a **[!UICONTROL Chave primária]**y. O campo **[!UICONTROL carimbo de data/hora]** também está configurado como **[!UICONTROL descritor de carimbo de data/hora]**. Você só precisa definir um campo como **[!UICONTROL Descritor de carimbo de data/hora]** para dados baseados em modelo de série temporal.
+   * O campo **[!UICONTROL carimbo de data/hora]** está configurado, junto com o campo **[!UICONTROL personid]** como a **[!UICONTROL Chave primária]**&#x200B;y. O campo **[!UICONTROL carimbo de data/hora]** também está configurado como **[!UICONTROL descritor de carimbo de data/hora]**. Você só precisa definir um campo como **[!UICONTROL Descritor de carimbo de data/hora]** para dados baseados em modelo de série temporal.
 
      ![Descritor de carimbo de data/hora](assets/platform-schema-timestamp.png)
 
