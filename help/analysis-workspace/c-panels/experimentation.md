@@ -4,32 +4,24 @@ title: Painel de experimentação
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
-source-git-commit: 7e32ae7aa757a8ca47732416f0f883033611ea94
-workflow-type: ht
-source-wordcount: '2179'
-ht-degree: 100%
+source-git-commit: b013518d8f1782219dd2cf9e5b5a89b877e3b92d
+workflow-type: tm+mt
+source-wordcount: '2175'
+ht-degree: 98%
 
 ---
 
 # Painel de experimentação {#experimentation-panel}
-
-<!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="workspace_experimentation_button"
 >title="Experimentação"
 >abstract="Crie um painel para comparar diferentes variações de experiências de usuário, marketing ou mensagens. E para determinar qual variação é a melhor para gerar um resultado específico."
 
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="workspace_experimentation_panel"
 >title="Experimentação"
 >abstract="Compare diferentes variações de experiências de usuário, marketing ou mensagens para determinar qual é melhor para gerar um resultado específico. Especifique o experimento, a variante de controle para comparação, a métrica de sucesso e a métrica de normalização. Opcionalmente, defina um limite de confiança superior e inferior."
-
-<!-- markdownlint-enable MD034 -->
 
 
 >[!BEGINSHADEBOX]
@@ -102,10 +94,10 @@ Usar o painel de experimentação:
    | Configuração | Definição |
    | --- | --- |
    | **[!UICONTROL Intervalo de datas]** | O intervalo de datas do painel Experimentação é definido automaticamente com base no primeiro evento recebido no Customer Journey Analytics para o experimento selecionado. Você pode restringir ou expandir o intervalo de datas para um período mais específico, se necessário. |
-   | **[!UICONTROL Experimento]** | Um conjunto de variações de uma experiência que foram expostas aos usuários finais para determinar qual é melhor manter perpetuamente. Um experimento é composto por duas ou mais variantes, sendo uma delas considerada a variante de controle. Esta configuração é pré-preenchida com as dimensões que foram rotuladas com o rótulo **[!UICONTROL Experimento]** nas exibições de dados e os últimos 3 meses de dados de experimentação. |
+   | **[!UICONTROL Experimento]** | Um conjunto de variações de uma experiência que foram expostas aos usuários finais para determinar qual é melhor manter perpetuamente. Um experimento é composto por duas ou mais variantes, sendo uma delas considerada a variante de controle. Esta configuração é pré-preenchida com as dimensões que foram rotuladas com o rótulo **[!UICONTROL Experimento]** nas exibições de dados e os últimos 6 meses de dados de experimentação. |
    | **[!UICONTROL Variante de controle]** | Uma de duas ou mais alterações na experiência de um usuário final que estão sendo comparadas com o objetivo de identificar a melhor alternativa. Uma variante deve ser selecionada como controle, e somente uma variante pode ser considerada como a variante de controle. Esta configuração é pré-preenchida com as dimensões que foram rotuladas com o rótulo **[!UICONTROL Variante]** nas exibições de dados. Essa configuração extrai os dados de variantes associados a esse experimento. |
    | **[!UICONTROL Métricas de sucesso]** ➊ | A métrica, ou as métricas, com as quais um usuário está comparando variantes. A variante com o resultado mais desejável para a métrica de conversão (seja o mais alto ou o mais baixo) é declarada a *variante de melhor desempenho* de um experimento. Você pode adicionar até 5 métricas. |
-   | **[!UICONTROL Métrica de normalização]** ➋ | A base (**[!UICONTROL Conta global]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Conta]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Oportunidade]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Grupo de compra]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Pessoas]**, **[!UICONTROL Sessões]** ou **[!UICONTROL Eventos]**) sobre a qual um teste é executado. Por exemplo, um teste pode comparar as taxas de conversão de diversas variações, e a **[!UICONTROL Taxa de conversão]** é calculada como visualizações de página. |
+   | **[!UICONTROL Normalizando métrica]** ➋ | A base (**[!UICONTROL Conta global]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, **[!UICONTROL Conta]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, **[!UICONTROL Oportunidade]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, **[!UICONTROL Grupo de compra]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}, **[!UICONTROL Pessoas]**, **[!UICONTROL Sessões]** ou **[!UICONTROL Eventos]**) sobre a qual um teste é executado. Por exemplo, um teste pode comparar as taxas de conversão de diversas variações, e a **[!UICONTROL Taxa de conversão]** é calculada como visualizações de página. |
    | **[!UICONTROL Incluir limites superiores/inferiores de confiança]** | Habilite esta opção para mostrar limites superiores e inferiores para níveis de confiança. |
 
 
@@ -132,7 +124,7 @@ Para cada métrica de sucesso selecionada, uma visualização de [tabela de form
 
 2. **Variante com melhor desempenho**: quando um experimento é declarado conclusivo, a variante com a maior taxa de conversão é rotulada como a variante com melhor desempenho. Observe que esta variante deve ser a variante de controle ou de linha de base, ou uma das variantes que cruza o limite de confiança válido de 95% *a qualquer momento* (com correções de Benjamini-Hochberg aplicadas).
 
-3. **Taxa de conversão**: a taxa de conversão mostrada é uma proporção do valor da métrica de sucesso ➊ para o valor da métrica de normalização ➋. Observe que esse valor pode ser maior que 1, se a métrica não for binária (1 ou 0 para cada unidade no experimento)
+3. **Taxa de conversão**: a taxa de conversão mostrada é uma relação do valor da métrica de sucesso ➊ com o valor da métrica de normalização ➋. Observe que esse valor pode ser maior que 1, se a métrica não for binária (1 ou 0 para cada unidade no experimento)
 
 4. **Aumento**: o resumo do relatório do experimento mostra o aumento sobre a linha de base, que é uma medida da porcentagem de melhoria na taxa de conversão de uma determinada variante em relação à linha de base. Para definir com precisão, é a diferença no desempenho entre uma determinada variante e a linha de base, dividida pelo desempenho da linha de base expresso como uma porcentagem.
 
@@ -188,8 +180,8 @@ Métricas calculadas que não são compatíveis com o painel Experimentação t�
 
 ## Usar métricas calculadas no painel Experimentação
 
-Consulte esta publicação do blog para obter informações sobre [como usar métricas calculadas no painel Experimentação](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-derived-metrics-in-cja-s-experimentation-panel/ba-p/593119?profile.language=pt).
+Consulte esta publicação do blog para obter informações sobre [como usar métricas calculadas no painel Experimentação](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-derived-metrics-in-cja-s-experimentation-panel/ba-p/593119).
 
 >[!MORELIKETHIS]
->[Domínio da experimentação do Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/mastering-adobe-customer-journey-analytics-experimentation-your/ba-p/732338?profile.language=pt)
+>[Domínio da experimentação do Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/mastering-adobe-customer-journey-analytics-experimentation-your/ba-p/732338)
 >
