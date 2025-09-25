@@ -8,9 +8,9 @@ hide: true
 hidefromtoc: true
 badgePremium: label="Beta"
 exl-id: f40e1263-1f4a-416c-a045-15fbe68ce509
-source-git-commit: 3cd771669370a58230fc4806e2b7fb2fc16444b9
+source-git-commit: 578e19d8a8205bdfa034900c45d7d4a2d8f6a797
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '401'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ O Data Mirror fornece os seguintes recursos essenciais para a sincronização do
 
 Use o Data Mirror para assimilar alterações diretamente de seus sistemas de origem, impor a integridade do esquema e disponibilizar os dados para análises, orquestração de jornadas e workflows de conformidade. O Data Mirror elimina processos complexos de ETL upstream e acelera a implementação, permitindo o espelhamento direto dos modelos de banco de dados existentes. Essa eliminação pode melhorar a governança de dados por meio de controle preciso sobre exclusões e operações de higiene de dados.
 
-Consulte também a documentação do Experience Platform no Data Mirror.
+Consulte também a [documentação do Experience Platform sobre o Data Mirror](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview){target="_blank"}.
 
 ## Data Mirror para Customer Journey Analytics
 
@@ -53,4 +53,5 @@ O Experience Platform Data Mirror for Customer Journey Analytics está disponív
 >[!MORELIKETHIS]
 >
 >[Guia de início rápido do Data Mirror: espelhar e usar dados baseados em modelo](model-based.md)
+>>[Data Mirror (documentação do Experience Platform)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview)
 >
