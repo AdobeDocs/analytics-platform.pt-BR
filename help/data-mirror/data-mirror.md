@@ -4,13 +4,11 @@ description: Entenda como sincronizar dados entre soluções nativas de data war
 solution: Customer Journey Analytics
 feature: Basics
 role: Admin
-hide: true
-hidefromtoc: true
 badgePremium: label="Beta"
 exl-id: f40e1263-1f4a-416c-a045-15fbe68ce509
-source-git-commit: 578e19d8a8205bdfa034900c45d7d4a2d8f6a797
+source-git-commit: edf7bdac87d9bed48244ad80521bbbf83c48f7b6
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '407'
 ht-degree: 1%
 
 ---
@@ -35,7 +33,7 @@ O Data Mirror fornece os seguintes recursos essenciais para a sincronização do
 
 Use o Data Mirror para assimilar alterações diretamente de seus sistemas de origem, impor a integridade do esquema e disponibilizar os dados para análises, orquestração de jornadas e workflows de conformidade. O Data Mirror elimina processos complexos de ETL upstream e acelera a implementação, permitindo o espelhamento direto dos modelos de banco de dados existentes. Essa eliminação pode melhorar a governança de dados por meio de controle preciso sobre exclusões e operações de higiene de dados.
 
-Consulte também a [documentação do Experience Platform sobre o Data Mirror](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-mirror/overview){target="_blank"}.
+Consulte também a [documentação do Experience Platform sobre o Data Mirror](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview){target="_blank"}.
 
 ## Data Mirror para Customer Journey Analytics
 
@@ -53,5 +51,5 @@ O Experience Platform Data Mirror for Customer Journey Analytics está disponív
 >[!MORELIKETHIS]
 >
 >[Guia de início rápido do Data Mirror: espelhar e usar dados baseados em modelo](model-based.md)
->&#x200B;>[Data Mirror (documentação do Experience Platform)](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-mirror/overview)
->
+>>[Data Mirror (documentação do Experience Platform)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview)
+>>[Esquemas baseados em modelo (documentação do Experience Platform)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/model-based)

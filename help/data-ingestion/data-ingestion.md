@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: ead96b72-40f1-4ce9-8d91-c8ceea6c4458
 role: Admin
-source-git-commit: 8071e8d5e1ab7e9cfc5037d710361a4d10285704
-workflow-type: ht
-source-wordcount: '957'
-ht-degree: 100%
+source-git-commit: ec56bc657961b2e4e8318ab14cd676288398462f
+workflow-type: tm+mt
+source-wordcount: '1089'
+ht-degree: 85%
 
 ---
 
@@ -20,23 +20,30 @@ Você tem várias opções para assimilar dados no Customer Journey Analytics. A
 >
 >Em todos os cenários, os dados que você deseja _usar_ no Customer Journey Analytics é _assimilado_ na Adobe Experience Platform.
 
-Consulte a arquitetura de alto nível do Customer Journey Analytics mostrada anteriormente na [Visão geral](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=pt-BR):
 
-![Arquitetura do Customer Journey Analytics descrita nesta seção](./assets/cja-architecture.png)
+A arquitetura de alto nível do Customer Journey Analytics pode ser vista aqui:
 
-O conjunto de dados na arquitetura acima pode se originar de várias fontes:
+![Arquitetura do Customer Journey Analytics](/help/getting-started/assets/cja-overview.svg)
 
-- dados em lote,
+Essa arquitetura ilustra como o Customer Jornada Analytics permite:
 
-- dados de transmissão,
+* Combinar vários conjuntos de dados ![Data](/help/assets/icons/Data.svg) em uma [conexão](/help/connections/overview.md).
+* Defina e configure as dimensões ![Dimensões](/help/assets/icons/Dimensions.svg) e as métricas ![Evento](/help/assets/icons/Event.svg) em uma [visualização de dados](/help/data-views/data-views.md), com base nos campos disponíveis nos conjuntos de dados definidos na sua conexão.
+* Crie relatórios ![ViewTable](/help/assets/icons/ViewTable.svg) e visualizações (como linha ![Line](/help/assets/icons/GraphTrend.svg) e área ![Area](/help/assets/icons/GraphAreaStacked.svg)) em [projetos](/help/analysis-workspace/home.md) com base nas dimensões e métricas de suas visualizações de dados.
 
-- dados de uma implantação atual do Adobe Analytics,
+Os conjuntos de dados na arquitetura podem se originar de várias fontes:
 
-- dados do rastreamento do site/aplicativo móvel usando o SDK da web/móvel da Adobe Experience Platform,
+* dados em lote,
 
-- dados do rastreamento de um aplicativo de desktop, jogo de console, decodificador ou dispositivo IoT usando a API de servidor da Egde Network da Adobe Experience Platform ou
+* dados de transmissão,
 
-- dados provenientes de um provedor de dados de terceiros para o qual a Adobe fornece um conector de origem.
+* dados de uma implantação atual do Adobe Analytics,
+
+* dados do rastreamento do site/aplicativo móvel usando o SDK da web/móvel da Adobe Experience Platform,
+
+* dados do rastreamento de um aplicativo de desktop, jogo de console, decodificador ou dispositivo IoT usando a API de servidor da Egde Network da Adobe Experience Platform ou
+
+* dados provenientes de um provedor de dados de terceiros para o qual a Adobe fornece um conector de origem.
 
 E você pode ter muitos desses conjuntos de dados.
 
@@ -48,11 +55,11 @@ Agora é possível assimilar dados de evento no Customer Journey Analytics em 90
 
 Observe que esse recurso difere com base no pacote SKU que sua empresa adquiriu:
 
-- Assimilação de prioridade básica: dados gerados há 24 horas no processamento SLT de 90 minutos (disponível para o **CJA Foundation** e o **CJA Select**)
+* Assimilação de prioridade básica: dados gerados há 24 horas no processamento SLT de 90 minutos (disponível para o **CJA Foundation** e o **CJA Select**)
 
-- Assimilação de prioridade intermediária: dados gerados há 72 horas no processamento SLT de 90 minutos (disponível para o **CJA Prime**)
+* Assimilação de prioridade intermediária: dados gerados há 72 horas no processamento SLT de 90 minutos (disponível para o **CJA Prime**)
 
-- Assimilação de prioridade avançada: dados gerados há 1 semana no processamento SLT de 90 minutos (disponível para o **CJA Ultimate**)
+* Assimilação de prioridade avançada: dados gerados há 1 semana no processamento SLT de 90 minutos (disponível para o **CJA Ultimate**)
 
 ## Assimilar e usar dados do Adobe Analytics tradicional
 
@@ -99,7 +106,13 @@ Você tem dados disponíveis de uma fonte compatível com um conector de origem.
 
 Consulte [Assimilar e usar dados usando conectores de origem](./sources.md) para obter mais informações.
 
+## Assimilar e usar dados ad hoc
+
+Você tem dados ad hoc disponíveis que exigem apenas um único conjunto de dados na Experience Platform e não exigem a configuração de um esquema do Experience Data Model (XDM). Esse cenário é chamado de esquema ad hoc. Esquemas ad hoc são usados em vários workflows de assimilação de dados para o Experience Platform, incluindo a assimilação de arquivos CSV e a criação de determinados tipos de conexões de origem.
+
+Consulte [Assimilar e usar dados ad hoc](./adhoc.md)
+
 >[!MORELIKETHIS]
 >
->Blog: [Análise detalhada do processamento e da assimilação de dados no Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-closer-look-at-data-processing-amp-ingestion-in-adobe-customer/ba-p/665091?profile.language=pt)
+>Blog: [Análise detalhada do processamento e da assimilação de dados no Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-closer-look-at-data-processing-amp-ingestion-in-adobe-customer/ba-p/665091)
 
