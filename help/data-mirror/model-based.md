@@ -8,9 +8,9 @@ hide: true
 hidefromtoc: true
 badgePremium: label="Beta"
 exl-id: 17f72954-085c-46a8-bc28-6af0a4eb159a
-source-git-commit: a6cdade9790ef4bc222eb5979b7370f7403b5ad5
+source-git-commit: e5975a7bb60f4a2386997024c4615f95be648363
 workflow-type: tm+mt
-source-wordcount: '2271'
+source-wordcount: '2268'
 ht-degree: 14%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 14%
 
 {{release-limited-testing}}
 
-Este guia de início rápido explica como usar o recurso [Experience Platform Data Mirror for Customer Journey Analytics](data-mirror.md) para espelhar dados baseados em modelo a partir de uma solução nativa de data warehouse no Adobe Experience Platform. E então usar aqueles dados no Customer Journey Analytics.
+Este guia de início rápido explica como usar o [Experience Platform Data Mirror for Customer Journey Analytics](data-mirror.md) para espelhar dados baseados em modelo a partir de uma solução nativa de data warehouse no Adobe Experience Platform. E então usar aqueles dados no Customer Journey Analytics.
 
 Para realizar esse caso de uso, é necessário:
 
@@ -117,12 +117,12 @@ Para o Experience Platform Data Mirror para Customer Journey Analytics, as tabel
    SET OPTIONS (enable_change_history = TRUE);
    ```
 
-Os dados na tabela na solução nativa de data warehouse estão prontos para o recurso Experience Platform Data Mirror for Customer Journey Analytics.
+Os dados na tabela na solução nativa de data warehouse estão prontos para o Experience Platform Data Mirror para Customer Journey Analytics.
 
 
 ## Configurar um esquema
 
-Para espelhar dados no Experience Platform, primeiro defina o esquema para os dados. Todos os dados que você deseja espelhar no Experience Platform e que usam o recurso Experience Platform Data Mirror para Customer Journey Analytics devem estar em conformidade com um esquema baseado em modelo.
+Para espelhar dados no Experience Platform, primeiro defina o esquema para os dados. Todos os dados que você deseja espelhar no Experience Platform e que usam o Experience Platform Data Mirror para Customer Journey Analytics devem estar em conformidade com um esquema baseado em modelo.
 
 Defina um esquema que modele esses dados. Para configurar o esquema:
 
@@ -141,7 +141,7 @@ Defina um esquema que modele esses dados. Para configurar o esquema:
    1. Insira uma **[!UICONTROL Descrição]**. Por exemplo: `Sample event feed schema for a model-based schema`.
    1. Selecione **[!UICONTROL Série temporal]** como o **[!UICONTROL Comportamento do esquema]**. Você seleciona **[!UICONTROL Série temporal]** para dados baseados em série temporal e **[!UICONTROL Registro]** para dados baseados em registro. O comportamento define a estrutura do schema e as propriedades incluídas.
 
-      O recurso Experience Platform Data Mirror for Customer Journey Analytics é usado principalmente para dados de séries de tempo (por exemplo, dados de eventos).
+      O Experience Platform Data Mirror for Customer Journey Analytics é usado principalmente para dados de séries de tempo (por exemplo, dados de evento).
 
       ![Configuração de esquema](assets/model-based-create-schema.png)
 
@@ -220,7 +220,7 @@ Na etapa **[!UICONTROL Autenticação]**, selecione:
 
    1. Selecione **[!UICONTROL Próximo]**.
 
-  Consulte a documentação do Experience Platform para obter detalhes sobre como conectar e autenticar quando você usa o [Azure Databricks](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/databases/databricks) ou o conector [Snowflake](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/databases/snowflake).
+  Consulte a documentação do Experience Platform para obter detalhes sobre como conectar e autenticar quando você usa o [Azure Databricks](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/databricks) ou o conector [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake).
 
 
 ### Selecionar dados
@@ -351,6 +351,8 @@ Para criar a visualização de dados:
       1. Selecione **[!UICONTROL Conjuntos de dados de evento]**.
       1. Selecione **[!UICONTROL Campos adhoc e baseados em modelo]**.
       1. Arraste e solte campos dos esquemas baseados em modelo para **[!UICONTROL METRICS]** ou **[!UICONTROL DIMENSIONS]**.
+
+         ![Adicionar campo baseado em modelo como componentes](assets/cja-add-dataset-folder-dv.png)
 
    1. Defina campos derivados para campos que não têm o tipo adequado, não estão no formato adequado ou você deseja modificar por outros motivos. Por exemplo, para **[!UICONTROL Valor de receita]**.
 
