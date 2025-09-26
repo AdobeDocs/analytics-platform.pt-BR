@@ -6,9 +6,9 @@ feature: Basics
 role: Admin
 badgePremium: label="Beta"
 exl-id: f40e1263-1f4a-416c-a045-15fbe68ce509
-source-git-commit: edf7bdac87d9bed48244ad80521bbbf83c48f7b6
+source-git-commit: 4b11c98d24b131eb32040943e869132c8182747f
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '427'
 ht-degree: 1%
 
 ---
@@ -33,13 +33,13 @@ O Data Mirror fornece os seguintes recursos essenciais para a sincronização do
 
 Use o Data Mirror para assimilar alterações diretamente de seus sistemas de origem, impor a integridade do esquema e disponibilizar os dados para análises, orquestração de jornadas e workflows de conformidade. O Data Mirror elimina processos complexos de ETL upstream e acelera a implementação, permitindo o espelhamento direto dos modelos de banco de dados existentes. Essa eliminação pode melhorar a governança de dados por meio de controle preciso sobre exclusões e operações de higiene de dados.
 
-Consulte também a [documentação do Experience Platform sobre o Data Mirror](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-mirror/overview){target="_blank"}.
+Consulte também a [documentação do Experience Platform sobre o Data Mirror](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview){target="_blank"}.
 
 ## Data Mirror para Customer Journey Analytics
 
 >[!NOTE]
 >
->O recurso Experience Platform Data Mirror para Customer Journey Analytics está disponível em um **beta público** até 25 de março de 2026. Durante o período beta, as atualizações de captura de dados de alteração (CDC) são limitadas a um direito de 10 milhões de linhas de alteração diárias para o Customer Journey Analytics. A Adobe se reserva o direito de encerrar o acesso beta à funcionalidade do Experience Platform Data Mirror caso sua organização exceda esse limite. Para solicitar o acesso a esse recurso, entre em contato com a equipe de conta da Adobe.
+>O recurso Experience Platform Data Mirror para Customer Journey Analytics está disponível em um **beta público** até 25 de março de 2026.<br/><br/>Durante o período beta:<ul><li>As atualizações de captura de dados de alteração (CDC) são limitadas a um direito de 10 milhões de linhas de alteração diárias para o Customer Journey Analytics.</li><li>Os clientes podem assimilar até 2 milhões de linhas de alteração por dia no Adobe Experience Platform Data Lake por meio de conectores de origem.</li></ul><br/>A Adobe se reserva o direito de encerrar o acesso beta à funcionalidade do Experience Platform Data Mirror caso sua organização exceda esses limites. <br/>Para solicitar acesso a este recurso, contate a equipe de conta da Adobe.
 >
 
 O Experience Platform Data Mirror for Customer Journey Analytics está disponível para soluções nativas de data warehouse selecionadas ([!DNL Azure Databricks], [!DNL Google BigQuery] e [!DNL Snowflake]). A versão para Customer Journey Analytics do Experience Platform Data Mirror requer a configuração adequada dos seguintes aplicativos ou componentes:
@@ -51,5 +51,5 @@ O Experience Platform Data Mirror for Customer Journey Analytics está disponív
 >[!MORELIKETHIS]
 >
 >[Guia de início rápido do Data Mirror: espelhar e usar dados baseados em modelo](model-based.md)
->&#x200B;>[Data Mirror (documentação do Experience Platform)](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-mirror/overview)
->&#x200B;>[Esquemas baseados em modelo (documentação do Experience Platform)](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/schema/model-based)
+>>[Data Mirror (documentação do Experience Platform)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview)
+>>[Esquemas baseados em modelo (documentação do Experience Platform)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/model-based)
