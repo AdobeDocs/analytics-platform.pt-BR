@@ -4,10 +4,10 @@ description: Saiba como exibir e gerenciar logs de auditoria do Customer Journey
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
 feature: Privacy
 role: Admin
-source-git-commit: 9ed7b541ebb1a89b286040c4ea96025b08029499
-workflow-type: ht
-source-wordcount: '953'
-ht-degree: 100%
+source-git-commit: 2ef96ad194f8c7acec35bd7635c650af4370531a
+workflow-type: tm+mt
+source-wordcount: '967'
+ht-degree: 98%
 
 ---
 
@@ -36,11 +36,13 @@ Para aumentar a transparência e a visibilidade das atividades realizadas no sis
 
 Basicamente, um log de auditoria informa **quem** executou **qual** ação e **quando**. Cada ação registrada em um log contém metadados que indicam o tipo de ação, a data e a hora, a ID do email do usuário que executou a ação e atributos adicionais relevantes ao tipo de ação.
 
+Os logs de auditoria são retidos por 90 dias. Depois disso, os logs de auditoria são excluídos automaticamente.
+
 Este tópico aborda logs de auditoria no Customer Journey Analytics, incluindo como exibi-los e gerenciá-los na interface.
 
 ## Acesso a logs de auditoria
 
-Quando o recurso é ativado para sua organização, os logs de auditoria são coletados automaticamente conforme a atividade ocorre. Não é necessário ativar manualmente a coleção de log.
+Quando o recurso é habilitado para sua organização, os logs de auditoria são coletados automaticamente conforme a atividade ocorre. Não é necessário habilitar manualmente a coleção de log.
 
 Para visualizar e exportar logs de auditoria, você deve ter recebido a permissão de controle **[!UICONTROL Acesso aos logs de auditoria]** no console da Adobe. Para saber como gerenciar permissões individuais para recursos do Customer Journey Analytics, consulte a [documentação de controle de acesso](../technotes/access-control.md).
 
@@ -83,7 +85,7 @@ Os seguintes itens são mostrados:
 * **[!UICONTROL Nome do componente]**: o componente no qual o usuário executou uma ação.
 * **[!UICONTROL Tipo de componente]**: o tipo de componente. Os valores possíveis incluem:
    * ANNOTATION
-   * AUDIENCE
+   * PÚBLICO-ALVO
    * CALCULATED_METRIC
    * CONNECTION
    * DATA_GROUP

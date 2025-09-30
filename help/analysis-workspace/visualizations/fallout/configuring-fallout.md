@@ -4,10 +4,10 @@ title: Configurar Uma Visualização De Fallout
 feature: Visualizations
 exl-id: 3d888673-d7b1-45ef-bd3a-97b98466fb0e
 role: User
-source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
+source-git-commit: d91e6aaebd14bc02f53b28820dd6013350e36d36
 workflow-type: tm+mt
-source-wordcount: '737'
-ht-degree: 92%
+source-wordcount: '856'
+ht-degree: 76%
 
 ---
 
@@ -43,7 +43,7 @@ Não há limite para o número de etapas que é possível adicionar ou o número
    >
    >Para unir vários segmentos, utilize o operador AND, mas para unir vários itens, como itens de dimensão e métricas, utilize OR.
 
-   ![Os pontos de contato Página: rolo da câmera e Página: câmera destacados. ](assets/fallout-or.png)
+   ![A Página:CamerRoll ou Página: pontos de contato da câmera destacados.](assets/fallout-or.png)
 
 1. Também é possível **restringir pontos de contato individuais ao próximo evento** (em vez de *eventualmente*) no caminho. Embaixo de cada ponto de contato há um seletor com as opções **[!UICONTROL Caminho eventual]** e **[!UICONTROL Próximo evento]**, conforme mostrado aqui:
 
@@ -80,14 +80,14 @@ Como parte da visualização, há opções específicas do menu de contexto disp
 | **[!UICONTROL Tendência de ponto de contato]** | Veja os dados de tendência de um ponto de contato em um gráfico de linha, com alguns dados de detecção de anomalias pré-construídos. |
 | **[!UICONTROL Tendência de ponto de contato (%)]** | Calcula a tendência da porcentagem total de fallout. |
 | **[!UICONTROL Tendência de todos os pontos de contato (%)]** | Exibe a tendência de todas as porcentagens de pontos de contato do fallout (exceto **[!UICONTROL Todas as pessoas]**, se incluso) no mesmo gráfico. |
-| **[!UICONTROL Detalhar o fallthrough neste ponto de contato]** | Visualize o que as pessoas fizeram entre dois pontos de contato (este e o próximo) se continuaram até o próximo ponto de contato. Isso cria uma tabela de forma livre, mostrando suas dimensões. Você pode substituir dimensões e outros elementos da tabela. |
-| **[!UICONTROL Detalhar fallout neste ponto de contato]** | Veja o que as pessoas que não entraram no funil fizeram imediatamente depois da etapa selecionada. |
+| **[!UICONTROL Detalhar o fallthrough neste ponto de contato]** | Visualize o que as pessoas fizeram entre dois pontos de contato (este e o próximo) se continuaram até o próximo ponto de contato. Isso cria uma tabela de forma livre, mostrando suas dimensões. É possível substituir dimensões e outros elementos da tabela. Por exemplo, uma tabela rotulada como **[!UICONTROL Fallthrough: Todas as pessoas > Página é igual a qualquer página inicial]** e contém **[!UICONTROL Página]** como a dimensão e **[!UICONTROL Pessoas]** segmentadas pelo [segmento rápido somente de projeto](/help/components/segments/seg-quick.md) **[!UICONTROL Fallthrough: Todas as pessoas > Página é igual a qualquer página inicial]** como a métrica. Inspecione o segmento para entender como o segmento de fallthrough é determinado. |
+| **[!UICONTROL Detalhar fallout neste ponto de contato]** | Veja o que as pessoas que não entraram na funnel fizeram imediatamente após a etapa selecionada. Isso cria uma tabela de forma livre, mostrando suas dimensões. É possível substituir dimensões e outros elementos da tabela. Por exemplo, uma tabela rotulada como **[!UICONTROL Fallout: Pessoas > Página é igual a qualquer página inicial]** e contém **[!UICONTROL Página]** como a dimensão e **[!UICONTROL Pessoas]** segmentadas pelo [segmento rápido somente de projeto](/help/components/segments/seg-quick.md) **[!UICONTROL Fallthrough: Todos os Visitantes > Página é igual a qualquer um do segmento inicial]** como a métrica. Inspecione o segmento para entender como o segmento de fallout é determinado. |
 | **[!UICONTROL Criar segmentos a partir do ponto de contato]** | Crie um novo segmento a partir do ponto de contato selecionado. |
 
 >[!MORELIKETHIS]
 >
 >[Adicionar uma visualização a um painel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->&#x200B;>[Configurações de visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->&#x200B;>[Menu de contexto da visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>>[Configurações de visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>>[Menu de contexto da visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
 
