@@ -4,9 +4,9 @@ title: Usar modelos
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: f41162d1c4c44f79c59585d1311cd2e431725103
-workflow-type: ht
-source-wordcount: '20276'
+source-git-commit: cae339ebc5d2609a7a93e63e874c4e7d611f2cad
+workflow-type: tm+mt
+source-wordcount: '20424'
 ht-degree: 100%
 
 ---
@@ -87,7 +87,7 @@ As informações a seguir descrevem como acessar e utilizar modelos a partir da 
 
 Um modelo pode não suprir exatamente as suas necessidades, mas pode chegar perto. Nesses casos, você pode usar o modelo como ponto de partida para o seu projeto e personalizá-lo para atender melhor às suas finalidades específicas.
 
-Se você sair de um relatório depois de fazer alterações, será solicitado que salve ou descarte as alterações. Salvar as alterações feitas em um modelo salva-o como um novo projeto.
+Se você sair de um modelo depois de fazer alterações, será solicitado que salve ou descarte as alterações. Salvar as alterações feitas em um modelo salva-o como um novo projeto.
 
 Para personalizar um modelo e salvá-lo como um projeto:
 
@@ -591,6 +591,16 @@ Estes são os modelos disponíveis:
 
 
 <!--Both AA and CJA-->
+
+>[!CONTEXTUALHELP]
+>id="template--audienceOverview"
+>title="Veja o país de origem das pessoas que visitam o site."
+>abstract="**Isso pode ajudar** a entender melhor quais são os principais países de origem de visitantes do site.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como usar os dados para aumentar o foco das campanhas de marketing nesses países ou garantir que a experiência do site seja ideal em países com diferentes idiomas nativos.<br/>Este modelo usa a dimensão “Países”."
+
+>[!CONTEXTUALHELP]
+>id="template--consentPolicyOverview"
+>title="Veja o país de origem das pessoas que visitam o site."
+>abstract="**Isso pode ajudar** a entender melhor quais são os principais países de origem de visitantes do site.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como usar os dados para aumentar o foco das campanhas de marketing nesses países ou garantir que a experiência do site seja ideal em países com diferentes idiomas nativos.<br/>Este modelo usa a dimensão “Países”."
 
 >[!CONTEXTUALHELP]
 >id="template--countryGeoReport"
