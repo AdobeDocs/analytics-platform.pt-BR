@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
-source-git-commit: 7909388273af4c19d2dfda671c2af8eac470fff9
+source-git-commit: e8cba64e706a456861fd8392ce9260b7a1c4636b
 workflow-type: tm+mt
 source-wordcount: '622'
-ht-degree: 78%
+ht-degree: 76%
 
 ---
 
@@ -56,7 +56,7 @@ Os eventos da análise de conteúdo são coletados como uma sequência de:
 1. [Uma visualização gravada ou clique](#recorded-view-or-click).
 1. [Um gatilho para enviar um evento do Content Analytics](#trigger-to-send-a-content-analytics-event).
 
-A análise de conteúdo coleta dados dessa maneira para refletir essa sequência, em vez de coletar uma visualização ou clique separadamente da coleta do evento imediatamente após essa visualização ou clique. Essa maneira de coletar dados de análise de conteúdo também reduz a quantidade de dados coletados.
+A análise de conteúdo coleta dados dessa maneira para refletir essa sequência, em vez de coletar uma visualização ou clique separadamente da coleta do evento imediatamente após essa visualização ou clique. Essa maneira de coletar dados do Content Analytics também reduz a quantidade de dados coletados.
 
 ### Visualização gravada ou clique
 

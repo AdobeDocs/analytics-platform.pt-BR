@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin, User
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
-source-git-commit: dd4adc5acd05aecf0a67072df6688a344e1ce5c9
+source-git-commit: e8cba64e706a456861fd8392ce9260b7a1c4636b
 workflow-type: tm+mt
 source-wordcount: '836'
 ht-degree: 94%
@@ -47,8 +47,8 @@ A Análise de conteúdo usa dados de visualização de imagens da web em conjunt
 
 1. Quando um usuário visita um site, [configurado para a análise de conteúdo](config/configuration.md), o SDK da Web da Experience Platform registra impressões e interações com o conteúdo.
 1. O serviço de identidade e caracterização processa essas interações. Esse processo consiste em um serviço de recuperação que revisita as versões públicas dos URLs configurados que definem as interações. Para todos esses URLs recuperados, o serviço de identidade detecta exclusivamente as experiências e os ativos. E o serviço de caracterização aplica serviços de IA e aprendizado de máquina para descobrir experiências, metadados e atributos de ativos.
-1. Os resultados desses serviços ([componentes, atributos e identidades](/help/content-analytics/report/components.md)) são usados para atualizar os conjuntos de dados de análise de conteúdo específicos e relevantes na Experience Platform.
-1. Os dados de análise de conteúdo, juntamente com dados comportamentais e outros dados de pesquisa, podem ser usados em uma configuração do Customer Journey Analytics ([Conexão](/help/connections/overview.md), [Visualização de dados](/help/data-views/data-views.md) e [Espaço de trabalho](/help/analysis-workspace/home.md)). Essa configuração fornece a base para insights exclusivos de nível macro sobre seu conteúdo. <br/>Você pode iniciar seus relatórios e a análise de conteúdo usando o [modelo de análise de conteúdo](/help/content-analytics/report/report.md#template).
+1. Os resultados desses serviços ([componentes, atributos e identidades](/help/content-analytics/report/components.md)) são usados para atualizar os conjuntos de dados específicos do Content Analytics relevantes no Experience Platform.
+1. Os dados do Content Analytics, juntamente com os dados comportamentais e outros dados de pesquisa, podem ser usados em uma configuração do Customer Journey Analytics ([Conexão](/help/connections/overview.md), [Visualização de dados](/help/data-views/data-views.md) e [Workspace](/help/analysis-workspace/home.md)). Essa configuração fornece a base para insights exclusivos de nível macro sobre seu conteúdo. <br/>Você pode iniciar seus relatórios e a análise de conteúdo usando o [modelo de análise de conteúdo](/help/content-analytics/report/report.md#template).
 
 
 >[!NOTE]
@@ -60,14 +60,14 @@ A Análise de conteúdo usa dados de visualização de imagens da web em conjunt
 
 >[!NOTE]
 >
->Se você licenciou o complemento Privacy and Security Shield, saiba que (quaisquer dados gerados a partir de) experiências e ativos, sujeitos ao Content Analytics, não são cobertos pela rotulagem DULE ou pelas Chaves gerenciadas pelo cliente. Além disso, o Content Analytics não é um serviço HIPAA-Ready.
+>Se você adquiriu uma licença do complemento Privacy and Security Shield, saiba que (quaisquer dados gerados a partir de) experiências e ativos sujeitos à análise de conteúdo não são cobertos pela rotulagem DULE ou pelas chaves gerenciadas pelo cliente. Além disso, a análise de conteúdo não é um serviço em conformidade com a lei HIPAA dos EUA.
 >
 
 
 >[!MORELIKETHIS]
 >
 >[Relatórios da análise de conteúdo](report/report.md)
->&#x200B;>[Configure a análise de conteúdo](config/configuration.md)
->&#x200B;>[Cálculo de rejeições e taxa de rejeição no Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446?profile.language=pt#M454)
+>>[Configure a análise de conteúdo](config/configuration.md)
+>>[Cálculo de rejeições e taxa de rejeição no Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446#M454)
 >
 
