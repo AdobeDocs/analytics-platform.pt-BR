@@ -65,7 +65,7 @@ Depois de fazer alterações na extensão de Análise de conteúdo da Adobe, use
 >[!MORELIKETHIS]
 >
 >[Configuração guiada](guided.md)
->>[Visão geral da publicação de tags de coleção de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/publish/overview)
+>&#x200B;>[Visão geral da publicação de tags de coleção de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/publish/overview)
 >
 
 
@@ -97,7 +97,7 @@ O Content Analytics lida com identidades da seguinte maneira:
 * A compilação em campo não é compatível porque o esquema é de propriedade do sistema. Portanto, não é possível adicionar outro campo ao esquema para oferecer suporte à compilação em campo
 
 
-Para garantir que os dados de identidade da Content Analytics e do Adobe Experience Platform Web SDK sejam compilados corretamente no nível do campo, é necessário fazer modificações no Web SDK [em antes do retorno de chamada do evento ](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/onbeforeeventsend){target="_blank"} ser enviado.
+Para garantir que os dados de identidade da Content Analytics e do Adobe Experience Platform Web SDK sejam compilados corretamente no nível do campo, é necessário fazer modificações no Web SDK [em antes do retorno de chamada do evento &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/onbeforeeventsend){target="_blank"} ser enviado.
 
 1. Navegue até a propriedade **[!UICONTROL Tags]**, que contém a extensão do Adobe Experience Platform Web SDK e a extensão do Adobe Content Analytics.
 1. Selecione ![Plug](/help/assets/icons/Plug.svg) **[!UICONTROL Extensões]**.

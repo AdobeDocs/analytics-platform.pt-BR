@@ -65,7 +65,7 @@ Para usar o modelo:
 
 1. Selecione **[!UICONTROL Espaço de trabalho]** no menu principal.
 1. Verifique se você selecionou uma visualização de dados configurada para a análise de conteúdo. 
-1. Procure ou use segmentos (**[!UICONTROL Web]** para **[!UICONTROL Canal]** e **[!UICONTROL Envolvimento]** para **[!UICONTROL Caso de Uso]**s) para localizar e selecionar o modelo **[!UICONTROL Content Analytics]**.
+1. Procure ou use segmentos (**[!UICONTROL Web]** para **[!UICONTROL Canal]** e **[!UICONTROL Envolvimento]** para **[!UICONTROL Caso de Uso]**&#x200B;s) para localizar e selecionar o modelo **[!UICONTROL Content Analytics]**.
 1. Selecione **[!UICONTROL Usar modelo]**.
 1. Na caixa de diálogo **[!UICONTROL Configurar o modelo]**, selecione uma métrica na caixa de diálogo **[!UICONTROL Selecionar uma métrica de conversão]**. Por exemplo, **[!UICONTROL CTR do ativo]**.
 1. Selecione **[!UICONTROL Continuar]**.
@@ -155,5 +155,5 @@ Um painel que consiste em uma tabela de forma livre que detalha onde os ativos m
 >[!MORELIKETHIS]
 >
 >[Componentes da análise de conteúdo](components.md)
->>[Usar modelos](/help/analysis-workspace/templates/use-templates.md#web-engagement)
+>&#x200B;>[Usar modelos](/help/analysis-workspace/templates/use-templates.md#web-engagement)
 >
