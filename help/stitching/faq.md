@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: f4115164-7263-40ad-9706-3b98d0bb7905
 role: Admin
-source-git-commit: c4aea74807be15af56413522d9e6fbf5f18a37a0
+source-git-commit: c60c68e6065e877d0fa4a92dbfe8dd54a2dfb4fe
 workflow-type: tm+mt
-source-wordcount: '2041'
+source-wordcount: '2046'
 ht-degree: 26%
 
 ---
@@ -23,8 +23,8 @@ Aqui estão algumas perguntas frequentes sobre a compilação:
 Você pode usar uma visualização de Fluxo com a dimensão ID de conjunto de dados.
 
 1. Faça logon no [Customer Journey Analytics](https://analytics.adobe.com) e crie um projeto do Workspace em branco.
-2. Selecione a guia **[!UICONTROL ** Visualizações **]** à esquerda e arraste uma visualização de **[!UICONTROL **&#x200B; Fluxo &#x200B;**]** para a tela à direita.
-3. Selecione a guia **[!UICONTROL ** Componentes **]** à esquerda e arraste a dimensão **[!UICONTROL ** ID de conjunto de dados **]** para o local central rotulado **[!UICONTROL **&#x200B; Dimension ou Item &#x200B;**]**.
+2. Selecione a guia **[!UICONTROL ** Visualizações **]** à esquerda e arraste uma visualização de **[!UICONTROL ** Fluxo **]** para a tela à direita.
+3. Selecione a guia **[!UICONTROL ** Componentes **]** à esquerda e arraste a dimensão **[!UICONTROL ** ID de conjunto de dados **]** para o local central rotulado **[!UICONTROL ** Dimension ou Item **]**.
 4. Este relatório de fluxo é interativo. Para expandir os fluxos para páginas subsequentes ou anteriores, selecione qualquer um dos valores. Use o menu de clique com o botão direito do mouse para expandir ou recolher colunas. Dimensões diferentes também podem ser usadas no mesmo relatório de fluxo.
 
 Se você quiser renomear itens de dimensão da ID de conjunto de dados, poderá usar um conjunto de dados de pesquisa.
@@ -217,7 +217,7 @@ Outras métricas podem ser semelhantes no Customer Journey Analytics e no Adobe 
 
 +++ O Customer Journey Analytics pode usar campos do Mapa de identidade?
 
-Não, no momento, o Customer Journey Analytics não pode usar campos do Mapa de identidade para compilação.
+Sim, o Customer Journey Analytics pode usar campos do Mapa de identidade para a compilação [baseada em campo](/help/stitching/fbs.md#identitymap) e [baseada em gráfico](/help/stitching/gbs.md#identitymap).
 
 +++
 
@@ -229,7 +229,7 @@ Os dados não precisam ser assimilados novamente no Experience Platform, no enta
 
 1. Configure o novo conjunto de dados compilado com base em gráfico.
 1. Configure o novo conjunto de dados como parte de uma nova conexão no Customer Journey Analytics.
-1. Alterne sua Visualização de dados existente para usar a nova conexão (e, como tal, o novo conjunto de dados compilado com base em gráfico)
+1. Alterne sua Visualização de dados existente para usar a nova conexão (e, como tal, o novo conjunto de dados compilado com base em gráfico).
 1. Remova a conexão antiga que estava usando o conjunto de dados compilado com base em campo.
 
 +++
@@ -273,6 +273,6 @@ curl -X POST \
 
 Qualquer uso da tag `unifiedProfile` na solicitação, enquanto você não estiver licenciado para o Perfil de dados do cliente em tempo real, retornará um erro.
 
-Consulte [Criar um conjunto de dados habilitado para Perfil e Identidade](https://experienceleague.adobe.com/pt-br/docs/experience-platform/catalog/datasets/enable-for-profile#create-a-dataset-enabled-for-profile-and-identity) para obter mais informações.
+Consulte [Criar um conjunto de dados habilitado para Perfil e Identidade](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/enable-for-profile#create-a-dataset-enabled-for-profile-and-identity) para obter mais informações.
 
 +++ 
