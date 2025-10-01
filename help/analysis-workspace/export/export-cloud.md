@@ -8,7 +8,7 @@ role: User
 source-git-commit: 0b6afd5639234f6305c99267d3b1624279c97368
 workflow-type: tm+mt
 source-wordcount: '2482'
-ht-degree: 72%
+ht-degree: 77%
 
 ---
 
@@ -67,7 +67,7 @@ Use o processo a seguir para exportar tabelas completas para a nuvem:
 >[!CONTEXTUALHELP]
 >id="cja-export-data-structure"
 >title="Estrutura de dados"
->abstract="Esta é a tabela de forma livre que você está exportando. Você pode modificar a estrutura de dados arrastando componentes do painel esquerdo para a tabela. Você pode aplicar um filtro arrastando um componente para a área de filtro. A tabela é atualizada dinamicamente à medida que você adiciona componentes à tela."
+>abstract="Esta é a tabela de forma livre que está sendo exportada. É possível modificar a estrutura de dados arrastando componentes do painel esquerdo para a tabela. É possível aplicar um filtro arrastando um componente para a área de filtro. A tabela é atualizada dinamicamente à medida que você adiciona componentes à tela."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -85,7 +85,7 @@ Use o processo a seguir para exportar tabelas completas para a nuvem:
 >[!CONTEXTUALHELP]
 >id="cja-export-schedule"
 >title="Agendar"
->abstract="Selecione a frequência com que a exportação deve ocorrer. Escolha Enviar agora (único) para iniciar a exportação imediatamente. As exportações programadas são iniciadas na data e hora especificadas. "
+>abstract="Selecione a frequência com que a exportação deve ocorrer. Escolha Enviar agora (uma vez) para iniciar a exportação imediatamente. As exportações programadas são iniciadas na data e hora especificadas. "
 
 <!-- markdownlint-enable MD034 -->
 
@@ -95,7 +95,7 @@ Use o processo a seguir para exportar tabelas completas para a nuvem:
 >[!CONTEXTUALHELP]
 >id="cja-export-destination"
 >title="Destino"
->abstract="Selecione a conta da nuvem e o local para onde deseja enviar os dados. Você pode escolher uma conta e um local existentes ou selecionar &quot;Adicionar novo&quot; para criá-los. Especifique usuários e grupos para notificar sobre exportações com falha ou que estão expirando."
+>abstract="Selecione a conta na nuvem e o local para o qual deseja enviar os dados. É possível escolher uma conta e um local existentes ou selecionar &quot;Adicionar novo&quot; para criá-los. Especifique usuários e grupos para notificar sobre exportações com falha ou que estão expirando."
 
 <!-- markdownlint-enable MD034 -->
 
