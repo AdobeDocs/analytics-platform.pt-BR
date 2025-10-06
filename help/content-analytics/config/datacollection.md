@@ -8,7 +8,7 @@ exl-id: 584587e6-45fd-4fc3-a7a6-6685481ddee7
 source-git-commit: e8cba64e706a456861fd8392ce9260b7a1c4636b
 workflow-type: tm+mt
 source-wordcount: '622'
-ht-degree: 76%
+ht-degree: 97%
 
 ---
 
@@ -31,7 +31,7 @@ As seguintes definições são usadas no contexto deste artigo:
 
 ## Funcionalidade
 
-O Content Analytics exige que o Experience Platform Edge Network Web SDK colete dados de conteúdo do evento. Essa coleta de dados de evento é combinada com a coleta de dados de evento comportamentais (existente) por meio de mecanismos como o Experience Platform Edge Network (Web SDK, API do servidor) ou o conector de origem do Analytics (por exemplo, usando o AppMeasurement).
+O Content Analytics exige o SDK da web da Experience Platform Edge Network para a coleta de dados de evento de conteúdo. Essa coleta de dados de evento é combinada com a coleta de dados de evento comportamental (já existente) por meio de mecanismos como a Experience Platform Edge Network (SDK da web, API do servidor) ou o conector de origem do Analytics (por exemplo, com o AppMeasurement).
 
 A biblioteca da análise de conteúdo coleta dados quando:
 
@@ -54,7 +54,7 @@ Um evento de análise de conteúdo consiste em:
 Os eventos da análise de conteúdo são coletados como uma sequência de:
 
 1. [Uma visualização gravada ou clique](#recorded-view-or-click).
-1. [Um gatilho para enviar um evento do Content Analytics](#trigger-to-send-a-content-analytics-event).
+1. [Um acionador para enviar um evento do Content Analytics](#trigger-to-send-a-content-analytics-event).
 
 A análise de conteúdo coleta dados dessa maneira para refletir essa sequência, em vez de coletar uma visualização ou clique separadamente da coleta do evento imediatamente após essa visualização ou clique. Essa maneira de coletar dados do Content Analytics também reduz a quantidade de dados coletados.
 
@@ -83,7 +83,7 @@ Um clique de experiência é registrado quando:
 
 ### Acionar para enviar um evento do Content Analytics
 
-Para reduzir o número de chamadas que saem da página, o Content Analytics coleta informações, mas não as envia imediatamente. As informações de interação de conteúdo são coletadas e um evento contendo essas informações só é enviado quando um dos seguintes acionadores ocorre:
+Para reduzir o número de chamadas que saem da página, o Content Analytics coleta informações, mas não as envia imediatamente. As informações de interação de conteúdo são coletadas e um evento contendo essas informações só é enviado quando ocorre um dos seguintes acionadores:
 
 * O SDK da Web ou o AppMeasurement envia um evento.
 * A visibilidade muda para oculta, por exemplo, ao:
@@ -97,7 +97,7 @@ Para reduzir o número de chamadas que saem da página, o Content Analytics cole
 
 >[!NOTE]
 >
->Os eventos adicionais do Content Analytics provavelmente afetam qualquer definição de taxa de rejeição baseada no número de eventos em uma sessão ou página.
+>Os eventos adicionais do Content Analytics provavelmente afetarão qualquer definição de taxa de rejeição baseada no número de eventos em uma sessão ou página.
 >
 
 

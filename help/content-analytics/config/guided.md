@@ -8,7 +8,7 @@ exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
 source-git-commit: e8cba64e706a456861fd8392ce9260b7a1c4636b
 workflow-type: tm+mt
 source-wordcount: '2694'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -140,7 +140,7 @@ Sua configuração exige a seleção de uma [visualização de dados](/help/data
    É possível executar as seguintes ações:
 
    * Para pesquisar uma visualização de dados específica, use o campo ![Pesquisar](/help/assets/icons/Search.svg).
-   * Para filtrar a lista de visualizações de dados disponíveis, selecione ![Mostrar filtro](/help/assets/icons/Filter.svg). Você pode filtrar a lista por [!UICONTROL Conexão], [!UICONTROL Proprietário] e [!UICONTROL Sandbox].<br/>Use ![Ocultar](/help/assets/icons/Filter.svg) **[!UICONTROL Ocultar segmentos]** para ocultar o painel de segmentos.
+   * Para filtrar a lista de visualizações de dados disponíveis, selecione ![Mostrar filtros](/help/assets/icons/Filter.svg). Você pode filtrar a lista por [!UICONTROL Conexão], [!UICONTROL Proprietário] e [!UICONTROL Sandbox].<br/>Use ![Ocultar](/help/assets/icons/Filter.svg) **[!UICONTROL Ocultar segmentos]** para ocultar o painel de segmentos.
    * Para definir quais colunas serão exibidas na tabela, selecione ![Configurações de coluna](/help/assets/icons/ColumnSetting.svg). Selecione quais colunas serão exibidas na caixa de diálogo **[!UICONTROL Personalizar tabela]** e selecione **[!UICONTROL Aplicar]** para aplicar as alterações.
 
 1. Selecione a visualização de dados ![SelectBox](/help/assets/icons/SelectBox.svg) que você deseja usar.
@@ -296,7 +296,7 @@ Em uma nova configuração, você precisa definir se deseja usar uma propriedade
   ![Tag existente da coleção de dados da análise de conteúdo](../assets/aca-configuration-datacollection-existingtag.png)
 
    1. Selecione **[!UICONTROL Escolher existente]**.
-   2. Selecione uma propriedade existente no menu suspenso **[!UICONTROL Propriedade de marcas]**. Comece a digitar para pesquisar e limitar as opções disponíveis. Não é possível selecionar uma propriedade de tags que já esteja sendo usada por outra configuração implementada da análise de conteúdo.
+   2. Selecione uma propriedade existente no menu suspenso **[!UICONTROL Propriedade de tags]**. Comece a digitar para pesquisar e limitar as opções disponíveis. Não é possível selecionar uma propriedade de tags que já esteja sendo usada por outra configuração implementada da análise de conteúdo.
 
 
 * Para criar uma nova propriedade de tags:
@@ -313,7 +313,7 @@ Em uma nova configuração, você precisa definir se deseja usar uma propriedade
 
 * Indique quais ativos devem ser incluídos ou excluídos ao coletar dados para a análise de conteúdo.
 
-  Especifique uma string de expressão regular para **[!UICONTROL Ativos a serem incluídos/excluídos]**. <br/>Por exemplo: `^(?!.*(logo\.jpg)).*$` para excluir todas as imagens de logotipo do JPEG do Content Analytics.
+  Especifique uma string de expressão regular para **[!UICONTROL Ativos a serem incluídos/excluídos]**. <br/>Por exemplo: `^(?!.*(logo\.jpg)).*$` para excluir todas as imagens JPEG de logotipo do Content Analytics.
 
 >[!IMPORTANT]
 >
@@ -324,7 +324,7 @@ Em uma nova configuração, você precisa definir se deseja usar uma propriedade
 
 #### Configuração existente {#existing-configuration}
 
-Para uma configuração existente, não é possível editar a propriedade de tags. Para obter atualizações para uma propriedade de marcas associada a uma configuração existente, use a [configuração da extensão de Marca do Content Analytics](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/extensions/client/content-analytics/overview).
+Para uma configuração existente, não é possível editar a propriedade de tags. Para obter atualizações de uma propriedade de tags associada a uma configuração existente, use a [configuração da extensão de tags do Content Analytics](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/extensions/client/content-analytics/overview).
 
 No entanto, é possível editar as páginas e os ativos a incluir ou excluir.
 
