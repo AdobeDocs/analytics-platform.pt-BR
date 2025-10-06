@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: f4115164-7263-40ad-9706-3b98d0bb7905
 role: Admin
-source-git-commit: c60c68e6065e877d0fa4a92dbfe8dd54a2dfb4fe
+source-git-commit: b1fa2220b20cd2cdeae51aa57b05aa28b266a8d6
 workflow-type: tm+mt
-source-wordcount: '2046'
-ht-degree: 26%
+source-wordcount: '2084'
+ht-degree: 25%
 
 ---
 
@@ -23,8 +23,8 @@ Aqui estão algumas perguntas frequentes sobre a compilação:
 Você pode usar uma visualização de Fluxo com a dimensão ID de conjunto de dados.
 
 1. Faça logon no [Customer Journey Analytics](https://analytics.adobe.com) e crie um projeto do Workspace em branco.
-2. Selecione a guia **[!UICONTROL ** Visualizações **]** à esquerda e arraste uma visualização de **[!UICONTROL **&#x200B; Fluxo &#x200B;**]** para a tela à direita.
-3. Selecione a guia **[!UICONTROL ** Componentes **]** à esquerda e arraste a dimensão **[!UICONTROL ** ID de conjunto de dados **]** para o local central rotulado **[!UICONTROL **&#x200B; Dimension ou Item &#x200B;**]**.
+2. Selecione a guia **[!UICONTROL ** Visualizações **]** à esquerda e arraste uma visualização de **[!UICONTROL ** Fluxo **]** para a tela à direita.
+3. Selecione a guia **[!UICONTROL ** Componentes **]** à esquerda e arraste a dimensão **[!UICONTROL ** ID de conjunto de dados **]** para o local central rotulado **[!UICONTROL ** Dimension ou Item **]**.
 4. Este relatório de fluxo é interativo. Para expandir os fluxos para páginas subsequentes ou anteriores, selecione qualquer um dos valores. Use o menu de clique com o botão direito do mouse para expandir ou recolher colunas. Dimensões diferentes também podem ser usadas no mesmo relatório de fluxo.
 
 Se você quiser renomear itens de dimensão da ID de conjunto de dados, poderá usar um conjunto de dados de pesquisa.
@@ -227,10 +227,12 @@ Sim, o Customer Journey Analytics pode usar campos do Mapa de identidade para a 
 
 Os dados não precisam ser assimilados novamente no Experience Platform, no entanto, eles precisarão ser reconfigurados no Customer Journey Analytics. Siga estas etapas:
 
-1. Configure o novo conjunto de dados compilado com base em gráfico.
-1. Configure o novo conjunto de dados como parte de uma nova conexão no Customer Journey Analytics.
-1. Alterne sua Visualização de dados existente para usar a nova conexão (e, como tal, o novo conjunto de dados compilado com base em gráfico).
-1. Remova a conexão antiga que estava usando o conjunto de dados compilado com base em campo.
+1. Configure o novo conjunto de dados compilado com base em gráfico usando a compilação com base em gráfico.
+1. Crie uma nova conexão temporária com uma janela de dados muito pequena.
+1. Configure o novo conjunto de dados com base em gráfico como parte dessa conexão temporária.
+1. Verifique se com essa nova conexão temporária a compilação baseada em gráfico funciona corretamente.
+1. Se a compilação baseada em gráfico funcionar conforme esperado, solicite qualquer preenchimento retroativo adicional para o conjunto de dados baseado em gráfico e troque o conjunto de dados baseado em campo na conexão original pelo novo conjunto de dados baseado em gráfico.
+1. Remover a conexão temporária
 
 +++
 
@@ -273,6 +275,6 @@ curl -X POST \
 
 Qualquer uso da tag `unifiedProfile` na solicitação, enquanto você não estiver licenciado para o Perfil de dados do cliente em tempo real, retornará um erro.
 
-Consulte [Criar um conjunto de dados habilitado para Perfil e Identidade](https://experienceleague.adobe.com/pt-br/docs/experience-platform/catalog/datasets/enable-for-profile#create-a-dataset-enabled-for-profile-and-identity) para obter mais informações.
+Consulte [Criar um conjunto de dados habilitado para Perfil e Identidade](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/enable-for-profile#create-a-dataset-enabled-for-profile-and-identity) para obter mais informações.
 
 +++ 
