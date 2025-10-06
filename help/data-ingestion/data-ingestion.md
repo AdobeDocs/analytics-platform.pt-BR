@@ -6,9 +6,9 @@ feature: Basics
 exl-id: ead96b72-40f1-4ce9-8d91-c8ceea6c4458
 role: Admin
 source-git-commit: ec56bc657961b2e4e8318ab14cd676288398462f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1089'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -25,13 +25,13 @@ A arquitetura de alto nível do Customer Journey Analytics pode ser vista aqui:
 
 ![Arquitetura do Customer Journey Analytics](/help/getting-started/assets/cja-overview.svg)
 
-Essa arquitetura ilustra como o Customer Jornada Analytics permite:
+Essa arquitetura ilustra como o Customer Journey Analytics permite:
 
-* Combinar vários conjuntos de dados ![Data](/help/assets/icons/Data.svg) em uma [conexão](/help/connections/overview.md).
-* Defina e configure as dimensões ![Dimensões](/help/assets/icons/Dimensions.svg) e as métricas ![Evento](/help/assets/icons/Event.svg) em uma [visualização de dados](/help/data-views/data-views.md), com base nos campos disponíveis nos conjuntos de dados definidos na sua conexão.
-* Crie relatórios ![ViewTable](/help/assets/icons/ViewTable.svg) e visualizações (como linha ![Line](/help/assets/icons/GraphTrend.svg) e área ![Area](/help/assets/icons/GraphAreaStacked.svg)) em [projetos](/help/analysis-workspace/home.md) com base nas dimensões e métricas de suas visualizações de dados.
+* Combinar vários conjuntos de dados ![Dados](/help/assets/icons/Data.svg) em uma [conexão](/help/connections/overview.md).
+* Defina e configure as dimensões ![Dimensões](/help/assets/icons/Dimensions.svg) e as métricas ![Evento](/help/assets/icons/Event.svg) em uma [visualização de dados](/help/data-views/data-views.md), com base nos campos disponíveis nos conjuntos de dados definidos na conexão.
+* Crie relatórios ![ViewTable](/help/assets/icons/ViewTable.svg) e visualizações (como linha ![Linha](/help/assets/icons/GraphTrend.svg) e área ![Área](/help/assets/icons/GraphAreaStacked.svg)) nos [projetos](/help/analysis-workspace/home.md) com base nas dimensões e métricas das visualizações de dados.
 
-Os conjuntos de dados na arquitetura podem se originar de várias fontes:
+Os conjuntos de dados na arquitetura podem originar de várias fontes:
 
 * dados em lote,
 
@@ -108,11 +108,11 @@ Consulte [Assimilar e usar dados usando conectores de origem](./sources.md) para
 
 ## Assimilar e usar dados ad hoc
 
-Você tem dados ad hoc disponíveis que exigem apenas um único conjunto de dados na Experience Platform e não exigem a configuração de um esquema do Experience Data Model (XDM). Esse cenário é chamado de esquema ad hoc. Esquemas ad hoc são usados em vários workflows de assimilação de dados para o Experience Platform, incluindo a assimilação de arquivos CSV e a criação de determinados tipos de conexões de origem.
+Há dados ad hoc disponíveis que exigem apenas um único conjunto de dados na Experience Platform e não precisam da configuração de um esquema Experience Data Model (XDM). Esse cenário é chamado de esquema ad hoc. Esquemas ad hoc são usados em vários fluxos de trabalho de assimilação de dados da Experience Platform, incluindo a assimilação de arquivos CSV e a criação de determinados tipos de conexões de origem.
 
 Consulte [Assimilar e usar dados ad hoc](./adhoc.md)
 
 >[!MORELIKETHIS]
 >
->Blog: [Análise detalhada do processamento e da assimilação de dados no Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-closer-look-at-data-processing-amp-ingestion-in-adobe-customer/ba-p/665091?profile.language=pt)
+>Blog: [Análise detalhada do processamento e da assimilação de dados no Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-closer-look-at-data-processing-amp-ingestion-in-adobe-customer/ba-p/665091)
 
