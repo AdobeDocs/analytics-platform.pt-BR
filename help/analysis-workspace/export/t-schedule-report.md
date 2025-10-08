@@ -6,18 +6,22 @@ feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
 role: User
-source-git-commit: c91ee21a3d4e20e3bdaeb75f2011ede6eee6cba0
+source-git-commit: 973e999b611d578da12018e60becf48efd7a76f8
 workflow-type: tm+mt
-source-wordcount: '793'
-ht-degree: 50%
+source-wordcount: '799'
+ht-degree: 51%
 
 ---
 
 # Enviar e agendar projetos
 
-Você pode enviar projetos Customer Journey Analytics como arquivos para usuários selecionados por email. Você pode enviar arquivos ad hoc ou pode configurar projetos para serem enviados de acordo com um cronograma. Os projetos podem ser enviados no formato CSV ou PDF.
+Você pode enviar projetos Customer Journey Analytics como arquivos para usuários selecionados por email. Você pode enviar arquivos ad hoc ou pode configurar projetos para serem enviados de acordo com um cronograma.
 
-As tags aplicadas ao projeto são automaticamente aplicadas à exportação.
+Considere o seguinte ao enviar arquivos:
+
+* Os arquivos podem ser enviados no formato CSV ou PDF.
+
+* As tags aplicadas ao projeto são automaticamente aplicadas à exportação.
 
 Outros métodos de exportação de dados do Customer Journey Analytics também estão disponíveis, conforme descrito em [Visão geral da exportação](/help/analysis-workspace/export/export-project-overview.md).
 
@@ -40,7 +44,7 @@ Para enviar um arquivo aos recipients por email:
 
 ## Programar exportação de arquivo {#schedule}
 
-Para enviar um arquivo por email de acordo com um agendamento para os recipients
+Para enviar um arquivo por email de acordo com um agendamento para os recipients:
 
 1. Selecione **[!UICONTROL Compartilhar] > [!UICONTROL Agendar exportação de arquivo]**.
 1. Especifique o tipo de arquivo:
@@ -99,7 +103,7 @@ Os requisitos de senha estão em conformidade com os padrões da Adobe, exigindo
 ### Proteger com senha um novo projeto agendado
 
 1. Depois de salvar o projeto, acesse **[!UICONTROL Compartilhar]** > **[!UICONTROL Enviar arquivo agora]** ou **[!UICONTROL Compartilhar]** > **[!UICONTROL Enviar arquivo conforme agendado]**.
-1. Siga as instruções acima, em [Enviar arquivo agora](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html?lang=pt-BR#now) ou [Enviar arquivo agendado](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html?lang=pt-BR#schedule).
+1. Siga as instruções acima, em [Enviar arquivo agora](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html#now) ou [Enviar arquivo agendado](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html#schedule).
 
 ### Proteger por senha um projeto agendado existente
 
