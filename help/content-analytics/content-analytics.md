@@ -68,6 +68,6 @@ A Análise de conteúdo usa dados de visualização de imagens da web em conjunt
 >
 >[Relatórios da análise de conteúdo](report/report.md)
 >>[Configure a análise de conteúdo](config/configuration.md)
->>[Cálculo de rejeições e taxa de rejeição no Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446#M454)
+>>[Cálculo de rejeições e taxa de rejeição no Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446?profile.language=pt#M454)
 >
 
