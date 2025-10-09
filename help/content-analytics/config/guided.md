@@ -6,9 +6,9 @@ feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
 source-git-commit: e8cba64e706a456861fd8392ce9260b7a1c4636b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2694'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -82,17 +82,17 @@ Cada configuração requer um nome exclusivo. Por exemplo, `Example Content Anal
 >[!CONTEXTUALHELP]
 >id="ac_onboarding_dataview_button"
 >title="Visualização de dados"
->abstract="Para a configuração da análise de conteúdo, é necessário selecionar uma exibição de dados existente. Assim, você pode unir seus dados do Content Analytics a outros dados."
+>abstract="Para a configuração da análise de conteúdo, é necessário selecionar uma exibição de dados existente. Assim, você pode mesclar seus dados de Análise de Conteúdo com outros dados."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header"
 >title="Visualização de dados"
->abstract="Selecione uma visualização de dados existente do Customer Journey Analytics que você deseja mesclar com os dados do Content Analytics."
+>abstract="Selecione uma visualização de dados já existente do Customer Journey Analytics com a qual você deseja mesclar seus dados de Análise de Conteúdo."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header_alt"
 >title="Visualização de dados"
->abstract="Selecione uma visualização de dados existente do Customer Journey Analytics com a qual você deseja mesclar seus dados do Content Analytics.<br/>"
+>abstract="Selecione uma visualização de dados já existente do Customer Journey Analytics com a qual você deseja mesclar seus dados de Análise de Conteúdo.<br/>"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_change_dialog"
@@ -236,7 +236,7 @@ Para editar experiências existentes ou incluir novas experiências em uma confi
 
 ### Coleção de dados {#onboarding-data-collection}
 
-Nesta seção, você configura como coletar os dados do Content Analytics.
+Nesta seção, você configura como coletar seus dados de Análise de Conteúdo.
 
 <!-- markdownlint-disable MD034 -->
 

@@ -6,9 +6,9 @@ feature: Content Analytics
 role: User
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
 source-git-commit: e8cba64e706a456861fd8392ce9260b7a1c4636b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1300'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Para começar a criar relatórios da análise de conteúdo do zero:
 1. [Crie um novo projeto](/help/analysis-workspace/build-workspace-project/create-projects.md) ou [abra um projeto existente](/help/analysis-workspace/build-workspace-project/open-projects.md) no Workspace.
 1. [Selecione uma visualização de dados](/help/analysis-workspace/c-panels/panels.md#data-view) para os relatórios da análise de conteúdo. Os relatórios da análise de conteúdo só estão disponíveis para visualizações de dados [configuradas](/help/content-analytics/config/configuration.md) para a análise de conteúdo.
 1. Arraste uma visualização de ![Tabela](/help/assets/icons/Table.svg) [tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) até a tela.
-1. Use [componentes específicos do Content Analytics](components.md) e outros [componentes](/help/components/overview.md) genéricos (como segmentos, intervalos de datas, anotações) para criar seus insights do Content Analytics.
+1. Use [componentes específicos da Análise de Conteúdo](components.md) e outros [componentes](/help/components/overview.md) genéricos (como segmentos, intervalos de datas, anotações) para criar seus insights da Análise de Conteúdo.
 
 ## Miniaturas
 
@@ -57,7 +57,7 @@ Para abrir a visualização com os seguintes detalhes:
 
 ## Modelo
 
-Um [modelo](/help/analysis-workspace/templates/use-templates.md) do Content Analytics está disponível para ajudá-lo a saber qual conteúdo e atributos de conteúdo estão tendo o melhor desempenho. O modelo faz parte do [canal da web e do caso de uso de engajamento](/help/analysis-workspace/templates/use-templates.md#web-engagement) e detalha como o conteúdo é executado em nível granular. Você pode observar o desempenho de ativos individuais ou atributos específicos. 
+Um [modelo](/help/analysis-workspace/templates/use-templates.md) de Análise de Conteúdo está disponível para ajudá-lo a descobrir quais conteúdos e atributos de conteúdo têm melhor desempenho. O modelo faz parte do [canal da web e do caso de uso de engajamento](/help/analysis-workspace/templates/use-templates.md#web-engagement) e detalha como o conteúdo é executado em nível granular. Você pode observar o desempenho de ativos individuais ou atributos específicos. 
 
 Com base no que aprender, você poderá fazer uma série de coisas. Como promover ativos de alto desempenho na sua página inicial, personalizar o conteúdo para segmentos específicos a fim de incluir atributos de alto desempenho ou remanejar um conteúdo que começou a se tornar obsoleto.
 
@@ -65,7 +65,7 @@ Para usar o modelo:
 
 1. Selecione **[!UICONTROL Espaço de trabalho]** no menu principal.
 1. Verifique se você selecionou uma visualização de dados configurada para a análise de conteúdo. 
-1. Procure ou use segmentos (**[!UICONTROL Web]** para **[!UICONTROL Canal]** e **[!UICONTROL Envolvimento]** para **[!UICONTROL Caso de Uso]**&#x200B;s) para localizar e selecionar o modelo **[!UICONTROL Content Analytics]**.
+1. Pesquise ou utilize segmentos (**[!UICONTROL Web]** para **[!UICONTROL Canal]** e **[!UICONTROL Engajamento]** para **[!UICONTROL Casos de uso]**) para encontrar e selecionar o modelo de **[!UICONTROL Análise de Conteúdo]**.
 1. Selecione **[!UICONTROL Usar modelo]**.
 1. Na caixa de diálogo **[!UICONTROL Configurar o modelo]**, selecione uma métrica na caixa de diálogo **[!UICONTROL Selecionar uma métrica de conversão]**. Por exemplo, **[!UICONTROL CTR do ativo]**.
 1. Selecione **[!UICONTROL Continuar]**.
@@ -155,5 +155,5 @@ Um painel que consiste em uma tabela de forma livre que detalha onde os ativos m
 >[!MORELIKETHIS]
 >
 >[Componentes da análise de conteúdo](components.md)
->&#x200B;>[Usar modelos](/help/analysis-workspace/templates/use-templates.md#web-engagement)
+>>[Usar modelos](/help/analysis-workspace/templates/use-templates.md#web-engagement)
 >
