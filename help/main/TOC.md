@@ -182,7 +182,7 @@ ht-degree: 99%
       + [Abrir projetos](/help/analysis-workspace/build-workspace-project/open-projects.md)
       + [Comentar em projetos](/help/analysis-workspace/build-workspace-project/comment-projects.md)
       + [Salvar projetos](../analysis-workspace/build-workspace-project/save-projects.md)
-      + [Índice ](../analysis-workspace/build-workspace-project/project-table-of-contents.md)
+      + [Índice &#x200B;](../analysis-workspace/build-workspace-project/project-table-of-contents.md)
       + Pastas no espaço de trabalho {#workspace-folders}
          + [Visão geral](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
          + [Criar pastas](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
@@ -384,7 +384,7 @@ ht-degree: 99%
       + [Funções avançadas](../components/calc-metrics/cm-adv-functions.md)
    + Intervalos de datas {#cja-date-ranges}
       + [Visão geral](../components/date-ranges/overview.md)
-      + [Criar intervalos de datas ](../components/date-ranges/create.md)
+      + [Criar intervalos de datas &#x200B;](../components/date-ranges/create.md)
       + [Gerenciar intervalos de datas](../components/date-ranges/manage.md)
       + [Comparação de datas](../components/date-ranges/time-comparison.md)
       + [Exemplos](../components/date-ranges/custom-date-ranges.md)
@@ -500,7 +500,7 @@ ht-degree: 99%
       + Google Analytics {#ga}
          + [Migrar dados do Google Analytics](/help/use-cases/third-party/ga/overview.md)
          + [Assimilar dados históricos do Google Analytics](/help/use-cases/third-party/ga/backfill.md)
-         + [Configurar dados de transmissão do Google Analytics ](/help/use-cases/third-party/ga/streaming.md)
+         + [Configurar dados de transmissão do Google Analytics &#x200B;](/help/use-cases/third-party/ga/streaming.md)
          + [Relatório de dados do Google Analytics](/help/use-cases/third-party/ga/report.md)
       + Métrica quântica {#qm}
          + [Visão geral](/help/use-cases/third-party/quantum-metric/qm-overview.md)
