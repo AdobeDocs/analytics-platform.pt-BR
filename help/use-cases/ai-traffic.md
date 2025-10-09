@@ -293,6 +293,6 @@ Use os campos e segmentos derivados para relatar e analisar o tráfego gerado pe
 
 >[!MORELIKETHIS]
 >
->Este artigo de caso de uso é baseado no artigo do blog de Brian Au: [Rastreamento e análise de LLM e tráfego gerado por IA na Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967)
+>Este artigo de caso de uso é baseado no artigo do blog de Brian Au: [Rastreamento e análise de LLM e tráfego gerado por IA na Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967?profile.language=pt)
 >
 >
