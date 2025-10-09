@@ -6,9 +6,9 @@ feature: Use Cases
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 1cf0d957d62d60979982320f45b4fdadcc7458b8
+source-git-commit: 38be574621e4fc384f9fdeac94fc071f0cdd132b
 workflow-type: tm+mt
-source-wordcount: '1219'
+source-wordcount: '1217'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ Este artigo de caso de uso explica como usar o recurso de campos derivados do Cu
 
 Para detectar o tráfego gerado por LLM e IA, faça a distinção entre:
 
-* **Rastreadores LLM**: coletam dados para RAG (geração aumentada) de treinamento e recuperação.
+* **Rastreadores de LLM**: coletam dados para RAG (geração aumentada) de treinamento e recuperação.
 * **Agentes de IA**: funcionam como interfaces que executam tarefas em nome de humanos. Os agentes de IA preferem interagir por meio de APIs, o que ignora os métodos de rastreamento de análise da Web. No entanto, você ainda pode analisar uma parte significativa do tráfego gerado pela IA por meio de sites.
 
 Três métodos principais comuns de detecção para identificar e monitorar o tráfego gerado por LLM e AI são:
@@ -35,10 +35,10 @@ A tabela a seguir ilustra como os métodos de detecção podem ser usados em dif
 
 | Cenário | Identificação do agente do usuário | Classificação do referenciador | Detecção de parâmetro de consulta |
 |---|---|---|---|
-| **Treinamento de um Modelo** | O agente (`GPTBot`, `ClaudeBot` e mais) pode ser identificado quando o log do lado do servidor é implementado. | Nenhuma classificação é possível. Os rastreadores de IA não geram referenciadores durante o treinamento. | A detecção é impossível. Os rastreadores de IA não adicionam parâmetros durante o treinamento. |
+| **Treinamento de um modelo** | O agente (`GPTBot`, `ClaudeBot` e mais) pode ser identificado quando o log do lado do servidor é implementado. | Nenhuma classificação é possível. Os rastreadores de IA não geram referenciadores durante o treinamento. | A detecção é impossível. Os rastreadores de IA não adicionam parâmetros durante o treinamento. |
 | **Navegação do agente** | O agente (`ChatGPT-User`, `claude-web`) pode ser identificado quando o log do lado do servidor captura cabeçalhos. | A classificação é possível se o agente navegar de uma interface de IA com preservação de referenciador. | Às vezes, a detecção é possível se o serviço de IA adicionar parâmetros de rastreamento. |
-| **Geração Aumentada para Recuperação (RAG) para Responder a Consulta** | O agente (`OAI-SearchBot`, `PerplexityBot`) pode ser identificado com o log do lado do servidor. | Normalmente, nenhuma classificação é possível, uma vez que as operações de RAG muitas vezes ignoram os mecanismos do referenciador. | A detecção raramente é possível, a menos que especificamente implementada pelo provedor de IA. |
-| **Cliques De Usuário** | O agente não pode ser identificado. O agente de IA aparece como um agente de usuário normal. | A classificação é possível quando os usuários clicam em links de interfaces de IA ([chatgpt.com](https://chatgpt.com), [claude.ai](https://claude.ai) e muito mais). | A detecção é possível quando os serviços de IA adicionam parâmetros UTM a links externos. |
+| **Geração aumentada de recuperação (RAG) para responder a consulta** | O agente (`OAI-SearchBot`, `PerplexityBot`) pode ser identificado com o log do lado do servidor. | Normalmente, nenhuma classificação é possível, uma vez que as operações de RAG muitas vezes ignoram os mecanismos do referenciador. | A detecção raramente é possível, a menos que especificamente implementada pelo provedor de IA. |
+| **Cliques do usuário** | O agente não pode ser identificado. O agente de IA aparece como um agente de usuário normal. | A classificação é possível quando os usuários clicam em links de interfaces de IA ([chatgpt.com](https://chatgpt.com), [claude.ai](https://claude.ai) e muito mais). | A detecção é possível quando os serviços de IA adicionam parâmetros UTM a links externos. |
 | **Condições de visibilidade de tráfego** | Exigir integração de registro do lado do servidor com o Customer Journey Analytics ou marcação do lado do servidor para identificação do agente. | A classificação depende das políticas do referenciador de plataforma de IA e da transmissão adequada do cabeçalho HTTP. | A detecção requer a preservação de parâmetros por meio de redirecionamentos e da coleta adequada de parâmetros de URL. |
 
 ### Desafios
@@ -293,6 +293,6 @@ Use os campos e segmentos derivados para relatar e analisar o tráfego gerado pe
 
 >[!MORELIKETHIS]
 >
->Este artigo de caso de uso é baseado no artigo do blog de Brian Au: [Rastreamento e análise de LLM e tráfego gerado por IA na Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967?profile.language=pt)
+>Este artigo de caso de uso é baseado no artigo do blog [Rastreamento e análise de tráfego LLM e AI-Generated no Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967).
 >
 >
