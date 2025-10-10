@@ -4,12 +4,12 @@ description: Saiba mais sobre como configurar o Customer Journey Analytics B2B e
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-badgePremium: label="B2B edition"
+badgePremium: label="B2B Edition"
 exl-id: f959a77b-ccfb-43f2-93bb-b330e73d59ac
 source-git-commit: 3c13ae26a9ef48454467fc21b8faaa9e078c7f9f
 workflow-type: tm+mt
 source-wordcount: '1727'
-ht-degree: 12%
+ht-degree: 13%
 
 ---
 
@@ -18,8 +18,8 @@ ht-degree: 12%
 Este artigo aborda uma configuração normal do Customer Journey Analytics B2B edition para oferecer suporte aos seguintes casos de uso:
 
 * [Otimizar o marketing da conta](optimize-account-marketing.md)
-* [Aumentar contas principais](grow-key-accounts.md)
-* [Criar valor do produto](build-product-value.md)
+* [Desenvolvimento das contas principais](grow-key-accounts.md)
+* [Agregar valor ao produto](build-product-value.md)
 
 
 >[!NOTE]

@@ -19,7 +19,7 @@ ht-degree: 58%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-appmeasurement-logic"
 >title="Usar a lógica do AppMeasurement com o SDK da web"
->abstract="Em vez de enviar dados por meio de um objeto XDM, é possível enviar todas as variáveis no formato do AppMeasurement por meio do objeto de dados. <br><br>Essa opção economiza tempo de implementação, permitindo mapear a lógica do AppMeasurement para o XDM, em vez de preencher um objeto XDM do zero. No entanto, ela se torna mais complexa com o tempo, pois qualquer campo adicionado no futuro deve ser mapeado para o XDM no fluxo de dados."
+>abstract="Em vez de enviar dados por meio de um objeto XDM, é possível enviar todas as variáveis no formato do AppMeasurement por meio do objeto de dados. <br><br>Essa opção economiza tempo de implementação, permitindo mapear a lógica do AppMeasurement para o XDM, em vez de preencher um objeto XDM do zero. No entanto, ela se torna mais complexa com o tempo, pois qualquer campo adicionado no futuro deve ser mapeado para o XDM na sequência de dados."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -70,7 +70,7 @@ As etapas básicas para migrar uma implementação do Adobe Analytics (AppMeasur
 
    1. Envie todas as variáveis no formato AppMeasurement por meio do objeto de dados.
 
-      Para obter mais informações, consulte [Mapeamento de variável de objeto de dados para Adobe Analytics](https://experienceleague.adobe.com/pt-br/docs/analytics/implementation/aep-edge/data-var-mapping).
+      Para obter mais informações, consulte [Mapeamento de variável de objeto de dados para Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping).
 
    1. Escolha seu esquema.
 
@@ -86,7 +86,7 @@ As etapas básicas para migrar uma implementação do Adobe Analytics (AppMeasur
 
       +++
 
-      +++Criar um esquema XDM
+      +++Criar um esquema do XDM
 
       | Vantagens | Desvantagens |
       |----------|---------|
@@ -96,7 +96,7 @@ As etapas básicas para migrar uma implementação do Adobe Analytics (AppMeasur
 
    1. Use o mapeamento do fluxo de dados para mapear todos os campos no objeto de dados para o esquema XDM.
 
-      Para obter mais informações, consulte [Mapeamento](https://experienceleague.adobe.com/pt-br/docs/experience-platform/datastreams/data-prep?lang=en#mapping) em [Preparação de dados para coleção de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/datastreams/data-prep) na documentação do Experience Platform.
+      Para obter mais informações, consulte [Mapeamento](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep?lang=en#mapping) em [Preparação de dados para coleção de dados](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep) na documentação do Experience Platform.
 
 {{upgrade-final-step}}.
 

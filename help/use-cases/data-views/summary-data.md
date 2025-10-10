@@ -7,7 +7,7 @@ role: Admin
 exl-id: 80139806-618a-46ff-b2c4-32d7bb85a526
 source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
-source-wordcount: '5202'
+source-wordcount: '5021'
 ht-degree: 15%
 
 ---
@@ -63,7 +63,7 @@ Para usar os dados de resumo no Customer Journey Analytics, em um relatório ou 
 
 Use esses dados de resumo junto com um conjunto de dados para dados do evento e um conjunto de dados para dados de pesquisa.
 
-+++Dados do evento
++++Dados de eventos
 
 Os dados do evento estão disponíveis no Conjunto de dados de exemplo do evento. Os dados de amostra são assim:
 
@@ -278,7 +278,7 @@ Os dados de pesquisa estão disponíveis no Conjunto de dados de pesquisa de exe
 | 17 | def321 | def-adgroup | Campanha 321 |
 | 18 | ghi321 | ghi-adgroup | Campanha 321 |
 
-[![DataDownload](/help/assets/icons/DataDownload.svg) Baixar dados de pesquisa de amostra](./assets/lookup-data.csv)
+[![Download de dados](/help/assets/icons/DataDownload.svg)](./assets/lookup-data.csv)
 +++
 
 >[!INFO]
@@ -376,7 +376,7 @@ Para fazer upload dos dados de amostra neste conjunto de dados:
    1. Opcionalmente, você pode selecionar ![Visualizar](/help/assets/icons/Preview.svg) **[!UICONTROL Visualizar dados]** para abrir uma caixa de diálogo com uma visualização dos dados depois de carregados no conjunto de dados.
    1. Selecione **[!UICONTROL Concluir]**.
 
-Em **[!UICONTROL Fontes]** > **[!UICONTROL Fluxo de dados - XX/XX/XXXX, XX:XX]**, o status do carregamento é exibido. Atualize para ver as atualizações do upload. Quando bem-sucedido, seus dados de amostra são carregados no Experience Platform.
+Em **[!UICONTROL Fontes]** > **[!UICONTROL Fluxo de dados - XX/XX/XXXX, XX:XX XX]**, o status do carregamento é exibido. Atualize para ver as atualizações do upload. Quando bem-sucedido, seus dados de amostra são carregados no Experience Platform.
 
 
 
@@ -526,7 +526,7 @@ Para garantir que você possa relatar os dados corretos no Workspace, é necess�
             1. Selecione **[!UICONTROL 30 Day]** no menu suspenso **[!UICONTROL Janela de pesquisa]**.
          1. Expandir ![Divisa](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Formato]**.
             1. Selecione **[!UICONTROL Decimal]** no menu suspenso **[!UICONTROL Formatar]**.
-            1. Selecione **[!UICONTROL Bom (verde)]** no menu suspenso **[!UICONTROL Mostrar tendência ascendente como]**.
+            1. Selecione **[!UICONTROL ▲Bom (verde)]** no menu suspenso **[!UICONTROL Mostrar tendência ascendente como]**.
 
       1. Selecione **[!UICONTROL Salvar e continuar]**.
 
@@ -565,7 +565,7 @@ Você deseja usar o potencial de criar relatórios sobre dados de resumo e gerar
    1. Especifique `Cost per Impression` para o **[!UICONTROL Nome]**.
    1. Selecione **[!UICONTROL Moeda]** para **[!UICONTROL Formato]**.
    1. Especifique `4` para **[!UICONTROL Casas decimais]**.
-   1. Use ![Evento](/help/assets/icons/Event.svg) **[!UICONTROL Custo (Resumo)]** **&#x200B;**&#x200B;**[!UICONTROL Impressões (Resumo)]** como **[!UICONTROL Definição]**.
+   1. Use ![Evento](/help/assets/icons/Event.svg) **[!UICONTROL Custo (Resumo)]** **** **[!UICONTROL Impressões (Resumo)]** como **[!UICONTROL Definição]**.
    1. Selecione **[!UICONTROL Salvar]**.
 1. Selecione ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** para adicionar outra métrica calculada nova.
    1. Especifique `Return on Ad Spend` para o **[!UICONTROL Nome]**.
@@ -603,4 +603,4 @@ O projeto final deve ser semelhante ao mostrado abaixo.
 >[!MORELIKETHIS]
 >
 >[Dados de resumo](/help/data-views/summary-data.md)
->[Configurações do componente do grupo de dados de resumo](/help/data-views/component-settings/summary-data-group.md)
+>>[Configurações do componente do grupo de dados de resumo](/help/data-views/component-settings/summary-data-group.md)

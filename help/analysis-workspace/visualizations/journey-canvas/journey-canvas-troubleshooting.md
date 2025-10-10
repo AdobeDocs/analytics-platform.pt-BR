@@ -7,7 +7,7 @@ exl-id: f0ac3752-9244-4d9e-807b-e6471e6aa55b
 source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
 workflow-type: tm+mt
 source-wordcount: '1290'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -23,7 +23,7 @@ As informações a seguir podem ajudar você a solucionar problemas relacionados
 
 Na tela do Jornada, é possível que os nós que vêm mais tarde na jornada mostrem uma porcentagem ou contagem de números mais alta do que os nós que vêm anteriormente na jornada.
 
-Em outras palavras, ao contrário das visualizações de Fallout, que são sempre em forma de funil (com a participação diminuindo a cada etapa), as visualizações da tela de Jornada podem ter uma participação maior em etapas posteriores da jornada do que nas etapas anteriores.
+Em outras palavras, ao contrário das visualizações de Fallout, que são sempre em forma de funnel (com a participação diminuindo a cada etapa), as visualizações da tela de Jornada podem ter uma participação maior em etapas posteriores da jornada do que nas etapas anteriores.
 
 Isso pode ocorrer nos seguintes cenários:
 

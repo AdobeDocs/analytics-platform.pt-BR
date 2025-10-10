@@ -6,8 +6,8 @@ exl-id: de0fdbea-71f0-445b-a1e4-c7e895f142d4
 role: User
 source-git-commit: ce4a21b1a1e89f14316a92fbdce38281db61e666
 workflow-type: tm+mt
-source-wordcount: '1074'
-ht-degree: 98%
+source-wordcount: '1076'
+ht-degree: 96%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 98%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta o painel Tempo gasto com a reprodução de mídia no_ ![Customer Journey Analytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_.<br/>_Consulte o [painel Tempo gasto com a reprodução de mídia](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent) para a versão do_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
+_Este artigo documenta o painel Tempo gasto com a reprodução de mídia no_ ![Customer Journey Analytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_.<br/>_Consulte o [painel Tempo gasto com a reprodução de mídia](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent) para a versão do_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 
@@ -42,7 +42,7 @@ _Este artigo documenta o painel Tempo gasto com a reprodução de mídia no_ ![C
 >[!NOTE]
 >
 >O painel Público-alvo médio por minuto de mídia está disponível somente para clientes que adquiriram o complemento Coleção de mídia de streaming para o Customer Journey Analytics.
->&#x200B;>Entre em contato com o representante de vendas da Adobe ou com a equipe de conta da Adobe para obter mais informações.
+>>Entre em contato com o representante de vendas da Adobe ou com a equipe de conta da Adobe para obter mais informações.
 >
 
 O painel **[!UICONTROL Tempo gasto com a reprodução de mídia]** permite analisar a reprodução ao longo do tempo, com detalhes sobre o pico de simultaneidade e a capacidade de detalhar e comparar. 
@@ -91,7 +91,7 @@ Você pode configurar o painel Tempo gasto com a reprodução de mídia usando e
 | Números de resumo do painel | Para visualizar os detalhes de data ou hora do tempo gasto com a reprodução, um número de resumo está disponível. O Máximo mostra detalhes para a simultaneidade de pico. O Mínimo mostra detalhes para o vale. O total soma o tempo total gasto com a reprodução para a seleção. O padrão do painel mostra somente o Máximo, mas você pode alterá-lo para mostrar Mínimo, Total ou qualquer combinação dos três.<br>Se você estiver usando detalhamentos, um número de resumo será exibido para cada um. |
 | Detalhamento por séries | Como opção, você pode detalhar a visualização por segmentos, dimensões, itens de dimensão ou intervalos de datas.<p>- É possível exibir até 10 linhas por vez. Os detalhamentos são limitados a um único nível.</p><p>- Ao arrastar uma dimensão, os itens de dimensão principais serão selecionados automaticamente com base no intervalo de datas do painel selecionado.</p>- Para comparar intervalos de datas, arraste 2 ou mais intervalos de datas para o segmento de detalhamento em série. |
 | Formato de tempo | É possível visualizar o tempo gasto com a reprodução em `Hours:Minutes:Seconds` (padrão) ou em `Minutes` (que é exibido em números inteiros, arredondados em 0,5). |
-| Exibição da sequência de data | Se você inseriu pelo menos dois segmentos de intervalo de datas como detalhamentos de série, verá a opção de selecionar sobreposição (padrão) ou sequencial. “Sobreposição” exibe as linhas com uma origem comum no eixo x para que evoluam em paralelo, enquanto que “Sequencial” exibe as linhas com suas origens específicas no eixo x. Se os dados estiverem alinhados (por exemplo, o segmento 1 termina às 20h44 e o segmento 2 começa às 20h45), as linhas serão exibidas em sequência. |
+| Exibição da sequência de data | Se você inseriu pelo menos dois segmentos de intervalo de datas como detalhamentos de série, verá a opção de selecionar sobreposição (padrão) ou sequencial. “Sobreposição” exibe as linhas com uma origem comum no eixo x para que evoluam em paralelo, enquanto que “Sequencial” exibe as linhas com suas origens específicas no eixo x. Se os dados se alinharem (por exemplo, o segmento 1 termina às 20h e o segmento 2 começa às 20h), as linhas serão exibidas em sequência.:44:45 |
 
 
 ![A exibição padrão do Tempo gasto com a reprodução de mídia.](assets/mpts_default_view.png)
@@ -129,6 +129,6 @@ A única métrica que pode ser usada nesse painel é Tempo gasto com a reproduç
 >[!MORELIKETHIS]
 >
 >[Criar um painel](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
->&#x200B;>[Painel de público-alvo médio a cada minuto de mídia](average-minute-audience-panel.md)
->&#x200B;>[Painel de visualizadores simultâneos de mídia](media-concurrent-viewers.md)
+>>[Painel de público-alvo médio a cada minuto de mídia](average-minute-audience-panel.md)
+>>[Painel de visualizadores simultâneos de mídia](media-concurrent-viewers.md)
 >

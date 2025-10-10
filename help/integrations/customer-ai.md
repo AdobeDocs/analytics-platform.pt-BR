@@ -57,7 +57,7 @@ No Customer Journey Analytics, agora você pode [criar uma ou mais conexões](/h
 
 >[!IMPORTANT]
 >
->Cada instância da IA do cliente tem dois conjuntos de dados de saída quando o botão que habilita pontuações para o Customer Journey Analytics (na configuração da Etapa 1) está ativado. Um conjunto de dados de saída é exibido no formato XDM do perfil e um no formato XDM do evento da experiência.
+>Cada instância da IA do cliente tem dois conjuntos de dados de saída quando o botão de alternância que habilita pontuações para o Customer Journey Analytics (na configuração da Etapa 1) está ativado. Um conjunto de dados de saída é exibido no formato XDM do perfil e um no formato XDM do evento de experiência.
 
 ![Pontuações de CAI](assets/cai-scores.png)
 

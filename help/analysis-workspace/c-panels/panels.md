@@ -5,7 +5,7 @@ feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
 source-git-commit: 4599a058cef79a28bd6f9b788c2b202c8235298d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2193'
 ht-degree: 100%
 
@@ -25,7 +25,7 @@ Os seguintes tipos de painel estão disponíveis no Analysis Workspace para o [!
 | [Atribuição](attribution.md) | Compare e visualize modelos de atribuição rapidamente usando qualquer dimensão e métrica de conversão. |
 | [Experimentação](experimentation.md) | Compare diferentes variações de experiências de usuário, marketing ou mensagens para determinar a opção ideal para gerar um resultado específico. |
 | [Forma livre](freeform-panel.md) | Realize comparações e detalhamentos ilimitados e, em seguida, adicione visualizações para obter uma visão ampla dos dados. |
-| [Público médio a cada minuto de mídia](average-minute-audience-panel.md) | Analise o público médio por minuto de um conteúdo específico ou ao longo de um período personalizado. |
+| [Público-alvo médio a cada minuto de mídia](average-minute-audience-panel.md) | Analise o público-alvo médio por minuto de um conteúdo específico ou ao longo de um período personalizado. |
 | [Visualizadores simultâneos de mídia](media-concurrent-viewers.md) | Analise os visualizadores simultâneos ao longo do tempo, com detalhes sobre o pico de simultaneidade e a capacidade de criar um detalhamento e comparar. |
 | [Tempo gasto com a reprodução da mídia](/help/analysis-workspace/c-panels/media-playback-time-spent.md) | Analise o tempo de reprodução gasto para entender onde ocorrem os picos de simultaneidade ou as desistências. |
 | [Próximo item ou anterior](next-previous.md) | Mostra as páginas seguintes ou anteriores que as pessoas acessam. |
@@ -83,7 +83,7 @@ Você pode gerenciar um painel das seguintes maneiras:
 
 * Para recolher um painel, selecione ![ChevronDown](/help/assets/icons/ChevronDown.svg).
 * Para revelar um painel recolhido, selecione ![ChevronLeft](/help/assets/icons/ChevronLeft.svg).
-* Para excluir um painel, selecione ![CrossSize400](/help/assets/icons/CrossSize200.svg). Para desfazer, selecione **[!UICONTROL Editar]** > **[!UICONTROL Desfazer]** (**[!UICONTROL *cmd+z *]**|**[!UICONTROL * ctrl+z *]**).
+* Para excluir um painel, selecione ![CrossSize400](/help/assets/icons/CrossSize200.svg). Para desfazer a ação, selecione **[!UICONTROL Editar]** > **[!UICONTROL Desfazer]** (**[!UICONTROL *cmd+z *]**|**[!UICONTROL * ctrl+z *]**).
 * Para mover um painel, arraste e solte o painel sempre que uma opção ![Mover](/help/assets/icons/Move.svg) estiver visível (geralmente, quando você passa o mouse sobre o cabeçalho).
 
 
@@ -167,7 +167,7 @@ Para obter mais informações, consulte [Segmentos rápidos](/help/components/se
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Segmentos suspensos](https://video.tv.adobe.com/v/30816?quality=12&learn=on&captions=por_br){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Segmentos suspensos](https://video.tv.adobe.com/v/23877?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
 
 {{videoaa}}
 
@@ -251,6 +251,6 @@ As seguintes opções estão disponíveis:
 
 ## Configuração
 
-Alguns painéis (como [!UICONTROL Atribuição], [!UICONTROL Experimentação], [!UICONTROL Público médio por minuto de mídia] e outros) têm uma caixa de diálogo de configuração para ajudar você a criar a visualização. Use a opção ![Editar](/help/assets/icons/Edit.svg) na parte superior do painel para acessar e alterar a configuração.
+Alguns painéis (como [!UICONTROL Atribuição], [!UICONTROL Experimentação], [!UICONTROL Público-alvo médio por minuto de mídia] e outros) têm uma caixa de diálogo de configuração para ajudar você a criar a visualização. Use a opção ![Editar](/help/assets/icons/Edit.svg) na parte superior do painel para acessar e alterar a configuração.
 
 ![Configurar um painel](/help/analysis-workspace/c-panels/assets/configure-panel.png)

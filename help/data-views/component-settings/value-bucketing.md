@@ -30,7 +30,7 @@ Ao criar ou editar uma visualização de dados, a segmentação de valores permi
 
 A segmentação de valores é importante quando você deseja agrupar intervalos, em vez de tratar cada número único como um item de dimensão separado. Por exemplo, um segmento “Entre 5 e 10” será exibido como um item de linha “5 a 10” no Analysis Workspace.
 
-Se você quiser a flexibilidade de criar relatórios tanto em dimensões segmentadas como não segmentadas, arraste duas cópias do componente para a lista de dimensões disponíveis. Ative a segmentação em uma dimensão e desative-a na outra.
+Se você quiser a flexibilidade de criar relatórios tanto em dimensões segmentadas como não segmentadas, arraste duas cópias do componente para a lista de dimensões disponíveis. Habilite a segmentação em uma dimensão e desabilite-a na outra.
 
 | Configuração | Descrição |
 | --- | --- |

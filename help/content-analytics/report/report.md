@@ -1,44 +1,44 @@
 ---
-title: Relatórios da análise de conteúdo
-description: Como criar relatórios da análise de conteúdo
+title: Relatórios do Content Analytics
+description: Como criar relatórios do Content Analytics
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: User
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
 source-git-commit: e8cba64e706a456861fd8392ce9260b7a1c4636b
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1300'
 ht-degree: 100%
 
 ---
 
-# Visão geral de relatórios da análise de conteúdo
+# Visão geral de relatórios do Content Analytics
 
-No [Analysis Workspace](/help/analysis-workspace/home.md), é possível gerar relatórios, fazer análises e obter insights sobre a análise de conteúdo. Há um [modelo](#template) específico do Workspace disponível, portanto, é possível acessar imediatamente um projeto do Workspace pré-preenchido com insights de conteúdo relevantes.
+No [Analysis Workspace](/help/analysis-workspace/home.md), é possível gerar relatórios, fazer análises e obter insights sobre o Content Analytics. Há um [modelo](#template) específico do Workspace disponível, portanto, é possível acessar imediatamente um projeto do Workspace pré-preenchido com insights de conteúdo relevantes.
 
-Para começar a criar relatórios da análise de conteúdo do zero:
+Para começar a criar relatórios do Content Analytics do zero:
 
 1. [Crie um novo projeto](/help/analysis-workspace/build-workspace-project/create-projects.md) ou [abra um projeto existente](/help/analysis-workspace/build-workspace-project/open-projects.md) no Workspace.
-1. [Selecione uma visualização de dados](/help/analysis-workspace/c-panels/panels.md#data-view) para os relatórios da análise de conteúdo. Os relatórios da análise de conteúdo só estão disponíveis para visualizações de dados [configuradas](/help/content-analytics/config/configuration.md) para a análise de conteúdo.
+1. [Selecione uma visualização de dados](/help/analysis-workspace/c-panels/panels.md#data-view) para os relatórios do Content Analytics. Os relatórios da análise de conteúdo só estão disponíveis para visualizações de dados [configuradas](/help/content-analytics/config/configuration.md) para o Content Analytics.
 1. Arraste uma visualização de ![Tabela](/help/assets/icons/Table.svg) [tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) até a tela.
 1. Use [componentes específicos da Análise de Conteúdo](components.md) e outros [componentes](/help/components/overview.md) genéricos (como segmentos, intervalos de datas, anotações) para criar seus insights da Análise de Conteúdo.
 
 ## Miniaturas
 
-Você verá miniaturas de ativos e dimensões com base nas dimensões específicas de análise de conteúdo usadas no projeto.
+Você verá miniaturas de ativos e dimensões com base nas dimensões específicas do Content Analytics usadas no projeto.
 
-![Miniaturas da análise de conteúdo](../assets/aca-thumbnails.png)
+![Miniaturas do Content Analytics](../assets/aca-thumbnails.png)
 
-Por padrão, as miniaturas são exibidas para dimensões relevantes da análise de conteúdo. Para configurar a exibição de miniaturas de uma dimensão da análise de conteúdo.
+Por padrão, as miniaturas são exibidas para dimensões relevantes do Content Analytics. Para configurar a exibição de miniaturas de uma dimensão do Content Analytics.
 
-* Passe o mouse sobre uma linha de cabeçalho de uma dimensão da análise de conteúdo. Por exemplo, **[!UICONTROL IDs dos ativos]** ou **[!UICONTROL IDs das experiências]**.
+* Passe o mouse sobre uma linha de cabeçalho de uma dimensão do Content Analytics. Por exemplo, **[!UICONTROL IDs dos ativos]** ou **[!UICONTROL IDs das experiências]**.
 * Selecione ![Configuração](/help/assets/icons/Setting.svg).
 * Na janela pop-up **[!UICONTROL Configuração de linha]**, abaixo de **[!UICONTROL Configurações]**, marque ou desmarque a opção **[!UICONTROL Mostrar miniaturas]**.
 
 
 ## Visualizações
 
-Em linhas de uma dimensão da análise de conteúdo que apresentam miniaturas, é possível abrir uma janela pop-up de visualização.
+Em linhas de uma dimensão do Content Analytics que apresentam miniaturas, é possível abrir uma janela pop-up de visualização.
 
 Para abrir a visualização com os seguintes detalhes:
 
@@ -46,7 +46,7 @@ Para abrir a visualização com os seguintes detalhes:
 
   | Visualização da experiência | Visualização do ativo |
   |---|---|
-  | ![Visualização da experiência da Análise de conteúdo](../assets/aca-experience-preview.png) | ![Visualização do ativo da Análise de conteúdo](../assets/aca-asset-preview.png) |
+  | ![Visualização da experiência do Content Analytics](../assets/aca-experience-preview.png) | ![Visualização do ativo do Content Analytics](../assets/aca-asset-preview.png) |
   | Nome da dimensão (por exemplo, **[!UICONTROL ID da experiência])** | Nome da dimensão do ativo (por exemplo, **[!UICONTROL ID do ativo])** |
   | **[!UICONTROL Impressões (todas as vezes)]**: número de impressões da experiência. | **[!UICONTROL Impressões (todas as vezes)]**: número de impressões do ativo. |
   | **[!UICONTROL Ativos]**: número de ativos que esta experiência contém. <br/>Selecione ![Detalhamento](/help/assets/icons/Breakdown.svg) **[!UICONTROL Detalhamento]** para inspecionar os ativos. | **[!UICONTROL Experiências]**: número de experiências em que este ativo é exibido. <br/>Selecione ![Detalhamento](/help/assets/icons/Breakdown.svg) **[!UICONTROL Detalhamento]** para inspecionar os ativos. |
@@ -64,13 +64,13 @@ Com base no que aprender, você poderá fazer uma série de coisas. Como promove
 Para usar o modelo:
 
 1. Selecione **[!UICONTROL Espaço de trabalho]** no menu principal.
-1. Verifique se você selecionou uma visualização de dados configurada para a análise de conteúdo. 
+1. Verifique se você selecionou uma visualização de dados configurada para o Content Analytics. 
 1. Pesquise ou utilize segmentos (**[!UICONTROL Web]** para **[!UICONTROL Canal]** e **[!UICONTROL Engajamento]** para **[!UICONTROL Casos de uso]**) para encontrar e selecionar o modelo de **[!UICONTROL Análise de Conteúdo]**.
 1. Selecione **[!UICONTROL Usar modelo]**.
 1. Na caixa de diálogo **[!UICONTROL Configurar o modelo]**, selecione uma métrica na caixa de diálogo **[!UICONTROL Selecionar uma métrica de conversão]**. Por exemplo, **[!UICONTROL CTR do ativo]**.
 1. Selecione **[!UICONTROL Continuar]**.
 
-Isso abre um projeto da **[!UICONTROL Visão geral da análise de conteúdo]** no [Analysis Workspace](/help/analysis-workspace/home.md). O projeto consiste em quatro [painéis](/help/analysis-workspace/c-panels/panels.md), sendo que cada painel fornece [tabelas de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) e [visualizações](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) para responder a uma pergunta específica:
+Isso abre um projeto da **[!UICONTROL Visão geral do Content Analytics]** no [Analysis Workspace](/help/analysis-workspace/home.md). O projeto consiste em quatro [painéis](/help/analysis-workspace/c-panels/panels.md), sendo que cada painel fornece [tabelas de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) e [visualizações](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) para responder a uma pergunta específica:
 
 * **Qual conteúdo tem melhor desempenho?**
 Esse painel ajuda você a entender quais experiências e quais ativos dessas experiências estão gerando engajamento e conversão. As experiências são uma página da web completa, capturada em um momento específico. Uma experiência pode conter texto e vários ativos de imagem individuais. Um ativo é uma imagem individual.
@@ -81,7 +81,7 @@ Esse painel ajuda você a entender quais experiências e quais ativos dessas exp
 
      >[!NOTE]
      >
-     >Essas visualizações só são exibidas quando você [inclui experiências](/help/content-analytics/config/guided.md#experience-capture-and-definition) na configuração da análise de conteúdo.
+     >Essas visualizações só são exibidas quando você [inclui experiências](/help/content-analytics/config/guided.md#experience-capture-and-definition) na configuração do Content Analytics.
      > 
 
       * **CTR de experiência**: uma visualização de [alteração de resumo](/help/analysis-workspace/visualizations/summary-number-change.md) que mostra o CTR da experiência.
@@ -100,7 +100,7 @@ Uma [tabela de forma livre](/help/analysis-workspace/visualizations/freeform-tab
 Uma visualização de [gráfico de dispersão](/help/analysis-workspace/visualizations/scatterplot.md) que mostra um gráfico de dispersão com uma comparação entre visualizações de ativos e conversões de ativos.
 
 * **Quais atributos de ativos contribuem para a conversão?**
-A análise de conteúdo usa IA e a GenAI para atribuir todos os metadados de ativos automaticamente, como assuntos, cenas, cores de primeiro plano etc. Um atributo é uma tag de metadados atribuída por IA que descreve o que há em um ativo ou experiência. Por exemplo: <code>cor de primeiro plano: vermelho</code> é um atributo atribuído automaticamente. As visualizações ajudam a identificar quais atributos de seus ativos mais contribuem para a conversão.
+O Content Analytics usa IA e a GenAI para atribuir todos os metadados de ativos automaticamente, como assuntos, cenas, cores de primeiro plano etc. Um atributo é uma tag de metadados atribuída por IA que descreve o que há em um ativo ou experiência. Por exemplo: <code>cor de primeiro plano: vermelho</code> é um atributo atribuído automaticamente. As visualizações ajudam a identificar quais atributos de seus ativos mais contribuem para a conversão.
 
   O painel consiste nas seguintes visualizações:
 
@@ -119,7 +119,7 @@ Um exemplo de [tabela de forma livre](/help/analysis-workspace/visualizations/fr
 
   >[!NOTE]
   >
-  >Este painel só aparece quando você tem [experiências incluídas](/help/content-analytics/config/guided.md#experience-capture-and-definition) na configuração da análise de conteúdo.
+  >Este painel só aparece quando você tem [experiências incluídas](/help/content-analytics/config/guided.md#experience-capture-and-definition) na configuração do Content Analytics.
   > 
 
   Enquanto os atributos de ativos se concentram nas qualidades visuais das imagens, os atributos de experiência se concentram no texto da página. As visualizações abaixo permitem explorar quais atributos de experiência contribuem para a conversão. Esses atributos também são atribuídos automaticamente usando modelos de IA e GenAI.
@@ -154,6 +154,6 @@ Um painel que consiste em uma tabela de forma livre que detalha onde os ativos m
 
 >[!MORELIKETHIS]
 >
->[Componentes da análise de conteúdo](components.md)
+>[Componentes do Content Analytics](components.md)
 >>[Usar modelos](/help/analysis-workspace/templates/use-templates.md#web-engagement)
 >

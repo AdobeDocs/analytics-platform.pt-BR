@@ -129,7 +129,7 @@ Em ambos os casos, você verá uma notificação de confirmação na parte infer
 
 Para cancelar o envio da pasta de trabalho, selecione **[!UICONTROL Cancelar]**.
 
-## Gerenciar pastas de trabalho agendadas
+## Gerenciar pastas de trabalho programadas
 
 Para obter informações sobre como gerenciar pastas de trabalho já agendadas, consulte [Gerenciar pastas de trabalho agendadas](/help/report-builder/manage-schedules-reportbuilder.md).
 

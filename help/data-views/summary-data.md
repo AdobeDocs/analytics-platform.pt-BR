@@ -8,7 +8,7 @@ exl-id: 417443ae-a1ab-483b-a8fd-cff5ee8b6263
 source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
 workflow-type: tm+mt
 source-wordcount: '1147'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -21,7 +21,7 @@ Esses dados de resumo podem ser usados para apresentar indicadores de desempenho
 >[!NOTE]
 >
 >Dados de resumo são dados de série temporal de um conjunto de dados de resumo. Esse conjunto de dados de resumo é baseado em um esquema que usa a classe de métricas de resumo do XDM como classe de base.
->Somente dados de séries temporais por hora ou por dia são permitidos.
+>>Somente dados de séries temporais por hora ou por dia são permitidos.
 
 >[!TIP]
 >
@@ -116,7 +116,7 @@ O fuso horário dos seus dados de resumo é definido na camada do esquema de res
   | 29/07/2024 T01:00:00 | `America/`<br/>`Los_Angeles` | 28/07/2024 T18:00:00 | PST | 2024-07-28T18:00:00 |
   | 30/07/2024 T01:00:00-05:00 | `Australia/`<br/>`Sydney` | 30/07/2024 T17:00:00 | CET | 30/07/2024 T08:00:00 |
 
-  Para fusos horários com uma diferença de 30 minutos (por exemplo, IST, Horário padrão da Índia), essa diferença é descartada ao relatar dados de resumo. Por exemplo: 12h30 é reportado como 12h.
+  Para fusos horários com uma diferença de 30 minutos (por exemplo, IST, Horário padrão da Índia), essa diferença é descartada ao relatar dados de resumo. Por exemplo: 12:30 é relatado como 12:00.
 
 
 Para garantir que o fuso horário adequado seja usado para seus dados de resumo granulares por hora, é necessário garantir que o esquema usado para dados de resumo tenha o fuso horário correto configurado.
@@ -154,5 +154,5 @@ Verifique se as configurações de componente de um grupo de dados de resumo sã
 >[!MORELIKETHIS]
 >
 >- Consulte o artigo [Usar dados de resumo](/help/use-cases/data-views/summary-data.md) para obter um exemplo detalhado de caso de uso sobre como usar e relatar dados de resumo.
->- Blog: [Como os dados de resumo aprimoram os conjuntos de dados do Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-summary-data-enhances-adobe-customer-journey-analytics/ba-p/704635?profile.language=pt)
+>- Blog: [Como os dados de resumo aprimoram os conjuntos de dados do Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-summary-data-enhances-adobe-customer-journey-analytics/ba-p/704635)
 

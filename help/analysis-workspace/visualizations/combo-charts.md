@@ -25,9 +25,9 @@ ht-degree: 93%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta a visualização combinada no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._
+_Este artigo documenta a visualização combinada no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._
 
-_Consulte [Combinado](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/combo-charts) para ver a versão do_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
+_Consulte [Combinado](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/combo-charts) para ver a versão do_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 
@@ -99,6 +99,6 @@ Este é um exemplo de um gráfico de combinação com as funções Média cumula
 >[!MORELIKETHIS]
 >
 >[Adicionar uma visualização a um painel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->&#x200B;>[Configurações de visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->&#x200B;>[Menu de contexto da visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>>[Configurações de visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>>[Menu de contexto da visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >

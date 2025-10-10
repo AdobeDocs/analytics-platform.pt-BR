@@ -34,7 +34,7 @@ ht-degree: 94%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta a tabela de coorte no_ ![Customer Journey Analytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consulte a [tabela de coorte](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis) para a versão do_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
+_Este artigo documenta a tabela de coorte no_ ![Customer Journey Analytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consulte a [tabela de coorte](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis) para a versão do_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 
@@ -55,7 +55,7 @@ A [!UICONTROL tabela de coorte] está disponível a todos os clientes do Custome
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Análise de coorte no Analysis Workspace](https://video.tv.adobe.com/v/3430078/?quality=12&learn=on&captions=por_br){target="_blank"} para assistir a um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Análise de coorte no Analysis Workspace](https://video.tv.adobe.com/v/23990/?quality=12&learn=on){target="_blank"} para assistir a um vídeo de demonstração.
 
 {{videoaa}}
 

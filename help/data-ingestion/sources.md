@@ -117,19 +117,19 @@ Para configurar o esquema:
 
 1. Selecione o nível raiz do esquema (com o nome do esquema) e selecione a opção **[!UICONTROL Perfil]**.
 
-   Você deve habilitar o esquema para o perfil. Depois de ativados, quando os dados são assimilados em conjuntos de dados com base nesse esquema, esses dados são mesclados ao Perfil do cliente em tempo real.
+   Você deve habilitar o esquema para o perfil. Depois de habilitados, quando os dados são assimilados em conjuntos de dados com base nesse esquema, esses dados são mesclados ao Perfil do cliente em tempo real.
 
-   Consulte [Ativar o esquema para usar no Perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=pt-BR#profile) para obter mais informações.
+   Consulte [Habilitar o esquema para usar no Perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=pt-BR#profile) para obter mais informações.
 
    >[!IMPORTANT]
    >
-   >    Depois de salvar um esquema ativado para perfil, ele não pode mais ser desativado para perfil.
+   >    Depois de salvar um esquema habilitado para perfil, ele não pode mais ser desabilitado para perfil.
 
    ![Habilitar esquema para perfil](./assets/enable-for-profile.png)
 
 1. Selecione **[!UICONTROL Salvar]** para salvar o esquema.
 
-Você criou um esquema mínimo que modela os dados de fidelidade que podem ser assimilados na Adobe Experience Platform. O esquema permite que os perfis sejam identificados usando o endereço de email. Ao ativar o esquema para perfil, você garante que os dados da fonte de transmissão sejam adicionados ao Perfil do cliente em tempo real.
+Você criou um esquema mínimo que modela os dados de fidelidade que podem ser assimilados na Adobe Experience Platform. O esquema permite que os perfis sejam identificados usando o endereço de email. Ao habilitar o esquema para perfil, você garante que os dados da fonte de transmissão sejam adicionados ao Perfil do cliente em tempo real.
 
 Consulte [Criar e editar esquemas na interface do usuário](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=pt-BR) para obter mais informações sobre a adição e remoção de grupos de campos e campos individuais a um esquema.
 
@@ -167,7 +167,7 @@ Para configurar seu conjunto de dados:
 
    ![Habilitar esquema para perfil](./assets/loyalty-dataset-profile.png)
 
-Consulte [Guia da interface do usuário de conjuntos de dados](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=pt-BR) para obter muito mais informações sobre como visualizar, visualizar, criar, excluir um conjunto de dados. E como ativar um conjunto de dados para o Perfil do cliente em tempo real.
+Consulte [Guia da interface do usuário de conjuntos de dados](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=pt-BR) para obter muito mais informações sobre como visualizar, visualizar, criar, excluir um conjunto de dados. E como habilitar um conjunto de dados para o Perfil do cliente em tempo real.
 
 
 ## Usar um conector de origem
@@ -176,11 +176,11 @@ Dependendo de onde você recebe os dados de fidelidade, é possível escolher o 
 
 Você pode assimilar dados de várias fontes. Veja a seguir apenas algumas das muitas fontes disponíveis:
 
-- Aplicativos do Adobe (os conectores de origem incluem [Adobe Analytics](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/adobe-applications/analytics), [Adobe Audience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/adobe-applications/audience-manager) e muito mais)
+- Aplicativos do Adobe (os conectores de origem incluem [Adobe Analytics](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/adobe-applications/analytics), [Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/audience-manager) e muito mais)
 
-- Armazenamento na nuvem (os conectores de origem incluem [Amazon S3](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/cloud-storage/s3), [Azure Blob](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/cloud-storage/blob) e muito mais)
+- Armazenamento na nuvem (os conectores de origem incluem [Amazon S3](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/s3), [Azure Blob](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/blob) e muito mais)
 
-- Bancos de dados (os conectores de origem incluem [Snowflake](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/databases/snowflake), [Microsoft SQL Server](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/databases/sql-server) e muito mais)
+- Bancos de dados (os conectores de origem incluem [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake), [Microsoft SQL Server](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/sql-server) e muito mais)
 
 Para configurar um conector de origem:
 
@@ -198,7 +198,7 @@ Para configurar um conector de origem:
 
    1. **[!UICONTROL Mapeamento]**: você mapeia os campos de dados de origem de entrada para atributos no esquema associado ao conjunto de dados selecionado.
 
-   1. **[!UICONTROL Programação]**: se disponível, é possível agendar a assimilação de dados.
+   1. **[!UICONTROL Programação]**: se disponível, é possível agendar a ingestão de dados.
 
    1. **[!UICONTROL Revisão]**: você verá uma análise da definição do conector de origem.
 
@@ -214,7 +214,7 @@ Consulte [Assimilar e usar dados do Adobe Analytics tradicional](./analytics.md)
 
 Consulte [Assimilar e usar dados de transmissão](./streaming.md) para obter informações sobre como usar o conector de origem da API HTTP.
 
-Consulte [Visão geral dos conectores de origem](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=pt-BR#terms-and-conditions) para obter uma visão geral dos conectores de origem, incluindo links para mais informações sobre cada conector.
+Consulte [Visão geral dos conectores de origem](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html#terms-and-conditions) para obter uma visão geral dos conectores de origem, incluindo links para mais informações sobre cada conector.
 
 
 ## Configurar uma conexão

@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 feature: Use Cases, Cross-Channel Analysis
 role: User
 source-git-commit: 5e80e68c6b5d3dca19dae21c6719b040b28afaf9
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '581'
 ht-degree: 100%
 
@@ -37,7 +37,7 @@ A análise entre canais permite uma visão única e consolidada do comportamento
    3. Dados de pesquisa ![pesquisa](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) (por exemplo, nome do produto, categoria de um sistema de informações do produto).
 
 1. Use uma ID de namespace comum em conjuntos de dados. Use a [Compilação](../../stitching/overview.md) para elevar qualquer ![atualização de dados](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataRefresh_18_N.svg) do conjunto de dados baseado em eventos com relação ao fornecimento da ID comum em cada linha. Observe que o Customer Journey Analytics não usa atualmente os serviços de Perfil ou de Identidade da Experience Platform para compilações.
-1. Execute qualquer preparação de dados personalizada para garantir uma chave comum entre os conjuntos de dados de série de tempo que serão assimilados no Customer Journey Analytics.
+1. Execute qualquer preparação de dados personalizada para garantir uma chave comum entre os conjuntos de dados de série temporal que serão assimilados no Customer Journey Analytics.
 1. Forneça aos dados de pesquisa uma ID primária que possa se associar a um campo nos dados do evento. Conta como linhas no licenciamento.
 1. Configure a mesma ID primária para os dados do perfil que foi configurada para os dados do evento.
 1. [Crie uma conexão](../../connections/overview.md) para assimilar os conjuntos de dados relevantes da Experience Platform para o Customer Journey Analytics.

@@ -7,8 +7,8 @@ keywords: product analytics
 role: User
 source-git-commit: be617c59cd2fced0031fda1130b86e638bee8f68
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '677'
+ht-degree: 92%
 
 ---
 
@@ -23,15 +23,15 @@ ht-degree: 0%
 
 A análise de ![PeopleGroup](/help/assets/icons/PeopleGroup.svg) **[!UICONTROL Crescimento ativo]** fornece informações sobre o crescimento e a aquisição de usuários em um período específico. O eixo horizontal é um intervalo de tempo, enquanto o eixo vertical é uma medida de usuários. Os usuários são divididos em quatro categorias:
 
-* **[!UICONTROL Novo]**: o usuário estava ativo durante o período atual, mas não anteriormente. Veja até que ponto a análise retroage passando o cursor do mouse sobre _[!UICONTROL Novos usuários]_ na legenda do gráfico. O intervalo de pesquisa é determinado dinamicamente com base no intervalo de datas e intervalo selecionados.
+* **[!UICONTROL Novo]**: o usuário estava ativo durante o período atual, mas não anteriormente. Veja até que ponto a análise retroage passando o mouse sobre _[!UICONTROL Novos usuários]_ na legenda do gráfico. O intervalo de pesquisa é determinado dinamicamente com base no intervalo de datas e intervalo selecionados.
 * **[!UICONTROL Repetir]**: o usuário estava ativo no período atual e imediatamente anterior.
-* **[!UICONTROL Retorno]**: o usuário estava ativo no período atual e inativo no período imediatamente anterior, mas estava ativo em algum momento. Veja até que ponto a análise retroage passando o cursor por _[!UICONTROL Usuários de retorno]_ na legenda do gráfico. O intervalo de pesquisa é determinado dinamicamente com base no intervalo de datas e intervalo selecionados.
+* **[!UICONTROL Retorno]**: o usuário estava ativo no período atual e inativo no período imediatamente anterior, mas estava ativo em algum momento. Veja até que ponto a análise retroage passando o mouse por _[!UICONTROL Usuários de retorno]_ na legenda do gráfico. O intervalo de pesquisa é determinado dinamicamente com base no intervalo de datas e intervalo selecionados.
 * **[!UICONTROL Inativo]**: o usuário estava ativo no período imediatamente anterior, mas não está ativo no período atual. Os usuários inativos não contam para o número total de usuários ativos.
 
 Todos os usuários ativos (novo + repetição + retorno) aparecem como uma sombra de azul-petróleo acima do eixo horizontal, enquanto todos os usuários inativos aparecem em laranja abaixo do eixo horizontal.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3423398/?quality=12&learn=on&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3421667/?quality=12&learn=on)
 
 ## Casos de uso
 
@@ -39,7 +39,7 @@ Os casos de uso desta análise incluem:
 
 * **Retenção de usuários e churn:** fornece uma visualização clara de períodos de alta ou baixa retenção de usuários. Reconhecer esses períodos de alta ou baixa retenção pode ajudar você a tomar decisões sobre o produto para incentivar alta retenção ou ajudar a minimizar o churn.
 * **Avaliação da campanha**: visualizar uma campanha específica pode ajudar a entender quanto tráfego ela gerou e como ajudou os usuários a permanecerem engajados.
-* **Análise do ciclo de vida do usuário**: analisar o crescimento ativo do usuário em todo o ciclo de vida do usuário pode ajudar a identificar estágios específicos em que o engajamento do usuário diminui. Por exemplo, se houver uma alta proporção de usuários inativos para indivíduos em um estágio de integração, isso pode indicar problemas de usabilidade ou a necessidade de melhor orientação no produto.
+* **Análise do ciclo de vida do usuário**: analisar o crescimento ativo do usuário em todo o ciclo de vida do usuário pode ajudar a identificar estágios específicos em que o engajamento do usuário diminui. Por exemplo, se houver uma alta proporção de usuários inativos para pessoas em um estágio de integração, isso pode indicar problemas de usabilidade ou a necessidade de melhor orientação no produto.
 
 ## Interface
 
@@ -51,7 +51,7 @@ O painel de consulta permite configurar os seguintes componentes:
 
 * **[!UICONTROL Exibição]**: alternar entre esta análise e [Crescimento líquido](net-growth.md).
 * **[!UICONTROL Eventos]**: o evento que você deseja medir. Como essa análise é baseada no usuário, um usuário que interage com o evento uma vez dentro do período é contado como um usuário ativo. Você pode incluir um evento em uma consulta.
-* **[!UICONTROL Contado como]**: o método de contagem que você deseja aplicar aos eventos selecionados. <ul><li>**[!UICONTROL As opções]** incluem [!UICONTROL Número de usuários] e [!UICONTROL Porcentagem de usuários].</li><li>[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} **[!UICONTROL Opções B2B]** adicionais estão disponíveis para o Customer Journey Analytics B2B edition: [!UICONTROL Contas globais], [!UICONTROL Contas], [!UICONTROL Grupos de compras], [!UICONTROL Oportunidades], [!UICONTROL Porcentagem de contas globais], [!UICONTROL Porcentagem de contas], [!UICONTROL Porcentagem de grupos de compras] e [!UICONTROL Porcentagem de oportunidades].</li></ul>
+* **[!UICONTROL Contado como]**: o método de contagem que você deseja aplicar aos eventos selecionados. <ul><li>**[!UICONTROL As opções]** incluem [!UICONTROL Número de usuários] e [!UICONTROL Porcentagem de usuários].</li><li>[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} **[!UICONTROL Opções B2B]** adicionais estão disponíveis para o Customer Journey Analytics B2B edition: [!UICONTROL Contas globais], [!UICONTROL Contas], [!UICONTROL Grupos de compras], [!UICONTROL Oportunidades], [!UICONTROL Porcentagem de contas globais], [!UICONTROL Porcentagem de contas], [!UICONTROL Porcentagem de grupos de compras] e [!UICONTROL Porcentagem de oportunidades].</li></ul>
 * **[!UICONTROL Segmentos]**: o segmento pelo qual você deseja segmentar dados. É possível incluir um segmento em uma consulta.
 
 ### Configurações de gráficos

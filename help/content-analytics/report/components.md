@@ -1,6 +1,6 @@
 ---
-title: Componentes da análise de conteúdo
-description: Detalhes sobre os componentes específicos da Análise de conteúdo, como dimensões, métricas (calculadas) e campos derivados
+title: Componentes do Content Analytics
+description: Detalhes sobre os componentes específicos do Content Analytics, como dimensões, métricas (calculadas) e campos derivados
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: User
@@ -12,9 +12,9 @@ ht-degree: 100%
 
 ---
 
-# Componentes da análise de conteúdo
+# Componentes do Content Analytics
 
-A Análise de conteúdo adiciona as seguintes categorias de componentes (dimensões, métricas (calculadas), campos derivados) aos componentes já disponíveis no Customer Journey Analytics:
+O Content Analytics adiciona as seguintes categorias de componentes (dimensões, métricas (calculadas), campos derivados) aos componentes já disponíveis no Customer Journey Analytics:
 
 * [Metadados da experiência](#experience-metadata)
 * [Atributos da experiência](#experience-attributes)

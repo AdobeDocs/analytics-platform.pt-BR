@@ -144,4 +144,4 @@ Incluir na lista de permissões Esta página inclui endereços ip que você prec
 >
 >[Domínios usados pelo Customer Journey Analytics](domains.md)
 >
->[Endereços IP usados pelo Adobe Experience Cloud](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/data-collection/ip-addresses)
+>[Endereços IP usados pelo Adobe Experience Cloud](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/ip-addresses)

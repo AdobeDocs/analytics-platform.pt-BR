@@ -18,7 +18,7 @@ Em alguns casos, os usuários executivos podem precisar de assistência adiciona
 
 ## Garantir que os usuários do aplicativo tenham acesso ao Adobe Analytics
 
-1. Configure novos usuários no [Admin Console da Experience Cloud](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/permissions/product-profile.html?lang=pt-BR).
+1. Configure novos usuários no [Admin Console da Experience Cloud](https://experienceleague.adobe.com/pt-br/docs/analytics/admin/admin-console/permissions/product-profile).
 
 1. Para compartilhar cartões de pontuação, você deve conceder permissões aos usuários do aplicativo para que acessem componentes do cartão de pontuação, como o Analysis Workspace, as visualizações de dados nas quais os cartões de pontuação são baseados, bem como segmentos, métricas e dimensões.
 

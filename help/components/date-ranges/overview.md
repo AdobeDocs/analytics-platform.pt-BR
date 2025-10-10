@@ -7,7 +7,7 @@ role: User
 source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
 workflow-type: tm+mt
 source-wordcount: '532'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Os componentes de intervalo de datas permitem definir e substituir as configura�
 
 +++ View a video illustrating use of calendar and date ranges
 
->[!VIDEO](https://video.tv.adobe.com/v/30815?format=jpeg&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/24136?format=jpeg)
 
 {{videoaa}}
 +++
@@ -47,8 +47,8 @@ Ou você pode usar um intervalo de datas em uma tabela de forma livre como uma m
 Você usa um intervalo de datas da mesma forma que [usaria qualquer componente](/help/components/overview.md#analysis-workspace-components). Você arrasta o intervalo de datas do painel do componente ![Calendário](/help/assets/icons/Calendar.svg) **[!UICONTROL Intervalos de datas]** e solta o componente em:
 
 - **[!UICONTROL Calendário]**: você pode ![Switch](/help/assets/icons/Switch.svg) **[!UICONTROL Substituir]** a configuração do calendário atual pelo intervalo de datas.
-- **Cabeçalho da coluna de métrica**: você pode ![Switch](/help/assets/icons/Switch.svg) **[!UICONTROL Substituir]** a métrica, ![Add](/help/assets/icons/Add.svg)**[!UICONTROL Adicionar &#x200B;]**&#x200B;o intervalo de datas como uma métrica ou ![Filter](/help/assets/icons/Filter.svg)**[!UICONTROL &#x200B; Filtrar &#x200B;]**&#x200B;a métrica, usando o componente de intervalo de datas.
-- **Cabeçalho da coluna de dimensão**: você pode ![Switch](/help/assets/icons/Switch.svg) **[!UICONTROL Substituir]** as dimensões atuais. A nova dimensão agora é **[!UICONTROL Intervalos de datas]**. Quando a dimensão é “Intervalos de datas”, você pode ![Add](/help/assets/icons/Add.svg)**[!UICONTROL Adicionar &#x200B;]**&#x200B;outros intervalos de datas como itens de dimensão.
+- **Cabeçalho da coluna de métrica**: você pode ![Switch](/help/assets/icons/Switch.svg) **[!UICONTROL Substituir]** a métrica, ![Add](/help/assets/icons/Add.svg)**[!UICONTROL Adicionar ]**o intervalo de datas como uma métrica ou ![Filter](/help/assets/icons/Filter.svg)**[!UICONTROL  Filtrar ]**a métrica, usando o componente de intervalo de datas.
+- **Cabeçalho da coluna de dimensão**: você pode ![Switch](/help/assets/icons/Switch.svg) **[!UICONTROL Substituir]** as dimensões atuais. A nova dimensão agora é **[!UICONTROL Intervalos de datas]**. Quando a dimensão é “Intervalos de datas”, você pode ![Add](/help/assets/icons/Add.svg)**[!UICONTROL Adicionar ]**outros intervalos de datas como itens de dimensão.
 - **Item de dimensão**: você pode fazer o ![Breakdown](/help/assets/icons/Breakdown.svg) **[!UICONTROL Detalhamento]** do item de dimensão específico segundo o intervalo de datas.
 
 Você também pode adicionar uma coluna de intervalo de datas diretamente a uma visualização de tabela de forma livre:

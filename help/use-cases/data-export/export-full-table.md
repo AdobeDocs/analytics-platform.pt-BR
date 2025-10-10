@@ -1,5 +1,5 @@
 ---
-title: Tabela completa de exportação de Customer Journey Analytics
+title: Tabela completa de exportação do Customer Journey Analytics
 description: Descreve como usar a funcionalidade Exportar tabela completa para validar seus dados ou usar seus dados para IA/ML.
 solution: Customer Journey Analytics
 feature: Use Cases
@@ -29,4 +29,4 @@ A exportação de dados usando o [!DNL Customer Journey Analytics Full Table Exp
 
 É possível exportar diretamente o conteúdo completo de qualquer tabela de forma livre criada no Analysis Workspace para destinos da nuvem designados usando a funcionalidade Exportar tabela completa.
 
-Para obter mais informações, consulte a documentação detalhada em [Exportar relatórios de Customer Journey Analytics para a nuvem](/help/analysis-workspace/export/export-cloud.md).
+Para obter mais informações, consulte a documentação detalhada em [Exportar relatórios do Customer Journey Analytics para a nuvem](/help/analysis-workspace/export/export-cloud.md).

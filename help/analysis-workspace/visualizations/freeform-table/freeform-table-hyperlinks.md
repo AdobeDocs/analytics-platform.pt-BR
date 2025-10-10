@@ -26,7 +26,7 @@ Essa funcionalidade é particularmente útil ao criar hiperlinks para os seguint
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Criar hiperlinks em uma tabela de forma livre](https://video.tv.adobe.com/v/3445788/?quality=12&learn=on&captions=por_br){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Criar hiperlinks em uma tabela de forma livre](https://video.tv.adobe.com/v/3430411/?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 
@@ -121,7 +121,7 @@ Para criar hiperlinks para um ou mais itens de dimensão:
 
      <!-- Do we really need a screenshot? ![Edit hyperlink for a dimension](assets/hyperlink-dimension-edit.png)-->
 
-1. Selecione [!UICONTROL **Editar hiperlinks para todos os itens de dimensão**] no menu do botão direito.
+1. Selecione [!UICONTROL **Editar hiperlinks para todos os itens de dimensão**] no menu do botão direito do mouse.
 
    A caixa de diálogo [!UICONTROL **Editar hiperlinks para itens de dimensão**] é exibida.
 

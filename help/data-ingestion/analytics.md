@@ -20,7 +20,7 @@ Este guia de início rápido explica como você pode usar os dados coletados pel
 >
 >Você tem o Adobe Analytics licenciado e implantado em um ou mais de seus sites, usando qualquer um dos métodos de implementação documentados:
 >
->- [Implementar o Analytics usando a Experience Platform Edge](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/overview.html?lang=pt-BR)
+>- [Implementar o Analytics usando a Experience Platform Edge](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/overview.html)
 >
 >- [Implementar o Analytics usando a extensão do Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/launch/overview.html?lang=pt-BR)
 >
@@ -81,7 +81,7 @@ Para criar um conector de origem do Adobe Analytics:
 
 Depois que a conexão é criada, o fluxo de dados é criado automaticamente para preencher um conjunto de dados com os dados do Adobe Analytics no conjunto de relatórios. O fluxo de dados assimila até 13 meses de dados históricos para sandboxes de produção. O preenchimento retroativo em sandboxes que não são de produção é limitado a três meses.
 
-Quando a assimilação inicial for concluída, os dados do conjunto de relatórios do Adobe Analytics estarão prontos para serem usados pelo Customer Journey Analytics.
+Quando a ingestão inicial for concluída, os dados do conjunto de relatórios do Adobe Analytics estarão prontos para serem usados pelo Customer Journey Analytics.
 
 Consulte [Criar uma conexão de origem do Adobe Analytics na interface do usuário](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics) para obter um tutorial muito mais abrangente.
 

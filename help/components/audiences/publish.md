@@ -5,9 +5,9 @@ exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
 source-git-commit: f3bd60d6a371a16e606d9af60e3359d8128a3c9f
-workflow-type: ht
-source-wordcount: '2389'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -61,7 +61,7 @@ ht-degree: 100%
 
 
 
-Este tópico discute como criar e publicar públicos-alvo identificados no Customer Journey Analytics no [Perfil do cliente em tempo real](https://experienceleague.adobe.com/pt-br/docs/experience-platform/profile/home) na Adobe Experience Platform para segmentação e personalização de clientes.
+Este tópico discute como criar e publicar públicos-alvo identificados no Customer Journey Analytics no [Perfil do cliente em tempo real](https://experienceleague.adobe.com/pt-br/docs/experience-platform/profile/home) na Adobe Experience Platform para direcionamento e personalização de clientes.
 
 Leia esta [visão geral](/help/components/audiences/audiences-overview.md) para se familiarizar com o conceito de públicos-alvo do Customer Journey Analytics.
 
@@ -101,7 +101,7 @@ Defina essas configurações para definir ou atualizar seu público-alvo.
 | **[!UICONTROL Tags]** | Todas as tags que você deseja atribuir ao público-alvo para fins organizacionais. É possível selecionar uma ou mais tags pré-existentes ou inserir uma nova. |
 | **[!UICONTROL Descrição]** | Uma descrição do público-alvo, para diferenciá-lo dos demais. Por exemplo, `Build an audience of really interested potential car buyers` |
 | **[!UICONTROL Frequência de atualização]** | A frequência na qual você deseja atualizar o público-alvo.<p/>Você pode alternar entre <ul><li>Público-alvo **[!UICONTROL único]**: um público-alvo (padrão) que não precisa de atualização. Por exemplo, essa opção pode ser útil para campanhas específicas e únicas.<br/>É necessário especificar um **[!UICONTROL Intervalo de datas único]**. Você pode usar o ![Calendário](/help/assets/icons/Calendar.svg) para inserir um intervalo de datas.</li><li>Um público-alvo atualizado. Você pode selecionar entre as opções a seguir:<ul><li>**[!UICONTROL A cada 4 horas]**: um público-alvo que é atualizado a cada 4 horas.</li><li>**[!UICONTROL Diariamente]**: um público-alvo que é atualizado diariamente</li><li>**[!UICONTROL Semanalmente]**: um público-alvo que é atualizado semanalmente.</li><li>**[!UICONTROL Mensal]**: um público-alvo que é atualizado mensalmente</li></ul></li>Para atualizar públicos-alvo, é necessário especificar:<ul><li>**[!UICONTROL Atualizar janela de retrospectiva]**. Defina o número de dias da retrospectiva, a partir de hoje, com base na qual o público-alvo será avaliado. Você pode selecionar entre opções ou definir um Tempo personalizado. O máximo é de 90 dias.</li><li>**[!UICONTROL Data de expiração]**: define quando o público-alvo para de atualizar. Você pode usar o ![Calendário](/help/assets/icons/Calendar.svg) para selecionar uma data. O padrão é 1 ano a partir da data de criação. Públicos-alvo que expiram são tratados de forma semelhante aos relatórios agendados que expiram. O administrador recebe um email um mês antes de o público-alvo expirar.</li></ul> Observe que há um limite de 75 a 150 atualizações de público-alvo, dependendo dos seus direitos do Customer Journey Analytics.</li></ul> |
-| **[!UICONTROL Filtro]** | Os filtros são a principal entrada para o público. Arraste e solte um ou mais segmentos do painel ![Segmentação](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segmento]** à esquerda para a área Segmento. É possível usar a opção ![Pesquisa](/help/assets/icons/Search.svg) [!UICONTROL *Pesquisar segmentos*] para pesquisar segmentos. Você pode adicionar até 20 segmentos. Os segmentos podem ser unidos com operadores **[!UICONTROL E]** ou **[!UICONTROL Ou]**.<p>Ao criar um público-alvo a partir de uma visualização no Analysis Workspace (como uma tabela de forma livre ou uma tela de jornada), todos os segmentos aplicados ao painel ou à coluna são preservados. É possível remover qualquer segmento aplicado automaticamente.</p> |
+| **[!UICONTROL Filtro]** | Os filtros são a principal entrada para o público-alvo. Arraste e solte um ou mais segmentos do painel ![Segmentação](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segmento]** à esquerda para a área Segmento. É possível usar a opção ![Pesquisa](/help/assets/icons/Search.svg) [!UICONTROL *Pesquisar segmentos*] para pesquisar segmentos. Você pode adicionar até 20 segmentos. Os segmentos podem ser unidos com operadores **[!UICONTROL E]** ou **[!UICONTROL Ou]**.<p>Ao criar um público-alvo a partir de uma visualização no Analysis Workspace (como uma tabela de forma livre ou uma tela de jornada), todos os segmentos aplicados ao painel ou à coluna são preservados. É possível remover qualquer segmento aplicado automaticamente.</p> |
 | **[!UICONTROL Visualização de dados]** | Selecione ![Informações](/help/assets/icons/Info.svg) para mostrar ou ocultar a [Visualização de dados](#data-preview) para o intervalo de datas selecionado. |
 
 ## Pré-visualização de dados
@@ -111,8 +111,8 @@ O painel Visualização de dados fornece as seguintes informações.
 | Elemento | Descrição |
 | --- | --- |
 | **[!UICONTROL Total de pessoas]** | Um número resumido do número total de pessoas neste público-alvo. O tamanho máximo é de 20 milhões de pessoas. Se o público-alvo exceder 20 milhões de pessoas, você deverá reduzir o tamanho do público-alvo antes de publicá-lo. |
-| **[!UICONTROL Limite de tamanho do público]** | Visualização para mostrar a distância que o público-alvo está do limite de 20 milhões. |
-| **[!UICONTROL Retorno estimado do público]** | Você pode usar esse valor para redirecionar as pessoas nesse público-alvo que retornam ao seu site, aplicativo móvel ou outro canal.<p>Você pode selecionar o intervalo de tempo (**[!UICONTROL Próximos 7 dias]**, **[!UICONTROL Próximas 2 semanas]** ou **[!UICONTROL Próximo mês]**) para o número estimado de clientes que podem retornar. |
+| **[!UICONTROL Limite de tamanho do público-alvo]** | Visualização para mostrar a distância que o público-alvo está do limite de 20 milhões. |
+| **[!UICONTROL Retorno estimado do público-alvo]** | Você pode usar esse valor para redirecionar as pessoas nesse público-alvo que retornam ao seu site, aplicativo móvel ou outro canal.<p>Você pode selecionar o intervalo de tempo (**[!UICONTROL Próximos 7 dias]**, **[!UICONTROL Próximas 2 semanas]** ou **[!UICONTROL Próximo mês]**) para o número estimado de clientes que podem retornar. |
 | **[!UICONTROL Estimativa de retorno]** | Esse número fornece uma estimativa do número de clientes recorrentes durante o intervalo de tempo selecionado. Esse número é previsto usando a taxa de churn histórica para esse público-alvo. |
 | **[!UICONTROL Visualizar métricas]** | É possível selecionar uma métrica específica para ver como os dados dessa métrica se baseiam no público-alvo definido.  Cada métrica de Visualização exibe um total para a métrica com base no público-alvo e uma porcentagem da métrica com base no público-alvo do total geral da métrica, conforme definido pela visualização de dados. Por exemplo, 381 pessoas (a métrica selecionada) são o resultado da definição do público-alvo, que é 5% do total de pessoas disponíveis na visualização de dados. Você pode selecionar qualquer métrica disponível na visualização de dados. |
 | **[!UICONTROL Namespaces incluídos]** | Os namespaces específicos que estão associados às pessoas no seu público-alvo. Os exemplos incluem ECID, CRM ID, endereços de email, etc. |
@@ -144,7 +144,7 @@ Em vários pontos antes, durante e após a publicação do público-alvo, podem 
 | 1 | Ingestão de dados no Data Lake (do conector de origem do Analytics ou de outras fontes) | Até 90 minutos |
 | 2 | Ingestão de dados do Data Lake da Experience Platform para o Customer Journey Analytics | Até 90 minutos |
 | 3 | Publicação de público-alvo no perfil do cliente em tempo real, incluindo a criação automática do segmento de streaming e a permissão para que o segmento esteja pronto para receber os dados. | Alguns segundos |
-| 4 | Atualizar frequência dos públicos | <ul><li>Atualização única (latência inferior a 5 minutos)</li><li>Atualizar a cada 4 horas, diariamente, semanalmente, mensalmente (a latência acompanha a taxa de atualização) |
+| 4 | Atualizar frequência dos públicos-alvos | <ul><li>Atualização única (latência inferior a 5 minutos)</li><li>Atualizar a cada 4 horas, diariamente, semanalmente, mensalmente (a latência acompanha a taxa de atualização) |
 | 5 | Criação de destino na Adobe Experience Platform: ativar o novo segmento | 1 a 2 horas |
 
 {style="table-layout:auto"}

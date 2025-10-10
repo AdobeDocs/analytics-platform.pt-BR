@@ -6,7 +6,7 @@ keywords: product analytics
 exl-id: 93e6e4f1-bbe4-4a6c-8ec3-54d1f9a8b847
 role: User
 source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '530'
 ht-degree: 100%
 
@@ -25,7 +25,7 @@ ht-degree: 100%
 
 A análise de ![Versão](/help/assets/icons/Release.svg) **[!UICONTROL Impacto da versão]** mostra uma comparação do desempenho dos principais indicadores antes e depois de uma determinada data. O eixo horizontal deste relatório é um intervalo de tempo, enquanto o eixo vertical mede os indicadores-chave desejados. Uma barra vertical no meio do gráfico representa a data que você deseja comparar antes e depois. Essa data normalmente representa uma mudança notável no produto que você deseja comparar, como uma atualização do produto ou o lançamento de uma campanha.
 
->[!VIDEO](https://video.tv.adobe.com/v/3423453/?quality=12&learn=on&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3421665/?quality=12&learn=on)
 
 ## Casos de uso
 
@@ -48,7 +48,7 @@ O painel de consulta permite configurar os seguintes componentes:
 * **[!UICONTROL Indicadores-chave]**: os eventos que você deseja medir por usuário. Cada indicador principal selecionado é representado como uma linha colorida. Uma linha que representa o evento é adicionada à tabela. É possível incluir até três eventos.
 * **[!UICONTROL Contado como]**: o método de contagem que deseja aplicar aos eventos selecionados. As opções incluem [!UICONTROL Eventos por usuário], [!UICONTROL Porcentagem de usuários], [!UICONTROL Eventos], [!UICONTROL Sessões] e [!UICONTROL Usuários].
 * **[!UICONTROL Fatores]**: a data que você deseja comparar antes e depois.
-* **[!UICONTROL Segmentos]**: o segmento que você deseja medir. O segmento selecionado filtra os dados para se concentrar apenas nos indivíduos que correspondem aos critérios do segmento.
+* **[!UICONTROL Segmentos]**: o segmento que você deseja medir. O segmento selecionado filtra os dados para se concentrar apenas nas pessoas que correspondem aos critérios do segmento.
 
 ### Configurações de gráficos
 
@@ -60,7 +60,7 @@ A análise de [!UICONTROL Impacto da liberação] oferece as seguintes configu
 
 A seleção de data na análise de impacto opera de forma diferente de outras análises, pois o relatório gira em torno da data especificada no painel de consulta. Estas são as opções disponíveis:
 
-* **[!UICONTROL Intervalo]**: a granularidade de data pela qual você deseja exibir os dados de tendência. As opções válidas incluem [!UICONTROL Diariamente], [!UICONTROL Semanalmente], [!UICONTROL Mensalmente] e [!UICONTROL Trimestralmente]. A alteração do intervalo afeta as opções disponíveis para o Período anterior e posterior.
+* **[!UICONTROL Intervalo]**: a granularidade de data pela qual você deseja exibir dados de tendência. As opções válidas incluem [!UICONTROL Diariamente], [!UICONTROL Semanalmente], [!UICONTROL Mensalmente] e [!UICONTROL Trimestralmente]. A alteração do intervalo afeta as opções disponíveis para o Período anterior e posterior.
 * **[!UICONTROL Período anterior e posterior]**: o tempo de análise antes e depois da data especificada no painel de consulta. As opções disponíveis dependem da seleção de [!UICONTROL Intervalo].
 
 

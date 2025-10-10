@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: c6d49ca4-3d04-4c0f-accd-8666a587109d
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '274'
 ht-degree: 100%
 
@@ -45,7 +45,7 @@ Com a sequência de dados disponível, é necessário adicionar a Plataforma com
 
    1. Selecione **[!UICONTROL Adobe Experience Platform]** na lista [!UICONTROL Serviço].
 
-   1. Verifique se a opção **[!UICONTROL Ativado]** está selecionada.
+   1. Verifique se a opção **[!UICONTROL Habilitado]** está selecionada.
 
    1. Selecione o conjunto de dados na lista [!UICONTROL Conjunto de dados do evento].
 
@@ -55,6 +55,6 @@ Com a sequência de dados disponível, é necessário adicionar a Plataforma com
 
    O conjunto de dados agora está configurado para encaminhar os dados coletados de seu site para seu conjunto de dados na Adobe Experience Platform.
 
-   Consulte [Visão geral dos conjuntos de dados](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=pt-BR) para obter mais informações sobre como configurar um conjunto de dados e como lidar com dados confidenciais.
+   Consulte [Visão geral dos conjuntos de dados](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html) para obter mais informações sobre como configurar um conjunto de dados e como lidar com dados confidenciais.
 
 {{upgrade-final-step}}

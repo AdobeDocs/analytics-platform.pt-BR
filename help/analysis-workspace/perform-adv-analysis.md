@@ -8,13 +8,13 @@ role: User
 source-git-commit: 747e77b964006404d70b500b28ec44005d65d944
 workflow-type: tm+mt
 source-wordcount: '71'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
 # Realizar análise avançada
 
-Antes de começar a criar relatórios e visualizações de análise avançados, conforme descrito abaixo, verifique se você compreende a [análise básica](/help/analysis-workspace/perform-basic-analysis.md).
+Antes de começar a criar relatórios e visualizações de análise avançada, conforme descrito abaixo, certifique-se de que entenda os [conceitos básicos de análise](/help/analysis-workspace/perform-basic-analysis.md).
 
 A análise avançada aproveita recursos como os diagramas de [Fluxo](/help/analysis-workspace/visualizations/c-flow/flow.md), [Atribuição](/help/analysis-workspace/c-panels/attribution.md), diagramas de [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) e [detalhamentos de dimensões](/help/components/dimensions/t-breakdown-fa.md).
 

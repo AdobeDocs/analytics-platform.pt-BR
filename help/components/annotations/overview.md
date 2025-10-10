@@ -8,11 +8,11 @@ role: User
 source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
 source-wordcount: '320'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# Visão geral sobre as anotações
+# Visão geral de anotações
 
 As anotações permitem que você comunique nuances e insights de dados contextuais de forma eficaz para outras partes interessadas na sua organização. Com as anotações, é possível vincular eventos de calendário a dimensões e métricas específicas. Você pode anotar uma data ou intervalo de datas com problemas de dados conhecidos, feriados, lançamentos de campanhas etc. Em seguida, é possível exibir graficamente os eventos e verificar se as campanhas ou outros eventos afetaram o tráfego no site, o uso do aplicativo móvel, a receita ou qualquer outra métrica.
 

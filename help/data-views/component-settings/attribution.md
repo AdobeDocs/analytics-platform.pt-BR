@@ -30,7 +30,7 @@ A atribuição permite personalizar como os itens de dimensão obtêm crédito p
 
 Por exemplo:
 
-1. Um visitante do site clica em um link de pesquisa paga para uma das suas páginas de produto. Ele adiciona o produto ao carrinho, mas não o compra.
+1. Um visitante do site clica em um link de pesquisa paga para uma das suas páginas do produto. Ele adiciona o produto ao carrinho, mas não o compra.
 2. No dia seguinte, ele vê uma publicação nas redes sociais de um amigo. Ele clica no link e conclui a compra.
 
 Em alguns relatórios, você pode desejar que a ordem seja atribuída à pesquisa paga. Em outros relatórios, você pode desejar que a ordem seja atribuída ao Social. A atribuição permite controlar esse aspecto dos relatórios.
@@ -90,7 +90,7 @@ Para atualizar o modelo de atribuição padrão de um componente:
 
 {{attribution-container}}
 
-## Janela de pesquisa
+## Janela de retrospectiva
 
 {{attribution-lookback-window}}
 

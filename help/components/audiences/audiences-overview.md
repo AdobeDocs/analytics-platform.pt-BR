@@ -5,7 +5,7 @@ exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
 feature: Audiences
 role: User, Admin
 source-git-commit: be062e350a8c1989be41aeb2774471a3fe1bf524
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '435'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Visão geral da publicação de públicos-alvo
 
-Agora, você pode criar e publicar públicos-alvo descobertos no Customer Journey Analytics no [Perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=pt-BR) na Adobe Experience Platform para direcionamento e personalização de clientes. 
+Agora, você pode criar e publicar públicos-alvo descobertos no Customer Journey Analytics no [Perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html) na Adobe Experience Platform para direcionamento e personalização de clientes. 
 
 A publicação de públicos-alvo fornece uma maneira clara de ativar e executar ações baseadas nos insights encontrados no Customer Journey Analytics.  Essas ações podem incluir:
 
@@ -25,7 +25,7 @@ Para obter mais informações sobre o uso de públicos-alvo publicados na Experi
 Para obter mais informações, consulte [Considerações sobre latência](/help/components/audiences/publish.md#latency-considerations) em [Criar e publicar públicos-alvo](/help/components/audiences/publish.md).
 * Publicação de públicos-alvo únicos ou públicos-alvo recorrentes.
 
-Os públicos-alvo criados no Customer Journey Analytics não precisam se basear em conjuntos de dados habilitados para o perfil. É possível assimilar dados históricos na Experience Platform sem ativar conjuntos de dados e esquemas associados para o perfil. Em seguida, use esses conjuntos de dados para descobrir públicos-alvo relevantes no Customer Journey Analytics e publicá-los no perfil do cliente em tempo real na Experience Platform para fins de ativação.
+Os públicos-alvo criados no Customer Journey Analytics não precisam se basear em conjuntos de dados habilitados para o perfil. É possível assimilar dados históricos na Experience Platform sem habilitar conjuntos de dados e esquemas associados para o perfil. Em seguida, use esses conjuntos de dados para descobrir públicos-alvo relevantes no Customer Journey Analytics e publicá-los no perfil do cliente em tempo real na Experience Platform para fins de ativação.
 
 ## Terminologia principal
 
@@ -43,7 +43,7 @@ Os públicos-alvo criados no Customer Journey Analytics não precisam se basear 
 
 ## Governança de dados e consentimento
 
-Ao publicar um público-alvo no Customer Journey Analytics, os rótulos e políticas de governança de dados anexados aos campos usados no público-alvo são registrados.  Quando o público é ativado em qualquer aplicativo da Adobe Experience, todos os rótulos e políticas de Governança de dados associados estão disponíveis para esse público e a imposição apropriada pode ser aplicada. [Saiba mais sobre consentimento](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html?lang=pt-BR#consent-policy).
+Ao publicar um público-alvo no Customer Journey Analytics, os rótulos e políticas de governança de dados anexados aos campos usados no público-alvo são registrados.  Quando o público-alvo é ativado em qualquer aplicativo da Adobe Experience, todos os rótulos e políticas de Governança de dados associados estão disponíveis para esse público-alvo e a imposição apropriada pode ser aplicada. [Saiba mais sobre consentimento](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/user-guide.html?lang=pt-BR#consent-policy).
 
 ## Próximas etapas
 

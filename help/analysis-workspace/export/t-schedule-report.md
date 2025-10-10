@@ -103,7 +103,7 @@ Os requisitos de senha estão em conformidade com os padrões da Adobe, exigindo
 ### Proteger com senha um novo projeto agendado
 
 1. Depois de salvar o projeto, acesse **[!UICONTROL Compartilhar]** > **[!UICONTROL Enviar arquivo agora]** ou **[!UICONTROL Compartilhar]** > **[!UICONTROL Enviar arquivo conforme agendado]**.
-1. Siga as instruções acima, em [Enviar arquivo agora](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html?lang=pt-BR#now) ou [Enviar arquivo agendado](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html?lang=pt-BR#schedule).
+1. Siga as instruções acima, em [Enviar arquivo agora](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html#now) ou [Enviar arquivo agendado](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html#schedule).
 
 ### Proteger por senha um projeto agendado existente
 

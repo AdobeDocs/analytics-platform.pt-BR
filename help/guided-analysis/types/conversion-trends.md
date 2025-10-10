@@ -6,7 +6,7 @@ keywords: product analytics
 exl-id: 75501e77-a172-48b4-9c91-b12d39e93c37
 role: User
 source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '536'
 ht-degree: 100%
 
@@ -27,7 +27,7 @@ ht-degree: 100%
 A análise ![Tendências de Conversão](/help/assets/icons/ConversionTrends.svg) **[!UICONTROL Tendências de conversão]** fornece uma visualização de tendências das taxas de conversão ao longo do tempo. O eixo horizontal é um intervalo de tempo, enquanto o eixo vertical representa a taxa de conversão.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3423491/?quality=12&learn=on&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3421662/?quality=12&learn=on)
 
 
 ## Casos de uso
@@ -71,8 +71,8 @@ A análise de [!UICONTROL Tendências de conversão] oferece as seguintes config
 
 O intervalo de datas desejado para a análise. Há dois componentes nesta configuração:
 
-* **[!UICONTROL Intervalo]**: a granularidade de data pela qual você deseja exibir dados de tendência. As opções válidas incluem Por hora, Diariamente, Semanalmente, Mensalmente e Trimestralmente. O mesmo intervalo de datas pode ter intervalos diferentes, que afetam o número de pontos de dados no gráfico e o número de colunas na tabela. Por exemplo, a exibição de uma análise abrangendo três dias com granularidade diária mostraria apenas três pontos de dados, enquanto uma análise abrangendo três dias com granularidade horária mostraria 72 pontos de dados.
-* **[!UICONTROL Data]**: a data inicial e final. As predefinições de intervalo de datas contínuo e os intervalos personalizados salvos anteriormente estão disponíveis para fins de praticidade, ou você pode usar o seletor de calendário para escolher um intervalo de datas fixo.
+* **[!UICONTROL Intervalo]**: a granularidade de data com a qual você deseja exibir os dados de tendência. As opções válidas incluem Por hora, Diariamente, Semanalmente, Mensalmente e Trimestralmente. O mesmo intervalo de datas pode ter intervalos diferentes, que afetam o número de pontos de dados no gráfico e o número de colunas na tabela. Por exemplo, a exibição de uma análise abrangendo três dias com granularidade diária mostraria apenas três pontos de dados, enquanto uma análise abrangendo três dias com granularidade horária mostraria 72 pontos de dados.
+* **[!UICONTROL Data]**: as datas inicial e final. As predefinições de intervalo de datas contínuo e os intervalos personalizados salvos anteriormente estão disponíveis para fins de praticidade, ou você pode usar o seletor de calendário para escolher um intervalo de datas fixo.
 
 <!--
 ## Example

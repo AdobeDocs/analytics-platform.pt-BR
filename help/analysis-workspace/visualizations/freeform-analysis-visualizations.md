@@ -16,7 +16,7 @@ ht-degree: 89%
 
 O Workspace oferece várias visualizações que permitem criar representações visuais dos seus dados. Como gráficos de barras, gráficos de rosca, histogramas, gráficos de linhas, mapas, gráficos de dispersão, entre outros.
 
-## Tipos
+##  Tipos
 
 Os seguintes tipos de visualização estão disponíveis no Analysis Workspace:
 
@@ -79,7 +79,7 @@ Quando você adiciona uma visualização simples, por exemplo, uma visualizaçã
 
 * Para recolher uma visualização, selecione ![DivisaInferior](/help/assets/icons/ChevronDown.svg).
 * Para revelar uma visualização recolhida, selecione ![ChevronLeft](/help/assets/icons/ChevronLeft.svg).
-* Para excluir uma visualização, selecione ![CrossSize400](/help/assets/icons/CrossSize400.svg). Para desfazer, selecione **[!UICONTROL Editar]** > **[!UICONTROL Desfazer]** (**[!UICONTROL *cmd+z *]**|**[!UICONTROL * ctrl+z *]**).
+* Para excluir uma visualização, selecione ![CrossSize400](/help/assets/icons/CrossSize400.svg). Para desfazer a ação, selecione **[!UICONTROL Editar]** > **[!UICONTROL Desfazer]** (**[!UICONTROL *cmd+z *]**|**[!UICONTROL * ctrl+z *]**).
 * Para retornar uma visualização à altura padrão, selecione ![ImageResize](/help/assets/icons/Resize.svg).
 * Para mover uma visualização dentro de um painel, arraste-a e solte-a sempre que um ![Mover](/help/assets/icons/Move.svg) estiver visível (normalmente quando você passa o mouse sobre o cabeçalho).
 

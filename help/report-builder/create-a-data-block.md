@@ -9,7 +9,7 @@ solution: Customer Journey Analytics
 source-git-commit: 7d3300336a955facc230f335d1452096700ea98b
 workflow-type: tm+mt
 source-wordcount: '777'
-ht-degree: 23%
+ht-degree: 24%
 
 ---
 
@@ -69,7 +69,7 @@ Para criar o bloco de dados, selecione componentes do relatório e personalize o
    - Os componentes do Dimension são adicionados à seção ![TableSelectRow](/help/assets/icons/TableSelectRow.svg) **[!UICONTROL Row]** ou à seção ![TableSelectColumn](/help/assets/icons/TableSelectColumn.svg) **[!UICONTROL Column]** se você já tiver uma dimensão nas colunas.
    - Os componentes de data são adicionados à seção ![TableSelectColumn](/help/assets/icons/TableSelectColumn.svg) **[!UICONTROL Column]**.
    - Componentes de segmento são adicionados à seção ![Segmentação](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segmentos]**.
-   - Os componentes de métricas são adicionados à seção ![Valores ]&#x200B;**de (/help/assets/icons/Event.svg) de** Eventos.
+   - Os componentes de métricas são adicionados à seção ![Valores](/help/assets/icons/Event.svg) de **[!UICONTROL de]** Eventos.
 
 1. Organize os itens no painel Tabela para personalizar o layout do bloco de dados.
 
@@ -114,7 +114,7 @@ Para criar o bloco de dados, selecione componentes do relatório e personalize o
 >[!MORELIKETHIS]
 >
 >[Selecione uma visualização de dados](select-data-view.md)
->[Selecionar um intervalo de datas](select-date-range.md)
->[Filtrar dimensões](filter-dimensions.md)
->[Trabalhar com segmentos](work-with-filters.md)
+>>[Selecionar um intervalo de datas](select-date-range.md)
+>>[Filtrar dimensões](filter-dimensions.md)
+>>[Trabalhar com segmentos](work-with-filters.md)
 >

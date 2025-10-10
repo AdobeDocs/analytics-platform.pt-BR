@@ -18,7 +18,7 @@ O Customer Journey Analytics permite analisar dados usando o poder e a flexibili
 
 >[!TIP]
 >
->Se nenhum dado estiver disponível no Analysis Workspace, siga o[ processo de assimilação de dados](/help/data-ingestion/data-ingestion.md), que inclui o seguinte:<ul><li>[Crie uma conexão](/help/connections/create-connection.md#create-and-configure-the-connection) </br>Certifique-se de que a conexão esteja configurada para importar novos dados, dados de preenchimento retroativo ou ambos.</li><li>[Adicionar conjuntos de dados](/help/connections/create-connection.md#add-and-configure-datasets)</li><li>[Criar visualizações de dados](/help/data-views/create-dataview.md)</li></ul>
+>Se nenhum dado estiver disponível no Analysis Workspace, siga o[ processo de ingestão de dados](/help/data-ingestion/data-ingestion.md), que inclui o seguinte:<ul><li>[Crie uma conexão](/help/connections/create-connection.md#create-and-configure-the-connection) </br>Certifique-se de que a conexão esteja configurada para importar novos dados, dados de preenchimento retroativo ou ambos.</li><li>[Adicionar conjuntos de dados](/help/connections/create-connection.md#add-and-configure-datasets)</li><li>[Criar visualizações de dados](/help/data-views/create-dataview.md)</li></ul>
 
 Experimente e arraste dimensões e métricas, altere configurações de atribuição de dimensões e métricas, nomes amigáveis, fuso horário, configurações de sessão etc.
 

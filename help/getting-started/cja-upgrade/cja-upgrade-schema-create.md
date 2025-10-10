@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 902e5890-f970-4f1a-b091-9c3e51a987db
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1252'
 ht-degree: 100%
 
@@ -160,9 +160,9 @@ Para criar um esquema personalizado:
 
 1. (Opcional) Se quiser integrar o Customer Journey Analytics à RTCDP, selecione o elemento raiz do esquema que exibe o nome do esquema e selecione a opção **[!UICONTROL Perfil]**.
 
-   Você deve habilitar o esquema para o perfil. Depois de ativados, quando os dados são assimilados em conjuntos de dados com base nesse esquema, esses dados são mesclados ao Perfil do cliente em tempo real.
+   Você deve habilitar o esquema para o perfil. Depois de habilitados, quando os dados são assimilados em conjuntos de dados com base nesse esquema, esses dados são mesclados ao Perfil do cliente em tempo real.
 
-   Consulte [Ativar o esquema para usar no Perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=pt-BR#profile) para obter mais informações.
+   Consulte [Habilitar o esquema para usar no Perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=pt-BR#profile) para obter mais informações.
 
    >[!IMPORTANT]
    >
@@ -172,7 +172,7 @@ Para criar um esquema personalizado:
 
 1. Selecione **[!UICONTROL Salvar]** para salvar o esquema.
 
-   Você criou um esquema mínimo que modela os dados que pode capturar de seu site. O esquema permite que os perfis sejam identificados usando a Experience Cloud Identity e o endereço de email. Ao ativar o esquema para o perfil, você garante que os dados capturados de seu site sejam adicionados ao Perfil do cliente em tempo real.
+   Você criou um esquema mínimo que modela os dados que pode capturar de seu site. O esquema permite que os perfis sejam identificados usando a Experience Cloud Identity e o endereço de email. Ao habilitar o esquema para o perfil, você garante que os dados capturados de seu site sejam adicionados ao Perfil do cliente em tempo real.
 
    Ao lado dos dados de comportamento, você também pode capturar os dados do atributo de perfil do site (por exemplo, detalhes de perfis que assinam um boletim informativo).
 
@@ -186,7 +186,7 @@ Para criar um esquema personalizado:
 
    * Defina a Experience Cloud ID como identificador principal e o email como identificador.
 
-   * Ativar o esquema do perfil
+   * Habilitar o esquema do perfil
 
    Consulte [Criar e editar esquemas na interface do usuário](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=pt-BR) para obter mais informações sobre a adição e remoção de grupos de campos e campos individuais a um esquema.
 

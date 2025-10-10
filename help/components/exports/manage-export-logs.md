@@ -8,13 +8,13 @@ role: User
 source-git-commit: ad43b199d4174894f0e428bcaf1748ca80bddb45
 workflow-type: tm+mt
 source-wordcount: '837'
-ht-degree: 5%
+ht-degree: 8%
 
 ---
 
 # Gerenciar logs de exportação
 
-Os logs de exportação fornecem detalhes sobre cada exportação e são gerados sempre que os dados do Analysis Workspace são exportados para a nuvem. (Para obter informações sobre como os dados podem ser exportados para a nuvem, consulte [Exportar relatórios de Customer Journey Analytics para a nuvem](/help/analysis-workspace/export/export-cloud.md).)
+Os logs de exportação fornecem detalhes sobre cada exportação e são gerados sempre que os dados do Analysis Workspace são exportados para a nuvem. (Para obter informações sobre como os dados podem ser exportados para a nuvem, consulte [Exportar relatórios do Customer Journey Analytics para a nuvem](/help/analysis-workspace/export/export-cloud.md).)
 
 Para exportações programadas, os logs refletem as configurações de exportação como estavam quando o log foi enviado. Os logs não podem ser excluídos.
 
@@ -36,7 +36,7 @@ Para exportações programadas, os logs refletem as configurações de exportaç
 
    * Selecione o **ícone Editar exportação** ![ícone Informações](assets/edit-export-icon.png) ao lado do nome do log para editar a exportação associada ao log.
 
-     Para obter mais informações sobre como editar uma exportação, consulte [Exportar relatórios de Customer Journey Analytics para a nuvem](/help/analysis-workspace/export/export-cloud.md).
+     Para obter mais informações sobre como editar uma exportação, consulte [Exportar relatórios do Customer Journey Analytics para a nuvem](/help/analysis-workspace/export/export-cloud.md).
 
 ## Filtrar e pesquisar logs
 
@@ -57,7 +57,7 @@ Para encontrar as informações necessárias, você pode filtrar a lista de logs
    | Filtro | Descrição |
    |---------|----------|
    | [!UICONTROL **ID de exportação**] | Especifique a ID de exportação do log de exportação que deseja exibir. |
-   | [!UICONTROL **Tipo de conta**] | O tipo de conta à qual o log está associado. Os seguintes tipos de conta estão disponíveis: <ul><li>[!UICONTROL **Zona de aterrissagem de dados da AEP**]</li><li>[!UICONTROL **Função ARN do Amazon S3**]</li><li>[!UICONTROL **SAS do Azure**]</li><li>[!UICONTROL **RBAC do Azure**]</li><li>[!UICONTROL **Plataforma de nuvem da Google**]</li><li>[!UICONTROL **Snowflake**]</li></ul>. |
+   | [!UICONTROL **Tipo de conta**] | O tipo de conta à qual o log está associado. Os seguintes tipos de conta estão disponíveis: <ul><li>[!UICONTROL **AEP Data Landing Zone**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul>. |
    | [!UICONTROL **Status**] | O status da exportação. Os seguintes status estão disponíveis: <ul><li>[!UICONTROL **Pendente**]: uma instância específica de uma exportação foi iniciada, mas ainda não foi concluída.<p>Executar novamente uma exportação com status Pendente atrasará o processo de exportação.</p></li><li>[!UICONTROL **Concluído**]: uma instância específica de uma exportação concluiu o processamento e está disponível na conta de exportação.</li><li>[!UICONTROL **Falha**]<p>Várias situações podem resultar em falha na exportação. Passe o mouse sobre o status Falha para ver detalhes sobre a falha.<p>Para obter mais informações sobre os possíveis motivos de falha, consulte [Solucionar problemas de exportações com falha](/help/components/exports/troubleshoot-exports.md).</p> |
 
    {style="table-layout:auto"}
@@ -118,10 +118,10 @@ Para configurar colunas na guia [!UICONTROL Logs]:
 
    | Coluna disponível | Descrição |
    |---------|----------|
-   | Nome da exportação | O nome da exportação. Os usuários dão um nome às exportações quando as criam, conforme descrito em [Exportar relatórios de Customer Journey Analytics para a nuvem](/help/analysis-workspace/export/export-cloud.md). |
+   | Nome da exportação | O nome da exportação. Os usuários dão um nome às exportações quando as criam, conforme descrito em [Exportar relatórios do Customer Journey Analytics para a nuvem](/help/analysis-workspace/export/export-cloud.md). |
    | ID de exportação | A ID atribuída automaticamente à exportação quando ela é criada. <!-- True? --> |
    | ID da instância | A ID da instância do Customer Journey Analytics. <!-- True? --> |
-   | Nome da visualização de dados | O nome da visualização de dados associada à exportação. Os usuários podem selecionar a visualização de dados ao criar a exportação, conforme descrito em [Exportar relatórios de Customer Journey Analytics para a nuvem](/help/analysis-workspace/export/export-cloud.md). |
+   | Nome da visualização de dados | O nome da visualização de dados associada à exportação. Os usuários podem selecionar a visualização de dados ao criar a exportação, conforme descrito em [Exportar relatórios do Customer Journey Analytics para a nuvem](/help/analysis-workspace/export/export-cloud.md). |
    | Número de arquivos | O número de arquivos incluídos na exportação. |
    | Tamanho | O tamanho da exportação.<p>O tamanho do arquivo é calculado com uma base de 1024, que às vezes é representada como KIB e MIB. Se o seu provedor de nuvem calcula o tamanho com uma base de 1000, isso pode resultar no tamanho exibido no provedor de nuvem ligeiramente diferente do tamanho exibido aqui.</p> |
    | Localização | A localização na conta para a qual os dados foram exportados. |
@@ -137,4 +137,4 @@ Para configurar colunas na guia [!UICONTROL Logs]:
 
 ## Exibir logs de auditoria
 
-Exportações de tabela completa também são rastreadas nos [logs de auditoria de Customer Journey Analytics](/help/privacy/audit-log.md). <!-- Need to see what the Component Type for full-table export will be and add it here. Also, under "Event type captured by audit logs" there would be a new event type called "Full-table export". 4 actions would be "Create, Delete, Edit, Export" and "API_Request"? Also information about the locations. Probably have a different component for the location credentials.-->
+Exportações de tabela completa também são rastreadas nos [logs de auditoria do Customer Journey Analytics](/help/privacy/audit-log.md). <!-- Need to see what the Component Type for full-table export will be and add it here. Also, under "Event type captured by audit logs" there would be a new event type called "Full-table export". 4 actions would be "Create, Delete, Edit, Export" and "API_Request"? Also information about the locations. Probably have a different component for the location credentials.-->

@@ -9,7 +9,7 @@ solution: Customer Journey Analytics
 source-git-commit: 9794779894fbecb433c16d108c555c5f81a4b491
 workflow-type: tm+mt
 source-wordcount: '258'
-ht-degree: 29%
+ht-degree: 31%
 
 ---
 
@@ -31,7 +31,7 @@ Para alterar as configurações do Report Builder
 
 Ao criar e editar um bloco de dados no modo off-line, os dados não são recuperados. Em vez disso, os dados de simulação são usados para que você possa trabalhar rapidamente sem esperar a execução da solicitação. Quando você voltar a ficar online, selecione ![Atualizar](/help/assets/icons/Refresh.svg) **[!UICONTROL Atualizar bloco de dados]** ou ![AtualizarDocumento](/help/assets/icons/DocumentRefresh.svg) **[!UICONTROL Atualizar todos os blocos de dados]** para atualizar os blocos de dados com dados reais.
 
-Para ativar o modo off-line
+Para habilitar o modo off-line
 
 1. Selecione ![Configuração](/help/assets/icons/Setting.svg).
 

@@ -13,7 +13,7 @@ ht-degree: 41%
 
 # Relatórios do Target
 
-Os Relatórios do Target no Customer Journey Analytics permitem medir e relatar atividades do Adobe Target diretamente no Customer Journey Analytics. Essa funcionalidade é comparável ao que está sendo executado no Adobe Analytics (AA) por meio do Analytics for Target (A4T), mas com a conectividade ao Adobe Experience Platform (AEP).
+Os relatórios do Target no Customer Journey Analytics permitem medir e relatar atividades do Adobe Target diretamente no Customer Journey Analytics. Essa funcionalidade é comparável ao que está sendo executado no Adobe Analytics (AA) por meio do Analytics for Target (A4T), mas com a conectividade ao Adobe Experience Platform (AEP).
 
 Ao adicionar o conjunto de dados de pesquisa da Classificação do Target (que está disponível por padrão no Experience Platform) em uma Conexão Customer Journey Analytics, os usuários agora têm exposição adequada às ferramentas de relatório do Target, atribuição de ordem do Target e outros recursos. Com apenas alguns preparativos e ajustes secundários feitos na visualização de dados do Customer Journey Analytics, essas atividades podem ser disponibilizadas imediatamente para qualquer usuário que deseje enviar dados do Target diretamente para o CJA.
 
@@ -25,7 +25,7 @@ Ao adicionar o conjunto de dados de pesquisa da Classificação do Target (que e
 
 ## Notas e considerações
 
-Depois que o conjunto de dados do evento de classificação de destino é adicionado a uma conexão do CJA, há alguns ajustes secundários a serem feitos na Visualização de dados do CJA depois que esses componentes forem adicionados como dimensões, incluindo:
+Depois que o conjunto de dados do evento de classificação de destino é adicionado a uma conexão do CJA, alguns ajustes secundários devem ser feitos na Visualização de dados do CJA depois que esses componentes forem adicionados como dimensões, incluindo:
 
 * Definir a persistência para ser semelhante a como ela é rastreada no Target (verifique com um consultor do Target ou com o cliente para garantir as configurações adequadas).
 

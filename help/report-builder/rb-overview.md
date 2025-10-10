@@ -9,7 +9,7 @@ solution: Customer Journey Analytics
 source-git-commit: 720751130d0f66bddffd13c6f160a85fcc7a7206
 workflow-type: tm+mt
 source-wordcount: '336'
-ht-degree: 15%
+ht-degree: 16%
 
 ---
 
@@ -48,8 +48,8 @@ O Report Builder para Customer Journey Analytics é um complemento do Microsoft 
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Report Builder for Customer Journey Analytics](https://video.tv.adobe.com/v/3452585?quality=12&learn=on&captions=por_br){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Report Builder for Customer Journey Analytics](https://video.tv.adobe.com/v/337569?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 
-Você pode baixar o Report Builder para Customer Journey Analytics na [Microsoft Store](https://appsource.microsoft.com/en-us/product/Office365/WA200003101).
+Você pode baixar o Report Builder para Customer Journey Analytics na [Microsoft Store](https://appsource.microsoft.com/pt-br/product/Office365/WA200003101).

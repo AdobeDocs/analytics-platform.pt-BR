@@ -78,7 +78,7 @@ Attribution models are available outside of virtual report suites. While they us
 -->
 
 
-+++## Quais dimensões e métricas são compatíveis?
++++## Que dimensões e métricas são compatíveis?
 
 A atribuição é aceita em todas as métricas não padrão definidas na visualização de dados.
 

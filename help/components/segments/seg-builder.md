@@ -1,17 +1,17 @@
 ---
-description: Entenda como o construtor de segmentos fornece uma tela para arrastar e soltar métricas, dimensões, segmentos e eventos para os visitantes do segmento com base na lógica, nas regras e nos operadores da hierarquia do container. Entenda como criar e salvar segmentos simples ou complexos que identificam os atributos e as ações do visitante nas visitas e ocorrências da página.
-title: Construir segmentos
+description: Entenda como o construtor de segmentos fornece uma tela para arrastar e soltar métricas, dimensões, segmentos e eventos para os visitantes do segmento com base na lógica, nas regras e nos operadores da hierarquia do container. Entenda como criar e salvar segmentos simples ou complexos que identificam atributos e ações de visitantes em visitas e ocorrências da página.
+title: Criar segmentos
 feature: Filters, Segments
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
 source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '1570'
-ht-degree: 87%
+ht-degree: 88%
 
 ---
 
-# Construir segmentos {#build-segments}
+# Criar segmentos {#build-segments}
 
 >[!CONTEXTUALHELP]
 >id="components_filters_createaudience"

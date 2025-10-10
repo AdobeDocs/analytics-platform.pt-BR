@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: f932110a-ca9d-40d1-9459-064ef9cd23da
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 100%
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-architect"
 >title="Projetar um esquema"
->abstract="Discuta sobre os requisitos da coleção de dados em sua organização e determine como deseja criar um esquema para uso na Adobe Experience Platform. Essa etapa aparece porque você deseja usar o processo recomendado de utilização de um esquema personalizado para sua organização. Executar corretamente essa etapa é essencial, pois ter um esquema ao qual todas as equipes em sua organização se alinham facilita muito a assimilação de dados.<br><br>O tempo estimado para alinhar todas as partes relevantes em sua organização a um esquema unificado é de 1 a 2 meses. Esse intervalo de tempo depende muito do número de equipes que é necessário coordenar e do número de dimensões e métricas às quais elas devem se alinhar."
+>abstract="Discuta sobre os requisitos da coleção de dados em sua organização e determine como deseja criar um esquema para uso na Adobe Experience Platform. Essa etapa aparece porque você deseja usar o processo recomendado de utilização de um esquema personalizado para sua organização. Executar corretamente essa etapa é essencial, pois ter um esquema ao qual todas as equipes em sua organização se alinham facilita muito a ingestão de dados.<br><br>O tempo estimado para alinhar todas as partes relevantes em sua organização a um esquema unificado é de 1 a 2 meses. Esse intervalo de tempo depende muito do número de equipes que é necessário coordenar e do número de dimensões e métricas às quais elas devem se alinhar."
 
 <!-- markdownlint-enable MD034 -->
 

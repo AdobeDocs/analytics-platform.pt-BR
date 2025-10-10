@@ -133,13 +133,13 @@ Para configurar o esquema:
 
 1. Selecione o elemento raiz do esquema que exibe o nome dele e selecione a opção **[!UICONTROL Perfil]**.
 
-   Você deve habilitar o esquema para o perfil. Depois de ativados, quando os dados são assimilados em conjuntos de dados com base nesse esquema, esses dados são mesclados ao Perfil do cliente em tempo real.
+   Você deve habilitar o esquema para o perfil. Depois de habilitados, quando os dados são assimilados em conjuntos de dados com base nesse esquema, esses dados são mesclados ao Perfil do cliente em tempo real.
 
-   Consulte [Ativar o esquema para usar no Perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=pt-BR#profile) para obter mais informações.
+   Consulte [Habilitar o esquema para usar no Perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=pt-BR#profile) para obter mais informações.
 
    >[!IMPORTANT]
    >
-   >    Depois de salvar um esquema ativado para perfil, ele não pode mais ser desativado para perfil.
+   >    Depois de salvar um esquema habilitado para perfil, ele não pode mais ser desabilitado para perfil.
 
    ![Habilitar esquema para perfil](./assets/enable-for-profile.png)
 
@@ -159,7 +159,7 @@ Para capturar dados do perfil, você deve:
 
 - Defina a Experience Cloud ID como identificador principal e o email como identificador.
 
-- Ativar o esquema do perfil
+- Habilitar o esquema do perfil
 
 Consulte [Criar e editar esquemas na interface do usuário](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=pt-BR) para obter mais informações sobre a adição e remoção de grupos de campos e campos individuais a um esquema.
 
@@ -197,7 +197,7 @@ Para configurar seu conjunto de dados:
 
    ![Habilitar esquema para perfil](./assets/aepwebsdk-dataset-profile.png)
 
-Consulte [Guia da interface do usuário de conjuntos de dados](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=pt-BR) para obter muito mais informações sobre como visualizar, visualizar, criar, excluir um conjunto de dados. E como ativar um conjunto de dados para o Perfil do cliente em tempo real.
+Consulte [Guia da interface do usuário de conjuntos de dados](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=pt-BR) para obter muito mais informações sobre como visualizar, visualizar, criar, excluir um conjunto de dados. E como habilitar um conjunto de dados para o Perfil do cliente em tempo real.
 
 ## Configurar um fluxo de dados
 
@@ -223,7 +223,7 @@ Para configurar seu armazenamento de dados:
 
    1. Selecione **[!UICONTROL Adobe Experience Platform]** na lista [!UICONTROL Serviço].
 
-   2. Verifique se a opção **[!UICONTROL Ativado]** está selecionada.
+   2. Verifique se a opção **[!UICONTROL Habilitado]** está selecionada.
 
    3. Selecione o conjunto de dados na lista [!UICONTROL Conjunto de dados do evento].
 

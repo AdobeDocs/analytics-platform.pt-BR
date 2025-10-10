@@ -4,7 +4,8 @@ keywords: Analysis Workspace
 feature: Workspace Basics
 title: Depurador de projetos
 role: User
-source-git-commit: ae8c1fb127accae53ab9363a8cceedd5221a245b
+exl-id: 1335ec1f-5597-4e23-8228-3d477534de43
+source-git-commit: 695d5f686d10fc39b1b3d717a19fd6e874d81b33
 workflow-type: tm+mt
 source-wordcount: '466'
 ht-degree: 4%
@@ -17,11 +18,11 @@ O depurador de projetos ajuda você e o Suporte da Adobe a solucionar problemas 
 
 >[!NOTE]
 >
->Para usar o depurador, você deve ter acesso de **Edição** ou **Cópia** [ao projeto](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-25744).
+>Para usar o depurador, você deve ter acesso de **Edição** ou **Cópia** [ao projeto](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25744).
 >
 
 
-## Ativar o depurador
+## Habilitar o depurador
 
 >[!IMPORTANT]
 >
@@ -96,6 +97,3 @@ Para desativar o depurador:
 1. Selecione **[!UICONTROL Ajuda]** > **[!UICONTROL Desabilitar depurador]** no menu de projetos do Analysis Workspace.
 1. Selecione **[!UICONTROL OK]** na caixa de diálogo **[!UICONTROL Desabilitar depurador]**.
 1. Confirme quando o navegador solicitar que você recarregue a página ou o site.
-
-
-

@@ -5,7 +5,7 @@ role: Admin
 feature: Basics
 exl-id: 13d972bc-3d32-414e-a67d-845845381c3e
 source-git-commit: 7c906e30d54362713f5013c8661ee523938d4b0f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 100%
 
@@ -35,7 +35,7 @@ O Customer Journey Analytics permite uma modificação extensa dos dados no mome
 
 A Real-time CDP oferece um conjunto diferente de ferramentas de manipulação de dados. Ela aplica [políticas de mesclagem](https://experienceleague.adobe.com/pt-br/docs/experience-platform/profile/merge-policies/overview) para determinar quais dados serão priorizados e quais dados serão combinados para criar uma visualização unificada de uma pessoa.
 
-## Diferenças no TTL (Tempo de vida útil) e na assimilação de dados
+## Diferenças no TTL (Tempo de vida útil) e na ingestão de dados
 
 Mesmo que os conjuntos de dados da Real-time CDP e do Customer Journey Analytics sejam os mesmos, a Real-time CDP pode manter apenas uma janela de histórico muito limitada. Por outro lado, o Customer Journey Analytics provavelmente tem dados de vários anos. Além disso:
 
@@ -49,6 +49,6 @@ Mesmo que os conjuntos de dados da Real-time CDP e do Customer Journey Analytics
 
 * A loja de perfis na Real-time CDP permite TTLs configuráveis pelo cliente. Os clientes podem alterar esse TTL para o valor que precisarem para manter seus direitos de licença.
 
-## Diferenças na latência de assimilação de dados
+## Diferenças na latência de ingestão de dados
 
 O Customer Journey Analytics ainda não tem os recursos em tempo real da Real-time CDP e, como resultado, pode apresentar um pouco de latência antes de disponibilizar os dados para criação de relatórios ou de público-alvo. A Real-time CDP processa dados por meio de diferentes sistemas com diferentes níveis de latência.

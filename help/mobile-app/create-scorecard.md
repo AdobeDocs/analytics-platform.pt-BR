@@ -29,7 +29,7 @@ As informações a seguir instruem os curadores de dados do Customer Journey Ana
 
 >[!BEGINSHADEBOX]
 
-Confira ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Criar um cartão de pontuação móvel](https://video.tv.adobe.com/v/3409734?quality=12&learn=on&captions=por_br){target="_blank"} para ver um vídeo de demonstração.
+Confira ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Criar um cartão de pontuação móvel](https://video.tv.adobe.com/v/343458?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 
@@ -207,12 +207,12 @@ Cada dimensão adicionada ao bloco será mostrada em um menu suspenso na exibiç
 
 ## Personalizar slides de detalhes {#customize-detail-slide}
 
-Os slides de detalhes personalizados permitem ter ainda mais controle sobre quais informações você compartilha com seu público.
+Os slides de detalhes personalizados permitem ter ainda mais controle sobre quais informações você compartilha com seu público-alvo.
 
 
 >[!BEGINSHADEBOX]
 
-Confira ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Exibições de detalhes personalizadas](https://video.tv.adobe.com/v/3417879?quality=12&learn=on&captions=por_br){target="_blank"} para ver um vídeo de demonstração.
+Confira ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Exibições de detalhes personalizadas](https://video.tv.adobe.com/v/3410002?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
 
 {{videoaa}}
 

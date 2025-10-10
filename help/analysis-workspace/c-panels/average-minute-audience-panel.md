@@ -6,8 +6,8 @@ role: User, Admin
 exl-id: c55b5534-a9a6-47f1-8b43-c8c0b8686c53
 source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
 workflow-type: tm+mt
-source-wordcount: '1679'
-ht-degree: 93%
+source-wordcount: '1681'
+ht-degree: 91%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 93%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta o painel Média de público-alvo por minuto de mídia no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_.<br/>_Consulte o painel [Média de público-alvo por minuto de mídia](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel) para ver a versão do_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
+_Este artigo documenta o painel Média de público-alvo por minuto de mídia no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_.<br/>_Consulte o painel [Média de público-alvo por minuto de mídia](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel) para ver a versão do_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 
@@ -117,7 +117,7 @@ Use as configurações de entrada descritas nesta seção para configurar o pain
 
    | Opções | Descrição |
    |---------|------------|
-   | **[!UICONTROL Granularidade]** | A granularidade padrão é [!UICONTROL **5 minutos**], mas você pode escolher qualquer uma das granularidades que são usadas como denominador para a série temporal no período selecionado. Por exemplo, selecionar 12h a 12h30 com uma granularidade de 5 minutos retorna a média de público-alvo por minuto durante a meia hora completa, bem como seis linhas com a média de público-alvo por minuto para cada período de 5 minutos. Essas linhas são usadas como pontos de dados para o gráfico de série temporal. |
+   | **[!UICONTROL Granularidade]** | A granularidade padrão é [!UICONTROL **5 minutos**], mas você pode escolher qualquer uma das granularidades que são usadas como denominador para a série temporal no período selecionado. Por exemplo, selecionar 12:00 pm até 12:30 pm com granularidade de 5 minutos retorna o público-alvo médio por minuto durante a meia hora completa, bem como seis linhas com o público-alvo médio por minuto para cada período de 5 minutos. Essas linhas são usadas como pontos de dados para o gráfico de série temporal. |
    | [!UICONTROL **Filtrar conteúdo por (opcional)**] | Escolha como filtrar o conteúdo específico, dependendo da visualização desejada ou da maneira como seus dados estão estruturados. <ul>[!UICONTROL **Programa, temporada, episódio**]: exibe os programas disponíveis no menu suspenso, que você pode filtrar usando uma pesquisa (ou arrastando e soltando o nome do programa da coluna da esquerda). Você pode terminar a seleção ali para ver todas as estações do programa, ou você pode filtrar por estações individuais e por episódios individuais. Esta configuração mostra os dados para esses programas, temporadas ou episódios do período selecionado.</li><li>[!UICONTROL **Dimensão personalizada**]: se o seu nome de exibição estiver em uma dimensão personalizada, você poderá encontrá-lo pesquisando no menu de dimensão (opcional) ou usando a pesquisa de coluna à esquerda. O item de dimensão é preenchido automaticamente com base nessa seleção e é tratado como um episódio.</li><li>[!UICONTROL **Nenhum**]: mostra todos os nomes de vídeos que têm dados de média de público-alvo por minuto para a seleção que você escolheu. (Essa opção está selecionada por padrão.)</li></ul> |
 
 1. Continue com as [configurações avançadas do período personalizado](#custom-time-period-advanced-settings) para definir as configurações avançadas.
@@ -187,6 +187,6 @@ O painel Média de público-alvo por minuto de mídia usa apenas a métrica de m
 >[!MORELIKETHIS]
 >
 > [Criar um painel](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
-> &#x200B;> [Painel de visualizadores simultâneos de mídia](media-concurrent-viewers.md)
-> &#x200B;> [Painel de tempo gasto com a reprodução da mídia](media-playback-time-spent.md)
+> > [Painel de visualizadores simultâneos de mídia](media-concurrent-viewers.md)
+> > [Painel de tempo gasto com a reprodução da mídia](media-playback-time-spent.md)
 >

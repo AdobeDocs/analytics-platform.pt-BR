@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 exl-id: c5ed81ea-1d55-4193-9bb1-a2a93ebde91f
 source-git-commit: 3e521cb4ef532d57b9f408fc12dcf138f130f059
-workflow-type: ht
-source-wordcount: '831'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '830'
+ht-degree: 98%
 
 ---
 
@@ -31,7 +31,7 @@ A transferência de ativos exige a permissão de admin de produto do Customer Jo
 
    >[!IMPORTANT]
    >
-   >Só é permitido fazer uma transferência 1:1, de um usuário para outro. Não há suporte para transferências “um para muitos” ou “muitos para um”.
+   >Você só pode fazer uma transferência de 1:1, de um usuário para outro. Não há suporte para transferências “um para muitos” ou “muitos para um”.
 
 
 1. Depois de selecionar um usuário, a opção Transferir ativos é exibida na parte inferior da tela.

@@ -51,7 +51,7 @@ ht-degree: 99%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta a Visualização de tela da jornada no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**.<br/>Não há visualização equivalente no **Adobe Analytics**._
+_Este artigo documenta a Visualização de tela da jornada no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**.<br/>Não há visualização equivalente no **Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
@@ -263,5 +263,5 @@ Você pode criar análises na tela de jornada com base em qualquer dimensão ou 
 
 >[!MORELIKETHIS]
 >
-> * [Guia para visualização da tela de jornada no Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-guide-to-journey-canvas-visualization-in-adobe-customer/ba-p/737857?profile.language=pt)
+> * [Guia para visualização da tela de jornada no Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-guide-to-journey-canvas-visualization-in-adobe-customer/ba-p/737857)
 

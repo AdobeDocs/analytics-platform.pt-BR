@@ -90,7 +90,7 @@ Para adicionar o conjunto de dados criado automaticamente à mesma conexão cria
 
 1. Na seção **[!UICONTROL Preenchimento retroativo de conjunto de dados]**, selecione **[!UICONTROL Solicitar preenchimento retroativo]**.
 
-1. Defina o período que deseja que o preenchimento retroativo de conexão no Customer Journey Analytics inclua inserindo as datas de início e término ou clicando no ícone de calendário ![Calendário](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg).
+1. Defina o período que deseja que o preenchimento retroativo de conexão no Customer Journey Analytics inclua inserindo as datas inicial e final ou clicando no ícone de calendário ![Calendário](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg).
 
    Seja explícito ao especificar as datas solicitadas para preenchimento retroativo. Dependendo de vários fatores, você pode querer executar um dos seguintes procedimentos:
 

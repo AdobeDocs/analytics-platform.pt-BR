@@ -25,7 +25,7 @@ ht-degree: 92%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta a visualização do Mapa de árvore no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consulte [Mapa de árvore](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/treemap) para ver a versão do_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
+_Este artigo documenta a visualização do Mapa de árvore no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consulte [Mapa de árvore](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/treemap) para ver a versão do_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 
@@ -49,8 +49,8 @@ Veja ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualizaçã
 >[!MORELIKETHIS]
 >
 >[Adicionar uma visualização a um painel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->&#x200B;>[Configurações de visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->&#x200B;>[Menu de contexto da visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>>[Configurações de visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>>[Menu de contexto da visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
 
 

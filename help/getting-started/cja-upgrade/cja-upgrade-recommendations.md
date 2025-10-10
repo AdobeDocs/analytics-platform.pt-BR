@@ -115,11 +115,11 @@ Cada etapa fornece uma explicação de alto nível de um processo mais detalhado
 
    +++
 
-+++ API
+   +++ API
 
    1. Use a API da Edge Network para enviar dados à sequência de dados desejada.
 
-+++
+   +++
 
 1. [Confirme que a sua implementação do SDK da web está enviando dados a um conjunto de dados](/help/getting-started/cja-upgrade/cja-upgrade-dataset-ingestion.md){target="_blank"}.
 

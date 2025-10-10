@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7142ef84-66a6-49eb-938b-b67c9b65bf93
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1067'
 ht-degree: 100%
 
@@ -98,29 +98,29 @@ Quando não precisar mais do Adobe Analytics para as finalidades descritas na se
 
    Esse processo possui diferenças dependendo do método de coleta de dados usado para implementar o Adobe Analytics:
 
-+++ AppMeasurement
+   +++ AppMeasurement
 
    [Desabilitar a coleta de dados do AppMeasurement](/help/getting-started/cja-upgrade/cja-upgrade-disable-appmeasurement.md).
 
-+++
+   +++
 
-+++ Extensão do Analytics (Tags)
+   +++ Extensão do Analytics (Tags)
 
    Desabilitar a extensão do Analytics nas tags.
 
-+++
+   +++
 
-+++ API
+   +++ API
 
    Desabilitar a coleta de dados da API.
 
-+++
+   +++
 
-+++ Terceiros
+   +++ Terceiros
 
    Trabalhe com o admin de tags para remover a biblioteca do AppMeasurement do sistema de gerenciamento de tags de terceiros.
 
-+++
+   +++
 
 1. Remova o Adobe Analytics as a service do fluxo de dados.
 

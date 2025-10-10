@@ -36,7 +36,7 @@ A lista de alertas ➊ exibe todos os alertas que você possui, os alertas que f
 | ![StarOutline](/help/assets/icons/StarOutline.svg) | Selecione para favorecer ![Star](/help/assets/icons/Star.svg) ou desfavorecer ![StarOutline](/help/assets/icons/StarOutline.svg) um alerta. |
 | **[!UICONTROL Título e descrição]** | Para editar o alerta, selecione o link de título, que abre o [Construtor de alertas](alert-builder.md#alert-builder). |
 | **[!UICONTROL Tipo]** | Mostra se o alerta é um alerta de dados do Customer Journey Analytics ou um alerta de uso de chamada do servidor. |
-| **[!UICONTROL Ativado]** | Indica se o alerta está ativado ou desativado. |
+| **[!UICONTROL Habilitado]** | Indica se o alerta está ativado ou desativado. |
 | **[!UICONTROL Visualização de dados]** | As visualizações de dados às quais este alerta se aplica. |
 | **[!UICONTROL Proprietário]** | O proprietário do alerta. Como um usuário não administrador, você só verá os alertas que possui ou que são compartilhados com você. |
 | **[!UICONTROL Tags]** | As tags para este alerta. |

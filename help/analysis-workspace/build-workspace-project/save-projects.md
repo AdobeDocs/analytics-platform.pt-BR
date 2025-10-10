@@ -88,7 +88,7 @@ Para salvar um projeto manualmente, com o projeto aberto no Analysis Workspace, 
 
 
 <!-- Cannot find this option in CJA 
-| **[!UICONTROL Save as template]** | Save your project as a [custom template](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html?lang=pt-BR) that becomes available to your organization under **[!UICONTROL Project > New]** | 
+| **[!UICONTROL Save as template]** | Save your project as a [custom template](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html) that becomes available to your organization under **[!UICONTROL Project > New]** | 
 -->
 
 ## Salvar automaticamente

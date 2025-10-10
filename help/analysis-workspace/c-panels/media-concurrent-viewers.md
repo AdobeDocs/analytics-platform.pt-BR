@@ -34,7 +34,7 @@ ht-degree: 98%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta o painel Visualizadores simultâneos de mídia no_ ![Customer Journey Analytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_.<br/>_Consulte o [painel Visualizadores simultâneos de mídia](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers) para a versão do_ ![Adobe  Analytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
+_Este artigo documenta o painel Visualizadores simultâneos de mídia no_ ![Customer Journey Analytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_.<br/>_Consulte o [painel Visualizadores simultâneos de mídia](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers) para a versão do_ ![Adobe  Analytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 
@@ -55,7 +55,7 @@ No Analysis Workspace, Visualizadores simultâneos é o número de visitantes ú
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [painel Visualizadores simultâneos de mídia](https://video.tv.adobe.com/v/35023/?quality=12&learn=on&captions=por_br){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [painel Visualizadores simultâneos de mídia](https://video.tv.adobe.com/v/26990/?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
 
 {{videoaa}}
 
@@ -130,6 +130,6 @@ Uma tabela de forma livre não está disponível nessa visualização.  Para exi
 >[!MORELIKETHIS]
 >
 >[Criar um painel](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
->&#x200B;>[Painel de tempo gasto na reprodução de mídia](media-playback-time-spent.md)
->&#x200B;>[Painel de média de público-alvo por minuto de mídia](average-minute-audience-panel.md)
+>>[Painel de tempo gasto na reprodução de mídia](media-playback-time-spent.md)
+>>[Painel de média de público-alvo por minuto de mídia](average-minute-audience-panel.md)
 >

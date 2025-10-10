@@ -1,13 +1,13 @@
 ---
-description: Saiba mais sobre erros e solução de problemas do Analysis Workspace.
-title: Erros E Solução De Problemas
+description: Saiba mais sobre erros e solução de problemas no Analysis Workspace.
+title: Erros e solução de problemas
 feature: Workspace Basics
 exl-id: 792c3b2e-bd24-4e98-b9ea-983c1189d52e
 role: User
 source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '580'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -36,4 +36,4 @@ Ao usar o Analysis Workspace, utilize as informações abaixo para solucionar al
 | Problema | Como solucionar problemas |
 |---|---|
 | Quando arrasto uma métrica, vejo a mensagem *Dados inválidos*. | Dados inválidos significa que a Adobe não pode retornar dados usando a combinação de dimensões e métricas usadas no relatório. Por exemplo, duas métricas empilhadas uma sobre a outra não podem retornar como dados, pois não há como exibir duas métricas desse modo. Em vez disso, coloque as métricas lado a lado. |
-| Quando arrasto uma métrica, não vejo nenhum dado real, apenas zeros. | Se você criar um relatório do espaço de trabalho com êxito, mas não houver dados, tente realizar as seguintes verificações:<ul><li>Se você aplicar um segmento no seu relatório, os critérios do segmento podem não corresponder a nenhum dado. Tente remover o segmento ou ajustar a definição do segmento.</li><li>Verifique o intervalo de datas no canto superior direito e verifique se ele está definido conforme o esperado.</li><li>Acesse seu site e use o [Depurador](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html?lang=pt-BR) para verificar se os dados estão sendo coletados.</li></ul> |
+| Quando arrasto uma métrica, não vejo nenhum dado real, apenas zeros. | Se você criar um relatório do espaço de trabalho com êxito, mas não houver dados, tente realizar as seguintes verificações:<ul><li>Se você aplicar um segmento no seu relatório, os critérios do segmento podem não corresponder a nenhum dado. Tente remover o segmento ou ajustar a definição do segmento.</li><li>Verifique o intervalo de datas no canto superior direito e verifique se ele está definido conforme o esperado.</li><li>Acesse seu site e use o [Depurador](https://experienceleague.adobe.com/pt-br/docs/experience-platform/debugger/home) para verificar se os dados estão sendo coletados.</li></ul> |

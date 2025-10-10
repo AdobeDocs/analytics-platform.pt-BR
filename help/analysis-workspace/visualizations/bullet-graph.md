@@ -33,7 +33,7 @@ ht-degree: 90%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta a visualização de marcadores no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consulte [Marcador](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph) para a versão do_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
+_Este artigo documenta a visualização de marcadores no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consulte [Marcador](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph) para a versão do_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 
@@ -45,7 +45,7 @@ O gráfico de marcadores apresenta uma só medida principal (por exemplo, receit
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualização de gráfico com marcadores](https://video.tv.adobe.com/v/30760/?quality=12/?quality=12&learn=on&captions=por_br){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualização de gráfico com marcadores](https://video.tv.adobe.com/v/23989/?quality=12/?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
 
 {{videoaa}}
 
@@ -58,12 +58,12 @@ Você pode definir configurações específicas para uma visualização de [!UIC
 
 | Configuração | Descrição |
 |---|---|
-| **[!UICONTROL Opções de marcador]** | Especifique valores para **[!UICONTROL Meta alta]**, **[!UICONTROL Meta intermediária]** e **[!UICONTROL Meta baixa]** na visualização de [!UICONTROL Marcador]. <br/>**[!UICONTROL Meta alta &#x200B;]**&#x200B;é a meta principal que você está almejando.**[!UICONTROL &#x200B; Meta baixa &#x200B;]**&#x200B;e&#x200B;**[!UICONTROL &#x200B; Meta intermediária &#x200B;]**&#x200B;criam intervalos abaixo da Meta alta. Observação: quando a opção&#x200B;**[!UICONTROL &#x200B; Porcentagens &#x200B;]**&#x200B;estiver marcada, insira metas como números inteiros. Por exemplo: `20` se a sua meta for vinte por cento. |
+| **[!UICONTROL Opções de marcador]** | Especifique valores para **[!UICONTROL Meta alta]**, **[!UICONTROL Meta intermediária]** e **[!UICONTROL Meta baixa]** na visualização de [!UICONTROL Marcador]. <br/>**[!UICONTROL Meta alta ]**é a meta principal que você está almejando.**[!UICONTROL  Meta baixa ]**e**[!UICONTROL  Meta intermediária ]**criam intervalos abaixo da Meta alta. Observação: quando a opção**[!UICONTROL  Porcentagens ]**estiver marcada, insira metas como números inteiros. Por exemplo: `20` se a sua meta for vinte por cento. |
 
 >[!MORELIKETHIS]
 >
 >[Adicionar uma visualização a um painel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->&#x200B;>[Configurações de visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->&#x200B;>[Menu de contexto da visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>>[Configurações de visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>>[Menu de contexto da visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
 

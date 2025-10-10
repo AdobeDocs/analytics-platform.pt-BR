@@ -4,12 +4,12 @@ description: Saiba mais sobre casos de uso típicos do Customer Journey Analytic
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User, Admin
-badgePremium: label="B2B edition"
+badgePremium: label="B2B Edition"
 exl-id: 7c16cc62-5032-44a2-92e4-4a1c320f17aa
 source-git-commit: 3c13ae26a9ef48454467fc21b8faaa9e078c7f9f
 workflow-type: tm+mt
 source-wordcount: '371'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
@@ -46,13 +46,13 @@ Analise e explore o impacto do marketing:
 
 O [artigo detalhado sobre o caso de uso](optimize-account-marketing.md) explora como o Customer Journey Analytics B2B edition pode ajudar a otimizar o marketing de conta.
 
-### Aumentar contas principais
+### Desenvolvimento das contas principais
 
 Identifique pontos de contato de alto valor entre os grupos de compras nas principais contas para informar as melhores ações de marketing e vendas e impulsionar o crescimento da receita. Calcule e monitore o valor do tempo de vida do cliente no nível da conta.
 
 O [artigo detalhado sobre o caso de uso](grow-key-accounts.md) explora como o Customer Journey Analytics B2B edition pode ajudar a aumentar as contas principais.
 
-### Criar valor do produto
+### Agregar valor ao produto
 
 Meça o impacto das versões do produto e do uso do produto na satisfação do cliente no nível da conta e do usuário. Assim, você pode otimizar os recursos e as capacidades do produto e informar o desenvolvimento futuro do produto.
 

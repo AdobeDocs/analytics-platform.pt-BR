@@ -17,7 +17,7 @@ O Customer Journey Analytics capacita as equipes com as ferramentas para analisa
 
 * **Gerenciar dados do produto em escala**: assimilar, transformar e gerenciar facilmente dados do produto para atender às suas necessidades comerciais, garantindo insights confiáveis.
 * **Aquisição e ativação de medida**: controle como novos usuários descobrem seu produto e se envolvem com os primeiros eventos que agregam valor.
-* **Medir o engajamento e a adoção**: entenda como os usuários avançam pelo funil do produto, identificam pontos de atrito e rastreiam a adoção de recursos principais.
+* **Medir o engajamento e a adoção**: entenda como os usuários avançam pela funnel do produto, identificam pontos de atrito e rastreiam a adoção de recursos principais.
 * **Medir Retenção e Churn**: analise a retenção de usuários ao longo do tempo, identifique indicadores de churn e desenvolva estratégias para reduzir a queda e aumentar a fidelidade.
 * **Insights do produto de ação**: transforme insights orientados por dados em estratégias acionáveis para melhorar a experiência do usuário e impulsionar o crescimento sustentável do produto.
 * **Compartilhe insights com sua organização**: comunique os principais resultados entre as equipes para alinhar esforços, promover a colaboração e garantir que todos estejam trabalhando em prol de metas comerciais e de produtos compartilhados.
@@ -31,9 +31,9 @@ Dados precisos do produto são a base de uma análise eficaz do produto. A assim
 Os seguintes recursos da Adobe Experience Platform e da Customer Journey Analytics permitem assimilar e gerenciar os dados do produto em escala:
 
 * Adobe Experience Platform
-   * [Conjuntos de dados&#x200B;](https://experienceleague.adobe.com/pt-br/docs/experience-platform/catalog/datasets/overview)
+   * [Conjuntos de dados&#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview)
    * [Preparação de dados&#x200B;](https://experienceleague.adobe.com/pt-br/docs/experience-platform/data-prep/home)
-   * [Distiller de Dados&#x200B;](https://experienceleague.adobe.com/pt-br/docs/experience-platform/query/data-distiller/overview)
+   * [Distiller de Dados&#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/query/data-distiller/overview)
 * Customer Journey Analytics
    * [Conexões&#x200B;](/help/connections/overview.md)
    * [Visualizações de dados](/help/data-views/data-views.md), incluindo [campos derivados&#x200B;](/help/data-views/derived-fields/derived-fields.md)
@@ -43,7 +43,7 @@ Os seguintes recursos da Adobe Experience Platform e da Customer Journey Analyti
 
 ## Aquisição e ativação de medida
 
-O crescimento do produto depende de insights acionáveis de topo de funil que atraem novos usuários, revelam caminhos de conversão e eliminam atritos ao longo da jornada.
+O crescimento do produto depende de insights acionáveis do topo da funnel que atraem novos usuários, revelam caminhos de conversão e eliminam atritos ao longo da jornada.
 
 * A aquisição rastreia novos usuários que chegam ao seu produto, incluindo como eles chegam e quais esforços são mais ou menos eficazes.
 * A Ativation monitora novos usuários que se envolvem com seu primeiro evento de valor, definido de acordo com suas metas específicas.
@@ -60,7 +60,7 @@ Os seguintes recursos no Customer Journey Analytics permitem medir a aquisição
 
 ## Medir o engajamento e a adoção
 
-Adquirir novos usuários expande a parte superior do funil de produtos. O engajamento se concentra em orientar esses usuários mais para baixo no funil e remover obstáculos ao seu sucesso. O sucesso delas impulsiona diretamente o sucesso dos negócios.
+Adquirir novos usuários expande a parte superior do funnel do produto. O engajamento se concentra em orientar esses usuários a partir do funnel e remover obstáculos para seu sucesso. O sucesso delas impulsiona diretamente o sucesso dos negócios.
 
 ![Análise de engajamento](/help/guided-analysis/assets/feature-matrix.png)
 
@@ -69,7 +69,7 @@ Os seguintes recursos no Customer Journey Analytics ajudam você a rastrear o en
 * [Análise guiada: Engajamento](/help/guided-analysis/types/engagement.md)
 * [Análise guiada: tendências](/help/guided-analysis/types/trends.md)
 * [Análise guiada: Frequência](/help/guided-analysis/types/frequency.md)
-* [Análise guiada: Funil](/help/guided-analysis/types/funnel.md)
+* [Análise guiada: Funnel](/help/guided-analysis/types/funnel.md)
 * [Análise guiada: Tendências de conversão](/help/guided-analysis/types/conversion-trends.md)
 * [Análise guiada: impacto na versão](/help/guided-analysis/types/release-impact.md)
 * [Análise guiada: impacto da primeira utilização&#x200B;](/help/guided-analysis/types/first-use-impact.md)
@@ -99,8 +99,8 @@ Os seguintes recursos no Experience Cloud permitem que você atue com eficiênci
 * [Criar e publicar públicos-alvo](/help/components/audiences/publish.md)&#x200B; para ativação do Customer Journey Analytics
 * Ativar públicos-alvo por meio de produtos da Experience Cloud:
    * [Execute experimentos](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/content-management/content-experiment/get-started-experiment) no AJO e no Adobe Target e meça o impacto das variações no Customer Journey Analytics usando o [Painel de experimentação](/help/analysis-workspace/c-panels/experimentation.md)
-   * [Fornecer compromissos no aplicativo](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/channels/in-app/get-started-in-app) aos usuários no AJO
-* [Ativar públicos-alvo](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/ui/activate/activation-overview) para destinos externos com a CDP em tempo real do Adobe&#x200B;
+   * [Fornecer compromissos no aplicativo](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/in-app/get-started-in-app) aos usuários no AJO
+* [Ativar públicos-alvo](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activation-overview) para destinos externos com a CDP em tempo real do Adobe&#x200B;
 
 ## Compartilhar insights para a organização&#x200B;
 

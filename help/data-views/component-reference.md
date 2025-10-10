@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 6cabedc5ed58dac450577fc3505be5f95b7a959d
 workflow-type: tm+mt
 source-wordcount: '651'
-ht-degree: 90%
+ht-degree: 91%
 
 ---
 
@@ -47,14 +47,14 @@ Os componentes padrão opcionais estão disponíveis em **[!UICONTROL Visualiza�
 | [!UICONTROL Dia da semana] | Dimensão de separação de tempo | Segunda-feira, terça-feira, quarta-feira, quinta-feira, sexta-feira, sábado, domingo |
 | [!UICONTROL Dia do ano] | Dimensão de separação de tempo | 1-366 |
 | [!UICONTROL Hora do dia] | Dimensão de separação de tempo | 0-23 |
-| [!UICONTROL &#x200B; Mês do ano] | Dimensão de separação de tempo | Janeiro - Dezembro |
+| [!UICONTROL  Mês do ano] | Dimensão de separação de tempo | Janeiro - Dezembro |
 | [!UICONTROL Primeiras sessões] | Métrica | A primeira sessão definida por uma pessoa na janela de relatórios. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=pt-BR#new-repeat) |
 | [!UICONTROL Sessões de retorno] | Métrica | O número de sessões que não foram a primeira sessão de uma pessoa. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=pt-BR#new-repeat) |
 | [!UICONTROL ID de pessoa] | Dimensão | Cada esquema do conjunto de dados definido na Experience Platform pode ter seu próprio conjunto de uma ou mais identidades definidas e associadas a um namespace de identidade. Qualquer uma dessas identidades pode ser usada como a ID de pessoa. Os exemplos incluem: ID de cookie, ID compilada, ID de usuário, código de rastreamento etc. A dimensão [!UICONTROL ID de pessoa] é a base da combinação de conjuntos de dados e da identificação de pessoas únicas no Customer Journey Analytics.<p>Os possíveis casos de uso incluem:<ul><li>Crie um segmento em um valor de ID de pessoa específico para segmentar tudo de acordo com o comportamento desse usuário.</li><li>Depuração: certificar-se de que os dados de uma ID de cookie específica (ou uma ID de cliente específica) estejam lá.</li><li>Identificação dos usuários que entraram em contato com uma central de atendimento.</li></ul> |
 | [!UICONTROL Namespace da ID de pessoa] | Dimensão | O tipo de ID no qual a [!UICONTROL ID de pessoa] consiste. São exemplos: `email address`, `cookie ID`, `Analytics ID` |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL ID da conta global] | Dimensão | A [!UICONTROL ID da conta global] quando você usa o container da conta global em sua conexão. |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL ID da conta] | Dimensão | A [!UICONTROL ID da Conta], quando você usa o contêiner de Conta em sua conexão. |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL ID da oportunidade] | Dimensão | A [!UICONTROL ID de oportunidade] quando você usa o container de oportunidade em sua conexão. |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>[!UICONTROL ID da conta global] | Dimensão | A [!UICONTROL ID da conta global] quando você usa o container da conta global em sua conexão. |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>[!UICONTROL ID da conta] | Dimensão | A [!UICONTROL ID da Conta], quando você usa o contêiner de Conta em sua conexão. |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>[!UICONTROL ID da oportunidade] | Dimensão | A [!UICONTROL ID de oportunidade] quando você usa o container de oportunidade em sua conexão. |
 | [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>[!UICONTROL ID do grupo de compra] | Dimensão | A [!UICONTROL ID do grupo de compra] quando você usa o container do grupo de compra em sua conexão. |
 | [!UICONTROL Trimestre do ano] | Dimensão de separação de tempo | T1, T2, T3, T4 |
 | [!UICONTROL Repetição de sessão] | Métrica | O número de sessões que não foram a primeira sessão de uma pessoa. [Saiba mais](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=pt-BR#new-repeat) |
@@ -69,5 +69,5 @@ Os componentes padrão opcionais estão disponíveis em **[!UICONTROL Visualiza�
 
 >[!MORELIKETHIS]
 >
->[Descubra insights mais profundos do cliente com o recurso Profundidade do evento](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/discover-deeper-customer-insights-with-adobe-customer-journey/ba-p/753947?profile.language=pt#M576)
+>[Descubra insights do cliente mais profundos com o recurso Profundidade do evento](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/discover-deeper-customer-insights-with-adobe-customer-journey/ba-p/753947?profile.language=pt#M576)
 >

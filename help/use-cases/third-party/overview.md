@@ -1,7 +1,8 @@
 ---
 title: Casos de uso de terceiros no Customer Journey Analytics
 description: Saiba como complementar os dados coletados no Customer Journey Analytics com dados coletados de produtos fora do Adobe.
-source-git-commit: 6ddc0f1e2afa73a6925f1940c08c4fecfc3de383
+exl-id: 3de5ccaf-7a65-448e-b886-fab56bc2a73b
+source-git-commit: 0387a1f88cc46706eb36effda1c3c1c64fff45d9
 workflow-type: tm+mt
 source-wordcount: '118'
 ht-degree: 0%

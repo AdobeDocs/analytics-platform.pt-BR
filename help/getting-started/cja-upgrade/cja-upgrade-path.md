@@ -8,15 +8,15 @@ hide: true
 hidefromtoc: true
 exl-id: 9559ba10-cbaf-4243-9c85-a0a5f6e3bbff
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2981'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
 # Etapa 2: escolha o caminho de atualização
 
-+++Expanda esta seção para ver como as informações da página se encaixam no processo de atualização geral. Verifique se todas as etapas de atualização anteriores foram concluídas.
++++Expanda esta seção para ver onde as informações desta página se encaixam no processo de atualização maior. Verifique se todas as etapas de atualização anteriores foram concluídas.
 
 Antes de prosseguir com esta seção, verifique se você concluiu todas as tarefas de atualização anteriores.
 
@@ -122,7 +122,7 @@ Veja a seguir os caminhos de atualização disponíveis para organizações que 
 
 +++
 
-+++Migrar o Adobe Analytics para o SDK da web da Experience Platform
++++Migrar o Adobe Analytics para o Experience Platform Web SDK
 
 | Vantagens | Desvantagens |
 |----------|---------|
@@ -132,7 +132,7 @@ Veja a seguir os caminhos de atualização disponíveis para organizações que 
 
 +++
 
-+++Uso do conector de origem do Analytics
++++Usar o conector de origem do Analytics
 
 | Vantagens | Desvantagens |
 |----------|---------|
@@ -150,7 +150,7 @@ Ao escolher esse caminho de atualização, também é necessário escolher o esq
 
 #### Caminho de atualização
 
-+++Configure a implementação do SDK da web do Adobe Analytics para enviar dados à Platform
++++Configurar a implementação do SDK da web do Adobe Analytics para enviar dados à Platform
 
 | Vantagens | Desvantagens |
 |----------|---------|
@@ -166,7 +166,7 @@ Se escolher o caminho de atualização que permite configurar a implementação 
 
 É possível optar por usar o esquema existente do Adobe Analytics ou utilizar um esquema XDM próprio para se alinhar melhor às necessidades da organização à medida que começa a usar outros serviços da Platform.
 
-+++Use o esquema do Adobe Analytics com a implementação do SDK da web do Adobe Analytics
++++Usar o esquema do Adobe Analytics com a implementação do Adobe Analytics Web SDK
 
 | Vantagens | Desvantagens |
 |----------|---------|
@@ -174,7 +174,7 @@ Se escolher o caminho de atualização que permite configurar a implementação 
 
 +++
 
-+++Use seu próprio esquema XDM com a implementação do SDK da web do Adobe Analytics
++++Usar seu próprio esquema XDM com a implementação do Adobe Analytics Web SDK
 
 | Vantagens | Desvantagens |
 |----------|---------|

@@ -32,13 +32,13 @@ As configurações de comportamento estão disponíveis em dimensões e métrica
 
 | Configuração | Descrição |
 | --- | --- |
-| [!UICONTROL Minúsculas] | Elimina a duplicação de linhas que têm o mesmo valor, mas com maiúsculas e minúsculas diferentes. Se ativada, todas as instâncias de uma dimensão com o mesmo valor são relatadas como minúsculas. Por exemplo, os dados contêm os valores `"liverpool"`, `"Liverpool"` e `"LIVERPOOL"` em uma dimensão de sequência. Se [!UICONTROL Minúsculas] estiver ativado, todos os três valores são combinados em `"liverpool"`. Se desativado, todos os três valores são tratados como distintos. |
+| [!UICONTROL Minúsculas] | Elimina a duplicação de linhas que têm o mesmo valor, mas com maiúsculas e minúsculas diferentes. Se habilitada, todas as instâncias de uma dimensão com o mesmo valor são relatadas como minúsculas. Por exemplo, os dados contêm os valores `"liverpool"`, `"Liverpool"` e `"LIVERPOOL"` em uma dimensão de sequência. Se [!UICONTROL Minúsculas] estiver habilitado, todos os três valores são combinados em `"liverpool"`. Se desativado, todos os três valores são tratados como distintos. |
 
 {style="table-layout:auto"}
 
 >[!NOTE]
 >
->Se você ativar [!UICONTROL Minúsculas] em uma dimensão de conjunto de dados de pesquisa, vários valores de pesquisa poderão existir para o mesmo identificador. Se esse conflito ocorrer, o Customer Journey Analytics usará o primeiro valor ASCII agrupado (valores em maiúsculas precedem valores em minúsculas). A Adobe recomenda não usar conjuntos de dados de pesquisa que contenham o mesmo valor quando [!UICONTROL Minúsculas] estiverem ativadas.
+>Se você habilitar [!UICONTROL Minúsculas] em uma dimensão de conjunto de dados de pesquisa, vários valores de pesquisa poderão existir para o mesmo identificador. Se esse conflito ocorrer, o Customer Journey Analytics usará o primeiro valor ASCII agrupado (valores em maiúsculas precedem valores em minúsculas). A Adobe recomenda não usar conjuntos de dados de pesquisa que contenham o mesmo valor quando [!UICONTROL Minúsculas] estiverem habilitadas.
 
 ![Dimensão que diferencia maiúsculas de minúsculas](../assets/case-sens-workspace.png)
 

@@ -321,7 +321,7 @@ Os seguintes grupos de rótulos de contexto estão disponíveis, cada um com uma
 
 +++
 
-+++ Análise de conteúdo
++++ Content Analytics
 
 | Nome | Descrição |
 |------|-------------|

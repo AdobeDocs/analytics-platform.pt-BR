@@ -6,7 +6,7 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: product analytics
 role: User
 source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '670'
 ht-degree: 100%
 
@@ -25,7 +25,7 @@ ht-degree: 100%
 
 A Análise de ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg)**[!UICONTROL funil ]**fornece uma representação visual de uma jornada do usuário significativa em seu produto. O eixo horizontal representa cada etapa pela qual um usuário deve passar. O eixo vertical representa a porcentagem de usuários ou sessões em cada etapa. Todas as etapas devem ser feitas em ordem eventual, mas podem ocorrer a qualquer momento na janela de relatórios.
 
->[!VIDEO](https://video.tv.adobe.com/v/3431282/?quality=12&learn=on&captions=por_br){width="90%"}
+>[!VIDEO](https://video.tv.adobe.com/v/3421663/?quality=12&learn=on){width="90%"}
 
 ## Casos de uso
 

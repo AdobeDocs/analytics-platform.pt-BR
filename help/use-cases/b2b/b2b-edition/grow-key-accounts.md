@@ -4,16 +4,16 @@ description: Saiba mais sobre como aumentar as contas principais usando o Custom
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-badgePremium: label="B2B edition"
+badgePremium: label="B2B Edition"
 exl-id: f5294af8-b8dc-4239-b0f7-5c20d39007ee
 source-git-commit: 3c13ae26a9ef48454467fc21b8faaa9e078c7f9f
 workflow-type: tm+mt
 source-wordcount: '277'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
-# Aumentar contas principais
+# Desenvolvimento das contas principais
 
 Aumentar e manter contas importantes é uma alta prioridade para empresas B2B. Um pré-requisito para garantir o progresso dos negócios é comunicar-se com as principais partes interessadas em suas contas de destino na hora certa.
 
@@ -21,13 +21,13 @@ Quando você considera como aumentar as contas principais por meio de novos movi
 
 ## Progressão do estágio de vendas
 
-Você deseja gerar e distribuir relatórios de conversão de clientes potenciais ad hoc e entender como as contas avançam pelo funil de vendas.
+Você deseja gerar e distribuir relatórios de conversão de clientes potenciais ad hoc e entender como as contas avançam por meio do funnel de vendas.
 
 A visualização [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) permite visualizar as taxas de conversão e distribuição entre etapas predefinidas em uma jornada sequencial.
 
 ### Exemplo
 
-Você deseja ver o fallout da parte superior do funil de vendas (do lead para a oportunidade) para contas.
+Você deseja ver o fallout da parte superior do funnel de vendas (do lead à oportunidade) para contas.
 
 1. [Criar e configurar uma visualização de Fallout](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md).
 1. Selecione ![Configuração](/help/assets/icons/Setting.svg) para selecionar **[!UICONTROL Conta]** como o **[!UICONTROL Contêiner de fallout]**.

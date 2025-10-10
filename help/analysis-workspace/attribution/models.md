@@ -69,7 +69,7 @@ A lookback window is the amount of time a conversion should look back to include
 
 >[!BEGINSHADEBOX]
   
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Custom lookback window](https://video.tv.adobe.com/v/40043?quality=12&learn=on&captions=por_br){target="_blank"} for a demo video.
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Custom lookback window](https://video.tv.adobe.com/v/36204?quality=12&learn=on){target="_blank"} for a demo video.
   
 >[!ENDSHADEBOX]
 

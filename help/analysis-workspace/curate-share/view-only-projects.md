@@ -1,6 +1,6 @@
 ---
 description: Entenda a experiência de projetos somente leitura no Analysis Workspace.
-keywords: Projetos somente leitura
+keywords: Projetos somente de leitura
 title: Projetos somente leitura
 feature: Curate and Share
 exl-id: 2bc26444-aeea-4695-92a5-a2b45ac18e0d
@@ -8,11 +8,11 @@ role: User
 source-git-commit: 084c995658a5cf698d253f1c15229f621a8c55d5
 workflow-type: tm+mt
 source-wordcount: '303'
-ht-degree: 35%
+ht-degree: 37%
 
 ---
 
-# Projetos somente leitura
+# Projetos somente de leitura
 
 Você pode compartilhar projetos como somente leitura com os destinatários por meio da [funcionalidade de compartilhamento](/help/analysis-workspace/curate-share/share-projects.md). Os destinatários colocados na função **[!UICONTROL Somente leitura]** receberão uma experiência de projeto mais limitada.
 
@@ -37,11 +37,11 @@ As interações desativadas em um projeto somente visualização incluem:
 * Menus Editar, Inserir e Componente
 * Dicas do Espaço de trabalho
 
-## Interações ativadas
+## Interações habilitadas
 
-Algumas das interações ativadas mais importantes em um projeto somente visualização incluem:
+Algumas das interações habilitadas mais importantes em um projeto somente visualização incluem:
 
-| Área | Interações ativadas |
+| Área | Interações habilitadas |
 | --- | --- |
 | **Tabelas de forma livre** | <li>Paginação e classificação</li><li>Passagem</li><li>Seleções de células que atualizam visualizações vinculadas</li><li>No menu de contexto > Obter link de visualização</li><li>No menu de contexto > Copiar para a área de transferência</li> |
 | **Visualizações** | <li>Clicar para ativar/desativar legenda</li><li>Passagem</li><li>No menu de contexto > Obter link de visualização</li><li>Recolher/expandir</li><li>Fluxo - expandir nós de fluxo</li><li>Mapa - zoom</li></ul> |

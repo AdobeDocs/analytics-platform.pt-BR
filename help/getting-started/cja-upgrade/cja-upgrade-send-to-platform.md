@@ -7,15 +7,15 @@ hide: true
 hidefromtoc: true
 exl-id: d9d7f186-9077-4372-94ad-8dd5b97779ca
 source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '897'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
 # Etapa 3: enviar dados à Adobe Experience Platform ao atualizar
 
-+++Expanda esta seção para ver como as informações da página se encaixam no processo de atualização geral. Verifique se todas as etapas de atualização anteriores foram concluídas.
++++Expanda esta seção para ver onde as informações desta página se encaixam no processo de atualização maior. Verifique se todas as etapas de atualização anteriores foram concluídas.
 
 Antes de prosseguir com esta seção, verifique se você concluiu todas as tarefas de atualização anteriores.
 

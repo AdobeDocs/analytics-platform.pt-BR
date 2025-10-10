@@ -62,7 +62,7 @@ Novamente, clique no ícone de [!UICONTROL filtro] no painel esquerdo, em **[
 
 Clique em **[!UICONTROL Aplicar]** para ver quais políticas estão habilitadas.
 
-## Como as políticas ativadas afetam as visualizações de dados
+## Como as políticas habilitadas afetam as visualizações de dados
 
 Se uma ou mais políticas estiverem ativadas com rótulos C8 ou C12, os componentes do esquema que têm determinados rótulos de dados aplicados não poderão ser adicionados às visualizações de dados.
 

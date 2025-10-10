@@ -18,7 +18,7 @@ As [!UICONTROL configurações de coluna] permitem definir a formatação da col
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Configurações de linha e coluna em uma tabela de forma livre](https://video.tv.adobe.com/v/328504/?quality=12&learn=on&captions=por_br){target="_blank"} para assistir a um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Configurações de linha e coluna em uma tabela de forma livre](https://video.tv.adobe.com/v/40382/?quality=12&learn=on){target="_blank"} para assistir a um vídeo de demonstração.
 
 {{videoaa}}
 
@@ -41,7 +41,7 @@ Para acessar essas [!UICONTROL configurações], selecione ![Configurações de 
 | **[!UICONTROL Porcentagem]** | Determina se uma célula exibe ou oculta o valor porcentual da métrica. Por exemplo, se a métrica for Exibições de página, o valor porcentual será o número de exibições de página referente ao item da linha dividido pelo total de exibições de página da coluna.  Observação: é possível obter porcentagens maiores que 100% para garantir a precisão. O limite superior pode ser movido para 1.000%, a fim de evitar que a largura das colunas fique muito grande. |
 | **[!UICONTROL Mostrar anomalias]** | Determina se a detecção de anomalias é executada nos valores desta coluna. |
 | **[!UICONTROL Mostrar previsão]** | Determine se os valores de previsão são exibidos nessa coluna. |
-| **[!UICONTROL Quebrar linha do texto de cabeçalho]** | Permite a quebra de linha do texto de cabeçalho em tabelas de forma livre para torná-lo mais legível e facilitar o compartilhamento de tabelas. Essa quebra de linha é útil para renderização de PDF e para métricas com nomes longos. Ativado por padrão. |
+| **[!UICONTROL Quebrar linha do texto de cabeçalho]** | Permite a quebra de linha do texto de cabeçalho em tabelas de forma livre para torná-lo mais legível e facilitar o compartilhamento de tabelas. Essa quebra de linha é útil para renderização de PDF e para métricas com nomes longos. Habilitado por padrão. |
 | **[!UICONTROL Interpretar zero como nenhum valor]** | Para células com um valor 0, determina se exibirá um 0 ou uma célula em branco. Isso é útil quando você precisar observar os dados de cada dia do mês e alguns dias estiverem no futuro.  Em vez de mostrar 0 para as datas futuras, células em branco serão exibidas. Os gráficos também respeitam essa configuração (ou seja, os gráficos não mostram linhas ou barras com valores 0). |
 | **[!UICONTROL Histórico]** | Determina se uma célula mostra ou oculta todas as formatações de célula, incluindo o gráfico de barras e a formatação condicional. |
 | **[!UICONTROL Gráfico de barras]** | Exibe um gráfico de barras horizontal que representa o valor da célula relativo ao total da coluna. |
@@ -117,7 +117,7 @@ Para usar um modelo de atribuição não padrão para uma métrica em uma Analys
 
 {{attribution-container}}
 
-### Janela de pesquisa
+### Janela de retrospectiva
 
 {{attribution-lookback-window}}
 

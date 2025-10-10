@@ -5,7 +5,7 @@ exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
 feature: Audiences
 role: User
 source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '766'
 ht-degree: 100%
 
@@ -20,7 +20,7 @@ Os públicos podem ser gerenciados no Customer Journey Analytics usando **[!UICO
 O gerenciamento de públicos-alvo criados anteriormente permite:
 
 * **Agendar ou cancelar o agendamento** de atualização automática de público-alvo. A expiração máxima na programação é de 1 ano.
-* **Renovar um cronograma de atualização de público** quando estiver prestes a expirar. Públicos que estão prestes a expirar são tratados de forma semelhante aos relatórios agendados que se encontram na mesma situação: o administrador recebe um email um mês antes da expiração programada.
+* **Renovar um cronograma de atualização de público-alvo** quando estiver prestes a expirar. Públicos-alvos que estão prestes a expirar são tratados de forma semelhante aos relatórios agendados que se encontram na mesma situação: o administrador recebe um email um mês antes da expiração programada.
 * Exibir o **intervalo de atualização** e a **última vez que um público-alvo foi atualizado**
 * Obtenha insights sobre o **tempo necessário para produzir um público-alvo** no Customer Journey Analytics. E a quantidade de tempo que levou para que o público-alvo aparecesse na Real-time Customer Platform para fins de ativação.
 * Veja se os públicos-alvo no Customer Journey Analytics estão **sendo usados ativamente pela Real-time Customer Platform**. Ou (de preferência) qualquer aplicativo da Experience Platform que consuma os públicos-alvo criados pelo Customer Journey Analytics.

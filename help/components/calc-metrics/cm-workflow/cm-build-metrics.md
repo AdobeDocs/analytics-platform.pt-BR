@@ -1,12 +1,12 @@
 ---
-description: Saiba mais sobre o construtor de métricas calculadas que fornece uma tela para arrastar e soltar dimensões, métricas, segmentos e funções para criar métricas personalizadas com base na lógica, nas regras e nos operadores da hierarquia do contêiner.
+description: Saiba mais sobre o construtor de métricas calculadas que fornece uma tela para arrastar e soltar dimensões, métricas, segmentos e funções para criar métricas personalizadas com base na lógica, nas regras e nos operadores da hierarquia do container.
 title: Criar métricas
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
 source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '1613'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -200,5 +200,5 @@ Para excluir um container, selecione ![Fechar](/help/assets/icons/Close.svg) no 
 >[!MORELIKETHIS]
 >
 >[Usar funções](cm-using-functions.md)
->&#x200B;>[Segmentos ](/help/components/segments/seg-overview.md)
+>>[Segmentos ](/help/components/segments/seg-overview.md)
 >

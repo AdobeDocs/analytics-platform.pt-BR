@@ -58,7 +58,7 @@ A Adobe oferece várias maneiras de trazer dados para a Adobe Experience Platfor
 
 ## Alterações no conceito de conjuntos de relatórios virtuais {#data-views}
 
-As [!UICONTROL Visualizações de dados] seguem o conceito de conjuntos de relatórios virtuais como eles existem hoje e os expande para [ativar controles adicionais nos dados](/help/data-views/create-dataview.md) disponibilizado por conexões. Essas alterações fazem com que configurações gerais, como fuso horário e intervalos de tempo limite da sessão, sejam configuráveis e retroativas. Configurações de variável individuais, como atribuição e expiração, também podem ser personalizadas em um relatório ou nível de visualização de dados. Essas configurações são não destrutivas e retroativas.
+As [!UICONTROL Visualizações de dados] seguem o conceito de conjuntos de relatórios virtuais como eles existem hoje e os expande para [habilitar controles adicionais nos dados](/help/data-views/create-dataview.md) disponibilizado por conexões. Essas alterações fazem com que configurações gerais, como fuso horário e intervalos de tempo limite da sessão, sejam configuráveis e retroativas. Configurações de variável individuais, como atribuição e expiração, também podem ser personalizadas em um relatório ou nível de visualização de dados. Essas configurações são não destrutivas e retroativas.
 
 Observe que o seletor de conjunto de relatórios no canto superior direito agora permite escolher entre as visualizações de dados disponíveis:
 
@@ -93,7 +93,7 @@ As métricas calculadas são nomeadas de forma semelhante no Adobe Analytics e n
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Mover métricas calculadas do Adobe Analytics para o Customer Journey Analytics](https://video.tv.adobe.com/v/35870?quality=12&learn=on&captions=por_br){target="_blank"} para assistir a um vídeo de demonstração sobre como mover métricas calculadas.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Mover métricas calculadas do Adobe Analytics para o Customer Journey Analytics](https://video.tv.adobe.com/v/31788?quality=12&learn=on){target="_blank"} para assistir a um vídeo de demonstração sobre como mover métricas calculadas.
 
 >[!ENDSHADEBOX]
 
@@ -120,7 +120,7 @@ O Customer Journey Analytics expande os conceitos de identidades além das ECIDs
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Usar identidades no Customer Journey Analytics](https://video.tv.adobe.com/v/33386/?quality=12&learn=on&captions=por_br){target="_blank"} para assistir a um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Usar identidades no Customer Journey Analytics](https://video.tv.adobe.com/v/30750/?quality=12&learn=on){target="_blank"} para assistir a um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 

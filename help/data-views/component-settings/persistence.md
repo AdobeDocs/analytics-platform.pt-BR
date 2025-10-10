@@ -54,7 +54,7 @@ ht-degree: 79%
 
 As configurações de alocação disponíveis são:
 
-* **[!UICONTROL Mais recente]**: persiste o valor mais recente (por carimbo de data e hora) presente na dimensão. Qualquer valor subsequente que ocorrer dentro do período de expiração da dimensão substitui o valor persistente anterior. Se “Tratar &#39;Valor nulo&#39; como um valor” estiver ativado nas [Opções de valor nulo](no-value-options.md) desta dimensão, os valores vazios substituirão os valores persistentes anteriores. Por exemplo, considere a seguinte tabela com a alocação [!UICONTROL Mais recente] e a expiração de [!UICONTROL Sessão]:
+* **[!UICONTROL Mais recente]**: persiste o valor mais recente (por carimbo de data e hora) presente na dimensão. Qualquer valor subsequente que ocorrer dentro do período de expiração da dimensão substitui o valor persistente anterior. Se “Tratar &#39;Valor nulo&#39; como um valor” estiver habilitado nas [Opções de valor nulo](no-value-options.md) desta dimensão, os valores vazios substituirão os valores persistentes anteriores. Por exemplo, considere a seguinte tabela com a alocação [!UICONTROL Mais recente] e a expiração de [!UICONTROL Sessão]:
 
   | Dimensão | Ocorrência 1 | Ocorrência 2 | Ocorrência 3 | Ocorrência 4 | Ocorrência 5 |
   | --- | --- | --- | --- | --- | --- |
@@ -108,7 +108,7 @@ Consulte [Uso de dimensões e métricas de ligação no Customer Journey Analyti
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimensões de vinculação](https://video.tv.adobe.com/v/3409296/?quality=12&learn=on&captions=por_br){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimensões de vinculação](https://video.tv.adobe.com/v/342694/?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 

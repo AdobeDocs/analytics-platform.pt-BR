@@ -142,11 +142,11 @@ Selecione **[!UICONTROL Excluir hoje]** para excluir hoje de um intervalo de dat
 
 A lista a seguir descreve formatos válidos de intervalo de datas.
 
-- As datas de início e término devem estar no seguinte formato: AAAA-MM-DD
+- As datas inicial e final devem estar no seguinte formato: AAAA-MM-DD
 
-- A data de início deve ser anterior ou igual à data de término. Ambas as datas podem ser definidas para o futuro.
+- A data inicial deve ser anterior ou igual à data final. Ambas as datas podem ser definidas para o futuro.
 
-- Ao usar datas em andamento, a data de início deve ser hoje ou no passado. O dia de início deve estar no passado se **[!UICONTROL Excluir hoje]** estiver selecionado.
+- Ao usar datas em andamento, a data inicial deve ser hoje ou no passado. O dia de início deve estar no passado se **[!UICONTROL Excluir hoje]** estiver selecionado.
 
 - É possível criar um intervalo de datas estático para o futuro. Por exemplo, talvez seja necessário definir uma data futura para um lançamento de campanha de marketing na próxima semana. Essa opção cria um monitoramento de pasta de trabalho para uma campanha antecipadamente.
 

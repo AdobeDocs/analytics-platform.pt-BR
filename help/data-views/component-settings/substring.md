@@ -40,7 +40,7 @@ Pegue uma parte de uma string com base em sua posição no início ou no fim de 
 * **[!UICONTROL String]**: corresponder a um caractere ou sequência de caracteres para indicar o início ou o fim de uma string. Esse menu suspenso também revela opções adicionais:
    * **[!UICONTROL Corresponder]**: a string que será correspondida. Se a entrada não tiver correspondência com esse campo, [Nenhuma opção de valor](no-value-options.md) será aplicada.
    * **[!UICONTROL Índice]**: o critério **[!UICONTROL Corresponder]** pode ser apresentado várias vezes em uma string. Esse número inteiro determina qual correspondência deve iniciar ou finalizar a saída, dependendo do método. Por exemplo, um índice de `1` representa a primeira correspondência. Se o índice for superior ao número de correspondências disponíveis, [Nenhuma opção de valor](no-value-options.md) será aplicada.
-   * **[!UICONTROL Incluir string]**: uma caixa de seleção que inclui a string **[!UICONTROL Corresponder]** na saída, se ativada.
+   * **[!UICONTROL Incluir string]**: uma caixa de seleção que inclui a string **[!UICONTROL Corresponder]** na saída, se habilitada.
 * **[!UICONTROL Comprimento]**: um número inteiro que especifica a contagem de caracteres a ser incluída após a posição inicial da saída. Disponível somente no menu suspenso **[!UICONTROL Para]**.
 
 ## Delimitador
@@ -70,8 +70,8 @@ Se a entrada não for um URL válido ou se o componente de URL desejado não est
 
 Cortar espaço em branco ou caracteres especiais da string.
 
-* **[!UICONTROL Aparar espaços em branco]**: uma caixa de seleção que remove todos os espaços em branco no início e no fim da cadeia de caracteres, se ativada.
-* **[!UICONTROL Aparar caracteres especiais]**: uma caixa de seleção que revela um campo de entrada **[!UICONTROL Caracteres especiais]**, se ativado. Todos os caracteres neste campo são removidos da saída. Caracteres multibyte não são aceitos.
+* **[!UICONTROL Aparar espaços em branco]**: uma caixa de seleção que remove todos os espaços em branco no início e no fim da cadeia de caracteres, se habilitada.
+* **[!UICONTROL Aparar caracteres especiais]**: uma caixa de seleção que revela um campo de entrada **[!UICONTROL Caracteres especiais]**, se habilitado. Todos os caracteres neste campo são removidos da saída. Caracteres multibyte não são aceitos.
 
 ## Regex
 
@@ -79,7 +79,7 @@ Aplique expressões regulares a uma dimensão para recuperar o valor desejado.
 
 * **[!UICONTROL Regex]**: a fórmula da expressão regular.
 * **[!UICONTROL Formato de saída]**: um campo opcional que permite adicionar texto ou reordenar a saída do subgrupo regex. Se esse campo estiver em branco, a saída da string será a expressão regex avaliada.
-* **[!UICONTROL Diferenciação de maiúsculas e minúsculas]**: uma caixa de seleção que força a expressão regular a diferenciar maiúsculas de minúsculas, se estiver ativada.
+* **[!UICONTROL Diferenciação de maiúsculas e minúsculas]**: uma caixa de seleção que força a expressão regular a diferenciar maiúsculas de minúsculas, se estiver habilitada.
 
 O CJA usa um subconjunto da sintaxe de regex Perl. Se a entrada não corresponder à expressão regular e a variável **[!UICONTROL Formato de saída]** estiver em branco, [Nenhuma opção de valor](no-value-options.md) será aplicada. As seguintes expressões são suportadas:
 

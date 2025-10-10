@@ -1,6 +1,6 @@
 ---
 title: Uso dos dados do conjunto de relatórios do Adobe Analytics no Customer Journey Analytics
-description: Como configurar conjuntos de relatórios do Adobe Analytics para assimilação na Adobe Experience Platform e no Customer Journey Analytics
+description: Como configurar conjuntos de relatórios do Adobe Analytics para ingestão na Adobe Experience Platform e no Customer Journey Analytics
 role: User
 solution: Customer Journey Analytics
 feature: Basics
@@ -26,7 +26,7 @@ Clientes do Adobe Analytics podem utilizar facilmente seus conjuntos de relatór
 
 * [Evolução do Adobe Analytics para o Customer Journey Analytics](/help/getting-started/aa-to-cja.md)
 
-## Configurar conjuntos de relatórios para assimilação na Adobe Experience Platform e no Customer Journey Analytics
+## Configurar conjuntos de relatórios para ingestão na Adobe Experience Platform e no Customer Journey Analytics
 
 Após preparar os dados, estará tudo pronto para você começar a configurar conjuntos de relatórios para uso na Adobe Experience Platform e no Customer Journey Analytics.
 
@@ -38,7 +38,7 @@ Após preparar os dados, estará tudo pronto para você começar a configurar co
 
 ## Comparação do Customer Journey Analytics e Adobe Analytics
 
-O Customer Journey Analytics e Adobe Analytics têm diversas semelhanças. Por exemplo, tanto o Customer Journey Analytics quanto o Adobe Analytics oferecem os recursos do Analysis Workspace para realizar rápidas análises de forma livre. No entanto, como o Customer Journey Analytics é um aplicativo integrado à Adobe Experience Platform e a utiliza para assimilação de dados, o Customer Journey Analytics e o Adobe Analytics diferem consideravelmente de várias maneiras. Os seguintes artigos ajudam a entender essas diferenças:
+O Customer Journey Analytics e Adobe Analytics têm diversas semelhanças. Por exemplo, tanto o Customer Journey Analytics quanto o Adobe Analytics oferecem os recursos do Analysis Workspace para realizar rápidas análises de forma livre. No entanto, como o Customer Journey Analytics é um aplicativo integrado à Adobe Experience Platform e a utiliza para ingestão de dados, o Customer Journey Analytics e o Adobe Analytics diferem consideravelmente de várias maneiras. Os seguintes artigos ajudam a entender essas diferenças:
 
 * [Comparar os dados do Adobe Analytics com os dados do Customer Journey Analytics](/help/troubleshooting/compare.md)
 * [Suporte a recursos do Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md)

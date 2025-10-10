@@ -38,7 +38,7 @@ Como alternativa, você pode definir uma [taxa de rejeição usando campos deriv
 
 Os campos derivados fazem parte de uma visualização de dados que tem a vantagem de que nem todos os usuários podem substituir ou modificar a definição de uma métrica de taxa de rejeição. Essa vantagem também introduziu uma limitação. Os usuários que não têm acesso a uma visualização de dados não podem usar campos derivados e precisam recorrer a segmentos e métricas calculadas para definir uma taxa de rejeição.
 
-Consulte para obter mais informações sobre como calcular rejeições e taxa de rejeição no Customer Journey Analytics, esta [publicação do blog](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446?profile.language=pt).
+Consulte para obter mais informações sobre como calcular rejeições e taxa de rejeição no Customer Journey Analytics, esta [publicação do blog](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446).
 
 +++
 
@@ -47,7 +47,7 @@ Consulte para obter mais informações sobre como calcular rejeições e taxa de
 
 Você deseja definir uma métrica calculada que calcula apenas as exibições de página das páginas que foram visitadas em mais de 100 sessões.
 
-+++ Detalhes
++++ Detalhes 
 
 ![Exibições de página condicionais](assets/conditional-page-views.png)
 

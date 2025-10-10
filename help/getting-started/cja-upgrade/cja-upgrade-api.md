@@ -27,7 +27,7 @@ ht-degree: 80%
 
 É possível instalar o SDK da web da Platform por meio da instalação do pacote NPM para controlar o processo de criação do JavaScript do SDK da web da Adobe Experience Platform.
 
-1. Siga as informações na seção [Opção 3: Uso do pacote NPM](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/installing-the-sdk#option-3-using-the-npm-package) em [Instalar Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/installing-the-sdk) no Guia do Web SDK.
+1. Siga as informações na seção [Opção 3: Uso do pacote NPM](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/installing-the-sdk#option-3-using-the-npm-package) em [Instalar Web SDK](https://experienceleague.adobe.com/pt-BR/docs/experience-platform/edge/fundamentals/installing-the-sdk) no Guia do Web SDK.
 
 {{upgrade-final-step}}
 

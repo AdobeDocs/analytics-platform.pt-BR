@@ -7,7 +7,7 @@ role: Admin
 source-git-commit: 40706e3118cbaf7582d8625d307358b16f1836ac
 workflow-type: tm+mt
 source-wordcount: '440'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -29,9 +29,9 @@ Essa integração permite gerenciar a conformidade com mais facilidade. Os admin
 
 ## Solicitações de privacidade
 
-O Adobe lida com solicitações de privacidade de acordo com as leis locais e internacionais aplicáveis.
+A Adobe gerencia solicitações de privacidade de acordo com as leis locais e internacionais aplicáveis.
 
-Como a Customer Journey Analytics usa dados disponíveis no Adobe Experience Platform, a Adobe oferece a [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=pt-BR) para enviar solicitações de acesso e exclusão de dados. As solicitações se aplicam aos conjuntos de dados originais e rechaveados.
+Como o Customer Journey Analytics usa dados disponíveis na Adobe Experience Platform, a Adobe oferece o [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=pt-BR) para enviar solicitações de acesso e exclusão de dados. As solicitações se aplicam aos conjuntos de dados originais e com chave alterada.
 
 ## RGPD
 
@@ -45,4 +45,4 @@ De acordo com a CCPA, o Privacy Service dará suporte a solicitações de recusa
 
 >[!MORELIKETHIS]
 >
->* [Blog: como manter uma governança eficaz no Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/bg-p/adobe-analytics-blogs/page/4?profile.language=pt)
+>* [Blog: como manter uma governança eficaz no Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/bg-p/adobe-analytics-blogs/page/4)

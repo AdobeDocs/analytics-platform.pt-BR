@@ -7,7 +7,7 @@ role: User
 source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '1474'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -207,7 +207,7 @@ Traditional Analytics comes with numerous out-of-the-box templates and calculate
 >[!MORELIKETHIS]
 >
 >[Criar segmentos](seg-create.md)
->&#x200B;>[Construtor de segmentos](seg-builder.md)
->&#x200B;>[Segmentos rápidos](seg-quick.md)
->&#x200B;>[Segmentos sequenciais](seg-sequential-build.md)
->&#x200B;>[Gerenciar segmentos](seg-manage.md)
+>>[Construtor de segmentos](seg-builder.md)
+>>[Segmentos rápidos](seg-quick.md)
+>>[Segmentos sequenciais](seg-sequential-build.md)
+>>[Gerenciar segmentos](seg-manage.md)

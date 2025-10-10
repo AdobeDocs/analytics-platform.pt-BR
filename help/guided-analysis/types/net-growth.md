@@ -7,8 +7,8 @@ exl-id: a4f97458-9934-4a98-8005-fa1ba7831101
 role: User
 source-git-commit: be617c59cd2fced0031fda1130b86e638bee8f68
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '716'
+ht-degree: 93%
 
 ---
 
@@ -33,15 +33,15 @@ O resultado desta fórmula é uma proporção. Um crescimento líquido de `1` re
 
 Semelhante à análise [Ativa](active-growth.md), os usuários são definidos como a seguir:
 
-* **[!UICONTROL Novo]**: o usuário estava ativo durante o período atual, mas não anteriormente. Veja até que ponto a análise retroage para determinar um novo usuário passando o cursor do mouse sobre “[!UICONTROL Novos usuários]” na legenda do gráfico. O intervalo de pesquisa é determinado dinamicamente com base no intervalo de datas e intervalo selecionados.
-* **[!UICONTROL Retorno]**: o usuário estava ativo no período atual e inativo no período imediatamente anterior, mas estava ativo em algum momento. Veja até que ponto a análise retroage para determinar um usuário de retorno passando o cursor do mouse sobre “[!UICONTROL Usuários de retorno]” na legenda do gráfico. O intervalo de pesquisa é determinado dinamicamente com base no intervalo de datas e intervalo selecionados.
+* **[!UICONTROL Novo]**: o usuário estava ativo durante o período atual, mas não anteriormente. Veja até que ponto a análise retroage para determinar um novo usuário passando o mouse sobre “[!UICONTROL Novos usuários]” na legenda do gráfico. O intervalo de pesquisa é determinado dinamicamente com base no intervalo de datas e intervalo selecionados.
+* **[!UICONTROL Retorno]**: o usuário estava ativo no período atual e inativo no período imediatamente anterior, mas estava ativo em algum momento. Veja até que ponto a análise retroage para determinar um usuário de retorno passando o mouse sobre “[!UICONTROL Usuários de retorno]” na legenda do gráfico. O intervalo de pesquisa é determinado dinamicamente com base no intervalo de datas e intervalo selecionados.
 * **[!UICONTROL Inativo]**: o usuário estava ativo no período imediatamente anterior, mas não está ativo no período atual. Os usuários inativos não contam para o número total de usuários ativos.
 
 >[!NOTE]
 >
 >Usuários repetidos não são considerados nesse cálculo, pois não representam ganho ou perda de usuários.
 
->[!VIDEO](https://video.tv.adobe.com/v/3423465/?quality=12&learn=on&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3421664/?quality=12&learn=on)
 
 
 ## Casos de uso
@@ -62,7 +62,7 @@ O painel de consulta permite configurar os seguintes componentes:
 
 * **[!UICONTROL Exibição]**: alternar entre esta análise e [Crescimento ativo](active-growth.md).
 * **[!UICONTROL Eventos]**: o evento que você deseja medir. Como essa análise é baseada no usuário, um usuário que interage com o evento uma vez dentro do período é contado como um usuário ativo. Você pode incluir um evento em uma consulta.
-* **[!UICONTROL Contado como]**: o método de contagem que você deseja aplicar aos eventos selecionados. <ul><li>**[!UICONTROL As opções]** incluem [!UICONTROL Número de usuários] e [!UICONTROL Porcentagem de usuários].</li><li>[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} **[!UICONTROL Opções B2B]** adicionais estão disponíveis para o Customer Journey Analytics B2B edition: [!UICONTROL Contas globais], [!UICONTROL Contas], [!UICONTROL Grupos de compras], [!UICONTROL Oportunidades], [!UICONTROL Porcentagem de contas globais], [!UICONTROL Porcentagem de contas], [!UICONTROL Porcentagem de grupos de compras] e [!UICONTROL Porcentagem de oportunidades].</li></ul>
+* **[!UICONTROL Contado como]**: o método de contagem que você deseja aplicar aos eventos selecionados. <ul><li>**[!UICONTROL As opções]** incluem [!UICONTROL Número de usuários] e [!UICONTROL Porcentagem de usuários].</li><li>[!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} **[!UICONTROL Opções B2B]** adicionais estão disponíveis para o Customer Journey Analytics B2B edition: [!UICONTROL Contas globais], [!UICONTROL Contas], [!UICONTROL Grupos de compras], [!UICONTROL Oportunidades], [!UICONTROL Porcentagem de contas globais], [!UICONTROL Porcentagem de contas], [!UICONTROL Porcentagem de grupos de compras] e [!UICONTROL Porcentagem de oportunidades].</li></ul>
 * **[!UICONTROL Segmentos]**: os segmentos que você deseja medir. É possível incluir um segmento em uma consulta.
 
 ### Comparação de tempo

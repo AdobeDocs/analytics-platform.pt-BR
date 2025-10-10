@@ -6,7 +6,7 @@ keywords: product analytics
 exl-id: 27eaa7c7-f1e1-4cf1-9d59-67ac552eb430
 role: User
 source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '657'
 ht-degree: 100%
 
@@ -25,7 +25,7 @@ ht-degree: 100%
 
 A Análise de ![Frequência](/help/assets/icons/Histogram.svg) **[!UICONTROL frequência]** agrupa os dados de eventos de acordo com a constância com que os eventos ocorrem no produto. O eixo vertical dessa análise contém compartimentos que representam a frequência do evento. O eixo horizontal mede o número de usuários ou sessões para cada compartimento.
 
->[!VIDEO](https://video.tv.adobe.com/v/3435807/?quality=12&learn=on&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3428089/?quality=12&learn=on)
 
 ## Casos de uso
 

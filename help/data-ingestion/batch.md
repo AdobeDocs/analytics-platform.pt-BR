@@ -20,7 +20,7 @@ Para isso, é necessário:
 
 - **Configurar um esquema e um conjunto de dados** na Adobe Experience Platform para definir o modelo (esquema) dos dados que você deseja coletar e onde realmente coletar os dados (conjunto de dados).
 
-- **Usar workflows** para fazer upload facilmente dos dados em lote no conjunto de dados configurado na Adobe Experience Platform.
+- **Usar fluxo de trabalhos** para fazer upload facilmente dos dados em lote no conjunto de dados configurado na Adobe Experience Platform.
 
 - **Configurar uma conexão** no Customer Journey Analytics. Essa conexão deve (pelo menos) incluir o conjunto de dados da Adobe Experience Platform.
 
@@ -116,19 +116,19 @@ Para configurar o esquema:
 
 1. Selecione o nível raiz do esquema (com o nome do esquema) e selecione a opção **[!UICONTROL Perfil]**.
 
-   Você deve habilitar o esquema para o perfil. Depois de ativados, quando os dados são assimilados em conjuntos de dados com base nesse esquema, esses dados são mesclados ao Perfil do cliente em tempo real.
+   Você deve habilitar o esquema para o perfil. Depois de habilitados, quando os dados são assimilados em conjuntos de dados com base nesse esquema, esses dados são mesclados ao Perfil do cliente em tempo real.
 
-   Consulte [Ativar o esquema para usar no Perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=pt-BR#profile) para obter mais informações.
+   Consulte [Habilitar o esquema para usar no Perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=pt-BR#profile) para obter mais informações.
 
    >[!IMPORTANT]
    >
-   >    Depois de salvar um esquema ativado para perfil, ele não pode mais ser desativado para perfil.
+   >    Depois de salvar um esquema habilitado para perfil, ele não pode mais ser desabilitado para perfil.
 
    ![Habilitar esquema para perfil](./assets/enable-for-profile.png)
 
 1. Selecione **[!UICONTROL Salvar]** para salvar o esquema.
 
-Você criou um esquema mínimo que modela os dados de fidelidade que podem ser assimilados na Adobe Experience Platform. O esquema permite que os perfis sejam identificados usando o endereço de email. Ao ativar o esquema para o perfil, você garante que os dados do arquivo em lote sejam adicionados ao Perfil do cliente em tempo real.
+Você criou um esquema mínimo que modela os dados de fidelidade que podem ser assimilados na Adobe Experience Platform. O esquema permite que os perfis sejam identificados usando o endereço de email. Ao habilitar o esquema para o perfil, você garante que os dados do arquivo em lote sejam adicionados ao Perfil do cliente em tempo real.
 
 Consulte [Criar e editar esquemas na interface do usuário](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=pt-BR) para obter mais informações sobre a adição e remoção de grupos de campos e campos individuais a um esquema.
 
@@ -166,7 +166,7 @@ Para configurar seu conjunto de dados:
 
    ![Habilitar esquema para perfil](./assets/loyalty-dataset-profile.png)
 
-Consulte [Guia da interface do usuário de conjuntos de dados](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=pt-BR) para obter muito mais informações sobre como visualizar, visualizar, criar, excluir um conjunto de dados. E como ativar um conjunto de dados para o Perfil do cliente em tempo real.
+Consulte [Guia da interface do usuário de conjuntos de dados](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=pt-BR) para obter muito mais informações sobre como visualizar, visualizar, criar, excluir um conjunto de dados. E como habilitar um conjunto de dados para o Perfil do cliente em tempo real.
 
 
 ## Usar fluxos de trabalho
@@ -183,7 +183,7 @@ ppales4@nsw.gov.au,365384,82.71,Silver
 ...
 ```
 
-Para usar workflows:
+Para usar fluxos de trabalho:
 
 1. Na interface do usuário da Platform, selecione **[!UICONTROL Workflows]** no painel esquerdo.
 

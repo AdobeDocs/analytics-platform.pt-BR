@@ -13,7 +13,7 @@ ht-degree: 7%
 
 # Visão geral do relatório em tempo real
 
-O relatório em tempo real no Customer Journey Analytics exibe e atualiza dados e visualizações em um ou mais painéis no Analysis Workspace em tempo real.
+Os relatórios em tempo real no Customer Journey Analytics exibem e atualizam em tempo real os dados e visualizações de um ou mais painéis no Analysis Workspace.
 
 {{release-limited-testing}}
 

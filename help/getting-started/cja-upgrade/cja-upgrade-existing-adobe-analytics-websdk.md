@@ -19,7 +19,7 @@ ht-degree: 66%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-remove-aa-from-datastream"
 >title="Remover o Adobe Analytics as a service da sequência de dados"
->abstract="Com os dados do SDK da web totalmente funcionais, trabalhe com o admin da Platform para remover o Adobe Analytics as a service da sequência de dados. Antes de fazer isso, certifique-se de que os usuários tenham migrado do Adobe Analytics para o Customer Journey Analytics."
+>abstract="Com os dados do SDK da web totalmente funcionais, trabalhe com o admin da Platform para remover o Adobe Analytics as a service da sequência de dados. Antes de fazer isso, verifique se os usuários fizeram a transição do Adobe Analytics para o Customer Journey Analytics."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -42,7 +42,7 @@ Considere as seguintes vantagens e desvantagens de configurar sua implementaçã
 
 1. Comece a enviar dados do Edge Network para a Platform. Envie todas as variáveis no formato AppMeasurement por meio do objeto de dados.
 
-   Para obter mais informações, consulte [Mapeamento de variável de objeto de dados para Adobe Analytics](https://experienceleague.adobe.com/pt-br/docs/analytics/implementation/aep-edge/data-var-mapping).
+   Para obter mais informações, consulte [Mapeamento de variável de objeto de dados para Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping).
 
 1. Escolha seu esquema.
 
@@ -58,7 +58,7 @@ Considere as seguintes vantagens e desvantagens de configurar sua implementaçã
 
    +++
 
-   +++Criar um esquema XDM
+   +++Criar um esquema do XDM
 
    | Vantagens | Desvantagens |
    |----------|---------|
@@ -68,6 +68,6 @@ Considere as seguintes vantagens e desvantagens de configurar sua implementaçã
 
 1. Use o mapeamento do fluxo de dados para mapear todos os campos no objeto de dados para o esquema XDM.
 
-   Para obter mais informações, consulte [Mapeamento](https://experienceleague.adobe.com/pt-br/docs/experience-platform/datastreams/data-prep?lang=en#mapping) em [Preparação de dados para coleção de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/datastreams/data-prep) na documentação do Experience Platform.
+   Para obter mais informações, consulte [Mapeamento](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep?lang=en#mapping) em [Preparação de dados para coleção de dados](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep) na documentação do Experience Platform.
 
 {{upgrade-final-step}}

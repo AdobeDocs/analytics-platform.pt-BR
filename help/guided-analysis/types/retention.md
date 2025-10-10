@@ -6,9 +6,9 @@ keywords: product analytics
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
 source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
-workflow-type: ht
-source-wordcount: '1259'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1261'
+ht-degree: 97%
 
 ---
 
@@ -30,7 +30,7 @@ A análise de ![Retention](/help/assets/icons/Retention.svg) **[!UICONTROL Reten
 
 Nesta análise, o eixo X do gráfico representa o tempo decorrido desde o evento de início de um usuário, e o eixo Y representa a porcentagem de usuários que interagem com um ou mais eventos de retorno. É possível visualizar a retenção e o abandono entre durações, e as durações exibidas podem ser personalizadas por meio das configurações de consulta. Abaixo do gráfico, uma tabela fornece dados agregados com a opção de mostrar coortes individuais, que são um grupo de pessoas que realizaram o evento de início na mesma data.
 
->[!VIDEO](https://video.tv.adobe.com/v/3435783/?quality=12&learn=on&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3430503/?quality=12&learn=on)
 
 
 ## Casos de uso
@@ -44,7 +44,7 @@ Os casos de uso desta análise incluem:
 
 ## Interface
 
-Consulte [Interface](../overview.md#interface) para obter uma visão geral da interface de análise guiada. As seguintes configurações são específicas dessa análise:
+Consulte [Interface](../overview.md#interface) para obter uma visão geral da interface de Análise guiada. As seguintes configurações são específicas dessa análise:
 
 ### Painel de consulta
 
@@ -60,7 +60,7 @@ O painel de consulta permite configurar os seguintes componentes:
    * **[!UICONTROL Cada]**: o período desejado para cada intervalo de duração. As opções incluem: 
       * **[!UICONTROL Dia/Semana/Mês]**: as opções disponíveis dependem do intervalo de datas selecionado. Estas opções são idênticas à configuração de **[!UICONTROL Intervalo]** ao selecionar o intervalo de datas e atualizam essa configuração automaticamente.
       * **[!UICONTROL Colchetes personalizados]**: esta opção está disponível somente para a configuração “A cada”. Permite que você conte os usuários em um período maior; por exemplo, dias 7-10 em vez de somente no dia 7.
-   * **[!UICONTROL Configurações de duração]**: permitem controlar os intervalos de duração exibidos no gráfico e na tabela. Uma duração é o período após o evento de início em que o evento de retorno ocorreu. Observação: os usuários qualificados para períodos de duração são baseados no tempo decorrido, não em dias do calendário. Por exemplo, se um usuário se qualificar para um evento às 23h55 do dia 6 de setembro e, em seguida, qualificar-se para um evento de retorno às 12h05 do dia 7 de setembro, ele não aparecerá no intervalo de duração de um dia. Devem decorrer 24 horas antes de o usuário se qualificar para o período de duração de um dia. Os intervalos de duração disponíveis dependem do intervalo de datas definido.
+   * **[!UICONTROL Configurações de duração]**: permitem controlar os intervalos de duração exibidos no gráfico e na tabela. Uma duração é o período após o evento de início em que o evento de retorno ocorreu. Observação: os usuários qualificados para períodos de duração são baseados no tempo decorrido, não em dias do calendário. Por exemplo, se um usuário se qualificar para um evento às 23h00 do dia 6 de setembro e, em seguida, se qualificar para um evento de retorno às 12h00 do dia 7 de setembro, ele não aparecerá no intervalo de duração de um dia. :55:05 Devem decorrer 24 horas antes de o usuário se qualificar para o período de duração de um dia. Os intervalos de duração disponíveis dependem do intervalo de datas definido.
       * **[!UICONTROL Durações automáticas]** definem automaticamente os intervalos de duração com base na duração do intervalo de datas e na proximidade do dia atual no qual o intervalo de datas se encontra.
       * **[!UICONTROL Durações personalizadas]** permitem personalizar os quatro intervalos de duração exibidos no gráfico e na tabela.
 * **[!UICONTROL Segmentos]**: os segmentos que você deseja medir. Cada segmento selecionado adiciona uma linha à tabela de coorte. É possível incluir até três segmentos.

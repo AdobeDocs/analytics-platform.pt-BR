@@ -7,7 +7,7 @@ exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 role: User
 source-git-commit: 9056b8b172ae7a2267bf12de4b2355d1a1364b32
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1490'
 ht-degree: 100%
 
@@ -19,7 +19,7 @@ O Analysis Workspace permite criar análises rapidamente para coletar insights e
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visão geral do Analysis Workspace](https://video.tv.adobe.com/v/35802/?quality=12&learn=on&captions=por_br){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visão geral do Analysis Workspace](https://video.tv.adobe.com/v/26266/?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
 
 {{videoaa}}
 
@@ -95,7 +95,7 @@ Consulte as tabelas abaixo para obter uma visão geral dos menus disponíveis.
 | **[!UICONTROL Painel em branco]** | **[!UICONTROL *opt+b *]** | **[!UICONTROL *alt+b *]** | Insere um [painel em branco](/help/analysis-workspace/c-panels/blank-panel.md). |
 | **[!UICONTROL Visualizadores simultâneos de mídia]** | **[!UICONTROL *opt+h *]** | **[!UICONTROL *alt+h *]** | Insere um painel [Visualizadores simultâneos de mídia](/help/analysis-workspace/c-panels/media-concurrent-viewers.md). |
 | **[!UICONTROL Tempo gasto com a reprodução da mídia]** | **[!UICONTROL *opt+i *]** | **[!UICONTROL *alt+i *]** | Insere um painel [Tempo gasto com a reprodução da mídia](/help/analysis-workspace/c-panels/media-playback-time-spent.md). |
-| **[!UICONTROL Público médio a cada minuto de mídia]** | **[!UICONTROL *opt+m *]** | **[!UICONTROL *alt+m *]** | Insere um painel [Público médio por minuto de mídia](/help/analysis-workspace/c-panels/average-minute-audience-panel.md). |
+| **[!UICONTROL Público-alvo médio a cada minuto de mídia]** | **[!UICONTROL *opt+m *]** | **[!UICONTROL *alt+m *]** | Insere um painel [Público-alvo médio por minuto de mídia](/help/analysis-workspace/c-panels/average-minute-audience-panel.md). |
 | **[!UICONTROL Atribuição]** | **[!UICONTROL *opt+e *]** | **[!UICONTROL *alt+e *]** | Insere um painel de [Atribuição](/help/analysis-workspace/c-panels/attribution.md). |
 | **[!UICONTROL Forma livre]** | **[!UICONTROL *opt+a *]** | **[!UICONTROL *alt+a *]** | Insere um painel de [Forma livre](/help/analysis-workspace/c-panels/freeform-panel.md). |
 | **[!UICONTROL Insights rápidos]** | **[!UICONTROL *opt+j *]** | **[!UICONTROL *alt+j *]** | Insere um painel [Insights rápidos](/help/analysis-workspace/c-panels/quickinsight.md). |

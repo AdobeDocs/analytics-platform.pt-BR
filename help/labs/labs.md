@@ -21,7 +21,7 @@ O [!UICONTROL Labs] permite a prototipagem mais rápida de ideias em fase inicia
 
 ## Requisitos
 
-O [!UICONTROL Labs] é ativado automaticamente para todos os administradores. Outros membros da equipe devem entrar em contato com os administradores do produto e solicitar acesso.
+O [!UICONTROL Labs] é habilitado automaticamente para todos os administradores. Outros membros da equipe devem entrar em contato com os administradores do produto e solicitar acesso.
 
 Se você ainda não tiver feito isso, leia e assine os formulários do Contrato de não divulgação e dos Termos e condições aplicáveis.
 

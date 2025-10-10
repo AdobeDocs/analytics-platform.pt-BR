@@ -22,7 +22,7 @@ Embora você possa usar dimensões de ligação com dados de evento de nível su
 
 É possível vincular itens de dimensão em uma matriz de objetos a outra dimensão. Quando o item de dimensão vinculado é exibido, o Customer Journey Analytics recupera a dimensão vinculada e a inclui no evento para você. Considere a seguinte jornada do cliente:
 
-1. Um visitante visualiza a página de produto de uma máquina de lavar.
+1. Um visitante visualiza a página do produto de uma máquina de lavar.
 
    ```json
    {
@@ -38,7 +38,7 @@ Embora você possa usar dimensões de ligação com dados de evento de nível su
    }
    ```
 
-1. O visitante então visualiza a página de produto de uma secadora.
+1. O visitante então visualiza a página do produto de uma secadora.
 
    ```json
    {
@@ -214,7 +214,7 @@ Um dos métodos de merchandising mais comuns no Adobe Analytics tem sido o de vi
    }
    ```
 
-7. O visitante passa pelo processo de finalização e compra esses três itens.
+7. O visitante passa pelo processo de check-out e compra esses três itens.
 
    ```json
    {
@@ -365,7 +365,7 @@ O Analysis Workspace atribui o segundo episódio de Orangey ao termo de pesquisa
    }
    ```
 
-1. Ele encontra uma câmera que gosta e a adiciona ao carrinho.
+1. Ele clica numa câmera que gosta e a adiciona ao carrinho.
 
    ```json
    {
@@ -387,7 +387,7 @@ O Analysis Workspace atribui o segundo episódio de Orangey ao termo de pesquisa
    }
    ```
 
-1. Ele encontra um cinto que gosta e o adiciona ao carrinho.
+1. Ele clica num cinto que gosta e o adiciona ao carrinho.
 
    ```json
    {
@@ -400,7 +400,7 @@ O Analysis Workspace atribui o segundo episódio de Orangey ao termo de pesquisa
    }
    ```
 
-1. Ele passa pelo processo de finalização e compra esses dois itens.
+1. Ele passa pelo processo de check-out e compra esses dois itens.
 
    ```json
    {
@@ -440,4 +440,4 @@ No entanto, se você vincular o `product_finding_method` à métrica Adições a
 
 >[!MORELIKETHIS]
 >
->[Tutorial de Dimensões de Ligação em Visualizações de Dados](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/binding-dimensions-in-data-views.html?lang=pt-BR).
+>[Tutorial de Dimensões de Ligação em Visualizações de Dados](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/binding-dimensions-in-data-views.html).

@@ -1,6 +1,6 @@
 ---
-title: Uso de arrays de objetos
-description: Saiba como o Customer Journey Analytics relata as hierarquias de dados.
+title: Uso de matrizes de objetos
+description: Saiba como o Customer Journey Analytics cria relatórios sobre hierarquias de dados.
 exl-id: 59318da7-5408-4a9d-82aa-8bcbec7f7364
 solution: Customer Journey Analytics
 feature: Use Cases
@@ -12,11 +12,11 @@ ht-degree: 61%
 
 ---
 
-# Uso de arrays de objetos
+# Uso de matrizes de objetos
 
-Alguns esquemas da plataforma podem ter arrays de objetos. A Adobe Customer Journey Analytics oferece suporte à assimilação e aos relatórios de arrays de objetos em dados de evento, pesquisa e perfil. Um dos exemplos mais comuns seria um carrinho de compras, que contém vários produtos. Cada produto tem um nome, SKU, categoria, preço, quantidade e qualquer outra dimensão que você quiser rastrear. Todas essas facetas têm requisitos separados, mas todos devem se encaixar na mesma ocorrência.
+Alguns esquemas da plataforma podem ter matrizes de objetos. A Adobe Customer Journey Analytics oferece suporte à assimilação e aos relatórios de arrays de objetos em dados de evento, pesquisa e perfil. Um dos exemplos mais comuns seria um carrinho de compras, que contém vários produtos. Cada produto tem um nome, SKU, categoria, preço, quantidade e qualquer outra dimensão que você quiser rastrear. Todas essas facetas têm requisitos separados, mas todos devem se encaixar na mesma ocorrência.
 
-Em versões anteriores do Adobe Analytics, esse recurso era realizado usando a variável `products`. Era uma string concatenada separada por ponto-e-vírgula (`;`) para separar facetas de um produto, enquanto vírgulas (`,`) delineavam produtos. Era a única variável com suporte limitado a &quot;arrays de objetos&quot;. Variáveis multivalor, como variáveis de listas, podem oferecer suporte ao equivalente a arrays, mas não a &quot;arrays de objetos&quot;. O Customer Journey Analytics expande esse conceito ao oferecer suporte arbitrariamente a hierarquias profundas em uma única linha de dados, um recurso indisponível em qualquer versão anterior do Adobe Analytics.
+Em versões anteriores do Adobe Analytics, esse recurso era realizado usando a variável `products`. Era uma string concatenada separada por ponto-e-vírgula (`;`) para separar facetas de um produto, enquanto vírgulas (`,`) delineavam produtos. Era a única variável com suporte limitado a &quot;matrizes de objetos&quot;. Variáveis multivalor, como variáveis de listas, podem oferecer suporte ao equivalente a matrizes, mas não a &quot;matrizes de objetos&quot;. O Customer Journey Analytics amplia esse conceito ao oferecer suporte arbitrariamente a hierarquias profundas em uma única linha de dados, um recurso indisponível em qualquer versão anterior do Adobe Analytics.
 
 ## Mesmo exemplo de evento
 
@@ -144,7 +144,7 @@ Se você quiser relatar apenas a receita da garantia, o projeto terá a seguinte
 | `extended` | `50` |
 | `Total` | `250` |
 
-O Customer Journey Analytics verifica essas partes do evento para gerar o relatório:
+O Customer Journey Analytics analisa essas partes do evento para gerar o relatório:
 
 ```diff
 {
@@ -270,5 +270,5 @@ A aplicação dessa métrica calculada exibe os resultados desejados:
 
 ## Limitações
 
-As limitações se aplicam aos arrays nos dados usados pelo Customer Journey Analytics e modelados como parte de um esquema no Experience Platform. Consulte [Limites do modelo de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/profile/guardrails#data-model-limits) e [Limites de tamanho de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/profile/guardrails#data-size-limits) nas [Medidas de proteção padrão para dados e segmentação do Perfil do cliente em tempo real](https://experienceleague.adobe.com/pt-br/docs/experience-platform/profile/guardrails).
+As limitações se aplicam aos arrays nos dados usados pelo Customer Journey Analytics e modelados como parte de um esquema no Experience Platform. Consulte [Limites do modelo de dados](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails#data-model-limits) e [Limites de tamanho de dados](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails#data-size-limits) nas [Medidas de proteção padrão para dados e segmentação do Perfil do cliente em tempo real](https://experienceleague.adobe.com/pt-br/docs/experience-platform/profile/guardrails).
 

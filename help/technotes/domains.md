@@ -12,11 +12,11 @@ ht-degree: 20%
 
 # Domínios usados pelo Customer Journey Analytics
 
-Algumas configurações de firewall bloqueiam domínios dos quais o Customer Journey Analytics depende para sua interface de produto. Você pode usar essa lista de domínios para alterar as configurações de rede de sua organização para permitir o acesso ao produto de dentro da organização. A Adobe recomenda permitir esses domínios por meio do firewall da sua organização para obter uma experiência ideal.
+Algumas configurações de firewall bloqueiam domínios dos quais a Customer Journey Analytics depende para sua interface de produto. Você pode usar essa lista de domínios para alterar as configurações de rede de sua organização para permitir o acesso ao produto de dentro da organização. A Adobe recomenda permitir esses domínios por meio do firewall da sua organização para obter uma experiência ideal.
 
 | Tecnologia | Domínio |
 | --- | --- |
-| domínios Customer Journey Analytics | `adobe.com`, `adobe.net`, `adobe.io` |
+| Domínios do Customer Journey Analytics | `adobe.com`, `adobe.net`, `adobe.io` |
 | Amazon AWS | `aaui-879784980514.s3.us-east-2.amazonaws.com` |
 | Amazon CloudFront | `d30ln29764hddd.cloudfront.net` |
 | Gainsight | `esp.aptrinsic.com`, `esp-m.aptrinsic.com` |
@@ -28,10 +28,10 @@ Algumas configurações de firewall bloqueiam domínios dos quais o Customer Jou
 
 ## Domínios da Adobe Experience Cloud
 
-Além dos domínios acima, o Adobe Experience Cloud depende de vários domínios para a coleta de dados e exportação de relatórios. Consulte [Domínios usados pelo Adobe Experience Cloud](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/data-collection/domains) para obter esta lista de domínios.
+Além dos domínios acima, o Adobe Experience Cloud depende de vários domínios para a coleta de dados e exportação de relatórios. Consulte [Domínios usados pelo Adobe Experience Cloud](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/domains) para obter esta lista de domínios.
 
 >[!MORELIKETHIS]
 >
 >[Endereços IP usados pelo Customer Journey Analytics](ip-addresses.md)
 >
->[Domínios usados pelo Adobe Experience Cloud](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/data-collection/domains)
+>[Domínios usados pelo Adobe Experience Cloud](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/domains)

@@ -15,7 +15,7 @@ ht-degree: 86%
 
 A atribuição oferece aos analistas a capacidade de personalizar como os itens de dimensão recebem crédito por eventos bem-sucedidos. Por exemplo:
 
-1. Um visitante do site clica em um link de pesquisa pago para uma de suas páginas de produtos. Eles adicionam o produto ao carrinho, mas não o compram.
+1. Um visitante do site clica em um link de pesquisa pago para uma de suas páginas do produtos. Eles adicionam o produto ao carrinho, mas não o compram.
 2. No dia seguinte, eles veem uma postagem de mídia social de um de seus amigos, clicam no link e concluem a compra.
 
 Em alguns relatórios, você pode desejar que a ordem seja atribuída à pesquisa paga. Em outros relatórios, você pode desejar que a ordem seja atribuída ao Social. A atribuição permite controlar esse aspecto dos relatórios. Ele está disponível para todas as organizações no Adobe Analytics Ultimate, Prime, Select e Foundation. Se você não tem certeza do tipo de contrato que tem com a Adobe, entre em contato com a equipe de contas da Adobe da sua organização.
@@ -53,28 +53,28 @@ A atribuição compreende os seguintes recursos:
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Atribuição em tabelas de forma livre](https://video.tv.adobe.com/v/33016?quality=12&learn=on&captions=por_br){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Atribuição em tabelas de forma livre](https://video.tv.adobe.com/v/23136?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Atribuição em métricas calculadas](https://video.tv.adobe.com/v/30759?quality=12&learn=on&captions=por_br){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Atribuição em métricas calculadas](https://video.tv.adobe.com/v/23140?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Usando o painel Atribuição](https://video.tv.adobe.com/v/33012?quality=12&learn=on&captions=por_br){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Usando o painel Atribuição](https://video.tv.adobe.com/v/23139?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Adicionando comparações lado a lado de modelos de atribuição](https://video.tv.adobe.com/v/327798?quality=12&learn=on&captions=por_br){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Adicionando comparações lado a lado de modelos de atribuição](https://video.tv.adobe.com/v/23651?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 

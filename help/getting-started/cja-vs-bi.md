@@ -6,7 +6,7 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: ae66cd06-7ec1-4174-a3cf-939c3a66b840
 source-git-commit: 720751130d0f66bddffd13c6f160a85fcc7a7206
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1648'
 ht-degree: 100%
 
@@ -36,7 +36,7 @@ O Customer Journey Analytics fornece um ambiente para conectar dados online e of
 
 ![Fluxo de trabalho do Customer Journey Analytics conforme descrito nesta seção](./assets/cjaworkflow.png)
 
-Você pode usar o Customer Journey Analytics para fazer perguntas usando o ambiente visual do Analysis Workspace e obter insights quase instantaneamente. Os dados e relatórios entre canais são imediatamente disponibilizados, sem necessidade de um código SQL. Consultas e análises adicionais podem ser realizadas com uma simples operação de arrastar e soltar na interface, com dados totalmente correlacionados. Você pode continuar fazendo perguntas e explorando mais detalhes progressivamente, conforme necessário. Em seguida, é possível realizar ações imediatas sobre os insights descobertos, como compartilhar públicos para ativação e orquestração.
+Você pode usar o Customer Journey Analytics para fazer perguntas usando o ambiente visual do Analysis Workspace e obter insights quase instantaneamente. Os dados e relatórios entre canais são imediatamente disponibilizados, sem necessidade de um código SQL. Consultas e análises adicionais podem ser realizadas com uma simples operação de arrastar e soltar na interface, com dados totalmente correlacionados. Você pode continuar fazendo perguntas e explorando mais detalhes progressivamente, conforme necessário. Em seguida, é possível realizar ações imediatas sobre os insights descobertos, como compartilhar públicos-alvos para ativação e orquestração.
 
 ## O avançado mecanismo de relatórios do Customer Journey Analytics
 
@@ -68,7 +68,7 @@ Integrados a esses componentes de visualização, estão recursos inteligentes c
 
    * Visualizações de [fallout](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md)/[fluxo](/help/analysis-workspace/visualizations/c-flow/create-flow.md). Configurado em menos de um minuto.
 
-* **Recurso de segmentação em cada etapa da exploração progressiva**: sempre que achar relevante, publique novamente o seu público na Experience Platform e, em seguida, em um dos destinos compatíveis.
+* **Recurso de segmentação em cada etapa da exploração progressiva**: sempre que achar relevante, publique novamente o seu público-alvo na Experience Platform e, em seguida, em um dos destinos compatíveis.
 
 * **Criação de sessões** completamente [personalizáveis](/help/data-views/component-settings/persistence.md): determine quando uma sessão, como parte de um canal em uma jornada do cliente, começa e termina.
 

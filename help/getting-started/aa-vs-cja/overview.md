@@ -22,7 +22,7 @@ No Customer Journey Analytics, *qualquer* fonte de dados pode fazer parte dos da
 
 ## Coleção de dados
 
-O Customer Journey Analytics depende dos dados armazenados nos conjuntos de dados da Adobe Experience Platform. Há várias opções para coletar e assimilar dados desses conjuntos de dados da Experience Platform. Essas opções são descritas em mais detalhes na [Visão geral da assimilação de dados](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-data-ingestion/data-ingestion.html?lang=pt-BR).
+O Customer Journey Analytics depende dos dados armazenados nos conjuntos de dados da Adobe Experience Platform. Há várias opções para coletar e assimilar dados desses conjuntos de dados da Experience Platform. Essas opções são descritas em mais detalhes na [Visão geral da ingestão de dados](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-data-ingestion/data-ingestion.html?lang=pt-BR).
 
 O Adobe Analytics coleta dados dentro da própria solução. Novamente, há várias opções para coletar esses dados, que são descritas em mais detalhes no [Guia de implementação do Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=pt-BR).
 
@@ -42,7 +42,7 @@ Consulte [Comparar o processamento de dados entre o Adobe Analytics e o Customer
 
 ## Terminologia
 
-O Customer Journey Analytics oferece flexibilidade na definição de dimensões e métricas, possibilitada pelos esquemas subjacentes baseados no modelo de dados de experiência (XDM). Por exemplo, onde o Adobe Analytics usa visitantes, visitas e ocorrências, o Customer Journey Analytics usa pessoas, sessões e eventos como conceitos equivalentes (você pode alterar a nomenclatura como desejar).
+O Customer Journey Analytics oferece flexibilidade na definição de dimensões e métricas, possibilitada pelos esquemas subjacentes baseados no Experience Data Model (XDM). Por exemplo, onde o Adobe Analytics usa visitantes, visitas e ocorrências, o Customer Journey Analytics usa pessoas, sessões e eventos como conceitos equivalentes (você pode alterar a nomenclatura como desejar).
 
 Consulte [Comparar terminologia de dados do Analytics transmitidos pelo conector de origem do Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/terminology.html?lang=pt-BR) para obter mais informações sobre as diferenças de terminologia.
 

@@ -6,7 +6,7 @@ keywords: product analytics
 role: User
 exl-id: 8a48ad3b-fa30-497e-8306-f8d881b1a335
 source-git-commit: a62ac798da9d66fa3d88262ef7d04aa4bf6a3303
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '748'
 ht-degree: 100%
 
@@ -33,7 +33,7 @@ Os recursos que aparecem na parte superior dessa visualização indicam que são
 * Os recursos na parte inferior esquerda da matriz são os recursos de **baixo impacto**. Eles não são amplamente adotados ou usados com frequência.
 * Os recursos na parte inferior direita da matriz são os recursos **únicos**. Eles são amplamente adotados, mas não são usados com frequência.
 
->[!VIDEO](https://video.tv.adobe.com/v/3447472?captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3429489/&learn=on)
 
 
 ## Casos de uso

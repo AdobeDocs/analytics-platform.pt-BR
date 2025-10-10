@@ -1,5 +1,5 @@
 ---
-title: extensão Customer Journey Analytics BI
+title: Extensão de BI do Customer Journey Analytics
 description: Descreve como usar a extensão BI para trazer dados digitais para suas próprias ferramentas de BI ou Data Lake para usar com conjuntos de dados adicionais.
 solution: Customer Journey Analytics
 feature: Use Cases
@@ -8,7 +8,7 @@ exl-id: 669a1305-3e37-4ca2-8178-a89a27958e5d
 source-git-commit: 9fef1fddbb4b51efb9282e3ef13501bd498a4546
 workflow-type: tm+mt
 source-wordcount: '154'
-ht-degree: 47%
+ht-degree: 50%
 
 ---
 
@@ -20,7 +20,7 @@ Este artigo descreve como o [!DNL Customer Journey Analytics BI extension] pode 
 
 ## Introdução
 
-A exportação de dados usando o [!DNL Customer Journey Analytics BI extension] permite exportar dados de suas visualizações de dados de Customer Journey Analytics.
+A exportação de dados usando o [!DNL Customer Journey Analytics BI extension] permite exportar dados das visualizações de dados do Customer Journey Analytics.
 
 ![Extensão de BI](../assets/bi-extension.svg)
 

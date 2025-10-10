@@ -27,7 +27,7 @@ Encontre abaixo os detalhes que você deve considerar ao configurar cada um dess
 
 ## Esquema
 
-Você precisa criar um [esquema baseado em modelo](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/schema/model-based){target="_blank"} que modele a tabela nativa do data warehouse que você deseja espelhar. Ao construir o schema baseado em modelo, certifique-se de que os seguintes requisitos sejam atendidos:
+Você precisa criar um [esquema baseado em modelo](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/model-based){target="_blank"} que modele a tabela nativa do data warehouse que você deseja espelhar. Ao construir o schema baseado em modelo, certifique-se de que os seguintes requisitos sejam atendidos:
 
 * Quando solicitado a fornecer o tipo de schema baseado em modelo, selecione a opção manual.
 * Selecione o schema apropriado para o tipo de dados. Observe que o Experience Platform Data Mirror é usado principalmente para dados de séries de tempo (por exemplo, dados de evento).
@@ -53,9 +53,9 @@ Para configurar o conector de origem para as soluções nativas de data warehous
 
 Para obter autenticação em relação à solução nativa de data warehouse compatível, consulte a documentação relevante do Experience Platform:
 
-* [Databricks do Azure](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/databases/databricks)
-* [Google BigQuery](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/databases/bigquery)
-* [Snowflake](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/databases/snowflake)
+* [Databricks do Azure](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/databricks)
+* [Google BigQuery](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/bigquery)
+* [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake)
 
 
 ### Selecionar dados
@@ -91,5 +91,5 @@ Após concluir a configuração do conector de origem, um fluxo de dados é cria
 >[!MORELIKETHIS]
 >
 >[Guia de início rápido do Data Mirror: espelhar e usar dados baseados em modelo](model-based.md)
->&#x200B;>[Data Mirror (documentação do Experience Platform)](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-mirror/overview)
->&#x200B;>[Esquemas baseados em modelo (documentação do Experience Platform)](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/schema/model-based)
+>>[Data Mirror (documentação do Experience Platform)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview)
+>>[Esquemas baseados em modelo (documentação do Experience Platform)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/model-based)

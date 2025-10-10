@@ -6,7 +6,7 @@ keywords: product analytics
 role: User
 exl-id: d3da9257-a133-46c8-8fac-1a33d3372bb7
 source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '577'
 ht-degree: 100%
 
@@ -29,12 +29,12 @@ A análise da ![Timeline](/help/assets/icons/Timeline.svg) **[!UICONTROL Linha d
 >[!NOTE]
 >
 >A análise da [!UICONTROL Linha do Tempo] exige que o componente padrão **[!UICONTROL ID de pessoa]** esteja disponível na [visualização de dados](/help/data-views/component-reference.md#optional). A inclusão do ID de pessoa em uma visualização de dados é gerenciada pelo administrador do Customer Journey Analytics, fornecendo à sua organização controle total da privacidade sobre quem pode acessar esses dados.
-><br/>Se uma visualização de dados não tiver o componente [!UICONTROL ID de pessoa] adicionado, a seguinte mensagem será exibida:
+>><br/>Se uma visualização de dados não tiver o componente [!UICONTROL ID de pessoa] adicionado, a seguinte mensagem será exibida:
 >
 >* **Administradores**: *a propriedade PersonID é necessária para esta análise. Adicione o ID de pessoa à visualização de dados.*
 >* **Não administradores**: *a propriedade PersonID é necessária para esta análise. Colabore com o administrador do Customer Journey Analytics para adicionar um ID de pessoa à visualização de dados.*
 
->[!VIDEO](https://video.tv.adobe.com/v/3435772/?quality=12&learn=on&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3427810/?quality=12&learn=on)
 
 
 
@@ -48,14 +48,14 @@ Os casos de uso desta análise incluem:
 
 ## Interface
 
-Consulte [Interface](../overview.md#interface) para obter uma visão geral da interface de análise guiada. As seguintes configurações são específicas dessa análise:
+Consulte [Interface](../overview.md#interface) para obter uma visão geral da interface de Análise guiada. As seguintes configurações são específicas dessa análise:
 
 ### Painel de consulta
 
 O painel de consulta permite configurar os seguintes componentes:
 
 * **[!UICONTROL Dimensão]**: a dimensão para a qual você deseja exibir os valores transmitidos. O fluxo no centro mostra os valores da dimensão selecionada. Também é possível aplicar filtros para restringir o fluxo a dados mais relevantes. Os operadores válidos para o filtro incluem [!UICONTROL Igual a], [!UICONTROL Não é igual a], [!UICONTROL Começa com], [!UICONTROL Termina com], [!UICONTROL Contém], [!UICONTROL Não contém], [!UICONTROL Existe] e [!UICONTROL Não existe].
-* **[!UICONTROL Segmentos]**: o segmento que você deseja analisar. O segmento selecionado filtra os dados para se concentrar apenas nos indivíduos que correspondem aos critérios do segmento. Se quiser restringir a análise a um ID de pessoa específico, você poderá filtrar com esse ID de pessoa no painel direito. Um segmento é permitido para essa análise.
+* **[!UICONTROL Segmentos]**: o segmento que você deseja analisar. O segmento selecionado filtra os dados para se concentrar apenas nas pessoas que correspondem aos critérios do segmento. Se quiser restringir a análise a um ID de pessoa específico, você poderá filtrar com esse ID de pessoa no painel direito. Um segmento é permitido para essa análise.
 
 ### Configurações de gráficos
 

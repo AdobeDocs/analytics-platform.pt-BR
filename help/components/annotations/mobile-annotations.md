@@ -8,12 +8,12 @@ role: User
 source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
 source-wordcount: '306'
-ht-degree: 88%
+ht-degree: 89%
 
 ---
 
 
-# Anotações do cartão de pontuação para dispositivos móveis
+# Anotações de cartão de pontuação
 
 Você pode exibir anotações criadas no Analysis Workspace em cartões de pontuação para dispositivos móveis. As anotações dos cartões de pontuação móveis permitem compartilhar nuances de dados contextuais e insights sobre sua organização e campanhas.
 
@@ -22,7 +22,7 @@ Você pode exibir anotações criadas no Analysis Workspace em cartões de pontu
 
 Para destacar anotações em cartões de pontuação para dispositivos móveis, primeiro crie a anotação em projetos do espaço de trabalho ou no menu Componentes.
 
-Para obter informações sobre como criar anotações, consulte [Criar anotações](create-annotations.md). As anotações são desativadas em cartões de pontuação para dispositivos móveis por padrão e devem ser ativadas para cada cartão de pontuação que você deseja exibir em cartões de pontuação para dispositivos móveis.
+Para obter informações sobre como criar anotações, consulte [Criar anotações](create-annotations.md). As anotações são desabilitadas em cartões de pontuação para dispositivos móveis por padrão e devem ser habilitadas para cada cartão de pontuação que você deseja exibir em cartões de pontuação para dispositivos móveis.
 
 1. Ativar anotações. Para ativar as anotações, consulte [Ativar ou desativar anotações](overview.md#turn-annotations-on-or-off).
 
@@ -40,7 +40,7 @@ Quando as anotações estão habilitadas, os ícones de anotação ficam visíve
 
 ![Criador de cartões de pontuação com destaque para os ícones de anotação.](assets/annotations-scorecard.png)
 
-Quando esses ícones estão visíveis, não é possível visualizar completamente ou interagir com as anotações na tela do criador. Use o ícone de ![círculo de reprodução](/help/assets/icons/PlayCircle.svg)**&#x200B;** para visualizar e interagir com as anotações conforme elas aparecem no aplicativo.
+Quando esses ícones estão visíveis, não é possível visualizar completamente ou interagir com as anotações na tela do criador. Use o ícone de ![círculo de reprodução](/help/assets/icons/PlayCircle.svg)**** para visualizar e interagir com as anotações conforme elas aparecem no aplicativo.
 
 As cores da anotação são selecionadas após criar a anotação no espaço de trabalho. As anotações em cinza indicam a presença de mais de uma anotação.
 

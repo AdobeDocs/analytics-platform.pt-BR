@@ -6,7 +6,7 @@ keywords: product analytics
 exl-id: 2c512184-2d79-4c41-8229-a09e440179ea
 role: User
 source-git-commit: bd8c9951386608572d84006bd5465e57214c56d4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '674'
 ht-degree: 100%
 
@@ -26,7 +26,7 @@ ht-degree: 100%
 A análise ![FirstUse](/help/assets/icons/FirstUse.svg) **[!UICONTROL Impacto do primeiro uso]** mostra uma comparação do desempenho dos principais indicadores antes e depois de um usuário usar um recurso do produto pela primeira vez. O eixo horizontal desse relatório é um intervalo de tempo relativo antes e depois do evento, enquanto o eixo vertical mede os indicadores-chave desejados. Uma barra vertical no meio do gráfico representa o dia 0 em que um recurso é usado pela primeira vez por um determinado usuário. Como os usuários nem sempre adotam os recursos no mesmo dia e suas implementações podem ocorrer ao longo de vários dias, o dia 0 pode significar algo diferente para cada usuário.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3423500/?quality=12&learn=on&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3421661/?quality=12&learn=on)
 
 
 ## Casos de uso
@@ -56,7 +56,7 @@ O painel de consulta permite configurar os seguintes componentes:
 * **[!UICONTROL Fatores]**: há dois fatores para esta análise:
    * **[!UICONTROL Data]**: até que ponto você quer começar a procurar o evento de primeiro uso que ocorreu.
    * **[!UICONTROL Evento]**: o evento que você deseja procurar para o primeiro uso, para centralizar a análise.
-* **[!UICONTROL Segmentos]**: o segmento que você deseja medir. O segmento selecionado filtra os dados para se concentrar apenas nos indivíduos que correspondem aos critérios do segmento. Um único segmento é compatível com essa análise.
+* **[!UICONTROL Segmentos]**: o segmento que você deseja medir. O segmento selecionado filtra os dados para se concentrar apenas nas pessoas que correspondem aos critérios do segmento. Um único segmento é compatível com essa análise.
 
 ### Configurações de gráficos
 

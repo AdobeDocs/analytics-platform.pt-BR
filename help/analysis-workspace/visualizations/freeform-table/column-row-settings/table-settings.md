@@ -16,7 +16,7 @@ ht-degree: 87%
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Configurações de linha e coluna em uma tabela de forma livre](https://video.tv.adobe.com/v/328504/?quality=12&learn=on&captions=por_br){target="_blank"} para assistir a um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Configurações de linha e coluna em uma tabela de forma livre](https://video.tv.adobe.com/v/40382/?quality=12&learn=on){target="_blank"} para assistir a um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 
@@ -90,4 +90,4 @@ As opções adicionais de menu de contexto a seguir estão disponíveis ao selec
 
 ## Modificar altura da linha
 
-Você pode definir a [densidade da exibição](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density) de um projeto como **[!UICONTROL Compacto]**, **[!UICONTROL Confortável]** e **[!UICONTROL Expandido]**. .
+Você pode definir a [densidade da exibição](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density) de um projeto como **[!UICONTROL Compacto]**, **[!UICONTROL Confortável]** e **[!UICONTROL Expandido]**. .

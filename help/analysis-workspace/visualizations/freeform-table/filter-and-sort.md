@@ -17,7 +17,7 @@ As tabelas de forma livre do Analysis Workspace são a base para a análise inte
 
 <!--The following video covers filter and sort options in Analysis Workspace, in addition to pagination options:
 
->[!VIDEO](https://video.tv.adobe.com/v/30795?captions=por_br)-->
+>[!VIDEO](https://video.tv.adobe.com/v/23968)-->
 
 ## Filtrar tabelas
 
