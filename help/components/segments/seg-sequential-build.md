@@ -1,11 +1,11 @@
 ---
 description: Saiba mais sobre segmentos sequenciais que usam o operador THEN para definir uma sequência de condições de segmento.
-title: SegmentosSequenciais
+title: Segmentos sequenciais
 feature: Filters, Segments
 exl-id: 64cb10b5-36f0-42c8-b687-ae5de5ced8b5
-source-git-commit: 8e10818efa7da54b0802c56e5388e6c7ef7fd8b6
+source-git-commit: c745e37203ac829fa0fb7d8532e6499351cb94ba
 workflow-type: tm+mt
-source-wordcount: '2459'
+source-wordcount: '2460'
 ht-degree: 4%
 
 ---
@@ -18,7 +18,7 @@ Você cria segmentos sequenciais usando o operador lógico [!UICONTROL Then] ent
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Segmentação sequencial](https://video.tv.adobe.com/v/32592/?quality=12&learn=on&captions=por_br){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Segmentação sequencial](https://video.tv.adobe.com/v/25405/?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
 
 {{videoaa}}
 
@@ -91,7 +91,7 @@ Para aplicar restrições de tempo ao operador **[!UICONTROL Then]**:
 1. Selecione ![Relógio](/help/assets/icons/Clock.svg).
 1. Selecione **[!UICONTROL Dentro]** ou **[!UICONTROL Depois]** no menu de contexto.
 1. Especifique um período (**[!UICONTROL Minuto]**, **[!UICONTROL Hora]**, até **[!UICONTROL Anos]**).
-1. Selecione a ![Divisa](/help/assets/icons/ChevronDown.svg) **[!UICONTROL *número *]**&#x200B;para abrir um pop-up que permita digitar ou especificar um número usando&#x200B;**[!UICONTROL -]**&#x200B;ou&#x200B;**[!UICONTROL +]**.
+1. Selecione a ![Divisa](/help/assets/icons/ChevronDown.svg) **[!UICONTROL *número *]**para abrir um pop-up que permita digitar ou especificar um número usando**[!UICONTROL -]**ou**[!UICONTROL +]**.
 
 Para remover uma restrição de tempo, use ![CrossSize75](/help/assets/icons/CrossSize75.svg).
 
@@ -114,7 +114,7 @@ Identifique as pessoas que visitaram uma página e, em seguida, outra página so
 
 ![Sequência após](assets/sequence-after.png)
 
-Se ocorrer uma exibição de página da Página inicial em 1 de junho de 2024 às 00:01, será exibida uma exibição de página para a Página mulheres | Os sapatos corresponderão, desde que essa exibição de página ocorra após 15 de junho de 2024 às 00:01.
+Se ocorrer uma exibição de página da Página inicial em 1º de junho de 2024 às 00:01, será exibida uma exibição de página para a Página Mulheres | Os sapatos corresponderão desde que essa exibição de página ocorra após 15 de junho de 2024 00:01.
 
 ##### Operador [!UICONTROL Within]
 
@@ -122,7 +122,7 @@ Identifique as pessoas que visitaram uma página e, em seguida, outra página de
 
 ![Sequência em](assets/sequence-within.png)
 
-Se uma exibição de página da Página inicial ocorrer em 1 de junho de 2024 às 12h01, uma exibição de página para a Página inicial será exibida para Mulheres | Os sapatos corresponderão, desde que essa exibição de página ocorra antes de 15 de junho de 2024 às 12h16.
+Se uma exibição de página da Página inicial ocorrer em 1 de junho de 2024 às 12:01, uma exibição de página para a página Mulheres | Os sapatos corresponderão, desde que essa exibição de página ocorra antes de 15 de junho de 2024 12:16.
 
 ##### [!UICONTROL Depois] mas [!UICONTROL Dentro] operador
 
@@ -130,7 +130,7 @@ Identifique as pessoas que visitaram uma página e, em seguida, visitaram outra 
 
 ![Sequência após, mas dentro de](assets/sequence-afterbutwithin.png)
 
-Todas as pessoas que acessam a página inicial em 1 de junho de 2024 e que retornam para visitar as mulheres | Página de sapatos após 15 de junho de 2019 às 00:01, mas antes de 1 de julho de 2019, qualifique-se para o segmento.
+Todas as pessoas que acessam a página inicial em 1 de junho de 2024 e que retornam para visitar as mulheres | Página de sapatos após 15 de junho de 2019 00:01, mas antes de 1 de julho de 2019, qualifique-se para o segmento.
 
 
 ### Restrições de [!UICONTROL Evento], [!UICONTROL Sessão] e [!UICONTROL Dimension]
