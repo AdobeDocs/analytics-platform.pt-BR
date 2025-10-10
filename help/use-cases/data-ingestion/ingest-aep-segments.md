@@ -26,19 +26,19 @@ Esse caso de uso explora uma maneira temporária e manual de trazer públicos-al
 
 ## Etapa 1: Escolher os públicos-alvo no Perfil do cliente em tempo real {#audience}
 
-O [Perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html) (RTCP) da Adobe Experience Platform oferece uma visão holística de cada cliente individual ao combinar dados de vários canais, incluindo online, offline, CRM e de terceiros.
+O [Perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=pt-BR) (RTCP) da Adobe Experience Platform oferece uma visão holística de cada cliente individual ao combinar dados de vários canais, incluindo online, offline, CRM e de terceiros.
 
 Você provavelmente já tem públicos-alvo no RTCP que podem ter vindo de várias fontes. Escolha um ou mais públicos-alvo para assimilar na Customer Journey Analytics.
 
 ## Etapa 2: Criar um conjunto de dados de União de perfil para a exportação
 
-Para exportar o público-alvo para um conjunto de dados que possa ser adicionado a uma conexão no Customer Journey Analytics, é necessário criar um conjunto de dados cujo esquema é um Perfil [Esquema de união](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schema.html#understanding-union-schemas).
+Para exportar o público-alvo para um conjunto de dados que possa ser adicionado a uma conexão no Customer Journey Analytics, é necessário criar um conjunto de dados cujo esquema é um Perfil [Esquema de união](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schema.html?lang=pt-BR#understanding-union-schemas).
 
 Os esquemas de união são compostos de vários esquemas que compartilham a mesma classe e foram habilitados para o Perfil. O esquema de união permite ver uma combinação de todos os campos contidos em esquemas que compartilham a mesma classe. O Perfil do cliente em tempo real usa o esquema de união para criar uma visualização holística de cada cliente individual.
 
 ## Etapa 3: Exportar um público-alvo para o conjunto de dados União de perfis por meio da chamada de API {#export}
 
-Antes de trazer um público para a Customer Journey Analytics, é necessário exportá-lo para um conjunto de dados do Adobe Experience Platform. Isso só pode ser feito usando a API de segmentação e, especificamente, o [Ponto de extremidade da API de tarefas de exportação](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/export-jobs.html).
+Antes de trazer um público para a Customer Journey Analytics, é necessário exportá-lo para um conjunto de dados do Adobe Experience Platform. Isso só pode ser feito usando a API de segmentação e, especificamente, o [Ponto de extremidade da API de tarefas de exportação](https://experienceleague.adobe.com/docs/experience-platform/segmentation/api/export-jobs.html?lang=pt-BR).
 
 Você pode criar um trabalho de exportação usando a ID de público-alvo de sua escolha e colocar os resultados no conjunto de dados da Adobe Experience Platform da União de perfis que você criou na Etapa 2. Embora seja possível exportar vários atributos/eventos para o público-alvo, é necessário exportar apenas o campo de ID de perfil específico que corresponde ao campo de ID de pessoa usado na conexão do Customer Journey Analytics que você está usando (veja abaixo na Etapa 5).
 
