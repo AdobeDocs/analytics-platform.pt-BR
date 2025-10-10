@@ -21,7 +21,7 @@ Esses dados de resumo podem ser usados para apresentar indicadores de desempenho
 >[!NOTE]
 >
 >Dados de resumo são dados de série temporal de um conjunto de dados de resumo. Esse conjunto de dados de resumo é baseado em um esquema que usa a classe de métricas de resumo do XDM como classe de base.
->>Somente dados de séries temporais por hora ou por dia são permitidos.
+>&#x200B;>Somente dados de séries temporais por hora ou por dia são permitidos.
 
 >[!TIP]
 >

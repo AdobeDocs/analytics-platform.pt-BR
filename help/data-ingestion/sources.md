@@ -71,7 +71,7 @@ Para configurar o esquema:
 
    1. Insira um **[!UICONTROL nome de exibição]** para o esquema e uma **[!UICONTROL descrição]** (opcional).
 
-      ![Janela Criar esquema mostrando os campos para nomear seu esquema ](./assets/create-pr-schema-wizard-step-2.png)
+      ![Janela Criar esquema mostrando os campos para nomear seu esquema &#x200B;](./assets/create-pr-schema-wizard-step-2.png)
 
    1. Selecione **[!UICONTROL Concluir]**.
 
