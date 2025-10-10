@@ -25,7 +25,7 @@ ht-degree: 100%
 
 A análise de ![Versão](/help/assets/icons/Release.svg) **[!UICONTROL Impacto da versão]** mostra uma comparação do desempenho dos principais indicadores antes e depois de uma determinada data. O eixo horizontal deste relatório é um intervalo de tempo, enquanto o eixo vertical mede os indicadores-chave desejados. Uma barra vertical no meio do gráfico representa a data que você deseja comparar antes e depois. Essa data normalmente representa uma mudança notável no produto que você deseja comparar, como uma atualização do produto ou o lançamento de uma campanha.
 
->[!VIDEO](https://video.tv.adobe.com/v/3421665/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3423453/?quality=12&learn=on&captions=por_br)
 
 ## Casos de uso
 

@@ -29,7 +29,7 @@ Essa arquitetura ilustra como o Customer Journey Analytics permite:
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Análise da jornada do cliente: Analytics para empresas baseadas em experiências](https://video.tv.adobe.com/v/30090/?quality=12&learn=on){target="_blank"} para assistir a um vídeo de introdução ao Customer Journey Analytics.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Análise da jornada do cliente: Analytics para empresas baseadas em experiências](https://video.tv.adobe.com/v/36236/?quality=12&learn=on&captions=por_br){target="_blank"} para assistir a um vídeo de introdução ao Customer Journey Analytics.
 
 >[!ENDSHADEBOX]
 
@@ -99,13 +99,13 @@ Desde a ingestão de dados até o acesso direto ao SQL, vários componentes da E
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Trabalhar com dados no Customer Journey Analytics](https://video.tv.adobe.com/v/32112/?quality=12&learn=on){target="_blank"} para assistir a um vídeo de introdução sobre como trabalhar com dados no Customer Journey Analytics.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Trabalhar com dados no Customer Journey Analytics](https://video.tv.adobe.com/v/36148/?quality=12&learn=on&captions=por_br){target="_blank"} para assistir a um vídeo de introdução sobre como trabalhar com dados no Customer Journey Analytics.
 
 >[!ENDSHADEBOX]
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Arquitetura e integração](https://video.tv.adobe.com/v/32483/?quality=12&learn=on){target="_blank"} para assistir a um video de introdução sobre a arquitetura e a integração do Customer Journey Analytics.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Arquitetura e integração](https://video.tv.adobe.com/v/330414/?quality=12&learn=on&captions=por_br){target="_blank"} para assistir a um video de introdução sobre a arquitetura e a integração do Customer Journey Analytics.
 
 >[!ENDSHADEBOX]
 
