@@ -4,10 +4,10 @@ description: Lista atualizações de conteúdo do conjunto de documentação do 
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 4621b5059333c5ee4f7d41014d0e4eff17ef33bf
-workflow-type: ht
-source-wordcount: '5439'
-ht-degree: 100%
+source-git-commit: 8862bfdf873c4c3c5e795f3b299040b3dc253647
+workflow-type: tm+mt
+source-wordcount: '5487'
+ht-degree: 99%
 
 ---
 
@@ -19,6 +19,8 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 
 | Recurso | Descrição |
 | --- | --- |
+| **outubro de 2025** | |
+| Relatório sobre o tráfego gerado por LLM e IA | Adição do [artigo de caso usado](/help/use-cases/ai-traffic.md) sobre como criar relatórios sobre tráfego gerado por LLM e AI usando campos derivados como base. O artigo é baseado no artigo do blog [Tracking and Analyzing LLM and AI-Generated Traffic in Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967). |
 | **Setembro de 2025** | |
 | Datas anteriores a 1900 | Adição de uma [observação](/help/connections/create-connection.md#datasets) sobre como as datas anteriores a 1900 são tratadas pelo Customer Journey Analytics. |
 | Relatórios em tempo real | Adição da documentação sobre [relatórios em tempo real](/help/components/real-time/real-time.md) no Customer Journey Analytics. |
@@ -45,7 +47,7 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | Métricas e dimensões compartilhadas | Adição de uma documentação para o recurso [Métricas e dimensões compartilhadas](/help/data-views/shared-metrics-dimensions/smd-overview.md). |
 | Report Builder | Revisão e atualização da documentação do [Report Builder](/help/report-builder/rb-overview.md). |
 | Visualizar e gerenciar o uso | A documentação sobre como [exibir](/help/connections/manage-connections.md#usage) e [gerenciar](/help/technotes/estimate-usage.md) o uso do Customer Journey Analytics foi retrabalhada |
-| Análise de conteúdo da Adobe | A [Análise de conteúdo](/help/content-analytics/content-analytics.md) permite investigar de forma rápida e fácil grandes volumes de dados de conteúdo para descobrir tendências, detectar anomalias, identificar a fadiga de conteúdo e obter insights sobre a exposição do conteúdo. |
+| Adobe Content Analytics | O [Content Analytics](/help/content-analytics/content-analytics.md) permite investigar de forma rápida e fácil grandes volumes de dados de conteúdo para descobrir tendências, detectar anomalias, identificar a fadiga de conteúdo e obter insights sobre a exposição do conteúdo. |
 | Campos XDM atualizados para coleta de dados de transmissão de mídia na Adobe Experience Platform | Ao coletar dados de mídia de streaming na Adobe Experience Platform, os caminhos de campo XDM mostrados no cabeçalho de &quot;Caminho do campo XDM&quot; da documentação de parâmetros de mídia de streaming já não devem ser usados. Esses caminhos de campo são encontrados nas seguintes páginas e estão marcados como “Obsoletos”: [Parâmetros de áudio e vídeo](https://experienceleague.adobe.com/pt-br/docs/media-analytics/using/implementation/variables/audio-video-parameters), [Parâmetros de anúncios](https://experienceleague.adobe.com/pt-br/docs/media-analytics/using/implementation/variables/ad-parameters), [Parâmetros de capítulo](https://experienceleague.adobe.com/pt-br/docs/media-analytics/using/implementation/variables/chapter-parameters), [Parâmetros de estado do player](https://experienceleague.adobe.com/pt-br/docs/media-analytics/using/implementation/variables/player-state-parameters) e [Parâmetros de qualidade](https://experienceleague.adobe.com/pt-br/docs/media-analytics/using/implementation/variables/quality-parameters). |
 | Coleção de mídia: atualizações do conector de origem da Adobe para o novo XDM de relatórios de mídia | O Conector de origem do Analytics mapeia automaticamente dados de mídia de streaming no Adobe Analytics para os mesmos campos usados pelo SDK da web. Antes, os dados eram mapeados para os locais antigo e novo, mas somente o novo local será usado no futuro. [Saiba mais](https://experienceleague.adobe.com/pt-br/docs/analytics/implementation/aep-edge/xdm-var-mapping) |
 | Alteração de terminologia: “Filtros” para “Segmentos” | Anteriormente, o Adobe Customer Journey Analytics chamava os segmentos de “filtros”. Essa terminologia foi alinhada com o Adobe Analytics. Agora, os “filtros” são chamados de “segmentos”. (Obviamente, os filtros de pesquisa ainda são chamados de “filtros”.) A interface e a documentação foram atualizadas. |
@@ -227,7 +229,7 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | **Dezembro de 2022** |  |
 | 16 de dezembro de 2022 | Novo tópico sobre [gerenciamento do uso de dados do Customer Journey Analytics](/help/technotes/estimate-usage.md). |
 | **Outubro de 2022** | |
-| Outubro de 2022 | Novo tópico sobre [proteção por senha de projetos agendados](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html?lang=pt-BR#password). Este recurso é compatível com a [preparação para a HIPAA](https://www.adobe.com/trust/compliance/hipaa-ready.html). |
+| Outubro de 2022 | Novo tópico sobre [proteção por senha de projetos agendados](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html#password). Este recurso é compatível com a [preparação para a HIPAA](https://www.adobe.com/trust/compliance/hipaa-ready.html). |
 | Outubro de 2022 | Novo tópico sobre [Chaves gerenciadas pelo cliente](/help/privacy/cmk.md). Este recurso é compatível com a [preparação para a HIPAA](https://www.adobe.com/trust/compliance/hipaa-ready.html). |
 | Outubro de 2022 | Novo tópico sobre [logs de auditoria do Customer Journey Analytics](/help/privacy/audit-log.md). |
 | Outubro de 2022 | Novo tópico sobre visualização do [Resumo da métrica principal](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/key-metric.html?lang=pt-BR). |
@@ -243,11 +245,11 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | Agosto de 2022 | Atualização significativa do artigo sobre [controle de acesso do Customer Journey Analytics](/help/technotes/access-control.md). |
 | Agosto de 2022 | Novo artigo sobre [compatibilidade do Customer Journey Analytics com rótulos e políticas de governança de dados](/help/data-views/data-governance.md). |
 | Agosto de 2022 | Novo artigo sobre [Comparação da terminologia de dados do Analytics transmitidos pelo conector de origem do Analytics](/help/getting-started/aa-vs-cja/terminology.md). |
-| Agosto de 2022 | Nova documentação sobre [Publicação de público-alvo no perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html?lang=pt-BR). |
+| Agosto de 2022 | Nova documentação sobre [Publicação de público-alvo no perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/audiences/audiences-overview.html). |
 | **Julho de 2022** | |
 | Julho de 2022 | Documentação do [painel Tempo gasto com a reprodução de mídia](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-playback-timespent/media-playback-time-spent.html?lang=pt-BR). |
 | Julho de 2022 | Documentação do [painel Visualizador simultâneo de mídia](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html?lang=pt-BR). |
-| Julho de 2022 | Documentação de relatórios de [primeira sessão](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html?lang=pt-BR#new-repeat). |
+| Julho de 2022 | Documentação de relatórios de [primeira sessão](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/data-views-usecases.html#new-repeat). |
 | **Junho de 2022** | |
 | Junho de 2022 | Novo artigo sobre [AAID, ECID, AACUSTOMID e o conector de origem do Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aaid-ecid-adc.html?lang=pt-BR) |
 | Junho de 2022 | Novo artigo sobre [Regras de processamento do Adobe Analytics, VISTA e classificações em relação ao preparo de dados do conector de origem do Analytics](/help/getting-started/aa-vs-cja/pr-vista-dataprep.md). |
@@ -285,7 +287,7 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | **Novembro de 2021** | |
 | Novembro de 2021 | Atualização da documentação de [[!UICONTROL Registros ignorados]](/help/connections/manage-connections.md) na página Detalhes das conexões. |
 | **Outubro de 2021** | |
-| Outubro de 2021 | Documentação sobre o [Report Builder](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/rb-overview.html?lang=pt-BR#) no Customer Journey Analytics. |
+| Outubro de 2021 | Documentação sobre o [Report Builder](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-reportbuilder/rb-overview.html#) no Customer Journey Analytics. |
 | Outubro de 2021 | Documentação da API do [Log de auditoria](https://adobe.io/cja-apis/docs/endpoints/auditlogs/) do Customer Journey Analytics |
 | Outubro de 2021 | [Visualizações documentadas para painéis do Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html?lang=pt-BR#apply-visualizations) |
 | Outubro de 2021 | Documento para a janela contínua de [retenção de dados](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=pt-BR#set-rolling-window-for-connection-data-retention) de [!UICONTROL conexão]. |
@@ -330,7 +332,7 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | Novembro de 2020 | Adição de conteúdo sobre [remoção de limitações de preenchimento retroativo](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=pt-BR#backfill-historical-data) para conexões. |
 | 7 de outubro de 2020 | Adição de um tópico sobre [conjuntos de dados de evento combinados](/help/connections/combined-dataset.md). |
 | 15 de setembro de 2020 | Adição de um tópico sobre [ingestão de dados](/help/data-ingestion/data-ingestion.md). |
-| 2 de setembro de 2020 | Atualização da seção sobre [permissões do usuário](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=pt-BR). |
+| 2 de setembro de 2020 | Atualização da seção sobre [permissões do usuário](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html). |
 | Julho de 2020 | Adição de informações sobre a opção [Mapa de identidade para ID de pessoa](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=pt-BR). |
 | Julho de 2020 | Adição de um novo tópico sobre [matrizes de objetos](/help/use-cases/object-arrays.md) ou “hierarquias de dados”. |
 | 14 de abril de 2020 | Atualizações na interface de usuário mais recente no tópico [Criar conexões](/help/connections/create-connection.md). |
