@@ -9,9 +9,9 @@ index: true
 user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Saiba mais sobre o Adobe Customer Journey Analytics e como usar o Analysis Workspace com dados da Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
-source-git-commit: 04d3de450a9efc12637a3c4272bf3c43b0fbbe0a
+source-git-commit: a16043f1bb15deba1332ed39438214597647b9b4
 workflow-type: tm+mt
-source-wordcount: '1303'
+source-wordcount: '1306'
 ht-degree: 99%
 
 ---
@@ -182,7 +182,7 @@ ht-degree: 99%
       + [Abrir projetos](/help/analysis-workspace/build-workspace-project/open-projects.md)
       + [Comentar em projetos](/help/analysis-workspace/build-workspace-project/comment-projects.md)
       + [Salvar projetos](../analysis-workspace/build-workspace-project/save-projects.md)
-      + [Índice &#x200B;](../analysis-workspace/build-workspace-project/project-table-of-contents.md)
+      + [Índice ](../analysis-workspace/build-workspace-project/project-table-of-contents.md)
       + Pastas no espaço de trabalho {#workspace-folders}
          + [Visão geral](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
          + [Criar pastas](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
@@ -202,12 +202,13 @@ ht-degree: 99%
       + Tabela de forma livre {#freeform-table}
          + [Visão geral](../analysis-workspace/visualizations/freeform-table/freeform-table.md)
          + [Criar hiperlinks](/help/analysis-workspace/visualizations/freeform-table/freeform-table-hyperlinks.md)
+         + [Exibir dados de tendência](/help/analysis-workspace/visualizations/freeform-table/freeform-table-trended-data.md)
+         + [Filtrar e classificar](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
+         + [Totais](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
          + Configurações de coluna e linha {#column-row-settings}
             + [Configurações de coluna](../analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md)
             + [Configurações de linha](../analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md)
             + [Itens dinâmicos e estáticos](../analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md)
-         + [Filtrar e classificar](../analysis-workspace/visualizations/freeform-table/filter-and-sort.md)
-         + [Totais](../analysis-workspace/visualizations/freeform-table/workspace-totals.md)
       + Tabela de coorte {#cohort-table}
          + [Visão geral](../analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
          + [Configurar](../analysis-workspace/visualizations/cohort-table/t-cohort.md)
@@ -384,7 +385,7 @@ ht-degree: 99%
       + [Funções avançadas](../components/calc-metrics/cm-adv-functions.md)
    + Intervalos de datas {#cja-date-ranges}
       + [Visão geral](../components/date-ranges/overview.md)
-      + [Criar intervalos de datas &#x200B;](../components/date-ranges/create.md)
+      + [Criar intervalos de datas ](../components/date-ranges/create.md)
       + [Gerenciar intervalos de datas](../components/date-ranges/manage.md)
       + [Comparação de datas](../components/date-ranges/time-comparison.md)
       + [Exemplos](../components/date-ranges/custom-date-ranges.md)
@@ -500,7 +501,7 @@ ht-degree: 99%
       + Google Analytics {#ga}
          + [Migrar dados do Google Analytics](/help/use-cases/third-party/ga/overview.md)
          + [Assimilar dados históricos do Google Analytics](/help/use-cases/third-party/ga/backfill.md)
-         + [Configurar dados de transmissão do Google Analytics &#x200B;](/help/use-cases/third-party/ga/streaming.md)
+         + [Configurar dados de transmissão do Google Analytics ](/help/use-cases/third-party/ga/streaming.md)
          + [Relatório de dados do Google Analytics](/help/use-cases/third-party/ga/report.md)
       + Métrica quântica {#qm}
          + [Visão geral](/help/use-cases/third-party/quantum-metric/qm-overview.md)
