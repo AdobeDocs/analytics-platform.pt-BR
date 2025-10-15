@@ -9,9 +9,9 @@ index: true
 user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Saiba mais sobre o Adobe Customer Journey Analytics e como usar o Analysis Workspace com dados da Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
-source-git-commit: a16043f1bb15deba1332ed39438214597647b9b4
+source-git-commit: f43cbee1d38a67045b9975498870654567a88419
 workflow-type: tm+mt
-source-wordcount: '1306'
+source-wordcount: '1307'
 ht-degree: 99%
 
 ---
@@ -182,7 +182,7 @@ ht-degree: 99%
       + [Abrir projetos](/help/analysis-workspace/build-workspace-project/open-projects.md)
       + [Comentar em projetos](/help/analysis-workspace/build-workspace-project/comment-projects.md)
       + [Salvar projetos](../analysis-workspace/build-workspace-project/save-projects.md)
-      + [Índice &#x200B;](../analysis-workspace/build-workspace-project/project-table-of-contents.md)
+      + [Índice ](../analysis-workspace/build-workspace-project/project-table-of-contents.md)
       + Pastas no espaço de trabalho {#workspace-folders}
          + [Visão geral](../analysis-workspace/build-workspace-project/workspace-folders/about-folders.md)
          + [Criar pastas](../analysis-workspace/build-workspace-project/workspace-folders/create-folders.md)
@@ -259,7 +259,7 @@ ht-degree: 99%
       + [Compartilhar projetos](../analysis-workspace/curate-share/share-projects.md)
       + [Criar links compartilháveis](../analysis-workspace/curate-share/shareable-links.md)
       + [Projetos somente de leitura](../analysis-workspace/curate-share/view-only-projects.md)
-      + [Gerar apresentações](/help/analysis-workspace/curate-share/generate-presentations.md)
+      + [Gerar apresentações de slides](/help/analysis-workspace/curate-share/generate-slides.md)
    + Exportar {#export}
       + [Visão geral](../analysis-workspace/export/export-project-overview.md)
       + [Baixar](../analysis-workspace/export/download-send.md)
@@ -385,7 +385,7 @@ ht-degree: 99%
       + [Funções avançadas](../components/calc-metrics/cm-adv-functions.md)
    + Intervalos de datas {#cja-date-ranges}
       + [Visão geral](../components/date-ranges/overview.md)
-      + [Criar intervalos de datas &#x200B;](../components/date-ranges/create.md)
+      + [Criar intervalos de datas ](../components/date-ranges/create.md)
       + [Gerenciar intervalos de datas](../components/date-ranges/manage.md)
       + [Comparação de datas](../components/date-ranges/time-comparison.md)
       + [Exemplos](../components/date-ranges/custom-date-ranges.md)
@@ -501,7 +501,7 @@ ht-degree: 99%
       + Google Analytics {#ga}
          + [Migrar dados do Google Analytics](/help/use-cases/third-party/ga/overview.md)
          + [Assimilar dados históricos do Google Analytics](/help/use-cases/third-party/ga/backfill.md)
-         + [Configurar dados de transmissão do Google Analytics &#x200B;](/help/use-cases/third-party/ga/streaming.md)
+         + [Configurar dados de transmissão do Google Analytics ](/help/use-cases/third-party/ga/streaming.md)
          + [Relatório de dados do Google Analytics](/help/use-cases/third-party/ga/report.md)
       + Métrica quântica {#qm}
          + [Visão geral](/help/use-cases/third-party/quantum-metric/qm-overview.md)
