@@ -28,10 +28,10 @@ Algumas configurações de firewall bloqueiam domínios dos quais a Customer Jou
 
 ## Domínios da Adobe Experience Cloud
 
-Além dos domínios acima, o Adobe Experience Cloud depende de vários domínios para a coleta de dados e exportação de relatórios. Consulte [Domínios usados pelo Adobe Experience Cloud](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/data-collection/domains) para obter esta lista de domínios.
+Além dos domínios acima, o Adobe Experience Cloud depende de vários domínios para a coleta de dados e exportação de relatórios. Consulte [Domínios usados pelo Adobe Experience Cloud](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/domains) para obter esta lista de domínios.
 
 >[!MORELIKETHIS]
 >
 >[Endereços IP usados pelo Customer Journey Analytics](ip-addresses.md)
 >
->[Domínios usados pelo Adobe Experience Cloud](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/data-collection/domains)
+>[Domínios usados pelo Adobe Experience Cloud](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/domains)

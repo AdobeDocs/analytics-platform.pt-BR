@@ -7,7 +7,7 @@ role: User
 source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '5241'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -19,7 +19,7 @@ Para acessar essas funções, selecione **[!UICONTROL Mostrar tudo]** abaixo da 
 
 ## Funções de tabela versus funções de linha
 
-Uma função de tabela exibe um resultado igual para cada linha da tabela. Uma função de linha exibe um resultado diferente para cada linha da tabela.
+Uma função de tabela é aquela em que a saída é a mesma para cada linha da tabela. Uma função de linha é aquela em que a saída é diferente para cada linha da tabela.
 
 Quando aplicável e relevante, uma função é anotada com o tipo de função: [!BADGE Tabela]{type="Neutral"} ou [!BADGE Linha]{type="Neutral"}
 
@@ -1499,7 +1499,7 @@ Retorna a tangente do ângulo especificado. Se o ângulo estiver em graus, multi
 | metric | A métrica para a qual você deseja obter a pontuação Z |
 | include_zeros | Se os valores zero devem ser incluídos nos cálculos ou não |
 
-Uma pontuação Z de 0 (zero) significa que a pontuação é igual à média. Uma pontuação Z pode ser positiva ou negativa, indicando se está acima ou abaixo da média e o número de desvios padrão.
+Uma pontuação Z de 0 (zero) significa que a pontuação é igual à média. A pontuação Z pode ser positiva ou negativa, indicando se está acima ou abaixo da média e por quantos desvios padrão.
 
 A equação da pontuação Z é:
 

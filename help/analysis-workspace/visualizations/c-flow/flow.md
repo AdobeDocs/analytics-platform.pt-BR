@@ -7,7 +7,7 @@ role: User
 source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
 source-wordcount: '324'
-ht-degree: 96%
+ht-degree: 83%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 96%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta o painel de fluxo no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consulte [Fluxo](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/flow/flow) para saber qual é a versão do_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
+_Este artigo documenta o painel de fluxo no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consulte [Fluxo](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/flow/flow) para saber qual é a versão do_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 
@@ -55,9 +55,9 @@ Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Criar uma v
 
 ## Fluxos interdimensionais
 
-É possível mostrar o [fluxo entre dimensões](/help/analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md). Por exemplo, você pode combinar páginas e departamentos em um diagrama. Neste caso, seu fluxo pode ir da página inicial à página Masculino e, então, para o departamento de Sapatos.
+É possível mostrar o [fluxo entre dimensões](/help/analysis-workspace/visualizations/c-flow/multi-dimensional-flow.md). Por exemplo, você pode combinar páginas e departamentos em um diagrama. Nesse caso, seu fluxo pode ir da página inicial para a página Homens e, em seguida, para o departamento de Sapatos.
 
-Cada coluna pode exibir uma dimensão diferente. Arraste uma dimensão e solte em uma área para adicioná-la ao diagrama.
+Cada coluna poderia mostrar uma dimensão diferente. Arraste uma dimensão e solte-a em uma área designada para adicionar essa dimensão ao diagrama.
 
 >[!MORELIKETHIS]
 >

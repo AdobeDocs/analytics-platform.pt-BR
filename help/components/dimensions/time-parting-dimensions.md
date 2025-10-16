@@ -7,7 +7,7 @@ role: User
 source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
 source-wordcount: '198'
-ht-degree: 60%
+ht-degree: 34%
 
 ---
 
@@ -18,9 +18,9 @@ A divisão de tempo coleta o carimbo de data e hora de eventos coletados e o div
 As dimensões de separação de tempo são baseadas no fuso horário da visualização de dados. Essas dimensões estão disponíveis no Analysis Workspace e podem ajudar nas seguintes questões:
 
 * Em um intervalo de datas grande, qual é a hora do dia mais popular para as pessoas acessarem meu site ou aplicativo?
-* Há dias da semana ou horas do dia nas quais a conversão é mais alta no meu site ou aplicativo?
-* Como minhas vendas de fim de semana se comparam com as da semana?
-* Determinada campanha de marketing gera conversões maiores pela manhã ou à tarde?
+* Existem dias da semana, ou horas do dia, em que a conversão é maior em meu site ou aplicativo?
+* Como comparar minhas vendas de fim de semana com minhas vendas de dias da semana?
+* Uma determinada campanha de marketing gera conversões mais altas de manhã ou à tarde?
 
 | Dimensão | Valores de exemplo |
 |--- |--- |
@@ -29,6 +29,6 @@ As dimensões de separação de tempo são baseadas no fuso horário da visualiz
 | **[!UICONTROL Dia da semana]** | Segunda-feira, terça-feira, quarta-feira, quinta-feira, sexta-feira, sábado, domingo |
 | **[!UICONTROL Dia da semana/Fim de semana]** | Dia da semana, Fim de semana |
 | **[!UICONTROL Dia do mês]** | 1-31 |
-| **[!UICONTROL Mês do ano]** | Janeiro - Dezembro |
+| **[!UICONTROL Mês do ano]** | Janeiro-dezembro |
 | **[!UICONTROL Dia do ano]** | 1-366 |
 | **[!UICONTROL Trimestre do ano]** | T1, T2, T3, T4 |

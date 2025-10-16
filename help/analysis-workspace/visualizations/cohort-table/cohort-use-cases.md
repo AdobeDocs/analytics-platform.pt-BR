@@ -8,7 +8,7 @@ role: User
 source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
 source-wordcount: '974'
-ht-degree: 51%
+ht-degree: 21%
 
 ---
 
@@ -18,7 +18,7 @@ Este artigo descreve alguns exemplos de casos de uso da análise de coorte.
 
 ## Caso de uso sobre interação com o aplicativo
 
-Suponha que você queira analisar o modo como os usuários usam o aplicativo instalado. Eles instalam e nunca usam o aplicativo? Eles usam por um tempo e depois desistem? Ou eles continuam usando ao longo do tempo?
+Suponha que você queira analisar como os usuários que instalam seu aplicativo se envolvem com ele ao longo do tempo. Eles o instalam e nunca o usam? Eles usam por um tempo, depois caem? Ou eles permanecem engajados ao longo do tempo?
 
 Você pode criar uma análise de coorte de seis meses.
 
@@ -26,21 +26,21 @@ Você pode criar uma análise de coorte de seis meses.
 
 **Métrica de inclusão**: instalações de aplicativos
 
-**Métrica de retorno**: sessões ou inicializações
+**Retornar métrica**: sessões ou inicializações
 
 As pessoas não contam como *engajadas* nos meses seguintes, a menos que tenham uma sessão ou, pelo menos, inicializem o aplicativo. A [!UICONTROL Análise de coorte] mostraria padrões de uso em que a *Instalação do aplicativo* sempre ocorre no Mês 0. Você pode notar que o uso diminui no Mês 2, independentemente de quando os usuários instalaram o aplicativo. (Para os usuários que instalaram o aplicativo em janeiro de 2015, o Mês 2 é março de 2015. Para as pessoas que instalaram o aplicativo em fevereiro de 2015, o Mês 2 é abril de 2015 e assim por diante.) Essa análise permite enviar um email ou uma mensagem por push a todos os usuários durante o segundo mês após a instalação do aplicativo, para lembrá-los de usar o aplicativo.
 
 ## Caso de uso de assinatura
 
-Você trabalha na Adobe.com e oferece uma assinatura gratuita da Creative Cloud. O objetivo é que os usuários atualizem da versão gratuita para a versão de avaliação de 30 dias ou, em última análise, para a versão paga.
+Você trabalha em Adobe.com e oferece uma assinatura gratuita do Creative Cloud. O objetivo é que os usuários atualizem da versão gratuita para a versão de avaliação de 30 dias ou, em última análise, a versão paga.
 
-**Granularidade**: mensal
+**Granularidade**: mensalmente
 
 **Métrica de inclusão**: link de download
 
-**Métrica de retorno**: compra paga da Creative Cloud
+**Métrica de retorno**: Compre o Creative Cloud pago
 
-Com a [!UICONTROL Análise de coorte], você pode observar, por exemplo, que entre 8% e 10% dos usuários gratuitos do Creative Cloud atualizam no primeiro mês após a instalação. Independentemente de quando os usuários instalaram o. De 12 a 15% atualizam no segundo mês de uso. Depois disso, a atualização diminui significativamente: de 4 a 5% no terceiro mês, de 3 a 4% no quatro mês e de 1 a 2% no quinto mês.
+Com a [!UICONTROL Análise de coorte], você pode observar, por exemplo, que entre 8% e 10% dos usuários gratuitos do Creative Cloud atualizam no primeiro mês após a instalação. Independentemente de quando os usuários instalaram o. Atualização de 12 a 15% no segundo mês de uso. Depois disso, a atualização diminui significativamente: 4-5% no terceiro mês, 3-4% no quarto mês e 1-2% no quinto mês.
 
 Você não deseja perder clientes em potencial no terceiro mês. Assim, você configurou uma campanha de email projetada para sair no meio do terceiro mês para uma amostra de usuários. Oferecer um cupom de US$ 50 para usuários que ainda não atualizaram.
 
@@ -48,19 +48,19 @@ Verifique com seus relatórios de análise de coorte alguns meses depois. Para c
 
 ## Caso de uso de segmentos de coorte complexos
 
-Uma grande cadeia de hotéis tem como alvo vários grupos de clientes para promoções e os monitora em relação ao desempenho. Para identificar os melhores grupos de coortes de usuários a serem direcionados, é necessário criar grupos de coorte muito específicos. Usando os critérios aumentados de [!UICONTROL Inclusão] e [!UICONTROL Retorno] nas Tabelas de [!UICONTROL Coorte], a cadeia de hotéis pode definir os grupos de coorte ideais com várias métricas e segmentos. Assim, a cadeia de hotéis pode identificar grupos de clientes com baixo desempenho para direcionar clientes com promoções e ofertas para aumentar as reservas.
+Uma grande cadeia de hotéis tem como alvo vários grupos de clientes para promoções e controles contra o desempenho. Para identificar os melhores grupos de coortes de usuários a serem direcionados, é necessário criar grupos de coorte muito específicos. Usando os critérios aumentados de [!UICONTROL Inclusão] e [!UICONTROL Retorno] nas Tabelas de [!UICONTROL Coorte], a cadeia de hotéis pode definir os grupos de coorte ideais com várias métricas e segmentos. Assim, a cadeia de hotéis pode identificar grupos de clientes com baixo desempenho para direcionar clientes com promoções e ofertas para aumentar as reservas.
 
 ## Caso de uso de preferência de versão do aplicativo
 
-Uma grande empresa de seguros promove o engajamento do cliente por meio do uso de seu aplicativo móvel. Entretanto, conforme novos recursos são adicionados ao aplicativo, é de enorme importância que os clientes atualizem para a versão mais recente. É possível analisar e comparar todas as versões do aplicativo lado a lado usando o Coorte de [!UICONTROL dimensão personalizado] para ver quais clientes e suas respectivas versões do aplicativo para direcionar. Além disso, pode-se monitorar a retenção e o churn para ver se versões específicas do aplicativo estão causando a interrupção do uso do aplicativo ao longo do tempo. Por meio de mensagens em dispositivos móveis, a empresa pode voltar a engajar esses clientes para que atualizem para a versão mais recente e aproveitem os últimos recursos.
+Uma grande empresa de seguros promove o engajamento do cliente por meio do uso de seu aplicativo móvel. No entanto, à medida que novos recursos são adicionados ao aplicativo, é importante que os clientes atualizem para a versão mais recente do aplicativo. É possível analisar e comparar todas as versões do aplicativo lado a lado usando o Coorte de [!UICONTROL dimensão personalizado] para ver quais clientes e suas respectivas versões do aplicativo para direcionar. Além disso, eles podem rastrear a retenção e a rotatividade para ver se versões específicas do aplicativo estão afastando os clientes do uso do aplicativo ao longo do tempo. Por meio de esforços de mensagens móveis, eles podem reengajar com esses usuários para atualizá-los para a versão mais recente e aproveitar seus recursos mais recentes.
 
 ## Caso de uso de adesão de campanha
 
-Uma empresa de mídia multinacional usa campanhas direcionadas para direcionar usuários a suas várias plataformas para gerar engajamento. O gasto com anúncios por plataforma baseia-se no engajamento e na retenção do cliente. Portanto, campanhas bem-sucedidas são essenciais para o sucesso dos negócios. Eles usam o novo recurso de Coorte do [!UICONTROL Dimension] personalizado em Tabelas de [!UICONTROL Coorte] para comparar várias campanhas lado a lado, para identificar quais campanhas são mais eficazes para conquistar e reter usuários para aumentar o engajamento. Podem identificar quais aspectos tornam uma campanha bem-sucedida e aplicá-los a outras campanhas para aumentar o engajamento nas várias plataformas.
+Uma empresa multinacional de mídia usa campanhas direcionadas para direcionar os usuários para suas várias plataformas, gerando engajamento. O gasto de anúncios por plataforma baseia-se no envolvimento e na retenção do cliente; portanto, campanhas bem-sucedidas são essenciais para o sucesso dos negócios. Eles usam o novo recurso de Coorte do [!UICONTROL Dimension] personalizado em Tabelas de [!UICONTROL Coorte] para comparar várias campanhas lado a lado, para identificar quais campanhas são mais eficazes para conquistar e reter usuários para aumentar o engajamento. Podem identificar quais aspectos tornam uma campanha bem-sucedida e aplicá-los a outras campanhas para aumentar o engajamento nas várias plataformas.
 
 ## Caso de uso de lançamento de produto
 
-Uma grande varejista de vestuário tem muitos segmentos de clientes específicos que geram grandes parcelas de receita para seus negócios. Cada segmento tem produtos específicos projetados e criados com o segmento em mente. A cada lançamento de produto, a empresa quer saber como o novo produto impulsionou as vendas para vários coortes ao longo do tempo. Usando a nova configuração de [!UICONTROL Tabela de latência] na [!UICONTROL Análise de coorte], é possível analisar o comportamento e a receita de pré-lançamento e pós-lançamento de um determinado segmento de cliente. Usando essas informações, pode-se identificar quais produtos estão gerando novas receitas e quais não estão ganhando força com os clientes.
+Uma grande retailer de vestuário tem muitos segmentos específicos de clientes que geram grandes parcelas de receita para seus negócios. Cada segmento tem produtos específicos projetados e criados com o segmento em mente. A cada lançamento de produto, a empresa quer saber como o novo produto impulsionou as vendas para vários coortes ao longo do tempo. Usando a nova configuração de [!UICONTROL Tabela de latência] na [!UICONTROL Análise de coorte], é possível analisar o comportamento e a receita de pré-lançamento e pós-lançamento de um determinado segmento de cliente. Usando essas informações, pode-se identificar quais produtos estão gerando novas receitas e quais não estão ganhando força com os clientes.
 
 ## Caso de uso de adesão individual: usuários mais fiéis
 

@@ -6,7 +6,7 @@ exl-id: 33cb441d-d003-408d-ba67-1bcdd0e821ff
 source-git-commit: 1b6e1d432bfe4b0574b8ee68bcfa940941f3c36f
 workflow-type: tm+mt
 source-wordcount: '239'
-ht-degree: 6%
+ht-degree: 0%
 
 ---
 
@@ -41,4 +41,4 @@ Para usar a métrica calculada:
 
 1. (Opcional) Compartilhe a métrica com outros usuários em sua organização, conforme descrito em [Compartilhar métricas calculadas](/help/components/calc-metrics/cm-workflow/cm-sharing.md).
 
-Esse é um jeito fácil de averiguar quais Canais de marketing assistiram em impulsionar pedidos. Como alternativa, em uma tabela de forma livre, você pode selecionar qualquer métrica e, no menu de contexto, ajustar o modelo de atribuição diretamente da tabela.
+Essa é uma maneira fácil de saber quais Canais de marketing auxiliaram na criação de pedidos. Como alternativa, em uma tabela de forma livre, você pode selecionar qualquer métrica e, no menu de contexto, ajustar o modelo de atribuição diretamente da tabela.

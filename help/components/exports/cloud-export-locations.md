@@ -106,11 +106,11 @@ Para obter informações sobre como gerenciar locais existentes, incluindo exibi
 
    1. Abra o [Microsoft Azure Storage Explorer](https://azure.microsoft.com/en-us/products/storage/storage-explorer/).
 
-   1. Vá para [!UICONTROL **Contas de Armazenamento**] > [!UICONTROL **(Contêineres Anexados)**] > [!UICONTROL **Contêineres Blob**] > **[!UICONTROL cjaexport-_number_]**>*** your_container_name &#x200B;***.
+   1. Vá para [!UICONTROL **Contas de Armazenamento**] > [!UICONTROL **(Contêineres Anexados)**] > [!UICONTROL **Contêineres Blob**] > **[!UICONTROL cjaexport-_number_]**>*** your_container_name ***.
 
       >[!NOTE]
       >
-      >O nome da pasta **[!UICONTROL cjaexport-_number_]**&#x200B;é o nome padrão fornecido pelo Azure Storage Explorer. Se você tiver apenas uma única conexão associada ao URI SAS (o que é normal), o nome desta pasta será&#x200B;**[!UICONTROL cjaexport-1]**.
+      >O nome da pasta **[!UICONTROL cjaexport-_number_]**é o nome padrão fornecido pelo Azure Storage Explorer. Se você tiver apenas uma única conexão associada ao URI SAS (o que é normal), o nome desta pasta será&#x200B;**[!UICONTROL cjaexport-1]**.
 
 
       ![Acessar arquivos no Azure Storage Explorer](assets/azure-storage-explorer-access.png)

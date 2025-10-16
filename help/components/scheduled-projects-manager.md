@@ -1,6 +1,6 @@
 ---
 description: Saiba como gerenciar projetos agendados.
-title: Projetos agendados
+title: Projetos programados
 feature: Components
 exl-id: fa7c5a0f-4983-40ee-b9c1-3e10aab3fc28
 role: User

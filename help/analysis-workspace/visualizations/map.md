@@ -7,7 +7,7 @@ exl-id: 6656b34a-ae1e-4f9f-9c6d-13c54e49625c
 source-git-commit: ab0e6f0578cbc6f856c2b0a46b1231cce145b84c
 workflow-type: tm+mt
 source-wordcount: '2761'
-ht-degree: 12%
+ht-degree: 8%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 12%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta a Visualização de mapa no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consulte o [Mapa](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) da versão_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
+_Este artigo documenta a Visualização de mapa no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consulte o [Mapa](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) da versão_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 
@@ -232,7 +232,7 @@ A visualização de mapa no Customer Journey Analytics difere da visualização 
 
       * Mostrar números negativos.
 
-        Por exemplo, se estiver traçando uma métrica anual, o mapa pode apresentar -33% em Nova York.
+        Por exemplo, se você estiver plotando uma métrica ano a ano, o mapa poderá mostrar -33% sobre Nova York.
 
       * Com métricas do tipo *porcentagem*, o agrupamento calcula a média das porcentagens.
 
@@ -256,10 +256,10 @@ Para definir as configurações da visualização de mapa:
    | Seção | Configuração | Descrição |
    | --- |--- |--- |
    | **[!UICONTROL Tipo de mapa]** | | |
-   | | **[!UICONTROL Propagação]** | Faz a plotagem de eventos usando propagações. Um gráfico de propagação é um gráfico de muitas variáveis, que é um cruzamento entre um gráfico de dispersão e um gráfico de área proporcional. Essa exibição é o padrão. |
-   | | **[!UICONTROL Mapa de calor]** | Faz a plotagem de eventos usando um mapa de calor. Um mapa de calor é uma representação gráfica de dados onde os valores individuais contidos em uma matriz são representados como cores. |
+   | | **[!UICONTROL Propagação]** | Plota eventos usando bolhas. Um gráfico de bolhas é um gráfico de várias variáveis que é um cruzamento entre um gráfico de dispersão e um gráfico de área proporcional. Essa exibição é o padrão. |
+   | | **[!UICONTROL Mapa de calor]** | Plota eventos usando um mapa de calor. Um mapa de calor é uma representação gráfica de dados em que os valores individuais contidos em uma matriz são representados como cores. |
    | **[!UICONTROL Estilos]** | | |
-   | | **[!UICONTROL Tema de cores]** | Mostra o esquema de cor do mapa de calor e das propagações. Você pode optar por Coral, Vermelho, Verde ou Azul. O padrão é Coral. |
+   | | **[!UICONTROL Tema de cores]** | Mostra o esquema de cores para o mapa de calor e bolhas. Você pode escolher entre Coral, Vermelhos, Verdes ou Azuis. O padrão é Coral. |
    | | **[!UICONTROL Estilo do mapa]** | É possível escolher entre Básico, Ruas, Brilhante, Claro, Escuro e Satélite. |
    | | **[!UICONTROL Raio do cluster]** | Agrupa os pontos de dados que estão dentro do número especificado de pixels. O padrão é 50.<p>Esta opção está disponível somente quando **[!UICONTROL Bolhas]** é selecionado como o **[!UICONTROL Tipo de mapa]**.</p> |
    | | **[!UICONTROL Valor máximo personalizado]** | Permite alterar o limite para o valor máximo do mapa. O ajuste desse valor ajusta a escala para os valores de propagações ou de mapa de calor (cor e tamanho) relativos ao valor máximo personalizado definido. |

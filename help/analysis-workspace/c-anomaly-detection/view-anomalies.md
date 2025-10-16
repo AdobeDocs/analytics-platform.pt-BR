@@ -7,7 +7,7 @@ role: User
 source-git-commit: ce4a21b1a1e89f14316a92fbdce38281db61e666
 workflow-type: tm+mt
 source-wordcount: '429'
-ht-degree: 50%
+ht-degree: 46%
 
 ---
 
@@ -62,7 +62,7 @@ Para exibir anomalias em um gráfico de linhas:
 
    * O valor bruto da anomalia.
 
-   * O valor percentual superior ou inferior ao valor esperado, que é representado pela linha sólida verde.
+   * O valor percentual acima ou abaixo do valor esperado, que é representado pela linha verde sólida.
 
 
 

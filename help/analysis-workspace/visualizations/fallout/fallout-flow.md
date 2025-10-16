@@ -7,7 +7,7 @@ role: User
 source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
 source-wordcount: '358'
-ht-degree: 96%
+ht-degree: 82%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 96%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta a visualização de fallout no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consulte [Fallout](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow) para saber a versão do_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
+_Este artigo documenta a visualização de fallout no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consulte [Fallout](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow) para saber a versão do_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 
@@ -51,7 +51,7 @@ As visualizações de fallout permitem:
 
 O Fallout exibe as taxas de conversão e de fallout entre cada etapa ou ponto de contato em uma sequência.
 
-Por exemplo, você pode rastrear os pontos de fallout de um visitante durante um processo de compra. Selecione um ponto de contato inicial e um ponto de contato final e adicione pontos de contato intermediários para criar um caminho de navegação no site. Mas você também pode executar fallouts multidimensionais.
+Por exemplo, você pode rastrear os pontos de fallout de um visitante durante um processo de compra. Basta selecionar um ponto de contato inicial e um ponto de contato de conclusão e adicionar pontos de contato intermediários para criar um caminho de navegação do site. Mas você também pode fazer fallouts multidimensionais.
 
 ## Escolha entre as visualizações das telas de fallout, fluxo e jornada
 
@@ -69,7 +69,7 @@ As visualizações das telas de fallout e de [jornada](/help/analysis-workspace/
 
 * Taxas de conversão por meio de processos específicos no site (como um processo de compra ou registro).
 * Fluxos de tráfego gerais e de escopo mais amplo: entre as pessoas que visitaram a página inicial, esse fluxo mostra quantas realizaram uma pesquisa. Em seguida, quantas delas chegaram a olhar um item específico.
-* Correlações entre eventos no site. As correlações mostram a porcentagem de pessoas que acessaram sua política de privacidade e que fizeram uma compra.
+* Correlações entre eventos no site. As correlações mostram a porcentagem de pessoas que observaram sua política de privacidade que compraram um produto.
 
 As visualizações de fallout são mais adequadas para:
 

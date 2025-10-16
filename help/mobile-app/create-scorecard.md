@@ -29,7 +29,7 @@ As informações a seguir instruem os curadores de dados do Customer Journey Ana
 
 >[!BEGINSHADEBOX]
 
-Confira ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Criar um cartão de pontuação móvel](https://video.tv.adobe.com/v/3409734?quality=12&learn=on&captions=por_br){target="_blank"} para ver um vídeo de demonstração.
+Confira ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Criar um cartão de pontuação móvel](https://video.tv.adobe.com/v/343458?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 
@@ -44,7 +44,7 @@ Um cartão de pontuação do Analytics exibe visualizações de dados importante
 
 Como curador deste cartão de pontuação, você pode usar o criador de cartões de pontuação para configurar quais blocos aparecem no cartão de pontuação para o consumidor executivo. Você também configura como as exibições detalhadas ou os detalhamentos podem ser ajustados quando os blocos forem tocados. A interface do criador de cartões de pontuação é mostrada abaixo:
 
-![Criador de cartões de pontuação mostrando a nova janela de cartão de pontuação móvel. &#x200B;](assets/scorecard_builder.png)
+![Criador de cartões de pontuação mostrando a nova janela de cartão de pontuação móvel. ](assets/scorecard_builder.png)
 
 Para criar o cartão de pontuação, é necessário fazer o seguinte:
 
@@ -79,7 +79,7 @@ Para implementar o modelo de cartão de pontuação:
 
 1. Para adicionar um novo bloco ao cartão de pontuação, arraste uma métrica do painel esquerdo e solte-a na zona **[!UICONTROL Arraste e solte métricas aqui]**. Também é possível inserir uma métrica entre dois blocos usando um fluxo de trabalho semelhante.
 
-   ![Nova janela de cartão de pontuação móvel com uma seta apontando para uma métrica (Novo KPI) colocada no cartão de pontuação. &#x200B;](assets/build_list.png)
+   ![Nova janela de cartão de pontuação móvel com uma seta apontando para uma métrica (Novo KPI) colocada no cartão de pontuação. ](assets/build_list.png)
 
 
 1. Em cada bloco, é possível acessar uma exibição detalhada que mostra informações adicionais sobre a métrica, como itens principais para uma lista de dimensões relacionadas.
@@ -212,7 +212,7 @@ Os slides de detalhes personalizados permitem ter ainda mais controle sobre quai
 
 >[!BEGINSHADEBOX]
 
-Confira ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Exibições de detalhes personalizadas](https://video.tv.adobe.com/v/3417879?quality=12&learn=on&captions=por_br){target="_blank"} para ver um vídeo de demonstração.
+Confira ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Exibições de detalhes personalizadas](https://video.tv.adobe.com/v/3410002?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
 
 {{videoaa}}
 

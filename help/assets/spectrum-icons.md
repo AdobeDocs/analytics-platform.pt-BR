@@ -8,7 +8,7 @@ hide-from-toc: true
 source-git-commit: 39f9ef07088eb9595e5057d21008ecd2f5ea44fe
 workflow-type: tm+mt
 source-wordcount: '1954'
-ht-degree: 16%
+ht-degree: 14%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 16%
 
 Esta tabela lista todos os ícones de Espectro disponíveis por meio da configuração de trechos de ícones de Espectro. Use o nome para adicionar o trecho à marcação e exiba o ícone Espectro.
 
-Assista à [página Wiki] (ttps://wiki.corp.adobe.com/display/omtrplatform/Use+Spectrum+icons+in+documentation) para obter atualizações.
+Assista à [página Wiki](ttps://wiki.corp.adobe.com/display/omtrplatform/Use+Spectrum+icons+in+documentation) para obter atualizações.
 
 ![](https://reportbuilder.an.adobe.com/assets/AdobeAnalyticsLogo-80.png)
 
@@ -116,7 +116,7 @@ Assista à [página Wiki] (ttps://wiki.corp.adobe.com/display/omtrplatform/Use+S
 | Ventilador | `![Blower](/help/assets/icons/Blower.svg)` | ![Ventilador](/help/assets/icons/Blower.svg) |
 | Blur | `![Blur](/help/assets/icons/Blur.svg)` | ![Desfoque](/help/assets/icons/Blur.svg) |
 | Livro | `![Book](/help/assets/icons/Book.svg)` | ![Livro](/help/assets/icons/Book.svg) |
-| Marcador | `![Bookmark](/help/assets/icons/Bookmark.svg)` | ![Marcador](/help/assets/icons/Bookmark.svg) |
+| Indicador | `![Bookmark](/help/assets/icons/Bookmark.svg)` | ![Marcador](/help/assets/icons/Bookmark.svg) |
 | Marcador único | `![BookmarkSingle](/help/assets/icons/BookmarkSingle.svg)` | ![MarcadorÚnico](/help/assets/icons/BookmarkSingle.svg) |
 | MarcadorContornoÚnico | `![BookmarkSingleOutline](/help/assets/icons/BookmarkSingleOutline.svg)` | ![BookmarkSingleOutline](/help/assets/icons/BookmarkSingleOutline.svg) |
 | IndicadorPequeno | `![BookmarkSmall](/help/assets/icons/BookmarkSmall.svg)` | ![MarcadorPequeno](/help/assets/icons/BookmarkSmall.svg) |
@@ -162,7 +162,7 @@ Assista à [página Wiki] (ttps://wiki.corp.adobe.com/display/omtrplatform/Use+S
 | Capital | `![Capital](/help/assets/icons/Capital.svg)` | ![Capital](/help/assets/icons/Capital.svg) |
 | Captcha | `![Captcha](/help/assets/icons/Captcha.svg)` | ![Captcha](/help/assets/icons/Captcha.svg) |
 | Carro | `![Car](/help/assets/icons/Car.svg)` | ![Carro](/help/assets/icons/Car.svg) |
-| Cartão | `![Card](/help/assets/icons/Card.svg)` | Cartão ![1&rbrace;](/help/assets/icons/Card.svg) |
+| Cartão | `![Card](/help/assets/icons/Card.svg)` | Cartão ![1}](/help/assets/icons/Card.svg) |
 | Canal | `![Channel](/help/assets/icons/Channel.svg)` | ![Canal](/help/assets/icons/Channel.svg) |
 | Chat | `![Chat](/help/assets/icons/Chat.svg)` | ![Chat](/help/assets/icons/Chat.svg) |
 | ChatAdd | `![ChatAdd](/help/assets/icons/ChatAdd.svg)` | ![AdiçãodeChat](/help/assets/icons/ChatAdd.svg) |
@@ -182,10 +182,10 @@ Assista à [página Wiki] (ttps://wiki.corp.adobe.com/display/omtrplatform/Use+S
 | Relógio | `![Clock](/help/assets/icons/Clock.svg)` | ![Relógio](/help/assets/icons/Clock.svg) |
 | ClockCheck | `![ClockCheck](/help/assets/icons/ClockCheck.svg)` | ![VerificaçãoRelógio](/help/assets/icons/ClockCheck.svg) |
 | Carimbo | `![CloneStamp](/help/assets/icons/CloneStamp.svg)` | ![Carimbo](/help/assets/icons/CloneStamp.svg) |
-| Close | `![Close](/help/assets/icons/Close.svg)` | ![Fechar](/help/assets/icons/Close.svg) |
+| Fechar | `![Close](/help/assets/icons/Close.svg)` | ![Fechar](/help/assets/icons/Close.svg) |
 | LegendaOculta | `![CloseCaption](/help/assets/icons/CloseCaption.svg)` | ![LegendaOculta](/help/assets/icons/CloseCaption.svg) |
 | FecharCírculo | `![CloseCircle](/help/assets/icons/CloseCircle.svg)` | ![FecharCírculo](/help/assets/icons/CloseCircle.svg) |
-| Cloud | `![Cloud](/help/assets/icons/Cloud.svg)` | ![Nuvem](/help/assets/icons/Cloud.svg) |
+| Nuvem | `![Cloud](/help/assets/icons/Cloud.svg)` | ![Nuvem](/help/assets/icons/Cloud.svg) |
 | CloudDisconnected | `![CloudDisconnected](/help/assets/icons/CloudDisconnected.svg)` | ![CloudDisconnected](/help/assets/icons/CloudDisconnected.svg) |
 | CloudError | `![CloudError](/help/assets/icons/CloudError.svg)` | ![ErroNaNuvem](/help/assets/icons/CloudError.svg) |
 | CloudOutline | `![CloudOutline](/help/assets/icons/CloudOutline.svg)` | ![EstruturaNuvem](/help/assets/icons/CloudOutline.svg) |
@@ -205,7 +205,7 @@ Assista à [página Wiki] (ttps://wiki.corp.adobe.com/display/omtrplatform/Use+S
 | ColunaDoisB | `![ColumnTwoB](/help/assets/icons/ColumnTwoB.svg)` | ![ColunaDoisB](/help/assets/icons/ColumnTwoB.svg) |
 | ColunaDoisC | `![ColumnTwoC](/help/assets/icons/ColumnTwoC.svg)` | ![ColunaDoisC](/help/assets/icons/ColumnTwoC.svg) |
 | ComboChart | `![ComboChart](/help/assets/icons/ComboChart.svg)` | ![GráficoDeCombinação](/help/assets/icons/ComboChart.svg) |
-| Comentários | `![Comment](/help/assets/icons/Comment.svg)` | ![Comentário](/help/assets/icons/Comment.svg) |
+| Comentário | `![Comment](/help/assets/icons/Comment.svg)` | ![Comentário](/help/assets/icons/Comment.svg) |
 | Comparar | `![Compare](/help/assets/icons/Compare.svg)` | ![Comparar](/help/assets/icons/Compare.svg) |
 | Compas | `![Compas](/help/assets/icons/Compas.svg)` | ![Compas](/help/assets/icons/Compas.svg) |
 | Condição | `![Condition](/help/assets/icons/Condition.svg)` | ![Condição](/help/assets/icons/Condition.svg) |
@@ -262,7 +262,7 @@ Assista à [página Wiki] (ttps://wiki.corp.adobe.com/display/omtrplatform/Use+S
 | DeviceTV | `![DeviceTV](/help/assets/icons/DeviceTV.svg)` | ![TVdeDispositivo](/help/assets/icons/DeviceTV.svg) |
 | DeviceTablet | `![DeviceTablet](/help/assets/icons/DeviceTablet.svg)` | ![TabletDeDispositivo](/help/assets/icons/DeviceTablet.svg) |
 | Dimensões | `![Dimensions](/help/assets/icons/Dimensions.svg)` | ![Dimensões](/help/assets/icons/Dimensions.svg) |
-| Discover | `![Discover](/help/assets/icons/Discover.svg)` | ![Discover](/help/assets/icons/Discover.svg) |
+| Descobrir | `![Discover](/help/assets/icons/Discover.svg)` | ![Descoberta](/help/assets/icons/Discover.svg) |
 | DiscoverOutline | `![DiscoverOutline](/help/assets/icons/DiscoverOutline.svg)` | ![DiscoverOutline](/help/assets/icons/DiscoverOutline.svg) |
 | DistribuirBordaInferior | `![DistributeBottomEdge](/help/assets/icons/DistributeBottomEdge.svg)` | ![DistribuirBordaInferior](/help/assets/icons/DistributeBottomEdge.svg) |
 | DistribuirCentroHorizontal | `![DistributeHorizontalCenter](/help/assets/icons/DistributeHorizontalCenter.svg)` | ![DistribuirCentroHorizontal](/help/assets/icons/DistributeHorizontalCenter.svg) |
@@ -479,7 +479,7 @@ Assista à [página Wiki] (ttps://wiki.corp.adobe.com/display/omtrplatform/Use+S
 | Ajuda | `![Help](/help/assets/icons/Help.svg)` | ![Ajuda](/help/assets/icons/Help.svg) |
 | AjudaEstrutura | `![HelpOutline](/help/assets/icons/HelpOutline.svg)` | ![EstruturaDeAjuda](/help/assets/icons/HelpOutline.svg) |
 | Histograma | `![Histogram](/help/assets/icons/Histogram.svg)` | ![Histograma](/help/assets/icons/Histogram.svg) |
-| History | `![History](/help/assets/icons/History.svg)` | ![Histórico](/help/assets/icons/History.svg) |
+| Histórico | `![History](/help/assets/icons/History.svg)` | ![Histórico](/help/assets/icons/History.svg) |
 | Página inicial | `![Home](/help/assets/icons/Home.svg)` | ![Início](/help/assets/icons/Home.svg) |
 | Página inicial | `![Homepage](/help/assets/icons/Homepage.svg)` | ![Página inicial](/help/assets/icons/Homepage.svg) |
 | HotFix | `![HotFixe](/help/assets/icons/HotFixe.svg)` | ![HotFixes](/help/assets/icons/HotFixe.svg) |
@@ -602,7 +602,7 @@ Assista à [página Wiki] (ttps://wiki.corp.adobe.com/display/omtrplatform/Use+S
 | NoEdit | `![NoEdit](/help/assets/icons/NoEdit.svg)` | ![SemEdição](/help/assets/icons/NoEdit.svg) |
 | Observação | `![Note](/help/assets/icons/Note.svg)` | ![Nota](/help/assets/icons/Note.svg) |
 | AdiçãodeNota | `![NoteAdd](/help/assets/icons/NoteAdd.svg)` | ![AdiçãodeAnotação](/help/assets/icons/NoteAdd.svg) |
-| Op. | `![O](/help/assets/icons/O.svg)` | ![O](/help/assets/icons/O.svg) |
+| O | `![O](/help/assets/icons/O.svg)` | ![O](/help/assets/icons/O.svg) |
 | Oferta | `![Offer](/help/assets/icons/Offer.svg)` | ![Oferta](/help/assets/icons/Offer.svg) |
 | AtividadesOferta | `![OfferActivities](/help/assets/icons/OfferActivities.svg)` | ![AtividadesOferta](/help/assets/icons/OfferActivities.svg) |
 | OfferDelete | `![OfferDelete](/help/assets/icons/OfferDelete.svg)` | ![ExclusãoOferta](/help/assets/icons/OfferDelete.svg) |
@@ -637,7 +637,7 @@ Assista à [página Wiki] (ttps://wiki.corp.adobe.com/display/omtrplatform/Use+S
 | Pausar | `![Pause](/help/assets/icons/Pause.svg)` | ![Pausar](/help/assets/icons/Pause.svg) |
 | PauseCircle | `![PauseCircle](/help/assets/icons/PauseCircle.svg)` | ![PauseCircle](/help/assets/icons/PauseCircle.svg) |
 | Peão | `![Pawn](/help/assets/icons/Pawn.svg)` | ![Peão](/help/assets/icons/Pawn.svg) |
-| Pendente | `![Pending](/help/assets/icons/Pending.svg)` | ![Pendente](/help/assets/icons/Pending.svg) |
+| Pending | `![Pending](/help/assets/icons/Pending.svg)` | ![Pendente](/help/assets/icons/Pending.svg) |
 | PeopleGroup | `![PeopleGroup](/help/assets/icons/PeopleGroup.svg)` | ![PeopleGroup](/help/assets/icons/PeopleGroup.svg) |
 | CampoDePersonalização | `![PersonalizationField](/help/assets/icons/PersonalizationField.svg)` | ![CampoDePersonalização](/help/assets/icons/PersonalizationField.svg) |
 | Perspectiva | `![Perspective](/help/assets/icons/Perspective.svg)` | ![Perspectiva](/help/assets/icons/Perspective.svg) |
@@ -707,7 +707,7 @@ Assista à [página Wiki] (ttps://wiki.corp.adobe.com/display/omtrplatform/Use+S
 | ResolvedComment | `![ResolvedComment](/help/assets/icons/ResolvedComment.svg)` | ![ComentárioResolvido](/help/assets/icons/ResolvedComment.svg) |
 | Retenção | `![Retention](/help/assets/icons/Retention.svg)` | ![Retenção](/help/assets/icons/Retention.svg) |
 | TaxasdeRetenção | `![RetentionRates](/help/assets/icons/RetentionRates.svg)` | ![TaxasDeRetenção](/help/assets/icons/RetentionRates.svg) |
-| Retuitar | `![Retweet](/help/assets/icons/Retweet.svg)` | ![Retweet](/help/assets/icons/Retweet.svg) |
+| Retweet | `![Retweet](/help/assets/icons/Retweet.svg)` | ![Retweet](/help/assets/icons/Retweet.svg) |
 | Reutilizar | `![Reuse](/help/assets/icons/Reuse.svg)` | ![Reutilizar](/help/assets/icons/Reuse.svg) |
 | Receita | `![Revenue](/help/assets/icons/Revenue.svg)` | ![Receita](/help/assets/icons/Revenue.svg) |
 | Reverter | `![Revert](/help/assets/icons/Revert.svg)` | ![Reverter](/help/assets/icons/Revert.svg) |
@@ -804,7 +804,7 @@ Assista à [página Wiki] (ttps://wiki.corp.adobe.com/display/omtrplatform/Use+S
 | CírculoRetrocedidoPasso | `![StepBackwardCircle](/help/assets/icons/StepBackwardCircle.svg)` | ![CírculoRetroativoPasso](/help/assets/icons/StepBackwardCircle.svg) |
 | AvançarPasso | `![StepForward](/help/assets/icons/StepForward.svg)` | ![Avançar](/help/assets/icons/StepForward.svg) |
 | CírculoAvançadoPasso | `![StepForwardCircle](/help/assets/icons/StepForwardCircle.svg)` | ![StepForwardCircle](/help/assets/icons/StepForwardCircle.svg) |
-| Stop | `![Stop](/help/assets/icons/Stop.svg)` | ![Parar](/help/assets/icons/Stop.svg) |
+| Parar | `![Stop](/help/assets/icons/Stop.svg)` | ![Parar](/help/assets/icons/Stop.svg) |
 | StopCircle | `![StopCircle](/help/assets/icons/StopCircle.svg)` | ![PararCírculo](/help/assets/icons/StopCircle.svg) |
 | Cronômetro | `![Stopwatch](/help/assets/icons/Stopwatch.svg)` | ![Cronômetro](/help/assets/icons/Stopwatch.svg) |
 | Endireitar | `![Straighten](/help/assets/icons/Straighten.svg)` | ![Corrigir](/help/assets/icons/Straighten.svg) |

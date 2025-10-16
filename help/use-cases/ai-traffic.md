@@ -229,7 +229,7 @@ A partir de agosto de 2025, os seguintes sinais específicos podem ser identific
 <tr>
 <th><strong>Serviço LLM</strong></th>
 <th>Exemplo de URL</th>
-<th><strong>Parâmetro de consulta</strong></th>
+<th><strong>Parâmetro da consulta</strong></th>
 <th><strong>Exemplo de valor</strong></th>
 </tr>
 </thead>
@@ -297,6 +297,6 @@ Use os campos e segmentos derivados para relatar e analisar o tráfego gerado pe
 
 >[!MORELIKETHIS]
 >
->Este artigo de caso de uso é baseado no artigo do blog [Rastreamento e análise de tráfego LLM e AI-Generated no Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967?profile.language=pt).
+>Este artigo de caso de uso é baseado no artigo do blog [Rastreamento e análise de tráfego LLM e AI-Generated no Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967).
 >
 >

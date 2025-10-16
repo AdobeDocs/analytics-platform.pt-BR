@@ -31,7 +31,7 @@ A análise de ![PeopleGroup](/help/assets/icons/PeopleGroup.svg) **[!UICONTROL C
 Todos os usuários ativos (novo + repetição + retorno) aparecem como uma sombra de azul-petróleo acima do eixo horizontal, enquanto todos os usuários inativos aparecem em laranja abaixo do eixo horizontal.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3423398/?quality=12&learn=on&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3421667/?quality=12&learn=on)
 
 ## Casos de uso
 

@@ -233,7 +233,7 @@ Para configurar seu armazenamento de dados:
 
 Sua sequência de dados agora está configurada para encaminhar os dados coletados do jogo para seu conjunto de dados no Adobe Experience Platform.
 
-Consulte [Visão geral dos conjuntos de dados](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=pt-BR) para obter mais informações sobre como configurar um conjunto de dados e como lidar com dados confidenciais.
+Consulte [Visão geral dos conjuntos de dados](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html) para obter mais informações sobre como configurar um conjunto de dados e como lidar com dados confidenciais.
 
 ## Usar a API do Edge Network Server
 
@@ -272,7 +272,7 @@ curl -X POST "https://server.adobedc.net/ee/v2/interact?dataStreamId={DATASTREAM
 
 Na solicitação POST de exemplo, `{DATASTREAM_ID}` aponta para o identificador da sequência de dados de exemplo que você configurou anteriormente. `{sandbox}` é o nome exclusivo da sua sandbox, identificando o caminho para o grupo de campos Luz oculta personalizada.
 
-Consulte [Coleta de dados interativa](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html?lang=pt-BR) e [Coleta de dados não interativa](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/non-interactive-data-collection.html?lang=pt-BR) para obter mais informações sobre como usar a API do Edge Network Server.
+Consulte [Coleta de dados interativa](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html?lang=pt-BR) e [Coleta de dados não interativa](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/non-interactive-data-collection.html) para obter mais informações sobre como usar a API do Edge Network Server.
 
 ## Configurar uma conexão
 

@@ -7,7 +7,7 @@ exl-id: f042a6dd-6af5-4bdd-afc9-07546d8ded6e
 source-git-commit: ce4a21b1a1e89f14316a92fbdce38281db61e666
 workflow-type: tm+mt
 source-wordcount: '545'
-ht-degree: 6%
+ht-degree: 4%
 
 ---
 
@@ -23,11 +23,11 @@ Os efeitos dos feriados são considerados quando vários anos de dados estão di
 
 * Dia de Martin Luther King
 * Dia dos Presidentes
-* Memorial Day (somente EUA)
+* Dia da Memória
 * Julho de 4
-* Dia de Ação de Graças (somente EUA)
-* Black Friday (somente EUA)
-* Cyber Monday (somente EUA)
+* Ação de Graças
+* Black Friday
+* Cyber Monday
 * Natal
 
 O serviço também pode fazer uma remoção simples de anomalias (outliers), por exemplo, removendo pontos de dados que estejam fora do intervalo de seis sigma. Isso não é ativado por padrão, pois presume-se que todos os pontos de dados sejam válidos. Anomalias podem ter uma influência negativa na qualidade do modelo, mesmo que o modelo do Profeta seja resiliente a outliers em geral.

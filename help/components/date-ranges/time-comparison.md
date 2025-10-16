@@ -7,7 +7,7 @@ role: User
 source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
 workflow-type: tm+mt
 source-wordcount: '683'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -28,7 +28,7 @@ A análise demanda contexto, o qual normalmente é fornecido por um período ant
    >
    >A opção do menu de contexto está desabilitada para linhas de métrica, linhas de intervalo de datas e linhas de dimensão de tempo.
 
-1. Dependendo de como configurou o intervalo de data da tabela, você tem as opções a seguir para comparação:
+1. Dependendo de como você tiver definido o intervalo de datas da tabela, você terá estas opções para comparação:
 
    | Opção | Descrição |
    |---|---|
@@ -54,7 +54,7 @@ Agora é possível adicionar um período a cada coluna de uma tabela, permitindo
 
    ![](assets/add-time-period-column.png)
 
-1. Dependendo de como configurou o intervalo de data da tabela, você tem as opções a seguir para comparação:
+1. Dependendo de como você tiver definido o intervalo de datas da tabela, você terá estas opções para comparação:
 
    | Opção | Descrição |
    |---|---|

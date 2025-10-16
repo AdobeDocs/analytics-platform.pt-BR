@@ -114,7 +114,7 @@ Para criar o bloco de dados, selecione componentes do relatório e personalize o
 >[!MORELIKETHIS]
 >
 >[Selecione uma visualização de dados](select-data-view.md)
->&#x200B;>[Selecionar um intervalo de datas](select-date-range.md)
->&#x200B;>[Filtrar dimensões](filter-dimensions.md)
->&#x200B;>[Trabalhar com segmentos](work-with-filters.md)
+>>[Selecionar um intervalo de datas](select-date-range.md)
+>>[Filtrar dimensões](filter-dimensions.md)
+>>[Trabalhar com segmentos](work-with-filters.md)
 >

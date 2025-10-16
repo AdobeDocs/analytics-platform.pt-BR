@@ -26,7 +26,7 @@ ht-degree: 100%
 A análise ![FirstUse](/help/assets/icons/FirstUse.svg) **[!UICONTROL Impacto do primeiro uso]** mostra uma comparação do desempenho dos principais indicadores antes e depois de um usuário usar um recurso do produto pela primeira vez. O eixo horizontal desse relatório é um intervalo de tempo relativo antes e depois do evento, enquanto o eixo vertical mede os indicadores-chave desejados. Uma barra vertical no meio do gráfico representa o dia 0 em que um recurso é usado pela primeira vez por um determinado usuário. Como os usuários nem sempre adotam os recursos no mesmo dia e suas implementações podem ocorrer ao longo de vários dias, o dia 0 pode significar algo diferente para cada usuário.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3423500/?quality=12&learn=on&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3421661/?quality=12&learn=on)
 
 
 ## Casos de uso

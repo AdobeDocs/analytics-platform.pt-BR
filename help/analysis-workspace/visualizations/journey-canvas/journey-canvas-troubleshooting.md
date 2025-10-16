@@ -93,7 +93,7 @@ Os nós nesta jornada contêm as seguintes estatísticas quando o campo **[!UICO
 
 ![Jornada com nós com uma porcentagem maior do que o nó anterior](assets/journey-canvas-higher-percentage.png)
 
-| Nó | Estatísticas |
+| Nó | Estatisticas |
 |---------|----------|
 | Nó 1 - &quot;Visitar site&quot; | Nesta jornada, havia 354.147 eventos no site dentro do intervalo de datas do relatório, como mostrado no nó de início, &quot;Visita do site&quot; da jornada. |
 | Nó 2 - &quot;Exibir Produto A&quot; | Do número total de eventos exibidos no nó inicial, 14% (48.394) deles corresponderam aos critérios do segundo nó da jornada, &quot;Exibir produto A&quot;. |
@@ -107,7 +107,7 @@ Os nós nesta jornada contêm as seguintes estatísticas quando o campo **[!UICO
 
 ![Jornada com nós com uma porcentagem maior do que o nó anterior](assets/journey-canvas-percentage-previous.png)
 
-| Nó | Estatísticas |
+| Nó | Estatisticas |
 |---------|----------|
 | Nó 1 - &quot;Visitar site&quot; | Nesta jornada, havia 354.147 eventos no site dentro do intervalo de datas do relatório, como mostrado no nó de início, &quot;Visita do site&quot; da jornada. |
 | Nó 2 - &quot;Exibir Produto A&quot; | Do número total de eventos mostrados no nó anterior, 14% (48.394) deles corresponderam aos critérios do segundo nó da jornada, &quot;Exibir produto A&quot;. |
@@ -121,7 +121,7 @@ Os nós nesta jornada contêm as seguintes estatísticas quando o campo **[!UICO
 
 ![Jornada com nós com uma porcentagem maior do que o nó anterior](assets/journey-canvas-percentage-total.png)
 
-| Nó | Estatísticas |
+| Nó | Estatisticas |
 |---------|----------|
 | Nó 1 - &quot;Visitar site&quot; | Nesta jornada, havia 354.147 eventos no site dentro do intervalo de datas do relatório, como mostrado no nó de início, &quot;Visita do site&quot; da jornada. |
 | Nó 2 - &quot;Exibir Produto A&quot; | Do número total de eventos, menos de 1% (48.394) deles corresponderam aos critérios do segundo nó da jornada, &quot;Exibir produto A&quot;. |

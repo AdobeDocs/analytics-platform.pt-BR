@@ -98,7 +98,7 @@ Nos **[!UICONTROL Esquemas]** > **[!UICONTROL Dados de amostra do CSV - esquema 
 
   >[!NOTE]
   >
-  >O fluxo de trabalho define todos os campos no esquema como do tipo String. Não é possível alterar esse tipo em um estágio posterior. Se você precisar de mais flexibilidade na definição de um esquema ad hoc, considere [usar a API para criar um esquema ad hoc](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/tutorials/ad-hoc) e usar o fluxo de trabalho [Criar conjunto de dados a partir do esquema](https://experienceleague.adobe.com/pt-br/docs/experience-platform/catalog/datasets/user-guide#schema).
+  >O fluxo de trabalho define todos os campos no esquema como do tipo String. Não é possível alterar esse tipo em um estágio posterior. Se você precisar de mais flexibilidade na definição de um esquema ad hoc, considere [usar a API para criar um esquema ad hoc](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/tutorials/ad-hoc) e usar o fluxo de trabalho [Criar conjunto de dados a partir do esquema](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide#schema).
   > 
 
 
@@ -155,7 +155,7 @@ Consulte [Configurações do conjunto de dados ad hoc](/help/connections/create-
 
 >[!IMPORTANT]
 >
->Além da recomendação geral para não usar esquemas e conjuntos de dados ad hoc para dados de séries de tempo, você não pode usar o fluxo de trabalho **[!UICONTROL Criar conjunto de dados do CSV]** para dados de séries de tempo. Esse workflow define todos os campos como sendo do tipo String que você não pode modificar posteriormente. Quando você adiciona um conjunto de dados com base em séries de tempo (evento ou resumo) a uma conexão, esse tipo de conjunto de dados exige a definição de pelo menos um campo do tipo DateTime.<br/>Se você precisar usar dados de série temporal ad hoc, considere [usar a API para criar um esquema ad hoc](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/tutorials/ad-hoc#token_type=bearer&expires_in=43197438) e usar o fluxo de trabalho [Criar conjunto de dados a partir do esquema](https://experienceleague.adobe.com/pt-br/docs/experience-platform/catalog/datasets/user-guide#schema).
+>Além da recomendação geral para não usar esquemas e conjuntos de dados ad hoc para dados de séries de tempo, você não pode usar o fluxo de trabalho **[!UICONTROL Criar conjunto de dados do CSV]** para dados de séries de tempo. Esse workflow define todos os campos como sendo do tipo String que você não pode modificar posteriormente. Quando você adiciona um conjunto de dados com base em séries de tempo (evento ou resumo) a uma conexão, esse tipo de conjunto de dados exige a definição de pelo menos um campo do tipo DateTime.<br/>Se você precisar usar dados de série temporal ad hoc, considere [usar a API para criar um esquema ad hoc](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/ad-hoc#token_type=bearer&expires_in=43197438) e usar o fluxo de trabalho [Criar conjunto de dados a partir do esquema](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/user-guide#schema).
 
 
 Depois de criar uma [conexão](/help/connections/overview.md), você poderá executar várias tarefas de gerenciamento, como [selecionar e combinar conjuntos de dados](/help/connections/combined-dataset.md), [verificar o status dos conjuntos de dados de uma conexão e o status da assimilação de dados](/help/connections/manage-connections.md) e muito mais.

@@ -7,7 +7,7 @@ exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
 source-git-commit: 518bebc18611136873fce5c23dd7041afafe1220
 workflow-type: tm+mt
 source-wordcount: '454'
-ht-degree: 100%
+ht-degree: 88%
 
 ---
 
@@ -72,10 +72,10 @@ As configurações incluem:
 
 | Configuração | Descrição |
 |---|---|
-| Nome do projeto | O nome fornecido ao projeto. Você pode clicar duas vezes no nome para editá-lo. |
+| Nome do projeto | O nome dado ao projeto. Você pode clicar duas vezes no nome para editá-lo. |
 | Proprietário | Nome do(a) proprietário(a) do projeto. |
-| Última modificação | Data da última modificação do projeto. |
-| Tags | Lista qualquer tag aplicada a um projeto para classificar com mais facilidade. |
+| Última modificação | Data da última modificação no projeto. |
+| Tags | Lista as tags aplicadas a um projeto para facilitar a categorização. |
 | Descrição | Uma descrição é útil para esclarecer a finalidade de um projeto. Você pode clicar duas vezes na descrição para editá-la. |
 | Contar instâncias repetidas | Especifica se as instâncias repetidas são contadas nos relatórios. Observação: essa configuração não se aplica às visualizações de fluxo ou fallout. |
 | Mostrar anotações | Especifica se as anotações do projeto são exibidas ou não. |

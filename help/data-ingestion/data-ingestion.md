@@ -114,5 +114,5 @@ Consulte [Assimilar e usar dados ad hoc](./adhoc.md)
 
 >[!MORELIKETHIS]
 >
->Blog: [Análise detalhada do processamento e da assimilação de dados no Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-closer-look-at-data-processing-amp-ingestion-in-adobe-customer/ba-p/665091?profile.language=pt)
+>Blog: [Análise detalhada do processamento e da assimilação de dados no Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-closer-look-at-data-processing-amp-ingestion-in-adobe-customer/ba-p/665091)
 

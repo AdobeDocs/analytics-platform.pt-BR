@@ -7,7 +7,7 @@ role: User
 source-git-commit: 016bf917e3737f00364c531760722d9b0d6ec785
 workflow-type: tm+mt
 source-wordcount: '1759'
-ht-degree: 83%
+ht-degree: 79%
 
 ---
 
@@ -131,13 +131,13 @@ Suponhamos que você queira rastrear o caminho que os usuários percorreram para
 
 ## Configurar
 
-Um resumo da configuração de fluxo é exibido na parte superior das visualizações. Os caminhos no diagrama são proporcionais. Caminhos com maior atividade aparecem mais grossos.
+Um resumo da configuração de fluxo é exibido na parte superior das visualizações. Os caminhos no diagrama são proporcionais. Caminhos com mais atividade parecem mais grossos.
 
 ![Exemplo de saída de fluxo mostrando a configuração Termina com Visitas, Dimensão de definição de caminho: Página e Container de fluxo: visitantes.](assets/flow-output.png)
 
 Para detalhar ainda mais os dados, você tem várias opções:
 
-* O diagrama de fluxo é interativo. Passe o mouse sobre o diagrama para alterar os detalhes exibidos.
+* O diagrama de fluxo é interativo. Passe o mouse sobre o diagrama para alterar os detalhes mostrados.
 
 * Quando você seleciona um nó no diagrama, os detalhes dele são exibidos. Clique no nó novamente para recolhê-lo.
 
@@ -168,7 +168,7 @@ Use um menu de contexto em qualquer nó na visualização de fluxo com as seguin
 
 | Opção | Descrição |
 |--- |--- |
-| **[!UICONTROL Concentre-se neste nó]** | Altere o foco para o nó selecionado. O nó de foco é exibido no centro do diagrama de fluxo. |
+| **[!UICONTROL Concentre-se neste nó]** | Altere o foco para o nó selecionado. O nó de foco aparece no centro do diagrama de Fluxo. |
 | **[!UICONTROL Começar de novo]** | Retorna ao criador de diagrama de forma livre, no qual é possível criar um novo diagrama de fluxo. |
 | **[!UICONTROL Criar um segmento para este caminho]** | Criar um segmento. Essa seleção leva você ao Construtor de segmentos, onde é possível configurar o novo segmento. |
 | **[!UICONTROL Detalhamento]** | Detalhe o nó por Dimensões, Métricas ou Tempo disponíveis. |
@@ -176,8 +176,8 @@ Use um menu de contexto em qualquer nó na visualização de fluxo com as seguin
 | **[!UICONTROL Excluir item]** ou **[!UICONTROL Restaurar itens excluídos]** | Remove um nó específico da coluna e o cria automaticamente como filtro na parte superior da coluna. Para restaurar o item excluído, selecione **[!UICONTROL Restaurar item excluído]** no menu de contexto. você também pode abrir o segmento na parte superior da coluna e remover a caixa de seleção com o item que acabou de excluir. |
 | **[!UICONTROL Tendência]** | Crie um diagrama de tendências para o nó. |
 | **[!UICONTROL Mostrar próxima coluna]** / **[!UICONTROL Mostrar coluna anterior]** | Revela a próxima coluna (direita) ou a coluna anterior (esquerda) da visualização. |
-| **[!UICONTROL Ocultar coluna]**&#x200B;n | Oculta a coluna selecionada da visualização. |
-| **[!UICONTROL Expandir toda a coluna]** | Expanda uma coluna para exibir todos os nós. Por padrão, somente os cinco principais nós são exibidos. |
+| **[!UICONTROL Ocultar coluna]**n | Oculta a coluna selecionada da visualização. |
+| **[!UICONTROL Expandir toda a coluna]** | Expanda uma coluna para mostrar todos os nós. Por padrão, somente os cinco nós principais são exibidos. |
 | **[!UICONTROL Criar público-alvo a partir da seleção]** | Cria um público-alvo com base na coluna selecionada. |
 | **[!UICONTROL Recolher toda a coluna]** | Ocultar todos os nós em uma coluna. |
 
@@ -205,7 +205,7 @@ No exemplo abaixo, **todas** as ocorrências de *Categoria principal do produto*
 >[!MORELIKETHIS]
 >
 >[Adicionar uma visualização em um painel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->&#x200B;>[Configurações de visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->&#x200B;>[Menu de contexto da visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>>[Configurações de visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>>[Menu de contexto da visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
 

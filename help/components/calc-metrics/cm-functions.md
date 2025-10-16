@@ -6,8 +6,8 @@ exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
 role: User
 source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1868'
+ht-degree: 95%
 
 ---
 
@@ -24,7 +24,7 @@ O [Construtor de métricas calculadas](cm-workflow/cm-build-metrics.md) permite 
 
 ## Funções de tabela versus funções de linha
 
-Uma função de tabela exibe um resultado igual para cada linha da tabela. Uma função de linha exibe um resultado diferente para cada linha da tabela.
+Uma função de tabela é aquela em que a saída é a mesma para cada linha da tabela. Uma função de linha é aquela em que a saída é diferente para cada linha da tabela.
 
 Quando aplicável e relevante, uma função é anotada com o tipo de função: [!BADGE Tabela]{type="Neutral"} ou [!BADGE Linha]{type="Neutral"}
 
@@ -499,7 +499,7 @@ Para calcular uma variação, considere uma coluna inteira de números. Nessa li
 
 1. Adicione-o ao total.
 
-Quando você iterar por toda a coluna, terá um total único. Depois, divida o total pelo número de itens na coluna. Esse número é a variação da coluna. É um número único. No entanto, é exibido como uma coluna de números.
+Quando você iterar por toda a coluna, terá um total único. Em seguida, você divide esse total pelo número de itens na coluna. Esse número é a variação da coluna. É um único número. No entanto, é exibido como uma coluna de números.
 
 No exemplo da seguinte coluna de três itens:
 

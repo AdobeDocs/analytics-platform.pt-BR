@@ -216,7 +216,7 @@ Os seguintes grupos de rótulos de contexto estão disponíveis, cada um com uma
 
 +++
 
-+++ Geografia 
++++ Geográfico
 
 | Nome | Descrição |
 |------|-------------|
@@ -295,7 +295,7 @@ Os seguintes grupos de rótulos de contexto estão disponíveis, cada um com uma
 
 | Nome | Descrição |
 |------|-------------|
-| Tempo médio da página | Tempo médio da página. |
+| Tempo médio de página | Tempo médio da página. |
 | Rejeições | Devoluções. |
 | Página de entrada | Página de entrada. |
 | Página de saída | Página de saída. |
@@ -351,7 +351,7 @@ Os seguintes grupos de rótulos de contexto estão disponíveis, cada um com uma
 | Cenas do ativo | Cenas de ativos. |
 | Origem do ativo | Source de ativos. |
 | Tags do ativo | Tags de ativos. |
-| Tipo de ativo | Tipo de ativo. |
+| Tipo do ativo | Tipo de ativo. |
 | Visualizações do ativo | Exibições de ativos. |
 | Distribuição da atenção visual do ativo | Difusão da atenção visual do ativo. |
 | Densidade do conteúdo visual do ativo | Densidade de conteúdo visual do ativo. |

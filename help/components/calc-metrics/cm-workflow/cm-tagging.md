@@ -1,12 +1,12 @@
 ---
 description: Saiba como marcar métricas calculadas para organizar suas métricas calculadas.
-title: Adicionar tags a métricas calculadas
+title: Marcar métricas calculadas
 feature: Calculated Metrics
 exl-id: 25c9299b-34ae-475f-8e7f-5cc8540dab8a
 source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '170'
-ht-degree: 5%
+ht-degree: 4%
 
 ---
 

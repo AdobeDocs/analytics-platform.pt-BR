@@ -233,7 +233,7 @@ Para configurar seu armazenamento de dados:
 
 O conjunto de dados agora está configurado para encaminhar os dados coletados de seu site para seu conjunto de dados na Adobe Experience Platform.
 
-Consulte [Visão geral dos conjuntos de dados](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=pt-BR) para obter mais informações sobre como configurar um conjunto de dados e como lidar com dados confidenciais.
+Consulte [Visão geral dos conjuntos de dados](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html) para obter mais informações sobre como configurar um conjunto de dados e como lidar com dados confidenciais.
 
 
 
@@ -249,7 +249,7 @@ Para implementar o código em seu site para realmente coletar dados, use o recur
 
    Nomeie a tag, selecione **[!UICONTROL Web]** e insira um nome de domínio. Selecione **[!UICONTROL Salvar]** para continuar.
 
-   ![Criar uma propriedade da &#x200B;](./assets/create-property.png)
+   ![Criar uma propriedade da ](./assets/create-property.png)
 
 ### Configurar sua tag
 
@@ -278,7 +278,7 @@ Para criar e configurar a extensão do SDK da Web da Adobe Experience Platform:
 
    Selecione **[!UICONTROL Salvar]**.
 
-Consulte [Configurar a extensão do SDK da Web da Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration.html?lang=pt-BR) para obter mais informações.
+Consulte [Configurar a extensão do SDK da Web da Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration.html) para obter mais informações.
 
 O SDK da web inclui o [!UICONTROL Serviço de ID da Adobe Experience Cloud] nativamente; portanto, não é necessário adicionar a extensão do serviço de ID à sua tag.
 

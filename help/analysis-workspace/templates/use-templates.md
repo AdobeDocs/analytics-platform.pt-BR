@@ -7,7 +7,7 @@ exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
 source-git-commit: e8cba64e706a456861fd8392ce9260b7a1c4636b
 workflow-type: tm+mt
 source-wordcount: '20424'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -15,15 +15,15 @@ ht-degree: 100%
 
 Os modelos (ou modelos da empresa) do Analysis Workspace fornecem insights rápidos sobre os casos de relatórios mais comuns. Confira abaixo alguns exemplos de perguntas às quais você pode responder com modelos:
 
-* Quantas pessoas visitam o seu site
-* Quantos desses visitantes são visitantes únicos (contados somente uma vez)
-* Como eles chegaram até o site (se os visitantes seguiram um link ou chegaram diretamente ao site)
-* Quais palavras-chave os visitantes usaram para pesquisar pelo conteúdo do site
-* Por quanto tempo os visitantes permaneceram em uma página específica ou no site
-* Em quais links o visitante clicou e quando ele deixou o site
-* Quais canais de marketing são os mais eficazes na geração de receita ou eventos de conversão
-* Quanto tempo foi utilizado ao assistir a um vídeo
-* Quais navegadores e dispositivos eles utilizaram para visitar seu site
+* Quantas pessoas visitam seu site
+* Quantos desses visitantes são visitantes únicos (contados apenas uma vez)
+* Como eles chegaram ao site (como se eles seguissem um link ou chegassem lá diretamente)
+* Quais palavras-chave os visitantes usaram para pesquisar o conteúdo do site
+* Por quanto tempo os visitantes permaneceram em uma determinada página ou em todo o site
+* Quais links os visitantes clicaram e quando saíram do site
+* Quais canais de marketing são mais eficazes para gerar receita ou eventos de conversão
+* Quanto tempo eles gastaram assistindo a um vídeo
+* Quais navegadores e dispositivos eles usaram para visitar seu site
 
 As informações a seguir descrevem como acessar e utilizar modelos a partir da guia [!UICONTROL Modelos] do Analysis Workspace.
 

@@ -30,7 +30,7 @@ A análise de ![Retention](/help/assets/icons/Retention.svg) **[!UICONTROL Reten
 
 Nesta análise, o eixo X do gráfico representa o tempo decorrido desde o evento de início de um usuário, e o eixo Y representa a porcentagem de usuários que interagem com um ou mais eventos de retorno. É possível visualizar a retenção e o abandono entre durações, e as durações exibidas podem ser personalizadas por meio das configurações de consulta. Abaixo do gráfico, uma tabela fornece dados agregados com a opção de mostrar coortes individuais, que são um grupo de pessoas que realizaram o evento de início na mesma data.
 
->[!VIDEO](https://video.tv.adobe.com/v/3435783/?quality=12&learn=on&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3430503/?quality=12&learn=on)
 
 
 ## Casos de uso

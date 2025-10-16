@@ -18,7 +18,7 @@ O depurador de projetos ajuda você e o Suporte da Adobe a solucionar problemas 
 
 >[!NOTE]
 >
->Para usar o depurador, você deve ter acesso de **Edição** ou **Cópia** [ao projeto](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-25744).
+>Para usar o depurador, você deve ter acesso de **Edição** ou **Cópia** [ao projeto](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25744).
 >
 
 

@@ -16,7 +16,7 @@ ht-degree: 89%
 
 O Workspace oferece várias visualizações que permitem criar representações visuais dos seus dados. Como gráficos de barras, gráficos de rosca, histogramas, gráficos de linhas, mapas, gráficos de dispersão, entre outros.
 
-## Tipos
+##  Tipos
 
 Os seguintes tipos de visualização estão disponíveis no Analysis Workspace:
 
@@ -93,7 +93,7 @@ Além disso, é possível renomear rótulos de legenda para ajudá-lo a tornar a
 
 Para editar um rótulo de legenda:
 
-1. Clique com o botão direito do mouse em uma das etiquetas de legenda.
+1. Clique com o botão direito do mouse em um dos rótulos de legenda.
 1. Clique em **[!UICONTROL Editar rótulo]**.
 
    ![Um rótulo de legenda e a opção “Editar rótulo”.](assets/edit-label.png)

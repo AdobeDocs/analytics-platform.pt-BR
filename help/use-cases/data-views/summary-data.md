@@ -322,7 +322,7 @@ Para adicionar um grupo de campos contendo os campos dos dados de amostra:
    |---|---|---|---|
    | `ad_group` | `ad_group` | String | Exemplo de dados de resumo |
    | `campaign_name` | `campaign_name` | String | Exemplo de dados de resumo |
-   | `cost` | `cost` | Dupla | Exemplo de dados de resumo |
+   | `cost` | `cost` | Duplo | Exemplo de dados de resumo |
    | `impression` | `impression` | Número inteiro | Exemplo de dados de resumo |
    | `network` | `network` | String | Exemplo de dados de resumo |
 
@@ -458,10 +458,10 @@ Para garantir que você possa relatar os dados corretos no Workspace, é necess�
 
          | Nome do componente | Conjunto de dados | Tipo de dados de esquema | Caminho do esquema |
          |---|---|---|---|
-         | Custo | Exemplo de conjunto de dados de resumo | Dupla | *_locatário*.custo |
+         | Custo | Exemplo de conjunto de dados de resumo | Duplo | *_locatário*.custo |
          | Impressões | Exemplo de conjunto de dados de resumo | Número inteiro | *_tenant*.impression |
          | Pedidos | Exemplo de conjunto de dados de evento | Número inteiro | *_locatário*.pedidos |
-         | Receita | Exemplo de conjunto de dados de evento | Dupla | *_locatário*.valor_de_receita |
+         | Receita | Exemplo de conjunto de dados de evento | Duplo | *_locatário*.valor_de_receita |
 
          **Dimensões**
 
@@ -565,7 +565,7 @@ Você deseja usar o potencial de criar relatórios sobre dados de resumo e gerar
    1. Especifique `Cost per Impression` para o **[!UICONTROL Nome]**.
    1. Selecione **[!UICONTROL Moeda]** para **[!UICONTROL Formato]**.
    1. Especifique `4` para **[!UICONTROL Casas decimais]**.
-   1. Use ![Evento](/help/assets/icons/Event.svg) **[!UICONTROL Custo (Resumo)]** **&#x200B;**&#x200B;**[!UICONTROL Impressões (Resumo)]** como **[!UICONTROL Definição]**.
+   1. Use ![Evento](/help/assets/icons/Event.svg) **[!UICONTROL Custo (Resumo)]** **** **[!UICONTROL Impressões (Resumo)]** como **[!UICONTROL Definição]**.
    1. Selecione **[!UICONTROL Salvar]**.
 1. Selecione ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** para adicionar outra métrica calculada nova.
    1. Especifique `Return on Ad Spend` para o **[!UICONTROL Nome]**.
@@ -603,4 +603,4 @@ O projeto final deve ser semelhante ao mostrado abaixo.
 >[!MORELIKETHIS]
 >
 >[Dados de resumo](/help/data-views/summary-data.md)
->&#x200B;>[Configurações do componente do grupo de dados de resumo](/help/data-views/component-settings/summary-data-group.md)
+>>[Configurações do componente do grupo de dados de resumo](/help/data-views/component-settings/summary-data-group.md)

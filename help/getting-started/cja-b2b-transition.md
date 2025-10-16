@@ -1,5 +1,5 @@
 ---
-title: 'Guia de transição '
+title: Guia de transição
 description: Saiba como fazer a transição do Customer Journey Analytics para o Customer Journey Analytics B2B edition
 solution: Customer Journey Analytics
 feature: Basics
@@ -9,7 +9,7 @@ exl-id: d0e6398b-8080-4e36-b178-0cb91945d0c5
 source-git-commit: 3c13ae26a9ef48454467fc21b8faaa9e078c7f9f
 workflow-type: tm+mt
 source-wordcount: '516'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 

@@ -7,7 +7,7 @@ role: User
 source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
 workflow-type: tm+mt
 source-wordcount: '1474'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -33,7 +33,7 @@ Utilize o [Gerenciador de segmentos](seg-manage.md) para gerenciá-los.
 O planejamento adequado dos segmentos (especialmente como admin) aumenta as chances de que eles sejam usados. Considere o seguinte ao planejar segmentos:
 
 - **Público-alvo**: quem usará os segmentos? Forneça uma boa descrição do segmento para que o público-alvo o entenda:
-   - Para o que este segmento serve?
+   - Para que esse segmento é útil?
 
    - Quando devo usar este segmento?
 

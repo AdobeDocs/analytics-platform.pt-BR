@@ -7,7 +7,7 @@ exl-id: 47a3523b-d9eb-4272-84b8-090b921cba13
 source-git-commit: b70409de112ba8247df8fc6f74f20a9370cda1e1
 workflow-type: tm+mt
 source-wordcount: '462'
-ht-degree: 86%
+ht-degree: 81%
 
 ---
 
@@ -32,7 +32,7 @@ O Adobe Analytics aprimora a atribuição ao permitir:
 
 * Definir a atribuição além da mídia paga: qualquer dimensão, métrica, canal ou evento pode ser aplicado a modelos (por exemplo: pesquisa interna), não apenas campanhas de marketing.
 * Use comparação ilimitada de modelos de atribuição: compare dinamicamente quantos modelos desejar.
-* Evitar alterações de implementação: com processamento de tempo de relatório e sessões contextuais, o contexto da jornada do cliente pode ser incorporado e aplicado no tempo de execução.
+* Evite alterações na implementação: com o processamento de tempo do relatório e sessões sensíveis ao contexto, o contexto da jornada do cliente pode ser incorporado e aplicado no tempo de execução.
 * Criar a sessão que melhor corresponde ao seu cenário de atribuição.
 * Detalhar atribuições por segmentos: compare facilmente o desempenho dos canais de marketing em segmentos importantes (por exemplo: novos clientes e clientes recorrentes, produto X e produto Y, nível de fidelidade ou CLV).
 * Inspecionar canais cruzados e análises de multitoque: usando diagramas e histogramas de Venn e resultados de atribuição de tendência.
@@ -53,28 +53,28 @@ A atribuição compreende os seguintes recursos:
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Atribuição em tabelas de forma livre](https://video.tv.adobe.com/v/33016?quality=12&learn=on&captions=por_br){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Atribuição em tabelas de forma livre](https://video.tv.adobe.com/v/23136?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Atribuição em métricas calculadas](https://video.tv.adobe.com/v/30759?quality=12&learn=on&captions=por_br){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Atribuição em métricas calculadas](https://video.tv.adobe.com/v/23140?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Usando o painel Atribuição](https://video.tv.adobe.com/v/33012?quality=12&learn=on&captions=por_br){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Usando o painel Atribuição](https://video.tv.adobe.com/v/23139?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Adicionando comparações lado a lado de modelos de atribuição](https://video.tv.adobe.com/v/327798?quality=12&learn=on&captions=por_br){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Adicionando comparações lado a lado de modelos de atribuição](https://video.tv.adobe.com/v/23651?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 

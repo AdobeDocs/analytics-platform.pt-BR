@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: aaf23560b69c90fdbaee3fa401b5fe58e6a4e5d1
 workflow-type: tm+mt
 source-wordcount: '946'
-ht-degree: 33%
+ht-degree: 32%
 
 ---
 
@@ -42,7 +42,7 @@ Considere o exemplo a seguir. Você tem dois conjuntos de dados de eventos, cada
 | --- | --- | --- | --- | ---: |
 | user_847 | 2 Jan 12:26 PM | Amarelo | Círculo | 8,5 |
 | user_847 | 2 Jan 1:01 PM | Vermelho | | |
-| alternateid_656 | 2 Jan 8:58 PM | Vermelho | Quadrado | 4.2 |
+| alternateid_656 | 2 Jan 8:58 PM | Vermelho | Quadrado | 4,2 |
 | alternateid_656 | 2 Jan 9:03 PM | | Triângulo | 3,1 |
 
 Ao criar uma conexão usando esses dois conjuntos de dados de eventos e tiver identificado
@@ -61,7 +61,7 @@ o conjunto de dados combinado a seguir é usado para os relatórios.
 | user_847 | 2 Jan 12:31 PM | | Tartaruga | | 4 | |
 | user_847 | 2 Jan 12:44 PM | | | | 2 | |
 | user_847 | 2 Jan 1:01 PM | Vermelho | | | | |
-| alternateid_656 | 2 Jan 8:58 PM | Vermelho | | Quadrado | | 4.2 |
+| alternateid_656 | 2 Jan 8:58 PM | Vermelho | | Quadrado | | 4,2 |
 | alternateid_656 | 2 Jan 9:03 PM | | | Triângulo | | 3,1 |
 
 Para ilustrar a importância dos caminhos de esquema, considere este cenário. No primeiro conjunto de dados, `string_color` é baseado no caminho de esquema `_experience.whatever.string_color` e no segundo conjunto de dados no caminho de esquema `_experience.somethingelse.string_color`. Neste cenário, os dados são **não** mesclados em uma coluna no conjunto de dados combinado resultante. Em vez disso, o resultado é duas colunas `string_color` no conjunto de dados combinado:
@@ -75,7 +75,7 @@ Para ilustrar a importância dos caminhos de esquema, considere este cenário. N
 | user_847 | 2 Jan 12:31 PM | | | Tartaruga |  | 4 | |
 | user_847 | 2 Jan 12:44 PM | | | | | 2 | |
 | user_847 | 2 Jan 1:01 PM | | Vermelho | | | | |
-| alternateid_656 | 2 Jan 8:58 PM | | Vermelho | | Quadrado | | 4.2 |
+| alternateid_656 | 2 Jan 8:58 PM | | Vermelho | | Quadrado | | 4,2 |
 | alternateid_656 | 2 Jan 9:03 PM | | | | Triângulo | | 3,1 |
 
 Esse conjunto de dados combinados de eventos é o que é usado nos relatórios. Não importa de que conjunto de dados uma linha é derivada. O Customer Journey Analytics trata todos os dados como se estivessem no mesmo conjunto de dados. Se uma ID de pessoa correspondente for exibida em ambos os conjuntos de dados, eles serão considerados a mesma pessoa única. Se uma ID de pessoa correspondente for exibida em ambos os conjuntos de dados com um carimbo de data e hora em 30 minutos, ela será considerada parte da mesma sessão. Os campos com caminhos de esquema idênticos são mesclados.

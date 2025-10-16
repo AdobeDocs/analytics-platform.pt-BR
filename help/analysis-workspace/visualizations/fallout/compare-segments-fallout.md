@@ -8,7 +8,7 @@ role: User
 source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
 source-wordcount: '468'
-ht-degree: 34%
+ht-degree: 23%
 
 ---
 
@@ -25,7 +25,7 @@ Você pode criar segmentos a partir de um ponto de contato, adicionar segmentos 
 >* Usar um segmento baseado em sessão como um ponto de contato dentro de uma visualização de Fallout de contexto de sessão.
 
 <!-- Should we add B2B context here?
-* [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} Usimg a B2B container based segment as a touchpoint inside a non-container based context Fallout visualization.
+* [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} Usimg a B2B container based segment as a touchpoint inside a non-container based context Fallout visualization.
 * -->
 
 ## Criar um segmento a partir de um ponto de contato
@@ -48,7 +48,7 @@ Se quiser ver, por exemplo, a tendência dos seus usuários dos EUA e como eles 
 
 ![O segmento Usuários dos EUA foi selecionado e destacado para arrastar até o fallout.](assets/fallout-addfilter.png)
 
-Ou, você pode criar um ponto de contato AND, arrastando o segmento de usuários dos EUA ao outro ponto de verificação.
+Ou você pode criar um ponto de contato AND arrastando o segmento de usuários dos EUA para outro ponto de verificação.
 
 ## Comparar segmentos no fallout
 

@@ -7,7 +7,7 @@ role: User
 source-git-commit: 639c3d3c349615078c76f8806bcd5bb458b0f6f2
 workflow-type: tm+mt
 source-wordcount: '509'
-ht-degree: 99%
+ht-degree: 69%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 99%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta as visualizações de número do resumo e alteração do resumo no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consulte [Número do resumo e alteração do resumo](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/summary-number-change) para saber a versão do_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
+_Este artigo documenta as visualizações de número do resumo e alteração do resumo no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consulte [Número do resumo e alteração do resumo](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/summary-number-change) para saber a versão do_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 
@@ -38,10 +38,10 @@ Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualizaç
 
 Use a visualização de  ![Summarize](/help/assets/icons/123.svg) **[!UICONTROL Número do resumo]** para realçar um número grande que é importante em um projeto. Essa visualização comporta-se das seguintes maneiras, usando a fonte de dados associada:
 
-* Seleciona o total da coluna caso nenhuma célula esteja selecionada.
-* Se alguma célula estiver selecionada, mostra o resumo dessa célula.
-* Se mais de uma célula estiver selecionada, mostra a primeira célula selecionada.
-* Se a coluna estiver selecionada, escolhe o primeiro valor de célula na coluna.
+* Seleciona o total da coluna se nenhuma célula for selecionada.
+* Se uma única célula for selecionada, ela mostrará o resumo dessa célula.
+* Se mais de uma célula for selecionada, ela mostrará a primeira célula selecionada.
+* Se a coluna for selecionada, ela escolherá o primeiro valor de célula na coluna.
 
 ![Visualização de número do resumo](asses/../assets/summary-number.png)
 
@@ -64,20 +64,20 @@ Como parte das configurações de visualização, opções específicas de núme
 <!-- markdownlint-enable MD034 -->
 
 
-Use a visualização de ![MoveUpDown](/help/assets/icons/MoveUpDown.svg) **[!UICONTROL Alteração do resumo]** para mostrar o delta (alteração) entre dois números. <!-- This is applicable for AA, not CJA: The green and red color of the Summary Change can be controlled through [custom event polarity](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/success-event.html?lang=pt-BR) or a calculated metric's [Show Upward Trend As](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html?lang=pt-BR) option.-->
+Use a visualização de ![MoveUpDown](/help/assets/icons/MoveUpDown.svg) **[!UICONTROL Alteração do resumo]** para mostrar o delta (alteração) entre dois números. <!-- This is applicable for AA, not CJA: The green and red color of the Summary Change can be controlled through [custom event polarity](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/success-event.html) or a calculated metric's [Show Upward Trend As](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html) option.-->
 
 <!--
-The green and red color of the Summary Change can be controlled through [custom event polarity](https://experienceleague.adobe.com/docs/analytics/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/success-event.md) or a calculated metric's [Show Upward Trend As](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html?lang=pt-BR) option.
+The green and red color of the Summary Change can be controlled through [custom event polarity](https://experienceleague.adobe.com/docs/analytics/admin/admin/c-manage-report-suites/c-edit-report-suites/conversion-var-admin/c-success-events/success-event.md) or a calculated metric's [Show Upward Trend As](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/calcmetric-workflow/cm-build-metrics.html) option.
 -->
 
 Essa visualização se comporta das seguintes maneiras:
 
-* Se nenhuma célula estiver selecionada, compara os dois primeiros valores de célula na coluna.
-* Se uma célula estiver selecionada, exibe 0, pois compara o valor da célula a ele mesmo.
-* Se duas células estiverem selecionadas, a primeira célula selecionada é tomada como o numerador e a segunda como o denominador.
-* Se mais de duas células estiverem selecionadas, considera apenas as duas primeiras para comparação.
-* Se um intervalo de células estiver selecionado, compara a primeira com a última célula selecionada no intervalo.
-* Se a coluna estiver selecionada, compara o primeiro valor a si mesmo, mostrando uma alteração de 0.
+* Se nenhuma célula for selecionada, ela comparará os dois primeiros valores da célula na coluna.
+* Se uma célula for selecionada, ela mostrará 0, porque compara o valor da célula a si mesma.
+* Se forem selecionadas duas células, toma-se a primeira célula selecionada como numerador e a segunda como denominador.
+* Se mais de duas células forem selecionadas, ele só considerará as duas primeiras para comparação.
+* Se um intervalo de células for selecionado, ele compara a primeira às últimas células selecionadas no intervalo.
+* Se a coluna for selecionada, ela comparará o primeiro valor a si mesma, o que mostra uma alteração de 0.
 
 
 ![Visualização de alteração do resumo, mostrando o delta entre dois números.](assets/summary-change.png)
@@ -94,6 +94,6 @@ Como parte das configurações de visualização, existem **[!UICONTROL Opções
 >[!MORELIKETHIS]
 >
 >[Adicionar uma visualização a um painel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->&#x200B;>[Configurações de visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->&#x200B;>[Menu de contexto da visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>>[Configurações de visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>>[Menu de contexto da visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >

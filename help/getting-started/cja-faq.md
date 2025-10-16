@@ -8,7 +8,7 @@ role: User
 source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
 workflow-type: tm+mt
 source-wordcount: '2580'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -242,7 +242,7 @@ Leia mais sobre as [implicações da exclusão de conjuntos de dados e conexões
 
 A Adobe Experience Cloud usa a Coleta de Dados Regionais (RDC) para que as interações entre seus visitantes e as soluções da Adobe e de terceiros ocorram o mais próximo possível de seus visitantes. Depois que os dados são coletados regionalmente em um Centro de Coleta de Dados (DCC, também conhecido como local da borda, parte da rede de borda da Platform), eles são encaminhados por uma conexão segura para as soluções relevantes com base na configuração do fluxo de dados e/ou encaminhamento de eventos.
 
-![Fluxo de dados usando redes de borda](https://experienceleague.adobe.com/docs/experience-platform/assets/collection.png?lang=pt-BR)
+![Fluxo de dados usando redes de borda](https://experienceleague.adobe.com/docs/experience-platform/assets/collection.png)
 
 O processo de coleta de dados regionais usa as seguintes etapas:
 
@@ -258,7 +258,7 @@ O uso da coleta de dados regionais oferece vários benefícios:
 Atualmente, a RDC inclui as seguintes localidades (sujeito a mudança):
 
 
-| Tipo da RDC | Centros de coleta de dados |
+| Tipo de RDC | Centros de coleta de dados |
 | --- | --- |
 | Global (Padrão) | Oregon, Virgínia, Irlanda, Paris, Mumbai, Singapura, Tóquio, Sydney |
 | Somente Américas | Oregon, Virgínia |

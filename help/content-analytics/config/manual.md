@@ -31,7 +31,7 @@ Para iniciar a coleção de dados para uma configuração implementada do Conten
 
 Para parar a coleção de dados de uma configuração implementada do Content Analytics:
 
-1. Remova o [código incorporado](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/publish/environments/environments) no elemento `<head>` das páginas no seu ambiente de desenvolvimento, preparação ou produção, sujeito ao Content Analytics.
+1. Remova o [código incorporado](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/publish/environments/environments) no elemento `<head>` das páginas no seu ambiente de desenvolvimento, preparação ou produção, sujeito à Análise de conteúdo.
 1. [Exclua](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/publish/overview) a propriedade Tags associada da configuração do Content Analytics.
 
 

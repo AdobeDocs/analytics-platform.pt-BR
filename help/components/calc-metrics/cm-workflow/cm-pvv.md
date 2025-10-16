@@ -6,7 +6,7 @@ exl-id: 2d1c4677-b07c-4eca-97b7-e5e4594daee1
 source-git-commit: 1b6e1d432bfe4b0574b8ee68bcfa940941f3c36f
 workflow-type: tm+mt
 source-wordcount: '223'
-ht-degree: 17%
+ht-degree: 10%
 
 ---
 
@@ -18,7 +18,7 @@ As informações a seguir explicam como criar uma métrica simples de *Exibiçõ
 1. Nomeie a métrica `Page Views per Session` ou algo semelhante.
 1. Forneça à métrica uma **[!UICONTROL Descrição]** simples para mostrar para que a métrica é usada.
 1. Selecione o **[!UICONTROL Formato]** correto. Para este exemplo, escolha **[!UICONTROL Decimal]**.
-1. Decida quantas casas decimais o relatório deve exibir.
+1. Decida quantas casas decimais você deseja que o relatório mostre.
 1. No menu suspenso **[!UICONTROL Mostrar tendência ascendente como]**, selecione ▲ **[!UICONTROL Bom (Verde)]**.
 1. Adicione uma **[!UICONTROL tag]** para organizar suas métricas.
 1. Para esta métrica calculada, arraste primeiro as **[!UICONTROL Exibições de página]** dos componentes de **[!UICONTROL Métricas]** para a seção **[!UICONTROL Definição]** da tela.

@@ -7,7 +7,7 @@ role: User
 source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
 workflow-type: tm+mt
 source-wordcount: '719'
-ht-degree: 94%
+ht-degree: 91%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 94%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta a tabela de coorte no_ ![Customer Journey Analytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consulte a [tabela de coorte](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis) para a versão do_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
+_Este artigo documenta a tabela de coorte no_ ![Customer Journey Analytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consulte a [tabela de coorte](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/cohort-table/cohort-analysis) para a versão do_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 
@@ -45,8 +45,8 @@ Após criar um relatório de coorte, você pode preparar seus componentes (dimen
 
 Exemplos do que é possível fazer com uma [!UICONTROL tabela de coorte]:
 
-* Lançar campanhas projetadas para estimular uma ação desejada.
-* Deslocar o orçamento de marketing no momento certo do ciclo de vida do cliente.
+* Inicie campanhas projetadas para estimular uma ação desejada.
+* Mudar o orçamento de marketing no momento exato do ciclo de vida do cliente.
 * Reconhecer quando finalizar uma avaliação ou uma oferta para maximizar o valor.
 * Obter ideias para o teste A/B em áreas como o estabelecimento de preços, o caminho de atualização, etc.
 
@@ -55,7 +55,7 @@ A [!UICONTROL tabela de coorte] está disponível a todos os clientes do Custome
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Análise de coorte no Analysis Workspace](https://video.tv.adobe.com/v/3430078/?quality=12&learn=on&captions=por_br){target="_blank"} para assistir a um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Análise de coorte no Analysis Workspace](https://video.tv.adobe.com/v/23990/?quality=12&learn=on){target="_blank"} para assistir a um vídeo de demonstração.
 
 {{videoaa}}
 

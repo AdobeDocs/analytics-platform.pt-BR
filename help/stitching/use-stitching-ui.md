@@ -10,7 +10,7 @@ exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
 source-git-commit: c4aea74807be15af56413522d9e6fbf5f18a37a0
 workflow-type: tm+mt
 source-wordcount: '368'
-ht-degree: 3%
+ht-degree: 1%
 
 ---
 
@@ -32,14 +32,14 @@ Para habilitar a compilação, na seção de conjunto de dados do evento da caix
 
 1. Selecione uma ID persistente no menu suspenso **[!UICONTROL ID persistente]**.
 
-   Se você selecionar **[!UICONTROL Mapa de identidade]** para a ID persistente, será necessário selecionar um namespace. Existem duas opções:
+   Se você selecionar **[!UICONTROL Mapa de identidade]** para a ID persistente, será necessário selecionar um namespace. Você tem duas opções:
 
    * Habilitar **[!UICONTROL Usar namespace de identidade primário]** para usar o namespace de identidade primário.
    * Selecione um namespace no menu suspenso **[!UICONTROL Namespace]**.
 
 1. Selecione uma ID de pessoa no menu suspenso **[!UICONTROL ID de pessoa]**.
 
-   Se você selecionar **[!UICONTROL Mapa de identidade]** para a ID de pessoa, será necessário selecionar um namespace. Existem duas opções:
+   Se você selecionar **[!UICONTROL Mapa de identidade]** para a ID de pessoa, será necessário selecionar um namespace. Você tem duas opções:
 
    * Habilitar **[!UICONTROL Usar namespace de identidade primário]** para usar o namespace de identidade primário.
    * Selecione um namespace no menu suspenso **[!UICONTROL Namespace]**.

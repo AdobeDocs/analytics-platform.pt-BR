@@ -7,7 +7,7 @@ role: User
 source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
 workflow-type: tm+mt
 source-wordcount: '225'
-ht-degree: 7%
+ht-degree: 0%
 
 ---
 
@@ -19,7 +19,7 @@ Por exemplo, além de uma dimensão Página, é possível adicionar outros itens
 
 ![O modo de exibição Todas as Visitas mostrando várias dimensões como pontos de contato.](assets/fallout-otherdimension.png)
 
-O fallout é atualizado de forma dinâmica e permite ver os fallouts em várias dimensões.
+O fallout é atualizado dinamicamente e permite visualizar o fallout em várias dimensões.
 
 Você também pode adicionar métricas. Por exemplo, você pode adicionar a métrica Chamada para mostrar apenas caminhos para usuários para os quais existem chamadas e que entraram em contato com a central de atendimento:
 
