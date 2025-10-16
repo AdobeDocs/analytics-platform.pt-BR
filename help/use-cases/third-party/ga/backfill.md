@@ -83,7 +83,7 @@ Na Google Cloud Platform, navegue até **Exportar > Exportar para o GCS**. Quand
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Importar dados do Google Analytics para o Adobe Experience Platform](https://video.tv.adobe.com/v/332676?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Importar dados do Google Analytics para o Adobe Experience Platform](https://video.tv.adobe.com/v/3437171?captions=por_br&quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 

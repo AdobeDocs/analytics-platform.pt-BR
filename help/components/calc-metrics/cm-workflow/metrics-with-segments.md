@@ -90,7 +90,7 @@ Repita as etapas acima para a versão internacional da sua métrica calculada.
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Usar uma métrica calculada segmentada como uma métrica sem implementação](https://video.tv.adobe.com/v/25407?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Usar uma métrica calculada segmentada como uma métrica sem implementação](https://video.tv.adobe.com/v/32608?captions=por_br&quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
 
 {{videoaa}}
 
