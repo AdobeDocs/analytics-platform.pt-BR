@@ -337,7 +337,7 @@ Na interface da Experience Platform:
    1. (opcional) Insira uma **[!UICONTROL Descrição]**.
    1. Selecione **[!UICONTROL Concluir]**.
 1. Configure seu esquema para conter um grupo de campos personalizado (chamado, por exemplo, **[!UICONTROL Associação de público-alvo]**) que contém dois campos chamados **[!UICONTROL audienceMembershipId]** e **[!UICONTROL audienceMembershipName]**.
-1. Verifique se o campo **[!UICONTROL personID]** é uma **[!UICONTROL Identidade]**, **[!UICONTROL Identidade primária]** e se tem **[!UICONTROL Email]** como o I**[!UICONTROL namespace de identidade]**.
+1. Verifique se o campo **[!UICONTROL personID]** é uma **[!UICONTROL Identidade]**, **[!UICONTROL Identidade primária]** e se tem **[!UICONTROL Email]** como o I&#x200B;**[!UICONTROL namespace de identidade]**.
 
    ![Segmento para exportação](assets/segment-for-export.png)
 
