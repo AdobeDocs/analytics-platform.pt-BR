@@ -29,7 +29,7 @@ A análise da ![Timeline](/help/assets/icons/Timeline.svg) **[!UICONTROL Linha d
 >[!NOTE]
 >
 >A análise da [!UICONTROL Linha do Tempo] exige que o componente padrão **[!UICONTROL ID de pessoa]** esteja disponível na [visualização de dados](/help/data-views/component-reference.md#optional). A inclusão do ID de pessoa em uma visualização de dados é gerenciada pelo administrador do Customer Journey Analytics, fornecendo à sua organização controle total da privacidade sobre quem pode acessar esses dados.
->><br/>Se uma visualização de dados não tiver o componente [!UICONTROL ID de pessoa] adicionado, a seguinte mensagem será exibida:
+><br/>Se uma visualização de dados não tiver o componente [!UICONTROL ID de pessoa] adicionado, a seguinte mensagem será exibida:
 >
 >* **Administradores**: *a propriedade PersonID é necessária para esta análise. Adicione o ID de pessoa à visualização de dados.*
 >* **Não administradores**: *a propriedade PersonID é necessária para esta análise. Colabore com o administrador do Customer Journey Analytics para adicionar um ID de pessoa à visualização de dados.*
