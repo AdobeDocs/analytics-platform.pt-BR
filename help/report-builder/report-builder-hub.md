@@ -70,6 +70,6 @@ O link **Segmentos** exibe uma lista de resumo dos segmentos usados pelos blocos
 >[!MORELIKETHIS]
 >
 >[Selecione uma visualização de dados](select-data-view.md)
->>[Selecionar um intervalo de datas](select-date-range.md)
->>[Trabalhar com filtros](work-with-filters.md)
+>&#x200B;>[Selecionar um intervalo de datas](select-date-range.md)
+>&#x200B;>[Trabalhar com filtros](work-with-filters.md)
 >

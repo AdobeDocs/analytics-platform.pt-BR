@@ -17,7 +17,7 @@ ht-degree: 14%
 
 Esta tabela lista todos os ícones de Espectro disponíveis por meio da configuração de trechos de ícones de Espectro. Use o nome para adicionar o trecho à marcação e exiba o ícone Espectro.
 
-Assista à [página Wiki](ttps://wiki.corp.adobe.com/display/omtrplatform/Use+Spectrum+icons+in+documentation) para obter atualizações.
+Assista à [página Wiki] (ttps://wiki.corp.adobe.com/display/omtrplatform/Use+Spectrum+icons+in+documentation) para obter atualizações.
 
 ![](https://reportbuilder.an.adobe.com/assets/AdobeAnalyticsLogo-80.png)
 
@@ -162,7 +162,7 @@ Assista à [página Wiki](ttps://wiki.corp.adobe.com/display/omtrplatform/Use+Sp
 | Capital | `![Capital](/help/assets/icons/Capital.svg)` | ![Capital](/help/assets/icons/Capital.svg) |
 | Captcha | `![Captcha](/help/assets/icons/Captcha.svg)` | ![Captcha](/help/assets/icons/Captcha.svg) |
 | Carro | `![Car](/help/assets/icons/Car.svg)` | ![Carro](/help/assets/icons/Car.svg) |
-| Cartão | `![Card](/help/assets/icons/Card.svg)` | Cartão ![1}](/help/assets/icons/Card.svg) |
+| Cartão | `![Card](/help/assets/icons/Card.svg)` | Cartão ![1&rbrace;](/help/assets/icons/Card.svg) |
 | Canal | `![Channel](/help/assets/icons/Channel.svg)` | ![Canal](/help/assets/icons/Channel.svg) |
 | Chat | `![Chat](/help/assets/icons/Chat.svg)` | ![Chat](/help/assets/icons/Chat.svg) |
 | ChatAdd | `![ChatAdd](/help/assets/icons/ChatAdd.svg)` | ![AdiçãodeChat](/help/assets/icons/ChatAdd.svg) |

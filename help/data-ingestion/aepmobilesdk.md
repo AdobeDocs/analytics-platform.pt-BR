@@ -249,7 +249,7 @@ Para implementar o código em seu site para realmente coletar dados, use o recur
 
    Nomeie a tag, selecione **[!UICONTROL Celular]**. Selecione **[!UICONTROL Salvar]** para continuar.
 
-   ![Criar uma propriedade da ](./assets/create-mobile-property.png)
+   ![Criar uma propriedade da &#x200B;](./assets/create-mobile-property.png)
 
 ### Configurar sua tag
 
