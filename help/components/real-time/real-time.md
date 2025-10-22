@@ -4,9 +4,9 @@ title: Visão geral do relatório em tempo real
 feature: Real-time Reporting
 role: User
 exl-id: 12fbb760-936d-4e30-958f-764febca5ae7
-source-git-commit: d8ff5191ea96b8871f6aaba1fc28211c22a13e0d
+source-git-commit: 0e5a64e78e5a471f8b7c9fc32fdbae2b2e70230a
 workflow-type: tm+mt
-source-wordcount: '722'
+source-wordcount: '780'
 ht-degree: 7%
 
 ---
@@ -14,8 +14,6 @@ ht-degree: 7%
 # Visão geral do relatório em tempo real
 
 Os relatórios em tempo real no Customer Journey Analytics exibem e atualizam em tempo real os dados e visualizações de um ou mais painéis no Analysis Workspace.
-
-{{release-limited-testing}}
 
 {{ultimate-package}}
 
@@ -59,6 +57,7 @@ A maneira como você coleta dados determina a latência dos relatórios em tempo
 | 3 | Conector de origem do Adobe Analytics | 17 minutos | 105 minutos |
 | 4 | Outros conectores de origem nos conectores de origem (incluindo dados em lote) | 25 horas | 25 horas |
 
+Se uma interrupção dos serviços ocorrer por mais de meia hora, os dados em tempo real não serão preenchidos retroativamente com dados quando os problemas forem resolvidos. Em vez disso, os relatórios em tempo real coletam dados em tempo real a partir do momento em que os serviços começam a funcionar novamente. Nenhum dado é perdido durante esse período e ainda está disponível usando os recursos de relatório padrão fora do relatório em tempo real.
 
 ## Limitações
 

@@ -4,7 +4,7 @@ title: Usar relatório em tempo real
 feature: Real-time Reporting
 role: User
 exl-id: 6e7dba80-5fb9-4554-b989-85eb54a4bd6a
-source-git-commit: d8ff5191ea96b8871f6aaba1fc28211c22a13e0d
+source-git-commit: 0e5a64e78e5a471f8b7c9fc32fdbae2b2e70230a
 workflow-type: tm+mt
 source-wordcount: '224'
 ht-degree: 12%
@@ -18,8 +18,6 @@ ht-degree: 12%
 >title="Atualização em tempo real"
 >abstract="Habilite para atualizar dados e visualizações neste painel em tempo real."
 
-{{release-limited-testing}}
-
 Para usar o relatório em tempo real, habilite a opção **[!UICONTROL Atualização em tempo real]** em qualquer um dos painéis a seguir no projeto do Workspace:
 
 * [Painel em branco](/help/analysis-workspace/c-panels/blank-panel.md)
@@ -27,7 +25,7 @@ Para usar o relatório em tempo real, habilite a opção **[!UICONTROL Atualiza�
 * [Atribuição](/help/analysis-workspace/c-panels/attribution.md)
 * [Próximo item ou anterior](/help/analysis-workspace/c-panels/next-previous.md)
 
-Você verá uma mensagem com o carimbo de data e hora da atualização mais recente dos dados. Por exemplo: [!UICONTROL &#x200B; *Última atualização às 07:55 pm*].
+Você verá uma mensagem com o carimbo de data e hora da atualização mais recente dos dados. Por exemplo: [!UICONTROL  *Última atualização às 07:55 pm*].
 
 Selecione o período em tempo real que deseja relatar no menu suspenso. As opções disponíveis são:
 
