@@ -6,24 +6,24 @@ feature: Curate and Share
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: f6e64e850b8c416817b76697d869c10adb9b544b
+source-git-commit: 4d7ecc3eaba93424d43d0f4c312aeec78016395f
 workflow-type: tm+mt
-source-wordcount: '1177'
+source-wordcount: '1494'
 ht-degree: 4%
 
 ---
 
 # Narrativa de dados: gere apresentações de slides a partir de relatórios do Workspace {#generate-powerpoint}
 
-Usuários com [as permissões necessárias](#permission-requirements-to-generate-slides) podem gerar automaticamente apresentações .pptx de projetos da Analysis Workspace. Ao gerar essas apresentações de slides, a Customer Journey Analytics cria automaticamente uma história com base em seus dados, identificando os principais insights e convertendo-os em slides prontos para as partes interessadas.
+Usuários com [as permissões necessárias](#permission-requirements-to-generate-slides) podem gerar automaticamente apresentações .pptx com base em projetos do Analysis Workspace. Ao gerar essas apresentações de slides, a Customer Journey Analytics cria automaticamente uma história com base em seus dados, identificando os principais insights e convertendo-os em slides prontos para as partes interessadas.
 
-Essa história de dados gerada automaticamente reduz o tempo, o esforço e a experiência necessários para exibir conclusões de um projeto do Workspace. Os analistas podem se concentrar mais na exploração de dados e, ao mesmo tempo, permitir que a Customer Journey Analytics crie e formate a narrativa executiva e comunique o impacto nos negócios para as partes interessadas.
+Essa história de dados gerada reduz o tempo, o esforço e a experiência necessários para exibir conclusões de um projeto do Workspace. Os analistas podem se concentrar mais na exploração de dados e, ao mesmo tempo, permitir que a Customer Journey Analytics crie e formate a narrativa executiva e comunique o impacto nos negócios para as partes interessadas.
 
 ## Compreender as histórias de dados em apresentações de slides
 
-O Analysis Workspace usa IA gerativa para criar uma narrativa com base nos dados do Workspace, em um formato de apresentação de slides.
+Uma **história sobre dados** é a narrativa que o Customer Journey Analytics cria com base nos dados do Workspace. Usando a IA generativa, o Customer Journey Analytics identifica temas importantes nos painéis e visualizações que você escolhe incluir em sua apresentação de slides. Ele gera insights e passa por um processo de desduplicação e pontuação para identificar um subconjunto de insights a ser usado para criar a história dos dados.
 
-As seções a seguir descrevem o valor adicional fornecido pelas histórias de dados, os elementos necessários de um projeto que ajudam a moldar a narrativa e os elementos-chave incluídos no resultado de cada apresentação.
+As seções a seguir descrevem o valor adicional fornecido pelas histórias de dados, os elementos necessários de um projeto que ajudam a moldar a narrativa e os elementos principais incluídos na saída da apresentação .pptx.
 
 ### Valor adicional fornecido pelas histórias de dados
 
@@ -37,11 +37,9 @@ As histórias de dados complementam uma análise para um determinado projeto do 
 
 * Oferecer orientação sobre se os dados são bons ou ruins em um determinado contexto
 
-* Avaliar se determinadas variáveis estão sendo subavaliadas ou sobreavaliadas.
+* Avaliar se determinadas variáveis estão sendo subavaliadas ou sobreavaliadas
 
 * Chamar tendências ocultas, anomalias e outros fatores que contribuem
-
-* Identificação dos principais drivers
 
 * Fornecendo ideias para as próximas etapas
 
@@ -51,7 +49,7 @@ O Analysis Workspace cria histórias de dados considerando os seguintes elemento
 
 * Relacionamentos interdimensionais e intermétricos
 
-* Os elementos individuais que formam a base da análise: dimensões, métricas, filtros, estrutura da tabela de forma livre, visualizações e painéis
+* Os elementos individuais que formam a base da análise (dimensões, métricas, filtros, estrutura da tabela de forma livre, visualizações e painéis)
 
 * Os nomes dados aos painéis, tabelas e visualizações
 
@@ -61,7 +59,9 @@ O Analysis Workspace cria histórias de dados considerando os seguintes elemento
 
 ### Elementos de apresentação de uma história de dados
 
-As histórias de dados consistem em um slide de resumo executivo, slides de detalhes e divisores de seção.
+As histórias de dados consistem em um slide de título, um slide de resumo executivo, slides de detalhes e divisores de seção.
+
+**Slide de título:** mostra o título e o nome do apresentador que você especificar. Informações são mostradas nas notas do palestrante que descrevem o processo de como o tema e a narrativa foram criados, quantos insights foram gerados e usados e quais painéis foram usados.
 
 **Resumo executivo:** prioriza os insights de maior valor e cria uma história abrangente com 1 a 5 frases de comprimento.
 
@@ -104,11 +104,11 @@ As histórias de dados consistem em um slide de resumo executivo, slides de deta
    | **[!UICONTROL Título da capa]** | Especifique um título para a apresentação. Este título aparece no slide de título da apresentação. |
    | **[!UICONTROL Incluir nome do apresentador]** | Especifique o nome do apresentador. Esse nome aparece no slide de título da apresentação, abaixo do título da capa. |
    | **[!UICONTROL Painéis e visualizações a serem incluídos]** | Escolha os painéis e a visualização que deseja incluir na apresentação. É possível incluir até 50 visualizações.<p>A maioria dos painéis e visualizações é compatível. Para obter informações sobre painéis e visualizações sem suporte, consulte [Elementos e recursos do projeto sem suporte](#unsupported-project-elements-and-features).</p> |
-   | **[!UICONTROL Descrições do painel e da visualização]** | |
-   | **[!UICONTROL Anotações]** | |
-   | **[!UICONTROL Enfatizar componentes]** | Escolha até 5 métricas e 5 dimensões nas visualizações que você deseja enfatizar na apresentação.<p>Quando nenhuma ênfase é aplicada, os componentes são exibidos nas apresentações da seguinte maneira:<ul><li>**Métricas e dimensões:** Itálico</li><li>**Itens do Dimension:** Aspas</li></ul></p><p>Quando a ênfase é aplicada, os componentes são exibidos nas apresentações da seguinte maneira:</p><ul><li>**Métricas e dimensões:** Itálico e negrito</li><li>**Itens do Dimension:** Negrito quando a dimensão correspondente é enfatizada<p>Uma cor também é aplicada ao item de dimensão quando ele é realçado no gráfico.</p></li></ul> |
+   | **[!UICONTROL Descrições do painel e da visualização]** | Escolha se deseja incluir descrições de painel e visualização na apresentação de slides gerada. |
+   | **[!UICONTROL Anotações]** | Escolha se as anotações ficam visíveis na apresentação de slides gerada. Para obter mais informações sobre anotações, consulte [Visão geral de anotações](/help/components/annotations/overview.md). |
+   | **[!UICONTROL Enfatizar componentes]** | Escolha até 5 métricas e 5 dimensões nas visualizações que você deseja enfatizar na apresentação. Os componentes escolhidos são classificados em posições mais altas e recebem mais peso quando os temas e a narrativa abrangente da história dos dados são criados. <p>Quando nenhuma ênfase é aplicada, os componentes são exibidos nas apresentações da seguinte maneira:<ul><li>**Métricas e dimensões:** Itálico</li><li>**Itens do Dimension:** Aspas</li></ul></p><p>Quando a ênfase é aplicada, os componentes são exibidos nas apresentações da seguinte maneira:</p><ul><li>**Métricas e dimensões:** Itálico e negrito</li><li>**Itens do Dimension:** Negrito quando a dimensão correspondente é enfatizada<p>Uma cor também é aplicada ao item de dimensão quando ele é realçado no gráfico.</p></li></ul> |
 
-1. (Condicional) Selecione **[!UICONTROL Tema padrão]** se quiser gerar slides rapidamente em menos etapas e se um tema corporativo não for necessário para a apresentação de slides.
+1. (Condicional) Selecione **[!UICONTROL Tema padrão]** se quiser gerar slides em menos etapas e se um tema corporativo não for necessário para a apresentação de slides.
 
    Basta escolher o tema de cores da sua apresentação selecionando a cor desejada.
 
@@ -122,11 +122,25 @@ As histórias de dados consistem em um slide de resumo executivo, slides de deta
 
    * (Recomendado) Baixe um modelo em branco e modifique-o.
 
-      1. Baixe este modelo em branco. <!--add link-->
+      1. Baixe [este modelo em branco](https://d30ln29764hddd.cloudfront.net/deploy/builds/data-storytelling.2025-10-20T15:10:19/resources/components/Blank.potx?).
 
       1. Aplique estilos personalizados ao modelo em branco.
 
-      1. Recarregue o modelo sem alterar nenhum nome de layout mestre.
+      1. Recarregue o modelo sem alterar nenhum nome de layout mestre:
+
+         A partir do sistema de arquivos, arraste o modelo em branco que tem seus estilos personalizados aplicados à área de soltar.
+
+         Ou
+
+         Selecione **[!UICONTROL Procurar]** e procure e selecione seu modelo em branco que tenha seus estilos personalizados aplicados do sistema de arquivos.
+
+      1. Na seção **[!UICONTROL Mapeamento de layout]**, cada layout de slide usado em apresentações geradas é mapeado automaticamente para um slide do tema carregado. Revise as seleções para verificar se estão corretas.
+
+         ![Mapeamento de layout](assets/generate-slides-layout-mapping.png)
+
+      1. (Condicional) Se um layout de slide for mapeado incorretamente, selecione **[!UICONTROL Alterar seleção]** acima do slide que foi escolhido na apresentação carregada e escolha o slide que corresponde ao layout.
+
+         Repita esse processo para cada slide que foi mapeado incorretamente.
 
    * Faça upload de um modelo personalizado diretamente.
 
@@ -136,20 +150,23 @@ As histórias de dados consistem em um slide de resumo executivo, slides de deta
 
          Selecione **[!UICONTROL Procurar]** e procure e selecione seu modelo personalizado no sistema de arquivos.
 
-         Verifique se o arquivo carregado tem layouts principais com os seguintes nomes: &quot;Title_Slide&quot;, &quot;Section_Divider&quot;, &quot;Title_Text&quot;, &quot;Title_Chart&quot;, &quot;Title_Two_Content_Mixed&quot;, &quot;Title_Three_Content_Mixed&quot;
+         Verifique se o arquivo carregado tem layouts principais com os seguintes nomes: &quot;Title_Slide&quot;, &quot;Section_Divider&quot;, &quot;Title_Text&quot;, &quot;Title_Chart&quot;, &quot;Title_Two_Content_Mixed&quot;, &quot;Title_Three_Content_Mixed&quot;.
 
          Arquivos .pptx e .potx de até 25 MB são suportados.
 
+      1. Na seção **[!UICONTROL Mapeamento de layout]**, cada layout de slide usado em apresentações geradas é mapeado automaticamente para um slide do tema carregado. Revise as seleções para verificar se estão corretas.
+
+         ![Modelo personalizado de mapeamento de layout](assets/generate-slides-layout-mapping-custom-template.png)
+
+      1. (Condicional) Se um layout de slide for mapeado incorretamente, selecione **[!UICONTROL Alterar seleção]** acima do slide que foi escolhido na apresentação carregada e escolha o slide que corresponde ao layout.
+
+         Repita esse processo para cada slide que foi mapeado incorretamente.
+
 1. Selecione **[!UICONTROL Exportar PPT]**.
 
-1. (Recomendado) Revise e edite a apresentação .ppt e faça as alterações necessárias, conforme descrito na seção a seguir, [Editar slides de uma apresentação gerada anteriormente](#edit-slides-from-a-previously-generated-presentation).
+   A apresentação .pptx é baixada automaticamente para sua estação de trabalho.
 
-## Editar slides de uma apresentação gerada anteriormente
-
-
-## Baixar uma apresentação .pptx gerada
-
-
+1. (Recomendado) Abra a apresentação .pptx e revise-a. Faça as alterações necessárias.
 
 ## Requisitos de permissão para gerar slides
 
