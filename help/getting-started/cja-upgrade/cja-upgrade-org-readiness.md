@@ -140,9 +140,9 @@ Identifique campeões em toda a organização. Esses campeões devem ser:
 
    * [Tutoriais do Customer Journey Analytics](https://experienceleague.adobe.com/pt-br/docs/customer-journey-analytics-learn/tutorials/overview)
 
-   * [O que é o Customer Journey Analytics?](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/cja-basics/what-is-customer-journey-analytics)
+   * [O que é o Customer Journey Analytics?](https://experienceleague.adobe.com/pt-br/docs/customer-journey-analytics-learn/tutorials/cja-basics/what-is-customer-journey-analytics)
 
-   * [Introdução ao Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/cja-basics/understanding-customer-journey-analytics)
+   * [Introdução ao Customer Journey Analytics](https://experienceleague.adobe.com/pt-br/docs/customer-journey-analytics-learn/tutorials/cja-basics/understanding-customer-journey-analytics)
 
    * [Suporte a recursos do Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md)
 
