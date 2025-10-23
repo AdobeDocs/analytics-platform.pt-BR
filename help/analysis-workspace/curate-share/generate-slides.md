@@ -4,11 +4,9 @@ keywords: Analysis Workspace
 title: Gerar apresentações a partir de relatórios do Workspace
 feature: Curate and Share
 role: User
-hide: true
-hidefromtoc: true
-source-git-commit: 4d7ecc3eaba93424d43d0f4c312aeec78016395f
+source-git-commit: 3807ad0beac3656c1f3bd886611fbe4470a6e7c5
 workflow-type: tm+mt
-source-wordcount: '1494'
+source-wordcount: '1535'
 ht-degree: 4%
 
 ---
@@ -35,8 +33,6 @@ As histórias de dados complementam uma análise para um determinado projeto do 
 
 * Destacar insights importantes
 
-* Oferecer orientação sobre se os dados são bons ou ruins em um determinado contexto
-
 * Avaliar se determinadas variáveis estão sendo subavaliadas ou sobreavaliadas
 
 * Chamar tendências ocultas, anomalias e outros fatores que contribuem
@@ -54,6 +50,8 @@ O Analysis Workspace cria histórias de dados considerando os seguintes elemento
 * Os nomes dados aos painéis, tabelas e visualizações
 
 * A ordem das métricas em uma tabela de forma livre (para determinar a prioridade)
+
+* A ordem das visualizações em um painel (para determinar a prioridade)
 
 * Números de resumo e textos de resumo (para determinar as métricas que precisam ser destacadas na história dos dados)
 
@@ -106,7 +104,7 @@ As histórias de dados consistem em um slide de título, um slide de resumo exec
    | **[!UICONTROL Painéis e visualizações a serem incluídos]** | Escolha os painéis e a visualização que deseja incluir na apresentação. É possível incluir até 50 visualizações.<p>A maioria dos painéis e visualizações é compatível. Para obter informações sobre painéis e visualizações sem suporte, consulte [Elementos e recursos do projeto sem suporte](#unsupported-project-elements-and-features).</p> |
    | **[!UICONTROL Descrições do painel e da visualização]** | Escolha se deseja incluir descrições de painel e visualização na apresentação de slides gerada. |
    | **[!UICONTROL Anotações]** | Escolha se as anotações ficam visíveis na apresentação de slides gerada. Para obter mais informações sobre anotações, consulte [Visão geral de anotações](/help/components/annotations/overview.md). |
-   | **[!UICONTROL Enfatizar componentes]** | Escolha até 5 métricas e 5 dimensões nas visualizações que você deseja enfatizar na apresentação. Os componentes escolhidos são classificados em posições mais altas e recebem mais peso quando os temas e a narrativa abrangente da história dos dados são criados. <p>Quando nenhuma ênfase é aplicada, os componentes são exibidos nas apresentações da seguinte maneira:<ul><li>**Métricas e dimensões:** Itálico</li><li>**Itens do Dimension:** Aspas</li></ul></p><p>Quando a ênfase é aplicada, os componentes são exibidos nas apresentações da seguinte maneira:</p><ul><li>**Métricas e dimensões:** Itálico e negrito</li><li>**Itens do Dimension:** Negrito quando a dimensão correspondente é enfatizada<p>Uma cor também é aplicada ao item de dimensão quando ele é realçado no gráfico.</p></li></ul> |
+   | **[!UICONTROL Enfatizar componentes]** | Escolha as métricas e dimensões nas visualizações que deseja enfatizar na apresentação. Os componentes escolhidos são classificados em posições mais altas e recebem mais peso quando os temas e a narrativa abrangente da história dos dados são criados. <p>Quando nenhuma ênfase é aplicada, os componentes são exibidos nas apresentações da seguinte maneira:<ul><li>**Métricas e dimensões:** Itálico</li><li>**Itens do Dimension:** Aspas</li></ul></p><p>Quando a ênfase é aplicada, os componentes são exibidos nas apresentações da seguinte maneira:</p><ul><li>**Métricas e dimensões:** Itálico e negrito</li><li>**Itens do Dimension:** Negrito quando a dimensão correspondente é enfatizada<p>Uma cor também é aplicada ao item de dimensão quando ele é realçado no gráfico.</p></li></ul> |
 
 1. (Condicional) Selecione **[!UICONTROL Tema padrão]** se quiser gerar slides em menos etapas e se um tema corporativo não for necessário para a apresentação de slides.
 
@@ -115,6 +113,8 @@ As histórias de dados consistem em um slide de título, um slide de resumo exec
    ![Gerar slides com o tema padrão](assets/generate-slides-default-theme.png)
 
 1. (Condicional) Selecione **[!UICONTROL Carregar modelo]** se a apresentação de slides precisar corresponder a um tema corporativo. Essa opção exige que você faça upload de um modelo personalizado e aplique seus estilos personalizados.
+
+   O modelo personalizado mais recente que você carregou é armazenado localmente no cache do navegador e está disponível ao gerar apresentações de slides futuras.
 
    ![Gerar slides com um modelo personalizado](assets/generate-slides-upload-template.png)
 
@@ -173,8 +173,8 @@ As histórias de dados consistem em um slide de título, um slide de resumo exec
 >[!AVAILABILITY]
 >
 >Se sua organização não tiver acesso para gerar apresentações de slides de um projeto do Workspace, entre em contato com o representante de conta da Adobe para saber mais sobre licenciamento.
->
->Esse recurso é habilitado por padrão para todos os usuários em organizações que têm o licenciamento necessário.
+
+A capacidade de gerar slides é habilitada por padrão para todos os usuários em organizações que têm o licenciamento necessário.
 
 Os administradores de perfil de produto cujas organizações têm licença para gerar slides podem desabilitar o acesso, se necessário.
 
@@ -205,19 +205,27 @@ Os seguintes elementos e recursos do Analysis Workspace usados em um projeto nã
 
   A maioria das visualizações pode ser incluída em slides gerados de um projeto do Workspace. No entanto, as seguintes visualizações não podem ser incluídas e são exibidas como esmaecidas quando as opções de configuração são exibidas:
 
-   * Tabela de coorte
-
-   * Tela da jornada
+   * Área
 
    * Marcador
 
+   * Tabela de coorte
+
    * Combinado
+
+   * Fallout
+
+   * Fluxo
+
+   * Tela da jornada
 
    * Dispersão
 
    * Mapa de árvore
 
 * Detalhamentos
+
+  Os dados para detalhamentos são incluídos em apresentações geradas, mas são exibidos no mesmo nível que os itens de dimensão.
 
 * Análises guiadas
 
