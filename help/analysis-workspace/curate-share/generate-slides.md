@@ -4,7 +4,7 @@ keywords: Analysis Workspace
 title: Gerar apresentações a partir de relatórios do Workspace
 feature: Curate and Share
 role: User
-source-git-commit: 3807ad0beac3656c1f3bd886611fbe4470a6e7c5
+source-git-commit: 99adae279a21c827579ebc3b58b336a9f0e3e8a4
 workflow-type: tm+mt
 source-wordcount: '1535'
 ht-degree: 4%
@@ -12,6 +12,10 @@ ht-degree: 4%
 ---
 
 # Narrativa de dados: gere apresentações de slides a partir de relatórios do Workspace {#generate-powerpoint}
+
+{{release-limited-testing}}
+
+<!-- also remove lmited testing note from: /help/technotes/access-control.md -->
 
 Usuários com [as permissões necessárias](#permission-requirements-to-generate-slides) podem gerar automaticamente apresentações .pptx com base em projetos do Analysis Workspace. Ao gerar essas apresentações de slides, a Customer Journey Analytics cria automaticamente uma história com base em seus dados, identificando os principais insights e convertendo-os em slides prontos para as partes interessadas.
 
