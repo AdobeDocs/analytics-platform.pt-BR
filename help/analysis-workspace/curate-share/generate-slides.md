@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Gerar apresentações a partir de relatórios do Workspace
 feature: Curate and Share
 role: User
-source-git-commit: 99adae279a21c827579ebc3b58b336a9f0e3e8a4
+source-git-commit: f13a02c2741cf32c25edd11f969a7644f724b612
 workflow-type: tm+mt
-source-wordcount: '1535'
+source-wordcount: '1542'
 ht-degree: 4%
 
 ---
@@ -155,6 +155,8 @@ As histórias de dados consistem em um slide de título, um slide de resumo exec
          Selecione **[!UICONTROL Procurar]** e procure e selecione seu modelo personalizado no sistema de arquivos.
 
          Verifique se o arquivo carregado tem layouts principais com os seguintes nomes: &quot;Title_Slide&quot;, &quot;Section_Divider&quot;, &quot;Title_Text&quot;, &quot;Title_Chart&quot;, &quot;Title_Two_Content_Mixed&quot;, &quot;Title_Three_Content_Mixed&quot;.
+
+         São suportados até 15 layouts principais.
 
          Arquivos .pptx e .potx de até 25 MB são suportados.
 
