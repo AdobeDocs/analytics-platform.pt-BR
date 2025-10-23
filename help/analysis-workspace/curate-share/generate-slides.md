@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Gerar apresentações a partir de relatórios do Workspace
 feature: Curate and Share
 role: User
-source-git-commit: f13a02c2741cf32c25edd11f969a7644f724b612
+source-git-commit: 62ef107c52a96178fbf9e41fee49db757488525b
 workflow-type: tm+mt
-source-wordcount: '1542'
-ht-degree: 4%
+source-wordcount: '1506'
+ht-degree: 3%
 
 ---
 
@@ -106,9 +106,10 @@ As histórias de dados consistem em um slide de título, um slide de resumo exec
    | **[!UICONTROL Título da capa]** | Especifique um título para a apresentação. Este título aparece no slide de título da apresentação. |
    | **[!UICONTROL Incluir nome do apresentador]** | Especifique o nome do apresentador. Esse nome aparece no slide de título da apresentação, abaixo do título da capa. |
    | **[!UICONTROL Painéis e visualizações a serem incluídos]** | Escolha os painéis e a visualização que deseja incluir na apresentação. É possível incluir até 50 visualizações.<p>A maioria dos painéis e visualizações é compatível. Para obter informações sobre painéis e visualizações sem suporte, consulte [Elementos e recursos do projeto sem suporte](#unsupported-project-elements-and-features).</p> |
-   | **[!UICONTROL Descrições do painel e da visualização]** | Escolha se deseja incluir descrições de painel e visualização na apresentação de slides gerada. |
-   | **[!UICONTROL Anotações]** | Escolha se as anotações ficam visíveis na apresentação de slides gerada. Para obter mais informações sobre anotações, consulte [Visão geral de anotações](/help/components/annotations/overview.md). |
    | **[!UICONTROL Enfatizar componentes]** | Escolha as métricas e dimensões nas visualizações que deseja enfatizar na apresentação. Os componentes escolhidos são classificados em posições mais altas e recebem mais peso quando os temas e a narrativa abrangente da história dos dados são criados. <p>Quando nenhuma ênfase é aplicada, os componentes são exibidos nas apresentações da seguinte maneira:<ul><li>**Métricas e dimensões:** Itálico</li><li>**Itens do Dimension:** Aspas</li></ul></p><p>Quando a ênfase é aplicada, os componentes são exibidos nas apresentações da seguinte maneira:</p><ul><li>**Métricas e dimensões:** Itálico e negrito</li><li>**Itens do Dimension:** Negrito quando a dimensão correspondente é enfatizada<p>Uma cor também é aplicada ao item de dimensão quando ele é realçado no gráfico.</p></li></ul> |
+
+   <!-- add this later: - **[!UICONTROL Panel and visualization descriptions]** - Choose whether to include panel and visualization descriptions in your generated slide presentation. - 
+   - **[!UICONTROL Annotations]** - Choose whether annotations are visible in your generated slide presentation. For more information about annotations, see [Annotations overview](/help/components/annotations/overview.md).  -  -->
 
 1. (Condicional) Selecione **[!UICONTROL Tema padrão]** se quiser gerar slides em menos etapas e se um tema corporativo não for necessário para a apresentação de slides.
 
