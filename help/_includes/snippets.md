@@ -1,8 +1,8 @@
 ---
-source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
+source-git-commit: 7d354ce65f72838c007d2b9faf02848d86fd7c0f
 workflow-type: tm+mt
-source-wordcount: '4947'
-ht-degree: 100%
+source-wordcount: '4990'
+ht-degree: 98%
 
 ---
 # Trechos
@@ -128,7 +128,7 @@ Um modelo de atribuição determina quais itens de dimensão recebem crédito po
 
 Um container de atribuição define o escopo desejado para a atribuição. As opções disponíveis são:
 
-* **Sessão:** retroage até o início da sessão onde ocorreu uma conversão. As janelas de retrospectiva de sessão respeitam o [tempo limite de sessão](/help/data-views/create-dataview.md#session-settings) modificado em uma visualização de dados.
+* **Sessão:** retroage até o início da sessão onde ocorreu uma conversão. As janelas de retrospectiva de sessão respeitam o [tempo limite de sessão](/help/data-views/create-dataview.md#session-settings) modificado em uma visualização de dados. Quando **[!UICONTROL Sessão]** é selecionada, a [janela de retrospectiva de atribuição](#atribution-lookback-window) é automaticamente definida como **[!UICONTROL Janela de relatórios]** e não pode ser alterada.
 * **Pessoa**: analisa as conversões do escopo do container de pessoa.
 * **Conta global** [!BADGE B2B Edition]{type=Informative}: analisa as conversões do escopo do container de contas globais.
 * **Contas** [!BADGE B2B Edition]{type=Informative}: analisa as conversões do escopo do container de pessoa.
@@ -139,6 +139,7 @@ Um container de atribuição define o escopo desejado para a atribuição. As op
 
 Janela de retrospectiva de atribuição é a quantidade de tempo que uma conversão deve retroceder para incluir pontos de contato. Se um item de dimensão for definido fora da janela de retrospectiva, o valor não será incluído em nenhum cálculo de atribuição.
 
+* **[!UICONTROL Janela de relatórios]**: retroage até o início da janela de relatórios a partir de quando a conversão ocorreu.
 * **14 dias**: retroage até 14 dias a partir do momento em que a conversão ocorreu.
 * **30 dias**: retroage até 30 dias a partir do momento em que a conversão ocorreu.
 * **60 dias**: retroage até 60 dias a partir do momento em que a conversão ocorreu.
@@ -154,13 +155,13 @@ Considere o exemplo a seguir:
 1. Em 18 de setembro, a pessoa acessa seu site novamente por meio de um link de redes sociais que recebeu de um amigo. Eles adicionam vários itens ao carrinho, mas não compram nada.
 1. Em 24 de setembro, sua equipe de marketing envia um email com um cupom para alguns dos itens em seu carrinho. Eles aplicam o cupom, mas visitam vários outros sites para ver se existem outros cupons disponíveis. Eles encontram outro cupom por meio de um anúncio de exibição e, em seguida, fazem uma compra de US$ 50.
 
-Dependendo do modelo de atribuição, o container e os canais recebem créditos diferentes. Veja exemplos na tabela abaixo:
+Dependendo da janela de relatórios (por exemplo, de 10 a 24 de setembro), o modelo de atribuição, o contêiner e os canais recebem crédito diferente. Veja exemplos na tabela abaixo:
 
 | Modelo | Container | Janela de retrospectiva | Explicação |
 |---|---|---|---|
-| Primeiro contato | Sessão | 30 dias | A atribuição analisa somente a terceira visita. Entre email e exibição, o email foi o primeiro, portanto, o email recebe 100% de crédito pela compra de US$ 50. |
+| Primeiro contato | Sessão | Janela de relatórios | A atribuição analisa somente a terceira visita. Entre email e exibição, o email foi o primeiro, portanto, o email recebe 100% de crédito pela compra de US$ 50. |
 | Primeiro contato | Pessoa | 30 dias | A atribuição analisa as três visitas. A pesquisa paga foi a primeira, portanto recebe 100% de crédito pela compra de US$ 50. |
-| Linear | Sessão | 30 dias | O crédito é dividido entre email e exibição. Ambos os canais recebem um crédito de US$ 25. |
+| Linear | Sessão | Janela de relatórios | O crédito é dividido entre email e exibição. Ambos os canais recebem um crédito de US$ 25. |
 | Linear | Pessoa | 30 dias | O crédito é dividido entre pesquisa paga, redes sociais, email e exibição. Cada canal recebe um crédito de US$ 12,50 pela compra. |
 | Forma de J | Pessoa | 30 dias | O crédito é dividido entre pesquisa paga, redes sociais, email e exibição.<ul><li>O crédito será de 60% para a exibição (US$ 30).</li><li>De 20% para a pesquisa paga (US$ 10).</li><li>Os 20% restantes são divididos entre redes sociais e email (US$ 5 para cada).</li></ul> |
 | Declínio de tempo | Pessoa | 30 dias | <ul><li>Intervalo de 0 dias entre o ponto de contato de exibição e a conversão. `2^(-0/7) = 1`</li><li>Intervalo de 0 dias entre o ponto de contato de email e a conversão. `2^(-0/7) = 1`</li><li>Intervalo de seis dias entre o ponto de contato de rede social e a conversão. `2^(-6/7) = 0.552`</li><li>Intervalo de nove dias entre o ponto de contato de pesquisa paga e a conversão. `2^(-9/7) = 0.41`</li>A normalização desses valores resulta no seguinte:<ul><li>Exibição: 33,8%, crédito de US$ 16,88</li><li>Email: 33,8%, crédito de US$ 16,88</li><li>Redes sociais: 18,6%, crédito de US$ 9,32</li><li>Pesquisa paga: 13,8%, crédito de US$ 6,92</li></ul></li></ul> |
