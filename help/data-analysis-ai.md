@@ -5,10 +5,10 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: bb44ba8d36a2c21c789f0df6a84ea0432ca20029
+source-git-commit: e4b7f1da451a7ec9171fbb623e0e79e916827fd8
 workflow-type: tm+mt
-source-wordcount: '2461'
-ht-degree: 99%
+source-wordcount: '2489'
+ht-degree: 93%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 99%
 
 >[!AVAILABILITY]
 >
->O Data Insights Agent está disponível para clientes elegíveis por um período limitado. O acesso ao Data Insights Agent terminará em 30 de novembro de 2025. Para continuar usando o Data Insights Agent sem interrupção, entre em contato com o representante de conta da Adobe para saber mais sobre como licenciar o Data Insights Agent.
+>O Data Insights Agent está disponível para clientes elegíveis por um período limitado. O acesso ao Data Insights Agent terminará em 30 de novembro de 2025. Para continuar usando o Data Insights Agent sem interrupção, entre em contato com o representante de conta da Adobe para saber mais sobre a licença do Data Insights Agent.
 
 O Data Insights Agent, acessível por meio do [Assistente de IA](/help/ai-assistant.md) no Customer Journey Analytics, é um agente de conversação com IA generativa que responde de forma rápida e eficiente a perguntas sobre os seus dados. Ele cria visualizações relevantes no Analysis Workspace, usando componentes da visualização de dados e os seus dados reais.
 
@@ -64,34 +64,39 @@ Os seguintes parâmetros regulam o acesso ao Data Insights Agent no Customer Jou
 
    1. Na linha **[!UICONTROL Ferramentas de relatórios]** da tabela fornecida, selecione o ícone de edição ![Editar](/help/assets/icons/Edit.svg).
    1. Role até a opção ou pesquise por **[!UICONTROL Assistente de IA: conhecimento do produto]** e selecione o ícone de adição ![AddCircle](/help/assets/icons/AddCircle.svg) ao lado dessa permissão.
+   1. Role até ou pesquise por **[!UICONTROL Data Insights Agent]** e selecione o ícone de adição ![AddCircle](/help/assets/icons/AddCircle.svg) ao lado dessa permissão.
 
-      A permissão **[!UICONTROL Assistente de IA: conhecimento do produto]** é adicionada à coluna **[!UICONTROL Itens de permissão incluídos]**.
+      A permissão **[!UICONTROL Assistente de IA: Conhecimento do Produto]** e a permissão **[!UICONTROL Data Insights Agent]** são adicionadas à coluna **[!UICONTROL Itens de permissão incluídos]**.
 
-      ![Adicione a permissão](assets/ai-assistant-permissions.png).
-
-   1. Selecione a guia **[!UICONTROL Ferramentas de visualização de dados]** e clique no ícone de adição ![AddCircle](/help/assets/icons/AddCircle.svg) ao lado da permissão **[!UICONTROL Data Insights Agent]**.
-
-      A permissão **[!UICONTROL Data Insights Agent]** é adicionada à coluna **[!UICONTROL Itens de permissão incluídos]**.
-
-      ![Adicione a permissão](assets/ai-assistant-permissions-dataviewtools.png).
-
-   1. Selecione a guia **[!UICONTROL Visualizações de dados]** para escolher as visualizações de dados que você deseja habilitar para o Data Insights Agent.
-
-      >[!IMPORTANT]
-      >
-      >Considere o seguinte ao habilitar visualizações de dados:
-      >* É possível habilitar no máximo 50 visualizações de dados por organização IMS. Se você habilitar mais de 50 visualizações de dados em todos os perfis de produto para uma determinada organização, o Data Insights Agent usará as 50 visualizações de dados mais utilizadas.
-      >* O Data Insights Agent pode fazer referência às visualizações de dados incluídas em algum momento do mesmo dia em que você as habilita no Admin Console.
-
-   1. Procure ou role a tela até as visualizações de dados que deseja habilitar e selecione o ícone de adição ![AddCircle](/help/assets/icons/AddCircle.svg) ao lado do nome de cada visualização de dados.
-
-      Cada visualização de dados adicionada está visível na coluna **[!UICONTROL Itens de permissão incluídos]**.
-
-      ![Adicione a permissão](assets/ai-assistant-permissions-dataviews.png).
+      ![Adicionar permissão](assets/ai-assistant-permissions.png).
 
    1. Clique em **[!UICONTROL Salvar]** para salvar as permissões.
 
   Para obter informações adicionais sobre o controle de acesso, consulte [Controle de acesso](/help/technotes/access-control.md#access-control).
+
+* **Acesso à visualização de dados**: as visualizações de dados devem ser habilitadas para o Data Insights Agent.
+
+  >[!IMPORTANT]
+  >
+  >Considere o seguinte ao habilitar visualizações de dados:
+  >* É possível habilitar no máximo 50 visualizações de dados por organização IMS. Se você habilitar mais de 50 visualizações de dados em todos os perfis de produto para uma determinada organização, o Data Insights Agent usará as 50 visualizações de dados mais utilizadas.
+  >* A Data Insights Agent pode fazer referência às visualizações de dados incluídas em algum momento durante o mesmo dia em que você as ativa.
+
+  Para ativar visualizações de dados para o Data Insights Agent:
+
+   1. No Customer Journey Analytics, selecione **[!UICONTROL Gerenciamento de dados]** > **[!UICONTROL Visualizações de dados]**.
+
+   1. Selecione uma ou mais visualizações de dados que você deseja habilitar para o Data Insights Agent e selecione **[!UICONTROL Habilitar para o Data Insights Agent]**.
+
+      ![Habilitar visualizações de dados para o Data Insights Agent](assets/data-view-enable-dia.png)
+
+  Para exibir o número de visualizações de dados habilitadas para o Data Insights Agent em sua organização IMS:
+
+   1. No Customer Journey Analytics, selecione **[!UICONTROL Gerenciamento de dados]** > **[!UICONTROL Visualizações de dados]**.
+
+   1. Selecione o ícone de informações na parte superior da coluna **[!UICONTROL Data Insights Agent]**.
+
+      ![ícone de informações do Data Insights Agent](assets/data-insights-agent-tooltip.png)
 
 ## Acessar o Data Insights Agent no Assistente de IA
 
@@ -259,7 +264,7 @@ Abaixo estão as práticas recomendadas para a configuração do Customer Journe
 >[!MORELIKETHIS]
 >
 >[Configurações de componente](/help/data-views/component-settings/overview.md)
->&#x200B;>[Dicionário de dados](/help/components/data-dictionary/data-dictionary-overview.md)
->&#x200B;>[Aprovar métricas calculadas](/help/components/calc-metrics/cm-workflow/cm-approving.md)
->&#x200B;>[Compartilhar segmentos](/help/components/segments/seg-share.md)
+>>[Dicionário de dados](/help/components/data-dictionary/data-dictionary-overview.md)
+>>[Aprovar métricas calculadas](/help/components/calc-metrics/cm-workflow/cm-approving.md)
+>>[Compartilhar segmentos](/help/components/segments/seg-share.md)
 >
