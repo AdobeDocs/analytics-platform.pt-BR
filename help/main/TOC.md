@@ -484,7 +484,7 @@ ht-degree: 99%
       + [Conjuntos de dados de exportação e Serviço de consulta](../use-cases/data-export/queryservice-export-datasets.md)
    + Assimilação de dados {#data-ingestion}
       + [Assimilar e usar dados do Marketo Engage](../use-cases/data-ingestion/marketo.md)
-      + [Assimilar e use públicos-alvo da Experience Platform](../use-cases/data-ingestion/ingest-aep-segments.md)
+      + [Ingerir e usar públicos-alvo da Experience Platform](../use-cases/data-ingestion/ingest-aep-segments.md)
    + Visualizações de dados {#data-views}
       + [Casos de uso de visualizações de dados](/help/use-cases/data-views/data-views-usecases.md)
       + [Uso de dimensões e métricas de ligação](/help/use-cases/data-views/binding-dimensions-metrics.md)
