@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: b9b73926-6502-4a48-ba73-c784f80950d3
-source-git-commit: d9a65774fa5ab8c6b7fdd018f5d345dc7eb9e9de
+source-git-commit: 359fe2a718ccef816377083aceb2652b4a905072
 workflow-type: tm+mt
 source-wordcount: '1181'
 ht-degree: 0%
@@ -44,7 +44,7 @@ Para o plano de medição de validação de compilação, é necessário garanti
 
 Além disso, é necessário adicionar duas métricas de compilação que são baseadas na presença de valores em uma dimensão.
 
-1. Use o campo que contém a ID de pessoa do conjunto de dados compilado para configurar uma métrica que define se uma ID de pessoa está definida. Adicione essa ID de pessoa mesmo se estiver usando a compilação baseada em gráfico, pois a ID de pessoa ajuda a estabelecer uma linha de base. Caso a ID de pessoa não esteja contida no conjunto de dados, sua linha de base é 0%.
+1. Use o campo que contém a ID de pessoa do conjunto de dados compilado para configurar uma métrica que define se uma ID de pessoa está definida. Adicione essa ID de pessoa mesmo se estiver usando a compilação baseada em gráfico, pois a ID de pessoa ajuda a estabelecer uma linha de base. Caso a ID da pessoa não esteja contida no conjunto de dados, sua linha de base é 0%.
 
    No exemplo abaixo, `personalEmail.address` serve como a identidade e é usado para criar a métrica **[!UICONTROL _Conjunto de emails]**.
    ![Métrica do conjunto de emails](assets/emailset-metric.png)

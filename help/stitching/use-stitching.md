@@ -1,20 +1,20 @@
 ---
-title: Usar compilação
-description: Como usar a compilação
+title: Solicitar compilação
+description: Como solicitar a compilação
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: a04c74ab-606e-45a9-a3e4-0d476c8d2426
-source-git-commit: 1ee282d0bf91c1a2f27073d0755cf404148d4d5b
+source-git-commit: 359fe2a718ccef816377083aceb2652b4a905072
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 9%
+source-wordcount: '460'
+ht-degree: 8%
 
 ---
 
-# Usar compilação
+# Solicitar compilação
 
-Assim que sua organização atender a todos os [pré-requisitos](overview.md#prerequisites) e entender as limitações comuns de [limitações](overview.md#limitations) e do método de compilação específico ([baseado em campo](fbs.md#limitations) e [baseado em gráfico](gbs.md#limitations)), você poderá seguir essas etapas para começar a usar a compilação no Customer Journey Analytics.
+Assim que sua organização atender a todos os [pré-requisitos](overview.md#prerequisites) e entender as limitações comuns de [limitações](overview.md#limitations) e do método de compilação específico ([baseado em campo](fbs.md#limitations) e [baseado em gráfico](gbs.md#limitations)), você poderá seguir essas etapas para solicitar e começar a usar a compilação no Customer Journey Analytics.
 
 ## Selecionar opções
 
@@ -35,20 +35,19 @@ O pacote do Customer Journey Analytics ao qual você está habilitado determina 
    - A ID do conjunto de dados que você deseja rechavear.
    - O nome da coluna (caminho de identidade e namespace) da ID persistente para o conjunto de dados desejado (o identificador que aparece em cada linha).
    - Se o conjunto de dados suportar `identityMap`:
-      - Para a compilação em campo, especifique o namespace para as IDs persistente e transitória.
+      - Para a compilação em campo, especifique o namespace para as IDs persistente e de pessoa.
       - Para a compilação baseada em gráfico, especifique o namespace da ID persistente e o namespace de identidade a ser usado para consultar o gráfico de identidade.
    - Se o conjunto de dados não suportar `identityMap`:
-      - Para a compilação em campo, o nome da coluna da ID transitória para o conjunto de dados desejado (o identificador de pessoa, que também atua como um link entre conjuntos de dados no contexto de uma conexão).
+      - Para a compilação em campo, o nome da coluna da ID de pessoa para o conjunto de dados desejado (o identificador de pessoa, que também atua como um link entre conjuntos de dados no contexto de uma conexão).
       - Para compilação baseada em gráfico, o namespace de identidade a ser usado para consultar o gráfico de identidade.
    - Sua preferência por janela de retrospectiva e frequência de repetição. Consulte seu pacote do Customer Journey Analytics para obter as [opções](#options) disponíveis.
    - Nome da sandbox.
 
 
-2. O Suporte ao cliente da Adobe trabalha com a engenharia da Adobe para permitir a compilação ao receber sua solicitação. Depois de habilitada, um novo conjunto de dados rechaveado que contém uma nova coluna de ID compilada é exibido no Adobe Experience Platform. O Suporte ao cliente da Adobe pode fornecer a ID do novo conjunto de dados.
-
+2. O Suporte ao cliente da Adobe trabalha com a engenharia da Adobe para permitir a compilação ao receber sua solicitação. Depois de habilitado, um conjunto de dados rechaveado que contém uma coluna de ID compilada é exibido no Adobe Experience Platform. O Suporte ao cliente da Adobe pode fornecer a ID do novo conjunto de dados.
 3. Quando ativado pela primeira vez, o Adobe fornece um preenchimento retroativo de dados compilados. Consulte seu pacote do Customer Journey Analytics para a [opção](#options) disponível.
 
-4. Se você quiser usar o novo conjunto de dados compilado em uma análise entre canais, será necessário adicionar o novo conjunto de dados compilado a uma [conexão](../connections/overview.md) no Customer Journey Analytics. Em seguida, adicione outros conjuntos de dados necessários para a análise entre canais e selecione a ID de pessoa correta para cada conjunto de dados.
+4. Se você quiser usar o conjunto de dados compilado em uma análise entre canais, é necessário adicionar o conjunto de dados compilado a uma [conexão](../connections/overview.md) no Customer Journey Analytics. Em seguida, adicione outros conjuntos de dados necessários para a análise entre canais e selecione a ID de pessoa correta para cada conjunto de dados.
 
 5. [Crie uma visualização de dados](/help/data-views/create-dataview.md) com base na conexão.
 

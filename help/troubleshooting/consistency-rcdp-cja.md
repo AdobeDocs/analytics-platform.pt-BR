@@ -4,10 +4,10 @@ title: Consistência das métricas e associação do público-alvo
 role: Admin
 feature: Basics
 exl-id: 13d972bc-3d32-414e-a67d-845845381c3e
-source-git-commit: 7c906e30d54362713f5013c8661ee523938d4b0f
+source-git-commit: 359fe2a718ccef816377083aceb2652b4a905072
 workflow-type: tm+mt
-source-wordcount: '625'
-ht-degree: 100%
+source-wordcount: '623'
+ht-degree: 90%
 
 ---
 
@@ -22,7 +22,7 @@ Ao comparar as contagens de associação de público-alvo na Real-time CDP e no 
 
 Atualmente, a Real-time CDP e o Customer Journey Analytics não compartilham a mesma definição de pessoa. A Real-time CDP depende totalmente das informações contidas no [Gráfico de identidade](https://experienceleague.adobe.com/pt-br/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs) para criar um perfil mesclado.
 
-O Customer Journey Analytics pode ser configurado para usar a [Compilação](../stitching/overview.md). Se você usar a [Compilação baseada em campo](/help/stitching/fbs.md) como o mecanismo de compilação, especifique um identificador de um conjunto de dados no data lake para compilar os dados nesse conjunto com a finalidade de elevar o conjunto de dados com perfis mesclados aprimorados. Se você usar a [Compilação baseada em gráfico](/help/stitching/gbs.md) como o mecanismo de compilação, um processo semelhante usará o gráfico de identidade, com base em um namespace de identidade especificado.
+O Customer Journey Analytics pode ser configurado para usar a [Compilação](../stitching/overview.md). Se você usar a [Compilação em campo](/help/stitching/fbs.md) como o mecanismo de compilação, especifique um identificador de um conjunto de dados no data lake para compilar os dados nesse conjunto de dados com a finalidade de elevar o conjunto de dados com perfis mesclados aprimorados. Se você usar a [Compilação baseada em gráfico](/help/stitching/gbs.md) como o mecanismo de compilação, um processo semelhante estará usando o gráfico de identidade, com base em um namespace de identidade especificado.
 
 
 ## Diferenças na configuração do conjunto de dados

@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: 9774e0e3af024823a03dbcd8d6766877f55e95d8
+source-git-commit: 359fe2a718ccef816377083aceb2652b4a905072
 workflow-type: tm+mt
-source-wordcount: '792'
-ht-degree: 100%
+source-wordcount: '821'
+ht-degree: 74%
 
 ---
 
@@ -18,13 +18,13 @@ ht-degree: 100%
 >
 >Você deve ter o pacote **Select** ou superior (para a [compilação baseada em campo](fbs.md)) ou o pacote **Prime** ou superior (para a [compilação baseada em gráfico](gbs.md)) para usar a funcionalidade descrita nesta seção. Entre em contato com seu administrador se não tiver certeza de qual pacote do Customer Journey Analytics você tem.
 
-A compilação de identidade (ou simplesmente, compilação) é um recurso eficiente que aumenta a adequação de um conjunto de dados de eventos com a análise entre canais. A análise entre canais é um dos casos de uso principais que o Customer Journey Analytics pode processar, permitindo combinar e executar relatórios em vários conjuntos de dados de diferentes canais com base em um identificador comum (ID de pessoa).
+A compilação de identidade (ou simplesmente, compilação) é um recurso eficiente que aumenta a adequação de um conjunto de dados de eventos com a análise entre canais. A análise entre canais é um dos principais casos de uso do Customer Journey Analytics. O recurso permite combinar e executar relatórios de maneira contínua em vários conjuntos de dados de diferentes canais, com base em um identificador comum (ID de pessoa).
 
-Quando você combina conjuntos de dados com IDs de pessoa semelhantes, a atribuição é transportada entre dispositivos e canais. Por exemplo, um usuário visita o site pela primeira vez por meio de um anúncio no computador desktop. Esse usuário encontra um problema com seu pedido e, em seguida, faz uma chamada à equipe de atendimento ao cliente para ajudá-lo a resolver o problema. Com a análise entre canais, você pode atribuir eventos da central de atendimento ao anúncio clicado originalmente.
+Quando você combina conjuntos de dados com IDs de pessoa semelhantes, a atribuição é transportada entre dispositivos e canais. Por exemplo, um usuário visita seu site por meio de um anúncio em seu computador desktop. Os usuários compram um produto, mas depois encontram um problema com a ordem do pedido. O usuário então faz uma chamada à equipe de atendimento ao cliente para ajudar a resolver o problema. Com a análise entre canais, você pode atribuir eventos da central de atendimento ao anúncio em que o usuário clicou originalmente.
 
-Infelizmente, nem todos os conjuntos de dados baseados em eventos que fazem parte da sua conexão no Customer Journey Analytics estão preenchidos por padrão com dados suficientes para oferecer suporte a essa atribuição. Em especial, os conjuntos de dados de experiência baseados na web ou em dispositivos móveis geralmente não têm informações reais de ID de pessoa disponíveis em todos os eventos.
+Infelizmente, nem todos os conjuntos de dados baseados em eventos que fazem parte da sua conexão no Customer Journey Analytics estão preenchidos por padrão com dados suficientes para oferecer suporte a essa atribuição. Especialmente, os conjuntos de dados de experiência baseados na Web ou em dispositivos móveis geralmente não têm informações reais de ID de pessoa disponíveis em todos os eventos.
 
-A compilação permite rechavear identidades em linhas de um conjunto de dados, garantindo que a ID de pessoa (ID compilada) esteja disponível em cada evento. A compilação analisa os dados do usuário de sessões autenticadas e não autenticadas para determinar o valor da ID transitória comum (ID de pessoa) que pode ser usada como ID compilada. Esse rechaveamento permite resolver registros distintos em uma única ID compilada para realizar uma análise no nível da pessoa, em vez de no nível do dispositivo ou do cookie.
+A compilação permite rechavear identidades nas linhas de um conjunto de dados para garantir que a ID de pessoa (ID compilada) esteja disponível em cada evento. A compilação analisa os dados do usuário de sessões autenticadas e não autenticadas para determinar o valor da ID de pessoa comum que pode ser usada como ID compilada. Esse rechaveamento permite a resolução de registros distintos em uma única ID compilada para análise no nível da pessoa, em vez de no nível do dispositivo ou do cookie.
 
 O Customer Journey Analytics oferece suporte a dois tipos de compilação: [compilação baseada em campos](fbs.md) e [compilação baseada em gráficos](gbs.md).
 
@@ -45,6 +45,12 @@ Antes de usar a compilação, verifique se a sua organização está preparada c
 
 Ao definir sua conexão do Customer Journey Analytics, você se beneficiará da análise entre canais por combinar um ou mais conjuntos de dados compilados com outros conjuntos de dados, como dados da central de atendimento. Essa configuração de conexão pressupõe que esses outros conjuntos de dados já possuem uma ID de pessoa em cada linha, semelhante à ID compilada.
 
+## Ativar compilação
+
+Você pode ativar a compilação de duas maneiras:
+
+- [Solicitação para ativar a compilação](/help/stitching/use-stitching.md)
+- [Habilitar compilação na interface de Conexões](/help/stitching/use-stitching-ui.md) [!BADGE Beta]{type=Informative}
 
 ## Limitações
 
@@ -85,8 +91,8 @@ A compilação oferece suporte aos seguintes conjuntos de dados do Journey Optim
 
 >[!MORELIKETHIS]
 >
->[Compilação baseada em campos](fbs.md)
->>[Compilação baseada em gráficos](gbs.md)
+>[Compilação em campo](fbs.md)
+>>[Compilação baseada em gráfico](gbs.md)
 >>[Usar compilação](use-stitching.md)
 >>[Validar compilação](validate.md)
 >>[Perguntas frequentes sobre compilação](faq.md)

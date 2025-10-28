@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: f4115164-7263-40ad-9706-3b98d0bb7905
 role: Admin
-source-git-commit: 4cea79a6ba26a2e4f06bfc9c60fdfc03341a7d60
+source-git-commit: 359fe2a718ccef816377083aceb2652b4a905072
 workflow-type: tm+mt
-source-wordcount: '2084'
-ht-degree: 25%
+source-wordcount: '2069'
+ht-degree: 23%
 
 ---
 
@@ -23,8 +23,8 @@ Aqui estão algumas perguntas frequentes sobre a compilação:
 Você pode usar uma visualização de Fluxo com a dimensão ID de conjunto de dados.
 
 1. Faça logon no [Customer Journey Analytics](https://analytics.adobe.com) e crie um projeto do Workspace em branco.
-2. Selecione a guia **[!UICONTROL ** Visualizações **]** à esquerda e arraste uma visualização de **[!UICONTROL **&#x200B; Fluxo &#x200B;**]** para a tela à direita.
-3. Selecione a guia **[!UICONTROL ** Componentes **]** à esquerda e arraste a dimensão **[!UICONTROL ** ID de conjunto de dados **]** para o local central rotulado **[!UICONTROL **&#x200B; Dimension ou Item &#x200B;**]**.
+2. Selecione a guia **[!UICONTROL ** Visualizações **]** à esquerda e arraste uma visualização de **[!UICONTROL ** Fluxo **]** para a tela à direita.
+3. Selecione a guia **[!UICONTROL ** Componentes **]** à esquerda e arraste a dimensão **[!UICONTROL ** ID de conjunto de dados **]** para o local central rotulado **[!UICONTROL ** Dimension ou Item **]**.
 4. Este relatório de fluxo é interativo. Para expandir os fluxos para páginas subsequentes ou anteriores, selecione qualquer um dos valores. Use o menu de clique com o botão direito do mouse para expandir ou recolher colunas. Dimensões diferentes também podem ser usadas no mesmo relatório de fluxo.
 
 Se você quiser renomear itens de dimensão da ID de conjunto de dados, poderá usar um conjunto de dados de pesquisa.
@@ -33,7 +33,7 @@ Se você quiser renomear itens de dimensão da ID de conjunto de dados, poderá 
 
 ## Reproduzir novamente
 
-+++ Até que ponto a compilação repete os visitantes?
++++ Até que ponto a compilação de perfis de repetição faz?
 
 A janela de pesquisa para rechaveamento depende da frequência desejada de repetição de dados. Por exemplo, se você configurar a compilação para repetir os dados uma vez por semana, a janela de pesquisa para rechaveamento será de sete dias. Se você configurar a compilação para repetir dados todos os dias, a janela de pesquisa para rechaveamento será de um dia.
 
@@ -45,7 +45,7 @@ A janela de pesquisa para rechaveamento depende da frequência desejada de repet
 
 Em algumas situações, é possível que várias pessoas façam logon no mesmo dispositivo. Os exemplos incluem um dispositivo compartilhado em casa, PCs compartilhados em uma biblioteca ou um quiosque em uma loja de varejo.
 
-A ID transitória substitui a ID persistente; portanto, os dispositivos compartilhados são considerados pessoas separadas (mesmo que sejam originários do mesmo dispositivo).
+A ID de pessoa substitui a ID persistente; portanto, os dispositivos compartilhados são considerados pessoas separadas (mesmo que sejam originários do mesmo dispositivo).
 
 Consulte o caso de uso [Dispositivos compartilhados](/help/use-cases/stitching/shared-devices.md) para obter mais detalhes.
 
@@ -57,7 +57,7 @@ Consulte o caso de uso [Dispositivos compartilhados](/help/use-cases/stitching/s
 
 Em algumas situações, um usuário individual pode ser associado a muitas IDs persistentes. Um exemplo é a limpeza frequente de cookies do navegador ou o uso do modo privado/anônimo do navegador.
 
-Para a compilação em campo, o número de IDs persistentes é irrelevante em favor da ID transitória. Um único usuário pode pertencer a qualquer número de dispositivos sem afetar a capacidade da Customer Journey Analytics de compilar entre dispositivos.
+Para a compilação em campo, o número de IDs persistentes é irrelevante em favor da ID de pessoa. Um único usuário pode pertencer a qualquer número de dispositivos sem afetar a capacidade da Customer Journey Analytics de compilar entre dispositivos.
 
 Para a compilação baseada em gráficos, uma única pessoa pode ter muitas ID persistentes no gráfico de identidade. A compilação baseada em gráfico usa a ID persistente com base no namespace especificado. Caso haja mais ID persistente para o mesmo namespace, a primeira ID persistente lexicográfica será usada.
 
@@ -94,20 +94,20 @@ O Adobe lida com solicitações de privacidade de acordo com as leis locais e in
 
 Para ilustrar, imagine os seguintes dados para identidades, eventos antes e depois da compilação.
 
-| Mapa de identidade | ID | carimbo de data e hora | ID persistente | namespace persistente | id transitória | namespace transitório |
+| Mapa de identidade | ID | carimbo de data e hora | ID persistente | namespace persistente | E/S de pessoa | namespace da pessoa |
 |---|---|---|---|---|---|---|
 |  | 1 | ts1 | 123 | ecid | Bob | CustId |
 |  | 2 | ts2 | 123 | ecid | Alex | CustId |
 
 
-| Conjunto de dados de eventos | ID | carimbo de data e hora | ID persistente | namespace persistente | id transitória | namespace transitório |
+| Conjunto de dados de eventos | ID | carimbo de data e hora | ID persistente | namespace persistente | ID da pessoa | namespace da pessoa |
 |---|---|---|---|---|---|---|
 | | 1 | ts0 | 123 | ecid | | |
 | | 2 | ts1 | 123 | ecid | Bob | CustId |
 | | 3 | ts2 | 123 | ecid | Alex | CustId |
 
 
-| Conjunto de dados compilados | ID | carimbo de data e hora | ID persistente | namespace persistente | id transitória | namespace transitório | ID com título | Namespace compilado |
+| Conjunto de dados compilados | ID | carimbo de data e hora | ID persistente | namespace persistente | ID da pessoa | namespace da pessoa | ID compilada | namespace compilado |
 |---|---|---|---|---|---|---|---|---|
 | | 1 | ts0 | 123 | ecid | | | Bob | CustId |
 | | 2 | ts1 | 123 | ecid | Bob | CustId | Bob | CustId |
@@ -118,20 +118,20 @@ Para ilustrar, imagine os seguintes dados para identidades, eventos antes e depo
 
 Quando uma solicitação de privacidade é recebida para o cliente com CustID Bob, as linhas com entradas tachadas são excluídas. Outros eventos são corrigidos usando o mapa de identidade. Por exemplo, a primeira ID compilada no conjunto de dados compilado é atualizada para **Alex**.
 
-| Mapa de identidade | ID | carimbo de data e hora | ID persistente | namespace persistente | id transitória | namespace transitório |
+| Mapa de identidade | ID | carimbo de data e hora | ID persistente | namespace persistente | ID da pessoa | namespace da pessoa |
 |:---:|---|---|---|---|---|---|
 | ![ExcluirEstruturaDeTópicos](/help/assets/icons/DeleteOutline.svg) | ~~1~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~Bob~~ | ~~CustId~~ |
 |  | 2 | ts2 | 123 | ecid | Alex | CustId |
 
 
-| Conjunto de dados de eventos | ID | carimbo de data e hora | ID persistente | namespace persistente | id transitória | namespace transitório |
+| Conjunto de dados de eventos | ID | carimbo de data e hora | ID persistente | namespace persistente | ID da pessoa | namespace da pessoa |
 |:---:|---|---|---|---|---|---|
 | | 1 | ts0 | 123 | ecid | | |
 | ![ExcluirEstruturaDeTópicos](/help/assets/icons/DeleteOutline.svg) | ~~2~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~Bob~~ | ~~CustId~~ |
 | | 3 | ts2 | 123 | ecid | Alex | CustId |
 
 
-| Conjunto de dados compilados | ID | carimbo de data e hora | ID persistente | namespace persistente | id transitória | namespace transitório | ID com título | Namespace compilado |
+| Conjunto de dados compilados | ID | carimbo de data e hora | ID persistente | namespace persistente | ID da pessoa | namespace da pessoa | ID compilada | namespace compilado |
 |:---:|---|---|---|---|---|---|---|---|
 | | 1 | ts0 | 123 | ecid | | | **Alex** | CustId |
 | ![ExcluirEstruturaDeTópicos](/help/assets/icons/DeleteOutline.svg) | ~~2~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~Bob~~ | ~~CustId~~ | ~~Bob~~ | ~~CustId~~ |
@@ -142,20 +142,20 @@ Quando uma solicitação de privacidade é recebida para o cliente com CustID Bo
 
 Quando uma solicitação de privacidade é recebida para o cliente com CustID Bob, as linhas com entradas tachadas são excluídas. Outros eventos são corrigidos usando a ID persistente. Por exemplo, a primeira ID compilada no conjunto de dados compilado é atualizada para **123**.
 
-| Mapa de identidade | ID | carimbo de data e hora | ID persistente | namespace persistente | id transitória | namespace transitório |
+| Mapa de identidade | ID | carimbo de data e hora | ID persistente | namespace persistente | ID da pessoa | namespace da pessoa |
 |:---:|---|---|---|---|---|---|
 | ![ExcluirEstruturaDeTópicos](/help/assets/icons/DeleteOutline.svg) | ~~1~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~Bob~~ | ~~CustId~~ |
 |  | 2 | ts2 | 123 | ecid | Alex | CustId |
 
 
-| Conjunto de dados de eventos | ID | carimbo de data e hora | ID persistente | namespace persistente | id transitória | namespace transitório |
+| Conjunto de dados de eventos | ID | carimbo de data e hora | ID persistente | namespace persistente | ID da pessoa | namespace da pessoa |
 |:---:|---|---|---|---|---|---|
 | | 1 | ts0 | 123 | ecid | | |
 | ![ExcluirEstruturaDeTópicos](/help/assets/icons/DeleteOutline.svg) | ~~2~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~Bob~~ | ~~CustId~~ |
 | | 3 | ts2 | 123 | ecid | Alex | CustId |
 
 
-| Conjunto de dados compilados | ID | carimbo de data e hora | ID persistente | namespace persistente | id transitória | namespace transitório | ID com título | Namespace compilado |
+| Conjunto de dados compilados | ID | carimbo de data e hora | ID persistente | namespace persistente | ID da pessoa | namespace da pessoa | ID compilada | namespace compilado |
 |:---:|---|---|---|---|---|---|---|---|
 | | 1 | ts0 | 123 | ecid | | | **123** | ecid |
 | ![ExcluirEstruturaDeTópicos](/help/assets/icons/DeleteOutline.svg) | ~~2~~ | ~~ts1~~ | ~~123~~ | ~~ecid~~ | ~~Bob~~ | ~~CustId~~ | ~~Bob~~ | ~~CustId~~ |
@@ -165,23 +165,23 @@ Quando uma solicitação de privacidade é recebida para o cliente com CustID Bo
 
 ## Valores de ID persistentes em branco
 
-+++ O que acontece se o campo ID persistente em um ou mais eventos estiver em branco?
++++ O que acontece se o campo de ID persistente em um ou mais eventos estiver em branco?
 
 Se o campo ID persistente estiver em branco em um evento em um conjunto de dados que está sendo compilado, a ID compilada para esse evento será determinada de uma das duas formas a seguir:
 
-* Se o campo ID transitória não estiver em branco, o Customer Journey Analytics usará o valor em ID transitória como a ID compilada.
-* Se o campo ID transitória estiver em branco, o Customer Journey Analytics também deixará a ID compilada em branco. Nesse caso, a ID persistente, a ID transitória e a ID com título estão em branco no evento. Esses tipos de eventos são descartados de qualquer conexão do Customer Journey Analytics usando o conjunto de dados que está sendo compilado em que a ID compilada foi escolhida como a ID de pessoa.
+* Se o campo ID transitória não estiver em branco, o Customer Journey Analytics usará o valor na ID transitória como a ID compilada.
+* Se o campo ID transitória estiver em branco, o Customer Journey Analytics também deixará a ID compilada em branco. Nesse caso, a ID persistente, a ID transitória e a ID compilada estão em branco no evento. Esses tipos de eventos são descartados de qualquer conexão do Customer Journey Analytics usando o conjunto de dados que está sendo compilado em que a ID compilada foi escolhida como a ID de pessoa.
 
 +++
 
 
-## Valores de ID transitórios indefinidos
+## Valores de ID de pessoa indefinidos
 
-+++ O que acontece se o campo ID Transitória em um ou mais eventos tiver valores de espaço reservado, como `Undefined`?
++++ O que acontece se o campo de ID de pessoa em um ou mais eventos tiver valores de espaço reservado, como `Undefined`?
 
 Tenha cuidado com o &quot;recolhimento de pessoas&quot;, que ocorre quando a compilação é aplicada a dados que usam valores de espaço reservado para IDs transitórias. Na tabela de exemplo abaixo, IDs de pessoa indefinidas originárias de um conjunto de dados proveniente de um sistema CRM são preenchidas com o valor &quot;Indefinido&quot;, resultando na representação incorreta de pessoas.
 
-| Evento | Carimbo de data e hora | ID persistente (ID do cookie) | ID transitória (ID de logon) | ID compilada (após repetição) |
+| Evento | Carimbo de data e hora | ID persistente (ID do cookie) | ID transitória | ID compilada (após repetição) |
 |---|---|---|---|---|
 | 1 | 2023-05-12 12:01 | 123 | - | **Cory** |
 | 2 | 2023-05-12 12:02 | 123 | Cory | **Cory** |
@@ -217,7 +217,7 @@ Outras métricas podem ser semelhantes no Customer Journey Analytics e no Adobe 
 
 +++ O Customer Journey Analytics pode usar campos do Mapa de identidade?
 
-Sim, o Customer Journey Analytics pode usar campos do Mapa de identidade para a compilação [baseada em campo](/help/stitching/fbs.md#identitymap) e [baseada em gráfico](/help/stitching/gbs.md#identitymap).
+Sim, o Customer Journey Analytics pode usar campos do Mapa de identidade para compilação [baseada em campo](/help/stitching/fbs.md#identitymap) e [baseada em gráfico](/help/stitching/gbs.md#identitymap).
 
 +++
 
@@ -275,6 +275,6 @@ curl -X POST \
 
 Qualquer uso da tag `unifiedProfile` na solicitação, enquanto você não estiver licenciado para o Perfil de dados do cliente em tempo real, retornará um erro.
 
-Consulte [Criar um conjunto de dados habilitado para Perfil e Identidade](https://experienceleague.adobe.com/pt-br/docs/experience-platform/catalog/datasets/enable-for-profile#create-a-dataset-enabled-for-profile-and-identity) para obter mais informações.
+Consulte [Criar um conjunto de dados habilitado para Perfil e Identidade](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/enable-for-profile#create-a-dataset-enabled-for-profile-and-identity) para obter mais informações.
 
 +++ 

@@ -1,21 +1,21 @@
 ---
 title: Compilação baseada em gráfico
-description: Explicação da compilação baseada em gráfico
+description: Explica o conceito e o funcionamento da compilação baseada em gráfico
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: ea5c9114-1fc3-4686-b184-2850acb42b5c
-source-git-commit: c4aea74807be15af56413522d9e6fbf5f18a37a0
+source-git-commit: 359fe2a718ccef816377083aceb2652b4a905072
 workflow-type: tm+mt
-source-wordcount: '1553'
-ht-degree: 7%
+source-wordcount: '1549'
+ht-degree: 5%
 
 ---
 
 # Compilação baseada em gráfico
 
 
-Na compilação baseada em gráfico, você especifica um conjunto de dados de evento, bem como a ID persistente (cookie) e o namespace da ID transitória (ID de pessoa) para esse conjunto de dados. A compilação baseada em gráfico cria uma nova coluna para a ID compilada no novo conjunto de dados compilado. Em seguida, o usa a ID persistente para consultar o gráfico de identidade do Experience Platform Identity Service, usando o namespace especificado, para atualizar a ID compilada.
+Na compilação baseada em gráfico, você especifica um conjunto de dados de evento, bem como a ID persistente (cookie) e o namespace da ID de pessoa para esse conjunto de dados. A compilação baseada em gráfico adiciona uma nova coluna para a ID compilada ao conjunto de dados do evento. Em seguida, o usa a ID persistente para consultar o gráfico de identidade do Experience Platform Identity Service, usando o namespace especificado, para atualizar a ID compilada.
 
 >[!NOTE]
 >
@@ -27,7 +27,7 @@ Na compilação baseada em gráfico, você especifica um conjunto de dados de ev
 
 ## IdentityMap
 
-A compilação baseada em gráfico oferece suporte ao uso do [`identityMap` grupo de campos](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/schema/composition#identity) nos seguintes cenários:
+A compilação baseada em gráfico oferece suporte ao uso do [`identityMap` grupo de campos](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity) nos seguintes cenários:
 
 - Uso da identidade primária em `identityMap` namespaces para definir a persistentID:
    - Se várias identidades primárias forem encontradas em namespaces diferentes, as identidades nos namespaces serão classificadas de forma lexigáfica e a primeira identidade será selecionada.
@@ -97,10 +97,10 @@ A compilação baseada em gráfico oferece suporte ao uso do [`identityMap` grup
 
 A compilação faz um mínimo de duas passagens de dados em um determinado conjunto de dados.
 
-- **Compilação em tempo real**: tenta compilar cada ocorrência (evento) à medida que elas chegam, usando a ID persistente para pesquisar a ID transitória do namespace selecionado, consultando o gráfico de identidade. Se a ID transitória estiver disponível na pesquisa, essa ID transitória será imediatamente compilada.
+- **Compilação em tempo real**: tenta compilar cada ocorrência (evento) à medida que elas chegam, usando a ID persistente para pesquisar a ID de pessoa para o namespace selecionado, consultando o gráfico de identidade. Se a ID de pessoa estiver disponível na pesquisa, essa ID de pessoa será compilada imediatamente.
 
 - **Repetir compilação**: *repete* dados com base em identidades atualizadas do gráfico de identidade. É nesse estágio que as ocorrências de dispositivos anteriormente desconhecidos (IDs persistentes) são compiladas, pois o gráfico de identidade resolveu a identidade de um namespace. A repetição é determinada por dois parâmetros: **frequência** e **janela de pesquisa**. A Adobe oferece as seguintes combinações desses parâmetros:
-   - **Pesquisa diária em uma frequência diária**: os dados são repetidos todos os dias com uma janela de pesquisa de 24 horas. Essa opção tem a vantagem de que as repetições são muito mais frequentes, mas os visitantes não autenticados devem se autenticar no mesmo dia em que visitam o site.
+   - **Pesquisa diária em uma frequência diária**: os dados são repetidos todos os dias com uma janela de pesquisa de 24 horas. Essa opção tem a vantagem de que as repetições são muito mais frequentes, mas os perfis não autenticados devem se autenticar no mesmo dia em que visitam o site.
    - **Pesquisa semanal em uma frequência semanal**: os dados são repetidos uma vez por semana com uma janela de pesquisa semanal (consulte [opções](#options)). Essa opção tem uma vantagem que permite que sessões não autenticadas tenham um tempo muito mais tolerante para autenticação. No entanto, os dados não compilados com menos de uma semana não são reprocessados até a próxima repetição semanal.
    - **Pesquisa quinzenal em uma frequência semanal**: os dados são repetidos uma vez por semana com uma janela de pesquisa quinzenal (consulte [opções](#options)). Essa opção tem uma vantagem que permite que sessões não autenticadas tenham um tempo muito mais tolerante para autenticação. No entanto, os dados não compilados com menos de duas semanas não são reprocessados até a próxima repetição semanal.
    - **Pesquisa mensal em uma frequência semanal**: os dados são repetidos todas as semanas com uma janela de pesquisa mensal (consulte [opções](#options)). Essa opção tem uma vantagem que permite que sessões não autenticadas tenham um tempo muito mais tolerante para autenticação. No entanto, os dados não compilados com menos de um mês não são reprocessados até a próxima repetição semanal.
@@ -112,14 +112,14 @@ A compilação faz um mínimo de duas passagens de dados em um determinado conju
   >O processo de descompilação, como parte das solicitações de privacidade, muda no início de 2025. O processo de descompilação atual recompila os eventos usando a versão mais recente de identidades conhecidas. Essa reatribuição de eventos para outra identidade pode ter consequências legais indesejáveis. Para solucionar essas preocupações, a partir de 2025, o novo processo de descompilação atualiza os eventos que são objeto da solicitação de privacidade com a ID persistente.
   > 
 
-Os dados além da janela de pesquisa não são repetidos. Um visitante deve se autenticar em uma determinada janela de pesquisa para que uma visita não autenticada e uma visita autenticada sejam identificadas juntas. Depois que um dispositivo é reconhecido, ele é compilado em tempo real a partir desse ponto.
+Os dados além da janela de pesquisa não são repetidos. Um perfil deve ser autenticado em uma determinada janela de pesquisa para que uma visita não autenticada e uma visita autenticada sejam identificadas juntas. Depois que um dispositivo é reconhecido, ele é compilado em tempo real a partir desse ponto.
 
 Considere os dois gráficos de identidade a seguir para a ID persistente `246` e `3579`, como esses gráficos de identidade são atualizados ao longo do tempo e como essas atualizações afetam as etapas na compilação baseada em gráfico.
 
 ![Gráfico de identidade 246](assets/identity-graph-246.svg)
 ![Gráfico de identidade 3579](assets/identity-graph-3579.svg)
 
-Você pode exibir um gráfico de identidade ao longo do tempo para um perfil específico usando o [Visualizador de Gráficos de Identidade](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/features/identity-graph-viewer). Consulte também [Lógica de vinculação do serviço de identidade](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/features/identity-linking-logic) para entender melhor a lógica usada ao vincular identidades.
+Você pode exibir um gráfico de identidade ao longo do tempo para um perfil específico usando o [Visualizador de Gráficos de Identidade](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-viewer). Consulte também [Lógica de vinculação do serviço de identidade](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-linking-logic) para entender melhor a lógica usada ao vincular identidades.
 
 ### Etapa 1: compilação em tempo real
 
@@ -207,9 +207,9 @@ A tabela a seguir representa os mesmos dados acima, mas mostra o efeito que uma 
 
 Os seguintes pré-requisitos se aplicam especificamente à compilação baseada em gráfico:
 
-- O conjunto de dados de evento no Adobe Experience Platform, ao qual você deseja aplicar a compilação, deve ter uma coluna que identifique um visitante em cada linha, a **ID persistente**. Por exemplo, uma ID de visitante gerada por uma biblioteca AppMeasurement do Adobe Analytics ou uma ECID gerada pelo serviço de identidade da Experience Platform.
+- O conjunto de dados de evento no Adobe Experience Platform, ao qual você deseja aplicar a compilação, deve ter uma coluna que identifique um perfil em cada linha, a **ID persistente**. Por exemplo, uma ID de visitante gerada por uma biblioteca AppMeasurement do Adobe Analytics ou uma ECID gerada pelo serviço de identidade da Experience Platform.
 - A ID persistente também deve ser [definida como uma identidade](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/ui/fields/identity) no esquema.
-- O gráfico de identidade do Experience Platform Identity Service deve ter um namespace (por exemplo, `Email` ou `Phone`) que você deseja usar durante a compilação para resolver a **ID transitória**. Consulte [Experience Platform Identity Service](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/home) para obter mais informações.
+- O gráfico de identidade do Experience Platform Identity Service deve ter um namespace (por exemplo, `Email` ou `Phone`) que você deseja usar durante a compilação para resolver a **ID de pessoa**. Consulte [Experience Platform Identity Service](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/home) para obter mais informações.
 
 >[!NOTE]
 >
@@ -220,10 +220,10 @@ Os seguintes pré-requisitos se aplicam especificamente à compilação baseada 
 
 As seguintes limitações se aplicam especificamente à compilação baseada em gráfico:
 
-- Os carimbos de data e hora não são considerados ao consultar a ID transitória usando o namespace especificado. Portanto, é possível que uma ID persistente seja compilada com uma ID transitória de um registro que tenha um carimbo de data e hora anterior.
+- Os carimbos de data e hora não são considerados ao consultar a ID de pessoa usando o namespace especificado. Portanto, é possível que uma ID persistente seja compilada com uma ID de pessoa de um registro que tenha um carimbo de data e hora anterior.
 - Em cenários de dispositivos compartilhados, em que o namespace no gráfico contém várias identidades, a primeira identidade lexicográfica é usada. Se as prioridades e os limites de namespace forem configurados como parte do lançamento das regras de vinculação de gráficos, a identidade do último usuário autenticado será usada. Consulte [Dispositivos compartilhados](/help/use-cases/stitching/shared-devices.md) para obter mais informações.
 - Há um limite rígido de três meses de preenchimento retroativo de identidades no gráfico de identidade. Você usaria o preenchimento retroativo de identidades caso não estivesse usando um aplicativo da Experience Platform, como a Real-time Customer Data Platform, para preencher o gráfico de identidade.
-- As [medidas de proteção do Serviço de identidade](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/guardrails) se aplicam. Consulte, por exemplo, os [seguintes limites estáticos](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/guardrails#static-limits):
+- As [medidas de proteção do Serviço de identidade](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails) se aplicam. Consulte, por exemplo, os [seguintes limites estáticos](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails#static-limits):
    - Número máximo de identidades em um gráfico: 50.
    - Número máximo de links para uma identidade para uma única assimilação de lote: 50.
    - Número máximo de identidades em um registro XDM para assimilação de gráfico: 20.
