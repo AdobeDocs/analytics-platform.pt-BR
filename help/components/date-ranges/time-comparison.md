@@ -4,22 +4,28 @@ title: Comparação de datas
 feature: Calendar
 exl-id: 08113536-658f-486b-ac56-6c531240c3c2
 role: User
-source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
+source-git-commit: 5a9cb206076755d5b34a8ec9108ca88a9468bfe3
 workflow-type: tm+mt
-source-wordcount: '683'
-ht-degree: 95%
+source-wordcount: '757'
+ht-degree: 82%
 
 ---
 
 # Comparação de datas
 
-A comparação de datas do Analysis Workspace permite selecionar qualquer coluna que contenha um intervalo de datas e criar uma comparação de datas comum, como: ano a ano, trimestre a trimestre, mês a mês etc.
+A comparação de datas no Analysis Workspace permite pegar qualquer coluna contendo um intervalo de datas e criar uma comparação de data comum, como: ano a ano, trimestre a trimestre, mês a mês e assim por diante.
 
 ## Comparar períodos
 
 A análise demanda contexto, o qual normalmente é fornecido por um período anterior. Por exemplo, a pergunta: *Como está o desempenho atual comparado a esse mesmo período no ano passado?* é fundamental para entender os negócios da sua empresa. A comparação de datas inclui automaticamente uma coluna de *diferença*, que mostra a porcentagem de mudanças em comparação com um período específico.
 
 1. Crie uma [Tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) com qualquer dimensão e métrica que deseja comparar ao longo de um período.
+1. Defina o período no painel ou na coluna para determinar o período de comparação e se é uma comparação de tempo variável ou fixo.
+
+   Para criar uma comparação de tempo de rolagem, defina o intervalo de datas do painel ou da coluna como um intervalo de datas em andamento (como **[!UICONTROL Últimos 7 dias]**, **[!UICONTROL Últimos 30 dias]** e assim por diante).
+
+   Para criar uma comparação de tempo fixo, defina o intervalo de datas do painel ou da coluna como um intervalo de datas personalizado.
+
 1. Abra o menu de contexto de uma linha da tabela e selecione **[!UICONTROL Comparar períodos]**.
 
    ![Linha da tabela com a opção “Comparar períodos” selecionada](assets/compare-time.png)
