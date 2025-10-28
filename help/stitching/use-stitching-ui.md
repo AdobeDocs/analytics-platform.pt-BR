@@ -6,16 +6,16 @@ feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
 badgePremium: label="Beta" type="Informative"
-source-git-commit: 0afe57047e2038f1acd9f88a1e7992da9a2819b1
+source-git-commit: 23b890ec6a3266d1ca0621b09264f1d6a2f82645
 workflow-type: tm+mt
-source-wordcount: '807'
+source-wordcount: '808'
 ht-degree: 3%
 
 ---
 
 # Usar compilação
 
-Você pode ativar a compilação em um ou mais conjuntos de dados de evento configurados como parte da conexão. O número de conjuntos de dados de evento que você pode ativar para compilação é determinado pelo pacote do Customer Journey Analytics que você licenciou.
+Você pode ativar a compilação em um ou mais conjuntos de dados de evento configurados como parte da conexão. O pacote do Customer Journey Analytics que você licenciou determina o número de conjuntos de dados de evento que podem ser habilitados para compilação.
 
 {{release-limited-testing}}
 
@@ -25,7 +25,7 @@ Você pode habilitar a compilação como parte das [configurações do conjunto 
 
 Para ativar a compilação em um conjunto de dados de evento na interface do usuário de conexões:
 
-* O esquema no qual o conjunto de dados se baseia deve ter definido:
+* O esquema no qual o conjunto de dados se baseia deve ter:
 
    * vários campos configurados como uma identidade e que permitem selecionar valores diferentes para uma ID persistente e uma ID de pessoa.
    * pelo menos um campo que esteja marcado como identidade principal com um namespace associado caso queira usar o Mapa de identidade e o namespace de identidade principal para ID persistente ou ID de pessoa.
@@ -127,7 +127,7 @@ Para habilitar a compilação, na seção de conjunto de dados do evento da caix
 
    >[!NOTE]
    >
-   >Você deve ter o direito de usar o gráfico de identidade.
+   >Certifique-se de que você esteja autorizado a usar o gráfico de identidade.
    >
 
    Antes disso, uma caixa de diálogo **[!UICONTROL Alterar para gráfico de identidade]** é exibida para garantir que você [concluiu a configuração do gráfico de identidade para o conjunto de dados](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service) antes de usar o gráfico de identidade para compilação. Selecione **[!UICONTROL Continuar]** para continuar.
@@ -141,7 +141,7 @@ Depois de salvar uma conexão que contém conjuntos de dados habilitados para a 
 
 ## Limitações
 
-Além das [limitações de compilação em campo](/help/stitching/fbs.md#limitations) e das [limitações de compilação em gráfico](/help/stitching/gbs.md#limitations), as seguintes limitações se aplicam quando você habilita a compilação na interface de Conexões:
+Além das [limitações de compilação em campo](/help/stitching/fbs.md#limitations) e das [limitações de compilação em gráfico](/help/stitching/gbs.md#limitations), as seguintes limitações se aplicam quando você habilita a compilação na interface Conexões:
 
-* Você só pode compilar um conjunto de dados de evento uma vez como parte de uma única conexão. Não é possível definir o mesmo conjunto de dados de evento mais de um e usar uma configuração de compilação separada para cada instância. Se quiser aplicar configurações de compilação diferentes no mesmo conjunto de dados, use uma conexão separada para cada configuração.
+* Você só pode compilar um conjunto de dados de evento uma vez como parte de uma única conexão. Não é possível definir o mesmo conjunto de dados de evento mais de uma vez e usar uma configuração de compilação separada para cada instância. Se quiser aplicar configurações de compilação diferentes no mesmo conjunto de dados, use uma conexão separada para cada configuração.
 
