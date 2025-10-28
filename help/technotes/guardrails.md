@@ -14,7 +14,7 @@ ht-degree: 7%
 
 # Medidas de proteção do Customer Journey Analytics
 
-Este documento fornece limites para vários componentes do Customer Journey Analytics. Para obter Medidas de Proteção, Parâmetros de Escopo e Direitos, consulte a [Descrição do Produto para o Customer Journey Analytics](https://helpx.adobe.com/br/legal/product-descriptions/customer-journey-analytics.html), a [Descrição do Produto para o Complemento do Adobe Analytics: Customer Journey Analytics](https://helpx.adobe.com/br/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html) ou a [Descrição do Produto para o Customer Journey Analytics B2B edition](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics-b2b.html).
+Este documento fornece limites para vários componentes do Customer Journey Analytics. Para obter Medidas de Proteção, Parâmetros de Escopo e Direitos, consulte a [Descrição do Produto para o Customer Journey Analytics](https://helpx.adobe.com/br/legal/product-descriptions/customer-journey-analytics.html), a [Descrição do Produto para o Complemento do Adobe Analytics: Customer Journey Analytics](https://helpx.adobe.com/br/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html) ou a [Descrição do Produto para o Customer Journey Analytics B2B edition](https://helpx.adobe.com/br/legal/product-descriptions/customer-journey-analytics-b2b.html).
 
 ## Tipos de limite
 
@@ -94,7 +94,7 @@ Image size - 2 - System-enforced Guardrail - Maximim upload size per image in MB
 
 {style="table-layout:auto"}
 
-Consulte também [Proteções da Real-time Customer Data Platform](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/guardrails/overview) da Experience Platform.
+Consulte também [Proteções da Real-time Customer Data Platform](https://experienceleague.adobe.com/pt-br/docs/experience-platform/rtcdp/guardrails/overview) da Experience Platform.
 
 
 ## Expiração automatizada do conjunto de dados
@@ -139,7 +139,7 @@ Consulte também [Proteções da Real-time Customer Data Platform](https://exper
 
 {style="table-layout:auto"}
 
-Consulte também [Medidas de proteção para assimilação de dados](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html) do Experience Platform.
+Consulte também [Medidas de proteção para assimilação de dados](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=pt-BR) do Experience Platform.
 
 
 ## Exportação de dados de destinos
@@ -151,7 +151,7 @@ Consulte também [Medidas de proteção para assimilação de dados](https://exp
 
 {style="table-layout:auto"}
 
-Consulte também [Medidas de proteção de exportação do conjunto de dados](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails#dataset-exports) do Experience Platform
+Consulte também [Medidas de proteção de exportação do conjunto de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/guardrails#dataset-exports) do Experience Platform
 
 
 ## Zona de aterrissagem de dados
@@ -258,7 +258,7 @@ Consulte também [Medidas de proteção de exportação do conjunto de dados](ht
 
 >[!NOTE]
 >
->Os tempos de processamento abaixo são Medidas de proteção, não contratos de nível de serviço (SLAs). A latência varia dependendo da configuração do cliente, dos volumes de dados e dos aplicativos do consumidor. Os tempos de processamento real geralmente são mais rápidos. Consulte seu contrato com a Customer Journey Analytics para obter os termos contratuais e SLAs específicos. Consulte [Medidas de proteção para assimilação de dados](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html) do Experience Platform para obter mais informações.
+>Os tempos de processamento abaixo são Medidas de proteção, não contratos de nível de serviço (SLAs). A latência varia dependendo da configuração do cliente, dos volumes de dados e dos aplicativos do consumidor. Os tempos de processamento real geralmente são mais rápidos. Consulte seu contrato com a Customer Journey Analytics para obter os termos contratuais e SLAs específicos. Consulte [Medidas de proteção para assimilação de dados](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=pt-BR) do Experience Platform para obter mais informações.
 
 | Fluxo de dados | Latência esperada |
 |---|---|
