@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin, User
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
-source-git-commit: e8cba64e706a456861fd8392ce9260b7a1c4636b
+source-git-commit: 58254cab90d907ad9675c30dfc1b835910214b3a
 workflow-type: tm+mt
-source-wordcount: '836'
-ht-degree: 100%
+source-wordcount: '854'
+ht-degree: 96%
 
 ---
 
@@ -41,7 +41,7 @@ O Content Analytics usa os seguintes termos principais:
 
 ## Como funciona
 
-O Content Analytics usa dados de visualização de imagens da web em conjuntos de dados de eventos na Experience Platform para [coletar dados de eventos de conteúdo](config/datacollection.md). E combina essa coleta de dados de conteúdo com a implementação da coleta de dados comportamentais (existente).
+O Content Analytics usa dados de visualização de imagens da web em conjuntos de dados de eventos na Experience Platform para [coletar dados de eventos de conteúdo](config/datacollection.md). Esses eventos de experiência de conteúdo exigem que os dados sejam coletados com o Experience Platform Edge Network (Web SDK, API do servidor). Os dados comportamentais podem ser coletados com o Web SDK ou com o Analytics Source Connector.
 
 ![Content Analytics: como funciona](assets/aca-overview.gif)
 
@@ -68,6 +68,6 @@ O Content Analytics usa dados de visualização de imagens da web em conjuntos d
 >
 >[Relatórios do Content Analytics](report/report.md)
 >>[Configurar o Content Analytics](config/configuration.md)
->>[Cálculo de rejeições e taxa de rejeição no Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446?profile.language=pt#M454)
+>>[Cálculo de rejeições e taxa de rejeição no Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446#M454)
 >
 
