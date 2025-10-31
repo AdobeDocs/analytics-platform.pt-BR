@@ -5,52 +5,24 @@ feature: Visualizations
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: bff352181392c19b6c4fe70893a016179fb77f06
+source-git-commit: ec07eb5dced013eac3d1088f2f49dcea23894395
 workflow-type: tm+mt
-source-wordcount: '969'
+source-wordcount: '1028'
 ht-degree: 2%
 
 ---
 
-# Incluir várias dimensões em uma tabela de forma livre
+# Incluir várias colunas de dimensão em uma tabela de forma livre
 
 {{release-limited-testing}}
 
 É possível incluir até 5 colunas de dimensão em uma tabela de forma livre, permitindo visualizar vários itens de dimensão lado a lado. Cada linha de itens de dimensão atua como um único item concatenado.
 
-Você pode classificar colunas de dimensão (juntamente com colunas de métrica) para obter uma análise mais completa e personalizada.
+Aplique filtros, classificação, detalhamentos e muito mais às tabelas de forma livre com várias colunas de dimensão para criar uma análise mais completa e personalizada.
 
-## Várias colunas e detalhamentos de dimensão
+## Adicionar várias colunas de dimensão
 
-O Analysis Workspace fornece as seguintes maneiras de adicionar várias dimensões em uma tabela de forma livre:
-
-* Incluir várias colunas de dimensão (conforme descrito neste artigo)
-
-* [Adicionar detalhamentos](/help/components/dimensions/t-breakdown-fa.md)
-
-Ambos os métodos permitem analisar dimensões em relação a outras dimensões. No entanto, há diferenças importantes e ambos os métodos podem ser usados na mesma tabela para uma análise ainda mais profunda.
-
-Várias colunas de dimensão permitem:
-
-* Correlacione linhas de dados em várias dimensões e métricas.
-
-* Mostrar dados somente quando ele se aplicar a cada coluna de dimensão na tabela. Para fazer isso, use o filtro de coluna para desmarcar a configuração **[!UICONTROL Incluir &quot;Nenhum valor&quot;]** em cada coluna de dimensão.
-
-  Para obter mais informações, consulte [Tabelas de filtro e classificação](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).
-
-* Classifique dados por várias colunas de dimensão e métrica.
-
-  Para obter mais informações, consulte [Tabelas de filtro e classificação](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).
-
-Os detalhamentos permitem:
-
-* Mostrar itens de dimensão para apenas um
-
-* Mostrar os itens principais da dimensão para um único
-
-## Adicionar colunas de dimensão
-
-É possível adicionar colunas de dimensão uma de cada vez ou em massa.
+É possível adicionar várias colunas de dimensão, uma de cada vez ou em massa.
 
 1. No Analysis Workspace, crie uma tabela de forma livre.
 
@@ -70,13 +42,15 @@ Os detalhamentos permitem:
 
 ## Filtrar tabelas
 
+É possível aplicar filtros a uma ou mais colunas de dimensão em uma tabela de forma livre.
+
 Para obter informações sobre como filtrar tabelas, consulte [Tabelas de filtro](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md#filter-tables) em [Tabelas de filtro e classificação](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).
 
 ## Classificar tabelas {#sort-tables}
 
-<!--At GA, move this section into the "Filter and sort tables" article and replace the current "Sort tables" section. Change the "Filter tables" section above to "Filter and sort tables" and link to the other article. Also add row to Guardrails article. -->
+<!--At GA, move this section into the "Filter and sort tables" article and replace the current "Sort tables" section. Change the "Filter tables" section above to "Filter and sort tables" and link to the other article. Also add row to Guardrails -->
 
-Você pode classificar os dados de uma tabela de forma livre por qualquer coluna no Analysis Workspace que seja uma dimensão ou uma métrica.
+Você pode classificar os dados de uma tabela de forma livre por qualquer coluna no Analysis Workspace, sejam dimensões ou métricas.
 
 Por padrão, as dimensões são classificadas em ordem crescente e as métricas são classificadas em ordem decrescente.
 
@@ -134,7 +108,7 @@ O ícone de classificação permanece visível quando a classificação é aplic
 
 Quando você classifica dados para várias colunas, os dados são classificados de acordo com a prioridade atribuída a cada coluna. A numeração de prioridade é exibida ao lado do ícone de classificação ![ícone de prioridade de classificação](assets/sort-priority-icon.png).
 
-A coluna com a prioridade primária decide a ordem principal, a coluna com a prioridade secundária decide a ordem quando as linhas têm o mesmo valor na coluna primária, a coluna com a prioridade terciária decide a ordem quando as linhas têm o mesmo valor nas colunas primária e secundária e assim por diante.
+A coluna com a prioridade primária decide a ordem principal; a coluna com a prioridade secundária decide a ordem quando as linhas têm o mesmo valor na coluna primária; a coluna com a prioridade terciária decide a ordem quando as linhas têm o mesmo valor nas colunas primária e secundária; e assim por diante.
 
 Por exemplo, considere uma tabela com as seguintes colunas:
 
@@ -156,9 +130,37 @@ Ao atribuir uma prioridade de classificação a cada coluna, é possível contro
 
 ![exemplo de multiclassificação](assets/dimensions-multiple-sort.png)
 
-## Adicionar detalhamentos a uma tabela com várias colunas de dimensão
+## Várias colunas e detalhamentos de dimensão
 
-Quando você adiciona um detalhamento a uma tabela com várias colunas de dimensão, o detalhamento abrange todos os itens de dimensão na linha em que é adicionado.
+O Analysis Workspace fornece as seguintes maneiras de adicionar várias dimensões em uma tabela de forma livre:
+
+* Incluir várias colunas de dimensão (conforme descrito neste artigo)
+
+* [Adicionar detalhamentos](/help/components/dimensions/t-breakdown-fa.md)
+
+Ambos os métodos permitem analisar dimensões em relação a outras dimensões. No entanto, há diferenças importantes e ambos os métodos podem ser usados na mesma tabela para uma análise ainda mais profunda.
+
+### Diferenças entre colunas de dimensão e detalhamentos
+
+Várias colunas de dimensão permitem:
+
+* Concatene itens de dimensão em linhas distintas de dados em várias dimensões.
+
+* Inclua itens de dimensão em linhas concatenadas somente quando os itens de dimensão se aplicarem a cada coluna de dimensão na tabela. Para fazer isso, use o filtro de coluna para desmarcar a configuração **[!UICONTROL Incluir &quot;Nenhum valor&quot;]** em cada coluna de dimensão.
+
+  Para obter mais informações, consulte [Classificar tabelas por várias colunas (Classificação avançada)](#sort-tables-by-multiple-columns-advanced-sorting).
+
+* Classifique dados por várias colunas de dimensão e métrica para ver dados mais personalizados.
+
+  Para obter mais informações, consulte [Classificar tabelas por várias colunas (Classificação avançada)](#sort-tables-by-multiple-columns-advanced-sorting)
+
+Os detalhamentos permitem:
+
+* Detalhar um item de dimensão na tabela de forma livre por uma dimensão secundária. É possível exibir até 200 itens de dimensão para a dimensão secundária.
+
+### Adicionar detalhamentos a uma tabela com várias colunas de dimensão
+
+Quando você adiciona um detalhamento a uma tabela que tem várias colunas de dimensão, o detalhamento abrange todos os itens de dimensão na linha em que você o adiciona.
 
 Você pode adicionar um detalhamento conforme descrito em [Analisar dimensões](/help/components/dimensions/t-breakdown-fa.md).
 
