@@ -4,9 +4,9 @@ description: Saiba como usar tabelas de forma livre, que são a base para a aná
 feature: Visualizations
 exl-id: e5ba9089-c575-47b3-af85-b8b2179396ac
 role: User
-source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
+source-git-commit: 75ceeda8f13abba92ff555505b6ebae025533d02
 workflow-type: tm+mt
-source-wordcount: '785'
+source-wordcount: '784'
 ht-degree: 97%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 97%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta a visualização da tabela de forma livre no_ ![Customer Journey Analytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consulte [Tabela de forma livre](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/freeform-table) para a versão do_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
+_Este artigo documenta a visualização da tabela de forma livre no_ ![Customer Journey Analytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consulte [Tabela de forma livre](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/freeform-table) para a versão do_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 
@@ -48,7 +48,7 @@ A maneira mais rápida de criar uma tabela é soltar os componentes diretamente 
 
 Se preferir adicionar vários componentes à tabela primeiro e então renderizar os dados, selecione **[!UICONTROL Habilitar construtor de tabela]**. Com o construtor habilitado, é possível arrastar e soltar dimensões, detalhamentos, métricas e segmentos para criar tabelas que respondam a perguntas mais complexas. Atualizações de dados após selecionar **[!UICONTROL Criar]**.
 
-![Um Construtor de tabela de forma livre exibindo &#x200B;](assets/table-builder.png)
+![Um Construtor de tabela de forma livre exibindo ](assets/table-builder.png)
 
 ## Interações
 
@@ -56,7 +56,7 @@ Se preferir adicionar vários componentes à tabela primeiro e então renderizar
 
 ### Filtrar e classificar
 
-* Você pode [segmentar e classificar](filter-and-sort.md) os dados em uma tabela.
+* Você pode [filtrar e classificar](filter-and-sort.md) os dados em uma tabela.
 
 ### Linhas
 
@@ -97,7 +97,7 @@ As opções do [menu de contexto](../freeform-analysis-visualizations.md#context
 
 | Opção | Descrição |
 | --- | --- |
-| **[!UICONTROL Inserir visualização copiada]**&#x200B;n | Colar (inserir) uma visualização copiada em outro lugar dentro do projeto ou em um projeto totalmente diferente. |
+| **[!UICONTROL Inserir visualização copiada]** | Colar (inserir) uma visualização copiada em outro lugar dentro do projeto ou em um projeto totalmente diferente. |
 | **[!UICONTROL Copiar dados para a área de transferência]** | Copiar dados da visualização para a área de transferência. |
 | **[!UICONTROL Copiar seleção para a área de transferência]** | Copiar a seleção da visualização para a área de transferência. |
 | **[!UICONTROL Baixar itens como CSV (*nome da dimensão*)]** | Baixe imediatamente os itens de dimensão (até um máximo de 50.000) da visualização no dispositivo local. Até 50 mil itens de dimensão para a dimensão selecionada. |
@@ -113,6 +113,6 @@ As opções do [menu de contexto](../freeform-analysis-visualizations.md#context
 >[!MORELIKETHIS]
 >
 >[Adicionar uma visualização a um painel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->&#x200B;>[Configurações de visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->&#x200B;>[Menu de contexto da visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>>[Configurações de visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>>[Menu de contexto da visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >

@@ -5,10 +5,10 @@ exl-id: bc7ae6e3-7c9b-4994-97ce-690f3bdcbee5
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 7d354ce65f72838c007d2b9faf02848d86fd7c0f
+source-git-commit: 2fd79da264d60bb90e1193ead2eee67602404b4c
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 93%
+source-wordcount: '435'
+ht-degree: 63%
 
 ---
 
@@ -33,19 +33,17 @@ Por exemplo:
 
 Em alguns relatórios, você pode desejar que a ordem seja atribuída à pesquisa paga. Em outros relatórios, você pode desejar que a ordem seja atribuída ao Social. A atribuição permite controlar esse aspecto dos relatórios.
 
-## Definir o modelo de atribuição padrão de um componente
+## Definir um modelo de atribuição do componente
 
-É possível definir um modelo de atribuição padrão para uma determinada métrica, atualizando-se a configuração da métrica na visualização de dados. Isso substitui o modelo de atribuição da métrica sempre que ela é usada no Analysis Workspace.
+É possível alterar o modelo de atribuição padrão de um determinado componente, atualizando a configuração do componente na visualização de dados. Isso substitui o modelo de atribuição do componente sempre que é usado no Analysis Workspace.
 
 >[!NOTE]
 >
->Considere o seguinte ao habilitar a atribuição em uma métrica:
+>Considere o seguinte ao ativar um modelo de atribuição não padrão em uma métrica:
 >
->* **Ao usar o componente em um relatório com *uma dimensão*:** a atribuição do componente ignora o modelo de alocação quando um modelo de atribuição não padrão é usado.
+>* **Ao usar a métrica em um relatório com *uma única dimensão*:** a atribuição da métrica substitui o conjunto de modelos de alocação na dimensão. Por exemplo, uma métrica com uma atribuição &quot;primeiro contato&quot; substitui uma alocação de dimensão &quot;mais recente&quot;.
 >
->* **Ao usar o componente em um relatório com *várias dimensões*:** a atribuição do componente retém o modelo de alocação quando um modelo de atribuição não padrão é usado.
->
->   Várias dimensões estão disponíveis somente ao [exportar dados para a nuvem](/help/analysis-workspace/export/export-cloud.md).
+>* **Ao usar a métrica em um relatório com *várias dimensões*:** a atribuição da métrica é aplicada sobre o modelo de alocação para cada dimensão. Por exemplo, uma métrica com uma atribuição &quot;primeiro contato&quot; é aplicada sobre uma alocação de dimensão &quot;mais recente&quot;.
 >
 > Para mais informações sobre alocação, consulte [Configurações do componente de persistência](/help/data-views/component-settings/persistence.md).
 

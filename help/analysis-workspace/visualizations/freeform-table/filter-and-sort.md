@@ -4,20 +4,20 @@ title: Filtrar e Classificar
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-source-git-commit: a16043f1bb15deba1332ed39438214597647b9b4
+source-git-commit: 1d760139bd988097486e5c151364f291ad8e243d
 workflow-type: tm+mt
-source-wordcount: '1132'
-ht-degree: 72%
+source-wordcount: '1133'
+ht-degree: 65%
 
 ---
 
-# Filtrar e classificar
+# Filtrar e classificar tabelas
 
 As tabelas de forma livre do Analysis Workspace são a base para a análise interativa de dados. Sendo assim, elas podem conter milhares de linhas de informação. Filtrar e classificar os dados pode ser essencial para encontrar as informações mais importantes de maneira eficiente.
 
 <!--The following video covers filter and sort options in Analysis Workspace, in addition to pagination options:
 
->[!VIDEO](https://video.tv.adobe.com/v/30795?captions=por_br)-->
+>[!VIDEO](https://video.tv.adobe.com/v/23968)-->
 
 ## Filtrar tabelas
 
@@ -33,7 +33,7 @@ Você pode usar vários métodos para filtrar linhas de uma tabela de forma livr
 * Aplicar filtros a uma tabela
 * Usar segmentos de público-alvo
 
-Leia como cada método afeta [os totais da tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md).
+Leia como cada método afeta [os totais das tabelas de forma livre](/help/analysis-workspace/visualizations/freeform-table/workspace-totals.md).
 
 ### Excluir linhas específicas de uma tabela
 
@@ -47,7 +47,7 @@ Para excluir linhas específicas de uma tabela de forma livre:
 
 1. Passe o mouse sobre a linha que deseja excluir e selecione ![Fechar](/help/assets/icons/Close.svg).
 
-   Mantenha pressionada a tecla ***shift*** para selecionar um intervalo de linhas, ou mantenha pressionada a tecla ***cmd*** (no Mac) ou a tecla ***ctrl*** (no Windows) para selecionar várias linhas.
+   Mantenha pressionada a tecla ***Shift*** para selecionar um intervalo de linhas, ou mantenha pressionada a tecla ***Command*** (no Mac) ou a tecla ***Ctrl*** (no Windows) para selecionar várias linhas.
 
 <!--### Right-click > Delete selected rows
 
@@ -59,7 +59,7 @@ Note: this option does not seem to work. AN-338422
    This action will remove the rows from the table and apply a table filter.-->
 
 
-### Aplicar um filtro simples ou avançado a uma tabela
+### Aplicar filtragem simples ou avançada a uma tabela
 
 Para filtrar dados em tabelas de forma livre:
 
@@ -75,7 +75,7 @@ Para filtrar dados em tabelas de forma livre:
 
    | Opção | Função |
    |---------|----------|
-   | [!UICONTROL **Incluir “Nenhum valor”**] | Selecione esta opção para mostrar uma linha **[!UICONTROL Nenhum valor]** na tabela para dados que não têm valor para a dimensão selecionada. Desmarque esta opção para ocultar a linha **[!UICONTROL Nenhum valor]**. |
+   | [!UICONTROL **Incluir “Nenhum valor”**] | Selecione esta opção para mostrar uma linha **[!UICONTROL Nenhum valor]** na tabela para dados que não têm valor para a dimensão selecionada. Desmarque esta opção para ocultar as **[!UICONTROL Linhas sem valor]**.<!-- Add at multi dim GA: When tables include multiple dimension columns, you can deselect this option to show data only when it applies to each dimension column in the table.--> |
    | [!UICONTROL **Pesquisar palavra ou frase**] | Especifique uma palavra ou frase pela qual deseja filtrar. Somente as linhas que contêm a palavra ou a frase exata especificada são mostradas. |
 
 
