@@ -5,9 +5,9 @@ feature: Visualizations
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: f7a90a42d3c8bea99af2e69e3f86d9ad4e2041bf
+source-git-commit: 9314f7d88834a67efb61d0cc0cceef1ccd2fb9cb
 workflow-type: tm+mt
-source-wordcount: '1274'
+source-wordcount: '1276'
 ht-degree: 2%
 
 ---
@@ -22,9 +22,9 @@ Aplique filtros, classificações, detalhamentos e muito mais a tabelas de forma
 
 ## Itens de dimensão concatenados
 
-Quando você adiciona várias colunas de dimensão a uma tabela de forma livre, cada linha de itens de dimensão se comporta como um único item de dimensão concatenado. Essa funcionalidade permite visualizar dados de métrica para combinações específicas de dimensões.
+Quando você [adiciona várias colunas de dimensão a uma tabela de forma livre](#add-multiple-dimension-columns), cada linha de itens de dimensão se comporta como um único item de dimensão concatenado. Essa funcionalidade permite visualizar dados de métrica para combinações específicas de dimensões.
 
-Por exemplo, considere uma tabela de forma livre onde as dimensões são _Cidade_, _Tipo de Dispositivo_ e _Dia do Mês_ e a métrica é _Eventos_. Os três itens de dimensão na primeira linha desta tabela se tornam um único item de dimensão concatenado mostrando que houve 2.056 eventos que ocorreram em Mumbai a partir de telefones celulares no 30º dia do mês.
+Por exemplo, considere uma tabela de forma livre onde as colunas da dimensão são _Cidade_, _Tipo de Dispositivo_ e _Dia do Mês_ e a métrica é _Eventos_. Os três itens de dimensão na primeira linha desta tabela se tornam um único item de dimensão concatenado mostrando que houve 2.056 eventos que ocorreram em Mumbai a partir de telefones celulares no 30º dia do mês.
 
 | Dimension: cidade | Dimension: Tipo de dispositivo | Dimension: Dia do mês | Métrica: Eventos |
 |---------|----------|---------|---------|
@@ -57,13 +57,13 @@ A seguir, veja como essa tabela aparece no Analysis Workspace:
 
      ![Arrastar várias dimensões](assets/dimensions-add-multiple.png)
 
-1. Exibir cada linha da tabela como um único item de dimensão. Para obter mais informações, consulte [Exibir itens de dimensão concatenados](#view-concatenated-dimension-items).
+1. Exibir cada linha da tabela como um único item de dimensão. Para obter mais informações, consulte [Itens de dimensão concatenados](#view-concatenated-dimension-items).
 
 ## Filtrar tabelas
 
 É possível aplicar filtros a uma ou mais colunas de dimensão em uma tabela de forma livre.
 
-Para obter informações sobre como filtrar tabelas, consulte [Tabelas de filtro](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md#filter-tables) em [Tabelas de filtro e classificação](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).
+Para obter informações sobre como filtrar tabelas, consulte [Filtrar tabelas](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md#filter-tables) em [Filtrar e classificar tabelas de forma livre](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).
 
 ## Classificar tabelas {#sort-tables}
 
