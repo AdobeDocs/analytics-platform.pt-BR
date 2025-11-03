@@ -5,9 +5,9 @@ feature: Visualizations
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: ec07eb5dced013eac3d1088f2f49dcea23894395
+source-git-commit: f7a90a42d3c8bea99af2e69e3f86d9ad4e2041bf
 workflow-type: tm+mt
-source-wordcount: '1028'
+source-wordcount: '1274'
 ht-degree: 2%
 
 ---
@@ -16,9 +16,26 @@ ht-degree: 2%
 
 {{release-limited-testing}}
 
-É possível incluir até 5 colunas de dimensão em uma tabela de forma livre, permitindo visualizar vários itens de dimensão lado a lado. Cada linha de itens de dimensão atua como um único item concatenado.
+É possível incluir até 5 colunas de dimensão em uma tabela de forma livre, permitindo visualizar vários itens de dimensão lado a lado. Cada linha de itens de dimensão se comporta como um único item de dimensão concatenado.
 
-Aplique filtros, classificação, detalhamentos e muito mais às tabelas de forma livre com várias colunas de dimensão para criar uma análise mais completa e personalizada.
+Aplique filtros, classificações, detalhamentos e muito mais a tabelas de forma livre com várias colunas de dimensão para criar uma análise mais profunda e personalizada.
+
+## Itens de dimensão concatenados
+
+Quando você adiciona várias colunas de dimensão a uma tabela de forma livre, cada linha de itens de dimensão se comporta como um único item de dimensão concatenado. Essa funcionalidade permite visualizar dados de métrica para combinações específicas de dimensões.
+
+Por exemplo, considere uma tabela de forma livre onde as dimensões são _Cidade_, _Tipo de Dispositivo_ e _Dia do Mês_ e a métrica é _Eventos_. Os três itens de dimensão na primeira linha desta tabela se tornam um único item de dimensão concatenado mostrando que houve 2.056 eventos que ocorreram em Mumbai a partir de telefones celulares no 30º dia do mês.
+
+| Dimension: cidade | Dimension: Tipo de dispositivo | Dimension: Dia do mês | Métrica: Eventos |
+|---------|----------|---------|---------|
+| Mumbai | Celular | 30 | 2.056 |
+| Nova York | Tablet | 31 | 1.761 |
+| Bangalore | Área de trabalho | 1 | 1.666 |
+| Délhi | Celular | 14 | 1.396 |
+
+A seguir, veja como essa tabela aparece no Analysis Workspace:
+
+![Exemplo de multidimensão](assets/multi-dim-example.png)
 
 ## Adicionar várias colunas de dimensão
 
@@ -39,6 +56,8 @@ Aplique filtros, classificação, detalhamentos e muito mais às tabelas de form
      Para selecionar várias dimensões, mantenha pressionada a tecla ***Command*** (no Mac) ou a tecla ***Ctrl*** (no Windows).
 
      ![Arrastar várias dimensões](assets/dimensions-add-multiple.png)
+
+1. Exibir cada linha da tabela como um único item de dimensão. Para obter mais informações, consulte [Exibir itens de dimensão concatenados](#view-concatenated-dimension-items).
 
 ## Filtrar tabelas
 
@@ -160,9 +179,21 @@ Os detalhamentos permitem:
 
 ### Adicionar detalhamentos a uma tabela com várias colunas de dimensão
 
-Quando você adiciona um detalhamento a uma tabela que tem várias colunas de dimensão, o detalhamento abrange todos os itens de dimensão na linha em que você o adiciona.
+Quando você adiciona um detalhamento a uma tabela que tem várias colunas de dimensão, o detalhamento se aplica ao item de dimensão concatenado (em todas as colunas de dimensão) na linha em que você o adiciona.
 
-Você pode adicionar um detalhamento conforme descrito em [Analisar dimensões](/help/components/dimensions/t-breakdown-fa.md).
+Além disso, é possível adicionar várias colunas de dimensão em um detalhamento. Cada linha de itens de dimensão no detalhamento também se comporta como um único item de dimensão concatenado.
+
+<!-- update screenshot to show the breakdown, and include this introductory sentence: "For example, you can break down the first dimension item in this table by a new concatenated dimension item that shows... " -->
+
+![exemplo de multiclassificação](assets/dimensions-multiple-sort.png)
+
+Para obter mais informações sobre como adicionar um detalhamento, consulte [Detalhar dimensões](/help/components/dimensions/t-breakdown-fa.md).
+
+## Crie um segmento com base em um item de dimensão que abrange várias colunas de dimensão
+
+Quando você cria um segmento com base em um item de dimensão que abrange várias colunas de dimensão, cada item de dimensão é incluído na definição do segmento, com operadores And unindo-os.
+
+Para obter informações sobre como criar um segmento, consulte [Criar segmentos](/help/components/segments/seg-create.md).
 
 ## Dimensões não suportadas {#unsupported}
 
