@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Gerar apresentações a partir de relatórios do Workspace
 feature: Curate and Share
 role: User
-source-git-commit: 62ef107c52a96178fbf9e41fee49db757488525b
+source-git-commit: 87e3b3cfdf765a57ecdb70921696013bcba4feac
 workflow-type: tm+mt
-source-wordcount: '1506'
+source-wordcount: '1585'
 ht-degree: 3%
 
 ---
@@ -105,7 +105,7 @@ As histórias de dados consistem em um slide de título, um slide de resumo exec
    |---------|----------|
    | **[!UICONTROL Título da capa]** | Especifique um título para a apresentação. Este título aparece no slide de título da apresentação. |
    | **[!UICONTROL Incluir nome do apresentador]** | Especifique o nome do apresentador. Esse nome aparece no slide de título da apresentação, abaixo do título da capa. |
-   | **[!UICONTROL Painéis e visualizações a serem incluídos]** | Escolha os painéis e a visualização que deseja incluir na apresentação. É possível incluir até 50 visualizações.<p>A maioria dos painéis e visualizações é compatível. Para obter informações sobre painéis e visualizações sem suporte, consulte [Elementos e recursos do projeto sem suporte](#unsupported-project-elements-and-features).</p> |
+   | **[!UICONTROL Painéis e visualizações a serem incluídos]** | Escolha os painéis e a visualização que deseja incluir na apresentação. É possível incluir até 50 visualizações.<p>Se uma visualização estiver esmaecida, ela será seguida pelo texto **[!UICONTROL (sem suporte)]** ou **[!UICONTROL (dados restritos)]**.</p><ul><li>**Sem suporte**: a maioria dos painéis e visualizações tem suporte. Para obter informações sobre painéis e visualizações sem suporte, consulte [Elementos e recursos do projeto sem suporte](#unsupported-project-elements-and-features).</li><li>**Dados restritos**: a visualização contém um componente que está impedido de ser exportado por uma política de governança de dados aplicada pela sua organização. Entre em contato com o administrador do sistema para ver quais componentes estão restritos para não serem exportados e remova os componentes restritos antes de gerar slides.</li></ul> |
    | **[!UICONTROL Enfatizar componentes]** | Escolha as métricas e dimensões nas visualizações que deseja enfatizar na apresentação. Os componentes escolhidos são classificados em posições mais altas e recebem mais peso quando os temas e a narrativa abrangente da história dos dados são criados. <p>Quando nenhuma ênfase é aplicada, os componentes são exibidos nas apresentações da seguinte maneira:<ul><li>**Métricas e dimensões:** Itálico</li><li>**Itens do Dimension:** Aspas</li></ul></p><p>Quando a ênfase é aplicada, os componentes são exibidos nas apresentações da seguinte maneira:</p><ul><li>**Métricas e dimensões:** Itálico e negrito</li><li>**Itens do Dimension:** Negrito quando a dimensão correspondente é enfatizada<p>Uma cor também é aplicada ao item de dimensão quando ele é realçado no gráfico.</p></li></ul> |
 
    <!-- add this later: - **[!UICONTROL Panel and visualization descriptions]** - Choose whether to include panel and visualization descriptions in your generated slide presentation. - 
@@ -235,5 +235,9 @@ Os seguintes elementos e recursos do Analysis Workspace usados em um projeto nã
   Os dados para detalhamentos são incluídos em apresentações geradas, mas são exibidos no mesmo nível que os itens de dimensão.
 
 * Análises guiadas
+
+* Componentes impedidos de serem exportados por uma política de governança de dados
+
+  Para obter mais informações, consulte [Solucionar problemas de exportações com falha](/help/components/exports/troubleshoot-exports.md).
 
 
