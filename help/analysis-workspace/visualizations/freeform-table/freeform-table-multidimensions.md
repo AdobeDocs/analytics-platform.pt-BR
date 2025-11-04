@@ -5,7 +5,7 @@ feature: Visualizations
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: 9314f7d88834a67efb61d0cc0cceef1ccd2fb9cb
+source-git-commit: ad8026237d73784dfe154e7bc0b32a06a3a66eb3
 workflow-type: tm+mt
 source-wordcount: '1276'
 ht-degree: 2%
@@ -89,7 +89,7 @@ Para classificar dados em tabelas por uma única coluna:
 
 ### Classificar tabelas por várias colunas (Classificação avançada)
 
-{{release-limited-testing-section}}
+<!-- add this back in when move this section back to the filter and sort article: {{release-limited-testing-section}} -->
 
 #### Aplicar classificação a várias colunas
 
@@ -175,7 +175,7 @@ Várias colunas de dimensão permitem:
 
 Os detalhamentos permitem:
 
-* Detalhar um item de dimensão na tabela de forma livre por uma dimensão secundária. É possível exibir até 200 itens de dimensão para a dimensão secundária.
+* Detalhar um item de dimensão na tabela de forma livre por uma dimensão secundária. É possível exibir até 400 itens de dimensão para a dimensão secundária.
 
 ### Adicionar detalhamentos a uma tabela com várias colunas de dimensão
 
