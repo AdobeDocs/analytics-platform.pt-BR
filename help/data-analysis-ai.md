@@ -8,7 +8,7 @@ exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
 source-git-commit: ad8026237d73784dfe154e7bc0b32a06a3a66eb3
 workflow-type: tm+mt
 source-wordcount: '2491'
-ht-degree: 92%
+ht-degree: 98%
 
 ---
 
@@ -64,9 +64,9 @@ Os seguintes parâmetros regulam o acesso ao Data Insights Agent no Customer Jou
 
    1. Na linha **[!UICONTROL Ferramentas de relatórios]** da tabela fornecida, selecione o ícone de edição ![Editar](/help/assets/icons/Edit.svg).
    1. Role até a opção ou pesquise por **[!UICONTROL Assistente de IA: conhecimento do produto]** e selecione o ícone de adição ![AddCircle](/help/assets/icons/AddCircle.svg) ao lado dessa permissão.
-   1. Role até ou pesquise por **[!UICONTROL Data Insights Agent]** e selecione o ícone de adição ![AddCircle](/help/assets/icons/AddCircle.svg) ao lado dessa permissão.
+   1. Role a tela até encontrar ou pesquise por **[!UICONTROL Data Insights Agent]** e selecione o ícone de adição ![AddCircle](/help/assets/icons/AddCircle.svg) ao lado desta permissão.
 
-      A permissão **[!UICONTROL Assistente de IA: Conhecimento do Produto]** e a permissão **[!UICONTROL Data Insights Agent]** são adicionadas à coluna **[!UICONTROL Itens de permissão incluídos]**.
+      A permissão **[!UICONTROL Assistente de IA: conhecimento do produto]** e a permissão **[!UICONTROL Data Insights Agent]** são adicionadas à coluna **[!UICONTROL Itens de permissão incluídos]**.
 
       ![Adicionar permissão](assets/ai-assistant-permissions.png).
 
@@ -80,9 +80,9 @@ Os seguintes parâmetros regulam o acesso ao Data Insights Agent no Customer Jou
   >
   >Considere o seguinte ao habilitar visualizações de dados:
   >* É possível habilitar no máximo 50 visualizações de dados por organização IMS. Se você habilitar mais de 50 visualizações de dados em todos os perfis de produto para uma determinada organização, o Data Insights Agent usará as 50 visualizações de dados mais utilizadas.
-  >* A Data Insights Agent pode fazer referência às visualizações de dados incluídas em algum momento durante o mesmo dia em que você as ativa.
+  >* O Data Insights Agent pode fazer referência às visualizações de dados incluídas em algum momento do mesmo dia em que você as habilita.
 
-  Para ativar visualizações de dados para o Data Insights Agent:
+  Para habilitar visualizações de dados para o Data Insights Agent:
 
    1. No Customer Journey Analytics, selecione **[!UICONTROL Gerenciamento de dados]** > **[!UICONTROL Visualizações de dados]**.
 
