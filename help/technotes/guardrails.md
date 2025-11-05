@@ -5,16 +5,16 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: 9263a0c868c6cfe140e38df43d72ff497c2fc931
+source-git-commit: 1df3d61a5721cb98aeb4171683de9154957eab61
 workflow-type: tm+mt
-source-wordcount: '2068'
+source-wordcount: '2087'
 ht-degree: 7%
 
 ---
 
 # Medidas de proteção do Customer Journey Analytics
 
-Este documento fornece limites para vários componentes do Customer Journey Analytics. Para obter Medidas de Proteção, Parâmetros de Escopo e Direitos, consulte a [Descrição do Produto para o Customer Journey Analytics](https://helpx.adobe.com/br/legal/product-descriptions/customer-journey-analytics.html), a [Descrição do Produto para o Complemento do Adobe Analytics: Customer Journey Analytics](https://helpx.adobe.com/br/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html) ou a [Descrição do Produto para o Customer Journey Analytics B2B edition](https://helpx.adobe.com/br/legal/product-descriptions/customer-journey-analytics-b2b.html).
+Este documento fornece limites para vários componentes do Customer Journey Analytics. Para obter Medidas de Proteção, Parâmetros de Escopo e Direitos, consulte a [Descrição do Produto para o Customer Journey Analytics](https://helpx.adobe.com/br/legal/product-descriptions/customer-journey-analytics.html), a [Descrição do Produto para o Complemento do Adobe Analytics: Customer Journey Analytics](https://helpx.adobe.com/br/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html) ou a [Descrição do Produto para o Customer Journey Analytics B2B edition](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics-b2b.html).
 
 ## Tipos de limite
 
@@ -92,7 +92,7 @@ Alguns dos recursos e seu valor associado para o limite dependem do pacote do Cu
 
 {style="table-layout:auto"}
 
-Consulte também [Proteções da Real-time Customer Data Platform](https://experienceleague.adobe.com/pt-br/docs/experience-platform/rtcdp/guardrails/overview) da Experience Platform.
+Consulte também [Proteções da Real-time Customer Data Platform](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/guardrails/overview) da Experience Platform.
 
 
 ## Expiração automatizada do conjunto de dados
@@ -132,12 +132,13 @@ Consulte também [Proteções da Real-time Customer Data Platform](https://exper
 |---|--:|---|---|
 | Campos | 10.000 | Proteção imposta pelo sistema | Número máximo de propriedades ou campos por linha em um conjunto de dados. |
 | Cadeias de Caracteres Exclusivas | 10 milhões - 1 bilhão | Proteção imposta pelo sistema | Número máximo de chaves exclusivas por conjunto de dados de pesquisa. Depende do pacote do Customer Journey Analytics (consulte Descrição do produto).<ul><li>Fundação: 10 milhões.</li><li>Select: 100 milhões.</li><li>Prime: 500 milhões.</li><li>Ultimate: 1 bilhão</li><ul> |
-| Linhas | 1 milhão | Proteção imposta pelo sistema | Número máximo de linhas por ID de pessoa única em um determinado mês em uma conexão. |
+| Linhas por pessoa | 1 milhão | Proteção imposta pelo sistema | Número máximo de linhas por ID de pessoa única em um determinado mês em uma conexão. |
+| Linhas por dia | 2,5 bilhões | Proteção de desempenho | Número médio máximo de linhas por dia em uma conexão. |
 | Tamanho da linha | 2 | Proteção de desempenho / Proteção imposta pelo sistema | Tamanho médio em quilobytes por linha de dados assimilados na Customer Journey Analytics (limite flexível). Um limite estático para o tamanho da linha é determinado pelas Medidas de proteção para assimilação de dados no Experience Platform. |
 
 {style="table-layout:auto"}
 
-Consulte também [Medidas de proteção para assimilação de dados](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=pt-BR) do Experience Platform.
+Consulte também [Medidas de proteção para assimilação de dados](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html) do Experience Platform.
 
 
 ## Exportação de dados de destinos
@@ -149,7 +150,7 @@ Consulte também [Medidas de proteção para assimilação de dados](https://exp
 
 {style="table-layout:auto"}
 
-Consulte também [Medidas de proteção de exportação do conjunto de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/guardrails#dataset-exports) do Experience Platform
+Consulte também [Medidas de proteção de exportação do conjunto de dados](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails#dataset-exports) do Experience Platform
 
 
 ## Zona de aterrissagem de dados
@@ -265,7 +266,7 @@ Consulte também [Medidas de proteção de exportação do conjunto de dados](ht
 
 >[!NOTE]
 >
->Os tempos de processamento abaixo são Medidas de proteção, não contratos de nível de serviço (SLAs). A latência varia dependendo da configuração do cliente, dos volumes de dados e dos aplicativos do consumidor. Os tempos de processamento real geralmente são mais rápidos. Consulte seu contrato com a Customer Journey Analytics para obter os termos contratuais e SLAs específicos. Consulte [Medidas de proteção para assimilação de dados](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=pt-BR) do Experience Platform para obter mais informações.
+>Os tempos de processamento abaixo são Medidas de proteção, não contratos de nível de serviço (SLAs). A latência varia dependendo da configuração do cliente, dos volumes de dados e dos aplicativos do consumidor. Os tempos de processamento real geralmente são mais rápidos. Consulte seu contrato com a Customer Journey Analytics para obter os termos contratuais e SLAs específicos. Consulte [Medidas de proteção para assimilação de dados](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html) do Experience Platform para obter mais informações.
 
 | Fluxo de dados | Latência esperada |
 |---|---|
