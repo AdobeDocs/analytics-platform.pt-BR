@@ -2,10 +2,10 @@
 title: Visão geral de uso do produto
 description: Exiba insights e relatórios sobre como sua organização usa o Customer Journey Analytics.
 exl-id: 3806ca7c-ee90-4222-9ffd-2e791c4550e5
-source-git-commit: 5b5d4cb17ee73415dbd77bbf0964fc3d4e513cf0
+source-git-commit: 22f3059ffef5df76028f36ffa00da8f98956dee1
 workflow-type: tm+mt
-source-wordcount: '632'
-ht-degree: 89%
+source-wordcount: '657'
+ht-degree: 91%
 
 ---
 
@@ -22,7 +22,9 @@ Toda a configuração e coleção de dados é definida automaticamente para voc�
 
 >[!IMPORTANT]
 >
->Esse recurso é contabilizado nos limites de linhas contratuais na Adobe Experience Platform. Verifique se a sua organização pode acomodar os dados gerados por esse recurso antes de habilitá-lo.
+>Ativar o Uso do produto resulta no armazenamento de dados de uso no data lake da Adobe Experience Platform. Certifique-se de que a alocação de armazenamento de data lake de sua organização possa acomodar os conjuntos de dados adicionais gerados pela ativação desse recurso.
+>
+>Esse recurso não é contabilizado em relação aos limites de linha licenciados do Customer Journey Analytics ou aos direitos de dados do evento.
 
 ## Habilitar uso do produto
 
@@ -50,14 +52,14 @@ Ao habilitar o Uso do produto, as seguintes dimensões estão disponíveis. Se q
    * [!UICONTROL Abrir dicionário de dados]
    * [!UICONTROL Abrir legendas inteligentes]
    * [!UICONTROL Compartilhamento do projeto]
-   * [!UICONTROL &#x200B; Painel Executar experimentação]
+   * [!UICONTROL  Painel Executar experimentação]
    * [!UICONTROL Salvar projeto]
    * [!UICONTROL Cartão de pontuação salvo]
    * [!UICONTROL Enviar arquivo]
    * [!UICONTROL Enviar arquivo conforme agendamento]
    * [!UICONTROL Compartilhar projeto com qualquer pessoa]
    * [!UICONTROL Compartilhar o projeto com usuários do Espaço de trabalho]
-   * [!UICONTROL Alternar exibição de dados]
+   * [!UICONTROL Alternar visualização de dados]
 * **[!UICONTROL Modelo de atribuição usado]**: o tipo de modelo de atribuição que o componente usa. Os itens de dimensão incluem:
    * [!UICONTROL Último contato]
    * [!UICONTROL Primeiro contato]
@@ -70,8 +72,8 @@ Ao habilitar o Uso do produto, as seguintes dimensões estão disponíveis. Se q
    * [!UICONTROL Declínio de tempo]
    * [!UICONTROL Personalizado]
    * [!UICONTROL Algorítmico]
-* **[!UICONTROL ID do Componente]**: a ID do componente que foi adicionado, removido ou modificado.
-* **[!UICONTROL Nome do Componente]**: o nome amigável do componente que foi adicionado, removido ou modificado.
+* **[!UICONTROL ID do componente]**: a identificação do componente que foi adicionado, removido ou modificado.
+* **[!UICONTROL Nome do componente]**: o nome amigável do componente que foi adicionado, removido ou modificado.
 * **[!UICONTROL Tipo de componente]**: o tipo de componente que foi adicionado, removido ou modificado. Os itens de dimensão incluem:
    * [!UICONTROL Dimensão]
    * [!UICONTROL Métrica]
@@ -80,10 +82,10 @@ Ao habilitar o Uso do produto, as seguintes dimensões estão disponíveis. Se q
    * [!UICONTROL Intervalo de datas]
    * [!UICONTROL Anotação]
    * [!UICONTROL Alerta]
-* **[!UICONTROL ID da Visualização de Dados]**: a ID da visualização de dados.
-* **[!UICONTROL Nome da Exibição de Dados]**: o nome amigável da exibição de dados.
-* **[!UICONTROL Usuário de logon]**: o usuário que executou a ação.
-* **[!UICONTROL Painel Usado]**: o painel que foi adicionado, removido ou modificado. Os itens de dimensão incluem:
+* **[!UICONTROL ID da visualização de dados]**: a ID da visualização de dados.
+* **[!UICONTROL Nome da exibição de dados]**: o nome amigável da exibição de dados.
+* **[!UICONTROL Usuário logado]**: o usuário que executou a ação.
+* **[!UICONTROL Painel usado]**: o painel que foi adicionado, removido ou modificado. Os itens de dimensão incluem:
    * [!UICONTROL Atribuição]
    * [!UICONTROL Painel em branco]
    * [!UICONTROL Experimentação]
@@ -97,7 +99,7 @@ Ao habilitar o Uso do produto, as seguintes dimensões estão disponíveis. Se q
    * [!UICONTROL Fluxo de usuários]
    * [!UICONTROL Retenção]
    * [!UICONTROL Matriz de recursos]
-* **[!UICONTROL ID do Projeto]**: a ID do projeto.
+* **[!UICONTROL ID do projeto]**: a ID do projeto.
 * **[!UICONTROL Nome do projeto]**: o nome amigável do projeto.
 * **[!UICONTROL Tipo de projeto]**: o tipo de projeto. Os itens de dimensão incluem:
    * `workspace-projects`
