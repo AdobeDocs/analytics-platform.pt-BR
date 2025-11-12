@@ -4,10 +4,10 @@ title: Usar modelos
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: e8cba64e706a456861fd8392ce9260b7a1c4636b
+source-git-commit: d6477006dfa8134521516b6e0665ff487236c10a
 workflow-type: tm+mt
-source-wordcount: '20424'
-ht-degree: 99%
+source-wordcount: '20761'
+ht-degree: 97%
 
 ---
 
@@ -1063,7 +1063,22 @@ Estes são os modelos disponíveis:
 | **Relatório de visão geral do Journey Optimizer** | Visualize um resumo completo das métricas de engajamento e tráfego para todas as campanhas e jornadas no ambiente.<p>**Isso pode ajudar** a entender melhor a eficiência de alto nível das campanhas e jornadas.  </p><p>**Com base no que aprender, você poderá** fazer várias coisas, como ajustar as campanhas e jornadas com base nos níveis de engajamento do público-alvo.</p> |
 | **Assinaturas do Journey Optimizer** | Visualize assinaturas e cancelamentos de assinaturas de perfis associados a listas específicas.<p>**Isso pode ajudar** a entender melhor a eficácia de diferentes campanhas de assinatura e iniciativas na promoção do engajamento e das conversões.</p><p>**Com base no que aprender, você poderá** fazer várias coisas, como ajustar as campanhas de assinatura com base nos níveis de engajamento do público-alvo.</p> |
 
+### Brand Concierge {#brand-concierge-templates}
 
+>[!CONTEXTUALHELP]
+>id="template--brand-concierge-b2c"
+>title="Analise o engajamento do usuário por meio de padrões de conversa, feedback de usuários e a eficácia de suas recomendações."
+>abstract="**Isso pode ajudá-lo** a identificar padrões de envolvimento, avaliar a qualidade da conversa, rastrear tendências de satisfação do cliente e medir a eficácia das recomendações de link.<br/>**Com base no que você aprende, é possível** fazer várias coisas, como refinar as respostas do seu agente de IA, desenvolver conteúdo direcionado para problemas frequentes, melhorar os algoritmos de recomendação ou criar caminhos especializados para diferentes segmentos de usuários."
+
+>[!CONTEXTUALHELP]
+>id="template--brand-concierge--concierge"
+>title="Rastreie o ciclo de vida completo das solicitações de reunião B2B. Monitore as taxas de conversão, o desempenho do consultor e identifique os canais de geração de leads mais eficientes."
+>abstract="**Isso pode ajudá-lo** a acompanhar as taxas de conversão de reuniões, identificar membros de equipe com alto desempenho, entender as tendências sazonais no comportamento de reserva e identificar quais páginas geram as solicitações de reunião mais valiosas.<br/>**Com base no que você aprendeu, é possível** executar várias ações, como otimizar o processo de solicitação de reunião, redistribuir recursos em páginas de alta conversão, desenvolver treinamento direcionado para consultores com taxas de reserva mais baixas ou implementar novas estratégias para reduzir as reuniões perdidas."
+
+| Nome do modelo | Por que usar este modelo <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+| --- | --- | 
+| [!UICONTROL **visão geral do Brand Concierge**] | Analise o engajamento do usuário por meio de padrões de conversa, feedback de usuários e a eficácia de suas recomendações. <p>**Isso pode ajudá-lo** a identificar padrões de envolvimento, avaliar a qualidade da conversa, rastrear tendências de satisfação do cliente e medir a eficácia das recomendações de link.</p><p>**Com base no que você aprende, é possível** fazer várias coisas, como refinar as respostas do seu agente de IA, desenvolver conteúdo direcionado para problemas frequentes, melhorar os algoritmos de recomendação ou criar caminhos especializados para diferentes segmentos de usuários.</p> |
+| **Reuniões B2B do Brand Concierge** | Rastreie o ciclo de vida completo das solicitações de reunião B2B. Monitore as taxas de conversão, avalie o desempenho da reserva do consultor e identifique os canais de geração de leads mais eficientes. <p>**Isso pode ajudá-lo** a controlar as taxas de conversão das reuniões, identificar membros da equipe com alto desempenho, entender as tendências sazonais no comportamento de reserva e identificar quais URLs de páginas geram as solicitações de reunião mais valiosas. </p><p>**Com base no que você aprendeu, é possível** executar várias ações, como otimizar o processo de solicitação de reunião, redistribuir recursos para URLs de página com alta conversão, desenvolver treinamento direcionado para consultores com taxas de reserva mais baixas ou implementar novas estratégias para reduzir as reuniões perdidas.</p> |
 
 
 ### Modelos B2B {#b2b-templates}
