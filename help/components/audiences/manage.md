@@ -4,14 +4,14 @@ description: Saiba como gerenciar públicos-alvo no Customer Journey Analytics
 exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
 feature: Audiences
 role: User
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 4717a85b9a3c7dc2cbdd8c625ebb5862cbfccd58
 workflow-type: tm+mt
-source-wordcount: '766'
-ht-degree: 100%
+source-wordcount: '769'
+ht-degree: 97%
 
 ---
 
-# Gerenciar públicos-alvo
+# Gerenciar públicos publicados
 
 Os públicos podem ser gerenciados no Customer Journey Analytics usando **[!UICONTROL Componentes]** > **[!UICONTROL Públicos-alvo]**.
 
@@ -35,7 +35,7 @@ A lista de públicos-alvo ➊ mostra os públicos-alvo existentes.
 
 Para ver a lista de públicos-alvo:
 
-1. No Customer Journey Analytics, selecione **[!UICONTROL Componentes]** > **[!UICONTROL Públicos-alvo]**.
+1. No Customer Journey Analytics, selecione **[!UICONTROL Componentes]** > **[!UICONTROL Públicos-alvo publicados]**.
 
 1. (Opcional) Use ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) para configurar quais colunas exibir.
 
@@ -62,7 +62,7 @@ Para ver a lista de públicos-alvo:
 
 Para editar um público-alvo:
 
-1. No Customer Journey Analytics, selecione **[!UICONTROL Componentes]** > **[!UICONTROL Públicos-alvo]**.
+1. No Customer Journey Analytics, selecione **[!UICONTROL Componentes]** > **[!UICONTROL Públicos-alvo publicados]**.
 
    A página Públicos-alvo é exibida.
 

@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Saiba mais sobre o Adobe Customer Journey Analytics e como usar o Analysis Workspace com dados da Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
-source-git-commit: 2fd79da264d60bb90e1193ead2eee67602404b4c
-workflow-type: ht
-source-wordcount: '1311'
-ht-degree: 100%
+source-git-commit: 0c3dfd54dc0cee912cab18644fa984b2be5a26a7
+workflow-type: tm+mt
+source-wordcount: '1321'
+ht-degree: 99%
 
 ---
 
@@ -138,7 +138,6 @@ ht-degree: 100%
    + [Conjuntos de dados de evento combinados](../connections/combined-dataset.md)
    + [Pesquisas padrão](../connections/standard-lookups.md)
    + [Pesquisas B2B](../connections/transform-datasets-b2b-lookups.md)
-
 + Visualizações de dados {#cja-dataviews}
    + [Visão geral das exibições de dados](../data-views/data-views.md)
    + [Criar ou editar uma visualização de dados](../data-views/create-dataview.md)
@@ -163,7 +162,9 @@ ht-degree: 100%
    + Métricas e dimensões compartilhadas{#shared-metrics-dimensions}
       + [Visão geral](/help/data-views/shared-metrics-dimensions/smd-overview.md)
       + [Editor](/help/data-views/shared-metrics-dimensions/shared-component-editor.md)
-
+   + Análise de público-alvo {#audience-analysis}
+      + [Visão geral](/help/connections/audience-analysis/audience-analysis-overview.md)
+      + [Analisar públicos-alvo do RTCDP](/help/connections/audience-analysis/analyze-audiences.md)
 + Ferramentas {#tools}
    + Transferência de ativos {#asset-transfer}
       + [Transferir ativos](../tools/asset-transfer/transfer-assets.md)
@@ -335,10 +336,10 @@ ht-degree: 100%
       + [Gerenciar anotações](../components/annotations/manage-annotations.md)
       + [Exibir anotações](../components/annotations/view-annotations.md)
       + [Anotações de cartão de pontuação](../components/annotations/mobile-annotations.md)
-   + Públicos-alvo {#audiences}
-      + [Visão geral de públicos-alvo](../components/audiences/audiences-overview.md)
+   + Publicação para público-alvo {#audiences}
+      + [Visão geral da publicação de públicos-alvo](../components/audiences/audiences-overview.md)
       + [Criar e publicar públicos-alvo](../components/audiences/publish.md)
-      + [Gerenciar públicos-alvo](../components/audiences/manage.md)
+      + [Gerenciar públicos publicados](../components/audiences/manage.md)
    + Dimensões {#dimensions}
       + [Visão geral](../components/dimensions/overview.md)
       + [Visualizar dimensões](../components/dimensions/view-dimensions.md)

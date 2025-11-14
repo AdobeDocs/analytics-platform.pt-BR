@@ -4,16 +4,18 @@ description: Saiba mais sobre o conceito de publicação de público-alvo no Cus
 exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
 feature: Audiences
 role: User, Admin
-source-git-commit: be062e350a8c1989be41aeb2774471a3fe1bf524
+source-git-commit: ff301a4c76c547bf52e0dfaef5258fd183411c73
 workflow-type: tm+mt
-source-wordcount: '435'
-ht-degree: 100%
+source-wordcount: '434'
+ht-degree: 94%
 
 ---
 
 # Visão geral da publicação de públicos-alvo
 
-Agora, você pode criar e publicar públicos-alvo descobertos no Customer Journey Analytics no [Perfil do cliente em tempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=pt-BR) na Adobe Experience Platform para direcionamento e personalização de clientes. 
+Você pode criar e publicar públicos-alvo descobertos no Customer Journey Analytics no [Perfil de cliente em tempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html) no Adobe Experience Platform para direcionamento e personalização de clientes.
+
+<!-- add this when Audience Analysis releases: (For information about ingesting audience membership data from Experience Platform Profile datasets into a Customer Journey Analytics connection, see [Audience analysis overview](/help/connections/audience-analysis/audience-analysis-overview.md).) -->
 
 A publicação de públicos-alvo fornece uma maneira clara de ativar e executar ações baseadas nos insights encontrados no Customer Journey Analytics.  Essas ações podem incluir:
 
