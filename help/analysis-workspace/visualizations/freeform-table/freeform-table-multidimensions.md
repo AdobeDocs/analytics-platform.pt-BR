@@ -5,9 +5,9 @@ feature: Visualizations
 role: User
 hide: true
 hidefromtoc: true
-source-git-commit: ad8026237d73784dfe154e7bc0b32a06a3a66eb3
+source-git-commit: 77acfaf2d186e7fe7d6b9d973af5dedb3956f5d5
 workflow-type: tm+mt
-source-wordcount: '1276'
+source-wordcount: '1277'
 ht-degree: 2%
 
 ---
@@ -57,7 +57,7 @@ A seguir, veja como essa tabela aparece no Analysis Workspace:
 
      ![Arrastar várias dimensões](assets/dimensions-add-multiple.png)
 
-1. Exibir cada linha da tabela como um único item de dimensão. Para obter mais informações, consulte [Itens de dimensão concatenados](#view-concatenated-dimension-items).
+1. Exibir cada linha da tabela como um único item de dimensão. Para obter mais informações, consulte [Itens de dimensão concatenados](#concatenated-dimension-items).
 
 ## Filtrar tabelas
 
@@ -181,11 +181,11 @@ Os detalhamentos permitem:
 
 Quando você adiciona um detalhamento a uma tabela que tem várias colunas de dimensão, o detalhamento se aplica ao item de dimensão concatenado (em todas as colunas de dimensão) na linha em que você o adiciona.
 
+![exemplo de detalhamento de várias classificações](assets/dimensions-multiple-sort-breakdown.png)
+
 Além disso, é possível adicionar várias colunas de dimensão em um detalhamento. Cada linha de itens de dimensão no detalhamento também se comporta como um único item de dimensão concatenado.
 
-<!-- update screenshot to show the breakdown, and include this introductory sentence: "For example, you can break down the first dimension item in this table by a new concatenated dimension item that shows... " -->
-
-![exemplo de multiclassificação](assets/dimensions-multiple-sort.png)
+<!-- Add a screenshot of a breakdown with multiple cllumns, then add this sentence: "For example, you can break down the first dimension item in this table by a new concatenated dimension item that shows..." -->
 
 Para obter mais informações sobre como adicionar um detalhamento, consulte [Detalhar dimensões](/help/components/dimensions/t-breakdown-fa.md).
 
