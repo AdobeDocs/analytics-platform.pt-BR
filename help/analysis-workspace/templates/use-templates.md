@@ -4,7 +4,7 @@ title: Usar modelos
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 0e282bc341588032fadee45cc128663cf557b21f
+source-git-commit: 6cb72495bd190a31f0cb1533f0b33a0929d8a35b
 workflow-type: tm+mt
 source-wordcount: '20775'
 ht-degree: 97%
@@ -482,6 +482,13 @@ Estes são os modelos disponíveis:
 
 ### Web: público-alvo {#web-audience}
 
+<!--CJA only-->
+
+>[!CONTEXTUALHELP]
+>id="template--audienceOverview"
+>title="Visualize quais públicos-alvo são representados entre as pessoas que visitam seu site."
+>abstract="**Isso pode ajudá-lo** a entender melhor as informações gerais sobre os públicos, onde eles se originaram (RTCDP, Customer Journey Analytics e assim por diante), a sobreposição de públicos e muito mais.<br/>**Com base no que você aprendeu, é possível** fazer várias coisas, como usar os dados para se concentrar nos esforços de marketing para esses públicos específicos ou criar experiências personalizadas para clientes que abrangem vários públicos.<br/>Este modelo usa as dimensões Nome do Público-Alvo, Origem do Público-Alvo, Nome do Público-Alvo Encerrado e Origem do Público-Alvo Encerrado."
+
 <!--AA only-->
 
 >[!CONTEXTUALHELP]
@@ -593,11 +600,6 @@ Estes são os modelos disponíveis:
 <!--Both AA and CJA-->
 
 >[!CONTEXTUALHELP]
->id="template--audienceOverview"
->title="Visualize quais públicos-alvo são representados entre as pessoas que visitam seu site."
->abstract="**Isso pode ajudá-lo** a entender melhor as informações gerais sobre os públicos, onde eles se originaram (RTCDP, Customer Journey Analytics e assim por diante), a sobreposição de públicos e muito mais.<br/>**Com base no que você aprendeu, é possível** fazer várias coisas, como usar os dados para se concentrar nos esforços de marketing para esses públicos específicos ou criar experiências personalizadas para clientes que abrangem vários públicos.<br/>Este modelo usa as dimensões Nome do Público-Alvo, Origem do Público-Alvo, Nome do Público-Alvo Encerrado e Origem do Público-Alvo Encerrado."
-
->[!CONTEXTUALHELP]
 >id="template--consentPolicyOverview"
 >title="Veja o país de origem das pessoas que visitam o site."
 >abstract="**Isso pode ajudar** a entender melhor quais são os principais países de origem de visitantes do site.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como usar os dados para aumentar o foco das campanhas de marketing nesses países ou garantir que a experiência do site seja ideal em países com diferentes idiomas nativos.<br/>Este modelo usa a dimensão “Países”."
@@ -649,6 +651,8 @@ Estes são os modelos disponíveis:
 
 
 Estes são os modelos disponíveis:
+
+<!--need to add audience overview: - **[!UICONTROL Audience overview]** - View which audiences are represented among the people visiting your site.<p>**This can help you** better understand general information about the audiences, where the audiences originated (RTCDP, Customer Journey Analytics, and so forth), audience overlap, and more.</p><p>**Based on what you learn, you might** do any number of things, like use the data to focus on marketing efforts for these specific audiences, or create tailored experiences for customers who span multiple audiences.</p><p>This template uses the Audience Name, Audience Origin, Exited Audience Name, and Exited Audience Origin dimensions.</p> - -->
 
 | Nome do modelo | Por que usar este modelo <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- | 
