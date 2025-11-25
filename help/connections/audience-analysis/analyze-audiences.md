@@ -6,9 +6,9 @@ feature: Audiences
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 3654d452f2bc4fec5f53854307536b3b8679eac3
+source-git-commit: 2b91c0592ac4ec0e0b5ffa3db91758466563abaf
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '476'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,10 @@ ht-degree: 0%
 Você pode começar a analisar os públicos da Experience Platform no Customer Journey Analytics depois de [criar uma configuração de análise de público-alvo](/help/connections/audience-analysis/audience-analysis-configure.md), quando os dados de público-alvo estiverem disponíveis como novas dimensões no Analysis Workspace.
 
 Um template de visão geral do público-alvo está disponível no Customer Journey Analytics.
+
+<!-- Can you also use the new audience dimensions in any project, regardless of whether it's a template? I assume so -->
+
+<!-- What are the names of the new dimensions? Are they customized to whatever your audience names are in AEP, or are they always the same? -->
 
 Para obter informações sobre como acessar o modelo de visão geral de Público-alvo, consulte [Acessar e executar um modelo](/help/analysis-workspace/templates/use-templates.md#access-and-run-a-template) em [Usar modelos](/help/analysis-workspace/templates/use-templates.md).
 
@@ -41,7 +45,7 @@ Mostra os dados de todos os públicos-alvo com eventos de uso associados à visu
 
 Selecione até três públicos-alvo na tabela neste painel para ver como eles se sobrepõem no diagrama de Venn correspondente.
 
-## Uso do público-alvo que saiu
+## Sair do painel de uso do público-alvo
 
 Mostra os dados de todos os públicos-alvo com eventos de uso associados à visualização de dados selecionada. Os dados são sempre exibidos para ontem, portanto, alterar o intervalo de datas do painel resulta em dados imprecisos. &quot;Públicos-alvo encerrados&quot; são públicos-alvo nos quais pessoas com eventos de uso saíram ou saíram ontem.
 
