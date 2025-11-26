@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5cbfa922-6d6e-453a-9558-abfcfb80449d
 role: Admin
-source-git-commit: bc2c959497230d7672d43d5cd409ca62d4627d6a
+source-git-commit: 9c4ae8174086559ee552c5ffc95a8a7b0009f126
 workflow-type: tm+mt
-source-wordcount: '1181'
+source-wordcount: '1193'
 ht-degree: 79%
 
 ---
@@ -20,7 +20,7 @@ Este guia de início rápido explica como você pode usar os dados coletados pel
 >
 >Você tem o Adobe Analytics licenciado e implantado em um ou mais de seus sites, usando qualquer um dos métodos de implementação documentados:
 >
->- [Implementar o Analytics usando a Experience Platform Edge](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/overview.html?lang=pt-BR)
+>- [Implementar o Analytics usando a Experience Platform Edge](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/overview.html)
 >
 >- [Implementar o Analytics usando a extensão do Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/launch/overview.html?lang=pt-BR)
 >
@@ -56,7 +56,7 @@ Para criar um conector de origem do Adobe Analytics:
 
    ![Janela da Adobe Experience Platform, com a opção “Origens” selecionada junto com os aplicativos da Adobe e a opção “Adicionar dados” realçada.](./assets/sources-overview.png)
 
-4. Selecione **[!UICONTROL Conjunto de relatórios]**. Na lista de conjuntos de relatórios, selecione aquele que deseja usar.
+4. Selecione **[!UICONTROL Conjunto de relatórios]**. Na lista de conjuntos de relatórios, selecione aquele que deseja usar.<br/> Como alternativa, você pode usar a ![Pesquisa](/help/assets/icons/Search.svg) **[!UICONTROL _Pesquisa_]** para procurar um conjunto de relatórios.
 
    ![Janela da Adobe Experience Platform, mostrando a lista de conjuntos de relatórios](./assets/report-suites.png)
 
