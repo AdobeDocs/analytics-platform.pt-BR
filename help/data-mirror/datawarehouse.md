@@ -6,7 +6,7 @@ feature: Basics
 role: Admin
 badgePremium: label="Beta"
 exl-id: 92cffcc5-d7a7-47f5-869d-1fc665594bf4
-source-git-commit: edf7bdac87d9bed48244ad80521bbbf83c48f7b6
+source-git-commit: c9d7a4596a842ab7d949364e3469747d20ca15b4
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 0%
@@ -54,8 +54,8 @@ Para obter mais informações, leia o [[!DNL Azure Databricks] guia sobre como h
 
 Leia a documentação a seguir para obter as etapas sobre como habilitar a captura de dados de alteração para sua conexão de origem do [!DNL Azure Databricks]:
 
-* [Criar uma [!DNL Azure Databricks] conexão básica](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/api-tutorials/create/databases/databricks).
-* [Criar uma conexão de origem para um banco de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
+* [Criar uma [!DNL Azure Databricks] conexão básica](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/create/databases/databricks).
+* [Criar uma conexão de origem para um banco de dados](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
 
 ## [!DNL Google BigQuery]
 
@@ -65,8 +65,8 @@ Para obter mais informações, leia o manual sobre [instruções de linguagem de
 
 Leia a documentação a seguir para obter as etapas sobre como habilitar a captura de dados de alteração para sua conexão de origem do [!DNL Google BigQuery]:
 
-* [Criar uma [!DNL Google BigQuery] conexão básica](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/api-tutorials/create/databases/bigquery).
-* [Criar uma conexão de origem para um banco de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
+* [Criar uma [!DNL Google BigQuery] conexão básica](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/create/databases/bigquery).
+* [Criar uma conexão de origem para um banco de dados](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
 
 ## [!DNL Snowflake]
 
@@ -82,11 +82,11 @@ Para obter mais informações, leia o [[!DNL Snowflake] guia sobre como usar a c
 
 Leia a documentação a seguir para obter as etapas sobre como habilitar a captura de dados de alteração para sua conexão de origem do [!DNL Snowflake]:
 
-* [Criar uma [!DNL Snowflake] conexão básica](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/api-tutorials/create/databases/snowflake).
-* [Criar uma conexão de origem para um banco de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
+* [Criar uma [!DNL Snowflake] conexão básica](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/create/databases/snowflake).
+* [Criar uma conexão de origem para um banco de dados](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
 
 
 >[!MORELIKETHIS]
 >
->[Guia de início rápido do Data Mirror: espelhar e usar dados baseados em modelo](model-based.md)
+>[guia de início rápido do Data Mirror: Espelhar e usar dados relacionais](relational.md)
 >

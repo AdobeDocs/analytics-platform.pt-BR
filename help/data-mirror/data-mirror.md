@@ -6,7 +6,7 @@ feature: Basics
 role: Admin
 badgePremium: label="Beta"
 exl-id: f40e1263-1f4a-416c-a045-15fbe68ce509
-source-git-commit: 25d0647c6a764d8f4306a5c049a7a68e0426cef9
+source-git-commit: c9d7a4596a842ab7d949364e3469747d20ca15b4
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 2%
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 {{release-limited-testing}}
 
-O Data Mirror é um recurso do Experience Platform que permite a assimilação de alterações no nível da linha de bancos de dados externos no data lake usando esquemas baseados em modelo. Ele preserva os relacionamentos de dados, impõe exclusividade e oferece suporte ao controle de versão sem exigir processos de extração, transformação e carregamento (ETL) de upstream.
+O Data Mirror é um recurso do Experience Platform que permite a assimilação de alterações no nível da linha de bancos de dados externos no data lake usando esquemas relacionais. Ele preserva os relacionamentos de dados, impõe exclusividade e oferece suporte ao controle de versão sem exigir processos de extração, transformação e carregamento (ETL) de upstream.
 
 Use o Experience Platform Data Mirror para sincronizar inserções, atualizações e exclusões (dados mutáveis) de soluções nativas de data warehouse externas ([!DNL Snowflake], [!DNL Azure Databricks] ou [!DNL Google BigQuery]) diretamente com dados no Experience Platform. O Data Mirror ajuda a preservar a estrutura do modelo de banco de dados existente e a integridade dos dados à medida que você os traz para o Experience Platform.
 
@@ -33,7 +33,7 @@ O Data Mirror fornece os seguintes recursos essenciais para a sincronização do
 
 Use o Data Mirror para assimilar alterações diretamente de seus sistemas de origem, impor a integridade do esquema e disponibilizar os dados para análises, orquestração de jornadas e workflows de conformidade. O Data Mirror elimina processos complexos de ETL upstream e acelera a implementação, permitindo o espelhamento direto dos modelos de banco de dados existentes. Essa eliminação pode melhorar a governança de dados por meio de controle preciso sobre exclusões e operações de higiene de dados.
 
-Consulte também a [documentação do Experience Platform sobre o Data Mirror](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-mirror/overview){target="_blank"}.
+Consulte também a [documentação do Experience Platform sobre o Data Mirror](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview){target="_blank"}.
 
 ## Data Mirror para Customer Journey Analytics
 
@@ -50,6 +50,6 @@ O Experience Platform Data Mirror for Customer Journey Analytics está disponív
 
 >[!MORELIKETHIS]
 >
->[Guia de início rápido do Data Mirror: espelhar e usar dados baseados em modelo](model-based.md)
->&#x200B;>[Data Mirror (documentação do Experience Platform)](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-mirror/overview)
->&#x200B;>[Esquemas baseados em modelo (documentação do Experience Platform)](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/schema/model-based)
+>[guia de início rápido do Data Mirror: Espelhar e usar dados relacionais](relational.md)
+>[Data Mirror (documentação do Experience Platform)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-mirror/overview)
+>[Esquemas relacionais (documentação do Experience Platform)](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/relational)

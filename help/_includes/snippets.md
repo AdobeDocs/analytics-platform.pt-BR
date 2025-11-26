@@ -1,8 +1,8 @@
 ---
-source-git-commit: 7d354ce65f72838c007d2b9faf02848d86fd7c0f
+source-git-commit: b2a13524760f9d466696534bc8b9691f3b4dfb8a
 workflow-type: tm+mt
-source-wordcount: '4990'
-ht-degree: 98%
+source-wordcount: '5005'
+ht-degree: 99%
 
 ---
 # Trechos
@@ -128,7 +128,7 @@ Um modelo de atribuição determina quais itens de dimensão recebem crédito po
 
 Um container de atribuição define o escopo desejado para a atribuição. As opções disponíveis são:
 
-* **Sessão:** retroage até o início da sessão onde ocorreu uma conversão. As janelas de retrospectiva de sessão respeitam o [tempo limite de sessão](/help/data-views/create-dataview.md#session-settings) modificado em uma visualização de dados. Quando **[!UICONTROL Sessão]** é selecionada, a [janela de retrospectiva de atribuição](#atribution-lookback-window) é automaticamente definida como **[!UICONTROL Janela de relatórios]** e não pode ser alterada.
+* **Sessão:** analisa o período desde o início da sessão onde ocorreu uma conversão. As janelas de retrospectiva da sessão respeitam o [tempo-limite de Sessão](/help/data-views/create-dataview.md#session-settings) modificado em uma visualização de dados. Quando a opção **[!UICONTROL Sessão]** é selecionada, a [Janela de retrospectiva de atribuição](#atribution-lookback-window) é automaticamente definida como **[!UICONTROL Janela de relatórios]** e não pode ser alterada.
 * **Pessoa**: analisa as conversões do escopo do container de pessoa.
 * **Conta global** [!BADGE B2B Edition]{type=Informative}: analisa as conversões do escopo do container de contas globais.
 * **Contas** [!BADGE B2B Edition]{type=Informative}: analisa as conversões do escopo do container de pessoa.
@@ -139,7 +139,7 @@ Um container de atribuição define o escopo desejado para a atribuição. As op
 
 Janela de retrospectiva de atribuição é a quantidade de tempo que uma conversão deve retroceder para incluir pontos de contato. Se um item de dimensão for definido fora da janela de retrospectiva, o valor não será incluído em nenhum cálculo de atribuição.
 
-* **[!UICONTROL Janela de relatórios]**: retroage até o início da janela de relatórios a partir de quando a conversão ocorreu.
+* **[!UICONTROL Janela de relatórios]**: analisa o período desde o início da janela de relatório até o momento em que a conversão ocorreu.
 * **14 dias**: retroage até 14 dias a partir do momento em que a conversão ocorreu.
 * **30 dias**: retroage até 30 dias a partir do momento em que a conversão ocorreu.
 * **60 dias**: retroage até 60 dias a partir do momento em que a conversão ocorreu.
@@ -155,7 +155,7 @@ Considere o exemplo a seguir:
 1. Em 18 de setembro, a pessoa acessa seu site novamente por meio de um link de redes sociais que recebeu de um amigo. Eles adicionam vários itens ao carrinho, mas não compram nada.
 1. Em 24 de setembro, sua equipe de marketing envia um email com um cupom para alguns dos itens em seu carrinho. Eles aplicam o cupom, mas visitam vários outros sites para ver se existem outros cupons disponíveis. Eles encontram outro cupom por meio de um anúncio de exibição e, em seguida, fazem uma compra de US$ 50.
 
-Dependendo da janela de relatórios (por exemplo, de 10 a 24 de setembro), o modelo de atribuição, o contêiner e os canais recebem crédito diferente. Veja exemplos na tabela abaixo:
+Dependendo da sua janela de relatório (por exemplo, 10 a 24 de setembro), o modelo de atribuição, o contêiner e os canais recebem créditos diferentes. Veja exemplos na tabela abaixo:
 
 | Modelo | Container | Janela de retrospectiva | Explicação |
 |---|---|---|---|
@@ -286,3 +286,11 @@ Use as informações a seguir para escolher a visualização que melhor atende �
 | [!UICONTROL Inícios de sessão] | O número de eventos que foram o primeiro evento de uma sessão. Quando usado em uma definição de segmento (por exemplo, “[!UICONTROL Inícios de sessão] existe”), segmenta apenas o primeiro evento de cada sessão.<p>Esse componente precisa ser incluído na visualização de dados para a seguinte [métrica calculada](/help/components/calc-metrics/default-calcmetrics.md) estar disponível no Espaço de trabalho: <ul><li>Taxa de início da sessão</li></p> |
 | [!UICONTROL Sessões] | Baseado nas configurações de sessão da visualização de dados. |
 | [!UICONTROL Tempo gasto (segundos)] | Soma o tempo entre dois valores diferentes para uma dimensão.<p>Esse componente precisa ser incluído na visualização de dados para a seguinte [métricas calculada](/help/components/calc-metrics/default-calcmetrics.md) estar disponível no Espaço de trabalho: <ul><li>Tempo gasto por pessoa</li><li>Tempo gasto por sessão</li></p> |
+
+
+## Baseado em modelo relacional {#relational-model-based}
+
+>[!INFO]
+>
+>Na interface do Customer Journey Analytics, os conjuntos de dados **[!UICONTROL Relational]** podem ser rotulados como **[!UICONTROL baseados em modelo]**.
+>
