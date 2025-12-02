@@ -4,7 +4,7 @@ description: Traga dados gerados pelo Adobe Journey Optimizer e analise-os usand
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
-source-git-commit: 9149a072dc8af3fac0d5272fe84baabca7fb6058
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '3514'
 ht-degree: 100%
@@ -28,14 +28,14 @@ Ao habilitar os relatórios do Customer Journey Analytics para o Journey Optimiz
 A conexão tem o nome **[!UICONTROL Conexão habilitada para o AJO (*nome da sandbox*)]** e disponibiliza os seguintes valores prontos para uso para configuração e conjuntos de dados:
 
 | **Configurações de conexão** | Valor |
-|---|---| 
+|---|---|
 | [!UICONTROL Nome da conexão] | `AJO Enabled Connection (`_`sandbox name`_`)` |
 | [!UICONTROL Descrição da conexão] | [!UICONTROL *Descreva sua conexão aqui*] |
 | [!UICONTROL Tags] | [!UICONTROL *Selecionar tags*] |
 
 
 | **Configurações de dados** | Valor |
-|---|---| 
+|---|---|
 | [!UICONTROL Habilitar janela de dados contínuos] | Habilitado. [!UICONTROL Número de meses selecionado] `13`. |
 | [!UICONTROL Sandbox] | [!UICONTROL *nome da sandbox*] (desabilitado; não é possível modificar essa configuração). |
 | [!UICONTROL Número médio de eventos diários] | menos de 1 milhão (desabilitado; não é possível modificar esta configuração). |

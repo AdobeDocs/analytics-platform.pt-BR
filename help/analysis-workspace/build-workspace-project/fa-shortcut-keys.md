@@ -5,7 +5,7 @@ feature: Workspace Basics
 title: Teclas de atalho
 exl-id: de99a92b-701c-4cdc-a0c2-a70972a19499
 role: User
-source-git-commit: c4c8c0ff5d46ec455ca5333f79d6d8529f4cb87d
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '421'
 ht-degree: 89%
@@ -18,16 +18,16 @@ Há teclas de atalho (atalhos do teclado) disponíveis no Analysis Workspace par
 
 Observe que é possível usar os seguintes símbolos do teclado:
 
-- **⇧** para **[!UICONTROL **&#x200B; Shift &#x200B;**]**.
-- **⌘** para **[!UICONTROL **&#x200B; cmd &#x200B;**]** (command).
-- **⌃** para **[!UICONTROL **&#x200B; ctrl &#x200B;**]** (control).
-- **⌥** para **[!UICONTROL **&#x200B; opt &#x200B;**]** (option).
-- **⎇** para **[!UICONTROL **&#x200B; alt &#x200B;**]** (alternar).
+- **⇧** para **[!UICONTROL ** Shift **]**.
+- **⌘** para **[!UICONTROL ** cmd **]** (command).
+- **⌃** para **[!UICONTROL ** ctrl **]** (control).
+- **⌥** para **[!UICONTROL ** opt **]** (option).
+- **⎇** para **[!UICONTROL ** alt **]** (alternar).
 
 ## Ações de navegação
 
 | Ação | Atalho do Mac | Atalho do Windows |
-| --- | --- | --- | 
+| --- | --- | --- |
 | Criar novo projeto | **[!UICONTROL *Cmd + Shift + P *]** | **[!UICONTROL *Ctrl + Shift + P *]** |
 | Abrir projeto existente | **[!UICONTROL *Cmd + O *]** | **[!UICONTROL *Ctrl + O *]** |
 | Ir para a tela Painéis | **[!UICONTROL *Opt + Shift + 1 *]** | **[!UICONTROL *Alt + Shift + 1 *]** |
@@ -41,7 +41,7 @@ Observe que é possível usar os seguintes símbolos do teclado:
 ## Ações de análise
 
 | Ação | Atalho do Mac | Atalho do Windows |
-| --- | --- | --- | 
+| --- | --- | --- |
 | Pesquisar no painel esquerdo | **[!UICONTROL *Cmd + /*]** | **[!UICONTROL *Ctrl + /*]** |
 | Criar um alerta | **[!UICONTROL *Cmd + Shift + A *]** | **[!UICONTROL *Ctrl + Shift + A *]** |
 | Criar métrica calculada | **[!UICONTROL *Cmd + Shift + C *]** | **[!UICONTROL *Ctrl + Shift + C *]** |
@@ -58,7 +58,7 @@ Observe que é possível usar os seguintes símbolos do teclado:
 ## Adicionar painéis e ações de visualização
 
 | Ação | Atalho do Mac | Atalho do Windows |
-| --- | --- | --- | 
+| --- | --- | --- |
 | Novo painel de atribuição | **[!UICONTROL *Opt + E *]** | **[!UICONTROL *Alt + E *]** |
 | Novo painel em branco | **[!UICONTROL *Opt + B *]** | **[!UICONTROL *Alt + B *]** |
 | Novo painel de forma livre | **[!UICONTROL *Opt + A *]** | **[!UICONTROL *Alt + A *]** |
@@ -71,14 +71,14 @@ Observe que é possível usar os seguintes símbolos do teclado:
 ## Mover ações do painel
 
 | Ação | Atalho do Mac | Atalho do Windows |
-| --- | --- | --- | 
+| --- | --- | --- |
 | Mover painel para cima | **[!UICONTROL *cmd + opt + up *]** | **[!UICONTROL *alt + ctrl + up *]** |
 | Mover painel para baixo | **[!UICONTROL *cmd + opt + down *]** | **[!UICONTROL *alt + ctrl + down *]** |
 
 ## Ações de democratização
 
 | Ação | Atalho do Mac | Atalho do Windows |
-| --- | --- | --- | 
+| --- | --- | --- |
 | Salvar projeto | **[!UICONTROL *Cmd + S *]** | **[!UICONTROL *Ctrl + S *]** |
 | Salvar projeto como | **[!UICONTROL *Cmd + Shift + S *]** | **[!UICONTROL *Ctrl + Shift + S *]** |
 | Salvar como modelo | **[!UICONTROL *Opt + T *]** | **[!UICONTROL *Alt + T *]** |

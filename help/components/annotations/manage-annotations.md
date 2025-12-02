@@ -4,7 +4,7 @@ description: Saiba como gerenciar anotações no Workspace.
 feature: Components
 exl-id: 12f2cc2f-477c-4f16-afdd-b0db84725b32
 role: User
-source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 91%
@@ -34,7 +34,7 @@ O Gerenciador de anotações tem os seguintes elementos de interface:
 A lista de anotações ➊ exibe todas as anotações que você possui, as anotações que foram segmentadas para todos os seus projetos e as anotações que foram compartilhadas com você. A lista tem as seguintes colunas:
 
 | Coluna | Descrição |
-| --- | --- | 
+| --- | --- |
 | ![StarOutline](/help/assets/icons/StarOutline.svg) | Selecione ![Estrela](/help/assets/icons/Star.svg) para adicionar ou ![StarOutline](/help/assets/icons/StarOutline.svg) para remover uma anotação dos favoritos. |
 | **[!UICONTROL Título e descrição]** | Fornecidos no Criador de anotações. Para editar o título e a descrição, clique no link de título para abrir o [Criador de anotações](/help/components/annotations/create-annotations.md#annotation-builder). Uma anotação compartilhada é indicada pelo ícone ![Compartilhamento](/help/assets/icons/ShareAlt.svg). |
 | **[!UICONTROL Visualização de dados]** | As visualizações de dados às quais essa anotação se aplica. |

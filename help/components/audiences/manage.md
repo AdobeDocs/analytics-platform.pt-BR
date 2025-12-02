@@ -4,7 +4,7 @@ description: Saiba como gerenciar públicos-alvo no Customer Journey Analytics
 exl-id: 0cc50f64-40b5-4245-a9bb-a60fc90f507a
 feature: Audiences
 role: User
-source-git-commit: 4717a85b9a3c7dc2cbdd8c625ebb5862cbfccd58
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '769'
 ht-degree: 97%
@@ -80,9 +80,9 @@ As ações a seguir são comuns no Gerenciador de projetos agendados. Você pode
 
 | Ícone | Ação | Descrição |
 |:---:|---|---|
-| ![Rótulos](/help/assets/icons/Labels.svg) | **[!UICONTROL Tag]** | Marque os públicos-alvo selecionados. Na caixa de diálogo **[!UICONTROL Atualizar tags: *nome do público-alvo *]**, selecione as tags no menu suspenso ou digite uma ou mais tags. Selecione **[!UICONTROL Salvar &#x200B;]** para salvar. |
+| ![Rótulos](/help/assets/icons/Labels.svg) | **[!UICONTROL Tag]** | Marque os públicos-alvo selecionados. Na caixa de diálogo **[!UICONTROL Atualizar tags: *nome do público-alvo *]**, selecione as tags no menu suspenso ou digite uma ou mais tags. Selecione **[!UICONTROL Salvar ]** para salvar. |
 | ![Excluir](/help/assets/icons/Delete.svg) | **[!UICONTROL Excluir]** | Exclua os públicos-alvo selecionados. |
-| ![Editar](/help/assets/icons/Edit.svg) | **[!UICONTROL Renomear]** | Renomeie o público-alvo selecionado. Use a caixa de diálogo **[!UICONTROL Renomear: *nome do público-alvo *]** para renomear o público-alvo e selecione **[!UICONTROL Salvar &#x200B;]** para salvar. |
+| ![Editar](/help/assets/icons/Edit.svg) | **[!UICONTROL Renomear]** | Renomeie o público-alvo selecionado. Use a caixa de diálogo **[!UICONTROL Renomear: *nome do público-alvo *]** para renomear o público-alvo e selecione **[!UICONTROL Salvar ]** para salvar. |
 
 As seguintes ações estão disponíveis na barra de ação azul ao selecionar um ou mais projetos agendados.
 

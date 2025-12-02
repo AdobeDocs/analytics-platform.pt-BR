@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 exl-id: 417443ae-a1ab-483b-a8fd-cff5ee8b6263
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '1147'
 ht-degree: 97%
@@ -21,7 +21,7 @@ Esses dados de resumo podem ser usados para apresentar indicadores de desempenho
 >[!NOTE]
 >
 >Dados de resumo são dados de série temporal de um conjunto de dados de resumo. Esse conjunto de dados de resumo é baseado em um esquema que usa a classe de métricas de resumo do XDM como classe de base.
->&#x200B;>Somente dados de séries temporais por hora ou por dia são permitidos.
+>Somente dados de séries temporais por hora ou por dia são permitidos.
 
 >[!TIP]
 >
@@ -154,5 +154,5 @@ Verifique se as configurações de componente de um grupo de dados de resumo sã
 >[!MORELIKETHIS]
 >
 >- Consulte o artigo [Usar dados de resumo](/help/use-cases/data-views/summary-data.md) para obter um exemplo detalhado de caso de uso sobre como usar e relatar dados de resumo.
->- Blog: [Como os dados de resumo aprimoram os conjuntos de dados do Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-summary-data-enhances-adobe-customer-journey-analytics/ba-p/704635?profile.language=pt)
+>- Blog: [Como os dados de resumo aprimoram os conjuntos de dados do Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-summary-data-enhances-adobe-customer-journey-analytics/ba-p/704635)
 

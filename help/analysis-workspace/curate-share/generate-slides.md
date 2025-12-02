@@ -4,10 +4,10 @@ keywords: Analysis Workspace
 title: Gerar apresentações a partir de relatórios do Workspace
 feature: Curate and Share
 role: User
-source-git-commit: 87e3b3cfdf765a57ecdb70921696013bcba4feac
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '1585'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -86,7 +86,7 @@ As histórias de dados consistem em um slide de título, um slide de resumo exec
 
 >[!CONTEXTUALHELP]
 >id="cja-presentation-emphasized-components"
->title="Componentes destacados"
+>title="Componentes enfatizados"
 >abstract="Escolha até 5 métricas e 5 dimensões nas visualizações que você deseja enfatizar na apresentação. As métricas escolhidas são mostradas em itálico, as dimensões são mostradas em negrito e os itens de dimensão são mostrados em uma cor contrastante."
 
 <!-- markdownlint-enable MD034 -->
@@ -157,9 +157,9 @@ As histórias de dados consistem em um slide de título, um slide de resumo exec
 
          Verifique se o arquivo carregado tem layouts principais com os seguintes nomes: &quot;Title_Slide&quot;, &quot;Section_Divider&quot;, &quot;Title_Text&quot;, &quot;Title_Chart&quot;, &quot;Title_Two_Content_Mixed&quot;, &quot;Title_Three_Content_Mixed&quot;.
 
-         São suportados até 15 layouts principais.
+         São permitidos até 15 layouts mestres.
 
-         Arquivos .pptx e .potx de até 25 MB são suportados.
+         São aceitos arquivos .pptx e .potx de até 25 MB.
 
       1. Na seção **[!UICONTROL Mapeamento de layout]**, cada layout de slide usado em apresentações geradas é mapeado automaticamente para um slide do tema carregado. Revise as seleções para verificar se estão corretas.
 

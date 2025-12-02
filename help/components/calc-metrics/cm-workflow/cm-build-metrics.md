@@ -3,7 +3,7 @@ description: Saiba mais sobre o construtor de métricas calculadas que fornece u
 title: Criar métricas
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '1613'
 ht-degree: 100%
@@ -200,5 +200,5 @@ Para excluir um container, selecione ![Fechar](/help/assets/icons/Close.svg) no 
 >[!MORELIKETHIS]
 >
 >[Usar funções](cm-using-functions.md)
->>[Segmentos ](/help/components/segments/seg-overview.md)
+>[Segmentos ](/help/components/segments/seg-overview.md)
 >

@@ -4,7 +4,7 @@ title: Gerenciar segmentos
 exl-id: b8869560-0cf1-4e5d-a03c-dfca85d05e66
 feature: Filters, Segments
 role: User
-source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '930'
 ht-degree: 31%
@@ -35,7 +35,7 @@ O Gerenciador de segmentos tem os seguintes elementos de interface:
 A lista de segmentos ➊ exibe todos os segmentos que você possui, os segmentos que foram segmentados para todos os seus projetos e os segmentos que foram compartilhados com você. A lista tem as seguintes colunas:
 
 | Coluna | Descrição |
-| --- | --- | 
+| --- | --- |
 | ![StarOutline](/help/assets/icons/StarOutline.svg) | Selecione para favorecer ![Star](/help/assets/icons/Star.svg) ou desfavorecer ![StarOutline](/help/assets/icons/StarOutline.svg) um segmento. Ver [Marcar segmento como favorito](/help/components/segments/seg-favorite.md) |
 | **[!UICONTROL Título e descrição]** | Para editar o segmento, selecione o link de título, que abre o [Construtor de segmentos](seg-builder.md). Um segmento compartilhado é indicado com ![Compartilhamento](/help/assets/icons/ShareAlt.svg). |
 | **[!UICONTROL Visualização de dados]** | As visualizações de dados às quais esse segmento se aplica. |

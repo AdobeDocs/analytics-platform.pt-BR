@@ -4,7 +4,7 @@ description: Saiba como usar o Preparo de dados para combinar conjuntos de relat
 exl-id: 2656cc21-3980-4654-bffb-b10908cb21f5
 feature: Use Cases
 role: User
-source-git-commit: 664576605b8be098a751609536e388c304c65513
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '1321'
 ht-degree: 55%
@@ -59,7 +59,7 @@ A funcionalidade Preparo de dados do Experience Platform é integrada ao conecto
    | Classe **XDM ExperienceEvent** |
    | Grupo de campos **Modelo ExperienceEvent do Adobe Analytics** |
 
-1. Adicione outro grupo de campos ao esquema ou [crie um grupo de campos personalizado](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=pt-BR#:~:text=To%20create%20a%20new%20field,section%20in%20the%20left%20rail) e adicione-o ao esquema. Criaremos um novo grupo de campos e o chamaremos de **Campos unificados**. Em seguida, adicionaremos os seguintes campos ao novo grupo de campos:
+1. Adicione outro grupo de campos ao esquema ou [crie um grupo de campos personalizado](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html#:~:text=To%20create%20a%20new%20field,section%20in%20the%20left%20rail) e adicione-o ao esquema. Criaremos um novo grupo de campos e o chamaremos de **Campos unificados**. Em seguida, adicionaremos os seguintes campos ao novo grupo de campos:
 
    | Grupo de campos personalizado “Campos unificados”  |
    | --- |
@@ -92,7 +92,7 @@ A funcionalidade Preparo de dados do Experience Platform é integrada ao conecto
    **Exibição global** exibição de dados no Customer Journey Analytics:
 
    | Campo de origem | Incluir na visualização de dados? |
-   | --- | --- | 
+   | --- | --- |
    | \_experience.analytics.customDimensions.eVars.eVar1 | Não |
    | \_experience.analytics.customDimensions.eVars.eVar2 | Não |
    | _\&lt;path>_.Search_term | Sim |
@@ -122,7 +122,7 @@ Usando o Preparo de dados, você pode combinar a Categoria do cliente na eVar 1 
 1. Crie um esquema na Adobe Experience Platform. Adicione o seguinte ao esquema:
 
    | “Esquema estendido” |
-   | --- | 
+   | --- |
    | Classe **Evento de experiência do XDM** |
    | Grupo de campos **Modelo de evento de experiência do Adobe Analytics** |
 
@@ -158,6 +158,6 @@ Usando o Preparo de dados, você pode combinar a Categoria do cliente na eVar 1 
 
 ## Preparo de dados vs. ID de componente
 
-Conforme descrito acima, o Preparo de dados permite mapear campos diferentes em conjunto em vários conjuntos de relatórios do Adobe Analytics. Isso é útil no Customer Journey Analytics quando você deseja combinar dados de vários conjuntos de dados em uma única conexão do Customer Journey Analytics. No entanto, se você pretende manter os conjuntos de relatórios em conexões Customer Journey Analytics separadas, mas deseja usar um conjunto de relatórios nessas conexões e visualizações de dados, alterar a ID do componente subjacente no Customer Journey Analytics fornece uma maneira de tornar os relatórios compatíveis, mesmo que os esquemas sejam diferentes. Consulte [Configurações do componente](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/overview.html?lang=pt-BR) para obter mais informações.
+Conforme descrito acima, o Preparo de dados permite mapear campos diferentes em conjunto em vários conjuntos de relatórios do Adobe Analytics. Isso é útil no Customer Journey Analytics quando você deseja combinar dados de vários conjuntos de dados em uma única conexão do Customer Journey Analytics. No entanto, se você pretende manter os conjuntos de relatórios em conexões Customer Journey Analytics separadas, mas deseja usar um conjunto de relatórios nessas conexões e visualizações de dados, alterar a ID do componente subjacente no Customer Journey Analytics fornece uma maneira de tornar os relatórios compatíveis, mesmo que os esquemas sejam diferentes. Consulte [Configurações do componente](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/overview.html) para obter mais informações.
 
 A alteração da ID do componente é uma função exclusiva do Customer Journey Analytics e não afeta dados do conector de origem do Analytics enviados para o Perfil do cliente em tempo real e para o RTCDP.

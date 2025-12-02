@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 exl-id: 80139806-618a-46ff-b2c4-32d7bb85a526
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '5021'
 ht-degree: 15%
@@ -565,7 +565,7 @@ Você deseja usar o potencial de criar relatórios sobre dados de resumo e gerar
    1. Especifique `Cost per Impression` para o **[!UICONTROL Nome]**.
    1. Selecione **[!UICONTROL Moeda]** para **[!UICONTROL Formato]**.
    1. Especifique `4` para **[!UICONTROL Casas decimais]**.
-   1. Use ![Evento](/help/assets/icons/Event.svg) **[!UICONTROL Custo (Resumo)]** **&#x200B;**&#x200B;**[!UICONTROL Impressões (Resumo)]** como **[!UICONTROL Definição]**.
+   1. Use ![Evento](/help/assets/icons/Event.svg) **[!UICONTROL Custo (Resumo)]** **** **[!UICONTROL Impressões (Resumo)]** como **[!UICONTROL Definição]**.
    1. Selecione **[!UICONTROL Salvar]**.
 1. Selecione ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** para adicionar outra métrica calculada nova.
    1. Especifique `Return on Ad Spend` para o **[!UICONTROL Nome]**.
@@ -603,4 +603,4 @@ O projeto final deve ser semelhante ao mostrado abaixo.
 >[!MORELIKETHIS]
 >
 >[Dados de resumo](/help/data-views/summary-data.md)
->&#x200B;>[Configurações do componente do grupo de dados de resumo](/help/data-views/component-settings/summary-data-group.md)
+>[Configurações do componente do grupo de dados de resumo](/help/data-views/component-settings/summary-data-group.md)

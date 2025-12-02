@@ -4,7 +4,7 @@ description: Entenda como você pode usar campos derivados como base para criar 
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-source-git-commit: 39b3e0eb43e69c81c12e56fc7605e5746c2d650c
+source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
 workflow-type: tm+mt
 source-wordcount: '1277'
 ht-degree: 1%
@@ -297,6 +297,6 @@ Use os campos e segmentos derivados para relatar e analisar o tráfego gerado pe
 
 >[!MORELIKETHIS]
 >
->Este artigo de caso de uso é baseado no artigo do blog [Rastreamento e análise de tráfego LLM e AI-Generated no Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967?profile.language=pt).
+>Este artigo de caso de uso é baseado no artigo do blog [Rastreamento e análise de tráfego LLM e AI-Generated no Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/tracking-and-analyzing-llm-and-ai-generated-traffic-in-adobe/ba-p/771967).
 >
 >
