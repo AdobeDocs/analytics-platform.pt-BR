@@ -45,7 +45,7 @@ Você precisa de um administrador de sistema ou de um administrador de produto p
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Gerenciar usuários para um perfil de produto](https://video.tv.adobe.com/v/333860/?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Gerenciar usuários para um perfil de produto](https://video.tv.adobe.com/v/3475946/?captions=por_br&quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
 
 
 >[!ENDSHADEBOX]
