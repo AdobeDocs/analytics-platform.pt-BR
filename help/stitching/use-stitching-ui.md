@@ -6,9 +6,9 @@ feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
 badgePremium: label="Beta" type="Informative"
-source-git-commit: 23b890ec6a3266d1ca0621b09264f1d6a2f82645
+source-git-commit: 6ebd1604e01af068228d7a5e4a78fdccf852f480
 workflow-type: tm+mt
-source-wordcount: '808'
+source-wordcount: '827'
 ht-degree: 3%
 
 ---
@@ -30,7 +30,7 @@ Para ativar a compilação em um conjunto de dados de evento na interface do usu
    * vários campos configurados como uma identidade e que permitem selecionar valores diferentes para uma ID persistente e uma ID de pessoa.
    * pelo menos um campo que esteja marcado como identidade principal com um namespace associado caso queira usar o Mapa de identidade e o namespace de identidade principal para ID persistente ou ID de pessoa.
 
-* O conjunto de dados do evento deve ser [habilitado para o Serviço de identidade](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service) caso você queira usar o Gráfico de identidade e a compilação baseada em gráfico.
+* Se você quiser usar a compilação com base em gráficos e antecipar que o conjunto de dados do evento contribua para o Gráfico de identidade, deverá [habilitar o conjunto de dados para o Serviço de identidade](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service). Um conjunto de dados contribui para o Gráfico de identidade quando o conjunto de dados contém IDs de pessoa relevantes ao lado de IDs persistentes.
 
 
 ## Verificações de comprovação
@@ -137,7 +137,7 @@ Para habilitar a compilação, na seção de conjunto de dados do evento da caix
 
 1. Selecione uma janela de retrospectiva no menu suspenso **[!UICONTROL Janela de retrospectiva]**. As opções disponíveis dependem do pacote do Customer Journey Analytics ao qual você está habilitado.
 
-Depois de salvar uma conexão que contém conjuntos de dados habilitados para a compilação de identidade, o processo de compilação de cada conjunto de dados começa quando a assimilação de dados desse conjunto de dados começa.
+Depois de salvar uma conexão, o processo de compilação dos conjuntos de dados ativados para compilação é iniciado quando a assimilação de dados desses conjuntos de dados é iniciada
 
 ## Limitações
 
