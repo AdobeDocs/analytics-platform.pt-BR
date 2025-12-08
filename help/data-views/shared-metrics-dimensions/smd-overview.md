@@ -2,9 +2,9 @@
 title: Visão geral de métricas e dimensões compartilhadas
 description: Use a mesma dimensão ou referência de métrica em várias visualizações de dados.
 exl-id: 998a9f9b-cfa7-4b97-b32b-d50e35d01b39
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 1de8b8f40a7e1be0de0e6cbed5cc57ff834f2377
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1282'
 ht-degree: 0%
 
 ---
@@ -80,7 +80,7 @@ Todas as dimensões e métricas compartilhadas são exibidas abaixo dos quatro c
    * **[!UICONTROL Grupo de dados de resumo]**: as configurações do [grupo de dados de resumo](/help/data-views/component-settings/summary-data-group.md) do componente.
    * **[!UICONTROL Data de criação]**: a data de criação ou de importação do componente.
    * **[!UICONTROL Última modificação]**: se o componente foi modificado depois de ter sido criado, a data em que foi modificado pela última vez.
-* **[!UICONTROL Histórico do trabalho]**: selecione o ícone ![Histórico](/help/assets/icons/History.svg) para abrir uma janela modal que mostre todas as instâncias de dimensões e métricas de importação de visualizações de dados individuais.
+* **[!UICONTROL Histórico de trabalhos]**: se você importar ou compartilhar um grande número de componentes, um trabalho será criado automaticamente. Selecione o ícone ![Histórico](/help/assets/icons/History.svg) para abrir uma janela modal que mostre todas as instâncias de importação de dimensões e métricas de visualizações de dados individuais. Se nenhuma das ações de importação ou compartilhamento for grande o suficiente para acionar um trabalho, esse botão não aparecerá.
 
 ## Editar componentes ou compartilhar componentes em visualizações de dados
 
