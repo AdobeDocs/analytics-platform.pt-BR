@@ -6,10 +6,10 @@ feature: Audiences
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 2b91c0592ac4ec0e0b5ffa3db91758466563abaf
+source-git-commit: f23775342a29d758b478206a77386e18a58312a6
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 4%
+source-wordcount: '678'
+ht-degree: 3%
 
 ---
 
@@ -19,7 +19,10 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->A análise de público-alvo é diferente da publicação de público-alvo, o que permite criar e publicar públicos-alvo descobertos no Customer Journey Analytics no Adobe Experience Platform para direcionamento e personalização de clientes. Para obter informações sobre a publicação de público, consulte [Visão geral da publicação de público-alvo](/help/components/audiences/audiences-overview.md).
+>Entenda a diferença entre a análise de público-alvo e a publicação de público-alvo:
+>
+>* **Análise de público-alvo**: permite assimilar dados de associação de público-alvo de conjuntos de dados do Perfil do Experience Platform em uma conexão do Customer Journey Analytics.
+>* **Publicação de público-alvo**: permite criar e publicar públicos-alvo descobertos no Customer Journey Analytics na Adobe Experience Platform para direcionamento e personalização de clientes. Para obter informações sobre a publicação de público, consulte [Visão geral da publicação de público-alvo](/help/components/audiences/audiences-overview.md).
 
 A análise de público-alvo permite assimilar dados de associação de público-alvo de conjuntos de dados de perfil da Experience Platform em uma conexão do Customer Journey Analytics. Os públicos-alvo são disponibilizados como novas dimensões para uso no Analysis Workspace.
 
@@ -46,6 +49,12 @@ Ao configurar a análise de público-alvo, você seleciona a sandbox e a políti
 
 Para obter mais informações, consulte [Configurar análise de audiência](/help/connections/audience-analysis/audience-analysis-configure.md).
 
+## Gerenciar configurações de análise de público
+
+Você pode gerenciar as configurações de análise de público-alvo após sua criação. É possível exibir, editar e excluir configurações.
+
+Para obter informações sobre como gerenciar as configurações de análise de público-alvo existentes, consulte [Gerenciar configurações de análise de público-alvo](/help/connections/audience-analysis/audience-analysis-manage.md).
+
 ## Analisar dados de público-alvo no Customer Journey Analytics
 
 Com os dados do público-alvo disponíveis no Customer Journey Analytics, você pode obter insights acionáveis sobre como os membros do público-alvo se comportam em vários canais.
@@ -57,6 +66,16 @@ Por exemplo, você pode rastrear o comportamento de clientes individuais que for
 * Membros do público-alvo que eventualmente fizeram uma compra na loja
 
 Para obter mais informações, consulte [Analisar públicos-alvo da Experience Platform na Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).
+
+## Requisitos de permissão e função da análise de público-alvo
+
+As seguintes funções e permissões do Customer Journey Analytics Experience Platform são necessárias para a análise de público-alvo:
+
+| Recurso | Requisitos de permissão ou função do Customer Journey Analytics | Exigências de permissão do Experience Platform |
+|---------|----------|----------|
+| [Criar configurações de análise de público-alvo](/help/connections/audience-analysis/audience-analysis-configure.md) | Administrador do sistema | <ul><li>Conjuntos de dados: permissões de leitura</li><li>Esquemas: Read, Write</li><li>e namespaces de identidade: Leitura</li></ul> |
+| [Exibir dimensões de análise de público-alvo na exibição de dados](/help/connections/audience-analysis/audience-analysis-configure.md#view-audience-dimensions-in-the-data-view) | Administrador de perfil de produto do perfil de produto ao qual a visualização de dados está atribuída <p>Para obter mais informações, consulte [Controle de acesso](/help/technotes/access-control.md).</p> | N/A |
+| Usar dimensões de análise de público-alvo no Analysis Workspace | Acesso a uma visualização de dados em que as dimensões de análise de público-alvo foram adicionadas | N/A |
 
 
 

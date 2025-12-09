@@ -6,22 +6,24 @@ feature: Audiences
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 2b91c0592ac4ec0e0b5ffa3db91758466563abaf
+source-git-commit: f23775342a29d758b478206a77386e18a58312a6
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '503'
 ht-degree: 0%
 
 ---
 
 # Analisar públicos da Experience Platform no Customer Journey Analytics {#analyze-audiences-RTCDP}
 
-Você pode começar a analisar os públicos da Experience Platform no Customer Journey Analytics depois de [criar uma configuração de análise de público-alvo](/help/connections/audience-analysis/audience-analysis-configure.md), quando os dados de público-alvo estiverem disponíveis como novas dimensões no Analysis Workspace.
+Após [criar uma configuração de análise de público-alvo](/help/connections/audience-analysis/audience-analysis-configure.md), os dados de público-alvo ficam disponíveis como novas dimensões nas visualizações de dados em que você os configura para serem criados. Você pode usar as novas dimensões de público-alvo em qualquer lugar no Analysis Workspace se tiver acesso a uma visualização de dados em que as dimensões de análise de público-alvo foram adicionadas.
+
+## Usar o modelo de visão geral do público-alvo
 
 Um template de visão geral do público-alvo está disponível no Customer Journey Analytics.
 
 <!-- Can you also use the new audience dimensions in any project, regardless of whether it's a template? I assume so -->
 
-<!-- What are the names of the new dimensions? Are they customized to whatever your audience names are in AEP, or are they always the same? -->
+<!-- What are the names of the new dimensions? Are they customized to whatever your audience names are in AEP, or are they always the same? Are they the dimensions available in the Audience overview template? (Audience Name, Audience Origin, Exited Audience Name, Exited Audience Origin; Audience Description, Exited Audience Description). Metrics included (Distinct Audiences) -->
 
 Para obter informações sobre como acessar o modelo de visão geral de Público-alvo, consulte [Acessar e executar um modelo](/help/analysis-workspace/templates/use-templates.md#access-and-run-a-template) em [Usar modelos](/help/analysis-workspace/templates/use-templates.md).
 
@@ -49,7 +51,7 @@ Selecione até três públicos-alvo na tabela neste painel para ver como eles se
 
 Mostra os dados de todos os públicos-alvo com eventos de uso associados à visualização de dados selecionada. Os dados são sempre exibidos para ontem, portanto, alterar o intervalo de datas do painel resulta em dados imprecisos. &quot;Públicos-alvo encerrados&quot; são públicos-alvo nos quais pessoas com eventos de uso saíram ou saíram ontem.
 
-Use a tabela neste painel para entender melhor o comportamento do público-alvo. Arraste a dimensão Descrição de público-alvo existente da visualização de dados selecionada e adicione-a como um detalhamento. Ou use qualquer outra dimensão ou métrica de interação (como Página, Ação e assim por diante) como o detalhamento.
+Use a tabela neste painel para entender melhor o comportamento do público-alvo. Arraste a dimensão Descrição de público-alvo encerrado da visualização de dados selecionada e adicione-a como um detalhamento. Ou use qualquer outra dimensão ou métrica de interação (como Página, Ação e assim por diante) como o detalhamento.
 
 ## Painel de origens do público-alvo principal encerrado
 

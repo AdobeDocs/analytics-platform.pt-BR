@@ -6,10 +6,10 @@ feature: Audiences
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 3fb94d920b240247f13050cf091423335a3d74ec
 workflow-type: tm+mt
-source-wordcount: '1035'
-ht-degree: 13%
+source-wordcount: '1289'
+ht-degree: 12%
 
 ---
 
@@ -53,7 +53,11 @@ ht-degree: 13%
 
 A análise de público-alvo permite assimilar dados de associação de público-alvo de conjuntos de dados de perfil da Experience Platform em uma conexão do Customer Journey Analytics. Os públicos-alvo são disponibilizados como novas dimensões para uso no Analysis Workspace. Para obter informações mais detalhadas sobre a análise de público-alvo, consulte [Visão geral da análise de público-alvo](/help/connections/audience-analysis/audience-analysis-overview.md).
 
+## Criar uma configuração de análise de público-alvo
+
 Ao criar uma configuração de análise de público-alvo, selecione a sandbox e a política de mesclagem associadas aos públicos-alvo da Experience Platform que deseja analisar. O Customer Journey Analytics cria um novo conjunto de dados de pesquisa e, em seguida, adiciona automaticamente o conjunto de dados de pesquisa e o conjunto de dados do perfil à conexão escolhida.
+
+Somente administradores do sistema podem criar configurações de análise de público-alvo.
 
 Para criar uma configuração de análise de público-alvo:
 
@@ -70,18 +74,20 @@ Para criar uma configuração de análise de público-alvo:
    | Campo | Descrição |
    |---------|----------|
    | **[!UICONTROL Nome]** | Especifique um nome para a configuração. |
-   | **[!UICONTROL Sandbox]** | Selecione a sandbox que contém o conjunto de dados do perfil que você deseja adicionar à conexão. <p>A Adobe Experience Platform fornece [sandboxes](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sandbox/home) que particionam uma única instância da Platform em ambientes virtuais separados para ajudar a desenvolver aplicativos de experiência digital. Você pode considerar as sandboxes como “silos de dados” que contêm conjuntos de dados. As sandboxes são usadas para controlar o acesso aos conjuntos de dados.</p> |
+   | **[!UICONTROL Sandbox]** | Selecione a sandbox da Experience Platform que contém o conjunto de dados do perfil que você deseja adicionar à conexão. <p>A Adobe Experience Platform fornece [sandboxes](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sandbox/home) que particionam uma única instância da Platform em ambientes virtuais separados para ajudar a desenvolver aplicativos de experiência digital. Você pode considerar as sandboxes como “silos de dados” que contêm conjuntos de dados. As sandboxes são usadas para controlar o acesso aos conjuntos de dados.</p> |
 
 1. Na seção **[!UICONTROL Conjunto de dados de perfil]**, especifique as seguintes informações:
 
    | Campo | Descrição |
    |---------|----------|
-   | **[!UICONTROL Política de mesclagem]** | Selecione a política de mesclagem que corresponde ao conjunto de dados do perfil que você deseja usar para análise de público-alvo. <p>As Políticas de mesclagem determinam como o Adobe Experience Platform combina dados de perfil de vários conjuntos de dados em perfis de cliente unificados usados para criação de público-alvo. A política de mesclagem selecionada afeta os atributos do perfil que são incluídos nos públicos-alvo. Todos os dias, um instantâneo desses dados é gerado no Experience Platform. Esse instantâneo fornece uma exibição estática dos dados em um momento específico e não inclui dados de evento.</p><p>Selecione a política de mesclagem **[!UICONTROL Timebased]** padrão se você vir várias políticas de mesclagem e não tiver certeza sobre qual escolher. Você também pode consultar sua equipe de dados para entender melhor quais públicos-alvo estão associados a cada política de mesclagem.</p> |
-   | **[!UICONTROL Conjunto de dados de perfil]** | O conjunto de dados do perfil associado à política de mesclagem selecionada. Este conjunto de dados de perfil inclui os dados de público-alvo da Experience Platform que você deseja analisar. Esse conjunto de dados de perfil é adicionado à conexão selecionada.<p>Depois de escolher uma política de mesclagem, a exportação de instantâneo de perfil é exibida. Por exemplo: `Profile-Snapshot-Export-abbc7093-80f4-4b49-b96e-e743397d763f`.</p><p>Para obter mais informações, consulte [Conjuntos de dados do atributo de perfil](https://experienceleague.adobe.com/pt-br/docs/experience-platform/dashboards/query#profile-attribute-datasets) no Guia de Painéis do Experience Platform.</p> |
+   | **[!UICONTROL Política de mesclagem]** | Selecione a política de mesclagem que corresponde ao conjunto de dados do perfil que você deseja usar para a análise do público-alvo. <p>As Políticas de mesclagem determinam como o Adobe Experience Platform combina dados de perfil de vários conjuntos de dados em perfis de cliente unificados usados para criação de público-alvo. A política de mesclagem selecionada afeta os atributos do perfil que são incluídos nos públicos-alvo. Todos os dias, um instantâneo desses dados é gerado no Experience Platform. Esse instantâneo fornece uma exibição estática dos dados em um momento específico e não inclui dados de evento.</p><p>Selecione a política de mesclagem **[!UICONTROL Timebased]** padrão se você vir várias políticas de mesclagem e não tiver certeza sobre qual escolher. Você também pode consultar sua equipe de dados para entender melhor quais públicos-alvo estão associados a cada política de mesclagem.</p> |
+   | **[!UICONTROL Conjunto de dados de perfil]** | O conjunto de dados do perfil associado à política de mesclagem selecionada. Este conjunto de dados de perfil inclui os dados de público-alvo da Experience Platform que você deseja analisar. Esse conjunto de dados de perfil é adicionado à conexão selecionada.<p>Depois de escolher uma política de mesclagem, a exportação de instantâneo de perfil é exibida. Por exemplo: `Profile-Snapshot-Export-abbc7093-80f4-4b49-b96e-e743397d763f`.</p><p>Para obter mais informações, consulte [Conjuntos de dados do atributo de perfil](https://experienceleague.adobe.com/en/docs/experience-platform/dashboards/query#profile-attribute-datasets) no Guia de Painéis do Experience Platform.</p> |
 
 1. Na seção **[!UICONTROL Conexão]**, clique em **[!UICONTROL Selecionar uma conexão]**.
 
 1. Na caixa de diálogo Conexões, marque a caixa de seleção ao lado da conexão à qual deseja adicionar o conjunto de dados do perfil e selecione **[!UICONTROL Usar conexão]**.
+
+   Uma conexão só pode ser associada a uma configuração de análise de público-alvo.
 
 1. Especifique as seguintes informações para configurar a conexão:
 
@@ -100,5 +106,35 @@ Para criar uma configuração de análise de público-alvo:
 1. Selecione **[!UICONTROL Criar]** para criar a configuração.
 
    Como o conjunto de dados do perfil é atualizado uma vez por dia, os públicos-alvo ficam disponíveis nas visualizações de dados do Customer Journey Analytics no dia seguinte à criação da configuração de análise de público-alvo.
+
+1. Após 24 horas, [exiba as dimensões de público-alvo na visualização de dados](#view-audience-dimensions-in-the-data-view) para verificar se as dimensões de público-alvo estão disponíveis nas visualizações de dados selecionadas.
+
+## Exibir dimensões de público-alvo na visualização de dados
+
+Depois de [criar uma configuração de análise de público-alvo](#create-an-audience-analysis-configuration), você pode verificar se as dimensões de público-alvo foram adicionadas às visualizações de dados selecionadas durante a configuração.
+
+Para exibir dimensões de público-alvo na visualização de dados, você deve ser um administrador de perfil de produto para o perfil de produto ao qual a visualização de dados está atribuída. Para obter mais informações, consulte [Controle de acesso](/help/technotes/access-control.md).
+
+Para exibir as dimensões de análise de público-alvo na visualização de dados:
+
+1. No Customer Journey Analytics, selecione **[!UICONTROL Gerenciamento de dados]** > **[!UICONTROL Visualizações de dados]**.
+
+1. Na seção **[!UICONTROL Dimensões]**, as seguintes dimensões agora devem estar disponíveis:
+
+   * **[!UICONTROL Nome do público-alvo]**
+
+   * **[!UICONTROL Origem do público-alvo]**
+
+   * **[!UICONTROL Saída da Origem do Público-Alvo]**
+
+   * **[!UICONTROL Nome do público-alvo encerrado]**
+
+   Observe que cada uma dessas dimensões foi adicionada ao conjunto de dados do perfil associado à política de mesclagem selecionada durante a configuração da análise de público-alvo e cada uma foi adicionada ao novo conjunto de dados de pesquisa criado.
+
+   ![Dimensões de público-alvo disponíveis na visualização de dados](assets/audience-analysis-dataview-dataset.png)
+
+1. Use as dimensões de análise de público-alvo no Analysis Workspace.
+
+   Os usuários que têm acesso para usar a visualização de dados no Analysis Workspace podem ver as novas dimensões e usá-las em suas análises. Para obter informações sobre como usar as dimensões de análise de público-alvo no Analysis Workspace, consulte [Analisar públicos-alvo da Experience Platform no Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).
 
 
