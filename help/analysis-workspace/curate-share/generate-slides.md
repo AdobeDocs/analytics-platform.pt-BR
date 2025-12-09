@@ -4,9 +4,9 @@ keywords: Analysis Workspace
 title: Gerar apresentações a partir de relatórios do Workspace
 feature: Curate and Share
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 6b8a9fd25aaf83eaad3bc9cba0ce9349afb5471c
 workflow-type: tm+mt
-source-wordcount: '1585'
+source-wordcount: '1627'
 ht-degree: 4%
 
 ---
@@ -230,14 +230,18 @@ Os seguintes elementos e recursos do Analysis Workspace usados em um projeto nã
 
    * Mapa de árvore
 
-* Detalhamentos
-
-  Os dados para detalhamentos são incluídos em apresentações geradas, mas são exibidos no mesmo nível que os itens de dimensão.
-
 * Análises guiadas
 
 * Componentes impedidos de serem exportados por uma política de governança de dados
 
   Para obter mais informações, consulte [Solucionar problemas de exportações com falha](/help/components/exports/troubleshoot-exports.md).
+
+## Elementos e recursos do projeto com suporte limitado
+
+* Detalhamentos
+
+  Como parte do processo de desduplicação e pontuação ao gerar insights relevantes, cada detalhamento em uma tabela de forma livre é analisado independentemente e somente os cinco primeiros detalhamentos em uma única tabela de forma livre são analisados.
+
+  Somente o primeiro nível de um detalhamento é suportado. Um detalhamento de um detalhamento não é incluído na apresentação.
 
 
