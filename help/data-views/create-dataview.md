@@ -5,10 +5,10 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: c9d7a4596a842ab7d949364e3469747d20ca15b4
+source-git-commit: 95e50b73533c627f05c3b8dfe112b28b4f9e70c1
 workflow-type: tm+mt
-source-wordcount: '2540'
-ht-degree: 83%
+source-wordcount: '2722'
+ht-degree: 77%
 
 ---
 
@@ -19,7 +19,7 @@ A criação de uma visualização de dados envolve criar métricas e dimensões 
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Criar ou editar uma visualização de dados](https://video.tv.adobe.com/v/345560/?captions=por_br&quality=12&learn=on){target="_blank"} para assistir a um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Criar ou editar uma visualização de dados](https://video.tv.adobe.com/v/35110/?quality=12&learn=on){target="_blank"} para assistir a um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 
@@ -100,10 +100,10 @@ Determina o nome dos containers para a visualização de dados. Os nomes dos con
 
 | Configuração | Descrição |
 | --- | --- |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Nome do container da conta global &#x200B;]** | `Global Account` (padrão). O container [!UICONTROL Conta global] inclui todas as sessões e eventos para contas globais no intervalo de tempo especificado. Se sua organização usa um termo diferente, é possível renomear o container aqui. |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Nome do container de conta &#x200B;]** | `Account` (padrão). O container [!UICONTROL Conta] inclui todas as sessões e eventos para contas no intervalo de tempo especificado. Se sua organização usa um termo diferente, é possível renomear o container aqui. |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Nome do container de oportunidade &#x200B;]** | `Opportunity` (padrão). O container [!UICONTROL Oportunidade] inclui todas as sessões e eventos para oportunidades no intervalo de tempo especificado. Se sua organização usa um termo diferente, é possível renomear o container aqui. |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Nome do container de grupo de compra &#x200B;]** | `Buying Group` (padrão). O container [!UICONTROL Grupo de compra] inclui todas as sessões e eventos para grupos de compra no intervalo de tempo especificado. Se sua organização usa um termo diferente, é possível renomear o container aqui. |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Nome do container da conta global ]** | `Global Account` (padrão). O container [!UICONTROL Conta global] inclui todas as sessões e eventos para contas globais no intervalo de tempo especificado. Se sua organização usa um termo diferente, é possível renomear o container aqui. |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Nome do container de conta ]** | `Account` (padrão). O container [!UICONTROL Conta] inclui todas as sessões e eventos para contas no intervalo de tempo especificado. Se sua organização usa um termo diferente, é possível renomear o container aqui. |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Nome do container de oportunidade ]** | `Opportunity` (padrão). O container [!UICONTROL Oportunidade] inclui todas as sessões e eventos para oportunidades no intervalo de tempo especificado. Se sua organização usa um termo diferente, é possível renomear o container aqui. |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Nome do container de grupo de compra ]** | `Buying Group` (padrão). O container [!UICONTROL Grupo de compra] inclui todas as sessões e eventos para grupos de compra no intervalo de tempo especificado. Se sua organização usa um termo diferente, é possível renomear o container aqui. |
 | **[!UICONTROL Nome do container de pessoas]** | `Person` (padrão). O container [!UICONTROL Pessoa] inclui todas as sessões e eventos de pessoas dentro do intervalo de tempo especificado. Se sua organização usar um termo diferente (por exemplo, &quot;Visitante&quot; ou &quot;Usuário&quot;), você poderá renomear o container aqui. |
 | **[!UICONTROL Nome do container da sessão]** | `Session` (padrão). O container [!UICONTROL Sessão] permite identificar as interações de página, campanhas ou conversões de uma sessão específica. Você pode renomear o container como &quot;Visita&quot; ou com qualquer outro termo que desejar. |
 | **[!UICONTROL Nome do container do evento]** | `Event` (padrão). O container [!UICONTROL Evento] define eventos individuais em um conjunto de dados. Se sua organização usar um termo diferente (por exemplo, &quot;Ocorrências&quot; ou &quot;Exibições de página&quot;), você poderá renomear o container aqui. |
@@ -120,7 +120,7 @@ Indica o formato de calendário que a visualização de dados deve seguir. Você
 | [!UICONTROL **Tipo de calendário**] | Determine como as semanas do mês são agrupadas.<br>**Gregoriano:** formato de calendário padrão. Os trimestres são agrupados por mês.<br>**4-5-4 Varejo:** um calendário de varejo padronizado em 4-5-4. O primeiro e o último mês do trimestre contêm 4 semanas, enquanto o segundo mês do trimestre possui 5 semanas.<br>**Personalizado (4-5-4):** semelhante ao calendário 4-5-4, exceto que é possível escolher o primeiro dia do ano e o ano em que a semana “extra” ocorre.<br>**Personalizado (4-4-5):** o primeiro e o segundo mês de cada trimestre contêm 4 semanas, enquanto o último mês de cada trimestre possui 5 semanas.<br>**Personalizado (5-4-4):** O primeiro mês de cada trimestre consiste em 5 semanas, enquanto o segundo e o terceiro meses de cada trimestre consistem em 4 semanas. |
 | [!UICONTROL **Primeiro mês do ano**] e [!UICONTROL **Primeiro dia da semana**] | Visível para o tipo de calendário gregoriano. Especifique em qual mês deseja que o ano civil comece e o dia em que cada semana inicia. |
 | [!UICONTROL **Primeiro dia do ano atual**] | Visível para tipos de calendário personalizado. Especifique o dia do ano em que deseja que o ano atual comece. O calendário formata automaticamente o primeiro dia de cada semana com base nesse valor. |
-| [!UICONTROL **Ano em que a semana “extra” ocorre**] | Na maioria dos calendários de 364 dias (52 semanas de 7 dias cada), cada ano acumula alguns dias até que uma semana extra seja formada. Essa semana extra é então adicionada ao último mês desse ano. Especifique em qual ano você deseja adicionar a semana extra. |
+| [!UICONTROL **Ano em que a semana “extra” ocorre**] | Na maioria dos calendários de 364 dias (52 semanas de 7 dias cada), cada ano acumula alguns dias até que uma semana extra seja formada. Essa semana extra é então adicionada ao último mês desse ano. Especifique em qual ano você deseja adicionar a semana extra.<br><br/>**Semanas extras e anos bissextos**<br/> Ao selecionar um **[!UICONTROL Tipo de calendário]** personalizado **[!UICONTROL Personalizado (4-5-4)]**, **[!UICONTROL Personalizado (4-4-5)]** ou **[!UICONTROL Personalizado (5-4-4)]**), os dias restantes são acumulados a cada ano até que os dias somem uma semana extra completa (7 dias). Essa semana extra é adicionada ao ano selecionado em **[!UICONTROL Ano em que a semana &quot;extra&quot; ocorre]**.<br/><br/>Os anos bissextos não são mostrados intencionalmente no **[!UICONTROL Ano em que a semana &quot;extra&quot; ocorre]**. No entanto, um ano bissexto ainda pode conter 53 semanas. Para forçar um ano bissexto a conter 53 semanas, selecione um ano não bissexto a partir de **[!UICONTROL Ano em que a semana &quot;extra&quot; ocorre]** para garantir que o desvio da data cumulativa adicione até 7 dias para o ano bissexto alvo. Por exemplo: para ter 53 semanas em 2024, selecione **[!UICONTROL 2019]**. De 2019 a 2024, o desvio total de datas é de sete dias (2020 (+2), 2021 (+1), 2022 (+1), 2023 (+1) e 2024 (+2)), o que resulta em uma 53ª semana em 2024.<br/><br/>A seleção de **[!UICONTROL Primeiro dia do ano atual]** afeta o local onde a semana extra chega. Confirme sua configuração usando a pré-visualização do calendário. |
 
 {style="table-layout:auto"}
 
@@ -248,7 +248,7 @@ Os **[!UICONTROL Componentes incluídos]** contêm a lista de **[!UICONTROL Mét
    Configurações de ![visualização de dados](assets/dataview-settings.png)
 
 1. Configure segmentos para aplicar a toda a visualização de dados. Consulte [Configurações (segmentos)](#settings-filters) abaixo.
-1. Configurar o tempo limite e as métricas da sessão. Consulte [Configurações da sessão](#session-settings) abaixo.
+1. Configurar o tempo-limite e as métricas da sessão. Consulte [Configurações da sessão](#session-settings) abaixo.
 
 1. Selecione **[!UICONTROL Salvar e continuar]** para continuar configurando sua visualização de dados nova ou existente. Selecione **[!UICONTROL Salvar]** para salvar a configuração da visualização de dados existente.
 
