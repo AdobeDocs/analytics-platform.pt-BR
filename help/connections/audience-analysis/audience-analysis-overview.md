@@ -6,7 +6,7 @@ feature: Audiences
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: f23775342a29d758b478206a77386e18a58312a6
+source-git-commit: 996d7d7bb0c0da566a926f9a3a4c465baca69a9a
 workflow-type: tm+mt
 source-wordcount: '678'
 ht-degree: 3%
@@ -32,12 +32,12 @@ O diagrama a seguir e a tabela associada mostram uma representação de alto ní
 
 | Número | Recurso | Função |
 |---------|----------|---------|
-| 1 | Configuração da análise de público-alvo | Interface de configuração no Customer Journey Analytics usada para configurar a análise de público-alvo. |
+| 1 | Configuração da análise de público-alvo | A interface de configuração no Customer Journey Analytics usada para configurar a análise de público-alvo. |
 | 2 | Sandbox | Deve conter o conjunto de dados de perfil que você deseja adicionar à conexão. |
 | 3 | Conjunto de dados Perfil | Deve incluir os dados de público-alvo do Experience Platform que você deseja analisar. Esse conjunto de dados de perfil é adicionado à conexão selecionada. |
 | 4 | Política de mesclagem | A política de mesclagem associada aos públicos-alvo da Experience Platform que você deseja analisar. |
 | 5 | Dados do perfil | Os dados do perfil associados à política de mesclagem selecionada. Esses dados estão disponíveis em conjuntos de dados da Experience Platform. |
-| 6 | Novo conjunto de dados de pesquisa | Fornece nomes amigáveis para as novas dimensões de público-alvo criadas. O conjunto de dados de pesquisa é criado e adicionado automaticamente à conexão, juntamente com o conjunto de dados do perfil selecionado. |
+| 6 | Novo conjunto de dados de pesquisa | Fornece nomes amigáveis para as novas dimensões de público-alvo criadas. <p>O conjunto de dados de pesquisa é criado e adicionado automaticamente à conexão, juntamente com o conjunto de dados do perfil selecionado.</p> |
 | 7 | Conexão | A conexão à qual você deseja adicionar o conjunto de dados do perfil selecionado. |
 | 8 | Novas dimensões de público | Novas dimensões de público-alvo <!--and metrics?--> que representam os públicos-alvo da Experience Platform incluídos no conjunto de dados de perfil selecionado e estão disponíveis para relatórios no Analysis Workspace. Essas dimensões são criadas automaticamente. |
 | 9 | Visualizações de dados | As visualizações de dados selecionadas associadas à sua conexão. Essas são as visualizações de dados que você deseja usar ao analisar dados de público-alvo do Experience Platform no Analysis Workspace. Essas visualizações de dados são configuradas automaticamente com os dados de público-alvo do Experience Platform para relatórios. |
@@ -73,7 +73,7 @@ As seguintes funções e permissões do Customer Journey Analytics Experience Pl
 
 | Recurso | Requisitos de permissão ou função do Customer Journey Analytics | Exigências de permissão do Experience Platform |
 |---------|----------|----------|
-| [Criar configurações de análise de público-alvo](/help/connections/audience-analysis/audience-analysis-configure.md) | Administrador do sistema | <ul><li>Conjuntos de dados: permissões de leitura</li><li>Esquemas: Read, Write</li><li>e namespaces de identidade: Leitura</li></ul> |
+| [Criar configurações de análise de público-alvo](/help/connections/audience-analysis/audience-analysis-configure.md) | Administrador do sistema | <ul><li>Conjuntos de dados: permissões de leitura</li><li>Esquemas: Read, Write</li><li>Namespaces de identidade: Lidos</li></ul> |
 | [Exibir dimensões de análise de público-alvo na exibição de dados](/help/connections/audience-analysis/audience-analysis-configure.md#view-audience-dimensions-in-the-data-view) | Administrador de perfil de produto do perfil de produto ao qual a visualização de dados está atribuída <p>Para obter mais informações, consulte [Controle de acesso](/help/technotes/access-control.md).</p> | N/A |
 | Usar dimensões de análise de público-alvo no Analysis Workspace | Acesso a uma visualização de dados em que as dimensões de análise de público-alvo foram adicionadas | N/A |
 

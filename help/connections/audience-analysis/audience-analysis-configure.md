@@ -6,9 +6,9 @@ feature: Audiences
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 3fb94d920b240247f13050cf091423335a3d74ec
+source-git-commit: 996d7d7bb0c0da566a926f9a3a4c465baca69a9a
 workflow-type: tm+mt
-source-wordcount: '1289'
+source-wordcount: '1294'
 ht-degree: 12%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 12%
 >[!CONTEXTUALHELP]
 >id="cja-audience-namespace"
 >title="Usar namespace de identidade primário"
->abstract="Ative essa opção se desejar que o Customer Journey Analytics localize a identidade no Mapa de identidade que está marcada com um atributo primário=verdadeiro e use essa identidade como a ID de pessoa para essa linha. Essa identidade é a chave primária usada na Experience Platform para particionamento. <br/>Se você deixar esta opção desabilitada, selecione um namespace no campo Namespace de identidade abaixo. O Customer Journey Analytics pesquisa no Mapa de identidade de cada linha por essa chave de namespace e usa a identidade sob essa namespace como a ID de pessoa para essa linha."
+>abstract="Ative essa opção se desejar que o Customer Journey Analytics localize a identidade no Mapa de identidade que está marcada com um atributo primário=verdadeiro e, em seguida, use essa identidade como a ID de pessoa para essa linha. Essa identidade é a chave primária usada na Experience Platform para particionamento. <br/>Se você deixar esta opção desabilitada, selecione um namespace no campo Namespace de identidade abaixo. O Customer Journey Analytics pesquisa no Mapa de identidade de cada linha por essa chave de namespace e usa a identidade sob essa namespace como a ID de pessoa para essa linha."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -81,7 +81,7 @@ Para criar uma configuração de análise de público-alvo:
    | Campo | Descrição |
    |---------|----------|
    | **[!UICONTROL Política de mesclagem]** | Selecione a política de mesclagem que corresponde ao conjunto de dados do perfil que você deseja usar para a análise do público-alvo. <p>As Políticas de mesclagem determinam como o Adobe Experience Platform combina dados de perfil de vários conjuntos de dados em perfis de cliente unificados usados para criação de público-alvo. A política de mesclagem selecionada afeta os atributos do perfil que são incluídos nos públicos-alvo. Todos os dias, um instantâneo desses dados é gerado no Experience Platform. Esse instantâneo fornece uma exibição estática dos dados em um momento específico e não inclui dados de evento.</p><p>Selecione a política de mesclagem **[!UICONTROL Timebased]** padrão se você vir várias políticas de mesclagem e não tiver certeza sobre qual escolher. Você também pode consultar sua equipe de dados para entender melhor quais públicos-alvo estão associados a cada política de mesclagem.</p> |
-   | **[!UICONTROL Conjunto de dados de perfil]** | O conjunto de dados do perfil associado à política de mesclagem selecionada. Este conjunto de dados de perfil inclui os dados de público-alvo da Experience Platform que você deseja analisar. Esse conjunto de dados de perfil é adicionado à conexão selecionada.<p>Depois de escolher uma política de mesclagem, a exportação de instantâneo de perfil é exibida. Por exemplo: `Profile-Snapshot-Export-abbc7093-80f4-4b49-b96e-e743397d763f`.</p><p>Para obter mais informações, consulte [Conjuntos de dados do atributo de perfil](https://experienceleague.adobe.com/pt-br/docs/experience-platform/dashboards/query#profile-attribute-datasets) no Guia de Painéis do Experience Platform.</p> |
+   | **[!UICONTROL Conjunto de dados de perfil]** | O conjunto de dados do perfil associado à política de mesclagem selecionada. Este conjunto de dados de perfil inclui os dados de público-alvo da Experience Platform que você deseja analisar. Esse conjunto de dados de perfil é adicionado à conexão selecionada.<p>Depois de escolher uma política de mesclagem, a exportação de instantâneo de perfil é exibida. Por exemplo: `Profile-Snapshot-Export-abbc7093-80f4-4b49-b96e-e743397d763f`.</p><p>Para obter mais informações, consulte [Conjuntos de dados do atributo de perfil](https://experienceleague.adobe.com/en/docs/experience-platform/dashboards/query#profile-attribute-datasets) no Guia de Painéis do Experience Platform.</p> |
 
 1. Na seção **[!UICONTROL Conexão]**, clique em **[!UICONTROL Selecionar uma conexão]**.
 
@@ -94,8 +94,8 @@ Para criar uma configuração de análise de público-alvo:
    | Campo | Descrição |
    |---------|----------|
    | **[!UICONTROL ID de pessoa]** | Selecione um campo do esquema que representa a ID de pessoa. A seleção é limitada à lista de campos no esquema marcados como Identidade e que têm um namespace de identidade.<p>Se não houver IDs de pessoa para escolher, significa que uma ou mais IDs de pessoa não foram definidas no esquema. Consulte [Definir campos de identidade na interface](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/ui/fields/identity) para obter mais informações.</p> |
-   | **[!UICONTROL Usar namespace de identidade primário]** | Esta opção mostra se você selecionar **[!UICONTROL Mapa de identidade]** para a ID de pessoa.<p>Ative essa opção se desejar que o Customer Journey Analytics localize a identidade no Mapa de identidade que está marcada com um atributo primário=verdadeiro e use essa identidade como a ID de pessoa para essa linha. Essa identidade é a chave primária usada na Experience Platform para particionamento. E essa identidade também é a principal candidata para usar como ID de pessoa do Customer Journey Analytics (dependendo de como o conjunto de dados está configurado em uma conexão do Customer Journey Analytics).</p> |
-   | **[!UICONTROL Namespace de identidade]** | Esta opção mostra se você selecionar **[!UICONTROL Mapa de identidade]** para a ID de pessoa. Essa opção estará desativada se você usar o Namespace de ID primária. <p>Os namespaces de identidade são um componente do [Serviço de identidade da Experience Platform](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/features/namespaces). Os namespaces servem como indicadores do contexto ao qual uma identidade está relacionada. Se você especificar um namespace, o Customer Journey Analytics pesquisará no Mapa de identidade de cada linha por essa chave de namespace e usará a identidade sob essa namespace como a ID de pessoa para essa linha. Como o Customer Journey Analytics não pode fazer uma verificação completa do conjunto de dados de todas as linhas para determinar quais namespaces estão presentes, todos os namespaces possíveis são exibidos no menu suspenso. Você deve saber quais namespaces estão especificados nos dados, pois eles não são detectados automaticamente.</p> |
+   | **[!UICONTROL Usar namespace de identidade primário]** | Esta opção mostra se você selecionar **[!UICONTROL Mapa de identidade]** para a ID de pessoa.<p>Ative essa opção se desejar que o Customer Journey Analytics localize a identidade no Mapa de identidade que está marcada com um atributo primário=verdadeiro e, em seguida, use essa identidade como a ID de pessoa para essa linha. Essa identidade é a chave primária usada na Experience Platform para particionamento. E essa identidade também é a principal candidata para usar como ID de pessoa do Customer Journey Analytics (dependendo de como o conjunto de dados está configurado em uma conexão do Customer Journey Analytics).</p> |
+   | **[!UICONTROL Namespace de identidade]** | Esta opção mostra se você selecionar **[!UICONTROL Mapa de identidade]** para a ID de pessoa. Essa opção estará desativada se você usar o Namespace de ID primária. <p>Os namespaces de identidade são um componente do [Serviço de identidade da Experience Platform](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/features/namespaces). Os namespaces servem como indicadores do contexto ao qual uma identidade está relacionada. Se você especificar um namespace, o Customer Journey Analytics pesquisará no Mapa de identidade de cada linha por essa chave de namespace e usará a identidade sob essa namespace como a ID de pessoa para essa linha. Como o Customer Journey Analytics não pode fazer uma verificação completa do conjunto de dados de todas as linhas para determinar quais namespaces estão presentes, todos os namespaces possíveis são exibidos no menu suspenso. Você deve saber quais namespaces estão especificados nos dados; esses namespaces não são detectados automaticamente.</p> |
 
 1. Na seção **[!UICONTROL Visualizações de dados]**, clique em **[!UICONTROL Selecionar visualizações de dados]**.
 
@@ -135,6 +135,6 @@ Para exibir as dimensões de análise de público-alvo na visualização de dado
 
 1. Use as dimensões de análise de público-alvo no Analysis Workspace.
 
-   Os usuários que têm acesso para usar a visualização de dados no Analysis Workspace podem ver as novas dimensões e usá-las em suas análises. Para obter informações sobre como usar as dimensões de análise de público-alvo no Analysis Workspace, consulte [Analisar públicos-alvo da Experience Platform no Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).
+   Os usuários que têm acesso para usar a visualização de dados no Analysis Workspace agora podem ver as novas dimensões e usá-las em suas análises. Para obter informações sobre como usar as dimensões de análise de público-alvo no Analysis Workspace, consulte [Analisar públicos-alvo da Experience Platform no Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).
 
 
