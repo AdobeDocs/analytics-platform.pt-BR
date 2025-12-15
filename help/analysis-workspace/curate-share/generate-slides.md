@@ -4,7 +4,7 @@ keywords: Analysis Workspace
 title: Gerar apresentações a partir de relatórios do Workspace
 feature: Curate and Share
 role: User
-source-git-commit: 6b8a9fd25aaf83eaad3bc9cba0ce9349afb5471c
+source-git-commit: 1ec10a006578bc5ddf5f08501f8d72a9623245d5
 workflow-type: tm+mt
 source-wordcount: '1627'
 ht-degree: 4%
@@ -125,49 +125,53 @@ As histórias de dados consistem em um slide de título, um slide de resumo exec
 
    Para fazer upload de um modelo personalizado, siga um destes procedimentos:
 
-   * (Recomendado) Baixe um modelo em branco e modifique-o.
+   +++(Recomendado) Baixar um modelo em branco e modificá-lo
 
-      1. Baixe [este modelo em branco](https://d30ln29764hddd.cloudfront.net/deploy/builds/data-storytelling.2025-10-20T15:10:19/resources/components/Blank.potx?).
+   1. Baixe [este modelo em branco](https://d30ln29764hddd.cloudfront.net/deploy/builds/data-storytelling.2025-10-20T15:10:19/resources/components/Blank.potx?).
 
-      1. Aplique estilos personalizados ao modelo em branco.
+   1. Aplique estilos personalizados ao modelo em branco.
 
-      1. Recarregue o modelo sem alterar nenhum nome de layout mestre:
+   1. Recarregue o modelo sem alterar nenhum nome de layout mestre:
 
-         A partir do sistema de arquivos, arraste o modelo em branco que tem seus estilos personalizados aplicados à área de soltar.
+      A partir do sistema de arquivos, arraste o modelo em branco que tem seus estilos personalizados aplicados à área de soltar.
 
-         Ou
+      Ou
 
-         Selecione **[!UICONTROL Procurar]** e procure e selecione seu modelo em branco que tenha seus estilos personalizados aplicados do sistema de arquivos.
+      Selecione **[!UICONTROL Procurar]** e procure e selecione seu modelo em branco que tenha seus estilos personalizados aplicados do sistema de arquivos.
 
-      1. Na seção **[!UICONTROL Mapeamento de layout]**, cada layout de slide usado em apresentações geradas é mapeado automaticamente para um slide do tema carregado. Revise as seleções para verificar se estão corretas.
+   1. Na seção **[!UICONTROL Mapeamento de layout]**, cada layout de slide usado em apresentações geradas é mapeado automaticamente para um slide do tema carregado. Revise as seleções para verificar se estão corretas.
 
-         ![Mapeamento de layout](assets/generate-slides-layout-mapping.png)
+      ![Mapeamento de layout](assets/generate-slides-layout-mapping.png)
 
-      1. (Condicional) Se um layout de slide for mapeado incorretamente, selecione **[!UICONTROL Alterar seleção]** acima do slide que foi escolhido na apresentação carregada e escolha o slide que corresponde ao layout.
+   1. (Condicional) Se um layout de slide for mapeado incorretamente, selecione **[!UICONTROL Alterar seleção]** acima do slide que foi escolhido na apresentação carregada e escolha o slide que corresponde ao layout.
 
-         Repita esse processo para cada slide que foi mapeado incorretamente.
+      Repita esse processo para cada slide que foi mapeado incorretamente.
 
-   * Faça upload de um modelo personalizado diretamente.
+   +++
 
-      1. A partir do sistema de arquivos, arraste o modelo personalizado para a área designada.
+   +++Fazer upload de um modelo personalizado diretamente 
 
-         Ou
+   1. A partir do sistema de arquivos, arraste o modelo personalizado para a área designada.
 
-         Selecione **[!UICONTROL Procurar]** e procure e selecione seu modelo personalizado no sistema de arquivos.
+      Ou
 
-         Verifique se o arquivo carregado tem layouts principais com os seguintes nomes: &quot;Title_Slide&quot;, &quot;Section_Divider&quot;, &quot;Title_Text&quot;, &quot;Title_Chart&quot;, &quot;Title_Two_Content_Mixed&quot;, &quot;Title_Three_Content_Mixed&quot;.
+      Selecione **[!UICONTROL Procurar]** e procure e selecione seu modelo personalizado no sistema de arquivos.
 
-         São permitidos até 15 layouts mestres.
+      Verifique se o arquivo carregado tem layouts principais com os seguintes nomes: &quot;Title_Slide&quot;, &quot;Section_Divider&quot;, &quot;Title_Text&quot;, &quot;Title_Chart&quot;, &quot;Title_Two_Content_Mixed&quot;, &quot;Title_Three_Content_Mixed&quot;.
 
-         São aceitos arquivos .pptx e .potx de até 25 MB.
+      São permitidos até 15 layouts mestres.
 
-      1. Na seção **[!UICONTROL Mapeamento de layout]**, cada layout de slide usado em apresentações geradas é mapeado automaticamente para um slide do tema carregado. Revise as seleções para verificar se estão corretas.
+      São aceitos arquivos .pptx e .potx de até 25 MB.
 
-         ![Modelo personalizado de mapeamento de layout](assets/generate-slides-layout-mapping-custom-template.png)
+   1. Na seção **[!UICONTROL Mapeamento de layout]**, cada layout de slide usado em apresentações geradas é mapeado automaticamente para um slide do tema carregado. Revise as seleções para verificar se estão corretas.
 
-      1. (Condicional) Se um layout de slide for mapeado incorretamente, selecione **[!UICONTROL Alterar seleção]** acima do slide que foi escolhido na apresentação carregada e escolha o slide que corresponde ao layout.
+      ![Modelo personalizado de mapeamento de layout](assets/generate-slides-layout-mapping-custom-template.png)
 
-         Repita esse processo para cada slide que foi mapeado incorretamente.
+   1. (Condicional) Se um layout de slide for mapeado incorretamente, selecione **[!UICONTROL Alterar seleção]** acima do slide que foi escolhido na apresentação carregada e escolha o slide que corresponde ao layout.
+
+      Repita esse processo para cada slide que foi mapeado incorretamente.
+
+   +++
 
 1. Selecione **[!UICONTROL Exportar PPT]**.
 
