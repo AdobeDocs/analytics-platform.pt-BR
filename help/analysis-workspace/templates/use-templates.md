@@ -4,7 +4,7 @@ title: Usar modelos
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 3fb94d920b240247f13050cf091423335a3d74ec
+source-git-commit: 11a550e0cd67db106e2dd399843c4cf0923467ad
 workflow-type: tm+mt
 source-wordcount: '20775'
 ht-degree: 97%
@@ -1070,12 +1070,12 @@ Estes são os modelos disponíveis:
 ### Brand Concierge {#brand-concierge-templates}
 
 >[!CONTEXTUALHELP]
->id="template--brand-concierge-b2c"
+>id="template--brand-concierge--concierge"
 >title="Analise o engajamento do usuário por meio de padrões de conversa, feedback de usuários e a eficácia de suas recomendações."
 >abstract="**Isso pode ajudá-lo** a identificar padrões de envolvimento, avaliar a qualidade da conversa, rastrear tendências de satisfação do cliente e medir a eficácia das recomendações de link.<br/>**Com base no que você aprende, é possível** fazer várias coisas, como refinar as respostas do seu agente de IA, desenvolver conteúdo direcionado para problemas frequentes, melhorar os algoritmos de recomendação ou criar caminhos especializados para diferentes segmentos de usuários."
 
 >[!CONTEXTUALHELP]
->id="template--brand-concierge--concierge"
+>id="template--brand-concierge--meeting"
 >title="Rastreie o ciclo de vida completo das solicitações de reunião B2B. Monitore as taxas de conversão, o desempenho do consultor e identifique os canais de geração de leads mais eficientes."
 >abstract="**Isso pode ajudá-lo** a acompanhar as taxas de conversão de reuniões, identificar membros de equipe com alto desempenho, entender as tendências sazonais no comportamento de reserva e identificar quais páginas geram as solicitações de reunião mais valiosas.<br/>**Com base no que você aprendeu, é possível** executar várias ações, como otimizar o processo de solicitação de reunião, redistribuir recursos em páginas de alta conversão, desenvolver treinamento direcionado para consultores com taxas de reserva mais baixas ou implementar novas estratégias para reduzir as reuniões perdidas."
 
