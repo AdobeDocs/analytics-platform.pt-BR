@@ -110,12 +110,12 @@ ht-degree: 60%
 >[!CONTEXTUALHELP]
 >id="connections_useincja_ajo"
 >title="Usar esta conexão no Customer Journey Analytics"
->abstract="Esta opção permite utilizar os recursos de relatório avançados do Customer Journey Analytics com a sua conexão do Journey Optimizer. Esses recursos permitem:<ul><li>Realizar uma análise detalhada dos dados do Journey Optimizer no Customer Journey Analytics.</li><li>Edite a conexão do Journey Optimizer e as visualizações de dados associadas.</li></ul>**Quando esta opção está habilitada, cada linha de dados na conexão é contada em relação às linhas de dados da licença todos os meses para o Customer Journey Analytics e é exibida na interface do usuário de Uso de Conexões.**<br><br/> Explore esta opção somente se estiver familiarizado com o uso adicional de linhas de dados no Customer Journey Analytics. [Saiba mais](https://experienceleague.adobe.com/en/docs/analytics-platform/using/integrations/ajo)."
+>abstract="Esta opção permite utilizar os recursos de relatório avançados do Customer Journey Analytics com a sua conexão do Journey Optimizer. Esses recursos permitem:<ul><li>Realizar uma análise detalhada dos dados do Journey Optimizer no Customer Journey Analytics.</li><li>Edite a conexão do Journey Optimizer e as visualizações de dados associadas.</li></ul>**Quando esta opção está habilitada, cada linha de dados na conexão é contada em relação às linhas de dados da licença todos os meses para o Customer Journey Analytics e é exibida na interface do usuário de Uso de Conexões.**<br><br/> Explore esta opção somente se estiver familiarizado com o uso adicional de linhas de dados no Customer Journey Analytics. [Saiba mais](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/integrations/ajo)."
 
 >[!CONTEXTUALHELP]
 >id="connections_disableuseincja_ajo"
 >title="Remover esta conexão do Customer Journey Analytics"
->abstract="Esta conexão do Journey Optimizer é usada atualmente no Customer Jornada Analytics. As conexões permitem:<ul><li>Execute uma análise detalhada dos dados do Jornada Analytics no Customer Journey Analytics.</li><li>Edite a conexão do Journey Optimizer e as visualizações de dados associadas.</li></ul>**Se você remover a conexão, a análise detalhada no Customer Journey Analytics não será mais possível. A conexão e quaisquer visualizações de dados associadas são redefinidas para o estado padrão e não podem mais ser editadas.**<br/><br/>**A cobrança desta conexão no Customer Journey Analytics inclui o mês completo durante o qual a conexão será removida.**<br/><br/> A conexão permanece habilitada no Journey Optimizer. [Saiba mais](https://experienceleague.adobe.com/en/docs/analytics-platform/using/integrations/ajo)."
+>abstract="Esta conexão do Journey Optimizer é usada atualmente no Customer Jornada Analytics. As conexões permitem:<ul><li>Execute uma análise detalhada dos dados do Jornada Analytics no Customer Journey Analytics.</li><li>Edite a conexão do Journey Optimizer e as visualizações de dados associadas.</li></ul>**Se você remover a conexão, a análise detalhada no Customer Journey Analytics não será mais possível. A conexão e quaisquer visualizações de dados associadas são redefinidas para o estado padrão e não podem mais ser editadas.**<br/><br/>**A cobrança desta conexão no Customer Journey Analytics inclui o mês completo durante o qual a conexão será removida.**<br/><br/> A conexão permanece habilitada no Journey Optimizer. [Saiba mais](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/integrations/ajo)."
 
 <!-- End of contextual help entries for CJA connection dialogs -->
 
@@ -458,7 +458,7 @@ Como alternativa, os tipos de conjunto de dados listados acima podem ser baseado
 
 | Tipo de conjunto de dados | Descrição | Carimbo de data e hora | Esquema | ID da pessoa |
 |---|---|---|---|---|
-| **[!UICONTROL Adhoc]** | Dados ad hoc com base em um [esquema ad hoc](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/api/ad-hoc) com campos com namespace para uso apenas por um único conjunto de dados. | Dependendo do tipo de conjunto de dados selecionado para o conjunto de dados ad hoc. | Qualquer esquema ad hoc baseado em uma classe baseada no comportamento *ad hoc* | Dependendo do tipo de conjunto de dados selecionado para o conjunto de dados ad hoc. |
+| **[!UICONTROL Adhoc]** | Dados ad hoc com base em um [esquema ad hoc](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/api/ad-hoc) com campos com namespace para uso apenas por um único conjunto de dados. | Dependendo do tipo de conjunto de dados selecionado para o conjunto de dados ad hoc. | Qualquer esquema ad hoc baseado em uma classe baseada no comportamento *ad hoc* | Dependendo do tipo de conjunto de dados selecionado para o conjunto de dados ad hoc. |
 | **[!UICONTROL Modelo]** | Dados relacionais com base em um esquema relacional. | Dependendo do tipo de conjunto de dados selecionado para o conjunto de dados relacional. | Qualquer esquema relacional. | Dependendo do tipo de conjunto de dados selecionado para o conjunto de dados relacional. |
 
 
@@ -797,5 +797,5 @@ Esse cálculo é feito para cada conjunto de dados na conexão.
 >[!MORELIKETHIS]
 >
 >* [Visão geral da assimilação de dados](/help/data-ingestion/data-ingestion.md)
->* Blog: [como aproveitar os conjuntos de dados de evento, pesquisa e perfil no Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-to-leverage-event-lookup-and-profile-datasets-in-adobe/ba-p/681478)
+>* Blog: [como aproveitar os conjuntos de dados de evento, pesquisa e perfil no Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-to-leverage-event-lookup-and-profile-datasets-in-adobe/ba-p/681478?profile.language=pt)
 
