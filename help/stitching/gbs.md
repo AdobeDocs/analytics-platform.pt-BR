@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: ea5c9114-1fc3-4686-b184-2850acb42b5c
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: dd4ebd86cbb6640575a0eb05aa00aadfa2c7c410
 workflow-type: tm+mt
 source-wordcount: '1549'
 ht-degree: 5%
@@ -27,7 +27,7 @@ Na compilação baseada em gráfico, você especifica um conjunto de dados de ev
 
 ## IdentityMap
 
-A compilação baseada em gráfico oferece suporte ao uso do [`identityMap` grupo de campos](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/schema/composition#identity) nos seguintes cenários:
+A compilação baseada em gráfico oferece suporte ao uso do [`identityMap` grupo de campos](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity) nos seguintes cenários:
 
 - Uso da identidade primária em `identityMap` namespaces para definir a persistentID:
    - Se várias identidades primárias forem encontradas em namespaces diferentes, as identidades nos namespaces serão classificadas de forma lexigáfica e a primeira identidade será selecionada.
@@ -114,12 +114,11 @@ A compilação faz um mínimo de duas passagens de dados em um determinado conju
 
 Os dados além da janela de pesquisa não são repetidos. Um perfil deve ser autenticado em uma determinada janela de pesquisa para que uma visita não autenticada e uma visita autenticada sejam identificadas juntas. Depois que um dispositivo é reconhecido, ele é compilado em tempo real a partir desse ponto.
 
-Considere os dois gráficos de identidade a seguir para a ID persistente `246` e `3579`, como esses gráficos de identidade são atualizados ao longo do tempo e como essas atualizações afetam as etapas na compilação baseada em gráfico.
+Considere as duas atualizações de gráfico de identidade a seguir ao longo do tempo para o visitante A (com ID persistente `246`) e o visitante B (com ID persistente `3579`) e como essas atualizações afetam as etapas na compilação baseada em gráfico.
 
-![Gráfico de identidade 246](assets/identity-graph-246.svg)
-![Gráfico de identidade 3579](assets/identity-graph-3579.svg)
+![Gráfico de identidade 3579](assets/identity-graphs.svg)
 
-Você pode exibir um gráfico de identidade ao longo do tempo para um perfil específico usando o [Visualizador de Gráficos de Identidade](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/features/identity-graph-viewer). Consulte também [Lógica de vinculação do serviço de identidade](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/features/identity-linking-logic) para entender melhor a lógica usada ao vincular identidades.
+Você pode exibir um gráfico de identidade ao longo do tempo para um perfil específico usando o [Visualizador de Gráficos de Identidade](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-viewer). Consulte também [Lógica de vinculação do serviço de identidade](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-linking-logic) para entender melhor a lógica usada ao vincular identidades.
 
 ### Etapa 1: compilação em tempo real
 
@@ -223,7 +222,7 @@ As seguintes limitações se aplicam especificamente à compilação baseada em 
 - Os carimbos de data e hora não são considerados ao consultar a ID de pessoa usando o namespace especificado. Portanto, é possível que uma ID persistente seja compilada com uma ID de pessoa de um registro que tenha um carimbo de data e hora anterior.
 - Em cenários de dispositivos compartilhados, em que o namespace no gráfico contém várias identidades, a primeira identidade lexicográfica é usada. Se as prioridades e os limites de namespace forem configurados como parte do lançamento das regras de vinculação de gráficos, a identidade do último usuário autenticado será usada. Consulte [Dispositivos compartilhados](/help/use-cases/stitching/shared-devices.md) para obter mais informações.
 - Há um limite rígido de três meses de preenchimento retroativo de identidades no gráfico de identidade. Você usaria o preenchimento retroativo de identidades caso não estivesse usando um aplicativo da Experience Platform, como a Real-time Customer Data Platform, para preencher o gráfico de identidade.
-- As [medidas de proteção do Serviço de identidade](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/guardrails) se aplicam. Consulte, por exemplo, os [seguintes limites estáticos](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/guardrails#static-limits):
+- As [medidas de proteção do Serviço de identidade](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails) se aplicam. Consulte, por exemplo, os [seguintes limites estáticos](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails#static-limits):
    - Número máximo de identidades em um gráfico: 50.
    - Número máximo de links para uma identidade para uma única assimilação de lote: 50.
    - Número máximo de identidades em um registro XDM para assimilação de gráfico: 20.
