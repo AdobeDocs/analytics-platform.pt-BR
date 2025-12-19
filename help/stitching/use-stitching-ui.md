@@ -6,9 +6,9 @@ feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
 badgePremium: label="Beta" type="Informative"
-source-git-commit: 6ebd1604e01af068228d7a5e4a78fdccf852f480
+source-git-commit: c67225619153218e3dca1eacea204f2b033dfb14
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: '820'
 ht-degree: 3%
 
 ---
@@ -30,8 +30,7 @@ Para ativar a compilação em um conjunto de dados de evento na interface do usu
    * vários campos configurados como uma identidade e que permitem selecionar valores diferentes para uma ID persistente e uma ID de pessoa.
    * pelo menos um campo que esteja marcado como identidade principal com um namespace associado caso queira usar o Mapa de identidade e o namespace de identidade principal para ID persistente ou ID de pessoa.
 
-* Se você quiser usar a compilação com base em gráficos e antecipar que o conjunto de dados do evento contribua para o Gráfico de identidade, deverá [habilitar o conjunto de dados para o Serviço de identidade](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service). Um conjunto de dados contribui para o Gráfico de identidade quando o conjunto de dados contém IDs de pessoa relevantes ao lado de IDs persistentes.
-
+* Se você quiser usar a compilação baseada em gráficos e antecipar que o conjunto de dados do evento contribua para o Gráfico de identidade (como o conjunto de dados contém IDs de pessoa relevantes ao lado de IDs persistentes), [habilite o conjunto de dados para o Serviço de identidade](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service).
 
 ## Verificações de comprovação
 

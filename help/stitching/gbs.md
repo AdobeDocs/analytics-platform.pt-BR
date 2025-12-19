@@ -5,15 +5,14 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: ea5c9114-1fc3-4686-b184-2850acb42b5c
-source-git-commit: dd4ebd86cbb6640575a0eb05aa00aadfa2c7c410
+source-git-commit: 90a285fcd96866974087c53d402e85b4a2d83ccf
 workflow-type: tm+mt
-source-wordcount: '1549'
+source-wordcount: '1512'
 ht-degree: 5%
 
 ---
 
 # Compilação baseada em gráfico
-
 
 Na compilação baseada em gráfico, você especifica um conjunto de dados de evento, bem como a ID persistente (cookie) e o namespace da ID de pessoa para esse conjunto de dados. A compilação baseada em gráfico adiciona uma nova coluna para a ID compilada ao conjunto de dados do evento. Em seguida, o usa a ID persistente para consultar o gráfico de identidade do Experience Platform Identity Service, usando o namespace especificado, para atualizar a ID compilada.
 
@@ -27,7 +26,7 @@ Na compilação baseada em gráfico, você especifica um conjunto de dados de ev
 
 ## IdentityMap
 
-A compilação baseada em gráfico oferece suporte ao uso do [`identityMap` grupo de campos](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/schema/composition#identity) nos seguintes cenários:
+A compilação baseada em gráfico oferece suporte ao uso do [`identityMap` grupo de campos](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity) nos seguintes cenários:
 
 - Uso da identidade primária em `identityMap` namespaces para definir a persistentID:
    - Se várias identidades primárias forem encontradas em namespaces diferentes, as identidades nos namespaces serão classificadas de forma lexigáfica e a primeira identidade será selecionada.
@@ -118,7 +117,7 @@ Considere as duas atualizações de gráfico de identidade a seguir ao longo do 
 
 ![Gráfico de identidade 3579](assets/identity-graphs.svg)
 
-Você pode exibir um gráfico de identidade ao longo do tempo para um perfil específico usando o [Visualizador de Gráficos de Identidade](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/features/identity-graph-viewer). Consulte também [Lógica de vinculação do serviço de identidade](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/features/identity-linking-logic) para entender melhor a lógica usada ao vincular identidades.
+Você pode exibir um gráfico de identidade ao longo do tempo para um perfil específico usando o [Visualizador de Gráficos de Identidade](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-viewer). Consulte também [Lógica de vinculação do serviço de identidade](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-linking-logic) para entender melhor a lógica usada ao vincular identidades.
 
 ### Etapa 1: compilação em tempo real
 
@@ -126,15 +125,15 @@ A compilação em tempo real tenta compilar cada evento, após a coleção, às 
 
 +++ Detalhes
 
-| | Hora | ID Persistente<br/>`ECID` | Namespace<br/>`Email` ![Gráfico](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) | ID compilada (após compilação em tempo real) |
+| | Hora | ID Persistente<br/>`ECID` | Namespace<br/>`Email` ![DataMapping](/help/assets/icons/DataMapping.svg) | ID compilada (após compilação em tempo real) |
 |--:|---|---|---|---|
-| 1 | 2023-05-12 11:00 | `246` | `246` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) *indefinido* | `246` |
-| 2 | 2023-05-12 14:00 | `246` | `246` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.a@gmail.com` | `bob.a@gmail.com` |
-| 3 | 2023-05-12 15:00 | `246` | `246` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.a@gmail.com` | `bob.a@gmail.com` |
-| 4 | 2023-05-12 17:00 | `3579` | `3579` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) *indefinido* | `3579` |
-| 5 | 2023-05-12 19:00 | `3579` | `3579` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `ted.w@gmail.com` |
-| 6 | 2023-05-13 15:00 | `246` | `246` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.a@gmail.com` | `bob.a@gmail.com` |
-| 7 | 2023-05-13 16:30 | `246` | `246` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk`<br/>`246` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.ab@gmail.com` | `a.b@yahoo.co.uk` |
+| 1 | 2023-05-12 11:00 | `246` | `246` ![Ramificação1](/help/assets/icons/Branch1.svg) *indefinida* | `246` |
+| 2 | 2023-05-12 14:00 | `246` | `246` ![Ramificação1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` | `bob.a@gmail.com` |
+| 3 | 2023-05-12 15:00 | `246` | `246` ![Ramificação1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` | `bob.a@gmail.com` |
+| 4 | 2023-05-12 17:00 | `3579` | `3579` ![Ramificação1](/help/assets/icons/Branch1.svg) *indefinida* | `3579` |
+| 5 | 2023-05-12 19:00 | `3579` | `3579` ![Ramificação1](/help/assets/icons/Branch1.svg) `ted.w@gmail.com` | `ted.w@gmail.com` |
+| 6 | 2023-05-13 15:00 | `246` | `246` ![Ramificação1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` | `bob.a@gmail.com` |
+| 7 | 2023-05-13 16:30 | `246` | `246` ![Ramificação1](/help/assets/icons/Branch1.svg) `a.b@yahoo.co.uk`<br/>`246` ![Ramificação1](/help/assets/icons/Branch1.svg) `bob.ab@gmail.com` | `a.b@yahoo.co.uk` |
 
 {style="table-layout:auto"}
 
@@ -149,16 +148,16 @@ Em intervalos regulares (dependendo da janela de pesquisa escolhida), a repetiç
 
 +++ Detalhes
 
-Com uma repetição da compilação em 2023-05-13 16:30, com uma configuração de janela de retrospectiva de 24 horas, alguns eventos da amostra são recompilados (indicado por ![Reproduzir](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg)).
+Com uma repetição da compilação em 2023-05-13 16:30, com uma configuração de janela de retrospectiva de 24 horas, alguns eventos da amostra são recompilados (indicado por ![Reproduzir](/help/assets/icons/Replay.svg)).
 
-| | Hora | ID Persistente<br/>`ECID` | Namespace<br/>`Email` ![Gráfico](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) | ID compilada<br/> (após compilação em tempo real) | ID compilada<br/> (após 24 horas de repetição) |
+| | Hora | ID Persistente<br/>`ECID` | Namespace<br/>`Email` ![DataMapping](/help/assets/icons/DataMapping.svg) | ID compilada<br/> (após compilação em tempo real) | ID compilada<br/> (após 24 horas de repetição) |
 |---|---|---|---|---|---|
-| 2 | 2023-05-12 14:00 | `246` | `246` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `bob.a@gmail.com` |
-| 3 | 2023-05-12 15:00 | `246` | `246` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `bob.a@gmail.com` |
-| ![Repetir](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 4 | 2023-05-12 17:00 | `3579` | `3579` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `3579` | `ted.w@gmail.com` |
-| ![Repetir](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 5 | 2023-05-12 19:00 | `3579` | `3579` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `ted.w@gmail.com` | `ted.w@gmail.com` |
-| ![Repetir](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 6 | 2023-05-13 15:00 | `246` | `246` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` | `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
-| ![Repetir](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 7 | 2023-05-13 16:30 | `246` | `246` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk`<br/>`246` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.ab@gmail.com` | `a.b@yahoo.co.uk` | `a.b@yahoo.co.uk` |
+| 2 | 2023-05-12 14:00 | `246` | `246` ![Ramificação1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `bob.a@gmail.com` |
+| 3 | 2023-05-12 15:00 | `246` | `246` ![Ramificação1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `bob.a@gmail.com` |
+| ![Repetir](/help/assets/icons/Replay.svg) 4 | 2023-05-12 17:00 | `3579` | `3579` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `3579` | `ted.w@gmail.com` |
+| ![Repetir](/help/assets/icons/Replay.svg) 5 | 2023-05-12 19:00 | `3579` | `3579` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `ted.w@gmail.com` | `ted.w@gmail.com` |
+| ![Repetir](/help/assets/icons/Replay.svg) 6 | 2023-05-13 15:00 | `246` | `246` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` | `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
+| ![Repetir](/help/assets/icons/Replay.svg) 7 | 2023-05-13 16:30 | `246` | `246` ![Ramificação1](/help/assets/icons/Branch1.svg)`a.b@yahoo.co.uk`<br/>`246` ![Ramificação1](/help/assets/icons/Branch1.svg) `bob.ab@gmail.com` | `a.b@yahoo.co.uk` | `a.b@yahoo.co.uk` |
 
 {style="table-layout:auto"}
 
@@ -166,15 +165,15 @@ Com uma repetição da compilação em 2023-05-13 16:30, com uma configuração 
 Com a repetição da compilação em 2023-05-13 16:30, com uma configuração de janela de retrospectiva de 7 dias, todos os eventos da amostra são recompilados.
 
 
-| | Hora | ID Persistente<br/>`ECID` | Namespace<br/>`Email` ![Gráfico](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) | ID compilada<br/> (após compilação em tempo real) | ID compilada<br/> (após 7 dias de repetição) |
+| | Hora | ID Persistente<br/>`ECID` | Namespace<br/>`Email` ![DataMapping](/help/assets/icons/DataMapping.svg) | ID compilada<br/> (após compilação em tempo real) | ID compilada<br/> (após 7 dias de repetição) |
 |---|---|---|---|---|---|
-| ![Repetir](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 1 | 2023-05-12 11:00 | `246` | `246` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) *indefinido* | `246` | `a.b@yahoo.co.uk` |
-| ![Repetir](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 2 | 2023-05-12 14:00 | `246` | `246` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
-| ![Repetir](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 3 | 2023-05-12 15:00 | `246` | `246` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
-| ![Repetir](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 4 | 2023-05-12 17:00 | `3579` | `3579` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `3579` | `ted.w@gmail.com` |
-| ![Repetir](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 5 | 2023-05-12 19:00 | `3579` | `3579` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `ted.w@gmail.com` | `ted.w@gmail.com` |
-| ![Repetir](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 6 | 2023-05-13 15:00 | `246` | `246` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` | `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
-| ![Repetir](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Replay_18_N.svg) 7 | 2023-05-13 16:30 | `246` | `246` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk`<br/>`246` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.ab@gmail.com` | `a.b@yahoo.co.uk` | `a.b@yahoo.co.uk` |
+| ![Repetir](/help/assets/icons/Replay.svg) 1 | 2023-05-12 11:00 | `246` | `246` ![Ramificação1](/help/assets/icons/Branch1.svg) *indefinida* | `246` | `a.b@yahoo.co.uk` |
+| ![Repetir](/help/assets/icons/Replay.svg) 2 | 2023-05-12 14:00 | `246` | `246` ![Ramificação1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
+| ![Repetir](/help/assets/icons/Replay.svg) 3 | 2023-05-12 15:00 | `246` | `246` ![Ramificação1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
+| ![Repetir](/help/assets/icons/Replay.svg) 4 | 2023-05-12 17:00 | `3579` | `3579` ![Ramificação1](/help/assets/icons/Branch1.svg) `ted.w@gmail.com` | `3579` | `ted.w@gmail.com` |
+| ![Repetir](/help/assets/icons/Replay.svg) 5 | 2023-05-12 19:00 | `3579` | `3579` ![Ramificação1](/help/assets/icons/Branch1.svg) `ted.w@gmail.com` | `ted.w@gmail.com` | `ted.w@gmail.com` |
+| ![Repetir](/help/assets/icons/Replay.svg) 6 | 2023-05-13 15:00 | `246` | `246` ![Ramificação1](/help/assets/icons/Branch1.svg) `a.b@yahoo.co.uk` | `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
+| ![Repetir](/help/assets/icons/Replay.svg) 7 | 2023-05-13 16:30 | `246` | `246` ![Ramificação1](/help/assets/icons/Branch1.svg) `a.b@yahoo.co.uk`<br/>`246` ![Ramificação1](/help/assets/icons/Branch1.svg) `bob.ab@gmail.com` | `a.b@yahoo.co.uk` | `a.b@yahoo.co.uk` |
 
 {style="table-layout:auto"}
 
@@ -188,15 +187,15 @@ Ao receber uma solicitação de acesso a dados pessoais, a ID compilada é exclu
 
 A tabela a seguir representa os mesmos dados acima, mas mostra o efeito que uma solicitação de privacidade (por exemplo, em 2023-05-13 18:00) tem nos eventos de exemplo.
 
-| | Hora | ID Persistente<br/>`ECID` | Namespace<br/>`Email` ![Gráfico](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataMapping_18_N.svg) | ID com título (após solicitação de privacidade) |
+| | Hora | ID Persistente<br/>`ECID` | Namespace<br/>`Email` ![DataMapping](/help/assets/icons/DataMapping.svg) | ID com título (após solicitação de privacidade) |
 |--:|---|---|---|---|
-| <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> 1 | 2023-05-12 11:00 | `246` | `246` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` | `246` |
-| <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> 2 | 2023-05-12 14:00 | `246` | `246` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` | `246` |
-| <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> 3 | 2023-05-12 15:00 | `246` | `246` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` | `246` |
-| <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> 4 | 2023-05-12 17:00 | `3579` | `3579` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `3579` |
-| <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> 5 | 2023-05-12 19:00 | `3579` | `3579` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `ted.w@gmail.com` | `3579` |
-| <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> 6 | 2023-05-13 15:00 | `246` | `246` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk` | `246` |
-| <img src="https://spectrum.adobe.com/static/icons/workflow_18/Smock_RemoveCircle_18_N.svg"/> 7 | 2023-05-13 16:30 | `246` | `246` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `a.b@yahoo.co.uk`<br/>`246` ![Link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Branch1_18_N.svg) `bob.ab@gmail.com` | `246` |
+| ![RemoverCírculo](/help/assets/icons/RemoveCircle.svg) 1 | 2023-05-12 11:00 | `246` | `246` ![Ramificação1](/help/assets/icons/Branch1.svg) `a.b@yahoo.co.uk` | `246` |
+| ![RemoverCírculo](/help/assets/icons/RemoveCircle.svg) 2 | 2023-05-12 14:00 | `246` | `246`![Ramificação1](/help/assets/icons/Branch1.svg) `a.b@yahoo.co.uk` | `246` |
+| ![RemoverCírculo](/help/assets/icons/RemoveCircle.svg) 3 | 2023-05-12 15:00 | `246` | `246` ![Ramificação1](/help/assets/icons/Branch1.svg) `a.b@yahoo.co.uk` | `246` |
+| ![RemoverCírculo](/help/assets/icons/RemoveCircle.svg) 4 | 2023-05-12 17:00 | `3579` | `3579` ![Ramificação1](/help/assets/icons/Branch1.svg) `ted.w@gmail.com` | `3579` |
+| ![RemoverCírculo](/help/assets/icons/RemoveCircle.svg) 5 | 2023-05-12 19:00 | `3579` | `3579` ![Ramificação1](/help/assets/icons/Branch1.svg) `ted.w@gmail.com` | `3579` |
+| ![RemoverCírculo](/help/assets/icons/RemoveCircle.svg) 6 | 2023-05-13 15:00 | `246` | `246` ![Ramificação1](/help/assets/icons/Branch1.svg) `a.b@yahoo.co.uk` | `246` |
+| ![RemoverCírculo](/help/assets/icons/RemoveCircle.svg) 7 | 2023-05-13 16:30 | `246` | `246` ![Ramificação1](/help/assets/icons/Branch1.svg) `a.b@yahoo.co.uk`<br/>`246` ![Ramificação1](/help/assets/icons/Branch1.svg) `bob.ab@gmail.com` | `246` |
 
 {style="table-layout:auto"}
 
@@ -222,7 +221,7 @@ As seguintes limitações se aplicam especificamente à compilação baseada em 
 - Os carimbos de data e hora não são considerados ao consultar a ID de pessoa usando o namespace especificado. Portanto, é possível que uma ID persistente seja compilada com uma ID de pessoa de um registro que tenha um carimbo de data e hora anterior.
 - Em cenários de dispositivos compartilhados, em que o namespace no gráfico contém várias identidades, a primeira identidade lexicográfica é usada. Se as prioridades e os limites de namespace forem configurados como parte do lançamento das regras de vinculação de gráficos, a identidade do último usuário autenticado será usada. Consulte [Dispositivos compartilhados](/help/use-cases/stitching/shared-devices.md) para obter mais informações.
 - Há um limite rígido de três meses de preenchimento retroativo de identidades no gráfico de identidade. Você usaria o preenchimento retroativo de identidades caso não estivesse usando um aplicativo da Experience Platform, como a Real-time Customer Data Platform, para preencher o gráfico de identidade.
-- As [medidas de proteção do Serviço de identidade](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/guardrails) se aplicam. Consulte, por exemplo, os [seguintes limites estáticos](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/guardrails#static-limits):
+- As [medidas de proteção do Serviço de identidade](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails) se aplicam. Consulte, por exemplo, os [seguintes limites estáticos](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails#static-limits):
    - Número máximo de identidades em um gráfico: 50.
    - Número máximo de links para uma identidade para uma única assimilação de lote: 50.
    - Número máximo de identidades em um registro XDM para assimilação de gráfico: 20.

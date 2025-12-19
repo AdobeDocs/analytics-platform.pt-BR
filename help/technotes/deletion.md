@@ -1,26 +1,41 @@
 ---
 title: Implicações de exclusão
-description: O que acontece quando você exclui conexões, conjuntos de dados ou lotes no Customer Journey Analytics ou na Adobe Experience Platform.
+description: Entenda a implicação da exclusão ou redefinição de objetos do Customer Journey Analytics ou do Experience Platform.
 exl-id: a89694c9-0909-440e-939c-b245fc4dd6bf
 solution: Customer Journey Analytics
 feature: Basics
 role: Admin
-source-git-commit: 928c79f9ccf30cc33e0f334f715bf3190a257019
+source-git-commit: c8b646b7e92663ed9c7e8454a336d25e34415cbe
 workflow-type: tm+mt
-source-wordcount: '418'
-ht-degree: 64%
+source-wordcount: '804'
+ht-degree: 11%
 
 ---
 
-# Implicações de exclusão
+# Implicações de exclusão e redefinição
 
-Considere isso antes de excluir conexões, conjuntos de dados ou lotes no Customer Journey Analytics ou na Adobe Experience Platform:
+A exclusão ou redefinição de objetos do Customer Journey Analytics ou do Experience Platform tem implicações. Essas implicações estão descritas neste artigo.
 
-| Quando você... | Isso acontece... |
+## Customer Journey Analytics
+
+Considere as seguintes implicações antes de excluir conexões, visualizações de dados ou conjuntos de dados na Customer Journey Analytics:
+
+| Ação | Implicações |
 | --- | --- |
-| Excluir uma conexão no [!UICONTROL Customer Journey Analytics] | Uma mensagem de erro indicará que:<ul><li>Qualquer visualização de dados criada para a conexão excluída não funcionará mais.</li><li> Da mesma forma, qualquer projeto do Espaço de trabalho que dependa de visualizações de dados na conexão excluída deixará de funcionar.</li></ul>Observe que não é possível excluir conexões do Customer Journey Analytics que: <ul><li>Estão vinculados às sandboxes da Adobe Experience Platform para as quais você não tem permissões. Mesmo que você tenha permissões para as visualizações de dados criadas nessas conexões, não poderá excluir as conexões até que receba permissões para as sandboxes subjacentes do Adobe Experience Platform.</li><li>Selecione a seguinte opção de compatibilidade para uma exibição de dados associada à conexão: **[!UICONTROL Definir como exibição de dados padrão no Adobe Journey Optimizer]**<p>Para obter mais informações sobre esta opção de configuração, consulte [Compatibilidade](/help/data-views/create-dataview.md#compatibility) em [Criar ou editar uma visualização de dados](/help/data-views/create-dataview.md)</p></li></ul> |
-| Excluir um conjunto de dados no [!UICONTROL Adobe Experience Platform] | A exclusão de um conjunto de dados na AEP parará o fluxo de dados dele para qualquer conexão que inclua esse conjunto de dados. Quaisquer dados desse conjunto de dados são excluídos automaticamente das conexões associadas do Customer Journey Analytics. |
-| Excluir um conjunto de dados no [!UICONTROL Customer Journey Analytics] | Ao excluir um conjunto de dados de uma conexão no Customer Journey Analytics, qualquer visualização de dados e projeto que dependia desse conjunto de dados não funcionará mais. |
-| Excluir um lote de um conjunto de dados (na [!UICONTROL Adobe Experience Platform]) | Se um lote for excluído de um conjunto de dados da [!UICONTROL Adobe Experience Platform], o mesmo lote será removido de qualquer conexão do [!UICONTROL Customer Journey Analytics] que contenha esse lote específico. [!UICONTROL O Customer Journey Analytics] é notificado de lotes que foram excluídos na [!UICONTROL Adobe Experience Platform]. |
-| Excluir um lote **enquanto ele estiver sendo assimilado** no [!UICONTROL Customer Journey Analytics] | Se houver apenas um lote no conjunto de dados, nenhum dado ou dado parcial desse lote será exibido no [!UICONTROL Customer Journey Analytics]. A ingestão será revertida. Por exemplo, se houver cinco lotes no conjunto de dados e três deles já tiverem sido assimilados quando o conjunto de dados tiver sido excluído, os dados desses três lotes aparecerão no [!UICONTROL Customer Journey Analytics]. |
-| Excluir conjuntos de dados de pesquisa no [!UICONTROL Adobe Experience Platform] | Embora a exclusão de conjuntos de dados seja possível para outros conectores de origem, no momento essa ação não é permitida no [Conector de origem de classificações do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/classifications.html?lang=pt-BR). Se você excluir um conjunto de dados por engano, entre em contato com o Atendimento ao cliente da Adobe. |
+| Excluir uma conexão no [!UICONTROL Customer Journey Analytics] | Uma mensagem de erro indica que:<ul><li>Qualquer visualização de dados criada para a conexão excluída não funciona mais.</li><li> Da mesma forma, qualquer projeto do Workspace que dependa de visualizações de dados na conexão excluída deixará de funcionar.</li></ul>Observe que não é possível excluir conexões do Customer Journey Analytics que:<ul><li>Estão vinculados às sandboxes da Adobe Experience Platform para as quais você não tem permissões. Mesmo que você tenha permissões para as visualizações de dados criadas nessas conexões, não poderá excluir as conexões até que receba permissões para as sandboxes subjacentes do Adobe Experience Platform.</li><li>Selecione a seguinte opção de compatibilidade para uma exibição de dados associada à conexão: **[!UICONTROL Definir como exibição de dados padrão no Adobe Journey Optimizer]**<p>Para obter mais informações sobre esta opção de configuração, consulte [Compatibilidade](/help/data-views/create-dataview.md#compatibility) em [Criar ou editar uma visualização de dados](/help/data-views/create-dataview.md)</p></li></ul> |
+| Excluir um conjunto de dados no [!UICONTROL Customer Journey Analytics] | Ao excluir um conjunto de dados de uma conexão no Customer Journey Analytics, qualquer visualização de dados e projeto que dependa desse conjunto de dados não funciona mais. |
+| Exclusão de uma visualização de dados no [!UICONTROL Customer Journey Analytics] | Ao excluir uma visualização de dados no Customer Journey Analytics, qualquer painel em um projeto do Workspace que depende da visualização de dados não funciona mais corretamente. |
+
+
+
+## Experience Platform
+
+Considere as seguintes implicações antes de excluir conjuntos de dados ou lotes, ou ao redefinir ou excluir sandboxes na Experience Platform:
+
+| Ação | Implicações |
+| --- | --- |
+| Excluir um conjunto de dados no [!UICONTROL Experience Platform] | O fluxo de dados desse conjunto de dados na Experience Platform é interrompido para qualquer conexão que inclua esse conjunto de dados. Qualquer dado desse conjunto de dados é excluído automaticamente das conexões associadas do Customer Journey Analytics. |
+| Excluir um lote de um conjunto de dados no [!UICONTROL Experience Platform] | Se um lote for excluído de um conjunto de dados do [!UICONTROL Adobe Experience Platform], o mesmo lote será removido de qualquer conexão do [!UICONTROL Customer Journey Analytics] que contenha esse lote específico. [!UICONTROL O Customer Journey Analytics] é notificado de lotes que foram excluídos na [!UICONTROL Adobe Experience Platform]. |
+| Excluir um lote de [!UICONTROL Experience Platform] **enquanto ele estiver sendo assimilado** na [!UICONTROL Customer Journey Analytics] | Se houver apenas um lote no conjunto de dados, nenhum dado ou dado parcial desse lote será exibido no [!UICONTROL Customer Journey Analytics]. A ingestão será revertida. Por exemplo, se houver cinco lotes no conjunto de dados e três deles já tiverem sido assimilados quando o quarto lote tiver sido excluído, os dados desses três lotes aparecerão no [!UICONTROL Customer Journey Analytics]. |
+| Excluir conjuntos de dados de pesquisa no [!UICONTROL Experience Platform] | Embora a exclusão de conjuntos de dados seja possível para outros conectores de origem, não há suporte para a exclusão de [conjuntos de dados do Analytics Classifications Source Connector](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/classifications). Se você excluir esse conjunto de dados por engano, entre em contato com o Atendimento ao cliente. |
+| Excluir ou redefinir uma sandbox no Experience Platform | Quando você [exclui uma sandbox da Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/sandbox/ui/user-guide#delete-a-sandbox), todos os esquemas, conjuntos de dados, lotes, políticas e muito mais nessa sandbox também são excluídos. A sandbox não existe mais, bem como o identificador e o nome da sandbox.<br/>Ao [redefinir uma sandbox da Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/sandbox/ui/user-guide#reset-a-sandbox), todos os esquemas, conjuntos de dados, lotes, políticas e muito mais nessa sandbox serão excluídos. Embora o nome e as permissões da sandbox permaneçam inalterados, o identificador da sandbox é alterado após a conclusão da redefinição.<br/><br/>O Customer Journey Analytics usa o identificador e o nome da sandbox para associar uma conexão a uma sandbox. Como resultado: <ul><li>As conexões associadas à sandbox excluída ou redefinida são excluídas.</li><li>As visualizações de dados (e todas as definições de componentes, como campos derivados, na visualização de dados) baseadas nas conexões excluídas são excluídas.</li><li>Os componentes que dependem das visualizações de dados excluídas são excluídos. Tais como segmentos, métricas calculadas, anotações, alertas, públicos publicados e exportações.</li><li>Os painéis em projetos do Workspace que fazem referência às visualizações de dados excluídas se tornam inutilizáveis. Estes painéis mostram **[!UICONTROL erros desconhecidos de visualização de dados]**. Remova esses painéis ou, se possível, associe-os a uma visualização de dados existente.</li><li>Não consulte mais dados (históricos) da conexão excluída que já está disponível no Customer Journey Analytics usando o Serviço de consulta ou ferramentas que dependem da extensão BI. O suporte ou a engenharia da Adobe acaba excluindo esses dados da Customer Journey Analytics.</li></ul>Como as implicações de uma redefinição ou exclusão de uma sandbox no Experience Platform são substanciais, considere o seguinte antes de redefinir ou excluir uma sandbox:<ul><li>Liste suas conexões para entender quais conexões pertencem a quais sandboxes.</li><li>Liste visualizações de dados para entender quais visualizações de dados estão associadas a quais conexões.</li><li>Identifique projetos importantes do Workspace e entenda a quais visualizações de dados esses projetos fazem referência em seus painéis.</li><li>Identifique integrações com ferramentas que usam a extensão BI e entenda em quais visualizações de dados essas integrações dependem.</li></ul> |

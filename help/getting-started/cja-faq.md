@@ -5,10 +5,10 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: c67225619153218e3dca1eacea204f2b033dfb14
 workflow-type: tm+mt
-source-wordcount: '2580'
-ht-degree: 99%
+source-wordcount: '2210'
+ht-degree: 98%
 
 ---
 
@@ -34,7 +34,7 @@ Não, o [!UICONTROL Customer Journey Analytics] é compatível com qualquer ID e
 
 +++**E se for necessário extrair, transformar, carregar (ETL) meus dados antes do [!UICONTROL Customer Journey Analytics]?**
 
-O Customer Journey Analytics inclui recursos de [Preparação de dados](https://experienceleague.adobe.com/docs/experience-platform/data-prep/api/overview.html?lang=pt-BR) para ajudar a transformar seus dados antes de colocá-los no data lake da Adobe Experience Platform. Se ETL for necessário depois que os dados já tiverem sido assimilados, o [Adobe Experience Platform Query Service](https://experienceleague.adobe.com/docs/platform-learn/tutorials/queries/understanding-query-service.html?lang=pt-BR#queries) fornecerá algumas opções limitadas, embora possa haver a cobrança de tarifas adicionais.
+O Customer Journey Analytics inclui recursos de [Preparação de dados](https://experienceleague.adobe.com/docs/experience-platform/data-prep/api/overview.html?lang=pt-BR) para ajudar a transformar seus dados antes de colocá-los no data lake da Adobe Experience Platform. Se ETL for necessário depois que os dados já tiverem sido assimilados, o [Serviço de consultas da Adobe Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/queries/understanding-query-service.html?lang=pt-BR#queries) fornecerá algumas opções limitadas, embora possa haver a cobrança de tarifas adicionais.
 
 +++
 
@@ -145,24 +145,30 @@ A Adobe alterou recentemente a forma do processamento de dados no Customer Journ
 
 ## &#x200B;5. Definir janela contínua para retenção de dados de [!UICONTROL conexão] {#data-retention}
 
-A configuração [**[!UICONTROL Habilitar janela de dados contínua &#x200B;]**](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=pt-BR#create-connection) permite definir a retenção de dados do Customer Journey Analytics como uma janela contínua em meses (três meses, seis meses, etc). Ela é definida no nível de uma [!UICONTROL conexão], não no nível de um [!UICONTROL conjunto de dados]. A retenção de dados tem por base os carimbos de data e hora do conjunto de dados do evento e se aplica somente aos conjuntos de dados do evento. Não há configuração de retenção de dados para o perfil ou conjuntos de dados de pesquisa, pois não há carimbos de data e hora aplicáveis.
+A configuração [**[!UICONTROL Habilitar janela de dados contínua ]**](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=pt-BR#create-connection) permite definir a retenção de dados do Customer Journey Analytics como uma janela contínua em meses (três meses, seis meses, etc). Ela é definida no nível de uma [!UICONTROL conexão], não no nível de um [!UICONTROL conjunto de dados]. A retenção de dados tem por base os carimbos de data e hora do conjunto de dados do evento e se aplica somente aos conjuntos de dados do evento. Não há configuração de retenção de dados para o perfil ou conjuntos de dados de pesquisa, pois não há carimbos de data e hora aplicáveis.
 
 O principal benefício é armazenar ou relatar apenas dados que sejam aplicáveis e úteis, além de excluir dados mais antigos que não sejam mais úteis. Isso ajuda você a ficar dentro dos limites do contrato e reduz o risco de custo excedente.
 
-## &#x200B;6. Implicações da exclusão de componentes de dados {#deletion}
+## &#x200B;6. Implicações da exclusão de objetos ou componentes {#deletion}
 
-Para exclusão de dados, você deve considerar seis tipos de componentes: sandbox, esquema, conjunto de dados, conexão, visualização de dados e projeto do Workspace. Veja alguns cenários possíveis para excluir qualquer um desses componentes:
+Consulte [Implicações de exclusão e redefinição](/help/technotes/deletion.md) para obter uma visão geral das implicações ao excluir ou redefinir objetos ou componentes do Customer Journey Analytics ou do Experience Platform.
 
-| Se você... | Isso acontece... |
+<!-- Refer to deletion guide 
+
+For data deletion, you should be concerned about six types of components: sandbox, schema, dataset, connection, data view, and Workspace project. Here are some possible scenarios around deleting any of these components:
+
+| If you... | This happens... |
 | --- | --- |
-| Excluir uma sandbox na [!UICONTROL Adobe Experience Platform] | A exclusão de uma sandbox interromperá o fluxo de dados para qualquer conexão do [!UICONTROL Customer Journey Analytics] com conjuntos de dados nessa sandbox. Conexões, exibições de dados, métricas e dimensões relacionadas a essa sandbox excluída também serão excluídas. |
-| Excluir um esquema na [!UICONTROL Adobe Experience Platform], mas não os conjuntos de dados associados a esse esquema | [!UICONTROL A Adobe Experience Platform] não permite a exclusão de [!UICONTROL esquemas] que tenham um ou mais [!UICONTROL conjuntos de dados] associados a eles. No entanto, um Administrador com o conjunto apropriado de direitos pode excluir os conjuntos de dados primeiro e, em seguida, excluir o esquema. |
-| Exclusão de um conjunto de dados no data lake da [!UICONTROL Adobe Experience Platform] | A exclusão de um conjunto de dados no data lake da Adobe Experience Platform interrompe seu fluxo de dados para qualquer conexão do Customer Journey Analytics que o inclua. Qualquer dado desse conjunto de dados é excluído automaticamente das conexões associadas do Customer Journey Analytics. |
-| Excluir um conjunto de dados no [!UICONTROL Customer Journey Analytics] | Entre em contato com sua equipe de contas da Adobe para iniciar o processo de exclusão de um conjunto de dados em uma conexão salva. |
-| Excluir um lote de um conjunto de dados (na [!UICONTROL Adobe Experience Platform]) | Se um lote for excluído de um conjunto de dados da [!UICONTROL Adobe Experience Platform], o mesmo lote será removido de qualquer conexão do Customer Journey Analytics que contenha esse lote específico. O Customer Journey Analytics é notificado de exclusões de lotes na [!UICONTROL Adobe Experience Platform]. |
-| Exclusão de um lote **enquanto ele está sendo assimilado** no [!UICONTROL Customer Journey Analytics] | Se houver apenas um lote no conjunto de dados, nenhum dado ou dado parcial desse lote será exibido no [!UICONTROL Customer Journey Analytics]. A ingestão será revertida. Por exemplo, caso haja cinco lotes no conjunto de dados e três deles já tenham sido assimilados antes do conjunto de dados ser excluído, os dados desses 3 lotes aparecerão no [!UICONTROL Customer Journey Analytics]. |
-| Excluir uma conexão no [!UICONTROL Customer Journey Analytics] | Uma mensagem de erro indica que:<ul><li>Qualquer visualização de dados criada para a conexão excluída não funcionará mais.</li><li> Da mesma forma, qualquer projeto do Workspace que dependa de visualizações de dados da conexão excluída deixará de funcionar.</li></ul> |
-| Exclusão de uma visualização de dados no [!UICONTROL Customer Journey Analytics] | Uma mensagem de erro indicará que todos os projetos do Workspace que dependem da visualização de dados excluída deixarão de funcionar. |
+| Delete a sandbox in [!UICONTROL Adobe Experience Platform] | Deleting a sandbox stops the data flow to any [!UICONTROL Customer Journey Analytics] connections to datasets in that sandbox. Connections, data views, metrics and dimensions related to this deleted sandbox will also be deleted. |
+| Delete a schema in [!UICONTROL Adobe Experience Platform], but not the dataset/s associated with this schema | [!UICONTROL Adobe Experience Platform] does not allow for the deletion of [!UICONTROL schemas] that have one or more [!UICONTROL datasets] associated with them. However, an Admin with the appropriate set of rights can delete the datasets first and then delete the schema. |
+| Delete a dataset in the [!UICONTROL Adobe Experience Platform] data lake | Deleting a dataset in Adobe Experience Platform data lake stops data flow from that dataset to any Customer Journey Analytics Connections that include that dataset. Any data from that dataset is automatically deleted from the associated Customer Journey Analytics connections. |
+| Delete a dataset in [!UICONTROL Customer Journey Analytics] | Contact your Adobe Account Team to set in motion the process for deleting a dataset within a connection that has been saved. |
+| Delete a batch from a dataset (in [!UICONTROL Adobe Experience Platform]) | If a batch is deleted from an [!UICONTROL Adobe Experience Platform] dataset, the same batch is removed from any Customer Journey Analytics connections that contain that specific batch. Customer Journey Analytics is notified of batch deletions in [!UICONTROL Adobe Experience Platform]. |
+| Delete a batch **while it is being ingested** into [!UICONTROL Customer Journey Analytics] | If there is only one batch in the dataset, no data or partial data from that batch appears in [!UICONTROL Customer Journey Analytics]. The ingestion is rolled back. For example, if there are five batches in the dataset and three of them have already been ingested when the dataset was deleted, data from those 3 batches appears in [!UICONTROL Customer Journey Analytics]. |
+| Delete a connection in [!UICONTROL Customer Journey Analytics] | An error message indicates that:<ul><li>Any data views created for the deleted connection will no longer work.</li><li> Similarly, any Workspace projects that depend on data views in the deleted connection stops working.</li></ul> |
+| Delete a data view in [!UICONTROL Customer Journey Analytics] | An error message indicates that any Workspace projects that depend on this deleted data view will stop working. |
+
+-->
 
 ## &#x200B;7. Considerações ao mesclar conjuntos de relatórios no Customer Journey Analytics {#merge-reportsuite}
 
@@ -242,7 +248,7 @@ Leia mais sobre as [implicações da exclusão de conjuntos de dados e conexões
 
 A Adobe Experience Cloud usa a Coleta de Dados Regionais (RDC) para que as interações entre seus visitantes e as soluções da Adobe e de terceiros ocorram o mais próximo possível de seus visitantes. Depois que os dados são coletados regionalmente em um Centro de Coleta de Dados (DCC, também conhecido como local da borda, parte da rede de borda da Platform), eles são encaminhados por uma conexão segura para as soluções relevantes com base na configuração do fluxo de dados e/ou encaminhamento de eventos.
 
-![Fluxo de dados usando redes de borda](https://experienceleague.adobe.com/docs/experience-platform/assets/collection.png?lang=pt-BR)
+![Fluxo de dados usando redes de borda](https://experienceleague.adobe.com/docs/experience-platform/assets/collection.png)
 
 O processo de coleta de dados regionais usa as seguintes etapas:
 
