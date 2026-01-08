@@ -50,7 +50,7 @@ Para configurar e habilitar o recurso *mapear dados do Analytics de várias orga
 
 Depois que o gerente de conta recebe o email com a solicitação para mapear os dados do Analytics de várias organizações, a solicitação é revisada no Adobe. O gerente de conta entra em contato com você para esclarecer dúvidas adicionais, treinamento opcional e outras informações.
 
-Depois de aprovado, o mapeamento solicitado é criado e você é notificado. O nome da organização IMS de origem está anexado ao nome do conjunto de relatórios na [lista dos conjuntos de relatórios do Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#select-data) no Experience Platform.
+Depois de aprovado, o mapeamento solicitado é criado e você é notificado. O nome da organização IMS de origem está anexado ao nome do conjunto de relatórios na [lista dos conjuntos de relatórios do Analytics](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#select-data) no Experience Platform.
 
 ## Limitações e riscos
 
