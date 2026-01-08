@@ -1580,10 +1580,10 @@ Você gostaria de coletar parte de um URL e usá-la como um identificador de pá
 
 | URL da página |
 |---|
-| `https://business.adobe.com/products/analytics/adobe-analytics-benefits.html` |
-| `https://business.adobe.com/products/analytics/adobe-analytics.html` |
-| `https://business.adobe.com/products/experience-platform/customer-journey-analytics.html` |
-| `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html` |
+| `https://business.adobe.com/br/products/analytics/adobe-analytics-benefits.html` |
+| `https://business.adobe.com/br/products/analytics/adobe-analytics.html` |
+| `https://business.adobe.com/br/products/experience-platform/customer-journey-analytics.html` |
+| `https://business.adobe.com/br/products/experience-platform/adobe-experience-platform.html` |
 
 {style="table-layout:auto"}
 
@@ -2141,6 +2141,6 @@ O suporte para campos de pesquisa e perfil em Campos derivados permite transform
 >[!MORELIKETHIS]
 >
 >- [Blog: como aproveitar ao máximo seus dados: uma estrutura para usar campos derivados no Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/making-the-most-of-your-data-a-framework-for-using-derived/ba-p/601670?profile.language=pt)
->- [Blog: casos de uso de campos derivados no Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/derived-fields-use-cases-for-customer-journey-analytics/ba-p/601679)
->- [Blog: melhorias nos campos derivados do Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/adobe-customer-journey-analytics-derived-fields-enhancements/ba-p/697808)
+>- [Blog: casos de uso de campos derivados no Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/derived-fields-use-cases-for-customer-journey-analytics/ba-p/601679?profile.language=pt)
+>- [Blog: melhorias nos campos derivados do Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/adobe-customer-journey-analytics-derived-fields-enhancements/ba-p/697808?profile.language=pt)
 
