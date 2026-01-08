@@ -9,9 +9,9 @@ index: true
 user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Saiba mais sobre o Adobe Customer Journey Analytics e como usar o Analysis Workspace com dados da Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
-source-git-commit: 3fb94d920b240247f13050cf091423335a3d74ec
+source-git-commit: 6fcc35bf240821359c705d71efdeb91a5810136f
 workflow-type: tm+mt
-source-wordcount: '1322'
+source-wordcount: '1326'
 ht-degree: 99%
 
 ---
@@ -101,6 +101,7 @@ ht-degree: 99%
    + Comparar com o Adobe Analytics {#cja-aa-comparison}
       + [Visão geral](../getting-started/aa-vs-cja/overview.md)
       + [Usar dados do Adobe Analytics](../getting-started/aa-vs-cja/aa-data-in-cja.md)
+      + [Mapear dados do Adobe Analytics](../getting-started/aa-vs-cja/mapping-data-ims-orgs.md)
       + [Suporte a recursos](../getting-started/aa-vs-cja/cja-aa.md)
       + [Comparar terminologia](../getting-started/aa-vs-cja/terminology.md)
       + [Comparar processamento de dados](../getting-started/aa-vs-cja/data-processing-comparisons.md)
@@ -486,7 +487,7 @@ ht-degree: 99%
       + [Extensão BI](../use-cases/data-export/bi-extension.md)
       + [Exportar conjuntos de dados](../use-cases/data-export/export-datasets.md)
       + [Exportar tabela completa](../use-cases/data-export/export-full-table.md)
-      + [Conjuntos de dados de exportação e Serviço de consulta](../use-cases/data-export/queryservice-export-datasets.md)
+      + [Conjuntos de dados de exportação e Serviço de consultas](../use-cases/data-export/queryservice-export-datasets.md)
    + Assimilação de dados {#data-ingestion}
       + [Assimilar e usar dados do Marketo Engage](../use-cases/data-ingestion/marketo.md)
       + [Ingerir e usar públicos-alvo da Experience Platform](../use-cases/data-ingestion/ingest-aep-segments.md)

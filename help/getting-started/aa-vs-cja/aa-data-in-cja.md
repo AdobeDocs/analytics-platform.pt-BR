@@ -5,20 +5,20 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: db5506e0-6159-4d4b-8149-e4966dab9807
-source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
+source-git-commit: e74bbcc385aa90ba05c628a7d37598c6692530ed
 workflow-type: tm+mt
-source-wordcount: '847'
-ht-degree: 91%
+source-wordcount: '841'
+ht-degree: 86%
 
 ---
 
-# Uso dos dados do conjunto de relatórios do Adobe Analytics no Customer Journey Analytics
+# Usar dados do conjunto de relatórios do Adobe Analytics
 
-Clientes do Adobe Analytics podem utilizar facilmente seus conjuntos de relatórios na Adobe Experience Platform e no Customer Journey Analytics usando o [conector de origem do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=pt-BR). A discussão a seguir explica como fazê-lo.
+Os clientes do Adobe Analytics podem utilizar facilmente seus conjuntos de relatórios no Experience Platform e no Customer Journey Analytics usando o [conector de origem do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/analytics.html?lang=pt-BR). A discussão a seguir explica como fazê-lo.
 
 >[!IMPORTANT]
 >
->Você deve ter o pacote **Select** para executar a análise de dados em mais de um conjunto de relatórios. Entre em contato com a equipe de administração se não tiver certeza do pacote do Customer Journey Analytics que possui.
+>Você deve ter o pacote **Select** para executar a análise de dados em mais de um conjunto de relatórios. Entre em contato com o administrador se não tiver certeza do pacote do Customer Journey Analytics que possui.
 
 ## Preparação
 
