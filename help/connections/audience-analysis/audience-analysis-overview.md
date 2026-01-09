@@ -6,9 +6,9 @@ feature: Audiences
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 996d7d7bb0c0da566a926f9a3a4c465baca69a9a
+source-git-commit: 840bf65d186178fb944041ff486e95ba60dc6037
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '675'
 ht-degree: 3%
 
 ---
@@ -41,11 +41,14 @@ O diagrama a seguir e a tabela associada mostram uma representação de alto ní
 | 7 | Conexão | A conexão à qual você deseja adicionar o conjunto de dados do perfil selecionado. |
 | 8 | Novas dimensões de público | Novas dimensões de público-alvo <!--and metrics?--> que representam os públicos-alvo da Experience Platform incluídos no conjunto de dados de perfil selecionado e estão disponíveis para relatórios no Analysis Workspace. Essas dimensões são criadas automaticamente. |
 | 9 | Visualizações de dados | As visualizações de dados selecionadas associadas à sua conexão. Essas são as visualizações de dados que você deseja usar ao analisar dados de público-alvo do Experience Platform no Analysis Workspace. Essas visualizações de dados são configuradas automaticamente com os dados de público-alvo do Experience Platform para relatórios. |
-| 10 | Analysis Workspace | A área dentro do Customer Journey Analytics em que você cria relatórios que inclui os públicos-alvo da Experience Platform que são assimilados. |
 
 ## Configurar análise de público
 
 Ao configurar a análise de público-alvo, você seleciona a sandbox e a política de mesclagem associadas aos públicos-alvo da Experience Platform que deseja analisar. O Customer Journey Analytics cria um novo conjunto de dados de pesquisa e, em seguida, adiciona automaticamente o conjunto de dados de pesquisa e o conjunto de dados do perfil à conexão escolhida.
+
+>[!NOTE]
+>
+>Os públicos-alvo estão disponíveis nas visualizações de dados do Customer Journey Analytics no dia seguinte à criação da configuração de análise de público-alvo.
 
 Para obter mais informações, consulte [Configurar análise de audiência](/help/connections/audience-analysis/audience-analysis-configure.md).
 
