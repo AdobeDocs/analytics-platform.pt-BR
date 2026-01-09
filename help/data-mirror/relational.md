@@ -6,9 +6,9 @@ feature: Basics
 role: Admin
 badgePremium: label="Beta"
 exl-id: 17f72954-085c-46a8-bc28-6af0a4eb159a
-source-git-commit: 0e86227915404fe62fcd1f27e95eb3b1bb673030
+source-git-commit: cd3baec708f1811a7cbc37dfe0a9c3af75eb97c3
 workflow-type: tm+mt
-source-wordcount: '2268'
+source-wordcount: '2351'
 ht-degree: 14%
 
 ---
@@ -169,9 +169,11 @@ Defina um esquema que modele esses dados. Para configurar o esquema:
    | `trackingcode` | `Tracking Code` | **[!UICONTROL String]** | |
 
 
-   * O campo **[!UICONTROL id]** está configurado como **[!UICONTROL Descritor de versão]**.
+   * O campo **[!UICONTROL id]** está configurado como o **[!UICONTROL Descritor de versão]**.
 
      ![Descritor de versão](assets/platform-schema-id.png)
+
+     Em um cenário real, talvez você queira usar um campo mais apropriado como o [descritor de versão](aep.md#schema). Por exemplo, um campo que controla uma hora da última modificação.
 
    * O campo **[!UICONTROL personid]** está configurado, junto com **[!UICONTROL carimbo de data/hora]** como **[!UICONTROL Chave primária]**. Selecione ![Adicionar](/help/assets/icons/Add.svg) **[!UICONTROL Criar chave primária composta]** para criar uma chave composta.
 
@@ -181,6 +183,8 @@ Defina um esquema que modele esses dados. Para configurar o esquema:
 
      ![Descritor de pessoa](assets/platform-schema-personid.png)
 
+     O campo **[!UICONTROL personid]** não precisa ser a **[!UICONTROL chave primária]**. Em um cenário da vida real, provavelmente você tem um campo diferente para rastrear a chave primária, separado da **[!UICONTROL personid]**.
+
    * O campo **[!UICONTROL carimbo de data/hora]** está configurado, junto com o campo **[!UICONTROL personid]** como a **[!UICONTROL Chave primária]**. O campo **[!UICONTROL carimbo de data/hora]** também está configurado como **[!UICONTROL descritor de carimbo de data/hora]**. Você só precisa definir um campo como **[!UICONTROL Descritor de carimbo de data/hora]** para dados relacionais de série temporal.
 
      ![Descritor de carimbo de data/hora](assets/platform-schema-timestamp.png)
@@ -189,6 +193,8 @@ Defina um esquema que modele esses dados. Para configurar o esquema:
    Se você tiver definido corretamente **[!UICONTROL Chave primária]**, **[!UICONTROL Descritor de versão]** e **[!UICONTROL Descritor de carimbo de data/hora]**, o aviso na parte superior da definição do esquema desaparecerá.
 
 1. Selecione **[!UICONTROL Salvar]** para salvar o esquema.
+
+De maneira semelhante, você pode configurar um [esquema](aep.md#schema) relacional baseado em registro. Por exemplo, para conter dados de perfil e de pesquisa.
 
 
 ## Usar um conector de origem
@@ -219,7 +225,7 @@ Na etapa **[!UICONTROL Autenticação]**, selecione:
 
    1. Selecione **[!UICONTROL Próximo]**.
 
-  Consulte a documentação do Experience Platform para obter detalhes sobre como conectar e autenticar quando você usa o [Azure Databricks](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/databases/databricks) ou o conector [Snowflake](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/databases/snowflake).
+  Consulte a documentação do Experience Platform para obter detalhes sobre como conectar e autenticar quando você usa o [Azure Databricks](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/databricks) ou o conector [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake).
 
 
 ### Selecionar dados
@@ -254,7 +260,7 @@ Na etapa **[!UICONTROL detalhes do fluxo de dados]**:
 
 Na etapa **[!UICONTROL Mapeamento]**:
 
-1. Mapeie os campos. Do esquema no Google BigQuery (**[!UICONTROL dados do Source]**) para os campos no esquema que você definiu no Experience Platform (**[!UICONTROL campos de Destino]**).
+1. Mapeie os campos no esquema no Google BigQuery (**[!UICONTROL dados do Source]**) para os campos no esquema que você definiu no Experience Platform (**[!UICONTROL campos de destino]**).
 
    ![Experience Platform - Source Connector - Mapeamento](assets/platform-sources-mapping.png)
 
