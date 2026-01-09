@@ -4,10 +4,10 @@ title: Visão geral de alertas
 feature: Workspace Basics
 role: User, Admin
 exl-id: 029be0c8-ec78-4bb7-a6cd-bb303b5ac82a
-source-git-commit: 1891f73f4326a178b293e7c3763d0d1dbc000a25
+source-git-commit: 65e46a5d2a6759dd83b24bba2d1d4ee283b907c9
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 96%
+source-wordcount: '465'
+ht-degree: 58%
 
 ---
 
@@ -15,16 +15,21 @@ ht-degree: 96%
 
 Os alertas no Customer Journey Analytics permitem que você seja notificado com base em porcentagens alteradas ou pontos de dados específicos.
 
-Dependendo do pacote do Customer Journey Analytics, você também pode usar alertas para serem acionados com base em limites de anomalias. Os alertas (também conhecidos como “Alertas inteligentes”) fornecem controles granulares que se integram à [Detecção de anomalias](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) e são acionados quando você mais precisa deles.
+Dependendo do pacote do Customer Journey Analytics, você também pode usar alertas para serem acionados com base em limites de anomalias. Esses alertas (também conhecidos como *Alertas inteligentes*) fornecem controles detalhados que se integram à [Detecção de anomalias](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md), acionando quando você mais precisa deles.
 
-Os alertas inteligentes permitem:
+* Visualizar a frequência de disparo de um alerta.
+* Enviar alertas por email ou SMS com links para projetos do Analysis Workspace gerados automaticamente.
+* Criar alertas *empilhados* que capturam várias métricas em um único alerta.
+* Criar alertas com base em:
+   * As anomalias nas métricas existentes estão acima ou abaixo dos valores limite esperados.
 
-* Visualizar a frequência de disparo de um alerta
-* Enviar alertas por email ou SMS com links para projetos do Analysis Workspace gerados automaticamente
-* Criar alertas “empilhados”, capazes de capturar várias métricas de um só alerta
-* Criar alertas com base em anomalias (limites de 90%, 95%, 99%, 99,75% e 99,9%; % de mudança; acima/abaixo) (Disponível somente para clientes do Customer Journey Analytics com um pacote Select, Prime ou Ultimate)
+     [A detecção de anomalias](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) cria um valor esperado além de um limite superior e inferior usando dados históricos. Se o valor da métrica real ultrapassar o limite superior ou ficar abaixo do limite inferior definido como o valor do limite, esse evento será considerado uma anomalia no nível de confiança do limite e acionará o alerta. Um limite mais alto (por exemplo: 99% ou 99,9%) implica uma banda mais ampla, o que resulta em menos alertas causados por anomalias mais extremas. Um limite mais baixo (por exemplo: 90%) implica uma faixa mais estreita, o que resulta em mais alertas causados por anomalias menos extremas.
+   * Alterações nas métricas em uma porcentagem específica.
+   * Métricas acima, abaixo ou igual a um valor específico. (disponível somente para clientes do Adobe Analytics com um pacote Select, Prime ou Ultimate)
 
-O tutorial em vídeo a seguir fornece uma visão geral básica dos alertas: [Alertas](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/data-science/intelligent-alerts.html?lang=pt-BR) (5:34)
+Este [tutorial em vídeo](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/data-science/intelligent-alerts) fornece uma visão geral básica dos alertas.
+
+
 
 ## Entenda as diferenças dos alertas
 
