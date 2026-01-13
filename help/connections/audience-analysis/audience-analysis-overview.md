@@ -6,9 +6,9 @@ feature: Audiences
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 840bf65d186178fb944041ff486e95ba60dc6037
+source-git-commit: 9d9c4dbba13f61af4a47bbb0f87533fb950976bc
 workflow-type: tm+mt
-source-wordcount: '675'
+source-wordcount: '708'
 ht-degree: 3%
 
 ---
@@ -80,7 +80,13 @@ As seguintes funções e permissões do Customer Journey Analytics Experience Pl
 | [Exibir dimensões de análise de público-alvo na exibição de dados](/help/connections/audience-analysis/audience-analysis-configure.md#view-audience-dimensions-in-the-data-view) | Administrador de perfil de produto do perfil de produto ao qual a visualização de dados está atribuída <p>Para obter mais informações, consulte [Controle de acesso](/help/technotes/access-control.md).</p> | N/A |
 | Usar dimensões de análise de público-alvo no Analysis Workspace | Acesso a uma visualização de dados em que as dimensões de análise de público-alvo foram adicionadas | N/A |
 
+## Limites de análise de público-alvo
 
+Considere os seguintes limites ao [configurar a análise de público-alvo](/help/connections/audience-analysis/audience-analysis-configure.md):
+
+* Uma única sandbox pode oferecer suporte a até 100 configurações de análise de público-alvo.
+
+* Uma conexão só pode ser associada a uma configuração de análise de público-alvo.
 
 
 
