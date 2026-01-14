@@ -6,9 +6,9 @@ feature: Audiences
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 9d9c4dbba13f61af4a47bbb0f87533fb950976bc
+source-git-commit: ca2adce7be8a28fa72323915473a8c2283741889
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '728'
 ht-degree: 3%
 
 ---
@@ -46,7 +46,9 @@ O diagrama a seguir e a tabela associada mostram uma representação de alto ní
 
 Ao configurar a análise de público-alvo, você seleciona a sandbox e a política de mesclagem associadas aos públicos-alvo da Experience Platform que deseja analisar. O Customer Journey Analytics cria um novo conjunto de dados de pesquisa e, em seguida, adiciona automaticamente o conjunto de dados de pesquisa e o conjunto de dados do perfil à conexão escolhida.
 
->[!NOTE]
+>[!IMPORTANT]
+>
+>Os dados do público-alvo são reprocessados e gerados todas as noites, tornando os dados do público-alvo precisos para análise somente no dia anterior (&quot;ontem&quot;).
 >
 >Os públicos-alvo estão disponíveis nas visualizações de dados do Customer Journey Analytics no dia seguinte à criação da configuração de análise de público-alvo.
 
