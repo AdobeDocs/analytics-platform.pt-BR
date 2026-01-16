@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: b85b5b8212cf072ed46bc8eb587ea00984d33ccc
+source-git-commit: d117ba255151f730e0b5e4958ee56f5ffc88ade9
 workflow-type: tm+mt
-source-wordcount: '821'
-ht-degree: 98%
+source-wordcount: '902'
+ht-degree: 88%
 
 ---
 
@@ -49,8 +49,8 @@ Ao definir sua conexão do Customer Journey Analytics, você se beneficiará da 
 
 É possível habilitar a compilação de duas formas:
 
-- [Solicitação para habilitar a compilação](/help/stitching/use-stitching.md)
-- [Habilitar compilação na interface de Conexões](/help/stitching/use-stitching-ui.md) [!BADGE Beta]{type=Informative}
+- [Solicitação para habilitar a compilação](/help/stitching/use-stitching.md). Depois de aprovado, um conjunto de dados duplicado é criado para o conjunto de dados para o qual você solicitou a compilação. Esse conjunto de dados duplicado contém uma coluna adicional com o identificador compilado. É necessário criar uma nova conexão ou editar uma conexão existente que inclua o conjunto de dados compilado para usar os dados compilados no Customer Journey Analytics.
+- [Habilitar a compilação na interface de Conexões](/help/stitching/use-stitching-ui.md) [!BADGE Beta]{type=Informative}. Ao configurar a compilação de um conjunto de dados na interface Conexões, a compilação ocorre em tempo real, durante a assimilação de dados desse conjunto de dados no Customer Journey Analytics.
 
 ## Limitações
 
