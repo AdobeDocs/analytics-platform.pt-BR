@@ -5,10 +5,10 @@ feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 0a307bb43c780479df1cdc751fdadfc82f9dda55
 workflow-type: tm+mt
-source-wordcount: '4015'
-ht-degree: 99%
+source-wordcount: '4044'
+ht-degree: 98%
 
 ---
 
@@ -50,14 +50,11 @@ As preferências gerais se aplicam à experiência do Customer Journey Analytics
 >title="Exige autenticação da Experience Cloud"
 >abstract="Quando habilitada, as pessoas que recebem acesso a um projeto pela opção **[!UICONTROL Compartilhar com qualquer pessoa]** do Analysis Workspace devem se autenticar usando as credenciais da Experience Cloud."
 
-<!-- markdownlint-enable MD034 -->
-
 >[!CONTEXTUALHELP]
 >id="workspace_prefs_projectcommenting"
 >title="Permitir comentários em projetos"
 >abstract="Quando habilitada, uma área de comentários fica disponível no painel direito de cada projeto no Analysis Workspace."
 
-<!-- markdownlint-enable MD034 -->
 
 Você pode atualizar as preferências da empresa que se aplicam a todos os usuários e projetos em sua organização. Para obter informações sobre como acessar essas preferências, consulte [Atualizar preferências](#update-preferences).
 
@@ -93,6 +90,12 @@ Você pode atualizar as preferências da empresa que se aplicam a todos os usuá
 
 Algumas dessas mesmas preferências também podem ser personalizadas para projetos individuais no Analysis Workspace, conforme descrito em [Visão geral do projeto](/help/analysis-workspace/build-workspace-project/freeform-overview.md).
 
+>[!IMPORTANT]
+>
+>Não é mais possível definir o formato do número na seção **[!UICONTROL Projeto e Análises]** > **[!UICONTROL Dados]** de **[!UICONTROL Preferências do usuário]**. O formato do número é determinado automaticamente pelo [idioma padrão configurado](https://experienceleague.adobe.com/en/docs/core-services/interface/features/browser-language) para o usuário conectado.
+>
+
+
 | Seção | Preferência | Opções |
 | --- | --- | --- |
 | **Exibir** | | |
@@ -103,7 +106,6 @@ Algumas dessas mesmas preferências também podem ser personalizadas para projet
 |  | [Calendário](/help/analysis-workspace/c-panels/panels.md#calendar) | Selecione de uma lista de: <ul><li>Intervalos fornecidos pela Adobe (o padrão é Este mês)</li><li>Você pode habilitar a opção [!UICONTROL Tornar os componentes de intervalo de datas relativos ao calendário do painel por padrão].</li></ul> |
 |  | [Tipo de painel](/help/analysis-workspace/c-panels/panels.md#panel-types) | <ul><li>Forma livre (padrão)</li><li>Em branco</li><li>Insights rápidos</li></ul> |
 |  | Contagem de instâncias | Habilite a opção [!UICONTROL Contar instâncias repetidas] para especificar se as instâncias repetidas devem ser contadas em relatórios. Por exemplo, quando essa opção está habilitada, várias visualizações de página consecutivas na mesma página são tratadas como várias visualizações de página. Quando desabilitada, as várias visualizações de página consecutivas na mesma página contam como uma única visualização de página. <p>**Observação:** essa configuração afeta apenas determinadas métricas (como Sessões) e não se aplica a visualizações de fluxo ou fallout.</p> |
-|  | Formato de número | <ul><li>1.000,00 (padrão)</li><li>1.000,00</li><li>1 000,00</li></ul> |
 |  | Caractere separador do CSV | <ul><li>Vírgula (padrão)</li><li>Ponto e vírgula</li><li>Dois-pontos</li><li>Estágio</li><li>Ponto</li><li>Espaço</li><li>Tabulação</li></ul> |
 |  | Mostrar anotações | Escolha se as anotações estão visíveis em seus projetos. Para obter mais informações sobre anotações, consulte [Visão geral de anotações](/help/components/annotations/overview.md). |
 
