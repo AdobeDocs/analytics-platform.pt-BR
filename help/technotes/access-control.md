@@ -63,7 +63,7 @@ Além de ser adicionado como administrador de produto no **Perfil de produto do 
   | [!UICONTROL Gerenciamento de dados] | [!UICONTROL Visualizar conjuntos de dados] | Acesso somente leitura para conjuntos de dados e esquemas. |
   | [!UICONTROL Identity Management] | [!UICONTROL Exibir namespaces de identidade] | Acesso somente leitura para namespaces de identidade. |
 
-  Para obter mais informações sobre Experience Platform permissões, consulte [Gerenciar permissões para um perfil](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/permissions) de produto.
+  Para obter mais informações sobre Experience Platform permissões, consulte [Gerenciar permissões para um perfil](https://experienceleague.adobe.com/pt-br/docs/experience-platform/access-control/ui/permissions) de produto.
 
 
 * Se o Journey Optimizer estiver integrado ao Customer Journey Analytics, onde existem Conexões do Journey Optimizer, as permissões do Jornada também deverão ser adicionadas para acessar Conexões:
@@ -84,13 +84,13 @@ Além de ser adicionado como administrador de produto no **Perfil de produto do 
   | [!UICONTROL Destinos] | [!UICONTROL Gerenciar destinos] | Acesso para ler, criar e excluir conexões de destino e contas de destino. |
   | [!UICONTROL Destinos] | [!UICONTROL Ativar destinos] | Permitir que os usuários ativem segmentos para destinos existentes. Ativa a etapa de mapeamento na fluxo de Trabalho de ativação. Essa permissão também exige que os Exibir Destinos permissão sejam concedidos ao usuário que deseja ativar dados para destinos. |
 
-  Para obter mais informações sobre Experience Platform permissões, consulte [Gerenciar permissões para um perfil](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/permissions) de produto.
+  Para obter mais informações sobre Experience Platform permissões, consulte [Gerenciar permissões para um perfil](https://experienceleague.adobe.com/pt-br/docs/experience-platform/access-control/ui/permissions) de produto.
 
 * Usar a [extensão BI](../data-views/bi-extension.md)
 
   Para os usuários usarem a extensão BI, um administrador de Produto
 
-   * deve garantir que as Experience Platform permissões para a usuário incluam uma função que tem o recurso serviço de consulta com as opções Gerenciar consultas e gerenciar integração do serviço de consulta. Para obter mais informações sobre Experience Platform permissões, consulte [Gerenciar permissões para um perfil](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/permissions) de produto.
+   * deve garantir que as Experience Platform permissões para a usuário incluam uma função que tem o recurso serviço de consulta com as opções Gerenciar consultas e gerenciar integração do serviço de consulta. Para obter mais informações sobre Experience Platform permissões, consulte [Gerenciar permissões para um perfil](https://experienceleague.adobe.com/pt-br/docs/experience-platform/access-control/ui/permissions) de produto.
 
      | Categoria | Permissão | Descrição |
      |---|---|---|
@@ -130,7 +130,7 @@ A guia **[!UICONTROL Permissões]** faz parte de cada perfil de produto no [Admi
 | [!UICONTROL Ferramentas de relatórios] | [!UICONTROL Criação de público-alvo] | Permitir que usuários criem [públicos-alvo](/help/components/audiences/audiences-overview.md). [Exige a gestão de segmentos](https://experienceleague.adobe.com/pt-br/docs/experience-platform/access-control/home) no Adobe Experience Platform. |
 | [!UICONTROL Ferramentas de relatórios] | [!UICONTROL Contar histórias de dados] | Permita que os usuários [gerem slide apresentações com base em projetos Área de trabalho.](/help/analysis-workspace/curate-share/generate-slides.md)<p>A storytelling de dados está na fase de testes limitados de lançamento e pode não estar disponível ainda em seu ambiente. Essa observação será removida quando a funcionalidade estiver em disponibilidade geral. Para obter informações sobre o processo de lançamento do Customer Journey Analytics, consulte [Lançamentos de recursos do Customer Journey Analytics](/help/release-notes/releases.md).</p> |
 | [!UICONTROL Ferramentas de relatórios] | [!UICONTROL Acesso aos logs de auditoria] | Imponha a verificação permissão na [API](https://developer.adobe.com/cja-apis/docs/endpoints/auditlogs/) e nos logs de auditoria interface. |
-| [!UICONTROL Ferramentas de relatórios] | [!UICONTROL Compartilhar Links De Projeto Com Qualquer Pessoa] | Permita que usuários [compartilhem projetos com qualquer um.](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/curate-share/share-projects) |
+| [!UICONTROL Ferramentas de relatórios] | [!UICONTROL Compartilhar Links De Projeto Com Qualquer Pessoa] | Permita que usuários [compartilhem projetos com qualquer um.](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-workspace/curate-share/share-projects) |
 | [!UICONTROL Ferramentas de relatórios] | [!UICONTROL Previsão] | Permitir que os usuários acessem o [recurso de](../analysis-workspace/c-forecast/forecasting.md) Previsão no Analysis Workspace |
 | [!UICONTROL Ferramentas de relatórios] | [!UICONTROL Assistente de IA: conhecimento do produto] | Permitir que os usuários acessem o [Assistente](../ai-assistant.md) de IA para obter conhecimento do produto. |
 | [!UICONTROL Ferramentas de relatórios] | [!UICONTROL Legendas inteligentes] | Permitir que os usuários acessem [legendas](/help/analysis-workspace/visualizations/intelligent-captions.md) inteligentes. |
