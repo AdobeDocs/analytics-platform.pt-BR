@@ -33,7 +33,7 @@ Para adicionar um usuário como administrador de Produto:
 
 1. Selecione [!UICONTROL **Customer Journey Analytics**] > [!UICONTROL **Administradores**] guia > [!UICONTROL **Adicionar Administrador**].
 
-   Os usuários adicionados recebem as permissões[ padrão do administrador do ](#product-admin-default-permissions)Produto. Você também pode conceder a eles [permissões](#product-admin-additional-permissions) adicionais, se necessário.
+   Os usuários adicionados recebem as permissões[&#x200B; padrão do administrador do &#x200B;](#product-admin-default-permissions)Produto. Você também pode conceder a eles [permissões](#product-admin-additional-permissions) adicionais, se necessário.
 
 #### Permissões padrão do administrador de produto
 
