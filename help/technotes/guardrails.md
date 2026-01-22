@@ -5,16 +5,16 @@ solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
-source-git-commit: c965d836e8e3795d8ba7660594d3fe373781cb43
+source-git-commit: 687fb6a9f829bf38b91f394e7df811844be6926b
 workflow-type: tm+mt
-source-wordcount: '2087'
+source-wordcount: '2277'
 ht-degree: 7%
 
 ---
 
 # Medidas de proteção do Customer Journey Analytics
 
-Este documento fornece limites para vários componentes do Customer Journey Analytics. Para obter Medidas de Proteção, Parâmetros de Escopo e Direitos, consulte a [Descrição do Produto para o Customer Journey Analytics](https://helpx.adobe.com/br/legal/product-descriptions/customer-journey-analytics.html), a [Descrição do Produto para o Complemento do Adobe Analytics: Customer Journey Analytics](https://helpx.adobe.com/br/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html) ou a [Descrição do Produto para o Customer Journey Analytics B2B edition](https://helpx.adobe.com/br/legal/product-descriptions/customer-journey-analytics-b2b.html).
+Este documento fornece limites para vários componentes do Customer Journey Analytics. Para obter Medidas de Proteção, Parâmetros de Escopo e Direitos, consulte a [Descrição do Produto para o Customer Journey Analytics](https://helpx.adobe.com/br/legal/product-descriptions/customer-journey-analytics.html), a [Descrição do Produto para o Complemento do Adobe Analytics: Customer Journey Analytics](https://helpx.adobe.com/br/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html) ou a [Descrição do Produto para o Customer Journey Analytics B2B edition](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics-b2b.html).
 
 ## Tipos de limite
 
@@ -92,7 +92,7 @@ Alguns dos recursos e seu valor associado para o limite dependem do pacote do Cu
 
 {style="table-layout:auto"}
 
-Consulte também [Proteções da Real-time Customer Data Platform](https://experienceleague.adobe.com/pt-br/docs/experience-platform/rtcdp/guardrails/overview) da Experience Platform.
+Consulte também [Proteções da Real-time Customer Data Platform](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/guardrails/overview) da Experience Platform.
 
 
 ## Expiração automatizada do conjunto de dados
@@ -134,11 +134,12 @@ Consulte também [Proteções da Real-time Customer Data Platform](https://exper
 | Cadeias de Caracteres Exclusivas | 10 milhões - 1 bilhão | Proteção imposta pelo sistema | Número máximo de chaves exclusivas por conjunto de dados de pesquisa. Depende do pacote do Customer Journey Analytics (consulte Descrição do produto).<ul><li>Fundação: 10 milhões.</li><li>Select: 100 milhões.</li><li>Prime: 250 milhões.</li><li>Ultimate: 1 bilhão</li><ul> |
 | Linhas por pessoa | 1 milhão | Proteção imposta pelo sistema | Número máximo de linhas por ID de pessoa única em um determinado mês em uma conexão. |
 | Linhas por dia | 2,5 bilhões | Proteção de desempenho | Número médio máximo de linhas por dia em uma conexão. |
+| Linhas por conexão por ano | Varia de acordo com o data center atribuído (consulte a descrição para obter mais informações) | Proteção de desempenho | O limite de linha recomendado por ano em uma conexão. Os limites listados abaixo são aproximados a partir de janeiro de 2026 e aumentarão com o tempo para permitir mais linhas por conexão. Se você espera exceder esses limites, entre em contato com a equipe de conta da Adobe para discutir configurações alternativas. <p>O limite de linha varia dependendo do data center atribuído, da seguinte maneira:</p><ul><li>**EUA Azure (padrão para clientes dos EUA)**: aproximadamente 500 bilhões (cerca de 42 bilhões por mês)</li><li>**EUA AWS (disponível por solicitação para clientes dos EUA)**: aproximadamente 30 bilhões (cerca de 2,5 bilhões por mês)</li><li>**Amsterdã**: aproximadamente 200 bilhões (cerca de 16,5 bilhões por mês)</li><li>**Todos os outros data centers**: 25 bilhões (cerca de 2 bilhões por mês)</li></ul></p><p>As organizações escolhem seu data center da Experience Platform quando compram inicialmente o Experience Platform. Normalmente, essa decisão se baseia nos requisitos de soberania e residência de dados. Todos os casos de uso do AEP+Apps (não apenas volumes de linhas no Customer Journey Analytics) devem ser considerados ao escolher um data center.</p><p>Para obter informações sobre como visualizar a qual data center você está atribuído, consulte [locais de hospedagem do Customer Journey Analytics](/help/technotes/data-centers.md)</p> |
 | Tamanho da linha | 2 | Proteção de desempenho / Proteção imposta pelo sistema | Tamanho médio em quilobytes por linha de dados assimilados na Customer Journey Analytics (limite flexível). Um limite estático para o tamanho da linha é determinado pelas Medidas de proteção para assimilação de dados no Experience Platform. |
 
 {style="table-layout:auto"}
 
-Consulte também [Medidas de proteção para assimilação de dados](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=pt-BR) do Experience Platform.
+Consulte também [Medidas de proteção para assimilação de dados](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html) do Experience Platform.
 
 
 ## Exportação de dados de destinos
@@ -150,7 +151,7 @@ Consulte também [Medidas de proteção para assimilação de dados](https://exp
 
 {style="table-layout:auto"}
 
-Consulte também [Medidas de proteção de exportação do conjunto de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/guardrails#dataset-exports) do Experience Platform
+Consulte também [Medidas de proteção de exportação do conjunto de dados](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails#dataset-exports) do Experience Platform
 
 
 ## Zona de aterrissagem de dados
@@ -266,7 +267,7 @@ Consulte também [Medidas de proteção de exportação do conjunto de dados](ht
 
 >[!NOTE]
 >
->Os tempos de processamento abaixo são Medidas de proteção, não contratos de nível de serviço (SLAs). A latência varia dependendo da configuração do cliente, dos volumes de dados e dos aplicativos do consumidor. Os tempos de processamento real geralmente são mais rápidos. Consulte seu contrato com a Customer Journey Analytics para obter os termos contratuais e SLAs específicos. Consulte [Medidas de proteção para assimilação de dados](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=pt-BR) do Experience Platform para obter mais informações.
+>Os tempos de processamento abaixo são Medidas de proteção, não contratos de nível de serviço (SLAs). A latência varia dependendo da configuração do cliente, dos volumes de dados e dos aplicativos do consumidor. Os tempos de processamento real geralmente são mais rápidos. Consulte seu contrato com a Customer Journey Analytics para obter os termos contratuais e SLAs específicos. Consulte [Medidas de proteção para assimilação de dados](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html) do Experience Platform para obter mais informações.
 
 | Fluxo de dados | Latência esperada |
 |---|---|
@@ -283,7 +284,7 @@ Consulte também [Medidas de proteção de exportação do conjunto de dados](ht
 
 | Latências do relatório em tempo real | Latência esperada |
 |---|---|
-| Edge Network SDK / APIs na Edge Network | &lt; 7 minutos |
+| Edge Network SDK/APIs na Edge Network | &lt; 7 minutos |
 | Conectores de transmissão | &lt; 17 minutos |
 | Conector de origem do Adobe Analytics | &lt; 17 minutos |
 | Outros conectores de origem (incluindo dados em lote) | &lt; 25 horas |
