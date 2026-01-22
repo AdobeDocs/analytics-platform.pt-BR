@@ -24,7 +24,7 @@ ht-degree: 94%
 
 -->
 
-Você pode criar e publicar públicos-alvo descobertos no Customer Journey Analytics no [Perfil de cliente em tempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html) no Adobe Experience Platform para direcionamento e personalização de clientes.
+Você pode criar e publicar públicos-alvo descobertos no Customer Journey Analytics no [Perfil de cliente em tempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=pt-BR) no Adobe Experience Platform para direcionamento e personalização de clientes.
 
 <!-- add this when Audience Analysis releases: (For information about ingesting audience membership data from Experience Platform Profile datasets into a Customer Journey Analytics connection, see [Audience analysis overview](/help/connections/audience-analysis/audience-analysis-overview.md).) -->
 
