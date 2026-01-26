@@ -4,7 +4,7 @@ title: Usar modelos
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: e9799941256524ef148513fb16835a031b241e44
+source-git-commit: 9b941deb424d92744bea99f6ea01f6434d6bc19f
 workflow-type: tm+mt
 source-wordcount: '20935'
 ht-degree: 96%
@@ -1123,3 +1123,5 @@ Estes são os modelos disponíveis:
 >id="template--mixModelerReport"
 >title="Visualize insights de modelos selecionados gerados pelo Mix Modeler."
 >abstract="**Isso pode ajudá-lo** a entender melhor os insights incrementais dos modelos gerados no Mix Modeler. <br/>**Com base nesses insights**, você poderá:<ul><li>Visualize e quantifique o impacto das atividades de marketing de sua organização.</li><li>Identifique quais canais têm alto desempenho.</li><li>Identifique quais canais podem precisar de otimização.</li></ul>"
+
+
