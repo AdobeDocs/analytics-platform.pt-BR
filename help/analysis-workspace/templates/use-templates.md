@@ -4,10 +4,10 @@ title: Usar modelos
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 3f369122863df4f3fc339730ced8c193360d07c6
+source-git-commit: e9799941256524ef148513fb16835a031b241e44
 workflow-type: tm+mt
-source-wordcount: '20877'
-ht-degree: 97%
+source-wordcount: '20935'
+ht-degree: 96%
 
 ---
 
@@ -1113,3 +1113,13 @@ Estes são os modelos disponíveis:
 | [!UICONTROL **Visão geral do engajamento de contas B2B**] | Confira o nível de atividade das suas contas em eventos, pessoas e oportunidades.<p>**Isso pode ajudar** a entender melhor se o engajamento no nível das contas está aumentando ou diminuindo, comparar a atividade entre as contas e decidir onde concentrar os esforços de retenção ou aquisição.</p><p>**Com base no que você aprender, será possível**, entre outras coisas, redirecionar sua atenção para as contas menos engajadas, mas que exigem mais atenção devido à sua importância.</p> |
 | [!UICONTROL **Visão geral do engajamento de oportunidades B2B**] | Monitore o engajamento no nível das oportunidades e destaque as negociações que estão ganhando ou perdendo tração.<p>**Isso pode ajudar** a prever com mais precisão a progressão dos negócios e a focar sua atenção nos casos em que há picos ou interrupções no engajamento.</p><p>**Com base no que você aprender, será possível**, entre outras coisas, dedicar alguns esforços adicionais a ofertas que estão quase fechadas e pesquisar por que outras ofertas estão perdendo tração.</p> |
 | [!UICONTROL **Atividade de grupos de compra B2B**] | Visualize a atividade de grupos de compra em cada conta para informar as opções de marketing por conta e por grupo de compra.<p>**Isso pode ajudar** a visualizar quais grupos de compra e quais pessoas dentro desses grupos estão mais engajadas, destacando as lacunas na participação dos grupos.</p><p>**Com base no que você aprender, será possível**, entre outras coisas, tentar engajar mais as pessoas em grupos de compra que parecem não estar engajados.</p> |
+
+
+### Modelos do Mix Modeler {#mix-modeler-templates}
+
+<!-- CJA only -->
+
+>[!CONTEXTUALHELP]
+>id="template--mixModelerReport"
+>title="Visualize insights de modelos selecionados gerados pelo Mix Modeler."
+>abstract="**Isso pode ajudá-lo** a entender melhor os insights incrementais dos modelos gerados no Mix Modeler. <br/>**Com base nesses insights**, você poderá:<ul><li>Visualize e quantifique o impacto das atividades de marketing de sua organização.</li><li>Identifique quais canais têm alto desempenho.</li><li>Identifique quais canais podem precisar de otimização.</li></ul>"
