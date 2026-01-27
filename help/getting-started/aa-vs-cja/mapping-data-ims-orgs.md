@@ -50,7 +50,7 @@ Para configurar e habilitar o recurso *mapear dados do Analytics de várias orga
 
 Depois que o gerente de conta da Adobe recebe o email com a solicitação para mapear dados do Analytics de várias organizações, a solicitação é revisada no Adobe. O gerente de conta da Adobe entra em contato com você para esclarecer dúvidas adicionais, treinamentos opcionais e outras informações.
 
-Depois de aprovado, o mapeamento solicitado é criado e você é notificado. O nome da organização IMS de origem está anexado ao nome do conjunto de relatórios na [lista dos conjuntos de relatórios do Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#select-data) no Experience Platform.
+Depois de aprovado, o mapeamento solicitado é criado e você é notificado. O nome da organização IMS de origem está anexado ao nome do conjunto de relatórios na [lista dos conjuntos de relatórios do Analytics](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#select-data) no Experience Platform.
 
 
 ## Limitações
@@ -70,7 +70,7 @@ Considere os seguintes tópicos antes de solicitar o *mapeamento de dados do Ana
 
 Depois que o recurso *mapear dados do Analytics de várias organizações IMS* for aprovado, você poderá adicionar dados à Experience Platform para um ou mais conjuntos de relatórios na organização IMS de destino. Faça isso por meio da configuração do [conector de origem do Analytics](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics). Os conjuntos de dados do Target são criados na Experience Platform. Como parte dessa configuração e processo, você tem a opção de enviar dados de perfil de um ou mais conjuntos de relatórios para o serviço de Perfil.
 
-Estime o número total de perfis que são o resultado da configuração e do processo, conforme descrito acima. Verifique se o número total está dentro do número de perfis aos quais você tem direito por contrato para a organização de destino. Aplique [regras e condições de filtragem](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#filtering-for-profile){target="_blank"} para incluir ou excluir dados seletivamente da assimilação para o serviço de Perfil. Ou desative a opção para enviar dados de perfil ao serviço de Perfil para conjuntos de relatórios relevantes.
+Estime o número total de perfis que são o resultado da configuração e do processo, conforme descrito acima. Verifique se o número total está dentro do número de perfis aos quais você tem direito por contrato para a organização de destino. Aplique [regras e condições de filtragem](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics#filtering-for-profile){target="_blank"} para incluir ou excluir dados seletivamente da assimilação para o serviço de Perfil. Ou desative a opção para enviar dados de perfil ao serviço de Perfil para conjuntos de relatórios relevantes.
 
 
 ### Compilação
