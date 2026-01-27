@@ -4,29 +4,23 @@ description: Saiba mais sobre o conceito de publicação de público-alvo no Cus
 exl-id: 30404bfc-0ee7-4f01-842c-7e6156dc0b45
 feature: Audiences
 role: User, Admin
-source-git-commit: 3f369122863df4f3fc339730ced8c193360d07c6
+source-git-commit: e59bb52d5e9d79ba72036d5a00ed8abc69dcf735
 workflow-type: tm+mt
-source-wordcount: '434'
-ht-degree: 94%
+source-wordcount: '517'
+ht-degree: 79%
 
 ---
 
 # Visão geral da publicação de públicos-alvo
 
-<!--
-
 >[!NOTE]
 >
->Understand the difference between audience analysis and audience publishing:
+>Entenda a diferença entre a análise de público-alvo e a publicação de público-alvo:
 >
->* **Audience analysis**: Allows you to ingest audience membership data from Experience Platform Profile datasets into a Customer Journey Analytics connection. For information about audience analysis, see [Audience analysis overview](/help/connections/audience-analysis/audience-analysis-overview.md).
->* **Audience publishing**: Allows you to create and publish audiences discovered in Customer Journey Analytics to Adobe Experience Platform for customer targeting and personalization. 
+>* **Análise de público-alvo**: permite assimilar dados de associação de público-alvo de conjuntos de dados do Perfil do Experience Platform em uma conexão do Customer Journey Analytics. Para obter informações sobre análise de público-alvo, consulte [Visão geral da análise de público-alvo](/help/connections/audience-analysis/audience-analysis-overview.md).
+>* **Publicação de público-alvo**: permite criar e publicar públicos-alvo descobertos no Customer Journey Analytics na Adobe Experience Platform para direcionamento e personalização de clientes.
 
--->
-
-Você pode criar e publicar públicos-alvo descobertos no Customer Journey Analytics no [Perfil de cliente em tempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=pt-BR) no Adobe Experience Platform para direcionamento e personalização de clientes.
-
-<!-- add this when Audience Analysis releases: (For information about ingesting audience membership data from Experience Platform Profile datasets into a Customer Journey Analytics connection, see [Audience analysis overview](/help/connections/audience-analysis/audience-analysis-overview.md).) -->
+Você pode criar e publicar públicos-alvo descobertos no Customer Journey Analytics no [Perfil de cliente em tempo real](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html) no Adobe Experience Platform para direcionamento e personalização de clientes. (Para obter informações sobre como assimilar dados de associação de público-alvo de conjuntos de dados de perfil da Experience Platform em uma conexão do Customer Journey Analytics, consulte [Visão geral da análise de público-alvo](/help/connections/audience-analysis/audience-analysis-overview.md).)
 
 A publicação de públicos-alvo fornece uma maneira clara de ativar e executar ações baseadas nos insights encontrados no Customer Journey Analytics.  Essas ações podem incluir:
 
