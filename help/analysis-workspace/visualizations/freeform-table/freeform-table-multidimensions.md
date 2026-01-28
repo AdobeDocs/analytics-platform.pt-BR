@@ -3,12 +3,10 @@ title: Incluir várias dimensões em uma tabela de forma livre
 description: Saiba como incluir várias dimensões em uma tabela de forma livre
 feature: Visualizations
 role: User
-hide: true
-hidefromtoc: true
-source-git-commit: 77acfaf2d186e7fe7d6b9d973af5dedb3956f5d5
+source-git-commit: e51dced9ac7886ae8d087ca3b2fc6ac2755c3ac6
 workflow-type: tm+mt
-source-wordcount: '1277'
-ht-degree: 2%
+source-wordcount: '829'
+ht-degree: 1%
 
 ---
 
@@ -59,95 +57,11 @@ A seguir, veja como essa tabela aparece no Analysis Workspace:
 
 1. Exibir cada linha da tabela como um único item de dimensão. Para obter mais informações, consulte [Itens de dimensão concatenados](#concatenated-dimension-items).
 
-## Filtrar tabelas
+## Filtrar e classificar tabelas
 
-É possível aplicar filtros a uma ou mais colunas de dimensão em uma tabela de forma livre.
+É possível aplicar filtragem e classificação às colunas em uma tabela de forma livre. Você pode classificar os dados de uma tabela de forma livre por qualquer coluna, sejam dimensões ou métricas. Você pode até mesmo classificar por várias colunas ao mesmo tempo.
 
-Para obter informações sobre como filtrar tabelas, consulte [Filtrar tabelas](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md#filter-tables) em [Filtrar e classificar tabelas de forma livre](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).
-
-## Classificar tabelas {#sort-tables}
-
-<!--At GA, move this section into the "Filter and sort tables" article and replace the current "Sort tables" section. Change the "Filter tables" section above to "Filter and sort tables" and link to the other article. Also add row to Guardrails -->
-
-Você pode classificar os dados de uma tabela de forma livre por qualquer coluna no Analysis Workspace, sejam dimensões ou métricas.
-
-Por padrão, as dimensões são classificadas em ordem crescente e as métricas são classificadas em ordem decrescente.
-
-### Classificar tabelas por uma única coluna
-
-Ao classificar os dados de uma única coluna conforme descrito nesta seção, qualquer [classificação avançada](#sort-tables-by-multiple-columns-advanced-sorting) aplicada à tabela é removida.
-
-Para classificar dados em tabelas por uma única coluna:
-
-1. Passe o mouse sobre o cabeçalho da coluna que você deseja classificar, em seguida, selecione o ícone **Classificar** ![Classificar](/help/assets/icons/SortOrderDown.svg) quando ele aparecer.
-
-   ![Menu suspenso Classificar](assets/sort-dropdown-menu.png)
-
-1. Selecione **[!UICONTROL Crescente]** ou **[!UICONTROL Decrescente]**.
-
-   O ícone de classificação permanece visível quando a classificação é aplicada à coluna. Uma seta indica como os dados são classificados (![Classificar](/help/assets/icons/SortOrderUp.svg) para crescente ou ![Classificar](/help/assets/icons/SortOrderDown.svg) para decrescente).
-
-### Classificar tabelas por várias colunas (Classificação avançada)
-
-<!-- add this back in when move this section back to the filter and sort article: {{release-limited-testing-section}} -->
-
-#### Aplicar classificação a várias colunas
-
-Para classificar dados em tabelas por várias colunas:
-
-1. Passe o mouse sobre o cabeçalho de qualquer coluna que você deseja classificar, em seguida, selecione o ícone **Classificar** ![Classificar](/help/assets/icons/SortOrderDown.svg) quando ele aparecer.
-
-   ![Menu suspenso Classificar](assets/sort-dropdown-menu.png)
-
-1. Selecione **[!UICONTROL Classificação avançada]**.
-
-   ![Caixa de diálogo de classificação avançada](assets/sort-advanced-dialog.png)
-
-1. Na caixa de diálogo Classificação avançada, siga um destes procedimentos:
-
-   * Adicione colunas que ainda não estão sendo classificadas selecionando o botão **[!UICONTROL Adicionar coluna de classificação]**.
-
-   * Remova as colunas que você não deseja mais classificar selecionando o ícone **Remover** ![Remover](/help/assets/icons/Close.svg).
-
-   * Arraste as colunas para cima ou para baixo na lista para ajustar a prioridade de classificação.
-
-     Para obter mais informações, consulte [Prioridade de classificação](#sort-priority).
-
-   * Altere o valor de classificação, selecionando **[!UICONTROL Crescente]** ou **[!UICONTROL Decrescente]** no menu suspenso.
-
-   * Selecione uma coluna diferente selecionando o menu drop-down nome da coluna.
-
-1. Selecione **[!UICONTROL Aplicar]**.
-
-O ícone de classificação permanece visível quando a classificação é aplicada a uma coluna. Uma seta indica como os dados são classificados (![Classificar](/help/assets/icons/SortOrderUp.svg) para crescente ou ![Classificar](/help/assets/icons/SortOrderDown.svg) para decrescente).
-
-![exemplo de multiclassificação](assets/dimensions-multiple-sort.png)
-
-#### Prioridade de classificação
-
-Quando você classifica dados para várias colunas, os dados são classificados de acordo com a prioridade atribuída a cada coluna. A numeração de prioridade é exibida ao lado do ícone de classificação ![ícone de prioridade de classificação](assets/sort-priority-icon.png).
-
-A coluna com a prioridade primária decide a ordem principal; a coluna com a prioridade secundária decide a ordem quando as linhas têm o mesmo valor na coluna primária; a coluna com a prioridade terciária decide a ordem quando as linhas têm o mesmo valor nas colunas primária e secundária; e assim por diante.
-
-Por exemplo, considere uma tabela com as seguintes colunas:
-
-* Dia do mês (dimensão)
-
-* Hora do dia (dimensão)
-
-* Eventos (métrica)
-
-Você pode atribuir uma prioridade de classificação a cada coluna, da seguinte maneira:
-
-| Nome da coluna (componente) | Tipo de componente | Prioridade de classificação |
-|---------|----------|---------|
-| Dia do mês | Dimensão | 1 |
-| Hora do dia | Dimensão | 2 |
-| Eventos | Métrica | 3 |
-
-Ao atribuir uma prioridade de classificação a cada coluna, é possível controlar exatamente como os dados são exibidos na tabela. Neste exemplo, as informações são classificadas primeiro por Dia do mês, em seguida por Hora do dia e finalmente por Eventos.
-
-![exemplo de multiclassificação](assets/dimensions-multiple-sort.png)
+Para obter informações, consulte [Filtrar e classificar tabelas de forma livre](/help/analysis-workspace/visualizations/freeform-table/filter-and-sort.md).
 
 ## Várias colunas e detalhamentos de dimensão
 

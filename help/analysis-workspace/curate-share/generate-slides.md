@@ -4,22 +4,19 @@ keywords: Analysis Workspace
 title: Gerar apresentações a partir de relatórios do Workspace
 feature: Curate and Share
 role: User
-source-git-commit: 06e6dd99d318812447d903f2e14e4daba80d4957
+source-git-commit: e51dced9ac7886ae8d087ca3b2fc6ac2755c3ac6
 workflow-type: tm+mt
-source-wordcount: '1694'
-ht-degree: 5%
+source-wordcount: '1699'
+ht-degree: 4%
 
 ---
 
 # Narrativa de dados: gere apresentações de slides a partir de relatórios do Workspace {#generate-powerpoint}
 
->[!AVAILABILITY]
+>[!NOTE]
 >
->A Data Storytelling é uma habilidade sob a [Data Insights Agent](/help/data-analysis-ai.md). Essa funcionalidade está na fase de Teste limitado da versão e pode ainda não estar disponível em seu ambiente. Essa observação será removida quando a funcionalidade estiver em disponibilidade geral. Para obter informações sobre o processo de lançamento do Customer Journey Analytics, consulte [Lançamentos de recursos do Customer Journey Analytics](/help/release-notes/releases.md).
+>A Data Storytelling é uma habilidade no Data Insights Agent e está disponível para clientes qualificados por um tempo limitado. O acesso ao Data Insights Agent terminará em 28 de fevereiro de 2026. Para continuar usando o Data Insights Agent ou outros agentes da Adobe Experience Platform sem interrupção, entre em contato com o representante de conta da Adobe para saber mais sobre como licenciar o Adobe Experience Platform Agent Orchestrator.
 
-<!-- also remove lmited testing note from: /help/technotes/access-control.md -->
-
-<!--at GA in January, replace Limited Testing note with this: Data Storytelling is a skill under Data Insights Agent and is available to eligible customers for a limited time. Access to Data Insights Agent will end on 28th February 2026. To continue using Data Insights Agent or other Adobe Experience Platform Agents without interruption, please contact your Adobe account representative to learn more about licensing Adobe Experience Platform Agent Orchestrator. -->
 
 Usuários com [as permissões necessárias](#permission-requirements-to-generate-slides) podem gerar automaticamente apresentações .pptx com base em projetos do Analysis Workspace. Ao gerar essas apresentações de slides, a Customer Journey Analytics cria automaticamente uma história com base em seus dados, identificando os principais insights e convertendo-os em slides prontos para as partes interessadas.
 
