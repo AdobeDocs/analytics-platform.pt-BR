@@ -4,10 +4,10 @@ title: Filtrar e Classificar
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-source-git-commit: e51dced9ac7886ae8d087ca3b2fc6ac2755c3ac6
+source-git-commit: 696bd0db44949162307d8ce7d2debed351a76cd6
 workflow-type: tm+mt
-source-wordcount: '1577'
-ht-degree: 45%
+source-wordcount: '1575'
+ht-degree: 46%
 
 ---
 
@@ -17,7 +17,7 @@ As tabelas de forma livre do Analysis Workspace são a base para a análise inte
 
 <!--The following video covers filter and sort options in Analysis Workspace, in addition to pagination options:
 
->[!VIDEO](https://video.tv.adobe.com/v/30795?captions=por_br)-->
+>[!VIDEO](https://video.tv.adobe.com/v/23968)-->
 
 ## Filtrar tabelas
 
@@ -188,7 +188,7 @@ O ícone de classificação permanece visível quando a classificação é aplic
 
 #### Prioridade de classificação
 
-Quando você classifica dados para várias colunas, os dados são classificados de acordo com a prioridade atribuída a cada coluna. A numeração de prioridade é exibida ao lado do ícone de classificação ![ícone de prioridade de classificação](assets/sort-priority-icon.png).
+Quando você classifica dados para várias colunas, os dados são classificados de acordo com a prioridade atribuída a cada coluna. A numeração de prioridade é exibida ao lado do ícone de classificação ![SortOrderDown](/help/assets/icons/SortOrderDown.svg)<sup>➊</sup>.
 
 A coluna com a prioridade primária decide a ordem principal; a coluna com a prioridade secundária decide a ordem quando as linhas têm o mesmo valor na coluna primária; a coluna com a prioridade terciária decide a ordem quando as linhas têm o mesmo valor nas colunas primária e secundária; e assim por diante.
 

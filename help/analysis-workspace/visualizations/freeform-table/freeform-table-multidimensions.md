@@ -3,7 +3,7 @@ title: Incluir várias dimensões em uma tabela de forma livre
 description: Saiba como incluir várias dimensões em uma tabela de forma livre
 feature: Visualizations
 role: User
-source-git-commit: e51dced9ac7886ae8d087ca3b2fc6ac2755c3ac6
+source-git-commit: 696bd0db44949162307d8ce7d2debed351a76cd6
 workflow-type: tm+mt
 source-wordcount: '829'
 ht-degree: 1%
@@ -116,3 +116,4 @@ As combinações de dimensão a seguir não são compatíveis, e o Analysis Work
 * Várias dimensões que são de campos que fazem referência a diferentes [matrizes de objetos](/help/use-cases/object-arrays.md) usadas juntas na mesma tabela de forma livre.
 
   Várias dimensões são permitidas juntas na mesma tabela de forma livre se referenciarem a mesma matriz de objetos.
+
