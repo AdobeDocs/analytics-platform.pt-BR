@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: b9b73926-6502-4a48-ba73-c784f80950d3
-source-git-commit: 359fe2a718ccef816377083aceb2652b4a905072
+source-git-commit: 99b434e62d859c96bfda53731f3f8a0750850501
 workflow-type: tm+mt
-source-wordcount: '1181'
+source-wordcount: '1191'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,12 @@ Embora esses métodos de análise possam ser usados para a compilação em campo
 >
 >A (validação da) compilação de um ou mais conjuntos de dados contribui, em última análise, para melhorar a análise e os insights. No entanto, este artigo não discute o valor geral de uma configuração do Customer Journey Analytics que tem todos os conjuntos de dados no Experience Platform alinhados ao mesmo namespace de identidade. E que todos esses conjuntos de dados estejam bem unidos para realizar análises em toda a jornada do cliente.
 
+
+>[!BEGINSHADEBOX]
+
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Habilitação e validação de compilação](https://video.tv.adobe.com/v/3478120?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
+
+>[!ENDSHADEBOX]
 
 ## Pré-requisitos da visualização de dados
 
