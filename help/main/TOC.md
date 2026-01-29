@@ -9,10 +9,10 @@ index: true
 user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Saiba mais sobre o Adobe Customer Journey Analytics e como usar o Analysis Workspace com dados da Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
-source-git-commit: d117ba255151f730e0b5e4958ee56f5ffc88ade9
+source-git-commit: a8c158e66b66f2110df12fac794b2223f1922b1f
 workflow-type: tm+mt
-source-wordcount: '1321'
-ht-degree: 99%
+source-wordcount: '1363'
+ht-degree: 96%
 
 ---
 
@@ -340,7 +340,7 @@ ht-degree: 99%
       + [Gerenciar anotações](../components/annotations/manage-annotations.md)
       + [Exibir anotações](../components/annotations/view-annotations.md)
       + [Anotações de cartão de pontuação](../components/annotations/mobile-annotations.md)
-   + Publicação para público-alvo {#audiences}
+   + Publicação de públicos-alvo {#audiences}
       + [Visão geral da publicação de públicos-alvo](../components/audiences/audiences-overview.md)
       + [Criar e publicar públicos-alvo](../components/audiences/publish.md)
       + [Gerenciar públicos publicados](../components/audiences/manage.md)
@@ -494,7 +494,24 @@ ht-degree: 99%
       + [Casos de uso de visualizações de dados](/help/use-cases/data-views/data-views-usecases.md)
       + [Uso de dimensões e métricas de ligação](/help/use-cases/data-views/binding-dimensions-metrics.md)
       + [Usar dados de resumo](/help/use-cases/data-views/summary-data.md)
-      + [Casos de uso da extensão do BI](/help/use-cases/data-views/bi-extension-usecases.md)
+      + Extensão BI {#bi-extension}
+         + [Casos de uso](/help/use-cases/data-views/bi-extension-usecases.md)
+         + [Conectar e listar visualizações de dados](/help/use-cases/data-views/bi-extension/connect-and-validate.md)
+         + [Tendência diária](/help/use-cases/data-views/bi-extension/daily-trend.md)
+         + [Tendência horária](/help/use-cases/data-views/bi-extension/hourly-trend.md)
+         + [Tendência mensal](/help/use-cases/data-views/bi-extension/monthly-trend.md)
+         + [Dimensão única classificada](/help/use-cases/data-views/bi-extension/single-dimension-ranked.md)
+         + [Várias dimensões classificadas](/help/use-cases/data-views/bi-extension/multiple-dimension-ranked.md)
+         + [Contar valores de dimensão distintos](/help/use-cases/data-views/bi-extension/count-distinct-dimension-values.md)
+         + [Usar nomes de intervalo de datas para filtrar](/help/use-cases/data-views/bi-extension/use-date-range-names-to-filter.md)
+         + [Usar nomes de segmento para segmentar](/help/use-cases/data-views/bi-extension/use-segment-names-to-segment.md)
+         + [Usar valores de dimensão para segmentar](/help/use-cases/data-views/bi-extension/use-dimension-values-to-segment.md)
+         + [Classificar](/help/use-cases/data-views/bi-extension/sort.md)
+         + [Limites](/help/use-cases/data-views/bi-extension/limits.md)
+         + [Transformações](/help/use-cases/data-views/bi-extension/transformations.md)
+         + [Visualizações](/help/use-cases/data-views/bi-extension/visualizations.md)
+         + [Avisos](/help/use-cases/data-views/bi-extension/caveats.md)
+
    + Campos derivados {#derived-fields}
       + [Relatório sobre tráfego gerado por LLM e IA](/help/use-cases/ai-traffic.md)
       + [Relatório de metas](../use-cases/goals-using-derived-fields.md)

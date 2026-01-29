@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: User
 exl-id: 3d1e3b79-402d-44ff-86b3-be9fd5494e19
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 0962f64e9bc0fed89f52191bebe6dd0e14bde61d
 workflow-type: tm+mt
-source-wordcount: '14700'
+source-wordcount: '256'
 ht-degree: 2%
 
 ---
@@ -25,26 +25,26 @@ Este artigo documenta como realizar vários casos de uso (15) usando a extensão
 Os seguintes casos de uso estão documentados:
 
 * **Conectar**
-   * [Conectar e listar visualizações de dados](#connect-and-validate)
+   * [Conectar e listar visualizações de dados](bi-extension/connect-and-validate.md)
 
 * **Relatório e análise**
-   * [Tendência diária](#daily-trend)
-   * [Tendência horária](#hourly-trend)
-   * [Tendência mensal](#monthly-trend)
-   * [Dimensão única classificada](#single-dimension-ranked)
-   * [Várias dimensões classificadas](#multiple-dimension-ranked)
-   * [Contar valores de dimensão distintos](#count-distinct-dimension-values)
-   * [Usar nomes de intervalo de datas para filtrar](#use-date-range-names-to-filter)
-   * [Usar nomes de segmento para segmentar](#use-segment-names-to-segment)
-   * [Usar valores de dimensão para segmentar](#use-dimension-values-to-segment)
-   * [Classificar](#sort)
-   * [Limites](#limits)
+   * [Tendência diária](bi-extension/daily-trend.md)
+   * [Tendência horária](bi-extension/hourly-trend.md)
+   * [Tendência mensal](bi-extension/monthly-trend.md)
+   * [Dimensão única classificada](bi-extension/single-dimension-ranked.md)
+   * [Várias dimensões classificadas](bi-extension/multiple-dimension-ranked.md)
+   * [Contar valores de dimensão distintos](bi-extension/count-distinct-dimension-values.md)
+   * [Usar nomes de intervalo de datas para filtrar](bi-extension/use-date-range-names-to-filter.md)
+   * [Usar nomes de segmento para segmentar](bi-extension/use-segment-names-to-segment.md)
+   * [Usar valores de dimensão para segmentar](bi-extension/use-dimension-values-to-segment.md)
+   * [Classificar](bi-extension/sort.md)
+   * [Limites](bi-extension/limits.md)
 
 * **Entender**
 
-   * [Transformações](#transformations)
-   * [Visualizações](#visualizations)
-   * [Avisos](#caveats)
+   * [Transformações](bi-extension/transformations.md)
+   * [Visualizações](bi-extension/visualizations.md)
+   * [Avisos](bi-extension/caveats.md)
 
 O caso de uso **conectar** se concentra em como conectar ferramentas de BI usando a extensão Customer Journey Analytics BI.
 
@@ -56,248 +56,249 @@ Os casos de uso **entender** fornecem mais detalhes sobre:
 * Semelhanças e diferenças de visualização entre as ferramentas de Customer Journey Analytics e BI.
 * Avisos sobre cada uma das ferramentas de BI que você deve estar ciente.
 
+<!-- Now documented in separate articles
 
-## Conectar e validar
+## Connect and validate
 
-Esse caso de uso configura a conexão da ferramenta de BI com o Customer Journey Analytics, lista as visualizações de dados disponíveis e seleciona uma visualização de dados para usar.
+This use case sets up the connection from the BI tool to Customer Journey Analytics, lists the available data views, and selects a data view to use. 
 
 +++ Customer Journey Analytics
 
-As instruções se referem a um ambiente de exemplo com os seguintes objetos:
+The instructions refer to an example environment with the following objects:
 
-* Exibição de dados: **[!UICONTROL C&amp;C - Exibição de Dados]** 🅐.
-* Dimensões: **[!UICONTROL Nome do Produto]** 🅑 e **[!UICONTROL Categoria do Produto]** 🅒.
-* Métricas: **[!UICONTROL Receita de Compra]** 🅓 e **[!UICONTROL Compras]** 🅔.
-* Filtro: **[!UICONTROL Produtos de Pesca]** 🅕.
+* Data view: **[!UICONTROL C&C - Data View]** 🅐.
+* Dimensions: **[!UICONTROL Product Name]** 🅑 and **[!UICONTROL Product Category]** 🅒.
+* Metrics: **[!UICONTROL Purchase Revenue]** 🅓 and **[!UICONTROL Purchases]** 🅔.
+* Filter: **[!UICONTROL Fishing Products]** 🅕.
 
-![Configuração do Customer Journey Analytics Base](assets/cja-base.png)
+![Customer Journey Analytics Base setup](assets/cja-base.png)
 
-Ao analisar os casos de uso, substitua esses objetos de exemplo por objetos apropriados para seu ambiente específico.
+When you go through the use cases, replace these example objects with objects that are appropriate for your specific environment.
 
 +++
 
-+++ Ferramentas de BI
++++ BI tools
 
 >[!BEGINTABS]
 
->[!TAB Power BI Desktop]
+>[!TAB Power BI Desktop] 
 
-1. Acesse as credenciais e os parâmetros necessários da interface do usuário do Experience Platform Query Service.
+1. Access the required credentials and parameters from the Experience Platform Query Service UI.
 
-   1. Navegue até a sandbox da Experience Platform.
-   1. Selecione ![Consultas](/help/assets/icons/DataSearch.svg) **[!UICONTROL Consultas]** no painel esquerdo.
-   1. Selecione a guia **[!UICONTROL Credenciais]** na interface **[!UICONTROL Consultas]**.
-   1. Selecione `prod:cja` no menu suspenso **[!UICONTROL Banco de Dados]**.
+   1. Navigate to your Experience Platform sandbox.
+   1. Select ![Queries](/help/assets/icons/DataSearch.svg) **[!UICONTROL Queries]** from the left rail.
+   1. Select **[!UICONTROL Credentials]** tab in the **[!UICONTROL Queries]** interface.
+   1. Select `prod:cja` from the **[!UICONTROL Database]** drop-down menu.
 
-      ![Consultar credenciais de serviço](assets/queryservice-credentials.png)
+      ![Query service credentials](assets/queryservice-credentials.png)
 
-1. Inicie o Power BI Desktop.
-   1. Na interface principal, selecione **[!UICONTROL Obter dados de outras fontes]**.
-   1. Na caixa de diálogo **[!UICONTROL Obter Dados]**:
-      ![Banco de dados PowerBI PostgreSQL](assets/powerbi-postgresql.png)
-      1. Procure e selecione **[!UICONTROL banco de dados PostgreSQL]**.
-      1. Selecione **[!UICONTROL Conectar]**.
-   1. Na caixa de diálogo **[!UICONTROL Banco de dados PostgreSQL]**:
-      ![Configurações do Servidor e do Banco de Dados do Power BI Desktop](assets/powerbi-serverdatabase.png)
-      1. Use ![Copiar](/help/assets/icons/Copy.svg) para copiar e colar os valores de **[!UICONTROL Host]** e **[!UICONTROL Porta]** do painel **[!UICONTROL Consulta]** **[!UICONTROL Credenciais em Expiração]** do Experience Platform, separadas por `:` como o valor do **[!UICONTROL Servidor]**. Por exemplo: `examplecompany.platform-query.adobe.io:80`.
-      1. Use ![Copiar](/help/assets/icons/Copy.svg) para copiar e colar o valor do **[!UICONTROL Banco de Dados]** do painel **[!UICONTROL Consulta]** **[!UICONTROL Credenciais em Expiração]** do Experience Platform. Adicione `?FLATTEN` ao valor que você colar. Por exemplo, `prod:cja?FLATTEN`.
-      1. Selecione **[!UICONTROL DirectQuery]** como o **[!UICONTROL modo de conectividade de dados]**.
-      1. Selecione **[!UICONTROL OK]**.
-   1. Na caixa de diálogo **[!UICONTROL Banco de dados PostgreSQL]** - **[!UICONTROL Banco de Dados]**:
-      ![Usuário e Senha do Power BI Desktop](assets/powerbi-userpassword.png)
-      1. Use ![Copiar](/help/assets/icons/Copy.svg) para copiar os valores de **[!UICONTROL Nome de Usuário]** e **[!UICONTROL Senha]** do painel **[!UICONTROL Consulta]** **[!UICONTROL Credenciais em Expiração]** do Experience Platform nos campos **[!UICONTROL Nome de usuário]** e **[!UICONTROL Senha]**. Se você estiver usando uma [credencial sem expiração](https://experienceleague.adobe.com/pt-br/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect), use a senha da sua credencial sem expiração.
-      1. Verifique se o menu suspenso do **[!UICONTROL Selecione a qual nível aplicar essas configurações]** está definido como o **[!UICONTROL Servidor]** definido anteriormente.
-      1. Selecione **[!UICONTROL Conectar]**.
-   1. Na caixa de diálogo **[!UICONTROL Navegador]**, as visualizações de dados são recuperadas. Essa recuperação pode levar algum tempo. Depois de recuperado, você verá o seguinte no Power BI Desktop.
-      ![Dados de Carregamento do Power BI Desktop](assets/powerbi-navigator-load.png)
-      1. Selecione **[!UICONTROL public.cc_data_view]** na lista do painel esquerdo.
-      1. Você tem duas opções:
-         1. Selecione **[!UICONTROL Carregar]** para continuar e concluir a instalação.
-         1. Selecione **[!UICONTROL Transformar Dados]**. Você verá uma caixa de diálogo em que poderá aplicar transformações opcionalmente como parte da configuração.
-            ![Dados de transformação do Power BI Desktop](assets/powerbi-transform-data.png)
-            * Selecione **[!UICONTROL Fechar e Aplicar]**.
-   1. Após alguns instantes, **[!UICONTROL public.cc_data_view]** será exibido no painel **[!UICONTROL Dados]**. Selecione ![ChevronRight](/help/assets/icons/ChevronRight.svg) para mostrar dimensões e métricas.
-      ![Dados do Power BI Desktop Server Carregados](assets/powerbi-navigator-loaded.png)
+1. Start Power BI Desktop.
+   1. From the main interface, select **[!UICONTROL Get data from other sources]**.
+   1. In the **[!UICONTROL Get Data]** dialog:
+      ![PowerBI PostgreSQL database](assets/powerbi-postgresql.png)
+      1. Search for and select **[!UICONTROL PostgreSQL database]**.
+      1. Select **[!UICONTROL Connect]**.
+   1. In the **[!UICONTROL PostgreSQL database]** dialog:
+      ![PowerBI Desktop Server and Database settings](assets/powerbi-serverdatabase.png)
+      1. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste the **[!UICONTROL Host]** and **[!UICONTROL Port]** values from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel, separated by `:` as the value for **[!UICONTROL Server]**. For example: `examplecompany.platform-query.adobe.io:80`.
+      1. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste the **[!UICONTROL Database]** value from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel. Add `?FLATTEN` to the value that you paste. For example, `prod:cja?FLATTEN`.
+      1. Select **[!UICONTROL DirectQuery]** as the **[!UICONTROL Data connectivity mode]**.
+      1. Select **[!UICONTROL OK]**.
+   1. In the **[!UICONTROL PostgreSQL database]** - **[!UICONTROL Database]** dialog:
+      ![PowerBI Desktop User and Password](assets/powerbi-userpassword.png)
+      1. Use ![Copy](/help/assets/icons/Copy.svg) to copy the **[!UICONTROL Username]** and **[!UICONTROL Password]** values from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel in the **[!UICONTROL User name]** and **[!UICONTROL Password]** fields. If you are using a [non-expiring credential](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect), use the password of your non-expiring credential.
+      1. Ensure that the drop-down menu for **[!UICONTROL Select which level to apply these settings to]** is set to the **[!UICONTROL Server]** that you have defined earlier.
+      1. Select **[!UICONTROL Connect]**.
+   1. In the **[!UICONTROL Navigator]** dialog, the data views are retrieved. This retrieval can take some time. Once retrieved, you see the following in Power BI Desktop.
+      ![Power BI Destkop Load Data](assets/powerbi-navigator-load.png)
+      1. Select **[!UICONTROL public.cc_data_view]** from the list in the left panel.
+      1. You have two options:
+         1. Select **[!UICONTROL Load]** to continue and finish the setup.
+         1. Select **[!UICONTROL Transform Data]**. You see a dialog where you can optionally apply transformations as part of the configuration.
+         ![Power BI Desktop Transform Data](assets/powerbi-transform-data.png)
+            * Select **[!UICONTROL Close & Apply]**.
+   1. After a while, **[!UICONTROL public.cc_data_view]** is displayed in the **[!UICONTROL Data]** pane. Select ![ChevronRight](/help/assets/icons/ChevronRight.svg) to show dimensions and metrics.
+      ![Power BI Destkop Server Data Loaded](assets/powerbi-navigator-loaded.png)
 
 
-### Para NIVELAR ou não
+### To FLATTEN or not
 
-O Power BI Desktop oferece suporte aos seguintes cenários para o parâmetro `FLATTEN`. Consulte [Nivelar dados aninhados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/query/key-concepts/flatten-nested-data) para obter mais informações.
+Power BI Desktop supports the following scenarios for the `FLATTEN` parameter. See [Flatten nested data](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data) for more information.
 
-| parâmetro FLATTEN | Exemplo | Suportado | Observações |
+| FLATTEN parameter | Example | Supported | Remarks |
 |---|---|:---:|---|
-| Nenhum | `prod:cja` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | |
-| `?FLATTEN` | `prod:cja?FLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **Opção recomendada para usar!** |
-| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![FecharCírculo](/help/assets/icons/CloseCircle.svg) | O Power BI Desktop exibe um erro: **[!UICONTROL Não foi possível autenticar com as credenciais fornecidas. Tente novamente.]** |
+| None | `prod:cja` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | |
+| `?FLATTEN` | `prod:cja?FLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **Recommended option to use!** |
+| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![CloseCircle](/help/assets/icons/CloseCircle.svg) | Power BI Desktop displays error: **[!UICONTROL We couldn't authenticate with the credentials provided. Please try again.]** |
 
-### Mais informações
+### More information
 
-* [Pré-requisitos](/help/data-views/bi-extension.md#prerequisites)
-* [Guia de credenciais](https://experienceleague.adobe.com/pt-br/docs/experience-platform/query/ui/credentials)
-* [Conectar o Power BI ao Serviço de Consulta](https://experienceleague.adobe.com/pt-br/docs/experience-platform/query/clients/power-bi).
-
-
+* [Prerequisites](/help/data-views/bi-extension.md#prerequisites)
+* [Credentials guide](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials)
+* [Connect Power BI to Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/power-bi).
 
 
->[!TAB Tableau Desktop]
+   
 
-1. Acesse as credenciais e os parâmetros necessários da interface do usuário do Experience Platform Query Service.
+>[!TAB Tableau Desktop] 
 
-   1. Navegue até a sandbox da Experience Platform.
-   1. Selecione ![Consultas](/help/assets/icons/DataSearch.svg) **[!UICONTROL Consultas]** no painel esquerdo.
-   1. Selecione a guia **[!UICONTROL Credenciais]** na interface **[!UICONTROL Consultas]**.
-   1. Selecione `prod:cja` no menu suspenso **[!UICONTROL Banco de Dados]**.
+1. Access the required credentials and parameters from the Experience Platform Query Service UI.
 
-      ![Consultar credenciais de serviço](assets/queryservice-credentials.png)
+   1. Navigate to your Experience Platform sandbox.
+   1. Select ![Queries](/help/assets/icons/DataSearch.svg) **[!UICONTROL Queries]** from the left rail.
+   1. Select **[!UICONTROL Credentials]** tab in the **[!UICONTROL Queries]** interface.
+   1. Select `prod:cja` from the **[!UICONTROL Database]** drop-down menu.
 
-1. Inicie o Tableau.
-   1. Selecione **[!UICONTROL PostgreSQL]** no painel esquerdo abaixo de **[!UICONTROL Para um Servidor]**. Se não estiver disponível, selecione **[!UICONTROL Mais...]** e selecione **[!UICONTROL PostgreSQL]** nos **[!UICONTROL Conectores Instalados]**.
-      ![Conectores do Tableau](assets/tableau-connectors.png)
-   1. Na caixa de diálogo **[!UICONTROL PostgreSQL]**, na guia **[!UICONTROL General]**:
-      ![Caixa de diálogo Entrar do Tableau](assets/tableau-signin.png)
-      1. Use ![Copiar](/help/assets/icons/Copy.svg) para copiar e colar o **[!UICONTROL Host]** do painel **[!UICONTROL Consulta]** **[!UICONTROL Credenciais em Expiração]** do Experience Platform no **[!UICONTROL Servidor]**.
-      1. Use ![Copiar](/help/assets/icons/Copy.svg) para copiar e colar a **[!UICONTROL Porta]** do painel **[!UICONTROL Consulta]** **[!UICONTROL Credenciais em Expiração]** do Experience Platform para a **[!UICONTROL Porta]**.
-      1. Use ![Copiar](/help/assets/icons/Copy.svg) para copiar e colar o **[!UICONTROL Banco de Dados]** do painel **[!UICONTROL Consulta]** **[!UICONTROL Credenciais em Expiração]** do Experience Platform no **[!UICONTROL Banco de Dados]**. Adicione `%3FFLATTEN` ao valor que você colar. Por exemplo: `prod:cja%3FFLATTEN`.
-      1. Selecione **[!UICONTROL Nome de Usuário e Senha]** no menu suspenso **[!UICONTROL Autenticação]**.
-      1. Use ![Copiar](/help/assets/icons/Copy.svg) para copiar e colar o **[!UICONTROL Nome de Usuário]** do painel **[!UICONTROL Consulta]** **[!UICONTROL Credenciais em Expiração]** do Experience Platform para o **[!UICONTROL Nome de Usuário]**.
-      1. Use ![Copiar](/help/assets/icons/Copy.svg) para copiar e colar a **[!UICONTROL Senha]** do painel **[!UICONTROL Consulta]** **[!UICONTROL Credenciais em Expiração]** do Experience Platform para a **[!UICONTROL Senha]**. Se você estiver usando uma [credencial sem expiração](https://experienceleague.adobe.com/pt-br/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect), use a senha da sua credencial sem expiração.
-      1. Verifique se **[!UICONTROL Exigir SSL]** está marcado.
-      1. Selecione **[!UICONTROL Fazer logon]**.
+      ![Query service credentials](assets/queryservice-credentials.png)
 
-      Você verá uma caixa de diálogo **[!UICONTROL Solicitação em andamento]** enquanto o Tableau Desktop valida a conexão.
-   1. Na janela principal, você vê na página **[!UICONTROL Data Source]**, no painel esquerdo:
-      * O nome da conexão, abaixo de **[!UICONTROL Conexões]**.
-      * O nome do banco de dados, abaixo de **[!UICONTROL Banco de Dados]**.
-      * Uma lista de tabelas, abaixo de **[!UICONTROL Tabela]**.
-        ![Tableau Conectado](assets/tableau-connected.png)
-      1. Arraste a entrada **[!UICONTROL cc_data_view]** e solte a entrada na exibição principal onde se lê **[!UICONTROL Arraste tabelas]** aqui.
-   1. A janela principal exibe detalhes da exibição de dados do **[!UICONTROL cc_data_view]**.
-      ![Tableau Conectado](assets/tableau-validation.png)
+1. Start Tableau.
+   1. Select **[!UICONTROL PostgreSQL]** from the left rail underneath **[!UICONTROL To a Server]**. If not available, select **[!UICONTROL More...]** and select **[!UICONTROL PostgreSQL]** from the **[!UICONTROL Installed Connectors]**.
+      ![Tableau Connectors](assets/tableau-connectors.png)
+   1. In the **[!UICONTROL PostgreSQL]** dialog, in the **[!UICONTROL General]** tab:
+      ![Tableau Sign In dialog](assets/tableau-signin.png)
+      1. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste the **[!UICONTROL Host]** from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel to the **[!UICONTROL Server]**.
+      1. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste the **[!UICONTROL Port]** from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel to the **[!UICONTROL Port]**.
+      1. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste the **[!UICONTROL Database]** from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel to the **[!UICONTROL Database]**. Add `%3FFLATTEN` to the value that you paste. For example: `prod:cja%3FFLATTEN`.  
+      1. Select **[!UICONTROL Username and Password]** from the **[!UICONTROL Authentication]** drop-down menu.
+      1. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste the **[!UICONTROL Username]** from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel to the **[!UICONTROL Username]**.
+      1. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste the **[!UICONTROL Password]** from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel to the **[!UICONTROL Password]**. If you are using a [non-expiring credential](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect), use the password of your non-expiring credential.
+      1. Ensure that **[!UICONTROL Require SSL]** is checked.
+      1. Select **[!UICONTROL Sign In]**.
+      
+      You see a **[!UICONTROL Progressing Request]** dialog while Tableau Desktop validates the connection.
+   1. In the main window, you see in the **[!UICONTROL Data Source]** page, in the left pane:
+      * The name of the connection, underneath **[!UICONTROL Connections]**.
+      * The name of the database, underneath **[!UICONTROL Database]**.
+      * A list of tables, underneath **[!UICONTROL Table]**.
+      ![Tableau Connected](assets/tableau-connected.png)
+      1. Drag the **[!UICONTROL cc_data_view]** entry and drop the entry on the main view that reads **[!UICONTROL Drag tables]** here.
+   1. The main window displays details of the **[!UICONTROL cc_data_view]** data view.
+      ![Tableau Connected](assets/tableau-validation.png)
 
-### Para NIVELAR ou não
+### To FLATTEN or not
 
-O Tableau Desktop oferece suporte aos seguintes cenários para o parâmetro `FLATTEN`. Consulte [Nivelar dados aninhados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/query/key-concepts/flatten-nested-data) para obter mais informações.
+Tableau Desktop supports the following scenarios for the `FLATTEN` parameter. See [Flatten nested data](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data) for more information.
 
-| parâmetro FLATTEN | Exemplo | Suportado | Observações |
+| FLATTEN parameter | Example | Supported | Remarks |
 |---|---|:---:|---|
-| Nenhum | `prod:cja` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | |
+| None | `prod:cja` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | |
 | `?FLATTEN` | `prod:cja?FLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | |
-| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **Opção recomendada para usar**. Observe que `%3FFLATTEN` é a versão de `?FLATTEN` codificada em URL. |
+| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **Recommended option to use**. Note, `%3FFLATTEN` is URL-encoded version of `?FLATTEN`. |
 
-### Mais informações
+### More information
 
-* [Pré-requisitos](/help/data-views/bi-extension.md#prerequisites)
-* [Guia de credenciais](https://experienceleague.adobe.com/pt-br/docs/experience-platform/query/ui/credentials)
-* [Conecte o Tableau Desktop ao Serviço de Consulta](https://experienceleague.adobe.com/pt-br/docs/experience-platform/query/clients/tableau).
-
-
->[!TAB Pesquisador]
-
-1. Acesse as credenciais e os parâmetros necessários da interface do usuário do Experience Platform Query Service.
-
-   1. Navegue até a sandbox da Experience Platform.
-   1. Selecione ![Consultas](/help/assets/icons/DataSearch.svg) **[!UICONTROL Consultas]** no painel esquerdo.
-   1. Selecione a guia **[!UICONTROL Credenciais]** na interface **[!UICONTROL Consultas]**.
-   1. Selecione `prod:cja` no menu suspenso **[!UICONTROL Banco de Dados]**.
-
-      ![Consultar credenciais de serviço](assets/queryservice-credentials.png)
-
-1. Fazer logon no Looker
-
-   1. Selecione **[!UICONTROL Admin]** no painel esquerdo.
-   1. Selecione **[!UICONTROL Conexões]**.
-   1. Selecione **[!UICONTROL Adicionar conexão]**.
-   1. Na **[!UICONTROL tela Conectar o banco de dados ao Pesquisador]**.
-
-      ![Conexão do Pesquisador ao banco de dados](assets/looker-connect.png)
-
-      1. Digite um **[!UICONTROL Nome]** para sua conexão, por exemplo `Example Looker Connection`.
-      1. Verifique se **[!UICONTROL Todos os Projetos]** está selecionado como **[!UICONTROL Escopo de Conexão]**.
-      1. Selecione **[!UICONTROL PostgreSQL 9.5+]** como o Dialeto.
-      1. Use ![Copiar](/help/assets/icons/Copy.svg) para copiar e colar o valor de **[!UICONTROL Host]** do painel **[!UICONTROL Consulta]** **[!UICONTROL Credenciais em Expiração]** do Experience Platform, como o valor de **[!UICONTROL Host]**. Por exemplo: `examplecompany.platform-query.adobe.io`.
-      1. Use ![Copiar](/help/assets/icons/Copy.svg) para copiar e colar o valor de **[!UICONTROL Porta]** do painel **[!UICONTROL Consulta]** **[!UICONTROL Credenciais em Expiração]** do Experience Platform, como o valor de **[!UICONTROL Porta]**. Por exemplo: `80`.
-      1. Use ![Copiar](/help/assets/icons/Copy.svg) para copiar e colar o valor do **[!UICONTROL Banco de Dados]** do painel **[!UICONTROL Consulta]** **[!UICONTROL Credenciais em Expiração]** do Experience Platform como o valor do **[!UICONTROL Banco de Dados]**. Adicione `%3FFLATTEN` ao valor que você colar. Por exemplo, `prod:cja%3FFLATTEN`.
-      1. Use ![Copiar](/help/assets/icons/Copy.svg) para copiar e colar o valor de **[!UICONTROL Nome de Usuário]** do painel **[!UICONTROL Consulta]** **[!UICONTROL Credenciais em Expiração]** do Experience Platform como o valor de **[!UICONTROL Nome de Usuário]**.
-      1. Use ![Copiar](/help/assets/icons/Copy.svg) para copiar e colar o valor de **[!UICONTROL Senha]** do painel **[!UICONTROL Consulta]** **[!UICONTROL Credenciais em Expiração]** do Experience Platform como o valor de **[!UICONTROL Senha]**.
-      1. Selecione **[!UICONTROL Expandir tudo]** em **[!UICONTROL Configurações Opcionais]**.
-      1. Defina **[!UICONTROL Máximo de conexões]** por nó como `5`.
-      1. Verifique se **[!UICONTROL SSL]** está habilitado.
-      1. Selecione **[!UICONTROL Testar]** para testar a conexão. Você deve ver um banner aparecer na parte superior da tela com uma mensagem como **[!UICONTROL Sucesso, pode conectar JDBC ....]**.
-      1. Selecione **[!UICONTROL Conectar]** para estabelecer e salvar a conexão.
-   1. Você vê a nova conexão na interface **[!UICONTROL Conexões]**.
-   1. Selecione **Esquerda** de **[!UICONTROL Administrador]** para ir para a navegação principal no painel esquerdo.
-   1. Selecione **[!UICONTROL Desenvolver]**.
-   1. Selecione **[!UICONTROL Projetos]**.
-   1. Selecione **[!UICONTROL Novo Modelo]** em Projetos LookML.
-   1. Para garantir que você não afete outros usuários. selecione Enter Development Mode (Entrar no modo de desenvolvimento) quando solicitado.
-   1. Na experiência **[!UICONTROL Criar Modelo]**:
-      1. Em **[!UICONTROL ➊, Selecione A Conexão De Banco De Dados]**:
-         1. Selecione sua conexão de banco de dados em **[!UICONTROL Selecionar conexão de banco de dados]**. Por exemplo: **[!UICONTROL example_looker_connection]**.
-         1. Nomeie seu projeto em **[!UICONTROL Crie um novo Projeto LookML para este modelo]**. Para `example: example_looker_project`.
-         1. Selecione **[!UICONTROL Próximo]**.
-      1. Em **[!UICONTROL ➋Selecione Tabelas]**:
-         1. Selecione **[!UICONTROL público]** e certifique-se de que sua visualização de dados do Customer Journey Analytics está selecionada. Por exemplo: ![SelectBox](/help/assets/icons/SelectBox.svg) **[!UICONTROL cc_data_view]**.
-         1. Selecione **[!UICONTROL Próximo]**.
-      1. Em **[!UICONTROL ➌, Selecione Chaves Primárias]**:
-         1. Selecione **[!UICONTROL Próximo]**.
-      1. Em **[!UICONTROL ➍, Selecione Explorações para Criar]**:
-         1. Certifique-se de selecionar a exibição. Por exemplo: **[!UICONTROL cc_data_view.view]**.
-         1. Selecione **[!UICONTROL Próximo]**.
-      1. Em **[!UICONTROL ➎Insira O Nome Do Modelo]**:
-         1. Dê um nome ao seu modelo. Por exemplo: `example_looker_model`.
-      1. Selecione **[!UICONTROL Concluir e Explorar Dados]**.
-
-   Você foi redirecionado para a interface do Looker **[!UICONTROL Explorar]**, pronta para explorar os dados.
+* [Prerequisites](/help/data-views/bi-extension.md#prerequisites)
+* [Credentials guide](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials)
+* [Connect Tableau Desktop to Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/tableau).
 
 
+>[!TAB Looker] 
 
-### Para NIVELAR ou não
+1. Access the required credentials and parameters from the Experience Platform Query Service UI.
 
-O pesquisador dá suporte aos seguintes cenários para o parâmetro `FLATTEN`. Consulte [Nivelar dados aninhados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/query/key-concepts/flatten-nested-data) para obter mais informações.
+   1. Navigate to your Experience Platform sandbox.
+   1. Select ![Queries](/help/assets/icons/DataSearch.svg) **[!UICONTROL Queries]** from the left rail.
+   1. Select **[!UICONTROL Credentials]** tab in the **[!UICONTROL Queries]** interface.
+   1. Select `prod:cja` from the **[!UICONTROL Database]** drop-down menu.
 
-| parâmetro FLATTEN | Exemplo | Suportado | Observações |
+      ![Query service credentials](assets/queryservice-credentials.png)
+
+1. Log in to Looker
+
+   1. Select **[!UICONTROL Admin]** from the left rail.
+   1. Select **[!UICONTROL Connections]**.
+   1. Select **[!UICONTROL Add Connection]**.
+   1. In the **[!UICONTROL Connect your database to Looker screen]**.
+
+      ![Looker Connect to database](assets/looker-connect.png)
+
+      1. Enter a **[!UICONTROL Name]** for your connection, for example `Example Looker Connection`.
+      1. Ensure **[!UICONTROL All Projects]** is selected as the **[!UICONTROL Connection Scope]**.
+      1. Select **[!UICONTROL PostgreSQL 9.5+]** as the Dialect.
+      1. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste the **[!UICONTROL Host]** value from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel, as the value for **[!UICONTROL Host]**. For example: `examplecompany.platform-query.adobe.io`.
+      1. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste the **[!UICONTROL Port]** value from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel, as the value for **[!UICONTROL Port]**. For example: `80`.
+      1. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste the **[!UICONTROL Database]** value from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel as the value for **[!UICONTROL Database]**. Add `%3FFLATTEN` to the value that you paste. For example, `prod:cja%3FFLATTEN`.
+      1. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste the **[!UICONTROL Username]** value from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel as the value for **[!UICONTROL Username]**.
+      1. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste the **[!UICONTROL Password]** value from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel as the value for **[!UICONTROL Password]**.
+      1. Select **[!UICONTROL Expand all]** at **[!UICONTROL Optional Settings]**.
+      1. Set **[!UICONTROL Max connections]** per node to `5`.
+      1. Ensure **[!UICONTROL SSL]** is enabled.
+      1. Select **[!UICONTROL Test]** to test the connection. You should see a banner appear at the top of the screen with a message like **[!UICONTROL Success, can connect JDBC ....]**.
+      1. Select **[!UICONTROL Connect]** to establish and save the connection.
+   1. You see the new connection in the **[!UICONTROL Connections]** interface.
+   1. Select **←** from **[!UICONTROL Admin]** to go to main navigation in the left rail.
+   1. Select **[!UICONTROL Develop]**.
+   1. Select **[!UICONTROL Projects]**.
+   1. Select **[!UICONTROL New Model]** in LookML Projects.
+   1. To ensure you do not affect other users. select Enter Development Mode, when prompted.
+   1. In the **[!UICONTROL Create Model]** experience:
+      1. In **[!UICONTROL ➊ Select Database Connection]**:
+         1. Select your database connection in **[!UICONTROL Select database connection]**. For example: **[!UICONTROL example_looker_connection]**.
+         1. Name your project in **[!UICONTROL Create a new LookML Project for this model]**. For `example: example_looker_project`.
+         1. Select **[!UICONTROL Next]**.
+      1. In **[!UICONTROL ➋ Select Tables]**:
+         1. Select **[!UICONTROL public]** and then ensure your Customer Journey Analytics data view is selected. For example: ![SelectBox](/help/assets/icons/SelectBox.svg) **[!UICONTROL cc_data_view]**.
+         1. Select **[!UICONTROL Next]**.
+      1. In **[!UICONTROL ➌ Select Primary Keys]**:
+         1. Select **[!UICONTROL Next]**.
+      1. In **[!UICONTROL ➍ Select Explores to Create]**:
+         1. Ensure you select your view. For example: **[!UICONTROL cc_data_view.view]**. 
+         1. Select **[!UICONTROL Next]**.
+      1. In **[!UICONTROL ➎ Enter Model Name]**:
+         1. Name your model. For example: `example_looker_model`.
+      1. Select **[!UICONTROL Complete and Explore Data]**.
+   
+   You are redirected to the **[!UICONTROL Explore]** interface of Looker, ready to explore the data.
+   
+      
+
+### To FLATTEN or not
+
+Looker supports the following scenarios for the `FLATTEN` parameter. See [Flatten nested data](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data) for more information.
+
+| FLATTEN parameter | Example | Supported | Remarks |
 |---|---|:---:|---|
-| Nenhum | `prod:cja` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | |
+| None | `prod:cja` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | |
 | `?FLATTEN` | `prod:cja?FLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | |
-| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **Opção recomendada para usar**. Observe que `%3FFLATTEN` é a versão de `?FLATTEN` codificada em URL. |
+| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **Recommended option to use**. Note, `%3FFLATTEN` is URL-encoded version of `?FLATTEN`. |
 
-### Mais informações
+### More information
 
-* [Pré-requisitos](/help/data-views/bi-extension.md#prerequisites)
-* [Guia de credenciais](https://experienceleague.adobe.com/pt-br/docs/experience-platform/query/ui/credentials)
+* [Prerequisites](/help/data-views/bi-extension.md#prerequisites)
+* [Credentials guide](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials)
 
 
 >[!TAB Jupyter Notebook]
 
-1. Acesse as credenciais e os parâmetros necessários da interface do usuário do Experience Platform Query Service.
+1. Access the required credentials and parameters from the Experience Platform Query Service UI.
 
-   1. Navegue até a sandbox da Experience Platform.
-   1. Selecione ![Consultas](/help/assets/icons/DataSearch.svg) **[!UICONTROL Consultas]** no painel esquerdo.
-   1. Selecione a guia **[!UICONTROL Credenciais]** na interface **[!UICONTROL Consultas]**.
-   1. Selecione `prod:cja` no menu suspenso **[!UICONTROL Banco de Dados]**.
+   1. Navigate to your Experience Platform sandbox.
+   1. Select ![Queries](/help/assets/icons/DataSearch.svg) **[!UICONTROL Queries]** from the left rail.
+   1. Select **[!UICONTROL Credentials]** tab in the **[!UICONTROL Queries]** interface.
+   1. Select `prod:cja` from the **[!UICONTROL Database]** drop-down menu.
 
-      ![Consultar credenciais de serviço](assets/queryservice-credentials.png)
+      ![Query service credentials](assets/queryservice-credentials.png)
 
-1. Configure um ambiente virtual Python dedicado para executar seu ambiente Jupyter Notebook.
-1. Verifique se você instalou as bibliotecas necessárias em seu ambiente virtual:
+1. Ensure you have set up a dedicated Python virtual environment for running your Jupyter Notebook environment.
+1. Ensure you have installed the required libraries in your virtual environment:
    * ipython-sql: `pip install ipython-sql`.
    * psycopg2-binary: `pip install psycopg-binary`.
    * sqlalchemy: pip `install sqlalchemy`.
 
-1. Inicie o Jupyter Notebook a partir de seu ambiente virtual: `jupyter notebook`.
-1. Crie um novo bloco de anotações ou baixe [este bloco de anotações de exemplo](assets/BI-Extension.ipynb.zip).
-1. Na primeira célula, insira e execute:
-
+1. Start Jupyter Notebook from your virtual environment: `jupyter notebook`.
+1. Create a new notebook, or download [this sample notebook](assets/BI-Extension.ipynb.zip).
+1. In your first cell, enter and execute:
+   
    ```
    %config SqlMagic.style = '_DEPRECATED_DEFAULT'
    ```
 
-1. Em uma nova célula, insira os parâmetros de configuração da sua conexão. Use ![Copiar](/help/assets/icons/Copy.svg) para copiar e colar valores do painel **[!UICONTROL Consulta]** **[!UICONTROL Credenciais em Expiração]** do Experience Platform nos valores necessários para os parâmetros de configuração. Por exemplo:
+1. In a new cell, enter the config parameters for your connection. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste values from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel to the values required for the config parameters. For example:
 
    ```
    import ipywidgets as widgets
    from IPython.display import display
-   
+
    config_host = widgets.Text(description='Host:', value='example.platform-query-stage.adobe.io',
                            layout=widgets.Layout(width="600px"))
    display(config_host)
@@ -315,12 +316,12 @@ O pesquisador dá suporte aos seguintes cenários para o parâmetro `FLATTEN`. C
    display(config_password)
    ```
 
-1. Execute a célula.
-1. Use ![Copiar](/help/assets/icons/Copy.svg) para copiar e colar a senha do painel **[!UICONTROL Consulta]** **[!UICONTROL Credenciais em Expiração]** do Experience Platform no campo **[!UICONTROL Senha]** do Jupyter Notebook.
+1. Execute the cell.
+1. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste the password from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel to the **[!UICONTROL Password]** field in Jupyter Notebook.
 
-   ![Etapa 1](assets/jupyter-config-step1.png) da Configuração do Jupter Notebook
+   ![Jupter Notebook Config Step 1](assets/jupyter-config-step1.png)
 
-1. Em uma nova célula, insira as instruções para carregar a extensão SQL, a biblioteca necessária e conectar-se ao Customer Journey Analytics.
+1. In a new cell, enter the statements to load the SQL extension, the required library and connect with Customer Journey Analytics.
 
    ```python
    %load_ext sql
@@ -328,11 +329,11 @@ O pesquisador dá suporte aos seguintes cenários para o parâmetro `FLATTEN`. C
    %sql postgresql://{config_username.value}:{config_password.value}@{config_host.value}:{config_port.value}/{config_db.value}?sslmode=require
    ```
 
-   Execute o shell. Você não deve ver nenhuma saída, mas a célula deve ser executada sem nenhum aviso.
+   Execute the shell. You should see no output but the cell should execute without any warning.
 
-   ![Etapa 4](assets/jupyter-config-step2.png) da Configuração do Jupyer Notebook
+   ![Jupyer Notebook Config Step 4](assets/jupyter-config-step2.png)
 
-1. Em uma nova chamada, insira as instruções para obter uma lista de visualizações de dados disponíveis com base na conexão.
+1. In a new call, enter the statements to get a list of available data views based on the connection.
 
    ```python
    %%sql
@@ -352,42 +353,42 @@ O pesquisador dá suporte aos seguintes cenários para o parâmetro `FLATTEN`. C
    ORDER BY 1,2;
    ```
 
-   Execute o shell. Você deve ver a saída simular na captura de tela abaixo.
+   Execute the shell. You should see output simular to the screenshot below.
 
-   ![Etapa 5](assets/jupyter-config-step3.png) da Configuração do Jupyter Notebook
+   ![Jupyter Notebook Config Step 5](assets/jupyter-config-step3.png)
 
-   Você deve ver o **[!UICONTROL cc_data_view]** na lista de visualizações de dados.
+   You should see the **[!UICONTROL cc_data_view]** in the list of data views.
 
-### Para NIVELAR ou não
+### To FLATTEN or not
 
-O Jupyter Notebook dá suporte aos seguintes cenários para o parâmetro `FLATTEN`. Consulte [Nivelar dados aninhados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/query/key-concepts/flatten-nested-data) para obter mais informações.
+Jupyter Notebook supports the following scenarios for the `FLATTEN` parameter. See [Flatten nested data](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data) for more information.
 
-| parâmetro FLATTEN | Exemplo | Suportado | Observações |
+| FLATTEN parameter | Example | Supported | Remarks |
 |---|---|:---:|---|
-| Nenhum | `prod:cja` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | |
-| `?FLATTEN` | `prod:cja?FLATTEN` | ![FecharCírculo](/help/assets/icons/CloseCircle.svg) | |
-| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **Opção recomendada para usar**. Observe que `%3FFLATTEN` é a versão de `?FLATTEN` codificada em URL. |
+| None | `prod:cja` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | |
+| `?FLATTEN` | `prod:cja?FLATTEN` | ![CloseCircle](/help/assets/icons/CloseCircle.svg) | |
+| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **Recommended option to use**. Note, `%3FFLATTEN` is URL-encoded version of `?FLATTEN`. |
 
-### Mais informações
+### More information
 
-* [Pré-requisitos](/help/data-views/bi-extension.md#prerequisites)
-* [Guia de credenciais](https://experienceleague.adobe.com/pt-br/docs/experience-platform/query/ui/credentials)
+* [Prerequisites](/help/data-views/bi-extension.md#prerequisites)
+* [Credentials guide](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials)
 
 >[!TAB RStudio]
 
-1. Acesse as credenciais e os parâmetros necessários da interface do usuário do Experience Platform Query Service.
+1. Access the required credentials and parameters from the Experience Platform Query Service UI.
 
-   1. Navegue até a sandbox da Experience Platform.
-   1. Selecione ![Consultas](/help/assets/icons/DataSearch.svg) **[!UICONTROL Consultas]** no painel esquerdo.
-   1. Selecione a guia **[!UICONTROL Credenciais]** na interface **[!UICONTROL Consultas]**.
-   1. Selecione `prod:cja` no menu suspenso **[!UICONTROL Banco de Dados]**.
+   1. Navigate to your Experience Platform sandbox.
+   1. Select ![Queries](/help/assets/icons/DataSearch.svg) **[!UICONTROL Queries]** from the left rail.
+   1. Select **[!UICONTROL Credentials]** tab in the **[!UICONTROL Queries]** interface.
+   1. Select `prod:cja` from the **[!UICONTROL Database]** drop-down menu.
 
-      ![Consultar credenciais de serviço](assets/queryservice-credentials.png)
+      ![Query service credentials](assets/queryservice-credentials.png)
 
-1. Iniciar RStudio.
-1. Crie um novo arquivo do R Markdown ou baixe [este arquivo de exemplo do R Markdown](assets/BI-Extension.Rmd.zip).
-1. Na primeira parte, insira as seguintes instruções entre ` ` ``{r} ` e ` `` ` `. Use ![Copiar](/help/assets/icons/Copy.svg) para copiar e colar valores do painel **[!UICONTROL Consulta]** **[!UICONTROL Credenciais em Expiração]** do Experience Platform para os valores necessários para os vários parâmetros, como `host`, `dbname` e `user`. Por exemplo:
-
+1. Start RStudio.
+1. Create a new R Markdown file, or download [this example R markdown file](assets/BI-Extension.Rmd.zip).
+1. In your first chunk, enter the following statements between ` ```{r} ` and ` ``` `. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste values from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel to the values required for the various parameters, like `host`, `dbname`, and `user`. For example:
+   
    ```R
    library(rstudioapi)
    library(DBI)
@@ -395,19 +396,19 @@ O Jupyter Notebook dá suporte aos seguintes cenários para o parâmetro `FLATTE
    library(tidyr)
    library(RPostgres)
    library(ggplot2)
-   
+
    host <- rstudioapi::showPrompt(title = "Host", message = "Host", default = "orangestagingco.platform-query-stage.adobe.io")
    dbname <- rstudioapi::showPrompt(title = "Database", message = "Database", default = "prod:cja?FLATTEN")
    user <- rstudioapi::showPrompt(title = "Username", message = "Username", default = "EC582F955C8A79F70A49420E@AdobeOrg")
    password <- rstudioapi::askForPassword(prompt = "Password")
    ```
 
-1. Execute o pedaço. Você é solicitado a fornecer **[!UICONTROL Host]**, **[!UICONTROL Banco de Dados]** e **[!UICONTROL Usuário]**. Basta aceitar os valores fornecidos como parte da etapa anterior.
-1. Use ![Copiar](/help/assets/icons/Copy.svg) para copiar e colar a senha do painel **[!UICONTROL Consulta]** **[!UICONTROL Credenciais em Expiração]** do Experience Platform no prompt da caixa de diálogo **[!UICONTROL Senha]** do RStudio.
+1. Run the chunk. You are prompted for **[!UICONTROL Host]**, **[!UICONTROL Database]**, and **[!UICONTROL User]**. Simply accept the values you have provided as part of the previous step. 
+1. Use ![Copy](/help/assets/icons/Copy.svg) to copy and paste the password from the Experience Platform **[!UICONTROL Query]** **[!UICONTROL Expiring Credentials]** panel to the **[!UICONTROL Password]** dialog prompt in RStudio.
 
-   ![Etapa de configuração do Studio 1](assets/rstudio-config-step1.png)
+   ![RStudio config step 1](assets/rstudio-config-step1.png)
 
-1. Crie uma nova parte e insira as seguintes instruções entre ` ` `` {r} ` e ` `` ` `.
+1. Create a new chunk and enter the following statements between ` ``` {r} ` and ` ``` `.
 
    ```R
    con <- dbConnect(
@@ -421,165 +422,165 @@ O Jupyter Notebook dá suporte aos seguintes cenários para o parâmetro `FLATTE
    )
    ```
 
-1. Execute o pedaço. Você não deve ver nenhuma saída se a conexão for bem-sucedida.
+1. Run the chunk. You should see no output if the connection is successful.
 
 
-1. Crie uma nova parte e insira as seguintes instruções entre ` ` `` {r} ` e ` `` ` `.
+1. Create a new chunk and enter the following statements between ` ``` {r} ` and ` ``` `.
 
    ```R
    views <- dbListTables(con)
    print(views)
    ```
 
-1. Execute o pedaço. Você deve ver `character(0)` como a única saída.
+1. Run the chunk. You should see `character(0)` as the only output.
 
 
-1. Crie uma nova parte e insira as seguintes instruções entre ` ` `` {r} ` e ` `` ` `.
+1. Create a new chunk and enter the following statements between ` ``` {r} ` and ` ``` `.
 
    ```R
    glimpse(dv)
    ```
 
-1. Execute o pedaço. Você deve ver a saída simular na captura de tela abaixo.
+1. Run the chunk. You should see output simular to the screenshot below.
 
-   ![Etapa 2](assets/rstudio-config-step2.png) da configuração do Studio
+   ![RStudio config step 2](assets/rstudio-config-step2.png)
 
-### Para NIVELAR ou não
+### To FLATTEN or not
 
-O RStudio oferece suporte aos seguintes cenários para o parâmetro `FLATTEN`. Consulte [Nivelar dados aninhados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/query/key-concepts/flatten-nested-data) para obter mais informações.
+RStudio supports the following scenarios for the `FLATTEN` parameter. See [Flatten nested data](https://experienceleague.adobe.com/en/docs/experience-platform/query/key-concepts/flatten-nested-data) for more information.
 
-| parâmetro FLATTEN | Exemplo | Suportado | Observações |
+| FLATTEN parameter | Example | Supported | Remarks |
 |---|---|:---:|---|
-| Nenhum | `prod:cja` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | |
-| `?FLATTEN` | `prod:cja?FLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **Opção recomendada para usar**. |
-| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![FecharCírculo](/help/assets/icons/CloseCircle.svg) | |
+| None | `prod:cja` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | |
+| `?FLATTEN` | `prod:cja?FLATTEN` | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) |  **Recommended option to use**. |
+| `%3FFLATTEN` | `prod:cja%3FFLATTEN` | ![CloseCircle](/help/assets/icons/CloseCircle.svg) | |
 
-### Mais informações
+### More information
 
-* [Pré-requisitos](/help/data-views/bi-extension.md#prerequisites)
-* [Guia de credenciais](https://experienceleague.adobe.com/pt-br/docs/experience-platform/query/ui/credentials)
+* [Prerequisites](/help/data-views/bi-extension.md#prerequisites)
+* [Credentials guide](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials)
 
 >[!ENDTABS]
 
 +++
 
 
-## Tendência diária
+## Daily trend
 
-Nesse caso de uso, é necessário exibir uma tabela e uma visualização de linha simples que mostre uma tendência diária de ocorrências (eventos) de 1º de janeiro de 2023 até 31 de janeiro de 2023.
+In this use case, you want to display a table and simple line visualization that shows a daily trend of occurrences (events) from January 1, 2023 up until January 31, 2023.
 
 +++ Customer Journey Analytics
 
-Um exemplo de painel **[!UICONTROL Tendência diária]** para o caso de uso:
+An example **[!UICONTROL Daily Trend]** panel for the use case:
 
-![Painel Tendência Diária do Customer Journey Analytics](assets/cja_daily_trend.png)
+![Customer Journey Analytics Daily Trend panel](assets/cja_daily_trend.png)
 
 +++
 
-+++ Ferramentas de BI
++++ BI tools
 
 >[!PREREQUISITES]
 >
->Verifique se você validou uma [conexão bem-sucedida e pode listar e usar visualizações de dados](#connect-and-validate) para a ferramenta de BI para a qual deseja experimentar este caso de uso.
+>Ensure you have validated a [successful connection and can list and use data views](#connect-and-validate) for the BI tool for which you want to try out this use case. 
 >
 
 >[!BEGINTABS]
 
->[!TAB Power BI Desktop]
+>[!TAB Power BI Desktop] 
 
-1. No painel **[!UICONTROL Dados]**:
-   1. Selecione **[!UICONTROL daterangeday]**.
-   1. Selecione **[!UICONTROL somar ocorrências]**.
+1. In the **[!UICONTROL Data]** pane:
+   1. Select **[!UICONTROL daterangeday]**.
+   1. Select **[!UICONTROL sum occurrences]**.
+   
+   You see a table displaying the occurrences for the current month. For better visibility, enlarge the visualization.
 
-   Você verá uma tabela exibindo as ocorrências do mês atual. Para obter melhor visibilidade, aumente a visualização.
+1. In the **[!UICONTROL Filters]** pane:
 
-1. No painel **[!UICONTROL Filtros]**:
+   1. Select the **[!UICONTROL daterangeday is (All)]** from **[!UICONTROL Filters on this visual]**.
+   1. Select **[!UICONTROL Advanced filtering]** as the **[!UICONTROL Filter type]**.
+   1. Define the filter to **[!UICONTROL Show items when the value]** **[!UICONTROL is on or after]** `1/1/2023` **[!UICONTROL And]** **[!UICONTROL is before]** `2/1/2023.` You can use the calendar icon to pick and select dates.
+   1. Select **[!UICONTROL Apply filter]**.
+   
+   You see the table updated with the applied **[!UICONTROL daterangeday]** filter.
 
-   1. Selecione o **[!UICONTROL daterangeday é (Todos)]** de **[!UICONTROL Filtros neste visual]**.
-   1. Selecione **[!UICONTROL Filtragem avançada]** como o **[!UICONTROL Tipo de filtro]**.
-   1. Defina o filtro como **[!UICONTROL Mostrar itens quando o valor]** **[!UICONTROL estiver em ou após]** `1/1/2023` **[!UICONTROL E]** **[!UICONTROL estiver antes]** `2/1/2023.`. Você pode usar o ícone de calendário para escolher e selecionar datas.
-   1. Selecione **[!UICONTROL Aplicar filtro]**.
+1. In the **[!UICONTROL Visualizations]** pane, select the **[!UICONTROL Line chart]** visualization.
 
-   Você vê a tabela atualizada com o filtro **[!UICONTROL daterangeday]** aplicado.
+   A line chart visualization replaces the table while using the same data as the table. Your Power BI Desktop should look like below.
 
-1. No painel **[!UICONTROL Visualizações]**, selecione a visualização **[!UICONTROL Gráfico de linhas]**.
+   ![Power BI Desktop Use Case 2 Date range filter](assets/uc2-pbi-daterange.png)
 
-   Uma visualização de gráfico de linhas substitui a tabela enquanto usa os mesmos dados que a tabela. A área de trabalho do Power BI deve ser semelhante à mostrada abaixo.
+1. On the Line chart visualization:
 
-   ![Filtro de intervalo de datas do Caso de Uso de Desktop da Power BI 2](assets/uc2-pbi-daterange.png)
+   1. Select ![More](/help/assets/icons/More.svg).
+   1. From the context menu, select **[!UICONTROL Show as a table]**.
 
-1. Na visualização do Gráfico de linha:
+   The main view is updated to show both a line visualization and a table. Your Power BI Desktop should look like below.
 
-   1. Selecione ![Mais](/help/assets/icons/More.svg).
-   1. No menu de contexto, selecione **[!UICONTROL Mostrar como tabela]**.
+   ![Power BI Desktop Use Case 2 Final Daily Trend visualization](assets/uc2-pbi-final.png)
 
-   A visualização principal é atualizada para mostrar uma visualização de linha e uma tabela. A área de trabalho do Power BI deve ser semelhante à mostrada abaixo.
+>[!TAB Tableau Desktop] 
 
-   ![Visualização da Tendência Diária Final do Caso de Uso 2 do Power BI Desktop](assets/uc2-pbi-final.png)
+1. Select the **[!UICONTROL Sheet 1]** tab at the bottom to switch from the **[!UICONTROL Data source]** view. In the **[!UICONTROL Sheet 1]** view:
+   1. Drag the **[!UICONTROL Daterange]** entry from the **[!UICONTROL Tables]** list in the **[!UICONTROL Data]** pane and drop the entry onto the **[!UICONTROL Filters]** shelf.
+   1. In the **[!UICONTROL Filters Field \[Daterange\]]** dialog, select **[!UICONTROL Range of Dates]** and select **[!UICONTROL Next >]**.
+   1. In the **[!UICONTROL Filter \[Daterange\]]** dialog, select **[!UICONTROL Range of dates]** and specify a period of `01/01/2023` - `01/02/2023`.
 
->[!TAB Tableau Desktop]
+      ![Tableau Desktop Filter](assets/uc2-tableau-filter.png)
 
-1. Selecione a guia **[!UICONTROL Folha 1]** na parte inferior para alternar da exibição **[!UICONTROL Fonte de Dados]**. Na exibição **[!UICONTROL Folha 1]**:
-   1. Arraste a entrada **[!UICONTROL Daterange]** da lista **[!UICONTROL Tabelas]** no painel **[!UICONTROL Dados]** e solte a entrada na prateleira **[!UICONTROL Filtros]**.
-   1. Na caixa de diálogo **[!UICONTROL Campo de Filtros \[Intervalo de datas\]]**, selecione **[!UICONTROL Intervalo de datas]** e selecione **[!UICONTROL Próximo >]**.
-   1. Na caixa de diálogo **[!UICONTROL Filtro \[Intervalo de datas\]]**, selecione **[!UICONTROL Intervalo de datas]** e especifique um período de `01/01/2023` a `01/02/2023`.
+   1. Drag and drop **[!UICONTROL Daterangeday]** from the **[!UICONTROL Tables]** list in the **[!UICONTROL Data]** pane and drop the entry in the field next to **[!UICONTROL Columns]**.
+      * Select **[!UICONTROL Day]** from the **[!UICONTROL Daterangeday]** drop-down menu, so that the value is updated to **[!UICONTROL DAY(Daterangeday)]**.
+   1. Drag and drop **[!UICONTROL Occurrences]** from the **[!UICONTROL Tables (*Measure Names*)]** list in the **[!UICONTROL Data]** pane and drop the entry in the field next to **[!UICONTROL Rows]**. The value is automatically converted to **[!UICONTROL SUM(Occurrences)]**.
+   1. Modify **[!UICONTROL Standard]** to **[!UICONTROL Entire View]** from the **[!UICONTROL Fit]** drop-down menu in the toolbar.
 
-      ![Filtro do Tableau Desktop](assets/uc2-tableau-filter.png)
+      Your Tableau Desktop should look like below.
 
-   1. Arraste e solte **[!UICONTROL Daterangeday]** da lista **[!UICONTROL Tabelas]** no painel **[!UICONTROL Dados]** e solte a entrada no campo ao lado de **[!UICONTROL Colunas]**.
-      * Selecione **[!UICONTROL Dia]** no menu suspenso **[!UICONTROL Dia_da_Data]**, para que o valor seja atualizado para **[!UICONTROL Dia(Dia_da_Data)]**.
-   1. Arraste e solte **[!UICONTROL Ocorrências]** da lista **[!UICONTROL Tabelas (*Nomes de Medidas*)]** no painel **[!UICONTROL Dados]** e solte a entrada no campo ao lado de **[!UICONTROL Linhas]**. O valor é convertido automaticamente em **[!UICONTROL SUM(Occurrences)]**.
-   1. Modifique **[!UICONTROL Padrão]** para **[!UICONTROL Exibição inteira]** do menu suspenso **[!UICONTROL Ajustar]** na barra de ferramentas.
+      ![Tableau Desktop Graph](assets/uc2-tableau-graph.png)
 
-      A área de trabalho do Tableau deve ser parecida com a exibida abaixo.
+1. Select **[!UICONTROL Duplicate]** from the **[!UICONTROL Sheet 1]** tab context menu to create a second sheet.
+1. Select **[!UICONTROL Rename]** from the **[!UICONTROL Sheet 1]** tab context menu to rename the sheet to `Graph`.
+1. Select **[!UICONTROL Rename]** from the **[!UICONTROL Sheet 1 (2)]** tab context menu to rename the sheet to `Data`.
+1. Ensure that the **[!UICONTROL Data]** sheet is selected. In the **[!UICONTROL Data]** view:
+   1. Select **[!UICONTROL Show me]** at the top right and select **[!UICONTROL Text table]** (upper left top visualization) to modify the content of the Data view to a table.
+   1. Select **[!UICONTROL Swap Rows and Columns]** from the toolbar.
+   1. Modify **[!UICONTROL Standard]** to **[!UICONTROL Entire View]** from the **[!UICONTROL Fit]** drop-down menu in the toolbar.
 
-      ![Gráfico do Tableau Desktop](assets/uc2-tableau-graph.png)
+      Your Tableau Desktop should look like below.
 
-1. Selecione **[!UICONTROL Duplicar]** no menu de contexto da guia **[!UICONTROL Planilha 1]** para criar uma segunda planilha.
-1. Selecione **[!UICONTROL Renomear]** no menu de contexto da guia **[!UICONTROL Planilha 1]** para renomear a planilha como `Graph`.
-1. Selecione **[!UICONTROL Renomear]** no menu de contexto da guia **[!UICONTROL Planilha 1 (2)]** para renomear a planilha como `Data`.
-1. Verifique se a folha de **[!UICONTROL Dados]** está selecionada. Na exibição **[!UICONTROL Dados]**:
-   1. Selecione **[!UICONTROL Mostrar-me]** no canto superior direito e selecione **[!UICONTROL Tabela de texto]** (visualização superior esquerdo) para modificar o conteúdo do modo de exibição de Dados para uma tabela.
-   1. Selecione **[!UICONTROL Trocar Linhas e Colunas]** na barra de ferramentas.
-   1. Modifique **[!UICONTROL Padrão]** para **[!UICONTROL Exibição inteira]** do menu suspenso **[!UICONTROL Ajustar]** na barra de ferramentas.
+      ![Tableau Desktop Data](assets/uc2-tableau-data.png)
 
-      A área de trabalho do Tableau deve ser parecida com a exibida abaixo.
+1. Select the **[!UICONTROL New Dashboard]** tab button (at the bottom) to create a new **[!UICONTROL Dashboard 1]** view. In the **[!UICONTROL Dashboard 1]** view:
+   1. Drag and drop the **[!UICONTROL Graph]** sheet from the **[!UICONTROL Sheets]** shelf onto the **[!UICONTROL Dashboard 1]** view that reads *Drop sheets here*.
+   1. Drag and drop the **[!UICONTROL Data]** sheet from the **[!UICONTROL Sheets]** shelf below the **[!UICONTROL Graph]** sheet onto the **[!UICONTROL Dashboard 1]** view.
+   1. Select the **[!UICONTROL Data]** sheet in the view and modify **[!UICONTROL Entire View]** to **[!UICONTROL Fix Width]**.
 
-      ![Dados do Tableau Desktop](assets/uc2-tableau-data.png)
-
-1. Selecione o botão de guia **[!UICONTROL Novo Painel]** (na parte inferior) para criar um novo modo de exibição **[!UICONTROL Painel]**. No modo de exibição **[!UICONTROL Painel 1]**:
-   1. Arraste e solte a planilha **[!UICONTROL Gráfico]** da prateleira **[!UICONTROL Folhas]** no modo de exibição **[!UICONTROL Painel 1]** que lê *Folhas de soltar aqui*.
-   1. Arraste e solte a planilha **[!UICONTROL Dados]** da prateleira **[!UICONTROL Folhas]** abaixo da planilha **[!UICONTROL Gráfico]** no modo de exibição **[!UICONTROL Painel 1]**.
-   1. Selecione a planilha **[!UICONTROL Dados]** no modo de exibição e modifique a **[!UICONTROL Exibição Inteira]** para **[!UICONTROL Corrigir Largura]**.
-
-      A área de trabalho do Tableau deve ser parecida com a exibida abaixo.
+      Your Tableau Desktop should look like below.
 
       ![Tableau Desktop Dashboard 1](assets/uc2-tableau-dashboard.png)
 
 
->[!TAB Pesquisador]
+>[!TAB Looker]
 
-1. Na interface **[!UICONTROL Explorar]** do Looker, verifique se você possui uma configuração limpa. Caso contrário, selecione ![Configuração](/help/assets/icons/Setting.svg) **[!UICONTROL Remover campos e filtros]**.
-1. Selecione **[!UICONTROL + Filtro]** abaixo de **[!UICONTROL Filtros]**.
-1. Na caixa de diálogo **[!UICONTROL Adicionar Filtro]**:
-   1. Selecionar **[!UICONTROL ‣ Visualização De Dados Cc]**
-   1. Na lista de campos, selecione **[!UICONTROL ‣ Data do Intervalo de Datas]** e **[!UICONTROL Data do Intervalo de Datas]**.
-      ![Filtro de pesquisa](assets/uc2-looker-filter.png)
-1. Especifique o filtro **[!UICONTROL Data do Intervalo de Datas da Visualização de Dados Cc]**, pois **[!UICONTROL está no intervalo]** **[!UICONTROL 2023/01/01]** **[!UICONTROL até (antes)]** **[!UICONTROL 2023/02/01]**.
-1. Na seção **[!UICONTROL Visualização de Dados Cc]** no painel esquerdo,
-   1. Selecione **[!UICONTROL ‣ Intervalo de Datas Data]**, depois **[!UICONTROL Data]** da lista de **[!UICONTROL DIMENSÕES]**.
-   1. Selecione **[!UICONTROL Contagem]** abaixo de **[!UICONTROL MEDIDAS]** no painel esquerdo (na parte inferior).
-1. Selecione **[!UICONTROL Executar]**.
-1. Selecione **[!UICONTROL ‣ Visualização]** para exibir a visualização de linha.
+1. In the **[!UICONTROL Explore]** interface of Looker, ensure you do have a clean setup. If not, select ![Setting](/help/assets/icons/Setting.svg) **[!UICONTROL Remove fields and filters]**.
+1. Select **[!UICONTROL + Filter]** underneath **[!UICONTROL Filters]**.
+1. In the **[!UICONTROL Add Filter]** dialog:
+   1. Select **[!UICONTROL ‣ Cc Data View]**
+   1. From the list of fields, select **[!UICONTROL ‣ Daterange Date]** then **[!UICONTROL Daterange Date]**.
+      ![Looker filter](assets/uc2-looker-filter.png)
+1. Specify the **[!UICONTROL Cc Data View Daterange Date]** filter as **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2023/02/01]**.
+1. From the **[!UICONTROL Cc Data View]** section in the left rail, 
+   1. Select **[!UICONTROL ‣ Daterange Date]**, then **[!UICONTROL Date]** from the list of **[!UICONTROL DIMENSIONS]**.
+   1. Select **[!UICONTROL Count]** underneath **[!UICONTROL MEASURES]** in the left rail (at the bottom).
+1. Select **[!UICONTROL Run]**.
+1. Select **[!UICONTROL ‣ Visualization]** to display the line visualization.
 
-Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
+You should see a visualization and table similar as shown below.
 
-![Tendência diária do resultado da pesquisa](assets/uc2-looker-result.png)
+![Looker result daily trend](assets/uc2-looker-result.png)
 
 
 >[!TAB Jupyter Notebook]
 
-1. Insira as seguintes instruções em uma nova célula.
+1. Enter the following statements in a new cell.
 
    ```python
    import seaborn as sns
@@ -597,14 +598,14 @@ Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
    display(data)
    ```
 
-1. Execute a célula. Você deve ver uma saída semelhante à captura de tela abaixo.
+1. Execute the cell. You should see output similar to the screenshot below.
 
-   ![Resultados do Jupyter Notebook](assets/uc2-jupyter-results.png)
+   ![Jupyter Notebook Results](assets/uc2-jupyter-results.png)
 
 
 >[!TAB RStudio]
 
-1. Insira as seguintes instruções entre ` ` ``{r} ` e ` `` ` ` em uma nova parte.
+1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk.
 
    ```R
    ## Daily Events
@@ -620,104 +621,104 @@ Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
    print(df)
    ```
 
-1. Execute o pedaço. Você deve ver uma saída semelhante à captura de tela abaixo.
+1. Run the chunk. You should see output similar to the screenshot below.
 
-   ![RSudio Results](assets/uc2-rstudio-results.png)
+   ![RStudio Results](assets/uc2-rstudio-results.png)
 
 >[!ENDTABS]
 
 +++
 
 
-## Tendência horária
+## Hourly trend
 
-Nesse caso de uso, é desejável exibir uma tabela e uma visualização de linha simples que mostre uma tendência horária de ocorrências (eventos) para 1º de janeiro de 2023.
+In this use case, you want to display a table and simple line visualization that shows an hourly trend of occurrences(events) for January 1, 2023.
 
 +++ Customer Journey Analytics
 
-Um exemplo de painel **[!UICONTROL Tendência por hora]** para o caso de uso:
+An example **[!UICONTROL Hourly Trend]** panel for the use case:
 
-![Visualizações de tendências por hora do Customer Journey Analytics](assets/cja_hourly_trend.png)
+![Customer Journey Analytics Hourly Trend visualizations](assets/cja_hourly_trend.png)
 
 +++
 
-+++ Ferramentas de BI
++++ BI tools
 
 >[!PREREQUISITES]
 >
->Verifique se você validou [uma conexão bem-sucedida, pode listar visualizações de dados e usar uma visualização de dados](#connect-and-validate) para a ferramenta de BI para a qual deseja experimentar este caso de uso.
+>Ensure you have validated [a successful connection, can list data views, and use a data view](#connect-and-validate) for the BI tool for which you want to try out this use case. 
 >
 
 >[!BEGINTABS]
 
->[!TAB Power BI Desktop]
+>[!TAB Power BI Desktop] 
 
-O ![AlertRed](/help/assets/icons/AlertRed.svg) Power BI **não** entende como lidar com campos de data e hora; portanto, dimensões como **[!UICONTROL daterangehour]** e **[!UICONTROL daterangeminute]** não são suportadas.
+![AlertRed](/help/assets/icons/AlertRed.svg) Power BI does **not** understand how to handle date-time fields, so dimensions like **[!UICONTROL daterangehour]** and **[!UICONTROL daterangeminute]** are not supported.
 
->[!TAB Tableau Desktop]
+>[!TAB Tableau Desktop] 
 
-1. Selecione a guia **[!UICONTROL Folha 1]** na parte inferior para alternar da **[!UICONTROL Fonte de dados]**. Na exibição **[!UICONTROL Folha 1]**:
-   1. Arraste a entrada **[!UICONTROL Daterange]** da lista **[!UICONTROL Tabelas]** no painel **[!UICONTROL Dados]** e solte a entrada na prateleira **[!UICONTROL Filtros]**.
-   1. Na caixa de diálogo **[!UICONTROL Campo de Filtros \[Intervalo de datas\]]**, selecione **[!UICONTROL Intervalo de datas]** e selecione **[!UICONTROL Próximo >]**.
-   1. Na caixa de diálogo **[!UICONTROL Filtro \[Intervalo de datas\]]**, selecione **[!UICONTROL Intervalo de datas]** e especifique um período de `01/01/2023` a `02/01/2023`.
+1. Select the **[!UICONTROL Sheet 1]** tab at the bottom to switch from **[!UICONTROL Data source]**. In the **[!UICONTROL Sheet 1]** view:
+   1. Drag the **[!UICONTROL Daterange]** entry from the **[!UICONTROL Tables]** list in the **[!UICONTROL Data]** pane and drop the entry onto the **[!UICONTROL Filters]** shelf.
+   1. In the **[!UICONTROL Filters Field \[Daterange\]]** dialog, select **[!UICONTROL Range of Dates]** and select **[!UICONTROL Next >]**.
+   1. In the **[!UICONTROL Filter \[Daterange\]]** dialog, select **[!UICONTROL Range of dates]** and specify a period of `01/01/2023` - `02/01/2023`.
 
-      ![Filtro do Tableau Desktop](assets/uc3-tableau-filter.png)
+      ![Tableau Desktop Filter](assets/uc3-tableau-filter.png)
 
-   1. Arraste e solte **[!UICONTROL Daterangehour]** da lista **[!UICONTROL Tabelas]** no painel **[!UICONTROL Dados]** e solte a entrada no campo ao lado de **[!UICONTROL Colunas]**.
-      * Selecione **[!UICONTROL Mais]** > **[!UICONTROL Horas]** no menu suspenso **[!UICONTROL Daterangeday]**, para atualizar o valor para **[!UICONTROL HOUR(Daterangeday)]**.
-   1. Arraste e solte **[!UICONTROL Ocorrências]** da lista **[!UICONTROL Tabelas (*Nomes de Medidas*)]** no painel **[!UICONTROL Dados]** e solte a entrada no campo ao lado de **[!UICONTROL Linhas]**. O valor é convertido automaticamente em **[!UICONTROL SUM(Occurrences)]**.
-   1. Modifique **[!UICONTROL Padrão]** para **[!UICONTROL Exibição inteira]** do menu suspenso **[!UICONTROL Ajustar]** na barra de ferramentas.
+   1. Drag and drop **[!UICONTROL Daterangehour]** from the **[!UICONTROL Tables]** list in the **[!UICONTROL Data]** pane and drop the entry in the field next to **[!UICONTROL Columns]**.
+      * Select **[!UICONTROL More]** > **[!UICONTROL Hours]** from the **[!UICONTROL Daterangeday]** drop-down menu, so that the value is updated to **[!UICONTROL HOUR(Daterangeday)]**.
+   1. Drag and drop **[!UICONTROL Occurrences]** from the **[!UICONTROL Tables (*Measure Names*)]** list in the **[!UICONTROL Data]** pane and drop the entry in the field next to **[!UICONTROL Rows]**. The value is automatically converted to **[!UICONTROL SUM(Occurrences)]**.
+   1. Modify **[!UICONTROL Standard]** to **[!UICONTROL Entire View]** from the **[!UICONTROL Fit]** drop-down menu in the toolbar.
 
-      A área de trabalho do Tableau deve ser parecida com a exibida abaixo.
+      Your Tableau Desktop should look like below.
 
-      ![Gráfico do Tableau Desktop](assets/uc3-tableau-graph.png)
+      ![Tableau Desktop Graph](assets/uc3-tableau-graph.png)
 
-1. Selecione **[!UICONTROL Duplicar]** no menu de contexto da guia **[!UICONTROL Planilha 1]** para criar uma segunda planilha.
-1. Selecione **[!UICONTROL Renomear]** no menu de contexto da guia **[!UICONTROL Planilha 1]** para renomear a planilha como `Graph`.
-1. Selecione **[!UICONTROL Renomear]** no menu de contexto da guia **[!UICONTROL Planilha 1 (2)]** para renomear a planilha como `Data`.
-1. Verifique se a folha de **[!UICONTROL Dados]** está selecionada. Na exibição **[!UICONTROL Dados]**:
-   1. Selecione **[!UICONTROL Mostrar-me]** no canto superior direito e selecione **[!UICONTROL Tabela de texto]** (visualização superior esquerdo) para modificar o conteúdo do modo de exibição de Dados para uma tabela.
-   1. Arraste **[!UICONTROL HOUR(Daterangeday)]** de **[!UICONTROL Colunas]** para **[!UICONTROL Linhas]**.
-   1. Modifique **[!UICONTROL Padrão]** para **[!UICONTROL Exibição inteira]** do menu suspenso **[!UICONTROL Ajustar]** na barra de ferramentas.
+1. Select **[!UICONTROL Duplicate]** from the **[!UICONTROL Sheet 1]** tab context menu to create a second sheet.
+1. Select **[!UICONTROL Rename]** from the **[!UICONTROL Sheet 1]** tab context menu to rename the sheet to `Graph`.
+1. Select **[!UICONTROL Rename]** from the **[!UICONTROL Sheet 1 (2)]** tab context menu to rename the sheet to `Data`.
+1. Ensure that the **[!UICONTROL Data]** sheet is selected. In the **[!UICONTROL Data]** view:
+   1. Select **[!UICONTROL Show me]** at the top right and select **[!UICONTROL Text table]** (upper left top visualization) to modify the content of the Data view to a table.
+   1. Drag **[!UICONTROL HOUR(Daterangeday)]** from **[!UICONTROL Columns]** to **[!UICONTROL Rows]**.
+   1. Modify **[!UICONTROL Standard]** to **[!UICONTROL Entire View]** from the **[!UICONTROL Fit]** drop-down menu in the toolbar.
 
-      A área de trabalho do Tableau deve ser parecida com a exibida abaixo.
+      Your Tableau Desktop should look like below.
 
-      ![Dados do Tableau Desktop](assets/uc3-tableau-data.png)
+      ![Tableau Desktop Data](assets/uc3-tableau-data.png)
 
-1. Selecione o botão de guia **[!UICONTROL Novo Painel]** (na parte inferior) para criar um novo modo de exibição **[!UICONTROL Painel]**. No modo de exibição **[!UICONTROL Painel 1]**:
-   1. Arraste e solte a planilha **[!UICONTROL Gráfico]** da prateleira **[!UICONTROL Folhas]** no modo de exibição **[!UICONTROL Painel 1]** que lê *Folhas de soltar aqui*.
-   1. Arraste e solte a planilha **[!UICONTROL Dados]** da prateleira **[!UICONTROL Folhas]** abaixo da planilha **[!UICONTROL Gráfico]** no modo de exibição **[!UICONTROL Painel 1]**.
-   1. Selecione a planilha **[!UICONTROL Dados]** no modo de exibição e modifique a **[!UICONTROL Exibição Inteira]** para **[!UICONTROL Corrigir Largura]**.
+1. Select **[!UICONTROL New Dashboard]** tab button (at the bottom) to create a new **[!UICONTROL Dashboard 1]** view. In the **[!UICONTROL Dashboard 1]** view:
+   1. Drag and drop the **[!UICONTROL Graph]** sheet from the **[!UICONTROL Sheets]** shelf onto the **[!UICONTROL Dashboard 1]** view that reads *Drop sheets here*.
+   1. Drag and drop the **[!UICONTROL Data]** sheet from the **[!UICONTROL Sheets]** shelf below the **[!UICONTROL Graph]** sheet onto the **[!UICONTROL Dashboard 1]** view.
+   1. Select the **[!UICONTROL Data]** sheet in the view and modify **[!UICONTROL Entire View]** to **[!UICONTROL Fix Width]**.
 
-      A exibição do **[!UICONTROL Painel 1]** deve ser semelhante à mostrada abaixo.
+      Your **[!UICONTROL Dashboard 1]** view should look like below.
 
       ![Tableau Desktop Dashboard 1](assets/uc3-tableau-dashboard.png)
 
 
->[!TAB Pesquisador]
+>[!TAB Looker]
 
 
-1. Na interface **[!UICONTROL Explorar]** do Looker, verifique se você possui uma configuração limpa. Caso contrário, selecione ![Configuração](/help/assets/icons/Setting.svg) **[!UICONTROL Remover campos e filtros]**.
-1. Selecione **[!UICONTROL + Filtro]** abaixo de **[!UICONTROL Filtros]**.
-1. Na caixa de diálogo **[!UICONTROL Adicionar Filtro]**:
-   1. Selecionar **[!UICONTROL ‣ Visualização De Dados Cc]**
-   1. Na lista de campos, selecione **[!UICONTROL ‣ Data do Intervalo de Datas]** e **[!UICONTROL Data do Intervalo de Datas]**.
-      ![Filtro de pesquisa](assets/uc2-looker-filter.png)
-1. Especifique o filtro **[!UICONTROL Data do Intervalo de Datas da Visualização de Dados Cc]**, pois **[!UICONTROL está no intervalo]** **[!UICONTROL 2023/01/01]** **[!UICONTROL até (antes)]** **[!UICONTROL 2023/01/02]**.
-1. Na seção **[!UICONTROL Visualização de Dados Cc]** no painel esquerdo,
-   1. Selecione **[!UICONTROL ‣ Data Daterangehour]**, depois **[!UICONTROL Hora]** da lista de **[!UICONTROL DIMENSÕES]**.
-   1. Selecione **[!UICONTROL Contagem]** abaixo de **[!UICONTROL MEDIDAS]** no painel esquerdo (na parte inferior).
-1. Selecione **[!UICONTROL Executar]**.
-1. Selecione **[!UICONTROL ‣ Visualização]** para exibir a visualização de linha.
+1. In the **[!UICONTROL Explore]** interface of Looker, ensure you do have a clean setup. If not, select ![Setting](/help/assets/icons/Setting.svg) **[!UICONTROL Remove fields and filters]**.
+1. Select **[!UICONTROL + Filter]** underneath **[!UICONTROL Filters]**.
+1. In the **[!UICONTROL Add Filter]** dialog:
+   1. Select **[!UICONTROL ‣ Cc Data View]**
+   1. From the list of fields, select **[!UICONTROL ‣ Daterange Date]** then **[!UICONTROL Daterange Date]**.
+      ![Looker filter](assets/uc2-looker-filter.png)
+1. Specify the **[!UICONTROL Cc Data View Daterange Date]** filter as **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2023/01/02]**.
+1. From the **[!UICONTROL Cc Data View]** section in the left rail, 
+   1. Select **[!UICONTROL ‣ Daterangehour Date]**, then **[!UICONTROL Time]** from the list of **[!UICONTROL DIMENSIONS]**.
+   1. Select **[!UICONTROL Count]** underneath **[!UICONTROL MEASURES]** in the left rail (at the bottom).
+1. Select **[!UICONTROL Run]**.
+1. Select **[!UICONTROL ‣ Visualization]** to display the line visualization.
 
-Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
+You should see a visualization and table similar as shown below.
 
-![Tendência diária do resultado da pesquisa](assets/uc3-looker-result.png)
+![Looker result daily trend](assets/uc3-looker-result.png)
 
 
 >[!TAB Jupyter Notebook]
 
-1. Insira as seguintes instruções em uma nova célula.
+1. Enter the following statements in a new cell.
 
    ```python
    import seaborn as sns
@@ -735,14 +736,14 @@ Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
    display(data)
    ```
 
-1. Execute a célula. Você deve ver uma saída semelhante à captura de tela abaixo.
+1. Execute the cell. You should see output similar to the screenshot below.
 
-   ![Resultados do Jupyter Notebook](assets/uc3-jupyter-results.png)
+   ![Jupyter Notebook Results](assets/uc3-jupyter-results.png)
 
 
 >[!TAB RStudio]
 
-1. Insira as seguintes instruções entre ` ` ``{r} ` e ` `` ` ` em uma nova parte.
+1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk.
 
    ```R
    ## Hourly Events
@@ -758,133 +759,133 @@ Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
    print(df)
    ```
 
-1. Execute o pedaço. Você deve ver uma saída semelhante à captura de tela abaixo.
+1. Run the chunk. You should see output similar to the screenshot below.
 
-   ![RSudio Results](assets/uc3-rstudio-results.png)
+   ![RStudio Results](assets/uc3-rstudio-results.png)
 
 >[!ENDTABS]
 
 +++
 
 
-## Tendência mensal
+## Monthly trend
 
-Nesse caso de uso, é necessário exibir uma tabela e uma visualização de linha simples que mostre uma tendência mensal de ocorrência (eventos) para 2023.
+In this use case, you want to display a table and simple line visualization that shows a monthly trend of occurrence (events) for 2023.
 
 +++ Customer Journey Analytics
 
-Um exemplo de painel **[!UICONTROL Tendência mensal]** para o caso de uso:
+An example **[!UICONTROL Monthly Trend]** panel for the use case:
 
-![Visualização mensal da tendência do Customer Journey Analytics](assets/cja_monthly_trend.png)
+![Customer Journey Analytics Monthly Trend visualization](assets/cja_monthly_trend.png)
 
 +++
 
-+++ Ferramentas de BI
++++ BI tools
 
 >[!PREREQUISITES]
 >
->Verifique se você validou [uma conexão bem-sucedida, pode listar visualizações de dados e usar uma visualização de dados](#connect-and-validate) para a ferramenta de BI para a qual deseja experimentar este caso de uso.
+>Ensure you have validated [a successful connection, can list data views, and use a data view](#connect-and-validate) for the BI tool for which you want to try out this use case. 
 >
 
 >[!BEGINTABS]
 
->[!TAB Power BI Desktop]
+>[!TAB Power BI Desktop] 
 
-1. No painel **[!UICONTROL Dados]**:
-   1. Selecione **[!UICONTROL daterangemmonth]**.
-   1. Selecione **[!UICONTROL somar ocorrências]**.
+1. In the **[!UICONTROL Data]** pane:
+   1. Select **[!UICONTROL daterangemonth]**.
+   1. Select **[!UICONTROL sum occurrences]**.
+   
+   You see a table displaying the occurrences for the current month. For better visibility, enlarge the visualization.
 
-   Você verá uma tabela exibindo as ocorrências do mês atual. Para obter melhor visibilidade, aumente a visualização.
+1. In the **[!UICONTROL Filters]** pane:
 
-1. No painel **[!UICONTROL Filtros]**:
+   1. Select the **[!UICONTROL daterangemonth is (All)]** from **[!UICONTROL Filters on this visual]**.
+   1. Select **[!UICONTROL Advanced filtering]** as the **[!UICONTROL Filter type]**.
+   1. Define the filter to **[!UICONTROL Show items when the value]** **[!UICONTROL is on or after]** `1/1/2023` **[!UICONTROL And]** **[!UICONTROL is before]** `1/1/2024.` You can use the calendar icon to pick and select dates.
+   1. Select **[!UICONTROL Apply filter]**.
+   
+   You see the table updated with the applied **[!UICONTROL daterangemonth]** filter.
 
-   1. Selecione o **[!UICONTROL daterangemonth é (Todos)]** de **[!UICONTROL Filtros neste visual]**.
-   1. Selecione **[!UICONTROL Filtragem avançada]** como o **[!UICONTROL Tipo de filtro]**.
-   1. Defina o filtro como **[!UICONTROL Mostrar itens quando o valor]** **[!UICONTROL estiver em ou após]** `1/1/2023` **[!UICONTROL E]** **[!UICONTROL estiver antes]** `1/1/2024.`. Você pode usar o ícone de calendário para escolher e selecionar datas.
-   1. Selecione **[!UICONTROL Aplicar filtro]**.
+1. In the **[!UICONTROL Visualizations]** pane:
 
-   Você vê a tabela atualizada com o filtro aplicado **[!UICONTROL daterangemonth]**.
+   1. Select the **[!UICONTROL Line chart]** visualization.
 
-1. No painel **[!UICONTROL Visualizações]**:
+   A line chart visualization replaces the table while using the same data as the table. Your Power BI Desktop should look like below.
 
-   1. Selecione a visualização **[!UICONTROL Gráfico de linhas]**.
+   ![Power BI Desktop Use Case 2 Date range filter](assets/uc4-pbi-filter-daterange.png)
 
-   Uma visualização de gráfico de linhas substitui a tabela enquanto usa os mesmos dados que a tabela. A área de trabalho do Power BI deve ser semelhante à mostrada abaixo.
+1. On the Line chart visualization:
 
-   ![Filtro de intervalo de datas do Caso de Uso de Desktop da Power BI 2](assets/uc4-pbi-filter-daterange.png)
+   1. Select ![More](/help/assets/icons/More.svg).
+   1. From the context menu, select **[!UICONTROL Show as a table]**.
 
-1. Na visualização do Gráfico de linha:
+   The main view is updated to show both a line visualization and a table. Your Power BI Desktop should look like below.
 
-   1. Selecione ![Mais](/help/assets/icons/More.svg).
-   1. No menu de contexto, selecione **[!UICONTROL Mostrar como tabela]**.
+   ![Power BI Desktop Use Case 2 Final Daily Trend visualization](assets/uc4-pbi-filter-final.png)
 
-   A visualização principal é atualizada para mostrar uma visualização de linha e uma tabela. A área de trabalho do Power BI deve ser semelhante à mostrada abaixo.
+>[!TAB Tableau Desktop] 
 
-   ![Visualização da Tendência Diária Final do Caso de Uso 2 do Power BI Desktop](assets/uc4-pbi-filter-final.png)
+1. Select the **[!UICONTROL Sheet 1]** tab at the bottom to switch from **[!UICONTROL Data source]**. In the **[!UICONTROL Sheet 1]** view:
+   1. Drag the **[!UICONTROL Daterange]** entry from the **[!UICONTROL Tables]** list in the **[!UICONTROL Data]** pane and drop the entry onto the **[!UICONTROL Filters]** shelf.
+   1. In the **[!UICONTROL Filters Field \[Daterange\]]** dialog, select **[!UICONTROL Range of Dates]** and select **[!UICONTROL Next >]**.
+   1. In the **[!UICONTROL Filter \[Daterange\]]** dialog, select **[!UICONTROL Range of dates]** and specify a period of `01/01/2023` - `01/01/2024`.
 
->[!TAB Tableau Desktop]
+      ![Tableau Desktop Filter](assets/uc4-tableau-filter.png)
 
-1. Selecione a guia **[!UICONTROL Folha 1]** na parte inferior para alternar da **[!UICONTROL Fonte de dados]**. Na exibição **[!UICONTROL Folha 1]**:
-   1. Arraste a entrada **[!UICONTROL Daterange]** da lista **[!UICONTROL Tabelas]** no painel **[!UICONTROL Dados]** e solte a entrada na prateleira **[!UICONTROL Filtros]**.
-   1. Na caixa de diálogo **[!UICONTROL Campo de Filtros \[Intervalo de datas\]]**, selecione **[!UICONTROL Intervalo de datas]** e selecione **[!UICONTROL Próximo >]**.
-   1. Na caixa de diálogo **[!UICONTROL Filtro \[Intervalo de datas\]]**, selecione **[!UICONTROL Intervalo de datas]** e especifique um período de `01/01/2023` a `01/01/2024`.
+   1. Drag and drop **[!UICONTROL Daterangeday]** from the **[!UICONTROL Tables]** list in the **[!UICONTROL Data]** pane and drop the entry in the field next to **[!UICONTROL Columns]**.
+      * Select **[!UICONTROL MONTH]** from the **[!UICONTROL Daterangeday]** drop-down menu, so that the value is updated to **[!UICONTROL MONTH(Daterangeday)]**.
+   1. Drag and drop **[!UICONTROL Occurrences]** from the **[!UICONTROL Tables (*Measure Names*)]** list in the **[!UICONTROL Data]** pane and drop the entry in the field next to **[!UICONTROL Rows]**. The value is automatically converted to **[!UICONTROL SUM(Occurrences)]**.
+   1. Modify **[!UICONTROL Standard]** to **[!UICONTROL Entire View]** from the **[!UICONTROL Fit]** drop-down menu in the toolbar.
 
-      ![Filtro do Tableau Desktop](assets/uc4-tableau-filter.png)
+      Your Tableau Desktop should look like below.
 
-   1. Arraste e solte **[!UICONTROL Daterangeday]** da lista **[!UICONTROL Tabelas]** no painel **[!UICONTROL Dados]** e solte a entrada no campo ao lado de **[!UICONTROL Colunas]**.
-      * Selecione **[!UICONTROL MÊS]** no menu suspenso **[!UICONTROL Dia_da_data]**, para que o valor seja atualizado para **[!UICONTROL MÊS(Dia_da_data)]**.
-   1. Arraste e solte **[!UICONTROL Ocorrências]** da lista **[!UICONTROL Tabelas (*Nomes de Medidas*)]** no painel **[!UICONTROL Dados]** e solte a entrada no campo ao lado de **[!UICONTROL Linhas]**. O valor é convertido automaticamente em **[!UICONTROL SUM(Occurrences)]**.
-   1. Modifique **[!UICONTROL Padrão]** para **[!UICONTROL Exibição inteira]** do menu suspenso **[!UICONTROL Ajustar]** na barra de ferramentas.
+      ![Tableau Desktop Graph](assets/uc4-tableau-graph.png)
 
-      A área de trabalho do Tableau deve ser parecida com a exibida abaixo.
+1. Select **[!UICONTROL Duplicate]** from the **[!UICONTROL Sheet 1]** tab context menu to create a second sheet.
+1. Select **[!UICONTROL Rename]** from the **[!UICONTROL Sheet 1]** tab context menu to rename the sheet to `Graph`.
+1. Select **[!UICONTROL Rename]** from the **[!UICONTROL Sheet 1 (2)]** tab context menu to rename the sheet to `Data`.
+1. Ensure that the **[!UICONTROL Data]** sheet is selected. In the Data view:
+   1. Select **[!UICONTROL Show me]** at the top right and select **[!UICONTROL Text table]** (upper left top visualization) to modify the content of the Data view to a table.
+   1. Drag **[!UICONTROL MONTH(Daterangeday)]** from **[!UICONTROL Columns]** to **[!UICONTROL Rows]**.
+   1. Modify **[!UICONTROL Standard]** to **[!UICONTROL Entire View]** from the **[!UICONTROL Fit]** drop-down menu in the toolbar.
 
-      ![Gráfico do Tableau Desktop](assets/uc4-tableau-graph.png)
+      Your Tableau Desktop should look like below.
 
-1. Selecione **[!UICONTROL Duplicar]** no menu de contexto da guia **[!UICONTROL Planilha 1]** para criar uma segunda planilha.
-1. Selecione **[!UICONTROL Renomear]** no menu de contexto da guia **[!UICONTROL Planilha 1]** para renomear a planilha como `Graph`.
-1. Selecione **[!UICONTROL Renomear]** no menu de contexto da guia **[!UICONTROL Planilha 1 (2)]** para renomear a planilha como `Data`.
-1. Verifique se a folha de **[!UICONTROL Dados]** está selecionada. Na visualização de dados:
-   1. Selecione **[!UICONTROL Mostrar-me]** no canto superior direito e selecione **[!UICONTROL Tabela de texto]** (visualização superior esquerdo) para modificar o conteúdo do modo de exibição de Dados para uma tabela.
-   1. Arraste **[!UICONTROL MONTH(Daterangeday)]** de **[!UICONTROL Colunas]** para **[!UICONTROL Linhas]**.
-   1. Modifique **[!UICONTROL Padrão]** para **[!UICONTROL Exibição inteira]** do menu suspenso **[!UICONTROL Ajustar]** na barra de ferramentas.
+      ![Tableau Desktop Data](assets/uc4-tableau-data.png)
 
-      A área de trabalho do Tableau deve ser parecida com a exibida abaixo.
+1. Select **[!UICONTROL New Dashboard]** tab button (at the bottom) to create a new **[!UICONTROL Dashboard 1]** view. In the **[!UICONTROL Dashboard 1]** view:
+   1. Drag and drop the **[!UICONTROL Graph]** sheet from the **[!UICONTROL Sheets]** shelf onto the **[!UICONTROL Dashboard 1]** view that reads *Drop sheets here*.
+   1. Drag and drop the **[!UICONTROL Data]** sheet from the **[!UICONTROL Sheets]** shelf below the **[!UICONTROL Graph]** sheet onto the **[!UICONTROL Dashboard 1]** view.
+   1. Select the **[!UICONTROL Data]** sheet in the view and modify **[!UICONTROL Entire View]** to **[!UICONTROL Fix Width]**.
 
-      ![Dados do Tableau Desktop](assets/uc4-tableau-data.png)
-
-1. Selecione o botão de guia **[!UICONTROL Novo Painel]** (na parte inferior) para criar um novo modo de exibição **[!UICONTROL Painel]**. No modo de exibição **[!UICONTROL Painel 1]**:
-   1. Arraste e solte a planilha **[!UICONTROL Gráfico]** da prateleira **[!UICONTROL Folhas]** no modo de exibição **[!UICONTROL Painel 1]** que lê *Folhas de soltar aqui*.
-   1. Arraste e solte a planilha **[!UICONTROL Dados]** da prateleira **[!UICONTROL Folhas]** abaixo da planilha **[!UICONTROL Gráfico]** no modo de exibição **[!UICONTROL Painel 1]**.
-   1. Selecione a planilha **[!UICONTROL Dados]** no modo de exibição e modifique a **[!UICONTROL Exibição Inteira]** para **[!UICONTROL Corrigir Largura]**.
-
-      A área de trabalho do Tableau deve ser parecida com a exibida abaixo.
+      Your Tableau Desktop should look like below.
 
       ![Tableau Desktop Dashboard 1](assets/uc4-tableau-dashboard.png)
 
 
->[!TAB Pesquisador]
+>[!TAB Looker]
 
-1. Na interface **[!UICONTROL Explorar]** do Looker, verifique se você possui uma configuração limpa. Caso contrário, selecione ![Configuração](/help/assets/icons/Setting.svg) **[!UICONTROL Remover campos e filtros]**.
-1. Selecione **[!UICONTROL + Filtro]** abaixo de **[!UICONTROL Filtros]**.
-1. Na caixa de diálogo **[!UICONTROL Adicionar Filtro]**:
-   1. Selecionar **[!UICONTROL ‣ Visualização De Dados Cc]**
-   1. Na lista de campos, selecione **[!UICONTROL ‣ Data do Intervalo de Datas]** e **[!UICONTROL Data do Intervalo de Datas]**.
-      ![Filtro de pesquisa](assets/uc2-looker-filter.png)
-1. Especifique o filtro **[!UICONTROL Data do Intervalo de Datas da Visualização de Dados Cc]**, pois **[!UICONTROL está no intervalo]** **[!UICONTROL 2023/01/01]** **[!UICONTROL até (antes)]** **[!UICONTROL 2024/01/01]**.
-1. No painel **[!UICONTROL Exibição De Dados Cc]** esquerdo,
-   1. Selecione **[!UICONTROL ‣ Daterangemonth Date]**, depois **[!UICONTROL Month]** da lista de **[!UICONTROL DIMENSIONS]**.
-   1. Selecione **[!UICONTROL Contagem]** abaixo de **[!UICONTROL MEDIDAS]** no painel esquerdo (na parte inferior).
-1. Selecione **[!UICONTROL Executar]**.
-1. Selecione **[!UICONTROL ‣ Visualização]** para exibir a visualização de linha.
+1. In the **[!UICONTROL Explore]** interface of Looker, ensure you do have a clean setup. If not, select ![Setting](/help/assets/icons/Setting.svg) **[!UICONTROL Remove fields and filters]**.
+1. Select **[!UICONTROL + Filter]** underneath **[!UICONTROL Filters]**.
+1. In the **[!UICONTROL Add Filter]** dialog:
+   1. Select **[!UICONTROL ‣ Cc Data View]**
+   1. From the list of fields, select **[!UICONTROL ‣ Daterange Date]** then **[!UICONTROL Daterange Date]**.
+      ![Looker filter](assets/uc2-looker-filter.png)
+1. Specify the **[!UICONTROL Cc Data View Daterange Date]** filter as **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2024/01/01]**.
+1. From the left **[!UICONTROL Cc Data View]** rail, 
+   1. Select **[!UICONTROL ‣ Daterangemonth Date]**, then **[!UICONTROL Month]** from the list of **[!UICONTROL DIMENSIONS]**.
+   1. Select **[!UICONTROL Count]** underneath **[!UICONTROL MEASURES]** in the left rail (at the bottom).
+1. Select **[!UICONTROL Run]**.
+1. Select **[!UICONTROL ‣ Visualization]** to display the line visualization.
 
-Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
+You should see a visualization and table similar as shown below.
 
-![Tendência diária do resultado da pesquisa](assets/uc4-looker-result.png)
+![Looker result daily trend](assets/uc4-looker-result.png)
 
 
 >[!TAB Jupyter Notebook]
 
-1. Insira as seguintes instruções em uma nova célula.
+1. Enter the following statements in a new cell.
 
    ```python
    import seaborn as sns
@@ -902,14 +903,14 @@ Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
    display(data)
    ```
 
-1. Execute a célula. Você deve ver uma saída semelhante à captura de tela abaixo.
+1. Execute the cell. You should see output similar to the screenshot below.
 
-   ![Resultados do Jupyter Notebook](assets/uc4-jupyter-results.png)
+   ![Jupyter Notebook Results](assets/uc4-jupyter-results.png)
 
 
 >[!TAB RStudio]
 
-1. Insira as seguintes instruções entre ` ` ``{r} ` e ` `` ` ` em uma nova parte.
+1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk.
 
    ```R
    ## Hourly Events
@@ -925,193 +926,193 @@ Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
    print(df)
    ```
 
-1. Execute o pedaço. Você deve ver uma saída semelhante à captura de tela abaixo.
+1. Run the chunk. You should see output similar to the screenshot below.
 
-   ![RSudio Results](assets/uc4-rstudio-results.png)
+   ![RStudio Results](assets/uc4-rstudio-results.png)
 
 >[!ENDTABS]
 
 +++
 
 
-## Dimensão única classificada
+## Single dimension ranked
 
-Nesse caso de uso, é desejável exibir uma tabela e uma visualização de barra simples que mostre a receita de compras e compras de nomes de produtos em 2023.
+In this use case, you want to display a table and simple bar visualization that shows the purchases and purchases revenue for product names over 2023.
 
 +++ Customer Journey Analytics
 
-Um exemplo de painel **[!UICONTROL Dimension único classificado]** para o caso de uso:
+An example **[!UICONTROL Single Dimension Ranked]** panel for the use case:
 
-![Visualização classificada de dimensão única do Customer Journey Analytics](assets/cja-single-dimension-ranked.png)
+![Customer Journey Analytics Single dimension ranked visualization](assets/cja-single-dimension-ranked.png)
 
 +++
 
-+++ Ferramentas de BI
++++ BI tools
 
 >[!PREREQUISITES]
 >
->Verifique se você validou [uma conexão bem-sucedida, pode listar visualizações de dados e usar uma visualização de dados](#connect-and-validate) para a ferramenta de BI para a qual deseja experimentar este caso de uso.
+>Ensure you have validated [a successful connection, can list data views, and use a data view](#connect-and-validate) for the BI tool for which you want to try out this use case. 
 >
 
 >[!BEGINTABS]
 
->[!TAB Power BI Desktop]
+>[!TAB Power BI Desktop] 
 
-1. No painel **[!UICONTROL Dados]**:
-   1. Selecione **[!UICONTROL intervalo de datas]**.
-   1. Selecione **[!UICONTROL product_name]**.
-   1. Selecione **[!UICONTROL sum purchase_revenue]**.
-   1. Selecione **[!UICONTROL somar compras]**.
+1. In the **[!UICONTROL Data]** pane:
+   1. Select **[!UICONTROL daterange]**.
+   1. Select **[!UICONTROL product_name]**.
+   1. Select **[!UICONTROL sum purchase_revenue]**.
+   1. Select **[!UICONTROL sum purchases]**.
+   
+   You see an empty table displaying only the column headers for the selected element. For better visibility, enlarge the visualization.
 
-   Você vê uma tabela vazia exibindo somente os cabeçalhos de coluna do elemento selecionado. Para obter melhor visibilidade, aumente a visualização.
+1. In the **[!UICONTROL Filters]** pane:
 
-1. No painel **[!UICONTROL Filtros]**:
+   1. Select the **[!UICONTROL daterange is (All)]** from **[!UICONTROL Filters on this visual]**.
+   1. Select **[!UICONTROL Relative date]** as the **[!UICONTROL Filter type]**.
+   1. Define the filter to **[!UICONTROL Show items when the value]** **[!UICONTROL is in the last]** `1` **[!UICONTROL calendar years]**.
+   1. Select **[!UICONTROL Apply filter]**.
+   
+   You see the table updated with the applied **[!UICONTROL daterange]** filter.
 
-   1. Selecione o **[!UICONTROL intervalo de datas é (Todos)]** de **[!UICONTROL Filtros neste visual]**.
-   1. Selecione **[!UICONTROL Data relativa]** como o **[!UICONTROL Tipo de filtro]**.
-   1. Defina o filtro como **[!UICONTROL Mostrar itens quando o valor]** **[!UICONTROL estiver nos últimos]** `1` **[!UICONTROL anos]**.
-   1. Selecione **[!UICONTROL Aplicar filtro]**.
+1. In the **[!UICONTROL Visualization]** pane:
 
-   Você vê a tabela atualizada com o filtro **[!UICONTROL dataterange]** aplicado.
+   1. Use ![CrossSize75](/help/assets/icons/CrossSize75.svg) to remove **[!UICONTROL daterange]** from **[!UICONTROL Columns]**.
+   1. Drag and drop **[!UICONTROL Sum of purchases_revenue]** underneath **[!UICONTROL Sum of purchases]** in **[!UICONTROL Columns]**.
 
-1. No painel **[!UICONTROL Visualização]**:
+1. On the Table visualization:
+   
+   1. Select **[!UICONTROL Sum of purchase_revenue]** to sort the product names in descending purchase revenue order. Your Power BI Desktop should look like below.
+   
+   ![Power BI Desktop Use Case 5 Table status](assets/uc5-pbi-table.png)
 
-   1. Use ![CrossSize75](/help/assets/icons/CrossSize75.svg) para remover **[!UICONTROL daterange]** de **[!UICONTROL Colunas]**.
-   1. Arraste e solte **[!UICONTROL Soma de purchases_revenue]** abaixo de **[!UICONTROL Soma de compras]** em **[!UICONTROL Colunas]**.
+1. In the **[!UICONTROL Filters]** pane:
 
-1. Na visualização de tabela:
+   1. Select **[!UICONTROL product_name is (All)]**.
+   1. Set **[!UICONTROL Filter type]** to **[!UICONTROL Top N]**.
+   1. Define the filter to **[!UICONTROL Show items]** **[!UICONTROL Top]** `10` **[!UICONTROL By value]**.
+   1. Drag and drop **[!UICONTROL purchase_revenue]** into **[!UICONTROL By value]** **[!UICONTROL Add data fields here]**.
+   1. Select **[!UICONTROL Apply filter]**.
 
-   1. Selecione **[!UICONTROL Sum of purchase_revenue]** para classificar os nomes de produtos em ordem de receita de compra decrescente. A área de trabalho do Power BI deve ser semelhante à mostrada abaixo.
+   You see the table updated with values for purchase revenue in sync with the Freeform table visualization in Analysis Workspace.
 
-   ![Status da tabela do caso de uso de desktop da Power BI 5](assets/uc5-pbi-table.png)
+1. In the **[!UICONTROL Visualizations]** pane:
 
-1. No painel **[!UICONTROL Filtros]**:
+   1. Select the **[!UICONTROL Line and stacked column chart]** visualization. 
 
-   1. Selecione **[!UICONTROL product_name is (All)]**.
-   1. Definir **[!UICONTROL Tipo de filtro]** como **[!UICONTROL N principais]**.
-   1. Defina o filtro como **[!UICONTROL Mostrar itens]** **[!UICONTROL Superior]** `10` **[!UICONTROL Por valor]**.
-   1. Arraste e solte **[!UICONTROL purchase_revenue]** em **[!UICONTROL By value]** **[!UICONTROL Adicionar campos de dados aqui]**.
-   1. Selecione **[!UICONTROL Aplicar filtro]**.
+   A line and stacked column chart visualization replaces the table while using the same data as the table.
 
-   Você vê a tabela atualizada com valores para a receita de compra em sincronia com a visualização da tabela de forma livre no Analysis Workspace.
+1. Drag and drop **[!UICONTROL purchases]** onto **[!UICONTROL Line y-axis]** in the **[!UICONTROL Visualizations]** pane.
 
-1. No painel **[!UICONTROL Visualizações]**:
+   The line and stacked column chart is updated. Your Power BI Desktop should look like below.
 
-   1. Selecione a visualização **[!UICONTROL Gráfico de linhas e colunas empilhadas]**.
+   ![Power BI Desktop Use Case 5 Graph](assets/uc5-pbi-chart.png)
 
-   Uma visualização de gráfico de linhas e colunas empilhadas substitui a tabela enquanto usa os mesmos dados que a tabela.
+1. On the Line and stacked column chart visualization:
 
-1. Arraste e solte **[!UICONTROL compras]** no **[!UICONTROL eixo Y da linha]** no painel **[!UICONTROL Visualizações]**.
+   1. Select ![More](/help/assets/icons/More.svg).
+   1. From the context menu, select **[!UICONTROL Show as a table]**.
 
-   O gráfico de linhas e colunas empilhadas é atualizado. A área de trabalho do Power BI deve ser semelhante à mostrada abaixo.
+   The main view is updated to show both a line visualization and a table.
 
-   ![Gráfico do Caso de Uso 5 da Área de Trabalho do Power BI](assets/uc5-pbi-chart.png)
-
-1. Na visualização do gráfico de linhas e colunas empilhadas:
-
-   1. Selecione ![Mais](/help/assets/icons/More.svg).
-   1. No menu de contexto, selecione **[!UICONTROL Mostrar como tabela]**.
-
-   A visualização principal é atualizada para mostrar uma visualização de linha e uma tabela.
-
-   ![Visualização da Tendência Diária Final do Caso de Uso 2 do Power BI Desktop](assets/uc5-pbi-final.png)
+   ![Power BI Desktop Use Case 2 Final Daily Trend visualization](assets/uc5-pbi-final.png)
 
 >[!TAB Tableau Desktop]
 
-1. Selecione a guia **[!UICONTROL Folha 1]** na parte inferior para alternar da **[!UICONTROL Fonte de dados]**. Na exibição **[!UICONTROL Folha 1]**:
-   1. Arraste a entrada **[!UICONTROL Daterange]** da lista **[!UICONTROL Tabelas]** no painel **[!UICONTROL Dados]** e solte a entrada na prateleira **[!UICONTROL Filtros]**.
-   1. Na caixa de diálogo **[!UICONTROL Campo de Filtros \[Intervalo de datas\]]**, selecione **[!UICONTROL Intervalo de datas]** e selecione **[!UICONTROL Próximo >]**.
-   1. Na caixa de diálogo **[!UICONTROL Filtro \[Intervalo de datas\]]**, selecione **[!UICONTROL Intervalo de datas]** e especifique um período de `01/01/2023` a `31/12/2023`. Selecione **[!UICONTROL Aplicar]** e **[!UICONTROL OK]**.
+1. Select the **[!UICONTROL Sheet 1]** tab at the bottom to switch from **[!UICONTROL Data source]**. In the **[!UICONTROL Sheet 1]** view:
+   1. Drag the **[!UICONTROL Daterange]** entry from the **[!UICONTROL Tables]** list in the **[!UICONTROL Data]** pane and drop the entry onto the **[!UICONTROL Filters]** shelf.
+   1. In the **[!UICONTROL Filters Field \[Daterange\]]** dialog, select **[!UICONTROL Range of Dates]** and select **[!UICONTROL Next >]**.
+   1. In the **[!UICONTROL Filter \[Daterange\]]** dialog, select **[!UICONTROL Range of dates]** and specify a period of `01/01/2023` - `31/12/2023`. Select **[!UICONTROL Apply]** and **[!UICONTROL OK]**.
 
-      ![Filtro do Tableau Desktop](assets/uc5-tableau-filter.png)
+      ![Tableau Desktop Filter](assets/uc5-tableau-filter.png)
 
-   1. Arraste e solte o **[!UICONTROL Nome do Produto]** da lista **[!UICONTROL Tabelas]** no painel **[!UICONTROL Dados]** e solte a entrada no campo ao lado de **[!UICONTROL Linhas]**.
-   1. Arraste e solte **[!UICONTROL Compras]** da lista **[!UICONTROL Tabelas (*Nomes de Medidas*)]** no painel **[!UICONTROL Dados]** e solte a entrada no campo ao lado de **[!UICONTROL Linhas]**. O valor é convertido automaticamente em **[!UICONTROL SUM(Purchases)]**.
-   1. Arraste e solte a **[!UICONTROL Receita de Compra]** da lista **[!UICONTROL Tabelas (*Nomes de Medidas*)]** no painel **[!UICONTROL Dados]** e solte a entrada no campo ao lado de **[!UICONTROL Colunas]** e à esquerda de **[!UICONTROL SOMA(Compras)]**. O valor é convertido automaticamente em **[!UICONTROL SUM(Purchase Revenue)]**.
-   1. Para ordenar ambos os gráficos em ordem decrescente de receita de compra, passe o mouse sobre o título **[!UICONTROL Receita de compra]** e selecione o ícone de classificação.
-   1. Para limitar o número de entradas nos gráficos, selecione **[!UICONTROL SUM(Purchase Revenue)]** em **[!UICONTROL Linhas]** e, no menu suspenso, selecione **[!UICONTROL Filtro]**.
-   1. Na caixa de diálogo **[!UICONTROL Filtrar \[Comprar receita\]]**, selecione **[!UICONTROL Intervalo de valores]** e insira os valores apropriados. Por exemplo: `1,000,000` - `2,000,000`. Selecione **[!UICONTROL Aplicar]** e **[!UICONTROL OK]**.
-   1. Para converter os dois gráficos de barras em um gráfico de combinação dupla, selecione **[!UICONTROL SOMA(Compras)]** em **[!UICONTROL Linhas]** e, no menu suspenso, selecione **[!UICONTROL Eixo Duplo]**. Os gráficos de barras se transformam em um gráfico de dispersão.
-   1. Para modificar o gráfico de dispersão para um gráfico de barras:
-      1. Selecione **[!UICONTROL SUM(Purchases)]** na área **[!UICONTROL Marks]** e selecione **[!UICONTROL Line]** no menu suspenso.
-      1. Selecione **[!UICONTROL SUM(Purchase Revenue)]** na área **[!UICONTROL Marcas]** e selecione **[!UICONTROL Barra]** no menu suspenso.
+   1. Drag and drop **[!UICONTROL Product Name]** from the **[!UICONTROL Tables]** list in the **[!UICONTROL Data]** pane and drop the entry in the field next to **[!UICONTROL Rows]**.
+   1. Drag and drop **[!UICONTROL Purchases]** from the **[!UICONTROL Tables (*Measure Names*)]** list in the **[!UICONTROL Data]** pane and drop the entry in the field next to **[!UICONTROL Rows]**. The value is automatically converted to **[!UICONTROL SUM(Purchases)]**.
+   1. Drag and drop **[!UICONTROL Purchase Revenue]** from the **[!UICONTROL Tables (*Measure Names*)]** list in the **[!UICONTROL Data]** pane and drop the entry in the field next to **[!UICONTROL Columns]** and left from **[!UICONTROL SUM(Purchases)]**. The value is automatically converted to **[!UICONTROL SUM(Purchase Revenue)]**.
+   1. To order both charts in descending purchase revenue order, hover over the **[!UICONTROL Purchase Revenue]** title and select the sort icon.
+   1. To limit the number of entries in the charts, select **[!UICONTROL SUM(Purchase Revenue)]** in **[!UICONTROL Rows]** and from the drop-down menu select **[!UICONTROL Filter]**.
+   1. In the **[!UICONTROL Filter \[Purchase Revenue\]]** dialog select **[!UICONTROL Range of values]** and enter appropriate values. For example: `1,000,000` - `2,000,000`. Select **[!UICONTROL Apply]** and **[!UICONTROL OK]**.
+   1. To convert the two bar charts to a dual combination chart, select **[!UICONTROL SUM(Purchases)]** in **[!UICONTROL Rows]** and from the drop-down menu, select **[!UICONTROL Dual Axis]**. The bar charts transform into a scatter plot.
+   1. To modify the scatter plot to a bar chart:
+      1. Select **[!UICONTROL SUM(Purchases)]** in the **[!UICONTROL Marks]** area and select **[!UICONTROL Line]** from the drop-down menu.
+      1. Select **[!UICONTROL SUM(Purchase Revenue)]** in the **[!UICONTROL Marks]** area and select **[!UICONTROL Bar]** from the drop-down menu.
 
-   A área de trabalho do Tableau deve ser parecida com a exibida abaixo.
+   Your Tableau Desktop should look like below.
 
-   ![Gráfico do Tableau Desktop](assets/uc5-tableau-graph.png)
+   ![Tableau Desktop Graph](assets/uc5-tableau-graph.png)
 
-1. Selecione **[!UICONTROL Duplicar]** no menu de contexto da guia **[!UICONTROL Planilha 1]** para criar uma segunda planilha.
-1. Selecione **[!UICONTROL Renomear]** no menu de contexto da guia **[!UICONTROL Planilha 1]** para renomear a planilha como `Data`.
-1. Selecione **[!UICONTROL Renomear]** no menu de contexto da guia **[!UICONTROL Planilha 1 (2)]** para renomear a planilha como `Graph`.
-1. Verifique se a folha de **[!UICONTROL Dados]** está selecionada.
-   1. Selecione **[!UICONTROL Mostrar-me]** no canto superior direito e selecione **[!UICONTROL Tabela de texto]** (visualização superior esquerdo) para modificar o conteúdo dos dois gráficos para uma tabela.
-   1. Para solicitar a receita de compra em ordem decrescente, passe o mouse sobre **[!UICONTROL Receita de compra]** na tabela e selecione ![SortOrderDown](/help/assets/icons/SortOrderDown.svg).
-   1. Selecione **[!UICONTROL Exibição inteira]** no menu suspenso **[!UICONTROL Ajustar]**.
+1. Select **[!UICONTROL Duplicate]** from the **[!UICONTROL Sheet 1]** tab context menu to create a second sheet.
+1. Select **[!UICONTROL Rename]** from the **[!UICONTROL Sheet 1]** tab context menu to rename the sheet to `Data`.
+1. Select **[!UICONTROL Rename]** from the **[!UICONTROL Sheet 1 (2)]** tab context menu to rename the sheet to `Graph`.
+1. Ensure that the **[!UICONTROL Data]** sheet is selected.
+   1. Select **[!UICONTROL Show me]** at the top right and select **[!UICONTROL Text table]** (upper left top visualization) to modify the content of the two charts to a table.
+   1. To order purchase revenue in descending order, hover over **[!UICONTROL Purchase Revenue]** in the table and select ![SortOrderDown](/help/assets/icons/SortOrderDown.svg).
+   1. Select **[!UICONTROL Entire View]** from the **[!UICONTROL Fit]** drop-down menu.
 
-   A área de trabalho do Tableau deve ser parecida com a exibida abaixo.
+   Your Tableau Desktop should look like below.
 
-   ![Dados do Tableau Desktop](assets/uc5-tableau-data.png)
+   ![Tableau Desktop Data](assets/uc5-tableau-data.png)
 
-1. Selecione o botão de guia **[!UICONTROL Novo Painel]** (na parte inferior) para criar um novo modo de exibição **[!UICONTROL Painel]**. No modo de exibição **[!UICONTROL Painel 1]**:
-   1. Arraste e solte a planilha **[!UICONTROL Gráfico]** da prateleira **[!UICONTROL Folhas]** no modo de exibição **[!UICONTROL Painel 1]** que lê *Folhas de soltar aqui*.
-   1. Arraste e solte a planilha **[!UICONTROL Dados]** da prateleira **[!UICONTROL Folhas]** abaixo da planilha **[!UICONTROL Gráfico]** no modo de exibição **[!UICONTROL Painel 1]**.
-   1. Selecione a planilha **[!UICONTROL Dados]** no modo de exibição e modifique a **[!UICONTROL Exibição Inteira]** para **[!UICONTROL Corrigir Largura]**.
+1. Select **[!UICONTROL New Dashboard]** tab button (at the bottom) to create a new **[!UICONTROL Dashboard 1]** view. In the **[!UICONTROL Dashboard 1]** view:
+   1. Drag and drop the **[!UICONTROL Graph]** sheet from the **[!UICONTROL Sheets]** shelf onto the **[!UICONTROL Dashboard 1]** view that reads *Drop sheets here*.
+   1. Drag and drop the **[!UICONTROL Data]** sheet from the **[!UICONTROL Sheets]** shelf below the **[!UICONTROL Graph]** sheet onto the **[!UICONTROL Dashboard 1]** view.
+   1. Select the **[!UICONTROL Data]** sheet in the view and modify **[!UICONTROL Entire View]** to **[!UICONTROL Fix Width]**.
 
-   A exibição do **[!UICONTROL Painel 1]** deve ser semelhante à mostrada abaixo.
+   Your **[!UICONTROL Dashboard 1]** view should look like below.
 
    ![Tableau Desktop Dashboard 1](assets/uc5-tableau-dashboard.png)
 
 
 
->[!TAB Pesquisador]
+>[!TAB Looker]
 
-1. Na interface **[!UICONTROL Explorar]** do Looker, verifique se você possui uma configuração limpa. Caso contrário, selecione ![Configuração](/help/assets/icons/Setting.svg) **[!UICONTROL Remover campos e filtros]**.
-1. Selecione **[!UICONTROL + Filtro]** abaixo de **[!UICONTROL Filtros]**.
-1. Na caixa de diálogo **[!UICONTROL Adicionar Filtro]**:
-   1. Selecionar **[!UICONTROL ‣ Visualização De Dados Cc]**
-   1. Na lista de campos, selecione **[!UICONTROL ‣ Data do Intervalo de Datas]** e **[!UICONTROL Data do Intervalo de Datas]**.
-      ![Filtro de pesquisa](assets/uc2-looker-filter.png)
-1. Especifique o filtro **[!UICONTROL Data do Intervalo de Datas da Visualização de Dados Cc]**, pois **[!UICONTROL está no intervalo]** **[!UICONTROL 2023/01/01]** **[!UICONTROL até (antes)]** **[!UICONTROL 2024/01/01]**.
-1. Na seção **[!UICONTROL ‣ Cc Data View]** no painel esquerdo, selecione **[!UICONTROL Nome do Produto]**.
-1. Na seção **[!UICONTROL ‣ Campos Personalizados]** no painel esquerdo:
-   1. Selecione **[!UICONTROL Medida Personalizada]** no menu suspenso **[!UICONTROL + Adicionar]**.
-   1. No diálogo **[!UICONTROL Criar medida personalizada]**:
-      1. Selecione **[!UICONTROL Receita de compra]** no menu suspenso **[!UICONTROL Campo a medir]**.
-      1. Selecione **[!UICONTROL Soma]** no menu suspenso **[!UICONTROL Tipo de medida]**.
-      1. Insira um nome de campo personalizado para **[!UICONTROL Nome]**. Por exemplo: `Purchase Revenue`.
-      1. Selecione a guia **[!UICONTROL Detalhes do campo]**.
-      1. Selecione **[!UICONTROL Decimais]** no menu suspenso **[!UICONTROL Formatar]** e verifique se `0` está inserido em **[!UICONTROL Decimais]**.
-         ![Campo de métrica personalizado do pesquisador](assets/uc5-looker-customfield.png)
-      1. Selecione **[!UICONTROL Salvar]**.
-   1. Selecione **[!UICONTROL Medida Personalizada]** mais uma vez no menu suspenso **[!UICONTROL + Adicionar]**. Na caixa de diálogo **[!UICONTROL Criar medida personalizada]**:
-      1. Selecione **[!UICONTROL Compras]** no menu suspenso **[!UICONTROL Campo a medir]**.
-      1. Selecione **[!UICONTROL Soma]** no menu suspenso **[!UICONTROL Tipo de medida]**.
-      1. Insira um nome de campo personalizado para **[!UICONTROL Nome]**. Por exemplo: `Sum of Purchases`.
-      1. Selecione a guia **[!UICONTROL Detalhes do campo]**.
-      1. Selecione **[!UICONTROL Decimais]** no menu suspenso **[!UICONTROL Formatar]** e verifique se `0` está inserido em **[!UICONTROL Decimais]**.
-      1. Selecione **[!UICONTROL Salvar]**.
-   1. Ambos os campos são adicionados automaticamente à visualização de dados.
-1. Selecione **[!UICONTROL + Filtro]** para adicionar outros **[!UICONTROL Filtros]** e limitar os dados.
-1. Na caixa de diálogo **[!UICONTROL Adicionar Filtro]**, selecione **[!UICONTROL ‣ Campos Personalizados]** e **[!UICONTROL Comprar Receita]**.
-1. Faça as seleções apropriadas e insira os valores propostos, assim, o filtro lê **[!UICONTROL está entre inclusivo]** `1000000` **[!UICONTROL E]** `2000000`.
-1. Selecione **[!UICONTROL Executar]**.
-1. Selecione **[!UICONTROL ‣ Visualização]** para exibir a visualização de linha.
-1. Selecione **[!UICONTROL Editar]** em **[!UICONTROL Visualização]** para atualizar a visualização. Na caixa de diálogo pop-up:
-   1. Selecione a guia **[!UICONTROL Série]**.
-   1. Role para baixo para ver **[!UICONTROL Compras]** e altere o **[!UICONTROL Tipo]** para **[!UICONTROL Linha]**.
-   1. Selecione a guia **[!UICONTROL A]**.
-   1. Arraste **[!UICONTROL Compras]** do contêiner **[!UICONTROL Esquerda]** para onde lê **[!UICONTROL *Arraste a série para criar um novo eixo esquerdo *]**. Esta ação cria um contêiner&#x200B;**[!UICONTROL &#x200B; Left 2 &#x200B;]**.
-      ![Configuração de visualização do Looker](assets/uc5-looker-visualization.png)
-   1. Selecione ![CrossSize75](/help/assets/icons/CrossSize75.svg) ao lado de **[!UICONTROL Edit]** para ocultar a caixa de diálogo pop-up
+1. In the **[!UICONTROL Explore]** interface of Looker, ensure you do have a clean setup. If not, select ![Setting](/help/assets/icons/Setting.svg) **[!UICONTROL Remove fields and filters]**.
+1. Select **[!UICONTROL + Filter]** underneath **[!UICONTROL Filters]**.
+1. In the **[!UICONTROL Add Filter]** dialog:
+   1. Select **[!UICONTROL ‣ Cc Data View]**
+   1. From the list of fields, select **[!UICONTROL ‣ Daterange Date]** then **[!UICONTROL Daterange Date]**.
+      ![Looker filter](assets/uc2-looker-filter.png)
+1. Specify the **[!UICONTROL Cc Data View Daterange Date]** filter as **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2024/01/01]**.
+1. From the **[!UICONTROL ‣ Cc Data View]** section in the left rail, select **[!UICONTROL Product Name]**.
+1. From the **[!UICONTROL ‣ Custom Fields]** section in the left rail:
+   1. Select **[!UICONTROL Custom Measure]** from the **[!UICONTROL + Add]** drop-down menu. 
+   1. In the **[!UICONTROL Create custom measure]** dialog:
+      1. Select **[!UICONTROL Purchase Revenue]** from the **[!UICONTROL Field to measure]** drop-down menu.
+      1. Select **[!UICONTROL Sum]** from the **[!UICONTROL Measure type]** drop-down menu.
+      1. Enter a custom field name for **[!UICONTROL Name]**. For example: `Purchase Revenue`.
+      1. Select the **[!UICONTROL Field details]** tab.
+      1. Select **[!UICONTROL Decimals]** from the **[!UICONTROL Format]** drop-down menu and ensure `0` is entered in **[!UICONTROL Decimals]**.
+         ![Looker custom metric field](assets/uc5-looker-customfield.png)
+      1. Select **[!UICONTROL Save]**.
+   1. Select **[!UICONTROL Custom Measure]** once more from the **[!UICONTROL + Add]** drop-down menu. In the **[!UICONTROL Create custom]** measure dialog:
+      1. Select **[!UICONTROL Purchases]** from the **[!UICONTROL Field to measure]** drop-down menu.
+      1. Select **[!UICONTROL Sum]** from the **[!UICONTROL Measure type]** drop-down menu.
+      1. Enter a custom field name for **[!UICONTROL Name]**. For example: `Sum of Purchases`.
+      1. Select the **[!UICONTROL Field details]** tab.
+      1. Select **[!UICONTROL Decimals]** from the **[!UICONTROL Format]** drop-down menu and ensure `0` is entered in **[!UICONTROL Decimals]**.
+      1. Select **[!UICONTROL Save]**.
+   1. Both fields are automatically added to the Data view. 
+1. Select **[!UICONTROL + Filter]** to add another **[!UICONTROL Filters]** and to limit the data.
+1. In the **[!UICONTROL Add Filter]** dialog, select **[!UICONTROL ‣ Custom Fields]**, then **[!UICONTROL Purchase Revenue]**.
+1. Make the appropriate selections and enter the proposed values, so the filter reads **[!UICONTROL is between inclusive]** `1000000` **[!UICONTROL AND]** `2000000`.
+1. Select **[!UICONTROL Run]**.
+1. Select **[!UICONTROL ‣ Visualization]** to display the line visualization.
+1. Select **[!UICONTROL Edit]** in **[!UICONTROL Visualization]** to update the visualization. In the popup dialog:
+   1. Select the **[!UICONTROL Series]** tab.
+   1. Scroll down to see **[!UICONTROL Purchases]** and change the **[!UICONTROL Type]** to **[!UICONTROL Line]**.
+   1. Select the **[!UICONTROL Y]** tab.
+   1. Drag **[!UICONTROL Purchases]** from the **[!UICONTROL Left 1 ]** container to where it reads **[!UICONTROL *Drag series here to create a new left axis*]**. This action creates a **[!UICONTROL Left 2]** container.
+      ![Looker visualization configuration](assets/uc5-looker-visualization.png)
+   1. Select ![CrossSize75](/help/assets/icons/CrossSize75.svg) next to **[!UICONTROL Edit]** to hide the popup dialog
 
-Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
+You should see a visualization and table similar as shown below.
 
-![Tendência diária do resultado da pesquisa](assets/uc5-looker-result.png)
+![Looker result daily trend](assets/uc5-looker-result.png)
 
 
 >[!TAB Jupyter Notebook]
 
-1. Insira as seguintes instruções em uma nova célula.
+1. Enter the following statements in a new cell.
 
    ```
    import seaborn as sns
@@ -1129,18 +1130,18 @@ Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
    display(data)
    ```
 
-1. Execute a célula. Você deve ver uma saída semelhante à captura de tela abaixo.
+1. Execute the cell. You should see output similar to the screenshot below.
 
-   ![Resultados do Jupyter Notebook](assets/uc5-jupyter-results.png)
+   ![Jupyter Notebook Results](assets/uc5-jupyter-results.png)
 
 
 >[!TAB RStudio]
 
-1. Insira as seguintes instruções entre ` ` ``{r} ` e ` `` ` ` em uma nova parte.
+1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk.
 
    ```R
    library(tidyr)
-   
+
    ## Single dimension ranked
    df <- dv %>%
       filter(daterange >= "2023-01-01" & daterange < "2024-01-01") %>%
@@ -1155,222 +1156,222 @@ Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
    print(df)
    ```
 
-1. Execute o pedaço. Você deve ver uma saída semelhante à captura de tela abaixo.
+1. Run the chunk. You should see output similar to the screenshot below.
 
-   ![RSudio Results](assets/uc5-rstudio-results.png)
+   ![RStudio Results](assets/uc5-rstudio-results.png)
 
 >[!ENDTABS]
 
 +++
 
 
-## Várias dimensões classificadas
+## Multiple dimension ranked
 
-Nesse caso de uso, você deseja exibir uma tabela que detalha a receita de compra e as compras de nomes de produtos nas categorias de produtos ao longo de 2023. Além disso, você deseja usar algumas visualizações para ilustrar a distribuição de categoria de produto e as contribuições de nome de produto dentro de cada categoria de produto.
+In this use case, you want to display a table that breaks down the purchase revenue and purchases for product names within product categories over 2023. On top of that you want to use some visualizations to illustrate both the product category distribution and product name contributions within each product category.
 
 +++ Customer Journey Analytics
 
-Um exemplo de painel **[!UICONTROL Vários Dimension Classificados]** para o caso de uso:
+An example **[!UICONTROL Multiple Dimension Ranked]** panel for the use case:
 
-![Painel classificado por vários Dimension do Customer Journey Analytics](assets/cja-multiple-dimension-ranked.png)
+![Customer Journey Analytics Multiple Dimension Ranked panel](assets/cja-multiple-dimension-ranked.png)
 
 +++
 
-+++ Ferramentas de BI
++++ BI tools
 
 >[!PREREQUISITES]
 >
->Verifique se você validou [uma conexão bem-sucedida, pode listar visualizações de dados e usar uma visualização de dados](#connect-and-validate) para a ferramenta de BI para a qual deseja experimentar este caso de uso.
+>Ensure you have validated [a successful connection, can list data views, and use a data view](#connect-and-validate) for the BI tool for which you want to try out this use case. 
 >
 
 >[!BEGINTABS]
 
->[!TAB Power BI Desktop]
+>[!TAB Power BI Desktop] 
 
-1. Para garantir que o intervalo de datas se aplique a todas as visualizações, arraste e solte **[!UICONTROL daterangeday]** do painel **[!UICONTROL Dados]** em **[!UICONTROL Filtros nesta página]**.
-   1. Selecione o **[!UICONTROL daterangeday é (Todos)]** de **[!UICONTROL Filtros nesta página]**.
-   1. Selecione **[!UICONTROL Data relativa]** como o **[!UICONTROL Tipo de filtro]**.
-   1. Defina o filtro como **[!UICONTROL Mostrar itens quando o valor]** **[!UICONTROL estiver nos últimos]** `1` **[!UICONTROL anos]**.
-   1. Selecione **[!UICONTROL Aplicar filtro]**.
+1. To ensure the date range apply to all visualizations, drag and drop **[!UICONTROL daterangeday]** from the **[!UICONTROL Data]** pane on to **[!UICONTROL Filters on this page]**.
+   1. Select the **[!UICONTROL daterangeday is (All)]** from **[!UICONTROL Filters on this page]**.
+   1. Select **[!UICONTROL Relative date]** as the **[!UICONTROL Filter type]**.
+   1. Define the filter to **[!UICONTROL Show items when the value]** **[!UICONTROL is in the last]** `1` **[!UICONTROL calendar years]**.
+   1. Select **[!UICONTROL Apply filter]**.
+   
+1. In the **[!UICONTROL Data]** pane:
+   1. Select **[!UICONTROL datarangeday]**.
+   1. Select **[!UICONTROL product_category]**.
+   1. Select **[!UICONTROL product_name]**.
+   1. Select **[!UICONTROL sum purchase_revenue]**
+   1. Select **[!UICONTROL sum purchases]**
 
-1. No painel **[!UICONTROL Dados]**:
-   1. Selecione **[!UICONTROL datarangeday]**.
-   1. Selecione **[!UICONTROL product_category]**.
-   1. Selecione **[!UICONTROL product_name]**.
-   1. Selecionar **[!UICONTROL soma_receita_compra]**
-   1. Selecionar **[!UICONTROL soma de compras]**
+1. To modify the vertical bar chart to a Table, ensure you have the table selected and select **[!UICONTROL Matrix]** from the **[!UICONTROL Visualizations]** pane.
+   * Drag **[!UICONTROL product_name]** from **[!UICONTROL Columns]** and drop the field underneath **[!UICONTROL product_categor]**y in **[!UICONTROL Rows]** in the **[!UICONTROL Visualization]** pane.
+   
+1. To limit the number of displayed products within the table, select **[!UICONTROL product_name is (All)]** in the **[!UICONTROL Filters]** pane.
 
-1. Para modificar o gráfico de barras vertical para uma Tabela, verifique se a tabela está selecionada e selecione **[!UICONTROL Matriz]** no painel **[!UICONTROL Visualizações]**.
-   * Arraste **[!UICONTROL product_name]** de **[!UICONTROL Colunas]** e solte o campo sob **[!UICONTROL product_categor]**&#x200B;y em **[!UICONTROL Linhas]** no painel **[!UICONTROL Visualização]**.
+   1. Select **[!UICONTROL Advanced filtering]**.
+   1. Select **[!UICONTROL Filter type]** **[!UICONTROL Top N]** **[!UICONTROL Show items]** **[!UICONTROL Top]** `15` **[!UICONTROL By Value]**.
+   1. Drag **[!UICONTROL purchases]** from the **[!UICONTROL Data]** pane onto the **[!UICONTROL Add data fields here]**.
+   1. Select **[!UICONTROL Apply filter]**.
 
-1. Para limitar o número de produtos exibidos na tabela, selecione **[!UICONTROL product_name is (All)]** no painel **[!UICONTROL Filtros]**.
+1. To improve readability, select **[!UICONTROL View]** from the top menu, and select **[!UICONTROL Page View]** > **[!UICONTROL Actual size]** and resize the table visualization.
 
-   1. Selecione **[!UICONTROL Filtragem avançada]**.
-   1. Selecione **[!UICONTROL Tipo de filtro]** **[!UICONTROL N principais]** **[!UICONTROL Mostrar itens]** **[!UICONTROL Principais]** `15` **[!UICONTROL Por Valor]**.
-   1. Arraste **[!UICONTROL compras]** do painel **[!UICONTROL Dados]** até **[!UICONTROL Adicionar campos de dados aqui]**.
-   1. Selecione **[!UICONTROL Aplicar filtro]**.
+1. To break down each category in the table, select **[!UICONTROL +]** at the product category level. Your Power BI Desktop should look like below.
 
-1. Para melhorar a legibilidade, selecione **[!UICONTROL Exibir]** no menu superior e selecione **[!UICONTROL Exibição de página]** > **[!UICONTROL Tamanho real]** e redimensione a visualização de tabela.
+   ![Power BI Desktop Multiple Dimensions Ranked matrix table](assets/uc6-powerbi-data.png)
 
-1. Para detalhar cada categoria na tabela, selecione **[!UICONTROL +]** no nível da categoria do produto. A área de trabalho do Power BI deve ser semelhante à mostrada abaixo.
+1. Select **[!UICONTROL Home]** from the top menu, and select **[!UICONTROL New visual]**. A new visual is added to your report.
 
-   ![Tabela de matriz classificada de várias dimensões do Power BI Desktop](assets/uc6-powerbi-data.png)
+1. In the **[!UICONTROL Data]** pane:
+   1. Select **[!UICONTROL product_category]**.
+   1. Select **[!UICONTROL product_name]**.
+   1. Select **[!UICONTROL purchase_revenue]**.
 
-1. Selecione **[!UICONTROL Página Inicial]** no menu superior e selecione **[!UICONTROL Novo visual]**. Um novo visual é adicionado ao relatório.
+1. To modify the visual, select the bar chart and select **[!UICONTROL Treemap]** from the **[!UICONTROL Visualizations]** pane.
+1. Ensure that **[!UICONTROL product_category]** is listed underneath **[!UICONTROL Category]**, and **[!UICONTROL product_name]** is listed underneath **[!UICONTROL Details]** in the **[!UICONTROL Visualizations]** pane.
 
-1. No painel **[!UICONTROL Dados]**:
-   1. Selecione **[!UICONTROL product_category]**.
-   1. Selecione **[!UICONTROL product_name]**.
-   1. Selecione **[!UICONTROL purchase_revenue]**.
+   Your Power BI Desktop should look like below.
 
-1. Para modificar o visual, selecione o gráfico de barras e selecione **[!UICONTROL Treemap]** no painel **[!UICONTROL Visualizações]**.
-1. Verifique se a **[!UICONTROL product_category]** está listada abaixo da **[!UICONTROL Category]** e se o **[!UICONTROL product_name]** está listado abaixo dos **[!UICONTROL Details]** no painel **[!UICONTROL Visualizações]**.
+   ![Power BI Desktop Multiple Dimensions Ranked treemap](assets/uc6-powerbi-treemap.png)
 
-   A área de trabalho do Power BI deve ser semelhante à mostrada abaixo.
+1. Select **[!UICONTROL Home]** from the top menu, and select **[!UICONTROL New visual]**. A new visual is added to your report.
 
-   ![Mapa de árvore classificado de várias dimensões do Power BI Desktop](assets/uc6-powerbi-treemap.png)
+1. In the **[!UICONTROL Data]** pane:
+   1. Select **[!UICONTROL product_category]**.
+   1. Select **[!UICONTROL purchase_revenue]**.
+   1. Select **[!UICONTROL purchase]**.
 
-1. Selecione **[!UICONTROL Página Inicial]** no menu superior e selecione **[!UICONTROL Novo visual]**. Um novo visual é adicionado ao relatório.
+1. In the **[!UICONTROL Visualizations]** pane:
+   1. To modify the visualization, select **[!UICONTROL Line and stacked column chart]**. 
+   1. Drag **[!UICONTROL sum_of_purchases]** from **[!UICONTROL Column y-axis]** to **[!UICONTROL Line y-axis]**.
 
-1. No painel **[!UICONTROL Dados]**:
-   1. Selecione **[!UICONTROL product_category]**.
-   1. Selecione **[!UICONTROL purchase_revenue]**.
-   1. Selecione **[!UICONTROL comprar]**.
+1. In the report, reshuffle the individual visualizations. 
 
-1. No painel **[!UICONTROL Visualizações]**:
-   1. Para modificar a visualização, selecione **[!UICONTROL Gráfico de linhas e colunas empilhadas]**.
-   1. Arraste **[!UICONTROL sum_of_purchases]** do **[!UICONTROL eixo y da coluna]** para o **[!UICONTROL eixo y da linha]**.
+    Your Power BI Desktop should look like below.
 
-1. No relatório, embaralhe as visualizações individuais.
-
-   A área de trabalho do Power BI deve ser semelhante à mostrada abaixo.
-
-   ![Várias dimensões do Power BI Desktop classificadas como finais](assets/uc6-powerbi-final.png)
+    ![Power BI Desktop Multiple Dimensions Ranked final](assets/uc6-powerbi-final.png)
 
 
->[!TAB Tableau Desktop]
+>[!TAB Tableau Desktop] 
 
-1. Selecione a guia **[!UICONTROL Folha 1]** na parte inferior para alternar da **[!UICONTROL Fonte de dados]**. Na exibição **[!UICONTROL Folha 1]**:
-   1. Arraste a entrada **[!UICONTROL Daterange]** da lista **[!UICONTROL Tabelas]** no painel **[!UICONTROL Dados]** e solte a entrada na prateleira **[!UICONTROL Filtros]**.
-   1. Na caixa de diálogo **[!UICONTROL Campo de Filtros \[Intervalo de datas\]]**, selecione **[!UICONTROL Intervalo de datas]** e selecione **[!UICONTROL Próximo >]**.
-   1. Na caixa de diálogo **[!UICONTROL Filtro \[Intervalo de datas\]]**, selecione **[!UICONTROL Datas relativas]**, selecione **[!UICONTROL Anos]** e especifique **[!UICONTROL Ano anterior]**. Selecione **[!UICONTROL Aplicar]** e **[!UICONTROL OK]**.
+1. Select the **[!UICONTROL Sheet 1]** tab at the bottom to switch from **[!UICONTROL Data source]**. In the **[!UICONTROL Sheet 1]** view:
+   1. Drag the **[!UICONTROL Daterange]** entry from the **[!UICONTROL Tables]** list in the **[!UICONTROL Data]** pane and drop the entry onto the **[!UICONTROL Filters]** shelf.
+   1. In the **[!UICONTROL Filters Field \[Daterange\]]** dialog, select **[!UICONTROL Range of Dates]** and select **[!UICONTROL Next >]**.
+   1. In the **[!UICONTROL Filter \[Daterange\]]** dialog, select **[!UICONTROL Relative dates]**, select **[!UICONTROL Years]**, and specify **[!UICONTROL Previous year]**. Select **[!UICONTROL Apply]** and **[!UICONTROL OK]**.
 
-      A área de trabalho do Tableau deve ser parecida com a exibida abaixo.
+      Your Tableau Desktop should look like below.
 
-      ![Filtro classificado por vários Dimension do Tableau Desktop](assets/uc6-tableau-filter.png)
+      ![Tableau Desktop Multiple Dimension Ranked Filter](assets/uc6-tableau-filter.png)
 
-   1. Arraste **[!UICONTROL Categoria do Produto]** e solte ao lado de **[!UICONTROL Colunas]**.
-   1. Arraste **[!UICONTROL Receita de Compra]** e solte ao lado de **[!UICONTROL Linhas]**. O valor muda para **[!UICONTROL SUM(Purchase Revenue)]**.
-   1. Arraste Compras e solte ao lado de **[!UICONTROL Linhas]**. O valor muda para **[!UICONTROL SUM(Purchases)]**.
-   1. Selecione **[!UICONTROL SUM(Purchases)]** e, no menu suspenso, selecione **[!UICONTROL Eixo duplo]**.
-   1. Selecione **[!UICONTROL SUM(Purchases)]** em **[!UICONTROL Marks]** e selecione **[!UICONTROL Line]** no menu suspenso.
-   1. Selecione **[!UICONTROL SOMA(Receita da Compra)]** em **[!UICONTROL Marcas]** e selecione **[!UICONTROL Barra]** no menu suspenso.
-   1. Selecione **[!UICONTROL Exibição Inteira]** no menu **[!UICONTROL Ajustar]**.
-   1. Selecione o título **[!UICONTROL Receita de compra]** no gráfico e verifique se a receita de compra está em ordem crescente.
+   1. Drag **[!UICONTROL Product Category]** and drop next to **[!UICONTROL Columns]**.
+   1. Drag **[!UICONTROL Purchase Revenue]** and drop next to **[!UICONTROL Rows]**. The value changes to **[!UICONTROL SUM(Purchase Revenue)]**.
+   1. Drag Purchases and drop next to **[!UICONTROL Rows]**. The value changes to **[!UICONTROL SUM(Purchases)]**.
+   1. Select **[!UICONTROL SUM(Purchases)]** and from the drop-down menu select **[!UICONTROL Dual Axis]**.
+   1. Select **[!UICONTROL SUM(Purchases)]** in **[!UICONTROL Marks]** and select **[!UICONTROL Line]** from the drop-down menu.
+   1. Select **[!UICONTROL SUM(Purchase Revenue)]** in **[!UICONTROL Marks]** and select **[!UICONTROL Bar]** from the drop-down menu.
+   1. Select **[!UICONTROL Entire View]** from the **[!UICONTROL Fit]** menu.
+   1. Select the **[!UICONTROL Purchase Revenue]** title in the chart and ensure that the purchase revenue is in ascending order.
 
-      A área de trabalho do Tableau deve ser parecida com a exibida abaixo.
+      Your Tableau Desktop should look like below.
 
-      ![Categoria Classificada de Várias Dimensões do Tableau Desktop](assets/uc6-tableau-category.png)
+      ![Tableau Desktop Multiple Dimensions Ranked Category](assets/uc6-tableau-category.png)
 
-1. Renomeie a **[!UICONTROL Planilha 1]** atual para `Category`.
-1. Selecione **[!UICONTROL Nova Planilha]** para criar uma nova planilha e renomeá-la para `Data`.
+1. Rename the current **[!UICONTROL Sheet 1]** sheet to `Category`.
+1. Select **[!UICONTROL New Worksheet]** to create a new sheet, and rename it to `Data`.
 
-   1. Arraste a entrada **[!UICONTROL Daterange]** da lista **[!UICONTROL Tabelas]** no painel **[!UICONTROL Dados]** e solte a entrada na prateleira **[!UICONTROL Filtros]**.
-   1. Na caixa de diálogo **[!UICONTROL Campo de Filtros \[Intervalo de datas\]]**, selecione **[!UICONTROL Intervalo de datas]** e selecione **[!UICONTROL Próximo >]**.
-   1. Na caixa de diálogo **[!UICONTROL Filtro \[Intervalo de datas\]]**, selecione **[!UICONTROL Datas relativas]**, selecione **[!UICONTROL Anos]** e especifique **[!UICONTROL Ano anterior]**. Selecione **[!UICONTROL Aplicar]** e **[!UICONTROL OK]**.
-   1. Arraste **[!UICONTROL Receita de Compra]** do painel **[!UICONTROL Dados]** para **[!UICONTROL Colunas]**. O valor muda para **[!UICONTROL SUM(Purchase Revenue)]**.
-   1. Arraste **[!UICONTROL Compra]** do painel **[!UICONTROL Dados]** para **[!UICONTROL Colunas]**, ao lado de **[!UICONTROL Receita de Compra]**. O valor muda para **[!UICONTROL SUM(Purchases)]**.
-   1. Arraste **[!UICONTROL Categoria do Produto]** do painel **[!UICONTROL Dados]** para **[!UICONTROL Linhas]**.
-   1. Arraste **[!UICONTROL Nome do Produto]** do painel **[!UICONTROL Dados]** para **[!UICONTROL Linhas]**, ao lado de **[!UICONTROL Categoria do Produto]**.
-   1. Para alterar as duas barras horizontais para uma tabela, selecione **[!UICONTROL Tabela de Texto]** de **[!UICONTROL Mostre-me]**.
-   1. Para limitar o número de produtos, selecione **[!UICONTROL Compras]** em **[!UICONTROL Valores de Medida]**. No menu suspenso, selecione **[!UICONTROL Filtro]**.
-   1. Na caixa de diálogo **[!UICONTROL Filtrar \[Compras\]]**, selecione **[!UICONTROL Pelo menos]** e digite `7000`. Selecione **[!UICONTROL Aplicar]** e **[!UICONTROL OK]**.
-   1. Selecione **[!UICONTROL Ajustar largura]** de **[!UICONTROL no menu suspenso]** Ajustar.
+   1. Drag the **[!UICONTROL Daterange]** entry from the **[!UICONTROL Tables]** list in the **[!UICONTROL Data]** pane and drop the entry onto the **[!UICONTROL Filters]** shelf.
+   1. In the **[!UICONTROL Filters Field \[Daterange\]]** dialog, select **[!UICONTROL Range of Dates]** and select **[!UICONTROL Next >]**.
+   1. In the **[!UICONTROL Filter \[Daterange\]]** dialog, select **[!UICONTROL Relative dates]**, select **[!UICONTROL Years]**, and specify **[!UICONTROL Previous year]**. Select **[!UICONTROL Apply]** and **[!UICONTROL OK]**.
+   1. Drag **[!UICONTROL Purchase Revenue]** from **[!UICONTROL Data]** pane to **[!UICONTROL Columns]**. The value changes to **[!UICONTROL SUM(Purchase Revenue)]**.
+   1. Drag **[!UICONTROL Purchase]** from **[!UICONTROL Data]** pane to **[!UICONTROL Columns]**, next to **[!UICONTROL Purchase Revenue]**. The value changes to **[!UICONTROL SUM(Purchases)]**.
+   1. Drag **[!UICONTROL Product Category]** from the **[!UICONTROL Data]** pane to **[!UICONTROL Rows]**.
+   1. Drag **[!UICONTROL Product Name]** from the **[!UICONTROL Data]** pane to **[!UICONTROL Rows]**, next to **[!UICONTROL Product Category]**.
+   1. To change the two horizontal bars to a table, select **[!UICONTROL Text Table]** from **[!UICONTROL Show Me]**.
+   1. To limit the number of products, select **[!UICONTROL Purchases]** in **[!UICONTROL Measure Values]**. From the drop-down menu, select **[!UICONTROL Filter]**.
+   1. In the **[!UICONTROL Filter \[Purchases\]]** dialog, select **[!UICONTROL At least]** and enter `7000`. Select **[!UICONTROL Apply]** and **[!UICONTROL OK]**.
+   1. Select **[!UICONTROL Fit Width]** from **[!UICONTROL the]** Fit drop-down menu.
 
-      A área de trabalho do Tableau deve ser parecida com a exibida abaixo.
+      Your Tableau Desktop should look like below.
 
-      ![Vários dados classificados do Tableau Desktop Dimension](assets/uc6-tableau-data.png)
+      ![Tableau Desktop Multiple Dimension Ranked Data](assets/uc6-tableau-data.png)
 
-1. Selecione **[!UICONTROL Nova planilha]** para criar uma nova planilha e renomeá-la como **[!UICONTROL Treemap]**.
-   1. Arraste a entrada **[!UICONTROL Daterange]** da lista **[!UICONTROL Tabelas]** no painel **[!UICONTROL Dados]** e solte a entrada na prateleira **[!UICONTROL Filtros]**.
-   1. Na caixa de diálogo **[!UICONTROL Campo de Filtros \[Intervalo de datas\]]**, selecione **[!UICONTROL Intervalo de datas]** e selecione **[!UICONTROL Próximo >]**.
-   1. Na caixa de diálogo **[!UICONTROL Filtro \[Intervalo de datas\]]**, selecione **[!UICONTROL Datas relativas]**, selecione **[!UICONTROL Anos]** e especifique **[!UICONTROL Ano anterior]**. Selecione **[!UICONTROL Aplicar]** e **[!UICONTROL OK]**.
-   1. Arraste **[!UICONTROL Receita de Compra]** do painel **[!UICONTROL Dados]** para **[!UICONTROL Linhas]**. O valor é alterado para **[!UICONTROL SUM(Purchase Revenue)]**.
-   1. Arraste **[!UICONTROL Purchase]** do painel **[!UICONTROL Data]** para **[!UICONTROL Rows]**, ao lado de **[!UICONTROL Purchase Revenue]**. O valor muda para **[!UICONTROL SUM(Purchases)]**.
-   1. Arraste **[!UICONTROL Categoria do Produto]** do painel **[!UICONTROL Dados]** para **[!UICONTROL Colunas]**.
-   1. Arraste **[!UICONTROL Nome do Produto]** do painel **[!UICONTROL Dados]** para **[!UICONTROL Colunas]**.
-   1. Para alterar os dois gráficos de barras verticais para um mapa de árvore, selecione **[!UICONTROL Mapa de árvore]** em **[!UICONTROL Mostrar-me]**.
-   1. Para limitar o número de produtos, selecione **[!UICONTROL Compras]** em **[!UICONTROL Valores de Medida]**. No menu suspenso, selecione **[!UICONTROL Filtro]**.
-   1. Na caixa de diálogo **[!UICONTROL Filtrar \[Compras\]]**, selecione **[!UICONTROL Pelo menos]** e digite `7000`. Selecione **[!UICONTROL Aplicar]** e **[!UICONTROL OK]**.
-   1. Selecione **[!UICONTROL Ajustar largura]** no menu suspenso **[!UICONTROL Ajustar]**.
+1. Select **[!UICONTROL New worksheet]** to create a new sheet and rename it to **[!UICONTROL Treemap]**.
+   1. Drag the **[!UICONTROL Daterange]** entry from the **[!UICONTROL Tables]** list in the **[!UICONTROL Data]** pane and drop the entry onto the **[!UICONTROL Filters]** shelf.
+   1. In the **[!UICONTROL Filters Field \[Daterange\]]** dialog, select **[!UICONTROL Range of Dates]** and select **[!UICONTROL Next >]**.
+   1. In the **[!UICONTROL Filter \[Daterange\]]** dialog, select **[!UICONTROL Relative dates]**, select **[!UICONTROL Years]**, and specify **[!UICONTROL Previous year]**. Select **[!UICONTROL Apply]** and **[!UICONTROL OK]**.
+   1. Drag **[!UICONTROL Purchase Revenue]** from the **[!UICONTROL Data]** pane to **[!UICONTROL Rows]**. The values changes to **[!UICONTROL SUM(Purchase Revenue)]**.
+   1. Drag **[!UICONTROL Purchase]** from the **[!UICONTROL Data]** pane to **[!UICONTROL Rows]**, next to **[!UICONTROL Purchase Revenue]**. The value changes to **[!UICONTROL SUM(Purchases)]**.
+   1. Drag **[!UICONTROL Product Category]** from the **[!UICONTROL Data]** pane to **[!UICONTROL Columns]**.
+   1. Drag **[!UICONTROL Product Name]** from the **[!UICONTROL Data]** pane to **[!UICONTROL Columns]**.
+   1. To change the two vertical bar charts to a treemap, select **[!UICONTROL Treemap]** from **[!UICONTROL Show Me]**.
+   1. To limit the number of products, select **[!UICONTROL Purchases]** in **[!UICONTROL Measure Values]**. From the drop-down menu, select **[!UICONTROL Filter]**.
+   1. In the **[!UICONTROL Filter \[Purchases\]]** dialog, select **[!UICONTROL At least]** and enter `7000`. Select **[!UICONTROL Apply]** and **[!UICONTROL OK]**.
+   1. Select **[!UICONTROL Fit Width]** from the **[!UICONTROL Fit]** drop-down menu.
 
-      A área de trabalho do Tableau deve ser parecida com a exibida abaixo.
+      Your Tableau Desktop should look like below.
 
-      ![Vários dados classificados do Tableau Desktop Dimension](assets/uc6-tableau-treemap.png)
+      ![Tableau Desktop Multiple Dimension Ranked Data](assets/uc6-tableau-treemap.png)
 
-1. Selecione o botão de guia **[!UICONTROL Novo Painel]** (na parte inferior) para criar um novo modo de exibição **[!UICONTROL Painel]**. No modo de exibição **[!UICONTROL Painel 1]**:
-   1. Arraste e solte a folha **[!UICONTROL Categoria]** da prateleira **[!UICONTROL Folhas]** na exibição **[!UICONTROL Painel 1]** onde se lê *Folhas de soltar aqui*.
-   1. Arraste e solte a folha **[!UICONTROL Mapa de árvore]** da prateleira **[!UICONTROL Folhas]** abaixo da folha **[!UICONTROL Categoria]** na exibição **[!UICONTROL Painel 1]**.
-   1. Arraste e solte a planilha **[!UICONTROL Dados]** da prateleira **[!UICONTROL Folhas]** abaixo da planilha **[!UICONTROL Mapa de árvore]** na exibição **[!UICONTROL Painel 1]**.
-   1. Redimensionar cada uma das planilhas na visualização.
+1. Select **[!UICONTROL New Dashboard]** tab button (at the bottom) to create a new **[!UICONTROL Dashboard 1]** view. In the **[!UICONTROL Dashboard 1]** view:
+   1. Drag and drop the **[!UICONTROL Category]** sheet from the **[!UICONTROL Sheets]** shelf onto the **[!UICONTROL Dashboard 1]** view that reads *Drop sheets here*.
+   1. Drag and drop the **[!UICONTROL Treemap]** sheet from the **[!UICONTROL Sheets]** shelf underneath the **[!UICONTROL Category]** sheet on the **[!UICONTROL Dashboard 1]** view.
+   1. Drag and drop the **[!UICONTROL Data]** sheet from the **[!UICONTROL Sheets]** shelf underneath the **[!UICONTROL Treemap]** sheet on the **[!UICONTROL Dashboard 1]** view.
+   1. Resize each of the sheets in the view.
 
-   A exibição do **[!UICONTROL Painel 1]** deve ser semelhante à mostrada abaixo.
+   Your **[!UICONTROL Dashboard 1]** view should look like below.
 
    ![Tableau Desktop Dashboard 1](assets/uc6-tableau-final.png)
 
 
->[!TAB Pesquisador]
+>[!TAB Looker]
 
-1. Na interface **[!UICONTROL Explorar]** do Looker, verifique se você possui uma configuração limpa. Caso contrário, selecione ![Configuração](/help/assets/icons/Setting.svg) **[!UICONTROL Remover campos e filtros]**.
-1. Selecione **[!UICONTROL + Filtro]** abaixo de **[!UICONTROL Filtros]**.
-1. Na caixa de diálogo **[!UICONTROL Adicionar Filtro]**:
-   1. Selecionar **[!UICONTROL ‣ Visualização De Dados Cc]**
-   1. Na lista de campos, selecione **[!UICONTROL ‣ Data do Intervalo de Datas]** e **[!UICONTROL Data do Intervalo de Datas]**.
-      ![Filtro de pesquisa](assets/uc2-looker-filter.png)
-1. Especifique o filtro **[!UICONTROL Data do Intervalo de Datas da Visualização de Dados Cc]**, pois **[!UICONTROL está no intervalo]** **[!UICONTROL 2023/01/01]** **[!UICONTROL até (antes)]** **[!UICONTROL 2024/01/01]**.
-1. Na seção **[!UICONTROL ‣ Cc Data View]** no painel esquerdo:
-   1. Selecione a **[!UICONTROL Categoria do produto]**.
-   1. Selecione **[!UICONTROL Nome do Produto]**.
-1. Na seção **[!UICONTROL ‣ Campos Personalizados]** no painel esquerdo:
-   1. Selecione **[!UICONTROL Medida Personalizada]** no menu suspenso **[!UICONTROL + Adicionar]**.
-   1. No diálogo **[!UICONTROL Criar medida personalizada]**:
-      1. Selecione **[!UICONTROL Receita de compra]** no menu suspenso **[!UICONTROL Campo a medir]**.
-      1. Selecione **[!UICONTROL Soma]** no menu suspenso **[!UICONTROL Tipo de medida]**.
-      1. Insira um nome de campo personalizado para **[!UICONTROL Nome]**. Por exemplo: `Sum of Purchase Revenue`.
-      1. Selecione a guia **[!UICONTROL Detalhes do campo]**.
-      1. Selecione **[!UICONTROL Decimais]** no menu suspenso **[!UICONTROL Formatar]** e verifique se `0` está inserido em **[!UICONTROL Decimais]**.
-         ![Campo de métrica personalizado do pesquisador](assets/uc5-looker-customfield.png)
-      1. Selecione **[!UICONTROL Salvar]**.
-   1. Selecione **[!UICONTROL Medida Personalizada]** mais uma vez no menu suspenso **[!UICONTROL + Adicionar]**. Na caixa de diálogo **[!UICONTROL Criar medida personalizada]**:
-      1. Selecione **[!UICONTROL Compras]** no menu suspenso **[!UICONTROL Campo a medir]**.
-      1. Selecione **[!UICONTROL Soma]** no menu suspenso **[!UICONTROL Tipo de medida]**.
-      1. Insira um nome de campo personalizado para **[!UICONTROL Nome]**. Por exemplo: `Sum of Purchases`.
-      1. Selecione a guia **[!UICONTROL Detalhes do campo]**.
-      1. Selecione **[!UICONTROL Decimais]** no menu suspenso **[!UICONTROL Formatar]** e verifique se `0` está inserido em **[!UICONTROL Decimais]**.
-      1. Selecione **[!UICONTROL Salvar]**.
-   1. Ambos os campos são adicionados automaticamente à visualização de dados.
-1. Na seção **[!UICONTROL Filtros]**, selecione **[!UICONTROL + Filtro]**. Na caixa de diálogo **[!UICONTROL Adicionar Filtro]**. Selecione **[!UICONTROL ‣ Campos Personalizados]** e depois **[!UICONTROL Receita de Compra]**.
-1. Selecione **[!UICONTROL é >]** e digite `800000` para limitar os resultados.
-1. Selecione **[!UICONTROL Executar]**.
-1. Selecione **[!UICONTROL ‣ Visualização]** para exibir a visualização de linha.
-1. Selecione **[!UICONTROL Editar]** em **[!UICONTROL Visualização]** para atualizar a visualização. Na caixa de diálogo pop-up:
-   1. Selecione a guia **[!UICONTROL Plot]**.
-   1. Role para baixo e selecione **[!UICONTROL Editar configuração do gráfico]**.
-   1. Modifique o JSON na **[!UICONTROL Configuração do Gráfico (Substituir)]** como na captura de tela abaixo e selecione **[!UICONTROL Visualizar]**.
+1. In the **[!UICONTROL Explore]** interface of Looker, ensure you do have a clean setup. If not, select ![Setting](/help/assets/icons/Setting.svg) **[!UICONTROL Remove fields and filters]**.
+1. Select **[!UICONTROL + Filter]** underneath **[!UICONTROL Filters]**.
+1. In the **[!UICONTROL Add Filter]** dialog:
+   1. Select **[!UICONTROL ‣ Cc Data View]**
+   1. From the list of fields, select **[!UICONTROL ‣ Daterange Date]** then **[!UICONTROL Daterange Date]**.
+      ![Looker filter](assets/uc2-looker-filter.png)
+1. Specify the **[!UICONTROL Cc Data View Daterange Date]** filter as **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2024/01/01]**.
+1. From the **[!UICONTROL ‣ Cc Data View]** section in the left rail: 
+   1. Select **[!UICONTROL Product Category]**.
+   1. Select **[!UICONTROL Product Name]**.
+1. From the **[!UICONTROL ‣ Custom Fields]** section in the left rail:
+   1. Select **[!UICONTROL Custom Measure]** from the **[!UICONTROL + Add]** drop-down menu. 
+   1. In the **[!UICONTROL Create custom measure]** dialog:
+      1. Select **[!UICONTROL Purchase Revenue]** from the **[!UICONTROL Field to measure]** drop-down menu.
+      1. Select **[!UICONTROL Sum]** from the **[!UICONTROL Measure type]** drop-down menu.
+      1. Enter a custom field name for **[!UICONTROL Name]**. For example: `Sum of Purchase Revenue`.
+      1. Select the **[!UICONTROL Field details]** tab.
+      1. Select **[!UICONTROL Decimals]** from the **[!UICONTROL Format]** drop-down menu and ensure `0` is entered in **[!UICONTROL Decimals]**.
+         ![Looker custom metric field](assets/uc5-looker-customfield.png)
+      1. Select **[!UICONTROL Save]**.
+   1. Select **[!UICONTROL Custom Measure]** once more from the **[!UICONTROL + Add]** drop-down menu. In the **[!UICONTROL Create custom]** measure dialog:
+      1. Select **[!UICONTROL Purchases]** from the **[!UICONTROL Field to measure]** drop-down menu.
+      1. Select **[!UICONTROL Sum]** from the **[!UICONTROL Measure type]** drop-down menu.
+      1. Enter a custom field name for **[!UICONTROL Name]**. For example: `Sum of Purchases`.
+      1. Select the **[!UICONTROL Field details]** tab.
+      1. Select **[!UICONTROL Decimals]** from the **[!UICONTROL Format]** drop-down menu and ensure `0` is entered in **[!UICONTROL Decimals]**.
+      1. Select **[!UICONTROL Save]**.
+   1. Both fields are automatically added to the Data view.
+1. In the **[!UICONTROL Filters]** section, select **[!UICONTROL + Filter]**. In the **[!UICONTROL Add Filter]** dialog. Select **[!UICONTROL ‣ Custom Fields]**, then **[!UICONTROL Purchase Revenue]**.
+1. Select **[!UICONTROL is >]** and enter `800000` to limit the results.
+1. Select **[!UICONTROL Run]**.
+1. Select **[!UICONTROL ‣ Visualization]** to display the line visualization.
+1. Select **[!UICONTROL Edit]** in **[!UICONTROL Visualization]** to update the visualization. In the popup dialog:
+   1. Select the **[!UICONTROL Plot]** tab.
+   1. Scroll down and select **[!UICONTROL Edit Chart Config]**.
+   1. Modify the JSON in **[!UICONTROL Chart Config (Override)]** like in the screenshot below, and then select **[!UICONTROL Preview]**.
+      
+      ![Looker vsualization config](assets/uc6-looker-visualization.png)
 
-      ![Configuração de visualização do pesquisador](assets/uc6-looker-visualization.png)
+   1. Select **[!UICONTROL Apply]**.
+   1. Select ![CrossSize75](/help/assets/icons/CrossSize75.svg) next to **[!UICONTROL Edit]** to hide the popup dialog
 
-   1. Selecione **[!UICONTROL Aplicar]**.
-   1. Selecione ![CrossSize75](/help/assets/icons/CrossSize75.svg) ao lado de **[!UICONTROL Edit]** para ocultar a caixa de diálogo pop-up
+You should see a visualization and table similar as shown below.
 
-Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
-
-![Tendência diária do resultado da pesquisa](assets/uc6-looker-result.png)
+![Looker result daily trend](assets/uc6-looker-result.png)
 
 
 >[!TAB Jupyter Notebook]
 
-1. Insira as seguintes instruções em uma nova célula.
+1. Enter the following statements in a new cell.
 
    ```
    import seaborn as sns
@@ -1389,14 +1390,14 @@ Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
    display(data)
    ```
 
-1. Execute a célula. Você deve ver uma saída semelhante à captura de tela abaixo.
+1. Execute the cell. You should see output similar to the screenshot below.
 
-   ![Resultados do Jupyter Notebook](assets/uc6-jupyter-results.png)
+   ![Jupyter Notebook Results](assets/uc6-jupyter-results.png)
 
 
 >[!TAB RStudio]
 
-1. Insira as seguintes instruções entre ` ` ``{r} ` e ` `` ` ` em uma nova parte.
+1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk.
 
    ```R
    ## Multiple dimensions ranked
@@ -1408,9 +1409,9 @@ Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
    print(df)
    ```
 
-1. Execute o pedaço. Você deve ver uma saída semelhante à captura de tela abaixo.
+1. Run the chunk. You should see output similar to the screenshot below.
 
-   ![RSudio Results](assets/uc6-rstudio-results.png)
+   ![RStudio Results](assets/uc6-rstudio-results.png)
 
 
 >[!ENDTABS]
@@ -1418,138 +1419,138 @@ Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
 +++
 
 
-## Contar valores de dimensão distintos
+## Count distinct dimension values
 
-Nesse caso de uso, você deseja obter o número distinto de nomes de produtos reportados em durante janeiro de 2023.
+In this use case, you want to get the distinct number of product names that have been reported on during January 2023.
 
 +++ Customer Journey Analytics
 
-Para criar relatórios sobre uma contagem distinta de nomes de produtos, você configura uma métrica calculada no Customer Journey Analytics, com **[!UICONTROL Título]** `Product Name (Count Distinct)` e **[!UICONTROL Id Externa]** `product_name_count_distinct`.
+To report on a distinct count of product names, you set up a calculated metric in Customer Journey Analytics, with **[!UICONTROL Title]** `Product Name (Count Distinct)` and **[!UICONTROL External Id]** `product_name_count_distinct`.
 
-![métrica calculada do Nome do Produto Customer Journey Analytics (Contagem Distinta)](assets/cja-calc-metric-distinct-count-product-names.png)
+![Customer Journey Analytics Product Name (Distincr Count) calculated metric](assets/cja-calc-metric-distinct-count-product-names.png)
 
-Você pode usar essa métrica em um exemplo de **[!UICONTROL painel Contar valores Dimension distintos]** para o caso de uso:
+You then can use that metric in an example **[!UICONTROL Count Distinct Dimension Values]** panel for the use case:
 
-![Valores de Contagem Distintos do Customer Journey Analytics](assets/cja-count-distinct-dimension-values.png)
+![Customer Journey Analytics Distinct Count Values](assets/cja-count-distinct-dimension-values.png)
 
 +++
 
-+++ Ferramentas de BI
++++ BI tools
 
 >[!PREREQUISITES]
 >
->Verifique se você validou [uma conexão bem-sucedida, pode listar visualizações de dados e usar uma visualização de dados](#connect-and-validate) para a ferramenta de BI para a qual deseja experimentar este caso de uso.
+>Ensure you have validated [a successful connection, can list data views, and use a data view](#connect-and-validate) for the BI tool for which you want to try out this use case. 
 >
 
 >[!BEGINTABS]
 
->[!TAB Power BI Desktop]
+>[!TAB Power BI Desktop] 
 
-1. Para garantir que o intervalo de datas se aplique a todas as visualizações, arraste e solte **[!UICONTROL daterangeday]** do painel **[!UICONTROL Dados]** em **[!UICONTROL Filtros]** nesta página.
-   1. Selecione o **[!UICONTROL daterangeday é (Todos)]** de **[!UICONTROL Filtros nesta página]**.
-   1. Selecione **[!UICONTROL Filtragem avançada]** como o **[!UICONTROL Tipo de filtro]**.
-   1. Defina o filtro como **[!UICONTROL Mostrar itens quando o valor]** **[!UICONTROL estiver em ou após]** `1/1/2023` **[!UICONTROL E]** **[!UICONTROL estiver antes de]** `2/1/2023`.
-   1. Selecione **[!UICONTROL Aplicar filtro]**.
+1. To ensure the date range apply to all visualizations, drag and drop **[!UICONTROL daterangeday]** from the **[!UICONTROL Data]** pane on to **[!UICONTROL Filters]** on this page.
+   1. Select the **[!UICONTROL daterangeday is (All)]** from **[!UICONTROL Filters on this page]**.
+   1. Select **[!UICONTROL Advanced filtering]** as the **[!UICONTROL Filter type]**.
+   1. Define the filter to **[!UICONTROL Show items when the value]** **[!UICONTROL is on or after]** `1/1/2023` **[!UICONTROL And]** **[!UICONTROL is before]** `2/1/2023`.
+   1. Select **[!UICONTROL Apply filter]**.
+   
+1. In the **[!UICONTROL Data]** pane:
+   1. Select **[!UICONTROL datarangeday]**.
+   1. Select **[!UICONTROL sum cm_product_name_count_distinct]**, which is the calculated metric defined in Customer Journey Analytics.
 
-1. No painel **[!UICONTROL Dados]**:
-   1. Selecione **[!UICONTROL datarangeday]**.
-   1. Selecione **[!UICONTROL sum cm_product_name_count_distinct]**, que é a métrica calculada definida no Customer Journey Analytics.
+1. To modify the vertical bar chart to a Table, ensure you have the chart selected and select **[!UICONTROL Table]** from the **[!UICONTROL Visualizations]** pane.
+    
+   Your Power BI Desktop should look like below.
 
-1. Para modificar o gráfico de barras vertical para uma Tabela, verifique se o gráfico está selecionado e selecione **[!UICONTROL Tabela]** no painel **[!UICONTROL Visualizações]**.
+   ![Power BI Desktop Multiple Count Distinct table](assets/uc7-powerbi-table.png)
 
-   A área de trabalho do Power BI deve ser semelhante à mostrada abaixo.
+1. Select the table visualization. From the context menu, select **[!UICONTROL Copy]** > **[!UICONTROL Copy visual]**.
+1. Paste the visualization using **[!UICONTROL ctrl-v]**. The exact copy of the visualization overlaps the original one. Move it to the right in the report area.
+1. To modify the copied visualization from a table to a card, select **[!UICONTROL Card]** from **[!UICONTROL Visualizations]**.
 
-   ![Tabela de Contagem Distinta Múltipla do Power BI Desktop](assets/uc7-powerbi-table.png)
+   Your Power BI Desktop should look like below.
 
-1. Selecione a visualização de tabela. No menu de contexto, selecione **[!UICONTROL Cópia]** > **[!UICONTROL Cópia visual]**.
-1. Cole a visualização usando **[!UICONTROL ctrl-v]**. A cópia exata da visualização se sobrepõe à original. Mova-o para a direita na área de relatório.
-1. Para modificar a visualização copiada de uma tabela para um cartão, selecione **[!UICONTROL Cartão]** de **[!UICONTROL Visualizações]**.
+   ![Power BI Desktop Multiple Count Distinct table](assets/uc7-powerbi-final.png)
 
-   A área de trabalho do Power BI deve ser semelhante à mostrada abaixo.
+Alternatively, you can use the count distinct functionality from Power BI. 
 
-   ![Tabela de Contagem Distinta Múltipla do Power BI Desktop](assets/uc7-powerbi-final.png)
+1. Select the **[!UICONTROL product_name]** dimension.
+1. Apply the **[!UICONTROL Count (Distinct)]** function on the **[!UICONTROL product_name]** dimension in **[!UICONTROL Columns]**.
 
-Como alternativa, você pode usar a funcionalidade de contagem distinta da Power BI.
-
-1. Selecione a dimensão **[!UICONTROL product_name]**.
-1. Aplique a função **[!UICONTROL Contagem (Distinta)]** na dimensão **[!UICONTROL product_name]** em **[!UICONTROL Colunas]**.
-
-   ![Contagem distinta de Power BI](assets/uc7-powerbi-alternative.png)
+   ![Power BI Count Distinct](assets/uc7-powerbi-alternative.png)
 
 
 
->[!TAB Tableau Desktop]
+>[!TAB Tableau Desktop] 
 
-1. Selecione a guia **[!UICONTROL Folha 1]** na parte inferior para alternar da **[!UICONTROL Fonte de dados]**. Na exibição **[!UICONTROL Folha 1]**:
-   1. Arraste a entrada **[!UICONTROL Daterange]** da lista **[!UICONTROL Tabelas]** no painel **[!UICONTROL Dados]** e solte a entrada na prateleira **[!UICONTROL Filtros]**.
-   1. Na caixa de diálogo **[!UICONTROL Filtrar Campo \[Intervalo de Datas\]]**, selecione **[!UICONTROL Intervalo de Datas]** e selecione **[!UICONTROL Avançar >]**.
-   1. Na caixa de diálogo **[!UICONTROL Filtro \[Intervalo de datas\]]**, selecione **[!UICONTROL Intervalo de datas]** e selecione `01/01/2023` - `31/1/2023`. Selecione **[!UICONTROL Aplicar]** e **[!UICONTROL OK]**.
-   1. Arraste **[!UICONTROL Contagem Distinta de Nome de Produto]** Cm para **[!UICONTROL Linhas]**. O valor é alterado para **[!UICONTROL SUM(Cm Product Name Count Distinct)]**. Esse campo é a métrica calculada que você definiu no Customer Journey Analytics.
-   1. Arraste **[!UICONTROL Daterangeday]** e solte ao lado de **[!UICONTROL Colunas]**. Selecione **[!UICONTROL Daterangeday]** e, no menu suspenso, selecione **[!UICONTROL Day]**.
-   1. Para modificar a visualização de linhas para uma tabela, selecione **[!UICONTROL Tabela de Texto]** em **[!UICONTROL Mostre-me]**.
-   1. Selecione **[!UICONTROL Trocar Linhas e Colunas]** na barra de ferramentas.
-   1. Selecione **[!UICONTROL Ajustar largura]** no menu suspenso **[!UICONTROL Ajustar]**.
+1. Select the **[!UICONTROL Sheet 1]** tab at the bottom to switch from **[!UICONTROL Data source]**. In the **[!UICONTROL Sheet 1]** view:
+   1. Drag the **[!UICONTROL Daterange]** entry from the **[!UICONTROL Tables]** list in the **[!UICONTROL Data]** pane and drop the entry onto the **[!UICONTROL Filters]** shelf.
+   1. In the **[!UICONTROL Filter Field \[Daterange\]]** dialog, select **[!UICONTROL Range of Dates]** and select **[!UICONTROL Next >]**.
+   1. In the **[!UICONTROL Filter \[Daterange\]]** dialog, select **[!UICONTROL Range of dates]**, and select `01/01/2023` - `31/1/2023`. Select **[!UICONTROL Apply]** and **[!UICONTROL OK]**.
+   1. Drag **[!UICONTROL Cm Product Name Count Distinct]** to **[!UICONTROL Rows]**. The value changes to **[!UICONTROL SUM(Cm Product Name Count Distinct)]**. This field is the calculated metric that you have defined in Customer Journey Analytics.
+   1. Drag **[!UICONTROL Daterangeday]** and drop next to **[!UICONTROL Columns]**. Select **[!UICONTROL Daterangeday]** and from the drop-down menu select **[!UICONTROL Day]**.
+   1. To modify the lines visualization to a table, select **[!UICONTROL Text Table]** from **[!UICONTROL Show Me]**.
+   1. Select **[!UICONTROL Swap Rows and Columns]** from the toolbar.
+   1. Select **[!UICONTROL Fit Width]** from the **[!UICONTROL Fit]** drop-down menu.
 
-      A área de trabalho do Tableau deve ser parecida com a exibida abaixo.
+      Your Tableau Desktop should look like below.
 
-      ![Filtro classificado por vários Dimension do Tableau Desktop](assets/uc7-tableau-data.png)
+      ![Tableau Desktop Multiple Dimension Ranked Filter](assets/uc7-tableau-data.png)
 
-1. Selecione **[!UICONTROL Duplicar]** no menu de contexto da guia **[!UICONTROL Planilha 1]** para criar uma segunda planilha.
-1. Selecione **[!UICONTROL Renomear]** no menu de contexto da guia **[!UICONTROL Planilha 1]** para renomear a planilha como `Data`.
-1. Selecione **[!UICONTROL Renomear]** no menu de contexto da guia **[!UICONTROL Planilha 1 (2)]** para renomear a planilha como `Card`.
+1. Select **[!UICONTROL Duplicate]** from the **[!UICONTROL Sheet 1]** tab context menu to create a second sheet.
+1. Select **[!UICONTROL Rename]** from the **[!UICONTROL Sheet 1]** tab context menu to rename the sheet to `Data`.
+1. Select **[!UICONTROL Rename]** from the **[!UICONTROL Sheet 1 (2)]** tab context menu to rename the sheet to `Card`.
 
-1. Verifique se você selecionou a exibição **[!UICONTROL Cartão]**.
-1. Selecione **[!UICONTROL DAY(Daterangeday)]** e, no menu suspenso, selecione **[!UICONTROL Mês]**. O valor muda para **[!UICONTROL MONTH(Daterangeday)]**.
-1. Selecione **[!UICONTROL SUM(Cm Product Name Count Distinct)]** em **[!UICONTROL Marcas]** e, no menu suspenso, selecione **[!UICONTROL Formato]**.
-1. Para alterar o tamanho da fonte, no painel **[!UICONTROL Formatar SUM(CM Nome do Produto Contagem Distinta)]**, selecione **[!UICONTROL Fonte]** em **[!UICONTROL Padrão]** e selecione **[!UICONTROL 72]** para o tamanho da fonte.
-1. Para alinhar o número, selecione **[!UICONTROL Automático]** ao lado de **[!UICONTROL Alinhamento]** e defina **[!UICONTROL Horizontal]** para centralizado.
-1. Para usar números inteiros, selecione **[!UICONTROL 123.456]** ao lado de **[!UICONTROL Números]** e selecione **[!UICONTROL Número (Personalizado)]**. Defina **[!UICONTROL casas decimais]** para `0`.
+1. Ensure you have selected the **[!UICONTROL Card]** view.
+1. Select **[!UICONTROL DAY(Daterangeday)]** and from the drop-down menu select **[!UICONTROL Month]**. The value changes to **[!UICONTROL MONTH(Daterangeday)]**.
+1. Select **[!UICONTROL SUM(Cm Product Name Count Distinct)]** in **[!UICONTROL Marks]** and from the drop-down menu select **[!UICONTROL Format]**.
+1. To change the font size, in the **[!UICONTROL Format SUM(CM Product Name Count Distinct)]** pane, select **[!UICONTROL Font]** within **[!UICONTROL Default]** and select **[!UICONTROL 72]** for the font size.
+1. To align the number, select **[!UICONTROL Automatic]** next to **[!UICONTROL Alignment]** and set **[!UICONTROL Horizontal]** to centered.
+1. To use whole numbers, select **[!UICONTROL 123.456]** next to **[!UICONTROL Numbers]** and select **[!UICONTROL Number (Custom)]**. Set **[!UICONTROL Decimal places]** to `0`.
 
-   A área de trabalho do Tableau deve ser parecida com a exibida abaixo.
+   Your Tableau Desktop should look like below.
 
-   ![Filtro classificado por vários Dimension do Tableau Desktop](assets/uc7-tableau-card.png)
+   ![Tableau Desktop Multiple Dimension Ranked Filter](assets/uc7-tableau-card.png)
 
-1. Selecione o botão de guia **[!UICONTROL Novo Painel]** (na parte inferior) para criar um novo modo de exibição **[!UICONTROL Painel]**. No modo de exibição **[!UICONTROL Painel 1]**:
-   1. Arraste e solte a folha **[!UICONTROL Cartão]** da prateleira **[!UICONTROL Folhas]** no modo de exibição **[!UICONTROL Painel 1]** onde se lê *Folhas de soltar aqui*.
-   1. Arraste e solte a folha **[!UICONTROL Dados]** da estante **[!UICONTROL Folhas]** abaixo da folha **[!UICONTROL Cartão]** na exibição **[!UICONTROL Painel 1]**.
+1. Select **[!UICONTROL New Dashboard]** tab button (at the bottom) to create a new **[!UICONTROL Dashboard 1]** view. In the **[!UICONTROL Dashboard 1]** view:
+   1. Drag and drop the **[!UICONTROL Card]** sheet from the **[!UICONTROL Sheets]** shelf onto the **[!UICONTROL Dashboard 1]** view that reads *Drop sheets here*.
+   1. Drag and drop the **[!UICONTROL Data]** sheet from the **[!UICONTROL Sheets]** shelf underneath the **[!UICONTROL Card]** sheet on the **[!UICONTROL Dashboard 1]** view.
 
-   A exibição do **[!UICONTROL Painel 1]** deve ser semelhante à mostrada abaixo.
+   Your **[!UICONTROL Dashboard 1]** view should look like below.
 
    ![Tableau Desktop Dashboard 1](assets/uc7-tableau-final.png)
 
 
-Como alternativa, você pode usar a funcionalidade de contagem distinta do Tableau Desktop.
+Alternatively, you can use the count distinct functionality from Tableau Desktop. 
 
-1. Use **[!UICONTROL Nome Do Produto]** Em Vez De **[!UICONTROL Contagem Distinta De Nome De Produto De Cm]**.
-1. Aplicar **[!UICONTROL Medida]** > **[!UICONTROL Contagem (Distinta)]** no **[!UICONTROL Nome do Produto]** em **[!UICONTROL Marcas]**.
+1. Use  **[!UICONTROL Product Name]** instead of **[!UICONTROL Cm Product Name Count Distinct]**.
+1. Apply **[!UICONTROL Measure]** > **[!UICONTROL Count (Distinct)]** on **[!UICONTROL Product Name]** in **[!UICONTROL Marks]**.
 
-   ![Contagem distinta do Tableau](assets/uc7-tableau-alternative.png)
+   ![Tableau Count Distinct](assets/uc7-tableau-alternative.png)
 
 
->[!TAB Pesquisador]
+>[!TAB Looker]
 
-1. Na interface **[!UICONTROL Explorar]** do Looker, verifique se você possui uma configuração limpa. Caso contrário, selecione ![Configuração](/help/assets/icons/Setting.svg) **[!UICONTROL Remover campos e filtros]**.
-1. Selecione **[!UICONTROL + Filtro]** abaixo de **[!UICONTROL Filtros]**.
-1. Na caixa de diálogo **[!UICONTROL Adicionar Filtro]**:
-   1. Selecionar **[!UICONTROL ‣ Visualização De Dados Cc]**
-   1. Na lista de campos, selecione **[!UICONTROL ‣ Data do Intervalo de Datas]** e **[!UICONTROL Data do Intervalo de Datas]**.
-      ![Filtro de pesquisa](assets/uc2-looker-filter.png)
-1. Especifique o filtro **[!UICONTROL Data do Intervalo de Datas da Visualização de Dados Cc]**, pois **[!UICONTROL está no intervalo]** **[!UICONTROL 2023/01/01]** **[!UICONTROL até (antes)]** **[!UICONTROL 2023/02/01]**.
-1. Na seção **[!UICONTROL ‣ Cc Data View]** no painel esquerdo:
-   1. Selecione **[!UICONTROL Data do Intervalo de Datas]**, depois **[!UICONTROL Data]**.
-   1. Selecione **[!UICONTROL Agregar Contagem distinta]** no menu de contexto **Mais** no **[!UICONTROL Nome do produto]**.
-      ![Menu de Contexto de Nome de Produto do Looker](assets/uc7-looker-count-distinct.png)
-1. Selecione **[!UICONTROL Executar]**.
-1. Selecione **[!UICONTROL ‣ Visualização]** e selecione 6︎⃣ na barra de ferramentas para exibir uma visualização de Valor único.
+1. In the **[!UICONTROL Explore]** interface of Looker, ensure you do have a clean setup. If not, select ![Setting](/help/assets/icons/Setting.svg) **[!UICONTROL Remove fields and filters]**.
+1. Select **[!UICONTROL + Filter]** underneath **[!UICONTROL Filters]**.
+1. In the **[!UICONTROL Add Filter]** dialog:
+   1. Select **[!UICONTROL ‣ Cc Data View]**
+   1. From the list of fields, select **[!UICONTROL ‣ Daterange Date]** then **[!UICONTROL Daterange Date]**.
+      ![Looker filter](assets/uc2-looker-filter.png)
+1. Specify the **[!UICONTROL Cc Data View Daterange Date]** filter as **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2023/02/01]**.
+1. From the **[!UICONTROL ‣ Cc Data View]** section in the left rail: 
+   1. Select **[!UICONTROL Daterange Date]**, then **[!UICONTROL Date]**.
+   1. Select **[!UICONTROL Aggregate ‣ Count Distinct]** from the **⋮ More** context menu on **[!UICONTROL Product Name]**.
+      ![Looker Product Name Context menu](assets/uc7-looker-count-distinct.png)
+1. Select **[!UICONTROL Run]**.
+1. Select **[!UICONTROL ‣ Visualization]** and select 6︎⃣ from the toolbar to display a Single value visualization.
 
-Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
+You should see a visualization and table similar as shown below.
 
-![Contagem distinta do pesquisador](assets/uc7-looker-result.png)
+![Looker count distinct](assets/uc7-looker-result.png)
 
 
 >[!TAB Jupyter Notebook]
 
-1. Insira as seguintes instruções em uma nova célula.
+1. Enter the following statements in a new cell.
 
    ```
    data = %sql SELECT COUNT(DISTINCT(product_name)) AS `Product Name` \
@@ -1558,14 +1559,14 @@ Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
    display(data)
    ```
 
-1. Execute a célula. Você deve ver uma saída semelhante à captura de tela abaixo.
+1. Execute the cell. You should see output similar to the screenshot below.
 
-   ![Resultados do Jupyter Notebook](assets/uc7-jupyter-results.png)
+   ![Jupyter Notebook Results](assets/uc7-jupyter-results.png)
 
 
 >[!TAB RStudio]
 
-1. Insira as seguintes instruções entre ` ` ``{r} ` e ` `` ` ` em uma nova parte.
+1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk.
 
    ```R
    ## Count Distinct
@@ -1575,9 +1576,9 @@ Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
    print(df)
    ```
 
-1. Execute o pedaço. Você deve ver uma saída semelhante à captura de tela abaixo.
+1. Run the chunk. You should see output similar to the screenshot below.
 
-   ![RSudio Results](assets/uc7-rstudio-results.png)
+   ![RStudio Results](assets/uc7-rstudio-results.png)
 
 
 >[!ENDTABS]
@@ -1585,90 +1586,90 @@ Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
 +++
 
 
-## Usar nomes de intervalo de datas para filtrar
+## Use date range names to filter
 
-Nesse caso de uso, é necessário usar um intervalo de datas definido no Customer Journey Analytics para filtrar e relatar ocorrências (eventos) durante o último ano.
+In this use case you want to use a date range that you have defined in Customer Journey Analytics to filter and report on occurrences (events) during the last year.
 
 +++ Customer Journey Analytics
 
-Para criar relatórios usando um intervalo de datas, você configurou um intervalo de datas no Customer Journey Analytics, com **[!UICONTROL Título]** `Last Year 2023`.
+To report using a date range, you set up a date range in Customer Journey Analytics, with **[!UICONTROL Title]** `Last Year 2023`.
 
-![Nomes de Intervalo de Datas do Customer Journey Analytics para filtrar](assets/cja-daterange.png)
+![Customer Journey Analytics Use date Range Names to filter](assets/cja-daterange.png)
 
-Você pode usar esse intervalo de datas em um exemplo **[!UICONTROL Usando nomes de intervalo de datas para filtrar]** painel para o caso de uso:
+You then can use that date range in an example **[!UICONTROL Using Date Range Names To Filter]** panel for the use case:
 
-![Valores de Contagem Distintos do Customer Journey Analytics](assets/cja-using-date-range-filter-names-to-filter.png)
+![Customer Journey Analytics Distinct Count Values](assets/cja-using-date-range-filter-names-to-filter.png)
 
-Observe como o intervalo de datas definido na visualização da tabela de forma livre substitui o intervalo de datas aplicado ao painel.
+Note how the date range defined in the Freeform table visualization overrules the date range applied to the panel.
 
 +++
 
-+++ Ferramentas de BI
++++ BI tools
 
 >[!PREREQUISITES]
 >
->Verifique se você validou [uma conexão bem-sucedida, pode listar visualizações de dados e usar uma visualização de dados](#connect-and-validate) para a ferramenta de BI para a qual deseja experimentar este caso de uso.
+>Ensure you have validated [a successful connection, can list data views, and use a data view](#connect-and-validate) for the BI tool for which you want to try out this use case. 
 >
 
 >[!BEGINTABS]
 
->[!TAB Power BI Desktop]
+>[!TAB Power BI Desktop] 
 
-1. No painel **[!UICONTROL Dados]**:
-   1. Selecione **[!UICONTROL daterangemmonth]**.
-   1. Selecione **[!UICONTROL dataterangeName]**.
-   1. Selecione **[!UICONTROL somar ocorrências]**.
+1. In the **[!UICONTROL Data]** pane:
+   1. Select **[!UICONTROL daterangemonth]**.
+   1. Select **[!UICONTROL daterangeName]**.
+   1. Select **[!UICONTROL sum occurrences]**.
+   
+   You see a visualization displaying **[!UICONTROL Error fetching data for this visual]**.
 
-   Você vê uma visualização exibindo **[!UICONTROL Erro ao buscar dados para este visual]**.
+1. In the **[!UICONTROL Filters]** pane:
 
-1. No painel **[!UICONTROL Filtros]**:
+   1. Select the **[!UICONTROL daterangeName is (All)]** from **[!UICONTROL Filters on this visual]**.
+   1. Select **[!UICONTROL Basic filtering]** as the **[!UICONTROL Filter type]**.
+   1. Underneath the **[!UICONTROL Search]** field, select **[!UICONTROL Last Year 2023]**, which is the name of your date range defined in Customer Journey Analytics.
+   1. Select ![CrossSize75](/help/assets/icons/CrossSize75.svg) to remove **[!UICONTROL daterangeName]** from **[!UICONTROL Columns]**.
+   
+   You see the table updated with the applied **[!UICONTROL daterangeName]** filter. Your Power BI Desktop should look like below.
 
-   1. Selecione o **[!UICONTROL daterangeName é (Todos)]** de **[!UICONTROL Filtros neste visual]**.
-   1. Selecione **[!UICONTROL Filtragem básica]** como o **[!UICONTROL Tipo de filtro]**.
-   1. Abaixo do campo **[!UICONTROL Pesquisa]**, selecione **[!UICONTROL Ano Passado 2023]**, que é o nome do intervalo de datas definido no Customer Journey Analytics.
-   1. Selecione ![CrossSize75](/help/assets/icons/CrossSize75.svg) para remover **[!UICONTROL daterangeName]** de **[!UICONTROL Colunas]**.
+   ![Power BI Desktop Using Date Range Names To Filter](assets/uc8-powerbi-final.png)
 
-   Você vê a tabela atualizada com o filtro **[!UICONTROL daterangeName]** aplicado. A área de trabalho do Power BI deve ser semelhante à mostrada abaixo.
+>[!TAB Tableau Desktop] 
 
-   ![Área De Trabalho Power BI Usando Nomes De Intervalo De Datas Para Filtrar](assets/uc8-powerbi-final.png)
+1. Select the **[!UICONTROL Sheet 1]** tab at the bottom to switch from **[!UICONTROL Data source]**. In the **[!UICONTROL Sheet 1]** view:
+   1. Drag the **[!UICONTROL Daterange Name]** entry from the **[!UICONTROL Tables]** list in the **[!UICONTROL Filters]** shelf.
+   1. In the **[!UICONTROL Filter \[Daterange Name\]]** dialog ensure **[!UICONTROL Select from list]** is selected, and select **[!UICONTROL Last Year 2023]** from the list. Select **[!UICONTROL Apply]** and **[!UICONTROL OK]**.
+   1. Drag **[!UICONTROL Daterangemonth]** entry from the **[!UICONTROL Tables]** list and drop the entry in the field next to **[!UICONTROL Rows]**. Select **[!UICONTROL Daterangemonth]** and select **[!UICONTROL Month]**. The value changes to **[!UICONTROL MONTH(Daterangemonth)]**.
+   1. Drag **[!UICONTROL Occurrences]** entry from the **[!UICONTROL Tables]** list and drop the entry in the field next to **[!UICONTROL Columns]**. The value changes to **[!UICONTROL SUM(Occurrences)]**.
+   1. Select **[!UICONTROL Text Table]** from **[!UICONTROL Show Me]**.
+   1. Select **[!UICONTROL Swap Rows and Columns]** from the toolbar.
+   1. Select **[!UICONTROL Fit Width]** from the **[!UICONTROL Fit]** drop-down menu.
 
->[!TAB Tableau Desktop]
+      Your Tableau Desktop should look like below.
 
-1. Selecione a guia **[!UICONTROL Folha 1]** na parte inferior para alternar da **[!UICONTROL Fonte de dados]**. Na exibição **[!UICONTROL Folha 1]**:
-   1. Arraste a entrada **[!UICONTROL Nome do Intervalo de Datas]** da lista **[!UICONTROL Tabelas]** na prateleira **[!UICONTROL Filtros]**.
-   1. Na caixa de diálogo **[!UICONTROL Filtrar \[Nome do Intervalo de Datas\]]**, certifique-se de que **[!UICONTROL Selecionar da lista]** esteja selecionado e selecione **[!UICONTROL Ano Passado 2023]** na lista. Selecione **[!UICONTROL Aplicar]** e **[!UICONTROL OK]**.
-   1. Arraste a entrada **[!UICONTROL Daterangemonth]** da lista **[!UICONTROL Tabelas]** e solte a entrada no campo ao lado de **[!UICONTROL Linhas]**. Selecione **[!UICONTROL Daterangemonth]** e selecione **[!UICONTROL Month]**. O valor muda para **[!UICONTROL MONTH(Daterangemonth)]**.
-   1. Arraste a entrada **[!UICONTROL Ocorrências]** da lista **[!UICONTROL Tabelas]** e solte a entrada no campo ao lado de **[!UICONTROL Colunas]**. O valor é alterado para **[!UICONTROL SUM(Occurrences)]**.
-   1. Selecione **[!UICONTROL Tabela de Texto]** de **[!UICONTROL Mostre-me]**.
-   1. Selecione **[!UICONTROL Trocar Linhas e Colunas]** na barra de ferramentas.
-   1. Selecione **[!UICONTROL Ajustar largura]** no menu suspenso **[!UICONTROL Ajustar]**.
+      ![Tableau Desktop Multiple Dimension Ranked Filter](assets/uc8-tableau-final.png)
 
-      A área de trabalho do Tableau deve ser parecida com a exibida abaixo.
+>[!TAB Looker]
 
-      ![Filtro classificado por vários Dimension do Tableau Desktop](assets/uc8-tableau-final.png)
+1. In the **[!UICONTROL Explore]** interface of Looker, ensure you do have a clean setup. If not, select ![Setting](/help/assets/icons/Setting.svg) **[!UICONTROL Remove fields and filters]**.
+1. Select **[!UICONTROL + Filter]** underneath **[!UICONTROL Filters]**.
+1. In the **[!UICONTROL Add Filter]** dialog:
+   1. Select **[!UICONTROL ‣ Cc Data View]**
+   1. From the list of fields, select **[!UICONTROL ‣ Daterange Name]**.
+1. Specify the **[!UICONTROL Cc Data View Daterange Name]** filter as **[!UICONTROL is]** and select **[!UICONTROL Last Year 2023]** from the list of values.
+1. From the **[!UICONTROL ‣ Cc Data View]** section in the left rail: 
+   1. Select **[!UICONTROL Daterange Month]**, then **[!UICONTROL Month]**.
+   1. Select **[!UICONTROL Count]** underneath **[!UICONTROL MEASURES]** in the left rail (at the bottom).
+1. Select **[!UICONTROL Run]**.
+1. Select **[!UICONTROL ‣ Visualization]**.
 
->[!TAB Pesquisador]
+You should see a visualization and table similar as shown below.
 
-1. Na interface **[!UICONTROL Explorar]** do Looker, verifique se você possui uma configuração limpa. Caso contrário, selecione ![Configuração](/help/assets/icons/Setting.svg) **[!UICONTROL Remover campos e filtros]**.
-1. Selecione **[!UICONTROL + Filtro]** abaixo de **[!UICONTROL Filtros]**.
-1. Na caixa de diálogo **[!UICONTROL Adicionar Filtro]**:
-   1. Selecionar **[!UICONTROL ‣ Visualização De Dados Cc]**
-   1. Na lista de campos, selecione **[!UICONTROL ‣ Nome do Intervalo de Datas]**.
-1. Especifique o filtro **[!UICONTROL Nome do Intervalo de Datas da Visualização de Dados Cc]** como **[!UICONTROL is]** e selecione **[!UICONTROL Ano Passado 2023]** na lista de valores.
-1. Na seção **[!UICONTROL ‣ Cc Data View]** no painel esquerdo:
-   1. Selecione **[!UICONTROL Mês do Intervalo de Datas]**, depois **[!UICONTROL Mês]**.
-   1. Selecione **[!UICONTROL Contagem]** abaixo de **[!UICONTROL MEDIDAS]** no painel esquerdo (na parte inferior).
-1. Selecione **[!UICONTROL Executar]**.
-1. Selecione **[!UICONTROL ‣ Visualização]**.
-
-Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
-
-![Contagem distinta do pesquisador](assets/uc8-looker-result.png)
+![Looker count distinct](assets/uc8-looker-result.png)
 
 
 >[!TAB Jupyter Notebook]
 
-1. Insira as seguintes instruções em uma nova célula.
+1. Enter the following statements in a new cell.
 
    ```python
    data = %sql SELECT daterangeName FROM cc_data_view;
@@ -1681,13 +1682,13 @@ Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
    display(daterange_name)
    ```
 
-1. Execute a célula. Você deve ver uma saída semelhante à captura de tela abaixo.
+1. Execute the cell. You should see output similar to the screenshot below.
 
-   ![Resultados do Jupyter Notebook](assets/uc8-jupyter-input.png)
+   ![Jupyter Notebook Results](assets/uc8-jupyter-input.png)
 
-1. Selecione **[!UICONTROL Produtos de pesca]** no menu suspenso.
+1. Select **[!UICONTROL Fishing Products]** from the drop-down menu.
 
-1. Insira as seguintes instruções em uma nova célula.
+1. Enter the following statements in a new cell.
 
    ```python
    import seaborn as sns
@@ -1705,14 +1706,14 @@ Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
    display(data)
    ```
 
-1. Execute a célula. Você deve ver uma saída semelhante à captura de tela abaixo.
+1. Execute the cell. You should see output similar to the screenshot below.
 
-   ![Resultados do Jupyter Notebook](assets/uc8-jupyter-results.png)
+   ![Jupyter Notebook Results](assets/uc8-jupyter-results.png)
 
 
 >[!TAB RStudio]
 
-1. Insira as seguintes instruções entre ` ` ``{r} ` e ` `` ` ` em uma nova parte. Certifique-se de usar o nome do intervalo de datas apropriado. Por exemplo, `Last Year 2023`.
+1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk. Ensure you use the appropriate date range name. For example, `Last Year 2023`.
 
    ```R
    ## Monthly Events for Last Year
@@ -1728,9 +1729,9 @@ Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
    print(df)
    ```
 
-1. Execute o pedaço. Você deve ver uma saída semelhante à captura de tela abaixo.
+1. Run the chunk. You should see output similar to the screenshot below.
 
-   ![RSudio Results](assets/uc8-rstudio-results.png)
+   ![RStudio Results](assets/uc8-rstudio-results.png)
 
 >[!ENDTABS]
 
@@ -1738,104 +1739,104 @@ Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
 
 
 
-## Usar nomes de segmento para segmentar
+## Use segment names to segment
 
-Nesse caso de uso, é possível usar um segmento existente para a categoria Produtos de pesca, que você definiu no Customer Journey Analytics. Segmentar e relatar nomes de produtos e ocorrências (eventos) durante janeiro de 2023.
+In this use case, you want to use an existing segment for the Fishing product category, that you have defined in Customer Journey Analytics. To segment and report on product names and occurrences (events) during January 2023.
 
 +++ Customer Journey Analytics
 
-Inspecione o segmento que deseja usar no Customer Journey Analytics.
+Inspect the segment that you want to use in Customer Journey Analytics.
 
-![Customer Journey Analytics Usar Nomes De Filtro Para Filtrar](assets/cja-fishing-products.png)
+![Customer Journey Analytics Use Filter Names To Filter](assets/cja-fishing-products.png)
 
-Você pode usar esse segmento em um exemplo de **[!UICONTROL painel Usar nomes de segmentos para segmentos]** para o caso de uso:
+You then can use that segment in an example **[!UICONTROL Using Segment Names To Segment]** panel for the use case:
 
-![Valores de Contagem Distintos do Customer Journey Analytics](assets/cja-using-filter-names-to-filter.png)
+![Customer Journey Analytics Distinct Count Values](assets/cja-using-filter-names-to-filter.png)
 
 +++
 
-+++ Ferramentas de BI
++++ BI tools
 
 >[!PREREQUISITES]
 >
->Verifique se você validou [uma conexão bem-sucedida, pode listar visualizações de dados e usar uma visualização de dados](#connect-and-validate) para a ferramenta de BI para a qual deseja experimentar este caso de uso.
+>Ensure you have validated [a successful connection, can list data views, and use a data view](#connect-and-validate) for the BI tool for which you want to try out this use case. 
 >
 
 >[!BEGINTABS]
 
->[!TAB Power BI Desktop]
+>[!TAB Power BI Desktop] 
 
-1. No painel **[!UICONTROL Dados]**:
-   1. Selecione **[!UICONTROL intervalo de datas]**.
-   1. Selecione **[!UICONTROL filterName]**.
-   1. Selecione **[!UICONTROL product_name]**.
-   1. Selecione **[!UICONTROL somar ocorrências]**.
+1. In the **[!UICONTROL Data]** pane:
+   1. Select **[!UICONTROL daterange]**.
+   1. Select **[!UICONTROL filterName]**.
+   1. Select **[!UICONTROL product_name]**.
+   1. Select **[!UICONTROL sum occurrences]**.
 
-Você vê uma visualização exibindo **[!UICONTROL Erro ao buscar dados para este visual]**.
+  You see a visualization displaying **[!UICONTROL Error fetching data for this visual]**.
 
-1. No painel **[!UICONTROL Filtros]**:
+1. In the **[!UICONTROL Filters]** pane:
 
-   1. Selecione **[!UICONTROL filterName is (All)]** from **[!UICONTROL Filters on this visual]**.
-   1. Selecione **[!UICONTROL Filtragem básica]** como o **[!UICONTROL Tipo de filtro]**.
-   1. Abaixo do campo **[!UICONTROL Pesquisa]**, selecione **[!UICONTROL Produtos de Pesca]**, que é o nome do filtro existente definido no Customer Journey Analytics.
-   1. Selecione **[!UICONTROL o intervalo de datas é (Todos)]** de **[!UICONTROL Filtros neste visual]**.
-   1. Selecione **[!UICONTROL Filtragem avançada]** como o **[!UICONTROL Tipo de filtro]**.
-   1. Defina o filtro como **[!UICONTROL Mostrar itens quando o valor]** **[!UICONTROL estiver em ou após]** `1/1/2023` **[!UICONTROL E]** **[!UICONTROL estiver antes de]** `2/1/2023`.
-   1. Selecione ![CrossSize75](/help/assets/icons/CrossSize75.svg) para remover **[!UICONTROL filterName]** de **[!UICONTROL Colunas]**.
-   1. Selecione ![CrossSize75](/help/assets/icons/CrossSize75.svg) para remover **[!UICONTROL daterange]** de **[!UICONTROL Colunas]**.
+   1. Select **[!UICONTROL filterName is (All)]** from **[!UICONTROL Filters on this visual]**.
+   1. Select **[!UICONTROL Basic filtering]** as the **[!UICONTROL Filter type]**.
+   1. Underneath the **[!UICONTROL Search]** field, select **[!UICONTROL Fishing Products]**, which is the name of the existing filter defined in Customer Journey Analytics.
+   1. Select **[!UICONTROL daterange is (All)]** from **[!UICONTROL Filters on this visual]**.
+   1. Select **[!UICONTROL Advanced filtering]** as the **[!UICONTROL Filter type]**.
+   1. Define the filter to **[!UICONTROL Show items when the value]** **[!UICONTROL is on or after]** `1/1/2023` **[!UICONTROL And]** **[!UICONTROL is before]** `2/1/2023`.
+   1. Select ![CrossSize75](/help/assets/icons/CrossSize75.svg) to remove **[!UICONTROL filterName]** from **[!UICONTROL Columns]**.
+   1. Select ![CrossSize75](/help/assets/icons/CrossSize75.svg) to remove **[!UICONTROL daterange]** from **[!UICONTROL Columns]**.
+   
+   You see the table updated with the applied **[!UICONTROL filterName]** filter. Your Power BI Desktop should look like below.
 
-   Você vê a tabela atualizada com o filtro **[!UICONTROL filterName]** aplicado. A área de trabalho do Power BI deve ser semelhante à mostrada abaixo.
-
-   ![Área De Trabalho Power BI Usando Nomes De Intervalo De Datas Para Filtrar](assets/uc9-powerbi-final.png)
+   ![Power BI Desktop Using Date Range Names To Filter](assets/uc9-powerbi-final.png)
 
 
->[!TAB Tableau Desktop]
+>[!TAB Tableau Desktop] 
 
-1. Selecione a guia **[!UICONTROL Folha 1]** na parte inferior para alternar da **[!UICONTROL Fonte de dados]**. Na exibição **[!UICONTROL Folha 1]**:
-   1. Arraste a entrada **[!UICONTROL Nome do Filtro]** da lista **[!UICONTROL Tabelas]** na prateleira **[!UICONTROL Filtros]**.
-   1. Na caixa de diálogo **[!UICONTROL Filtrar \[Nome do Filtro\]]**, certifique-se de que **[!UICONTROL Selecionar na lista]** esteja selecionado e selecione **[!UICONTROL Produtos de Pesca]** na lista. Selecione **[!UICONTROL Aplicar]** e **[!UICONTROL OK]**.
-   1. Arraste a entrada **[!UICONTROL Daterange]** da lista **[!UICONTROL Tabelas]** na prateleira **[!UICONTROL Filtros]**.
-   1. Na caixa de diálogo **[!UICONTROL Filtrar Campo \[Intervalo de Datas\]]**, selecione **[!UICONTROL Intervalo de Datas]** e selecione **[!UICONTROL Avançar >]**.
-   1. Na caixa de diálogo **[!UICONTROL Filtro \[Grupo de Datas\]]**, selecione **[!UICONTROL Intervalo de datas]** e selecione `01/01/2023` - `01/02/2023`. Selecione **[!UICONTROL Aplicar]** e **[!UICONTROL OK]**.
-   1. Arraste **[!UICONTROL Nome do Produto]** da lista **[!UICONTROL Tabelas]** para **[!UICONTROL Linhas]**.
-   1. Arraste a entrada **[!UICONTROL Ocorrências]** da lista **[!UICONTROL Tabelas]** e solte a entrada no campo ao lado de **[!UICONTROL Colunas]**. O valor é alterado para **[!UICONTROL SUM(Occurrences)]**.
-   1. Selecione **[!UICONTROL Tabela de Texto]** de **[!UICONTROL Mostre-me]**.
-   1. Selecione **[!UICONTROL Ajustar largura]** no menu suspenso **[!UICONTROL Ajustar]**.
+1. Select the **[!UICONTROL Sheet 1]** tab at the bottom to switch from **[!UICONTROL Data source]**. In the **[!UICONTROL Sheet 1]** view:
+   1. Drag the **[!UICONTROL Filter Name]** entry from the **[!UICONTROL Tables]** list in the **[!UICONTROL Filters]** shelf.
+   1. In the **[!UICONTROL Filter \[Filter Name\]]** dialog ensure **[!UICONTROL Select from list]** is selected, and select **[!UICONTROL Fishing Products]** from the list. Select **[!UICONTROL Apply]** and **[!UICONTROL OK]**.
+   1. Drag **[!UICONTROL Daterange]** entry from the **[!UICONTROL Tables]** list in the **[!UICONTROL Filters]** shelf.
+   1. In the **[!UICONTROL Filter Field \[Daterange\]]** dialog, select **[!UICONTROL Range of Dates]** and select **[!UICONTROL Next >]**.
+   1. In the **[!UICONTROL Filter \[Daterang\]]** dialog, select **[!UICONTROL Range of dates]**, and select `01/01/2023` - `01/02/2023`. Select **[!UICONTROL Apply]** and **[!UICONTROL OK]**.
+   1. Drag **[!UICONTROL Product Name]** from the **[!UICONTROL Tables]** list to **[!UICONTROL Rows]**.
+   1. Drag **[!UICONTROL Occurrences]** entry from the **[!UICONTROL Tables]** list and drop the entry in the field next to **[!UICONTROL Columns]**. The value changes to **[!UICONTROL SUM(Occurrences)]**.
+   1. Select **[!UICONTROL Text Table]** from **[!UICONTROL Show Me]**.
+   1. Select **[!UICONTROL Fit Width]** from the **[!UICONTROL Fit]** drop-down menu.
 
-      A área de trabalho do Tableau deve ser parecida com a exibida abaixo.
+      Your Tableau Desktop should look like below.
 
-      ![Filtro classificado por vários Dimension do Tableau Desktop](assets/uc9-tableau-final.png)
+      ![Tableau Desktop Multiple Dimension Ranked Filter](assets/uc9-tableau-final.png)   
 
->[!TAB Pesquisador]
+>[!TAB Looker]
 
-1. Na interface **[!UICONTROL Explorar]** do Looker, verifique se você possui uma configuração limpa. Caso contrário, selecione ![Configuração](/help/assets/icons/Setting.svg) **[!UICONTROL Remover campos e filtros]**.
-1. Selecione **[!UICONTROL + Filtro]** abaixo de **[!UICONTROL Filtros]**.
-1. Na caixa de diálogo **[!UICONTROL Adicionar Filtro]**:
-   1. Selecionar **[!UICONTROL ‣ Visualização De Dados Cc]**
-   1. Na lista de campos, selecione **[!UICONTROL ‣ Data do Intervalo de Datas]** e **[!UICONTROL Data do Intervalo de Datas]**.
-      ![Filtro de pesquisa](assets/uc2-looker-filter.png)
-1. Especifique o filtro **[!UICONTROL Data do Intervalo de Datas da Visualização de Dados Cc]**, pois **[!UICONTROL está no intervalo]** **[!UICONTROL 2023/01/01]** **[!UICONTROL até (antes)]** **[!UICONTROL 2023/02/01]**.
-1. Selecione **[!UICONTROL + Filtro]** abaixo de **[!UICONTROL Filtros]** para adicionar outro filtro.
-1. Na caixa de diálogo **[!UICONTROL Adicionar Filtro]**:
-   1. Selecionar **[!UICONTROL ‣ Visualização De Dados Cc]**
-   1. Na lista de campos, selecione **[!UICONTROL ‣ Nome do filtro]**.
-1. Verifique se **[!UICONTROL é]** a seleção do filtro.
-1. Selecione **[!UICONTROL Produtos de pesca]** na lista de valores possíveis.
-1. Na seção **[!UICONTROL ‣ Cc Data View]** no painel esquerdo:
-   1. Selecione **[!UICONTROL Nome do Produto]**.
-   1. Selecione **[!UICONTROL Contagem]** abaixo de **[!UICONTROL MEDIDAS]** no painel esquerdo (na parte inferior).
-1. Selecione **[!UICONTROL Executar]**.
-1. Selecione **[!UICONTROL ‣ Visualização]**.
+1. In the **[!UICONTROL Explore]** interface of Looker, ensure you do have a clean setup. If not, select ![Setting](/help/assets/icons/Setting.svg) **[!UICONTROL Remove fields and filters]**.
+1. Select **[!UICONTROL + Filter]** underneath **[!UICONTROL Filters]**.
+1. In the **[!UICONTROL Add Filter]** dialog:
+   1. Select **[!UICONTROL ‣ Cc Data View]**
+   1. From the list of fields, select **[!UICONTROL ‣ Daterange Date]** then **[!UICONTROL Daterange Date]**.
+      ![Looker filter](assets/uc2-looker-filter.png)
+1. Specify the **[!UICONTROL Cc Data View Daterange Date]** filter as **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2023/02/01]**.
+1. Select **[!UICONTROL + Filter]** underneath **[!UICONTROL Filters]** to add another filter.
+1. In the **[!UICONTROL Add Filter]** dialog:
+   1. Select **[!UICONTROL ‣ Cc Data View]**
+   1. From the list of fields, select **[!UICONTROL ‣ Filter name]**.
+1. Ensure **[!UICONTROL is]** the selection for the filter.
+1. Select **[!UICONTROL Fishing Products]** from the list of possible values.
+1. From the **[!UICONTROL ‣ Cc Data View]** section in the left rail: 
+   1. Select **[!UICONTROL Product Name]**.
+   1. Select **[!UICONTROL Count]** underneath **[!UICONTROL MEASURES]** in the left rail (at the bottom).
+1. Select **[!UICONTROL Run]**.
+1. Select **[!UICONTROL ‣ Visualization]**.
 
-Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
+You should see a visualization and table similar as shown below.
 
-![Contagem distinta do pesquisador](assets/uc9-looker-result.png)
+![Looker count distinct](assets/uc9-looker-result.png)
 
 
 
 >[!TAB Jupyter Notebook]
 
-1. Insira as seguintes instruções em uma nova célula.
+1. Enter the following statements in a new cell.
 
    ```python
    data = %sql SELECT filterName FROM cc_data_view;
@@ -1848,13 +1849,13 @@ Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
    display(filter_name)
    ```
 
-1. Execute a célula. Você deve ver uma saída semelhante à captura de tela abaixo.
+1. Execute the cell. You should see output similar to the screenshot below.
 
-   ![Resultados do Jupyter Notebook](assets/uc9-jupyter-input.png)
+   ![Jupyter Notebook Results](assets/uc9-jupyter-input.png)
 
-1. Selecione **[!UICONTROL Produtos de pesca]** no menu suspenso.
+1. Select **[!UICONTROL Fishing Products]** from the drop-down menu.
 
-1. Insira as seguintes instruções em uma nova célula.
+1. Enter the following statements in a new cell.
 
    ```python
    import seaborn as sns
@@ -1873,14 +1874,14 @@ Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
    display(data)
    ```
 
-1. Execute a célula. Você deve ver uma saída semelhante à captura de tela abaixo.
+1. Execute the cell. You should see output similar to the screenshot below.
 
-   ![Resultados do Jupyter Notebook](assets/uc9-jupyter-results.png)
+   ![Jupyter Notebook Results](assets/uc9-jupyter-results.png)
 
 
 >[!TAB RStudio]
 
-1. Insira as seguintes instruções entre ` ` ``{r} ` e ` `` ` ` em uma nova parte. Certifique-se de usar o nome de filtro apropriado. Por exemplo, `Fishing Products`.
+1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk. Ensure you use the appropriate filter name. For example, `Fishing Products`.
 
    ```R
    ## Dimension filtered by name
@@ -1892,9 +1893,9 @@ Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
    print(df)
    ```
 
-1. Execute o pedaço. Você deve ver uma saída semelhante à captura de tela abaixo.
+1. Run the chunk. You should see output similar to the screenshot below.
 
-   ![RSudio Results](assets/uc9-rstudio-results.png)
+   ![RStudio Results](assets/uc9-rstudio-results.png)
 
 
 >[!ENDTABS]
@@ -1902,104 +1903,104 @@ Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
 +++
 
 
-## Usar valores de dimensão para segmentar
+## Use dimension values to segment
 
-Você usa o valor dinâmico de **[!UICONTROL Caça]** para **[!UICONTROL Categoria de Produto]** para segmentar produtos da categoria de caça. Como alternativa, para as ferramentas de BI que não oferecem suporte à recuperação dinâmica de valores de categoria de produto, você cria um novo segmento no Customer Journey Analytics que segmenta produtos da categoria de produto de caça.
-Em seguida, use o novo segmento para relatar nomes de produtos e ocorrências (eventos) de produtos da categoria de caça durante janeiro de 2023.
+You use the dynamic **[!UICONTROL Hunting]** value for **[!UICONTROL Product Category]** to segment products from the hunting category. Alternatively, for those BI tools that do not support the dynamic retrieval of product category values, you create a new segment in Customer Journey Analytics that segments on products from the hunting product category. 
+Then you want to use the new segment to report on product names and occurrences (events) for products from the hunting category during January 2023.
 
 +++ Customer Journey Analytics
 
-Crie um novo segmento com **[!UICONTROL Título]** `Hunting Products` no Customer Journey Analytics.
+Create a new segment with **[!UICONTROL Title]** `Hunting Products` in Customer Journey Analytics.
 
-![Customer Journey Analytics Usar Valores De Dimension Para Segmentar](assets/cja-hunting-products.png)
+![Customer Journey Analytics Use Dimension Values To Segment](assets/cja-hunting-products.png)
 
-Você pode usar esse segmento em um exemplo **[!UICONTROL usando o painel Valores de Dimension para Filtrar]** para o caso de uso:
+You then can use that segment in an example **[!UICONTROL Using Dimension Values To Filter]** panel for the use case:
 
-![Valores de Contagem Distintos do Customer Journey Analytics](assets/cja-using-dimension-values-to-filter.png)
+![Customer Journey Analytics Distinct Count Values](assets/cja-using-dimension-values-to-filter.png)
 
 +++
 
-+++ Ferramentas de BI
++++ BI tools
 
 >[!PREREQUISITES]
 >
->Verifique se você validou [uma conexão bem-sucedida, pode listar visualizações de dados e usar uma visualização de dados](#connect-and-validate) para a ferramenta de BI para a qual deseja experimentar este caso de uso.
+>Ensure you have validated [a successful connection, can list data views, and use a data view](#connect-and-validate) for the BI tool for which you want to try out this use case. 
 >
 
 >[!BEGINTABS]
 
->[!TAB Power BI Desktop]
+>[!TAB Power BI Desktop] 
 
-1. Selecione **[!UICONTROL Página inicial]** no menu e **[!UICONTROL Atualizar]** na barra de ferramentas. É necessário atualizar a conexão para coletar o novo filtro que você acabou de definir no Customer Journey Analytics.
+1. Select **[!UICONTROL Home]** from the menu, then select **[!UICONTROL Refresh]** from the toolbar. You need to refresh the connection to pick up the new filter you just defined in Customer Journey Analytics.
+   
+1. In the **[!UICONTROL Data]** pane:
+   1. Select **[!UICONTROL daterange]**.
+   1. Select **[!UICONTROL product_category]**.
+   1. Select **[!UICONTROL product_name]**.
+   1. Select **[!UICONTROL sum occurrences]**.
 
-1. No painel **[!UICONTROL Dados]**:
-   1. Selecione **[!UICONTROL intervalo de datas]**.
-   1. Selecione **[!UICONTROL product_category]**.
-   1. Selecione **[!UICONTROL product_name]**.
-   1. Selecione **[!UICONTROL somar ocorrências]**.
+  You see a visualization displaying **[!UICONTROL Error fetching data for this visual]**.
 
-Você vê uma visualização exibindo **[!UICONTROL Erro ao buscar dados para este visual]**.
+1. In the **[!UICONTROL Filters]** pane:
+   1. Select **[!UICONTROL filterName is (All)]** from **[!UICONTROL Filters on this visual]**.
+   1. Select **[!UICONTROL Basic filtering]** as the **[!UICONTROL Filter type]**.
+   1. Select **[!UICONTROL daterange is (All)]** from **[!UICONTROL Filters on this visual]**.
+   1. Select **[!UICONTROL Advanced filtering]** as the **[!UICONTROL Filter type]**.
+   1. Define the filter to **[!UICONTROL Show items when the value]** **[!UICONTROL is on or after]** `1/1/2023` **[!UICONTROL And]** **[!UICONTROL is before]** `2/1/2023`.
+   1. Select **[!UICONTROL Basic filter]** as the **[!UICONTROL Filter type]** for **[!UICONTROL product_category]**, and select **[!UICONTROL Hunting]** from the list of possible values. 
+   1. Select ![CrossSize75](/help/assets/icons/CrossSize75.svg) to remove **[!UICONTROL filterName]** from **[!UICONTROL Columns]**.
+   1. Select ![CrossSize75](/help/assets/icons/CrossSize75.svg) to remove **[!UICONTROL daterange]** from **[!UICONTROL Columns]**.
+   
+   You see the table updated with the applied **[!UICONTROL product_category]** filter. Your Power BI Desktop should look like below.
 
-1. No painel **[!UICONTROL Filtros]**:
-   1. Selecione **[!UICONTROL filterName is (All)]** from **[!UICONTROL Filters on this visual]**.
-   1. Selecione **[!UICONTROL Filtragem básica]** como o **[!UICONTROL Tipo de filtro]**.
-   1. Selecione **[!UICONTROL o intervalo de datas é (Todos)]** de **[!UICONTROL Filtros neste visual]**.
-   1. Selecione **[!UICONTROL Filtragem avançada]** como o **[!UICONTROL Tipo de filtro]**.
-   1. Defina o filtro como **[!UICONTROL Mostrar itens quando o valor]** **[!UICONTROL estiver em ou após]** `1/1/2023` **[!UICONTROL E]** **[!UICONTROL estiver antes de]** `2/1/2023`.
-   1. Selecione **[!UICONTROL Filtro básico]** como o **[!UICONTROL Tipo de filtro]** para **[!UICONTROL product_category]** e selecione **[!UICONTROL Caça]** na lista de valores possíveis.
-   1. Selecione ![CrossSize75](/help/assets/icons/CrossSize75.svg) para remover **[!UICONTROL filterName]** de **[!UICONTROL Colunas]**.
-   1. Selecione ![CrossSize75](/help/assets/icons/CrossSize75.svg) para remover **[!UICONTROL daterange]** de **[!UICONTROL Colunas]**.
-
-   Você vê a tabela atualizada com o filtro **[!UICONTROL product_category]** aplicado. A área de trabalho do Power BI deve ser semelhante à mostrada abaixo.
-
-   ![Área De Trabalho Power BI Usando Nomes De Intervalo De Datas Para Filtrar](assets/uc10-powerbi-final.png)
+   ![Power BI Desktop Using Date Range Names To Filter](assets/uc10-powerbi-final.png)
 
 
 
->[!TAB Tableau Desktop]
+>[!TAB Tableau Desktop] 
 
-O ![AlertRed](/help/assets/icons/AlertRed.svg) Tableau Desktop não oferece suporte à busca da lista dinâmica de categorias de produtos do Customer Journey Analytics. Em vez disso, este caso de uso usa o filtro recém-criado para **[!UICONTROL Produtos de caça]** e usa os critérios de nome do filtro.
+![AlertRed](/help/assets/icons/AlertRed.svg) Tableau Desktop does not support fetching the dynamic list of product categories from Customer Journey Analytics. Instead, this use case uses the newly created filter for **[!UICONTROL Hunting Products]** and use the filter name critetia.
 
-1. Na exibição **[!UICONTROL Data Source]**, abaixo de **[!UICONTROL Data]**, no menu de contexto em **[!UICONTROL cc_data_view(prod:cja%3FFLATTEN)]**, selecione **[!UICONTROL Atualizar]**. É necessário atualizar a conexão para coletar o novo filtro que você acabou de definir no Customer Journey Analytics.
-1. Selecione a guia **[!UICONTROL Folha 1]** na parte inferior para alternar da **[!UICONTROL Fonte de dados]**. Na exibição **[!UICONTROL Folha 1]**:
-   1. Arraste a entrada **[!UICONTROL Nome do Filtro]** da lista **[!UICONTROL Tabelas]** na prateleira **[!UICONTROL Filtros]**.
-   1. Na caixa de diálogo **[!UICONTROL Filtrar \[Nome do Filtro\]]**, certifique-se de que **[!UICONTROL Selecionar da lista]** esteja selecionado e selecione **[!UICONTROL Produtos de Caça]** na lista. Selecione **[!UICONTROL Aplicar]** e **[!UICONTROL OK]**.
-   1. Arraste a entrada **[!UICONTROL Daterange]** da lista **[!UICONTROL Tabelas]** na prateleira **[!UICONTROL Filtros]**.
-   1. Na caixa de diálogo **[!UICONTROL Filtrar Campo \[Intervalo de Datas\]]**, selecione **[!UICONTROL Intervalo de Datas]** e selecione **[!UICONTROL Avançar >]**.
-   1. Na caixa de diálogo **[!UICONTROL Filtro \[Intervalo de datas\]]**, selecione **[!UICONTROL Intervalo de datas]** e selecione `01/01/2023` - `1/2/2023`. Selecione **[!UICONTROL Aplicar]** e **[!UICONTROL OK]**.
-   1. Arraste **[!UICONTROL Nome do Produto]** da lista **[!UICONTROL Tabelas]** para **[!UICONTROL Linhas]**.
-   1. Arraste a entrada **[!UICONTROL Ocorrências]** da lista **[!UICONTROL Tabelas]** e solte a entrada no campo ao lado de **[!UICONTROL Colunas]**. O valor é alterado para **[!UICONTROL SUM(Occurrences)]**.
-   1. Selecione **[!UICONTROL Tabela de Texto]** de **[!UICONTROL Mostre-me]**.
-   1. Selecione **[!UICONTROL Ajustar largura]** no menu suspenso **[!UICONTROL Ajustar]**.
+1. In the **[!UICONTROL Data Source]** view, underneath **[!UICONTROL Data]**, from the context menu on **[!UICONTROL cc_data_view(prod:cja%3FFLATTEN)]**, select **[!UICONTROL Refresh]**. You need to refresh the connection to pick up the new filter you just defined in Customer Journey Analytics.
+1. Select the **[!UICONTROL Sheet 1]** tab at the bottom to switch from **[!UICONTROL Data source]**. In the **[!UICONTROL Sheet 1]** view:
+   1. Drag the **[!UICONTROL Filter Name]** entry from the **[!UICONTROL Tables]** list in the **[!UICONTROL Filters]** shelf.
+   1. In the **[!UICONTROL Filter \[Filter Name\]]** dialog ensure **[!UICONTROL Select from list]** is selected, and select **[!UICONTROL Hunting Products]** from the list. Select **[!UICONTROL Apply]** and **[!UICONTROL OK]**.
+   1. Drag **[!UICONTROL Daterange]** entry from the **[!UICONTROL Tables]** list in the **[!UICONTROL Filters]** shelf.
+   1. In the **[!UICONTROL Filter Field \[Daterange\]]** dialog, select **[!UICONTROL Range of Dates]** and select **[!UICONTROL Next >]**.
+   1. In the **[!UICONTROL Filter \[Daterange\]]** dialog, select **[!UICONTROL Range of dates]**, and select `01/01/2023` - `1/2/2023`. Select **[!UICONTROL Apply]** and **[!UICONTROL OK]**.
+   1. Drag **[!UICONTROL Product Name]** from the **[!UICONTROL Tables]** list to **[!UICONTROL Rows]**.
+   1. Drag **[!UICONTROL Occurrences]** entry from the **[!UICONTROL Tables]** list and drop the entry in the field next to **[!UICONTROL Columns]**. The value changes to **[!UICONTROL SUM(Occurrences)]**.
+   1. Select **[!UICONTROL Text Table]** from **[!UICONTROL Show Me]**.
+   1. Select **[!UICONTROL Fit Width]** from the **[!UICONTROL Fit]** drop-down menu.
 
-      A área de trabalho do Tableau deve ser parecida com a exibida abaixo.
+      Your Tableau Desktop should look like below.
 
-      ![Filtro classificado por vários Dimension do Tableau Desktop](assets/uc10-tableau-final.png)
+      ![Tableau Desktop Multiple Dimension Ranked Filter](assets/uc10-tableau-final.png)   
 
->[!TAB Pesquisador]
+>[!TAB Looker]
 
-1. No 1. Na interface **[!UICONTROL Explorar]** do Looker, atualize a conexão. Selecione ![Configuração](/help/assets/icons/Setting.svg) **[!UICONTROL Limpar cache e atualizar]**.
-1. Na interface **[!UICONTROL Explorar]** do Looker, verifique se você possui uma configuração limpa. Caso contrário, selecione ![Configuração](/help/assets/icons/Setting.svg) **[!UICONTROL Remover campos e filtros]**.
-1. Selecione **[!UICONTROL + Filtro]** abaixo de **[!UICONTROL Filtros]**.
-1. Na caixa de diálogo **[!UICONTROL Adicionar Filtro]**:
-   1. Selecionar **[!UICONTROL ‣ Visualização De Dados Cc]**
-   1. Na lista de campos, selecione **[!UICONTROL ‣ Data do Intervalo de Datas]** e **[!UICONTROL Data do Intervalo de Datas]**.
-      ![Filtro de pesquisa](assets/uc2-looker-filter.png)
-1. Especifique o filtro **[!UICONTROL Data do Intervalo de Datas da Visualização de Dados Cc]**, pois **[!UICONTROL está no intervalo]** **[!UICONTROL 2023/01/01]** **[!UICONTROL até (antes)]** **[!UICONTROL 2023/02/01]**.
-1. Selecione **[!UICONTROL + Filtro]** abaixo de **[!UICONTROL Filtros]** para adicionar outro filtro.
-1. Na caixa de diálogo **[!UICONTROL Adicionar Filtro]**:
-   1. Selecionar **[!UICONTROL ‣ Visualização De Dados Cc]**
-   1. Na lista de campos, selecione **[!UICONTROL ‣ Categoria do Produto]**.
-1. Verifique se **[!UICONTROL é]** como a seleção do filtro.
+1. In the 1. In the **[!UICONTROL Explore]** interface of Looker, refresh your connection. Select ![Setting](/help/assets/icons/Setting.svg) **[!UICONTROL Clear cache and refresh]**.
+1. In the **[!UICONTROL Explore]** interface of Looker, ensure you do have a clean setup. If not, select ![Setting](/help/assets/icons/Setting.svg) **[!UICONTROL Remove fields and filters]**.
+1. Select **[!UICONTROL + Filter]** underneath **[!UICONTROL Filters]**.
+1. In the **[!UICONTROL Add Filter]** dialog:
+   1. Select **[!UICONTROL ‣ Cc Data View]**
+   1. From the list of fields, select **[!UICONTROL ‣ Daterange Date]** then **[!UICONTROL Daterange Date]**.
+      ![Looker filter](assets/uc2-looker-filter.png)
+1. Specify the **[!UICONTROL Cc Data View Daterange Date]** filter as **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2023/02/01]**.
+1. Select **[!UICONTROL + Filter]** underneath **[!UICONTROL Filters]** to add another filter.
+1. In the **[!UICONTROL Add Filter]** dialog:
+   1. Select **[!UICONTROL ‣ Cc Data View]**
+   1. From the list of fields, select **[!UICONTROL ‣ Product Category]**.
+1. Ensure **[!UICONTROL is]** as the selection for the filter.
 
-As Pesquisas de ![AlertRed](/help/assets/icons/AlertRed.svg) não mostram a lista de valores possíveis para **[!UICONTROL Categoria do Produto]**.
+![AlertRed](/help/assets/icons/AlertRed.svg) Lookes does not show the list of possible values for **[!UICONTROL Product Category]**.
 
-![Contagem distinta do pesquisador](assets/uc10-looker-result.png)
+![Looker count distinct](assets/uc10-looker-result.png)
 
 
 >[!TAB Jupyter Notebook]
 
-1. Insira as seguintes instruções em uma nova célula.
+1. Enter the following statements in a new cell.
 
    ```python
    data = %sql SELECT DISTINCT product_category FROM cc_data_view WHERE daterange BETWEEN '2023-01-01' AND '2024-01-01';
@@ -2012,13 +2013,13 @@ As Pesquisas de ![AlertRed](/help/assets/icons/AlertRed.svg) não mostram a list
    display(category_filter)
    ```
 
-1. Execute a célula. Você deve ver uma saída semelhante à captura de tela abaixo.
+1. Execute the cell. You should see output similar to the screenshot below.
 
-   ![Resultados do Jupyter Notebook](assets/uc10-jupyter-input.png)
+   ![Jupyter Notebook Results](assets/uc10-jupyter-input.png)
 
-1. Selecione **[!UICONTROL Caça]** no menu suspenso.
+1. Select **[!UICONTROL Hunting]** from the drop-down menu.
 
-1. Insira as seguintes instruções em uma nova célula.
+1. Enter the following statements in a new cell.
 
    ```python
    import seaborn as sns
@@ -2038,14 +2039,14 @@ As Pesquisas de ![AlertRed](/help/assets/icons/AlertRed.svg) não mostram a list
    display(data)
    ```
 
-1. Execute a célula. Você deve ver uma saída semelhante à captura de tela abaixo.
+1. Execute the cell. You should see output similar to the screenshot below.
 
-   ![Resultados do Jupyter Notebook](assets/uc10-jupyter-results.png)
+   ![Jupyter Notebook Results](assets/uc10-jupyter-results.png)
 
 
 >[!TAB RStudio]
 
-1. Insira as seguintes instruções entre ` ` ``{r} ` e ` `` ` ` em uma nova parte. Certifique-se de usar uma categoria apropriada. Por exemplo, `Hunting`.
+1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk. Ensure you use an appropriate category. For examplee, `Hunting`.
 
    ```R
    ## Dimension 1 Filtered by Dimension 2 value
@@ -2057,9 +2058,9 @@ As Pesquisas de ![AlertRed](/help/assets/icons/AlertRed.svg) não mostram a list
    print(df)
    ```
 
-1. Execute o pedaço. Você deve ver uma saída semelhante à captura de tela abaixo.
+1. Run the chunk. You should see output similar to the screenshot below.
 
-   ![RSudio Results](assets/uc10-rstudio-results.png)
+   ![RStudio Results](assets/uc10-rstudio-results.png)
 
 >[!ENDTABS]
 
@@ -2067,51 +2068,51 @@ As Pesquisas de ![AlertRed](/help/assets/icons/AlertRed.svg) não mostram a list
 
 
 
-## Classificar
+## Sort
 
-Nesse caso de uso, você deseja relatar a receita de compra e as compras para nomes de produtos durante janeiro de 2023, classificadas em ordem de receita de compra decrescente.
+In this use case, you want to report on purchase revenue and purchases for product names during January 2023, sorted in descending purchase revenue order.
 
 +++ Customer Journey Analytics
 
-Um exemplo de painel **[!UICONTROL Sort]** para o caso de uso:
+An example **[!UICONTROL Sort]** panel for the use case:
 
-![Painel Classificar do Customer Journey Analytics](assets/cja-sort.png)
+![Customer Journey Analytics Sort panel](assets/cja-sort.png)
 
 +++
 
-+++ Ferramentas de BI
++++ BI tools
 
 >[!PREREQUISITES]
 >
->Verifique se você validou [uma conexão bem-sucedida, pode listar visualizações de dados e usar uma visualização de dados](#connect-and-validate) para a ferramenta de BI para a qual deseja experimentar este caso de uso.
+>Ensure you have validated [a successful connection, can list data views, and use a data view](#connect-and-validate) for the BI tool for which you want to try out this use case. 
 >
 
 >[!BEGINTABS]
 
->[!TAB Power BI Desktop]
+>[!TAB Power BI Desktop] 
 
-1. No painel **[!UICONTROL Dados]**:
-   1. Selecione **[!UICONTROL intervalo de datas]**.
-   1. Selecione o **[!UICONTROL product_name]**.
-   1. Selecione **[!UICONTROL sum purchase_revenue]**.
-   1. Selecione **[!UICONTROL somar compras]**.
+1. In the **[!UICONTROL Data]** pane:
+   1. Select **[!UICONTROL daterange]**.
+   1. Select **[!UICONTROL product_namr]**.
+   1. Select **[!UICONTROL sum purchase_revenue]**.
+   1. Select **[!UICONTROL sum purchases]**.
 
-1. No painel **[!UICONTROL Filtros]**:
-   1. Selecione **[!UICONTROL o intervalo de datas é (Todos)]** de **[!UICONTROL Filtros neste visual]**.
-   1. Selecione **[!UICONTROL Filtragem avançada]** como o **[!UICONTROL Tipo de filtro]**.
-   1. Defina o filtro como **[!UICONTROL Mostrar itens quando o valor]** **[!UICONTROL estiver em ou após]** `1/1/2023` **[!UICONTROL E]** **[!UICONTROL estiver antes de]** `2/1/2023`.
+1. In the **[!UICONTROL Filters]** pane:
+   1. Select **[!UICONTROL daterange is (All)]** from **[!UICONTROL Filters on this visual]**.
+   1. Select **[!UICONTROL Advanced filtering]** as the **[!UICONTROL Filter type]**.
+   1. Define the filter to **[!UICONTROL Show items when the value]** **[!UICONTROL is on or after]** `1/1/2023` **[!UICONTROL And]** **[!UICONTROL is before]** `2/1/2023`.
 
-1. No painel Visualizações:
-   1. Selecione ![CrossSize75](/help/assets/icons/CrossSize75.svg) para remover o intervalo de datas das Colunas.
-   1. Arraste **[!UICONTROL Soma da purchase_revenue]** para a parte inferior dos itens de **[!UICONTROL Coluna]**.
+1. In the Visualizations pane:
+   1. Select ![CrossSize75](/help/assets/icons/CrossSize75.svg) to remove daterange from Columns.
+   1. Drag **[!UICONTROL Sum of purchase_revenue]** to the bottom of **[!UICONTROL Column]** items.
 
-1. No relatório, selecione **[!UICONTROL Soma de purchase_revenue]** para classificar a tabela em ordem decrescente de receita de compra.
+1. In the report, select **[!UICONTROL Sum of purchase_revenue]** to sort the table in descending order of purchase revenue.
 
-   A área de trabalho do Power BI deve ser semelhante à mostrada abaixo.
+   Your Power BI Desktop should look like below.
 
-   ![Área De Trabalho Power BI Usando Nomes De Intervalo De Datas Para Filtrar](assets/uc11-powerbi-final.png)
+   ![Power BI Desktop Using Date Range Names To Filter](assets/uc11-powerbi-final.png)
 
-A consulta executada pelo Power BI Desktop usando a extensão BI não inclui uma instrução `sort`. A falta de uma instrução `sort` implica que a classificação é executada no lado do cliente.
+The query executed by Power BI Desktop using the BI extension is not including a `sort` statement. The lack of a `sort` statement implies that the sort is executed client side.
 
 ```sql
 select "_"."product_name",
@@ -2200,24 +2201,24 @@ limit 1000001
 ```
 
 
->[!TAB Tableau Desktop]
+>[!TAB Tableau Desktop] 
 
-1. Selecione a guia **[!UICONTROL Folha 1]** na parte inferior para alternar da **[!UICONTROL Fonte de dados]**. Na exibição **[!UICONTROL Folha 1]**:
-   1. Arraste a entrada **[!UICONTROL Daterange]** da lista **[!UICONTROL Tabelas]** na prateleira **[!UICONTROL Filtros]**.
-   1. Na caixa de diálogo **[!UICONTROL Filtrar Campo \[Intervalo de Datas\]]**, selecione **[!UICONTROL Intervalo de Datas]** e selecione **[!UICONTROL Avançar >]**.
-   1. Na caixa de diálogo **[!UICONTROL Filtro \[Intervalo de datas\]]**, selecione **[!UICONTROL Intervalo de datas]** e selecione `01/01/2023` - `1/2/2023`. Selecione **[!UICONTROL Aplicar]** e **[!UICONTROL OK]**.
-   1. Arraste **[!UICONTROL Nome do Produto]** da lista **[!UICONTROL Tabelas]** e solte a entrada no campo ao lado de **[!UICONTROL Linhas]**.
-   1. Arraste a entrada **[!UICONTROL Compras]** da lista **[!UICONTROL Tabelas]** e solte a entrada no campo ao lado de **[!UICONTROL Colunas]**. O valor muda para **[!UICONTROL SUM(Purchases)]**.
-   1. Arraste a entrada **[!UICONTROL Receita de Compra]** da lista **[!UICONTROL Tabelas]** e solte a entrada no campo ao lado de **[!UICONTROL Colunas]**, ao lado de **[!UICONTROL SOMA(Compras)]**. O valor muda para **[!UICONTROL SUM(Purchase Revenue)]**.
-   1. Selecione **[!UICONTROL Tabela de Texto]** de **[!UICONTROL Mostre-me]**.
-   1. Selecione **[!UICONTROL Ajustar largura]** no menu suspenso **[!UICONTROL Ajustar]**.
-   1. Selecione o cabeçalho da coluna **[!UICONTROL Receita de compra]** e classifique a tabela nesta coluna em ordem decrescente.
+1. Select the **[!UICONTROL Sheet 1]** tab at the bottom to switch from **[!UICONTROL Data source]**. In the **[!UICONTROL Sheet 1]** view:
+   1. Drag **[!UICONTROL Daterange]** entry from the **[!UICONTROL Tables]** list in the **[!UICONTROL Filters]** shelf.
+   1. In the **[!UICONTROL Filter Field \[Daterange\]]** dialog, select **[!UICONTROL Range of Dates]** and select **[!UICONTROL Next >]**.
+   1. In the **[!UICONTROL Filter \[Daterange\]]** dialog, select **[!UICONTROL Range of dates]**, and select `01/01/2023` - `1/2/2023`. Select **[!UICONTROL Apply]** and **[!UICONTROL OK]**.
+   1. Drag **[!UICONTROL Product Name]** from the **[!UICONTROL Tables]** list and drop the entry in the field next to **[!UICONTROL Rows]**.
+   1. Drag **[!UICONTROL Purchases]** entry from the **[!UICONTROL Tables]** list and drop the entry in the field next to **[!UICONTROL Columns]**. The value changes to **[!UICONTROL SUM(Purchases)]**.
+   1. Drag **[!UICONTROL Purchase Revenue]** entry from the **[!UICONTROL Tables]** list and drop the entry in the field next to **[!UICONTROL Columns]**, next to **[!UICONTROL SUM(Purchases)]**. The value changes to **[!UICONTROL SUM(Purchase Revenue)]**.
+   1. Select **[!UICONTROL Text Table]** from **[!UICONTROL Show Me]**.
+   1. Select **[!UICONTROL Fit Width]** from the **[!UICONTROL Fit]** drop-down menu.
+   1. Select the **[!UICONTROL Purchase Revenue]** column header and sort the table on this column in descending order.
 
-      A área de trabalho do Tableau deve ser parecida com a exibida abaixo.
+      Your Tableau Desktop should look like below.
 
-      ![Classificação do Tableau Desktop](assets/uc11-tableau-final.png)
+      ![Tableau Desktop Sort](assets/uc11-tableau-final.png)   
 
-A consulta executada pelo Tableau Desktop usando a extensão BI não inclui uma instrução `sort`. A falta dessa instrução `sort` implica que a classificação é executada no lado do cliente.
+The query executed by Tableau Desktop using the BI extension is not including a `sort` statement. The lack of this `sort` statement implies that the sort is executed client side.
 
 ```sql
 SELECT CAST("cc_data_view"."product_name" AS TEXT) AS "product_name",
@@ -2229,37 +2230,37 @@ WHERE (("cc_data_view"."daterange" >= (DATE '2023-01-01')) AND ("cc_data_view"."
 GROUP BY 1
 ```
 
->[!TAB Pesquisador]
+>[!TAB Looker]
 
-1. Na interface **[!UICONTROL Explorar]** do Looker, atualize a conexão. Selecione ![Configuração](/help/assets/icons/Setting.svg) **[!UICONTROL Limpar cache e atualizar]**.
-1. Na interface **[!UICONTROL Explorar]** do Looker, verifique se você possui uma configuração limpa. Caso contrário, selecione ![Configuração](/help/assets/icons/Setting.svg) **[!UICONTROL Remover campos e filtros]**.
-1. Selecione **[!UICONTROL + Filtro]** abaixo de **[!UICONTROL Filtros]**.
-1. Na caixa de diálogo **[!UICONTROL Adicionar Filtro]**:
-   1. Selecionar **[!UICONTROL ‣ Visualização De Dados Cc]**
-   1. Na lista de campos, selecione **[!UICONTROL ‣ Data do Intervalo de Datas]** e **[!UICONTROL Data do Intervalo de Datas]**.
-      ![Filtro de pesquisa](assets/uc2-looker-filter.png)
-1. Especifique o filtro **[!UICONTROL Data do Intervalo de Datas da Visualização de Dados Cc]**, pois **[!UICONTROL está no intervalo]** **[!UICONTROL 2023/01/01]** **[!UICONTROL até (antes)]** **[!UICONTROL 2023/02/01]**.
-1. Na seção **[!UICONTROL ‣ Cc Data View]** no painel esquerdo, selecione **[!UICONTROL Nome do Produto]**.
-1. Na seção **[!UICONTROL ‣ Campos Personalizados]** no painel esquerdo:
-   1. Selecione **[!UICONTROL Medida Personalizada]** no menu suspenso **[!UICONTROL + Adicionar]**.
-   1. No diálogo **[!UICONTROL Criar medida personalizada]**:
-      1. Selecione **[!UICONTROL Receita de compra]** no menu suspenso **[!UICONTROL Campo a medir]**.
-      1. Selecione **[!UICONTROL Soma]** no menu suspenso **[!UICONTROL Tipo de medida]**.
-      1. Insira um nome de campo personalizado para **[!UICONTROL Nome]**. Por exemplo: `Sum of Purchase Revenue`.
-      1. Selecione a guia **[!UICONTROL Detalhes do campo]**.
-      1. Selecione **[!UICONTROL Decimais]** no menu suspenso **[!UICONTROL Formatar]** e verifique se `0` está inserido em **[!UICONTROL Decimais]**.
-         ![Campo de métrica personalizado do pesquisador](assets/uc5-looker-customfield.png)
-      1. Selecione **[!UICONTROL Salvar]**.
-1. Selecione **&#x200B;**&#x200B;(**[!UICONTROL Decrescente, Ordem de classificação: 1]**) na coluna **[!UICONTROL Receita de compra]**.
-1. Selecione **[!UICONTROL Executar]**.
-1. Selecione **[!UICONTROL ‣ Visualização]**.
+1. In the **[!UICONTROL Explore]** interface of Looker, refresh your connection. Select ![Setting](/help/assets/icons/Setting.svg) **[!UICONTROL Clear cache and refresh]**.
+1. In the **[!UICONTROL Explore]** interface of Looker, ensure you do have a clean setup. If not, select ![Setting](/help/assets/icons/Setting.svg) **[!UICONTROL Remove fields and filters]**.
+1. Select **[!UICONTROL + Filter]** underneath **[!UICONTROL Filters]**.
+1. In the **[!UICONTROL Add Filter]** dialog:
+   1. Select **[!UICONTROL ‣ Cc Data View]**
+   1. From the list of fields, select **[!UICONTROL ‣ Daterange Date]** then **[!UICONTROL Daterange Date]**.
+      ![Looker filter](assets/uc2-looker-filter.png)
+1. Specify the **[!UICONTROL Cc Data View Daterange Date]** filter as **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2023/02/01]**.
+1. From the **[!UICONTROL ‣ Cc Data View]** section in the left rail, select **[!UICONTROL Product Name]**.
+1. From the **[!UICONTROL ‣ Custom Fields]** section in the left rail:
+   1. Select **[!UICONTROL Custom Measure]** from the **[!UICONTROL + Add]** drop-down menu. 
+   1. In the **[!UICONTROL Create custom measure]** dialog:
+      1. Select **[!UICONTROL Purchase Revenue]** from the **[!UICONTROL Field to measure]** drop-down menu.
+      1. Select **[!UICONTROL Sum]** from the **[!UICONTROL Measure type]** drop-down menu.
+      1. Enter a custom field name for **[!UICONTROL Name]**. For example: `Sum of Purchase Revenue`.
+      1. Select the **[!UICONTROL Field details]** tab.
+      1. Select **[!UICONTROL Decimals]** from the **[!UICONTROL Format]** drop-down menu and ensure `0` is entered in **[!UICONTROL Decimals]**.
+         ![Looker custom metric field](assets/uc5-looker-customfield.png)
+      1. Select **[!UICONTROL Save]**.
+1. Ensure you select **[!UICONTROL ↓]** (**[!UICONTROL Descending, Sort Order: 1]**) on the **[!UICONTROL Purchase Revenue]** column.
+1. Select **[!UICONTROL Run]**.
+1. Select **[!UICONTROL ‣ Visualization]**.
 
-Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
+You should see a visualization and table similar as shown below.
 
-![Contagem distinta do pesquisador](assets/uc11-looker-result.png)
+![Looker count distinct](assets/uc11-looker-result.png)
 
 
-A consulta gerada pelo Pesquisador usando a extensão BI inclui `ORDER BY`, o que implica que a classificação é executada por meio do Pesquisador e da extensão BI.
+The query generated by Looker using the BI extension is including `ORDER BY`, which implies that the sort is executed through Looker and the BI extension.
 
 ```sql
 -- Looker Query Context '{"user_id":6,"history_slug":"fc83573987b999306eaf6e1a3f2cde70","instance_slug":"71d4667f0b76c0011463658f45c3f7a3"}' 
@@ -2274,12 +2275,13 @@ GROUP BY
 ORDER BY
     2 DESC
 FETCH NEXT 500 ROWS ONLY
+
 ```
 
 
 >[!TAB Jupyter Notebook]
 
-1. Insira as seguintes instruções em uma nova célula.
+1. Enter the following statements in a new cell.
 
    ```python
    data = %sql SELECT product_name AS `Product Name`, SUM(purchase_revenue) AS `Purchase Revenue`, SUM(purchases) AS `Purchases` \
@@ -2291,16 +2293,16 @@ FETCH NEXT 500 ROWS ONLY
    display(data)
    ```
 
-1. Execute a célula. Você deve ver uma saída semelhante à captura de tela abaixo.
+1. Execute the cell. You should see output similar to the screenshot below.
 
-   ![Resultados do Jupyter Notebook](assets/uc11-jupyter-results.png)
+   ![Jupyter Notebook Results](assets/uc11-jupyter-results.png)
 
-A consulta é executada pela extensão BI, conforme definido no Jupyter Notebook.
+The query is excuted by the BI extension as defined in Jupyter Notebook.
 
 
 >[!TAB RStudio]
 
-1. Insira as seguintes instruções entre ` ` ``{r} ` e ` `` ` ` em uma nova parte.
+1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk.
 
    ```R
    ## Dimension 1 Sorted
@@ -2312,11 +2314,11 @@ A consulta é executada pela extensão BI, conforme definido no Jupyter Notebook
    print(df)
    ```
 
-1. Execute o pedaço. Você deve ver uma saída semelhante à captura de tela abaixo.
+1. Run the chunk. You should see output similar to the screenshot below.
 
-   ![RSudio Results](assets/uc11-rstudio-results.png)
+   ![RStudio Results](assets/uc11-rstudio-results.png)
 
-A consulta gerada pelo RStudio usando a extensão de BI inclui `ORDER BY`, o que implica que a ordem é aplicada por meio do RStudio e da extensão de BI.
+The query generated by RStudio using the BI extension is including `ORDER BY`, which implies that the order is applied through RStudio and the BI extension.
 
 ```sql
 SELECT
@@ -2337,53 +2339,53 @@ LIMIT 1000
 
 +++
 
-## Limites
+## Limits
 
-Nesse caso de uso, você deseja relatar as 5 principais ocorrências de nomes de produtos durante 2023.
+In this use case, you want to report on the top 5 occurrences of product names during 2023.
 
 +++ Customer Journey Analytics
 
-Um exemplo de painel **[!UICONTROL Limite]** para o caso de uso:
+An example **[!UICONTROL Limit]** panel for the use case:
 
-![Painel Limite do Customer Journey Analytics](assets/cja-limit.png)
+![Customer Journey Analytics Limit panel](assets/cja-limit.png)
 
 +++
 
-+++ Ferramentas de BI
++++ BI tools
 
 >[!PREREQUISITES]
 >
->Verifique se você validou [uma conexão bem-sucedida, pode listar visualizações de dados e usar uma visualização de dados](#connect-and-validate) para a ferramenta de BI para a qual deseja experimentar este caso de uso.
+>Ensure you have validated [a successful connection, can list data views, and use a data view](#connect-and-validate) for the BI tool for which you want to try out this use case. 
 >
 
 >[!BEGINTABS]
 
->[!TAB Power BI Desktop]
+>[!TAB Power BI Desktop] 
 
-1. No painel **[!UICONTROL Dados]**:
-   1. Selecione **[!UICONTROL intervalo de datas]**.
-   1. Selecione **[!UICONTROL product_name]**.
-   1. Selecione **[!UICONTROL somar ocorrências]**.
+1. In the **[!UICONTROL Data]** pane:
+   1. Select **[!UICONTROL daterange]**.
+   1. Select **[!UICONTROL product_name]**.
+   1. Select **[!UICONTROL sum occurrences]**.
 
-1. No painel **[!UICONTROL Filtros]**:
-   1. Selecione **[!UICONTROL o intervalo de datas é (Todos)]** de **[!UICONTROL Filtros neste visual]**.
-   1. Selecione **[!UICONTROL Data relativa]** como o **[!UICONTROL Tipo de filtro]**.
-   1. Defina o filtro como **[!UICONTROL Mostrar itens quando o valor]** **[!UICONTROL estiver nos últimos]** `1` **[!UICONTROL anos]**.
-   1. Selecione **[!UICONTROL Aplicar filtro]**.
-   1. Selecione **[!UICONTROL product_name is (All)]** em **[!UICONTROL Filtros neste visual]**.
-   1. Selecione **[!UICONTROL N Superior]** como o **[!UICONTROL Tipo de filtro]**.
-   1. Selecione **[!UICONTROL Mostrar Itens]** **[!UICONTROL Superior]** `5` **[!UICONTROL Por valor]**.
-   1. Arraste e solte **[!UICONTROL somar ocorrências]** do painel **[!UICONTROL Dados]** e solte-o em **[!UICONTROL Adicionar campos de dados aqui]**.
-   1. Selecione **[!UICONTROL Aplicar filtro]**.
+1. In the **[!UICONTROL Filters]** pane:
+   1. Select **[!UICONTROL daterange is (All)]** from **[!UICONTROL Filters on this visual]**.
+   1. Select **[!UICONTROL Relative date]** as the **[!UICONTROL Filter type]**.
+   1. Define the filter to **[!UICONTROL Show items when the value]** **[!UICONTROL is in the last]** `1` **[!UICONTROL calendar years]**.
+   1. Select **[!UICONTROL Apply filter]**.
+   1. Select **[!UICONTROL product_name is (All)]** from **[!UICONTROL Filters on this visual]**.
+   1. Select **[!UICONTROL Top N]** as the **[!UICONTROL Filter type]**.
+   1. Select **[!UICONTROL Show Items]** **[!UICONTROL Top]** `5` **[!UICONTROL By value]**.
+   1. Drag and drop **[!UICONTROL sum occurrences]** from the **[!UICONTROL Data]** pane and drop it on **[!UICONTROL Add data fields here]**.
+   1. Select **[!UICONTROL Apply filter]**.
 
-1. No painel Visualização:
-   * Selecione ![CrossSize75](/help/assets/icons/CrossSize75.svg) para remover o intervalo de datas das Colunas.
+1. In the Visualization pane:
+   * Select ![CrossSize75](/help/assets/icons/CrossSize75.svg) to remove daterange from Columns.
 
-   A área de trabalho do Power BI deve ser semelhante à mostrada abaixo.
+   Your Power BI Desktop should look like below.
 
-   ![Área De Trabalho Power BI Usando Nomes De Intervalo De Datas Para Filtrar](assets/uc12-powerbi-final.png)
+   ![Power BI Desktop Using Date Range Names To Filter](assets/uc12-powerbi-final.png)
 
-A consulta executada pelo Power BI Desktop usando a extensão BI inclui uma instrução `limit`, mas não a esperada. O limite para as 5 principais ocorrências é aplicado pelo Power BI Desktop usando resultados explícitos de nome de produto.
+The query executed by Power BI Desktop using the BI extension is including a `limit` statement but not the one expected. The limit to the top 5 occurrences is enforced by Power BI Desktop using explicit product name results.
 
 ```sql
 select "_"."product_name",
@@ -2469,32 +2471,32 @@ where not "_"."a0" is null
 limit 1000001
 ```
 
->[!TAB Tableau Desktop]
+>[!TAB Tableau Desktop] 
 
-1. Selecione a guia **[!UICONTROL Folha 1]** na parte inferior para alternar da **[!UICONTROL Fonte de dados]**. Na exibição **[!UICONTROL Folha 1]**:
-   1. Arraste a entrada **[!UICONTROL Daterange]** da lista **[!UICONTROL Tabelas]** na prateleira **[!UICONTROL Filtros]**.
-   1. Na caixa de diálogo **[!UICONTROL Filtrar Campo \[Intervalo de Datas\]]**, selecione **[!UICONTROL Intervalo de Datas]** e selecione **[!UICONTROL Avançar >]**.
-   1. Na caixa de diálogo **[!UICONTROL Filtro \[Intervalo de datas\]]**, selecione **[!UICONTROL Datas relativas]**, selecione **[!UICONTROL Anos]** e selecione **[!UICONTROL Anos anteriores]**. Selecione **[!UICONTROL Aplicar]** e **[!UICONTROL OK]**.
-   1. Arraste **[!UICONTROL Nome do Produto]** da lista **[!UICONTROL Tabelas]** para **[!UICONTROL Linhas]**.
-   1. Arraste a entrada **[!UICONTROL Ocorrências]** da lista **[!UICONTROL Tabelas]** e solte a entrada no campo ao lado de **[!UICONTROL Colunas]**. O valor é alterado para **[!UICONTROL SUM(Occurrences)]**.
-   1. Selecione **[!UICONTROL Tabela de Texto]** de **[!UICONTROL Mostre-me]**.
-   1. Selecione **[!UICONTROL Ajustar largura]** no menu suspenso **[!UICONTROL Ajustar]**.
-   1. Selecione o **[!UICONTROL Nome do Produto]** em **[!UICONTROL Linhas]**. Selecione **[!UICONTROL Filtro]** no menu suspenso.
-      1. Na caixa de diálogo **[!UICONTROL Filtrar \[Nome do Produto\]]**, selecione a guia **[!UICONTROL Superior]**.
-      1. Selecionar **[!UICONTROL Por campo:]** **[!UICONTROL Superior]** `5` **[!UICONTROL por Ocorrências]** **[!UICONTROL Soma]**.
-      1. Selecione **[!UICONTROL Aplicar]** e **[!UICONTROL OK]**.
+1. Select the **[!UICONTROL Sheet 1]** tab at the bottom to switch from **[!UICONTROL Data source]**. In the **[!UICONTROL Sheet 1]** view:
+   1. Drag **[!UICONTROL Daterange]** entry from the **[!UICONTROL Tables]** list in the **[!UICONTROL Filters]** shelf.
+   1. In the **[!UICONTROL Filter Field \[Daterange\]]** dialog, select **[!UICONTROL Range of Dates]** and select **[!UICONTROL Next >]**.
+   1. In the **[!UICONTROL Filter \[Daterange\]]** dialog, select **[!UICONTROL Relative dates]**, select **[!UICONTROL Years]**, and select **[!UICONTROL Previous years]**. Select **[!UICONTROL Apply]** and **[!UICONTROL OK]**.
+   1. Drag **[!UICONTROL Product Name]** from the **[!UICONTROL Tables]** list to **[!UICONTROL Rows]**.
+   1. Drag **[!UICONTROL Occurrences]** entry from the **[!UICONTROL Tables]** list and drop the entry in the field next to **[!UICONTROL Columns]**. The value changes to **[!UICONTROL SUM(Occurrences)]**.
+   1. Select **[!UICONTROL Text Table]** from **[!UICONTROL Show Me]**.
+   1. Select **[!UICONTROL Fit Width]** from the **[!UICONTROL Fit]** drop-down menu.
+   1. Select **[!UICONTROL Product Name]** in **[!UICONTROL Rows]**. Select **[!UICONTROL Filter]** from the drop-down menu.
+      1. In the **[!UICONTROL Filter \[Product Name\]]** dialog, select the **[!UICONTROL Top]** tab.
+      1. Select **[!UICONTROL By field:]** **[!UICONTROL Top]** `5` **[!UICONTROL by Occurrences]** **[!UICONTROL Sum]**.
+      1. Select **[!UICONTROL Apply]** and **[!UICONTROL OK]**.
+      
+         ![AlertRed](/help/assets/icons/AlertRed.svg) You notice that the table disappears. Selecting the top 5 product names by occurrences does **not** work properly using this filter.
+      1. Select the **[!UICONTROL Product Name]** in the **[!UICONTROL Filter]** shelf and from the drop-down menu select **[!UICONTROL Remove]**. The table reappears.
+   1. Select **[!UICONTROL SUM(Occurrences)]** in the **[!UICONTROL Marks]** shelf. Select **[!UICONTROL Filter]** from the drop-down menu.
+      1. In the **[!UICONTROL Filter \[Occurrences\]]** dialog, select **[!UICONTROL At least]**.
+      1. Enter `47.799` as the value. This value ensures that only the top 5 items are shown in the table. Select **[!UICONTROL Apply]** and **[!UICONTROL OK]**.
 
-         ![AlertRed](/help/assets/icons/AlertRed.svg) Você percebe que a tabela desaparece. A seleção dos 5 principais nomes de produtos por ocorrências **não** funciona corretamente usando este filtro.
-      1. Selecione o **[!UICONTROL Nome do Produto]** na prateleira **[!UICONTROL Filtro]** e, no menu suspenso, selecione **[!UICONTROL Remover]**. A tabela reaparece.
-   1. Selecione **[!UICONTROL SUM(Occurrences)]** na prateleira **[!UICONTROL Marcas]**. Selecione **[!UICONTROL Filtro]** no menu suspenso.
-      1. Na caixa de diálogo **[!UICONTROL Filtrar \[Ocorrências\]]**, selecione **[!UICONTROL Pelo menos]**.
-      1. Digite `47.799` como valor. Esse valor garante que apenas os 5 itens principais sejam mostrados na tabela. Selecione **[!UICONTROL Aplicar]** e **[!UICONTROL OK]**.
+         Your Tableau Desktop should look like below.
 
-         A área de trabalho do Tableau deve ser parecida com a exibida abaixo.
+         ![Tableau Desktop Limits](assets/uc12-tableau-final.png)   
 
-         ![Limites do Tableau Desktop](assets/uc12-tableau-final.png)
-
-Como mostrado acima, essa consulta executada pelo Tableau Desktop, ao definir um filtro Cinco principais ocorrências em nomes de produtos, falha.
+As shown above, this query executed by Tableau Desktop, when defining a Top 5 occurrences filter on product names, fails.
 
 ```sql
 SELECT CAST("cc_data_view"."product_name" AS TEXT) AS "product_name",
@@ -2513,7 +2515,7 @@ WHERE (("cc_data_view"."daterange" >= (TIMESTAMP '2023-01-01 00:00:00.000')) AND
 GROUP BY 1
 ```
 
-A consulta executada pelo Tableau Desktop, ao definir um filtro 5 principais em ocorrências, é mostrada abaixo. O limite não está visível na consulta e aplicado no lado do cliente.
+The query executed by Tableau Desktop, when defining a Top 5 filter on occurrences, is shown below. The limit is not visible in the query and applied client side.
 
 ```sql
 SELECT CAST("cc_data_view"."product_name" AS TEXT) AS "product_name",
@@ -2523,29 +2525,29 @@ WHERE (("cc_data_view"."daterange" >= (TIMESTAMP '2023-01-01 00:00:00.000')) AND
 GROUP BY 1
 ```
 
->[!TAB Pesquisador]
+>[!TAB Looker]
 
-1. Na interface **[!UICONTROL Explorar]** do Looker, atualize a conexão. Selecione ![Configuração](/help/assets/icons/Setting.svg) **[!UICONTROL Limpar cache e atualizar]**.
-1. Na interface **[!UICONTROL Explorar]** do Looker, verifique se você possui uma configuração limpa. Caso contrário, selecione ![Configuração](/help/assets/icons/Setting.svg) **[!UICONTROL Remover campos e filtros]**.
-1. Selecione **[!UICONTROL + Filtro]** abaixo de **[!UICONTROL Filtros]**.
-1. Na caixa de diálogo **[!UICONTROL Adicionar Filtro]**:
-   1. Selecionar **[!UICONTROL ‣ Visualização De Dados Cc]**
-   1. Na lista de campos, selecione **[!UICONTROL ‣ Data do Intervalo de Datas]** e **[!UICONTROL Data do Intervalo de Datas]**.
-      ![Filtro de pesquisa](assets/uc2-looker-filter.png)
-1. Especifique o filtro **[!UICONTROL Data do Intervalo de Datas da Visualização de Dados Cc]**, pois **[!UICONTROL está no intervalo]** **[!UICONTROL 2023/01/01]** **[!UICONTROL até (antes)]** **[!UICONTROL 2024/01/01]**.
-1. Na seção **[!UICONTROL ‣ Cc Data View]** no painel esquerdo:
-   1. Selecione **[!UICONTROL Nome do Produto]**.
-   1. Selecione **[!UICONTROL Contagem]** abaixo de **[!UICONTROL MEDIDAS]** no painel esquerdo (na parte inferior).
-1. Selecione **&#x200B;**&#x200B;(**[!UICONTROL Decrescente, Ordem de classificação: 1]**) na coluna **[!UICONTROL Receita de compra]**.
-1. Selecione **&#x200B;**&#x200B;(**[!UICONTROL Decrescente, Ordem de classificação: 1]**) na coluna **[!UICONTROL Receita de compra]**.
-1. Selecione **[!UICONTROL Executar]**.
-1. Selecione **[!UICONTROL ‣ Visualização]**.
+1. In the **[!UICONTROL Explore]** interface of Looker, refresh your connection. Select ![Setting](/help/assets/icons/Setting.svg) **[!UICONTROL Clear cache and refresh]**.
+1. In the **[!UICONTROL Explore]** interface of Looker, ensure you do have a clean setup. If not, select ![Setting](/help/assets/icons/Setting.svg) **[!UICONTROL Remove fields and filters]**.
+1. Select **[!UICONTROL + Filter]** underneath **[!UICONTROL Filters]**.
+1. In the **[!UICONTROL Add Filter]** dialog:
+   1. Select **[!UICONTROL ‣ Cc Data View]**
+   1. From the list of fields, select **[!UICONTROL ‣ Daterange Date]** then **[!UICONTROL Daterange Date]**.
+      ![Looker filter](assets/uc2-looker-filter.png)
+1. Specify the **[!UICONTROL Cc Data View Daterange Date]** filter as **[!UICONTROL is in range]** **[!UICONTROL 2023/01/01]** **[!UICONTROL until (before)]** **[!UICONTROL 2024/01/01]**.
+1. From the **[!UICONTROL ‣ Cc Data View]** section in the left rail: 
+   1. Select **[!UICONTROL Product Name]**.
+   1. Select **[!UICONTROL Count]** underneath **[!UICONTROL MEASURES]** in the left rail (at the bottom).
+1. Ensure you select **[!UICONTROL ↓]** (**[!UICONTROL Descending, Sort Order: 1]**) on the **[!UICONTROL Purchase Revenue]** column.
+1. Ensure you select **[!UICONTROL ↓]** (**[!UICONTROL Descending, Sort Order: 1]**) on the **[!UICONTROL Purchase Revenue]** column.
+1. Select **[!UICONTROL Run]**.
+1. Select **[!UICONTROL ‣ Visualization]**.
 
-Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
+You should see a visualization and table similar as shown below.
 
-![Contagem distinta do pesquisador](assets/uc12-looker-result.png)
+![Looker count distinct](assets/uc12-looker-result.png)
 
-A consulta gerada pelo Pesquisador usando a extensão BI inclui `FETCH NEXT 5 ROWS ONLY`, o que implica que o limite é executado por meio do Pesquisador e da extensão BI.
+The query generated by Looker using the BI extension is including `FETCH NEXT 5 ROWS ONLY`, which implies that the limit is executed through Looker and the BI extension.
 
 ```sql
 -- Looker Query Context '{"user_id":6,"history_slug":"a8f3b1ebd5712413ca1ae695090f70db","instance_slug":"71d4667f0b76c0011463658f45c3f7a3"}' 
@@ -2565,7 +2567,7 @@ FETCH NEXT 5 ROWS ONLY
 
 >[!TAB Jupyter Notebook]
 
-1. Insira as seguintes instruções em uma nova célula.
+1. Enter the following statements in a new cell.
 
    ```python
    data = %sql SELECT product_name AS `Product Name`, COUNT(*) AS Events \
@@ -2577,15 +2579,15 @@ FETCH NEXT 5 ROWS ONLY
    display(data)
    ```
 
-1. Execute a célula. Você deve ver uma saída semelhante à captura de tela abaixo.
+1. Execute the cell. You should see output similar to the screenshot below.
 
-   ![Resultados do Jupyter Notebook](assets/uc12-jupyter-results.png)
+   ![Jupyter Notebook Results](assets/uc12-jupyter-results.png)
 
-A consulta é executada pela extensão BI, conforme definido no Jupyter Notebook.
+The query is excuted by the BI extension as defined in Jupyter Notebook.
 
 >[!TAB RStudio]
 
-1. Insira as seguintes instruções entre ` ` ``{r} ` e ` `` ` ` em uma nova parte.
+1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk.
 
    ```R
    ## Dimension 1 Limited
@@ -2598,11 +2600,11 @@ A consulta é executada pela extensão BI, conforme definido no Jupyter Notebook
    print(df)
    ```
 
-1. Execute o pedaço. Você deve ver uma saída semelhante à captura de tela abaixo.
+1. Run the chunk. You should see output similar to the screenshot below.
 
-   ![RSudio Results](assets/uc12-rstudio-results.png)
+   ![RStudio Results](assets/uc12-rstudio-results.png)
 
-A consulta gerada pelo RStudio usando a extensão de BI inclui `LIMIT 5`, o que implica que o limite é aplicado por meio do RStudio e da extensão de BI.
+The query generated by RStudio using the BI extension is including `LIMIT 5`, which implies that the limit is applied through RStudio and the BI extension.
 
 ```sql
 SELECT "product_name", COUNT(*) AS "n"
@@ -2620,61 +2622,61 @@ LIMIT 5
 
 +++
 
-## Transformações
+## Transformations
 
-Você deseja entender as transformações de objetos do Customer Journey Analytics, como dimensões, métricas, filtros, métricas calculadas e intervalos de datas, por meio de várias ferramentas de BI.
+You want to understand the transformations of Customer Journey Analytics objects like dimensions, metrics, filters, calculated metrics, and date ranges by the various BI tools.
 
 +++ Customer Journey Analytics
 
-No Customer Journey Analytics, você define em uma [visualização de dados](/help/data-views/data-views.md), quais e como os componentes dos seus conjuntos de dados são expostos como [dimensões](/help/components/dimensions/overview.md) e [métricas](/help/components/apply-create-metrics.md). Essa definição de dimensão e métrica é exposta às ferramentas de BI usando a extensão de BI.
-Você usa componentes como [Filtros](/help/components/segments/seg-overview.md), [Métricas calculadas](/help/components/calc-metrics/calc-metr-overview.md) e [Intervalos de datas](/help/components/date-ranges/overview.md) como parte de seus projetos do Workspace. Esses componentes também são expostos às ferramentas de BI usando a extensão de BI.
+In Customer Journey Analytics, you define in a [data view](/help/data-views/data-views.md), which and how components of your datasets are exposed as [dimensions](/help/components/dimensions/overview.md) and [metrics](/help/components/apply-create-metrics.md). That definition of dimension and metrics is exposed to the BI tools using the BI extension. 
+You use components like [Filters](/help/components/segments/seg-overview.md), [Calculated metrics](/help/components/calc-metrics/calc-metr-overview.md), and [Date ranges](/help/components/date-ranges/overview.md) as part of your Workspace projects. These components are also exposed to the BI tools using the BI extension.
 
 +++
 
-+++ Ferramentas de BI
++++ BI tools
 
 >[!PREREQUISITES]
 >
->Verifique se você validou [uma conexão bem-sucedida, pode listar visualizações de dados e usar uma visualização de dados](#connect-and-validate) para a ferramenta de BI para a qual deseja experimentar este caso de uso.
+>Ensure you have validated [a successful connection, can list data views, and use a data view](#connect-and-validate) for the BI tool for which you want to try out this use case. 
 >
 
 >[!BEGINTABS]
 
->[!TAB Power BI Desktop]
+>[!TAB Power BI Desktop] 
 
-Os objetos Customer Journey Analytics estão disponíveis no painel **[!UICONTROL Dados]** e são recuperados da tabela selecionada no Power BI Desktop. Por exemplo, **[!UICONTROL public.cc_data_view]**. O nome da tabela é igual à ID externa que você definiu para a visualização de dados no Customer Journey Analytics. Por exemplo, visualização de dados com **[!UICONTROL Título]** `C&C - Data View` e **[!UICONTROL ID Externa]** `cc_data_view`.
+The Customer Journey Analytics objects are available in the **[!UICONTROL Data]** pane and are retrieved from the table you have selected in Power BI Desktop. For example, **[!UICONTROL public.cc_data_view]**. The name of the table is the same as the External ID that you have defined for your data view in Customer Journey Analytics. For example, data view with **[!UICONTROL Title]** `C&C - Data View` and **[!UICONTROL External ID]** `cc_data_view`.
 
-**Dimensões**
-As dimensões do Customer Journey Analytics são identificadas pela [!UICONTROL ID do Componente]. A [!UICONTROL ID do Componente] está definida na sua visualização de dados do Customer Journey Analytics. Por exemplo, a dimensão **[!UICONTROL Nome do Produto]** no Customer Journey Analytics tem um [!UICONTROL ID de Componente] **[!UICONTROL nome_do_produto]**, que é o nome da dimensão no Power BI Desktop.
-Dimensões de intervalo de datas do Customer Journey Analytics, como **[!UICONTROL Dia]**, **[!UICONTROL Semana]**, **[!UICONTROL Mês]** e muito mais estão disponíveis como **[!UICONTROL daterangeday]**, **[!UICONTROL daterangeweek]**, **[!UICONTROL daterangemonth]** e muito mais.
+**Dimensions**
+Dimensions from Customer Journey Analytics are identified by the [!UICONTROL Component ID]. The [!UICONTROL Component ID] is defined in your Customer Journey Analytics data view. For example, dimension **[!UICONTROL Product Name]** in Customer Journey Analytics has a [!UICONTROL Component ID] **[!UICONTROL product_name]**, which is the name for the dimension in Power BI Desktop.
+Date range dimensions from Customer Journey Analytics, like **[!UICONTROL Day]**, **[!UICONTROL Week]**, **[!UICONTROL Month]**, and more are available as **[!UICONTROL daterangeday]**, **[!UICONTROL daterangeweek]**, **[!UICONTROL daterangemonth]**, and more.
 
-**Métricas**
-As métricas do Customer Journey Analytics são identificadas pela [!UICONTROL ID do Componente]. A [!UICONTROL ID do Componente] está definida na sua visualização de dados do Customer Journey Analytics. Por exemplo, a métrica **[!UICONTROL Receita de compra]** no Customer Journey Analytics tem um [!UICONTROL ID de componente] **[!UICONTROL purchase_revenue]**, que é o nome da métrica no Power BI Desktop. Um **&#x200B;**&#x200B;indica métricas. Quando você usa uma métrica em qualquer visualização, ela é renomeada para **[!UICONTROL Soma da *métrica *]**.
+**Metrics**
+Metrics from Customer Journey Analytics are identified by the [!UICONTROL Component ID]. The [!UICONTROL Component ID] is defined in your Customer Journey Analytics data view. For example, metric **[!UICONTROL Purchase Revenue]** in Customer Journey Analytics has a [!UICONTROL Component ID] **[!UICONTROL purchase_revenue]**, which is the name for the metric in Power BI Desktop. A **[!UICONTROL ∑]** indicates metrics. When you use a metric in any visualization, the metric is renamed to **[!UICONTROL Sum of *metric*]**.
 
-**Filtros**
-Os filtros definidos no Customer Journey Analytics estão disponíveis como parte do campo **[!UICONTROL filterName]**. Ao usar um campo **[!UICONTROL filterName]** na área de trabalho do Power BI, você pode especificar qual filtro usar.
+**Filters**
+Filters that you define in Customer Journey Analytics are available as part of the **[!UICONTROL filterName]** field. When you use a **[!UICONTROL filterName]** field in Power BI Desktop, you can specify which filter to use.
 
-**Métricas calculadas**
-As métricas calculadas definidas no Customer Journey Analytics são identificadas pela [!UICONTROL ID Externa] definida para a métrica calculada. Por exemplo, a métrica calculada **[!UICONTROL Nome do produto (Contagem distinta)]** tem [!UICONTROL Identificação externa] **[!UICONTROL product_name_count_distinct]** e é mostrada como **[!UICONTROL cm_product_name_count_distinct]**&#x200B;t no Power BI Desktop.
+**Calculated metrics**
+Calculated metrics that you define in Customer Journey Analytics are identified by the [!UICONTROL External ID] you have defined for the calculated metric. For example, calculated metric **[!UICONTROL Product Name (Count Distinct)]** has [!UICONTROL External ID] **[!UICONTROL product_name_count_distinct]** and is shown as **[!UICONTROL cm_product_name_count_distinc]**t in Power BI Desktop.
 
-**Intervalos de datas**
-Intervalos de datas definidos no Customer Journey Analytics estão disponíveis como parte do campo **[!UICONTROL dataterangeName]**. Ao usar um campo **[!UICONTROL dataterangeName]**, você pode especificar qual intervalo de datas usar.
+**Date ranges**
+Date ranges that you define in Customer Journey Analytics are available as part of the **[!UICONTROL daterangeName]** field. When you use a **[!UICONTROL daterangeName]** field, you can specify which date range to use.
 
-**Transformações personalizadas**
-O Power BI Desktop fornece funcionalidade de transformação personalizada usando [Data Analysis Expressions (DAX)](https://learn.microsoft.com/en-us/dax/dax-overview). Como exemplo, você deseja executar a [Dimensão única classificada](#single-dimension-ranked) caso de uso com nomes de produtos em minúsculas.
+**Custom transformations**
+Power BI Desktop provides custom transformation functionality using [Data Analysis Expressions (DAX)](https://learn.microsoft.com/en-us/dax/dax-overview). As an example, you want to execute the [Single dimension ranked](#single-dimension-ranked) use case with product names in lower case.
 
-1. Na exibição de relatório, selecione a visualização de barra.
-1. Selecione **[!UICONTROL product_name]** no painel Dados.
-1. Selecione **[!UICONTROL Nova coluna]** na barra de ferramentas.
-1. No editor de fórmulas, defina uma nova coluna chamada `product_name_lower`, como `product_name_lower = LOWER('public.cc_data_view[product_name])`.
-   ![Transformação do Power BI Desktop para Inferior](assets/uc14-powerbi-transformation.png)
-1. Selecione a nova coluna **[!UICONTROL product_name_lower]** no painel **[!UICONTROL Dados]** em vez da coluna **[!UICONTROL product_name]**.
-1. Selecione **[!UICONTROL Relatório como Tabela]** de ![Mais](/help/assets/icons/More.svg) na visualização da tabela.
+1. In the report view, select the bar visualization.
+1. Select **[!UICONTROL product_name]** in the Data pane.
+1. Select **[!UICONTROL New column]** in the toolbar.
+1. In the formula editor, define a new column named `product_name_lower`, like `product_name_lower = LOWER('public.cc_data_view[product_name])`.
+   ![Power BI Desktop Transformation to Lower](assets/uc14-powerbi-transformation.png)
+1. Ensure you select the new **[!UICONTROL product_name_lower]** column in the **[!UICONTROL Data]** pane instead of the **[!UICONTROL product_name]** column.
+1. Select **[!UICONTROL Report as Table]** from ![More](/help/assets/icons/More.svg) in the table visualization.
 
-   A área de trabalho do Power BI deve ser semelhante à mostrada abaixo.
-   ![Final de Transformação do Power BI Desktop](assets/uc14-powerbi-final.png)
+   Your Power BI Desktop should look like below. 
+   ![Power BI Desktop Transformation Final](assets/uc14-powerbi-final.png)
 
-A transformação personalizada resulta em uma atualização das consultas SQL. Consulte o uso da função `lower` no exemplo SQL abaixo:
+The custom transformation result in an update to SQL queries. See the use of the `lower` function in the SQL example below:
 
 ```sql
 select "_"."product_name_lower",
@@ -2713,45 +2715,46 @@ from
 ) "_"
 where not "_"."a0" is null or not "_"."a1" is null
 limit 1000001
+
 ```
 
->[!TAB Tableau Desktop]
+>[!TAB Tableau Desktop] 
 
-Os objetos Customer Journey Analytics ficam disponíveis na barra lateral **[!UICONTROL Dados]** sempre que você trabalha em uma planilha. E são recuperados da tabela selecionada como parte da página **[!UICONTROL Fonte de dados]** no Tableau. Por exemplo, **[!UICONTROL cc_data_view]**. O nome da tabela é igual à ID externa que você definiu para a visualização de dados no Customer Journey Analytics. Por exemplo, visualização de dados com **[!UICONTROL Título]** `C&C - Data View` e **[!UICONTROL ID Externa]** `cc_data_view`.
+The Customer Journey Analytics objects are available in the **[!UICONTROL Data]** side bar whenever you work in a sheet. And are retrieved from the table that you have selected as part of the **[!UICONTROL Data source]** page in Tableau. For example, **[!UICONTROL cc_data_view]**. The name of the table is the same as the External ID that you have defined for your data view in Customer Journey Analytics. For example, data view with **[!UICONTROL Title]** `C&C - Data View` and **[!UICONTROL External ID]** `cc_data_view`.
 
-**Dimensões**
-As dimensões do Customer Journey Analytics são identificadas pelo [!UICONTROL Nome do componente]. O [!UICONTROL nome do componente] está definido na sua visualização de dados do Customer Journey Analytics. Por exemplo, a dimensão **[!UICONTROL Nome do Produto]** no Customer Journey Analytics tem um [!UICONTROL Nome do Componente] **[!UICONTROL Nome do Produto]**, que é o nome da dimensão no Tableau. Todas as dimensões são identificadas por **[!UICONTROL Abc]**.
-Dimensões de intervalo de datas do Customer Journey Analytics, como **[!UICONTROL Dia]**, **[!UICONTROL Semana]**, **[!UICONTROL Mês]** e mais estão disponíveis como **[!UICONTROL Daterangeday]**, **[!UICONTROL Daterangeweek]**, **[!UICONTROL Daterangemonth]** e muito mais. Ao usar uma dimensão de intervalo de datas, é necessário selecionar uma definição apropriada de data ou hora para aplicar a essa dimensão de intervalo de datas no menu suspenso. Por exemplo, **[!UICONTROL Ano]**, **[!UICONTROL Trimestre]**, **[!UICONTROL Mês]**, **[!UICONTROL Dia]**.
+**Dimensions**
+Dimensions from Customer Journey Analytics are identified by the [!UICONTROL Component name]. The [!UICONTROL Component name] is defined in your Customer Journey Analytics data view. For example, dimension **[!UICONTROL Product Name]** in Customer Journey Analytics has a [!UICONTROL Component name] **[!UICONTROL Product Name]**, which is the name for the dimension in Tableau. All dimensions are identified by **[!UICONTROL Abc]**.
+Date range dimensions from Customer Journey Analytics, like **[!UICONTROL Day]**, **[!UICONTROL Week]**, **[!UICONTROL Month]**, and more are available as **[!UICONTROL Daterangeday]**, **[!UICONTROL Daterangeweek]**, **[!UICONTROL Daterangemonth]**, and more. When you use a date range dimension, you have to select an appropriate definition of date or time to apply to that date range dimension from the drop-down menu. For example, **[!UICONTROL Year]**, **[!UICONTROL Quarter]**, **[!UICONTROL Month]**, **[!UICONTROL Day]**.
 
-**Métricas**
-As métricas do Customer Journey Analytics são identificadas pelo [!UICONTROL Nome do Componente]. O [!UICONTROL Nome do Componente] está definido na sua visualização de dados do Customer Journey Analytics. Por exemplo, a métrica **[!UICONTROL Receita de compra]** no Customer Journey Analytics tem um [!UICONTROL Nome do componente] **[!UICONTROL Receita de compra]**, que é o nome da métrica no Tableau. Todas as métricas são identificadas por **[!UICONTROL #]**. Quando você usa uma métrica em qualquer visualização, ela é renomeada para **[!UICONTROL Sum(*metric*)]**.
+**Metrics**
+Metrics from Customer Journey Analytics are identified by the [!UICONTROL Component Name]. The [!UICONTROL Component Name] is defined in your Customer Journey Analytics data view. For example, metric **[!UICONTROL Purchase Revenue]** in Customer Journey Analytics has a [!UICONTROL Component Name] **[!UICONTROL Purchase Revenue]**, which is the name for the metric in Tableau. All metrics are identified by **[!UICONTROL #]**. When you use a metric in any visualization, the metric is renamed to **[!UICONTROL Sum(*metric*)]**.
 
-**Filtros**
-Os filtros definidos no Customer Journey Analytics estão disponíveis como parte do campo **[!UICONTROL Nome do filtro]**. Ao usar um campo **[!UICONTROL Nome do Filtro]** no Tableau, você pode especificar qual filtro usar.
+**Filters**
+Filters that you define in Customer Journey Analytics are available as part of the **[!UICONTROL Filter Name]** field. When you use a **[!UICONTROL Filter Name]** field in Tableau, you can specify which filter to use.
 
-**Métricas calculadas**
-As métricas calculadas definidas no Customer Journey Analytics são identificadas pelo [!UICONTROL Título] definido para a métrica calculada. Por exemplo, a métrica calculada **[!UICONTROL Nome do Produto (Contagem Distinta)]** tem [!UICONTROL Título] **[!UICONTROL Nome do Produto (Contagem Distinta)]** e é exibida como **[!UICONTROL Cm Nome do Produto Contagem Distinta]** no Tableau.
+**Calculated metrics**
+Calculated metrics that you define in Customer Journey Analytics are identified by the [!UICONTROL Title] you have defined for the calculated metric. For example, calculated metric **[!UICONTROL Product Name (Count Distinct)]** has [!UICONTROL Title] **[!UICONTROL Product Name (Count Distinct)]** and is shown as **[!UICONTROL Cm Product Name Count Distinct]** in Tableau.
 
-**Intervalos de datas**
-Intervalos de datas definidos no Customer Journey Analytics estão disponíveis como parte do campo **[!UICONTROL Nome do intervalo de datas]**. Ao usar um campo **[!UICONTROL Nome do intervalo de datas]**, você pode especificar qual intervalo de datas usar.
+**Date ranges**
+Date ranges that you define in Customer Journey Analytics are available as part of the **[!UICONTROL Daterange Name]** field. When you use a **[!UICONTROL Daterange Name]** field, you can specify which date range to use.
 
-**Transformações personalizadas**
-O Tableau Desktop fornece funcionalidade de transformação personalizada usando [Campos Calculados](https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_create.htm). Como exemplo, você deseja executar a [Dimensão única classificada](#single-dimension-ranked) caso de uso com nomes de produtos em minúsculas.
+**Custom transformations**
+Tableau Desktop provides custom transformation functionality using [Calculated Fields](https://help.tableau.com/current/pro/desktop/en-us/calculations_calculatedfields_create.htm). As an example, you want to execute the [Single dimension ranked](#single-dimension-ranked) use case with product names in lower case.
 
-1. Selecione **[!UICONTROL Análise]** > **[!UICONTROL Criar campo calculado]** no menu principal.
-   1. Defina o **[!UICONTROL Nome do Produto em Minúsculas]** usando a função `LOWER([Product Name])`.
-      ![Campo Calculado do Tableau](assets/uc14-tableau-calculated-field.png)
-   1. Selecione **[!UICONTROL OK]**.
-1. Selecione a planilha de **[!UICONTROL Dados]**.
-   1. Arraste **[!UICONTROL Nome do Produto em Minúsculas]** de **[!UICONTROL Tabelas]** e solte a entrada no campo ao lado de **[!UICONTROL Linhas]**.
-   1. Remover **[!UICONTROL Nome do Produto]** de **[!UICONTROL Linhas]**.
-1. Selecione a exibição **[!UICONTROL Painel 1]**.
+1. Select **[!UICONTROL Analysis]** > **[!UICONTROL Create Calculated Field]** from the main menu.
+   1. Define **[!UICONTROL Lowercase Product Name]** using the function `LOWER([Product Name])`.
+      ![Tableau Calculated Field](assets/uc14-tableau-calculated-field.png)
+   1. Select **[!UICONTROL OK]**.
+1. Select the **[!UICONTROL Data]** sheet.
+   1. Drag **[!UICONTROL Lowercase Product Name]** from **[!UICONTROL Tables]** and drop the entry in the field next to **[!UICONTROL Rows]**.
+   1. Remove **[!UICONTROL Product Name]** from **[!UICONTROL Rows]**.
+1. Select **[!UICONTROL Dashboard 1]** view.
 
-A área de trabalho do Tableau deve ser parecida com a exibida abaixo.
+Your Tableau Desktop should look like below.
 
-![Tableau Desktop após transformação](assets/uc14-tableau-final.png)
+![Tableau Desktop after transformation](assets/uc14-tableau-final.png)
 
-A transformação personalizada resulta em atualizações nas consultas SQL. Consulte o uso da função `LOWER` no exemplo SQL abaixo:
+The custom transformation result in an updates to SQL queries. See the use of the `LOWER` function in the SQL example below:
 
 ```sql
 SELECT LOWER(CAST(CAST("cc_data_view"."product_name" AS TEXT) AS TEXT)) AS "Calculation_1562467608097775616",
@@ -2763,42 +2766,42 @@ GROUP BY 1
 HAVING ((SUM("cc_data_view"."purchase_revenue") >= 999999.99999998999) AND (SUM("cc_data_view"."purchase_revenue") <= 2000000.00000002))
 ```
 
->[!TAB Pesquisador]
+>[!TAB Looker]
 
-Os objetos do Customer Journey Analytics estão disponíveis na interface **[!UICONTROL Explorar]**. E são recuperados como parte da configuração da conexão, do projeto e do modelo no Looker. Por exemplo, **[!UICONTROL cc_data_view]**. O nome da exibição é igual à ID externa que você definiu para a exibição de dados no Customer Journey Analytics. Por exemplo, visualização de dados com **[!UICONTROL Título]** `C&C - Data View` e **[!UICONTROL ID Externa]** `cc_data_view`.
+The Customer Journey Analytics objects are available in the **[!UICONTROL Explore]** interface. And are retrieved as part of setting up your connection, project, and model in Looker. For example, **[!UICONTROL cc_data_view]**. The name of the view is the same as the External ID that you have defined for your data view in Customer Journey Analytics. For example, data view with **[!UICONTROL Title]** `C&C - Data View` and **[!UICONTROL External ID]** `cc_data_view`.
 
-**Dimensões**
-As dimensões do Customer Journey Analytics estão listadas como **[!UICONTROL DIMENSION]** no **[!UICONTROL Modo de Exibição de Dados Cc]** no painel esquerdo. A dimensão é definida na visualização de dados do Customer Journey Analytics. Por exemplo, a dimensão **[!UICONTROL Nome do Produto]** no Customer Journey Analytics tem um **[!UICONTROL Nome do Produto]** do **[!UICONTROL DIMENSION]**, que é o nome da dimensão no Looker.
-Dimensões de intervalo de datas da Customer Journey Analytics, como **[!UICONTROL Dia]**, **[!UICONTROL Semana]**, **[!UICONTROL Mês]** e mais estão disponíveis como **[!UICONTROL Data Daterangeday]**, **[!UICONTROL Data Daterangeweek]**, **[!UICONTROL Data Daterangeweek]** e muito mais.  Ao usar uma dimensão de intervalo de datas, é necessário selecionar uma definição apropriada de data ou hora. Por exemplo, **[!UICONTROL Ano]**, **[!UICONTROL Trimestre]**, **[!UICONTROL Mês]**, **[!UICONTROL Data]**.
+**Dimensions**
+Dimensions from Customer Journey Analytics are listed as **[!UICONTROL DIMENSION]** in the **[!UICONTROL Cc Data View]** left rail. The dimension is defined in your Customer Journey Analytics data view. For example, dimension **[!UICONTROL Product Name]** in Customer Journey Analytics has a **[!UICONTROL DIMENSION]** **[!UICONTROL Product Name]**, which is the name for the dimension in Looker. 
+Date range dimensions from Customer Journey Analytics, like **[!UICONTROL Day]**, **[!UICONTROL Week]**, **[!UICONTROL Month]**, and more are available as **[!UICONTROL Daterangeday Date]**, **[!UICONTROL Daterangeweek Date]**, **[!UICONTROL Daterangemonth Date]**, and more.  When you use a date range dimension, you have to select an appropriate definition of date or time. For example, **[!UICONTROL Year]**, **[!UICONTROL Quarter]**, **[!UICONTROL Month]**, **[!UICONTROL Date]**.
 
-**Métricas**
-As métricas do Customer Journey Analytics estão listadas como **[!UICONTROL DIMENSION]** no painel esquerdo da **[!UICONTROL Exibição de Dados da Cc]**. Por exemplo, a métrica **[!UICONTROL Receita de compra]** no Customer Journey Analytics tem uma **[!UICONTROL Receita de compra]** **[!UICONTROL DIMENSION]**. Para usar como uma métrica, crie um campo de medida personalizado conforme mostrado nos exemplos acima ou use o atalho em uma dimensão. Por exemplo, **&#x200B;**, selecione **[!UICONTROL Agregado]** e **[!UICONTROL Soma]**.
+**Metrics**
+Metrics from Customer Journey Analytics are listed as **[!UICONTROL DIMENSION]** in in the **[!UICONTROL Cc Data View]** left rail. For example, metric **[!UICONTROL Purchase Revenue]** in Customer Journey Analytics has a **[!UICONTROL DIMENSION]** **[!UICONTROL Purchase Revenue]**. To actually use as a metric, create a custom measure field as shown in the examples above, or use the shortcut on a dimension. For example, **[!UICONTROL ⋮]**, select **[!UICONTROL Aggregate]**, and then select **[!UICONTROL Sum]**..
 
-**Filtros**
-Os filtros definidos no Customer Journey Analytics estão disponíveis como parte do campo **[!UICONTROL Nome do filtro]**. Ao usar um campo **[!UICONTROL Nome do Filtro]** no Looker, você pode especificar qual filtro usar.
+**Filters**
+Filters that you define in Customer Journey Analytics are available as part of the **[!UICONTROL Filter Name]** field. When you use a **[!UICONTROL Filter Name]** field in Looker, you can specify which filter to use.
 
-**Métricas calculadas**
-As métricas calculadas definidas no Customer Journey Analytics são identificadas pelo [!UICONTROL Título] definido para a métrica calculada. Por exemplo, a métrica calculada **[!UICONTROL Nome do Produto (Contagem Distinta)]** tem [!UICONTROL Título] **[!UICONTROL Nome do Produto (Contagem Distinta)]** e é exibida como **[!UICONTROL Cm Nome do Produto Contagem Distinta]** no Pesquisador.
+**Calculated metrics**
+Calculated metrics that you define in Customer Journey Analytics are identified by the [!UICONTROL Title] you have defined for the calculated metric. For example, calculated metric **[!UICONTROL Product Name (Count Distinct)]** has [!UICONTROL Title] **[!UICONTROL Product Name (Count Distinct)]** and is shown as **[!UICONTROL Cm Product Name Count Distinct]** in Looker.
 
-**Intervalos de datas**
-Intervalos de datas definidos no Customer Journey Analytics estão disponíveis como parte do campo **[!UICONTROL Nome do intervalo de datas]**. Ao usar um campo **[!UICONTROL Nome do intervalo de datas]**, você pode especificar qual intervalo de datas usar.
+**Date ranges**
+Date ranges that you define in Customer Journey Analytics are available as part of the **[!UICONTROL Daterange Name]** field. When you use a **[!UICONTROL Daterange Name]** field, you can specify which date range to use.
 
-**Transformações personalizadas**
-O Looker fornece a funcionalidade de transformação personalizada usando construtores de campo personalizados, conforme mostrado acima. Como exemplo, você deseja executar a [Dimensão única classificada](#single-dimension-ranked) caso de uso com nomes de produtos em minúsculas.
+**Custom transformations**
+Looker provides custom transformation functionality using custom field builders, as shown above. As an example, you want to execute the [Single dimension ranked](#single-dimension-ranked) use case with product names in lower case.
 
-1. Na seção **[!UICONTROL ‣ Campos Personalizados]** no painel esquerdo:
-   1. Selecione **[!UICONTROL Dimension Personalizado]** no menu suspenso **[!UICONTROL + Adicionar]**.
-   1. Digite `lower(${cc_data_view.product_name})` na área de texto **[!UICONTROL Expressão]**. Você é auxiliado com a sintaxe correta quando começa a digitar `Product Name`.
-      ![Exemplo de transformação de Looker](assets/uc14-looker-transformation.png)
-   1. Digite `product name` como **[!UICONTROL Nome]**.
-   1. Selecione **[!UICONTROL Salvar]**.
+1. From the **[!UICONTROL ‣ Custom Fields]** section in the left rail:
+   1. Select **[!UICONTROL Custom Dimension]** from the **[!UICONTROL + Add]** drop-down menu. 
+   1. Enter `lower(${cc_data_view.product_name})` in the **[!UICONTROL Expression]** text area. You are assisted with the correct syntax when you start to type `Product Name`.
+      ![Looker transformation example](assets/uc14-looker-transformation.png)
+   1. Enter `product name` as the **[!UICONTROL Name]**.
+   1. Select **[!UICONTROL Save]**.
 
-Você deve ver uma tabela semelhante como mostrado abaixo.
+You should see a similar table as shown below.
 
-![Resultado da transformação do pesquisador](assets/uc14-looker-result.png)
+![Looker transformation result](assets/uc14-looker-result.png)
 
 
-A transformação personalizada resulta em atualizações nas consultas SQL. Consulte o uso da função `LOWER` no exemplo SQL abaixo:
+The custom transformation result in an updates to SQL queries. See the use of the `LOWER` function in the SQL example below:
 
 ```sql
 SELECT
@@ -2816,11 +2819,11 @@ FETCH NEXT 500 ROWS ONLY
 
 >[!TAB Jupyter Notebook]
 
-Os objetos do Customer Journey Analytics (dimensões, métricas, filtros, métricas calculadas e intervalos de datas) estão disponíveis como parte das consultas SQL incorporadas que você cria. Consulte exemplos anteriores.
+The Customer Journey Analytics objects (dimensions, metrics, filters, calculated metrics, and date ranges) are available as part of the embedded SQL queries you construct. See earlier examples.
 
-**Transformações personalizadas**
+**Custom transformations**
 
-1. Insira as seguintes instruções em uma nova célula.
+1. Enter the following statements in a new cell.
 
    ```python
    data = %sql SELECT LOWER(product_category) AS `Product Category`, COUNT(*) AS EVENTS \
@@ -2832,19 +2835,19 @@ Os objetos do Customer Journey Analytics (dimensões, métricas, filtros, métri
    display(data)
    ```
 
-1. Execute a célula. Você deve ver uma saída semelhante à captura de tela abaixo.
+1. Execute the cell. You should see output similar to the screenshot below.
 
-   ![Resultados do Jupyter Notebook](assets/uc13-jupyter-results.png)
+   ![Jupyter Notebook Results](assets/uc13-jupyter-results.png)
 
-A consulta é executada pela extensão BI, conforme definido no Jupyter Notebook.
+The query is excuted by the BI extension as defined in Jupyter Notebook.
 
 >[!TAB RStudio]
 
-Os componentes do Customer Journey Analytics (dimensões, métricas, filtros, métricas calculadas e intervalos de datas) estão disponíveis como objetos nomeados semelhantes na linguagem R. Consulte os componentes usando o componente. Consulte os exemplos anteriores.
+The Customer Journey Analytics components (dimensions, metrics, filters, calculated metrics, and date ranges) are available as similar named objects in the R language. Refer to the components using the component  See earlier examples.
 
-**Transformações personalizadas**
+**Custom transformations**
 
-1. Insira as seguintes instruções entre ` ` ``{r} ` e ` `` ` ` em uma nova parte.
+1. Enter the following statements between ` ```{r} ` and ` ``` ` in a new chunk.
 
    ```R
    df <- dv %>%
@@ -2856,11 +2859,11 @@ Os componentes do Customer Journey Analytics (dimensões, métricas, filtros, m�
    print(df)
    ```
 
-1. Execute o pedaço. Você deve ver uma saída semelhante à captura de tela abaixo.
+1. Run the chunk. You should see output similar to the screenshot below.
 
-   ![RSudio Results](assets/uc13-rstudio-results.png)
+   ![RStudio Results](assets/uc13-rstudio-results.png)
 
-A consulta gerada pelo RStudio usando a extensão de BI inclui `lower`, o que implica que a transformação personalizada é executada pelo RStudio e a extensão de BI.
+The query generated by RStudio using the BI extension is including `lower`, which implies that the custom transformation is executed by RStudio and the BI extension.
 
 ```sql
 SELECT "d2", COUNT(*) AS "n"
@@ -2880,64 +2883,64 @@ LIMIT 1000
 
 
 
-## Visualizações
+## Visualizations
 
-Você quer entender como as visualizações, disponíveis no Customer Journey Analytics, podem ser criadas de forma semelhante usando as visualizações disponíveis nas ferramentas de BI.
+You want to understand how the visualizations, available in Customer Journey Analytics, can be similarly created using the available visualizations in the BI tools.
 
 +++ Customer Journey Analytics
 
-O Customer Journey Analytics tem várias visualizações. Consulte [Visualizações](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) para obter uma introdução e uma visão geral de todas as visualizações possíveis.
+Customer Journey Analytics has a number of visualizations. See [Visualizations](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) for an introduction and an overview of all possible visualizations.
 
 +++
 
-+++ Ferramentas de BI
++++ BI tools
 
 >[!BEGINTABS]
 
->[!TAB Power BI Desktop]
+>[!TAB Power BI Desktop] 
 
-### Comparação
+### Comparison
 
-Para a maioria das visualizações do Customer Journey Analytics, o Power BI Desktop oferece experiências equivalentes. Consulte a tabela abaixo.
+For most Customer Journey Analytics visualizations, Power BI Desktop offers equivalent experiences. See the table below.
 
-| Ícone | Visualização do Customer Journey Analytics | Visualização do Power BI Desktop |
+| Icon |Customer Journey Analytics visualization | Power BI Desktop visualization |
 | :---: | --- | ---|
-| ![GraphArea](/help/assets/icons/GraphArea.svg) | [Área](/help/analysis-workspace/visualizations/area.md) | [Gráfico de área, gráfico de área empilhada e gráfico de área 100%](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#area-charts-basic-layered-and-stacked) |
-| ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) | [Barra](/help/analysis-workspace/visualizations/bar.md) | [Gráfico de colunas agrupado](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#bar-and-column-charts) |
-| ![GraphBarVertical](/help/assets/icons/GraphBarVerticalStacked.svg) | [Barra empilhada](/help/analysis-workspace/visualizations/bar.md) | [Gráfico de colunas empilhadas e gráfico de colunas 100% empilhadas](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#bar-and-column-charts) |
-| ![GraphBullet](/help/assets/icons/GraphBullet.svg)</p> | [Marcador](/help/analysis-workspace/visualizations/bullet-graph.md) |  |
-| ![TextNumbered](/help/assets/icons/TextNumbered.svg) | [Tabela de coorte](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) |  |
-| ![Combo](/help/assets/icons/ComboChart.svg) | [Combo](/help/analysis-workspace/visualizations/combo-charts.md) | [Gráfico de linhas e colunas empilhadas e Gráfico de linhas e colunas agrupadas](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#combo-charts) |
-| ![GraphDonut](/help/assets/icons/GraphDonut.svg) | [Rosca](/help/analysis-workspace/visualizations/donut.md) | [Gráfico de rosca](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#doughnut-charts) |
-| ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) | [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | [Funnel](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#funnel-charts). |
-| ![GraphPathing](/help/assets/icons/GraphPathing.svg) | [Fluxo](/help/analysis-workspace/visualizations/c-flow/flow.md) | Árvore de decomposição? |
-| ![ViewTable](/help/assets/icons/ViewTable.svg)</p> | [Tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | [Tabela](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#tables) e [Matriz](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#matrix) |
-| ![GraphHistogram](/help/assets/icons/Histogram.svg) | [Histograma](/help/analysis-workspace/visualizations/histogram.md) |  |
-| ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) | [Barra horizontal](/help/analysis-workspace/visualizations/horizontal-bar.md) | [Gráfico de barras clusterizado](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#bar-and-column-charts) |
-| ![GraphBarHorizontalStacked](/help/assets/icons/GraphBarHorizontalStacked.svg) | [Barra horizontal empilhada](/help/analysis-workspace/visualizations/horizontal-bar.md) | [Gráfico de barras empilhadas e gráfico de barras 100% empilhadas](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#bar-and-column-charts) |
-| ![Branch3](/help/assets/icons/Branch3.svg) | [Tela da jornada](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) | [Árvore de decomposição](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#decomposition-tree) |
-| ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) | [Resumo das métricas principais](/help/analysis-workspace/visualizations/key-metric.md) |  |
-| ![GraphTrend](/help/assets/icons/GraphTrend.svg) | [Linha](/help/analysis-workspace/visualizations/line.md) | [Gráfico de linhas](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#line-charts) |
-| ![GraphScatter](/help/assets/icons/GraphScatter.svg) | [Dispersão](/help/analysis-workspace/visualizations/scatterplot.md) | [Gráfico de dispersão](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#scatter) |
-| ![PageRule](/help/assets/icons/PageRule.svg) | [Cabeçalho de seção](/help/analysis-workspace/visualizations/section-header.md) | [Caixa de texto](https://learn.microsoft.com/en-us/power-bi/paginated-reports/report-design/textbox/add-move-or-delete-a-text-box-report-builder-and-service) |
-| ![MoveUpDown](/help/assets/icons/MoveUpDown.svg) | [Alteração de resumo](/help/analysis-workspace/visualizations/summary-number-change.md) | Cartão [1&rbrace;](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#cards) |
-| ![123](/help/assets/icons/123.svg)</p> | [Número do resumo](/help/analysis-workspace/visualizations/summary-number-change.md) | Cartão [1&rbrace;](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#cards) |
-| ![Texto](/help/assets/icons/Text.svg) | [Texto](/help/analysis-workspace/visualizations/text.md) | [Caixa de texto](https://learn.microsoft.com/en-us/power-bi/paginated-reports/report-design/textbox/add-move-or-delete-a-text-box-report-builder-and-service) |
-| ![ModernGridView](/help/assets/icons/ModernGridView.svg) | [Mapas de árvore](/help/analysis-workspace/visualizations/treemap.md)<p> | [Mapas de árvore](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#treemaps) |
-| ![Tipo](/help/assets/icons/TwoDots.svg) | [Venn](/help/analysis-workspace/visualizations/venn.md) | |
+| ![GraphArea](/help/assets/icons/GraphArea.svg)| [Area](/help/analysis-workspace/visualizations/area.md)  | [Area chart, stacked area chart and 100% area chart](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#area-charts-basic-layered-and-stacked) |
+| ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg)| [Bar](/help/analysis-workspace/visualizations/bar.md)  | [Clustered column chart](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#bar-and-column-charts) |
+| ![GraphBarVertical](/help/assets/icons/GraphBarVerticalStacked.svg)| [Bar stacked](/help/analysis-workspace/visualizations/bar.md)  | [Stacked column chart and 100% stacked column chart](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#bar-and-column-charts) |
+| ![GraphBullet](/help/assets/icons/GraphBullet.svg)</p>| [Bullet](/help/analysis-workspace/visualizations/bullet-graph.md)  |  |
+| ![TextNumbered](/help/assets/icons/TextNumbered.svg)| [Cohort table](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) |  |
+| ![Combo](/help/assets/icons/ComboChart.svg) | [Combo](/help/analysis-workspace/visualizations/combo-charts.md) | [Line and stacked column chart and Line and clustered column chart](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#combo-charts) |
+| ![GraphDonut](/help/assets/icons/GraphDonut.svg) | [Donut](/help/analysis-workspace/visualizations/donut.md)  | [Donut chart](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#doughnut-charts) |
+| ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) |  [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | [Funnel](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#funnel-charts). |
+| ![GraphPathing](/help/assets/icons/GraphPathing.svg) | [Flow](/help/analysis-workspace/visualizations/c-flow/flow.md) | Decomposition tree? |
+| ![ViewTable](/help/assets/icons/ViewTable.svg)</p> | [Freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | [Table](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#tables) and [Matrix](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#matrix) |
+| ![GraphHistogram](/help/assets/icons/Histogram.svg) | [Histogram](/help/analysis-workspace/visualizations/histogram.md) |  |
+| ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) | [Horizontal bar](/help/analysis-workspace/visualizations/horizontal-bar.md)| [Clustered bar chart](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#bar-and-column-charts) |
+| ![GraphBarHorizontalStacked](/help/assets/icons/GraphBarHorizontalStacked.svg) | [Horizontal bar stacked](/help/analysis-workspace/visualizations/horizontal-bar.md)| [Stacked bar chart and 100% stacked bar chart](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#bar-and-column-charts) |
+| ![Branch3](/help/assets/icons/Branch3.svg) | [Journey canvas](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) | [Decomposition tree](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#decomposition-tree) |
+| ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) | [Key metric summary](/help/analysis-workspace/visualizations/key-metric.md) |  |
+| ![GraphTrend](/help/assets/icons/GraphTrend.svg) | [Line](/help/analysis-workspace/visualizations/line.md)| [Line chart](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#line-charts)|
+| ![GraphScatter](/help/assets/icons/GraphScatter.svg) | [Scatter](/help/analysis-workspace/visualizations/scatterplot.md)  | [Scatter chart](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#scatter) |
+|  ![PageRule](/help/assets/icons/PageRule.svg) | [Section header](/help/analysis-workspace/visualizations/section-header.md) | [Text box](https://learn.microsoft.com/en-us/power-bi/paginated-reports/report-design/textbox/add-move-or-delete-a-text-box-report-builder-and-service) |
+| ![MoveUpDown](/help/assets/icons/MoveUpDown.svg)  | [Summary change](/help/analysis-workspace/visualizations/summary-number-change.md)| [Card](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#cards)|
+| ![123](/help/assets/icons/123.svg)</p> |[Summary number](/help/analysis-workspace/visualizations/summary-number-change.md) | [Card](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#cards) |
+| ![Text](/help/assets/icons/Text.svg) | [Text](/help/analysis-workspace/visualizations/text.md) | [Text box](https://learn.microsoft.com/en-us/power-bi/paginated-reports/report-design/textbox/add-move-or-delete-a-text-box-report-builder-and-service) |
+| ![ModernGridView](/help/assets/icons/ModernGridView.svg) | [Treemap](/help/analysis-workspace/visualizations/treemap.md)<p> | [Treemap](https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-types-for-reports-and-q-and-a#treemaps) |
+| ![Type](/help/assets/icons/TwoDots.svg) | [Venn](/help/analysis-workspace/visualizations/venn.md) | |
 
 
-### Detalhar
+### Drill down
 
-O Power BI oferece suporte ao [modo de análise](https://learn.microsoft.com/en-us/power-bi/consumer/end-user-drill) para explorar detalhes detalhados sobre determinadas visualizações. No exemplo abaixo, você analisa a receita de compra para categorias de produto. No menu de contexto de uma barra que representa uma categoria de produto, você pode selecionar **[!UICONTROL Detalhar]**.
+Power BI supports a [drill mode](https://learn.microsoft.com/en-us/power-bi/consumer/end-user-drill) to explore in-depth details on certain visualizations. In the example below, you analyze purchase revenue for product categories. From the context menu of a bar representing a product category, you can select **[!UICONTROL Drill down]**.
 
-![detalhamento do Power BI](assets/uc15-powerbi-drilldown.png)
+![Power BI drill down](assets/uc15-powerbi-drilldown.png)
 
-O detalhamento atualiza a visualização com receita de compra para produtos na categoria de produto selecionada.
+Drill down updates the visualization with purchase revenue for products within the selected product category.
 
-![detalhamento do Power BI](assets/uc15-powerbi-drillup.png)
+![Power BI drill up](assets/uc15-powerbi-drillup.png)
 
-O detalhamento resulta na seguinte consulta SQL que usa uma cláusula `WHERE`:
+The drill down results in the following SQL query that uses a `WHERE` clause:
 
 ```sql
 select "_"."product_category" as "c25",
@@ -2977,50 +2980,50 @@ order by "_"."product_category",
 limit 1001
 ```
 
->[!TAB Tableau Desktop]
+>[!TAB Tableau Desktop] 
 
-### Comparação
+### Comparison
 
-Para a maioria das visualizações do Customer Journey Analytics, o Tableau Desktop oferece experiências equivalentes. Consulte a tabela abaixo.
+For most Customer Journey Analytics visualizations, Tableau Desktop offers equivalent experiences. See the table below.
 
-| Ícone | Visualização do Customer Journey Analytics | Visualização do Power BI Desktop |
+| Icon |Customer Journey Analytics visualization | Power BI Desktop visualization |
 | :---: | --- | ---|
-| ![GraphArea](/help/assets/icons/GraphArea.svg) | [Área](/help/analysis-workspace/visualizations/area.md) | [Gráfico de Área](https://help.tableau.com/current/pro/desktop/en-us/qs_area_charts.htm) |
-| ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) | [Barra](/help/analysis-workspace/visualizations/bar.md) | [Gráfico de Barras](https://help.tableau.com/current/pro/desktop/en-us/buildexamples_bar.htm) |
-| ![GraphBarVertical](/help/assets/icons/GraphBarVerticalStacked.svg) | [Barra empilhada](/help/analysis-workspace/visualizations/bar.md) |  |
-| ![GraphBullet](/help/assets/icons/GraphBullet.svg)</p> | [Marcador](/help/analysis-workspace/visualizations/bullet-graph.md) | [Gráfico de marcadores](https://help.tableau.com/current/pro/desktop/en-us/qs_bullet_graphs.htm) |
-| ![TextNumbered](/help/assets/icons/TextNumbered.svg) | [Tabela de coorte](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) |  |
-| ![Combo](/help/assets/icons/ComboChart.svg) | [Combo](/help/analysis-workspace/visualizations/combo-charts.md) | [Gráficos de Combinação](https://help.tableau.com/current/pro/desktop/en-us/qs_combo_charts.htm) |
-| ![GraphDonut](/help/assets/icons/GraphDonut.svg) | [Rosca](/help/analysis-workspace/visualizations/donut.md) | |
-| ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) | [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | |
-| ![GraphPathing](/help/assets/icons/GraphPathing.svg) | [Fluxo](/help/analysis-workspace/visualizations/c-flow/flow.md) |  |
-| ![ViewTable](/help/assets/icons/ViewTable.svg)</p> | [Tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | [Tabela de texto](https://help.tableau.com/current/pro/desktop/en-us/buildexamples_text.htm) |
-| ![GraphHistogram](/help/assets/icons/Histogram.svg) | [Histograma](/help/analysis-workspace/visualizations/histogram.md) | [Histograma](https://help.tableau.com/current/pro/desktop/en-us/buildexamples_histogram.htm) |
-| ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) | [Barra horizontal](/help/analysis-workspace/visualizations/horizontal-bar.md) | [Gráfico de Barras](https://help.tableau.com/current/pro/desktop/en-us/buildexamples_bar.htm) |
-| ![GraphBarHorizontalStacked](/help/assets/icons/GraphBarHorizontalStacked.svg) | [Barra horizontal empilhada](/help/analysis-workspace/visualizations/horizontal-bar.md) | [Gráfico de Barras](https://help.tableau.com/current/pro/desktop/en-us/buildexamples_bar.htm) |
-| ![Branch3](/help/assets/icons/Branch3.svg) | [Tela da jornada](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) | |
-| ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) | [Resumo das métricas principais](/help/analysis-workspace/visualizations/key-metric.md) |  |
-| ![GraphTrend](/help/assets/icons/GraphTrend.svg) | [Linha](/help/analysis-workspace/visualizations/line.md) | [Gráfico de Linhas](https://help.tableau.com/current/pro/desktop/en-us/buildexamples_line.htm) |
-| ![GraphScatter](/help/assets/icons/GraphScatter.svg) | [Dispersão](/help/analysis-workspace/visualizations/scatterplot.md) | [Gráfico de dispersão](https://help.tableau.com/current/pro/desktop/en-us/buildexamples_scatter.htm) |
-| ![PageRule](/help/assets/icons/PageRule.svg) | [Cabeçalho de seção](/help/analysis-workspace/visualizations/section-header.md) |  |
-| ![MoveUpDown](/help/assets/icons/MoveUpDown.svg) | [Alteração de resumo](/help/analysis-workspace/visualizations/summary-number-change.md) | |
-| ![123](/help/assets/icons/123.svg)</p> | [Número do resumo](/help/analysis-workspace/visualizations/summary-number-change.md) | |
-| ![Texto](/help/assets/icons/Text.svg) | [Texto](/help/analysis-workspace/visualizations/text.md) | |
-| ![ModernGridView](/help/assets/icons/ModernGridView.svg) | [Mapas de árvore](/help/analysis-workspace/visualizations/treemap.md)<p> | [Mapas de árvore](https://help.tableau.com/current/pro/desktop/en-us/buildexamples_treemap.htm) |
-| ![Tipo](/help/assets/icons/TwoDots.svg) | [Venn](/help/analysis-workspace/visualizations/venn.md) | |
+| ![GraphArea](/help/assets/icons/GraphArea.svg)| [Area](/help/analysis-workspace/visualizations/area.md)  | [Area Chart](https://help.tableau.com/current/pro/desktop/en-us/qs_area_charts.htm) |
+| ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg)| [Bar](/help/analysis-workspace/visualizations/bar.md)  | [Bar Chart](https://help.tableau.com/current/pro/desktop/en-us/buildexamples_bar.htm) |
+| ![GraphBarVertical](/help/assets/icons/GraphBarVerticalStacked.svg)| [Bar stacked](/help/analysis-workspace/visualizations/bar.md)  |  |
+| ![GraphBullet](/help/assets/icons/GraphBullet.svg)</p>| [Bullet](/help/analysis-workspace/visualizations/bullet-graph.md)  | [Bullet Graph](https://help.tableau.com/current/pro/desktop/en-us/qs_bullet_graphs.htm) |
+| ![TextNumbered](/help/assets/icons/TextNumbered.svg)| [Cohort table](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) |  |
+| ![Combo](/help/assets/icons/ComboChart.svg) | [Combo](/help/analysis-workspace/visualizations/combo-charts.md) | [Combination Charts](https://help.tableau.com/current/pro/desktop/en-us/qs_combo_charts.htm)|
+| ![GraphDonut](/help/assets/icons/GraphDonut.svg) | [Donut](/help/analysis-workspace/visualizations/donut.md)  | |
+| ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) |  [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | |
+| ![GraphPathing](/help/assets/icons/GraphPathing.svg) | [Flow](/help/analysis-workspace/visualizations/c-flow/flow.md) |  |
+| ![ViewTable](/help/assets/icons/ViewTable.svg)</p> | [Freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | [Text Table](https://help.tableau.com/current/pro/desktop/en-us/buildexamples_text.htm) |
+| ![GraphHistogram](/help/assets/icons/Histogram.svg) | [Histogram](/help/analysis-workspace/visualizations/histogram.md) | [Histogram](https://help.tableau.com/current/pro/desktop/en-us/buildexamples_histogram.htm) |
+| ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) | [Horizontal bar](/help/analysis-workspace/visualizations/horizontal-bar.md)| [Bar Chart](https://help.tableau.com/current/pro/desktop/en-us/buildexamples_bar.htm) |
+| ![GraphBarHorizontalStacked](/help/assets/icons/GraphBarHorizontalStacked.svg) | [Horizontal bar stacked](/help/analysis-workspace/visualizations/horizontal-bar.md)| [Bar Chart](https://help.tableau.com/current/pro/desktop/en-us/buildexamples_bar.htm)  |
+| ![Branch3](/help/assets/icons/Branch3.svg) | [Journey canvas](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) | |
+| ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) | [Key metric summary](/help/analysis-workspace/visualizations/key-metric.md) |  |
+| ![GraphTrend](/help/assets/icons/GraphTrend.svg) | [Line](/help/analysis-workspace/visualizations/line.md)| [Line Chart](https://help.tableau.com/current/pro/desktop/en-us/buildexamples_line.htm) |
+| ![GraphScatter](/help/assets/icons/GraphScatter.svg) | [Scatter](/help/analysis-workspace/visualizations/scatterplot.md)  | [Scatter Plot](https://help.tableau.com/current/pro/desktop/en-us/buildexamples_scatter.htm) |
+|  ![PageRule](/help/assets/icons/PageRule.svg) | [Section header](/help/analysis-workspace/visualizations/section-header.md) |  |
+| ![MoveUpDown](/help/assets/icons/MoveUpDown.svg)  | [Summary change](/help/analysis-workspace/visualizations/summary-number-change.md)| |
+| ![123](/help/assets/icons/123.svg)</p> |[Summary number](/help/analysis-workspace/visualizations/summary-number-change.md) | |
+| ![Text](/help/assets/icons/Text.svg) | [Text](/help/analysis-workspace/visualizations/text.md) | |
+| ![ModernGridView](/help/assets/icons/ModernGridView.svg) | [Treemap](/help/analysis-workspace/visualizations/treemap.md)<p> | [Treemap](https://help.tableau.com/current/pro/desktop/en-us/buildexamples_treemap.htm) |
+| ![Type](/help/assets/icons/TwoDots.svg) | [Venn](/help/analysis-workspace/visualizations/venn.md) | |
 
 
-### Detalhar
+### Drill down
 
-Tableau dá suporte ao [modo de análise](https://learn.microsoft.com/en-us/power-bi/consumer/end-user-drill) por meio de [hierarquias](https://help.tableau.com/current/pro/desktop/en-us/qs_hierarchies.htm). No exemplo abaixo, você cria uma hierarquia ao selecionar o campo **[!UICONTROL Nome do Produto]** em **[!UICONTROL Tabelas]** e arrastá-lo para cima de **[!UICONTROL Categoria do Produto]**. Em seguida, no menu de contexto de uma barra que representa uma categoria de produto, você pode selecionar **[!UICONTROL + Detalhar]**.
+Tableau supports [drill mode](https://learn.microsoft.com/en-us/power-bi/consumer/end-user-drill) through [hierarchies](https://help.tableau.com/current/pro/desktop/en-us/qs_hierarchies.htm). In the example below, you create a hierarchy when you select the **[!UICONTROL Product Name]** field within **[!UICONTROL Tables]** and drag it on top of **[!UICONTROL Product Category]**. Then, from the context menu of a bar representing a product category, you can select **[!UICONTROL + Drill down]**.
 
-![Detalhamento do Tableau](assets/uc15-tableau-drilldown.png)
+![Tableau drill down](assets/uc15-tableau-drilldown.png)
 
-O detalhamento atualiza a visualização com receita de compra para produtos na categoria de produto selecionada.
+Drill down updates the visualization with purchase revenue for products within the selected product category.
 
-![Avaliação minuciosa do Tableau](assets/uc15-tableau-drillup.png)
+![Tableau drill up](assets/uc15-tableau-drillup.png)
 
-O drill-down resulta na seguinte consulta SQL que está usando uma cláusula GROUP BY:
+The drill down results in the following SQL query that is using a GROUP BY clause:
 
 ```sql
 SELECT CAST("cc_data_view"."product_category" AS TEXT) AS "product_category",
@@ -3032,55 +3035,55 @@ GROUP BY 1,
   2
 ```
 
-A consulta **não** limita os resultados à categoria de produto selecionada; somente a visualização mostra a categoria de produto selecionada.
+The query does **not** limit the results to the selected product category; only the visualization shows the selected product category. 
 
-![Avaliação minuciosa do Tableau](assets/uc15-tableau-drillup2.png)
+![Tableau drill up](assets/uc15-tableau-drillup2.png)
 
-Como alternativa, você pode criar um painel detalhado no qual um visual é o resultado da seleção em outro visual. No exemplo abaixo, a visualização **[!UICONTROL Categorias de produto]** é usada como filtro para atualizar a tabela **[!UICONTROL Nomes de produto]**. Este filtro de visualização é somente para cliente e não resulta em uma consulta SQL adicional.
+Alternatively, you can create a drill down dashboard where one visual is the result of the selection in another visual. In the example below, the **[!UICONTROL Product Categories]** visualization is used as a filter to update the **[!UICONTROL Product Names]** table. This visualization filter is client-only and does not result in an additional SQL query.
 
-![Filtro de visualização do Tableau](assets/uc15-tableau-visualizationfilter.png)
+![Tableau visualization filter](assets/uc15-tableau-visualizationfilter.png)
 
 
->[!TAB Pesquisador]
+>[!TAB Looker]
 
-### Comparação
+### Comparison
 
-Para a maioria das visualizações do Customer Journey Analytics, o Looker oferece experiências equivalentes. Consulte a tabela abaixo.
+For most Customer Journey Analytics visualizations, Looker offers equivalent experiences. See the table below.
 
-| Ícone | Visualização do Customer Journey Analytics | Visualização do Power BI Desktop |
+| Icon |Customer Journey Analytics visualization | Power BI Desktop visualization |
 | :---: | --- | ---|
-| ![GraphArea](/help/assets/icons/GraphArea.svg) | [Área](/help/analysis-workspace/visualizations/area.md) | [Gráfico de Área](https://cloud.google.com/looker/docs/area-options) |
-| ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) | [Barra](/help/analysis-workspace/visualizations/bar.md) | [Gráfico de Barras](https://cloud.google.com/looker/docs/bar-options) |
-| ![GraphBarVertical](/help/assets/icons/GraphBarVerticalStacked.svg) | [Barra empilhada](/help/analysis-workspace/visualizations/bar.md) | [Gráfico de Barras](https://cloud.google.com/looker/docs/bar-options) |
-| ![GraphBullet](/help/assets/icons/GraphBullet.svg)</p> | [Marcador](/help/analysis-workspace/visualizations/bullet-graph.md) | [Gráfico de marcadores](https://cloud.google.com/looker/docs/bullet-chart) |
-| ![TextNumbered](/help/assets/icons/TextNumbered.svg) | [Tabela de coorte](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) |  |
-| ![Combo](/help/assets/icons/ComboChart.svg) | [Combo](/help/analysis-workspace/visualizations/combo-charts.md) | [Personalizando visualizações](https://cloud.google.com/looker/docs/creating-visualizations#customizing_visualizations_with_chart_settings) |
-| ![GraphDonut](/help/assets/icons/GraphDonut.svg) | [Rosca](/help/analysis-workspace/visualizations/donut.md) | [Rosca](https://cloud.google.com/looker/docs/donut-multiples-options) |
-| ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) | [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | [Funil](https://cloud.google.com/looker/docs/funnel-options) |
-| ![GraphPathing](/help/assets/icons/GraphPathing.svg) | [Fluxo](/help/analysis-workspace/visualizations/c-flow/flow.md) | [Tecla De Aperto](https://cloud.google.com/looker/docs/sankey) |
-| ![ViewTable](/help/assets/icons/ViewTable.svg)</p> | [Tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | [Tabela](https://cloud.google.com/looker/docs/table-options) |
-| ![GraphHistogram](/help/assets/icons/Histogram.svg) | [Histograma](/help/analysis-workspace/visualizations/histogram.md) | |
-| ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) | [Barra horizontal](/help/analysis-workspace/visualizations/horizontal-bar.md) | [Gráfico de Barras](https://cloud.google.com/looker/docs/bar-options) |
-| ![GraphBarHorizontalStacked](/help/assets/icons/GraphBarHorizontalStacked.svg) | [Barra horizontal empilhada](/help/analysis-workspace/visualizations/horizontal-bar.md) | [Gráfico de Barras](https://cloud.google.com/looker/docs/bar-options) |
-| ![Branch3](/help/assets/icons/Branch3.svg) | [Tela da jornada](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) |  |
-| ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) | [Resumo das métricas principais](/help/analysis-workspace/visualizations/key-metric.md) |  |
-| ![GraphTrend](/help/assets/icons/GraphTrend.svg) | [Linha](/help/analysis-workspace/visualizations/line.md) | [Gráfico de Linhas](https://cloud.google.com/looker/docs/line-options) |
-| ![GraphScatter](/help/assets/icons/GraphScatter.svg) | [Dispersão](/help/analysis-workspace/visualizations/scatterplot.md) | [Gráfico de dispersão](https://cloud.google.com/looker/docs/scatter-options) |
-| ![PageRule](/help/assets/icons/PageRule.svg) | [Cabeçalho de seção](/help/analysis-workspace/visualizations/section-header.md) |  |
-| ![MoveUpDown](/help/assets/icons/MoveUpDown.svg) | [Alteração de resumo](/help/analysis-workspace/visualizations/summary-number-change.md) | [Valor Único](https://cloud.google.com/looker/docs/single-value-options) |
-| ![123](/help/assets/icons/123.svg)</p> | [Número do resumo](/help/analysis-workspace/visualizations/summary-number-change.md) | [Valor Único](https://cloud.google.com/looker/docs/single-value-options) |
-| ![Texto](/help/assets/icons/Text.svg) | [Texto](/help/analysis-workspace/visualizations/text.md) | [Valor Único](https://cloud.google.com/looker/docs/single-value-options) |
-| ![ModernGridView](/help/assets/icons/ModernGridView.svg) | [Mapas de árvore](/help/analysis-workspace/visualizations/treemap.md) | [Mapas de árvore](https://cloud.google.com/looker/docs/treemap) |
-| ![Tipo](/help/assets/icons/TwoDots.svg) | [Diagrama de Venn](/help/analysis-workspace/visualizations/venn.md) | [Diagrama de Venn](https://cloud.google.com/looker/docs/venn) |
+| ![GraphArea](/help/assets/icons/GraphArea.svg)| [Area](/help/analysis-workspace/visualizations/area.md)  | [Area Chart](https://cloud.google.com/looker/docs/area-options) |
+| ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg)| [Bar](/help/analysis-workspace/visualizations/bar.md)  | [Bar Chart](https://cloud.google.com/looker/docs/bar-options) |
+| ![GraphBarVertical](/help/assets/icons/GraphBarVerticalStacked.svg)| [Bar stacked](/help/analysis-workspace/visualizations/bar.md)  | [Bar Chart](https://cloud.google.com/looker/docs/bar-options) |
+| ![GraphBullet](/help/assets/icons/GraphBullet.svg)</p>| [Bullet](/help/analysis-workspace/visualizations/bullet-graph.md)  | [Bullet Graph](https://cloud.google.com/looker/docs/bullet-chart) |
+| ![TextNumbered](/help/assets/icons/TextNumbered.svg)| [Cohort table](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) |  |
+| ![Combo](/help/assets/icons/ComboChart.svg) | [Combo](/help/analysis-workspace/visualizations/combo-charts.md) | [Customizing visualizations](https://cloud.google.com/looker/docs/creating-visualizations#customizing_visualizations_with_chart_settings)|
+| ![GraphDonut](/help/assets/icons/GraphDonut.svg) | [Donut](/help/analysis-workspace/visualizations/donut.md)  | [Donut](https://cloud.google.com/looker/docs/donut-multiples-options)|
+| ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) |  [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | [Funnel](https://cloud.google.com/looker/docs/funnel-options) |
+| ![GraphPathing](/help/assets/icons/GraphPathing.svg) | [Flow](/help/analysis-workspace/visualizations/c-flow/flow.md) | [Sankey](https://cloud.google.com/looker/docs/sankey) |
+| ![ViewTable](/help/assets/icons/ViewTable.svg)</p> | [Freeform table](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | [Table](https://cloud.google.com/looker/docs/table-options) |
+| ![GraphHistogram](/help/assets/icons/Histogram.svg) | [Histogram](/help/analysis-workspace/visualizations/histogram.md) | |
+| ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) | [Horizontal bar](/help/analysis-workspace/visualizations/horizontal-bar.md)| [Bar Chart](https://cloud.google.com/looker/docs/bar-options) |
+| ![GraphBarHorizontalStacked](/help/assets/icons/GraphBarHorizontalStacked.svg) | [Horizontal bar stacked](/help/analysis-workspace/visualizations/horizontal-bar.md)| [Bar Chart](https://cloud.google.com/looker/docs/bar-options)  |
+| ![Branch3](/help/assets/icons/Branch3.svg) | [Journey canvas](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) |  |
+| ![KeyMetrics](/help/assets/icons/KeyMetrics.svg) | [Key metric summary](/help/analysis-workspace/visualizations/key-metric.md) |  |
+| ![GraphTrend](/help/assets/icons/GraphTrend.svg) | [Line](/help/analysis-workspace/visualizations/line.md)| [Line Chart](https://cloud.google.com/looker/docs/line-options) |
+| ![GraphScatter](/help/assets/icons/GraphScatter.svg) | [Scatter](/help/analysis-workspace/visualizations/scatterplot.md)  | [Scatterplot](https://cloud.google.com/looker/docs/scatter-options) |
+|  ![PageRule](/help/assets/icons/PageRule.svg) | [Section header](/help/analysis-workspace/visualizations/section-header.md) |  |
+| ![MoveUpDown](/help/assets/icons/MoveUpDown.svg)  | [Summary change](/help/analysis-workspace/visualizations/summary-number-change.md)| [Single Value](https://cloud.google.com/looker/docs/single-value-options)|
+| ![123](/help/assets/icons/123.svg)</p> |[Summary number](/help/analysis-workspace/visualizations/summary-number-change.md) | [Single Value](https://cloud.google.com/looker/docs/single-value-options)|
+| ![Text](/help/assets/icons/Text.svg) | [Text](/help/analysis-workspace/visualizations/text.md) | [Single Value](https://cloud.google.com/looker/docs/single-value-options)|
+| ![ModernGridView](/help/assets/icons/ModernGridView.svg) | [Treemap](/help/analysis-workspace/visualizations/treemap.md) | [Treemap](https://cloud.google.com/looker/docs/treemap) |
+| ![Type](/help/assets/icons/TwoDots.svg) | [Venn Diagram](/help/analysis-workspace/visualizations/venn.md)| [Venn Diagram](https://cloud.google.com/looker/docs/venn) |
 
 >[!TAB Jupyter Notebook]
 
-A comparação dos recursos de visualização de **matplotlib.pyplot**, a interface baseada em estado com matplotlib, está além da finalidade deste artigo. Veja os exemplos acima para inspiração e a documentação de [matplotlib.pyplot](https://matplotlib.org/3.5.3/api/_as_gen/matplotlib.pyplot.html).
+Comparing the visualization capabilities of **matplotlib.pyplot**, the state-based interface to matplotlib, is beyond the purpose of this article. See examples above for inspiration and the [matplotlib.pyplot](https://matplotlib.org/3.5.3/api/_as_gen/matplotlib.pyplot.html) documentation.
 
 
 >[!TAB RStudio]
 
-A comparação dos recursos de visualização do **ggplot2**, o pacote de visualização de dados no R, está além da finalidade deste artigo. Veja os exemplos acima para inspiração e a documentação do [ggplot2](https://ggplot2.tidyverse.org/articles/ggplot2.html).
+Comparing the visualization capabilities of **ggplot2**, the data visualization package in R, is beyond the purpose of this article. See examples above for inspiration and the [ggplot2](https://ggplot2.tidyverse.org/articles/ggplot2.html) documentation.
 
 >[!ENDTABS]
 
@@ -3090,47 +3093,49 @@ A comparação dos recursos de visualização do **ggplot2**, o pacote de visual
 +++
 
 
-## Avisos
+## Caveats
 
-Cada uma das ferramentas de BI compatíveis tem algumas limitações ao trabalhar com a extensão Customer Journey Analytics BI.
+Each of the supported BI tools has some caveats in working with the Customer Journey Analytics BI extension.
 
-+++ Ferramentas de BI
++++ BI tools
 
 >[!BEGINTABS]
 
->[!TAB Power BI Desktop]
+>[!TAB Power BI Desktop] 
 
-* A filtragem avançada de intervalo de datas do Power BI Desktop é exclusiva.  Para a data final, é necessário selecionar um após o dia em que deseja criar o relatório. Por exemplo, **[!UICONTROL está em ou após]** `1/1/2023` **[!UICONTROL e antes]** `1/2/2023`.
-* O padrão da Área de Trabalho do Power BI é **[!UICONTROL Importar]** quando você cria uma conexão. Use a **[!UICONTROL Consulta Direta]**.
-* O Power BI Desktop expõe as transformações de dados por meio do Power Query.  O Power Query funciona principalmente com conexões do tipo Importar, de modo que muitas transformações aplicadas, como funções de data ou sequência, exibem um erro informando que é necessário alternar para uma conexão do tipo Importar.  Se você precisar transformar dados no momento da consulta, use dimensões e métricas derivadas para que o Power BI não precise fazer as transformações por si só.
-* O Power BI Desktop não entende como lidar com colunas do tipo date-time, portanto, as dimensões **[!UICONTROL daterange *X *]**, como&#x200B;**[!UICONTROL daterangehour &#x200B;]**&#x200B;e&#x200B;**[!UICONTROL daterangeminute &#x200B;]**, não são suportadas.
-* O Power BI Desktop, por padrão, tenta fazer várias conexões usando mais sessões do Serviço de consulta.  Acesse as configurações do Power BI para o seu projeto e desative as consultas paralelas.
-* O Power BI Desktop faz toda a classificação e limitação no lado do cliente. O Power BI Desktop também tem diferentes semânticas para a filtragem *X* superior que inclui valores vinculados. Portanto, não é possível criar a mesma classificação e limitação que você pode criar no Analysis Workspace.
-* Versões anteriores da versão de outubro de 2024 do Power BI Desktop quebram as fontes de dados PostgreSQL. Certifique-se de usar a versão mencionada neste artigo.
+* Power BI Desktop Advanced date range filtering is exclusive.  For your end date, you need to select one past the day you want to report on. For example, **[!UICONTROL is on or after]** `1/1/2023` **[!UICONTROL and before]** `1/2/2023`.
+* Power BI Desktop defaults to **[!UICONTROL Import]** when you create a connection. Please ensure you use **[!UICONTROL Direct Query]**.
+* Power BI Desktop exposes data transformations through Power Query.  Power Query primarily works with Import type connections so a many transformations that you apply like date or string functions throw an error saying you need to switch to an Import type connection.  If you need to transform data at query time, you should use derived dimensions and metrics so Power BI doesn't need to do the transforms itself.
+* Power BI Desktop does not understand how to handle date-time type columns so the **[!UICONTROL daterange*X*]** dimensions like **[!UICONTROL daterangehour]** and **[!UICONTROL daterangeminute]** are not supported.
+* Power BI Desktop by default tries to make multiple connections using up more Query Service sessions.  Go in to the Power BI settings for your project and disable parallel queries.
+* Power BI Desktop does all the sorting and limiting client-side. Power BI Desktop also has different semantics for top *X* filtering that includes tied values. So, you cannot create the same sorting and limiting as you can do in Analysis Workspace.
+* Earlier versions of the Power BI Desktop October 2024 release break PostgreSQL data sources. Ensure you use the version mentioned in this article.
 
 >[!TAB Tableau Desktop]
 
-* A filtragem de Intervalo de Datas do Tableau Desktop é exclusiva. Para a data final, é necessário selecionar um após o dia em que deseja criar o relatório.
-* Por padrão, quando você adiciona uma dimensão de data ou hora como **[!UICONTROL Daterangemonth]** às linhas de uma planilha, o Tableau Desktop envolve o campo em uma função **[!UICONTROL YEAR()]**.  Para obter o que deseja, selecione essa dimensão e, no menu suspenso, selecione a função de data que deseja usar.  Por exemplo, altere **[!UICONTROL Year]** para **[!UICONTROL Month]** quando estiver tentando usar **[!UICONTROL Daterangemonth]**.
-* Limitar os resultados ao *X* Superior não é óbvio no Tableau Desktop. É possível limitar os resultados explicitamente ou usando um campo calculado e a função **[!UICONTROL INDEX()]**.  Adicionar um filtro *X* Superior a uma dimensão gera um SQL complexo usando uma junção interna que não tem suporte.
+* Tableau Desktop Range of Dates filtering is exclusive. For your end date, you need to select one past the day you want to report on.
+* By default, when you add a date or date-time dimension like **[!UICONTROL Daterangemonth]** to the rows of a sheet, Tableau Desktop wraps the field in a **[!UICONTROL YEAR()]** function.  To get what you want, you need to select that dimension and from the drop-down menu select the date function you want to use.  For example, change **[!UICONTROL Year]** to **[!UICONTROL Month]** when you are trying to use **[!UICONTROL Daterangemonth]**.
+* Limiting results to the Top *X* is not obvious in Tableau Desktop. You can limit the results explicitly or using a calculated-field and the **[!UICONTROL INDEX()]** function.  Adding a Top *X* filter to a dimension generates complex SQL using an inner-join that is not supported.
 
->[!TAB Pesquisador]
+>[!TAB Looker]
 
-* O Looker tem um número máximo de conexões por configuração de nó que deve estar entre 5 e 100.  Não é possível definir esse valor como 1.  Essa configuração implica que uma conexão de Pesquisador sempre use no mínimo 5 das sessões de Serviço de consulta disponíveis.
-* O Looker permite criar um projeto com uma visualização baseada em uma visualização de dados do Customer Journey Analytics. Em seguida, o Looker cria um modelo com base nas dimensões e métricas, disponíveis na visualização de dados, usando o LookerML.  Esta Visualização de projeto não é atualizada automaticamente para corresponder à origem.  Se você fizer alterações ou adições às dimensões, métricas, métricas calculadas ou segmentos da Visualização de dados do CJA, essas alterações não serão exibidas automaticamente no Looker.  Você precisa atualizar manualmente a Visão do Projeto ou criar um novo Projeto.
-* A experiência do usuário do pesquisador em campos de data ou hora como **[!UICONTROL Data do intervalo de datas]** ou **[!UICONTROL Data do intervalo de datas]** é confusa.
-* O intervalo de datas do observador é exclusivo em vez de inclusivo.  O **[!UICONTROL até (antes)]** está em cinza, portanto, você pode perder esse aspecto.  Para o dia final, é necessário selecionar um após o dia em que deseja criar o relatório.
-* O Looker não trata automaticamente suas métricas como métricas.  Quando você seleciona uma métrica, por padrão, o Looker tenta tratar a métrica como uma dimensão na consulta.  Para tratar uma métrica como uma métrica, é necessário criar um campo personalizado conforme ilustrado acima. Como atalho, você pode selecionar **&#x200B;**, selecionar **[!UICONTROL Agregação]** e depois selecionar **[!UICONTROL Soma]**.
+* Looker has a maximum number of connections per node setting that is required to be between 5-100.  You cannot set this value to 1.  This setting implies that a Looker connection always uses at a minimum 5 of the available Query Service sessions.
+* Looker lets you create a project with a view based on a Customer Journey Analytics Data view. Looker then creates a model based on the dimensions and metrics, available in the Data view, using LookerML.  This Project View does not automatically update to match the source.  If you make changes or additions to the CJA Data View dimensions, metrics, calculated-metrics, or segments, then these changes do not automatically show up in Looker.  You have to manually update the Project View or create a new Project.
+* Looker's user-experience on date or date-time fields like **[!UICONTROL Daterange Date]** or **[!UICONTROL Daterangeday Date]** is confusing. 
+* Looker's date range is exclusive instead of inclusive.  The **[!UICONTROL until (before)]** is in gray so you may miss that aspect.  For your end day, you need to select one past the day you want to report on.
+* Looker doesn't automatically treat your metrics as metrics.  When you select a metric, by default Looker tries to treat the metric as a dimension in the query.  To treat a metrics as a metric, you need to create a custom field as illustrated above. As a shortcut you can select **[!UICONTROL ⋮]**, select **[!UICONTROL Aggregate]**, and then select **[!UICONTROL Sum]**. 
 
 >[!TAB Jupyter Notebook]
 
-* A principal advertência do Jupyter Notebook é que a ferramenta não faz uma interface de usuário de arrastar e soltar como outras ferramentas de BI. Você pode criar bons visuais, mas precisa escrever código para conseguir isso.
+* The main caveat for Jupyter Notebook is that the tool does not a drag-and-drop user interface like other BI tools. You can create good visuals, but you have to write code to accomplish this.  
 
 >[!TAB RStudio]
 
-* A implantação do R funciona com um esquema simples, de modo que a opção **[!UICONTROL FLATTEN]** é necessária.
-* O principal aviso do RStudio é que a ferramenta não faz uma interface de usuário de arrastar e soltar como outras ferramentas de BI. Você pode criar bons visuais, mas precisa escrever código para conseguir isso.
+* R dplyr works with a flat schema so the **[!UICONTROL FLATTEN]** option is required.
+* The main caveat for RStudio is that the tool does not a drag-and-drop user interface like other BI tools. You can create good visuals, but you have to write code to accomplish this.  
 
 >[!ENDTABS]
 
 +++
+
+-->
