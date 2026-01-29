@@ -6,10 +6,10 @@ feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
 badgePremium: label="Beta" type="Informative"
-source-git-commit: 3479227eb703583255d40de3d07d071ad2f89950
+source-git-commit: 32997d0fd9801099a75287f63197d3b4c2ba81ef
 workflow-type: tm+mt
-source-wordcount: '894'
-ht-degree: 3%
+source-wordcount: '938'
+ht-degree: 2%
 
 ---
 
@@ -136,7 +136,13 @@ Para habilitar a compilação, na seção de conjunto de dados do evento da caix
 
 1. Selecione uma janela de retrospectiva no menu suspenso **[!UICONTROL Janela de retrospectiva]**. As opções disponíveis dependem do pacote do Customer Journey Analytics ao qual você está habilitado.
 
-Depois de salvar uma conexão, o processo de compilação dos conjuntos de dados ativados para compilação é iniciado quando a assimilação de dados desses conjuntos de dados é iniciada
+Depois de salvar uma conexão, o processo de compilação dos conjuntos de dados ativados para compilação é iniciado quando a assimilação de dados desses conjuntos de dados é iniciada.
+
+>[!CAUTION]
+>
+>Para conjuntos de dados habilitados para compilação na interface de Conexões, o status de preenchimento retroativo é imediata e incorretamente relatado como ![Status verde](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _preenchimentos retroativos concluídos]**para o número de preenchimentos retroativos concluídos. Use outras maneiras de verificar se os dados do conjunto de dados compilado são preenchidos retroativamente.
+>
+
 
 ## Limitações
 
