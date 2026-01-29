@@ -195,7 +195,7 @@ GROUP BY 1
       1. Selecione **[!UICONTROL Decimais]** no menu suspenso **[!UICONTROL Formatar]** e verifique se `0` está inserido em **[!UICONTROL Decimais]**.
          ![Campo de métrica personalizado do pesquisador](../assets/uc5-looker-customfield.png)
       1. Selecione **[!UICONTROL Salvar]**.
-1. Selecione **** (**[!UICONTROL Decrescente, Ordem de classificação: 1]**) na coluna **[!UICONTROL Receita de compra]**.
+1. Selecione **&#x200B;**&#x200B;(**[!UICONTROL Decrescente, Ordem de classificação: 1]**) na coluna **[!UICONTROL Receita de compra]**.
 1. Selecione **[!UICONTROL Executar]**.
 1. Selecione **[!UICONTROL ‣ Visualização]**.
 
@@ -245,7 +245,7 @@ A consulta é executada pela extensão BI, conforme definido no Jupyter Notebook
 
 >[!TAB RStudio]
 
-1. Insira as seguintes instruções entre ` ```{r} ` e ` ``` ` em uma nova parte.
+1. Insira as seguintes instruções entre ` ` ``{r} ` e ` `` ` ` em uma nova parte.
 
    ```R
    ## Dimension 1 Sorted
