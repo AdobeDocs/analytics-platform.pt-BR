@@ -5,14 +5,22 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: a04c74ab-606e-45a9-a3e4-0d476c8d2426
-source-git-commit: d117ba255151f730e0b5e4958ee56f5ffc88ade9
+source-git-commit: 9ace0679796c3a813b1fbd97c62c20faf64db211
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '479'
 ht-degree: 7%
 
 ---
 
 # Solicitar compilação
+
+
+>[!IMPORTANT]
+>
+>A solicitação de compilação por meio do Adobe não é mais necessária e esse método está obsoleto. [Habilitar a compilação na interface do usuário de Conexões](use-stitching-ui.md).
+>
+
+
 
 Assim que sua organização atender a todos os [pré-requisitos](overview.md#prerequisites) e entender as limitações comuns de [limitações](overview.md#limitations) e do método de compilação específico ([baseado em campo](fbs.md#limitations) e [baseado em gráfico](gbs.md#limitations)), você poderá seguir essas etapas para solicitar e começar a usar a compilação no Customer Journey Analytics.
 
@@ -54,25 +62,3 @@ O pacote do Customer Journey Analytics ao qual você está habilitado determina 
 <!-- To do: Paragraph on backfill once product and marketing determine the best way forward. -->
 
 Depois que a visualização de dados for configurada, você poderá executar sua análise de relatórios do Customer Journey Analytics em canais e dispositivos.
-
-<!-- Uncomment once stitching UI is available (for limited testing)..
-
-### Do It Yourself
-
-|Positive|[!BADGE New Feature]{type=Positive before-title="false"}|
-
-{{release-limited-testing-section}}
-
-Alternatively, you can set up and use stitching through the Customer Journey Analytics user interface:
-
-1. Go to the [Create and manage stitched datasets](stitching-ui.md) and follow steps to rekey your dataset.
-
-2. [Create a connection](/help/connections/create-connection.md) in Customer Journey Analytics using the newly generated dataset and any other datasets that you want to include. Choose the correct person ID for each dataset.
-
-3. [Create a connection](/help/connections/create-connection.md) in Customer Journey Analytics using the newly generated dataset and any other datasets that you want to include. Choose the correct person ID for each dataset.
-   
-4. [Create a data view](/help/data-views/create-dataview.md) based on the connection.
-
-Once the data view is set up, the cross-channel analysis in Customer Journey Analytics is just like any other analysis in Customer Journey Analytics, except now the data operates across channels and devices.
-
--->

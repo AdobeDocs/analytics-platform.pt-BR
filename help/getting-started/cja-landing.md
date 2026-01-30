@@ -4,10 +4,10 @@ description: Página de destino do Customer Journey Analytics.
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: b8c9acfe8fef4543557f87c81079babdc8097b64
+source-git-commit: 3afb60a60b7fd1acb414244dffdb6a6493792f9c
 workflow-type: tm+mt
-source-wordcount: '620'
-ht-degree: 91%
+source-wordcount: '628'
+ht-degree: 79%
 
 ---
 
@@ -29,7 +29,7 @@ Agora você pode configurar e ativar a compilação em conjuntos de dados de eve
 
 [![imagem](assets/learn-more-button.svg)](/help/stitching/use-stitching-ui.md)
 
-*_Você deve ter pelo menos o pacote Select para habilitar a compilação._*
+*Você deve ter pelo menos o pacote Select para habilitar a compilação.*
 
 
 >[!TAB Análise de público-alvo]
@@ -45,7 +45,7 @@ O relatório em tempo real no Customer Journey Analytics exibe e atualiza dados 
 
 [![imagem](assets/learn-more-button.svg)](/help/components/real-time/real-time.md)
 
-*_Você precisa ter o pacote Ultimate para usar os relatórios em tempo real._*
+*Você precisa ter o pacote Ultimate para usar os relatórios em tempo real.*
 
 
 >[!TAB B2B Edition]
@@ -67,6 +67,7 @@ O Adobe Content Analytics permite investigar de maneira rápida e fácil grandes
 
 Comece lendo o material nos links abaixo para familiarizar-se com os recursos e as funcionalidades do Customer Journey Analytics.
 
+
 <table style="table-layout:fixed">
   <tr style="border: 0;">
     <td>
@@ -75,16 +76,20 @@ Comece lendo o material nos links abaixo para familiarizar-se com os recursos e 
     </td>
     <td>
     <a href="/help/data-ingestion/data-ingestion.md"><img src="./assets/data-ingestion.png"></a>
-    <div><strong>Assimilar e usar dados</strong><br/>Conheça as opções disponíveis para assimilar dados na Experience Platform e usá-los para criar análises e relatórios no Customer Journey Analytics.</div>
+    <div><strong>Assimilar e usar dados</strong><br/>Saiba mais sobre as opções que você tem para assimilar dados na Experience Platform e usá-los para análise e relatórios.</div>
     </td>
     <td>
     <a href="/help/guided-analysis/overview.md"><img src="./assets/product-analytics.png"></a>
-    <div><strong>Análise guiada</strong><br/>Saiba como usar fluxos de trabalho para obter dados e insights sobre a experiência de produto do cliente. Product Analytics através da análise guiada…
+    <div><strong>Análise guiada</strong><br/>Saiba como usar fluxos de trabalho para obter dados e insights sobre a experiência de produto do cliente. Product Analytics por meio de análise guiada.
     </div>
     </td>
     <td>
     <a href="/help/analysis-workspace/home.md"><img src="./assets/workspace.png"></a>
     <div><strong>Analysis Workspace</strong><br/>Use o Analysis Workspace para executar análises básicas e avançadas, como atribuição, diagramas de fluxo e fallout e detalhamentos de dimensões.</div>
+    </td>
+    <td>
+    <a href="/help/content-analytics/content-analytics.md"><img src="./assets/content-analytics.png"></a>
+    <div><strong>Content Analytics</strong><br/>Entenda como o conteúdo, ao lado do comportamento, afeta os indicadores-chave de desempenho. Obtenha insights mais profundos sobre os dados de jornada do cliente.</div>
     </td>
   </tr>
   <tr style="border: 0;">
@@ -92,6 +97,7 @@ Comece lendo o material nos links abaixo para familiarizar-se com os recursos e 
     <td align="center"><a href="/help/data-ingestion/data-ingestion.md"><img src="./assets/learn-more-button.svg"></a></td>
     <td align="center"><a href="/help/guided-analysis/overview.md"><img src="./assets/learn-more-button.svg"></a></td>
     <td align="center"><a href="/help/analysis-workspace/home.md"><img src="./assets/learn-more-button.svg"></a></td>
+    <td align="center"><a href="/help/content-analytics/content-analytics.md"><img src="./assets/learn-more-button.svg"></a></td>
     </tr>
 </table>
 
@@ -104,7 +110,7 @@ Veja como o Customer Journey Analytics se compara ao Adobe Analytics. Além diss
   <tr style="border: 0;">
     <td>
       <img src="./assets/analytics.svg" width="35px"><br/>
-      <strong>Comparar com o Adobe Analytics</strong><br/><a href="/help/getting-started/aa-vs-cja/overview.md">Visão geral</a> - <a href="/help/getting-started/aa-to-cja.md">Evolução</a> - <a href="/help/getting-started/aa-vs-cja/aa-data-in-cja.md">Usar dados do Adobe Analytics</a> - <a href="/help/getting-started/aa-vs-cja/cja-aa.md">Suporte de recursos</a> - <a href="/help/getting-started/aa-vs-cja/terminology.md">Terminologia</a> - <a href="/help/getting-started/aa-vs-cja/data-processing-comparisons.md">Processamento de dados</a> - <a href="/help/getting-started/cja-b2b-edition.md">Customer Journey Analytics B2B Edition</a>
+      <strong>Comparar com o Adobe Analytics</strong><br/><a href="/help/getting-started/aa-vs-cja/overview.md">Visão geral</a> - <a href="/help/getting-started/aa-to-cja.md">Evolução</a> - <a href="/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md">Atualização</a> - <a href="/help/getting-started/aa-vs-cja/aa-data-in-cja.md">Usar dados do Adobe Analytics</a> - <a href="/help/getting-started/aa-vs-cja/cja-aa.md">Suporte a recursos</a> - <a href="/help/getting-started/aa-vs-cja/terminology.md">Terminologia</a> - <a href="/help/getting-started/aa-vs-cja/data-processing-comparisons.md">Processamento de dados</a>
     </td>
     <td>
       <img src="./assets/connections.svg" width="35px"><br/>
@@ -121,13 +127,13 @@ Veja como o Customer Journey Analytics se compara ao Adobe Analytics. Além diss
       <img src="./assets/workspace.svg" width="35px"><br/>
       <strong>Projetos do Workspace</strong><br/><a href="/help/analysis-workspace/home.md">Analysis Workspace</a> - <a href="/help/analysis-workspace/perform-basic-analysis.md">Análise básica</a> e <a href="/help/analysis-workspace/perform-adv-analysis.md">avançada</a> - <a href="/help/analysis-workspace/build-workspace-project/freeform-overview.md">Projetos</a> - <a href="/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md">Visualizações</a> -<a href="/help/analysis-workspace/c-panels/freeform-panel.md">Painéis</a>
     </td>
-    <td>
-      <img src="./assets/guided-analysis.svg" width="35px"><br/>
-      <strong>Análise guiada</strong><br/><a href="/help/guided-analysis/overview.md">Visão geral</a> – <a href="/help/guided-analysis/types/active-growth.md">Crescimento do usuário</a> – <a href="/help/guided-analysis/types/trends.md">Tendências</a> – <a href="/help/guided-analysis/types/funnel.md">Funil</a> – <a href="/help/guided-analysis/types/release-impact.md">Impacto</a> – <a href="/help/guided-analysis/industry-use-cases.md">Casos de uso do setor</a>
-    </td>
-    <td>
+        <td>
       <img src="./assets/share.svg" width="35px"><br/>
       <strong>Compartilhar, exportar, integrar</strong><br/><a href="/help/analysis-workspace/curate-share/share-projects.md">Projetos</a> – <a href="/help/mobile-app/home.md">Painéis do Analytics</a> – <a href="/help/report-builder/rb-overview.md">Report Builder</a> – <a href="/help/components/exports/manage-exports.md">Exportação na nuvem</a> – <a href="/help/integrations/overview.md">Integrações</a>
+    </td>
+    <td>
+      <img src="./assets/guided-analysis.svg" width="35px"><br/>
+      <strong>E muito mais...</strong><br/><a href="/help/guided-analysis/overview.md">Análise Guiada</a> - <a href="/help/content-analytics/content-analytics.md">Content Analytics</a> - <a href="/help/getting-started/cja-b2b-edition.md">B2B edition</a> 
     </td>
   </tr>
 </table>
@@ -136,7 +142,7 @@ Veja como o Customer Journey Analytics se compara ao Adobe Analytics. Além diss
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td><strong>Customer Journey Analytics</strong><br/>
-<a href="https://experienceleague.adobe.com/pt-br/docs/customer-journey-analytics-learn/tutorials/overview" target="_blank">Tutoriais</a> - <a href="https://helpx.adobe.com/br/legal/product-descriptions/customer-journey-analytics.html" target="_blank">Descrição de produto do Customer Journey Analytics</a> - <a href="https://helpx.adobe.com/br/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html" target="_blank">Descrição de produto do Adobe Analytics (complemento do Customer Journey Analytics)</a> - <a href="https://helpx.adobe.com/br/legal/product-descriptions/customer-journey-analytics-b2b.html" target="_blank">Descrição de produto do Customer Journey Analytics B2B Edition</a> - <a href="https://developer.adobe.com/cja-apis/docs/" target="_blank">APIs do Customer Journey Analytics</a> - <a href="/help/ai-assistant.md">Assistente de IA</a>
+<a href="https://experienceleague.adobe.com/pt-br/docs/customer-journey-analytics-learn/tutorials/overview" target="_blank">Tutoriais</a> - <a href="https://helpx.adobe.com/br/legal/product-descriptions/customer-journey-analytics.html" target="_blank">Descrição de produto do Customer Journey Analytics</a> - <a href="https://helpx.adobe.com/br/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html" target="_blank">Descrição de produto do Adobe Analytics (complemento do Customer Journey Analytics)</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics-b2b.html" target="_blank">Descrição de produto do Customer Journey Analytics B2B Edition</a> - <a href="https://developer.adobe.com/cja-apis/docs/" target="_blank">APIs do Customer Journey Analytics</a> - <a href="/help/ai-assistant.md">Assistente de IA</a>
 </td>
 <td><strong>Ingestão de dados</strong><br/><a href="/help/data-ingestion/data-ingestion.md">Visão geral</a> - <a href="/help/data-ingestion/analytics.md">Analytics</a> - <a href="/help/data-ingestion/aepwebsdk.md">SDK da Web</a> - <a href="/help/data-ingestion/aepmobilesdk.md">SDK móvel</a> - <a href="/help/data-ingestion/batch.md">Em lote</a> - <a href="/help/data-ingestion/streaming.md">Transmissão</a> - <a href="/help/data-ingestion/sources.md">Origens</a> - <a href="/help/data-ingestion/serverapi.md">API do servidor</a>
 </td>
