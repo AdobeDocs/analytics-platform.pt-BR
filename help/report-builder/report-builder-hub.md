@@ -1,15 +1,15 @@
 ---
-title: O que é o Hub do Report Builder no Customer Journey Analytics
-description: Descreve os componentes do Hub do Report Builder
+title: O Hub do Report Builder
+description: Saiba mais sobre o hub do Report Builder.
 role: User
 feature: Report Builder
 type: Documentation
 exl-id: 119bd0b5-0d07-407f-b6e9-ef43352bad31
 solution: Customer Journey Analytics
-source-git-commit: 065cf61d80ceb3c921ea666ba299e56fb044335b
+source-git-commit: 1e19e0c79617d27c7039b695c70ca5026fcaf357
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 27%
+source-wordcount: '534'
+ht-degree: 25%
 
 ---
 
@@ -39,7 +39,7 @@ Use o painel **[!UICONTROL Comandos]** para acessar comandos compatíveis com as
 | ![Editar](/help/assets/icons/Edit.svg) **[!UICONTROL Editar bloco de dados]** | O intervalo de célula ou células selecionado faz parte de apenas um bloco de dados. | Use para editar um bloco de dados. |
 | ![Atualizar](/help/assets/icons/Refresh.svg) **[!UICONTROL Atualizar bloco de dados]** | A seleção contém pelo menos um bloco de dados. O comando atualiza somente os blocos de dados na seleção. | Use para atualizar um ou mais blocos de dados. |
 | ![DocumentRefresh](/help/assets/icons/DocumentRefresh.svg) **[!UICONTROL Atualizar todos os blocos de dados]** | A pasta de trabalho contém um ou mais blocos de dados. | Usar para atualizar todos os blocos de dados na pasta de trabalho |
-| ![Enviar](/help/assets/icons/Send.svg) **[!UICONTROL Enviar pasta de trabalho]** | A pasta de trabalho contém um ou mais blocos de dados. | Use para enviar a pasta de trabalho como um arquivo por email. |
+| ![Enviar](/help/assets/icons/Send.svg) **[!UICONTROL Enviar pasta de trabalho]** | A pasta de trabalho contém um ou mais blocos de dados. | Use para [enviar a pasta de trabalho como um arquivo por email](schedule-reportbuilder.md). |
 | ![Copiar](/help/assets/icons/Copy.svg) **[!UICONTROL Copiar bloco de dados]** | A célula ou o intervalo de células selecionado faz parte de um ou mais blocos de dados. | Use para copiar um bloco de dados. |
 | ![Recortar](/help/assets/icons/Cut.svg) **[!UICONTROL Recortar bloco de dados]** | A célula ou o intervalo de células selecionado faz parte de um ou mais blocos de dados. | Use para recortar um bloco de dados. |
 | ![Excluir](/help/assets/icons/Delete.svg) **[!UICONTROL Excluir bloco de dados]** | O intervalo de célula ou células selecionado faz parte de apenas um bloco de dados. | Usar para excluir um bloco de dados |
@@ -70,6 +70,6 @@ O link **Segmentos** exibe uma lista de resumo dos segmentos usados pelos blocos
 >[!MORELIKETHIS]
 >
 >[Selecione uma visualização de dados](select-data-view.md)
->&#x200B;>[Selecionar um intervalo de datas](select-date-range.md)
->&#x200B;>[Trabalhar com filtros](work-with-filters.md)
+>[Selecionar um intervalo de datas](select-date-range.md)
+>[Trabalhar com filtros](work-with-filters.md)
 >

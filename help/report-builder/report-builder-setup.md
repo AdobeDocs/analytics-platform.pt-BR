@@ -1,15 +1,15 @@
 ---
-title: Como configurar o Report Builder no Customer Journey Analytics
-description: Descreve como configurar o Report Builder no Customer Journey Analytics
+title: Configurar o Report Builder
+description: Descreve como configurar o Report Builder no Customer Journey Analytics.
 role: User
 feature: Report Builder
 type: Documentation
 exl-id: 99aedc28-05d5-4fc1-8c32-6e5d1d3b0f84
 solution: Customer Journey Analytics
-source-git-commit: 065cf61d80ceb3c921ea666ba299e56fb044335b
+source-git-commit: 31d3b40ad7a081aefa4297d7f4a3b986711ead03
 workflow-type: tm+mt
-source-wordcount: '529'
-ht-degree: 26%
+source-wordcount: '523'
+ht-degree: 25%
 
 ---
 

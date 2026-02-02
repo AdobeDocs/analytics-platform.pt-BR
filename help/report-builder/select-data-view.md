@@ -1,14 +1,14 @@
 ---
-title: Como selecionar uma visualização de dados no Report Builder
-description: Descreve como selecionar visualizações de dados no Adobe Report Builder
+title: Selecionar Uma Visualização De Dados No Report Builder
+description: Saiba como selecionar uma visualização de dados no Report Builder.
 role: User
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: bf765144-34f8-465b-b06d-53e4ca91014a
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 31d3b40ad7a081aefa4297d7f4a3b986711ead03
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '381'
 ht-degree: 1%
 
 ---

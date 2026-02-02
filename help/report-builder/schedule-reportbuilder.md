@@ -1,15 +1,15 @@
 ---
-title: Como programar pastas de trabalho usando o Report Builder no Customer Journey Analytics
-description: Saiba como usar o recurso de agendamento no Report Builder
+title: Agendar pastas de trabalho usando o Report Builder
+description: Saiba como usar o recurso de agendamento no Report Builder.
 role: User
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 7429d8f9-1e8f-4fbd-8b04-cbe7adbff3e2
-source-git-commit: 9505f21748b3d94b2398f898e5399d095ccec260
+source-git-commit: 31d3b40ad7a081aefa4297d7f4a3b986711ead03
 workflow-type: tm+mt
-source-wordcount: '864'
-ht-degree: 15%
+source-wordcount: '858'
+ht-degree: 14%
 
 ---
 

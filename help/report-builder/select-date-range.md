@@ -1,15 +1,15 @@
 ---
-title: Como selecionar um intervalo de datas no Report Builder no Customer Journey Analytics
-description: Descreve como usar o calendário, as datas do acumulado e as expressões personalizadas no Report Builder para Customer Journey Analytics
+title: Selecionar Um Intervalo De Dados No Report Builder
+description: Saiba como selecionar um intervalo de datas no Report Builder.
 role: User
 feature: Report Builder
 type: Documentation
 exl-id: 7252214f-a7d6-451b-99c9-d39e8e47120b
 solution: Customer Journey Analytics
-source-git-commit: 9794779894fbecb433c16d108c555c5f81a4b491
+source-git-commit: 31d3b40ad7a081aefa4297d7f4a3b986711ead03
 workflow-type: tm+mt
-source-wordcount: '867'
-ht-degree: 49%
+source-wordcount: '853'
+ht-degree: 50%
 
 ---
 

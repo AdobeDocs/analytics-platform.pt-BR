@@ -1,14 +1,14 @@
 ---
-title: Como gerenciar pastas de trabalho programadas no Report Builder no Adobe Analytics
-description: Saiba como gerenciar pastas de trabalho agendadas no Report Builder para proteger destinos
+title: Gerenciar Pastas De Trabalho Agendadas No Report Builder
+description: Saiba como gerenciar pastas de trabalho agendadas no Report Builder.
 role: User, Admin
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 0a0427d9-223e-410b-a8ef-8601390d88aa
-source-git-commit: 755a5223deb0845079ea98a7371a2f8acb69ea4b
+source-git-commit: 31d3b40ad7a081aefa4297d7f4a3b986711ead03
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '326'
 ht-degree: 3%
 
 ---

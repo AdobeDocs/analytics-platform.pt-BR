@@ -1,15 +1,15 @@
 ---
-title: O que são os rótulos restritos no Report Builder
-description: Descreve os rótulos restritos no Report Builder
+title: Rótulos Restritos No Report Builder
+description: Saiba mais sobre rótulos restritos no Report Builder.
 role: User
 feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 99c3c66e-928e-4363-a6a9-bbcab792337a
-source-git-commit: 22b06eaf9f224188699aa241de1d1daad8a14619
+source-git-commit: 31d3b40ad7a081aefa4297d7f4a3b986711ead03
 workflow-type: tm+mt
-source-wordcount: '316'
-ht-degree: 44%
+source-wordcount: '315'
+ht-degree: 40%
 
 ---
 
@@ -17,13 +17,13 @@ ht-degree: 44%
 
 Geralmente, as configurações relacionadas à governança de dados no Customer Journey Analytics são herdadas do Experience Platform. A integração entre o Customer Journey Analytics e a Governança de dados da Experience Platform permite rotular dados sigilosos do Customer Journey Analytics e aplicar políticas de privacidade.
 
-Os rótulos e políticas de privacidade criados em conjuntos de dados consumidos pelo Experience Platform podem ser exibidos no fluxo de trabalho de visualizações de dados do Customer Journey Analytics. Esses rótulos interrompem ou avisam os usuários que criam métricas e dimensões a partir de campos sigilosos. Para obter informações sobre conjuntos de dados, consulte [Visão geral sobre conjuntos de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/catalog/datasets/overview)
+Os rótulos e políticas de privacidade criados em conjuntos de dados consumidos pelo Experience Platform podem ser exibidos no fluxo de trabalho de visualizações de dados do Customer Journey Analytics. Esses rótulos interrompem ou avisam os usuários que criam métricas e dimensões a partir de campos sigilosos. Para obter informações sobre conjuntos de dados, consulte [Visão geral sobre conjuntos de dados](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview)
 
 Além disso, quando dados são exportados do Customer Journey Analytics (por meio de relatórios, exportação, API etc.), avisos ou rótulos são adicionados para informar aos usuários que um relatório contém informações sigilosas que precisam ser tratadas de uma maneira específica.
 
 Essa integração permite gerenciar a conformidade. Os administradores de dados da sua organização podem definir políticas de restrição de uso. Como resultado, os usuários do Customer Journey Analytics podem usar os dados com mais confiança, sabendo que estão em conformidade com as políticas definidas pelos administradores de dados.
 
-Para obter mais informações, consulte [Customer Journey Analytics e governança de dados](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-privacy/privacy-overview)
+Para obter mais informações, consulte [Customer Journey Analytics e governança de dados](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-privacy/privacy-overview)
 
 ## Exibir dados restritos
 
@@ -34,7 +34,7 @@ Duas políticas definidas pela Adobe são exibidas no Customer Journey Analytics
 
 Os componentes sujeitos a essas políticas estão esmaecidos e têm um ícone ![InfoOutline](/help/assets/icons/InfoOutline.svg). Quando você passa o mouse sobre o ícone de informações, uma nota é exibida para indicar o seguinte: **[!UICONTROL Foram aplicadas políticas a este campo que proíbem o uso destes dados]**.
 
-Para obter mais informações, consulte [Rótulos e políticas](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-dataviews/data-governance).
+Para obter mais informações, consulte [Rótulos e políticas](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-governance).
 
 
 ![A nota de política indicando uso proibido de dados.](assets/restricted-label.png){zoomable="yes"}

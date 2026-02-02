@@ -1,15 +1,15 @@
 ---
-title: Como criar um bloco de dados usando o Report Builder no Customer Journey Analytics
-description: Descreve como criar um bloco de dados.
+title: Criar Um Bloco De Dados No Report Builder
+description: Saiba como criar um bloco de dados.
 role: User
 feature: Report Builder
 type: Documentation
 exl-id: 46382621-d5e1-41d6-865c-782ec28a21fa
 solution: Customer Journey Analytics
-source-git-commit: 7d3300336a955facc230f335d1452096700ea98b
+source-git-commit: 31d3b40ad7a081aefa4297d7f4a3b986711ead03
 workflow-type: tm+mt
-source-wordcount: '777'
-ht-degree: 24%
+source-wordcount: '771'
+ht-degree: 23%
 
 ---
 
@@ -114,7 +114,7 @@ Para criar o bloco de dados, selecione componentes do relatório e personalize o
 >[!MORELIKETHIS]
 >
 >[Selecione uma visualização de dados](select-data-view.md)
->&#x200B;>[Selecionar um intervalo de datas](select-date-range.md)
->&#x200B;>[Filtrar dimensões](filter-dimensions.md)
->&#x200B;>[Trabalhar com segmentos](work-with-filters.md)
+>[Selecionar um intervalo de datas](select-date-range.md)
+>[Filtrar dimensões](filter-dimensions.md)
+>[Trabalhar com segmentos](work-with-filters.md)
 >
