@@ -1,14 +1,14 @@
 ---
 title: Compilação em campo
-description: Explicação do conceito e funcionamento da compilação em campo
+description: Explica o conceito e o funcionamento da compilação em campo.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: e5cb55e7-aed0-4598-a727-72e6488f5aa8
-source-git-commit: 90a285fcd96866974087c53d402e85b4a2d83ccf
+source-git-commit: a94f3fe6821d96c76b759efa3e7eedc212252c5f
 workflow-type: tm+mt
-source-wordcount: '1713'
-ht-degree: 10%
+source-wordcount: '1711'
+ht-degree: 9%
 
 ---
 
@@ -21,10 +21,10 @@ Na compilação em campo, você especifica um conjunto de dados de evento, bem c
 
 ## IdentityMap
 
-A compilação em campo oferece suporte ao uso do [`identityMap` grupo de campos](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/schema/composition#identity) nos seguintes cenários:
+A compilação em campo oferece suporte ao uso do [`identityMap` grupo de campos](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity) nos seguintes cenários:
 
 - Uso da identidade primária em `identityMap` namespaces para definir a persistentID:
-   - Se várias identidades primárias forem encontradas em namespaces diferentes, as identidades nos namespaces serão classificadas de forma lexigáfica e a primeira identidade será selecionada.
+   - Se várias identidades primárias forem encontradas em namespaces diferentes, as identidades nos namespaces serão classificadas lexicograficamente e a primeira identidade será selecionada.
    - Se várias identidades primárias forem encontradas em um único namespace, a primeira identidade primária lexicográfica disponível será selecionada.
 
   No exemplo abaixo, os namespaces e as identidades resultam em uma lista de identidades primárias classificada e, por fim, na identidade selecionada.
@@ -94,7 +94,7 @@ A compilação faz um mínimo de duas passagens de dados em um determinado conju
 
 - **Compilação em tempo real**: tenta compilar cada ocorrência (evento) à medida que elas chegam. As ocorrências de dispositivos que são *novos* para o conjunto de dados (nunca foram autenticadas) normalmente não são compiladas neste nível. As ocorrências de dispositivos já reconhecidos são compiladas imediatamente.
 
-- **Repetir compilação**: *repete* dados com base em identificadores exclusivos (IDs de pessoa). É nesse estágio que as ocorrências de dispositivos anteriormente desconhecidos (IDs persistentes) se tornam compiladas (para IDs de pessoa). A repetição é determinada por dois parâmetros: **frequência** e **janela de pesquisa**. A Adobe oferece as seguintes combinações desses parâmetros:
+- **Repetir compilação**: *repete* dados com base em identificadores exclusivos (IDs de pessoa). É nesse estágio que as ocorrências de dispositivos anteriormente desconhecidos (IDs persistentes) se tornam compiladas (para IDs de pessoa). Dois parâmetros determinam a repetição: **frequência** e **janela de pesquisa**. A Adobe oferece as seguintes combinações desses parâmetros:
    - **Pesquisa diária em uma frequência diária**: os dados são repetidos todos os dias com uma janela de pesquisa de 24 horas. Essa opção tem a vantagem de que as repetições são muito mais frequentes, mas os perfis não autenticados devem se autenticar no mesmo dia em que visitam o site.
    - **Pesquisa semanal em uma frequência semanal**: os dados são repetidos uma vez por semana com uma janela de pesquisa semanal (consulte [opções](#options)). Essa opção tem uma vantagem que permite que sessões não autenticadas tenham um tempo muito mais tolerante para autenticação. No entanto, os dados não compilados com menos de uma semana não são reprocessados até a próxima repetição semanal.
    - **Pesquisa quinzenal em uma frequência semanal**: os dados são repetidos uma vez por semana com uma janela de pesquisa quinzenal (consulte [opções](#options)). Essa opção tem uma vantagem que permite que sessões não autenticadas tenham um tempo muito mais tolerante para autenticação. No entanto, os dados não compilados com menos de duas semanas não são reprocessados até a próxima repetição semanal.
@@ -214,7 +214,7 @@ Os seguintes pré-requisitos se aplicam especificamente à compilação em campo
    - Uma **ID de pessoa**, um identificador disponível em apenas algumas linhas. Por exemplo, um nome de usuário ou endereço de email com hash depois que um perfil é autenticado. Você pode usar praticamente qualquer identificador que desejar. A compilação considera esse campo como mantendo as informações reais da ID de pessoa. Para obter melhores resultados de compilação, uma ID de pessoa deve ser enviada nos eventos do conjunto de dados pelo menos uma vez para cada ID persistente. Se você planeja incluir esse conjunto de dados em uma conexão do Customer Journey Analytics, é preferível que os outros conjuntos de dados também tenham um identificador comum semelhante.
 
 <!--
-- Both columns (persistent ID and person ID) must be defined as an identity field with an identity namespace in the schema for the dataset you want to stitch. When using identity stitching in Real-time Customer Data Platform, using the [`identityMap` field group](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/schema/composition#identity), you still need to add identity fields with an identity namespace. This identification of identity fields is required as Customer Journey Analytics stitching does not support the `identityMap` field group. When adding an identity field in the schema, while also using the `identityMap` field group, do not set the additional identity field as a primary identity. Setting an additional identity field as primary identity interferes with the `identityMap` field group used for Real-time Customer Data Platform.
+- Both columns (persistent ID and person ID) must be defined as an identity field with an identity namespace in the schema for the dataset you want to stitch. When using identity stitching in Real-time Customer Data Platform, using the [`identityMap` field group](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity), you still need to add identity fields with an identity namespace. This identification of identity fields is required as Customer Journey Analytics stitching does not support the `identityMap` field group. When adding an identity field in the schema, while also using the `identityMap` field group, do not set the additional identity field as a primary identity. Setting an additional identity field as primary identity interferes with the `identityMap` field group used for Real-time Customer Data Platform.
 
 -->
 
@@ -223,11 +223,11 @@ Os seguintes pré-requisitos se aplicam especificamente à compilação em campo
 As seguintes limitações se aplicam especificamente à compilação em campo:
 
 - Os recursos atuais de rechaveamento são limitados a uma etapa (ID persistente para ID de pessoa). O rechaveamento de várias etapas (por exemplo, ID persistente para uma ID de pessoa e, em seguida, para outra ID de pessoa) não é suportado.
-- Se um dispositivo for compartilhado por várias pessoas e o número total de transições entre usuários exceder 50.000, o Customer Journey Analytics interromperá a compilação de dados para esse dispositivo.
+- Se várias pessoas compartilharem um dispositivo e o número total de transições entre usuários exceder 50.000, o Customer Journey Analytics interromperá a compilação de dados para esse dispositivo.
 - Não há suporte para mapas de ID personalizados usados em sua organização.
 - A compilação diferencia maiúsculas e minúsculas. Para conjuntos de dados gerados por meio do conector de origem do Analytics, a Adobe recomenda revisar quaisquer regras VISTA ou regras de processamento que se aplicam ao campo de ID de pessoa. Essa revisão garante que nenhuma dessas regras introduza novos formulários da mesma ID. Por exemplo, você deve garantir que nenhuma regra VISTA ou de processamento introduza letras minúsculas no campo de ID de pessoa em apenas uma parte dos eventos.
 - A compilação não combina nem concatena campos.
 - O campo de ID de pessoa deve conter um único tipo de ID (IDs de um único namespace). Por exemplo, o campo ID de pessoa não deve conter uma combinação de IDs de logon e IDs de email.
 - Se vários eventos ocorrerem com o mesmo carimbo de data e hora para a mesma ID persistente, mas com valores diferentes no campo de ID de pessoa, a compilação selecionará a ID com base na ordem alfabética. Portanto, se a ID persistente A tiver dois eventos com o mesmo carimbo de data e hora e um dos eventos especificar Bob e o outro especificar Ann, a compilação selecionará Ann.
 - Tenha cuidado com cenários em que as IDs de pessoa contêm valores de espaço reservado, por exemplo `Undefined`. Consulte as [Perguntas frequentes](faq.md) para obter mais informações.
-- Não é possível usar o mesmo namespace como ID persistente e ID de pessoa. Os namespaces precisam ser mutuamente exclusivos.
+- Não é possível usar o mesmo namespace para a ID persistente e a ID de pessoa. Os namespaces precisam ser mutuamente exclusivos.

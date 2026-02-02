@@ -1,14 +1,14 @@
 ---
-title: Solicitar compilação
-description: Como solicitar a compilação
+title: Configuração de solicitação
+description: Saiba como solicitar compilação.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: a04c74ab-606e-45a9-a3e4-0d476c8d2426
-source-git-commit: 9ace0679796c3a813b1fbd97c62c20faf64db211
+source-git-commit: a94f3fe6821d96c76b759efa3e7eedc212252c5f
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 7%
+source-wordcount: '573'
+ht-degree: 20%
 
 ---
 
@@ -20,9 +20,7 @@ ht-degree: 7%
 >A solicitação de compilação por meio do Adobe não é mais necessária e esse método está obsoleto. [Habilitar a compilação na interface do usuário de Conexões](use-stitching-ui.md).
 >
 
-
-
-Assim que sua organização atender a todos os [pré-requisitos](overview.md#prerequisites) e entender as limitações comuns de [limitações](overview.md#limitations) e do método de compilação específico ([baseado em campo](fbs.md#limitations) e [baseado em gráfico](gbs.md#limitations)), você poderá seguir essas etapas para solicitar e começar a usar a compilação no Customer Journey Analytics.
+Assim que sua organização atender aos [pré-requisitos](overview.md#prerequisites) genéricos, entender as [limitações](overview.md#limitations) comuns e também os pré-requisitos e limitações específicos do método de compilação ([baseado em campo](fbs.md) e [baseado em gráfico](gbs.md)), você poderá seguir essas etapas para solicitar e começar a usar a compilação no Customer Journey Analytics.
 
 ## Selecionar opções
 
@@ -47,7 +45,7 @@ O pacote do Customer Journey Analytics ao qual você está habilitado determina 
       - Para a compilação baseada em gráfico, especifique o namespace da ID persistente e o namespace de identidade a ser usado para consultar o gráfico de identidade.
    - Se o conjunto de dados não suportar `identityMap`:
       - Para a compilação em campo, o nome da coluna da ID de pessoa para o conjunto de dados desejado (o identificador de pessoa, que também atua como um link entre conjuntos de dados no contexto de uma conexão).
-      - Para compilação baseada em gráfico, o namespace de identidade a ser usado para consultar o gráfico de identidade.
+      - Para a compilação baseada em gráfico, o namespace de identidade que você deseja usar para consultar o gráfico de identidade.
    - Sua preferência por janela de retrospectiva e frequência de repetição. Consulte seu pacote do Customer Journey Analytics para obter as [opções](#options) disponíveis.
    - Nome da sandbox.
 
@@ -62,3 +60,11 @@ O pacote do Customer Journey Analytics ao qual você está habilitado determina 
 <!-- To do: Paragraph on backfill once product and marketing determine the best way forward. -->
 
 Depois que a visualização de dados for configurada, você poderá executar sua análise de relatórios do Customer Journey Analytics em canais e dispositivos.
+
+## Limitações
+
+- Aplique também qualquer alteração feita ao esquema de conjunto de dados do evento de origem ao novo esquema de conjunto de dados compilados.
+
+- Se você remover o conjunto de dados de origem, o processamento do conjunto de dados compilado será interrompido e ele será removido pelo sistema.
+
+- Os rótulos de uso de dados não são propagados automaticamente para o esquema do conjunto de dados compilado. Se você tiver rótulos de uso de dados aplicados ao esquema do conjunto de dados de origem, será necessário aplicá-los manualmente ao esquema do conjunto de dados compilado. Consulte [Gerenciamento de rótulos de uso de dados na Experience Platform](https://experienceleague.adobe.com/pt-br/docs/experience-platform/data-governance/labels/overview) para obter mais informações.

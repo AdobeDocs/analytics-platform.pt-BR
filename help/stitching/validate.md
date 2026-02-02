@@ -1,13 +1,13 @@
 ---
 title: Validar compilação
-description: Como validar a compilação
+description: Saiba como validar a compilação.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: b9b73926-6502-4a48-ba73-c784f80950d3
-source-git-commit: 99b434e62d859c96bfda53731f3f8a0750850501
+source-git-commit: a94f3fe6821d96c76b759efa3e7eedc212252c5f
 workflow-type: tm+mt
-source-wordcount: '1191'
+source-wordcount: '1193'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Embora esses métodos de análise possam ser usados para a compilação em campo
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Habilitação e validação de compilação](https://video.tv.adobe.com/v/3478125?captions=por_br&quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Habilitação e validação de compilação](https://video.tv.adobe.com/v/3478120?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 
@@ -55,7 +55,7 @@ Além disso, é necessário adicionar duas métricas de compilação que são ba
    No exemplo abaixo, `personalEmail.address` serve como a identidade e é usado para criar a métrica **[!UICONTROL _Conjunto de emails]**.
    ![Métrica do conjunto de emails](assets/emailset-metric.png)
 
-1. Use o campo `stitchedID.namespae.code` para criar uma dimensão de **[!UICONTROL Namespace compilado por email]**. Certifique-se de especificar [Configurações do componente de valores de Inclusão e Exclusão](/help/data-views/component-settings/include-exclude-values.md), de modo que você considere apenas valores do namespace para o qual está tentando elevar linhas de dados.
+1. Use o campo `stitchedID.namespae.code` para criar uma dimensão de **[!UICONTROL Namespace compilado por email]**. Certifique-se de especificar [Incluir valores de exclusão nas configurações de componente](/help/data-views/component-settings/include-exclude-values.md), de modo que considere apenas valores do namespace para o qual você está tentando elevar linhas de dados.
    1. Selecione **[!UICONTROL Definir inclusão/exclusão de valores]**.
    1. Selecione **[!UICONTROL Se todos os critérios forem atendidos]** como **[!UICONTROL Correspondência]**.
    1. Especifique **[!UICONTROL Igual]** `email` como o **[!UICONTROL Critério]** para selecionar eventos que foram elevados para o namespace de email.

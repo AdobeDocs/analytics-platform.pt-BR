@@ -1,14 +1,14 @@
 ---
 title: Perguntas frequentes sobre compilação
-description: Perguntas frequentes sobre costura
+description: Saiba mais sobre as perguntas frequentes sobre compilação.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: f4115164-7263-40ad-9706-3b98d0bb7905
 role: Admin
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: a94f3fe6821d96c76b759efa3e7eedc212252c5f
 workflow-type: tm+mt
-source-wordcount: '2069'
-ht-degree: 23%
+source-wordcount: '2149'
+ht-degree: 22%
 
 ---
 
@@ -23,8 +23,8 @@ Aqui estão algumas perguntas frequentes sobre a compilação:
 Você pode usar uma visualização de Fluxo com a dimensão ID de conjunto de dados.
 
 1. Faça logon no [Customer Journey Analytics](https://analytics.adobe.com) e crie um projeto do Workspace em branco.
-2. Selecione a guia **[!UICONTROL ** Visualizações **]** à esquerda e arraste uma visualização de **[!UICONTROL **&#x200B; Fluxo &#x200B;**]** para a tela à direita.
-3. Selecione a guia **[!UICONTROL ** Componentes **]** à esquerda e arraste a dimensão **[!UICONTROL ** ID de conjunto de dados **]** para o local central rotulado **[!UICONTROL **&#x200B; Dimension ou Item &#x200B;**]**.
+2. Selecione a guia **[!UICONTROL ** Visualizações **]** à esquerda e arraste uma visualização de **[!UICONTROL ** Fluxo **]** para a tela à direita.
+3. Selecione a guia **[!UICONTROL ** Componentes **]** à esquerda e arraste a dimensão **[!UICONTROL ** ID de conjunto de dados **]** para o local central rotulado **[!UICONTROL ** Dimension ou Item **]**.
 4. Este relatório de fluxo é interativo. Para expandir os fluxos para páginas subsequentes ou anteriores, selecione qualquer um dos valores. Use o menu de clique com o botão direito do mouse para expandir ou recolher colunas. Dimensões diferentes também podem ser usadas no mesmo relatório de fluxo.
 
 Se você quiser renomear itens de dimensão da ID de conjunto de dados, poderá usar um conjunto de dados de pesquisa.
@@ -55,11 +55,11 @@ Consulte o caso de uso [Dispositivos compartilhados](/help/use-cases/stitching/s
 
 +++ Como a compilação lida com situações em que uma única pessoa tem muitas IDs persistentes?
 
-Em algumas situações, um usuário individual pode ser associado a muitas IDs persistentes. Um exemplo é a limpeza frequente de cookies do navegador ou o uso do modo privado/anônimo do navegador.
+Em algumas situações, um usuário individual pode ser associado a muitas IDs persistentes. Um exemplo é um indivíduo que limpa os cookies do navegador com frequência ou que usa o modo privado/anônimo do navegador.
 
 Para a compilação em campo, o número de IDs persistentes é irrelevante em favor da ID de pessoa. Um único usuário pode pertencer a qualquer número de dispositivos sem afetar a capacidade da Customer Journey Analytics de compilar entre dispositivos.
 
-Para a compilação baseada em gráficos, uma única pessoa pode ter muitas ID persistentes no gráfico de identidade. A compilação baseada em gráfico usa a ID persistente com base no namespace especificado. Caso haja mais ID persistente para o mesmo namespace, a primeira ID persistente lexicográfica será usada.
+Para a compilação baseada em gráficos, uma única pessoa pode ter muitas IDs persistentes no gráfico de identidade. A compilação baseada em gráfico usa a ID persistente com base no namespace especificado. Caso haja mais IDs persistentes para o mesmo namespace, a primeira ID persistente lexicográfica será usada.
 
 +++
 
@@ -75,7 +75,7 @@ A compilação em tempo real está disponível aproximadamente uma semana depois
 
 +++ Qual é a diferença entre a análise entre dispositivos (um recurso no Analytics tradicional) e a análise entre canais?
 
-A [Análise entre dispositivos](https://experienceleague.adobe.com/docs/analytics/components/cda/overview.html?lang=pt-BR) é um recurso específico do Adobe Analytics tradicional que permite compreender como as pessoas operam entre dispositivos. Ela oferece dois fluxos de trabalho para vincular dados do dispositivo: compilação em campo e gráfico do dispositivo.
+A [Análise entre dispositivos](https://experienceleague.adobe.com/en/docs/analytics/components/cda/overview) é um recurso específico do Adobe Analytics tradicional que permite compreender como as pessoas operam entre dispositivos. Ela oferece dois fluxos de trabalho para vincular dados do dispositivo: compilação em campo e gráfico do dispositivo.
 
 A análise entre canais é um caso de uso específico do Customer Journey Analytics que permite entender como as pessoas operam em dispositivos e canais. Ela compila a ID de pessoa de um conjunto de dados, permitindo que esse conjunto de dados seja combinado perfeitamente com outros conjuntos de dados. Esse recurso opera em design de forma semelhante à compilação em campo da análise entre dispositivos, mas a implementação é diferente devido à arquitetura de dados diferente entre o Analytics tradicional e o Customer Journey Analytics. Consulte [Costura](overview.md) e o caso de uso [análise entre canais](../use-cases/cross-channel/cross-channel.md) para obter mais informações.
 
@@ -85,7 +85,7 @@ A análise entre canais é um caso de uso específico do Customer Journey Analyt
 
 +++ Como a compilação lida com solicitações de privacidade?
 
-O Adobe lida com solicitações de privacidade de acordo com as leis locais e internacionais. A Adobe oferece o [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=pt-BR) para enviar solicitações de acesso e exclusão de dados. As solicitações se aplicam aos conjuntos de dados originais e rechaveados.
+O Adobe lida com solicitações de privacidade de acordo com as leis locais e internacionais. A Adobe oferece o [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/pt-br/docs/experience-platform/privacy/home) para enviar solicitações de acesso e exclusão de dados. As solicitações se aplicam aos conjuntos de dados originais e rechaveados.
 
 >[!IMPORTANT]
 >
@@ -114,7 +114,7 @@ Para ilustrar, imagine os seguintes dados para identidades, eventos antes e depo
 | | 3 | ts2 | 123 | ecid | Alex | CustId | Alex | CustId |
 
 
-**Processo atual para solicitação de privacidade**
+**Processo atual para solicitações de privacidade**
 
 Quando uma solicitação de privacidade é recebida para o cliente com CustID Bob, as linhas com entradas tachadas são excluídas. Outros eventos são corrigidos usando o mapa de identidade. Por exemplo, a primeira ID compilada no conjunto de dados compilado é atualizada para **Alex**.
 
@@ -167,10 +167,10 @@ Quando uma solicitação de privacidade é recebida para o cliente com CustID Bo
 
 +++ O que acontece se o campo de ID persistente em um ou mais eventos estiver em branco?
 
-Se o campo ID persistente estiver em branco em um evento em um conjunto de dados que está sendo compilado, a ID compilada para esse evento será determinada de uma das duas formas a seguir:
+Se o campo ID persistente estiver em branco em um evento em um conjunto de dados que está sendo compilado , a ID compilada para esse evento será determinada de uma das duas formas a seguir:
 
-* Se o campo ID transitória não estiver em branco, o Customer Journey Analytics usará o valor na ID transitória como a ID compilada.
-* Se o campo ID transitória estiver em branco, o Customer Journey Analytics também deixará a ID compilada em branco. Nesse caso, a ID persistente, a ID transitória e a ID compilada estão em branco no evento. Esses tipos de eventos são descartados de qualquer conexão do Customer Journey Analytics usando o conjunto de dados que está sendo compilado em que a ID compilada foi escolhida como a ID de pessoa.
+* Se o campo ID de pessoa não estiver em branco, o Customer Journey Analytics usará o valor na ID de pessoa como a ID compilada.
+* Se o campo ID de pessoa estiver em branco, o Customer Journey Analytics também deixará a ID compilada em branco. Nesse caso, a ID persistente, a ID de pessoa e a ID compilada ficam em branco no evento. Esses tipos de eventos são descartados de qualquer conexão do Customer Journey Analytics usando o conjunto de dados que está sendo compilado em que a ID compilada foi escolhida como a ID de pessoa.
 
 +++
 
@@ -205,11 +205,11 @@ Determinadas métricas no Customer Journey Analytics são semelhantes às métri
 
 | **Dados compilados do Customer Journey Analytics** | **Dados não compilados do Customer Journey Analytics** | **Adobe Analytics** | **Analytics Ultimate com CDA** |
 | ----- | ----- | ----- | ----- |
-| **Pessoas** = Contagem de IDs de pessoa distintas em que a ID compilada é escolhida como ID de pessoa. **Pessoas** pode ser superior ou inferior a **Visitantes únicos** no Adobe Analytics tradicional, dependendo da saída do processo de compilação.  | **Pessoas** = Contagem de IDs de pessoa distintas com base na coluna selecionada como ID de pessoa. **Pessoas** nos conjuntos de dados do conector de origem do Analytics é semelhante a **Visitantes únicos** no Adobe Analytics tradicional se `endUserIDs._experience.aaid.id` for usado como ID de pessoa no Customer Journey Analytics. | **Visitantes únicos** = Contagem de IDs de visitante distintas. **Visitantes únicos** pode não ser o mesmo que a contagem de **ECID** s. | Consulte [de pessoas](https://experienceleague.adobe.com/docs/analytics/components/metrics/people.html?lang=pt-BR). |
-| **Sessões**: definidas com base nas configurações de sessão na visualização de dados do Customer Journey Analytics. O processo de compilação pode combinar sessões individuais de vários dispositivos em uma única sessão. | **Sessões**: definidas com base nas configurações de sessão especificadas na visualização de dados do Customer Journey Analytics. | **Visitas**: consulte [Visitas](https://experienceleague.adobe.com/docs/analytics/components/metrics/visits.html?lang=pt-BR). | **Visitas**: definido com base nas configurações de sessão especificadas no [conjunto de relatórios virtuais do CDA](https://experienceleague.adobe.com/docs/analytics/components/cda/setup.html?lang=pt-BR). |
-| **Eventos** = contagem de linhas nos dados compilados no Customer Journey Analytics. Essa métrica é bem semelhante às **Ocorrências** do Adobe Analytics tradicional. No entanto, observe as Perguntas frequentes acima que estão relacionadas às linhas com uma ID persistente em branco. | **Eventos** = contagem de linhas nos dados não compilados no Customer Journey Analytics. Essa métrica é bem semelhante às **Ocorrências** do Adobe Analytics tradicional. Observe, no entanto, que se qualquer evento tiver uma ID de pessoa em branco nos dados não compilados no data lake da Experience Platform, esses eventos não são incluídos no Customer Journey Analytics. | **Ocorrências**: consulte [Ocorrências](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=pt-BR). | **Ocorrências**: consulte [Ocorrências](https://experienceleague.adobe.com/docs/analytics/components/metrics/occurrences.html?lang=pt-BR). |
+| **Pessoas** = Contagem de IDs de pessoa distintas em que a ID compilada é escolhida como ID de pessoa. **Pessoas** pode ser superior ou inferior a **Visitantes únicos** no Adobe Analytics tradicional, dependendo da saída do processo de compilação.  | **Pessoas** = Contagem de IDs de pessoa distintas com base na coluna selecionada como ID de pessoa. **Pessoas** nos conjuntos de dados do conector de origem do Analytics é semelhante a **Visitantes únicos** no Adobe Analytics tradicional se `endUserIDs._experience.aaid.id` for usado como ID de pessoa no Customer Journey Analytics. | **Visitantes únicos** = Contagem de IDs de visitante distintas. **Visitantes únicos** pode não ser o mesmo que a contagem de **ECID** s. | Consulte [de pessoas](https://experienceleague.adobe.com/en/docs/analytics/components/metrics/people). |
+| **Sessões**: definidas com base nas configurações de sessão na visualização de dados do Customer Journey Analytics. O processo de compilação pode combinar sessões individuais de vários dispositivos em uma única sessão. | **Sessões**: definidas com base nas configurações de sessão especificadas na visualização de dados do Customer Journey Analytics. | **Visitas**: consulte [Visitas](https://experienceleague.adobe.com/en/docs/analytics/components/metrics/visits). | **Visitas**: definido com base nas configurações de sessão especificadas no [conjunto de relatórios virtuais do CDA](https://experienceleague.adobe.com/en/docs/analytics/components/cda/setup). |
+| **Eventos** = contagem de linhas nos dados compilados no Customer Journey Analytics. Essa métrica é bem semelhante às **Ocorrências** do Adobe Analytics tradicional. No entanto, observe as Perguntas frequentes acima que estão relacionadas às linhas com uma ID persistente em branco. | **Eventos** = contagem de linhas nos dados não compilados no Customer Journey Analytics. Essa métrica é bem semelhante às **Ocorrências** do Adobe Analytics tradicional. Observe, no entanto, que se qualquer evento tiver uma ID de pessoa em branco nos dados não compilados no data lake da Experience Platform, esses eventos não são incluídos no Customer Journey Analytics. | **Ocorrências**: consulte [Ocorrências](https://experienceleague.adobe.com/en/docs/analytics/components/metrics/occurrences). | **Ocorrências**: consulte [Ocorrências](https://experienceleague.adobe.com/en/docs/analytics/components/metrics/occurrences). |
 
-Outras métricas podem ser semelhantes no Customer Journey Analytics e no Adobe Analytics. Por exemplo, a contagem total de [eventos personalizados](https://experienceleague.adobe.com/docs/analytics/components/metrics/custom-events.html?lang=pt-BR) 1-100 do Adobe Analytics é comparável entre o Adobe Analytics tradicional e o Customer Journey Analytics (seja compilada ou não). [As diferenças nos recursos](/help/getting-started/aa-vs-cja/cja-aa.md)), como a eliminação da duplicação de eventos entre o Customer Journey Analytics e o Adobe Analytics, podem causar discrepância entre os dois produtos.
+Outras métricas podem ser semelhantes no Customer Journey Analytics e no Adobe Analytics. Por exemplo, a contagem total de [eventos personalizados](https://experienceleague.adobe.com/en/docs/analytics/components/metrics/custom-events) 1-100 do Adobe Analytics é comparável entre o Adobe Analytics tradicional e o Customer Journey Analytics (seja compilada ou não). [As diferenças nos recursos](/help/getting-started/aa-vs-cja/cja-aa.md)), como a eliminação da duplicação de eventos entre o Customer Journey Analytics e o Adobe Analytics, podem causar discrepância entre os dois produtos.
 
 +++
 
@@ -225,7 +225,7 @@ Sim, o Customer Journey Analytics pode usar campos do Mapa de identidade para co
 
 +++ Os dados precisarão ser assimilados novamente para alternar da compilação em campo para a compilação em gráfico?
 
-Os dados não precisam ser assimilados novamente no Experience Platform, no entanto, eles precisarão ser reconfigurados no Customer Journey Analytics. Siga estas etapas:
+Os dados não precisam ser assimilados novamente na Experience Platform. No entanto, os dados precisam ser reconfigurados no Customer Journey Analytics. Siga estas etapas:
 
 1. Configure o novo conjunto de dados compilado com base em gráfico usando a compilação com base em gráfico.
 1. Crie uma nova conexão temporária com uma janela de dados muito pequena.
@@ -248,33 +248,35 @@ Não se seguir as etapas descritas acima. Caso contrário, solicite suporte adic
 
 +++ Como habilitar um conjunto de dados somente para o Serviço de identidade? 
 
-Você deve garantir que um conjunto de dados esteja ativado para que o Serviço de identidade use o conjunto de dados na compilação baseada em gráfico.
+Certifique-se de que um conjunto de dados esteja ativado para que o Serviço de identidade use o conjunto de dados na compilação baseada em gráfico.
 
 Não é necessário ter uma licença para que o Real-Time Customer Data Platform use a compilação baseada em gráficos. A compilação baseada em gráficos é baseada em um gráfico de identidade disponível e não em perfis de clientes em tempo real.
 
-Para habilitar um conjunto de dados apenas para o Serviço de Identidade, use uma solicitação `POST` para o ponto de extremidade `/datasets` que usa apenas a marca `unifiedIdentity`. Por exemplo:
+Para verificar um conjunto de dados existente e habilitá-lo apenas para o Serviço de Identidade, use uma solicitação `PATCH` para o ponto de extremidade `/datasets` que usa apenas a marca `unifiedIdentity`. Por exemplo:
 
 ```shell
-curl -X POST \
-  https://platform.adobe.io/data/foundation/catalog/dataSets \
-  -H 'Content-Type: application/json' \
+curl -X PATCH \
+  https://platform.adobe.io/data/foundation/catalog/dataSets/{DATASET_ID} \
+  -H 'Content-Type:application/json-patch+json' \
   -H 'Authorization: Bearer {ACCESS_TOKEN}' \
   -H 'x-api-key: {API_KEY}' \
   -H 'x-gw-ims-org-id: {ORG_ID}' \
   -H 'x-sandbox-name: {SANDBOX_NAME}' \
-  -d '{
-    "schemaRef": {
-        "id": "https://ns.adobe.com/{TENANT_ID}/schemas/31670881463308a46f7d2cb09762715",
-        "contentType": "application/vnd.adobe.xed-full-notext+json; version=1"
-    },
-    "tags": {
-       "unifiedIdentity": ["enabled:true"]
-    }
-  }'
+  -d '[
+        { "op": "add", "path": "/tags/unifiedProfile", "value": ["enabled:true"] }
+      ]'
 ```
 
 Qualquer uso da tag `unifiedProfile` na solicitação, enquanto você não estiver licenciado para o Perfil de dados do cliente em tempo real, retornará um erro.
 
-Consulte [Criar um conjunto de dados habilitado para Perfil e Identidade](https://experienceleague.adobe.com/pt-br/docs/experience-platform/catalog/datasets/enable-for-profile#create-a-dataset-enabled-for-profile-and-identity) para obter mais informações.
+Consulte [Criar um conjunto de dados habilitado para Perfil e Identidade](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/enable-for-profile#enable-the-dataset) para obter mais informações.
 
 +++ 
+
+
+## Valores de namespace compilados
+
++++ Por que os valores de namespace compilados nem sempre correspondem ao valor de namespace de identidade que você pode usar em outro conjunto de dados na conexão do CJA?
+
+Por padrão, os valores de namespace compilados estão em minúsculas. Então, `custEmail` torna-se `custemail`. Se você tiver outro conjunto de dados com um valor de namespace de identidade de `custEmail`, os dois valores não corresponderão. Para contornar esse comportamento nos relatórios, você pode usar a função de campo derivada [lowercase()](/help/data-views/derived-fields/derived-fields.md#lowercase) para corresponder aos valores do namespace de identidade.
+

@@ -1,14 +1,14 @@
 ---
 title: Visão geral da compilação
-description: Visão geral da compilação
+description: Saiba mais sobre os conceitos, benefícios, pré-requisitos e limitações da compilação de identidade.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: 9ace0679796c3a813b1fbd97c62c20faf64db211
+source-git-commit: a94f3fe6821d96c76b759efa3e7eedc212252c5f
 workflow-type: tm+mt
-source-wordcount: '902'
-ht-degree: 88%
+source-wordcount: '799'
+ht-degree: 71%
 
 ---
 
@@ -16,15 +16,15 @@ ht-degree: 88%
 
 >[!NOTE]
 >
->Você deve ter o pacote **Select** ou superior (para a [compilação baseada em campo](fbs.md)) ou o pacote **Prime** ou superior (para a [compilação baseada em gráfico](gbs.md)) para usar a funcionalidade descrita nesta seção. Entre em contato com seu administrador se não tiver certeza de qual pacote do Customer Journey Analytics você tem.
+>Você deve ter o pacote Customer Journey Analytics **Select** ou superior (para [compilação em campo](fbs.md)) ou o pacote Customer Journey Analytics **Prime** ou superior (para [compilação em gráfico](gbs.md)) para usar a funcionalidade descrita nesta seção. Entre em contato com seu administrador se não tiver certeza de qual pacote do Customer Journey Analytics você tem.
 
 A compilação de identidade (ou simplesmente, compilação) é um recurso eficiente que aumenta a adequação de um conjunto de dados de eventos com a análise entre canais. A análise entre canais é um caso de uso principal do Customer Journey Analytics. Essa funcionalidade permite combinar e executar relatórios de forma integrada em vários conjuntos de dados de diferentes canais, com base em um identificador comum (ID da pessoa).
 
-Quando você combina conjuntos de dados com IDs de pessoa semelhantes, a atribuição é transportada entre dispositivos e canais. Por exemplo, um usuário visita seu site por meio de um anúncio em seu computador. Os usuários compram um produto, mas depois encontram um problema com o pedido. O usuário então entra em contato com sua equipe de atendimento ao cliente para obter ajuda na resolução do problema. Com a análise entre canais, você pode atribuir eventos da central de atendimento ao anúncio em que o usuário clicou originalmente.
+Quando você combina conjuntos de dados com IDs de pessoa semelhantes, a atribuição é transportada entre dispositivos e canais. Por exemplo, um usuário visita seu site por meio de um anúncio em seu computador. O usuário compra um produto, mas depois encontra um problema com o pedido. O usuário então entra em contato com sua equipe de atendimento ao cliente para obter ajuda na resolução do problema. Com a análise entre canais, você pode atribuir eventos da central de atendimento ao anúncio em que o usuário clicou originalmente.
 
 Infelizmente, nem todos os conjuntos de dados baseados em eventos que fazem parte da sua conexão no Customer Journey Analytics são preenchidos por padrão com dados suficientes para oferecer suporte a essa atribuição. Em particular, os conjuntos de dados de experiência baseados na web ou em dispositivos móveis geralmente não têm informações reais de identificação pessoal disponíveis para todos os eventos.
 
-A compilação permite rechavear identidades dentro das linhas de um conjunto de dados para garantir que a ID de pessoa (ID compilada) esteja disponível em cada evento. A compilação analisa dados de usuários de sessões autenticadas e não autenticadas para determinar o valor da ID de pessoa comum que pode ser usado como ID compilada. Esse rechaveamento permite resolver registros distintos em uma única ID compilada para realizar uma análise no nível da pessoa, em vez de no nível do dispositivo ou do cookie.
+A compilação rechavea identidades em linhas de um conjunto de dados para garantir que a ID de pessoa (ID compilada) esteja disponível em cada evento. A compilação analisa dados de usuários de sessões autenticadas e não autenticadas para determinar o valor da ID de pessoa comum que pode ser usado como ID compilada. Esse rechaveamento resolve registros desiguais para uma única ID compilada para análise no nível da pessoa, em vez de no nível do dispositivo ou do cookie.
 
 O Customer Journey Analytics oferece suporte a dois tipos de compilação: [compilação baseada em campos](fbs.md) e [compilação baseada em gráficos](gbs.md).
 
@@ -36,7 +36,7 @@ O Customer Journey Analytics oferece suporte a dois tipos de compilação: [comp
 
 Antes de usar a compilação, verifique se a sua organização está preparada com o seguinte:
 
-- A compilação inclui a mesclagem de dados de usuário autenticados e não autenticados. Certifique-se de cumprir as leis e regulamentações aplicáveis, incluindo obter as permissões necessárias do usuário final, antes de ativar a compilação em um conjunto de dados de eventos. Consulte [Definir campos de identidade na interface](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/ui/fields/identity) para obter mais informações.
+- A compilação inclui a mesclagem de dados de usuário autenticados e não autenticados. Cumpra as leis e regulamentos aplicáveis e obtenha as permissões necessárias do usuário final antes de ativar a compilação em um conjunto de dados de evento.
 
 - Importe os dados desejados para a Adobe Experience Platform:
 
@@ -54,20 +54,11 @@ Ao definir sua conexão do Customer Journey Analytics, você se beneficiará da 
 
 ## Limitações
 
->[!IMPORTANT]
->
->
->- Aplique também qualquer alteração feita ao esquema de conjunto de dados do evento de origem ao novo esquema de conjunto de dados compilados.
->
->- Se você remover o conjunto de dados de origem, o processamento do conjunto de dados compilado será interrompido e ele será removido pelo sistema.
->
->- Os rótulos de uso de dados não são propagados automaticamente para o esquema do conjunto de dados compilado. Se você tiver rótulos de uso de dados aplicados ao esquema do conjunto de dados de origem, será necessário aplicá-los manualmente ao esquema do conjunto de dados compilado. Consulte [Gerenciamento de rótulos de uso de dados na Experience Platform](https://experienceleague.adobe.com/pt-br/docs/experience-platform/data-governance/labels/overview) para obter mais informações.
-
 A compilação é um recurso inovador e robusto, mas possui algumas limitações de uso.
 
 - Somente conjuntos de dados de evento são suportados. Outros conjuntos de dados, como conjuntos de dados de pesquisa, não são suportados.
 - A compilação não transforma de maneira alguma o campo usado para compilação. A compilação usa o valor no campo especificado de acordo com a sua versão no conjunto de dados não compilado no data lake.
-- O processo de compilação diferencia maiúsculas de minúsculas. Por exemplo, se tanto a palavra “Bob” quanto a palavra “BOB” aparecerem em algumas instâncias do campo, essas IDs serão tratadas como duas pessoas separadas.
+- O processo de compilação diferencia maiúsculas de minúsculas. Por exemplo, os valores de identidade `Bob` e `BOB` são tratados como duas pessoas separadas.
 
 Não confunda a compilação com:
 
