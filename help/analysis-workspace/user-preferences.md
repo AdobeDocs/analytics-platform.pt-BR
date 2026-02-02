@@ -5,10 +5,10 @@ feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
-source-git-commit: 0a307bb43c780479df1cdc751fdadfc82f9dda55
+source-git-commit: bc708b34814550b89f6c9916d8bc48850008c1dc
 workflow-type: tm+mt
-source-wordcount: '4044'
-ht-degree: 98%
+source-wordcount: '4015'
+ht-degree: 99%
 
 ---
 
@@ -90,10 +90,12 @@ Você pode atualizar as preferências da empresa que se aplicam a todos os usuá
 
 Algumas dessas mesmas preferências também podem ser personalizadas para projetos individuais no Analysis Workspace, conforme descrito em [Visão geral do projeto](/help/analysis-workspace/build-workspace-project/freeform-overview.md).
 
+<!--
 >[!IMPORTANT]
 >
->Não é mais possível definir o formato do número na seção **[!UICONTROL Projeto e Análises]** > **[!UICONTROL Dados]** de **[!UICONTROL Preferências do usuário]**. O formato do número é determinado automaticamente pelo [idioma padrão configurado](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/features/browser-language) para o usuário conectado.
+>You can no longer define the number format in the **[!UICONTROL Project & Analyses]** > **[!UICONTROL Data]** section of **[!UICONTROL User preferences]**. The number format is automatically determined by the [default language that is configured](https://experienceleague.adobe.com/en/docs/core-services/interface/features/browser-language) for the logged in user.
 >
+-->
 
 
 | Seção | Preferência | Opções |
@@ -106,6 +108,7 @@ Algumas dessas mesmas preferências também podem ser personalizadas para projet
 |  | [Calendário](/help/analysis-workspace/c-panels/panels.md#calendar) | Selecione de uma lista de: <ul><li>Intervalos fornecidos pela Adobe (o padrão é Este mês)</li><li>Você pode habilitar a opção [!UICONTROL Tornar os componentes de intervalo de datas relativos ao calendário do painel por padrão].</li></ul> |
 |  | [Tipo de painel](/help/analysis-workspace/c-panels/panels.md#panel-types) | <ul><li>Forma livre (padrão)</li><li>Em branco</li><li>Insights rápidos</li></ul> |
 |  | Contagem de instâncias | Habilite a opção [!UICONTROL Contar instâncias repetidas] para especificar se as instâncias repetidas devem ser contadas em relatórios. Por exemplo, quando essa opção está habilitada, várias visualizações de página consecutivas na mesma página são tratadas como várias visualizações de página. Quando desabilitada, as várias visualizações de página consecutivas na mesma página contam como uma única visualização de página. <p>**Observação:** essa configuração afeta apenas determinadas métricas (como Sessões) e não se aplica a visualizações de fluxo ou fallout.</p> |
+|  | Formato de número | <ul><li>1.000,00 (padrão)</li><li>1.000,00</li><li>1 000,00</li></ul> |
 |  | Caractere separador do CSV | <ul><li>Vírgula (padrão)</li><li>Ponto e vírgula</li><li>Dois-pontos</li><li>Estágio</li><li>Ponto</li><li>Espaço</li><li>Tabulação</li></ul> |
 |  | Mostrar anotações | Escolha se as anotações estão visíveis em seus projetos. Para obter mais informações sobre anotações, consulte [Visão geral de anotações](/help/components/annotations/overview.md). |
 
