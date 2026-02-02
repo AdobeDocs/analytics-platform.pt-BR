@@ -9,7 +9,7 @@ index: true
 user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Saiba mais sobre o Adobe Customer Journey Analytics e como usar o Analysis Workspace com dados da Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
-source-git-commit: a8c158e66b66f2110df12fac794b2223f1922b1f
+source-git-commit: 905d32421b4c1d3135a51dfd9898a02e750555d0
 workflow-type: tm+mt
 source-wordcount: '1363'
 ht-degree: 96%
@@ -139,6 +139,11 @@ ht-degree: 96%
    + [Conjuntos de dados de evento combinados](../connections/combined-dataset.md)
    + [Pesquisas padrão](../connections/standard-lookups.md)
    + [Pesquisas B2B](../connections/transform-datasets-b2b-lookups.md)
+   + Análise de público-alvo {#audience-analysis}
+      + [Visão geral](/help/connections/audience-analysis/audience-analysis-overview.md)
+      + [Configurar](/help/connections/audience-analysis/audience-analysis-configure.md)
+      + [Gerenciar](/help/connections/audience-analysis/audience-analysis-manage.md)
+      + [Analisar](/help/connections/audience-analysis/analyze-audiences.md)
 + Visualizações de dados {#cja-dataviews}
    + [Visão geral das exibições de dados](../data-views/data-views.md)
    + [Criar ou editar uma visualização de dados](../data-views/create-dataview.md)
@@ -163,11 +168,6 @@ ht-degree: 96%
    + Métricas e dimensões compartilhadas{#shared-metrics-dimensions}
       + [Visão geral](/help/data-views/shared-metrics-dimensions/smd-overview.md)
       + [Editor](/help/data-views/shared-metrics-dimensions/shared-component-editor.md)
-   + Análise de público-alvo {#audience-analysis}
-      + [Visão geral](/help/connections/audience-analysis/audience-analysis-overview.md)
-      + [Configurar](/help/connections/audience-analysis/audience-analysis-configure.md)
-      + [Gerenciar](/help/connections/audience-analysis/audience-analysis-manage.md)
-      + [Analisar](/help/connections/audience-analysis/analyze-audiences.md)
 + Ferramentas {#tools}
    + Transferência de ativos {#asset-transfer}
       + [Transferir ativos](../tools/asset-transfer/transfer-assets.md)
