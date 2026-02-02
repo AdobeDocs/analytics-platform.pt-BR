@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: 5cd838f7-e394-4a67-9d2e-e1d08a864ca0
 role: User
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 39d3a233166e2ce2035df2ce821dd16181e5e13e
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 6%
@@ -67,7 +67,9 @@ Para usar metas em seu projeto do Workspace, você usa a funcionalidade de métr
 
 Você pode usar essas métricas calculadas para relatar o progresso em tabelas e visualizações de forma livre. Por exemplo:
 
-![Tabela de forma livre mostrando as metas de receita de marketing](assets/freeform-table-product-order-goals.png)
+![Tabela de forma livre mostrando as metas de receita de marketing](assets/freeform-table-marketing-channel-revenue-goals.png)
+
+
 
 
 ### Metas de receita do canal de marketing
@@ -82,4 +84,4 @@ Você pode usar essas métricas calculadas para relatar o progresso em tabelas e
 
 Você pode usar essas métricas calculadas para relatar o progresso em tabelas e visualizações de forma livre. Por exemplo:
 
-![Tabela de forma livre mostrando as metas de receita de marketing](assets/freeform-table-marketing-channel-revenue-goals.png)
+![Tabela de forma livre mostrando as metas de receita de marketing](assets/freeform-table-product-order-goals.png)
