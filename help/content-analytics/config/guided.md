@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: e8cba64e706a456861fd8392ce9260b7a1c4636b
+source-git-commit: a2715ff9869796858dec16d3b8b422ef0c9325aa
 workflow-type: tm+mt
-source-wordcount: '2694'
-ht-degree: 100%
+source-wordcount: '2776'
+ht-degree: 97%
 
 ---
 
@@ -331,6 +331,18 @@ No entanto, é possível editar as páginas e os ativos a incluir ou excluir.
 * Para editar quais páginas devem ser incluídas ou excluídas ao coletar dados para a análise de conteúdo, selecione ![Editar](/help/assets/icons/Edit.svg) **[!UICONTROL Editar]** abaixo de **[!UICONTROL Experiência]**. Sua tela será redirecionada para a [extensão do Adobe Content Analytics](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting) associada à propriedade de tags para a configuração atual do Content Analytics. É possível editar a expressão regular para incluir ou excluir páginas. Certifique-se de [publicar](#publish) suas alterações.
 
 * Para editar quais ativos devem ser incluídos ou excluídos ao coletar dados para a análise de conteúdo, selecione ![Editar](/help/assets/icons/Edit.svg) **[!UICONTROL Editar]** abaixo de **[!UICONTROL Ativo]**. Sua tela será redirecionada para a [extensão do Adobe Content Analytics](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting) associada à propriedade de tags para a configuração atual do Content Analytics. É possível editar a expressão regular para incluir ou excluir ativos. Certifique-se de [publicar](#publish) suas alterações.
+
+
+### Substituições de cabeçalho
+
+Opcionalmente, você pode especificar na seção **[!UICONTROL Substituições de cabeçalho]** um nome de cabeçalho e um valor de cabeçalho secreto.  Essa configuração de substituições de cabeçalho garante que o Content Analytics envie cabeçalhos HTTP personalizados para ignorar qualquer detecção de bot ou tecnologias de tráfego de porta que você tenha implementado.
+
+![O cabeçalho substitui a seção](/help/content-analytics/assets/aca-configuration-header-overrides.png)
+
+1. Habilitar **[!UICONTROL Configurar substituições de cabeçalho]**.
+1. Insira o **[!UICONTROL Nome do cabeçalho]**. Por exemplo, `x-asset-service`.
+1. Insira o **[!UICONTROL Valor do cabeçalho]**. O que quer que você especifique é secreto e não visível na interface do usuário (a menos que você selecione explicitamente para divulgar ![Visibilidade](/help/assets/icons/Visibility.svg) o valor durante a entrada).
+
 
 ### Resumo {#summary}
 
