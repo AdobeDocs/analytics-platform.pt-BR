@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: a94f3fe6821d96c76b759efa3e7eedc212252c5f
+source-git-commit: 9bebfaf7e10762bc7382d8b0d55148ee23698dd9
 workflow-type: tm+mt
-source-wordcount: '799'
-ht-degree: 71%
+source-wordcount: '965'
+ht-degree: 60%
 
 ---
 
@@ -45,12 +45,8 @@ Antes de usar a compilação, verifique se a sua organização está preparada c
 
 Ao definir sua conexão do Customer Journey Analytics, você se beneficiará da análise entre canais por combinar um ou mais conjuntos de dados compilados com outros conjuntos de dados, como dados da central de atendimento. Essa configuração de conexão pressupõe que esses outros conjuntos de dados já possuem uma ID de pessoa em cada linha, semelhante à ID compilada.
 
-## Habilitar compilação
+Assim que sua organização atender aos [pré-requisitos](overview.md#prerequisites) genéricos, entender as [limitações](overview.md#limitations) comuns e também os pré-requisitos e limitações específicos do método de compilação ([baseado em campo](fbs.md) e [baseado em gráfico](gbs.md)), você poderá seguir essas etapas para solicitar e começar a usar a compilação no Customer Journey Analytics.
 
-É possível habilitar a compilação de duas formas:
-
-- [Solicitação para habilitar a compilação](/help/stitching/use-stitching.md) (desaprovado). Depois de aprovado, um conjunto de dados duplicado é criado para o conjunto de dados para o qual você solicitou a compilação. Esse conjunto de dados duplicado contém uma coluna adicional com o identificador compilado. É necessário criar uma nova conexão ou editar uma conexão existente que inclua o conjunto de dados compilado para usar os dados compilados no Customer Journey Analytics.
-- [Habilite a compilação na interface de Conexões](/help/stitching/use-stitching-ui.md). Ao configurar a compilação de um conjunto de dados na interface Conexões, a compilação ocorre em tempo real, durante a assimilação de dados desse conjunto de dados no Customer Journey Analytics.
 
 ## Limitações
 
@@ -65,6 +61,25 @@ Não confunda a compilação com:
 - A mesclagem de dois ou mais conjuntos de dados. A compilação se aplica a apenas um conjunto de dados. A mesclagem de conjuntos de dados ocorre ao configurar uma conexão do Customer Journey Analytics e selecionar a mesma ID de pessoa nos conjuntos de dados selecionados na conexão.
 
 - A associação de dois conjuntos de dados. No Customer Journey Analytics, uma associação é frequentemente usada para pesquisas ou classificações no Analysis Workspace. Embora a compilação use a funcionalidade de associação, o próprio processo envolve mais do que associações.
+
+
+## Opções
+
+O pacote do Customer Journey Analytics ao qual você está habilitado determina os métodos de compilação disponíveis, as opções para a duração do preenchimento retroativo inicial, a janela de pesquisa, a frequência de repetição e o número máximo de conjuntos de dados permitidos para compilação. Consulte a [descrição do produto Customer Journey Analytics](https://helpx.adobe.com/br/legal/product-descriptions/customer-journey-analytics.html) para obter mais detalhes. Decida sobre as opções disponíveis antes de ativar a compilação.
+
+| | Customer Journey Analytics<br/>Selecionar | Customer Journey Analytics<br/>Prime | Customer Journey Analytics<br/>Ultimate |
+|---|---|---|---|
+| Métodos de compilação disponíveis | Compilação em campo | Compilação em campo<br/>Compilação em gráfico | Compilação em campo<br>Compilação em gráfico</li> |
+| Duração do preenchimento retroativo de compilação única | 13 meses | 13 meses | 25 meses |
+| Janela de pesquisa e frequência de repetição | 1 dia, todos os dias<br/>até 7 dias, semanalmente | 1 dia, todos os dias<br/>até 14 dias, semanalmente | 1 dia, todos os dias<br/>até 30 dias, semanalmente |
+| Número máximo de conjuntos de dados permitidos para compilação | 5 | 15 | 50 |
+
+## Habilitar compilação
+
+É possível habilitar a compilação de duas formas:
+
+- [Solicitação para habilitar a compilação](/help/stitching/use-stitching.md) (desaprovado). Depois de aprovado, um conjunto de dados duplicado é criado para o conjunto de dados para o qual você solicitou a compilação. Esse conjunto de dados duplicado contém uma coluna adicional com o identificador compilado. É necessário criar uma nova conexão ou editar uma conexão existente que inclua o conjunto de dados compilado para usar os dados compilados no Customer Journey Analytics.
+- [Habilite a compilação na interface de Conexões](/help/stitching/use-stitching-ui.md). Ao configurar a compilação de um conjunto de dados na interface Conexões, a compilação ocorre em tempo real, durante a assimilação de dados desse conjunto de dados no Customer Journey Analytics.
 
 
 ## Conjuntos de dados do Journey Optimizer

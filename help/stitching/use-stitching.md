@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: a04c74ab-606e-45a9-a3e4-0d476c8d2426
-source-git-commit: a94f3fe6821d96c76b759efa3e7eedc212252c5f
+source-git-commit: cbb18e9d0990d5df64995c2dabe8362c7c37bb45
 workflow-type: tm+mt
-source-wordcount: '573'
-ht-degree: 20%
+source-wordcount: '407'
+ht-degree: 26%
 
 ---
 
@@ -19,19 +19,6 @@ ht-degree: 20%
 >
 >A solicitação de compilação por meio do Adobe não é mais necessária e esse método está obsoleto. [Habilitar a compilação na interface do usuário de Conexões](use-stitching-ui.md).
 >
-
-Assim que sua organização atender aos [pré-requisitos](overview.md#prerequisites) genéricos, entender as [limitações](overview.md#limitations) comuns e também os pré-requisitos e limitações específicos do método de compilação ([baseado em campo](fbs.md) e [baseado em gráfico](gbs.md)), você poderá seguir essas etapas para solicitar e começar a usar a compilação no Customer Journey Analytics.
-
-## Selecionar opções
-
-O pacote do Customer Journey Analytics ao qual você está habilitado determina os métodos de compilação disponíveis, as opções para a duração do preenchimento retroativo inicial, a janela de pesquisa, a frequência de repetição e o número máximo de conjuntos de dados permitidos para compilação. Consulte a [descrição do produto Customer Journey Analytics](https://helpx.adobe.com/br/legal/product-descriptions/customer-journey-analytics.html) para obter mais detalhes. Decida sobre as opções disponíveis antes de solicitar suporte.
-
-| | Customer Journey Analytics<br/>Selecionar | Customer Journey Analytics<br/>Prime | Customer Journey Analytics<br/>Ultimate |
-|---|---|---|---|
-| Métodos de compilação disponíveis | Compilação em campo | Compilação em campo<br/>Compilação em gráfico | Compilação em campo<br>Compilação em gráfico</li> |
-| Duração do preenchimento retroativo de compilação única | 13 meses | 13 meses | 25 meses |
-| Janela de pesquisa e frequência de repetição | 1 dia, todos os dias<br/>até 7 dias, semanalmente | 1 dia, todos os dias<br/>até 14 dias, semanalmente | 1 dia, todos os dias<br/>até 30 dias, semanalmente |
-| Número máximo de conjuntos de dados permitidos para compilação | 5 | 15 | 50 |
 
 ## Solicitar suporte
 
