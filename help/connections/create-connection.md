@@ -5,10 +5,10 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: cbb18e9d0990d5df64995c2dabe8362c7c37bb45
+source-git-commit: 21afe4b1b6e33494ea8c226f50b5c1dd9fc4fbff
 workflow-type: tm+mt
-source-wordcount: '8795'
-ht-degree: 56%
+source-wordcount: '8794'
+ht-degree: 55%
 
 ---
 
@@ -110,22 +110,22 @@ ht-degree: 56%
 >[!CONTEXTUALHELP]
 >id="connections_useincja_exl_ajo"
 >title="Usar esta conexão no Customer Journey Analytics"
->abstract="Esta opção permite utilizar os recursos de relatório avançados do Customer Journey Analytics com a sua conexão do Journey Optimizer. Esses recursos permitem:<ul><li>Realizar uma análise detalhada dos dados do Journey Optimizer no Customer Journey Analytics.</li><li>Edite a conexão do Journey Optimizer e as visualizações de dados associadas.</li><li>Analise eventos de jornada, caminhos de conversa e desempenho da campanha.</li></ul>**Quando esta opção está habilitada, cada linha de dados na conexão é contada em relação às linhas de dados da licença todos os meses para o Customer Journey Analytics e é exibida na interface do usuário de Uso de Conexões.**<br><br/> Explore esta opção somente se estiver familiarizado com o uso adicional de linhas de dados no Customer Journey Analytics. [Saiba mais](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/integrations/ajo)."
+>abstract="Esta opção permite utilizar os recursos de relatório avançados do Customer Journey Analytics com a sua conexão do Journey Optimizer. Esses recursos permitem:<ul><li>Realizar uma análise detalhada dos dados do Journey Optimizer no Customer Journey Analytics.</li><li>Edite a conexão do Journey Optimizer e as visualizações de dados associadas.</li><li>Analise eventos de jornada, caminhos de conversa e desempenho da campanha.</li></ul>**Quando esta opção está habilitada, cada linha de dados na conexão é contada em relação às linhas de dados da licença todos os meses para o Customer Journey Analytics e é exibida na interface do usuário de Uso de Conexões.**<br><br/> Explore esta opção somente se estiver familiarizado com o uso adicional de linhas de dados no Customer Journey Analytics. [Saiba mais](https://experienceleague.adobe.com/en/docs/analytics-platform/using/integrations/ajo)."
 
 >[!CONTEXTUALHELP]
 >id="connections_disableuseincja_exl_ajo"
 >title="Remover esta conexão do Customer Journey Analytics"
->abstract="Esta conexão do Journey Optimizer é usada atualmente no Customer Jornada Analytics. As conexões permitem:<ul><li>Realizar uma análise detalhada dos dados do Journey Optimizer no Customer Journey Analytics.</li><li>Edite a conexão do Journey Optimizer e as visualizações de dados associadas.</li><li>Analise eventos de jornada, caminhos de conversa e desempenho da campanha.</li></ul>**Se você remover a conexão, a análise detalhada no Customer Journey Analytics não será mais possível. A conexão e quaisquer visualizações de dados associadas são redefinidas para o estado padrão e não podem mais ser editadas.**<br/><br/>**A cobrança desta conexão no Customer Journey Analytics inclui o mês completo durante o qual a conexão será removida.**<br/><br/> A conexão permanece habilitada no Journey Optimizer. [Saiba mais](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/integrations/ajo)."
+>abstract="Esta conexão do Journey Optimizer é usada atualmente no Customer Jornada Analytics. As conexões permitem:<ul><li>Realizar uma análise detalhada dos dados do Journey Optimizer no Customer Journey Analytics.</li><li>Edite a conexão do Journey Optimizer e as visualizações de dados associadas.</li><li>Analise eventos de jornada, caminhos de conversa e desempenho da campanha.</li></ul>**Se você remover a conexão, a análise detalhada no Customer Journey Analytics não será mais possível. A conexão e quaisquer visualizações de dados associadas são redefinidas para o estado padrão e não podem mais ser editadas.**<br/><br/>**A cobrança desta conexão no Customer Journey Analytics inclui o mês completo durante o qual a conexão será removida.**<br/><br/> A conexão permanece habilitada no Journey Optimizer. [Saiba mais](https://experienceleague.adobe.com/en/docs/analytics-platform/using/integrations/ajo)."
 
 >[!CONTEXTUALHELP]
 >id="connections_useincja_exl_brand_concierge"
 >title="Usar esta conexão no Customer Journey Analytics"
->abstract="Essa opção permite aproveitar os recursos avançados de relatórios do Customer Journey Analytics com sua conexão Brand Concierge. Esses recursos permitem:<ul><li>Realizar uma análise detalhada dos dados do Brand Concierge no Customer Journey Analytics.</li><li>Edite a conexão do Brand Concierge e as visualizações de dados associadas.</li><li>Analise métricas de engajamento conversacional, sentimento e conversão.</li></ul>**Quando esta opção está habilitada, cada linha de dados na conexão é contada em relação às linhas de dados da licença todos os meses para o Customer Journey Analytics e é exibida na interface do usuário de Uso de Conexões.**<br><br/> Explore esta opção somente se estiver familiarizado com o uso adicional de linhas de dados no Customer Journey Analytics. [Saiba mais](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-workspace/templates/use-templates#brand-concierge-templates)."
+>abstract="Essa opção permite aproveitar os recursos avançados de relatórios do Customer Journey Analytics com sua conexão Brand Concierge. Esses recursos permitem:<ul><li>Realizar uma análise detalhada dos dados do Brand Concierge no Customer Journey Analytics.</li><li>Edite a conexão do Brand Concierge e as visualizações de dados associadas.</li><li>Analise métricas de engajamento conversacional, sentimento e conversão.</li></ul>**Quando esta opção está habilitada, cada linha de dados na conexão é contada em relação às linhas de dados da licença todos os meses para o Customer Journey Analytics e é exibida na interface do usuário de Uso de Conexões.**<br><br/> Explore esta opção somente se estiver familiarizado com o uso adicional de linhas de dados no Customer Journey Analytics. [Saiba mais](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/use-templates#brand-concierge-templates)."
 
 >[!CONTEXTUALHELP]
 >id="connections_disableuseincja_exl_brand_concierge"
 >title="Remover esta conexão do Customer Journey Analytics"
->abstract="Esta conexão do Brand Concierge é usada atualmente no Customer Jornada Analytics. As conexões permitem:<ul><li>Realizar uma análise detalhada dos dados do Brand Concierge no Customer Journey Analytics.</li><li>Edite a conexão do Brand Concierge e as visualizações de dados associadas.</li><li>Analise métricas de engajamento conversacional, sentimento e conversão.</li></ul>**Se você remover a conexão, a análise detalhada no Customer Journey Analytics não será mais possível. A conexão e quaisquer visualizações de dados associadas são redefinidas para o estado padrão e não podem mais ser editadas.**<br/><br/>**A cobrança desta conexão no Customer Journey Analytics inclui o mês completo durante o qual a conexão será removida.**<br/><br/> A conexão permanece habilitada no Brand Concierge. [Saiba mais](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-workspace/templates/use-templates#brand-concierge-templates)."
+>abstract="Esta conexão do Brand Concierge é usada atualmente no Customer Jornada Analytics. As conexões permitem:<ul><li>Realizar uma análise detalhada dos dados do Brand Concierge no Customer Journey Analytics.</li><li>Edite a conexão do Brand Concierge e as visualizações de dados associadas.</li><li>Analise métricas de engajamento conversacional, sentimento e conversão.</li></ul>**Se você remover a conexão, a análise detalhada no Customer Journey Analytics não será mais possível. A conexão e quaisquer visualizações de dados associadas são redefinidas para o estado padrão e não podem mais ser editadas.**<br/><br/>**A cobrança desta conexão no Customer Journey Analytics inclui o mês completo durante o qual a conexão será removida.**<br/><br/> A conexão permanece habilitada no Brand Concierge. [Saiba mais](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/use-templates#brand-concierge-templates)."
 
 >[!CONTEXTUALHELP]
 >id="connections_useincja_exl_product_usage"
@@ -151,7 +151,7 @@ ht-degree: 56%
 >[!CONTEXTUALHELP]
 >id="connections_useincja_exl_brand_concierge_learn_more"
 >title="Saiba mais"
->abstract="[Saiba mais](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-workspace/templates/use-templates#brand-concierge-templates)."
+>abstract="[Saiba mais](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/templates/use-templates#brand-concierge-templates)."
 
 >[!CONTEXTUALHELP]
 >id="connections_useincja_exl_product_usage_learn_more"
@@ -172,7 +172,7 @@ A experiência de criação e edição de conexão reúne todos os conjuntos de 
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Criar e editar uma conexão](https://video.tv.adobe.com/v/3409303/?captions=por_br&quality=12&learn=on){target="_blank"} para assistir a um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Criar e editar uma conexão](https://video.tv.adobe.com/v/343044/?quality=12&learn=on){target="_blank"} para assistir a um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 
@@ -240,8 +240,8 @@ Na tela **[!UICONTROL Conexões]** > **[!UICONTROL *Nome da conexão *]**:
    | **[!UICONTROL ID de pessoa]** | A ID de pessoa usada para oferecer suporte a relatórios baseados em pessoas para o conjunto de dados. |
    | **[!UICONTROL Chave]** | A chave usada para um conjunto de dados de pesquisa. |
    | **[!UICONTROL Chave correspondente]** | A chave correspondente usada para um conjunto de dados de pesquisa. |
-   | **[!UICONTROL Importar novos dados]** | O status de importação de novos dados para o conjunto de dados: <p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _Ativado]**&#x200B;se o conjunto de dados estiver configurado para importar novos dados e<p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _x Desativado_]** se o conjunto de dados estiver configurado para não importar novos dados. |
-   | **[!UICONTROL Dados de preenchimento retroativo]** | O status dos dados de preenchimento retroativo do conjunto de dados.<p>![Status vermelho](assets/status-red.svg)   **[!UICONTROL _x _preenchimentos retroativos com falha]**&#x200B;para o número de preenchimentos retroativos com falha,<p>![Status vermelho](assets/status-orange.svg)   **[!UICONTROL _x _processamento de preenchimentos retroativos]**&#x200B;para o número de preenchimentos retroativos em processamento,<p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _preenchimentos retroativos concluídos]**&#x200B;para o número de preenchimentos retroativos concluídos e<p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _Desativado_]** caso nenhum preenchimento retroativo esteja configurado. |
+   | **[!UICONTROL Importar novos dados]** | O status de importação de novos dados para o conjunto de dados: <p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _Ativado]**se o conjunto de dados estiver configurado para importar novos dados e<p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _x Desativado_]** se o conjunto de dados estiver configurado para não importar novos dados. |
+   | **[!UICONTROL Dados de preenchimento retroativo]** | O status dos dados de preenchimento retroativo do conjunto de dados.<p>![Status vermelho](assets/status-red.svg)   **[!UICONTROL _x _preenchimentos retroativos com falha]**para o número de preenchimentos retroativos com falha,<p>![Status vermelho](assets/status-orange.svg)   **[!UICONTROL _x _processamento de preenchimentos retroativos]**para o número de preenchimentos retroativos em processamento,<p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _preenchimentos retroativos concluídos]**para o número de preenchimentos retroativos concluídos e<p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _Desativado_]** caso nenhum preenchimento retroativo esteja configurado. |
 
    Você pode pesquisar um conjunto de dados específico usando o campo ![Pesquisa](/help/assets/icons/Search.svg).
 
@@ -286,8 +286,8 @@ Na tela **[!UICONTROL Conexões]** > **[!UICONTROL *Nome da conexão *]**:
    | **[!UICONTROL ID de pessoa]** | A ID de pessoa usada para oferecer suporte a relatórios baseados em pessoas para o conjunto de dados. |
    | **[!UICONTROL Chave]** | A chave usada para um conjunto de dados de pesquisa. |
    | **[!UICONTROL Chave correspondente]** | A chave correspondente usada para um conjunto de dados de pesquisa. |
-   | **[!UICONTROL Importar novos dados]** | O status de importação de novos dados para o conjunto de dados: <p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _Ativado]**&#x200B;se o conjunto de dados estiver configurado para importar novos dados e<p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _x Desativado_]** se o conjunto de dados estiver configurado para não importar novos dados. |
-   | **[!UICONTROL Dados de preenchimento retroativo]** | O status dos dados de preenchimento retroativo do conjunto de dados.<p>![Status vermelho](assets/status-red.svg)   **[!UICONTROL _x _preenchimentos retroativos com falha]**&#x200B;para o número de preenchimentos retroativos com falha,<p>![Status vermelho](assets/status-orange.svg)   **[!UICONTROL _x _processamento de preenchimentos retroativos]**&#x200B;para o número de preenchimentos retroativos em processamento,<p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _preenchimentos retroativos concluídos]**&#x200B;para o número de preenchimentos retroativos concluídos e<p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _Desativado_]** caso nenhum preenchimento retroativo esteja configurado. |
+   | **[!UICONTROL Importar novos dados]** | O status de importação de novos dados para o conjunto de dados: <p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _Ativado]**se o conjunto de dados estiver configurado para importar novos dados e<p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _x Desativado_]** se o conjunto de dados estiver configurado para não importar novos dados. |
+   | **[!UICONTROL Dados de preenchimento retroativo]** | O status dos dados de preenchimento retroativo do conjunto de dados.<p>![Status vermelho](assets/status-red.svg)   **[!UICONTROL _x _preenchimentos retroativos com falha]**para o número de preenchimentos retroativos com falha,<p>![Status vermelho](assets/status-orange.svg)   **[!UICONTROL _x _processamento de preenchimentos retroativos]**para o número de preenchimentos retroativos em processamento,<p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _preenchimentos retroativos concluídos]**para o número de preenchimentos retroativos concluídos e<p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _Desativado_]** caso nenhum preenchimento retroativo esteja configurado. |
 
    Você pode pesquisar um conjunto de dados específico usando o campo ![Pesquisa](/help/assets/icons/Search.svg).
 
@@ -311,7 +311,7 @@ Você [adiciona um ou mais conjuntos de dados](#add-datasets) ou [edita conjunto
 >[!CONTEXTUALHELP]
 >id="cja_connection_optionalcontainers"
 >title="Contêineres opcionais"
->abstract="Selecione contêineres adicionais.<br/><br/>**[!UICONTROL Conta global &#x200B;]**: habilita a configuração de contas globais em uma conexão.<br/>**[!UICONTROL Oportunidade]**: habilita a configuração de oportunidades em uma conexão.<br/>**[!UICONTROL Grupo de compras &#x200B;]**: habilita a configuração de grupos de compras em uma conexão."
+>abstract="Selecione contêineres adicionais.<br/><br/>**[!UICONTROL Conta global ]**: habilita a configuração de contas globais em uma conexão.<br/>**[!UICONTROL Oportunidade]**: habilita a configuração de oportunidades em uma conexão.<br/>**[!UICONTROL Grupo de compras ]**: habilita a configuração de grupos de compras em uma conexão."
 
 >[!CONTEXTUALHELP]
 >id="cja_connection_accountid"
@@ -376,7 +376,7 @@ Você [adiciona um ou mais conjuntos de dados](#add-datasets) ou [edita conjunto
 >[!CONTEXTUALHELP]
 >id="connection_optionalcontainers"
 >title="Contêineres opcionais"
->abstract="Selecione contêineres adicionais.<br/><br/>**[!UICONTROL Conta global &#x200B;]**: habilita a configuração de contas globais em uma conexão.<br/>**[!UICONTROL Oportunidade]**: habilita a configuração de oportunidades em uma conexão.<br/>**[!UICONTROL Grupo de compras &#x200B;]**: habilita a configuração de grupos de compras em uma conexão."
+>abstract="Selecione contêineres adicionais.<br/><br/>**[!UICONTROL Conta global ]**: habilita a configuração de contas globais em uma conexão.<br/>**[!UICONTROL Oportunidade]**: habilita a configuração de oportunidades em uma conexão.<br/>**[!UICONTROL Grupo de compras ]**: habilita a configuração de grupos de compras em uma conexão."
 
 >[!CONTEXTUALHELP]
 >id="connection_personid"
@@ -416,7 +416,7 @@ Você [adiciona um ou mais conjuntos de dados](#add-datasets) ou [edita conjunto
 >[!CONTEXTUALHELP]
 >id="connection_matchingkeytype"
 >title="Tipo de chave correspondente"
->abstract="Selecione como associar: com base em uma correspondência por campo ou por container.<br/><br/>**[!UICONTROL Correspondência por campo &#x200B;]**: selecione um campo para associar com um dos conjuntos de dados de eventos. Se essa lista estiver vazia, você provavelmente não adicionou nem configurou um conjunto de dados de evento.<br/>**[!UICONTROL Corresponder por container]**: selecione um container a ser associado a um dos conjuntos de dados de evento."
+>abstract="Selecione como associar: com base em uma correspondência por campo ou por container.<br/><br/>**[!UICONTROL Correspondência por campo ]**: selecione um campo para associar com um dos conjuntos de dados de eventos. Se essa lista estiver vazia, você provavelmente não adicionou nem configurou um conjunto de dados de evento.<br/>**[!UICONTROL Corresponder por container]**: selecione um container a ser associado a um dos conjuntos de dados de evento."
 
 >[!CONTEXTUALHELP]
 >id="connection_importnewdata"
@@ -458,8 +458,8 @@ Você [adiciona um ou mais conjuntos de dados](#add-datasets) ou [edita conjunto
 
 >[!CONTEXTUALHELP]
 >id="connection_lookbackwindow"
->title="Janela de retrospectiva"
->abstract="Selecione o período apropriado para a janela de pesquisa a ser usado na compilação de reprodução."
+>title="Janela de repetição"
+>abstract="Selecione o período apropriado para a janela de repetição usar na compilação."
 >additional-url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/stitching/overview" text="Visão geral da compilação"
 
 >[!CONTEXTUALHELP]
@@ -489,14 +489,14 @@ Há diferentes tipos de conjunto de dados: dados de [!UICONTROL Evento], dados d
 |---|---|---|---|---|
 | **[!UICONTROL Evento]** | Dados que representam eventos no tempo. Por exemplo, visitas à web, interações, transações, dados de POS, dados de pesquisa, dados de impressão publicitária e assim por diante. Esses dados podem ser dados típicos de fluxo de cliques, com uma ID de cliente ou uma ID de cookie e um registro de data e hora. Os dados do evento fornecem flexibilidade em relação a qual ID é usada como a ID da pessoa. | Defina para o campo de carimbo de data/hora padrão a partir de esquemas baseados em eventos no [!UICONTROL Experience Platform]. | Qualquer esquema incorporado ou personalizado baseado em uma classe XDM com o comportamento *Série de tempo*. Exemplos incluem *Evento de experiência XDM* ou *Evento de decisão XDM*. | Você pode escolher a ID de pessoa ou a ID de conta [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} que deseja incluir. Cada esquema do conjunto de dados definido na Experience Platform pode ter seu próprio conjunto de uma ou mais identidades definidas e associadas a um namespace de identidade. Qualquer uma dessas identidades pode ser usada como a ID de pessoa ou a ID de conta [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}. Os exemplos incluem ID de Cookie, ID com título, ID de Usuário, Código de Rastreamento, ID de Conta [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} e assim por diante. |
 | **[!UICONTROL Pesquisa]** | Você pode adicionar conjuntos de dados como pesquisas de campos em todos os tipos de conjuntos de dados: conjuntos de dados de perfil, pesquisa e evento (este último sempre foi compatível). Esse recurso adicional expande a capacidade de o Customer Journey Analytics aceitar modelos de dados complexos, incluindo B2B. Esses dados são usados para procurar valores ou chaves encontrados nos dados de evento, perfil ou pesquisa. Você pode adicionar até três níveis de pesquisas. (Observe que [Campos derivados](/help/data-views/derived-fields/derived-fields.md) não podem ser usados como chaves correspondentes para pesquisas em Conexões). Por exemplo, você pode fazer upload de dados de pesquisa que mapeiam IDs numéricas nos dados do evento para nomes de produtos. Consulte o [Exemplo de B2B](/help/use-cases/b2b/example.md). | N/A | Qualquer esquema incorporado ou personalizado baseado em uma classe XDM com o comportamento *Registro*, exceto a classe *Perfil Individual XDM*. | N/A |
-| **[!UICONTROL Perfil]** | Dados que são aplicados à sua conta, pessoas, usuários ou clientes nos dados do [!UICONTROL evento]. Por exemplo, permite carregar dados do CRM sobre seus clientes. | N/D | Qualquer esquema incorporado ou personalizado baseado na classe *Perfil Individual XDM*. | Você pode escolher que ID de pessoa/ID de conta [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} deseja incluir. Cada conjunto de dados (exceto conjuntos de dados de resumo) definido em [!DNL Experience Platform] tem seu próprio conjunto de uma ou mais IDs de pessoa ou de conta [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} definido. Por exemplo, ID de cookie, ID com título, ID de usuário, código de rastreamento, ID de conta e assim por diante.<br>![ID de pessoa &#x200B;](assets/person-id.png)**Observação**: se você criar uma conexão que inclui conjuntos de dados com IDs diferentes, o relatório refletirá isso. Para mesclar conjuntos de dados, é necessário usar a mesma ID de pessoa ou ID de conta [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}. |
+| **[!UICONTROL Perfil]** | Dados que são aplicados à sua conta, pessoas, usuários ou clientes nos dados do [!UICONTROL evento]. Por exemplo, permite carregar dados do CRM sobre seus clientes. | N/D | Qualquer esquema incorporado ou personalizado baseado na classe *Perfil Individual XDM*. | Você pode escolher que ID de pessoa/ID de conta [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} deseja incluir. Cada conjunto de dados (exceto conjuntos de dados de resumo) definido em [!DNL Experience Platform] tem seu próprio conjunto de uma ou mais IDs de pessoa ou de conta [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} definido. Por exemplo, ID de cookie, ID com título, ID de usuário, código de rastreamento, ID de conta e assim por diante.<br>![ID de pessoa ](assets/person-id.png)**Observação**: se você criar uma conexão que inclui conjuntos de dados com IDs diferentes, o relatório refletirá isso. Para mesclar conjuntos de dados, é necessário usar a mesma ID de pessoa ou ID de conta [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}. |
 | **Resumo** | Dados de série temporal que não estão associados a uma ID de pessoa individual. Os dados de resumo representam dados agregados em um nível diferente de agregação, por exemplo, campanhas. Você pode usar esses dados no Customer Journey Analytics para oferecer suporte a vários casos de uso. Veja [Dados resumidos](/help/data-views/summary-data.md) para obter mais informações. | Defina automaticamente para o campo de carimbo de data e hora padrão a partir de esquemas de Métricas de resumo baseadas em eventos no Experience Platform. Somente a granularidade por hora ou por dia é aceita. | Qualquer esquema incorporado ou personalizado baseado na classe *Métricas de resumo XDM*. | N/A |
 
 Como alternativa, os tipos de conjunto de dados listados acima podem ser baseados em um esquema ad hoc ou relacional, em vez de um esquema genérico baseado em XDM.
 
 | Tipo de conjunto de dados | Descrição | Carimbo de data e hora | Esquema | ID da pessoa |
 |---|---|---|---|---|
-| **[!UICONTROL Adhoc]** | Dados ad hoc com base em um [esquema ad hoc](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/api/ad-hoc) com campos com namespace para uso apenas por um único conjunto de dados. | Dependendo do tipo de conjunto de dados selecionado para o conjunto de dados ad hoc. | Qualquer esquema ad hoc baseado em uma classe baseada no comportamento *ad hoc* | Dependendo do tipo de conjunto de dados selecionado para o conjunto de dados ad hoc. |
+| **[!UICONTROL Adhoc]** | Dados ad hoc com base em um [esquema ad hoc](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/api/ad-hoc) com campos com namespace para uso apenas por um único conjunto de dados. | Dependendo do tipo de conjunto de dados selecionado para o conjunto de dados ad hoc. | Qualquer esquema ad hoc baseado em uma classe baseada no comportamento *ad hoc* | Dependendo do tipo de conjunto de dados selecionado para o conjunto de dados ad hoc. |
 | **[!UICONTROL Modelo]** | Dados relacionais com base em um esquema relacional. | Dependendo do tipo de conjunto de dados selecionado para o conjunto de dados relacional. | Qualquer esquema relacional. | Dependendo do tipo de conjunto de dados selecionado para o conjunto de dados relacional. |
 
 
@@ -755,7 +755,7 @@ Ao excluir um conjunto de dados, você é notificado sobre as implicações da e
 
 ### Preenchimentos retroativos anteriores
 
-Ao selecionar ![Histórico](/help/assets/icons/History.svg) **[!UICONTROL Preenchimentos retroativos anteriores]** na interface, uma caixa de diálogo **[!UICONTROL Preenchimentos retroativos anteriores: _Nome do conjunto de dados_]**&#x200B;mostra os preenchimentos retroativos mais recentes do conjunto de dados.
+Ao selecionar ![Histórico](/help/assets/icons/History.svg) **[!UICONTROL Preenchimentos retroativos anteriores]** na interface, uma caixa de diálogo **[!UICONTROL Preenchimentos retroativos anteriores: _Nome do conjunto de dados_]**mostra os preenchimentos retroativos mais recentes do conjunto de dados.
 
 
 ## Visualização da conexão {#preview}
@@ -811,8 +811,8 @@ Essa tabela mostra as duas opções de configuração quando houver casos de bor
 
 | Opção | Nenhuma ID presente no mapa de identidade | Várias IDs, nenhuma marcada como primária | Várias IDs são marcadas como primárias | ID única, marcada como primária ou não | Namespace inválido com uma ID marcada como primária |
 |---|---|---|---|---|---|
-| **[!UICONTROL Usar namespace de identidade principal] verificado**<br/>![&#x200B; Usar namespace de identidade principal](assets/use-primary-identity-namespace.png) | O Customer Journey Analytics descarta a linha. | O Customer Journey Analytics descarta a linha, pois nenhuma ID primária foi especificada. | Todas as IDs marcadas como primárias, em todos os namespaces, são extraídas para uma lista. Elas são então classificadas alfabeticamente; com essa nova classificação, o primeiro namespace com sua primeira ID é usado como a ID de pessoa. | Essa ID única é usada como a ID de pessoa. | Embora o namespace possa ser inválido (não está presente na Adobe Experience Platform), o Customer Journey Analytics usa a ID primária sob esse namespace como a ID de pessoa. |
-| **[!UICONTROL Namespace de Mapa de Identidade Específico] selecionado**<br/>![&#x200B; Não usar namespace de identidade primário](assets/not-use-primary-identity-namespace.png) | O Customer Journey Analytics descarta a linha. | Todas as IDs no namespace selecionado são extraídas em uma lista e a primeira é usada como a ID de pessoa. | Todas as IDs no namespace selecionado são extraídas em uma lista e a primeira é usada como a ID de pessoa. | Todas as IDs no namespace selecionado são extraídas em uma lista e a primeira é usada como a ID de pessoa. | Todas as IDs no namespace selecionado são extraídas em uma lista e a primeira é usada como a ID de pessoa. (Somente um namespace válido pode ser selecionado no momento da criação da conexão, portanto, não é possível que um namespace/ID inválido seja usada como ID de pessoa). |
+| **[!UICONTROL Usar namespace de identidade principal] verificado**<br/>![ Usar namespace de identidade principal](assets/use-primary-identity-namespace.png) | O Customer Journey Analytics descarta a linha. | O Customer Journey Analytics descarta a linha, pois nenhuma ID primária foi especificada. | Todas as IDs marcadas como primárias, em todos os namespaces, são extraídas para uma lista. Elas são então classificadas alfabeticamente; com essa nova classificação, o primeiro namespace com sua primeira ID é usado como a ID de pessoa. | Essa ID única é usada como a ID de pessoa. | Embora o namespace possa ser inválido (não está presente na Adobe Experience Platform), o Customer Journey Analytics usa a ID primária sob esse namespace como a ID de pessoa. |
+| **[!UICONTROL Namespace de Mapa de Identidade Específico] selecionado**<br/>![ Não usar namespace de identidade primário](assets/not-use-primary-identity-namespace.png) | O Customer Journey Analytics descarta a linha. | Todas as IDs no namespace selecionado são extraídas em uma lista e a primeira é usada como a ID de pessoa. | Todas as IDs no namespace selecionado são extraídas em uma lista e a primeira é usada como a ID de pessoa. | Todas as IDs no namespace selecionado são extraídas em uma lista e a primeira é usada como a ID de pessoa. | Todas as IDs no namespace selecionado são extraídas em uma lista e a primeira é usada como a ID de pessoa. (Somente um namespace válido pode ser selecionado no momento da criação da conexão, portanto, não é possível que um namespace/ID inválido seja usada como ID de pessoa). |
 
 {style="table-layout:auto"}
 
@@ -836,5 +836,5 @@ Esse cálculo é feito para cada conjunto de dados na conexão.
 >[!MORELIKETHIS]
 >
 >* [Visão geral da assimilação de dados](/help/data-ingestion/data-ingestion.md)
->* Blog: [como aproveitar os conjuntos de dados de evento, pesquisa e perfil no Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-to-leverage-event-lookup-and-profile-datasets-in-adobe/ba-p/681478?profile.language=pt)
+>* Blog: [como aproveitar os conjuntos de dados de evento, pesquisa e perfil no Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-to-leverage-event-lookup-and-profile-datasets-in-adobe/ba-p/681478)
 
