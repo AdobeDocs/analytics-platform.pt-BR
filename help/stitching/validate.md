@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: b9b73926-6502-4a48-ba73-c784f80950d3
-source-git-commit: a94f3fe6821d96c76b759efa3e7eedc212252c5f
+source-git-commit: d1ba2d203738ca9bf74d17bb93712eff26f88f25
 workflow-type: tm+mt
-source-wordcount: '1193'
+source-wordcount: '1241'
 ht-degree: 0%
 
 ---
@@ -33,9 +33,15 @@ Embora esses métodos de análise possam ser usados para a compilação em campo
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Habilitação e validação de compilação](https://video.tv.adobe.com/v/3478125?captions=por_br&quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Habilitação e validação de compilação](https://video.tv.adobe.com/v/3478120?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
+
+>[!IMPORTANT]
+>
+>Este artigo descreve como validar uma compilação que é [solicitada por meio do Adobe](/help/stitching/use-stitching.md) e é implementada usando uma coluna de identidade compilada adicionada a um conjunto de dados compilado duplicado. O artigo está planejado para ser atualizado em breve com detalhes sobre como validar a compilação que está [habilitada por meio da Interface do usuário de Conexões](/help/stitching/use-stitching-ui.md).
+
+
 
 ## Pré-requisitos da visualização de dados
 

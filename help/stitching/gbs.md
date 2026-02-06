@@ -5,23 +5,25 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: ea5c9114-1fc3-4686-b184-2850acb42b5c
-source-git-commit: a94f3fe6821d96c76b759efa3e7eedc212252c5f
+source-git-commit: b5afcfe2cac8aa12d7f4d0cf98658149707123e3
 workflow-type: tm+mt
-source-wordcount: '1685'
+source-wordcount: '1741'
 ht-degree: 4%
 
 ---
 
 # Compilação baseada em gráfico
 
-Na compilação baseada em gráfico, especifique um conjunto de dados de evento. E, para esse conjunto de dados de evento, você especifica a ID persistente (cookie) e o namespace de compilação desejado no gráfico de identidade que contém os valores de ID de pessoa. A compilação baseada em gráfico adiciona uma nova coluna para a ID compilada ao conjunto de dados do evento. A ID persistente é usada para consultar o gráfico de identidade do Experience Platform Identity Service, usando o namespace de compilação especificado, para atualizar a ID compilada.
+Na compilação baseada em gráfico, você especifica um conjunto de dados de evento, a ID persistente (cookie) desse conjunto de dados e o namespace de ID de pessoa desejado no gráfico de identidade. A compilação baseada em gráfico tenta disponibilizar as informações de ID de pessoa para a análise de dados do Customer Journey Analytics em qualquer evento. A ID persistente é usada para consultar o gráfico de identidade do Experience Platform Identity Service e obter a ID de pessoa do namespace especificado.
+
+Se as informações de ID de pessoa não puderem ser recuperadas para um evento, a ID persistente será usada para esse evento *não compilado*. Como resultado, em uma [visualização de dados](/help/data-views/data-views.md) associada a uma [conexão](/help/connections/overview.md) que contém o conjunto de dados habilitado para compilação, o componente de visualização de dados da ID de pessoa contém o valor da ID de pessoa ou o valor da ID persistente no nível do evento.
 
 
 ![Compilação baseada em gráfico](/help/stitching/assets/gbs.png)
 
 ## IdentityMap
 
-A compilação baseada em gráfico oferece suporte ao uso do [`identityMap` grupo de campos](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/schema/composition#identity) nos seguintes cenários:
+A compilação baseada em gráfico oferece suporte ao uso do [`identityMap` grupo de campos](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity) nos seguintes cenários:
 
 - Uso da identidade primária em `identityMap` namespaces para definir a persistentID:
    - Se várias identidades primárias forem encontradas em namespaces diferentes, as identidades nos namespaces serão classificadas lexicograficamente e a primeira identidade será selecionada.
@@ -112,7 +114,7 @@ Considere as duas atualizações de gráfico de identidade a seguir ao longo do 
 
 ![Gráfico de identidade 3579](assets/identity-graphs.svg)
 
-Você pode exibir um gráfico de identidade ao longo do tempo para um perfil específico usando o [Visualizador de Gráficos de Identidade](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/features/identity-graph-viewer). Consulte também [Lógica de vinculação do serviço de identidade](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/features/identity-linking-logic) para entender melhor a lógica usada ao vincular identidades.
+Você pode exibir um gráfico de identidade ao longo do tempo para um perfil específico usando o [Visualizador de Gráficos de Identidade](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-viewer). Consulte também [Lógica de vinculação do serviço de identidade](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-linking-logic) para entender melhor a lógica usada ao vincular identidades.
 
 ### Etapa 1: compilação em tempo real
 
@@ -120,7 +122,7 @@ A compilação em tempo real tenta compilar cada evento, após a coleção, às 
 
 +++ Detalhes
 
-| | Hora | ID Persistente<br/>`ECID` | Namespace<br/>`Email` ![DataMapping](/help/assets/icons/DataMapping.svg) | ID compilada (após compilação em tempo real) |
+| | Hora | ID Persistente<br/>`ECID` | Namespace<br/>`Email` ![DataMapping](/help/assets/icons/DataMapping.svg) | ID resultante (após a compilação em tempo real) |
 |--:|---|---|---|---|
 | 1 | 2023-05-12 11:00 | `246` | `246` ![Ramificação1](/help/assets/icons/Branch1.svg) *indefinida* | `246` |
 | 2 | 2023-05-12 14:00 | `246` | `246` ![Ramificação1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` | `bob.a@gmail.com` |
@@ -132,8 +134,8 @@ A compilação em tempo real tenta compilar cada evento, após a coleção, às 
 
 {style="table-layout:auto"}
 
-Você pode ver como a ID compilada é resolvida para cada evento. Com base no horário, na ID persistente e na pesquisa do gráfico de identidade para o namespace especificado (nesse mesmo momento).
-Quando a pesquisa é resolvida para mais de uma id compilada (como para o evento 7), a primeira id lexicográfica retornada pelo gráfico de identidade é selecionada (`a.b@yahoo.co.uk` no exemplo).
+Você pode ver como a ID resultante é resolvida para cada evento. Com base no tempo, na ID persistente e na pesquisa do gráfico de identidade para o namespace de ID de pessoa especificado.
+Quando a pesquisa é resolvida para mais de uma ID resultante (como para o evento 7), a primeira ID lexicográfica retornada pelo gráfico de identidade é selecionada (`a.b@yahoo.co.uk` no exemplo).
 
 +++
 
@@ -145,7 +147,7 @@ Em intervalos regulares (dependendo da janela de pesquisa escolhida), a repetiç
 
 Com uma repetição da compilação em 2023-05-13 16:30, com uma configuração de janela de retrospectiva de 24 horas, alguns eventos da amostra são recompilados (indicado por ![Reproduzir](/help/assets/icons/Replay.svg)).
 
-| | Hora | ID Persistente<br/>`ECID` | Namespace<br/>`Email` ![DataMapping](/help/assets/icons/DataMapping.svg) | ID compilada<br/> (após compilação em tempo real) | ID compilada<br/> (após 24 horas de repetição) |
+| | Hora | ID Persistente<br/>`ECID` | Namespace<br/>`Email` ![DataMapping](/help/assets/icons/DataMapping.svg) | ID resultante<br/>(após compilação em tempo real) | ID resultante<br/>(após 24 horas de repetição) |
 |---|---|---|---|---|---|
 | 2 | 2023-05-12 14:00 | `246` | `246` ![Ramificação1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `bob.a@gmail.com` |
 | 3 | 2023-05-12 15:00 | `246` | `246` ![Ramificação1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `bob.a@gmail.com` |
@@ -160,7 +162,7 @@ Com uma repetição da compilação em 2023-05-13 16:30, com uma configuração 
 Com a repetição da compilação em 2023-05-13 16:30, com uma configuração de janela de retrospectiva de 7 dias, todos os eventos da amostra são recompilados.
 
 
-| | Hora | ID Persistente<br/>`ECID` | Namespace<br/>`Email` ![DataMapping](/help/assets/icons/DataMapping.svg) | ID compilada<br/> (após compilação em tempo real) | ID compilada<br/> (após 7 dias de repetição) |
+| | Hora | ID Persistente<br/>`ECID` | Namespace<br/>`Email` ![DataMapping](/help/assets/icons/DataMapping.svg) | ID resultante<br/>(após compilação em tempo real) | ID resultante<br/>(após 7 dias de repetição) |
 |---|---|---|---|---|---|
 | ![Repetir](/help/assets/icons/Replay.svg) 1 | 2023-05-12 11:00 | `246` | `246` ![Ramificação1](/help/assets/icons/Branch1.svg) *indefinida* | `246` | `a.b@yahoo.co.uk` |
 | ![Repetir](/help/assets/icons/Replay.svg) 2 | 2023-05-12 14:00 | `246` | `246` ![Ramificação1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `a.b@yahoo.co.uk` |
@@ -176,13 +178,13 @@ Com a repetição da compilação em 2023-05-13 16:30, com uma configuração de
 
 ### Etapa 3: Solicitação de privacidade
 
-Ao receber uma solicitação de acesso a dados pessoais, a ID compilada é excluída em todos os registros para o usuário sujeito à solicitação de acesso a dados pessoais.
+Ao receber uma solicitação de acesso a dados pessoais, a ID resultante é excluída em todos os registros para o usuário sujeito à solicitação de acesso a dados pessoais.
 
 +++ Detalhes
 
 A tabela a seguir representa os mesmos dados acima, mas mostra o efeito que uma solicitação de privacidade (por exemplo, em 2023-05-13 18:00) tem nos eventos de exemplo.
 
-| | Hora | ID Persistente<br/>`ECID` | Namespace<br/>`Email` ![DataMapping](/help/assets/icons/DataMapping.svg) | ID com título (após solicitação de privacidade) |
+| | Hora | ID Persistente<br/>`ECID` | Namespace<br/>`Email` ![DataMapping](/help/assets/icons/DataMapping.svg) | ID resultante (após solicitação de privacidade) |
 |--:|---|---|---|---|
 | ![RemoverCírculo](/help/assets/icons/RemoveCircle.svg) 1 | 2023-05-12 11:00 | `246` | `246` ![Ramificação1](/help/assets/icons/Branch1.svg) `a.b@yahoo.co.uk` | `246` |
 | ![RemoverCírculo](/help/assets/icons/RemoveCircle.svg) 2 | 2023-05-12 14:00 | `246` | `246`![Ramificação1](/help/assets/icons/Branch1.svg) `a.b@yahoo.co.uk` | `246` |
@@ -207,7 +209,7 @@ Os seguintes pré-requisitos se aplicam especificamente à compilação baseada 
    - Todos os conjuntos de dados que contêm essas identidades relevantes devem ser [habilitados para assimilação de dados do gráfico de identidade](faq.md#enable-a-dataset-for-the-identity-service). Essa ativação garante que as identidades recebidas sejam adicionadas ao gráfico ao longo do tempo de todas as fontes necessárias.
    - Se você já estiver usando o Perfil de dados do cliente em tempo real ou o Adobe Journey Optimizer por algum tempo, o gráfico já deverá estar configurado até certo ponto.<br/>Se o preenchimento retroativo de compilação histórica também for necessário para o conjunto de dados habilitado com compilação baseada em gráfico, o gráfico já deverá conter identidades históricas para todo o período para obter os resultados de compilação desejados.
 - Se quiser usar a compilação com base em gráficos e antecipar que o conjunto de dados do evento contribua para o gráfico de identidade, você deve [habilitar o conjunto de dados para o Serviço de identidade](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service).
-- A ID persistente e a ID de pessoa podem ser usadas com [identityMap](#identitymap). Ou a ID persistente e a ID de pessoa podem ser campos do esquema XDM, nesse caso, os campos devem ser [definidos como uma identidade](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/ui/fields/identity?lang=en) no esquema.
+- A ID persistente e a ID de pessoa podem ser usadas com [identityMap](#identitymap). Ou a ID persistente e a ID de pessoa podem ser campos do esquema XDM, nesse caso, os campos devem ser [definidos como uma identidade](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity?lang=en) no esquema.
 
 >[!NOTE]
 >
@@ -221,7 +223,7 @@ As seguintes limitações se aplicam especificamente à compilação baseada em 
 - Os carimbos de data e hora não são considerados ao consultar a ID de pessoa usando o namespace especificado. Portanto, é possível que uma ID persistente seja compilada com uma ID de pessoa de um registro que tenha um carimbo de data e hora anterior.
 - Em cenários de dispositivos compartilhados, em que o namespace no gráfico contém várias identidades, a primeira identidade lexicográfica é usada. Se as prioridades e os limites de namespace forem configurados como parte do lançamento das regras de vinculação de gráficos, a identidade do último usuário autenticado será usada. Consulte [Dispositivos compartilhados](/help/use-cases/stitching/shared-devices.md) para obter mais informações.
 - Há um limite rígido de três meses de preenchimento retroativo de identidades no gráfico de identidade. Você usaria o preenchimento retroativo de identidades caso não estivesse usando um aplicativo da Experience Platform, como a Real-time Customer Data Platform, para preencher o gráfico de identidade.
-- As [medidas de proteção do Serviço de identidade](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/guardrails) se aplicam. Consulte, por exemplo, os [seguintes limites estáticos](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/guardrails#static-limits):
+- As [medidas de proteção do Serviço de identidade](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails) se aplicam. Consulte, por exemplo, os [seguintes limites estáticos](https://experienceleague.adobe.com/en/docs/experience-platform/identity/guardrails#static-limits):
    - Número máximo de identidades em um gráfico: 50.
    - Número máximo de links para uma identidade para uma única assimilação de lote: 50.
    - Número máximo de identidades em um registro XDM para assimilação de gráfico: 20.

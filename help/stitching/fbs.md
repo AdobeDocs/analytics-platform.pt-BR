@@ -5,23 +5,27 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: e5cb55e7-aed0-4598-a727-72e6488f5aa8
-source-git-commit: a94f3fe6821d96c76b759efa3e7eedc212252c5f
+source-git-commit: b5afcfe2cac8aa12d7f4d0cf98658149707123e3
 workflow-type: tm+mt
-source-wordcount: '1711'
+source-wordcount: '1797'
 ht-degree: 9%
 
 ---
 
 # Compilação em campo
 
-Na compilação em campo, você especifica um conjunto de dados de evento, bem como a ID persistente (cookie) e a ID de pessoa para esse conjunto de dados. A compilação em campo adiciona uma nova coluna de ID compilada ao conjunto de dados do evento e atualiza essa ID compilada com base em linhas que têm uma ID de pessoa para essa ID persistente específica. <br/>Você pode usar a compilação em campo ao usar o Customer Journey Analytics como uma solução independente (sem acesso ao Serviço de Identidade da Experience Platform e ao gráfico de identidade associado). Ou quando não quiser usar o gráfico de identidade disponível.
+Na compilação em campo, você especifica um conjunto de dados de evento, bem como a ID persistente (cookie) e a ID de pessoa para esse conjunto de dados. A compilação em campo tenta disponibilizar as informações da ID de pessoa para a análise de dados da Customer Journey Analytics, em todos os eventos anônimos que vêm com uma ID persistente específica.  Essas informações são recuperadas das linhas que têm uma ID de pessoa para essa ID persistente específica.
+
+Se as informações de ID de pessoa não puderem ser recuperadas para um evento, a ID persistente será usada para esse evento *não compilado*. Como resultado, em uma [visualização de dados](/help/data-views/data-views.md) associada a uma [conexão](/help/connections/overview.md) que contém o conjunto de dados habilitado para compilação, o componente de ID de pessoa contém o valor da ID de pessoa ou o valor da ID persistente no nível do evento.
+
+Você pode usar a compilação em campo ao usar o Customer Journey Analytics como uma solução independente (sem acesso ao Serviço de identidade da Experience Platform e ao gráfico de identidade associado). Ou quando não quiser usar o gráfico de identidade disponível.
 
 ![Compilação em campo](/help/stitching/assets/fbs.png)
 
 
 ## IdentityMap
 
-A compilação em campo oferece suporte ao uso do [`identityMap` grupo de campos](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/schema/composition#identity) nos seguintes cenários:
+A compilação em campo oferece suporte ao uso do [`identityMap` grupo de campos](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity) nos seguintes cenários:
 
 - Uso da identidade primária em `identityMap` namespaces para definir a persistentID:
    - Se várias identidades primárias forem encontradas em namespaces diferentes, as identidades nos namespaces serão classificadas lexicograficamente e a primeira identidade será selecionada.
@@ -120,7 +124,7 @@ Considere o exemplo a seguir, em que Bob registra eventos diferentes como parte 
 
 *Dados como aparecem no dia em que são coletados:*
 
-| Evento | Carimbo de data e hora | ID persistente (ID do cookie) | ID da pessoa | ID compilada (após compilação em tempo real) |
+| Evento | Carimbo de data e hora | ID persistente (ID do cookie) | ID da pessoa | ID resultante (após a compilação em tempo real) |
 |---|---|---|---|---|
 | 1 | 2023-05-12 12:01 | `246` ![SetaDireita](/help/assets/icons/ArrowRight.svg) | - | **`246`** |
 | 2 | 2023-05-12 12:02 | `246` | `Bob` ![SetaDireita](/help/assets/icons/ArrowRight.svg) | `Bob` |
@@ -138,7 +142,7 @@ Considere o exemplo a seguir, em que Bob registra eventos diferentes como parte 
 
 Os eventos não autenticados e autenticados em novos dispositivos são contados como pessoas separadas (temporariamente). Eventos não autenticados em dispositivos reconhecidos são compilados em tempo real.
 
-A atribuição funciona quando a variável personalizada de identificação está vinculada a um dispositivo. No exemplo acima, todos os eventos, exceto o 1, 8, 9 e 10, são compilados em tempo real (todos eles usam o identificador `Bob`). A compilação em tempo real &quot;resolve&quot; a ID compilada para o evento 4, 6 e 12.
+A atribuição funciona quando a variável personalizada de identificação está vinculada a um dispositivo. No exemplo acima, todos os eventos, exceto o 1, 8, 9 e 10, são compilados em tempo real (todos eles usam o identificador `Bob`). A compilação em tempo real &quot;resolve&quot; a ID resultante para o evento 4, 6 e 12.
 
 Os dados atrasados (dados com um carimbo de data e hora superior a 24 horas) são tratados com base no &quot;melhor esforço&quot;, priorizando a compilação de dados atuais para obter a mais alta qualidade.
 
@@ -154,7 +158,7 @@ A tabela a seguir representa os mesmos dados acima, mas mostra números diferent
 
 *Os mesmos dados após a repetição:*
 
-| Evento | Carimbo de data e hora | ID persistente (ID do cookie) | ID da pessoa | ID compilada (após compilação em tempo real) | ID compilada (após repetição) |
+| Evento | Carimbo de data e hora | ID persistente (ID do cookie) | ID da pessoa | ID resultante (após a compilação em tempo real) | ID resultante (após a repetição) |
 |---|---|---|---|---|---|
 | 1 | 2023-05-12 12:01 | `246` | - | `246` | **`Bob`** |
 | 2 | 2023-05-12 12:02 | `246` | `Bob` ![SetaDireita](/help/assets/icons/ArrowRight.svg) | `Bob` | `Bob` ![Seta para cima](/help/assets/icons/ArrowUp.svg) |
@@ -178,7 +182,7 @@ A atribuição funciona quando a variável personalizada de identificação est�
 
 ### Etapa 3: Solicitação de privacidade
 
-Ao receber uma solicitação de acesso a dados pessoais, a ID compilada é excluída em todos os registros para o usuário sujeito à solicitação de acesso a dados pessoais.
+Ao receber uma solicitação de privacidade, qualquer informação de identificador definida pelo processo de compilação para o valor de ID de pessoa é atualizada em todos os registros para um valor de ID persistente para o usuário sujeito à solicitação de privacidade.
 
 +++ Detalhes
 
@@ -186,7 +190,7 @@ A tabela a seguir representa os mesmos dados acima, mas mostra o efeito que uma 
 
 *Os mesmos dados após uma solicitação de privacidade para Bob:*
 
-| Evento | Carimbo de data e hora | ID persistente (ID do cookie) | ID da pessoa | ID compilada (após compilação em tempo real) | ID compilada (após repetição) | ID da pessoa | ID com título (após solicitação de privacidade) |
+| Evento | Carimbo de data e hora | ID persistente (ID do cookie) | ID da pessoa | ID resultante (após a compilação em tempo real) | ID resultante (após a repetição) | ID da pessoa | ID resultante (após solicitação de privacidade) |
 |---|---|---|---|---|---|---|---|
 | 1 | 2023-05-12 12:01 | `246` | - | `246` | **`Bob`** | - | `246` |
 | 2 | 2023-05-12 12:02 | `246` | Bob ![SetaDireita](/help/assets/icons/ArrowRight.svg) | `Bob` | `Bob` ![Seta para Cima](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowUp_18_N.svg) | ![RemoverCírculo](/help/assets/icons/RemoveCircle.svg) | `246` |
@@ -214,7 +218,7 @@ Os seguintes pré-requisitos se aplicam especificamente à compilação em campo
    - Uma **ID de pessoa**, um identificador disponível em apenas algumas linhas. Por exemplo, um nome de usuário ou endereço de email com hash depois que um perfil é autenticado. Você pode usar praticamente qualquer identificador que desejar. A compilação considera esse campo como mantendo as informações reais da ID de pessoa. Para obter melhores resultados de compilação, uma ID de pessoa deve ser enviada nos eventos do conjunto de dados pelo menos uma vez para cada ID persistente. Se você planeja incluir esse conjunto de dados em uma conexão do Customer Journey Analytics, é preferível que os outros conjuntos de dados também tenham um identificador comum semelhante.
 
 <!--
-- Both columns (persistent ID and person ID) must be defined as an identity field with an identity namespace in the schema for the dataset you want to stitch. When using identity stitching in Real-time Customer Data Platform, using the [`identityMap` field group](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/schema/composition#identity), you still need to add identity fields with an identity namespace. This identification of identity fields is required as Customer Journey Analytics stitching does not support the `identityMap` field group. When adding an identity field in the schema, while also using the `identityMap` field group, do not set the additional identity field as a primary identity. Setting an additional identity field as primary identity interferes with the `identityMap` field group used for Real-time Customer Data Platform.
+- Both columns (persistent ID and person ID) must be defined as an identity field with an identity namespace in the schema for the dataset you want to stitch. When using identity stitching in Real-time Customer Data Platform, using the [`identityMap` field group](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity), you still need to add identity fields with an identity namespace. This identification of identity fields is required as Customer Journey Analytics stitching does not support the `identityMap` field group. When adding an identity field in the schema, while also using the `identityMap` field group, do not set the additional identity field as a primary identity. Setting an additional identity field as primary identity interferes with the `identityMap` field group used for Real-time Customer Data Platform.
 
 -->
 

@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: 9bebfaf7e10762bc7382d8b0d55148ee23698dd9
+source-git-commit: d1ba2d203738ca9bf74d17bb93712eff26f88f25
 workflow-type: tm+mt
-source-wordcount: '965'
-ht-degree: 60%
+source-wordcount: '982'
+ht-degree: 54%
 
 ---
 
@@ -24,7 +24,7 @@ Quando você combina conjuntos de dados com IDs de pessoa semelhantes, a atribui
 
 Infelizmente, nem todos os conjuntos de dados baseados em eventos que fazem parte da sua conexão no Customer Journey Analytics são preenchidos por padrão com dados suficientes para oferecer suporte a essa atribuição. Em particular, os conjuntos de dados de experiência baseados na web ou em dispositivos móveis geralmente não têm informações reais de identificação pessoal disponíveis para todos os eventos.
 
-A compilação rechavea identidades em linhas de um conjunto de dados para garantir que a ID de pessoa (ID compilada) esteja disponível em cada evento. A compilação analisa dados de usuários de sessões autenticadas e não autenticadas para determinar o valor da ID de pessoa comum que pode ser usado como ID compilada. Esse rechaveamento resolve registros desiguais para uma única ID compilada para análise no nível da pessoa, em vez de no nível do dispositivo ou do cookie.
+A compilação rechavea identidades em linhas de um conjunto de dados para garantir que as informações da ID de pessoa desejada estejam disponíveis no maior número de eventos possível. A compilação analisa os dados do usuário de sessões autenticadas e não autenticadas para determinar o valor da ID de pessoa comum que pode ser usado. Esse rechaveamento resolve registros desiguais para uma única ID de pessoa para análise no nível da pessoa, em vez do dispositivo ou do cookie. No entanto, se um valor de ID de pessoa comum não puder ser determinado, o valor de ID persistente será usado.
 
 O Customer Journey Analytics oferece suporte a dois tipos de compilação: [compilação baseada em campos](fbs.md) e [compilação baseada em gráficos](gbs.md).
 
@@ -43,10 +43,9 @@ Antes de usar a compilação, verifique se a sua organização está preparada c
    - Para dados do Adobe Analytics, consulte [Uso de dados do conjunto de relatórios do Adobe Analytics no Customer Journey Analytics](/help/getting-started/aa-vs-cja/aa-data-in-cja.md).
    - Para outros tipos de dados, consulte [Criar um esquema](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/tutorials/create-schema-ui) e [Assimilar dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/ingestion/home) na documentação da Adobe Experience Platform.
 
-Ao definir sua conexão do Customer Journey Analytics, você se beneficiará da análise entre canais por combinar um ou mais conjuntos de dados compilados com outros conjuntos de dados, como dados da central de atendimento. Essa configuração de conexão pressupõe que esses outros conjuntos de dados já possuem uma ID de pessoa em cada linha, semelhante à ID compilada.
+Ao definir sua conexão do Customer Journey Analytics, você se beneficiará da análise entre canais por combinar um ou mais conjuntos de dados compilados com outros conjuntos de dados, como dados da central de atendimento. Essa configuração de conexão pressupõe que esses outros conjuntos de dados já contenham uma ID de pessoa do mesmo namespace no máximo de linhas possível.
 
 Assim que sua organização atender aos [pré-requisitos](overview.md#prerequisites) genéricos, entender as [limitações](overview.md#limitations) comuns e também os pré-requisitos e limitações específicos do método de compilação ([baseado em campo](fbs.md) e [baseado em gráfico](gbs.md)), você poderá seguir essas etapas para solicitar e começar a usar a compilação no Customer Journey Analytics.
-
 
 ## Limitações
 
