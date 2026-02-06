@@ -6,13 +6,13 @@ feature: Content Analytics
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 44fa4385faf2e41f90c6bce3648a4890d4a70442
+exl-id: 35d63b7d-f35a-4a88-ae14-96724d32a931
+source-git-commit: 20ead546897ad517840f95a5ec4dcd7f830afe8c
 workflow-type: tm+mt
 source-wordcount: '2517'
 ht-degree: 6%
 
 ---
-
 
 # Configuração independente
 
@@ -35,15 +35,15 @@ Este guia usa vários termos técnicos, do Experience Platform e do Customer Jou
 | Termo | Explicação |
 |---|---|
 | **Esquema** | Um [esquema](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/schema/composition) é um conjunto de regras que representam e validam a estrutura e o formato dos dados. Em um alto nível, os esquemas fornecem uma definição abstrata de um objeto do mundo real, como um evento que ocorre em um site, como um clique. E descrevem quais dados devem ser incluídos em cada instância desse objeto. |
-| **Conjunto de dados** | Um [conjunto de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/catalog/datasets/overview) é uma construção de armazenamento e gerenciamento para uma coleção de dados, normalmente uma tabela, que contém um esquema (colunas) e campos (linhas). Um conjunto de dados é como uma tabela de banco de dados em que cada linha é um evento do seu site. |
-| **Sequência de dados** | Uma [sequência de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/datastreams/overview) representa a configuração do lado do servidor que direciona os dados do seu site para o conjunto de dados correto no Adobe Experience Platform. Um fluxo de dados atua como uma rodovia de dados que conecta seu site ao armazenamento. |
-| **Tags** | [Tags](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/home) no Experience Platform são a próxima geração de recursos de gerenciamento de tags da Adobe. As tags oferecem aos clientes uma forma simples de implantar e gerenciar tags de análise, marketing e anúncios necessárias para potencializar experiências de cliente relevantes. No Content Analytics, o sistema de gerenciamento de tags da Adobe permite implantar o código de rastreamento em seu site sem precisar editar cada página da mesma forma. A funcionalidade de Tags é semelhante à funcionalidade que você pode conhecer no Google Tag Manager. |
+| **Conjunto de dados** | Um [conjunto de dados](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview) é uma construção de armazenamento e gerenciamento para uma coleção de dados, normalmente uma tabela, que contém um esquema (colunas) e campos (linhas). Um conjunto de dados é como uma tabela de banco de dados em que cada linha é um evento do seu site. |
+| **Sequência de dados** | Uma [sequência de dados](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview) representa a configuração do lado do servidor que direciona os dados do seu site para o conjunto de dados correto no Adobe Experience Platform. Um fluxo de dados atua como uma rodovia de dados que conecta seu site ao armazenamento. |
+| **Tags** | [Tags](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home) no Experience Platform são a próxima geração de recursos de gerenciamento de tags da Adobe. As tags oferecem aos clientes uma forma simples de implantar e gerenciar tags de análise, marketing e anúncios necessárias para potencializar experiências de cliente relevantes. No Content Analytics, o sistema de gerenciamento de tags da Adobe permite implantar o código de rastreamento em seu site sem precisar editar cada página da mesma forma. A funcionalidade de Tags é semelhante à funcionalidade que você pode conhecer no Google Tag Manager. |
 | **Sandbox** | A Experience Platform fornece [sandboxes](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sandbox/home) que particionam uma única instância do Experience Platform em ambientes virtuais separados para ajudar a desenvolver aplicativos de experiência digital. A Content Analytics geralmente usa a sandbox *Produção*. |
-| **Conexão** | [Conexões](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-connections/overview) definem quais conjuntos de dados do Experience Platform são assimilados. Uma conexão define o link entre seu conjunto de dados (em que os dados são armazenados no AEP) e o Customer Journey Analytics (em que você os analisa). Uma conexão disponibiliza os dados coletados para os relatórios. |
+| **Conexão** | [Conexões](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/overview) definem quais conjuntos de dados do Experience Platform são assimilados. Uma conexão define o link entre seu conjunto de dados (em que os dados são armazenados no AEP) e o Customer Journey Analytics (em que você os analisa). Uma conexão disponibiliza os dados coletados para os relatórios. |
 | **Visualização de dados** | Uma [visualização de dados](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-dataviews/data-views) é um container que permite determinar como interpretar dados de uma conexão. Uma visualização de dados especifica todas as dimensões e métricas disponíveis para você criar relatórios. Uma visualização de dados é como uma configuração que determina as linhas e colunas disponíveis para você usar na análise. |
-| **Analysis Workspace** | O [Analysis Workspace](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-workspace/home) é uma interface de navegador de arrastar e soltar usada para criar relatórios e análises do Content Analytics. |
-| **Experiência** | No Content Analytics, uma [experiência](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/content-analytics/content-analytics#terminology) se refere a todo o conteúdo de texto em uma página da Web que pode ser capturado e analisado com base no URL da página. |
-| **Ativo** | No Content Analytics, um [ativo](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/content-analytics/content-analytics#terminology) é um conteúdo individual e exclusivo, como uma imagem. |
+| **Analysis Workspace** | O [Analysis Workspace](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home) é uma interface de navegador de arrastar e soltar usada para criar relatórios e análises do Content Analytics. |
+| **Experiência** | No Content Analytics, uma [experiência](https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/content-analytics#terminology) se refere a todo o conteúdo de texto em uma página da Web que pode ser capturado e analisado com base no URL da página. |
+| **Ativo** | No Content Analytics, um [ativo](https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/content-analytics#terminology) é um conteúdo individual e exclusivo, como uma imagem. |
 
 
 ## Visão geral da configuração
@@ -85,7 +85,7 @@ Você precisa de um administrador de sistema ou de um administrador de produto p
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Gerenciar usuários para um perfil de produto](https://video.tv.adobe.com/v/3475946/?captions=por_br&quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Gerenciar usuários para um perfil de produto](https://video.tv.adobe.com/v/333860/?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
 
 
 >[!ENDSHADEBOX]
@@ -308,4 +308,3 @@ Para implementar o Content Analytics para o seu site, você precisa publicar a p
 ### Configurar um projeto
 
 Configure um projeto no Customer Journey Analytics para criar seus [relatórios e visualizações do Content Analytics](/help/content-analytics/report/report.md). Como alternativa, você pode usar um [modelo do Content Analytics](/help/content-analytics/report/report.md#template) para começar.
-
