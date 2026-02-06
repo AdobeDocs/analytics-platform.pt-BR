@@ -17,7 +17,7 @@ O Adobe Customer Journey Analytics é hospedado em data centers corporativos de 
 
 Após o provisionamento, os clientes designam a região em que seus dados do Adobe Experience Platform residirão. Os dados assimilados na Customer Journey Analytics a partir do data lake da Adobe Experience Platform serão armazenados na mesma região.
 
-Consulte [Coleta de dados regionais](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/rdc) na documentação da Adobe Experience Cloud para obter mais informações.
+Consulte [Coleta de dados regionais](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/data-collection/rdc) na documentação da Adobe Experience Cloud para obter mais informações.
 
 
 ## Exibir o data center onde seus dados estão armazenados
