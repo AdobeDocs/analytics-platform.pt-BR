@@ -141,7 +141,7 @@ Depois de salvar uma conexão, o processo de compilação dos conjuntos de dados
 
 >[!CAUTION]
 >
->Para conjuntos de dados habilitados para compilação na interface de Conexões, o status de preenchimento retroativo é imediata e incorretamente relatado como ![Status verde](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _preenchimentos retroativos concluídos]**para o número de preenchimentos retroativos concluídos. Use outras maneiras de verificar se os dados do conjunto de dados compilado são preenchidos retroativamente.
+>Para conjuntos de dados habilitados para compilação na interface de Conexões, o status de preenchimento retroativo é imediata e incorretamente relatado como ![Status verde](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _preenchimentos retroativos concluídos]**&#x200B;para o número de preenchimentos retroativos concluídos. Use outras maneiras de verificar se os dados do conjunto de dados compilado são preenchidos retroativamente.
 >
 
 
