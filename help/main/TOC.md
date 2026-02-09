@@ -9,9 +9,9 @@ index: true
 user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Saiba mais sobre o Adobe Customer Journey Analytics e como usar o Analysis Workspace com dados da Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
-source-git-commit: 16486ded009a9dbd9170240c0941853a4deec0af
+source-git-commit: 7835d4c5b46177ece4a146df8f0d4abb9605c670
 workflow-type: tm+mt
-source-wordcount: '1362'
+source-wordcount: '1365'
 ht-degree: 96%
 
 ---
@@ -147,6 +147,7 @@ ht-degree: 96%
 + Visualizações de dados {#cja-dataviews}
    + [Visão geral das exibições de dados](../data-views/data-views.md)
    + [Criar ou editar uma visualização de dados](../data-views/create-dataview.md)
+   + [Gerenciar visualizações de dados](/help/data-views/manage-dataviews.md)
    + [Configurações da sessão](../data-views/session-settings.md)
    + Configurações de componente {#component-settings}
       + [Visão geral das configurações de componente](../data-views/component-settings/overview.md)
@@ -340,10 +341,10 @@ ht-degree: 96%
       + [Gerenciar anotações](../components/annotations/manage-annotations.md)
       + [Exibir anotações](../components/annotations/view-annotations.md)
       + [Anotações de cartão de pontuação](../components/annotations/mobile-annotations.md)
-   + Publicação de públicos-alvo {#audiences}
+   + Publicação para público-alvo {#audiences}
       + [Visão geral da publicação de públicos-alvo](../components/audiences/audiences-overview.md)
       + [Criar e publicar públicos-alvo](../components/audiences/publish.md)
-      + [Gerenciar públicos publicados](../components/audiences/manage.md)
+      + [Gerenciar públicos-alvo publicados](../components/audiences/manage.md)
    + Dimensões {#dimensions}
       + [Visão geral](../components/dimensions/overview.md)
       + [Visualizar dimensões](../components/dimensions/view-dimensions.md)

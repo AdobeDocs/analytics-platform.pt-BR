@@ -5,10 +5,10 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 95e50b73533c627f05c3b8dfe112b28b4f9e70c1
+source-git-commit: ade6fcd95626d9380153b5089d8f438332dedf8d
 workflow-type: tm+mt
-source-wordcount: '2722'
-ht-degree: 77%
+source-wordcount: '2790'
+ht-degree: 97%
 
 ---
 
@@ -19,7 +19,7 @@ A criação de uma visualização de dados envolve criar métricas e dimensões 
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Criar ou editar uma visualização de dados](https://video.tv.adobe.com/v/345560/?captions=por_br&quality=12&learn=on){target="_blank"} para assistir a um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Criar ou editar uma visualização de dados](https://video.tv.adobe.com/v/35110/?quality=12&learn=on){target="_blank"} para assistir a um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 
@@ -68,7 +68,7 @@ Fornece configurações abrangentes para a visualização de dados.
 | Configuração | Descrição |
 | --- | --- |
 | **[!UICONTROL Conexão]** | Esse campo vincula a visualização de dados à conexão estabelecida anteriormente, que contém um ou mais conjuntos de dados da Adobe Experience Platform. |
-| **[!UICONTROL Nome]** | Obrigatório. O nome da visualização de dados. Esse valor aparece no menu suspenso no canto superior direito do Analysis Workspace. |
+| **[!UICONTROL Nome]** | Obrigatório. O nome da visualização de dados. Este valor aparece no menu suspenso localizado no canto superior direito do Analysis Workspace. |
 | **[!UICONTROL ID externa]** | Obrigatório. O nome da visualização de dados que você pode usar em fontes externas, como ferramentas de business intelligence. O padrão é `unspecified`. Se você não especificar uma ID externa, o nome será gerado a partir do Nome da visualização de dados, substituindo espaços por sublinhados. |
 | **[!UICONTROL Descrição]** | Opcional. A Adobe recomenda uma descrição detalhada para que os usuários entendam por que a visualização de dados existe e para quem ela foi projetada. |
 
@@ -90,7 +90,7 @@ Esta seção é visível somente para admins provisionados com o Journey Optimiz
 
 | Configuração | Descrição |
 | --- | --- |
-| [!UICONTROL **Definir como visualização de dados padrão no Adobe Journey Optimizer**] | Essa opção de configuração padroniza os relatórios no Journey Optimizer e no Customer Journey Analytics. Também permite executar análises avançadas dos dados do Adobe Journey Optimizer no Customer Journey Analytics (selecionando as opções ![Abrir](https://spectrum.adobe.com/static/icons/workflow_18/Smock_OpenInLight_18_N.svg) e [!UICONTROL **Analisar no CJA**] no Journey Optimizer).<p>Para executar esse tipo de análise, o Journey Optimizer precisa acessar uma visualização de dados do Customer Journey Analytics.<p>Habilite esta opção para torná-la a visualização de dados padrão usada nos relatórios do Journey Optimizer da sandbox.</p><p>Essa opção de configuração automaticamente:</p><ul><li>Configura todos os conjuntos de dados do Journey Optimizer necessários na conexão associada no Customer Journey Analytics para uso com o Journey Optimizer.</li><li>Cria um conjunto de métricas e dimensões do Journey Optimizer na visualização de dados (incluindo campos derivados e métricas calculadas). Os rótulos de contexto são definidos automaticamente em todas essas métricas e dimensões.</li><li>Habilita automaticamente a opção **[!UICONTROL Usar no CJA]** na conexão associada a esta exibição de dados. (Para saber mais sobre esta opção, consulte [Usar uma conexão Journey Optimizer no Customer Journey Analytics](/help/connections/manage-connections.md).)<p>Se essa configuração for desabilitada manualmente após ser habilitada, a conexão e quaisquer visualizações de dados associadas serão redefinidas para o estado padrão. Isso pode resultar em alterações nos dados de seus relatórios.</p></li></ul><p><p>Considere o seguinte ao habilitar essa opção: <ul><li>É possível alterar a visualização de dados padrão posteriormente, mas isso pode alterar os dados dos relatórios do Journey Optimizer. Se optar por desabilitar essa opção posteriormente, será necessário selecionar uma nova visualização de dados padrão.</li><li>Se você já fez personalizações manuais nos conjuntos de dados, dimensões ou métricas na visualização de dados do Customer Journey Analytics, elas permanecerão intactas ao habilitar essa opção de configuração. Essa opção faz personalizações adicionais que padronizam ainda mais os relatórios no Journey Optimizer e no Customer Journey Analytics. Você também pode fazer personalizações manuais depois de habilitar essa opção.</li><li>Quando essa opção está selecionada, a conexão associada à visualização de dados não pode ser excluída.</li></ul>Consulte [Integrar o Adobe Journey Optimizer ao Adobe Customer Journey Analytics](/help/integrations/ajo.md) para obter mais informações. |
+| [!UICONTROL **Definir como visualização de dados padrão no Adobe Journey Optimizer**] | Essa opção de configuração padroniza os relatórios no Journey Optimizer e no Customer Journey Analytics. Também permite executar análises avançadas dos dados do Adobe Journey Optimizer no Customer Journey Analytics (selecionando as opções ![Abrir](https://spectrum.adobe.com/static/icons/workflow_18/Smock_OpenInLight_18_N.svg) e [!UICONTROL **Analisar no CJA**] no Journey Optimizer).<p>Para executar esse tipo de análise, o Journey Optimizer precisa acessar uma visualização de dados do Customer Journey Analytics.<p>Habilite esta opção para torná-la a visualização de dados padrão usada nos relatórios do Journey Optimizer da sandbox.</p><p>Essa opção de configuração automaticamente:</p><ul><li>Configura todos os conjuntos de dados do Journey Optimizer necessários na conexão associada no Customer Journey Analytics para uso com o Journey Optimizer.</li><li>Cria um conjunto de métricas e dimensões do Journey Optimizer na visualização de dados (incluindo campos derivados e métricas calculadas). Os rótulos de contexto são definidos automaticamente em todas essas métricas e dimensões.</li><li>Habilita automaticamente a opção de **[!UICONTROL Usar no CJA]** na conexão associada a esta visualização de dados. (Para saber mais sobre esta opção, consulte [Usar uma conexão com o Journey Optimizer no Customer Journey Analytics](/help/connections/manage-connections.md)).<p>Se essa configuração for desabilitada manualmente após ser habilitada, a conexão e quaisquer visualizações de dados associadas serão redefinidas para o estado padrão. Isso pode resultar em alterações nos dados dos seus relatórios.</p></li></ul><p><p>Considere o seguinte ao habilitar essa opção: <ul><li>É possível alterar a visualização de dados padrão posteriormente, mas isso pode alterar os dados dos relatórios do Journey Optimizer. Se optar por desabilitar essa opção posteriormente, será necessário selecionar uma nova visualização de dados padrão.</li><li>Se você já fez personalizações manuais nos conjuntos de dados, dimensões ou métricas na visualização de dados do Customer Journey Analytics, elas permanecerão intactas ao habilitar essa opção de configuração. Essa opção faz personalizações adicionais que padronizam ainda mais os relatórios no Journey Optimizer e no Customer Journey Analytics. Você também pode fazer personalizações manuais depois de habilitar essa opção.</li><li>Quando essa opção está selecionada, a conexão associada à visualização de dados não pode ser excluída.</li></ul>Consulte [Integrar o Adobe Journey Optimizer ao Adobe Customer Journey Analytics](/help/integrations/ajo.md) para obter mais informações. |
 
 {style="table-layout:auto"}
 
@@ -100,15 +100,20 @@ Determina o nome dos containers para a visualização de dados. Os nomes dos con
 
 | Configuração | Descrição |
 | --- | --- |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Nome do container da conta global &#x200B;]** | `Global Account` (padrão). O container [!UICONTROL Conta global] inclui todas as sessões e eventos para contas globais no intervalo de tempo especificado. Se sua organização usa um termo diferente, é possível renomear o container aqui. |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Nome do container de conta &#x200B;]** | `Account` (padrão). O container [!UICONTROL Conta] inclui todas as sessões e eventos para contas no intervalo de tempo especificado. Se sua organização usa um termo diferente, é possível renomear o container aqui. |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Nome do container de oportunidade &#x200B;]** | `Opportunity` (padrão). O container [!UICONTROL Oportunidade] inclui todas as sessões e eventos para oportunidades no intervalo de tempo especificado. Se sua organização usa um termo diferente, é possível renomear o container aqui. |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"}<br/>**[!UICONTROL Nome do container de grupo de compra &#x200B;]** | `Buying Group` (padrão). O container [!UICONTROL Grupo de compra] inclui todas as sessões e eventos para grupos de compra no intervalo de tempo especificado. Se sua organização usa um termo diferente, é possível renomear o container aqui. |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Nome do container da conta global ]** | `Global Account` (padrão). O container [!UICONTROL Conta global] inclui todas as sessões e eventos para contas globais no intervalo de tempo especificado. Se sua organização usa um termo diferente, é possível renomear o container aqui. |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Nome do container de conta ]** | `Account` (padrão). O container [!UICONTROL Conta] inclui todas as sessões e eventos para contas no intervalo de tempo especificado. Se sua organização usa um termo diferente, é possível renomear o container aqui. |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Nome do container de oportunidade ]** | `Opportunity` (padrão). O container [!UICONTROL Oportunidade] inclui todas as sessões e eventos para oportunidades no intervalo de tempo especificado. Se sua organização usa um termo diferente, é possível renomear o container aqui. |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Nome do container de grupo de compra ]** | `Buying Group` (padrão). O container [!UICONTROL Grupo de compra] inclui todas as sessões e eventos para grupos de compra no intervalo de tempo especificado. Se sua organização usa um termo diferente, é possível renomear o container aqui. |
 | **[!UICONTROL Nome do container de pessoas]** | `Person` (padrão). O container [!UICONTROL Pessoa] inclui todas as sessões e eventos de pessoas dentro do intervalo de tempo especificado. Se sua organização usar um termo diferente (por exemplo, &quot;Visitante&quot; ou &quot;Usuário&quot;), você poderá renomear o container aqui. |
 | **[!UICONTROL Nome do container da sessão]** | `Session` (padrão). O container [!UICONTROL Sessão] permite identificar as interações de página, campanhas ou conversões de uma sessão específica. Você pode renomear o container como &quot;Visita&quot; ou com qualquer outro termo que desejar. |
 | **[!UICONTROL Nome do container do evento]** | `Event` (padrão). O container [!UICONTROL Evento] define eventos individuais em um conjunto de dados. Se sua organização usar um termo diferente (por exemplo, &quot;Ocorrências&quot; ou &quot;Exibições de página&quot;), você poderá renomear o container aqui. |
 
 {style="table-layout:auto"}
+
+### Configurações de IA
+
+Selecione **[!UICONTROL Habilitar para o Data Insights Agent]** para habilitar a exibição de dados para o [Data Insights Agent](/help/data-analysis-ai.md). O Data Insights Agent é um agente de conversação de IA generativa acessível pelo Assistente de IA na Customer Journey Analytics. Ele ajuda a analisar os seus dados rapidamente com prompts de texto. O agente cria visualizações relevantes no Analysis Workspace usando componentes da visualização de dados e usando os dados reais.
+
 
 ### Calendário
 
@@ -120,7 +125,7 @@ Indica o formato de calendário que a visualização de dados deve seguir. Você
 | [!UICONTROL **Tipo de calendário**] | Determine como as semanas do mês são agrupadas.<br>**Gregoriano:** formato de calendário padrão. Os trimestres são agrupados por mês.<br>**4-5-4 Varejo:** um calendário de varejo padronizado em 4-5-4. O primeiro e o último mês do trimestre contêm 4 semanas, enquanto o segundo mês do trimestre possui 5 semanas.<br>**Personalizado (4-5-4):** semelhante ao calendário 4-5-4, exceto que é possível escolher o primeiro dia do ano e o ano em que a semana “extra” ocorre.<br>**Personalizado (4-4-5):** o primeiro e o segundo mês de cada trimestre contêm 4 semanas, enquanto o último mês de cada trimestre possui 5 semanas.<br>**Personalizado (5-4-4):** O primeiro mês de cada trimestre consiste em 5 semanas, enquanto o segundo e o terceiro meses de cada trimestre consistem em 4 semanas. |
 | [!UICONTROL **Primeiro mês do ano**] e [!UICONTROL **Primeiro dia da semana**] | Visível para o tipo de calendário gregoriano. Especifique em qual mês deseja que o ano civil comece e o dia em que cada semana inicia. |
 | [!UICONTROL **Primeiro dia do ano atual**] | Visível para tipos de calendário personalizado. Especifique o dia do ano em que deseja que o ano atual comece. O calendário formata automaticamente o primeiro dia de cada semana com base nesse valor. |
-| [!UICONTROL **Ano em que a semana “extra” ocorre**] | Na maioria dos calendários de 364 dias (52 semanas de 7 dias cada), cada ano acumula alguns dias até que uma semana extra seja formada. Essa semana extra é então adicionada ao último mês desse ano. Especifique em qual ano você deseja adicionar a semana extra.<br><br/>**Semanas extras e anos bissextos**<br/> Ao selecionar um **[!UICONTROL Tipo de calendário]** personalizado **[!UICONTROL Personalizado (4-5-4)]**, **[!UICONTROL Personalizado (4-4-5)]** ou **[!UICONTROL Personalizado (5-4-4)]**), os dias restantes são acumulados a cada ano até que os dias somem uma semana extra completa (7 dias). Essa semana extra é adicionada ao ano selecionado em **[!UICONTROL Ano em que a semana &quot;extra&quot; ocorre]**.<br/><br/>Os anos bissextos não são mostrados intencionalmente no **[!UICONTROL Ano em que a semana &quot;extra&quot; ocorre]**. No entanto, um ano bissexto ainda pode conter 53 semanas. Para forçar um ano bissexto a conter 53 semanas, selecione um ano não bissexto a partir de **[!UICONTROL Ano em que a semana &quot;extra&quot; ocorre]** para garantir que o desvio da data cumulativa adicione até 7 dias para o ano bissexto alvo. Por exemplo: para ter 53 semanas em 2024, selecione **[!UICONTROL 2019]**. De 2019 a 2024, o desvio total de datas é de sete dias (2020 (+2), 2021 (+1), 2022 (+1), 2023 (+1) e 2024 (+2)), o que resulta em uma 53ª semana em 2024.<br/><br/>A seleção de **[!UICONTROL Primeiro dia do ano atual]** afeta o local onde a semana extra chega. Confirme sua configuração usando a pré-visualização do calendário. |
+| [!UICONTROL **Ano em que a semana “extra” ocorre**] | Na maioria dos calendários de 364 dias (52 semanas de 7 dias cada), cada ano acumula alguns dias até que uma semana extra seja formada. Essa semana extra é então adicionada ao último mês desse ano. Especifique em qual ano você deseja adicionar a semana extra.<br><br/>**Semanas extras e anos bissextos**<br/> Quando você seleciona um **[!UICONTROL Tipo de calendário]** personalizado **[!UICONTROL Personalizado (4-5-4)]**, **[!UICONTROL Personalizado (4-4-5)]** ou **[!UICONTROL Personalizado (5-4-4)]**), os dias que sobram são acumulados a cada ano até totalizar uma semana extra completa (sete dias). Essa semana extra é adicionada ao ano selecionado em **[!UICONTROL Ano em que a semana “extra” ocorre]**.<br/><br/>Os anos bissextos não são mostrados intencionalmente no **[!UICONTROL Ano em que a semana “extra” ocorre]**. No entanto, um ano bissexto ainda pode conter 53 semanas. Para forçar um ano bissexto a conter 53 semanas, selecione um ano não bissexto em **[!UICONTROL Ano em que a semana “extra” ocorre]** para garantir que o desvio da data cumulativa adicione até sete dias ao ano bissexto alvejado. Por exemplo: para ter 53 semanas em 2024, selecione **[!UICONTROL 2019]**. De 2019 a 2024, o desvio total de datas é de sete dias (2020 (+2), 2021 (+1), 2022 (+1), 2023 (+1) e 2024 (+2)), o que resulta em uma 53ª semana em 2024.<br/><br/>A seleção de **[!UICONTROL Primeiro dia do ano atual]** afeta onde a semana extra é inserida. Para confirmar a sua configuração, use a prévia do calendário. |
 
 {style="table-layout:auto"}
 
@@ -136,13 +141,13 @@ Em seguida, você pode definir os componentes de uma visualização de dados, o 
 
    ![Guia Componentes](assets/dataview-components.png)
 
-   Você pode ver a [!UICONTROL Conexão] no canto superior esquerdo, que contém os conjuntos de dados, e seus [!UICONTROL Campos de esquema] abaixo.  Os componentes já incluídos são componentes padrão (gerados pelo sistema) necessários para todas as visualizações de dados (como métricas de eventos, pessoas e sessões e dimensões de minuto, trimestre e semana). A Adobe também aplica o filtro **[!UICONTROL Contém dados]** e **[!UICONTROL não está obsoleto]** por padrão, de modo que apenas os campos de esquema aparecem que contêm dados e que não estão obsoletos.
+   Você pode ver a [!UICONTROL Conexão] no canto superior esquerdo, que contém os conjuntos de dados, e seus [!UICONTROL Campos de esquema] abaixo.  Os componentes já incluídos são componentes padrão (gerados pelo sistema) necessários para todas as visualizações de dados (como métricas de eventos, pessoas e sessões e dimensões de minuto, trimestre e semana). A Adobe também aplica o filtro **[!UICONTROL Contém dados]** e **[!UICONTROL não foi descontinuado]** por padrão, para que só sejam exibidos campos de esquema que contenham dados e não tenham sido descontinuados.
 
-1. Pesquise um campo de esquema usando o ![Ícone de pesquisa](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) **[!UICONTROL Campos de esquema de pesquisa]** ou localize um campo movendo-se para qualquer uma das coleções de conjuntos de dados, como ![Pasta](/help/assets/icons/Folder.svg) **[!UICONTROL Conjuntos de dados de eventos]** ou ![Pasta](/help/assets/icons/Folder.svg) **[!UICONTROL Conjuntos de dados de pesquisa]**. Para conjuntos de dados de eventos, coleções separadas para ![Pasta](/help/assets/icons/Folder.svg) **[!UICONTROL campos XDM]** e ![Pasta](/help/assets/icons/Folder.svg) **[!UICONTROL campos adhoc e relacionais]** estão disponíveis.<br/>Como alternativa, é possível criar um campo derivado usando a opção ![Ícone de dados](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Criar campo derivado** . Consulte [Campos derivados](./derived-fields/derived-fields.md) para obter mais informações.
+1. Procure um campo de esquema por meio do ![Ícone de pesquisa](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) **[!UICONTROL Procurar campos de esquema]** ou localize um campo por meio de qualquer uma das coleções de conjunto de dados, como ![Pasta](/help/assets/icons/Folder.svg) **[!UICONTROL Conjuntos de dados de evento]** ou ![Pasta](/help/assets/icons/Folder.svg) **[!UICONTROL Conjuntos de dados de pesquisa]**. Para conjuntos de dados de evento, coleções separadas para ![Pasta](/help/assets/icons/Folder.svg) **[!UICONTROL Campos de XDM]** e ![Pasta](/help/assets/icons/Folder.svg) **[!UICONTROL Campos ad hoc e relacionais]** estão disponíveis.<br/>Como alternativa, é possível criar um campo derivado usando a opção ![Ícone de dados](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Criar campo derivado** . Consulte [Campos derivados](./derived-fields/derived-fields.md) para obter mais informações.
 
-1. Quando você encontrar o campo de esquema específico ou definir o campo derivado, arraste esse campo, como ![Ícone de Identificador](https://spectrum.adobe.com/static/icons/workflow_22/Smock_DragHandle_22_N.svg) **[!UICONTROL Nome da Página]**, do painel esquerdo para a seção **[!UICONTROL Métricas]** ou **[!UICONTROL Dimensões]** abaixo de **[!UICONTROL Componentes incluídos]**.
-Você pode arrastar o mesmo campo de esquema nas seções de dimensões ou métricas várias vezes e configurar a mesma dimensão ou métrica de maneiras diferentes. Por exemplo, no campo pageName, é possível criar uma dimensão denominada `Product Pages` e outra denominada `Error pages`, usando diferentes [Configurações de componente](component-settings/overview.md) à direita.
-Se você arrastar uma pasta de campo de esquema do painel esquerdo, os campos na pasta serão classificados automaticamente na seção apropriada. Os campos de sequência de caracteres terminam na seção [!UICONTROL Dimensão] e os esquemas do tipo numérico terminam na seção [!UICONTROL Métricas]. Você também pode clicar em **[!UICONTROL Adicionar tudo]** e todos os campos de esquema serão adicionados às suas respectivas seções.
+1. Quando você encontrar o campo de esquema específico ou definir o campo derivado, arraste esse campo, como o ![Ícone de alça](https://spectrum.adobe.com/static/icons/workflow_22/Smock_DragHandle_22_N.svg) **[!UICONTROL Nome da página]**, do painel esquerdo até a seção **[!UICONTROL Métricas]** ou **[!UICONTROL Dimensões]**, dentro de **[!UICONTROL Componentes inclusos]**.
+Você pode arrastar o mesmo campo de esquema nas seções de dimensões ou métricas várias vezes e configurar a mesma dimensão ou métrica de maneiras diferentes. Por exemplo, a partir do campo pageName, é possível criar uma dimensão chamada `Product Pages` e outra chamada `Error pages`, usando-se diferentes [Configurações de componentes](component-settings/overview.md) à direita.
+Se você arrastar uma pasta de campos de esquema a partir do painel esquerdo, os campos contidos na pasta serão ordenados automaticamente nas seções correspondentes. Os campos de string terminam na seção [!UICONTROL Dimensão] e os esquemas do tipo numérico terminam na seção [!UICONTROL Métricas]. Você também pode clicar em **[!UICONTROL Adicionar tudo]**, e todos os campos de esquema são adicionados a seus respectivos locais.
 
 1. Ao selecionar um componente, as configurações são exibidas no lado direito.
 
@@ -165,7 +170,7 @@ Se você arrastar uma pasta de campo de esquema do painel esquerdo, os campos na
 
 Duplicar métricas ou dimensões e depois modificar configurações específicas é uma maneira fácil de criar várias métricas ou dimensões a partir de um único campo de esquema. Selecione a configuração [!UICONTROL Duplicar] abaixo do nome da métrica ou das dimensões no canto superior direito. Modifique a nova métrica ou dimensão e salve-a com um nome mais descritivo.
 
-### Filtrar campos ou conjuntos de dados de esquema
+### Filtrar campos ou conjuntos de dados do esquema
 
 Você pode filtrar ![Ícone de filtro](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) campos de esquema no painel esquerdo por [!UICONTROL tipo de dados], [!UICONTROL conjuntos de dados], [!UICONTROL governança de dados] e [!UICONTROL outros] critérios ([!UICONTROL contém dados], [!UICONTROL é uma identidade] e [!UICONTROL não foi descontinuado]):
 
@@ -223,19 +228,19 @@ Você pode filtrar ![Ícone de filtro](https://spectrum.adobe.com/static/icons/w
 >additional-url="https://experienceleague.adobe.com/pt-br/docs/experience-platform/data-governance/labels/overview" text="Visão geral dos rótulos de uso de dados"
 
 
-Os **[!UICONTROL Componentes incluídos]** contêm a lista de **[!UICONTROL Métricas]** e **[!UICONTROL Dimensões]** que você configura para a visualização de dados.
+Os **[!UICONTROL Componentes inclusos]** contêm a lista de **[!UICONTROL Métricas]** e **[!UICONTROL Dimensões]** que você configura para a visualização de dados.
 
 * Para pesquisar componentes, use ![Pesquisar](/help/assets/icons/Search.svg) **[!UICONTROL _Pesquisar componentes_]**.
-* Para filtrar os componentes incluídos listados, selecione ![Filtro](/help/assets/icons/Filter.svg).
+* Para filtrar os componentes inclusos listados, selecione ![Filtro](/help/assets/icons/Filter.svg).
 
-  ![Caixa de diálogo de filtro de componentes de Inclusão](assets/dataview_includedcomponents_filter.png)
+  ![Caixa de diálogo de filtro de componentes inclusos](assets/dataview_includedcomponents_filter.png)
 
   Na caixa de diálogo **[!UICONTROL Filtrar campo por]**, você pode filtrar as seguintes categorias:
 
-   * **[!UICONTROL Tipo de dados]** - Você pode selecionar um ou mais dos seguintes tipos de dados: [!UICONTROL Cadeia de caracteres], [!UICONTROL Inteiro], [!UICONTROL Curto], [!UICONTROL Booleano], [!UICONTROL Duplo], [!UICONTROL Byte], [!UICONTROL Longo], [!UICONTROL Data] ou [!UICONTROL Data-hora].
-   * **[!UICONTROL Conjuntos de dados]** - Selecione um ou mais conjuntos de dados.
-   * **[!UICONTROL Governança de dados]**: selecione um ou mais rótulos das subcategorias [!UICONTROL Rótulos personalizados], [!UICONTROL Rótulos de contrato], [!UICONTROL Rótulos de identidade], [!UICONTROL Rótulos de sensibilidade], [!UICONTROL ecossistema de parceiro] ou [!UICONTROL Políticas].
-   * **[!UICONTROL Outros]** - Selecione uma ou mais das opções [!UICONTROL Contém dados], [!UICONTROL É identidade] ou [!UICONTROL Não está obsoleto].
+   * **[!UICONTROL Tipo de dados]**: você pode selecionar um ou mais dos seguintes tipos de dados: [!UICONTROL String], [!UICONTROL Número inteiro], [!UICONTROL Curto], [!UICONTROL Booleano], [!UICONTROL Duplo], [!UICONTROL Byte], [!UICONTROL Longo], [!UICONTROL Data] ou [!UICONTROL Data/hora].
+   * **[!UICONTROL Conjuntos de dados]**: selecione um ou mais conjuntos de dados.
+   * **[!UICONTROL Governança de dados]**: selecione um ou mais rótulos das subcategorias [!UICONTROL Rótulos personalizados], [!UICONTROL Rótulos de contrato], [!UICONTROL Rótulos de identidade], [!UICONTROL Rótulos de sensibilidade], [!UICONTROL Ecossistema de parceiros] ou [!UICONTROL Políticas].
+   * **[!UICONTROL Outros]**: selecione uma ou mais das opções [!UICONTROL Contém dados], [!UICONTROL É identidade] ou [!UICONTROL Não foi descontinuado].
 
   Selecione **[!UICONTROL Aplicar]** para aplicar os filtros.
 
@@ -245,16 +250,16 @@ Os **[!UICONTROL Componentes incluídos]** contêm a lista de **[!UICONTROL Mét
 
 1. Selecione a guia **[!UICONTROL Configurações]**.
 
-   Configurações de ![visualização de dados](assets/dataview-settings.png)
+   ![Configurações de visualização de dados](assets/dataview-settings.png)
 
-1. Configure segmentos para aplicar a toda a visualização de dados. Consulte [Configurações (segmentos)](#settings-filters) abaixo.
+1. Configure segmentos a serem aplicados a toda a visualização de dados. Consulte [Configurações (segmentos)](#settings-filters) abaixo.
 1. Configurar o tempo-limite e as métricas da sessão. Consulte [Configurações da sessão](#session-settings) abaixo.
 
 1. Selecione **[!UICONTROL Salvar e continuar]** para continuar configurando sua visualização de dados nova ou existente. Selecione **[!UICONTROL Salvar]** para salvar a configuração da visualização de dados existente.
 
 ### Configurações (segmentos) {#segment-settings}
 
-É possível adicionar segmentos que se aplicam a toda a visualização de dados. Esse segmento é aplicado a qualquer relatório executado no Workspace. Arraste um segmento dos componentes no painel à esquerda para o campo **[!UICONTROL Adicionar segmentos]**.
+Você pode adicionar segmentos a serem aplicados a toda a visualização de dados. Esse segmento é aplicado a qualquer relatório executado no Workspace. Arraste um filtro dos componentes no painel esquerdo até o campo **[!UICONTROL Adicionar segmentos]**.
 
 ### Configurações da sessão
 

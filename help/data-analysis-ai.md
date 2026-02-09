@@ -5,10 +5,10 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: 518f2aeac309a34016146b7a4da7823b6fd84cac
+source-git-commit: cb5baf2ec8d3ad4449a9b08d0a025a2d39a11425
 workflow-type: tm+mt
-source-wordcount: '2494'
-ht-degree: 100%
+source-wordcount: '2451'
+ht-degree: 98%
 
 ---
 
@@ -82,21 +82,10 @@ Os seguintes parâmetros regulam o acesso ao Data Insights Agent no Customer Jou
   >* É possível habilitar no máximo 50 visualizações de dados por organização IMS. Se você habilitar mais de 50 visualizações de dados em todos os perfis de produto para uma determinada organização, o Data Insights Agent usará as 50 visualizações de dados mais utilizadas.
   >* O Data Insights Agent pode fazer referência às visualizações de dados incluídas em algum momento do mesmo dia em que você as habilita.
 
-  Para habilitar visualizações de dados para o Data Insights Agent:
+  Para habilitar visualizações de dados para o Data Insights Agent, consulte as [Configurações de IA para uma visualização de dados](/help/data-views/create-dataview.md#ai-settings).
 
-   1. No Customer Journey Analytics, selecione **[!UICONTROL Gerenciamento de dados]** > **[!UICONTROL Visualizações de dados]**.
+  Você pode usar as [informações na coluna Data Insights Agent em Visualizações de dados](/help/data-views/manage-dataviews.md#manage-data-views) para exibir o número de visualizações de dados habilitadas para o Data Insights Agent em sua organização IMS.
 
-   1. Selecione uma ou mais visualizações de dados que você deseja habilitar para o Data Insights Agent e selecione **[!UICONTROL Habilitar para o Data Insights Agent]**.
-
-      ![Habilitar visualizações de dados para o Data Insights Agent](assets/data-view-enable-dia.png)
-
-  Para exibir o número de visualizações de dados habilitadas para o Data Insights Agent em sua organização IMS:
-
-   1. No Customer Journey Analytics, selecione **[!UICONTROL Gerenciamento de dados]** > **[!UICONTROL Visualizações de dados]**.
-
-   1. Selecione o ícone de informações na parte superior da coluna **[!UICONTROL Data Insights Agent]**.
-
-      ![ícone de informações do Data Insights Agent](assets/data-insights-agent-tooltip.png)
 
 ## Acessar o Data Insights Agent no Assistente de IA
 

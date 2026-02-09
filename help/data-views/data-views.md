@@ -5,10 +5,10 @@ exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 220ebd7dbc3fa75d221690cd6e5828bd94395434
+source-git-commit: 7835d4c5b46177ece4a146df8f0d4abb9605c670
 workflow-type: tm+mt
-source-wordcount: '1078'
-ht-degree: 100%
+source-wordcount: '1094'
+ht-degree: 95%
 
 ---
 
@@ -61,6 +61,8 @@ As visualizações de dados permitem que você altere espontaneamente as configu
 
 * Você pode renomear seus containers em uma exibição de dados e fazer com que esses containers renomeados apareçam em qualquer projeto do Workspace baseado nessa exibição de dados.
 
+* Você pode ativar ou desativar o Data Insights Agent para uma visualização de dados.
+
 ## Pré-requisitos de visualizações de dados {#prerequisites}
 
 * Antes de criar visualizações de dados, é necessário [configurar uma ou mais conexões com os conjuntos de dados da Experience Platform](/help/connections/create-connection.md).
@@ -84,9 +86,10 @@ Algumas configurações de visualização de dados podem ser substituídas no An
 
 ## Excluir visualizações de dados {#delete}
 
-Se você excluir uma exibição de dados no [!UICONTROL Customer Journey Analytics], uma mensagem de erro indicará que qualquer projeto do [!UICONTROL Workspace] que depende dessa exibição de dados excluída deixará de funcionar.
+Se você [excluir uma visualização de dados](/help/data-views/manage-dataviews.md#delete-data-views) no [!UICONTROL Customer Journey Analytics], uma mensagem de erro indicará que qualquer projeto do [!UICONTROL Workspace] que dependa dessa visualização de dados excluída deixará de funcionar.
 
 ## Próximas etapas
 
 * [Criar visualizações de dados](/help/data-views/create-dataview.md)
+* [Gerenciar visualizações de dados](/help/data-views/manage-dataviews.md)
 * [Casos de uso de visualizações de dados](/help/use-cases/data-views/data-views-usecases.md)
