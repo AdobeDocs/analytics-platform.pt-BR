@@ -33,7 +33,7 @@ Embora esses métodos de análise possam ser usados para a compilação em campo
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Habilitação e validação de compilação](https://video.tv.adobe.com/v/3478120?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Habilitação e validação de compilação](https://video.tv.adobe.com/v/3478125?captions=por_br&quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 
