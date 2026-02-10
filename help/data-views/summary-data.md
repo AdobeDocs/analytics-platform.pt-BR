@@ -154,5 +154,5 @@ Verifique se as configurações de componente de um grupo de dados de resumo sã
 >[!MORELIKETHIS]
 >
 >- Consulte o artigo [Usar dados de resumo](/help/use-cases/data-views/summary-data.md) para obter um exemplo detalhado de caso de uso sobre como usar e relatar dados de resumo.
->- Blog: [Como os dados de resumo aprimoram os conjuntos de dados do Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-summary-data-enhances-adobe-customer-journey-analytics/ba-p/704635)
+>- Blog: [Como os dados de resumo aprimoram os conjuntos de dados do Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/how-summary-data-enhances-adobe-customer-journey-analytics/ba-p/704635?profile.language=pt)
 
