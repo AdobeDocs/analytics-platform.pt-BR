@@ -4,10 +4,10 @@ description: Saiba mais sobre funções básicas de métricas calculadas.
 feature: Calculated Metrics
 exl-id: 63775753-337b-4dec-a3a2-a3a0ee9aac2e
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: e2e87bc3d9f26b01f250d88b924c730fe4edac7b
 workflow-type: tm+mt
-source-wordcount: '1868'
-ht-degree: 95%
+source-wordcount: '3608'
+ht-degree: 49%
 
 ---
 
@@ -58,6 +58,14 @@ Um cenário alternativo é o que você tem duas métricas de interesse e uma tem
 |---|---|
 | métrica | A métrica para a qual você deseja obter o valor absoluto. |
 
+**Caso de uso**: verifique se todos os resultados são positivos ao analisar métricas que podem produzir valores negativos, como deltas de receita ou alterações de porcentagem. Isso ajuda a focar na magnitude da mudança independentemente da direção.
+
+**No Construtor de Métricas Calculadas**: Vincule sua métrica ou expressão na função **Valor Absoluto**, por exemplo: **Valor Absoluto**(Receita Atual - Receita Anterior). Isso converte quaisquer diferenças negativas em valores positivos.
+
+>[!TIP]
+>
+>Use isso para medir as diferenças absolutas entre dois períodos ou segmentos, independentemente de o desempenho ter aumentado ou diminuído.
+>
 
 ## Máximo da coluna {#column-maximum}
 
@@ -79,6 +87,14 @@ Retorna o maior valor em um conjunto de elementos de dimensão para uma coluna d
 | métrica | Precisa de pelo menos uma métrica, mas pode usar quantas métricas forem necessárias como parâmetros. |
 | include_zeros | Se os valores zero devem ser incluídos nos cálculos. |
 
+**Caso de uso**: identifique o valor mais alto em um detalhamento, como o dia com mais visitas ou o produto com a maior receita. Isso ajuda a destacar o desempenho máximo nas categorias.
+
+**No Construtor de Métrica Calculada**: Aplicar o **Máximo da Coluna** a uma métrica como *Receita* ou *Visitas* ao detalhar por *Dia* ou *Produto*. A função retorna o maior valor nessa coluna para cada linha.
+
+>[!TIP]
+>
+>Use uma instrução [IF](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-adv-functions#if) como **IF**(*Revenue* = **Column Maximum***(Revenue*), 1, 0) para realçar o item de melhor desempenho no seu detalhamento.
+>
 
 ## Mínimo da coluna {#column-minimum}
 
@@ -101,6 +117,15 @@ Retorna o menor valor em um conjunto de elementos de dimensão para uma coluna d
 | métrica | Precisa de pelo menos uma métrica, mas pode usar quantas métricas forem necessárias como parâmetros. |
 | include_zeros | Se os valores zero devem ser incluídos nos cálculos. |
 
+**Caso de uso**: identifique o valor de desempenho mais baixo em um detalhamento, como a campanha com menos conversões ou o dia com a receita mais baixa. Isso ajuda a destacar rapidamente os segmentos com baixo desempenho.
+
+**No Construtor de Métrica Calculada**: Aplicar **Mínimo da Coluna** a uma métrica como *Receita* ou *Taxa de Conversão* ao detalhar por *Campanha* ou *Dia*. A função retorna o menor valor nessa coluna para cada linha.
+
+>[!TIP]
+>
+>Use uma instrução [IF](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-calcmetrics/cm-adv-functions#if) como **IF**(*Revenue* = **Column Minimum***(Revenue*), 1, 0) para realçar o item de menor desempenho no seu detalhamento.
+>
+
 
 ## Soma da coluna {#column-sum}
 
@@ -121,6 +146,15 @@ Adiciona todos os valores numéricos de uma métrica em uma coluna (nos elemento
 | Argumento | Descrição |
 |---|---|
 | métrica | Precisa de pelo menos uma métrica, mas pode usar quantas métricas forem necessárias como parâmetros. |
+
+**Caso de uso**: calcule o total de todos os valores em um detalhamento, como a receita total em todos os produtos ou o total de visitas em todos os dias. Isso é útil quando você precisa de um total geral para comparar com valores de linha individuais.
+
+**No Construtor de Métrica Calculada**: Aplique a **Soma da Coluna** a uma métrica como *Receita* ou *Visitas* enquanto faz o detalhamento por *Produto* ou *Dia*. A função retorna o total de todos os valores nessa coluna para cada linha.
+
+>[!TIP]
+>
+>Use quando precisar de uma referência ao total geral para calcular compartilhamentos ou porcentagens do desempenho total.
+>
 
 
 ## Contagem {#count}
@@ -143,6 +177,14 @@ Adiciona todos os valores numéricos de uma métrica em uma coluna (nos elemento
 |---|---|
 | métrica | A métrica que deseja contar. |
 
+**Caso de uso**: conte o número de pontos de dados incluídos em um cálculo, como o número de dias em um intervalo de datas ou o número de produtos em um detalhamento. Isso ajuda quando é necessário saber quantos itens contribuem para um valor agregado.
+
+**No Construtor de Métrica Calculada**: Aplique **Count** a uma métrica como *Visitas* ou *Receita* para retornar o número total de linhas (ou pontos de dados) incluídos no detalhamento ou intervalo de datas atual.
+
+>[!TIP]
+>
+>Use juntamente com **Soma da Coluna** para calcular médias manualmente (por exemplo, **Soma da Coluna**(*Receita*) / **Contagem**(Receita)).
+>
 
 ## Expoente {#exponent}
 
@@ -162,6 +204,15 @@ Adiciona todos os valores numéricos de uma métrica em uma coluna (nos elemento
 | Argumento | Descrição |
 |---|---|
 | métrica | O exponente aplicado à base e. |
+
+**Caso de uso**: elevar um número ou uma métrica a uma potência especificada, como elevar ao quadrado um valor ou aplicar um fator de crescimento exponencial. Isso é útil ao modelar tendências de crescimento ou dimensionar uma métrica exponencialmente.
+
+**No Construtor de Métricas Calculadas**: Use **Expoente** com uma métrica e um valor de potência. Por exemplo: **Expoente**(*Visitas*, 2) agrupa a métrica *Visitas*.
+
+>[!TIP]
+>
+>Combine com **Logaritmo** para modelagem avançada ou para suavizar dados altamente variáveis ao comparar padrões de crescimento.
+>
 
 
 ## Média {#mean}
@@ -185,6 +236,14 @@ Adiciona todos os valores numéricos de uma métrica em uma coluna (nos elemento
 | métrica | A métrica para a qual você deseja obter a média. |
 | include_zeros | Se os valores zero devem ser incluídos nos cálculos. |
 
+**Caso de uso**: calcule a média aritmética de um conjunto de valores, como a receita diária média ou o número médio de visitas por campanha. Isso ajuda a estabelecer uma linha de base para comparar valores individuais em um conjunto de dados.
+
+**No Construtor de Métrica Calculada**: Aplique a **Média** a uma métrica como *Receita* ou *Visitas* para retornar o valor médio em todos os pontos de dados no detalhamento ou intervalo de datas selecionado.
+
+>[!TIP]
+>
+>Use para entender as tendências gerais de desempenho ou combine-as com **Desvio Padrão** para medir a consistência em relação à média.
+>
 
 ## Mediana {#median}
 
@@ -206,6 +265,15 @@ Adiciona todos os valores numéricos de uma métrica em uma coluna (nos elemento
 |---|---|
 | métrica | A métrica para a qual você deseja obter a mediana. |
 | include_zeros | Se os valores zero devem ser incluídos nos cálculos. |
+
+**Caso de uso**: identifique o valor médio em um conjunto de dados, como a receita diária mediana ou exibições de página medianas por visita. Isso é útil quando você deseja reduzir o impacto de outliers e ver a tendência central de seus dados.
+
+**No Construtor de Métrica Calculada**: Aplique Mediana a uma métrica como Receita ou Exibições de página para retornar o valor do ponto médio em todos os pontos de dados no detalhamento ou intervalo de datas selecionado.
+
+>[!TIP]
+>
+>Use em vez da **Média** quando seus dados contiverem extremos altos ou baixos que podem distorcer a média.
+>
 
 
 ## Módulo {#modulo}
@@ -229,7 +297,16 @@ Retorna o resto após dividir x por y usando a divisão euclidiana.
 | metric_X | A primeira métrica que você deseja dividir. |
 | metric_Y | A segunda métrica que você deseja dividir. |
 
-### Exemplos
+**Caso de uso**: retornar o restante após dividir um número por outro. Isso pode ser útil para padrões cíclicos ou repetitivos, como identificar todos os dias ou fazer uma campanha em sequência.
+
+**No Construtor de Métrica Calculada**: Use **Módulo** com duas entradas numéricas. Por exemplo: **Modulo**(*Número do Dia*, 7) retorna o restante após dividir o número do dia por sete, o que pode ajudar a agrupar os dados por semana.
+
+>[!TIP]
+>
+>Combine com lógica condicional para destacar intervalos recorrentes ou segmentar dados com base em ciclos repetitivos.
+>
+
+### Mais exemplos
 
 O valor retornado tem o mesmo sinal que a entrada (ou é zero).
 
@@ -267,7 +344,14 @@ MODULO(MODULO(x,y)+y,y)
 | k | A coluna de métrica que define a posição relativa. |
 | include_zeros | Se os valores zero devem ser incluídos nos cálculos. |
 
+**Caso de uso**: identifique o valor abaixo do qual determinada porcentagem de pontos de dados cai, como o 90º percentil da receita diária ou exibições de página. Isso ajuda a medir a distribuição e detectar outliers de alto desempenho.
 
+**No Construtor de Métricas Calculadas**: Aplique **Percentil** a uma métrica como *Receita* ou *Visitas* e especifique o valor do percentil desejado (por exemplo, **Percentil**(*Receita*, 90)). O resultado mostra o limite abaixo do qual 90% dos pontos de dados estão.
+
+>[!TIP]
+>
+>Use o para definir benchmarks de desempenho ou filtrar dias, campanhas ou produtos com melhor desempenho.
+>
 
 ## Operador de potência {#power-operator}
 
@@ -289,6 +373,14 @@ Retorna x elevado à potência y.
 | metric_X | A métrica que você deseja elevar à potência metric_Y. |
 | metric_Y | A potência à qual você deseja elevar a metric_X. |
 
+**Caso de uso**: eleva um número ou métrica ao poder de outro, como o quadricular de um valor ou aplicar um peso exponencial. Isso é útil ao modelar o crescimento, dimensionar valores ou executar transformações matemáticas avançadas.
+
+**No Construtor de Métrica Calculada**: Use **Operador de Energia** entre dois valores numéricos ou métricas. Por exemplo: *Revenue* ^ 2 eleva o valor *Revenue* para a segunda potência.
+
+>[!TIP]
+>
+>Semelhante à função **Expoente**, mas expresso como um operador matemático, permitindo fórmulas mais compactas dentro das métricas calculadas.
+>
 
 ## Quartil {#quartile}
 
@@ -312,6 +404,14 @@ Retorna x elevado à potência y.
 | quartil | Indica qual valor de quartil retornar. |
 | include_zeros | Se os valores zero devem ser incluídos nos cálculos. |
 
+**Caso de uso**: divida um conjunto de dados em quatro partes iguais para entender como os valores são distribuídos, como identificar os 25% principais de dias por receita ou visitas. Isso ajuda a segmentar o desempenho em grupos classificados para uma comparação mais profunda.
+
+**No Construtor de Métricas Calculadas**: Aplique **Quartil** a uma métrica como *Receita* ou *Visitas* e especifique qual quartil retornar (por exemplo, **Quartil**(*Receita*, 3) para encontrar o limite para o terceiro quartil ou os 25% principais).
+
+>[!TIP]
+>
+>Use o para agrupar valores em níveis de desempenho, como campanhas ou produtos de baixo, médio e alto desempenho.
+>
 
 ## Arredondar {#round}
 
@@ -333,7 +433,16 @@ Arredondar sem um parâmetro *numérico* é igual a arredondar com um parâmetro
 | metric | A métrica que deseja arredondar. |
 | número | Quantos dígitos à direita do separador decimal devem retornar. (Se negativo, retorna zeros à esquerda do separador decimal). |
 
-### Exemplos
+**Caso de uso**: simplifique os resultados numéricos arredondando-os para um número especificado de casas decimais. Isso é útil para criar visualizações mais limpas ou facilitar a leitura das métricas calculadas nos relatórios.
+
+**No Construtor de Métricas Calculadas**: Aplique **Round** a uma métrica ou expressão e especifique o número de casas decimais. Por exemplo: **Round**(*Taxa de Conversão*, 2) arredonda o valor para duas casas decimais.
+
+>[!TIP]
+>
+>Use para padronizar a formatação de métrica em todos os relatórios, especialmente ao exibir porcentagens ou valores de moeda.
+>
+
+### Mais exemplos
 
 ```
 ROUND( 314.15, 0) = 314
@@ -357,6 +466,14 @@ ROUND( 314.15, -2) = 300
 
 Retorna a contagem de linhas referente a uma determinada coluna (o número de elementos únicos relatados em uma dimensão). *Únicos excedidos* é contado como 1.
 
+**Caso de uso**: conte o número total de linhas retornadas em um detalhamento ou conjunto de dados, como o número de dias, campanhas ou produtos incluídos em um relatório. Isso ajuda a entender quantos itens contribuem para sua análise.
+
+**No Construtor de Métrica Calculada**: Aplique **Contagem de Linhas** para retornar o número total de linhas no detalhamento ou segmento atual. Por exemplo, ao exibir *Receita* por *Produto*, **Contagem de Linhas** retorna o número de produtos exibidos.
+
+>[!TIP]
+>
+>Use com outras funções como **Soma de Coluna** para calcular médias manualmente (por exemplo, **Soma de Coluna**(*Receita*) / **Contagem de Linhas**()).
+>
 
 ## Máx. de linhas {#row-max}
 
@@ -378,6 +495,14 @@ O máximo de colunas de cada linha.
 | métrica | Precisa de pelo menos uma métrica, mas pode usar quantas métricas forem necessárias como parâmetros. |
 | include_zeros | Se os valores zero devem ser incluídos nos cálculos. |
 
+**Caso de uso**: identifique o valor mais alto em todas as métricas em uma única linha, como determinar qual métrica (por exemplo, *Receita*, *Pedidos* ou *Visitas*) tem o valor mais alto para um dia ou segmento específico. Isso ajuda a destacar qual métrica lidera em cada linha de dados.
+
+**No Construtor de Métrica Calculada**: Aplicar **Máximo de Linha** quando várias métricas forem incluídas em uma métrica calculada. Por exemplo: **Máximo de Linha**(*Receita*, *Pedidos*, *Visitas*) retorna o maior valor entre essas métricas para cada linha.
+
+>[!TIP]
+>
+>Use para comparar métricas relacionadas lado a lado e identificar qual contribui mais para o desempenho em cada linha.
+>
 
 ## Mín. de linhas {#row-min}
 
@@ -399,7 +524,14 @@ O mínimo de colunas de cada linha.
 | métrica | Precisa de pelo menos uma métrica, mas pode usar quantas métricas forem necessárias como parâmetros. |
 | include_zeros | Se os valores zero devem ser incluídos nos cálculos. |
 
+**Caso de uso**: identifique o valor mais baixo em todas as métricas em uma única linha, como descobrir qual métrica (por exemplo, *Receita*, *Pedidos* ou *Visitas*) tem o menor valor em um dia ou segmento específico. Isso ajuda a detectar a métrica de desempenho mais fraco em cada linha de dados.
 
+**No Construtor de Métrica Calculada**: Aplicar **Mínimo de Linha** ao comparar várias métricas. Por exemplo: **Mínimo de linha**(*Receita*, *Pedidos*, *Visitas*) retorna o menor valor entre essas métricas para cada linha.
+
+>[!TIP]
+>
+>Combine com Máximo de linha para calcular intervalos de desempenho ou destacar métricas com baixo desempenho em uma comparação lado a lado.
+>
 
 ## Soma da linha {#row-sum}
 
@@ -420,6 +552,14 @@ A soma das colunas em cada linha.
 |---|---|
 | métrica | Precisa de pelo menos uma métrica, mas pode usar quantas métricas forem necessárias como parâmetros. |
 
+**Caso de uso**: adicione os valores de várias métricas em uma única linha, como a soma de *Receita* e *Imposto* para calcular o valor total da transação, ou combine *Visitas* de diferentes fontes. Isso ajuda a consolidar métricas relacionadas em um total.
+
+**No Construtor de Métrica Calculada**: Aplicar **Soma de Linhas** para combinar várias métricas. Por exemplo: **Soma da Linha**(*Receita*, *Imposto*) adiciona essas duas métricas para cada linha em seu detalhamento.
+
+>[!TIP]
+>
+>Use para criar totais combinados ou agrupar indicadores de desempenho relacionados em uma única métrica calculada.
+>
 
 ## Raiz quadrada {#square-root}
 
@@ -441,6 +581,14 @@ A soma das colunas em cada linha.
 |---|---|
 | métrica | A métrica para a qual você deseja obter a raiz quadrada. |
 
+**Caso de uso**: retorna a raiz quadrada de um número ou métrica, como localizar a raiz da variação ao calcular o desvio padrão ou normalizar valores em um conjunto de dados. Isso é útil para cálculos estatísticos avançados ou de transformação de dados.
+
+**No Construtor de Métrica Calculada**: Aplicar **Raiz Quadrada** a uma métrica ou expressão. Por exemplo: **Raiz Quadrada**(Variance(*Revenue*)) retorna o desvio padrão de *Revenue*.
+
+>[!TIP]
+>
+>Use quando precisar dimensionar métricas proporcionalmente ou para suportar outras funções estatísticas que dependem de valores raiz.
+>
 
 ## Desvio padrão {#standard-deviation}
 
@@ -462,6 +610,14 @@ A soma das colunas em cada linha.
 | | A métrica para a qual você deseja obter o desvio padrão. |
 | include_zeros | Se os valores zero devem ser incluídos nos cálculos. |
 
+**Caso de uso**: meça quantos valores variam da média, como avaliar a consistência da receita diária ou das visitas ao longo do tempo. Isso ajuda a identificar a volatilidade, a estabilidade ou flutuações incomuns no desempenho.
+
+**No Construtor de Métrica Calculada**: Aplique **Desvio Padrão** a uma métrica como *Receita* ou *Visitas* para calcular a distribuição de valores dentro do detalhamento ou intervalo de datas selecionado. Por exemplo: **Desvio Padrão**(*Receita*) mostra quanta receita diária se desvia da média.
+
+>[!TIP]
+>
+>Use com *Média* para detectar anomalias ou comparar a consistência de desempenho entre campanhas, produtos ou segmentos.
+>
 
 ## Variância {#variance}
 
@@ -483,6 +639,14 @@ A soma das colunas em cada linha.
 | métrica | A métrica para a qual você deseja obter a variação. |
 | include_zeros | Se os valores zero devem ser incluídos nos cálculos. |
 
+**Caso de uso**: meça até que ponto os valores em um conjunto de dados se distribuem pela média, como analisar quanta receita diária ou duração da sessão varia ao longo do tempo. Isso ajuda a quantificar o grau de consistência ou flutuação no desempenho.
+
+**No Construtor de Métrica Calculada**: Aplique **Variação** a uma métrica como *Receita* ou *Tempo gasto por visita* para calcular o desvio médio quadrático da média. Por exemplo: **Variance**(*Revenue*) mostra quantos valores de receita diferem da média no intervalo selecionado.
+
+>[!TIP]
+>
+>Use com o **Desvio Padrão** para entender melhor a variabilidade dos dados e identificar áreas de desempenho imprevisível.
+>
 
 A equação de VARIAÇÃO é:
 
@@ -607,7 +771,7 @@ MEAN(metric)
 
 ## Median (Table) 
 
-Returns the median for a metric in a column. The median is the number in the middle of a set of numbers—that is, half the numbers have values that are greater than or equal to the median, and half are less than or equal to the median.
+Returns the median for a metric in a column. The median is the number in the middle of a set of numbers-that is, half the numbers have values that are greater than or equal to the median, and half are less than or equal to the median.
 
 ```
 MEDIAN(metric)
