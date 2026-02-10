@@ -8,7 +8,7 @@ role: Admin
 source-git-commit: 9645c24ed1a08c224445ebae99dde27db208b9b5
 workflow-type: tm+mt
 source-wordcount: '10186'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Os campos derivados são definidos na [Visualizações de dados](../data-views.m
 
 >[!NOTE]
 >
->[Os componentes padrão](../component-reference.md) estão vinculados e associados aos conjuntos de dados do evento. Como resultado, os componentes padrão usados como parte de um campo derivado só funcionam com base nos dados de um conjunto de dados de evento.
+>Os [componentes padrão](../component-reference.md) são vinculados e associados aos conjuntos de dados de evento. Por isso, os componentes padrão usados como parte de um campo derivado só funcionam em relação a dados de um conjunto de dados de evento.
 >
 
 
@@ -52,8 +52,8 @@ Ao criar ou editar um campo derivado, você usa a interface de campos derivados.
 |---------|----------|--------|
 | 1 | **Selector** | Use a área do seletor para selecionar, arrastar e soltar a sua função, modelo de função, campo do esquema ou campo padrão no construtor de regras. <br/>Use o menu suspenso para selecionar entre: <br/>![Função](assets/Smock_Function_18_N.svg) [!UICONTROL Funções]: lista as [funções](#function-reference) disponíveis; </br>![Ícone do modelo de função](assets/Smock_FileTemplate_18_N.svg) [!UICONTROL Modelos de função]: lista os [Modelos de função](#function-templates) disponíveis; <br/>![Ícone de campo do esquema](assets/Smock_Folder_18_N.svg) [!UICONTROL Campos do esquema]: lista os campos disponíveis a partir de categorias de conjunto de dados (evento, perfil, pesquisa) e campos derivados definidos anteriormente; e <br/>![Ícone de campo padrão](assets/Smock_DragHandle_18_N.svg) [!UICONTROL Campos padrão]: campos padrão disponíveis (como ID do conjunto de dados da Platform). Somente os campos padrão de strings e números são exibidos no seletor. Se a função permitir outros tipos de dado, os campos padrão com esses outros tipos de dado poderão ser selecionados para valores ou campos na interface de regras.<br/>É possível pesquisar por função, modelos de função, campos do esquema e campos padrão, utilizando-se a caixa de pesquisa ![Ícone de pesquisa](assets/Smock_Search_18_N.svg). <br/>Você pode filtrar a lista de objetos selecionados por meio de ![Ícone de Filtro](assets/Smock_Filter_18_N.svg) Filtrar e especificar filtros na caixa de diálogo [!UICONTROL Filtrar campos por]. Você pode remover filtros facilmente por meio do ![Ícone de fechar](assets/CrossSize75.svg) de cada filtro. |
 | 2 | **Construtor de regras** | Você cria o campo derivado sequencialmente com base em uma ou mais regras. Uma regra é uma implementação específica de uma função e, portanto, sempre está associada a apenas uma função. Para criar uma regra, arraste e solte uma função no construtor de regras. O tipo de função determina a interface da regra.<br/>Consulte [Interface da regra](#rule-interface) para mais informações. <br/>É possível inserir uma função no início, fim ou entre regras já disponíveis no construtor de regras. A última regra no construtor de regras determina a saída final do campo derivado. |
-| 3 | **[!UICONTROL **&#x200B; Configurações do campo &#x200B;**]** | É possível nomear e descrever o campo derivado e inspecionar seu tipo de campo. |
-| 4 | **[!UICONTROL **&#x200B; Saída final &#x200B;**]** | Esta área mostra uma visualização atualizada dinamicamente dos valores de saída com base nos dados dos últimos 30 dias e nas alterações feitas no campo derivado no construtor de regras. |
+| 3 | **[!UICONTROL ** Configurações do campo **]** | É possível nomear e descrever o campo derivado e inspecionar seu tipo de campo. |
+| 4 | **[!UICONTROL ** Saída final **]** | Esta área mostra uma visualização atualizada dinamicamente dos valores de saída com base nos dados dos últimos 30 dias e nas alterações feitas no campo derivado no construtor de regras. |
 
 {style="table-layout:auto"}
 
@@ -62,7 +62,7 @@ Ao criar ou editar um campo derivado, você usa a interface de campos derivados.
 Quando você acessa a interface de campos derivados pela primeira vez, o assistente [!UICONTROL Iniciar com um modelo de campo] é exibido.
 
 1. Selecione o modelo que melhor descreva o tipo de campo que você está tentando criar.
-2. Clique no botão **[!UICONTROL **&#x200B; Selecionar &#x200B;**]** para continuar.
+2. Clique no botão **[!UICONTROL ** Selecionar **]** para continuar.
 
 A caixa de diálogo de campos derivados é preenchida com as regras (e funções) necessárias ou úteis para o tipo de campo selecionado. Consulte [Modelos de função](#function-templates) para mais informações sobre os modelos disponíveis.
 
@@ -76,8 +76,8 @@ Para definir uma regra no construtor de regras, use a interface de regras.
 |---------|----------|--------|
 | A | **Nome da regra** | Por padrão, o nome da regra é **Regra X** (X refere-se a um número de sequência). Para editar o nome de uma regra, selecione-o e digite o novo nome, como `Query Parameter`. |
 | B | **Nome da função** | O nome de função selecionado para a regra, como [!UICONTROL URL PARSE]. Quando a função é a última da sequência de funções e determina os valores da saída final, o nome da função é seguido por [!UICONTROL - FINAL OUTPUT]; por exemplo, [!UICONTROL URL PARSE - FINAL OUTPUT].  <br/>Para mostrar uma janela pop-up com mais informações sobre a função, selecione o ![Ícone de ajuda](assets/Smock_HelpOutline_18_N.svg). |
-| C | **Descrição da regra** | Também é possível adicionar uma descrição a uma regra.<br/>Selecione o ![Ícone de mais](assets/More.svg) e **[!UICONTROL ** Adicionar descrição **]** para adicionar uma descrição, ou **[!UICONTROL **&#x200B; Editar descrição &#x200B;**]** para editar uma descrição existente.<br/>Use o editor para inserir uma descrição. Você pode usar a barra de ferramentas para formatar o texto (utilizando o seletor de estilo, negrito, itálico, sublinhado, direita, esquerda, centralizado, cor, lista numerada, lista com marcadores) e adicionar links para informações externas. <br/>Para concluir a edição da descrição, clique fora do editor. |
-| D | **Área da função** | Define a lógica da função. A interface depende do tipo de função. O menu suspenso do [!UICONTROL Campo] ou [!UICONTROL Valor] mostra todas as categorias de campos (regras, campos padrão, campos) disponíveis, com base no tipo de entrada que a função espera. Alternativamente, você pode arrastar e soltar um campo do seletor de campos do esquema e campos padrão em um campo ou valor. Quando esse campo arrastado advém de um conjunto de dados de pesquisa, uma função de pesquisa é inserida automaticamente antes da função definida. <br/>Consulte [Referência da função](#function-reference) para informações detalhadas sobre cada uma das funções permitidas. |
+| C | **Descrição da regra** | Também é possível adicionar uma descrição a uma regra.<br/>Selecione o ![Ícone de mais](assets/More.svg) e **[!UICONTROL ** Adicionar descrição **]** para adicionar uma descrição, ou **[!UICONTROL ** Editar descrição **]** para editar uma descrição existente.<br/>Use o editor para inserir uma descrição. Você pode usar a barra de ferramentas para formatar o texto (utilizando o seletor de estilo, negrito, itálico, sublinhado, direita, esquerda, centralizado, cor, lista numerada, lista com marcadores) e adicionar links para informações externas. <br/>Para concluir a edição da descrição, clique fora do editor. |
+| D | **Área da função** | Define a lógica da função. A interface depende do tipo de função. O menu suspenso [!UICONTROL Campo] ou [!UICONTROL Valor] mostra todas as categorias de campos (regras, campos padrão, campos) disponíveis com base no tipo de entrada que a função espera. Alternativamente, você pode arrastar e soltar um campo do seletor de campos do esquema e campos padrão em um campo ou valor. Quando esse campo arrastado advém de um conjunto de dados de pesquisa, uma função de pesquisa é inserida automaticamente antes da função definida. <br/>Consulte [Referência da função](#function-reference) para informações detalhadas sobre cada uma das funções permitidas. |
 
 {style="table-layout:auto"}
 
@@ -85,36 +85,36 @@ Para definir uma regra no construtor de regras, use a interface de regras.
 
 1. Selecione uma visualização de dados existente ou crie uma visualização de dados. Consulte [Visualizações de dados](../data-views.md) para mais informações.
 
-2. Selecione a guia **[!UICONTROL **&#x200B; Componentes &#x200B;**]** da visualização de dados.
+2. Selecione a guia **[!UICONTROL ** Componentes **]** da visualização de dados.
 
-3. Selecione **[!UICONTROL **&#x200B; Criar campo derivado &#x200B;**]** no painel esquerdo.
+3. Selecione **[!UICONTROL ** Criar campo derivado **]** no painel esquerdo.
 
 4. Para definir o campo derivado, use a interface [!UICONTROL Criar campo derivado]. Consulte [Interface de campos derivados](#derived-field-interface).
 
-   Para salvar o novo campo derivado, selecione **[!UICONTROL **&#x200B; Salvar &#x200B;**]**.
+   Para salvar o novo campo derivado, selecione **[!UICONTROL ** Salvar **]**.
 
-5. O novo campo derivado é adicionado ao container [!UICONTROL Campos derivados >] como parte dos **[!UICONTROL **&#x200B; Campos do esquema &#x200B;**]** no painel esquerdo da visualização de dados.
+5. O novo campo derivado é adicionado ao container [!UICONTROL Campos derivados >] como parte dos **[!UICONTROL ** Campos do esquema **]** no painel esquerdo da visualização de dados.
 
 
 ## Editar um campo derivado {#edit}
 
 1. Selecione uma visualização de dados existente. Consulte [Visualizações de dados](../data-views.md) para mais informações.
 
-2. Selecione a guia **[!UICONTROL **&#x200B; Componentes &#x200B;**]** da visualização de dados.
+2. Selecione a guia **[!UICONTROL ** Componentes **]** da visualização de dados.
 
-3. Selecione a guia **[!UICONTROL **&#x200B; Campos do esquema &#x200B;**]** no painel [!UICONTROL Conexão] à esquerda.
+3. Selecione a guia **[!UICONTROL ** Campos do esquema **]** no painel [!UICONTROL Conexão] à esquerda.
 
-4. Selecione o container **[!UICONTROL **&#x200B; Campos derivados >**]**.
+4. Selecione o container **[!UICONTROL ** Campos derivados >**]**.
 
 5. Passe o mouse sobre o campo derivado que você deseja editar e selecione o ![Ícone de editar](assets/Smock_Edit_18_N.svg).
 
 6. Para editar o campo derivado, use a interface [!UICONTROL Editar campo derivado]. Consulte [Interface de campos derivados](#derived-field-interface).
 
-   - Selecione **[!UICONTROL **&#x200B; Salvar &#x200B;**]** para salvar o campo derivado atualizado.
+   - Selecione **[!UICONTROL ** Salvar **]** para salvar o campo derivado atualizado.
 
-   - Selecione **[!UICONTROL **&#x200B; Cancelar &#x200B;**]** para cancelar todas as alterações feitas no campo derivado.
+   - Selecione **[!UICONTROL ** Cancelar **]** para cancelar todas as alterações feitas no campo derivado.
 
-   - Selecione **[!UICONTROL **&#x200B; Salvar como &#x200B;**]** para salvar o campo derivado como um novo campo derivado. O novo campo derivado tem o mesmo nome que o campo derivado editado original, com a adição de `(copy)`.
+   - Selecione **[!UICONTROL ** Salvar como **]** para salvar o campo derivado como um novo campo derivado. O novo campo derivado tem o mesmo nome que o campo derivado editado original, com a adição de `(copy)`.
 
 Alternativamente, se você tiver usado um campo derivado como um componente para dimensões ou métricas na visualização de dados:
 
@@ -124,11 +124,11 @@ Alternativamente, se você tiver usado um campo derivado como um componente para
 
 1. Para editar o campo derivado, use a interface [!UICONTROL Editar campo derivado]. Consulte [Interface de campos derivados](#derived-field-interface).
 
-   - Selecione **[!UICONTROL **&#x200B; Salvar &#x200B;**]** para salvar o campo derivado atualizado.
+   - Selecione **[!UICONTROL ** Salvar **]** para salvar o campo derivado atualizado.
 
-   - Selecione **[!UICONTROL **&#x200B; Cancelar &#x200B;**]** para cancelar todas as alterações feitas no campo derivado.
+   - Selecione **[!UICONTROL ** Cancelar **]** para cancelar todas as alterações feitas no campo derivado.
 
-   - Selecione **[!UICONTROL **&#x200B; Salvar como &#x200B;**]** para salvar o campo derivado como um novo campo derivado. O novo campo derivado tem o mesmo nome que o campo derivado editado original, com a adição de `(copy)`.
+   - Selecione **[!UICONTROL ** Salvar como **]** para salvar o campo derivado como um novo campo derivado. O novo campo derivado tem o mesmo nome que o campo derivado editado original, com a adição de `(copy)`.
 
 
 
@@ -136,11 +136,11 @@ Alternativamente, se você tiver usado um campo derivado como um componente para
 
 1. Selecione uma visualização de dados existente. Consulte [Visualizações de dados](../data-views.md) para mais informações.
 
-2. Selecione a guia **[!UICONTROL **&#x200B; Componentes &#x200B;**]** da visualização de dados.
+2. Selecione a guia **[!UICONTROL ** Componentes **]** da visualização de dados.
 
-3. Selecione a guia **[!UICONTROL **&#x200B; Campos do esquema &#x200B;**]** no painel [!UICONTROL Conexão].
+3. Selecione a guia **[!UICONTROL ** Campos do esquema **]** no painel [!UICONTROL Conexão].
 
-4. Selecione o container **[!UICONTROL **&#x200B; Campos derivados >**]**.
+4. Selecione o container **[!UICONTROL ** Campos derivados >**]**.
 
 5. Passe o mouse sobre o campo derivado que você deseja excluir e selecione o ![Ícone de editar](assets/Smock_Edit_18_N.svg).
 
@@ -148,7 +148,7 @@ Alternativamente, se você tiver usado um campo derivado como um componente para
 
    A caixa de diálogo [!UICONTROL Excluir componente] solicita que você confirme a exclusão. Considere todas as referências externas que possam existir ao campo derivado fora da visualização de dados.
 
-   - Selecione **[!UICONTROL **&#x200B; Continuar &#x200B;**]** para excluir o campo derivado.
+   - Selecione **[!UICONTROL ** Continuar **]** para excluir o campo derivado.
 
 Alternativamente, se você tiver usado um campo derivado como um componente para dimensões ou métricas na visualização de dados:
 
@@ -160,7 +160,7 @@ Alternativamente, se você tiver usado um campo derivado como um componente para
 
    A caixa de diálogo [!UICONTROL Excluir componente] solicita que você confirme a exclusão. Considere todas as referências externas que possam existir ao campo derivado fora da visualização de dados.
 
-   - Selecione **[!UICONTROL **&#x200B; Continuar &#x200B;**]** para excluir o campo derivado.
+   - Selecione **[!UICONTROL ** Continuar **]** para excluir o campo derivado.
 
 >[!NOTE]
 >
@@ -398,7 +398,7 @@ Para usar o modelo, é necessário especificar os parâmetros corretos para cada
 
 ### Latitude do estado {#state-latitude}
 
-Este modelo de função obtém a latitude para um estado dos EUA com uma precisão de 5 dígitos.
+Este modelo de função obtém a latitude de um estado dos EUA com uma precisão de cinco dígitos.
 
 +++ Detalhes
 
@@ -406,14 +406,14 @@ Este modelo de função obtém a latitude para um estado dos EUA com uma precis�
 
 Para usar o modelo, é necessário especificar os parâmetros corretos para cada função listada como parte das regras no modelo. Consulte [Referência da função](#function-reference) para mais informações.
 
-![Captura de tela do construtor de regras do State Latitude](assets/function-template-state-latitude.png)
+![Captura de tela do construtor de regras da latitude do estado](assets/function-template-state-latitude.png)
 
 +++
 
 
 ### Longitude do estado {#state-longitude}
 
-Este modelo de função obtém a longitude de um estado dos EUA com uma precisão de 5 dígitos.
+Este modelo de função obtém a longitude de um estado dos EUA com uma precisão de cinco dígitos.
 
 +++ Detalhes
 
@@ -421,7 +421,7 @@ Este modelo de função obtém a longitude de um estado dos EUA com uma precisã
 
 Para usar o modelo, é necessário especificar os parâmetros corretos para cada função listada como parte das regras no modelo. Consulte [Referência da função](#function-reference) para mais informações.
 
-![Captura de tela do construtor de regras de Longitude de Estado](assets/function-template-state-longitude.png)
+![Captura de tela do construtor de regras de longitude de um estado](assets/function-template-state-longitude.png)
 
 +++
 
@@ -464,7 +464,7 @@ Para cada função compatível, confira os detalhes abaixo sobre:
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_casewhen"
 >title="Case When"
->abstract="Esta função oferece a capacidade de aplicar condicionais com base em critérios definidos a partir de um ou mais campos. Esses critérios são usados para definir os valores no novo campo derivado, com base na sequência das condições."
+>abstract="Esta função oferece a capacidade de aplicar condicionais com base em critérios definidos a partir de um ou mais campos. Então, esses critérios são usados para definir os valores no novo campo derivado com base na sequência das condições."
 
 
 Aplica condicionais com base em critérios definidos de um ou mais campos. Em seguida, esses critérios são usados para definir os valores em um novo campo derivado com base na sequência das condições.
@@ -475,7 +475,7 @@ Aplica condicionais com base em critérios definidos de um ou mais campos. Em se
 
 | Tipo de dado de entrada | Entrada | Operadores inclusos | Limitações | Saída |
 |---|---|---|---|---|
-| <ul><li>String</li><li>Numérico</li><li>Data</li></ul> | <ul><li>Contêiner [!UICONTROL If], [!UICONTROL Else If]:</p><ul><li>[!UICONTROL Valor]</li><ul><li>Regras</li><li>Campos padrão</li><li>Campos</li></ul><li>[!UICONTROL Critério] (consulte os operadores inclusos com base no tipo de valor selecionado)</li></ul></li><li>[!UICONTROL Em seguida, defina o valor como], [!UICONTROL Caso contrário, defina o valor como]:</p><ul><li>[!UICONTROL Valor]</li><ul><li>Regras</li><li>Campos padrão</li><li>Campos</li></ul></ul></li></ul> | <p>Strings</p><ul><li>Igual a</li><li>Igual a qualquer termo</li><li>Contém a frase</li><li>Contém qualquer termo</li><li>Contém todos os termos</li><li>Começa com</li><li>Começa com qualquer termo</li><li>Termina com</li><li>Termina com qualquer termo</li><li>Não é igual a</li><li>Não é igual a nenhum termo</li><li>Não contém a frase</li><li>Não contém nenhum termo</li><li>Não contém todos os termos</li><li>Não começa com</li><li>Não começa com nenhum termo</li><li>Não termina com</li><li>Não termina com nenhum termo</li><li>Está definido</li><li>Não está definido</li></ul><p>Numérico</p><ul><li>Igual a</li><li>Não é igual a</li><li>É superior a</li><li>É superior ou igual a</li><li>É inferior a</li><li>É inferior ou igual a</li><li>Está definido</li><li>Não está definido</li></ul><p>Datas</p><ul><li>Igual a</li><li>Não é igual a</li><li>É posterior a</li><li>É posterior ou igual a</li><li>É anterior a</li><li>É anterior ou igual a</li><li>Está definido</li><li>Não está definido</li></ul> | <ul><li>Cinco funções por campo derivado</li><li>Duzentos [operadores](#operators) por campo derivado. Um exemplo de um operador único é “O domínio de referência contém Google”. </li></ul> | <p>Novo campo derivado</p> |
+| <ul><li>String</li><li>Numérico</li><li>Data</li></ul> | <ul><li>Contêiner [!UICONTROL If], [!UICONTROL Else If]:</p><ul><li>[!UICONTROL Valor]</li><ul><li>Regras</li><li>Campos padrão</li><li>Campos</li></ul><li>[!UICONTROL Critério] (consulte os operadores inclusos com base no tipo de valor selecionado)</li></ul></li><li>[!UICONTROL Em seguida, defina o valor como], [!UICONTROL Caso contrário, defina o valor como]:</p><ul><li>[!UICONTROL Valor]</li><ul><li>Regras</li><li>Campos padrão</li><li>Campos</li></ul></ul></li></ul> | <p>Strings</p><ul><li>Igual a</li><li>Igual a qualquer termo</li><li>Contém a frase</li><li>Contém qualquer termo</li><li>Contém todos os termos</li><li>Começa com</li><li>Começa com qualquer termo</li><li>Termina com</li><li>Termina com qualquer termo</li><li>Não é igual a</li><li>Não é igual a nenhum termo</li><li>Não contém a frase</li><li>Não contém nenhum termo</li><li>Não contém todos os termos</li><li>Não começa com</li><li>Não começa com nenhum termo</li><li>Não termina com</li><li>Não termina com nenhum termo</li><li>Está definido</li><li>Não está definido</li></ul><p>Numérico</p><ul><li>Igual a</li><li>Não é igual a</li><li>É maior que</li><li>É maior ou igual a</li><li>É menor que</li><li>É menor ou igual a</li><li>Está definido</li><li>Não está definido</li></ul><p>Datas</p><ul><li>Igual a</li><li>Não é igual a</li><li>É posterior a</li><li>É posterior ou igual a</li><li>É anterior a</li><li>É anterior ou igual a</li><li>Está definido</li><li>Não está definido</li></ul> | <ul><li>Cinco funções por campo derivado</li><li>Duzentos [operadores](#operators) por campo derivado. Um exemplo de um operador único é “O domínio de referência contém Google”. </li></ul> | <p>Novo campo derivado</p> |
 
 {style="table-layout:auto"}
 
@@ -673,7 +673,7 @@ Você define um campo derivado de `Trip Duration (bucketed)`. Você cria a segui
 
 ## Mais informações {#casewhen-more-info}
 
-O Customer Journey Analytics usa uma estrutura de container aninhado baseada no [XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=pt-BR) (Experience Data Model) da Adobe Experience Platform. Consulte [Contêineres](../create-dataview.md#containers) e [Contêineres de segmentos](/help/components/segments/seg-overview.md#containers) para obter mais informações sobre a tela de fundo. Este modelo de contêiner, embora flexível por natureza, impõe algumas restrições ao usar o construtor de regras.
+O Customer Journey Analytics usa uma estrutura de container aninhado baseada no [XDM](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/home) (Experience Data Model) da Adobe Experience Platform. Consulte [Containers](../create-dataview.md#containers) e [Containers de segmentos](/help/components/segments/seg-overview.md#containers) para mais informações de contexto. Este modelo de contêiner, embora flexível por natureza, impõe algumas restrições ao usar o construtor de regras.
 
 O Customer Journey Analytics usa o seguinte modelo de container padrão:
 
@@ -926,14 +926,14 @@ Você define um campo derivado de `Origin - Destination`. Use a função [!UICON
 
 <!-- DATE MATH -->
 
-### Matemática de data {#datemath}
+### Cálculo de datas {#datemath}
 
 >[!CONTEXTUALHELP]
 >id="dataview_derivedfields_datemath"
->title="Matemática de data"
+>title="Cálculo de datas"
 >abstract="Essa função permite descobrir a diferença entre dois campos de data ou data e hora. Os campos baseados em pessoas (dos conjuntos de dados de perfil) não têm opções para **[!UICONTROL Retornar o primeiro]** e **[!UICONTROL Retornar o último]**."
 
-Retorna a diferença entre dois campos de datas ou de data e hora.
+Retorna a diferença entre dois campos de data ou dois campos de data e hora.
 
 +++ Detalhes
 
@@ -941,51 +941,51 @@ Retorna a diferença entre dois campos de datas ou de data e hora.
 
 | Tipo de dado de entrada | Entrada | Operadores inclusos | Limitações | Saída |
 |---|---|---|---|---|
-| <ul><li>Data</li><li>Data-hora</li></ul> | <ul><li>[!UICONTROL Escopo]<ul><li>Evento</li><li>Sessão</li><li>Pessoa</li></ul></li><li>[!UICONTROL Valor]:<ul><li>Data</li><li>Data/hora</li><li>Data estática (entrada do usuário)</li><li>Data e hora estáticas (entrada do usuário)</li><li>Data dinâmica<ul><li>Hoje</li></ul></li><li>Data e hora dinâmicas<ul><li>Agora</li></ul></li></ul></li><li>[!UICONTROL Granularidade]:<ul><li>Seconds</li><li>Minutes</li><li>Horas</li><li>Days</li><li>Weeks</li><li>Months</li><li>Trimestres</li><li>Anos</li></ul></li><li>Para cada retorno de Data ou Data e hora:<ul><li>Primeiro (dentro da sessão ou pessoa)</li><li>Último (dentro da sessão ou pessoa)</li></ul></li></ul> | <p>N/A</p> | <p>Duas funções por campo derivado</p> | <p>Novo campo derivado</p> |
+| <ul><li>Data</li><li>Data/hora</li></ul> | <ul><li>[!UICONTROL Escopo]<ul><li>Evento</li><li>Sessão</li><li>Pessoa</li></ul></li><li>[!UICONTROL Valor]:<ul><li>Data</li><li>Data/hora</li><li>Data estática (inserida pelo usuário)</li><li>Data/hora estáticas (inseridas pelo usuário)</li><li>Data dinâmica<ul><li>Hoje</li></ul></li><li>Data/hora dinâmicas<ul><li>Agora</li></ul></li></ul></li><li>[!UICONTROL Granularidade]:<ul><li>Seconds</li><li>Minutes</li><li>Horas</li><li>Days</li><li>Weeks</li><li>Months</li><li>Trimestres</li><li>Anos</li></ul></li><li>Para cada retorno de data ou data e hora:<ul><li>Primeiro (dentro da sessão ou pessoa)</li><li>Último (dentro da sessão ou pessoa)</li></ul></li></ul> | <p>N/A</p> | <p>Duas funções por campo derivado</p> | <p>Novo campo derivado</p> |
 
 {style="table-layout:auto"}
 
 
 ## Caso de uso 1 {#datemath-uc1}
 
-Como analista de marketing de uma empresa de hotéis, você gostaria de entender a diferença do número de dias entre as datas de check-in dos clientes e as datas de reserva na última semana.
+Como analista de marketing de uma empresa de hotelaria, você gostaria de entender a diferença no número de dias entre as datas de check-in dos hóspedes e as datas das reservas na última semana.
 
 
 ### Campo derivado {#datemath-uc1-derivedfield}
 
-Você define um campo derivado de `Days between booking and check-in`. Use a função [!UICONTROL DATA MATH] para definir uma regra para calcular os dias do [!UICONTROL Escopo] [!DNL Person] entre a [!UICONTROL Data de Reserva] e a [!UICONTROL Data de Check-in]. Você seleciona [!UICONTROL Dia] como [!UICONTROL Granularidade da saída]. E você seleciona [!UICONTROL Retornar o último] para [!UICONTROL Data da reserva] e [!UICONTROL Data de check-in] para garantir que o valor de escopo da última pessoa seja usado no cálculo.
+Você define um campo derivado de `Days between booking and check-in`. Você usa a função [!UICONTROL DATA MATH] para definir uma regra para calcular os dias do [!UICONTROL Escopo] [!DNL Person] entre a [!UICONTROL Data da reserva] e a [!UICONTROL Data de check-in]. Você seleciona [!UICONTROL Dia] como a [!UICONTROL Granularidade de saída]. E seleciona [!UICONTROL Retornar o último] em [!UICONTROL Data da reserva] e [!UICONTROL Data de check-in] para garantir que o valor da última pessoa do escopo seja usado no cálculo.
 
-![Captura de tela da regra de Matemática de Datas](assets/datemath-1.png)
+![Captura de tela da regra de cálculo de datas](assets/datemath-1.png)
 
 
 ## Caso de uso 2 {#datemath-uc2}
 
-Como analista de marketing de uma loja física, você quer entender quantos dias atrás foi a última visita de um cliente à loja. Você usa a funcionalidade de geolocalização em um aplicativo móvel e beacons na loja para capturar visitas físicas de clientes.
+Como analista de marketing de uma loja física, você quer entender quantos dias atrás foi a última visita de um cliente à loja. Você usa a funcionalidade de geolocalização em um aplicativo móvel e sinalizadores na loja para capturar visitas físicas de clientes.
 
 ### Campo derivado {#datemath-uc2-derivedfield}
 
-Você define um novo campo derivado de `Days Since Visit To Shop`. Use a função [!UICONTROL DATA MATH] para definir uma regra para calcular os dias entre uma Data-Hora Personalizada (que você especifica em [!UICONTROL Data]) e a [!UICONTROL Hora Local] (do grupo de campos [!UICONTROL placeContext] do conjunto de dados do evento) com um [!UICONTROL Escopo de desduplicação] de [!UICONTROL Pessoa]. Você seleciona [!UICONTROL Retornar o(s) último(s)] para garantir que o valor de escopo da última pessoa para [!UICONTROL Hora local] seja usado no cálculo. Você seleciona Dia como a [!UICONTROL Granularidade da saída].
+Você define um novo campo derivado de `Days Since Visit To Shop`. Você usa a função [!UICONTROL DATA MATH] para definir uma regra para calcular os dias entre uma data e uma hora personalizadas (que você especifica em [!UICONTROL Data]) e a [!UICONTROL Hora local] (do grupo de campos [!UICONTROL placeContext] do conjunto de dados de evento) com um [!UICONTROL Escopo de desduplicação] de [!UICONTROL Pessoa]. Você seleciona [!UICONTROL Retornar o último] para garantir que o valor da última pessoa do escopo referente à [!UICONTROL Hora local] seja usado no cálculo. Você seleciona “Dia” como a [!UICONTROL Granularidade de saída].
 
-![Captura de tela da regra de Matemática de Datas 2](assets/datemath-2.png)
+![Captura de tela da regra de cálculo de datas 2](assets/datemath-2.png)
 
-Como alternativa, você pode usar o valor de conveniência de Intervalo de datas dinâmico Agora para calcular agora até a [!UICONTROL Hora local] (do grupo de campos [!UICONTROL placeContext] do conjunto de dados do evento)
+Alternativamente, você pode usar o valor de conveniência do intervalo de datas dinâmico “Agora” para calcular entre o momento presente e a [!UICONTROL Hora local] (do grupo de campos [!UICONTROL placeContext] do conjunto de dados de evento)
 
-![Captura de tela da regra de matemática de data 2a](assets/datemath-2a.png)
+![Captura de tela da regra de cálculo de datas 2a](assets/datemath-2a.png)
 
 
 ## Caso de uso 3 {#datemath-uc3}
 
-Você quer entender o tempo de pesquisa em minutos antes que um cliente em uma sessão faça um pedido.
+Você quer entender o tempo de pesquisa em minutos antes que um cliente faça um pedido durante uma sessão.
 
-Você define um novo campo derivado `Time Between Search And Order In Minutes` que é o resultado de duas funções [[!UICONTROL CASE WHEN]](#case-when) para definir valores de [!UICONTROL Tempo de Pesquisa] e [!UICONTROL Tempo de Pedido].
-Em seguida, use esses dois valores para calcular a diferença com uma função [!UICONTROL DATE MATH] com [!UICONTROL Scope] definido como [!UICONTROL Session], valores definidos como [!UICONTROL Tempo de Pesquisa] e [!UICONTROL Tempo de Ordem] e [!UICONTROL Granularidade de saída] definidos como [!UICONTROL Minuto]. Para ambos os valores, selecione [!UICONTROL Retornar o primeiro] para garantir que o primeiro [!UICONTROL Tempo de Pesquisa] e o [!UICONTROL Tempo de Pedido] sejam retornados.
+Você define um novo campo derivado `Time Between Search And Order In Minutes`, que é o resultado de duas funções [[!UICONTROL CASE WHEN]](#case-when), para definir os valores de [!UICONTROL Tempo de pesquisa] e [!UICONTROL Tempo de pedido].
+Em seguida, você usa esses dois valores para calcular a diferença com uma função [!UICONTROL DATE MATH] com o [!UICONTROL Escopo] definido como [!UICONTROL Sessão], valores definidos como [!UICONTROL Tempo de pesquisa] e [!UICONTROL Tempo de pedido], e [!UICONTROL Granularidade de saída] definida como [!UICONTROL Minuto]. Para ambos os valores, selecione [!UICONTROL Retornar o primeiro] para garantir que o primeiro [!UICONTROL Tempo de pesquisa] e o primeiro [!UICONTROL Tempo de pedido] sejam retornados.
 
-![Captura de tela da regra de Matemática de Datas 3](assets/datemath-3.png)
+![Captura de tela da regra de cálculo de datas 3](assets/datemath-3.png)
 
 
 ## Mais informações {#datemath-more-info}
 
-As opções para [!UICONTROL Retornar o primeiro] ou [!UICONTROL Retornar o último] não estão disponíveis ao selecionar um campo com base em pessoa (de um conjunto de dados de perfil). Um campo baseado em pessoa pode ter apenas um valor para um campo Data ou Data-hora para uma pessoa.
+As opções de [!UICONTROL Retornar o primeiro] ou [!UICONTROL Retornar o último] não estão disponíveis quando você seleciona um campo baseado em pessoas (de um conjunto de dados de perfil). Um campo baseado em pessoas só pode ter um valor para um campo de data ou de data/hora referente a uma pessoa.
 +++
 
 <!-- DEDUPLICATE -->
@@ -1088,7 +1088,7 @@ Você define um novo campo derivado de `Tracking Code (deduplicated)`. Use a fun
 >title="Profundidade"
 >abstract="Essa função fornece a capacidade de retornar a profundidade de qualquer campo, sendo semelhante à funcionalidade do componente padrão de profundidade de evento."
 
-Retorna a profundidade de um campo, semelhante ao que é possível com a [dimensão Profundidade do Evento padrão](/help/components/dimensions/overview.md#standard-dimensions) predefinida.
+Retorna a profundidade de um campo, semelhante ao que é possível com a [dimensão de profundidade do evento padrão](/help/components/dimensions/overview.md#standard-dimensions) predefinida.
 
 +++ Detalhes
 
@@ -1103,18 +1103,18 @@ Retorna a profundidade de um campo, semelhante ao que é possível com a [dimens
 
 ## Caso de uso {#depth-uc1}
 
-Você deseja compreender a profundidade da pesquisa interna (que também pode ser interpretada como o número de pesquisas). Portanto, você pode usar essa profundidade de pesquisa interna posteriormente para detalhar o termo de pesquisa associado a uma profundidade de pesquisa específica.
+Você quer entender a profundidade das pesquisas internas (que também pode ser interpretada como o número de pesquisas). Portanto, você pode usar essa profundidade das pesquisas internas posteriormente para detalhar o termo de pesquisa associado a uma profundidade de pesquisa específica.
 
 
 ### Campo derivado {#depth-uc1-derivedfield}
 
-Você define um novo campo derivado de `Internal Search Depth`. Use a função [!UICONTROL DEPTH] para definir uma regra para recuperar a profundidade do [!UICONTROL Termo de Pesquisa Interna] e armazená-lo em um novo campo derivado.
+Você define um novo campo derivado de `Internal Search Depth`. Você usa a função [!UICONTROL DEPTH] para definir uma regra para recuperar a profundidade do [!UICONTROL Termo de pesquisa interna] e armazená-lo em um novo campo derivado.
 
-![Captura de tela da regra de Profundidade](assets/depth-1.png)
+![Captura de tela da regra de profundidade](assets/depth-1.png)
 
-E, em seguida, usar esse novo campo derivado em uma visualização para analisar qual termo foi usado para pesquisar na primeira pesquisa.
+E, em seguida, use esse novo campo derivado em uma visualização para detalhar qual termo foi usado para pesquisar na primeira pesquisa.
 
-![Captura de tela da regra de Profundidade](assets/depth-1a.png)
+![Captura de tela da regra de profundidade](assets/depth-1a.png)
 
 +++
 
@@ -1580,10 +1580,10 @@ Você gostaria de coletar parte de um URL e usá-la como um identificador de pá
 
 | URL da página |
 |---|
-| `https://business.adobe.com/br/products/analytics/adobe-analytics-benefits.html` |
-| `https://business.adobe.com/br/products/analytics/adobe-analytics.html` |
-| `https://business.adobe.com/br/products/experience-platform/customer-journey-analytics.html` |
-| `https://business.adobe.com/br/products/experience-platform/adobe-experience-platform.html` |
+| `https://business.adobe.com/products/analytics/adobe-analytics-benefits.html` |
+| `https://business.adobe.com/products/analytics/adobe-analytics.html` |
+| `https://business.adobe.com/products/experience-platform/customer-journey-analytics.html` |
+| `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html` |
 
 {style="table-layout:auto"}
 
@@ -1671,7 +1671,7 @@ Divide o valor de um campo em um novo campo derivado.
 
 | Tipo de dado de entrada | Entrada | Operadores inclusos | Limite | Saída |
 |---|---|---|---|---|
-| <ul><li>String</li><li>Numérico</li></ul> | <ul><li>[!UICONTROL Campo]:</li><ul><li>Regras</li><li>Campos padrão</li><li>Campos</li></ul></ul><ul><li>[!UICONTROL Método]:</li><ul><li>Da esquerda</li><li>Da direita</li><li>Converter em matriz</li></ul></li><li>Para o delimitador:<ul><li>String</li></ul><li>Para o índice:<ul><li>Numérico</li></ul></li> | <p>N/A</p> | <p>Duas funções por campo derivado</p> <p>Retorna um máximo de 10 valores</p> | <p>Novo campo derivado</p> |
+| <ul><li>String</li><li>Numérico</li></ul> | <ul><li>[!UICONTROL Campo]:</li><ul><li>Regras</li><li>Campos padrão</li><li>Campos</li></ul></ul><ul><li>[!UICONTROL Método]:</li><ul><li>Da esquerda</li><li>Da direita</li><li>Converter em matriz</li></ul></li><li>Para o delimitador:<ul><li>String</li></ul><li>Para o índice:<ul><li>Numérico</li></ul></li> | <p>N/A</p> | <p>Duas funções por campo derivado</p> <p>Retorna 10 valores no máximo</p> | <p>Novo campo derivado</p> |
 
 {style="table-layout:auto"}
 
@@ -1962,34 +1962,34 @@ Altera o tipo de um campo para disponibilizá-lo para transformações adicionai
 
 | Tipo de dado de entrada | Entrada | Operadores inclusos | Limite | Saída |
 |---|---|---|---|---|
-| <ul><li>Numérico</li><li>Data</li><li>Data-hora</li><li>String</li></ul> | <ul><li>[!UICONTROL Campo] | <p><ul><li>Número inteiro<ul><li>Para string</li></ul></li><li>Duplo<ul><li>Para string<ul><li>Incluir o número de casas decimais a serem herdadas (máx. 5?)</li></ul></li><li>Para número inteiro</li></ul></li><li>Byte<ul><li>Para string</li></ul></li><li>Longo<ul><li>Para string</li></ul></li><li>Data<ul><li>Para string<ul><li>Fornecer a capacidade de definir o formato de saída</li></ul></li><li>Exemplos<ul><li>Data (exemplo de 7 de janeiro de 2025)<ul><li data-stringify-indent="1" data-stringify-border="0">DD-MM-AA<ul><li data-stringify-indent="2" data-stringify-border="0">Ex. 07-01-25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">DD-MM-AAAA<ul><li data-stringify-indent="2" data-stringify-border="0">Ex. 07-01-2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">DD-MM-AA<ul><li data-stringify-indent="2" data-stringify-border="0">Ex. 01-07-25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">DD-MM-AAAA<ul><li data-stringify-indent="2" data-stringify-border="0">Ex. 01-07-2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">DD-MM-AA<ul><li data-stringify-indent="2" data-stringify-border="0">Ex. 01-25-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">DD-MM-AAAA<ul><li data-stringify-indent="2" data-stringify-border="0">Ex. 01-2025-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">DD/MM/AA<ul><li data-stringify-indent="2" data-stringify-border="0">Ex. 07/01/25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">DD/MM/AAAA<ul><li data-stringify-indent="2" data-stringify-border="0">Ex. 07/01/2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">DD/MM/AAAA<ul><li data-stringify-indent="2" data-stringify-border="0">Ex. 01/2025/07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">DD/MM/AA<ul><li data-stringify-indent="2" data-stringify-border="0">Ex. 01/25/07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">DD de MMM de AAAA<ul><li data-stringify-indent="2" data-stringify-border="0">Ex. quarta-feira, 7 de janeiro de 2025</li></ul></li></ul></li></ul></li></ul></li><li>Data-hora<ul><li>Para string<ul><li>Fornecer a capacidade de definir o formato de saída</li></ul></li><li>Exemplos<ul><li data-stringify-indent="0" data-stringify-border="0">Data e hora (exemplo de 7 de janeiro de 2025 em 1:30pm, 52 segundos)<ul><li data-stringify-indent="2" data-stringify-border="0">DD-MM-AAAA hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Ex. 07-01-25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">hhmmss de MM-DD-YYYY<ul><li data-stringify-indent="3" data-stringify-border="0">Ex. 07-01-2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">hhmmss DD-MM-AA<ul><li data-stringify-indent="3" data-stringify-border="0">Ex. 01-07-25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">DD-MM-AAAA hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Ex. 01-07-2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">DD-MM-AA hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Ex. 01-25-07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">DD-MM-AAAA hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Ex. 01-01-2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">DD/MM/AA hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Ex. 07/01/25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">DD/MM/AAAA hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Ex. 07/01/2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">DD/MM/AAAA hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Ex. 01/2025/07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">AA/MM/DD hh:mm :ss<ul><li data-stringify-indent="3" data-stringify-border="0">Ex. 01/25/07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">DD de MMM de AAAA hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Ex. 07 de janeiro de 2025 13:30:52</li></ul></li></ul></li></ul></li><li>String<ul><li>Para numérico<ul><li>Se tivermos valores que não são de natureza numérica, eles retornarão null.</li><li>Precisaremos que o usuário insira a precisão e a localidade a serem usadas. </li></ul></li></ul></li></ul></li></ul></p> | <p>Três funções por campo derivado</p> | <p>Novo campo derivado</p> |
+| <ul><li>Numérico</li><li>Data</li><li>Data/hora</li><li>String</li></ul> | <ul><li>[!UICONTROL Campo] | <p><ul><li>Número inteiro<ul><li>Para string</li></ul></li><li>Duplo<ul><li>Para string<ul><li>Incluir o número de casas decimais a serem herdadas (máx. 5?)</li></ul></li><li>Para número inteiro</li></ul></li><li>Byte<ul><li>Para string</li></ul></li><li>Longo<ul><li>Para string</li></ul></li><li>Data<ul><li>Para string<ul><li>Permite definir o formato de saída</li></ul></li><li>Exemplos<ul><li>Data (por exemplo, 7 de janeiro de 2025)<ul><li data-stringify-indent="1" data-stringify-border="0">MM-DD-AA<ul><li data-stringify-indent="2" data-stringify-border="0">Por exemplo, 01-07-25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MM-DD-AAAA<ul><li data-stringify-indent="2" data-stringify-border="0">Por exemplo, 01-07-2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">DD-MM-AA<ul><li data-stringify-indent="2" data-stringify-border="0">Por exemplo, 07-01-25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">DD-MM-AAAA<ul><li data-stringify-indent="2" data-stringify-border="0">Por exemplo, 07-01-2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">AA-MM-DD<ul><li data-stringify-indent="2" data-stringify-border="0">Por exemplo, 25-01-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">AAAA-MM-DD<ul><li data-stringify-indent="2" data-stringify-border="0">Por exemplo, 2025-01-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MM/DD/AA<ul><li data-stringify-indent="2" data-stringify-border="0">Por exemplo, 01/07/25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MM/DD/AAAA<ul><li data-stringify-indent="2" data-stringify-border="0">Por exemplo, 01/07/2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">AAAA/MM/DD<ul><li data-stringify-indent="2" data-stringify-border="0">Por exemplo, 2025/01/07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">AA/MM/DD<ul><li data-stringify-indent="2" data-stringify-border="0">Por exemplo, 25/01/07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MMM DD, AAAA<ul><li data-stringify-indent="2" data-stringify-border="0">Por exemplo, 7 de janeiro de 2025</li></ul></li></ul></li></ul></li></ul></li><li>Data/hora<ul><li>Para string<ul><li>Permite definir o formato de saída</li></ul></li><li>Exemplos<ul><li data-stringify-indent="0" data-stringify-border="0">Data/hora (por exemplo, 7 de janeiro de 2025, às 1:30pm, 52 segundos)<ul><li data-stringify-indent="2" data-stringify-border="0">MM-DD-AA hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Por exemplo, 01-07-25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM-DD-AAAA hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Por exemplo, 01-07-2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">DD-MM-AA hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Por exemplo, 07-01-25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">DD-MM-AAAA hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Por exemplo, 07-01-2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">AA-MM-DD hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Por exemplo, 25-01-07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">AAAA-MM-DD hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Por exemplo, 2025-01-07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM/DD/AA hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Por exemplo, 01/07/25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM/DD/AAAA hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Por exemplo, 01/07/2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">AAAA/MM/DD hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Por exemplo, 2025/01/07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">AA/MM/DD hh:mm :ss<ul><li data-stringify-indent="3" data-stringify-border="0">Por exemplo, 25/01/07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MMM DD, AAAA hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Por exemplo, 7 de janeiro de 2025, 13:30:52</li></ul></li></ul></li></ul></li><li>String<ul><li>Para numérico<ul><li>Se tivermos valores que não são de natureza numérica, eles retornarão nulo.</li><li>É necessário que o usuário insira a precisão e a localidade a serem usadas. </li></ul></li></ul></li></ul></li></ul></p> | <p>Três funções por campo derivado</p> | <p>Novo campo derivado</p> |
 
 {style="table-layout:auto"}
 
 
 ## Caso de uso 1 {#typecast-uc1}
 
-Você tem um campo inteiro, altura da tela (por exemplo, device.screenHeight do conjunto de dados do evento), que gostaria de usar como uma dimensão baseada em sequência.
+Você tem um campo de números inteiros, altura da tela (por exemplo, device.screenHeight do seu conjunto de dados de evento), que você gostaria de usar como uma dimensão baseada em string.
 
 
 ### Campo derivado {#typecast-uc1-derivedfield}
 
-Você define um campo derivado `Screen Height`. Você usa a função [!UICONTROL TYPECAST] para definir uma regra para [!UICONTROL Typecast para] [!UICONTROL Cadeia de caracteres] o campo [!UICONTROL Altura da tela] e armazená-lo no novo campo derivado.
+Você define um campo derivado `Screen Height`. Você usa a função [!UICONTROL TYPECAST] para definir uma regra para [!UICONTROL Conversão de tipo] [!UICONTROL String] do campo [!UICONTROL Altura da tela] e armazená-la no novo campo derivado.
 
-![Captura de tela da regra Typecast 1](assets/typecast-1.png)
+![Captura de tela da regra de conversão de tipo 1](assets/typecast-1.png)
 
 
 
 ## Caso de uso 2 {#typecast-uc2}
 
-Você deseja usar Receita em uma tabela de Coorte (que só suporta números inteiros), mas o campo Receita tem um tipo Duplo.
+Você quer usar a receita em uma tabela de coorte (que só permite números inteiros), mas o campo de receita tem um tipo duplo.
 
-![Captura de tela da regra Typecast 2](assets/typecast-2.png)
+![Captura de tela da regra de conversão de tipo 2](assets/typecast-2.png)
 
 
 ### Campo derivado {#typecast-uc2-derivedfield}
 
-Você define um campo derivado `Revenue (integer)`. Você usa a função [!UICONTROL TYPECAST] para definir uma regra para [!UICONTROL Typecast para] [!UICONTROL Integer] o campo [!UICONTROL Revenue] e armazená-lo no novo campo derivado.
+Você define um campo derivado `Revenue (integer)`. Você usa a função [!UICONTROL TYPECAST] para definir uma regra de [!UICONTROL Conversão de tipo] [!UICONTROL Número inteiro] do campo [!UICONTROL Receita] e armazená-la no novo campo derivado.
 
 
 +++
@@ -2089,7 +2089,7 @@ As seguintes limitações se aplicam à funcionalidade Campo derivado em geral:
 
 - Você pode usar no máximo dez campos de esquema diferentes (sem incluir campos padrão) ao definir regras para um campo derivado.
    - A partir desse máximo de dez campos de esquema diferentes, somente um máximo de três campos de esquema de pesquisa ou esquema de perfil são permitidos.
-- É possível ter um número máximo de campos derivados por conexão do Customer Journey Analytics, dependendo do pacote que você licenciar. Consulte a [Descrição do produto](https://helpx.adobe.com/br/legal/product-descriptions/customer-journey-analytics.html){target="_blank"} para obter mais informações.
+- Você pode contar com um número máximo de campos derivados por conexão do Customer Journey Analytics, dependendo do pacote que você licenciar. Consulte a [descrição do produto](https://helpx.adobe.com/br/legal/product-descriptions/customer-journey-analytics.html){target="_blank"} para obter mais informações.
 
 
 ### Resumo das limitações de função
@@ -2098,10 +2098,10 @@ As seguintes limitações se aplicam à funcionalidade Campo derivado em geral:
 |---|---|
 | <p>Case When</p> | <ul><li>5 Funções Case When por campo derivado</li><li>200 [operadores](#operators) por campo derivado</li></ul> |
 | <p>Classificar</p> | <ul><li>5 Classificar funções por campo derivado</li><li>200 [operadores](#operators) por campo derivado</li></ul> |
-| <p>Concatenar</p> | <ul><li>2 Funções concatenadas por campo derivado</li><li>3 valores por função Concatenar</ul> |
-| <p>Matemática de data</p> | <ul><li>2 funções Date Math por campo derivado</li></ul> |
+| <p>Concatenar</p> | <ul><li>2 Funções concatenadas por campo derivado</li><li>Três valores por função de concatenação</ul> |
+| <p>Cálculo de datas</p> | <ul><li>Duas funções de cálculo de datas por campo derivado</li></ul> |
 | <p>Desduplicar</p> | <ul><li>5 Desduplicar funções por campo derivado</li></ul> |
-| <p>Profundidade</p> | <ul><li>3 Função Profundidade por campo derivado</li></ul> |
+| <p>Profundidade</p> | <ul><li>Três funções de profundidade por campo derivado</li></ul> |
 | <p>Localizar e Substituir</p> | <ul><li>2 Funções Localizar e Substituir por campo derivado</li></ul> |
 | <p>Pesquisa</p> | <ul><li>5 Funções de pesquisa por campo derivado</li></ul> |
 | <p>Minúsculas</p> | <ul><li>2 Funções em minúsculas por campo derivado</li></ul> |
@@ -2109,10 +2109,10 @@ As seguintes limitações se aplicam à funcionalidade Campo derivado em geral:
 | <p>Mesclar campos</p> | <ul><li>2 Funções Mesclar campos por campo derivado</li></ul> |
 | <p>Próximo ou anterior</p> | <ul><li>3 Funções Próximo ou Anterior por campo derivado</li></ul> |
 | <p>Substituição de Regex</p> | <ul><li>1 Função Substituição de Regex por campo derivado</li></ul> |
-| <p>Dividir</p> | <ul><li>2 funções de divisão por campo derivado</li><li>Um máximo de 10 valores são retornados</ul> |
+| <p>Dividir</p> | <ul><li>2 funções de divisão por campo derivado</li><li>São retornados 10 valores, no máximo</ul> |
 | <p>Resumir</p> | <ul><li>3 Resumir funções por campo derivado</li></ul> |
 | <p>Cortar</p> | <ul><li>1 Função Cortar por campo derivado</li></ul> |
-| <p>Conversão de tipo</p> | <ul><li>3 funções Typecast por campo derivado</li></ul> |
+| <p>Conversão de tipo</p> | <ul><li>Três funções de conversão de tipo por campo derivado</li></ul> |
 | <p>Análise de URL</p> | <ul><li>5 Funções de análise de URL por campo derivado</li></ul> |
 
 {style="table-layout:auto"}
@@ -2141,6 +2141,6 @@ O suporte para campos de pesquisa e perfil em Campos derivados permite transform
 >[!MORELIKETHIS]
 >
 >- [Blog: como aproveitar ao máximo seus dados: uma estrutura para usar campos derivados no Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/making-the-most-of-your-data-a-framework-for-using-derived/ba-p/601670?profile.language=pt)
->- [Blog: casos de uso de campos derivados no Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/derived-fields-use-cases-for-customer-journey-analytics/ba-p/601679?profile.language=pt)
->- [Blog: melhorias nos campos derivados do Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/adobe-customer-journey-analytics-derived-fields-enhancements/ba-p/697808?profile.language=pt)
+>- [Blog: casos de uso de campos derivados no Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/derived-fields-use-cases-for-customer-journey-analytics/ba-p/601679)
+>- [Blog: melhorias nos campos derivados do Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/adobe-customer-journey-analytics-derived-fields-enhancements/ba-p/697808)
 
