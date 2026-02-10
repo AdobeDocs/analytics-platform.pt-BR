@@ -4,7 +4,8 @@ description: Saiba mais sobre como analisar públicos-alvo do RTCDP no Customer 
 solution: Customer Journey Analytics
 feature: Audiences
 role: Admin
-source-git-commit: e59bb52d5e9d79ba72036d5a00ed8abc69dcf735
+exl-id: 1e962f52-6b56-4671-afea-d58dae67e8a8
+source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
 workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 3%
@@ -85,11 +86,3 @@ Considere os seguintes limites ao [configurar a análise de público-alvo](/help
 * Uma única sandbox pode oferecer suporte a até 100 configurações de análise de público-alvo.
 
 * Uma conexão só pode ser associada a uma configuração de análise de público-alvo.
-
-
-
-
-
-
-
-

@@ -1,14 +1,14 @@
 ---
-title: Adicionar pesquisas padrão aos seus conjuntos de dados
-description: Use pesquisas padrão para aumentar os relatórios com dimensões úteis no Customer Journey Analytics.
+title: Adicionar Pesquisas Padrão Aos Seus Conjuntos De Dados
+description: Saiba como usar pesquisas padrão para aumentar os relatórios com dimensões úteis no Customer Journey Analytics.
 exl-id: ab91659b-a1e6-4f6b-8976-410cf894d1a0
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 47%
+source-wordcount: '433'
+ht-degree: 42%
 
 ---
 

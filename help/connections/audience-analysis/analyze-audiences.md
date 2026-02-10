@@ -1,10 +1,11 @@
 ---
-title: Analisar públicos da Experience Platform no Customer Journey Analytics
+title: Analisar Públicos Do Experience Platform No Customer Journey Analytics
 description: Saiba como analisar públicos do Experience Platform no Customer Journey Analytics.
 solution: Customer Journey Analytics
 feature: Audiences
 role: Admin
-source-git-commit: e59bb52d5e9d79ba72036d5a00ed8abc69dcf735
+exl-id: 095cae34-1337-464a-9682-3c899295c0a8
+source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 0%
@@ -56,11 +57,3 @@ Use a tabela neste painel para entender melhor o comportamento do público-alvo.
 Mostra onde cada público-alvo que saiu foi criado originalmente, seja no RTCDP, no Customer Journey Analytics e assim por diante.
 
 Use a tabela neste painel para entender melhor como a origem do público-alvo pode afetar outros fatores. Arraste a dimensão Nome de público-alvo da visualização de dados selecionada e adicione-a como um detalhamento. Ou use qualquer outra dimensão ou métrica de interação (como Página, Ação e assim por diante) como o detalhamento.
-
-
-
-
-
-
-
-

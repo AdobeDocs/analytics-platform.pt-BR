@@ -1,14 +1,14 @@
 ---
-title: Transformar conjunto de dados para pesquisas B2B
+title: Transformar Conjuntos De Dados Para Pesquisas B2B
 description: Descreve como transformar dados em conjuntos de dados de esquemas de pesquisa B2B específicos
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 exl-id: 7729c1b9-b3ed-4662-a446-2088389bbd97
-source-git-commit: d1097ca5f981623283a7d02200d5023548046429
+source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
 workflow-type: tm+mt
 source-wordcount: '470'
-ht-degree: 4%
+ht-degree: 2%
 
 ---
 
@@ -18,10 +18,10 @@ Para oferecer suporte a pesquisas com base em pessoas em dados B2B (incluindo co
 
 Essa transformação só está disponível para conjuntos de dados com dados para esquemas de pesquisa B2B, com base nas seguintes classes:
 
-* [Relação pessoal da conta comercial XDM](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/classes/b2b/business-account-person-relation)
-* [Relação pessoal de oportunidade de negócios XDM](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/classes/b2b/business-opportunity-person-relation)
-* [Membros da Lista de Marketing Comercial XDM](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/classes/b2b/business-marketing-list-members)
-* [Membros da campanha de negócios XDM](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/classes/b2b/business-campaign-members)
+* [Relação pessoal da conta comercial XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-account-person-relation)
+* [Relação pessoal de oportunidade de negócios XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-opportunity-person-relation)
+* [Membros da Lista de Marketing Comercial XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-marketing-list-members)
+* [Membros da campanha de negócios XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-campaign-members)
 
 >[!NOTE]
 >
