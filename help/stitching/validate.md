@@ -1,13 +1,13 @@
 ---
-title: Validar compilação
-description: Saiba como validar a compilação.
+title: Validar A Compilação De Identidade No Customer Journey Analytics
+description: Saiba como validar a compilação de identidade no Customer Journey Analytics. Meça as taxas de autenticação e a identificação antes e depois da compilação.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: b9b73926-6502-4a48-ba73-c784f80950d3
-source-git-commit: 8e8e4f4d201d1136e118bf3789cfc33ac8f402dc
+source-git-commit: 0eb3fec2e52fe0850c5f42777edbdb5d981988fb
 workflow-type: tm+mt
-source-wordcount: '1803'
+source-wordcount: '1726'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Embora esses métodos de análise possam ser usados para a compilação em campo
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Habilitação e validação de compilação](https://video.tv.adobe.com/v/3478125?captions=por_br&quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Habilitação e validação de compilação](https://video.tv.adobe.com/v/3478120?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 
@@ -57,22 +57,22 @@ Para a validação da compilação, é necessário garantir que você tenha toda
 
 * Adicionar **[!UICONTROL Namespace de Identidade]** de **[!UICONTROL Métricas e Dimensões]** como uma dimensão à lista **[!UICONTROL Dimensões]**.
 
-  ![Namespace de identidade](assets/identity-namespace.png)
+  ![Namespace de identidade](/help/stitching/assets/identity-namespace.png)
 
 
 * Selecione o **[!UICONTROL Identificador de Endereço de Email com Hash do Visitante]** que você definiu como a ID de pessoa para seus eventos em **[!UICONTROL Campos de esquema]**. Adicione o campo como uma dimensão à lista **[!UICONTROL Dimensões]** e como uma métrica à lista **[!UICONTROL Métricas]**. Modifique o **[!UICONTROL Nome do componente]** da métrica para `Email set`.
 
-  ![Identificador de email](assets/email-identifier.png)
+  ![Identificador de email](/help/stitching/assets/email-identifier.png)
 
 Certifique-se de salvar a visualização de dados.
 
-### Workspace
+### Criar projeto do Workspace
 
 No Workspace, crie um novo projeto e use uma tabela de forma livre para mostrar a métrica **[!UICONTROL Conjunto de emails]** para o intervalo de datas definido para testar a configuração de compilação. Esta tabela de forma livre mostra os eventos que têm um endereço de email antes da compilação.
 
 ![Tabela de forma livre de visão geral da compilação - Conjunto de emails](/help/stitching/assets/workspace-emailset.png)
 
-Para ver os eventos que têm um endereço de email definido após o processo de compilação, defina uma métrica calculada `Email stitched namespace`. Essa métrica calculada procura em **[!UICONTROL Eventos]** que tenham **[!UICONTROL Namespace de identidade]** igual ao namespace de email com hash **[!UICONTROL email_lc_sha256]**.
+Para ver os eventos que têm um endereço de email definido após o processo de compilação, defina uma métrica calculada `Email stitched namespace`. Essa métrica calculada procura em **[!UICONTROL Eventos]** que tenham **[!UICONTROL Namespace de identidade]** igual ao namespace de email com hash `email_lc_sha256`.
 
 ![Visão geral da compilação - Métrica calculada do namespace compilado por email](/help/stitching/assets/cm-email-stitched-namespace.png)
 
@@ -98,15 +98,6 @@ Para obter mais informações, você pode adicionar mais duas métricas calculad
 
 ![Tabela de forma livre de visão geral da compilação - Aumento autenticado](/help/stitching/assets/workspace-authenticated-lift.png)
 
-A principal vantagem deste artigo é que esse tipo de validação e análise de compilação ajuda a:
-
-* Forneça uma visualização personalizada abrangente da eficácia da autenticação comparando as taxas atuais e as compiladas.
-* Permita uma medição clara da melhoria por meio de aumentos de porcentagem e métricas de aumento.
-* Ajude a identificar o verdadeiro impacto da implementação da compilação na autenticação de usuário.
-* Crie uma maneira padronizada para comunicar o desempenho de autenticação entre equipes.
-* Permita decisões orientadas por dados sobre estratégia e otimização de autenticação.
-
-Essas métricas juntas fornecem às partes interessadas uma imagem completa de como a compilação do Customer Journey Analytics afeta as taxas de sucesso de autenticação e o desempenho geral da identificação de pessoas.
 
 
 ## Solicitar validação de compilação
@@ -118,10 +109,10 @@ Esta seção detalha como validar a compilação solicitada no Adobe. Esse méto
 Para o plano de medição de validação de compilação, é necessário garantir que você tenha todas as dimensões e métricas necessárias do seu conjunto de dados compilado definidas em uma visualização de dados. Verifique se os campos `stitchedID.id` e `stitchedID.namespace.code` foram adicionados como dimensões. Embora o conjunto de dados compilado seja uma cópia exata do conjunto de dados original, o processo de compilação adiciona essas duas novas colunas ao conjunto de dados:
 
 * Use `stitchedID.namespace.code` para definir uma dimensão de **[!UICONTROL Namespace compilado]**. Esta dimensão contém o namespace da identidade para a qual a linha foi elevada, por exemplo `Email` ou `Phone`. Ou o namespace para o qual o processo de compilação retorna, como `ECID`.
-  ![Dimensão de namespace compilada](assets/stitchednamespace-dimension.png)
+  ![Dimensão de namespace compilada](/help/stitching/assets/stitchednamespace-dimension.png)
 
 * Use `stitchedID.id` para definir uma dimensão de **[!UICONTROL Valor de ID compilado]**. Essa dimensão contém o valor bruto da identidade. Por exemplo: email com hash, telefone com hash, ECID. Este valor é usado com **[!UICONTROL Namespace Compilado]**.
-  ![Dimensão de ID compilada](assets/stitchedid-dimension.png)
+  ![Dimensão de ID compilada](/help/stitching/assets/stitchedid-dimension.png)
 
 
 Além disso, é necessário adicionar duas métricas de compilação que são baseadas na presença de valores em uma dimensão.
@@ -129,14 +120,14 @@ Além disso, é necessário adicionar duas métricas de compilação que são ba
 1. Use o campo que contém a ID de pessoa do conjunto de dados compilado para configurar uma métrica que define se uma ID de pessoa está definida. Adicione essa ID de pessoa mesmo se estiver usando a compilação baseada em gráfico, pois a ID de pessoa ajuda a estabelecer uma linha de base. Caso a ID da pessoa não esteja contida no conjunto de dados, sua linha de base é 0%.
 
    No exemplo abaixo, `personalEmail.address` serve como a identidade e é usado para criar a métrica **[!UICONTROL _Conjunto de emails]**.
-   ![Métrica do conjunto de emails](assets/emailset-metric.png)
+   ![Métrica do conjunto de emails](/help/stitching/assets/emailset-metric.png)
 
 1. Use o campo `stitchedID.namespace.code` para criar uma métrica **[!UICONTROL Namespace compilado por email]**. Certifique-se de especificar [Incluir valores de exclusão nas configurações de componente](/help/data-views/component-settings/include-exclude-values.md), de modo que considere apenas valores do namespace para o qual você está tentando elevar linhas de dados.
    1. Selecione **[!UICONTROL Definir inclusão/exclusão de valores]**.
    1. Selecione **[!UICONTROL Se todos os critérios forem atendidos]** como **[!UICONTROL Correspondência]**.
    1. Especifique **[!UICONTROL Igual]** `email` como o **[!UICONTROL Critério]** para selecionar eventos que foram elevados para o namespace de email.
 
-   ![Métrica de namespace compilada por email](assets/emailstitchednamespace-metric.png)
+   ![Métrica de namespace compilada por email](/help/stitching/assets/emailstitchednamespace-metric.png)
 
 ### Dimensões compiladas
 
@@ -146,7 +137,7 @@ Na tabela de dimensões **[!UICONTROL Namespace compilado]**, você normalmente 
 
 Para a tabela de dimensões **[!UICONTROL ID com título]**, você verá os valores brutos provenientes dos eventos. Nessa tabela, você vê que os valores oscilam entre a ID persistente e a ID de pessoa desejada.
 
-![Verificar dimensões compiladas](assets/check-data-on-stitching.png)
+![Verificar dimensões compiladas](/help/stitching/assets/check-data-on-stitching.png)
 
 
 ### Relatórios centrados em dispositivos ou pessoas
@@ -154,14 +145,14 @@ Para a tabela de dimensões **[!UICONTROL ID com título]**, você verá os valo
 Ao criar uma conexão, você precisa definir qual campo ou identidade é usada para a ID de pessoa. Por exemplo, em um conjunto de dados da Web, se você escolher uma ID de dispositivo como a ID de pessoa, você criará relatórios centrados em dispositivos e perderá a capacidade de unir esses dados a outros canais offline. Se você selecionar um campo ou uma identidade entre canais, por exemplo, email, você perderá todos os eventos não autenticados. Para entender esse impacto, você precisa descobrir quanto do tráfego não é autenticado e quanto do tráfego é autenticado.
 
 1. Criar uma métrica calculada **[!UICONTROL Eventos não autenticados no total]**. Defina a regra no construtor de regras conforme mostrado abaixo:
-   ![Total de eventos não autenticados](assets/calcmetric-unauthenticatedeventsovertotal.png)
+   ![Total de eventos não autenticados](/help/stitching/assets/calcmetric-unauthenticatedeventsovertotal.png)
 
 1. Crie uma métrica calculada **[!UICONTROL Taxa de autenticação de email]**, com base na métrica **[!UICONTROL _Conjunto de email]** definida anteriormente. Defina a regra no construtor de regras conforme mostrado abaixo:
-   ![Taxa de autenticação de email](assets/calcmetric-emailauthenticationrate.png)
+   ![Taxa de autenticação de email](/help/stitching/assets/calcmetric-emailauthenticationrate.png)
 
 1. Use a métrica calculada **[!UICONTROL Eventos não autenticados no total]**, juntamente com a métrica calculada **[!UICONTROL Taxa de autenticação de email]**, para criar uma visualização de [Rosca](/help/analysis-workspace/visualizations/donut.md). A visualização mostra o número de eventos no conjunto de dados que não foram autenticados e estão autenticados.
 
-   ![Detalhes de identificação](assets/identification-details.png)
+   ![Detalhes de identificação](/help/stitching/assets/identification-details.png)
 
 
 
@@ -170,13 +161,13 @@ Ao criar uma conexão, você precisa definir qual campo ou identidade é usada p
 Você deseja medir o desempenho de identificação antes e depois da compilação. Para fazer isso, crie três métricas calculadas adicionais:
 
 1. Uma **[!UICONTROL métrica calculada da taxa de autenticação compilada]** que calcula o número de eventos em que o namespace compilado é definido como a identidade desejada sobre o número total de eventos. Ao configurar a visualização de dados, você criou uma métrica **[!UICONTROL Namespace compilado por email]** que incluía um filtro para contar somente quando um evento tivesse um namespace definido como email. A métrica calculada usa esta métrica de **[!UICONTROL Namespace compilado de email]** para fornecer uma indicação de qual porcentagem dos dados tem a identidade desejada.
-   ![Métrica calculada da taxa de autenticação compilada](assets/calcmetric-stitchedauthenticationrate.png)
+   ![Métrica calculada da taxa de autenticação compilada](/help/stitching/assets/calcmetric-stitchedauthenticationrate.png)
 
 1. Uma métrica calculada de **[!UICONTROL Aumento percentual]** que calcula a alteração percentual bruta entre a taxa de identificação atual e a compilada.
-   ![Métrica calculada de aumento percentual](assets/calcmetric-percentincrease.png)
+   ![Métrica calculada de aumento percentual](/help/stitching/assets/calcmetric-percentincrease.png)
 
 1. Uma métrica calculada **[!UICONTROL Lift]** que calcula o aumento entre a taxa de identificação atual e a taxa de identificação compilada.
-   ![Aumentar métrica calculada](assets/calcmetric-lift.png)
+   ![Aumentar métrica calculada](/help/stitching/assets/calcmetric-lift.png)
 
 
 ### Conclusão
@@ -188,9 +179,12 @@ Se você combinar todos os dados em uma tabela de forma livre do Analysis Worksp
 * Aumento percentual: o aumento percentual bruto da taxa de autenticação compilada menos a taxa de autenticação atual da linha de base.
 * Aumento: a alteração percentual sobre a taxa de autenticação atual da linha de base.
 
-![Desempenho de identificação](assets/identification-performance.png)
+![Desempenho de identificação](/help/stitching/assets/identification-performance.png)
 
-A principal vantagem deste artigo é que esse tipo de validação e análise de compilação ajuda a:
+
+## Principais lições
+
+Os principais argumentos deste artigo são que a compilação da validação e da análise ajuda a:
 
 * Forneça uma visualização personalizada abrangente da eficácia da autenticação comparando as taxas atuais e as compiladas.
 * Permita uma medição clara da melhoria por meio de aumentos de porcentagem e métricas de aumento.

@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 exl-id: c5cf15ab-3eb1-4e6b-93a3-3d89694ca0ea
-source-git-commit: c7cf7250f30e2f6023aa7690391aea149ba12eff
+source-git-commit: e65dd6f71c75c06aac078c22ea7d77eed75cd381
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '922'
 ht-degree: 10%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 10%
 
 Depois de [criar ou editar uma ou mais visualizações de dados](/help/data-views/create-dataview.md), você poderá gerenciá-las em **[!UICONTROL Visualizações de dados]**.
 
-Selecione **[!UICONTROL Gerenciamento de dados]** > **[!UICONTROL Visualizações de dados]** no menu principal do Customer Journey Analytics.
+Selecione **[!UICONTROL Gerenciamento de dados]** > **[!UICONTROL Visualizações de dados]** na barra de menu principal do Customer Journey Analytics.
 
 A interface de **[!UICONTROL Visualizações de dados]** mostra uma tabela de todas as visualizações de dados disponíveis.
 
@@ -127,7 +127,7 @@ Como alternativa, você pode:
 1. Selecione uma ou mais linhas de visualização de dados.
 1. Selecione ![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Export para CSV]** na barra de ação azul.
 
-Detalhes das visualizações de dados selecionadas são exportados para um arquivo CSV chamado `Data views List (x).csv` na pasta Downloads do seu navegador.
+Detalhes das visualizações de dados selecionadas são exportados para um arquivo CSV chamado `Data views List (x).csv` na pasta Downloads do navegador.
 
 
 ## Criar projeto a partir de visualizações de dados
