@@ -3,10 +3,11 @@ title: Incluir várias dimensões em uma tabela de forma livre
 description: Saiba como incluir várias dimensões em uma tabela de forma livre
 feature: Visualizations
 role: User
-source-git-commit: 696bd0db44949162307d8ce7d2debed351a76cd6
+exl-id: 66ebb4fc-feb2-4fa7-a107-37508cca4748
+source-git-commit: 14718476695dcf121c94ba4cb8b2c39e5874342d
 workflow-type: tm+mt
-source-wordcount: '829'
-ht-degree: 1%
+source-wordcount: '836'
+ht-degree: 2%
 
 ---
 
@@ -26,10 +27,10 @@ Por exemplo, considere uma tabela de forma livre onde as colunas da dimensão s�
 
 | Dimension: cidade | Dimension: Tipo de dispositivo | Dimension: Dia do mês | Métrica: Eventos |
 |---------|----------|---------|---------|
-| Mumbai | Celular | 30 | 2.056 |
+| Mumbai | Telefone celular | 30 | 2.056 |
 | Nova York | Tablet | 31 | 1.761 |
 | Bangalore | Área de trabalho | 1 | 1.666 |
-| Délhi | Celular | 14 | 1.396 |
+| Délhi | Telefone celular | 14 | 1.396 |
 
 A seguir, veja como essa tabela aparece no Analysis Workspace:
 
@@ -109,11 +110,12 @@ Quando você cria um segmento com base em um item de dimensão que abrange vári
 
 Para obter informações sobre como criar um segmento, consulte [Criar segmentos](/help/components/segments/seg-create.md).
 
-## Dimensões não suportadas {#unsupported}
+## Dimensões e recursos não compatíveis {#unsupported}
 
-As combinações de dimensão a seguir não são compatíveis, e o Analysis Workspace proíbe que elas sejam adicionadas ou mostra uma mensagem de erro após serem adicionadas:
+As seguintes combinações e recursos de dimensão não são compatíveis quando várias colunas de dimensão são usadas, e a Analysis Workspace proíbe seu uso ou mostra uma mensagem de erro:
 
 * Várias dimensões que são de campos que fazem referência a diferentes [matrizes de objetos](/help/use-cases/object-arrays.md) usadas juntas na mesma tabela de forma livre.
 
   Várias dimensões são permitidas juntas na mesma tabela de forma livre se referenciarem a mesma matriz de objetos.
 
+* [Itens de dimensão estáticos](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md#static-dimension-items).
