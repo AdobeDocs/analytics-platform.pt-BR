@@ -4,9 +4,10 @@ keywords: Analysis Workspace
 title: Gerar apresentações a partir de relatórios do Workspace
 feature: Curate and Share
 role: User
-source-git-commit: e51dced9ac7886ae8d087ca3b2fc6ac2755c3ac6
+exl-id: a3f6db1e-0444-4804-98bf-c5c10ba2e7ea
+source-git-commit: 968fef4fa6a967c9654f594e662bc9bbd7ae2ab4
 workflow-type: tm+mt
-source-wordcount: '1699'
+source-wordcount: '1698'
 ht-degree: 4%
 
 ---
@@ -106,7 +107,7 @@ As histórias de dados consistem em um slide de título, um slide de resumo exec
    |---------|----------|
    | **[!UICONTROL Título da capa]** | Especifique um título para a apresentação. Este título aparece no slide de título da apresentação. |
    | **[!UICONTROL Incluir nome do apresentador]** | Especifique o nome do apresentador. Esse nome aparece no slide de título da apresentação, abaixo do título da capa. |
-   | **[!UICONTROL Painéis e visualizações a serem incluídos]** | Escolha os painéis e a visualização que deseja incluir na apresentação. É possível incluir até 50 visualizações.<p>Se uma visualização estiver esmaecida, ela será seguida pelo texto **[!UICONTROL (sem suporte)]** ou **[!UICONTROL (dados restritos)]**.</p><ul><li>**Sem suporte**: a maioria dos painéis e visualizações tem suporte. Para obter informações sobre painéis e visualizações sem suporte, consulte [Elementos e recursos do projeto sem suporte](#unsupported-project-elements-and-features).</li><li>**Dados restritos**: a visualização contém um componente que está impedido de ser exportado por uma política de governança de dados aplicada pela sua organização. Entre em contato com o administrador do sistema para ver quais componentes estão restritos para não serem exportados e remova os componentes restritos antes de gerar slides.</li></ul> |
+   | **[!UICONTROL Painéis e visualizações incluídos]** | Escolha os painéis e a visualização que deseja incluir na apresentação. É possível incluir até 50 visualizações.<p>Se uma visualização estiver esmaecida, ela será seguida pelo texto **[!UICONTROL (sem suporte)]** ou **[!UICONTROL (dados restritos)]**.</p><ul><li>**Sem suporte**: a maioria dos painéis e visualizações tem suporte. Para obter informações sobre painéis e visualizações sem suporte, consulte [Elementos e recursos do projeto sem suporte](#unsupported-project-elements-and-features).</li><li>**Dados restritos**: a visualização contém um componente que está impedido de ser exportado por uma política de governança de dados aplicada pela sua organização. Entre em contato com o administrador do sistema para ver quais componentes estão restritos para não serem exportados e remova os componentes restritos antes de gerar slides.</li></ul> |
    | **[!UICONTROL Enfatizar componentes]** | Escolha as métricas e dimensões nas visualizações que deseja enfatizar na apresentação. Os componentes escolhidos são classificados em posições mais altas e recebem mais peso quando os temas e a narrativa abrangente da história dos dados são criados. <p>Quando nenhuma ênfase é aplicada, os componentes são exibidos nas apresentações da seguinte maneira:<ul><li>**Métricas e dimensões:** Itálico</li><li>**Itens do Dimension:** Aspas</li></ul></p><p>Quando a ênfase é aplicada, os componentes são exibidos nas apresentações da seguinte maneira:</p><ul><li>**Métricas e dimensões:** Itálico e negrito</li><li>**Itens do Dimension:** Negrito quando a dimensão correspondente é enfatizada<p>Uma cor também é aplicada ao item de dimensão quando ele é realçado no gráfico.</p></li></ul> |
 
    <!-- add this later: - **[!UICONTROL Panel and visualization descriptions]** - Choose whether to include panel and visualization descriptions in your generated slide presentation. - 
@@ -246,5 +247,3 @@ Os seguintes elementos e recursos do Analysis Workspace usados em um projeto nã
   Como parte do processo de desduplicação e pontuação ao gerar insights relevantes, cada detalhamento em uma tabela de forma livre é analisado independentemente e somente os cinco primeiros detalhamentos em uma única tabela de forma livre são analisados.
 
   Somente o primeiro nível de um detalhamento é suportado. Um detalhamento de um detalhamento não é incluído na apresentação.
-
-
