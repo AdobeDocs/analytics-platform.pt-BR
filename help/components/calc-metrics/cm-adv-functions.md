@@ -4,9 +4,9 @@ description: Saiba mais sobre funções de métricas calculadas avançadas.
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
-source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
+source-git-commit: fa66083b922c903f6a7b0608d91f26e85bd8374f
 workflow-type: tm+mt
-source-wordcount: '5241'
+source-wordcount: '5272'
 ht-degree: 98%
 
 ---
@@ -1344,18 +1344,18 @@ Retorna Pi: 3,14159...
 
 
 
-## Variância de amostras
+## Variância de amostras {#sample-variance}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="functions-waskr-variance-estimate"
 >title="Variância de amostras"
->abstract="Calcula uma estimativa da variância da amostra usando a fórmula (soma(métrica^2) / (N - 1)) - (soma(métrica))^2/(N*(N-1)). em que N é a contagem do container de normalização. <br/>Isso é usado como parte de cálculos de confiança *válidos em qualquer momento*. Geralmente, esta função não é útil sozinha, mas pode ser usada para verificar cálculos ou executar cálculos de confiança *manualmente*."
+>abstract="Calcula uma estimativa da variação da amostra usando a fórmula `(sum(metric^2) / (N - 1)) - (sum(metric))^2/(N*(N-1))`. onde `N` é a contagem do contêiner de normalização. <br/>Isso é usado como parte de cálculos de confiança *válidos em qualquer momento*. Geralmente, esta função não é útil sozinha, mas pode ser usada para verificar cálculos ou executar cálculos de confiança *manualmente*."
 
 ![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL VARIAÇÃO DE AMOSTRA(container de normalização, métrica de sucesso)]**
 
-Calcula uma estimativa da variância da amostra.
+Calcula uma estimativa da variação da amostra usando a fórmula `(sum(metric^2) / (N - 1)) - (sum(metric))^2/(N*(N-1))`. onde `N` é a contagem do contêiner de normalização.<br/>Isso é usado como parte de cálculos de confiança *válidos em qualquer momento*. Geralmente, esta função não é útil sozinha, mas pode ser usada para verificar cálculos ou executar cálculos de confiança *manualmente*.
 
 | Argumento | Descrição |
 | --- | --- |
