@@ -4,9 +4,9 @@ description: Saiba mais sobre funções de métricas calculadas avançadas.
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
-source-git-commit: fa66083b922c903f6a7b0608d91f26e85bd8374f
+source-git-commit: a5e07891b23184dfe5d4c3f1b2c4b36b6884fb72
 workflow-type: tm+mt
-source-wordcount: '5272'
+source-wordcount: '5294'
 ht-degree: 98%
 
 ---
@@ -1351,11 +1351,11 @@ Retorna Pi: 3,14159...
 >[!CONTEXTUALHELP]
 >id="functions-waskr-variance-estimate"
 >title="Variância de amostras"
->abstract="Calcula uma estimativa da variação da amostra usando a fórmula `(sum(metric^2) / (N - 1)) - (sum(metric))^2/(N*(N-1))`. onde `N` é a contagem do contêiner de normalização. <br/>Isso é usado como parte de cálculos de confiança *válidos em qualquer momento*. Geralmente, esta função não é útil sozinha, mas pode ser usada para verificar cálculos ou executar cálculos de confiança *manualmente*."
+>abstract="Calcula uma estimativa da variância da amostra usando a fórmula (soma(métrica^2) / (N - 1)) - (soma(métrica))^2/(N*(N-1)). em que N é a contagem do container de normalização. <br/>Isso é usado como parte de cálculos de confiança *válidos em qualquer momento*. Geralmente, esta função não é útil sozinha, mas pode ser usada para verificar cálculos ou executar cálculos de confiança *manualmente*."
 
 ![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL VARIAÇÃO DE AMOSTRA(container de normalização, métrica de sucesso)]**
 
-Calcula uma estimativa da variação da amostra usando a fórmula `(sum(metric^2) / (N - 1)) - (sum(metric))^2/(N*(N-1))`. onde `N` é a contagem do contêiner de normalização.<br/>Isso é usado como parte de cálculos de confiança *válidos em qualquer momento*. Geralmente, esta função não é útil sozinha, mas pode ser usada para verificar cálculos ou executar cálculos de confiança *manualmente*.
+Calcula uma estimativa da variância da amostra usando a fórmula (soma(métrica^2) / (N - 1)) - (soma(métrica))^2/(N*(N-1)). onde N é a contagem do contêiner de normalização.<br/>Isso é usado como parte de cálculos de confiança *válidos em qualquer momento*. Geralmente, esta função não é útil sozinha, mas pode ser usada para verificar cálculos ou executar cálculos de confiança *manualmente*.
 
 | Argumento | Descrição |
 | --- | --- |
