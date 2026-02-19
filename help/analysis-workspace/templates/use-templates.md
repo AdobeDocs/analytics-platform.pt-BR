@@ -4,9 +4,9 @@ title: Usar modelos
 feature: Workspace Basics
 role: User, Admin
 exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
-source-git-commit: 9b941deb424d92744bea99f6ea01f6434d6bc19f
+source-git-commit: 02aa4b4c9b357efca3d620bb72d8a505153bc079
 workflow-type: tm+mt
-source-wordcount: '20935'
+source-wordcount: '21006'
 ht-degree: 96%
 
 ---
@@ -15,15 +15,15 @@ ht-degree: 96%
 
 Os modelos (ou modelos da empresa) do Analysis Workspace fornecem insights rápidos sobre os casos de relatórios mais comuns. Confira abaixo alguns exemplos de perguntas às quais você pode responder com modelos:
 
-* Quantas pessoas visitam seu site
-* Quantos desses visitantes são visitantes únicos (contados apenas uma vez)
-* Como eles chegaram ao site (como se eles seguissem um link ou chegassem lá diretamente)
-* Quais palavras-chave os visitantes usaram para pesquisar o conteúdo do site
-* Por quanto tempo os visitantes permaneceram em uma determinada página ou em todo o site
-* Quais links os visitantes clicaram e quando saíram do site
-* Quais canais de marketing são mais eficazes para gerar receita ou eventos de conversão
-* Quanto tempo eles gastaram assistindo a um vídeo
-* Quais navegadores e dispositivos eles usaram para visitar seu site
+* Quantas pessoas visitam o site.
+* Quantos desses visitantes são visitantes únicos (contados apenas uma vez).
+* Como eles chegaram ao site (como se seguissem um link ou chegassem lá diretamente).
+* Quais palavras-chave os visitantes usaram para pesquisar o conteúdo do site.
+* Por quanto tempo os visitantes permaneceram em uma determinada página ou em todo o site.
+* Quais links os visitantes clicaram e quando saíram do site.
+* Quais canais de marketing são mais eficazes para gerar receita ou eventos de conversão.
+* Quanto tempo eles gastaram assistindo a um vídeo.
+* Quais navegadores e dispositivos eles usaram para visitar seu site.
 
 As informações a seguir descrevem como acessar e utilizar modelos a partir da guia [!UICONTROL Modelos] do Analysis Workspace.
 
@@ -1117,11 +1117,15 @@ Estes são os modelos disponíveis:
 
 ### Modelos do Mix Modeler {#mix-modeler-templates}
 
+Estes são os modelos disponíveis:
+
+| Nome do modelo | Por que usar este modelo <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+| --- | --- |
+| [!UICONTROL **Insights do modelo incremental do Mix Modeler**] | Visualize insights de modelos selecionados gerados pelo Mix Modeler.<p>**Isso pode ajudá-lo** a entender melhor os insights incrementais dos modelos gerados no Mix Modeler. <p>**Com base nesses insights**, você poderá:<ul><li>Visualize e quantifique o impacto das atividades de marketing de sua organização.</li><li>Identifique quais canais têm alto desempenho.</li><li>Identifique quais canais podem precisar de otimização.</li></ul></p> |
+
 <!-- CJA only -->
 
 >[!CONTEXTUALHELP]
->id="template--mixModelerReport"
+>id="template--mixmodeler-incremental-models-insights"
 >title="Visualize insights de modelos selecionados gerados pelo Mix Modeler."
 >abstract="**Isso pode ajudá-lo** a entender melhor os insights incrementais dos modelos gerados no Mix Modeler. <br/>**Com base nesses insights**, você poderá:<ul><li>Visualize e quantifique o impacto das atividades de marketing de sua organização.</li><li>Identifique quais canais têm alto desempenho.</li><li>Identifique quais canais podem precisar de otimização.</li></ul>"
-
-
