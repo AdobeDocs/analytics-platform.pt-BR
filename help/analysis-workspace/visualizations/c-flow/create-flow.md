@@ -176,7 +176,7 @@ Use um menu de contexto em qualquer nó na visualização de fluxo com as seguin
 | **[!UICONTROL Excluir item]** ou **[!UICONTROL Restaurar itens excluídos]** | Remove um nó específico da coluna e o cria automaticamente como filtro na parte superior da coluna. Para restaurar o item excluído, selecione **[!UICONTROL Restaurar item excluído]** no menu de contexto. você também pode abrir o segmento na parte superior da coluna e remover a caixa de seleção com o item que acabou de excluir. |
 | **[!UICONTROL Tendência]** | Crie um diagrama de tendências para o nó. |
 | **[!UICONTROL Mostrar próxima coluna]** / **[!UICONTROL Mostrar coluna anterior]** | Revela a próxima coluna (direita) ou a coluna anterior (esquerda) da visualização. |
-| **[!UICONTROL Ocultar coluna]**n | Oculta a coluna selecionada da visualização. |
+| **[!UICONTROL Ocultar coluna]**&#x200B;n | Oculta a coluna selecionada da visualização. |
 | **[!UICONTROL Expandir toda a coluna]** | Expanda uma coluna para mostrar todos os nós. Por padrão, somente os cinco nós principais são exibidos. |
 | **[!UICONTROL Criar público-alvo a partir da seleção]** | Cria um público-alvo com base na coluna selecionada. |
 | **[!UICONTROL Recolher toda a coluna]** | Ocultar todos os nós em uma coluna. |
