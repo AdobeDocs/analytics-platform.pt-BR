@@ -54,7 +54,7 @@ Para usar o conector de origem do Analytics para trazer dados históricos para o
 
 ## Criar o conector de origem do Analytics e mapear campos
 
-Com o esquema personalizado já criado, é necessário criar o conector de origem do Adobe Analytics para usar com dados históricos. (Para obter diretrizes gerais mais abrangentes sobre como criar um conector de origem, consulte [Criar uma conexão de origem do Adobe Analytics na IU](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics).)
+Com o esquema personalizado já criado, é necessário criar o conector de origem do Adobe Analytics para usar com dados históricos. (Para obter diretrizes gerais mais abrangentes sobre como criar um conector de origem, consulte [Criar uma conexão de origem do Adobe Analytics na IU](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=pt-BR).)
 
 Para criar um conector de origem do Adobe Analytics a ser usado com dados históricos:
 
