@@ -23,7 +23,7 @@ ht-degree: 98%
 
 <!-- markdownlint-enable MD034 -->
 
-A Análise de ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg)**[!UICONTROL funil ]**fornece uma representação visual de uma jornada do usuário significativa em seu produto. O eixo horizontal representa cada etapa pela qual um usuário deve passar. O eixo vertical representa a porcentagem de usuários ou sessões em cada etapa. Todas as etapas devem ser feitas em ordem eventual, mas podem ocorrer a qualquer momento na janela de relatórios.
+A Análise de ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg)**[!UICONTROL funil &#x200B;]**&#x200B;fornece uma representação visual de uma jornada do usuário significativa em seu produto. O eixo horizontal representa cada etapa pela qual um usuário deve passar. O eixo vertical representa a porcentagem de usuários ou sessões em cada etapa. Todas as etapas devem ser feitas em ordem eventual, mas podem ocorrer a qualquer momento na janela de relatórios.
 
 >[!BEGINSHADEBOX]
 
