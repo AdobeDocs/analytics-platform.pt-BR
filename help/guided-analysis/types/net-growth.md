@@ -41,7 +41,7 @@ Semelhante à análise [Ativa](active-growth.md), os usuários são definidos co
 >
 >Usuários repetidos não são considerados nesse cálculo, pois não representam ganho ou perda de usuários.
 
->[!VIDEO](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/net-growth)
+>[!VIDEO](https://experienceleague.adobe.com/pt-br/docs/customer-journey-analytics-learn/tutorials/guided-analysis/net-growth)
 
 
 ## Casos de uso

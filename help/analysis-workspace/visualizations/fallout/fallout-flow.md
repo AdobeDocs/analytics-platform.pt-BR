@@ -34,7 +34,7 @@ Uma visualização de ![ConversionFunnel](/help/assets/icons/ConversionFunnel.sv
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Criar um relatório de visualização de fallout](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/fallout-visualization){target="_blank"} para assistir a um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Criar um relatório de visualização de fallout](https://experienceleague.adobe.com/pt-br/docs/analytics-learn/tutorials/analysis-workspace/analyzing-customer-journeys/fallout-visualization){target="_blank"} para assistir a um vídeo de demonstração.
 
 {{videoaa}}
 

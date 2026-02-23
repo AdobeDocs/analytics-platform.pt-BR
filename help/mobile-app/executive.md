@@ -19,7 +19,7 @@ As informações a seguir fornecem aos usuários executivos informações sobre 
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Auxiliar executivos a acessar cartões de pontuação móveis](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/dashboards/assist-executives-to-access-mobile-scorecards){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Auxiliar executivos a acessar cartões de pontuação móveis](https://experienceleague.adobe.com/pt-br/docs/customer-journey-analytics-learn/tutorials/dashboards/assist-executives-to-access-mobile-scorecards){target="_blank"} para ver um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 

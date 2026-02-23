@@ -25,7 +25,7 @@ ht-degree: 99%
 
 A análise de ![Versão](/help/assets/icons/Release.svg) **[!UICONTROL Impacto da versão]** mostra uma comparação do desempenho dos principais indicadores antes e depois de uma determinada data. O eixo horizontal deste relatório é um intervalo de tempo, enquanto o eixo vertical mede os indicadores-chave desejados. Uma barra vertical no meio do gráfico representa a data que você deseja comparar antes e depois. Essa data normalmente representa uma mudança notável no produto que você deseja comparar, como uma atualização do produto ou o lançamento de uma campanha.
 
->[!VIDEO](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/release-impact)
+>[!VIDEO](https://experienceleague.adobe.com/pt-br/docs/customer-journey-analytics-learn/tutorials/guided-analysis/release-impact)
 
 ## Casos de uso
 

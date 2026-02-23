@@ -18,7 +18,7 @@ Você cria segmentos sequenciais usando o operador lógico [!UICONTROL Then] ent
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Segmentação sequencial](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/components/segmentation/sequential-segmentation){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Segmentação sequencial](https://experienceleague.adobe.com/pt-br/docs/analytics-learn/tutorials/components/segmentation/sequential-segmentation){target="_blank"} para ver um vídeo de demonstração.
 
 {{videoaa}}
 

@@ -46,4 +46,4 @@ Para exibir o índice de um projeto:
 
 >[!MORELIKETHIS]
 >
->* [Simplifique a navegação no painel com o novo recurso de índice do Adobe Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/simplify-dashboard-navigation-with-the-new-table-of-contents/ba-p/731284)
+>* [Simplifique a navegação no painel com o novo recurso de índice do Adobe Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/simplify-dashboard-navigation-with-the-new-table-of-contents/ba-p/731284?profile.language=pt)

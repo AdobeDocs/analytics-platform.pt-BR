@@ -31,7 +31,7 @@ A análise de ![PeopleGroup](/help/assets/icons/PeopleGroup.svg) **[!UICONTROL C
 Todos os usuários ativos (novo + repetição + retorno) aparecem como uma sombra de azul-petróleo acima do eixo horizontal, enquanto todos os usuários inativos aparecem em laranja abaixo do eixo horizontal.
 
 
->[!VIDEO](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/active-growth)
+>[!VIDEO](https://experienceleague.adobe.com/pt-br/docs/customer-journey-analytics-learn/tutorials/guided-analysis/active-growth)
 
 ## Casos de uso
 

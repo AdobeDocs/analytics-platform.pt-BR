@@ -86,7 +86,7 @@ Assista ao vídeo para saber mais sobre como criar histórias de dados em projet
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Histórias de dados para projetos de cartão de pontuação para dispositivos móveis](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/dashboards/create-a-mobile-scorecard){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Histórias de dados para projetos de cartão de pontuação para dispositivos móveis](https://experienceleague.adobe.com/pt-br/docs/customer-journey-analytics-learn/tutorials/dashboards/create-a-mobile-scorecard){target="_blank"} para ver um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 
