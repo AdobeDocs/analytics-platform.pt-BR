@@ -5,9 +5,9 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-source-git-commit: 720751130d0f66bddffd13c6f160a85fcc7a7206
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '1454'
+source-wordcount: '1456'
 ht-degree: 98%
 
 ---
@@ -76,7 +76,7 @@ Com essa flexibilidade, você pode encontrar situações em que um único campo 
 
 ## Alterações no conceito de segmentos
 
-Embora os segmentos não sejam tecnicamente migrados do Adobe Analytics para o Customer Journey Analytics, é possível usar a ferramenta de migração de componentes para recriar seus segmentos do Adobe Analytics no Customer Journey Analytics. Os segmentos são recriados no Customer Journey Analytics com base nas dimensões e métricas mapeadas. Para obter mais informações, consulte [Preparar-se para migrar componentes e projetos do Adobe Analytics para o Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration.html?lang=pt-BR).
+Embora os segmentos não sejam tecnicamente migrados do Adobe Analytics para o Customer Journey Analytics, é possível usar a ferramenta de migração de componentes para recriar seus segmentos do Adobe Analytics no Customer Journey Analytics. Os segmentos são recriados no Customer Journey Analytics com base nas dimensões e métricas mapeadas. Para obter mais informações, consulte [Preparar-se para migrar componentes e projetos do Adobe Analytics para o Customer Journey Analytics](https://experienceleague.adobe.com/pt-br/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration).
 
 Embora você ainda não possa compartilhar ou publicar [!UICONTROL segmentos] ([!UICONTROL segmentos]) do [!DNL Customer Journey Analytics] no Perfil Unificado da Experience Platform, essa funcionalidade está em desenvolvimento.
 
@@ -93,7 +93,7 @@ As métricas calculadas são nomeadas de forma semelhante no Adobe Analytics e n
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Mover métricas calculadas do Adobe Analytics para o Customer Journey Analytics](https://video.tv.adobe.com/v/35870?captions=por_br&quality=12&learn=on){target="_blank"} para assistir a um vídeo de demonstração sobre como mover métricas calculadas.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Mover métricas calculadas do Adobe Analytics para o Customer Journey Analytics](https://experienceleague.adobe.com/pt-br/docs/customer-journey-analytics-learn/tutorials/components/calc-metrics/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics){target="_blank"} para assistir a um vídeo de demonstração sobre como mover métricas calculadas.
 
 >[!ENDSHADEBOX]
 
@@ -103,7 +103,7 @@ O [!UICONTROL Customer Journey Analytics] aplica todas as configurações de var
 
 É possível ter várias versões da mesma variável na mesma visualização de dados. Por exemplo, você pode ter uma dimensão Código de rastreamento que expira após 30 dias e outra que expira no final de uma sessão. Ambas as dimensões do Código de rastreamento usam os mesmos dados de origem, mas usam configurações de atribuição diferentes.
 
-Você também pode ter várias visualizações de dados com base na mesma conexão. Por exemplo, você pode ter uma visualização de dados com um tempo limite de sessão de 30 minutos e outra com um tempo limite de sessão de 15 minutos. Ambas as visualizações de dados aparecem no seletor superior direito para que você possa fazer a transição sem interrupções entre elas.
+Você também pode ter várias visualizações de dados com base na mesma conexão. Por exemplo, você pode ter uma visualização de dados com um tempo-limite de sessão de 30 minutos e outra com um tempo-limite de sessão de 15 minutos. Ambas as visualizações de dados aparecem no seletor superior direito para que você possa fazer a transição sem interrupções entre elas.
 
 ## Alterações ao conceito de classificações
 
@@ -120,7 +120,7 @@ O Customer Journey Analytics expande os conceitos de identidades além das ECIDs
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Usar identidades no Customer Journey Analytics](https://video.tv.adobe.com/v/33386/?captions=por_br&quality=12&learn=on){target="_blank"} para assistir a um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Usar identidades no Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/visitor-id/understanding-how-customer-journey-analytics-uses-identity){target="_blank"} para assistir a um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 

@@ -5,10 +5,10 @@ exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: aa635d52007a3032d8c3f90a779d1b70213dee9e
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '3738'
-ht-degree: 55%
+source-wordcount: '3739'
+ht-degree: 56%
 
 ---
 
@@ -59,7 +59,7 @@ As informações a seguir descrevem as configurações que um componente de visu
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Configurações do tipo de componente](https://video.tv.adobe.com/v/333112/?quality=12&learn=on){target="_blank"} para assistir a um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Configurações do tipo de componente](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/data-views/component-type-settings-in-data-views){target="_blank"} para assistir a um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 
@@ -403,7 +403,7 @@ Os seguintes grupos de rótulos de contexto estão disponíveis, cada um com uma
 | Nome do nó de decisão de conteúdo (AJO) | O nome do nó de decisão de conteúdo da jornada. |
 | ID de correlação | ID de correlação. |
 | Contagem de ofertas (AJO) | O número de itens de oferta na proposta. |
-| Chave de associação de item de decisão | Um identificador composto que combina ID de item com ID de solicitação do Experience Decisioning, permitindo a persistência de dados entre interações. |
+| Chave de vinculação de item de decisão | Um identificador composto que combina ID de item com ID de solicitação do Experience Decisioning, permitindo a persistência de dados entre interações. |
 | Provedor de decisão (AJO) | O provedor que teve que tomar a decisão. Esta dimensão é usada quando vários serviços podem tomar decisões para o mesmo posicionamento ou atividade. |
 | Provedor de decisão (persistente) (AJO) | O provedor de decisão com a vinculação de persistência habilitada. |
 | ID da política de decisão (AJO) | A ID da política de decisão usada ao decidir quais itens incluir nessa proposta. |
@@ -435,7 +435,7 @@ Os seguintes grupos de rótulos de contexto estão disponíveis, cada um com uma
 | ID do item (AJO) | O ID do item. |
 | Nome do item (AJO) | O nome do item. |
 | Nome do item (persistente) (AJO) | O nome do item com a vinculação de persistência habilitada. |
-| Erros de ação da jornada (AJO) | Mensagens de erro geradas por ações de jornada. |
+| Erros de ação da jornada (AJO) | Mensagens de erro geradas por ações da jornada. |
 | Nome do nó da ação da jornada | O nome do nó da ação de jornada. |
 | Entradas da jornada | “Verdadeiro” se o evento de etapa for um evento de entrada na jornada por um perfil. |
 | Fim da jornada (AJO) | O fim da jornada. |
@@ -468,7 +468,7 @@ Os seguintes grupos de rótulos de contexto estão disponíveis, cada um com uma
 | Nova tentativa de mensagem (AJO) | Contagem de tentativas. |
 | Status da mensagem (AJO) | Status da mensagem (por exemplo, enviado, rejeitado, erro etc.) |
 | Tipo de mensagem (AJO) | Se a mensagem é de marketing ou transacional. |
-| Status de feedback da mensagem (descontinuado) | Status de feedback. |
+| Status de feedback da mensagem (descontinuado) | Status do feedback. |
 | Entradas de nó | “Verdadeiro” se o evento de etapa for um evento de entrada de nó por um perfil. |
 | ID do nó | A ID do nó da jornada. |
 | Nome do nó | O nome do nó da jornada. |
@@ -516,7 +516,7 @@ Os seguintes grupos de rótulos de contexto estão disponíveis, cada um com uma
 | ID do tratamento (AJO) | A ID do tratamento selecionado para o experimento. |
 | Nome do tratamento (AJO) | O nome do tratamento do experimento. |
 | Visitantes únicos no experimento (AJO) | Os visitantes únicos no experimento. |
-| Cancelamentos de inscrições (AJO) | Contagem total de cancelamentos de inscrição. |
+| Cancelamentos de inscrições (AJO) | Contagem total de cancelamentos de inscrições. |
 | Rótulo do URL (AJO) | Rótulo amigável do URL. |
 | ID do URL (AJO) | Identificador exclusivo do URL clicado pelo usuário. |
 

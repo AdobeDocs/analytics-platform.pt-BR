@@ -1,14 +1,14 @@
 ---
 description: Saiba mais sobre métricas calculadas que você pode criar a partir de métricas existentes.
-keywords: 'Métricas calculadas '
+keywords: Métricas calculadas
 title: Visão geral das métricas calculadas
 feature: Calculated Metrics
 exl-id: c9205c95-8b01-4177-a89c-038886f41d3d
 role: User
-source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 100%
+source-wordcount: '215'
+ht-degree: 99%
 
 ---
 
@@ -20,7 +20,7 @@ As métricas calculadas são métricas personalizadas que podem ser criadas a pa
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Introdução às métricas calculadas](https://video.tv.adobe.com/v/35865/?captions=por_br&quality=12&learn=on){target="_blank"} para assistir a um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Introdução às métricas calculadas](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/components/calc-metrics/introduction-to-calculated-metrics-in-customer-journey-analytics){target="_blank"} para assistir a um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 

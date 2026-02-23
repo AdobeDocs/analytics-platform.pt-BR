@@ -6,10 +6,10 @@ feature: Workspace Basics
 exl-id: 9075518e-54fe-49a6-9601-aa9468187b8f
 solution: Customer Journey Analytics
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '1490'
-ht-degree: 100%
+source-wordcount: '1491'
+ht-degree: 99%
 
 ---
 
@@ -19,7 +19,7 @@ O Analysis Workspace permite criar análises rapidamente para coletar insights e
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visão geral do Analysis Workspace](https://video.tv.adobe.com/v/35802/?captions=por_br&quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visão geral do Analysis Workspace](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/analysis-workspace-overview){target="_blank"} para ver um vídeo de demonstração.
 
 {{videoaa}}
 
@@ -131,7 +131,7 @@ Consulte as tabelas abaixo para obter uma visão geral dos menus disponíveis.
 | **[!UICONTROL Teclas de atalho]** | Mostra uma visão geral das teclas de atalho que você pode usar no espaço de trabalho. |
 | **[!UICONTROL Habilitar o depurador]** | Habilita o depurador. Seu projeto será recarregado. |
 | **[!UICONTROL Desabilitar depurador]** | Desabilita o depurador. Seu projeto será recarregado. |
-| **[!UICONTROL Desempenho]** | Mostra uma caixa de diálogo com métricas de **[!UICONTROL desempenho do Analysis Workspace]**. Use **[!UICONTROL Baixar como CSV]** para baixar um arquivo CSV das métricas de desempenho. |
+| **[!UICONTROL Desempenho]** | Exibe uma caixa de diálogo com métricas de **[!UICONTROL desempenho do Analysis Workspace]**. Use **[!UICONTROL Baixar como CSV]** para baixar um arquivo CSV das métricas de desempenho. |
 | **[!UICONTROL Sobre o Workspace]** | Mostra uma caixa de diálogo **[!UICONTROL Sobre o Analysis Workspace]** com informações de versão, níveis de acesso a recursos e sinalizadores de recursos ativos. |
 
 ## Fontes de dados

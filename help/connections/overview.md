@@ -5,16 +5,16 @@ solution: Customer Journey Analytics
 feature: Connections
 exl-id: 012371d7-aaef-4018-95ee-5c52083e9d8f
 role: Admin
-source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '249'
-ht-degree: 97%
+source-wordcount: '260'
+ht-degree: 93%
 
 ---
 
 # Visão geral das conexões
 
-As conexões permitem que administradores de produto do Customer Journey Analytics definam quais fontes de dados da [!DNL &#x200B; Experience Platform] são assimiladas, como conjuntos de dados de evento, pesquisa, perfil e resumo. As conexões são a base do Customer Journey Analytics e determinam a disponibilidade dos dados (campos) que você pode definir em uma [visualização de dados](/help/data-views/data-views.md) como dimensão ou métricas.
+As conexões permitem que administradores de produto do Customer Journey Analytics definam quais fontes de dados da [!DNL  Experience Platform] são assimiladas, como conjuntos de dados de evento, pesquisa, perfil e resumo. As conexões são a base do Customer Journey Analytics e determinam a disponibilidade dos dados (campos) que você pode definir em uma [visualização de dados](/help/data-views/data-views.md) como dimensão ou métricas.
 
 >[!IMPORTANT]
 >
@@ -25,15 +25,11 @@ As conexões permitem que administradores de produto do Customer Journey Analyti
 
 ![Fluxo de trabalho de conexões](assets/connection-workflow.png)
 
-<!-- Outdated interface 
-
 >[!BEGINSHADEBOX]
 
-See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Configuring connections](https://video.tv.adobe.com/v/35111/?quality=12&learn=on){target="_blank"} for a demo video.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Conectar-se a fontes de dados](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/connections/connecting-customer-journey-analytics-to-data-sources-in-platform){target="_blank"} para ver um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
-
--->
 
 De modo geral, o fluxo de trabalho de conexões permite:
 

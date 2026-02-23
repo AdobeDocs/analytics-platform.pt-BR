@@ -1,17 +1,17 @@
 ---
 description: Entenda como exibir dados hierárquicos (estruturados em árvore) como um conjunto de retângulos aninhados.
-title: Mapas de árvore
+title: Mapa de árvore
 feature: Visualizations
 exl-id: fc39d1a9-9e83-40f3-af28-f4803647ad0b
 role: User
-source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
 workflow-type: tm+mt
-source-wordcount: '167'
-ht-degree: 92%
+source-wordcount: '168'
+ht-degree: 91%
 
 ---
 
-# Mapas de árvore {#treemap}
+# Mapa de árvore {#treemap}
 
 <!-- markdownlint-disable MD034 -->
 
@@ -25,7 +25,7 @@ ht-degree: 92%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta a visualização do Mapa de árvore no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consulte [Mapa de árvore](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/treemap) para ver a versão do_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
+_Este artigo documenta a visualização do Mapa de árvore no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consulte [Mapa de árvore](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/treemap) para ver a versão do_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 
@@ -41,7 +41,7 @@ Com um mapa de árvore, você pode ver padrões que seriam difíceis de detectar
 
 >[!BEGINSHADEBOX]
 
-Veja ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualização de mapa de árvore](https://video.tv.adobe.com/v/334458/?quality=12&learn=on){target="_blank"} para ver um vídeo de demonstração.
+Veja ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualização de mapa de árvore](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-treemap-visualizations){target="_blank"} para ver um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 
@@ -49,8 +49,8 @@ Veja ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualizaçã
 >[!MORELIKETHIS]
 >
 >[Adicionar uma visualização a um painel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->&#x200B;>[Configurações de visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->&#x200B;>[Menu de contexto da visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>[Configurações de visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[Menu de contexto da visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
 
 
