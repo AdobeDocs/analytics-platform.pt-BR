@@ -91,7 +91,7 @@ Se você atender aos pré-requisitos, talvez queira executar algumas verificaç�
 >id="connection_changeto_identitygraph"
 >title="Alterar para gráfico de identidade"
 >abstract="Verifique se concluiu a configuração do gráfico de identidade antes de usá-lo para compilação."
->additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/gbs" text="Compilação baseada em gráfico"
+>additional-url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/stitching/gbs" text="Compilação baseada em gráfico"
 
 >[!CONTEXTUALHELP]
 >id="connection_stitching_personid"
