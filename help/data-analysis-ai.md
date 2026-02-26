@@ -5,7 +5,7 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 262d5f15-16cb-4851-a769-7dbd205b2f81
-source-git-commit: e1f7245a6c9bf6e36a49edafbcbb0e1005bc6e5b
+source-git-commit: 684f7e95e872ed3cc56a12725dd63459ed488ecc
 workflow-type: tm+mt
 source-wordcount: '2548'
 ht-degree: 89%
@@ -16,7 +16,7 @@ ht-degree: 89%
 
 >[!AVAILABILITY]
 >
->O Data Insights Agent está disponível para clientes elegíveis por um período limitado. O acesso ao Data Insights Agent estará disponível até 28 de fevereiro de 2026. Para continuar usando o Data Insights Agent após essa data sem interrupção, entre em contato com o representante da sua conta da Adobe para saber mais sobre o licenciamento do Adobe Experience Platform Agent Orchestrator.
+>O Data Insights Agent está disponível para clientes elegíveis por um período limitado. O acesso ao Data Insights Agent estará disponível até quarta-feira, 31 de março de 2026. Para continuar usando o Data Insights Agent após essa data sem interrupção, entre em contato com o representante da sua conta da Adobe para saber mais sobre o licenciamento do Adobe Experience Platform Agent Orchestrator.
 
 O Data Insights Agent, acessível por meio do [Assistente de IA](/help/ai-assistant.md) no Customer Journey Analytics, é um agente de conversação com IA generativa que responde de forma rápida e eficiente a perguntas sobre os seus dados. Ele cria visualizações relevantes no Analysis Workspace usando componentes da visualização de dados e de dados reais.
 
@@ -178,7 +178,7 @@ O Adobe Experience Platform Agent Orchestrator permite acessar a funcionalidade 
 
 O Agent Orchestrator interpreta a solicitação, determina quais agentes especializados são necessários e os orquestra para fornecer a resposta correta. Ele monitora o contexto em interações multiturno para que seja possível desenvolver consultas anteriores naturalmente.
 
-Para obter mais informações, consulte [Adobe Experience Platform Agent Orchestrator](https://business.adobe.com/br/products/experience-platform/agent-orchestrator.html).
+Para obter mais informações, consulte [Adobe Experience Platform Agent Orchestrator](https://business.adobe.com/products/experience-platform/agent-orchestrator.html).
 
 ## Exemplo de prompts de visualização de dados
 
