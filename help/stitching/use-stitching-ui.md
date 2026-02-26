@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
-source-git-commit: d1ba2d203738ca9bf74d17bb93712eff26f88f25
+source-git-commit: c6ccbdf89c51deef33b562a053b9c3b4bc626497
 workflow-type: tm+mt
 source-wordcount: '962'
 ht-degree: 5%
@@ -48,7 +48,7 @@ Se você atender aos pré-requisitos, talvez queira executar algumas verificaç�
        AND TO_TIMESTAMP(timestamp, 'FORMAT_STRING') < TIMESTAMP '{END_DATE}';
      ```
 
-     Onde:
+     Em que:
 
       * `{PERSISTENT_ID_FIELD}` é o campo para a ID persistente. Por exemplo: `identityMap.ecid[0]`.
       * `{DATASET_TABLE_NAME}` é o nome da tabela para o conjunto de dados do evento.
@@ -75,7 +75,7 @@ Se você atender aos pré-requisitos, talvez queira executar algumas verificaç�
           AND TO_TIMESTAMP(timestamp, 'FORMAT_STRING') < TIMESTAMP '{END_DATE}';
         ```
 
-        Onde:
+        Em que:
 
          * `{PERSON_ID_FIELD}` é o campo para a ID de pessoa. Por exemplo: `identityMap.crmId[0]`.
          * `{DATASET_TABLE_NAME}` é o nome da tabela para o conjunto de dados do evento.
@@ -91,7 +91,7 @@ Se você atender aos pré-requisitos, talvez queira executar algumas verificaç�
 >id="connection_changeto_identitygraph"
 >title="Alterar para gráfico de identidade"
 >abstract="Verifique se concluiu a configuração do gráfico de identidade antes de usá-lo para compilação."
->additional-url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/stitching/gbs" text="Compilação baseada em gráfico"
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/gbs" text="Compilação baseada em gráfico"
 
 >[!CONTEXTUALHELP]
 >id="connection_stitching_personid"
@@ -112,14 +112,14 @@ Para habilitar a compilação, na seção de conjunto de dados do evento da caix
 
    Se você selecionar **[!UICONTROL Mapa de identidade]** para a ID persistente, será necessário selecionar um namespace. Você tem duas opções:
 
-   * Habilitar **[!UICONTROL Usar namespace de identidade primário]** para usar o namespace de identidade primário.
+   * Selecione **[!UICONTROL Usar namespace de identidade primário]** para usar o namespace de identidade primário.
    * Selecione um namespace no menu suspenso **[!UICONTROL Namespace]**.
 
 1. Selecione uma ID de pessoa no menu suspenso **[!UICONTROL ID de pessoa]**.
 
    Se você selecionar **[!UICONTROL Mapa de identidade]** para a ID de pessoa, será necessário selecionar um namespace. Você tem duas opções:
 
-   * Habilitar **[!UICONTROL Usar namespace de identidade primário]** para usar o namespace de identidade primário.
+   * Selecione **[!UICONTROL Usar namespace de identidade primário]** para usar o namespace de identidade primário.
    * Selecione um namespace no menu suspenso **[!UICONTROL Namespace]**.
 
 
@@ -141,7 +141,7 @@ Depois de salvar uma conexão, o processo de compilação dos conjuntos de dados
 
 >[!CAUTION]
 >
->Para conjuntos de dados habilitados para compilação na interface de Conexões, o status de preenchimento retroativo é imediata e incorretamente relatado como ![Status verde](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _preenchimentos retroativos concluídos]**&#x200B;para o número de preenchimentos retroativos concluídos. Use outras maneiras de verificar se os dados do conjunto de dados compilado são preenchidos retroativamente.
+>Para conjuntos de dados habilitados para compilação na interface de Conexões, o status de preenchimento retroativo é imediata e incorretamente relatado como ![Status verde](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _preenchimentos retroativos concluídos]**para o número de preenchimentos retroativos concluídos. Use outras maneiras de verificar se os dados do conjunto de dados compilado são preenchidos retroativamente.
 >
 
 
