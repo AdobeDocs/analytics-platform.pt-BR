@@ -61,7 +61,7 @@ Todas as linhas de tendência do modelo de regressão são ajustadas usando mín
 
 >[!BEGINSHADEBOX]
 
-Assista a ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Line](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/line-visualization){target="_blank"} para ver um vídeo de demonstração.
+Assista a ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Line](https://experienceleague.adobe.com/pt-br/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/line-visualization){target="_blank"} para ver um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 
