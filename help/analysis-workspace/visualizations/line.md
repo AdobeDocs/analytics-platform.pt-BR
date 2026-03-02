@@ -4,10 +4,10 @@ title: Linha
 feature: Visualizations
 exl-id: b68aa8dc-2c96-4c49-8d3c-d94804aab479
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 211dbd80b21f84ab616569c0d847dcc97f13661c
 workflow-type: tm+mt
-source-wordcount: '532'
-ht-degree: 94%
+source-wordcount: '540'
+ht-degree: 93%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 94%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta a visualização de linha no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consulte [Linha](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/line) para saber a versão do_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
+_Este artigo documenta a visualização de linha no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consulte [Linha](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/line) para saber a versão do_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 
@@ -57,6 +57,13 @@ Todas as linhas de tendência do modelo de regressão são ajustadas usando mín
 | **[!UICONTROL Potência]** | Cria uma linha curva e é útil para conjuntos de dados que comparam medidas que aumentam a uma taxa específica. Essa opção não deve ser usada se os dados contiverem valores zero ou negativos. Equação: `y = a * x^b` |
 | **[!UICONTROL Quadrático]** | Encontra o melhor ajuste para um conjunto de dados em forma de parábola (côncavo para cima ou para baixo). Equação: `y = a + b * x + c * x^2` |
 | **[!UICONTROL Média móvel]** | Cria uma linha de tendências suave com base em um conjunto de médias. Também conhecida como média variável, uma média móvel usa uma quantidade específica de pontos de dados (determinada pela seleção de [!UICONTROL Granularidade]), calcula a média entre eles e usa essa média como um ponto na linha. Os exemplos incluem média móvel de sete dias ou uma média móvel de quatro semanas. |
+
+
+>[!BEGINSHADEBOX]
+
+Assista a ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Line](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/line-visualization){target="_blank"} para ver um vídeo de demonstração.
+
+>[!ENDSHADEBOX]
 
 >[!MORELIKETHIS]
 >

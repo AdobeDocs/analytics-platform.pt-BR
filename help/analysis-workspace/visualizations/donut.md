@@ -4,7 +4,7 @@ title: Rosca
 feature: Visualizations
 exl-id: 97b846a6-3a38-48c7-b686-b792bb882fdb
 role: User
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+source-git-commit: 211dbd80b21f84ab616569c0d847dcc97f13661c
 workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 86%
@@ -25,7 +25,7 @@ ht-degree: 86%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta a visualização de rosca no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consulte [Rosca](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/donut) para ver a versão do_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
+_Este artigo documenta a visualização de rosca no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consulte [Rosca](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/donut) para ver a versão do_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 
@@ -37,7 +37,7 @@ Semelhante a um gráfico de pizza, a visualização de ![GraphDonut](/help/asse
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Adicionar uma visualização de rosca](https://experienceleague.adobe.com/pt-br/docs/analytics-learn/tutorials/analysis-workspace/visualizations/using-the-donut-visualization){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Adicionar uma visualização de rosca](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-donut-visualizations){target="_blank"} para ver um vídeo de demonstração.
 
 {{videoaa}}
 

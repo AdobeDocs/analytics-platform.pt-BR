@@ -4,9 +4,9 @@ description: Saiba mais sobre o conceito de atribuição de crédito de um event
 feature: Attribution
 role: User, Admin
 exl-id: 47a3523b-d9eb-4272-84b8-090b921cba13
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+source-git-commit: 211dbd80b21f84ab616569c0d847dcc97f13661c
 workflow-type: tm+mt
-source-wordcount: '466'
+source-wordcount: '431'
 ht-degree: 99%
 
 ---
@@ -51,30 +51,40 @@ A atribuição compreende os seguintes recursos:
 ## Vídeos
 
 
+<!--  Attribution IQ
+
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Atribuição em tabelas de forma livre](https://experienceleague.adobe.com/pt-br/docs/analytics-learn/tutorials/analysis-workspace/attribution-iq/using-attribution-iq-in-freeform-tables){target="_blank"} para ver um vídeo de demonstração.
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Attribution in Freeform tables](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/attribution-iq/using-attribution-iq-in-freeform-tables){target="_blank"} for a demo video.
+
+>[!ENDSHADEBOX]
+
+-->
+
+<!-- Attribution IQ 
+>[!BEGINSHADEBOX]
+
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Attribution in calculated metrics](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/attribution-iq/attribution-iq-in-calculated-metrics){target="_blank"} for a demo video.
+
+>[!ENDSHADEBOX]
+
+-->
+
+
+>[!BEGINSHADEBOX]
+
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Uso do painel de atribuição](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/panels/build-the-attribution-panel){target="_blank"} para assistir a um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 
 
->[!BEGINSHADEBOX]
-
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Atribuição em métricas calculadas](https://experienceleague.adobe.com/pt-br/docs/analytics-learn/tutorials/analysis-workspace/attribution-iq/attribution-iq-in-calculated-metrics){target="_blank"} para assistir a um vídeo de demonstração.
-
->[!ENDSHADEBOX]
-
+<!-- Attribution IQ
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Uso do painel de atribuição](https://experienceleague.adobe.com/pt-br/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/panels/build-the-attribution-panel){target="_blank"} para assistir a um vídeo de demonstração.
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Adding side-by-side comparisons of Attribution models](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/attribution-iq/adding-side-by-side-comparisons-of-attribution-iq-models){target="_blank"} for a demo video.
 
 >[!ENDSHADEBOX]
 
-
->[!BEGINSHADEBOX]
-
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Adicionar comparações lado a lado de modelos de atribuição](https://experienceleague.adobe.com/pt-br/docs/analytics-learn/tutorials/analysis-workspace/attribution-iq/adding-side-by-side-comparisons-of-attribution-iq-models){target="_blank"} para ver um vídeo de demonstração.
-
->[!ENDSHADEBOX]
+-->
 

@@ -5,10 +5,10 @@ title: Criar links compartilháveis
 exl-id: 6cfb5161-08e1-4583-ae79-4600b5531929
 feature: Curate and Share
 role: User
-source-git-commit: 084c995658a5cf698d253f1c15229f621a8c55d5
+source-git-commit: 211dbd80b21f84ab616569c0d847dcc97f13661c
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 53%
+source-wordcount: '338'
+ht-degree: 39%
 
 ---
 
@@ -35,14 +35,15 @@ Você também pode compartilhar um link para uma parte específica de um projeto
 * No menu de contexto de um cabeçalho do painel, selecione **[!UICONTROL Obter link do painel]**
 * No menu de contexto de um cabeçalho de visualização, selecione **[!UICONTROL Obter link de visualização]**
 
-[Assista ao vídeo](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html?lang=pt-BR) sobre como criar links e usá-los para direcionar recipients para partes específicas do seu projeto.
+>[!BEGINSHADEBOX]
+
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Link dentro ou fora do seu projeto](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/visualizations/intra-linking-in-analysis-workspace.html?lang=pt-BR){target="_blank"} para ver um vídeo de demonstração.
+
+>[!ENDSHADEBOX]
 
 ![O menu suspenso após clicar com o botão direito do mouse no cabeçalho com o link Obter visualização realçado.](assets/get-visualization-link.png)
 
 ## Usar links em um índice {#TOC}
 
-Uma dica para aproveitar as várias opções de link é sempre incluir um índice na parte superior do projeto do Workspace. No índice, você pode vincular a outros projetos relevantes, painéis específicos e visualizações específicas. Dessa forma, o recipient do projeto consegue navegar com mais facilidade.
+Uma dica para aproveitar as várias opções de link é sempre incluir um [sumário](/help/analysis-workspace/build-workspace-project/project-table-of-contents.md) na parte superior do seu projeto do Workspace. No índice, você pode vincular a outros projetos relevantes, painéis específicos e visualizações específicas. Dessa forma, o recipient do projeto consegue navegar com mais facilidade.
 
-[Assista ao vídeo](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/navigating-workspace-projects/create-a-toc-in-analysis-workspace.html?lang=pt-BR) sobre como construir um índice usando links e o editor de rich text do Espaço de trabalho.
-
-![Um índice do projeto.](assets/toc.png)

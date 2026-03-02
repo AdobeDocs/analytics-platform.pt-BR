@@ -4,7 +4,7 @@ title: Configurações de linha
 feature: Visualizations
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
 role: User
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+source-git-commit: 211dbd80b21f84ab616569c0d847dcc97f13661c
 workflow-type: tm+mt
 source-wordcount: '1057'
 ht-degree: 84%
@@ -12,13 +12,6 @@ ht-degree: 84%
 ---
 
 # Configurações de linha
-
-
->[!BEGINSHADEBOX]
-
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Configurações de linha e coluna em uma tabela de forma livre](https://experienceleague.adobe.com/pt-br/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/row-and-column-settings-in-freeform-tables){target="_blank"} para assistir a um vídeo de demonstração.
-
->[!ENDSHADEBOX]
 
 As configurações de linha variam de acordo com qual componente foi arrastado para a tabela. Para acessar as configurações de linha da tabela, selecione ![Configuração](/help/assets/icons/Setting.svg) **[!UICONTROL Configurações]** próximo a uma dimensão, segmento, métrica, período ou um detalhamento em cada um desses objetos.
 
@@ -29,6 +22,14 @@ As configurações de linha variam de acordo com qual componente foi arrastado p
 | **[!UICONTROL Detalhamento por posição]** | Por padrão, essa configuração é desativada e os detalhamentos são corrigidos em itens de linha estáticos. Por exemplo, imagine que você detalhou os três principais itens de dimensão de página (Página inicial, Resultados de pesquisa, Check-out) por canal de marketing. Você sai do projeto e retorna duas semanas depois. Ao abrir o projeto novamente, as 3 principais páginas foram alteradas e, agora, a Página inicial, os Resultados da pesquisa e o Check-out são as 4 a 6 principais páginas. Por padrão, os detalhamentos do canal de marketing ainda aparecerão em Página inicial, Resultados de pesquisa e Check-out, mesmo que agora estejam nas linhas 4-6. <br> Por outro lado, o **Detalhamento por posição** sempre detalha os três primeiros itens, independentemente do que sejam. Voltando ao exemplo, ao reabrir o projeto, os detalhamentos do canal de marketing são vinculados às três principais páginas da tabela. E não a Página inicial, Resultados de pesquisa e Check-out, que agora estão nas linhas 4-6. |
 | **[!UICONTROL Porcentagens]** | **Calcular porcentagens por coluna** (padrão): as porcentagens visíveis em uma célula são calculadas com base no total da coluna. <br>**Calcular porcentagens por linha**: as porcentagens em células são calculadas pela linha, em vez de ao longo da coluna, com o Total geral como o denominador. Esse cálculo é útil para criar uma tendência de porcentagens. |
 | **[!UICONTROL Totais de colunas]** | Essas configurações estão disponíveis somente para [linhas estáticas](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/manual-vs-dynamic-rows.md). <br> **Mostrar como soma das linhas atuais** exibe uma soma das linhas da tabela do lado do cliente, o que significa que o total *não* removerá a duplicação de métricas, como visitas ou pessoas. <br> **Mostrar total geral** exibe uma soma do lado do servidor, que representa o total das métricas desduplicadas. |
+
+>[!BEGINSHADEBOX]
+
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Configurações de linha e coluna em uma tabela de forma livre](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/row-and-column-settings-in-freeform-tables){target="_blank"} para assistir a um vídeo de demonstração.
+
+{{videoaa}}
+
+>[!ENDSHADEBOX]
 
 ## Alterar contagem de linhas
 
@@ -90,4 +91,4 @@ As opções adicionais de menu de contexto a seguir estão disponíveis ao selec
 
 ## Modificar altura da linha
 
-Você pode definir a [densidade da exibição](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density) de um projeto como **[!UICONTROL Compacto]**, **[!UICONTROL Confortável]** e **[!UICONTROL Expandido]**.
+Você pode definir a [densidade da exibição](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density) de um projeto como **[!UICONTROL Compacto]**, **[!UICONTROL Confortável]** e **[!UICONTROL Expandido]**.

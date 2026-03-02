@@ -4,9 +4,9 @@ title: Visão geral dos painéis
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+source-git-commit: 211dbd80b21f84ab616569c0d847dcc97f13661c
 workflow-type: tm+mt
-source-wordcount: '2194'
+source-wordcount: '2205'
 ht-degree: 99%
 
 ---
@@ -26,7 +26,7 @@ Os seguintes tipos de painel estão disponíveis no Analysis Workspace para o [!
 | [Experimentação](experimentation.md) | Compare diferentes variações de experiências de usuário, marketing ou mensagens para determinar a opção ideal para gerar um resultado específico. |
 | [Forma livre](freeform-panel.md) | Realize comparações e detalhamentos ilimitados e, em seguida, adicione visualizações para obter uma visão ampla dos dados. |
 | [Público-alvo médio a cada minuto de mídia](average-minute-audience-panel.md) | Analise o público-alvo médio por minuto de um conteúdo específico ou ao longo de um período personalizado. |
-| [Visualizadores simultâneos de mídia &#x200B;](media-concurrent-viewers.md) | Analise os visualizadores simultâneos ao longo do tempo, com detalhes sobre o pico de simultaneidade e a capacidade de criar um detalhamento e comparar. |
+| [Visualizadores simultâneos de mídia ](media-concurrent-viewers.md) | Analise os visualizadores simultâneos ao longo do tempo, com detalhes sobre o pico de simultaneidade e a capacidade de criar um detalhamento e comparar. |
 | [Tempo gasto com a reprodução da mídia](/help/analysis-workspace/c-panels/media-playback-time-spent.md) | Analise o tempo de reprodução gasto para entender onde ocorrem os picos de simultaneidade ou as desistências. |
 | [Próximo item ou anterior](next-previous.md) | Mostra as páginas seguintes ou anteriores que as pessoas acessam. |
 | [Insights rápidos](quickinsight.md) | Crie rapidamente uma tabela de forma livre e uma visualização de acompanhamento para analisar e descobrir insights mais rapidamente. |
@@ -167,7 +167,7 @@ Para obter mais informações, consulte [Segmentos rápidos](/help/components/se
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Segmentos suspensos](https://experienceleague.adobe.com/pt-br/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Segmentos suspensos](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters){target="_blank"} para ver um vídeo de demonstração.
 
 {{videoaa}}
 
@@ -180,7 +180,7 @@ Os segmentos suspensos estáticos permitem interagir com os dados de forma contr
 
 Segmentos suspensos estáticos também podem ser usados para consolidar vários projetos em um único. Por exemplo, se você tiver muitas versões do mesmo projeto com diferentes segmentos de País aplicados, é possível consolidar todas as versões em um único projeto e adicionar um segmento suspenso de País.
 
-![Segmentos suspensos estáticos mostrando o segmento “Direto” do canal de mercado destacado. &#x200B;](assets/dropdown-filter-intro.png)
+![Segmentos suspensos estáticos mostrando o segmento “Direto” do canal de mercado destacado. ](assets/dropdown-filter-intro.png)
 
 ##### Criar segmentos suspensos estáticos
 
@@ -225,6 +225,12 @@ Para criar um segmento suspenso dinâmico:
 Observe que os segmentos suspensos dinâmicos não estão disponíveis para métricas, segmentos ou intervalos de datas.
 
 Um segmento suspenso dinâmico fornece as mesmas opções de menu de contexto que os segmentos suspensos estáticos.
+
+>[!BEGINSHADEBOX]
+
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Segmentos suspensos dinâmicos](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/tips-and-tricks/dynamic-drop-downs){target="_blank"} para ver um vídeo de demonstração.
+
+>[!ENDSHADEBOX]
 
 
 ## Menu de contexto

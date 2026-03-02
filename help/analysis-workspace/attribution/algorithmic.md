@@ -4,10 +4,10 @@ description: Entenda os detalhes do modelo de atribuição algorítmica.
 feature: Attribution
 role: User, Admin
 exl-id: dd2b2a5b-9c36-4534-999f-f96604f29eab
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+source-git-commit: 211dbd80b21f84ab616569c0d847dcc97f13661c
 workflow-type: tm+mt
-source-wordcount: '279'
-ht-degree: 42%
+source-wordcount: '270'
+ht-degree: 44%
 
 ---
 
@@ -15,13 +15,15 @@ ht-degree: 42%
 
 O [modelo de atribuição](models.md) algorítmica no Analysis Workspace difere de outros modelos na medida em que usa técnicas estatísticas para alocar crédito entre os itens de dimensão em seu relatório ou tabela de forma livre. Como todos os outros modelos de atribuição no Analysis Workspace, a atribuição algorítmica pode ser usada em qualquer dimensão ou métrica. A atribuição algorítmica suporta segmentação ilimitada e detalhamentos e distribui 100% das conversões para uma ou mais dimensões na tabela (também conhecida como atribuição &quot;fracional&quot;).
 
+<!-- 
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Atribuição algorítmica](https://experienceleague.adobe.com/pt-br/docs/analytics-learn/tutorials/analysis-workspace/attribution-iq/algorithmic-model-in-attribution-iq){target="_blank"} para ver um vídeo de demonstração.
+See ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Algorithmic attribution](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/attribution-iq/algorithmic-model-in-attribution-iq){target="_blank"} for a demo video.
 
 >[!ENDSHADEBOX]
 
+-->
 
 O algoritmo usado para atribuição é baseado no Harsanyi Dividend da teoria dos jogos cooperativos. O dividendo de Harsanyi é uma generalização da solução de valor de Shapley (batizada de Lloyd Shapley, economista vencedor do Nobel) para distribuir crédito entre os jogadores em um jogo com contribuições desiguais para o resultado.
 

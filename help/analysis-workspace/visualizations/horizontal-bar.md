@@ -4,10 +4,10 @@ title: Barra Horizontal E Barra Horizontal Empilhada
 feature: Visualizations
 exl-id: 4d982430-5d43-482a-ab4e-ab1fc3616f0c
 role: User
-source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+source-git-commit: 211dbd80b21f84ab616569c0d847dcc97f13661c
 workflow-type: tm+mt
-source-wordcount: '195'
-ht-degree: 89%
+source-wordcount: '204'
+ht-degree: 85%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 89%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta as visualizações de barra horizontal e barra horizontal empilhada no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consulte [Barra horizontal e barra horizontal empilhada](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/horizontal-bar) para a versão do_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
+_Este artigo documenta as visualizações de barra horizontal e barra horizontal empilhada no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consulte [Barra horizontal e barra horizontal empilhada](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/horizontal-bar) para a versão do_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 
@@ -57,11 +57,16 @@ Use a opção **[!UICONTROL 100% empilhado]** em ![Configurações](/help/ass
 
 ![Barra horizontal empilhada 100%](assets/horizontal-bar-stacked100.png)
 
+>[!BEGINSHADEBOX]
+
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualização de área](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-bar-visualizations){target="_blank"} para ver um vídeo de demonstração.
+
+>[!ENDSHADEBOX]
 
 >[!MORELIKETHIS]
 >
->[Adicionar uma visualização em um painel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->&#x200B;>[Configurações de visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->&#x200B;>[Menu de contexto da visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>[Adicionar uma visualização a um painel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
+>[Configurações de visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[Menu de contexto da visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
 >
 

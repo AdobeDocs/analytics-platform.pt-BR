@@ -5,7 +5,7 @@ title: Compartilhar projetos
 feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 role: User
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+source-git-commit: 211dbd80b21f84ab616569c0d847dcc97f13661c
 workflow-type: tm+mt
 source-wordcount: '2092'
 ht-degree: 99%
@@ -40,9 +40,7 @@ Qualquer [preparação](curate.md) feita antes do compartilhamento será refleti
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Compartilhamento de projetos no Analysis Workspace](https://experienceleague.adobe.com/pt-br/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/curate-and-share/share-with-anyone-in-analysis-workspace){target="_blank"} para assistir a um vídeo de demonstração.
-
-{{videoaa}}
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Compartilhamento de projetos no Analysis Workspace](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/curate-and-share/share-with-anyone-in-analysis-workspace){target="_blank"} para assistir a um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 
@@ -161,7 +159,7 @@ Para compartilhar o link do projeto com os usuários em sua organização:
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Compartilhar com qualquer pessoa](https://experienceleague.adobe.com/pt-br/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/curate-and-share/share-with-anyone-in-analysis-workspace){target="_blank"} para assistir a um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Compartilhar com qualquer pessoa](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/curate-and-share/share-with-anyone-in-analysis-workspace){target="_blank"} para assistir a um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 
@@ -216,9 +214,7 @@ Você pode compartilhar os componentes integrados que fazem parte do seu projeto
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Compartilhar componentes integrados no Analysis Workspace](https://experienceleague.adobe.com/pt-br/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/curate-and-share/share-with-anyone-in-analysis-workspace){target="_blank"} para assistir a um vídeo de demonstração.
-
-{{videoaa}}
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Compartilhar componentes integrados no Analysis Workspace](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/curate-and-share/share-with-anyone-in-analysis-workspace){target="_blank"} para assistir a um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 

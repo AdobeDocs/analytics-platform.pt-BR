@@ -4,10 +4,10 @@ title: Texto
 feature: Visualizations
 exl-id: 51cb6b57-682f-4475-b829-75def725be43
 role: User
-source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+source-git-commit: 211dbd80b21f84ab616569c0d847dcc97f13661c
 workflow-type: tm+mt
-source-wordcount: '290'
-ht-degree: 83%
+source-wordcount: '299'
+ht-degree: 80%
 
 ---
 
@@ -25,12 +25,18 @@ ht-degree: 83%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta a visualização de texto no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consulte [Texto](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/text) para saber qual é a versão do_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
+_Este artigo documenta a visualização de texto no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consulte [Texto](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/text) para saber qual é a versão do_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 
 
 Para adicionar rich text definido pelo usuário ao seu projeto do Workspace, você pode usar uma visualização de ![Text](/help/assets/icons/Text.svg) **[!UICONTROL Texto]** ou usar descrições para uma visualização e um painel.
+
+>[!BEGINSHADEBOX]
+
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualização de texto](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-text-visualizations){target="_blank"} para ver um vídeo de demonstração.
+
+>[!ENDSHADEBOX]
 
 ## Usar
 
