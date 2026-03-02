@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
-source-git-commit: c6ccbdf89c51deef33b562a053b9c3b4bc626497
+source-git-commit: a220eaf24ff877537f86027e3d93ec30772438e5
 workflow-type: tm+mt
-source-wordcount: '962'
-ht-degree: 5%
+source-wordcount: '1142'
+ht-degree: 4%
 
 ---
 
@@ -91,12 +91,41 @@ Se você atender aos pré-requisitos, talvez queira executar algumas verificaç�
 >id="connection_changeto_identitygraph"
 >title="Alterar para gráfico de identidade"
 >abstract="Verifique se concluiu a configuração do gráfico de identidade antes de usá-lo para compilação."
->additional-url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/stitching/gbs" text="Compilação baseada em gráfico"
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/gbs" text="Compilação baseada em gráfico"
 
 >[!CONTEXTUALHELP]
 >id="connection_stitching_personid"
 >title="ID da pessoa"
 >abstract="Selecione uma ID de pessoa (o identificador exclusivo de uma pessoa) entre as identidades disponíveis. Caso queira usar a compilação com base em gráfico, selecione **[!UICONTROL Gráfico de identidade]**."
+
+>[!CONTEXTUALHELP]
+>id="connection_stitchingmetrics"
+>title="Compilação de métricas"
+>abstract="As métricas de compilação estão sendo calculadas usando um conjunto de amostras de dados dos últimos 7 dias (sem incluir os dados de hoje)."
+
+>[!CONTEXTUALHELP]
+>id="connection_stitchingmetrics_gbs_personidcoverage"
+>title="Cobertura de ID de pessoa"
+>abstract="A cobertura da ID de pessoa selecionada usada para identificação durante o processo de compilação (em tempo real e repetição).<br/>Para obter os melhores resultados de compilação, uma relação (ID persistente, ID de pessoa) deve estar presente no gráfico de identidade para cada ID persistente."
+
+>[!CONTEXTUALHELP]
+>id="connection_stitchingmetrics_fbs_personidcoverage"
+>title="Cobertura de ID de pessoa"
+>abstract="A cobertura da ID de pessoa selecionada usada para identificação durante o processo de compilação (em tempo real e repetição).<br/>Para obter melhores resultados de compilação, a ID de pessoa (informações do usuário) deve ser enviada em pelo menos um evento para cada ID persistente (informações do dispositivo)."
+
+>[!CONTEXTUALHELP]
+>id="connection_stitchingmetrics_persistentidcoverage"
+>title="Cobertura de ID persistente"
+>abstract="Esse valor é usado para identificação durante o processo de compilação (em tempo real e repetição), caso um valor de ID de pessoa não possa ser detectado. <br/>Eventos sem ID persistente e sem ID de pessoa são descartados dos dados. Para obter melhores resultados de compilação, uma ID persistente deve estar presente em todos os eventos."
+
+
+>[!CONTEXTUALHELP]
+>id="connection_stitchingmetrics_badids"
+>title="IDs inválidas"
+>abstract="IDs inválidas são valores de ID que afetam seriamente os dados de relatórios."
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16444" text="IDs inválidas"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16444" text="Costura e IDs incorretas"
+
 
 Para habilitar a compilação, na seção de conjunto de dados do evento da caixa de diálogo **[!UICONTROL Adicionar conjuntos de dados]** ou **[!UICONTROL Editar conjunto de dados]**:
 
@@ -141,7 +170,7 @@ Depois de salvar uma conexão, o processo de compilação dos conjuntos de dados
 
 >[!CAUTION]
 >
->Para conjuntos de dados habilitados para compilação na interface de Conexões, o status de preenchimento retroativo é imediata e incorretamente relatado como ![Status verde](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _preenchimentos retroativos concluídos]**&#x200B;para o número de preenchimentos retroativos concluídos. Use outras maneiras de verificar se os dados do conjunto de dados compilado são preenchidos retroativamente.
+>Para conjuntos de dados habilitados para compilação na interface de Conexões, o status de preenchimento retroativo é imediata e incorretamente relatado como ![Status verde](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _preenchimentos retroativos concluídos]**para o número de preenchimentos retroativos concluídos. Use outras maneiras de verificar se os dados do conjunto de dados compilado são preenchidos retroativamente.
 >
 
 
