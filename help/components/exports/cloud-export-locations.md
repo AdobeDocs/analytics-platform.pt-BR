@@ -5,10 +5,10 @@ title: Configurar locais de exportação na nuvem
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
 role: User, Admin
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: c4a7884ae05d9290b2974483474ba8326492d014
 workflow-type: tm+mt
-source-wordcount: '2030'
-ht-degree: 19%
+source-wordcount: '2947'
+ht-degree: 13%
 
 ---
 
@@ -28,13 +28,15 @@ ht-degree: 19%
 >[!CONTEXTUALHELP]
 >id="cja-export-file-name"
 >title="Nome e caminho do arquivo"
->abstract="Especifique um nome de arquivo personalizado dinâmico a ser usado para exportações automatizadas enviadas para este local. Você também pode preceder o nome do arquivo com um caminho de arquivo personalizado dinâmico. &lt;br\>Use variáveis no nome e no caminho do arquivo para torná-las dinâmicas. &lt;br\>Por exemplo, se você especificar `${yyyy}/${mm}/${dd}/my-report-${instance_id}-${idx}`, uma exportação que é automaticamente enviada para este destino em 15 de janeiro de 2026 terá o seguinte caminho de arquivo e nome: `[prefix_folder_name]/2026/01/15/my-report-[UUID]-1.csv` &lt;br\>Clique no link abaixo para obter uma lista de variáveis disponíveis."
+>abstract="Especifique um nome de arquivo personalizado dinâmico a ser usado para exportações automatizadas enviadas para este local. Você também pode preceder o nome do arquivo com um caminho de arquivo personalizado dinâmico. <br/>Use variáveis no nome e no caminho do arquivo para torná-las dinâmicas. <br/>Por exemplo, se você especificar `${yyyy}/${MM}/${dd}/my-report-${instance_id}-${idx}`, uma exportação que é automaticamente enviada para este destino em 15 de janeiro de 2026 terá o seguinte caminho de arquivo e nome: `[prefix_folder_name]/2026/01/15/my-report-[UUID]-1.csv` <br/>Clique no link abaixo para obter uma lista de variáveis disponíveis."
 
 <!-- markdownlint-enable MD034 -->
 
-Antes de exportar relatórios do Customer Journey Analytics para um destino de nuvem (do Analysis Workspace, conforme descrito em [Exportar relatórios do Customer Journey Analytics para a nuvem](/help/analysis-workspace/export/export-cloud.md), ou do Report Builder, conforme descrito em [Exportar relatórios do Report Builder](/help/report-builder/report-builder-export.md)), conforme descrito em [Exportar relatórios do Customer Journey Analytics para a nuvem](/help/analysis-workspace/export/export-cloud.md), é necessário adicionar e configurar o local para onde deseja que os dados sejam enviados.
+Antes de exportar relatórios do Customer Journey Analytics para um destino na nuvem (a partir do [Analysis Workspace](/help/analysis-workspace/export/export-cloud.md) ou do [Report Builder](/help/report-builder/report-builder-export.md)), é necessário adicionar e configurar o local para onde deseja que os dados sejam enviados. Esse processo consiste em:
 
-Esse processo consiste em adicionar e configurar a conta (como Amazon S3, Google Cloud Platform e assim por diante), conforme descrito em [Configurar contas de exportação da nuvem](/help/components/exports/cloud-export-accounts.md), e depois adicionar e configurar o local nessa conta (como uma pasta dentro da conta), conforme descrito neste artigo.
+1. Adicionar e configurar a conta (como Amazon S3, Google Cloud Platform e assim por diante) conforme descrito em [Configurar contas de exportação da nuvem](/help/components/exports/cloud-export-accounts.md)
+
+1. Adicionar e configurar o local nessa conta (como uma pasta na conta) conforme descrito neste artigo.
 
 Para obter informações sobre como gerenciar locais existentes, incluindo exibição, edição e exclusão de locais, consulte [Gerenciar locais e contas de exportação na nuvem](/help/components/exports/manage-export-locations.md).
 
@@ -86,15 +88,14 @@ Para obter informações sobre como gerenciar locais existentes, incluindo exibi
 
    * Na página Exportações, conforme descrito acima, em [Comece a criar um local de exportação de nuvem](#begin-creating-a-cloud-export-location)
 
-   * Ao [exportar tabelas completas do Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
+   * Ao [exportar tabelas completas do Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables)
 
 1. Na seção [!UICONTROL **Propriedades do local**] da caixa de diálogo [!UICONTROL **Adicionar local**], especifique as seguintes informações para configurar um local da Zona de Aterrissagem de Dados da Adobe Experience Platform:
 
-   <!-- still need to update; can't create AEP account -->
-
    | Campo | Função |
    |---------|----------|
-   | [!UICONTROL **Prefixo**] | A pasta no container onde você deseja inserir os dados. Especifique um nome de pasta e adicione uma barra depois do nome para criar a pasta. Por exemplo, `folder_name/` |
+   | [!UICONTROL **Prefixo**] | A pasta no container onde você deseja inserir os dados. Especifique um nome de pasta estático e adicione uma barra após o nome para criar a pasta. Por exemplo, `folder_name/` |
+   | [!UICONTROL **Nome e caminho do arquivo**] | Especifique um nome de arquivo personalizado dinâmico a ser usado para exportações automatizadas enviadas para este local. Você também pode preceder o nome do arquivo com um caminho de arquivo personalizado dinâmico. <p>Essa opção permite automatizar a criação de nomes de arquivos e o posicionamento de pastas, de modo que os nomes de arquivos sejam previsíveis e organizados em pastas de maneira lógica. Por exemplo, os nomes de arquivos podem ser nomeados de acordo com o dia em que foram entregues e, em seguida, colocados em pastas que correspondem a cada mês.</p><p>Use qualquer uma das seguintes variáveis no nome e no caminho do arquivo para torná-las dinâmicas:</p><ul><li>**{yyyy}**: ano civil de 4 dígitos (diferencia maiúsculas de minúsculas)</li><li>**{yy}**: ano civil de 2 dígitos (diferencia maiúsculas de minúsculas)</li><li>**{MM}**: mês de 2 dígitos (diferencia maiúsculas de minúsculas)</li><li>**{dd}**: dia de 2 dígitos (diferencia maiúsculas de minúsculas)</li><li>**{HH}**: hora com 2 dígitos (diferencia maiúsculas de minúsculas)</li><li>**{mm}**: minutos de 2 dígitos (diferencia maiúsculas de minúsculas)</li><li>**{ss}**: segundos de 2 dígitos (diferencia maiúsculas de minúsculas)</li><li>**{fff}**: nanossegundos de 3 dígitos (diferencia maiúsculas de minúsculas)</li><li>**{instance_id}**: UUID da solicitação (instância)</li><li>**{export_id}**: Exportar (agendar) UUID</li><li>**{idx}**: Índice começa em 0 (incrementado para cada arquivo)</li><li>**{total}**: Número total de arquivos para todo o trabalho de transferência</li><li>**{completion_millis}**: Tempo de transferência em milissegundos</li></ul></p><p>Por exemplo, se você especificar `${yyyy}/${MM}/${dd}/my-report-${instance_id} -${idx}`, uma exportação que é enviada automaticamente para este destino em 15 de janeiro de 2026 terá o seguinte caminho de arquivo e nome: [prefix_folder_name]/2026/01/15/my-report-[UUID]-1.csv</p> |
 
    {style="table-layout:auto"}
 
@@ -102,18 +103,18 @@ Para obter informações sobre como gerenciar locais existentes, incluindo exibi
 
 1. Agora é possível exportar dados do Analysis Workspace para a conta e o local configurados. Para obter informações sobre como exportar dados para a nuvem, consulte [Exportar dados do projeto para a nuvem](/help/analysis-workspace/export/export-cloud.md).
 
-1. A maneira mais fácil de acessar seus dados na Zona de aterrissagem de dados da AEP é usar o Microsoft Azure Storage Explorer. Esta é a mesma ferramenta usada nas instruções para configurar a [conta da Zona de Aterrissagem de Dados do AEP](/help/components/exports/cloud-export-accounts.md#aep-data-landing-zone).
+1. A maneira mais fácil de acessar seus dados na Zona de aterrissagem de dados da AEP é usar o Microsoft Azure Storage Explorer. O Storage Explorer é a mesma ferramenta usada nas instruções para configurar a [conta da Zona de Aterrissagem de Dados do AEP](/help/components/exports/cloud-export-accounts.md#aep-data-landing-zone).
 
    1. Abra o [Microsoft Azure Storage Explorer](https://azure.microsoft.com/en-us/products/storage/storage-explorer/).
 
-   1. Vá para [!UICONTROL **Contas de Armazenamento**] > [!UICONTROL **(Contêineres Anexados)**] > [!UICONTROL **Contêineres Blob**] > **[!UICONTROL cjaexport-_number_]**>*** your_container_name &#x200B;***.
+   1. Vá para [!UICONTROL **Contas de Armazenamento**] > [!UICONTROL **(Contêineres Anexados)**] > [!UICONTROL **Contêineres Blob**] > **[!UICONTROL cjaexport-_number_]**>*** your_container_name ***.
 
       >[!NOTE]
       >
-      >O nome da pasta **[!UICONTROL cjaexport-_number_]**&#x200B;é o nome padrão fornecido pelo Azure Storage Explorer. Se você tiver apenas uma única conexão associada ao URI SAS (o que é normal), o nome desta pasta será&#x200B;**[!UICONTROL cjaexport-1]**.
+      >O nome da pasta **[!UICONTROL cjaexport-_number_]**é o nome padrão fornecido pelo Azure Storage Explorer. Se você tiver apenas uma única conexão associada ao URI SAS (o que é normal), o nome desta pasta será&#x200B;**[!UICONTROL cjaexport-1]**.
 
 
-      ![Acessar arquivos no Azure Storage Explorer](assets/azure-storage-explorer-access.png)
+      ![Acessar arquivos no gerenciador de armazenamento do Azure](assets/azure-storage-explorer-access.png)
 
    1. Selecione a exportação que deseja baixar e selecione [!UICONTROL **Baixar**] para baixar.
 
@@ -123,16 +124,15 @@ Para obter informações sobre como gerenciar locais existentes, incluindo exibi
 
    * Na página Exportações, conforme descrito acima, em [Comece a criar um local de exportação de nuvem](#begin-creating-a-cloud-export-location)
 
-   * Ao [exportar tabelas completas do Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
+   * Ao [exportar tabelas completas do Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables)
 
 1. Na seção [!UICONTROL **Propriedades do local**] da caixa de diálogo [!UICONTROL **Adicionar local**], especifique as seguintes informações para configurar um local ARN de Função S3 do Amazon:
 
-   <!-- still need to update; can't create S3 role ARN account -->
-
    | Campo | Função |
    |---------|----------|
-   | [!UICONTROL **Balde**] | O bucket da conta do Amazon S3 para o qual você deseja que os dados do Customer Journey Analytics sejam enviados. <p>Certifique-se de que o usuário ARN fornecido pelo Adobe tenha a permissão `S3:PutObject` para carregar arquivos nesse bucket. </p><p>Os nomes dos blocos precisam cumprir regras de nomenclatura específicas. Por exemplo, eles precisam conter entre 3 e 63 caracteres, só podem conter letras minúsculas, números, pontos (.) e hifens (-), e precisam começar e terminar com uma letra ou número. [Uma lista completa de regras de nomenclatura está disponível na documentação do AWS](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html). </p> |
-   | [!UICONTROL **Prefixo**] | A pasta dentro do bucket onde você deseja inserir os dados. Especifique um nome de pasta e adicione uma barra depois do nome para criar a pasta. Por exemplo, folder_name/ |
+   | [!UICONTROL **Bloco**] | O bucket da conta do Amazon S3 para o qual você deseja que os dados do Customer Journey Analytics sejam enviados. <p>Certifique-se de que o usuário ARN fornecido pelo Adobe tenha a permissão `S3:PutObject` para carregar arquivos nesse bucket. </p><p>Os nomes dos blocos precisam cumprir regras de nomenclatura específicas. Por exemplo, eles precisam conter entre 3 e 63 caracteres, só podem conter letras minúsculas, números, pontos (.) e hifens (-), e precisam começar e terminar com uma letra ou número. [Uma lista completa de regras de nomenclatura está disponível na documentação do AWS](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html). </p> |
+   | [!UICONTROL **Prefixo**] | A pasta dentro do bucket onde você deseja inserir os dados. Especifique um nome de pasta estático e adicione uma barra após o nome para criar a pasta. Por exemplo, folder_name/ |
+   | [!UICONTROL **Nome e caminho do arquivo**] | Especifique um nome de arquivo personalizado dinâmico a ser usado para exportações automatizadas enviadas para este local. Você também pode preceder o nome do arquivo com um caminho de arquivo personalizado dinâmico. <p>Essa opção permite automatizar a criação de nomes de arquivos e o posicionamento de pastas, de modo que os nomes de arquivos sejam previsíveis e organizados em pastas de maneira lógica. Por exemplo, os nomes de arquivos podem ser nomeados de acordo com o dia em que foram entregues e, em seguida, colocados em pastas que correspondem a cada mês.</p><p>Use qualquer uma das seguintes variáveis no nome e no caminho do arquivo para torná-las dinâmicas:</p><ul><li>**{yyyy}**: ano civil de 4 dígitos (diferencia maiúsculas de minúsculas)</li><li>**{yy}**: ano civil de 2 dígitos (diferencia maiúsculas de minúsculas)</li><li>**{MM}**: mês de 2 dígitos (diferencia maiúsculas de minúsculas)</li><li>**{dd}**: dia de 2 dígitos (diferencia maiúsculas de minúsculas)</li><li>**{HH}**: hora com 2 dígitos (diferencia maiúsculas de minúsculas)</li><li>**{mm}**: minutos de 2 dígitos (diferencia maiúsculas de minúsculas)</li><li>**{ss}**: segundos de 2 dígitos (diferencia maiúsculas de minúsculas)</li><li>**{fff}**: nanossegundos de 3 dígitos (diferencia maiúsculas de minúsculas)</li><li>**{instance_id}**: UUID da solicitação (instância)</li><li>**{export_id}**: Exportar (agendar) UUID</li><li>**{idx}**: Índice começa em 0 (incrementado para cada arquivo)</li><li>**{total}**: Número total de arquivos para todo o trabalho de transferência</li><li>**{completion_millis}**: Tempo de transferência em milissegundos</li></ul></p><p>Por exemplo, se você especificar `${yyyy}/${MM}/${dd}/my-report-${instance_id} -${idx}`, uma exportação que é enviada automaticamente para este destino em 15 de janeiro de 2026 terá o seguinte caminho de arquivo e nome: [prefix_folder_name]/2026/01/15/my-report-[UUID]-1.csv</p> |
 
    {style="table-layout:auto"}
 
@@ -146,14 +146,15 @@ Para obter informações sobre como gerenciar locais existentes, incluindo exibi
 
    * Na página Exportações, conforme descrito acima, em [Comece a criar um local de exportação de nuvem](#begin-creating-a-cloud-export-location)
 
-   * Ao [exportar tabelas completas do Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
+   * Ao [exportar tabelas completas do Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables)
 
 1. Na seção [!UICONTROL **Propriedades do local**] da caixa de diálogo [!UICONTROL **Adicionar local**], especifique as seguintes informações para configurar um local da Google Cloud Platform:
 
    | Campo | Função |
    |---------|----------|
-   | [!UICONTROL **Balde**] | O bucket da conta GCP para o qual você deseja que os dados do Customer Journey Analytics sejam enviados. <p>Certifique-se de que você concedeu a permissão `roles/storage.objectCreator` à Entidade de Segurança fornecida pela Adobe. (A Entidade de Segurança é fornecida ao [configurar a conta da Google Cloud Platform](/help/components/exports/cloud-export-accounts.md).) <p>Para obter informações sobre a concessão de permissões, consulte [Adicionar um principal a uma política de nível de bucket](https://cloud.google.com/storage/docs/access-control/using-iam-permissions#bucket-add) na documentação da Google Cloud.</p><p>Se a sua organização estiver usando [Restrições de política da organização](https://cloud.google.com/storage/docs/org-policy-constraints) para permitir somente a conta da Google Cloud Platform na sua lista de permissões, você precisará da seguinte ID de organização da Google Cloud Platform pertencente à Adobe: <ul><li>`DISPLAY_NAME`: `adobe.com`</li><li>`ID`: `178012854243`</li><li>`DIRECTORY_CUSTOMER_ID`: `C02jo8puj`</li></ul> </p> |
-   | [!UICONTROL **Prefixo**] | A pasta dentro do bucket onde você deseja inserir os dados. Especifique um nome de pasta e adicione uma barra depois do nome para criar a pasta. Por exemplo, folder_name/ |
+   | [!UICONTROL **Bloco**] | O bucket da conta GCP para o qual você deseja que os dados do Customer Journey Analytics sejam enviados. <p>Certifique-se de que você concedeu a permissão `roles/storage.objectCreator` à Entidade de Segurança fornecida pela Adobe. (A Entidade de Segurança é fornecida ao [configurar a conta da Google Cloud Platform](/help/components/exports/cloud-export-accounts.md).) <p>Para obter informações sobre a concessão de permissões, consulte [Adicionar um principal a uma política de nível de bucket](https://cloud.google.com/storage/docs/access-control/using-iam-permissions#bucket-add) na documentação da Google Cloud.</p><p>Se a sua organização estiver usando [Restrições de política da organização](https://cloud.google.com/storage/docs/org-policy-constraints) para permitir somente a conta da Google Cloud Platform na sua lista de permissões, você precisará da seguinte ID de organização da Google Cloud Platform pertencente à Adobe: <ul><li>`DISPLAY_NAME`: `adobe.com`</li><li>`ID`: `178012854243`</li><li>`DIRECTORY_CUSTOMER_ID`: `C02jo8puj`</li></ul> </p> |
+   | [!UICONTROL **Prefixo**] | A pasta dentro do bucket onde você deseja inserir os dados. Especifique um nome de pasta estático e adicione uma barra após o nome para criar a pasta. Por exemplo, folder_name/ |
+   | [!UICONTROL **Nome e caminho do arquivo**] | Especifique um nome de arquivo personalizado dinâmico a ser usado para exportações automatizadas enviadas para este local. Você também pode preceder o nome do arquivo com um caminho de arquivo personalizado dinâmico. <p>Essa opção permite automatizar a criação de nomes de arquivos e o posicionamento de pastas, de modo que os nomes de arquivos sejam previsíveis e organizados em pastas de maneira lógica. Por exemplo, os nomes de arquivos podem ser nomeados de acordo com o dia em que foram entregues e, em seguida, colocados em pastas que correspondem a cada mês.</p><p>Use qualquer uma das seguintes variáveis no nome e no caminho do arquivo para torná-las dinâmicas:</p><ul><li>**{yyyy}**: ano civil de 4 dígitos (diferencia maiúsculas de minúsculas)</li><li>**{yy}**: ano civil de 2 dígitos (diferencia maiúsculas de minúsculas)</li><li>**{MM}**: mês de 2 dígitos (diferencia maiúsculas de minúsculas)</li><li>**{dd}**: dia de 2 dígitos (diferencia maiúsculas de minúsculas)</li><li>**{HH}**: hora com 2 dígitos (diferencia maiúsculas de minúsculas)</li><li>**{mm}**: minutos de 2 dígitos (diferencia maiúsculas de minúsculas)</li><li>**{ss}**: segundos de 2 dígitos (diferencia maiúsculas de minúsculas)</li><li>**{fff}**: nanossegundos de 3 dígitos (diferencia maiúsculas de minúsculas)</li><li>**{instance_id}**: UUID da solicitação (instância)</li><li>**{export_id}**: Exportar (agendar) UUID</li><li>**{idx}**: Índice começa em 0 (incrementado para cada arquivo)</li><li>**{total}**: Número total de arquivos para todo o trabalho de transferência</li><li>**{completion_millis}**: Tempo de transferência em milissegundos</li></ul></p><p>Por exemplo, se você especificar `${yyyy}/${MM}/${dd}/my-report-${instance_id} -${idx}`, uma exportação que é enviada automaticamente para este destino em 15 de janeiro de 2026 terá o seguinte caminho de arquivo e nome: [prefix_folder_name]/2026/01/15/my-report-[UUID]-1.csv</p> |
 
    {style="table-layout:auto"}
 
@@ -167,14 +168,15 @@ Para obter informações sobre como gerenciar locais existentes, incluindo exibi
 
    * Na página Exportações, conforme descrito acima, em [Comece a criar um local de exportação de nuvem](#begin-creating-a-cloud-export-location)
 
-   * Ao [exportar tabelas completas do Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
+   * Ao [exportar tabelas completas do Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables)
 
 1. Na seção [!UICONTROL **Propriedades do local**] da caixa de diálogo [!UICONTROL **Adicionar local**], especifique as seguintes informações para configurar um local SAS do Azure:
 
    | Campo | Função |
    |---------|----------|
    | [!UICONTROL **Nome do container**] | O container na conta especificada para onde você deseja que os dados do Customer Journey Analytics sejam enviados. |
-   | [!UICONTROL **Prefixo**] | A pasta no container onde você deseja inserir os dados. Especifique um nome de pasta e adicione uma barra depois do nome para criar a pasta. Por exemplo, `folder_name/`<p>Verifique se o armazenamento de tokens SAS que você especificou no campo Nome secreto do cofre de chaves ao configurar a conta do Azure SAS possui a permissão `Write`. Isso permite que o token SAS crie arquivos no container do Azure. <p>Se desejar que o token SAS também sobrescreva arquivos, verifique se o armazenamento de token SAS possui a permissão `Delete`.</p><p>Para obter mais informações, consulte [Recursos de armazenamento de blobs](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction#blob-storage-resources) na documentação do Armazenamento Azure Blob.</p> |
+   | [!UICONTROL **Prefixo**] | A pasta no container onde você deseja inserir os dados. Especifique um nome de pasta estático e adicione uma barra após o nome para criar a pasta. Por exemplo, `folder_name/`<p>Verifique se o armazenamento de tokens SAS que você especificou no campo Nome secreto do cofre de chaves ao configurar a conta do Azure SAS possui a permissão `Write`. Isso permite que o token SAS crie arquivos no container do Azure. <p>Se desejar que o token SAS também sobrescreva arquivos, verifique se o armazenamento de token SAS possui a permissão `Delete`.</p><p>Para obter mais informações, consulte [Recursos de armazenamento de blobs](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction#blob-storage-resources) na documentação do Armazenamento Azure Blob.</p> |
+   | [!UICONTROL **Nome e caminho do arquivo**] | Especifique um nome de arquivo personalizado dinâmico a ser usado para exportações automatizadas enviadas para este local. Você também pode preceder o nome do arquivo com um caminho de arquivo personalizado dinâmico. <p>Essa opção permite automatizar a criação de nomes de arquivos e o posicionamento de pastas, de modo que os nomes de arquivos sejam previsíveis e organizados em pastas de maneira lógica. Por exemplo, os nomes de arquivos podem ser nomeados de acordo com o dia em que foram entregues e, em seguida, colocados em pastas que correspondem a cada mês.</p><p>Use qualquer uma das seguintes variáveis no nome e no caminho do arquivo para torná-las dinâmicas:</p><ul><li>**{yyyy}**: ano civil de 4 dígitos (diferencia maiúsculas de minúsculas)</li><li>**{yy}**: ano civil de 2 dígitos (diferencia maiúsculas de minúsculas)</li><li>**{MM}**: mês de 2 dígitos (diferencia maiúsculas de minúsculas)</li><li>**{dd}**: dia de 2 dígitos (diferencia maiúsculas de minúsculas)</li><li>**{HH}**: hora com 2 dígitos (diferencia maiúsculas de minúsculas)</li><li>**{mm}**: minutos de 2 dígitos (diferencia maiúsculas de minúsculas)</li><li>**{ss}**: segundos de 2 dígitos (diferencia maiúsculas de minúsculas)</li><li>**{fff}**: nanossegundos de 3 dígitos (diferencia maiúsculas de minúsculas)</li><li>**{instance_id}**: UUID da solicitação (instância)</li><li>**{export_id}**: Exportar (agendar) UUID</li><li>**{idx}**: Índice começa em 0 (incrementado para cada arquivo)</li><li>**{total}**: Número total de arquivos para todo o trabalho de transferência</li><li>**{completion_millis}**: Tempo de transferência em milissegundos</li></ul></p><p>Por exemplo, se você especificar `${yyyy}/${MM}/${dd}/my-report-${instance_id} -${idx}`, uma exportação que é enviada automaticamente para este destino em 15 de janeiro de 2026 terá o seguinte caminho de arquivo e nome: [prefix_folder_name]/2026/01/15/my-report-[UUID]-1.csv</p> |
 
    {style="table-layout:auto"}
 
@@ -188,14 +190,15 @@ Para obter informações sobre como gerenciar locais existentes, incluindo exibi
 
    * Na página Exportações, conforme descrito acima, em [Comece a criar um local de exportação de nuvem](#begin-creating-a-cloud-export-location)
 
-   * Ao [exportar tabelas completas do Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
+   * Ao [exportar tabelas completas do Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables)
 
 1. Na seção [!UICONTROL **Propriedades do local**] da caixa de diálogo [!UICONTROL **Adicionar local**], especifique as seguintes informações para configurar um local RBAC do Azure:
 
    | Campo | Função |
    |---------|----------|
    | [!UICONTROL **Contêiner**] | O container na conta especificada para onde você deseja que os dados do Customer Journey Analytics sejam enviados. Conceda permissões para fazer upload de arquivos para o aplicativo do Azure que você criou anteriormente. |
-   | [!UICONTROL **Prefixo**] | A pasta no container onde você deseja inserir os dados. Especifique um nome de pasta e adicione uma barra depois do nome para criar a pasta. Por exemplo, `folder_name/`<p>Verifique se a ID do aplicativo que você especificou ao configurar a conta do Azure RBAC recebeu a função `Storage Blob Data Contributor` para acessar o container (pasta).</p> <p>Para obter mais informações, consulte [Funções integradas do Azure](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles).</p> |
+   | [!UICONTROL **Prefixo**] | A pasta no container onde você deseja inserir os dados. Especifique um nome de pasta estático e adicione uma barra após o nome para criar a pasta. Por exemplo, `folder_name/`<p>Verifique se a ID do aplicativo que você especificou ao configurar a conta do Azure RBAC recebeu a função `Storage Blob Data Contributor` para acessar o container (pasta).</p> <p>Para obter mais informações, consulte [Funções integradas do Azure](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles).</p> |
+   | [!UICONTROL **Nome e caminho do arquivo**] | Especifique um nome de arquivo personalizado dinâmico a ser usado para exportações automatizadas enviadas para este local. Você também pode preceder o nome do arquivo com um caminho de arquivo personalizado dinâmico. <p>Essa opção permite automatizar a criação de nomes de arquivos e o posicionamento de pastas, de modo que os nomes de arquivos sejam previsíveis e organizados em pastas de maneira lógica. Por exemplo, os nomes de arquivos podem ser nomeados de acordo com o dia em que foram entregues e, em seguida, colocados em pastas que correspondem a cada mês.</p> <p>Use qualquer uma das seguintes variáveis no nome e no caminho do arquivo para torná-las dinâmicas:</p><ul><li>**{yyyy}**: ano civil de 4 dígitos (diferencia maiúsculas de minúsculas)</li><li>**{yy}**: ano civil de 2 dígitos (diferencia maiúsculas de minúsculas)</li><li>**{MM}**: mês de 2 dígitos (diferencia maiúsculas de minúsculas)</li><li>**{dd}**: dia de 2 dígitos (diferencia maiúsculas de minúsculas)</li><li>**{HH}**: hora com 2 dígitos (diferencia maiúsculas de minúsculas)</li><li>**{mm}**: minutos de 2 dígitos (diferencia maiúsculas de minúsculas)</li><li>**{ss}**: segundos de 2 dígitos (diferencia maiúsculas de minúsculas)</li><li>**{fff}**: nanossegundos de 3 dígitos (diferencia maiúsculas de minúsculas)</li><li>**{instance_id}**: UUID da solicitação (instância)</li><li>**{export_id}**: Exportar (agendar) UUID</li><li>**{idx}**: Índice começa em 0 (incrementado para cada arquivo)</li><li>**{total}**: Número total de arquivos para todo o trabalho de transferência</li><li>**{completion_millis}**: Tempo de transferência em milissegundos</li></ul></p><p>Por exemplo, se você especificar `${yyyy}/${MM}/${dd}/my-report-${instance_id} -${idx}`, uma exportação que é enviada automaticamente para este destino em 15 de janeiro de 2026 terá o seguinte caminho de arquivo e nome: [prefix_folder_name]/2026/01/15/my-report-[UUID]-1.csv</p> |
    | [!UICONTROL **Conta**] | A conta de armazenamento do Azure. |
 
    {style="table-layout:auto"}
@@ -210,15 +213,15 @@ Para obter informações sobre como gerenciar locais existentes, incluindo exibi
 
    * Na página Exportações, conforme descrito acima, em [Comece a criar um local de exportação de nuvem](#begin-creating-a-cloud-export-location)
 
-   * Ao [exportar tabelas completas do Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables-from-analysis-workspace)
+   * Ao [exportar tabelas completas do Analysis Workspace](/help/analysis-workspace/export/export-cloud.md#export-full-tables)
 
 1. Na seção [!UICONTROL **Propriedades do local**] da caixa de diálogo [!UICONTROL **Adicionar local**], especifique as seguintes informações para configurar um local do Snowflake:
 
    | Campo | Função |
    |---------|----------|
    | [!UICONTROL **BD**] | O banco de dados especificado deve ser um banco de dados existente. A função criada precisa ter privilégios para acessar este banco de dados.<p>Este é o banco de dados associado ao nome do estágio.</p><p>Você pode conceder esses privilégios de função ao banco de dados no Snowflake usando o seguinte comando: `GRANT USAGE ON DATABASE <your_database> TO ROLE <your_role>;`</p> <p>Para obter mais informações, consulte a página [Comandos de Banco de Dados, Esquema e Compartilhamento na documentação do Snowflake](https://docs.snowflake.com/en/sql-reference/commands-database).</p> |
-   | [!UICONTROL **Esquema**] | O schema especificado deve ser um schema existente. A função criada precisa ter privilégios para acessar este esquema.<p>É o schema associado ao nome do estágio.<p>Você pode conceder a função que criou privilégios ao esquema no Snowflake usando o seguinte comando: `GRANT USAGE ON SCHEMA <your_database>.<your_schema> TO ROLE <your_role>;`</p><p>Para obter mais informações, consulte a página [Comandos de Banco de Dados, Esquema e Compartilhamento na documentação do Snowflake](https://docs.snowflake.com/en/sql-reference/commands-database).</p> |
-   | [!UICONTROL **Nome do estágio**] | O nome do estágio interno em que os arquivos de dados são armazenados no Snowflake.<p>Verifique se a função especificada na conta tem acesso de Leitura e Gravação a esse nome de estágio. (Como você está concedendo acesso de Leitura e Gravação, recomendamos usar um estágio que seja usado somente pelo Adobe.)<p>Você pode conceder acesso de Leitura e Gravação ao nome do estágio no Snowflake usando o seguinte comando: `GRANT READ, WRITE ON STAGE <your_database>.<your_schema>.<your_stage_name> TO ROLE <your_role>;`</p> <p>Para obter informações sobre como conceder privilégios a uma função, consulte [Conceder privilégios na documentação da Snowflake](https://docs.snowflake.com/en/sql-reference/sql/grant-privilege). <p>Para obter mais informações sobre o nome do estágio, consulte a página [Escolhendo um estágio interno para arquivos locais na documentação do Snowflake](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage).</p> |
+   | [!UICONTROL **Esquema**] | O schema especificado deve ser um schema existente. A função criada precisa ter privilégios para acessar este esquema.<p>É o schema associado ao nome do estágio.</p><p>Você pode conceder a função que criou privilégios ao esquema no Snowflake usando o seguinte comando: `GRANT USAGE ON SCHEMA <your_database>.<your_schema> TO ROLE <your_role>;`</p><p>Para obter mais informações, consulte a página [Comandos de Banco de Dados, Esquema e Compartilhamento na documentação do Snowflake](https://docs.snowflake.com/en/sql-reference/commands-database).</p> |
+   | [!UICONTROL **Nome do estágio**] | O nome do estágio interno em que os arquivos de dados são armazenados no Snowflake.<p>Verifique se a função especificada na conta tem acesso de Leitura e Gravação a esse nome de estágio. (Como você está concedendo acesso de Leitura e Gravação, recomendamos usar um estágio que seja usado somente pelo Adobe.)</p><p>Você pode conceder acesso de Leitura e Gravação ao nome do estágio no Snowflake usando o seguinte comando: `GRANT READ, WRITE ON STAGE <your_database>.<your_schema>.<your_stage_name> TO ROLE <your_role>;`</p> <p>Para obter informações sobre como conceder privilégios a uma função, consulte [Conceder privilégios na documentação da Snowflake](https://docs.snowflake.com/en/sql-reference/sql/grant-privilege).</p> <p>Para obter mais informações sobre o nome do estágio, consulte a página [Escolhendo um estágio interno para arquivos locais na documentação do Snowflake](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage).</p> |
    | [!UICONTROL **Caminho de preparo**] | O caminho para o local onde os arquivos de dados são armazenados no Snowflake. <p>Para obter mais informações, consulte a página [Escolhendo um estágio interno para arquivos locais na documentação do Snowflake](https://docs.snowflake.com/en/user-guide/data-load-local-file-system-create-stage).</p> |
 
    {style="table-layout:auto"}

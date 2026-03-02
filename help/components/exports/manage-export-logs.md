@@ -5,10 +5,10 @@ title: Gerenciar logs de exportação
 feature: Components
 exl-id: 6d676a0a-b117-421e-9a90-8c550f08d474
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: bf76b8688dc0c463c032dd94e88450fed5488949
 workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 8%
+source-wordcount: '936'
+ht-degree: 7%
 
 ---
 
@@ -30,11 +30,13 @@ Para exportações programadas, os logs refletem as configurações de exportaç
 
 1. Siga um destes procedimentos:
 
+   * Os administradores do sistema podem habilitar a opção para **[!UICONTROL Exibir logs para todos os usuários]**. Quando essa opção está ativada, todos os logs são mostrados, independentemente de qual usuário criou a exportação.
+
    * [Personalize as colunas](#configure-columns) exibidas.
 
    * Selecione o **ícone de Informações** ![ícone de Informações](assets/information-icon.png) ao lado do nome do log para exibir a exportação associada ao log.
 
-   * Selecione o **ícone Editar exportação** ![ícone Informações](assets/edit-export-icon.png) ao lado do nome do log para editar a exportação associada ao log.
+   * Selecione o **ícone Editar exportação** ![ícone Editar exportação](/help/assets/icons/Edit.svg) ao lado do nome do log para editar a exportação associada ao log.
 
      Para obter mais informações sobre como editar uma exportação, consulte [Exportar relatórios do Customer Journey Analytics para a nuvem](/help/analysis-workspace/export/export-cloud.md).
 
@@ -58,7 +60,7 @@ Para encontrar as informações necessárias, você pode filtrar a lista de logs
    |---------|----------|
    | [!UICONTROL **ID de exportação**] | Especifique a ID de exportação do log de exportação que deseja exibir. |
    | [!UICONTROL **Tipo de conta**] | O tipo de conta à qual o log está associado. Os seguintes tipos de conta estão disponíveis: <ul><li>[!UICONTROL **AEP Data Landing Zone**]</li><li>[!UICONTROL **Amazon S3 Role ARN**]</li><li>[!UICONTROL **Azure SAS**]</li><li>[!UICONTROL **Azure RBAC**]</li><li>[!UICONTROL **Google Cloud Platform**]</li><li>[!UICONTROL **Snowflake**]</li></ul>. |
-   | [!UICONTROL **Status**] | O status da exportação. Os seguintes status estão disponíveis: <ul><li>[!UICONTROL **Pendente**]: uma instância específica de uma exportação foi iniciada, mas ainda não foi concluída.<p>Executar novamente uma exportação com status Pendente atrasará o processo de exportação.</p></li><li>[!UICONTROL **Concluído**]: uma instância específica de uma exportação concluiu o processamento e está disponível na conta de exportação.</li><li>[!UICONTROL **Falha**]<p>Várias situações podem resultar em falha na exportação. Passe o mouse sobre o status Falha para ver detalhes sobre a falha.<p>Para obter mais informações sobre os possíveis motivos de falha, consulte [Solucionar problemas de exportações com falha](/help/components/exports/troubleshoot-exports.md).</p> |
+   | [!UICONTROL **Status**] | O status da exportação. Os seguintes status estão disponíveis: <ul><li>[!UICONTROL **Pendente**]: uma instância específica de uma exportação foi iniciada, mas ainda não foi concluída.<p>A reexecução de uma exportação com status Pendente atrasa o processo de exportação.</p></li><li>[!UICONTROL **Concluído**]: uma instância específica de uma exportação concluiu o processamento e está disponível na conta de exportação.</li><li>[!UICONTROL **Falha**]<p>Várias situações podem resultar em falha na exportação. Passe o mouse sobre o status Falha para ver detalhes sobre a falha.</p><p>Para obter mais informações sobre os possíveis motivos de falha, consulte [Solucionar problemas de exportações com falha](/help/components/exports/troubleshoot-exports.md).</p></li></ul> |
 
    {style="table-layout:auto"}
 
@@ -94,11 +96,19 @@ Essa opção não está disponível ao selecionar vários logs.
 
 1. Localize o log associado à exportação que você deseja editar.
 
-1. Selecione o ícone **Editar exportação** ![ícone do log de exportação](assets/export-icon.png) ao lado do nome do log.
+1. Selecione o ícone **Editar exportação** ![Editar ícone do log de exportação](/help/assets/icons/Edit.svg) ao lado do nome do log.
 
    Ou
 
    Marque a caixa de seleção ao lado do log e selecione [!UICONTROL **Editar exportação**].
+
+## Executar novamente uma exportação concluída ou com falha
+
+Você pode executar novamente uma ou mais exportações associadas a logs de exportação específicos. Para executar novamente uma exportação, o log de exportação deve ter um status Concluído ou Falha e não ter mais de 7 dias.
+
+1. Marque a caixa de seleção ao lado de um ou mais trabalhos de exportação que você deseja executar novamente.
+
+1. Selecione **[!UICONTROL Reexecutar]**.
 
 ## Configurar colunas
 
@@ -123,12 +133,13 @@ Para configurar colunas na guia [!UICONTROL Logs]:
    | ID da instância | A ID da instância do Customer Journey Analytics. <!-- True? --> |
    | Nome da visualização de dados | O nome da visualização de dados associada à exportação. Os usuários podem selecionar a visualização de dados ao criar a exportação, conforme descrito em [Exportar relatórios do Customer Journey Analytics para a nuvem](/help/analysis-workspace/export/export-cloud.md). |
    | Número de arquivos | O número de arquivos incluídos na exportação. |
-   | Tamanho | O tamanho da exportação.<p>O tamanho do arquivo é calculado com uma base de 1024, que às vezes é representada como KIB e MIB. Se o seu provedor de nuvem calcula o tamanho com uma base de 1000, isso pode resultar no tamanho exibido no provedor de nuvem ligeiramente diferente do tamanho exibido aqui.</p> |
+   | Tamanho | O tamanho da exportação.<p>O tamanho do arquivo é calculado com uma base de 1024, que às vezes é representada como KiB e MiB. Se o seu provedor de nuvem calcula o tamanho com uma base de 1000, isso pode resultar no tamanho exibido no provedor de nuvem ligeiramente diferente do tamanho exibido aqui.</p> |
    | Localização | A localização na conta para a qual os dados foram exportados. |
    | Conta | A conta onde os dados foram exportados. |
-   | Status | O status da exportação. Os status disponíveis são [!UICONTROL Pendente], [!UICONTROL Entregue] e [!UICONTROL Falha]. |
+   | Status | O status da exportação. Os status disponíveis são [!UICONTROL Pendente], [!UICONTROL Concluído] e [!UICONTROL Falha]. |
    | Data de entrega | A data em que a exportação ocorreu. |
-   | Tipo de conta | O tipo de conta de nuvem para a qual os dados foram exportados. Os tipos de conta disponíveis são [!UICONTROL Amazon S3 Role ARN], [!UICONTROL Google Cloud Platform], [!UICONTROL Azure SAS], [!UICONTROL Azure RBAC], [!UICONTROL Snowflake] e [!UICONTROL Adobe Experience Platform]. |
+   | Data de início | A data em que a exportação começou. |
+   | Tipo de conta | O tipo de conta de nuvem para a qual os dados foram exportados. Os tipos de conta disponíveis são [!UICONTROL Amazon S3 Role ARN], [!UICONTROL Google Cloud Platform], [!UICONTROL Azure SAS], [!UICONTROL Azure RBAC], [!UICONTROL Snowflake] e [!UICONTROL AEP Data Landing Zone]. |
    | Número de linhas | O número de linhas incluídas na tabela exportada. |
 
    {style="table-layout:auto"}

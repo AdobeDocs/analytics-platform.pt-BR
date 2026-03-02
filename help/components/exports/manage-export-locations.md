@@ -5,16 +5,16 @@ title: Gerenciar locais e contas de exportação da nuvem
 feature: Components
 exl-id: 8e82fe6f-99df-4360-8693-99692aac002b
 role: User, Admin
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 25a5c42153e28493321d87fa5227fcf44c244bb6
 workflow-type: tm+mt
-source-wordcount: '1371'
+source-wordcount: '1392'
 ht-degree: 3%
 
 ---
 
 # Gerenciar locais e contas de exportação da nuvem
 
-É possível exibir, editar e excluir locais de exportação na nuvem.
+É possível exibir, editar e excluir locais e contas de exportação em nuvem.
 
 Para obter informações sobre como criar um novo local, consulte [Configurar locais de exportação na nuvem](/help/components/exports/cloud-export-locations.md).
 
@@ -30,7 +30,7 @@ Para encontrar as informações necessárias, você pode filtrar na lista de loc
 
 1. Selecione o ícone **Filtro**.
 
-   <!-- add screenshot -->
+   ![Ícone de filtro na página de locais](assets/locations-filter-icon.png)
 
    Você pode filtrar pelos seguintes critérios:
 
@@ -48,6 +48,8 @@ Para encontrar as informações necessárias, você pode filtrar na lista de loc
 
 1. Selecione a guia [!UICONTROL **Locais**].
 
+   ![Página de locais](assets/locations-manager.png)
+
 1. (Condicional) Se você for um administrador do sistema, poderá habilitar a opção [!UICONTROL **Exibir locais para todos os usuários**] para exibir locais criados por todos os usuários em sua organização.
 
 1. No campo de pesquisa, comece digitando qualquer informação associada ao local em que você está pesquisando. Você pode pesquisar dados de qualquer coluna disponível na tabela.
@@ -62,13 +64,13 @@ Para editar um local:
 
 1. Selecione a guia [!UICONTROL **Locais**].
 
+   ![Janela Exportações mostrando a guia Locais e a lista de locais.](assets/locations-manager.png)
+
 1. (Condicional) Se você for um administrador do sistema, poderá habilitar a opção [!UICONTROL **Exibir locais para todos os usuários**] para exibir locais criados por todos os usuários em sua organização.
 
 1. Selecione o local que deseja editar.
 
-   ![Janela Exportações mostrando a guia Locais e a lista de locais.](assets/locations-edit.png)
-
-1. Selecione [!UICONTROL **Editar**].
+1. Selecione [!UICONTROL **Editar**] na parte inferior da tela.
 
 1. Faça as alterações desejadas e selecione [!UICONTROL **Salvar**].
 
@@ -82,13 +84,13 @@ Para excluir um local:
 
 1. Selecione a guia [!UICONTROL **Locais**].
 
+   ![Janela Exportações mostrando a guia Locais e a lista de locais.](assets/locations-manager.png)
+
 1. (Condicional) Se você for um administrador do sistema, poderá habilitar a opção [!UICONTROL **Exibir locais para todos os usuários**] para exibir locais criados por todos os usuários em sua organização.
 
 1. Selecione um ou mais locais que deseja excluir.
 
-   ![Janela Exportações mostrando a guia Locais e a lista de locais](assets/locations-edit.png)
-
-1. Clique em [!UICONTROL **Excluir**].
+1. Selecione [!UICONTROL **Excluir**] na parte inferior da tela.
 
    A caixa de diálogo Excluir local é exibida.
 
@@ -110,9 +112,9 @@ Para editar uma conta:
 
    ![Janela Exportações mostrando a guia Contas de localização](assets/account-add.png)
 
-1. (Condicional) Se você for um administrador do sistema, poderá habilitar a opção [!UICONTROL **Exibir contas para todos os usuários**] para exibir os locais criados por todos os usuários em sua organização.
+1. (Condicional) Se você for um administrador do sistema, poderá habilitar a opção [!UICONTROL **Exibir contas para todos os usuários**] para exibir as contas criadas por todos os usuários em sua organização.
 
-1. Selecione [!UICONTROL **Exibir detalhes**] na conta que deseja editar.
+1. Selecione [!UICONTROL **Editar detalhes**] na conta que deseja editar.
 
 1. Faça as alterações desejadas e selecione [!UICONTROL **Salvar**].
 
@@ -128,9 +130,9 @@ Para exibir chaves associadas a uma conta de exportação:
 
    ![Janela Exportações mostrando a guia Contas de localização](assets/account-add.png)
 
-1. (Condicional) Se você for um administrador do sistema, poderá habilitar a opção [!UICONTROL **Exibir contas para todos os usuários**] para exibir os locais criados por todos os usuários em sua organização.
+1. (Condicional) Se você for um administrador do sistema, poderá habilitar a opção [!UICONTROL **Exibir contas para todos os usuários**] para exibir as contas criadas por todos os usuários em sua organização.
 
-1. Selecione o ícone de 3 pontos na conta que deseja editar e selecione [!UICONTROL **Chaves da conta**].
+1. Selecione o ícone de 3 pontos na conta que deseja editar e selecione [!UICONTROL **Mostrar chaves**].
 
 ## Excluir contas
 
@@ -140,9 +142,9 @@ Para exibir chaves associadas a uma conta de exportação:
 
    ![Janela Exportações mostrando a guia Contas de localização](assets/account-add.png)
 
-1. (Condicional) Se você for um administrador do sistema, poderá habilitar a opção [!UICONTROL **Exibir contas para todos os usuários**] para exibir os locais criados por todos os usuários em sua organização.
+1. (Condicional) Se você for um administrador do sistema, poderá habilitar a opção [!UICONTROL **Exibir contas para todos os usuários**] para exibir as contas criadas por todos os usuários em sua organização.
 
-1. Selecione o ícone de 3 pontos na conta que deseja editar e selecione [!UICONTROL **Excluir conta**].
+1. Selecione o ícone de 3 pontos na conta que deseja excluir e selecione [!UICONTROL **Excluir conta**].
 
 1. Selecione [!UICONTROL **Excluir**] novamente na caixa de diálogo de confirmação.
 
@@ -156,23 +158,23 @@ Os administradores do sistema podem impedir que os usuários criem contas e loca
 
 Por padrão, todos os usuários na organização podem criar contas e editar contas que criam no ambiente do Customer Journey Analytics, conforme descrito em [configurar contas de exportação na nuvem](/help/components/exports/cloud-export-accounts.md).
 
-Você pode impedir que usuários criem contas. Quando você faz isso, os usuários ainda podem usar qualquer conta que já tenham criado, mas não podem mais editá-las. Você pode excluir as contas que os usuários criaram, conforme descrito em [Excluir uma conta](#delete-an-account).
+Você pode impedir que usuários criem contas. Quando você faz isso, os usuários ainda podem usar qualquer conta que já tenham criado, mas não podem mais editá-las. Você pode excluir as contas que os usuários criaram, conforme descrito em [Excluir uma conta](#delete-accounts).
 
 Para impedir que todos os usuários criem e editem contas:
 
 1. No Customer Journey Analytics, selecione **[!UICONTROL Componentes]** > **[!UICONTROL Exportações]** e selecione a guia [!UICONTROL **Configurações de administração**].
 
-1. Na seção [!UICONTROL **Contas de locais**], desmarque a opção [!UICONTROL **Permitir que os usuários criem e gerenciem contas de locais**].
+1. Na seção [!UICONTROL **Contas de localização**], desmarque a opção [!UICONTROL **Permitir que os usuários criem e gerenciem contas de localização**].
 
 1. Selecione [!UICONTROL **Salvar**].
 
-1. (Opcional) Exclua todas as contas que os usuários criaram que você não deseja mais que eles usem, conforme descrito em [Excluir uma conta](#delete-an-account).
+1. (Opcional) Exclua todas as contas que os usuários criaram que você não deseja mais que eles usem, conforme descrito em [Excluir uma conta](#delete-accounts).
 
 ### Configurar se os usuários podem criar e editar locais
 
 Por padrão, todos os usuários na organização podem criar locais e editar locais que criam no ambiente do Customer Journey Analytics, conforme descrito em [configurar locais de exportação da nuvem](/help/components/exports/cloud-export-locations.md).
 
-Você pode impedir que usuários criem locais. Ao fazer isso, os usuários ainda podem usar os locais que já criaram, mas não podem mais editá-los. Você pode excluir os locais criados pelos usuários, conforme descrito em [Excluir locais](#delete-a-location).
+Você pode impedir que usuários criem locais. Ao fazer isso, os usuários ainda podem usar os locais que já criaram, mas não podem mais editá-los. Você pode excluir os locais criados pelos usuários, conforme descrito em [Excluir locais](#delete-locations).
 
 Para impedir que todos os usuários criem e editem locais:
 
@@ -182,9 +184,9 @@ Para impedir que todos os usuários criem e editem locais:
 
 1. Selecione [!UICONTROL **Salvar**].
 
-1. (Opcional) Exclua todos os locais que os usuários criaram que você não deseja mais que eles usem, conforme descrito em [Excluir um local](#delete-a-location).
+1. (Opcional) Exclua todos os locais que os usuários criaram que você não deseja mais que eles usem, conforme descrito em [Excluir um local](#delete-locations).
 
-### Limitar quais tipos de contas os usuários podem criar e usar
+### Limitar quais tipos de conta os usuários podem criar e usar
 
 É possível limitar os tipos de conta que os usuários veem nas seguintes circunstâncias:
 
@@ -207,7 +209,7 @@ Para excluir contas:
 
 1. Localize as contas do tipo que você planeja limitar, que estão sendo usadas para exportações programadas.
 
-1. Exclua as contas, conforme descrito em [Excluir uma conta](#delete-an-account).
+1. Exclua as contas, conforme descrito em [Excluir uma conta](#delete-accounts).
 
 1. Continue com a seguinte seção, [Limite os tipos de conta disponíveis para os usuários](#limit-the-account-types-that-are-available-to-users).
 
