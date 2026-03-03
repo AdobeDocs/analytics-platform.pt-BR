@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
-source-git-commit: a220eaf24ff877537f86027e3d93ec30772438e5
+source-git-commit: 7d78b955b26d2fcc166d277f9ddf220ff2e03d36
 workflow-type: tm+mt
-source-wordcount: '1142'
+source-wordcount: '1145'
 ht-degree: 4%
 
 ---
@@ -91,7 +91,7 @@ Se você atender aos pré-requisitos, talvez queira executar algumas verificaç�
 >id="connection_changeto_identitygraph"
 >title="Alterar para gráfico de identidade"
 >abstract="Verifique se concluiu a configuração do gráfico de identidade antes de usá-lo para compilação."
->additional-url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/stitching/gbs" text="Compilação baseada em gráfico"
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/gbs" text="Compilação baseada em gráfico"
 
 >[!CONTEXTUALHELP]
 >id="connection_stitching_personid"
@@ -101,7 +101,7 @@ Se você atender aos pré-requisitos, talvez queira executar algumas verificaç�
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics"
 >title="Compilação de métricas"
->abstract="As métricas de compilação estão sendo calculadas usando um conjunto de amostras de dados dos últimos 7 dias (sem incluir os dados de hoje)."
+>abstract="As métricas de compilação estão sendo calculadas usando um conjunto de amostras de dados, de quaisquer dados assimilados nos últimos sete dias.<br>Isso normalmente é diferente dos dados de exemplo."
 
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics_gbs_personidcoverage"
@@ -123,8 +123,7 @@ Se você atender aos pré-requisitos, talvez queira executar algumas verificaç�
 >id="connection_stitchingmetrics_badids"
 >title="IDs inválidas"
 >abstract="IDs inválidas são valores de ID que afetam seriamente os dados de relatórios."
->additional-url="https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-16444" text="IDs inválidas"
->additional-url="https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-16444" text="Costura e IDs incorretas"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16444" text="IDs inválidas"
 
 
 Para habilitar a compilação, na seção de conjunto de dados do evento da caixa de diálogo **[!UICONTROL Adicionar conjuntos de dados]** ou **[!UICONTROL Editar conjunto de dados]**:
@@ -170,7 +169,7 @@ Depois de salvar uma conexão, o processo de compilação dos conjuntos de dados
 
 >[!CAUTION]
 >
->Para conjuntos de dados habilitados para compilação na interface de Conexões, o status de preenchimento retroativo é imediata e incorretamente relatado como ![Status verde](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _preenchimentos retroativos concluídos]**&#x200B;para o número de preenchimentos retroativos concluídos. Use outras maneiras de verificar se os dados do conjunto de dados compilado são preenchidos retroativamente.
+>Para conjuntos de dados habilitados para compilação na interface de Conexões, o status de preenchimento retroativo é imediata e incorretamente relatado como ![Status verde](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _preenchimentos retroativos concluídos]**para o número de preenchimentos retroativos concluídos. Use outras maneiras de verificar se os dados do conjunto de dados compilado são preenchidos retroativamente.
 >
 
 
