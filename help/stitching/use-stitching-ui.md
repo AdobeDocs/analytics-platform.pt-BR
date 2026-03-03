@@ -91,7 +91,7 @@ Se você atender aos pré-requisitos, talvez queira executar algumas verificaç�
 >id="connection_changeto_identitygraph"
 >title="Alterar para gráfico de identidade"
 >abstract="Verifique se concluiu a configuração do gráfico de identidade antes de usá-lo para compilação."
->additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/gbs" text="Compilação baseada em gráfico"
+>additional-url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/stitching/gbs" text="Compilação baseada em gráfico"
 
 >[!CONTEXTUALHELP]
 >id="connection_stitching_personid"
@@ -123,7 +123,7 @@ Se você atender aos pré-requisitos, talvez queira executar algumas verificaç�
 >id="connection_stitchingmetrics_badids"
 >title="IDs inválidas"
 >abstract="IDs inválidas são valores de ID que afetam seriamente os dados de relatórios."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16444" text="IDs inválidas"
+>additional-url="https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-16444" text="IDs inválidas"
 
 
 Para habilitar a compilação, na seção de conjunto de dados do evento da caixa de diálogo **[!UICONTROL Adicionar conjuntos de dados]** ou **[!UICONTROL Editar conjunto de dados]**:
