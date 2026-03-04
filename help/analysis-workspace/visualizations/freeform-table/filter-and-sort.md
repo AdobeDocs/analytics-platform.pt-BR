@@ -4,7 +4,7 @@ title: Filtrar e Classificar
 feature: Visualizations
 exl-id: 3af637ec-bb6c-49b7-a7b3-e1d310e71101
 role: User
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+source-git-commit: 39af20da14a5fb96fe01db31af5fc37b7e4aee16
 workflow-type: tm+mt
 source-wordcount: '1575'
 ht-degree: 47%
@@ -148,8 +148,6 @@ Para classificar dados em tabelas por uma única coluna:
    O ícone de classificação permanece visível quando a classificação é aplicada à coluna. Uma seta indica como os dados são classificados (![Classificar](/help/assets/icons/SortOrderUp.svg) para crescente ou ![Classificar](/help/assets/icons/SortOrderDown.svg) para decrescente).
 
 ### Classificar tabelas por várias colunas (Classificação avançada)
-
-{{release-limited-testing-section}}
 
 #### Aplicar classificação a várias colunas
 
