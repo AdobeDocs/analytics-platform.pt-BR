@@ -3,23 +3,24 @@ title: Notas de versão atuais do Customer Journey Analytics
 description: Exibir as notas de versão mais recentes do Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: 26b61e62c853c3ddb0dad9e1d710c839a49314e4
+source-git-commit: 3d58f4dccdc7b9ea6f936cc924a30cc06b2317d1
 workflow-type: tm+mt
-source-wordcount: '1228'
-ht-degree: 31%
+source-wordcount: '1255'
+ht-degree: 30%
 
 ---
 
 # Notas de versão atuais do Customer Journey Analytics (fevereiro de 2026)
 
-**Última atualização**: sexta-feira, 12 de fevereiro de 2026
+**Última atualização**: 5 de março de 2026
 
 Essas notas de versão abordam o período de lançamento de fevereiro de 2026. As versões do Adobe Customer Journey Analytics operam em um [modelo de entrega contínua](releases.md) que permite uma abordagem escalável e em fases para a implantação de recursos. Sendo assim, essas notas de versão são atualizadas várias vezes por mês. Verifique-as regularmente.
 
 ## Recursos novos ou atualizados
 
 | Recurso e descrição | [Início da implantação](releases.md) | [Disponibilidade geral](releases.md) |
-| ----------- | ------- | ---- |
+| ----------- | -------: | ----:|
+| **Miniaturas e visualizações adicionais do Content Analytics**<p>As miniaturas e visualizações do Content Analytics agora são compatíveis com as visualizações Barra (empilhada), Barra horizontal (empilhada) e Dispersão. | sexta-feira, 5 de março de 2026 | A ser determinado |
 | **Substituições de cabeçalho** <p>Você pode especificar um nome de cabeçalho e um valor de cabeçalho secreto no Content Analytics. Esta [configuração de substituições de cabeçalho](/help/content-analytics/config/guided.md#header-overrides) garante que o Content Analytics envie cabeçalhos HTTP personalizados para ignorar qualquer detecção de bot ou tecnologia de tráfego de porta que você tenha implementado.</p> |  | terça-feira, 2 de fevereiro de 2026 |
 | **Combinar conjuntos de relatórios de várias organizações IMS**<p>Você pode usar o Analytics Source Connector para combinar conjuntos de relatórios de várias organizações IMS. Este recurso de [mapeamento de dados entre IMS](/help/getting-started/aa-vs-cja/mapping-data-ims-orgs.md) permite que as organizações tenham uma exibição combinada dos dados do cliente, mesmo quando esses dados do cliente estão distribuídos em várias organizações IMS. <p>**Observação:** essa configuração está disponível somente ao enviar uma solicitação ao Atendimento ao cliente da Adobe.</p> |  | sexta-feira, 12 de fevereiro de 2026 |
 | **Incluir várias colunas de dimensão em uma tabela de forma livre**<p>Agora é possível incluir até 5 colunas de dimensão em uma tabela de forma livre, permitindo visualizar vários itens de dimensão lado a lado. Cada linha de itens de dimensão se comporta como um único item de dimensão concatenado.</p><p>Aplique filtros, classificações, detalhamentos e muito mais a tabelas de forma livre com várias colunas de dimensão para criar uma análise mais profunda e personalizada.</p><p>Anteriormente, só era possível incluir uma coluna de dimensão em uma tabela de forma livre.</p><p>Para obter mais informações, consulte [Incluir várias colunas de dimensão em uma tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table-multidimensions.md).</p> | quinta-feira, 28 de janeiro de 2026 | quinta-feira, 4 de março de 2026 <p>(Planejado originalmente para 18 de fevereiro de 2026)</p> |
