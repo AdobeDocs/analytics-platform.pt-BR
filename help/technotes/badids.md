@@ -19,7 +19,7 @@ Este artigo fornece contexto sobre IDs inválidas e como detectar a presença ou
 
 >[!INFO]
 >
->IDs inválidas também são chamadas de BAVIDs na interface do Customer Journey Analytics (originadas do [Analytics BAVID](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16444)).
+>IDs inválidas também são chamadas de BAVIDs na interface do Customer Journey Analytics (originadas do [Analytics BAVID](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-16444)).
 >
 
 ## Definição
