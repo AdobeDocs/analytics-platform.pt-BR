@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 4e6cacb9-4eca-4dfb-bce4-e69850507596
-source-git-commit: 153828839bbed493ae12c4969c69195b4beeaab1
+source-git-commit: bf4ff740d8d57fe1001b58e1c227644b8ad057cf
 workflow-type: tm+mt
-source-wordcount: '519'
-ht-degree: 91%
+source-wordcount: '517'
+ht-degree: 92%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 91%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-stitch-customer-care"
->title="Ativar compilação para um ou mais conjuntos de dados"
+>title="Ativar a compilação para conjuntos de dados relevantes"
 >abstract="Se você tiver um campo que contenha um identificador que existe em vários conjuntos de dados, mas não é o identificador principal, é possível usar a compilação para elevar os dados em um ou mais desses conjuntos de dados."
 
 <!-- markdownlint-enable MD034 -->
