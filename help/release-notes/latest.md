@@ -3,9 +3,9 @@ title: Notas de versão atuais do Customer Journey Analytics
 description: Exibir as notas de versão mais recentes do Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
-source-git-commit: fd8c539ae3bb0efc30a7fde7ff8d13a866263a91
+source-git-commit: 8e64a4aea82562a48bab8556739087e89f99781c
 workflow-type: tm+mt
-source-wordcount: '1291'
+source-wordcount: '1293'
 ht-degree: 30%
 
 ---
@@ -20,7 +20,7 @@ Essas notas de versão abordam o período de lançamento de fevereiro de 2026. A
 
 | Recurso e descrição | [Início da implantação](releases.md) | [Disponibilidade geral](releases.md) |
 | ----------- | -------: | ----:|
-| **Redesign de visualização de conjuntos de dados em Conexões**<p>Quando você [adiciona](/help/connections/create-connection.md#add-datasets) ou [edita](/help/connections/create-connection.md#edit-a-dataset) conjuntos de dados em uma conexão baseada em pessoa, a experiência para visualizar dados é aprimorada. Para conjuntos de dados habilitados para compilação, [métricas de compilação](/help/stitching/use-stitching-ui.md#stitching-metrics) e [ids incorretas](/help/stitching/use-stitching-ui.md#bad-ids) adicionais estão disponíveis. | sábado, 6 de março de 2026 | sábado, 6 de março de 2026 |
+| **Redesign de visualização de conjuntos de dados em Conexões**<p>Quando você [adiciona](/help/connections/create-connection.md#add-datasets) ou [edita](/help/connections/create-connection.md#edit-a-dataset) conjuntos de dados em uma conexão baseada em pessoa, a experiência para visualizar dados é aprimorada. Para conjuntos de dados habilitados para compilação, [métricas de compilação](/help/stitching/use-stitching-ui.md#stitching-metrics) e [informações sobre ids inválidas](/help/stitching/use-stitching-ui.md#bad-ids) estão disponíveis. | sábado, 6 de março de 2026 | sábado, 6 de março de 2026 |
 | **Miniaturas e visualizações adicionais do Content Analytics**<p>As miniaturas e visualizações do Content Analytics agora são compatíveis com as visualizações Barra (empilhada), Barra horizontal (empilhada) e Dispersão. | sexta-feira, 5 de março de 2026 | A ser determinado |
 | **Substituições de cabeçalho** <p>Você pode especificar um nome de cabeçalho e um valor de cabeçalho secreto no Content Analytics. Esta [configuração de substituições de cabeçalho](/help/content-analytics/config/guided.md#header-overrides) garante que o Content Analytics envie cabeçalhos HTTP personalizados para ignorar qualquer detecção de bot ou tecnologia de tráfego de porta que você tenha implementado.</p> |  | terça-feira, 2 de fevereiro de 2026 |
 | **Combinar conjuntos de relatórios de várias organizações IMS**<p>Você pode usar o Analytics Source Connector para combinar conjuntos de relatórios de várias organizações IMS. Este recurso de [mapeamento de dados entre IMS](/help/getting-started/aa-vs-cja/mapping-data-ims-orgs.md) permite que as organizações tenham uma exibição combinada dos dados do cliente, mesmo quando esses dados do cliente estão distribuídos em várias organizações IMS. <p>**Observação:** essa configuração está disponível somente ao enviar uma solicitação ao Atendimento ao cliente da Adobe.</p> |  | sexta-feira, 12 de fevereiro de 2026 |
