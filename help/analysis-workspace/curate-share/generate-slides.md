@@ -8,7 +8,7 @@ exl-id: a3f6db1e-0444-4804-98bf-c5c10ba2e7ea
 source-git-commit: 968fef4fa6a967c9654f594e662bc9bbd7ae2ab4
 workflow-type: tm+mt
 source-wordcount: '1698'
-ht-degree: 4%
+ht-degree: 9%
 
 ---
 
@@ -73,7 +73,7 @@ As histórias de dados consistem em um slide de título, um slide de resumo exec
 
 **Divisores de seção:** divide os insights com divisores de seção posicionados e nomeados adequadamente.
 
-## Gerar uma apresentação .pptx com base em um projeto do Workspace
+## Gere uma apresentação em .pptx com base em um projeto do Workspace
 
 <!-- markdownlint-disable MD034 -->
 
@@ -89,7 +89,7 @@ As histórias de dados consistem em um slide de título, um slide de resumo exec
 >[!CONTEXTUALHELP]
 >id="cja-presentation-emphasized-components"
 >title="Componentes enfatizados"
->abstract="Escolha até 5 métricas e 5 dimensões nas visualizações que você deseja enfatizar na apresentação. As métricas escolhidas são mostradas em itálico, as dimensões são mostradas em negrito e os itens de dimensão são mostrados em uma cor contrastante."
+>abstract="Escolha até 5 métricas e 5 dimensões, nas visualizações, que você deseja enfatizar na apresentação. As métricas escolhidas são exibidas em itálico, as dimensões em negrito e os itens de dimensão em uma cor contrastante."
 
 <!-- markdownlint-enable MD034 -->
 

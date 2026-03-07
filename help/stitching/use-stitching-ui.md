@@ -93,7 +93,7 @@ Você pode habilitar a identificação de identidade ao [adicionar](/help/connec
 >id="connection_changeto_identitygraph"
 >title="Alterar para gráfico de identidade"
 >abstract="Verifique se concluiu a configuração do gráfico de identidade antes de usá-lo para compilação."
->additional-url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/stitching/gbs" text="Compilação baseada em gráfico"
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/gbs" text="Compilação baseada em gráfico"
 
 >[!CONTEXTUALHELP]
 >id="connection_stitching_personid"
@@ -125,7 +125,7 @@ Você pode habilitar a identificação de identidade ao [adicionar](/help/connec
 >id="connection_stitchingmetrics_badids"
 >title="IDs inválidas"
 >abstract="IDs inválidas são valores de ID que afetam seriamente os dados de relatórios."
->additional-url="https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-16444" text="IDs inválidas"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16444" text="IDs inválidas"
 
 
 ### Configurações do conjunto de dados
@@ -229,7 +229,7 @@ Depois de salvar uma conexão, o processo de compilação para conjuntos de dado
 
 >[!CAUTION]
 >
->Para conjuntos de dados habilitados para compilação na interface de Conexões, o status de preenchimento retroativo é imediata e incorretamente relatado como ![Status verde](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _preenchimentos retroativos concluídos]**&#x200B;para o número de preenchimentos retroativos concluídos. Use outras maneiras de verificar se os dados do conjunto de dados compilado são preenchidos retroativamente.
+>Para conjuntos de dados habilitados para compilação na interface de Conexões, o status de preenchimento retroativo é imediata e incorretamente relatado como ![Status verde](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _preenchimentos retroativos concluídos]**para o número de preenchimentos retroativos concluídos. Use outras maneiras de verificar se os dados do conjunto de dados compilado são preenchidos retroativamente.
 >
 
 
