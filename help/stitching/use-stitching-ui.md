@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
-source-git-commit: b7b2a1f3eb1c149caf65ab3e4321e4f4347695cc
+source-git-commit: 53099bd891d939260a95cffc66e7857167901902
 workflow-type: tm+mt
-source-wordcount: '1724'
+source-wordcount: '1804'
 ht-degree: 5%
 
 ---
@@ -93,12 +93,12 @@ Você pode habilitar a identificação de identidade ao [adicionar](/help/connec
 >id="connection_changeto_identitygraph"
 >title="Alterar para gráfico de identidade"
 >abstract="Verifique se concluiu a configuração do gráfico de identidade antes de usá-lo para compilação."
->additional-url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/stitching/gbs" text="Compilação baseada em gráfico"
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/gbs" text="Compilação baseada em gráfico"
 
 >[!CONTEXTUALHELP]
 >id="connection_stitching_personid"
 >title="ID da pessoa"
->abstract="Selecione uma ID de pessoa (o identificador exclusivo de uma pessoa) entre as identidades disponíveis. Caso queira usar a unificação de identidades baseada em gráfico, selecione **[!UICONTROL Gráfico de identidade]**."
+>abstract="Selecione uma ID de pessoa (o identificador exclusivo de uma pessoa) entre as identidades disponíveis. Caso sua licença inclua a compilação em gráfico e você queira usar esse método de compilação, selecione **[!UICONTROL Gráfico de identidade]**."
 
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics"
@@ -125,7 +125,7 @@ Você pode habilitar a identificação de identidade ao [adicionar](/help/connec
 >id="connection_stitchingmetrics_badids"
 >title="IDs inválidas"
 >abstract="IDs inválidas são valores de ID que afetam seriamente os dados de relatórios."
->additional-url="https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-16444" text="IDs inválidas"
+>additional-url="https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16444" text="IDs inválidas"
 
 
 ### Configurações do conjunto de dados
@@ -172,6 +172,11 @@ Para habilitar a compilação, na seção de **[!UICONTROL configurações de co
 
 
 ### Pré-visualização de conjuntos de dados
+
+>[!AVAILABILITY]
+>
+>A interface aprimorada **[!UICONTROL visualização do conjunto de dados]** (incluindo **[!UICONTROL Métricas de compilação]** e **[!UICONTROL IDs inválidas]**) descrita nesta seção está na fase de teste limitado da versão e pode ainda não estar disponível em seu ambiente. Se não estiver disponível, você verá a visualização do conjunto de dados como parte da interface **[!UICONTROL configurações do conjunto de dados]**. Essa observação será removida quando a funcionalidade estiver em disponibilidade geral. Para obter informações sobre o processo de lançamento do Customer Journey Analytics, consulte [Lançamentos de recursos do Customer Journey Analytics](/help/release-notes/releases.md).
+>
 
 Além da interface padrão de **[!UICONTROL visualização de conjuntos de dados]**, ao [adicionar](/help/connections/create-connection.md#add-datasets) ou [editar](/help/connections/create-connection.md#edit-a-dataset) conjuntos de dados em uma conexão baseada em pessoa, dois painéis de informações adicionais estão disponíveis.
 
@@ -229,7 +234,7 @@ Depois de salvar uma conexão, o processo de compilação para conjuntos de dado
 
 >[!CAUTION]
 >
->Para conjuntos de dados habilitados para compilação na interface de Conexões, o status de preenchimento retroativo é imediata e incorretamente relatado como ![Status verde](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _preenchimentos retroativos concluídos]**&#x200B;para o número de preenchimentos retroativos concluídos. Use outras maneiras de verificar se os dados do conjunto de dados compilado são preenchidos retroativamente.
+>Para conjuntos de dados habilitados para compilação na interface de Conexões, o status de preenchimento retroativo é imediata e incorretamente relatado como ![Status verde](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _preenchimentos retroativos concluídos]**para o número de preenchimentos retroativos concluídos. Use outras maneiras de verificar se os dados do conjunto de dados compilado são preenchidos retroativamente.
 >
 
 
