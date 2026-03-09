@@ -6,9 +6,10 @@ feature: Audiences
 role: Admin
 hide: true
 hidefromtoc: true
-source-git-commit: 974d8a269be15d3ea6fbbcf96f2ab5457d9c9554
+exl-id: 4f465e71-f1b5-4f38-a1db-645550856849
+source-git-commit: d14163794fd4d31b29bfc6f55622d839b67ab3d7
 workflow-type: tm+mt
-source-wordcount: '1484'
+source-wordcount: '1486'
 ht-degree: 1%
 
 ---
@@ -61,7 +62,7 @@ Entenda como um público-alvo específico se comporta em um determinado canal (p
 
    * Compare o público-alvo com o não público-alvo (ou com outro público-alvo) em métricas como sessões, taxa de conversão, receita por pessoa.
 
-1. Alimentar seus insights nas estratégias de otimização de canal (por exemplo, regras de direcionamento, conteúdo ou ajuste de oferta).
+1. Use os insights gerados para ajustar as estratégias de otimização de canal (por exemplo, regras de direcionamento, conteúdo ou ajuste de oferta).
 
 #### Considerações de resolução de identidade
 
@@ -142,4 +143,3 @@ Entenda o comportamento dos clientes que deixaram um público-alvo importante re
 | Caso de uso | Pergunta principal de negócios | Consideração da resolução de identidade | Organizações de alta autenticação/namespace único (eventos já com menos de uma ID de pessoa, por exemplo, logon /CRM) | Organizações fragmentadas/com vários namespaces (eventos em ECID + CRM + outros) |
 |---------|----------|---------|---------|---------|
 | Públicos-alvo encerrados - análise de churn | _&quot;Quem acabou de deixar um público-alvo-chave?&quot;_ <p>_&quot;O que eles fizeram ao sair?&quot;_</p> | A saída do público é rastreada na mesma ID de pessoa usada para a conexão e a configuração do público-alvo. | Saídas medidas em uma ID de logon/CRM estável tendem a refletir a verdadeira mudança de comportamento. <p>Quando alguém deixa um público-alvo com essa ID, geralmente significa uma mudança real (churn, downgrade, inatividade).</p><p>Você pode analisar o comportamento recente deles para ajustar as jornadas e as ofertas vencedoras com confiança.</p> | As saídas só são visíveis onde perfis e eventos compartilham a ID configurada e, portanto, exigirão interpretação cuidadosa.<p>Use coortes encerradas como uma dica ou sinal forte, mas é recomendável fazer a verificação cruzada com outros pontos de dados antes de tomar decisões críticas.</p> |
-
