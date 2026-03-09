@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Data Views
 exl-id: 25710bf1-ec85-4a7d-a404-54549013cc2c
 role: Admin
-source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
+source-git-commit: 81e08ecb593b6ba789c479d0e648cbe7ba0a82d6
 workflow-type: tm+mt
-source-wordcount: '465'
-ht-degree: 82%
+source-wordcount: '532'
+ht-degree: 65%
 
 ---
 
@@ -34,9 +34,9 @@ Para definir o contexto de uma sessão em uma visualização de dados:
 
 1. Selecione **[!UICONTROL Visualizações de dados]**, ou utilize a seção **[!UICONTROL Gerenciamento de dados]** na navegação principal da interface do Customer Journey Analytics.
 
-2. Crie uma nova visualização de dados ou edite uma já existente. Consulte [Criação e edição de uma visualização de dados](create-dataview.md) para obter mais informações.
+1. Crie uma nova visualização de dados ou edite uma já existente. Consulte [Criação e edição de uma visualização de dados](create-dataview.md) para obter mais informações.
 
-3. Selecione a guia **[!UICONTROL Configurações]**. Abaixo de [!UICONTROL Configurações da sessão]:
+1. Selecione a guia **[!UICONTROL Configurações]**. Abaixo de [!UICONTROL Configurações da sessão]:
 
    1. Insira um valor para **[!UICONTROL Tempo-limite da sessão]** em [!UICONTROL minuto(s)], [!UICONTROL hora(s)], [!UICONTROL dia(s)] ou [!UICONTROL semana(s)]. O tempo-limite da sessão determina por quanto tempo uma sessão pode ficar ociosa (sem ocorrer eventos) antes de iniciar uma nova sessão.
 
@@ -44,8 +44,11 @@ Para definir o contexto de uma sessão em uma visualização de dados:
 
       Use um tempo-limite de sessão longo (por exemplo, 3 meses) se estiver combinando dados online e offline e quiser analisar se os clientes que compraram um ou mais de seus produtos ligaram para a sua central de atendimento nos primeiros três meses após a compra.
 
+   1. Selecione um segmento no menu suspenso **[!UICONTROL Adicionar segmentos]** se desejar segmentar uma visualização de dados. Como alternativa, você pode arrastar e soltar um segmento de ![Segmentação](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segmentos]** no painel esquerdo em **[!UICONTROL _Solte um segmento aqui_]**.
 
-   2. Selecione uma métrica na lista **[!UICONTROL Solte uma métrica aqui]** abaixo de **[!UICONTROL Iniciar nova sessão com uma métrica]**. Como alternativa, é possível arrastar e soltar uma métrica do painel esquerdo em **[!UICONTROL Soltar um campo de métrica]**. A métrica selecionada define o início de uma nova sessão. É possível definir mais de uma métrica.
+      Somente são listados os segmentos que são compartilhados, aos quais você tem acesso e que podem ser avaliados com base nos componentes definidos para a visualização de dados.
+
+   1. Selecione uma métrica no menu suspenso **[!UICONTROL Iniciar nova sessão com uma métrica]**. Como alternativa, você pode arrastar e soltar uma métrica de ![Evento](/help/assets/icons/Event.svg) **[!UICONTROL Métricas]** no painel esquerdo em **[!UICONTROL _Solte uma métrica aqui_]**. A métrica selecionada define o início de uma nova sessão. É possível definir mais de uma métrica.
 
       É possível usar qualquer tipo de métrica para definir uma nova sessão. Como exemplo, imagine que você deseja definir uma nova sessão sempre que um perfil iniciar seu aplicativo móvel. Em **[!UICONTROL Visualização de dados]** > **[!UICONTROL Componentes]**, você define um componente do tipo métrica, chamado **[!UICONTROL Inicialização]**, com base em um campo de esquema **[!UICONTROL appInteraction]** **[!UICONTROL Nome]**. Especifique ainda o componente de métrica **[!UICONTROL Inicialização]** para contar somente o valor quando o valor corresponder a `launch`.
 
@@ -57,4 +60,4 @@ Para definir o contexto de uma sessão em uma visualização de dados:
 
 
 
-4. Selecione **[!UICONTROL Salvar]** ou **[!UICONTROL Salvar e concluir]** para salvar a definição das configurações de sessão.
+1. Selecione **[!UICONTROL Salvar]** ou **[!UICONTROL Salvar e concluir]** para salvar a definição das configurações de sessão.
