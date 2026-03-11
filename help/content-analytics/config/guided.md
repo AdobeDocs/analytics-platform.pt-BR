@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: fc1961f3191b80c0351c8935fc331d7605f37f13
+source-git-commit: 6e7776cbaf99d5b2031b0fb3872c331852443b74
 workflow-type: tm+mt
-source-wordcount: '3393'
+source-wordcount: '3419'
 ht-degree: 81%
 
 ---
@@ -431,6 +431,16 @@ No entanto, é possível editar as páginas e os ativos a incluir ou excluir.
 
 
 ### Substituições de cabeçalho
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_header_overrides_boldheader"
+>title="Substituições de cabeçalho"
+>abstract="**Substituições de cabeçalho**"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_datacollection_header_overrides_header"
+>title="Substituições de cabeçalho"
+>abstract="Recurso avançado para ignorar a detecção de bot ou tráfego de porta. O Content Analytics inclui seus cabeçalhos HTTP personalizados ao chamar seus pontos de extremidade."
 
 Opcionalmente, você pode especificar na seção **[!UICONTROL Substituições de cabeçalho]** um nome de cabeçalho e um valor de cabeçalho secreto.  Essa configuração de substituições de cabeçalho garante que o Content Analytics envie cabeçalhos HTTP personalizados para ignorar qualquer detecção de bot ou tecnologias de tráfego de porta que você tenha implementado.
 
