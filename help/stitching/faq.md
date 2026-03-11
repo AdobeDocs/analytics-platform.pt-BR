@@ -23,8 +23,8 @@ Confira abaixo algumas perguntas frequentes sobre a compilação:
 Você pode usar uma visualização de fluxo com a dimensão ID do conjunto de dados.
 
 1. Faça logon no [Customer Journey Analytics](https://analytics.adobe.com) e crie um projeto em branco do Workspace.
-2. Clique na guia **[!UICONTROL ** Visualizações **]** à esquerda e arraste uma visualização de **[!UICONTROL ** Fluxo **]** até a tela à direita.
-3. Clique na guia **[!UICONTROL ** Componentes **]** à esquerda e arraste a dimensão **[!UICONTROL ** ID de conjunto de dados **]** até o local central rotulado como **[!UICONTROL ** Dimensão ou item **]**.
+2. Clique na guia **[!UICONTROL ** Visualizações **]** à esquerda e arraste uma visualização de **[!UICONTROL **&#x200B; Fluxo &#x200B;**]** até a tela à direita.
+3. Clique na guia **[!UICONTROL ** Componentes **]** à esquerda e arraste a dimensão **[!UICONTROL ** ID de conjunto de dados **]** até o local central rotulado como **[!UICONTROL **&#x200B; Dimensão ou item &#x200B;**]**.
 4. Este relatório de fluxo é interativo. Para expandir os fluxos para páginas seguintes ou anteriores, selecione qualquer um dos valores. Use o menu de clique com o botão direito do mouse para expandir ou recolher colunas. Dimensões diferentes também podem ser usadas no mesmo relatório de fluxo.
 
 Se você quiser renomear itens de dimensão da ID de conjunto de dados, poderá usar um conjunto de dados de pesquisa.
