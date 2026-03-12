@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: 6e7776cbaf99d5b2031b0fb3872c331852443b74
+source-git-commit: 359b0364b1de82d6e49c6ba8e7222d459c9825b8
 workflow-type: tm+mt
-source-wordcount: '3419'
+source-wordcount: '3432'
 ht-degree: 81%
 
 ---
@@ -68,7 +68,15 @@ O assistente de configuração guiada consiste em quatro seções ([Detalhes](#d
 >title="Detalhes"
 >abstract="Este guia define os requisitos necessários para configurar o Content Analytics. Forneça um nome para esta configuração"
 
-<!-- markdownlint-enable MD034 -->
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_connection_boldheader"
+>title="Conexão"
+>abstract="**Conexão**"
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_connection_header"
+>title="Conexão"
+>abstract="Selecione uma conexão existente do Customer Journey Analytics com a qual você deseja mesclar seus dados do Content Analytics."
 
 Cada configuração requer um nome exclusivo. Por exemplo, `Example Content Analytics configuration`. O nome é necessário para salvar ou implementar uma configuração.
 
@@ -356,32 +364,32 @@ Nesta seção, você configura como coletar seus dados de Análise de Conteúdo.
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_experience_locations_boldheader"
 >title="Coleção de dados de locais de experiência móvel"
->abstract="**Locais de experiência a serem incluídos/excluídos**"
+>abstract="**Locais de experiência a serem excluídos**"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_experience_locations_header"
 >title="Coleção de dados de locais de experiência móvel"
->abstract="Indique quais locais de experiência devem ser **incluídos** ou **excluídos** ao coletar dados para o Content Analytics."
+>abstract="Indique quais locais de experiência devem ser **excluídos** ao coletar dados para o Content Analytics."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_asset_locations_boldheader"
 >title="Coleta de dados de locais de ativos móveis"
->abstract="**Locais de ativos a serem incluídos/excluídos**"
+>abstract="**Locais de ativos a serem excluídos**"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_asset_locations_header"
 >title="Coleta de dados de locais de ativos móveis"
->abstract="Indique quais locais de ativos devem ser **incluídos** ou **excluídos** ao coletar dados para o Content Analytics."
+>abstract="Indique quais locais de ativos devem ser **excluídos** ao coletar dados para o Content Analytics."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_asset_urls_boldheader"
 >title="Coleta de dados de URLs de ativos móveis"
->abstract="**URLs de ativos a serem incluídos/excluídos**"
+>abstract="**URLs de ativos a serem excluídos**"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_asset_urls_header"
 >title="Coleta de dados de URLs de ativos móveis"
->abstract="Indique quais URLs de ativos devem ser **incluídas** ou **excluídas** ao coletar dados para o Content Analytics."
+>abstract="Indique quais URLs de ativos devem ser **excluídas** ao coletar dados para o Content Analytics."
 
 
 #### Nova configuração {#new-configuration}
