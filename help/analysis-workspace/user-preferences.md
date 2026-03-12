@@ -5,10 +5,10 @@ feature: Workspace Basics
 exl-id: 6a934be7-0612-41ff-964e-77abc0b1efda
 solution: Customer Journey Analytics
 role: User
-source-git-commit: bc708b34814550b89f6c9916d8bc48850008c1dc
+source-git-commit: c84e18bcaf7687deada7086bfe1a85a4b83f216b
 workflow-type: tm+mt
 source-wordcount: '4015'
-ht-degree: 99%
+ht-degree: 97%
 
 ---
 
@@ -30,7 +30,7 @@ Você pode configurar as seguintes preferências:
 
 ### Preferências gerais
 
-As preferências gerais se aplicam à experiência do Customer Journey Analytics no navegador. Para obter informações sobre como acessar essas preferências, consulte [Atualizar preferências](#update-preferences).
+As preferências gerais se aplicam à experiência do Customer Journey Analytics no navegador. Para obter informações sobre como acessar essas preferências, consulte [Editar preferências](#edit-preferences).
 
 | Preferência | Opções |
 | --- | --- |
@@ -56,7 +56,7 @@ As preferências gerais se aplicam à experiência do Customer Journey Analytics
 >abstract="Quando habilitada, uma área de comentários fica disponível no painel direito de cada projeto no Analysis Workspace."
 
 
-Você pode atualizar as preferências da empresa que se aplicam a todos os usuários e projetos em sua organização. Para obter informações sobre como acessar essas preferências, consulte [Atualizar preferências](#update-preferences).
+Você pode atualizar as preferências da empresa que se aplicam a todos os usuários e projetos em sua organização. Para obter informações sobre como acessar essas preferências, consulte [Editar preferências](#edit-preferences).
 
 | Seção | Preferência | Opções |
 | --- | --- | --- |
@@ -86,14 +86,14 @@ Você pode atualizar as preferências da empresa que se aplicam a todos os usuá
 >title="Paleta sequencial"
 >abstract="Aplicado à análise guiada de tendências de frequência (barras empilhadas). Esta paleta possui um significado numérico que vai do claro ao escuro."
 
-É possível personalizar essas preferências para todos os novos projetos e painéis do Analysis Workspace, bem como para novas análises guiadas. Para obter informações sobre como acessar essas preferências, consulte [Atualizar preferências](#update-preferences).
+É possível personalizar essas preferências para todos os novos projetos e painéis do Analysis Workspace, bem como para novas análises guiadas. Para obter informações sobre como acessar essas preferências, consulte [Editar preferências](#edit-preferences).
 
 Algumas dessas mesmas preferências também podem ser personalizadas para projetos individuais no Analysis Workspace, conforme descrito em [Visão geral do projeto](/help/analysis-workspace/build-workspace-project/freeform-overview.md).
 
 <!--
 >[!IMPORTANT]
 >
->You can no longer define the number format in the **[!UICONTROL Project & Analyses]** > **[!UICONTROL Data]** section of **[!UICONTROL User preferences]**. The number format is automatically determined by the [default language that is configured](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/features/browser-language) for the logged in user.
+>You can no longer define the number format in the **[!UICONTROL Project & Analyses]** > **[!UICONTROL Data]** section of **[!UICONTROL User preferences]**. The number format is automatically determined by the [default language that is configured](https://experienceleague.adobe.com/en/docs/core-services/interface/features/browser-language) for the logged in user.
 >
 -->
 
@@ -132,7 +132,7 @@ Algumas dessas mesmas preferências também podem ser personalizadas para projet
 >abstract="Selecione a métrica padrão para usar em tabelas de forma livre. Se a visualização de dados selecionada não contiver a métrica padrão selecionada, a tabela alternará automaticamente para outra métrica primária."
 
 
-Você pode personalizar as preferências da tabela de forma livre para todos os novos projetos criados no Analysis Workspace. Para obter informações sobre como acessar essas preferências, consulte [Atualizar preferências](#update-preferences).
+Você pode personalizar as preferências da tabela de forma livre para todos os novos projetos criados no Analysis Workspace. Para obter informações sobre como acessar essas preferências, consulte [Editar preferências](#edit-preferences).
 
 Algumas dessas mesmas preferências também podem ser personalizadas para tabelas individuais.
 
@@ -185,7 +185,7 @@ Selecione os títulos da seção vinculada para obter mais informações e conte
 >abstract="Selecione o container padrão a ser usado para visualizações de [!UICONTROL tela da jornada]. Se a visualização de dados selecionada não contiver o container padrão selecionado, a visualização de [!UICONTROL tela da jornada] alternará automaticamente para outro container primário."
 
 
-Você pode atualizar as preferências de visualização para todos os novos projetos criados no Analysis Workspace. Para obter informações sobre como acessar essas preferências, consulte [Atualizar preferências](#update-preferences).
+Você pode atualizar as preferências de visualização para todos os novos projetos criados no Analysis Workspace. Para obter informações sobre como acessar essas preferências, consulte [Editar preferências](#edit-preferences).
 
 Algumas dessas mesmas preferências também podem ser personalizadas para visualizações individuais.
 
