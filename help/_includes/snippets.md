@@ -1,8 +1,8 @@
 ---
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 51c9a7aa620f54bec3f0e4ad2d007dd52ecd12f4
 workflow-type: tm+mt
-source-wordcount: '5005'
-ht-degree: 99%
+source-wordcount: '5228'
+ht-degree: 95%
 
 ---
 # Trechos
@@ -168,7 +168,7 @@ Dependendo da sua janela de relatório (por exemplo, 10 a 24 de setembro), o mod
 
 Os eventos de conversão que normalmente têm números inteiros são divididos se o crédito pertencer a mais de um canal. Por exemplo, se dois canais contribuem para um pedido usando um modelo de atribuição linear, ambos os canais recebem 0,5 desse pedido. Essas métricas parciais são somadas para todas as pessoas e depois arredondadas para o número inteiro mais próximo para fins de geração de relatórios.
 
-[!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B edition"} Use containers B2B específicos, como Contas ou Oportunidades, e janelas de retrospectiva mais apropriadas (até 13 meses) para aplicar os modelos de atribuição acima em cenários B2B típicos.
+[!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} Use containers B2B específicos, como Contas ou Oportunidades, e janelas de retrospectiva mais apropriadas (até 13 meses) para aplicar os modelos de atribuição acima em cenários B2B típicos.
 
 ## Comparações de visualização de jornadas {#journey-visualization-comparisons}
 
@@ -294,3 +294,25 @@ Use as informações a seguir para escolher a visualização que melhor atende �
 >
 >Na interface do Customer Journey Analytics, os conjuntos de dados **[!UICONTROL Relational]** podem ser rotulados como **[!UICONTROL baseados em modelo]**.
 >
+
+## Janela de retrospectiva do feed de dados do CJA {#cja-df-lookback}
+
+Como o Customer Journey Analytics usa a atribuição de tempo de relatório para cada componente, ele não tem um conceito de persistência além de sua janela de pesquisa. Esta coluna de feed de dados do Analytics faz referência ao comportamento no nível do visitante, que se estende a todo o histórico do visitante. Quanto maior for a janela de lookback para esse componente no Customer Journey Analytics, mais próximo ele poderá corresponder à funcionalidade do Adobe Analytics.
+
+## Colunas de publicação do feed de dados do CJA {#cja-df-post}
+
+Esta coluna de feed de dados do Analytics contém uma versão pré-processada e uma versão pós-processada (um prefixo de `post_`). As colunas com um prefixo `post_` contêm o valor que é usado nos relatórios. A tabela a seguir compara as propriedades dessas colunas:
+
+| Valor da coluna pré-processada | Valor de coluna pós-processada |
+| --- | --- |
+| Como foi coletado | Usado em relatórios |
+| Antes das regras de processamento | Após as regras de processamento |
+| Antes das regras VISTA | Depois das regras VISTA |
+| Nenhuma alocação aplicada | A alocação se aplica |
+
+A maioria das organizações só usa `post_` colunas quando elas estão disponíveis.
+
+Como o Customer Journey Analytics não tem um conceito de pré-processamento e pós-processamento, recriar ambas as colunas nos feeds de dados do CJA é difícil. Se desejar aproximações dessas colunas, você pode usar a mesma coluna com configurações de atribuição separadas aplicadas:
+
+* **Coluna pré-processada**: nenhuma atribuição
+* **Coluna pós-processada**: aplique as mesmas configurações de alocação e expiração que sua variável do Analytics nas configurações de exibição de dados. A maioria dos componentes usaria uma alocação de &quot;Último&quot; e uma expiração de &quot;Visita&quot;.
