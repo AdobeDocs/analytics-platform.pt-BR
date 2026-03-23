@@ -325,4 +325,4 @@ Essa coluna Feed de dados do Analytics contém dados que não podem ser traduzid
 
 ## Agente do usuário do feed de dados do CJA {#cja-df-ua}
 
-Não é possível coletar informações do agente do usuário e informações de pesquisa do dispositivo simultaneamente; o preenchimento dessas dimensões é mutuamente exclusivo. Você deve escolher se deseja coletar diretamente o agente do usuário ou as informações de pesquisa do dispositivo (com base no agente do usuário) ao [Configurar uma sequência de dados](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure#geolocation-device-lookup).
+Não é possível coletar informações do agente do usuário e informações de pesquisa do dispositivo simultaneamente; o preenchimento dessas dimensões é mutuamente exclusivo. Você deve escolher se deseja coletar diretamente o agente do usuário ou as informações de pesquisa do dispositivo (com base no agente do usuário) ao [Configurar uma sequência de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/datastreams/configure#geolocation-device-lookup).
