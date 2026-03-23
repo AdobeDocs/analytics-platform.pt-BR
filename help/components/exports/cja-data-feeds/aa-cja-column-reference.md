@@ -4,22 +4,23 @@ description: Determine como obter uma determinada coluna de feed de dados do Ado
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: fbd48b74505e18c24260b87b715ad036a6a60020
+exl-id: 81d6e79e-8324-4726-9a48-10177b0a91b1
+source-git-commit: b0be8b726c4fab1bf9bb5f9462be84f39bdf184a
 workflow-type: tm+mt
-source-wordcount: '3236'
-ht-degree: 64%
+source-wordcount: '3768'
+ht-degree: 47%
 
 ---
 
 # Mapear colunas do feed de dados do Adobe Analytics para o Customer Journey Analytics
 
-Como o Adobe Analytics e o Customer Journey Analytics operam fundamentalmente diferentes, não é possível um mapeamento de coluna 1:1. Essas diferenças são ainda exacerbadas pelo fato de que cada implementação do Adobe Analytics e do Customer Journey Analytics difere.
+Não é possível um mapeamento 1:1 verdadeiro entre as colunas de feed de dados do Adobe Analytics e do Customer Journey Analytics. Os dois produtos diferem fundamentalmente e a implementação de cada organização pode variar significativamente.
 
-Essa referência foi projetada para ajudar os engenheiros de dados a ajustar os fluxos de trabalho de feed de dados com foco na Adobe Analytics coluna por coluna a um fluxo de trabalho com base nos feeds de dados do Customer Journey Analytics.
+Essa referência ajuda os engenheiros de dados a avaliar as colunas do feed de dados do Adobe Analytics e identificar os equivalentes mais próximos do Customer Journey Analytics para seus workflows.
 
 >[!NOTE]
 >
->Esta referência inclui apenas colunas consideradas atuais pelo Adobe, com base na [referência de coluna de feed de dados do Analytics](https://experienceleague.adobe.com/pt-br/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference). Se você tiver uma coluna de feed de dados do Analytics não listada nesta tabela que usa ativamente, consulte o documento de design de solução da sua organização para determinar seu melhor equivalente no Customer Journey Analytics.
+>Esta referência inclui apenas colunas consideradas atuais pelo Adobe, com base na [referência de coluna de feed de dados do Analytics](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference). Se você tiver uma coluna de feed de dados do Analytics não listada nesta tabela que usa ativamente, consulte o documento de design de solução da sua organização para determinar seu melhor equivalente no Customer Journey Analytics.
 
 +++**`accept_language`**
 
@@ -76,7 +77,9 @@ A dimensão da ID AMO EF, usada em integrações do Adobe Advertising.
 
 +++**`browser`**
 
-Uma ID numérica que representa o navegador. Faz referência à tabela de pesquisa `browser.tsv`.
+Uma ID numérica que representa o navegador.
+
+{{cja-df-lookup}}
 
 +++
 
@@ -106,7 +109,11 @@ A dimensão Código de rastreamento.
 
 +++**`carrier`**
 
-Variável de integração da Adobe Advertising Especifica a operadora de celular. O valor da chave para `carrier.tsv` Pesquisa dinâmica.
+Especifica a operadora de celular.
+
+{{cja-df-lookup}}
+
+{{cja-df-ua}}
 
 +++
 
@@ -122,11 +129,31 @@ A dimensão Seções do site.
 
 Dicas do cliente coletadas por meio do cabeçalho de solicitação HTTP.
 
+No Adobe Analytics, as dicas do cliente foram incluídas como uma sequência concatenada nessa coluna. É considerada uma abordagem mais moderna do que a coluna `user_agent`.
+
+{{cja-df-ua}}
+
 +++
 
 +++**`ch_js`**
 
 Dicas do cliente coletadas por meio da API JavaScript de dicas do cliente de usuário-agente.
+
+No Adobe Analytics, as dicas do cliente foram incluídas como uma sequência concatenada nessa coluna. É considerada uma abordagem mais moderna do que a coluna `user_agent`.
+
+Você pode coletar esses dados usando a cadeia de contexto [`highEntropyUserAgentHints`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/configure/context) ao configurar o Web SDK. Vários campos XDM são preenchidos em vez de uma longa string concatenada:
+
+* **Versão do sistema operacional**: `xdm.environment.browserDetails.userAgentClientHints.platformVersion`
+* **Arquitetura**: `xdm.environment.browserDetails.userAgentClientHints.architecture`
+* **Modelo do dispositivo**: `xdm.environment.browserDetails.userAgentClientHints.model`
+* **Bits**: `xdm.environment.browserDetails.userAgentClientHints.bitness`
+* **Fornecedor do navegador**: `xdm.environment.browserDetails.userAgentClientHints.vendor`
+* **Nome do navegador**: `xdm.environment.browserDetails.userAgentClientHints.brand`
+* **Versão do navegador**: `xdm.environment.browserDetails.userAgentClientHints.version`
+
+Consulte [User agent client hints](https://experienceleague.adobe.com/en/docs/experience-platform/collection/use-cases/client-hints) para obter mais informações.
+
+{{cja-df-ua}}
 
 +++
 
@@ -136,6 +163,10 @@ A dimensão do link Activity Map.
 
 {{cja-df-post}}
 
+{{cja-df-na}}
+
+Essa coluna não se aplica porque o Customer Journey Analytics ainda não oferece suporte ao Activity Map.
+
 +++
 
 +++**`clickmaplinkbyregion`**
@@ -143,6 +174,10 @@ A dimensão do link Activity Map.
 A dimensão Link por região do Activity Map.
 
 {{cja-df-post}}
+
+{{cja-df-na}}
+
+Essa coluna não se aplica porque o Customer Journey Analytics ainda não oferece suporte ao Activity Map.
 
 +++
 
@@ -152,6 +187,10 @@ A dimensão da página do Activity Map.
 
 {{cja-df-post}}
 
+{{cja-df-na}}
+
+Essa coluna não se aplica porque o Customer Journey Analytics ainda não oferece suporte ao Activity Map.
+
 +++
 
 +++**`clickmapregion`**
@@ -159,6 +198,10 @@ A dimensão da página do Activity Map.
 A dimensão Região do Activity Map.
 
 {{cja-df-post}}
+
+{{cja-df-na}}
+
+Essa coluna não se aplica porque o Customer Journey Analytics ainda não oferece suporte ao Activity Map.
 
 +++
 
@@ -170,13 +213,17 @@ Versão da API ou SDK cliente usada para compilar e enviar a solicitação de im
 
 +++**`color`**
 
-ID de Intensidade de cor com base no valor da coluna `c_color`. Faz referência à tabela de pesquisa `color_depth.tsv`.
+ID de Intensidade de cor com base no valor da coluna `c_color`.
+
+{{cja-df-lookup}}
 
 +++
 
 +++**`connection_type`**
 
-ID numérica que representa a dimensão Tipo de conexão. Faz referência à tabela de pesquisa `connection_type.tsv`.
+ID numérica que representa a dimensão Tipo de conexão.
+
+{{cja-df-lookup}}
 
 +++
 
@@ -191,6 +238,8 @@ A dimensão Suporte a cookies.<br>Y: Habilitado<br>N: Desabilitado<br>U: Desconh
 +++**`country`**
 
 Uma ID numérica que representa o país do visitante. Faz referência à tabela de pesquisa `country.tsv`.
+
+{{cja-df-lookup}}
 
 +++
 
@@ -228,11 +277,17 @@ Determina se a ocorrência é uma ocorrência em segundo plano móvel.
 
 {{cja-df-post}}
 
+{{cja-df-na}}
+
+O Customer Journey Analytics não tem um conceito nativo de tipo de evento em que ele inclui ou exclui automaticamente ocorrências com base no contexto da ocorrência. Você pode usar `xdm.eventType` para ajudar a determinar quais eventos devem ser incluídos e excluídos na maioria dos relatórios.
+
 +++
 
 +++**`cust_hit_time_gmt`**
 
 Somente conjuntos de relatório com carimbos de data e hora habilitados. O carimbo de data e hora enviado com a ocorrência, com base no horário UNIX®.
+
+O Customer Journey Analytics não tem um conceito de conjunto de relatórios de carimbo de data e hora versus não carimbo de data e hora. Em vez disso, use `xdm.timestamp` e ajuste as configurações do componente conforme desejado.
 
 {{cja-df-post}}
 
@@ -241,6 +296,8 @@ Somente conjuntos de relatório com carimbos de data e hora habilitados. O carim
 +++**`cust_visid`**
 
 A ID de visitante personalizada, se definida usando `visitorID`.
+
+O Customer Journey Analytics oferece suporte a qualquer número de identidades usando [`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap). Se sua organização usa identidades personalizadas, provavelmente está no mapa de identidade.
 
 {{cja-df-post}}
 
@@ -262,11 +319,15 @@ Um sinalizador que determina se a ocorrência é um novo visitante diário.
 
 A dimensão Aceitação do gerenciamento de consentimento. Vários valores podem estar presentes por ocorrência, separados por uma barra vertical (`\|`). Os valores válidos incluem `DMP` e `SELL`.
 
+Se sua organização tiver uma plataforma de gerenciamento de dados, ela provavelmente preencherá os campos XDM desejados para essa dimensão.
+
 +++
 
 +++**`dataprivacyconsentoptout`**
 
 A dimensão Recusa no gerenciamento de consentimento. Vários valores podem estar presentes por ocorrência, separados por uma barra vertical (`\|`). Os valores válidos incluem `SSF`, `DMP` e `SELL`.
+
+Se sua organização tiver uma plataforma de gerenciamento de dados, ela provavelmente preencherá os campos XDM desejados para essa dimensão.
 
 +++
 
@@ -274,11 +335,15 @@ A dimensão Recusa no gerenciamento de consentimento. Vários valores podem esta
 
 O horário da ocorrência em formato legível, com base no fuso horário do conjunto de relatórios.
 
+Você pode usar `xdm.timestamp` e aplicar a configuração de componente **[!UICONTROL Data]** ou **[!UICONTROL Data-hora]** [Formato](/help/data-views/component-settings/format.md).
+
 +++
 
 +++**`domain`**
 
 A dimensão Domínio. Com base no ponto de acesso de Internet do visitante.
+
+Habilitar **[!UICONTROL Pesquisa de rede]** ao [Configurar uma sequência de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/datastreams/configure). O campo XDM é `xdm.environment.domain` se estiver incluído no esquema.
 
 +++
 
@@ -286,17 +351,29 @@ A dimensão Domínio. Com base no ponto de acesso de Internet do visitante.
 
 Somente usado em conjuntos de relatórios contendo uma cópia da ocorrência com regras VISTA. Indica de qual conjunto de relatórios a ocorrência foi copiada.
 
+{{cja-df-na}}
+
+Essa coluna não se aplica porque o Customer Journey Analytics não tem um conceito de regras VISTA.
+
 +++
 
 +++**`duplicate_events`**
 
 Lista cada evento que foi contado como duplicado.
 
+{{cja-df-na}}
+
+O Customer Journey Analytics não tem um campo único que atue como um sinalizador de desduplicação para todas as métricas. Em vez disso, cada métrica contém suas próprias [Configurações do componente de desduplicação de métrica](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication). Dessa forma, não há um campo equivalente no Customer Journey Analytics para essa coluna do feed de dados do Adobe Analytics.
+
 +++
 
 +++**`duplicate_purchase`**
 
 Um sinalizador que determina se o evento de compra para esta ocorrência é ignorado por estar duplicado.
+
+Embora não haja uma tradução direta para essa coluna do feed de dados do Analytics, sua funcionalidade de agir para desduplicar compras ainda existe. Se estiver usando o grupo de campos [[!UICONTROL Detalhes do Commerce]](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/commerce-details), você poderá definir [Configurações do componente de desduplicação de métrica](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication), onde a **[!UICONTROL ID de Desduplicação]** é `xdm.commerce.purchases.id`.
+
+Se for necessária uma tradução direta quando você quiser um sinalizador de compras duplicadas, poderá usar um [Campo derivado](/help/data-views/derived-fields/derived-fields.md) usando a função **Desduplicar** no conjunto de regras.
 
 +++
 
@@ -329,11 +406,44 @@ Essa coluna provavelmente mapeia dezenas de métricas separadas, dependendo da i
 
 {{cja-df-post}}
 
+Se o esquema usar o grupo de campos [[!UICONTROL Detalhes do Commerce]](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/commerce-details), algumas métricas poderão mapear diretamente para os seguintes campos XDM:
+
+* **Check-outs**: `xdm.commerce.checkouts.value`
+* **Adições ao carrinho**: `xdm.commerce.productListAdds.value`
+* **Aberturas do carrinho**: `xdm.commerce.productListOpens.value`
+* **Remoções do carrinho**: `xdm.commerce.productListRemovals.value`
+* **Exibições do carrinho**: `xdm.commerce.productListViews.value`
+* **Exibições do produto**: `xdm.commerce.productViews.value`
+* **Pedidos**: `xdm.commerce.purchases.value`
+
+Algumas métricas podem usar a serialização de eventos, que é a forma como o Adobe Analytics permite o controle total sobre a desduplicação. Você pode usar a configuração do componente [Desduplicação de métrica](/help/data-views/component-settings/metric-deduplication.md) para obter a paridade de desduplicação.
+
+* Se a sua métrica for desduplicada por visita no Adobe Analytics, você poderá definir o escopo de desduplicação para sessão nas configurações de componente dessa métrica.
+* Se sua métrica for desduplicada por ID de evento no Adobe Analytics, é provável que o objeto XDM para essa métrica contenha um campo `value` e `id`. Se o esquema usar o grupo de campos [[!UICONTROL Detalhes do Commerce]](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/commerce-details), essas métricas provavelmente residirão nesses campos XDM, que você pode definir para o campo **[!UICONTROL ID de Desduplicação]** nas configurações de componente da métrica:
+
+   * **Check-outs**: `xdm.commerce.checkouts.id`
+   * **Adições ao carrinho**: `xdm.commerce.productListAdds.id`
+   * **Aberturas do carrinho**: `xdm.commerce.productListOpens.id`
+   * **Remoções do carrinho**: `xdm.commerce.productListRemovals.id`
+   * **Exibições do carrinho**: `xdm.commerce.productListViews.id`
+   * **Exibições do produto**: `xdm.commerce.productViews.id`
+
+Se você deseja desduplicar a métrica Pedidos, consulte `duplicate_purchase`.
+
 +++
 
 +++**`exclude_hit`**
 
-Um sinalizador que determina se a ocorrência é excluída dos relatórios. A coluna `visit_num` não é incrementada para hits excluídos.<br>1: Não usado. Parte de um recurso raspado.<br>2: Não usado. Parte de um recurso raspado.<br>3: Não está mais em uso. Exclusão de agente usuário<br>4: exclusão com base no endereço IP<br>5: faltam informações essenciais do hit, como `page_url`, `pagename`, `page_event` ou `event_list`<br>6: o JavaScript não processou corretamente o hit<br>7: exclusão específica da conta, como em regras VISTA<br>8: não usada. Exclusão específica da conta alternativa.<br>9: Não usado. Parte de um recurso raspado.<br>10: Código monetário inválido<br>11: Falta um carimbo na ocorrência ou um conjunto de relatórios no carimbo, ou uma ocorrência continha um carimbo em um conjunto de relatórios sem carimbo<br>12: Não usado. Parte de um recurso raspado.<br>13: Não usado. Parte de um recurso raspado.<br>14: Ocorrência do Target que não corresponde a uma ocorrência do Analytics<br>15: Não usado no momento.<br>16: Ocorrência da Advertising Cloud que não correspondeu a uma ocorrência do Analytics
+Um sinalizador que determina se a ocorrência é excluída dos relatórios. A coluna `visit_num` não é incrementada para hits excluídos.
+
+O Customer Journey Analytics não respeita as &quot;ocorrências excluídas&quot; prontas para uso. No entanto, é possível recriar essa funcionalidade se você tiver um campo XDM que sinaliza determinadas ocorrências a serem excluídas:
+
+1. Verifique se o campo XDM que sinaliza as ocorrências excluídas está incluído como um componente (dimensão ou métrica, dependendo de como você configurou esse sinalizador). Selecionar [Ocultar componente nos relatórios](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/overview) provavelmente é benéfico para este campo.
+1. Em [Configurações de visualização de dados](/help/data-views/session-settings.md), selecione o menu suspenso **[!UICONTROL Adicionar segmento]** e selecione **[!UICONTROL Criar segmento]**.
+1. Crie um segmento que exclua todos os eventos em que o componente de ocorrência de exclusão existe ou contém valores que você deseja excluir.
+1. Selecione **[!UICONTROL Salvar]** no segmento e na visualização de dados.
+
+As ocorrências excluídas agora não existem nos relatórios do Customer Journey Analytics, mas ainda estão disponíveis nas exportações do feed de dados.
 
 +++
 
@@ -363,7 +473,9 @@ A dimensão Domínio referenciador original. Baseado em `first_hit_referrer`. O 
 
 +++**`first_hit_ref_type`**
 
-Uma ID numérica que representa o tipo do referenciador do primeiro referenciador do visitante. Faz referência à tabela de pesquisa `referrer_type.tsv`.
+Uma ID numérica que representa o tipo do primeiro referenciador do visitante.
+
+{{cja-df-lookup}}
 
 +++
 
@@ -447,7 +559,9 @@ O endereço IPv6 compactado, se disponível. Mutualmente exclusivo de `ip`; se e
 
 +++**`javascript`**
 
-Uma ID de pesquisa da versão do JavaScript, com base em `j_jscript`. Faz referência à tabela de pesquisa `javascript_version`.
+Uma ID de pesquisa da versão do JavaScript, com base em `j_jscript`.
+
+{{cja-df-lookup}}
 
 +++
 
@@ -467,7 +581,9 @@ A versão do JavaScript suportada pelo navegador.
 
 +++**`language`**
 
-Uma ID numérica que representa o idioma do visitante. Faz referência à tabela de pesquisa `languages.tsv`.
+Uma ID numérica que representa o idioma do visitante.
+
+{{cja-df-lookup}}
 
 +++
 
@@ -808,7 +924,9 @@ Resolução do dispositivo móvel. `[Width] x [Height]` em pixels.
 +++
 
 +++**`mobile_id`**
-Se o(a) visitante estiver usando um dispositivo móvel, o ID numérico do dispositivo. O valor da chave para `mobile_attributes.tsv` Pesquisa dinâmica.
+Se o visitante estiver usando um dispositivo móvel, o ID numérico do dispositivo.
+
+{{cja-df-lookup}}
 
 +++
 
@@ -842,7 +960,17 @@ Um sinalizador que determina se a ocorrência atual é uma nova visita. Definido
 
 +++**`os`**
 
-Uma ID numérica que representa o sistema operacional do visitante. Com base na coluna `user_agent`. O valor da chave para `operating_system.tsv` pesquisa padrão e `operating_system_type.tsv` Pesquisa dinâmica.
+Uma ID numérica que representa o sistema operacional do visitante. Com base na coluna `user_agent`. 
+
+{{cja-df-lookup}}
+
+Ao [configurar uma sequência de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/datastreams/configure), você pode habilitar a **[!UICONTROL Pesquisa de dispositivo]**. Se habilitado, marque a caixa de seleção **[!UICONTROL Sistema operacional]**. Isso preencherá automaticamente os seguintes campos XDM se você tiver incluído esses campos no esquema:
+
+* **Fornecedor do sistema operacional**: `xdm.environment.operatingSystemVendor`
+* **Nome do sistema operacional**: `xdm.environment.operatingSystem`
+* **Versão do sistema operacional**: `xdm.environment.operatingSystemVersion`
+
+{{cja-df-ua}}
 
 +++
 
@@ -864,9 +992,11 @@ Semelhante a `pagename`, exceto que não retorna a `page_url`. Somente a coluna 
 
 +++**`page_event`**
 
-O tipo de ocorrência que é enviado na solicitação da imagem (ocorrência padrão, link de download, link personalizado, link de saída). Consulte Pesquisa de evento da página.
+O tipo de ocorrência enviado na solicitação da imagem (ocorrência padrão, link de download, link personalizado, link de saída).
 
 {{cja-df-post}}
+
+{{cja-df-lookup}}
 
 +++
 
@@ -987,15 +1117,19 @@ Uma ID numérica que representa o tipo de referência da ocorrência. Usada na d
 
 +++**`resolution`**
 
-Uma ID numérica que representa a resolução do monitor. Usado na dimensão Resolução do monitor. Usa uma tabela de pesquisa `resolution.tsv`.
+Uma ID numérica que representa a resolução do monitor. Usado na dimensão Resolução do monitor.
+
+{{cja-df-lookup}}
 
 +++
 
 +++**`search_engine`**
 
-Uma ID numérica que representa o mecanismo de pesquisa que direcionou o visitante ao site. Usado nas dimensões do Mecanismo de pesquisa. Faz referência à tabela de pesquisa `search_engines.tsv`.
+Uma ID numérica que representa o mecanismo de pesquisa que direcionou o visitante ao site. Usado nas dimensões do Mecanismo de pesquisa.
 
 {{cja-df-post}}
+
+{{cja-df-lookup}}
 
 +++
 
@@ -1123,7 +1257,9 @@ A dimensão Detalhe do último contato.
 
 +++**`va_closer_id`**
 
-Uma ID numérica que identifica a dimensão Canal de último contato. A consulta para essa ID pode ser encontrada no Gerenciador de canal de marketing.
+Uma ID numérica que identifica a dimensão Canal de último contato.
+
+{{cja-df-lookup}}
 
 +++
 
@@ -1135,7 +1271,9 @@ A dimensão Detalhe de primeiro contato.
 
 +++**`va_finder_id`**
 
-Uma ID numérica que identifica a dimensão Canal de primeiro contato. A consulta para essa ID pode ser encontrada no Gerenciador de canal de marketing.
+Uma ID numérica que identifica a dimensão Canal de primeiro contato.
+
+{{cja-df-lookup}}
 
 +++
 
@@ -1549,13 +1687,17 @@ Com base na coluna `visit_referrer`. O primeiro domínio referenciador da visita
 
 +++**`visit_ref_type`**
 
-Uma ID numérica que representa o tipo do primeiro referenciador da visita. Faz referência à tabela de pesquisa `referrer_type.tsv`.
+Uma ID numérica que representa o tipo do primeiro referenciador da visita.
+
+{{cja-df-lookup}}
 
 +++
 
 +++**`visit_search_engine`**
 
-Uma ID numérica que representa o primeiro mecanismo de pesquisa da visita. Faz referência à tabela de pesquisa `search_engines.tsv`.
+Uma ID numérica que representa o primeiro mecanismo de pesquisa da visita.
+
+{{cja-df-lookup}}
 
 +++
 

@@ -1,8 +1,8 @@
 ---
-source-git-commit: 51c9a7aa620f54bec3f0e4ad2d007dd52ecd12f4
+source-git-commit: b0be8b726c4fab1bf9bb5f9462be84f39bdf184a
 workflow-type: tm+mt
-source-wordcount: '5228'
-ht-degree: 95%
+source-wordcount: '5360'
+ht-degree: 93%
 
 ---
 # Trechos
@@ -301,7 +301,7 @@ Como o Customer Journey Analytics usa a atribuição de tempo de relatório para
 
 ## Colunas de publicação do feed de dados do CJA {#cja-df-post}
 
-Esta coluna de feed de dados do Analytics contém uma versão pré-processada e uma versão pós-processada (um prefixo de `post_`). As colunas com um prefixo `post_` contêm o valor que é usado nos relatórios. A tabela a seguir compara as propriedades dessas colunas:
+Esta coluna de feed de dados do Analytics contém uma versão pré-processada e uma versão pós-processada (um prefixo de `post_`). As colunas com um prefixo `post_` contêm o valor que é usado nos relatórios. A maioria das organizações só usa `post_` colunas quando elas estão disponíveis. A tabela a seguir compara as propriedades dessas colunas:
 
 | Valor da coluna pré-processada | Valor de coluna pós-processada |
 | --- | --- |
@@ -310,9 +310,19 @@ Esta coluna de feed de dados do Analytics contém uma versão pré-processada e 
 | Antes das regras VISTA | Depois das regras VISTA |
 | Nenhuma alocação aplicada | A alocação se aplica |
 
-A maioria das organizações só usa `post_` colunas quando elas estão disponíveis.
-
-Como o Customer Journey Analytics não tem um conceito de pré-processamento e pós-processamento, recriar ambas as colunas nos feeds de dados do CJA é difícil. Se desejar aproximações dessas colunas, você pode usar a mesma coluna com configurações de atribuição separadas aplicadas:
+Como o Customer Journey Analytics não tem um conceito de pré-processamento e pós-processamento, recriar ambas as colunas nos feeds de dados do CJA é difícil. Se desejar aproximações dessas colunas, você pode arrastar o mesmo campo XDM várias vezes para a coluna de dimensões para criar vários componentes com diferentes configurações de atribuição:
 
 * **Coluna pré-processada**: nenhuma atribuição
 * **Coluna pós-processada**: aplique as mesmas configurações de alocação e expiração que sua variável do Analytics nas configurações de exibição de dados. A maioria dos componentes usaria uma alocação de &quot;Último&quot; e uma expiração de &quot;Visita&quot;.
+
+## Colunas de pesquisa do feed de dados do CJA {#cja-df-lookup}
+
+Essa coluna de feed de dados do Analytics usa uma tabela de pesquisa para identificar o valor desejado. No Customer Journey Analytics, o valor é fornecido diretamente sem tabelas de pesquisa. Certifique-se de que o workflow acomode o valor final em vez de um valor de pesquisa intermediário.
+
+## Feed de dados do CJA não aplicável colunas {#cja-df-na}
+
+Essa coluna Feed de dados do Analytics contém dados que não podem ser traduzidos para um equivalente do Customer Journey Analytics devido a diferenças na arquitetura de dados.
+
+## Agente do usuário do feed de dados do CJA {#cja-df-ua}
+
+Não é possível coletar informações do agente do usuário e informações de pesquisa do dispositivo simultaneamente; o preenchimento dessas dimensões é mutuamente exclusivo. Você deve escolher se deseja coletar diretamente o agente do usuário ou as informações de pesquisa do dispositivo (com base no agente do usuário) ao [Configurar uma sequência de dados](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure#geolocation-device-lookup).
