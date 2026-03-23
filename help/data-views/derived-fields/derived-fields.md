@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: 9645c24ed1a08c224445ebae99dde27db208b9b5
+source-git-commit: 12347a865bdeb16f9b45ec5e5eddc3390894e0dc
 workflow-type: tm+mt
-source-wordcount: '10186'
-ht-degree: 100%
+source-wordcount: '10283'
+ht-degree: 99%
 
 ---
 
@@ -422,6 +422,21 @@ Este modelo de função obtém a longitude de um estado dos EUA com uma precisã
 Para usar o modelo, é necessário especificar os parâmetros corretos para cada função listada como parte das regras no modelo. Consulte [Referência da função](#function-reference) para mais informações.
 
 ![Captura de tela do construtor de regras de longitude de um estado](assets/function-template-state-longitude.png)
+
++++
+
+
+### Análise de parâmetros UTM
+
+Este modelo de função extrai o valor de parâmetros de consulta UTM especificados (por exemplo, `utm_source`, `utm_campaign`) do campo de URL selecionado. Use esta função para rotular e agrupar eventos por atribuição de campanha para relatórios de marketing.
+
++++ Detalhes
+
+{{select-package}}
+
+Para usar o template, você deve especificar os parâmetros de cada função listada como parte das regras no template. Remova funções (por exemplo, [Analisar URL](#url-parse)) ou parâmetros em funções (por exemplo, [Concatenar](#concatenate) e [Caso Quando](#case-when)) para os parâmetros de consulta UTM que você não usa. Consulte [Referência da função](#function-reference) para mais informações.
+
+![Captura de tela do construtor de regras de Análise de Parâmetros UTM](assets/function-template-utm-parameters-parse.png)
 
 +++
 
@@ -1580,10 +1595,10 @@ Você gostaria de coletar parte de um URL e usá-la como um identificador de pá
 
 | URL da página |
 |---|
-| `https://business.adobe.com/br/products/analytics/adobe-analytics-benefits.html` |
-| `https://business.adobe.com/br/products/analytics/adobe-analytics.html` |
-| `https://business.adobe.com/br/products/experience-platform/customer-journey-analytics.html` |
-| `https://business.adobe.com/br/products/experience-platform/adobe-experience-platform.html` |
+| `https://business.adobe.com/products/analytics/adobe-analytics-benefits.html` |
+| `https://business.adobe.com/products/analytics/adobe-analytics.html` |
+| `https://business.adobe.com/products/experience-platform/customer-journey-analytics.html` |
+| `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html` |
 
 {style="table-layout:auto"}
 
@@ -2141,6 +2156,6 @@ O suporte para campos de pesquisa e perfil em Campos derivados permite transform
 >[!MORELIKETHIS]
 >
 >- [Blog: como aproveitar ao máximo seus dados: uma estrutura para usar campos derivados no Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/making-the-most-of-your-data-a-framework-for-using-derived/ba-p/601670?profile.language=pt)
->- [Blog: casos de uso de campos derivados no Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/derived-fields-use-cases-for-customer-journey-analytics/ba-p/601679?profile.language=pt)
->- [Blog: melhorias nos campos derivados do Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/adobe-customer-journey-analytics-derived-fields-enhancements/ba-p/697808?profile.language=pt)
+>- [Blog: casos de uso de campos derivados no Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/derived-fields-use-cases-for-customer-journey-analytics/ba-p/601679)
+>- [Blog: melhorias nos campos derivados do Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/adobe-customer-journey-analytics-derived-fields-enhancements/ba-p/697808)
 
