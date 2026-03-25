@@ -4,10 +4,10 @@ title: Editar entradas de componentes
 feature: Components
 role: Admin
 exl-id: 2d232811-e34a-4667-819c-cbe2a3e72702
-source-git-commit: f940e5cba11df0ff158093a503213ff1641b1c5d
+source-git-commit: 8e4808f99e0610a450e0a29fb218ae4c7d77052b
 workflow-type: tm+mt
-source-wordcount: '1254'
-ht-degree: 67%
+source-wordcount: '1252'
+ht-degree: 62%
 
 ---
 
@@ -29,7 +29,19 @@ Para editar um componente no Dicionário de dados:
 
 1. (Opcional) No campo de pesquisa, comece a digitar o nome do componente que deseja editar.
 
-   O tipo de componente pode ser identificado por cor e ícone. As **Dimensões** e o ![Ícone de dimensão](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) são laranjas, os **Segmentos** e o ![Ícone de segmento](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) são azuis, os **Intervalos de datas** e o ![Ícone de intervalo de datas](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) são roxos e as **Métricas** e o ![Ícone de métrica](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) são verdes. O ícone da Adobe indica um modelo de métrica calculada ou um modelo de segmento, e o ícone da calculadora, ![Ícone de calculadora](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg), indica uma métrica calculada que foi criada por um administrador do Analytics em sua organização.
+   O tipo de componente pode ser identificado por cor e ícone.
+
+   * **Dimensões** ![ícone do Dimension](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) estão em laranja
+
+   * **Segmentos** ![Ícone de segmento](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Segmentation_18_N.svg) são azuis
+
+   * **Intervalos de datas** ![Ícone de intervalo de datas](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) são roxos
+
+   * **Métricas** ![Ícone de métrica](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) estão em verde
+
+   * **Ícone do Adobe** ![ícone do Adobe](assets/default-calc-metric-icon.png) indica um modelo de métrica calculada ou um modelo de segmento
+
+   * **Ícone da Calculadora** ![Ícone da Calculadora](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calculator_18_N.svg) indica uma métrica calculada que foi criada por um administrador do Analytics em sua organização
 
 1. (Opcional) Selecione o ícone de **Filtro** ![Ícone de filtro do dicionário de dados](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) e, em seguida, selecione qualquer uma das seguintes opções para filtrar a lista de componentes:
 
@@ -76,7 +88,7 @@ Para editar um componente no Dicionário de dados:
    | **[!UICONTROL Compatibilidade do produto]** | Indica onde essa métrica calculada pode ser usada no Customer Journey Analytics. <p>Os valores possíveis são:</p><ul><li>**[!UICONTROL Em qualquer lugar no Customer Journey Analytics]**: a métrica calculada pode ser usada em todo o Customer Journey Analytics, inclusive no Analysis Workspace, Report Builder e assim por diante.</li><li>**[!UICONTROL Em qualquer lugar do Customer Journey Analytics (excluindo a experimentação)]**: a métrica calculada pode ser usada em todo o Customer Journey Analytics, exceto no painel “Experimentação”.</li> <p>Para obter informações sobre os critérios que determinam se uma métrica calculada pode ser usada com experimentação, consulte [Usar métricas calculadas no painel Experimentação](/help/analysis-workspace/c-panels/experimentation.md#use-calculated-metrics-in-the-experimentation-panel) em [Painel Experimentação](/help/analysis-workspace/c-panels/experimentation.md).</p></ul> |
    | **[!UICONTROL Tags]** | Mostra todas as tags aplicadas ao componente. Os usuários com acesso de administrador podem adicionar tags ao editar o componente. |
    | **[!UICONTROL Tipo de componente]** | Lista o tipo de componente, seja uma dimensão, uma métrica, um segmento ou um intervalo de datas. |
-   | **[!UICONTROL Criado por]** | Mostra o nome do usuário que criou o componente. |
+   | **[!UICONTROL Criado por]** | Exibe o nome do usuário que criou o componente. |
    | **[!UICONTROL Pré-visualizar]** | Mostra uma pré-visualização de como o componente é exibido no Analysis Workspace. |
    | **[!UICONTROL Data da última modificação]** | Exibe o dia em que o componente foi modificado pela última vez. Esta seção é exibida ao visualizar Segmentos, Métricas, Métricas calculadas e Intervalos de datas. |
 
