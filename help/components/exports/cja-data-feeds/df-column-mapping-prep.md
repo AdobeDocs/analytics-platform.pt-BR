@@ -5,26 +5,25 @@ title: Preparar para mapear colunas do feed de dados do Adobe Analytics para o C
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: 5dada1744a479cd4736c9fb7f3c807471e8da226
+exl-id: d0a9e697-1e48-4cfb-8613-2f932bf5015b
+source-git-commit: 9403a4c6d0e0389de19aa4627d9d952f0c31f1a2
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '1060'
 ht-degree: 2%
 
 ---
 
 # Preparação para mapear colunas de feed de dados do Adobe Analytics para o Customer Journey Analytics
 
-Ao fazer a transição de feeds de dados do Adobe Analytics para feeds de dados do Customer Journey Analytics, é natural mapear cada coluna de feed de dados do Adobe Analytics para uma coluna de feed de dados no Customer Journey Analytics.
+O Customer Journey Analytics fornece uma arquitetura mais flexível do que o Adobe Analytics para determinar as colunas que estão disponíveis para inclusão em um feed de dados. A maioria das organizações deve esperar exportar diferentes colunas de feed de dados do Customer Journey Analytics do que exportaram do Adobe Analytics. Essas diferenças se devem aos seguintes fatores:
 
-No entanto, o mapeamento de colunas de feed de dados do Adobe Analytics para o Customer Journey Analytics raramente é um mapeamento um para um. Isso se deve aos seguintes fatores:
+* **[Arquitetura de esquema](#schema-architecture)**: as colunas de feed de dados do Adobe Analytics são derivadas das variáveis do Analytics, enquanto as colunas de feed de dados do Customer Journey Analytics são derivadas do esquema de exibição de dados.
 
-* **[Arquitetura de esquema](#schema-architecture)**: as colunas de feed de dados do Adobe Analytics são derivadas das variáveis do Analytics, enquanto as colunas de feed de dados do Customer Journey Analytics são derivadas dos campos de esquema XDM no Experience Platform e dos componentes de visualização de dados no Customer Journey Analytics.
+* **[Processamento de dados](#data-processing)**: existem diferenças fundamentais de processamento de dados entre o Adobe Analytics e o Customer Journey Analytics, especialmente a existência de colunas pré e pós-processadas para muitas colunas do Adobe Analytics.
 
-* **[Tipo de implementação](#implementation-type)**: o Adobe Analytics e o Customer Journey Analytics suportam várias configurações de implementação cada. As etapas necessárias para mapear campos individuais dependem dessas implementações.
+* **[Colunas não usadas](#unused-columns)**: o Adobe Analytics contém mais de 1.100 colunas de feed de dados. A maioria das organizações não usa os dados de todas as colunas que estão sendo exportadas.
 
-* **[Processamento de dados](#data-processing)**: existem diferenças fundamentais no processamento de dados entre o Adobe Analytics e o Customer Journey Analytics.
-
-* **[Colunas não usadas](#unused-columns)**: o Adobe Analytics contém mais de 1.100 colunas de feed de dados. Identifique qual dessas colunas sua organização usa para que você possa planejar mapear apenas as colunas necessárias.
+* **[Colunas entre canais](#cross-channel-columns)**: o Customer Journey Analytics oferece suporte a dados entre canais (como dados da central de atendimento), que não estão disponíveis no Adobe Analytics.
 
 Antes de começar a mapear as colunas do feed de dados do Adobe Analytics para as colunas do feed de dados do Customer Journey Analytics, revise as seções abaixo para entender melhor esses fatores principais que afetam o mapeamento.
 
@@ -32,57 +31,50 @@ Depois de revisar essas informações, siga as instruções de mapeamento para c
 
 ## Arquitetura do esquema
 
-O esquema do Experience Data Model (XDM), juntamente com as visualizações de dados usadas no Customer Journey Analytics, é mais flexível do que o modelo baseado em variáveis do Adobe Analytics. Dessa forma, o esquema XDM da sua organização provavelmente não contém campos que se traduzem em mapeamentos de colunas de feed de dados um para um.
+O Customer Journey Analytics fornece uma arquitetura mais flexível do que o Adobe Analytics para determinar quais colunas estão disponíveis para inclusão em um feed de dados:
 
-Considere os seguintes pontos sobre a arquitetura do esquema:
+### Arquitetura do Adobe Analytics
 
-* A falta de mapeamentos de coluna um para um não significa que o esquema XDM do Customer Journey Analytics é insuficiente. Em vez disso, significa que primeiro é necessário determinar quais colunas de feed de dados do Adobe Analytics você usa atualmente e, em seguida, mapear apenas essas colunas para os feeds de dados do Customer Journey Analytics.
+Uma lista estática e predefinida de variáveis está disponível para inclusão como colunas de feed de dados.
 
-* O esquema XDM do Customer Journey Analytics é compatível com dados entre canais (como dados da central de atendimento), que não estão disponíveis no Adobe Analytics. Esses campos entre canais são exemplos de novas colunas que podem ser incluídas nos feeds de dados do Customer Journey Analytics que não são compatíveis com o Adobe Analytics.
+É fácil incluir todas as colunas, e muitos clientes fazem isso, mesmo quando os dados contidos nessas colunas não são usados em toda a organização.
 
-* Os campos podem ser incluídos em um feed de dados do Customer Journey Analytics somente após serem incluídos no esquema XDM no Experience Platform e, em seguida, tratados para uso na visualização de dados no Customer Journey Analytics.
+### Arquitetura do Customer Journey Analytics
 
-  Para obter informações detalhadas sobre esse processo para cada possível coluna do feed de dados do Adobe Analytics, consulte [Referência da coluna de dados](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md).
+Quaisquer componentes incluídos no esquema de visualização de dados podem ser incluídos como colunas de feed de dados. Para obter informações detalhadas sobre esse processo para cada possível coluna do feed de dados do Adobe Analytics, consulte [Referência da coluna de dados](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md).
 
->[!TIP]
->
->Se possível, consulte a equipe ou indivíduo que arquitetou o esquema XDM para a implementação do Customer Journey Analytics de sua organização. Muitas das decisões sobre quais campos do Adobe Analytics eram necessários no Customer Journey Analytics foram tomadas quando o esquema XDM foi criado. Para obter mais informações, consulte [Projete seu esquema para uso com o Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md).
+Os componentes são incluídos no esquema de visualização de dados de uma das maneiras descritas na tabela a seguir:
 
-## Tipo de implementação
-
-<!--  tons of different AA implementations + tons of different CJA schemas -->
-
-O número de campos disponíveis para mapeamento no esquema XDM do Customer Journey Analytics pode variar dependendo de como os dados são coletados para a implementação do Customer Journey Analytics, da seguinte maneira:
-
-* **Novas implementações do Web SDK**: se a sua implementação do Customer Journey Analytics usar um esquema personalizado, muitas colunas que existem nos feeds de dados do Adobe Analytics provavelmente não existem no Customer Journey Analytics. Da mesma forma, o Customer Journey Analytics pode conter campos que não existem nos feeds de dados do Adobe Analytics.
-
-* **Implementações do Analytics Source Connector**: há mapeamentos de campo um para um por padrão para muitas colunas de feed de dados, pois o Analytics Source Connector usa o grupo de campos Evento de experiência do Analytics no esquema XDM. Para obter informações sobre quais campos do Adobe Analytics mapear para campos neste grupo de campos, consulte [Mapeamentos de campos do Analytics](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics) na documentação da Experience Platform.
-
-<!-- **Data layer**: ??? -->
+| Método para inclusão no esquema de visualização de dados | Informações adicionais |
+|---------|----------|
+| Os campos de esquema XDM são preparados como componentes na visualização de dados | Os campos existentes no esquema XDM se tornam parte do esquema de visualização de dados na Customer Journey Analytics depois de serem preparados como componentes na visualização de dados. <p>O número de campos disponíveis por padrão no esquema XDM do Customer Journey Analytics pode variar dependendo de como os dados são coletados para a implementação do Customer Journey Analytics, da seguinte maneira:</p><ul><li>**Novas implementações do Web SDK**: se a sua implementação do Customer Journey Analytics usar um esquema personalizado, muitas colunas que existem nos feeds de dados do Adobe Analytics provavelmente não existem no Customer Journey Analytics. Da mesma forma, o Customer Journey Analytics pode conter campos que não existem nos feeds de dados do Adobe Analytics.<p>Se possível, consulte a equipe ou indivíduo que arquitetou o esquema XDM para a implementação do Customer Journey Analytics de sua organização. Muitas das decisões sobre quais campos do Adobe Analytics eram necessários no Customer Journey Analytics foram tomadas quando o esquema XDM foi criado. Para obter mais informações, consulte [Projete seu esquema para uso com o Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md).</p></li><li>**Implementações do Analytics Source Connector**: há mapeamentos de campo um para um por padrão para muitas colunas de feed de dados, pois o Analytics Source Connector usa o grupo de campos Evento de experiência do Analytics no esquema XDM. Para obter informações sobre quais campos do Adobe Analytics são mapeados para campos neste grupo de campos, consulte [Mapeamentos de campos do Analytics](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics) na documentação do Experience Platform.</li></ul> |
+| Os componentes são criados na visualização de dados usando campos derivados | Você pode criar componentes diretamente em uma visualização de dados, criando colunas de feed de dados que não estão disponíveis no esquema XDM. |
 
 ## Processamento de dados
 
-O processamento de dados difere entre o Adobe Analytics e o Customer Journey Analytics, da seguinte maneira:
+As diferenças de processamento de dados entre o Adobe Analytics e o Customer Journey Analytics afetam quais colunas do feed de dados estão disponíveis para exportação, da seguinte maneira:
 
-**Adobe Analytics**: muitos campos de feed de dados são exportados como duas colunas separadas: uma contendo dados pré-processados e outra contendo dados pós-processados. (Os dados pós-processados incluem lógica do lado do servidor, regras de processamento, regras VISTA, regras de persistência de dimensão e assim por diante.)
+* **Adobe Analytics**: muitos campos de feed de dados são exportados como duas colunas separadas: uma contendo dados pré-processados e outra contendo dados pós-processados. (Os dados pós-processados incluem lógica do lado do servidor, regras de processamento, regras VISTA, regras de persistência de dimensão e assim por diante.)
 
-Como o Adobe Analytics exporta dados para alguns campos em duas colunas separadas (uma para dados pré-processados e outra para dados pós-processados), o Adobe Analytics contém mais colunas de feed de dados do que o Customer Journey Analytics. Lembre-se disso ao mapear campos.
+  Como o Adobe Analytics exporta dados para alguns campos em duas colunas separadas (uma para dados pré-processados e outra para dados pós-processados), o Adobe Analytics contém mais colunas de feed de dados do que o Customer Journey Analytics. Lembre-se disso ao mapear campos.
 
-**Customer Journey Analytics**: os campos ficam disponíveis para feeds de dados após serem criados na exibição de dados. Normalmente, os campos nas visualizações de dados do Customer Journey Analytics incluem apenas dados pós-processados. No entanto, geralmente é possível aproximar a versão pré-processada do Adobe Analytics de um campo criando uma segunda versão do campo na visualização de dados do Customer Journey Analytics e configurando-a para expirar na ocorrência.
+* **Customer Journey Analytics**: os campos ficam disponíveis para feeds de dados após serem criados na exibição de dados. Normalmente, os campos nas visualizações de dados do Customer Journey Analytics incluem apenas dados pós-processados. No entanto, geralmente é possível aproximar a versão pré-processada do Adobe Analytics de um campo criando uma segunda versão do campo na visualização de dados do Customer Journey Analytics e configurando-a para expirar na ocorrência.
 
 ## Colunas não usadas
 
-Há mais de 1.100 colunas de feed de dados disponíveis para exportação no Adobe Analytics. Dessas colunas, nem todas serão usadas nos feeds de dados do Customer Journey Analytics.
+Há mais de 1.100 colunas de feed de dados disponíveis para exportação no Adobe Analytics. Dessas colunas, nem todas serão usadas nos feeds de dados do Customer Journey Analytics. Essa discrepância não é uma indicação de que as colunas do feed de dados do Customer Journey Analytics são insuficientes.
 
-Para determinar quais colunas usar:
+Identifique qual das colunas do feed de dados do Adobe Analytics sua organização usa. Isso informará quais colunas são necessárias nos feeds de dados do Customer Journey Analytics. Para determinar quais colunas usar:
 
 * **Identificar campos que se aplicam apenas ao Adobe Analytics**: determinadas colunas nos feeds de dados do Adobe Analytics são específicas do mecanismo de processamento de dados do Adobe Analytics e, portanto, não se aplicam ao Customer Journey Analytics. Exemplos dessas colunas são `exclude_hit` e `hit_source`.
 
-* **Identifique os campos que se aplicam à sua organização**: embora nem todos os clientes da Adobe Analytics exportem todas as colunas disponíveis, muitos clientes exportam mais do que realmente usam.
+* **Identificar campos que se aplicam à sua organização**: embora nem todos os clientes da Adobe Analytics exportem todas as colunas disponíveis, muitos clientes exportam mais do que realmente usam.
 
-  Antes de começar a mapear as colunas do feed de dados, identifique quais campos estão sendo realmente usados em toda a organização. Para coletar essas informações, entre em contato com as equipes ou indivíduos que consomem conteúdo do feed de dados para o Adobe Analytics.
+  Antes de começar a exportar feeds de dados do Customer Journey Analytics, primeiro você deve determinar quais colunas do feed de dados do Adobe Analytics sua organização usa atualmente e, em seguida, garantir que esses componentes existem no esquema de visualização de dados do Customer Journey Analytics. Para coletar essas informações, entre em contato com as equipes ou indivíduos em toda a organização que consomem conteúdo do feed de dados para o Adobe Analytics.
 
+## Colunas entre canais
 
+O Customer Journey Analytics é compatível com dados entre canais (como dados da central de atendimento), que não estão disponíveis no Adobe Analytics. Esses campos entre canais são exemplos de novas colunas que podem ser incluídas nos feeds de dados do Customer Journey Analytics, que não são compatíveis com o Adobe Analytics.
 
 <!--
 
