@@ -24,7 +24,7 @@ O recurso de programação também permite configurar a proteção por senha par
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Agendar pastas de trabalho](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/exporting/report-builder/schedule-cja-workbooks-using-report-builder){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Agendar pastas de trabalho](https://experienceleague.adobe.com/pt-br/docs/customer-journey-analytics-learn/tutorials/exporting/report-builder/schedule-cja-workbooks-using-report-builder){target="_blank"} para ver um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 
