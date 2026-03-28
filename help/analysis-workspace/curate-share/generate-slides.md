@@ -5,7 +5,7 @@ title: Gerar apresentações a partir de relatórios do Workspace
 feature: Curate and Share
 role: User
 exl-id: a3f6db1e-0444-4804-98bf-c5c10ba2e7ea
-source-git-commit: d14163794fd4d31b29bfc6f55622d839b67ab3d7
+source-git-commit: b9efb621523f8bbfbb3afe7db4db2e60fcddd34c
 workflow-type: tm+mt
 source-wordcount: '1696'
 ht-degree: 9%
@@ -110,8 +110,10 @@ As histórias de dados consistem em um slide de título, um slide de resumo exec
    | **[!UICONTROL Painéis e visualizações incluídos]** | Escolha os painéis e a visualização que deseja incluir na apresentação. É possível incluir até 50 visualizações.<p>Se uma visualização estiver esmaecida, ela será seguida pelo texto **[!UICONTROL (sem suporte)]** ou **[!UICONTROL (dados restritos)]**.</p><ul><li>**Sem suporte**: a maioria dos painéis e visualizações tem suporte. Para obter informações sobre painéis e visualizações sem suporte, consulte [Elementos e recursos do projeto sem suporte](#unsupported-project-elements-and-features).</li><li>**Dados restritos**: a visualização contém um componente que está impedido de ser exportado por uma política de governança de dados aplicada pela sua organização. Entre em contato com o administrador do sistema para ver quais componentes estão restritos para não serem exportados e remova os componentes restritos antes de gerar slides.</li></ul> |
    | **[!UICONTROL Enfatizar componentes]** | Escolha as métricas e dimensões nas visualizações que deseja enfatizar na apresentação. Os componentes escolhidos são classificados em posições mais altas e recebem mais peso quando os temas e a narrativa abrangente da história dos dados são criados. <p>Quando nenhuma ênfase é aplicada, os componentes são exibidos nas apresentações da seguinte maneira:<ul><li>**Métricas e dimensões:** Itálico</li><li>**Itens do Dimension:** Aspas</li></ul></p><p>Quando a ênfase é aplicada, os componentes são exibidos nas apresentações da seguinte maneira:</p><ul><li>**Métricas e dimensões:** Itálico e negrito</li><li>**Itens do Dimension:** Negrito quando a dimensão correspondente é enfatizada<p>Uma cor também é aplicada ao item de dimensão quando ele é realçado no gráfico.</p></li></ul> |
 
-   <!-- add this later: - **[!UICONTROL Panel and visualization descriptions]** - Choose whether to include panel and visualization descriptions in your generated slide presentation. - 
-   - **[!UICONTROL Annotations]** - Choose whether annotations are visible in your generated slide presentation. For more information about annotations, see [Annotations overview](/help/components/annotations/overview.md).  -  -->
+   <!-- 
+   add this later: - **[!UICONTROL Panel and visualization descriptions]** - Choose whether to include panel and visualization descriptions in your generated slide presentation. - 
+   - **[!UICONTROL Annotations]** - Choose whether annotations are visible in your generated slide presentation. For more information about annotations, see [Annotations overview](/help/components/annotations/overview.md).  -  
+   -->
 
 1. (Condicional) Selecione **[!UICONTROL Tema padrão]** se quiser gerar slides em menos etapas e se um tema corporativo não for necessário para a apresentação de slides.
 

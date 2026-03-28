@@ -3,7 +3,7 @@ description: Saiba como compartilhar, filtrar, marcar, aprovar, copiar, excluir 
 title: Gerenciar métricas calculadas
 feature: Calculated Metrics
 exl-id: 8b257ecc-a596-4b34-ac26-eda16835f1ba
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 50b82943d4c59f612240ffc8d83a8a08f09b8331
 workflow-type: tm+mt
 source-wordcount: '901'
 ht-degree: 28%
@@ -74,7 +74,8 @@ Você pode filtrar a lista de métricas calculadas usando o ![Filtro](/help/asse
 Consulte [Filtrar a lista de métricas calculadas](cm-filter.md) para obter mais informações.
 
 
-<!-- OLD CONTENT 
+<!-- 
+OLD CONTENT 
 
 The Calculated metric manager shows you all the filters you own and that have been shared with you. Admin-level users can see all custom metrics in the organization. This overview presents the user interface and the capabilities of the Calculated metric manager.
 

@@ -4,7 +4,7 @@ title: Salvar Projetos
 feature: Workspace Basics
 role: User
 exl-id: d751057e-6a5f-4605-abc1-9259a1f95a28
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 873247c643b3be4bb561955af84dd4bbb4e1d81f
 workflow-type: tm+mt
 source-wordcount: '846'
 ht-degree: 95%
@@ -87,8 +87,9 @@ Para salvar um projeto manualmente, com o projeto aberto no Analysis Workspace, 
   Você pode salvar o projeto em uma pasta diferente. O projeto original não será afetado.
 
 
-<!-- Cannot find this option in CJA 
-| **[!UICONTROL Save as template]** | Save your project as a [custom template](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html?lang=pt-BR) that becomes available to your organization under **[!UICONTROL Project > New]** |
+<!-- 
+Cannot find this option in CJA 
+| **[!UICONTROL Save as template]** | Save your project as a [custom template](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/starter-projects.html) that becomes available to your organization under **[!UICONTROL Project > New]** |
 -->
 
 ## Salvar automaticamente
@@ -105,7 +106,7 @@ Todos os projetos no Analysis Workspace são salvos automaticamente a cada 2 min
 
 O Analysis Workspace solicita que você salve novos projetos manualmente ao alternar para outro projeto, fechar a guia do navegador e assim por diante.
 
-Se, por qualquer motivo, você perder o acesso a um projeto recém-criado inesperadamente antes de salvá-lo manualmente, uma versão de recuperação do seu projeto será salva na página inicial do Analysis Workspace, em uma pasta chamada **[!UICONTROL Projetos recuperados (últimos 7 dias)]**. Restaure o projeto recuperado e salve-o manualmente no local desejado.
+Se, por qualquer motivo, você perder o acesso a um projeto recém-criado inesperadamente antes de salvá-lo manualmente, uma versão de recuperação do seu projeto será salva na página de destino do Analysis Workspace, em uma pasta chamada **[!UICONTROL Projetos recuperados (últimos 7 dias)]**. Restaure o projeto recuperado e salve-o manualmente no local desejado.
 
 Para restaurar um projeto recuperado:
 
@@ -157,7 +158,8 @@ Se o navegador travar ou se o tempo-limite da sessão for atingido, na próxima 
 Para **novos** projetos que nunca foram salvos, as alterações não salvas não são recuperáveis.
 
 
-<!-- Shouldn't this belong to another page?  Moved it to a new open projects page
+<!--
+Shouldn't this belong to another page?  Moved it to a new open projects page
 
 
 ## Open previously saved version

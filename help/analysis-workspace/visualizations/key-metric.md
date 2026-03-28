@@ -4,7 +4,7 @@ title: Resumo da métrica principal
 feature: Visualizations
 exl-id: ef606c53-b370-419a-904b-573ee6d70a8d
 role: User
-source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
+source-git-commit: a85cc758f414c8c9f702ed83d1dd2675bf29a30f
 workflow-type: tm+mt
 source-wordcount: '948'
 ht-degree: 94%
@@ -21,7 +21,7 @@ ht-degree: 94%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta a visualização do resumo da métrica principal no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consulte o [Resumo da métrica principal](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/key-metric) para saber qual é a versão do_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
+_Este artigo documenta a visualização do resumo da métrica principal no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consulte o [Resumo da métrica principal](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/key-metric) para saber qual é a versão do_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 
@@ -70,7 +70,8 @@ Esta visualização aborda vários casos de uso comuns, incluindo:
 
 1. Selecione **[!UICONTROL Criar]**.
 
-<!--## How the Key Metric Summary visualization handles the comparison date range
+<!--
+## How the Key Metric Summary visualization handles the comparison date range
 
 (This will probably release in January. Per Jaden Howell)
 
@@ -95,7 +96,8 @@ Comparison date range is set to a non-relative date range, such as 'Feb 2nd, 202
 >
 >Last week is relative to the day the project is opened on, but it is not based on the panel's date range of 'Yesterday'. In other cases, such as if the panel's date range was 'This week', it may be relative.
 
-When you change the panel's date range to '4 days ago', the comparison date range remains at the previous selection. -->
+When you change the panel's date range to '4 days ago', the comparison date range remains at the previous selection. 
+-->
 
 A saída do resumo da métrica principal é semelhante a:
 
@@ -152,5 +154,5 @@ Após criar a visualização, é possível editar a configuração original.
 >[!MORELIKETHIS]
 >
 >[Adicionar uma visualização a um painel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel)
->&#x200B;>[Configurações de visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
->&#x200B;>[Menu de contexto da visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)
+>[Configurações de visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#settings)
+>[Menu de contexto da visualização](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu)

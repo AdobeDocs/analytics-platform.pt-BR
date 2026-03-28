@@ -5,10 +5,10 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 role: User
-source-git-commit: c67225619153218e3dca1eacea204f2b033dfb14
+source-git-commit: 50b82943d4c59f612240ffc8d83a8a08f09b8331
 workflow-type: tm+mt
 source-wordcount: '2210'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -145,15 +145,16 @@ A Adobe alterou recentemente a forma do processamento de dados no Customer Journ
 
 ## &#x200B;5. Definir janela contínua para retenção de dados de [!UICONTROL conexão] {#data-retention}
 
-A configuração [**[!UICONTROL Habilitar janela de dados contínua &#x200B;]**](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=pt-BR#create-connection) permite definir a retenção de dados do Customer Journey Analytics como uma janela contínua em meses (três meses, seis meses, etc). Ela é definida no nível de uma [!UICONTROL conexão], não no nível de um [!UICONTROL conjunto de dados]. A retenção de dados tem por base os carimbos de data e hora do conjunto de dados do evento e se aplica somente aos conjuntos de dados do evento. Não há configuração de retenção de dados para o perfil ou conjuntos de dados de pesquisa, pois não há carimbos de data e hora aplicáveis.
+A configuração [**[!UICONTROL Habilitar janela de dados contínua ]**](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=pt-BR#create-connection) permite definir a retenção de dados do Customer Journey Analytics como uma janela contínua em meses (três meses, seis meses, etc). Ela é definida no nível de uma [!UICONTROL conexão], não no nível de um [!UICONTROL conjunto de dados]. A retenção de dados tem por base os carimbos de data e hora do conjunto de dados do evento e se aplica somente aos conjuntos de dados do evento. Não há configuração de retenção de dados para o perfil ou conjuntos de dados de pesquisa, pois não há carimbos de data e hora aplicáveis.
 
 O principal benefício é armazenar ou relatar apenas dados que sejam aplicáveis e úteis, além de excluir dados mais antigos que não sejam mais úteis. Isso ajuda você a ficar dentro dos limites do contrato e reduz o risco de custo excedente.
 
 ## &#x200B;6. Implicações da exclusão de objetos ou componentes {#deletion}
 
-Consulte [Implicações de exclusão e redefinição](/help/technotes/deletion.md) para obter uma visão geral das implicações ao excluir ou redefinir objetos ou componentes do Customer Journey Analytics ou do Experience Platform.
+Consulte [Implicações da exclusão e redefinição](/help/technotes/deletion.md) para obter uma visão geral das implicações da exclusão ou redefinição de objetos ou componentes do Customer Journey Analytics ou da Experience Platform.
 
-<!-- Refer to deletion guide 
+<!-- 
+Refer to deletion guide 
 
 For data deletion, you should be concerned about six types of components: sandbox, schema, dataset, connection, data view, and Workspace project. Here are some possible scenarios around deleting any of these components:
 

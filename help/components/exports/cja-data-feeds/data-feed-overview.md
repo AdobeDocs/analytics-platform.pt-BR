@@ -5,7 +5,8 @@ title: Visão geral do feed de dados do Analytics
 feature: Components
 hide: true
 hidefromtoc: true
-source-git-commit: b0b86424399ea79deca8f1d522d52354dfaaa8c7
+exl-id: 991a7861-cbde-4d55-935c-d56c8031853e
+source-git-commit: 50b82943d4c59f612240ffc8d83a8a08f09b8331
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 40%
@@ -37,12 +38,14 @@ Os recursos a seguir ajudam você a entender o fluxo de trabalho básico de obte
 * Práticas recomendadas do feed de dados<!--add link-->: práticas recomendadas para criar e gerenciar feeds de dados.
 * Criar um feed de dados<!--add link-->: Detalhes técnicos para criar um feed de dados, explicando campos individuais com mais detalhes
 * Gerenciar feeds de dados<!--add link-->: Saiba mais sobre como navegar na interface do feed de dados
-* Conteúdo do feed de dados <!--add link-->: Entenda o que está dentro do arquivo compactado <!-- Is this still the output users can download from the destination? I aske Jun. -->
+* Conteúdo do feed de dados <!--add link-->: Entenda o que está dentro do arquivo compactado
 * Definições de coluna de dados <!--add link-->: uma lista abrangente de todas as colunas disponíveis.
+
+<!-- Is this still the output users can download from the destination? I aske Jun. -->
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Navegar pela interface do feed de dados](https://video.tv.adobe.com/v/3428567?captions=por_br&quality=12&learn=on){target="_blank"} para assistir um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Navegar pela interface do feed de dados](https://video.tv.adobe.com/v/25452?quality=12&learn=on){target="_blank"} para assistir um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 
@@ -50,6 +53,6 @@ Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Navegar pel
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Localizar a ID do feed de dados](https://video.tv.adobe.com/v/3480887?captions=por_br&quality=12&learn=on){target="_blank"} para assistir um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Localizar a ID do feed de dados](https://video.tv.adobe.com/v/335747?quality=12&learn=on){target="_blank"} para assistir um vídeo de demonstração.
 
 >[!ENDSHADEBOX]

@@ -4,7 +4,7 @@ title: Baixar Projetos E Dados
 feature: Curate and Share
 exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
 role: User
-source-git-commit: 1cb9e18f79e8ca49b63aa7d8117ce6c61a020454
+source-git-commit: 873247c643b3be4bb561955af84dd4bbb4e1d81f
 workflow-type: tm+mt
 source-wordcount: '1246'
 ht-degree: 22%
@@ -67,7 +67,7 @@ A opção **[!UICONTROL Copiar para a área de transferência]** do menu de cont
 >Você pode usar a tecla de atalho **_cmd + c_** (macOS) ou **_ctrl + c_** (Windows) para copiar sua seleção para a área de transferência. Em seguida, use o **_cmd + v_** (macOS) ou o **_ctrl + v_** (Windows) para colar os dados.
 
 
-![A opção de “Copiar seleção para a área de transferência”. &#x200B;](assets/copy-clipboard.png){zoomable="yes"}
+![A opção de “Copiar seleção para a área de transferência”. ](assets/copy-clipboard.png){zoomable="yes"}
 
 ## Baixar dados em uma visualização como um arquivo CSV {#download-data}
 
@@ -77,7 +77,8 @@ Para fazer isso:
 
 * No cabeçalho de qualquer tabela ou visualização, selecione **[!UICONTROL Baixar dados como CSV]** no menu de contexto. Isso baixa os dados exibidos na tabela ou na fonte de dados subjacente de uma visualização como CSV. 
 
-<!-- Only relevant as soon as CJA supports Map visualization 
+<!-- 
+Only relevant as soon as CJA supports Map visualization 
   >[!NOTE]
   >
   >  Note: the Map visualization does not support this option.
@@ -116,8 +117,8 @@ Os seguintes recursos de uma tabela de forma livre são aplicados ao arquivo bai
 
 À medida que o arquivo é baixado, você vê as seguintes notificações:
 
-* Um **[!UICONTROL _Nome de tabela _-_Dimension _.csv azul foi solicitado._x _% concluído]**&#x200B;indicando o progresso. Para cancelar o download a qualquer momento, selecione **[!UICONTROL Cancelar download]**. Selecione ![CrossSize100](/help/assets/icons/CrossSize100.svg) se desejar fechar a mensagem, o que não cancela o download.
-* Uma notificação de conclusão **[!UICONTROL _do nome da tabela _-_Dimension _.csv foi baixada]**&#x200B;assim que o download do arquivo foi concluído. O arquivo é baixado na pasta de downloads configurada para o seu navegador.
+* Um **[!UICONTROL _Nome de tabela _-_Dimension _.csv azul foi solicitado._x _% concluído]**indicando o progresso. Para cancelar o download a qualquer momento, selecione **[!UICONTROL Cancelar download]**. Selecione ![CrossSize100](/help/assets/icons/CrossSize100.svg) se desejar fechar a mensagem, o que não cancela o download.
+* Uma notificação de conclusão **[!UICONTROL _do nome da tabela _-_Dimension _.csv foi baixada]**assim que o download do arquivo foi concluído. O arquivo é baixado na pasta de downloads configurada para o seu navegador.
 
 Se solicitar mais de um download por vez, você receberá uma notificação de que cada download adicional será enfileirado até que o download anterior seja concluído.
 

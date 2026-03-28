@@ -5,7 +5,7 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: d35f8615-66f5-4823-b0b8-433852246dd2
-source-git-commit: 2a43c4b1d4154c6127b485c512009a46411da049
+source-git-commit: 50b82943d4c59f612240ffc8d83a8a08f09b8331
 workflow-type: tm+mt
 source-wordcount: '3290'
 ht-degree: 99%
@@ -262,7 +262,8 @@ Generic upgrade steps are also available.
    
    * View the data collected with your original Adobe Analytics implementation (either AppMeasurement, the Analytics Extension, or the Web SDK Extension) within Customer Journey Analytics. You can compare this data side-by-side with that of your new Web SDK implementation. 
    
-     You can keep the Analytics source connector running until you are familiar and comfortable with the differences. <!--elaborate on what those differences are? -->
+     You can keep the Analytics source connector running until you are familiar and comfortable with the differences. <!--elaborate on what those differences are? 
+-->
 
 <!--
 
