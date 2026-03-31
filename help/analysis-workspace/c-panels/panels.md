@@ -1,13 +1,13 @@
 ---
-description: Entenda os painéis e como usá-los no Analysis Workspace.
-title: Visão geral dos painéis
+description: Saiba como usar painéis no Analysis Workspace para organizar seus relatórios, filtrar ou analisar dados e definir o intervalo de dados.
+title: Visão Geral Dos Painéis No Analysis Workspace
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
-source-git-commit: 211dbd80b21f84ab616569c0d847dcc97f13661c
+source-git-commit: d89c9dd2ab42ada9d0af259c21a77f183384b680
 workflow-type: tm+mt
-source-wordcount: '2205'
-ht-degree: 99%
+source-wordcount: '2682'
+ht-degree: 43%
 
 ---
 
@@ -26,8 +26,8 @@ Os seguintes tipos de painel estão disponíveis no Analysis Workspace para o [!
 | [Experimentação](experimentation.md) | Compare diferentes variações de experiências de usuário, marketing ou mensagens para determinar a opção ideal para gerar um resultado específico. |
 | [Forma livre](freeform-panel.md) | Realize comparações e detalhamentos ilimitados e, em seguida, adicione visualizações para obter uma visão ampla dos dados. |
 | [Público-alvo médio a cada minuto de mídia](average-minute-audience-panel.md) | Analise o público-alvo médio por minuto de um conteúdo específico ou ao longo de um período personalizado. |
-| [Visualizadores simultâneos de mídia &#x200B;](media-concurrent-viewers.md) | Analise os visualizadores simultâneos ao longo do tempo, com detalhes sobre o pico de simultaneidade e a capacidade de criar um detalhamento e comparar. |
-| [Tempo gasto com a reprodução da mídia](/help/analysis-workspace/c-panels/media-playback-time-spent.md) | Analise o tempo de reprodução gasto para entender onde ocorrem os picos de simultaneidade ou as desistências. |
+| [Visualizadores simultâneos de mídia ](media-concurrent-viewers.md) | Analise os visualizadores simultâneos ao longo do tempo, com detalhes sobre o pico de simultaneidade e a capacidade de criar um detalhamento e comparar. |
+| [Tempo gasto com a reprodução da mídia](/help/analysis-workspace/c-panels/media-playback-time-spent.md) | Analise o tempo de reprodução gasto para entender onde ocorre o pico de simultaneidade ou onde ocorrem quedas. |
 | [Próximo item ou anterior](next-previous.md) | Mostra as páginas seguintes ou anteriores que as pessoas acessam. |
 | [Insights rápidos](quickinsight.md) | Crie rapidamente uma tabela de forma livre e uma visualização de acompanhamento para analisar e descobrir insights mais rapidamente. |
 
@@ -53,7 +53,7 @@ Para criar um painel:
 
   ![Pop-up mostrando possíveis visualizações](assets/blank-panel.png)
 
-  | Selecione. | Para criar um(a)... |
+  | Selecione... | Para criar um(a)... |
   |---|---|
   | ![Tabela](/help/assets/icons/Table.svg) | [Tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) |
   | ![Linha](/help/assets/icons/GraphTrend.svg) | [Linha](/help/analysis-workspace/visualizations/line.md) |
@@ -84,12 +84,12 @@ Você pode gerenciar um painel das seguintes maneiras:
 * Para recolher um painel, selecione ![ChevronDown](/help/assets/icons/ChevronDown.svg).
 * Para revelar um painel recolhido, selecione ![ChevronLeft](/help/assets/icons/ChevronLeft.svg).
 * Para excluir um painel, selecione ![CrossSize400](/help/assets/icons/CrossSize200.svg). Para desfazer a ação, selecione **[!UICONTROL Editar]** > **[!UICONTROL Desfazer]** (**[!UICONTROL *cmd+z *]**|**[!UICONTROL * ctrl+z *]**).
-* Para mover um painel, arraste e solte o painel sempre que uma opção ![Mover](/help/assets/icons/Move.svg) estiver visível (geralmente, quando você passa o mouse sobre o cabeçalho).
+* Para mover um painel, arraste e solte o painel sempre que um ![Move](/help/assets/icons/Move.svg) estiver visível (geralmente quando você passa o mouse sobre o cabeçalho).
 
 
 ## Visualização de dados
 
-Cada painel é associado a uma [visualização de dados](/help/data-views/data-views.md), identificada pelo ![Dados](/help/assets/icons/Data.svg) **[!UICONTROL *nome da visualização de dados *]** no menu suspenso no canto superior direito do painel.
+Cada painel está associado a uma [visualização de dados](/help/data-views/data-views.md). Você pode identificar o ![nome](/help/assets/icons/Data.svg) **[!UICONTROL *da exibição de dados *]**no menu suspenso na parte superior direita do painel.
 
 Ao criar um projeto em branco no espaço de trabalho, a visualização de dados padrão do painel inicial é a visualização de dados na qual você trabalhou pela última vez no Customer Journey Analytics.
 
@@ -124,19 +124,19 @@ Também é possível selecionar uma **[!UICONTROL predefinição]** no menu susp
 1. Ou selecione **[!UICONTROL Mostrar configurações avançadas]** para:
 
    * Especificar uma **[!UICONTROL Hora de início]** e **[!UICONTROL Hora de término]** diferentes das opções padrão `12:00 AM` (`0:00`) e `11:59 PM` (`23:59`). Os horários de término sempre incluem 59 segundos. No caso de um intervalo de datas que abrange muitos dias, a hora inicial se aplica ao primeiro dia do intervalo de datas, e a hora final se aplica ao último dia do intervalo de datas. Use **[!UICONTROL (Redefinir valores de tempo)]** para redefinir os valores padrão de hora inicial e final.
-   * **[!UICONTROL Tornar os componentes do intervalo de datas relativos ao calendário do painel]**. Se essa opção estiver desabilitada, os componentes de intervalo de datas usados no painel serão relativos à hora atual. Se habilitada, os componentes de intervalo de datas usados no painel serão relativos ao calendário do painel.
-   * **[!UICONTROL Usar datas contínuas]**. Se habilitada, os intervalos de datas predefinidos como **[!UICONTROL Últimos 7 dias completos]** são atualizados dinamicamente de acordo com a data e hora atuais. Se desabilitada, essas predefinições não são atualizadas depois de aplicadas.
+   * **[!UICONTROL Tornar os componentes do intervalo de datas relativos ao calendário do painel]**. Se desativado, os componentes do intervalo de datas usados no painel são relativos à hora atual. Se ativado, os componentes de intervalo de datas usados no painel são relativos ao calendário do painel.
+   * **[!UICONTROL Usar datas contínuas]**. Se habilitado, os intervalos de datas predefinidos, como **[!UICONTROL Últimos 7 dias completos]**, serão atualizados dinamicamente de acordo com a data e hora atuais. Se desabilitada, essas predefinições não são atualizadas depois de aplicadas.
 
      ![Datas contínuas](assets/calendar-rolling.png)
 
-     É possível selecionar o texto entre parênteses (por exemplo, **[!UICONTROL início fixo - acumulado diário]**) para estender o painel e especificar detalhes para **[!UICONTROL Início]** e **[!UICONTROL Fim]**.
+     É possível selecionar o texto entre parênteses (por exemplo, **[!UICONTROL início fixo - rolagem diária]**) para estender o painel e especificar detalhes para **[!UICONTROL Início]** e **[!UICONTROL Fim]**.
 
       1. Selecione **[!UICONTROL Início de]**, **[!UICONTROL Fim de]** ou **[!UICONTROL Dia fixo]**.
       1. Ao selecionar **[!UICONTROL Início de]** ou **[!UICONTROL Fim de]**, você pode criar uma expressão completa. Por exemplo: **[!UICONTROL Fim do]** **[!UICONTROL ano atual]** **[!UICONTROL mais]** `1` **[!UICONTROL dia]**. Escolha o valor apropriado para cada parte individual da expressão.
          * Selecione um valor para o atual. Por exemplo, **[!UICONTROL ano atual]**.
          * Selecione um valor para o cálculo adicional. Por exemplo, **[!UICONTROL mais]**.
-         * Ao definir um cálculo adicional, especifique um valor. Por exemplo, `1`.
-         * Depois de especificar o cálculo adicional, selecione o período a ser usado para o cálculo. Por exemplo, **[!UICONTROL dia]**.
+         * Após definir um cálculo adicional, especifique um valor. Por exemplo, `1`.
+         * Depois de especificar um cálculo adicional, selecione o período a ser usado para o cálculo. Por exemplo, **[!UICONTROL dia]**.
 
      Selecione **[!UICONTROL Ocultar detalhes]** para ocultar os detalhes do cálculo de datas contínuas.
 
@@ -146,89 +146,145 @@ Selecione **[!UICONTROL Aplicar a todos os painéis]** para aplicar o intervalo 
 
 ## Área de arrastar e soltar {#dropzone}
 
-A área de destino do painel permite aplicar segmentos e segmentos suspensos a todas as tabelas e visualizações em um painel. É possível aplicar um ou mais segmentos a um painel.
+A área de destino do painel, chamada **[!UICONTROL _Soltar um componente para filtrar ou analisar os dados_]**, permite filtrar ou analisar os dados do painel. Os segmentos ou detalhamentos usados para filtrar ou detalhar os dados se aplicam a todas as tabelas e visualizações de forma livre no painel.
 
-### Segmentos
+Segmentos e detalhamentos permitem interagir com os dados de forma controlada. Por exemplo, você pode adicionar um menu suspenso de segmento para Tipos de dispositivo móvel para poder filtrar o painel selecionando Tablet, Celular ou Desktop.
 
-Arraste e solte os segmentos do painel à esquerda na área de destino do painel para começar a segmentá-lo. Repita esse processo para adicionar mais segmentos ao painel. Os segmentos aparecem lado a lado na parte superior do painel.
+Segmentos também podem ser usados para consolidar vários projetos em um só. Por exemplo, se você tiver versões diferentes do mesmo projeto com cada segmento de país diferente aplicado, será possível consolidar todas as versões em um único projeto e adicionar um menu suspenso de Segmento de país.
 
-![O painel esquerdo mostra as métricas disponíveis e a métrica Cliente de dispositivo móvel arrastada para a área de destino do painel.](assets/segment-filter.png)
+A ilustração abaixo mostra as diferentes variações de segmentos (rápidos) ou detalhamentos que resultam da adição de componentes à área de soltar.
 
-#### Segmentos rápidos
+![Área de soltar para um painel](assets/panel-drop-zone.png)
 
-Além dos segmentos, também é possível arrastar outros tipos de componentes diretamente para a zona de destino para criar segmentos rápidos, economizando o tempo e esforço de usar o [Construtor de segmentos](/help/components/segments/seg-builder.md). Segmentos criados dessa forma são definidos automaticamente como segmentos em nível de evento. Para modificar rapidamente essa definição, selecione ![Editar](/help/assets/icons/Edit.svg) ao lado do nome do segmento.
+### Adicionar ou substituir
+
+Para adicionar ou substituir segmentos ou detalhamentos (rápidos):
+
+1. Selecione um ou mais componentes no painel Componentes. Use &lt;b>![Select](/help/assets/icons/Select.svg) ou &lt;b>![Select](/help/assets/icons/Select.svg) para selecionar mais de um componente.
+1. Arraste a seleção para a área designada, identificada **[!UICONTROL _Solte um componente para filtrar ou analisar os dados_]** ❶, ou sobre um componente existente já colocado próximo à área designada.
+1. Você tem duas opções quando vê ![Adicionar](/help/assets/icons/Add.svg) **[!UICONTROL Adicionar (pressione &quot;shift&quot; para criar a lista suspensa)]** ou ![Alternar](/help/assets/icons/Switch.svg) **[!UICONTROL Substituir (pressione &quot;shift&quot; para adicionar à lista suspensa)]**:
+
+   ![Adicionar ou substituir na zona de destino](assets/add-or-replace-to-drop-zone.png)
+
+   * Solte a seleção para criar os seguintes componentes:
+      * [Segmentar](#segment) para qualquer componente de segmento que você soltar ❷.
+      * [Segmento rápido](#quick-segment) para quaisquer componentes que não sejam de segmentos (intervalos de datas, métricas, dimensões, itens de dimensão) nos quais você solta ❸.
+   * Solte a seleção **enquanto mantém pressionada** (shift) para criar os seguintes componentes:
+      * Segmento estático [menu suspenso](#drop-down-menu) com itens para filtrar para os segmentos selecionados que você solta ❹.
+      * Segmento estático [menu suspenso](#drop-down-menu) com itens para filtrar para os intervalos de datas selecionados que você solta ❺.
+      * Segmento estático [menu suspenso](#drop-down-menu) com itens para filtrar para as métricas selecionadas que você solta ❻.
+      * Segmento estático [menu suspenso](#drop-down-menu) ou detalhamento [menu suspenso](#drop-down-menu) com itens para filtrar ou detalhar para a dimensão selecionada *itens* que você solta ❼.
+      * Segmento dinâmico [menu suspenso](#drop-down-menu) ou detalhamento [menu suspenso](#drop-down-menu) com itens para filtrar ou detalhar para as dimensões selecionadas nas quais você solta ❽.
 
 
-Para obter mais informações, consulte [Segmentos rápidos](/help/components/segments/seg-quick.md).
+### Segmento
 
-![Segmentos ad hoc que são tornados públicos e soltos na área de destino](assets/adhoc-segment-filter.png)
+Qualquer componente de segmento solto é usado para segmentar o painel. Use segmentos para obter insights segmentados sobre os dados e as visualizações do seu painel.
 
-### Segmentos suspensos
+### Segmento rápido
+
+Qualquer componente que não seja de segmento (dimensão, item de dimensão, métrica, intervalo de datas) que é descartado define um [segmento rápido](#quick-segment) para segmentar o painel. Use qualquer componente sem segmento para criar um segmento rápido sem usar o [Construtor de segmentos](/help/components/segments/seg-builder.md). Um segmento criado dessa maneira é automaticamente definido como um segmento de nível de evento e rotulado como **[!UICONTROL Segmento rápido]** por padrão.
+
+Como alternativa, você pode usar ![FilterAdd](/help/assets/icons/FilterAdd.svg) para criar um segmento rápido.
+
+Consulte [Segmentos rápidos](/help/components/segments/seg-quick.md) para saber como criar e gerenciar segmentos rápidos.
+
+
+### Menu suspenso
+
+Um menu suspenso que é criado enquanto você mantém pressionada a opção:
+
+* contém uma lista de itens [estáticos](#static) ou [dinâmicos](#dynamic).
+* comporte-se para [filtrar um painel](#filter) ou [dividir um painel](#breakdown).
+
+
+#### Estático
+
+Menus suspensos estáticos são criados para a dimensão selecionada *itens*, métricas, segmentos e intervalos de datas. Os itens em um menu suspenso estático são baseados nos componentes selecionados que você solta e os itens não são alterados quando você adiciona ou substitui componentes.
+
+
+#### Dinâmico
+
+Os menus suspensos dinâmicos são criados somente quando você solta componentes de dimensões. Os menus suspensos dinâmicos são indicados com ![FilterRefresh](/help/assets/icons/FilterRefresh.svg) como parte do rótulo.
+
+Os itens disponíveis em um menu suspenso dinâmico são baseados em:
+
+* os dados resultantes dos itens selecionados em outros menus suspensos, segmentos e segmentos rápidos dentro da área de soltar do painel e
+* os dados disponíveis no intervalo de relatórios do painel.
+
+Por exemplo, você pode adicionar dois menus suspensos dinâmicos usando uma dimensão de países e uma dimensão de cidades. Quando você seleciona um país no menu suspenso **[!UICONTROL Países]**, o menu suspenso **[!UICONTROL Cidades]** se ajusta dinamicamente para mostrar apenas as cidades do país selecionado. Quando você tem menus suspensos estáticos adicionais, os itens selecionados nesses menus suspensos também afetam os itens disponíveis nos menus suspensos dinâmicos. Os itens selecionados nos menus suspensos dinâmicos não afetam os itens disponíveis nos menus suspensos estáticos.
+
+
+#### Filtrar um painel
+
+Para qualquer componente de métrica, segmento ou intervalo de datas em que você solta **enquanto mantém**, um menu suspenso de segmentos é criado. Esse menu suspenso permite filtrar o painel com base nos itens disponíveis para o componente solto.
+
+Para qualquer componente de *dimensão* que você solta **enquanto mantém**, um menu suspenso de segmentos é criado. Esse menu suspenso permite filtrar o painel com base nos itens disponíveis para os itens de dimensão ignorados (menu suspenso de segmentos [static](#static)) ou componente de dimensão (menu suspenso de segmentos [dynamic](#dynamic)). Para configurar o menu suspenso explicitamente para filtrar usando segmentos:
+
+* Selecione ![Detalhamento](/help/assets/icons/Breakdown.svg) e ![Filtro](/help/assets/icons/Filter.svg) no menu de contexto do componente ❾.
+
+
+#### Detalhar um painel
+
+Para qualquer componente de *dimensão* que você solta **enquanto mantém**, um menu suspenso de segmentos é criado. Em vez disso, você pode configurar o menu suspenso para detalhar. Para configurar explicitamente o menu suspenso para detalhar usando detalhamentos:
+
+* Selecione ![Filtro](/help/assets/icons/Filter.svg) e selecione o ![Detalhamento](/help/assets/icons/Breakdown.svg) no menu de contexto do componente ❾.
+
+>[!IMPORTANT]
+>
+>Os detalhamentos só estão disponíveis para dimensões e itens de dimensão, não para segmentos, intervalos de datas ou métricas.
+>
+
+
+
+#### Segmentos versus detalhamentos
+
+Considere detalhar um painel em vez de filtrar um painel (usando segmentos) nos seguintes cenários:
+
+* Se você estiver usando métricas habilitadas para atribuição no seu painel, os segmentos geralmente limpam suas métricas habilitadas para atribuição. Os detalhamentos são aplicados em um ponto diferente na query executada para recuperar os dados do painel. Como resultado, os detalhamentos não limpam essas métricas habilitadas para atributos.
+
+  Como exemplo, veja a diferença entre a métrica **[!UICONTROL Receita Online]** baseada em atributo ao usar o detalhamento **[!UICONTROL Luma: Categoria do Produto]** ![Filtro](/help/assets/icons/Filter.svg) **[!UICONTROL Mulheres]** versus **[!UICONTROL Luma: Categoria do Produto]** ![Detalhamento](/help/assets/icons/Breakdown.svg) **[!UICONTROL Mulheres]**.
+
+  ![Métricas baseadas em atributos: filtro versus detalhamento](assets/attribute-filter-breakdown.png)
+
+* Se você estiver usando uma dimensão de nível de subevento em um menu suspenso de detalhamento, os detalhamentos serão executados nesse nível de subevento. Em vez disso, os segmentos em um menu suspenso de segmentos são executados no nível do evento.
+
+  Como exemplo, veja a diferença entre a métrica **[!UICONTROL Receita Online]** ao usar o detalhamento **[!UICONTROL Luma: Subcategoria do Produto]** ![Filtro](/help/assets/icons/Filter.svg) **[!UICONTROL Tops]** versus **[!UICONTROL Luma: Subcategoria do Produto]** ![Detalhamento](/help/assets/icons/Breakdown.svg) **[!UICONTROL Tops]**. O detalhamento executa a consulta explicitamente no nível do subevento, enquanto o segmento executa a consulta no nível do evento.
+
+  ![Métricas baseadas em subeventos: filtragem versus detalhamento](assets/sub-event-filter-breakdown.png)
+
+### Gerenciar
+
+Você pode gerenciar os componentes na área de lançamento da seguinte maneira:
+
+| O que fazer na área de soltar do painel... | Como fazer... |
+|---|---|
+| Para remover um segmento ou segmento rápido. | Selecione ![CrossSize300](/help/assets/icons/CrossSize300.svg) dentro do componente. |
+| Para remover um item selecionado de um menu suspenso. | Selecione ![CrossSize100](/help/assets/icons/CrossSize100.svg) dentro do item. |
+| Para remover todos os itens selecionados de um menu suspenso. | Selecione ![CrossSize200](/help/assets/icons/CrossSize200.svg) no menu suspenso. |
+| Para editar o rótulo de qualquer componente. | Passe o mouse sobre o rótulo do componente e selecione ![Editar](/help/assets/icons/Edit.svg). |
+| Para excluir o rótulo de qualquer componente. | Passe o mouse sobre o rótulo do componente e selecione **[!UICONTROL Excluir rótulo]** no menu de contexto do componente. |
+| Para excluir o componente da área de lançamento. | Selecione **[!UICONTROL Excluir menu suspenso]** no menu de contexto do componente. |
+| Para obter informações sobre um segmento ou segmento rápido. | Passe o mouse dentro do componente e selecione ![Informações](/help/assets/icons/Info.svg) para abrir o Dicionário de Dados com informações sobre o componente. |
+| Para obter informações sobre o componente que define um menu suspenso. | Passe o mouse dentro do menu suspenso e selecione ![InfoOutline](/help/assets/icons/InfoOutline.svg) para abrir o Dicionário de Dados com informações sobre o componente. |
+| Para editar um segmento rápido. | Passe o mouse dentro do segmento rápido e selecione ![Editar](/help/assets/icons/Edit.svg). Consulte [Segmentos rápidos](/help/components/segments/seg-quick.md) para obter mais detalhes. |
+| Para exigir uma seleção para um menu suspenso. | Selecione **[!UICONTROL Exigir seleção]** no menu de contexto do componente. |
+| Para não permitir filtros em um menu suspenso. | Selecione **[!UICONTROL Não permitir filtro]** no menu de contexto do componente. |
+| Para redefinir todos os componentes e limpar todas as seleções dos menus suspensos. | Selecione **[!UICONTROL Redefinir tudo]**. |
+
+
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Segmentos suspensos](https://experienceleague.adobe.com/pt-br/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Using filters in Analysis Workspace](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters){target="_blank"} para ver um vídeo de demonstração.
 
 {{videoaa}}
 
 >[!ENDSHADEBOX]
 
-
-#### Segmentos suspensos estáticos
-
-Os segmentos suspensos estáticos permitem interagir com os dados de forma controlada. Por exemplo, é possível adicionar um segmento suspenso para Tipos de dispositivo móvel para segmentar o painel por Tablet, Celular ou Desktop.
-
-Segmentos suspensos estáticos também podem ser usados para consolidar vários projetos em um único. Por exemplo, se você tiver muitas versões do mesmo projeto com diferentes segmentos de País aplicados, é possível consolidar todas as versões em um único projeto e adicionar um segmento suspenso de País.
-
-![Segmentos suspensos estáticos mostrando o segmento “Direto” do canal de mercado destacado. &#x200B;](assets/dropdown-filter-intro.png)
-
-##### Criar segmentos suspensos estáticos
-
-* Para segmentos suspensos que usam itens de dimensão, selecione uma única dimensão no painel esquerdo e solte-a na área de destino do painel enquanto mantém pressionada a tecla ⇧ (*Shift*). Essa ação cria um segmento suspenso com todos os itens de dimensão que estão associados a essa dimensão.
-
-  Ou, se quiser que o segmento suspenso inclua apenas itens de dimensão específicos associados a uma dimensão, clique no ícone de seta para a direita ao lado da dimensão desejada no painel esquerdo. Essa ação expõe todos os itens de dimensão disponíveis. Selecione vários itens de dimensão desta lista usando ⇧+![Selecionar](/help/assets/icons/Select.svg) (*shift* + *selecionar*) ou ^+![Selecionar](/help/assets/icons/Select.svg) (*control* + *selecionar*), depois solte-os na área de destino do painel **enquanto mantém pressionada a tecla** ⇧. 
-
-* Para segmentos suspensos que usam um único tipo de componente (por exemplo, somente dimensões, somente segmentos ou somente métricas), selecione vários itens do mesmo tipo no painel esquerdo usando ⇧+![Selecionar](/help/assets/icons/Select.svg) ou ^+![Selecionar](/help/assets/icons/Select.svg). Em seguida, solte os itens na área de destino do painel **enquanto mantém pressionada a tecla** ⇧.
-
-  Um único segmento suspenso será criado com os componentes selecionados.
-
-* Para segmentos suspensos que usam uma mistura de tipos de componentes (como 2 métricas e 3 segmentos), selecione vários componentes usando ⇧+![Selecionar](/help/assets/icons/Select.svg) ou ^+![Selecionar](/help/assets/icons/Select.svg). Solte a seleção na área de destino do painel **enquanto mantém pressionada a tecla** ⇧. Nesse contexto, todos os tipos de componentes são tratados como segmentos suspensos separados. Por exemplo, se você incluir métricas e itens de dimensão na seleção, dois segmentos suspensos separados serão criados: um segmento suspenso que inclui itens de dimensão e outro que inclui métricas.
-
-Um segmento suspenso fornece as seguintes opções no menu de contexto:
-
-* **[!UICONTROL Excluir item suspenso]**: remove o segmento suspenso do painel.
-* **[!UICONTROL Excluir rótulo]**: remove o texto exibido acima de um segmento suspenso. Para modificar o rótulo, passe o mouse sobre ele e selecione ![Editar rótulo do segmento suspenso](/help/assets/icons/Edit.svg).
-* **[!UICONTROL Adicionar rótulo]**: ao adicionar um segmento suspenso a um projeto, um rótulo é definido automaticamente para o nome do componente. Se você excluir o rótulo, poderá adicioná-lo novamente com essa opção.
-* **[!UICONTROL Exigir seleção]**: torna obrigatória a definição de um segmento no painel.
-
-##### Usar segmentos suspensos estáticos
-
-É possível usar o menu suspenso de segmento de qualquer uma das seguintes maneiras para segmentar o painel:
-
-* Aplicar um único segmento ao painel selecionando o segmento na lista de segmentos suspensos.
-
-* Aplicar vários segmentos ao painel selecionando mais de um segmento na lista de segmentos suspensos. O painel é segmentado para incluir qualquer um dos segmentos selecionados.
-
-
-#### Segmentos suspensos dinâmicos
-
-Os segmentos suspensos dinâmicos permitem determinar os valores disponíveis com base nos dados dentro do intervalo de relatórios do painel e nos valores de outros segmentos suspensos. Por exemplo, você pode criar dois menus suspensos dinâmicos usando uma dimensão Países e uma dimensão Cidades. Ao selecionar um país no menu suspenso **[!UICONTROL Países]**, o menu suspenso **[!UICONTROL Cidades]** se ajusta dinamicamente para mostrar apenas cidades daquele país.
-
-Esse mesmo conceito se aplica a todas as dimensões: somente os itens de dimensão que aparecem dentro do intervalo de datas do painel e dos segmentos selecionados são visíveis. Os itens de dimensão selecionados em segmentos suspensos estáticos afetam os valores disponíveis nos segmentos suspensos dinâmicos. No entanto, o inverso não é verdadeiro: os itens de dimensão selecionados em segmentos suspensos dinâmicos não afetam os valores disponíveis nos segmentos suspensos estáticos.
-
-A seleção manual de itens de dimensão estará disponível se você antecipar que um determinado item de dimensão será coletado no futuro. Também é possível limpar um segmento suspenso dinâmico para que ele não contenha um valor, permitindo que outros segmentos suspensos dinâmicos contenham mais valores. Selecione **[!UICONTROL Redefinir tudo]** para limpar a seleção de todos os segmentos suspensos desse painel.
-
-Para criar um segmento suspenso dinâmico:
-
-* Arraste e solte uma única dimensão na área de destino do painel **enquanto mantém pressionada a tecla** ⇧.
-
-Observe que os segmentos suspensos dinâmicos não estão disponíveis para métricas, segmentos ou intervalos de datas.
-
-Um segmento suspenso dinâmico fornece as mesmas opções de menu de contexto que os segmentos suspensos estáticos.
-
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Segmentos suspensos dinâmicos](https://experienceleague.adobe.com/pt-br/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/tips-and-tricks/dynamic-drop-downs){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Filtros suspensos dinâmicos](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/tips-and-tricks/dynamic-drop-downs){target="_blank"} para ver um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 
