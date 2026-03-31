@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: f4115164-7263-40ad-9706-3b98d0bb7905
 role: Admin
-source-git-commit: 3524a7f62fa509c477e60d4d586ed2de52191b73
+source-git-commit: 1bba52c332f1594b0b07466b499e24b5c62726fd
 workflow-type: tm+mt
 source-wordcount: '2219'
 ht-degree: 81%
@@ -23,8 +23,8 @@ Confira abaixo algumas perguntas frequentes sobre a compilação:
 Você pode usar uma visualização de fluxo com a dimensão ID do conjunto de dados.
 
 1. Faça logon no [Customer Journey Analytics](https://analytics.adobe.com) e crie um projeto em branco do Workspace.
-2. Clique na guia **[!UICONTROL ** Visualizações **]** à esquerda e arraste uma visualização de **[!UICONTROL **&#x200B; Fluxo &#x200B;**]** até a tela à direita.
-3. Clique na guia **[!UICONTROL ** Componentes **]** à esquerda e arraste a dimensão **[!UICONTROL ** ID de conjunto de dados **]** até o local central rotulado como **[!UICONTROL **&#x200B; Dimensão ou item &#x200B;**]**.
+2. Clique na guia **[!UICONTROL ** Visualizações **]** à esquerda e arraste uma visualização de **[!UICONTROL ** Fluxo **]** até a tela à direita.
+3. Clique na guia **[!UICONTROL ** Componentes **]** à esquerda e arraste a dimensão **[!UICONTROL ** ID de conjunto de dados **]** até o local central rotulado como **[!UICONTROL ** Dimensão ou item **]**.
 4. Este relatório de fluxo é interativo. Para expandir os fluxos para páginas seguintes ou anteriores, selecione qualquer um dos valores. Use o menu de clique com o botão direito do mouse para expandir ou recolher colunas. Dimensões diferentes também podem ser usadas no mesmo relatório de fluxo.
 
 Se você quiser renomear itens de dimensão da ID de conjunto de dados, poderá usar um conjunto de dados de pesquisa.
@@ -42,7 +42,7 @@ A janela de pesquisa para rechaveamento depende da frequência com a qual você 
 +++ Quando o processo de repetição é executado exatamente?
 
 * A repetição **weekly** começa a cada **sábado** noite (fuso horário do cliente) e os dados são atualizados nos relatórios do Customer Journey Analytics até segunda-feira de manhã.
-* A repetição diária é executada por volta das 3:00 (fuso horário do cliente), de modo que os dados são atualizados nos relatórios do Customer Journey Analytics pela manhã.
+* A repetição **diária** é executada por volta de **3:00.** (fuso horário do cliente) e os dados são atualizados nos relatórios do Customer Journey Analytics pela manhã.
 
 >[!IMPORTANT]
 >
@@ -87,7 +87,7 @@ A compilação em tempo real está disponível aproximadamente uma semana depois
 
 +++ Qual é a diferença entre a análise entre dispositivos (um recurso do Analytics tradicional) e a análise entre canais?
 
-A [análise entre dispositivos](https://experienceleague.adobe.com/pt-br/docs/analytics/components/cda/overview) é um recurso específico do Adobe Analytics tradicional que permite compreender como as pessoas operam em diversos dispositivos. Ela oferece dois fluxos de trabalho para vincular dados do dispositivo: compilação em campo e gráfico do dispositivo.
+A [análise entre dispositivos](https://experienceleague.adobe.com/en/docs/analytics/components/cda/overview) é um recurso específico do Adobe Analytics tradicional que permite compreender como as pessoas operam em diversos dispositivos. Ela oferece dois fluxos de trabalho para vincular dados do dispositivo: compilação em campo e gráfico do dispositivo.
 
 A análise entre canais é um recurso específico do Customer Journey Analytics que permite entender como as pessoas operam em diversos dispositivos e canais. Ela compila a ID de pessoa de um conjunto de dados, permitindo que ele seja combinado perfeitamente com outros conjuntos de dados. Esse recurso funciona de forma semelhante à compilação baseada em campos da análise entre dispositivos, mas a implementação difere devido às distintas arquiteturas de dados entre o Analytics tradicional e o Customer Journey Analytics. Consulte [Compilação](overview.md) e o caso de uso da [análise entre canais](../use-cases/cross-channel/cross-channel.md) para obter mais informações.
 
@@ -217,11 +217,11 @@ Certas métricas do Customer Journey Analytics são semelhantes às métricas do
 
 | **Dados compilados do Customer Journey Analytics** | **Dados não compilados do Customer Journey Analytics** | **Adobe Analytics** | **Analytics Ultimate com CDA** |
 | ----- | ----- | ----- | ----- |
-| **Pessoas** = Contagem de IDs de pessoa distintas, em que a ID resultante é escolhida como ID de pessoa. **Pessoas** pode ser superior ou inferior a **Visitantes únicos** no Adobe Analytics tradicional, dependendo da saída do processo de compilação. | **Pessoas** = contagem de IDs de pessoas diferentes com base na coluna selecionada como ID de pessoa. As **Pessoas** nos conjuntos de dados do conector de origem do Analytics são semelhantes a **Visitantes únicos** no Adobe Analytics tradicional, se `endUserIDs._experience.aaid.id` for escolhida como ID de pessoa no Customer Journey Analytics. | **Visitantes únicos** = Contagem de IDs de visitante distintas. **Visitantes únicos** pode não ser o mesmo que a contagem de **ECID** s. | Consulte [de pessoas](https://experienceleague.adobe.com/pt-br/docs/analytics/components/metrics/people). |
-| **Sessões**: definidas com base nas configurações de sessão na visualização de dados do Customer Journey Analytics. O processo de compilação pode combinar sessões individuais de vários dispositivos em uma única sessão. | **Sessões**: definidas com base nas configurações de sessão especificadas na visualização de dados do Customer Journey Analytics. | **Visitas**: consulte [Visitas](https://experienceleague.adobe.com/pt-br/docs/analytics/components/metrics/visits). | **Visitas**: definido com base nas configurações de sessão especificadas no [conjunto de relatórios virtuais do CDA](https://experienceleague.adobe.com/pt-br/docs/analytics/components/cda/setup). |
-| **Eventos** = contagem de linhas nos dados compilados no Customer Journey Analytics. Essa métrica é bem semelhante às **Ocorrências** do Adobe Analytics tradicional. No entanto, observe as perguntas frequentes acima relacionadas a linhas com uma ID persistente em branco. | **Eventos** = contagem de linhas nos dados não compilados no Customer Journey Analytics. Essa métrica é bem semelhante às **Ocorrências** do Adobe Analytics tradicional. No entanto, observe que, se algum evento tiver uma ID de pessoa em branco nos dados não compilados no data lake da Experience Platform, esses eventos não são incluídos no Customer Journey Analytics. | **Ocorrências**: consulte [Ocorrências](https://experienceleague.adobe.com/pt-br/docs/analytics/components/metrics/occurrences). | **Ocorrências**: consulte [Ocorrências](https://experienceleague.adobe.com/pt-br/docs/analytics/components/metrics/occurrences). |
+| **Pessoas** = Contagem de IDs de pessoa distintas, em que a ID resultante é escolhida como ID de pessoa. **Pessoas** pode ser superior ou inferior a **Visitantes únicos** no Adobe Analytics tradicional, dependendo da saída do processo de compilação. | **Pessoas** = contagem de IDs de pessoas diferentes com base na coluna selecionada como ID de pessoa. As **Pessoas** nos conjuntos de dados do conector de origem do Analytics são semelhantes a **Visitantes únicos** no Adobe Analytics tradicional, se `endUserIDs._experience.aaid.id` for escolhida como ID de pessoa no Customer Journey Analytics. | **Visitantes únicos** = Contagem de IDs de visitante distintas. **Visitantes únicos** pode não ser o mesmo que a contagem de **ECID** s. | Consulte [de pessoas](https://experienceleague.adobe.com/en/docs/analytics/components/metrics/people). |
+| **Sessões**: definidas com base nas configurações de sessão na visualização de dados do Customer Journey Analytics. O processo de compilação pode combinar sessões individuais de vários dispositivos em uma única sessão. | **Sessões**: definidas com base nas configurações de sessão especificadas na visualização de dados do Customer Journey Analytics. | **Visitas**: consulte [Visitas](https://experienceleague.adobe.com/en/docs/analytics/components/metrics/visits). | **Visitas**: definido com base nas configurações de sessão especificadas no [conjunto de relatórios virtuais do CDA](https://experienceleague.adobe.com/en/docs/analytics/components/cda/setup). |
+| **Eventos** = contagem de linhas nos dados compilados no Customer Journey Analytics. Essa métrica é bem semelhante às **Ocorrências** do Adobe Analytics tradicional. No entanto, observe as perguntas frequentes acima relacionadas a linhas com uma ID persistente em branco. | **Eventos** = contagem de linhas nos dados não compilados no Customer Journey Analytics. Essa métrica é bem semelhante às **Ocorrências** do Adobe Analytics tradicional. No entanto, observe que, se algum evento tiver uma ID de pessoa em branco nos dados não compilados no data lake da Experience Platform, esses eventos não são incluídos no Customer Journey Analytics. | **Ocorrências**: consulte [Ocorrências](https://experienceleague.adobe.com/en/docs/analytics/components/metrics/occurrences). | **Ocorrências**: consulte [Ocorrências](https://experienceleague.adobe.com/en/docs/analytics/components/metrics/occurrences). |
 
-Outras métricas pode ser semelhantes no Customer Journey Analytics e no Adobe Analytics. Por exemplo, a contagem total de 1 a 100 [eventos personalizados](https://experienceleague.adobe.com/pt-br/docs/analytics/components/metrics/custom-events) do Adobe Analytics é comparável entre o Adobe Analytics tradicional e o Customer Journey Analytics (sejam compilados ou não). [Diferenças de recursos](/help/getting-started/aa-vs-cja/cja-aa.md)), como a desduplicação de eventos entre o Customer Journey Analytics e o Adobe Analytics, podem causar uma discrepância entre os dois produtos.
+Outras métricas pode ser semelhantes no Customer Journey Analytics e no Adobe Analytics. Por exemplo, a contagem total de 1 a 100 [eventos personalizados](https://experienceleague.adobe.com/en/docs/analytics/components/metrics/custom-events) do Adobe Analytics é comparável entre o Adobe Analytics tradicional e o Customer Journey Analytics (sejam compilados ou não). [Diferenças de recursos](/help/getting-started/aa-vs-cja/cja-aa.md)), como a desduplicação de eventos entre o Customer Journey Analytics e o Adobe Analytics, podem causar uma discrepância entre os dois produtos.
 
 +++
 
@@ -281,7 +281,7 @@ curl -X PATCH \
 
 Qualquer uso da tag `unifiedProfile` na solicitação, enquanto você não tiver licença para usar o perfil de dados do cliente em tempo real, retornará um erro.
 
-Consulte [Criar um conjunto de dados habilitado para perfil e identidade](https://experienceleague.adobe.com/pt-br/docs/experience-platform/catalog/datasets/enable-for-profile#enable-the-dataset) para obter mais informações.
+Consulte [Criar um conjunto de dados habilitado para perfil e identidade](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/enable-for-profile#enable-the-dataset) para obter mais informações.
 
 +++ 
 

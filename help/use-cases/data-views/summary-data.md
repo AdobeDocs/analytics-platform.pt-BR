@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 exl-id: 80139806-618a-46ff-b2c4-32d7bb85a526
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: b54083d85c0e07605c567a8d44824884cdc18c4d
 workflow-type: tm+mt
-source-wordcount: '5021'
+source-wordcount: '5014'
 ht-degree: 15%
 
 ---
@@ -468,10 +468,10 @@ Para garantir que você possa relatar os dados corretos no Workspace, é necess�
          | Nome do componente | Conjunto de dados | Tipo de dados de esquema | Caminho do esquema |
          |---|---|---|---|
          | Grupo de publicidade (pesquisa) | Exemplo de conjunto de dados de pesquisa | String | *_tenant*.ad_group |
-         | Grupo de publicidade (resumo) | Exemplo de conjunto de dados de resumo | String | *_tenant*.ad_group |
+         | Grupo de publicidade | Exemplo de conjunto de dados de resumo | String | *_tenant*.ad_group |
          | ID da campanha | Exemplo de conjunto de dados de resumo | String | *_tenant*.campaign_id |
          | Nome da campanha (pesquisa) | Exemplo de conjunto de dados de pesquisa | String | *_tenant*.campaign_name |
-         | Nome da campanha (resumo) | Exemplo de conjunto de dados de resumo | String | *_tenant*.campaign_name |
+         | Nome da campanha | Exemplo de conjunto de dados de resumo | String | *_tenant*.campaign_name |
          | Rede | Exemplo de conjunto de dados de resumo | String | *_locatário*.rede |
          | Nome da página | Exemplo de conjunto de dados de evento | String | *_tenant*.page_name |
          | ID de pessoa | Exemplo de conjunto de dados de evento | String | *_tenant*.person_id |
@@ -554,8 +554,8 @@ Você vê uma tela vazia com um painel [!UICONTROL Forma livre], que consiste em
 1. Arraste **[!UICONTROL Código de Rastreamento (Evento)]** de **[!UICONTROL Dimensões]** e solte a dimensão na tabela de Forma livre vazia.
 1. Arraste **[!UICONTROL Pedidos]** de **[!UICONTROL Métricas]** e solte a métrica na coluna **[!UICONTROL Eventos]** para substituir essa coluna na tabela de Forma livre.
 1. Arraste **[!UICONTROL Receita]** de **[!UICONTROL Métricas]** e solte a métrica para adicionar como uma coluna adicional à tabela de Forma livre.
-1. Arraste **[!UICONTROL Impressões (Resumo)]** de **[!UICONTROL Métricas]** e solte a métrica para adicioná-la como uma coluna adicional à tabela de Forma livre.
-1. Arraste **[!UICONTROL Custo (Resumo)]** de **[!UICONTROL Métricas]** e solte a métrica para adicionar como uma coluna adicional à tabela de Forma livre.
+1. Arraste **[!UICONTROL Impressões]** de **[!UICONTROL Métricas]** e solte a métrica para adicioná-la como uma coluna adicional à tabela de Forma livre.
+1. Arraste **[!UICONTROL Custo]** de **[!UICONTROL Métricas]** e solte a métrica para adicioná-la como uma coluna adicional à tabela de Forma livre.
 1. Para salvar seu projeto, selecione **[!UICONTROL Projeto]** > **[!UICONTROL Salvar]** e forneça um nome para o seu projeto. Por exemplo, `Example Project Using Summary Data`.
 
 Você deseja usar o potencial de criar relatórios sobre dados de resumo e gerar relatórios sobre custo por impressão e ROAS (Return on Ad Gaste, retorno sobre o investimento em anúncios). Para relatar essas métricas, é necessário criar duas métricas calculadas.
@@ -565,13 +565,13 @@ Você deseja usar o potencial de criar relatórios sobre dados de resumo e gerar
    1. Especifique `Cost per Impression` para o **[!UICONTROL Nome]**.
    1. Selecione **[!UICONTROL Moeda]** para **[!UICONTROL Formato]**.
    1. Especifique `4` para **[!UICONTROL Casas decimais]**.
-   1. Use ![Evento](/help/assets/icons/Event.svg) **[!UICONTROL Custo (Resumo)]** **&#x200B;**&#x200B;**[!UICONTROL Impressões (Resumo)]** como **[!UICONTROL Definição]**.
+   1. Use ![Evento](/help/assets/icons/Event.svg) **[!UICONTROL Custo]** **** **[!UICONTROL Impressões]** como **[!UICONTROL Definição]**.
    1. Selecione **[!UICONTROL Salvar]**.
 1. Selecione ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add]** para adicionar outra métrica calculada nova.
    1. Especifique `Return on Ad Spend` para o **[!UICONTROL Nome]**.
    1. Selecione **[!UICONTROL Moeda]** para **[!UICONTROL Formato]**.
    1. Selecione `2` para **[!UICONTROL Casas decimais]**.
-   1. Usar Receita De ![Evento](/help/assets/icons/Event.svg) **[!UICONTROL De Uso (Último Contato | 30 Dias)]** **[!UICONTROL -]** ![Evento](/help/assets/icons/Event.svg) **[!UICONTROL Custo (Resumo)]** como **[!UICONTROL Definição]**.
+   1. Usar ![Evento](/help/assets/icons/Event.svg) **[!UICONTROL Receita (Último contato | 30 dias)]** **[!UICONTROL -]** ![Evento](/help/assets/icons/Event.svg) **[!UICONTROL Custo]** como **[!UICONTROL Definição]**.
    1. Selecione **[!UICONTROL Salvar]**.
 
 Adicione suas métricas calculadas ao relatório.
