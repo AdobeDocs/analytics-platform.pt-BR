@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Audiences
 role: Admin
 exl-id: 1e962f52-6b56-4671-afea-d58dae67e8a8
-source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
+source-git-commit: ac86664e0136563d904021c72347fb544cda4a6d
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '749'
 ht-degree: 3%
 
 ---
@@ -39,7 +39,7 @@ O diagrama a seguir e a tabela associada mostram uma representação de alto ní
 | 8 | Novas dimensões de público | Novas dimensões de público-alvo <!--and metrics?--> que representam os públicos-alvo da Experience Platform incluídos no conjunto de dados de perfil selecionado e estão disponíveis para relatórios no Analysis Workspace. Essas dimensões são criadas automaticamente. |
 | 9 | Visualizações de dados | As visualizações de dados selecionadas associadas à sua conexão. Essas são as visualizações de dados que você deseja usar ao analisar dados de público-alvo do Experience Platform no Analysis Workspace. Essas visualizações de dados são configuradas automaticamente com os dados de público-alvo do Experience Platform para relatórios. |
 
-## Configurar análise de público
+## Configurar análise de público-alvo
 
 Ao configurar a análise de público-alvo, você seleciona a sandbox e a política de mesclagem associadas aos públicos-alvo da Experience Platform que deseja analisar. O Customer Journey Analytics cria um novo conjunto de dados de pesquisa e, em seguida, adiciona automaticamente o conjunto de dados de pesquisa e o conjunto de dados do perfil à conexão escolhida.
 
@@ -71,13 +71,17 @@ Para obter mais informações, consulte [Analisar públicos-alvo da Experience P
 
 ## Requisitos de permissão e função da análise de público-alvo
 
-As seguintes funções e permissões do Customer Journey Analytics Experience Platform são necessárias para a análise de público-alvo:
+As seguintes funções e permissões do Customer Journey Analytics são necessárias para a análise de público-alvo:
 
 | Recurso | Requisitos de permissão ou função do Customer Journey Analytics | Exigências de permissão do Experience Platform |
 |---------|----------|----------|
 | [Criar configurações de análise de público-alvo](/help/connections/audience-analysis/audience-analysis-configure.md) | Administrador do sistema | <ul><li>Conjuntos de dados: permissões de leitura</li><li>Esquemas: Read, Write</li><li>Namespaces de identidade: Lidos</li></ul> |
 | [Exibir dimensões de análise de público-alvo na exibição de dados](/help/connections/audience-analysis/audience-analysis-configure.md#view-audience-dimensions-in-the-data-view) | Administrador de perfil de produto do perfil de produto ao qual a visualização de dados está atribuída <p>Para obter mais informações, consulte [Controle de acesso](/help/technotes/access-control.md).</p> | N/A |
 | Usar dimensões de análise de público-alvo no Analysis Workspace | Acesso a uma visualização de dados em que as dimensões de análise de público-alvo foram adicionadas | N/A |
+
+## Casos de uso da análise de público-alvo
+
+Por exemplo, casos de uso que destacam o valor fornecido pela Análise de público-alvo, consulte [Casos de uso de Análise de público-alvo](/help/connections/audience-analysis/audience-analysis-use-cases.md).
 
 ## Limites de análise de público-alvo
 
