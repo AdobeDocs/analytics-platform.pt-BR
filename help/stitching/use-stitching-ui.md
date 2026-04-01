@@ -1,13 +1,13 @@
 ---
 title: Ativar compilação
-description: Ative a identificação de identidade para conjuntos de dados de evento na Customer Journey Analytics. Saiba como configurar IDs persistentes, IDs de pessoa e janelas de repetição na interface do usuário de conexões para compilar dados.
+description: Ative a compilação para conjuntos de dados de evento no Customer Journey Analytics. Configure IDs persistentes, IDs de pessoa e janelas de repetição na interface de conexões.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
-source-git-commit: f9c2f9cef97e00eb491b815ab8e83820b2dfc032
+source-git-commit: 2cb7824aca6086a280ae5f523b547412d57a1e2b
 workflow-type: tm+mt
-source-wordcount: '1712'
+source-wordcount: '1717'
 ht-degree: 5%
 
 ---
@@ -22,15 +22,14 @@ Você habilita a compilação como parte das [configurações do conjunto de dad
 
 Você precisa verificar e atender aos pré-requisitos do método de compilação especificado: [compilação em campo](fbs.md#prerequisites) ou [compilação em gráfico](gbs.md#prerequisites).
 
-
 ## Verificações de comprovação
 
 Se você atender aos pré-requisitos, talvez queira executar algumas verificações de comprovação nos dados no conjunto de dados do evento antes de ativar a compilação de identidade:
 
-* Se você for usar campos de esquema XDM para ID persistente ou ID de pessoa, verifique se as identidades estão marcadas corretamente no esquema para o conjunto de dados do evento. [Consulte Visão geral do namespace de identidade](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/features/namespaces).
+* Se você for usar os campos [Esquema do Experience Data Model (XDM)](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/home) para ID persistente ou ID de pessoa, verifique se as identidades estão marcadas corretamente no esquema para o conjunto de dados do evento. [Consulte Visão geral do namespace de identidade](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/features/namespaces).
 * Verifique a cobertura de identidade para ID persistente e ID de pessoa:
 
-   * **ID Persistente**
+   * **[!UICONTROL ID Persistente]**
 
      Consulte 7 dias de dados nos quais o campo de ID persistente não é nulo e divida por uma consulta de 7 dias de dados para todos os eventos no conjunto de dados. Esse percentual deve estar acima de 95%.
 
@@ -53,11 +52,11 @@ Se você atender aos pré-requisitos, talvez queira executar algumas verificaç�
       * `{PERSISTENT_ID_FIELD}` é o campo para a ID persistente. Por exemplo: `identityMap.ecid[0]`.
       * `{DATASET_TABLE_NAME}` é o nome da tabela para o conjunto de dados do evento.
       * `{FORMAT_STRING}` é a cadeia de caracteres de formato do campo de carimbo de data/hora. Por exemplo: `MM/DD/YY HH12:MI AM`.
-      * `{START_DATE} `é a data de início. Por exemplo: `2024-01-01 00:00:00`.
+      * `{START_DATE}`é a data de início. Por exemplo: `2024-01-01 00:00:00`.
       * `{END_DATE}` é a data de término em formato padrão. Por exemplo: `2024-01-08 00:00:00`.
 
 
-   * **ID de pessoa**
+   * **[!UICONTROL ID de pessoa]**
       * Para a compilação baseada em gráficos, verifique se o gráfico de identidade contém fragmentos que vinculam valores de ID do namespace de ID persistente e do namespace de ID de pessoa escolhidos. Você pode executar um teste acessando o [Visualizador de gráficos de identidade da Experience Platform](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"} e consultando o gráfico por alguns valores de ID persistentes de amostra. Verifique se esses valores de ID persistente estão vinculados aos valores de ID de pessoa no gráfico.
       * Para a compilação em campo, consulte 7 dias de dados nos quais o campo de ID de pessoa não é nulo e divida por uma consulta de 7 dias de dados para todos os eventos no conjunto de dados. Idealmente, essa porcentagem deve ficar acima de 5%.
 
@@ -93,7 +92,7 @@ Você pode habilitar a identificação de identidade ao [adicionar](/help/connec
 >id="connection_changeto_identitygraph"
 >title="Alterar para gráfico de identidade"
 >abstract="Verifique se concluiu a configuração do gráfico de identidade antes de usá-lo para compilação."
->additional-url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/stitching/gbs" text="Compilação baseada em gráfico"
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/gbs" text="Compilação baseada em gráfico"
 
 >[!CONTEXTUALHELP]
 >id="connection_stitching_personid"
@@ -125,14 +124,14 @@ Você pode habilitar a identificação de identidade ao [adicionar](/help/connec
 >id="connection_stitchingmetrics_badids"
 >title="IDs inválidas"
 >abstract="IDs inválidas são valores de ID que afetam seriamente os dados de relatórios."
->additional-url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/technotes/badids" text="IDs inválidas"
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/badids" text="IDs inválidas"
 
 
 ### Configurações do conjunto de dados
 
-Para habilitar a compilação, na seção de **[!UICONTROL configurações de conjuntos de dados]** do **[!UICONTROL Caixa de diálogo Adicionar conjuntos de dados]** ou **[!UICONTROL Editar conjunto de dados]**:
+Para habilitar a compilação, na seção **[!UICONTROL Configurações de conjuntos de dados]** do **[!UICONTROL Caixa de diálogo Adicionar conjuntos de dados]** ou **[!UICONTROL Editar conjunto de dados]**.
 
-![Opções de identificação ao habilitar a identificação](assets/identity-stitching-ui.png)
+![Opções de identificação ao habilitar o recurso](assets/identity-stitching-ui.png)
 
 1. Selecione **[!UICONTROL Habilitar identificação de identidade]**.
 
@@ -142,14 +141,14 @@ Para habilitar a compilação, na seção de **[!UICONTROL configurações de co
 
 1. Selecione uma ID persistente no menu suspenso **[!UICONTROL ID persistente]**.
 
-   Se você selecionar **[!UICONTROL Mapa de identidade]** para a ID persistente, será necessário selecionar um namespace. Você tem duas opções:
+   Se você selecionar **[!UICONTROL Mapa de identidade]** para a ID persistente, selecione um namespace. Você tem duas opções:
 
    * Selecione **[!UICONTROL Usar namespace de identidade primário]** para usar o namespace de identidade primário.
    * Selecione um namespace no menu suspenso **[!UICONTROL Namespace]**.
 
 1. Selecione uma ID de pessoa no menu suspenso **[!UICONTROL ID de pessoa]**.
 
-   Se você selecionar **[!UICONTROL Mapa de identidade]** para a ID de pessoa, será necessário selecionar um namespace. Você tem duas opções:
+   Se você selecionar **[!UICONTROL Mapa de identidade]** para a ID de pessoa, selecione um namespace. Você tem duas opções:
 
    * Selecione **[!UICONTROL Usar namespace de identidade primário]** para usar o namespace de identidade primário.
    * Selecione um namespace no menu suspenso **[!UICONTROL Namespace]**.
@@ -175,9 +174,14 @@ Para habilitar a compilação, na seção de **[!UICONTROL configurações de co
 
 Além da interface padrão de **[!UICONTROL visualização de conjuntos de dados]**, ao [adicionar](/help/connections/create-connection.md#add-datasets) ou [editar](/help/connections/create-connection.md#edit-a-dataset) conjuntos de dados em uma conexão baseada em pessoa, dois painéis de informações adicionais estão disponíveis.
 
-![Opções de identificação ao habilitar a identificação](assets/identity-stitching-ui-preview.png)
+![Opções de identificação ao habilitar o recurso](assets/identity-stitching-ui-preview.png)
 
 #### Compilação de métricas
+
+>[!AVAILABILITY]
+>
+>As métricas de compilação não estão disponíveis para compilação baseada em gráfico.
+>
 
 **[!UICONTROL As métricas de compilação]** são calculadas usando um conjunto de amostras de dados com carimbos de data/hora de eventos dos últimos 7 dias. Este conjunto de amostras de dados geralmente difere dos dados de amostra usados na tabela **[!UICONTROL Preview]**. As métricas de compilação fornecem detalhes para:
 
@@ -191,8 +195,12 @@ Além da interface padrão de **[!UICONTROL visualização de conjuntos de dados
 
   A cobertura de ID persistente é mostrada como uma porcentagem e comparada com o mínimo recomendado em um desenvolvimento estável ou em uma configuração de produção.
 
-
 #### IDs inválidas
+
+>[!AVAILABILITY]
+>
+>IDs inválidas não estão disponíveis para compilação baseada em gráfico.
+>
 
 >[!INFO]
 >
@@ -223,7 +231,7 @@ Depois de salvar uma conexão, o processo de compilação para conjuntos de dado
 
 >[!CAUTION]
 >
->Para conjuntos de dados habilitados para compilação na interface de Conexões, o status de preenchimento retroativo é imediata e incorretamente relatado como ![Status verde](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _preenchimentos retroativos concluídos]**&#x200B;para o número de preenchimentos retroativos concluídos. Use outras maneiras de verificar se os dados do conjunto de dados compilado são preenchidos retroativamente.
+>Para conjuntos de dados habilitados para compilação na interface de Conexões, o status de preenchimento retroativo é imediata e incorretamente relatado como ![Status verde](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _preenchimentos retroativos concluídos]**para o número de preenchimentos retroativos concluídos. Use outras maneiras de verificar se os dados do conjunto de dados compilado são preenchidos retroativamente.
 >
 
 
@@ -236,7 +244,7 @@ Além das [limitações de compilação em campo](/help/stitching/fbs.md#limitat
 
 ## Migração
 
-A compilação ativada na interface de Conexões pode coexistir sem problemas com a compilação baseada em solicitação.
+A compilação habilitada na interface de Conexões pode coexistir sem problemas com a compilação baseada em solicitação.
 
 Por exemplo, você tem conjuntos de dados compilados com base na Web no lago de dados como resultado de solicitações de compilação anteriores ou atuais. Você pode adicionar dados compilados de um conjunto de dados da central de atendimento usando a interface Conexões para combinar esses dados com os dados baseados na Web.
 
