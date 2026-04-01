@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
-source-git-commit: 2cb7824aca6086a280ae5f523b547412d57a1e2b
+source-git-commit: d42f0eb658f26d16bd21bb6ca47d5dd7c228e614
 workflow-type: tm+mt
 source-wordcount: '1717'
 ht-degree: 5%
@@ -92,7 +92,7 @@ Você pode habilitar a identificação de identidade ao [adicionar](/help/connec
 >id="connection_changeto_identitygraph"
 >title="Alterar para gráfico de identidade"
 >abstract="Verifique se concluiu a configuração do gráfico de identidade antes de usá-lo para compilação."
->additional-url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/stitching/gbs" text="Compilação baseada em gráfico"
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/gbs" text="Compilação baseada em gráfico"
 
 >[!CONTEXTUALHELP]
 >id="connection_stitching_personid"
@@ -124,7 +124,7 @@ Você pode habilitar a identificação de identidade ao [adicionar](/help/connec
 >id="connection_stitchingmetrics_badids"
 >title="IDs inválidas"
 >abstract="IDs inválidas são valores de ID que afetam seriamente os dados de relatórios."
->additional-url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/technotes/badids" text="IDs inválidas"
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/badids" text="IDs inválidas"
 
 
 ### Configurações do conjunto de dados
@@ -152,7 +152,6 @@ Para habilitar a compilação, na seção **[!UICONTROL Configurações de conju
 
    * Selecione **[!UICONTROL Usar namespace de identidade primário]** para usar o namespace de identidade primário.
    * Selecione um namespace no menu suspenso **[!UICONTROL Namespace]**.
-
 
    Se você selecionar **[!UICONTROL Gráfico de identidade]** para a ID de pessoa (para usar a [compilação baseada em gráfico](/help/stitching/gbs.md)), será necessário selecionar um namespace.
 
@@ -231,7 +230,7 @@ Depois de salvar uma conexão, o processo de compilação para conjuntos de dado
 
 >[!CAUTION]
 >
->Para conjuntos de dados habilitados para compilação na interface de Conexões, o status de preenchimento retroativo é imediata e incorretamente relatado como ![Status verde](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _preenchimentos retroativos concluídos]**&#x200B;para o número de preenchimentos retroativos concluídos. Use outras maneiras de verificar se os dados do conjunto de dados compilado são preenchidos retroativamente.
+>Para conjuntos de dados habilitados para compilação na interface de Conexões, o status de preenchimento retroativo é imediata e incorretamente relatado como ![Status verde](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _preenchimentos retroativos concluídos]**para o número de preenchimentos retroativos concluídos. Use outras maneiras de verificar se os dados do conjunto de dados compilado são preenchidos retroativamente.
 >
 
 
