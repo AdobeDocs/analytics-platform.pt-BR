@@ -26,7 +26,7 @@ Os seguintes tipos de painel estão disponíveis no Analysis Workspace para o [!
 | [Experimentação](experimentation.md) | Compare diferentes variações de experiências de usuário, marketing ou mensagens para determinar a opção ideal para gerar um resultado específico. |
 | [Forma livre](freeform-panel.md) | Realize comparações e detalhamentos ilimitados e, em seguida, adicione visualizações para obter uma visão ampla dos dados. |
 | [Público-alvo médio a cada minuto de mídia](average-minute-audience-panel.md) | Analise o público-alvo médio por minuto de um conteúdo específico ou ao longo de um período personalizado. |
-| [Visualizadores simultâneos de mídia ](media-concurrent-viewers.md) | Analise os visualizadores simultâneos ao longo do tempo, com detalhes sobre o pico de simultaneidade e a capacidade de criar um detalhamento e comparar. |
+| [Visualizadores simultâneos de mídia &#x200B;](media-concurrent-viewers.md) | Analise os visualizadores simultâneos ao longo do tempo, com detalhes sobre o pico de simultaneidade e a capacidade de criar um detalhamento e comparar. |
 | [Tempo gasto com a reprodução da mídia](/help/analysis-workspace/c-panels/media-playback-time-spent.md) | Analise o tempo de reprodução gasto para entender onde ocorre o pico de simultaneidade ou onde ocorrem quedas. |
 | [Próximo item ou anterior](next-previous.md) | Mostra as páginas seguintes ou anteriores que as pessoas acessam. |
 | [Insights rápidos](quickinsight.md) | Crie rapidamente uma tabela de forma livre e uma visualização de acompanhamento para analisar e descobrir insights mais rapidamente. |
@@ -89,7 +89,7 @@ Você pode gerenciar um painel das seguintes maneiras:
 
 ## Visualização de dados
 
-Cada painel está associado a uma [visualização de dados](/help/data-views/data-views.md). Você pode identificar o ![nome](/help/assets/icons/Data.svg) **[!UICONTROL *da exibição de dados *]**no menu suspenso na parte superior direita do painel.
+Cada painel está associado a uma [visualização de dados](/help/data-views/data-views.md). Você pode identificar o ![nome](/help/assets/icons/Data.svg) **[!UICONTROL *da exibição de dados *]**&#x200B;no menu suspenso na parte superior direita do painel.
 
 Ao criar um projeto em branco no espaço de trabalho, a visualização de dados padrão do painel inicial é a visualização de dados na qual você trabalhou pela última vez no Customer Journey Analytics.
 
