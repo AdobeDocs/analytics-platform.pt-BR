@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin, User
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
-source-git-commit: 58254cab90d907ad9675c30dfc1b835910214b3a
+source-git-commit: b85f6cd32fc5e097dc2ec5604fca18f50bfcf288
 workflow-type: tm+mt
-source-wordcount: '854'
-ht-degree: 96%
+source-wordcount: '861'
+ht-degree: 99%
 
 ---
 
@@ -41,7 +41,7 @@ O Content Analytics usa os seguintes termos principais:
 
 ## Como funciona
 
-O Content Analytics usa dados de visualização de imagens da web em conjuntos de dados de eventos na Experience Platform para [coletar dados de eventos de conteúdo](config/datacollection.md). Esses eventos de experiência de conteúdo exigem que os dados sejam coletados com o Experience Platform Edge Network (Web SDK, API do servidor). Os dados comportamentais podem ser coletados com o Web SDK ou com o Analytics Source Connector.
+O Content Analytics usa dados de visualização de imagens da web em conjuntos de dados de eventos na Experience Platform para [coletar dados de eventos de conteúdo](config/datacollection.md). Esses eventos de experiência de conteúdo exigem que os dados sejam coletados com a Experience Platform Edge Network (SDK da Web, API do servidor). Os dados comportamentais podem ser coletados com o SDK da Web ou com o conector de origem do Analytics.
 
 ![Content Analytics: como funciona](assets/aca-overview.gif)
 
@@ -63,11 +63,16 @@ O Content Analytics usa dados de visualização de imagens da web em conjuntos d
 >Se você adquiriu uma licença do complemento Privacy and Security Shield, saiba que (quaisquer dados gerados a partir de) experiências e ativos sujeitos ao Content Analytics não são cobertos pela rotulagem DULE ou pelas chaves gerenciadas pelo cliente. Além disso, o Content Analytics não é um serviço em conformidade com a lei HIPAA dos EUA.
 >
 
+>[!IMPORTANT]
+>
+>O Content Analytics é compatível com recursos somente em inglês.
+>
+
 
 >[!MORELIKETHIS]
 >
 >[Relatórios do Content Analytics](report/report.md)
->&#x200B;>[Configurar o Content Analytics](config/configuration.md)
->&#x200B;>[Cálculo de rejeições e taxa de rejeição no Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446?profile.language=pt#M454)
+>[Configurar o Content Analytics](config/configuration.md)
+>[Cálculo de rejeições e taxa de rejeição no Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/calculating-bounces-amp-bounce-rate-in-adobe-customer-journey/ba-p/706446#M454)
 >
 
