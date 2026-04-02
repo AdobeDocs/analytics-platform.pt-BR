@@ -4,10 +4,10 @@ description: Página de destino do Customer Journey Analytics.
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-source-git-commit: 3afb60a60b7fd1acb414244dffdb6a6493792f9c
+source-git-commit: efdb05a28813b774ae276de4d9c59656e78618ba
 workflow-type: tm+mt
-source-wordcount: '628'
-ht-degree: 79%
+source-wordcount: '701'
+ht-degree: 71%
 
 ---
 
@@ -22,6 +22,18 @@ O Customer Journey Analytics permite controlar como você conecta os dados onlin
 Dê uma olhada nos últimos aprimoramentos do produto e da documentação do Customer Journey Analytics. Para obter uma lista abrangente dos recursos, melhorias e correções, confira as [notas de versão](../release-notes/latest.md) detalhadas. Acesse a [página de atualizações da documentação](../release-notes/doc-changes.md) para ver as últimas atualizações.
 
 >[!BEGINTABS]
+
+>[!TAB Analisar painéis]
+
+Agora você pode detalhar um painel no Analysis Workspace. Há cenários em que um detalhamento de dados e visualizações em um painel é preferível, acima da aplicação de segmentos a um painel.
+
+[![imagem](assets/learn-more-button.svg)](/help/analysis-workspace/c-panels/panels.md#break-down-a-panel)
+
+>[!TAB Várias colunas de dimensão]
+
+É possível incluir até 5 colunas de dimensão em uma tabela de forma livre, permitindo visualizar vários itens de dimensão lado a lado. Cada linha de itens de dimensão se comporta como um único item de dimensão concatenado.
+
+[![imagem](assets/learn-more-button.svg)](/help/analysis-workspace/visualizations/freeform-table/freeform-table-multidimensions.md)
 
 >[!TAB Costura em Conexões]
 
@@ -142,7 +154,7 @@ Veja como o Customer Journey Analytics se compara ao Adobe Analytics. Além diss
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td><strong>Customer Journey Analytics</strong><br/>
-<a href="https://experienceleague.adobe.com/pt-br/docs/customer-journey-analytics-learn/tutorials/overview" target="_blank">Tutoriais</a> - <a href="https://helpx.adobe.com/br/legal/product-descriptions/customer-journey-analytics.html" target="_blank">Descrição de produto do Customer Journey Analytics</a> - <a href="https://helpx.adobe.com/br/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html" target="_blank">Descrição de produto do Adobe Analytics (complemento do Customer Journey Analytics)</a> - <a href="https://helpx.adobe.com/br/legal/product-descriptions/customer-journey-analytics-b2b.html" target="_blank">Descrição de produto do Customer Journey Analytics B2B Edition</a> - <a href="https://developer.adobe.com/cja-apis/docs/" target="_blank">APIs do Customer Journey Analytics</a> - <a href="/help/ai-assistant.md">Assistente de IA</a>
+<a href="https://experienceleague.adobe.com/pt-br/docs/customer-journey-analytics-learn/tutorials/overview" target="_blank">Tutoriais</a> - <a href="https://helpx.adobe.com/br/legal/product-descriptions/customer-journey-analytics.html" target="_blank">Descrição de produto do Customer Journey Analytics</a> - <a href="https://helpx.adobe.com/br/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html" target="_blank">Descrição de produto do Adobe Analytics (complemento do Customer Journey Analytics)</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics-b2b.html" target="_blank">Descrição de produto do Customer Journey Analytics B2B Edition</a> - <a href="https://developer.adobe.com/cja-apis/docs/" target="_blank">APIs do Customer Journey Analytics</a> - <a href="/help/ai-assistant.md">Assistente de IA</a>
 </td>
 <td><strong>Ingestão de dados</strong><br/><a href="/help/data-ingestion/data-ingestion.md">Visão geral</a> - <a href="/help/data-ingestion/analytics.md">Analytics</a> - <a href="/help/data-ingestion/aepwebsdk.md">SDK da Web</a> - <a href="/help/data-ingestion/aepmobilesdk.md">SDK móvel</a> - <a href="/help/data-ingestion/batch.md">Em lote</a> - <a href="/help/data-ingestion/streaming.md">Transmissão</a> - <a href="/help/data-ingestion/sources.md">Origens</a> - <a href="/help/data-ingestion/serverapi.md">API do servidor</a>
 </td>

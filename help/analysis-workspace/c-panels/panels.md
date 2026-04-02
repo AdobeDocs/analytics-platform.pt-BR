@@ -4,10 +4,10 @@ title: Visão Geral Dos Painéis No Analysis Workspace
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
-source-git-commit: d89c9dd2ab42ada9d0af259c21a77f183384b680
+source-git-commit: 11df56f5d757602403098d1c6b4330e935a438a2
 workflow-type: tm+mt
-source-wordcount: '2682'
-ht-degree: 43%
+source-wordcount: '2721'
+ht-degree: 42%
 
 ---
 
@@ -26,7 +26,7 @@ Os seguintes tipos de painel estão disponíveis no Analysis Workspace para o [!
 | [Experimentação](experimentation.md) | Compare diferentes variações de experiências de usuário, marketing ou mensagens para determinar a opção ideal para gerar um resultado específico. |
 | [Forma livre](freeform-panel.md) | Realize comparações e detalhamentos ilimitados e, em seguida, adicione visualizações para obter uma visão ampla dos dados. |
 | [Público-alvo médio a cada minuto de mídia](average-minute-audience-panel.md) | Analise o público-alvo médio por minuto de um conteúdo específico ou ao longo de um período personalizado. |
-| [Visualizadores simultâneos de mídia &#x200B;](media-concurrent-viewers.md) | Analise os visualizadores simultâneos ao longo do tempo, com detalhes sobre o pico de simultaneidade e a capacidade de criar um detalhamento e comparar. |
+| [Visualizadores simultâneos de mídia ](media-concurrent-viewers.md) | Analise os visualizadores simultâneos ao longo do tempo, com detalhes sobre o pico de simultaneidade e a capacidade de criar um detalhamento e comparar. |
 | [Tempo gasto com a reprodução da mídia](/help/analysis-workspace/c-panels/media-playback-time-spent.md) | Analise o tempo de reprodução gasto para entender onde ocorre o pico de simultaneidade ou onde ocorrem quedas. |
 | [Próximo item ou anterior](next-previous.md) | Mostra as páginas seguintes ou anteriores que as pessoas acessam. |
 | [Insights rápidos](quickinsight.md) | Crie rapidamente uma tabela de forma livre e uma visualização de acompanhamento para analisar e descobrir insights mais rapidamente. |
@@ -89,7 +89,7 @@ Você pode gerenciar um painel das seguintes maneiras:
 
 ## Visualização de dados
 
-Cada painel está associado a uma [visualização de dados](/help/data-views/data-views.md). Você pode identificar o ![nome](/help/assets/icons/Data.svg) **[!UICONTROL *da exibição de dados *]**&#x200B;no menu suspenso na parte superior direita do painel.
+Cada painel está associado a uma [visualização de dados](/help/data-views/data-views.md). Você pode identificar o ![nome](/help/assets/icons/Data.svg) **[!UICONTROL *da exibição de dados *]**no menu suspenso na parte superior direita do painel.
 
 Ao criar um projeto em branco no espaço de trabalho, a visualização de dados padrão do painel inicial é a visualização de dados na qual você trabalhou pela última vez no Customer Journey Analytics.
 
@@ -219,20 +219,20 @@ Por exemplo, você pode adicionar dois menus suspensos dinâmicos usando uma dim
 
 Para qualquer componente de métrica, segmento ou intervalo de datas em que você solta **enquanto mantém**, um menu suspenso de segmentos é criado. Esse menu suspenso permite filtrar o painel com base nos itens disponíveis para o componente solto.
 
-Para qualquer componente de *dimensão* que você solta **enquanto mantém**, um menu suspenso de segmentos é criado. Esse menu suspenso permite filtrar o painel com base nos itens disponíveis para os itens de dimensão ignorados (menu suspenso de segmentos [static](#static)) ou componente de dimensão (menu suspenso de segmentos [dynamic](#dynamic)). Para configurar o menu suspenso explicitamente para filtrar usando segmentos:
+Para qualquer componente de *dimensão* que você solta **enquanto mantém**, o menu suspenso do segmento é criado. Esse menu suspenso permite filtrar o painel com base nos itens disponíveis para os itens de dimensão ignorados (menu suspenso de segmentos [static](#static)) ou componente de dimensão (menu suspenso de segmentos [dynamic](#dynamic)). Para configurar o menu suspenso explicitamente para filtrar um painel usando segmentos:
 
-* Selecione ![Detalhamento](/help/assets/icons/Breakdown.svg) e ![Filtro](/help/assets/icons/Filter.svg) no menu de contexto do componente ❾.
+* Selecione ![Detalhamento](/help/assets/icons/Breakdown.svg) e selecione ![Filtro](/help/assets/icons/Filter.svg) **[!UICONTROL Segmento]** | **[!UICONTROL Filtra os dados no painel]** no menu de contexto do componente ❾.
 
 
 #### Detalhar um painel
 
-Para qualquer componente de *dimensão* que você solta **enquanto mantém**, um menu suspenso de segmentos é criado. Em vez disso, você pode configurar o menu suspenso para detalhar. Para configurar explicitamente o menu suspenso para detalhar usando detalhamentos:
+Para qualquer componente de *dimensão* que você solta **enquanto mantém**, um menu suspenso de segmentos é criado. Você pode configurar esse menu suspenso para dividir o painel com base nos itens disponíveis para os itens de dimensão ignorados (menu suspenso de detalhamento [estático](#static)) ou componente de dimensão (menu suspenso de detalhamento [dinâmico](#dynamic)). Para configurar explicitamente o menu suspenso para dividir um painel usando detalhamentos:
 
-* Selecione ![Filtro](/help/assets/icons/Filter.svg) e selecione o ![Detalhamento](/help/assets/icons/Breakdown.svg) no menu de contexto do componente ❾.
+* Selecione ![Filtro](/help/assets/icons/Filter.svg) e selecione ![Detalhamento](/help/assets/icons/Breakdown.svg) **[!UICONTROL Detalhamento]** | **[!UICONTROL Detalhe os dados no painel]** no menu de contexto do componente ❾.
 
 >[!IMPORTANT]
 >
->Os detalhamentos só estão disponíveis para dimensões e itens de dimensão, não para segmentos, intervalos de datas ou métricas.
+>O detalhamento só está disponível para dimensões e itens de dimensão que você usa na área designada.
 >
 
 
@@ -276,7 +276,7 @@ Você pode gerenciar os componentes na área de lançamento da seguinte maneira:
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Using filters in Analysis Workspace](https://experienceleague.adobe.com/pt-br/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Using filters in Analysis Workspace](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/using-panels/using-drop-down-filters){target="_blank"} para ver um vídeo de demonstração.
 
 {{videoaa}}
 
@@ -284,7 +284,7 @@ Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Using filte
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Filtros suspensos dinâmicos](https://experienceleague.adobe.com/pt-br/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/tips-and-tricks/dynamic-drop-downs){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Filtros suspensos dinâmicos](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/tips-and-tricks/dynamic-drop-downs){target="_blank"} para ver um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 
