@@ -1,6 +1,8 @@
 ---
 source-git-commit: 46e050f3acb874d9276e43092f12daa7c013b778
-translation-type: tm+mt
+workflow-type: tm+mt
+source-wordcount: '427'
+ht-degree: 100%
 
 ---
 # Código de conduta da Adobe
@@ -36,7 +38,7 @@ sem permissão explícita
 ## Nossas responsabilidades
 
 Os administradores de projeto são responsáveis por esclarecer os padrões de comportamento aceitáveis
-e devem tomar medidas corretivas apropriadas em
+e devem realizar a ação apropriada em
 resposta a quaisquer instâncias de comportamento inaceitável.
 
 Os administradores de projeto têm o direito e a responsabilidade de remover, editar ou rejeitar comentários, código, edições wiki, problemas e outras contribuições
@@ -46,8 +48,7 @@ ameaçadores, ofensivos ou perigosos.
 
 ## Escopo
 
-Este Código de conduta se aplica tanto em espaços de projetos quanto em espaços
-públicos, quando um indivíduo representa o projeto ou a comunidade. Os exemplos de
+Este Código de Conduta aplica-se tanto em espaços de projeto como em espaços públicos quando uma pessoa representa o projeto ou sua comunidade. Os exemplos de
 representação de um projeto ou comunidade incluem o uso de um endereço de email de projeto oficial, uma publicação por meio de uma conta oficial de mídia social ou a interação como um representante designado
 em um evento online ou offline. A representação de um projeto pode ser
 definida e esclarecida posteriormente por promovedores de projeto.
@@ -66,5 +67,5 @@ membros da liderança do projeto.
 
 ## Atribuição
 
-Este Código de conduta é adaptado do [Contributor Covenant](https://contributor-covenant.org), versão 1.4,
-disponível em [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/)
+Este Código de conduta é adaptado a partir do [Contrato do contribuinte](https://contributor-covenant.org), versão 1.4,
+disponível em [https://www.contributor-covenant.org/pt/version/1/4/code-of-conduct](https://www.contributor-covenant.org/pt/version/1/4/code-of-conduct)
