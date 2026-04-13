@@ -4,9 +4,10 @@ description: 'Contar valores distintos: caso de uso de dimensões para a extens�
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: 0962f64e9bc0fed89f52191bebe6dd0e14bde61d
+exl-id: 6a05bce1-542c-40d3-bbb0-4a8e561438c9
+source-git-commit: a0251638e66d5a2524418fc17f56dddc4e48accd
 workflow-type: tm+mt
-source-wordcount: '950'
+source-wordcount: '949'
 ht-degree: 0%
 
 ---
@@ -159,7 +160,7 @@ Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
 
 >[!TAB RStudio]
 
-1. Insira as seguintes instruções entre ` ` ``{r} ` e ` `` ` ` em uma nova parte.
+1. Insira o seguinte bloco de código em um novo bloco.
 
    ```R
    ## Count Distinct
@@ -177,4 +178,3 @@ Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
 >[!ENDTABS]
 
 +++
-

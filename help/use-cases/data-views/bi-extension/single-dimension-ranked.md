@@ -4,9 +4,10 @@ description: Caso de uso classificado de dimensão única para a extensão do BI
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: 0962f64e9bc0fed89f52191bebe6dd0e14bde61d
+exl-id: e66ad7c4-0d49-41fe-a9fc-661fd31e8c68
+source-git-commit: a0251638e66d5a2524418fc17f56dddc4e48accd
 workflow-type: tm+mt
-source-wordcount: '1324'
+source-wordcount: '1323'
 ht-degree: 1%
 
 ---
@@ -178,7 +179,7 @@ Um exemplo de painel **[!UICONTROL Dimension único classificado]** para o caso 
    1. Selecione a guia **[!UICONTROL Série]**.
    1. Role para baixo para ver **[!UICONTROL Compras]** e altere o **[!UICONTROL Tipo]** para **[!UICONTROL Linha]**.
    1. Selecione a guia **[!UICONTROL A]**.
-   1. Arraste **[!UICONTROL Compras]** do contêiner **[!UICONTROL Esquerda]** para onde lê **[!UICONTROL *Arraste a série para criar um novo eixo esquerdo *]**. Esta ação cria um contêiner&#x200B;**[!UICONTROL &#x200B; Left 2 &#x200B;]**.
+   1. Arraste **[!UICONTROL Compras]** do contêiner **[!UICONTROL Esquerda]** para onde lê **[!UICONTROL *Arraste a série para criar um novo eixo esquerdo *]**. Esta ação cria um contêiner**[!UICONTROL  Left 2 ]**.
       ![Configuração de visualização do Looker](../assets/uc5-looker-visualization.png)
    1. Selecione ![CrossSize75](/help/assets/icons/CrossSize75.svg) ao lado de **[!UICONTROL Edit]** para ocultar a caixa de diálogo pop-up
 
@@ -214,7 +215,7 @@ Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
 
 >[!TAB RStudio]
 
-1. Insira as seguintes instruções entre ` ` ``{r} ` e ` `` ` ` em uma nova parte.
+1. Insira o seguinte bloco de código em um novo bloco.
 
    ```R
    library(tidyr)
@@ -240,4 +241,3 @@ Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
 >[!ENDTABS]
 
 +++
-
