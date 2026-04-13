@@ -431,7 +431,7 @@ Arredondar sem um parâmetro *numérico* é igual a arredondar com um parâmetro
 | Argumento | Descrição |
 |---|---|
 | metric | A métrica que deseja arredondar. |
-| número | Quantos dígitos à direita do separador decimal devem retornar. (Se negativo, retorna zeros à esquerda do separador decimal). |
+| number | Quantos dígitos à direita do separador decimal devem retornar. (Se negativo, retorna zeros à esquerda do separador decimal). |
 
 **Caso de uso**: simplifique os resultados numéricos arredondando-os para um número especificado de casas decimais. Isso é útil para criar visualizações mais limpas ou facilitar a leitura das métricas calculadas nos relatórios.
 

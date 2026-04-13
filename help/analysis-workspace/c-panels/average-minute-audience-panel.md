@@ -128,7 +128,7 @@ Use as configurações de entrada descritas nesta seção para configurar o pain
 
    | Opção | Descrição |
    |---------|------------|
-   | **[!UICONTROL Configurações da tabela]** | A configuração padrão mostra os valores de cálculo na tabela, que mostra o numerador e o denominador do público-alvo médio por minuto como as colunas anteriores na tabela. Desmarcar essa opção remove essas duas colunas, deixando somente o público-alvo médio por minuto ao lado do período. |
+   | **[!UICONTROL Configurações da tabela]** | A configuração padrão exibe os valores de cálculo na tabela, que mostra o numerador e o denominador do público-alvo médio por minuto como as colunas anteriores na tabela. Desmarcar essa opção remove essas duas colunas, deixando somente o público-alvo médio por minuto ao lado do período. |
 
 1. Selecione [!UICONTROL **Criar**] para concluir a criação do painel Média de público-alvo por minuto de mídia.
 
@@ -187,6 +187,6 @@ O painel Média de público-alvo por minuto de mídia usa apenas a métrica de m
 >[!MORELIKETHIS]
 >
 > [Criar um painel](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
-> &#x200B;> [Painel de visualizadores simultâneos de mídia](media-concurrent-viewers.md)
-> &#x200B;> [Painel de tempo gasto com a reprodução da mídia](media-playback-time-spent.md)
+> [Painel de visualizadores simultâneos de mídia](media-concurrent-viewers.md)
+> [Painel de tempo gasto com a reprodução da mídia](media-playback-time-spent.md)
 >

@@ -168,7 +168,7 @@ Para adicionar componentes ausentes a um modelo:
 
          ![Página de visualização de modelos](assets/template-preview.png)
 
-1. Na seção **[!UICONTROL Componentes ausentes]**, aparece uma lista de componentes ausentes da visualização de dados. Selecione **[!UICONTROL Adicionar estes componentes à sua visualização de dados]**.
+1. Na seção **[!UICONTROL Componentes ausentes]**, é exibida uma lista de componentes ausentes da visualização de dados. Selecione **[!UICONTROL Adicionar estes componentes à sua visualização de dados]**.
 
    A página de configuração da visualização de dados é exibida em uma nova guia.
 
