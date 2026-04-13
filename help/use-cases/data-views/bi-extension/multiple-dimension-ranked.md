@@ -50,7 +50,7 @@ Um exemplo de painel **[!UICONTROL Vários Dimension Classificados]** para o cas
    1. Selecionar **[!UICONTROL soma de compras]**
 
 1. Para modificar o gráfico de barras vertical para uma Tabela, verifique se a tabela está selecionada e selecione **[!UICONTROL Matriz]** no painel **[!UICONTROL Visualizações]**.
-   * Arraste **[!UICONTROL product_name]** de **[!UICONTROL Colunas]** e solte o campo sob **[!UICONTROL product_categor]**y em **[!UICONTROL Linhas]** no painel **[!UICONTROL Visualização]**.
+   * Arraste **[!UICONTROL product_name]** de **[!UICONTROL Colunas]** e solte o campo sob **[!UICONTROL product_categor]**&#x200B;y em **[!UICONTROL Linhas]** no painel **[!UICONTROL Visualização]**.
 
 1. Para limitar o número de produtos exibidos na tabela, selecione **[!UICONTROL product_name is (All)]** no painel **[!UICONTROL Filtros]**.
 

@@ -212,8 +212,8 @@ GROUP BY 1
 1. Na seção **[!UICONTROL ‣ Cc Data View]** no painel esquerdo:
    1. Selecione **[!UICONTROL Nome do Produto]**.
    1. Selecione **[!UICONTROL Contagem]** abaixo de **[!UICONTROL MEDIDAS]** no painel esquerdo (na parte inferior).
-1. Selecione **** (**[!UICONTROL Decrescente, Ordem de classificação: 1]**) na coluna **[!UICONTROL Receita de compra]**.
-1. Selecione **** (**[!UICONTROL Decrescente, Ordem de classificação: 1]**) na coluna **[!UICONTROL Receita de compra]**.
+1. Selecione **&#x200B;**&#x200B;(**[!UICONTROL Decrescente, Ordem de classificação: 1]**) na coluna **[!UICONTROL Receita de compra]**.
+1. Selecione **&#x200B;**&#x200B;(**[!UICONTROL Decrescente, Ordem de classificação: 1]**) na coluna **[!UICONTROL Receita de compra]**.
 1. Selecione **[!UICONTROL Executar]**.
 1. Selecione **[!UICONTROL ‣ Visualização]**.
 
