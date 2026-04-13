@@ -4,9 +4,10 @@ description: Use valores de dimensão para segmentar caso de uso para a extensã
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: 0962f64e9bc0fed89f52191bebe6dd0e14bde61d
+exl-id: 8557b424-4a5e-4996-8e2f-cf1bcafe64c5
+source-git-commit: a0251638e66d5a2524418fc17f56dddc4e48accd
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '796'
 ht-degree: 0%
 
 ---
@@ -154,7 +155,7 @@ As Pesquisas de ![AlertRed](/help/assets/icons/AlertRed.svg) não mostram a list
 
 >[!TAB RStudio]
 
-1. Insira as seguintes instruções entre ` ` ``{r} ` e ` `` ` ` em uma nova parte. Certifique-se de usar uma categoria apropriada. Por exemplo, `Hunting`.
+1. Insira o seguinte bloco de código em um novo bloco. Certifique-se de usar uma categoria apropriada. Por exemplo, `Hunting`.
 
    ```R
    ## Dimension 1 Filtered by Dimension 2 value
@@ -173,4 +174,3 @@ As Pesquisas de ![AlertRed](/help/assets/icons/AlertRed.svg) não mostram a list
 >[!ENDTABS]
 
 +++
-

@@ -4,9 +4,10 @@ description: Limita o caso de uso para a extensão BI em várias ferramentas de 
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: 0962f64e9bc0fed89f52191bebe6dd0e14bde61d
+exl-id: 55666295-6161-4fbc-b326-231cb5780d4f
+source-git-commit: a0251638e66d5a2524418fc17f56dddc4e48accd
 workflow-type: tm+mt
-source-wordcount: '785'
+source-wordcount: '784'
 ht-degree: 0%
 
 ---
@@ -260,7 +261,7 @@ A consulta é executada pela extensão BI, conforme definido no Jupyter Notebook
 
 >[!TAB RStudio]
 
-1. Insira as seguintes instruções entre ` ` ``{r} ` e ` `` ` ` em uma nova parte.
+1. Insira o seguinte bloco de código em um novo bloco.
 
    ```R
    ## Dimension 1 Limited

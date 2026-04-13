@@ -4,9 +4,10 @@ description: Caso de uso de tendência diária para a extensão de BI em várias
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: 0962f64e9bc0fed89f52191bebe6dd0e14bde61d
+exl-id: 09810072-1be4-4c78-8c84-b33db1872dbc
+source-git-commit: a0251638e66d5a2524418fc17f56dddc4e48accd
 workflow-type: tm+mt
-source-wordcount: '808'
+source-wordcount: '807'
 ht-degree: 0%
 
 ---
@@ -152,7 +153,7 @@ Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
 
 >[!TAB RStudio]
 
-1. Insira as seguintes instruções entre ` ` ``{r} ` e ` `` ` ` em uma nova parte.
+1. Insira o seguinte bloco de código em um novo bloco.
 
    ```R
    ## Daily Events

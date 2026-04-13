@@ -4,9 +4,10 @@ description: Caso de uso de tendência mensal para a extensão BI em várias fer
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: 0962f64e9bc0fed89f52191bebe6dd0e14bde61d
+exl-id: 9be5180e-6926-431e-aa70-61cb98130ef6
+source-git-commit: a0251638e66d5a2524418fc17f56dddc4e48accd
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '799'
 ht-degree: 0%
 
 ---
@@ -154,7 +155,7 @@ Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
 
 >[!TAB RStudio]
 
-1. Insira as seguintes instruções entre ` ` ``{r} ` e ` `` ` ` em uma nova parte.
+1. Insira o seguinte bloco de código em um novo bloco.
 
    ```R
    ## Hourly Events

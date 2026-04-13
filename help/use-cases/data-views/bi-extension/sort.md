@@ -4,9 +4,10 @@ description: Classificar caso de uso para a extensão de BI em várias ferrament
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: 0962f64e9bc0fed89f52191bebe6dd0e14bde61d
+exl-id: bac873a8-9003-400d-9f52-fcf734c2f56b
+source-git-commit: a0251638e66d5a2524418fc17f56dddc4e48accd
 workflow-type: tm+mt
-source-wordcount: '734'
+source-wordcount: '733'
 ht-degree: 1%
 
 ---
@@ -245,7 +246,7 @@ A consulta é executada pela extensão BI, conforme definido no Jupyter Notebook
 
 >[!TAB RStudio]
 
-1. Insira as seguintes instruções entre ` ` ``{r} ` e ` `` ` ` em uma nova parte.
+1. Insira o seguinte bloco de código em um novo bloco.
 
    ```R
    ## Dimension 1 Sorted
