@@ -31,7 +31,7 @@ Depois de configurar a implementação do SDK da Web ou da API, você precisa ve
 
 1. Na interface da Experience Platform, selecione **[!UICONTROL Monitoramento]** no menu de navegação esquerdo.
 
-   O painel de Monitoramento é exibido. Esse painel permite exibir os status dos dados de entrada da ingestão em lote ou por transmissão.
+   O painel de Monitoramento é exibido. Esse painel permite exibir os status dos dados de entrada da ingestão em lote ou ingestão de transmissão.
 
    <!-- insert screenshot -->
 

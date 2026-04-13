@@ -52,7 +52,7 @@ No Customer Journey Analytics, navegue até **[!UICONTROL Ferramentas]** > **[!U
 
 O log de auditoria de hoje e ontem é mostrado por padrão.
 
-![Log de auditoria destacando hoje e ontem. &#x200B;](assets/audit_ui.png)
+![Log de auditoria destacando hoje e ontem. ](assets/audit_ui.png)
 
 Você pode selecionar quais colunas ficam visíveis ao acessar o seletor de colunas na parte superior direita.
 
@@ -60,7 +60,7 @@ Você pode selecionar quais colunas ficam visíveis ao acessar o seletor de colu
 
 Clique duas vezes no botão info (i) ao lado de uma descrição.
 
-![Log de auditoria destacando o botão de informações. &#x200B;](assets/info-button-audit.png)
+![Log de auditoria destacando o botão de informações. ](assets/info-button-audit.png)
 
 Os seguintes itens são mostrados:
 

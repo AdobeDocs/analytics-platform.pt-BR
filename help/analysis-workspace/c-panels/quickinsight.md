@@ -25,7 +25,7 @@ ht-degree: 90%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta o painel Insights rápidos no_ ![Customer Journey Analytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_.<br/>_Consulte o [painel Insights rápidos](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/panels/quickinsight) para a versão do_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
+_Este artigo documenta o painel Insights rápidos no_ ![Customer Journey Analytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_.<br/>_Consulte o [painel Insights rápidos](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/panels/quickinsight) para a versão do_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 
@@ -119,7 +119,7 @@ Outras dicas úteis aparecerão no [!UICONTROL Criador de insights rápidos] e a
 
 * Primeiro, é recomendado concluir o tutorial **[!UICONTROL Mais dicas]**. Esse tutorial é exibido 24 horas após você criar um projeto com pelo menos uma dimensão e uma métrica. Selecione ![HelpOutline](/help/assets/icons/HelpOutline.svg) ao lado do título do painel Insights rápidos e selecione **[!UICONTROL Mais dicas]** no pop-up.
 
-  ![A notificação do painel Insights rápidos aparece depois de selecionar o ícone de ajuda.](assets/qibuilder4.png)
+  ![A notificação do painel Insights rápidos é exibida depois de selecionar o ícone de ajuda.](assets/qibuilder4.png)
 
 * É possível analisar várias dimensões e métricas, combinar ou comparar segmentos e especificar um intervalo de datas:
 
