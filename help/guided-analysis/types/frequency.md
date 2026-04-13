@@ -25,7 +25,7 @@ ht-degree: 99%
 
 A Análise de ![Frequência](/help/assets/icons/Histogram.svg) **[!UICONTROL frequência]** agrupa os dados de eventos de acordo com a constância com que os eventos ocorrem no produto. O eixo vertical dessa análise contém compartimentos que representam a frequência do evento. O eixo horizontal mede o número de usuários ou sessões para cada compartimento.
 
->[!VIDEO](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/guided-analysis/frequency)
+>[!VIDEO](https://experienceleague.adobe.com/pt-br/docs/customer-journey-analytics-learn/tutorials/guided-analysis/frequency)
 
 ## Casos de uso
 

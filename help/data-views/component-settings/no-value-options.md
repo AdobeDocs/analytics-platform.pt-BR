@@ -48,6 +48,6 @@ Ao usar um valor numérico como uma dimensão, você pode
 
 >[!MORELIKETHIS]
 >
->[O manual completo para manipular &quot;Nenhum valor&quot; no Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/the-complete-playbook-for-handling-no-value-in-adobe-cja/ba-p/756696#M598).
+>[O manual completo para manipular &quot;Nenhum valor&quot; no Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/the-complete-playbook-for-handling-no-value-in-adobe-cja/ba-p/756696?profile.language=pt#M598).
 
 

@@ -178,7 +178,7 @@ O Adobe Experience Platform Agent Orchestrator permite acessar a funcionalidade 
 
 O Agent Orchestrator interpreta a solicitação, determina quais agentes especializados são necessários e os orquestra para fornecer a resposta correta. Ele monitora o contexto em interações multiturno para que seja possível desenvolver consultas anteriores naturalmente.
 
-Para obter mais informações, consulte [Adobe Experience Platform Agent Orchestrator](https://business.adobe.com/products/experience-platform/agent-orchestrator.html).
+Para obter mais informações, consulte [Adobe Experience Platform Agent Orchestrator](https://business.adobe.com/br/products/experience-platform/agent-orchestrator.html).
 
 ## Exemplo de prompts de visualização de dados
 
