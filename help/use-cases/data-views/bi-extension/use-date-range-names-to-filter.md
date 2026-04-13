@@ -4,7 +4,8 @@ description: Use nomes de intervalo de datas para filtrar o caso de uso da exten
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: 0962f64e9bc0fed89f52191bebe6dd0e14bde61d
+exl-id: a10818ec-a25c-4e4e-a551-14ff501750fa
+source-git-commit: 0299762a2c901852ba6b0940093809a116fa6b11
 workflow-type: tm+mt
 source-wordcount: '611'
 ht-degree: 1%
@@ -138,7 +139,7 @@ Você deve ver uma visualização e tabela semelhantes, como mostrado abaixo.
 
 >[!TAB RStudio]
 
-1. Insira as seguintes instruções entre ` ` ``{r} ` e ` `` ` ` em uma nova parte. Certifique-se de usar o nome do intervalo de datas apropriado. Por exemplo, `Last Year 2023`.
+1. Insira as seguintes instruções entre ` ```{r} ` e ` ``` ` em uma nova parte. Certifique-se de usar o nome do intervalo de datas apropriado. Por exemplo, `Last Year 2023`.
 
    ```R
    ## Monthly Events for Last Year
