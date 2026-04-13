@@ -1,8 +1,8 @@
 ---
 source-git-commit: b0be8b726c4fab1bf9bb5f9462be84f39bdf184a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5360'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 # Trechos
@@ -292,16 +292,16 @@ Use as informações a seguir para escolher a visualização que melhor atende �
 
 >[!INFO]
 >
->Na interface do Customer Journey Analytics, os conjuntos de dados **[!UICONTROL Relational]** podem ser rotulados como **[!UICONTROL baseados em modelo]**.
+>Na interface do Customer Journey Analytics, os conjuntos de dados **[!UICONTROL relacionais]** podem ser rotulados como **[!UICONTROL baseados em modelo]**.
 >
 
-## Janela de retrospectiva do feed de dados do CJA {#cja-df-lookback}
+## Janela de retrospectiva de feed de dados do CJA {#cja-df-lookback}
 
-Como o Customer Journey Analytics usa a atribuição de tempo de relatório para cada componente, ele não tem um conceito de persistência além de sua janela de pesquisa. Esta coluna de feed de dados do Analytics faz referência ao comportamento no nível do visitante, que se estende a todo o histórico do visitante. Quanto maior for a janela de lookback para esse componente no Customer Journey Analytics, mais próximo ele poderá corresponder à funcionalidade do Adobe Analytics.
+Como o Customer Journey Analytics usa a atribuição no momento do relatório para cada componente, ele não tem um conceito de persistência além de sua janela de retrospectiva. Esta coluna de feed de dados do Analytics faz referência ao comportamento no nível do visitante, que se estende a todo o histórico do visitante. Quanto maior for a janela de retrospectiva para esse componente no Customer Journey Analytics, mais próximo ele poderá corresponder à funcionalidade do Adobe Analytics.
 
-## Colunas de publicação do feed de dados do CJA {#cja-df-post}
+## Colunas posteriores de feed de dados do CJA {#cja-df-post}
 
-Esta coluna de feed de dados do Analytics contém uma versão pré-processada e uma versão pós-processada (um prefixo de `post_`). As colunas com um prefixo `post_` contêm o valor que é usado nos relatórios. A maioria das organizações só usa `post_` colunas quando elas estão disponíveis. A tabela a seguir compara as propriedades dessas colunas:
+Esta coluna de feed de dados do Analytics contém uma versão pré-processada e uma versão pós-processada (um prefixo `post_`). As colunas com um prefixo `post_` contêm o valor que é usado nos relatórios. A maioria das organizações só usa colunas `post_` quando elas estão disponíveis. A tabela a seguir compara as propriedades dessas colunas:
 
 | Valor da coluna pré-processada | Valor de coluna pós-processada |
 | --- | --- |
@@ -310,19 +310,19 @@ Esta coluna de feed de dados do Analytics contém uma versão pré-processada e 
 | Antes das regras VISTA | Depois das regras VISTA |
 | Nenhuma alocação aplicada | A alocação se aplica |
 
-Como o Customer Journey Analytics não tem um conceito de pré-processamento e pós-processamento, recriar ambas as colunas nos feeds de dados do CJA é difícil. Se desejar aproximações dessas colunas, você pode arrastar o mesmo campo XDM várias vezes para a coluna de dimensões para criar vários componentes com diferentes configurações de atribuição:
+Como o Customer Journey Analytics não tem um conceito de pré-processamento e pós-processamento, recriar ambas as colunas nos feeds de dados do CJA é difícil. Se desejar aproximações dessas colunas, você pode arrastar o mesmo campo XDM várias vezes para a coluna de dimensões e criar vários componentes com diferentes configurações de atribuição:
 
-* **Coluna pré-processada**: nenhuma atribuição
-* **Coluna pós-processada**: aplique as mesmas configurações de alocação e expiração que sua variável do Analytics nas configurações de exibição de dados. A maioria dos componentes usaria uma alocação de &quot;Último&quot; e uma expiração de &quot;Visita&quot;.
+* **Coluna pré-processada**: sem atribuição
+* **Coluna pós-processada**: aplique as mesmas configurações de alocação e expiração que sua variável do Analytics nas configurações de visualização de dados. A maioria dos componentes usaria uma alocação de &quot;Último&quot; e uma expiração de &quot;Visita&quot;.
 
-## Colunas de pesquisa do feed de dados do CJA {#cja-df-lookup}
+## Colunas de pesquisa de feed de dados do CJA {#cja-df-lookup}
 
-Essa coluna de feed de dados do Analytics usa uma tabela de pesquisa para identificar o valor desejado. No Customer Journey Analytics, o valor é fornecido diretamente sem tabelas de pesquisa. Certifique-se de que o workflow acomode o valor final em vez de um valor de pesquisa intermediário.
+Essa coluna de feed de dados do Analytics usa uma tabela de pesquisa para identificar o valor desejado. No Customer Journey Analytics, o valor é fornecido diretamente sem tabelas de pesquisa. Certifique-se de que o fluxo de trabalho acomode o valor final em vez de um valor de pesquisa intermediário.
 
-## Feed de dados do CJA não aplicável colunas {#cja-df-na}
+## Colunas não aplicáveis a feeds de dados do CJA {#cja-df-na}
 
-Essa coluna Feed de dados do Analytics contém dados que não podem ser traduzidos para um equivalente do Customer Journey Analytics devido a diferenças na arquitetura de dados.
+Essa coluna de feed de dados do Analytics contém dados que não podem ser traduzidos em dados equivalentes do Customer Journey Analytics devido a diferenças na arquitetura de dados.
 
-## Agente do usuário do feed de dados do CJA {#cja-df-ua}
+## Agente do usuário de feed de dados do CJA {#cja-df-ua}
 
-Não é possível coletar informações do agente do usuário e informações de pesquisa do dispositivo simultaneamente; o preenchimento dessas dimensões é mutuamente exclusivo. Você deve escolher se deseja coletar diretamente o agente do usuário ou as informações de pesquisa do dispositivo (com base no agente do usuário) ao [Configurar uma sequência de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/datastreams/configure#geolocation-device-lookup).
+Não é possível coletar as informações do agente do usuário e as informações de pesquisa do dispositivo simultaneamente. O preenchimento dessas dimensões é mutuamente exclusivo. É necessário escolher entre coletar diretamente as informações do agente do usuário ou as informações de pesquisa do dispositivo (com base no agente do usuário) ao [Configurar uma sequência de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/datastreams/configure#geolocation-device-lookup).
