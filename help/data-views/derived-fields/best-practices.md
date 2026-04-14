@@ -6,9 +6,9 @@ feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
 hide: true
-source-git-commit: afb577bb72f2528c15acbc30794c900ea62b51b6
+source-git-commit: e5dea7e234585bd28a00df95342879dcba5b932f
 workflow-type: tm+mt
-source-wordcount: '2655'
+source-wordcount: '2741'
 ht-degree: 1%
 
 ---
@@ -132,7 +132,7 @@ Esta seção discute o uso incorreto de campos derivados. Especialmente onde as 
 
 * Cortar / Minúsculas: use as configurações dos componentes [Substring](/help/data-views/component-settings/substring.md) e [Behavior](/help/data-views/component-settings/behavior.md), a menos que você precise de transformações combinadas de várias etapas.
 * Exclusão de valor: use [Incluir valores de exclusão](/help/data-views/component-settings/include-exclude-values.md) para métricas ou valores de dimensão no nível do componente de visualização de dados, não em um campo derivado.
-* Atribuição e persistência: Evite simular dimensões em um campo derivado com [Próximo ou Anterior](./derived-fields.md#next-or-previous) ou outra lógica sequencial. Use as configurações de [Atribuição](/help/data-views/component-settings/attribution.md) e [Persistência](/help/data-views/component-settings/persistence.md) da exibição de dados para dimensões.
+* Atribuição e persistência: use as configurações de [Persistência](/help/data-views/component-settings/persistence.md) da exibição de dados (**[!UICONTROL Modelo de alocação]** e **[!UICONTROL Expiração]**) para dimensões em vez de simulá-las em um campo derivado com [Próximo ou Anterior](./derived-fields.md#next-or-previous) ou outra lógica sequencial.
 * Classificação numérica: mantenha o campo derivado numérico e permita que a visualização de dados crie uma dimensão classificada na parte superior, em vez de rótulos de intervalo codificados em uma cadeia [Case When](./derived-fields.md#case-when).
 * Lógica condicional: converter a lógica simples de sinalizador 0 ou 1 em:
    * a métrica original com a lógica de filtro incluir ou excluir valores, conforme aplicada no Analysis Workspace.
@@ -161,7 +161,7 @@ O Customer Journey Analytics permite forçar campos numéricos a dimensões e ca
    * Defina o tipo de componente como **[!UICONTROL Métrica]** na exibição de dados.
    * Se o componente representar uma métrica de subconjunto (por exemplo, **[!UICONTROL Exibições de página de check-out]**), use uma métrica filtrada na exibição de dados, em vez de uma cadeia de caracteres derivada mais uma métrica calculada na parte superior.
 * Se a saída for um rótulo:
-   * Defina o tipo de componente como **[!UICONTROL Dimension]** e defina as configurações de [atribuição](/help/data-views/component-settings/attribution.md) e [persistência](/help/data-views/component-settings/persistence.md) adequadamente.
+   * Defina o tipo de componente como **[!UICONTROL Dimension]** e defina as configurações de [Persistência](/help/data-views/component-settings/persistence.md) (**[!UICONTROL Modelo de alocação]** e **[!UICONTROL Expiração]**) adequadamente.
 
 ## Armadilhas do canal de marketing e da lógica de campanha
 
@@ -284,12 +284,12 @@ Esta seção discute o uso excessivo de [funções Next ou Previous](./derived-f
 ### Diagnóstico de risco: qualidade dos dados, alta manutenção
 
 * Complexidade e fragilidade: é mais difícil raciocinar sobre a lógica sequencial pesada e ela pode ser quebrada se as regras de sessão ou a ordem forem alteradas.
-* Redundância com atribuição ou persistência: alguns casos de uso (por exemplo, atribuição de canal de último contato em uma sessão) são melhor cobertos pelas configurações de atribuição da visualização de dados.
+* Redundância com persistência de dimensão: alguns casos de uso (por exemplo, canal de Último contato em uma sessão) são melhor cobertos pelas configurações de [Persistência](/help/data-views/component-settings/persistence.md) da exibição de dados (**[!UICONTROL Modelo de alocação]**) na dimensão.
 
 ### Recomendações
 
-* Para padrões que se assemelham à atribuição padrão, use as configurações de [atribuição](/help/data-views/component-settings/attribution.md) e [persistência](/help/data-views/component-settings/persistence.md) na exibição de dados, em vez de simulá-las com [Próximo ou Anterior](./derived-fields.md#next-or-previous).
-* Reserve [Próximo ou Anterior](./derived-fields.md#next-or-previous) para caminhos avançados de várias etapas ou rótulos de funnel que a atribuição sozinha não pode atingir (por exemplo: concatenação de sequência de canal).
+* Para padrões que se assemelham à persistência padrão (por exemplo, carregar um valor adiante através de uma sessão ou pessoa), use as configurações de [Persistência](/help/data-views/component-settings/persistence.md) da dimensão (**[!UICONTROL Modelo de alocação]** e **[!UICONTROL Expiração]**) na exibição de dados em vez de simular esses padrões com [Próximo ou Anterior](./derived-fields.md#next-or-previous).
+* Reserve [Próximo ou Anterior](./derived-fields.md#next-or-previous) para caminhos avançados de várias etapas ou rótulos de funnel que a persistência de dimensão sozinha não pode atingir (por exemplo: concatenação de sequência de canal).
 
 ## Ignorando contexto de sessão e nível de pessoa
 
@@ -350,13 +350,15 @@ Verifique também a configuração da visualização de dados para cada componen
 ### Padrões
 
 * Uma dimensão derivada tem atribuição padrão (por exemplo: Último contato com expiração de sessão), mas o nome do campo derivado implica uma semântica diferente (por exemplo: `First Campaign of Visit`, `Original Source`).
+* Uma dimensão derivada tem configurações padrão de [Persistência](/help/data-views/component-settings/persistence.md) (por exemplo: **[!UICONTROL Alocação mais recente]** com expiração de **[!UICONTROL Sessão]**), mas o nome da dimensão derivada implica uma semântica diferente (por exemplo, `First Campaign of Visit` ou `Original Source`).
 
 
 ### Diagnóstico de risco: qualidade dos dados
 
-* Incompatibilidade semântica: o rótulo da dimensão sugere um comportamento de [atribuição](/help/data-views/component-settings/attribution.md) ou [expiração](/help/data-views/component-settings/persistence.md) diferente (por exemplo: primeiro contato ou origem original) do que está realmente configurado.
-* Essa incompatibilidade aumenta o risco de os analistas interpretarem incorretamente os relatórios ou compararem componentes que parecem semelhantes por nome, mas usam modelos de atribuição diferentes.
+* Incompatibilidade semântica: o rótulo da dimensão sugere um comportamento de alocação ou expiração diferente (por exemplo, alocação Original ou expiração no nível da Pessoa) do que está realmente configurado.
+* Essa incompatibilidade aumenta o risco de os analistas interpretarem incorretamente os relatórios ou compararem componentes que parecem semelhantes por nome, mas usam modelos de alocação diferentes.
 
 ### Recomendações
 
 * Ajuste o [modelo de alocação e a expiração](/help/data-views/component-settings/persistence.md) nessa dimensão para alinhar nome e comportamento. Por exemplo, uma dimensão de campo derivada chamada `Original Source` deve usar a atribuição de Primeiro contato com expiração definida como Pessoa.
+* Ajuste o **[!UICONTROL Modelo de alocação]** e a **[!UICONTROL Expiração]** nas configurações de [Persistência](/help/data-views/component-settings/persistence.md) da dimensão para alinhar o nome e o comportamento. Por exemplo, `Original Source` deve definir o **[!UICONTROL Modelo de alocação]** como **[!UICONTROL Original]** com **[!UICONTROL Expiração]** definido como **[!UICONTROL Pessoa]**.
