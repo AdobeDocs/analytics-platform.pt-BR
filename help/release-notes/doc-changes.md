@@ -4,9 +4,9 @@ description: Lista atualizações de conteúdo do conjunto de documentação do 
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: e1aab5822d650b6ae5ed335d85a09fe9ed46a2f0
+source-git-commit: a4287ab5b341f156d039b4bc35dc03482ba3f60c
 workflow-type: tm+mt
-source-wordcount: '5799'
+source-wordcount: '5819'
 ht-degree: 96%
 
 ---
@@ -19,6 +19,8 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 
 | Recurso | Descrição |
 |---|---|
+| **Abril de 2026** | |
+| Casos de uso da análise de coorte atualizados | Com base no feedback adicionado, os exemplos do Analytics Workspace para os casos de uso da análise de coorte. |
 | **Março de 2026** | |
 | Detalhar um painel | Documentação sobre a [área de lançamento de um painel](/help/analysis-workspace/c-panels/panels.md#drop-zone) reestruturada para oferecer suporte à nova funcionalidade [de detalhamento](/help/analysis-workspace/c-panels/panels.md#break-down-a-panel). |
 | Nota técnica sobre IDs inválidas (BAVIDs) | Nova [nota técnica sobre IDs inválidas](/help/technotes/badids.md). A nota técnica explica a definição de uma ID inválida, onde as IDs inválidas são usadas na interface do Customer Journey Analytics e como investigar os dados em sua conexão para IDs inválidas. |
