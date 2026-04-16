@@ -4,10 +4,10 @@ description: Lista atualizações de conteúdo do conjunto de documentação do 
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: a4287ab5b341f156d039b4bc35dc03482ba3f60c
+source-git-commit: 6ae1f8ccca5321b2ebab775cc12775c64377613e
 workflow-type: tm+mt
-source-wordcount: '5819'
-ht-degree: 96%
+source-wordcount: '5856'
+ht-degree: 95%
 
 ---
 
@@ -20,6 +20,7 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | Recurso | Descrição |
 |---|---|
 | **Abril de 2026** | |
+| Adição da documentação ausente para dois conjuntos de dados que podem ser incluídos ao integrar o Journey Optimizer | [Dois conjuntos de dados adicionais gerados pelo sistema e que não sejam de perfil](/help/integrations/ajo.md#high-throughput-add-on-datasets) são incluídos na conexão quando o complemento de mensagens transacionais de Alta Taxa de Transferência está habilitado para sua Organização IMS. |
 | Casos de uso da análise de coorte atualizados | Com base no feedback adicionado, os exemplos do Analytics Workspace para os casos de uso da análise de coorte. |
 | **Março de 2026** | |
 | Detalhar um painel | Documentação sobre a [área de lançamento de um painel](/help/analysis-workspace/c-panels/panels.md#drop-zone) reestruturada para oferecer suporte à nova funcionalidade [de detalhamento](/help/analysis-workspace/c-panels/panels.md#break-down-a-panel). |
