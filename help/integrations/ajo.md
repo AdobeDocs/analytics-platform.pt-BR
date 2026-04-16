@@ -64,7 +64,7 @@ Quando o complemento de mensagens transacionais de alta capacidade estiver ativa
 * **[!UICONTROL Widget de latência P95 de 7 dias consecutivos]**: mostra a latência P95 como um valor único, incluindo a alteração de porcentagem em relação à semana anterior.
 * **[!UICONTROL Widget de taxa de transferência P95 de 7 dias consecutivos]**: mostra a taxa de transferência P95 como um valor único, incluindo a alteração de porcentagem em relação à semana anterior.
 
-Para obter mais informações sobre esses conjuntos de dados e o complemento de mensagens transacionais de Alta Taxa de Transferência, consulte [Ativar modo de Alta Taxa de Transferência para campanhas acionadas por API](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/api-triggered-campaigns/api-triggered-high-throughput) na documentação do Adobe Journey Optimizer.
+Para obter mais informações sobre esses conjuntos de dados e o complemento de mensagens transacionais de Alta Taxa de Transferência, consulte [Ativar modo de Alta Taxa de Transferência para campanhas acionadas por API](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/campaigns/api-triggered-campaigns/api-triggered-high-throughput) na documentação do Adobe Journey Optimizer.
 
 ### Visualização de dados
 
