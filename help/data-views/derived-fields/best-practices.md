@@ -6,7 +6,7 @@ feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
 hide: true
-source-git-commit: 01e2c7668bf31d9a3ed1ee55d8692a3616f5de4d
+source-git-commit: ee6eb18fc2a720e61670c571847bacf836b0b039
 workflow-type: tm+mt
 source-wordcount: '2741'
 ht-degree: 1%
@@ -362,4 +362,3 @@ Verifique também a configuração da visualização de dados para cada componen
 
 * Ajuste o [modelo de alocação e a expiração](/help/data-views/component-settings/persistence.md) nessa dimensão para alinhar nome e comportamento. Por exemplo, uma dimensão de campo derivada chamada `Original Source` deve usar a atribuição de Primeiro contato com expiração definida como Pessoa.
 * Ajuste o **[!UICONTROL Modelo de alocação]** e a **[!UICONTROL Expiração]** nas configurações de [Persistência](/help/data-views/component-settings/persistence.md) da dimensão para alinhar o nome e o comportamento. Por exemplo, `Original Source` deve definir o **[!UICONTROL Modelo de alocação]** como **[!UICONTROL Original]** com **[!UICONTROL Expiração]** definido como **[!UICONTROL Pessoa]**.
-
