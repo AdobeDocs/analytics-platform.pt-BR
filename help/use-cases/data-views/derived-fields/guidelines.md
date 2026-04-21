@@ -6,7 +6,7 @@ feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
 hide: true
-source-git-commit: 0de768fa78e4c5be08e1534757570938c0182dd4
+source-git-commit: 68c9d38f4fe60a9b8e661309698ba0ec38e2ea9b
 workflow-type: tm+mt
 source-wordcount: '2764'
 ht-degree: 1%
@@ -16,13 +16,13 @@ ht-degree: 1%
 
 # Diretrizes de campos derivados
 
-Os [campos derivados](./derived-fields.md) da Customer Journey Analytics permitem transformar, classificar e enriquecer dados no momento da consulta sem modificar os conjuntos de dados de origem. Essa flexibilidade pode apresentar complexidade, problemas de desempenho e sobrecarga de manutenção se aplicada sem disciplina.
+Os [campos derivados](/help/data-views/derived-fields/derived-fields.md) da Customer Journey Analytics permitem transformar, classificar e enriquecer dados no momento da consulta sem modificar os conjuntos de dados de origem. Essa flexibilidade pode apresentar complexidade, problemas de desempenho e sobrecarga de manutenção se aplicada sem disciplina.
 
 Este artigo fornece diretrizes (práticas recomendadas, medidas de proteção e armadilhas comuns) para trabalhar com campos derivados. O público-alvo desejado são arquitetos de dados, administradores de produtos e analistas que precisam:
 
 * **Otimizar desempenho**: identifique padrões que retardam a execução de consultas ou atinjam limites do sistema, para selecionar a ferramenta certa para o trabalho:
 
-   * [Campos derivados](./derived-fields.md)
+   * [Campos derivados](/help/data-views/derived-fields/derived-fields.md)
    * [Configurações de visualização de dados](/help/data-views/component-settings/overview.md)
    * [Preparação de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/data-prep/home)
    * [Métricas calculadas](/help/components/calc-metrics/calc-metr-overview.md)
@@ -62,7 +62,7 @@ Esta seção discute os segmentos padrão de visualizações de dados que fazem 
 **Padrões**
 
 * Os dados visualizam segmentos padrão que fazem referência a um campo derivado criado em uma dimensão de alta cardinalidade (aproximadamente um milhão de valores distintos). Por exemplo: URL de página inteira.
-* Operações simples como [Letras minúsculas](./derived-fields.md#lowercase), [Aparar](./derived-fields.md#trim) ou [Letras maiúsculas e minúsculas quando](./derived-fields.md#case-when) verificações na URL da página geralmente são mais caras do que a mesma lógica em campos de baixa cardinalidade.
+* Operações simples como [Letras minúsculas](/help/data-views/derived-fields/derived-fields.md#lowercase), [Aparar](/help/data-views/derived-fields/derived-fields.md#trim) ou [Letras maiúsculas e minúsculas quando](/help/data-views/derived-fields/derived-fields.md#case-when) verificações na URL da página geralmente são mais caras do que a mesma lógica em campos de baixa cardinalidade.
 
 **Diagnóstico de riscos: desempenho**
 
@@ -70,20 +70,20 @@ Esta seção discute os segmentos padrão de visualizações de dados que fazem 
 
 **Recomendações**
 
-* Evite referenciar URLs de página inteira ou componentes de alta cardinalidade de forma semelhante diretamente nos segmentos padrão de visualização de dados. Envie por push a lógica de URL pesada (complexa [Caso Quando](./derived-fields.md#case-when), [Substituição de Regex](./derived-fields.md#regex-replace), várias funções de cadeia de caracteres) upstream para [Preparo de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/data-prep/home) ou [conjuntos de dados de pesquisa](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md), de modo que as classificações resultantes sejam direcionadas para dimensões mais simples e de menor cardinalidade.
+* Evite referenciar URLs de página inteira ou componentes de alta cardinalidade de forma semelhante diretamente nos segmentos padrão de visualização de dados. Envie por push a lógica de URL pesada (complexa [Caso Quando](/help/data-views/derived-fields/derived-fields.md#case-when), [Substituição de Regex](/help/data-views/derived-fields/derived-fields.md#regex-replace), várias funções de cadeia de caracteres) upstream para [Preparo de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/data-prep/home) ou [conjuntos de dados de pesquisa](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md), de modo que as classificações resultantes sejam direcionadas para dimensões mais simples e de menor cardinalidade.
 * Prefira chaves de cardinalidade mais baixa, como nome de página normalizado, seção do site ou grupos de URL pré-classificados.
 * Auditoria periódica de segmentos padrão de visualizações de dados existentes e campos derivados para referências a dimensões de alta cardinalidade (URL da página, IDs da campanha, cadeias de caracteres de consulta brutas) e refatoração para chaves normalizadas ou agrupadas.
 
 ## Cadeias de regras Case When muito complexas
 
-Esta seção discute cadeias excessivamente complexas de regras [Case When](./derived-fields.md#case-when).
+Esta seção discute cadeias excessivamente complexas de regras [Case When](/help/data-views/derived-fields/derived-fields.md#case-when).
 
-O Customer Journey Analytics impõe [limites explícitos de função e operador](derived-fields.md#limitations) por campo derivado (por exemplo, número máximo de operadores, número máximo de funções por tipo). Funções e cadeias excessivamente complexas dentro das funções são mais difíceis de manter e mais propensas a erros.
+O Customer Journey Analytics impõe [limites explícitos de função e operador](/help/data-views/derived-fields/derived-fields.md#limitations) por campo derivado (por exemplo, número máximo de operadores, número máximo de funções por tipo). Funções e cadeias excessivamente complexas dentro das funções são mais difíceis de manter e mais propensas a erros.
 
 **Padrões**
 
-* Funções muito grandes [Case When](./derived-fields.md#case-when) com cadeias complexas **[!UICONTROL If]** e **[!UICONTROL Else If]**:
-   * Muitas condições (por exemplo: mais de 20 operadores) ou aninhamento profundo (mais de 3 ou 4 níveis de caso [aninhado Quando](./derived-fields.md#case-when) **[!UICONTROL Se]** e lógica **[!UICONTROL Else If]**).
+* Funções muito grandes [Case When](/help/data-views/derived-fields/derived-fields.md#case-when) com cadeias complexas **[!UICONTROL If]** e **[!UICONTROL Else If]**:
+   * Muitas condições (por exemplo: mais de 20 operadores) ou aninhamento profundo (mais de 3 ou 4 níveis de caso [aninhado Quando](/help/data-views/derived-fields/derived-fields.md#case-when) **[!UICONTROL Se]** e lógica **[!UICONTROL Else If]**).
    * Condições repetidas no mesmo campo com valores diferentes.
 * Correspondência constante de sequência repetida.
 
@@ -97,12 +97,12 @@ O Customer Journey Analytics impõe [limites explícitos de função e operador]
 **Diagnóstico de risco: desempenho, qualidade dos dados, alta manutenção**
 
 * Capacidade de manutenção e risco de erro: a lógica codificada como um bloco de regra monolítica é difícil de depurar e atualizar.
-* Possível desempenho e risco de limite: você pode atingir ou se aproximar de [limites de operador ou de função](./derived-fields.md#limitations), especialmente com padrões do tipo classificação.
+* Possível desempenho e risco de limite: você pode atingir ou se aproximar de [limites de operador ou de função](/help/data-views/derived-fields/derived-fields.md#limitations), especialmente com padrões do tipo classificação.
 
 **Recomendações**
 
 * Dividir em vários campos derivados. Por exemplo, separe a *normalização de campanha* (mapeando identificadores de campanha inconsistentes para um valor canônico) da segmentação de canais em vez de combinar tudo em uma regra gigante.
-* Use conjuntos de dados de pesquisa. Muitas condições **[!UICONTROL If Valor _valor_ Critério _critério_ Então definir _valor_ para valor]** são melhor implementadas como um [conjunto de dados de pesquisa](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md) combinado com a função [Pesquisa](./derived-fields.md#lookup) em vez de usar longas cadeias [Case When](./derived-fields.md#case-when).
+* Use conjuntos de dados de pesquisa. Muitas condições **[!UICONTROL If Valor _valor_ Critério _critério_ Então definir _valor_ para valor]** são melhor implementadas como um [conjunto de dados de pesquisa](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md) combinado com a função [Pesquisa](/help/data-views/derived-fields/derived-fields.md#lookup) em vez de usar longas cadeias [Case When](/help/data-views/derived-fields/derived-fields.md#case-when).
 * Use filtros do componente de visualização de dados. Se parte da lógica simplesmente filtrar valores incorretos, use [incluir excluir](/help/data-views/component-settings/include-exclude-values.md) no nível do componente de visualização de dados em vez de incorporar essa lógica em um campo derivado.
 
 ## Uso incorreto
@@ -126,7 +126,7 @@ Esta seção discute o uso incorreto de campos derivados. Especialmente onde as 
      +++
 
      Em vez disso, use a [segmentação de valores](/help/data-views/component-settings/value-bucketing.md) em uma dimensão na visualização de dados.
-   * Lógica de persistência ou atribuição codificada com [Próximo ou Anterior](./derived-fields.md#next-or-previous) ou lógica de sequência manual onde as configurações de [atribuição](/help/data-views/component-settings/attribution.md) e [expiração](/help/data-views/component-settings/persistence.md) da exibição de dados seriam suficientes.
+   * Lógica de persistência ou atribuição codificada com [Próximo ou Anterior](/help/data-views/derived-fields/derived-fields.md#next-or-previous) ou lógica de sequência manual onde as configurações de [atribuição](/help/data-views/component-settings/attribution.md) e [expiração](/help/data-views/component-settings/persistence.md) da exibição de dados seriam suficientes.
    * Uma métrica derivada que simplesmente conta uma métrica existente sob uma condição.
 
      +++ Exemplo
@@ -147,8 +147,8 @@ Esta seção discute o uso incorreto de campos derivados. Especialmente onde as 
 
 * Cortar / Minúsculas: use as configurações dos componentes [Substring](/help/data-views/component-settings/substring.md) e [Behavior](/help/data-views/component-settings/behavior.md), a menos que você precise de transformações combinadas de várias etapas.
 * Exclusão de valor: use [Incluir valores de exclusão](/help/data-views/component-settings/include-exclude-values.md) para métricas ou valores de dimensão no nível do componente de visualização de dados, não em um campo derivado.
-* Atribuição e persistência: use as configurações de [Persistência](/help/data-views/component-settings/persistence.md) da exibição de dados (**[!UICONTROL Modelo de alocação]** e **[!UICONTROL Expiração]**) para dimensões em vez de simulá-las em um campo derivado com [Próximo ou Anterior](./derived-fields.md#next-or-previous) ou outra lógica sequencial.
-* Classificação numérica: mantenha o campo derivado numérico e permita que a visualização de dados crie uma dimensão classificada na parte superior, em vez de rótulos de intervalo codificados em uma cadeia [Case When](./derived-fields.md#case-when).
+* Atribuição e persistência: use as configurações de [Persistência](/help/data-views/component-settings/persistence.md) da exibição de dados (**[!UICONTROL Modelo de alocação]** e **[!UICONTROL Expiração]**) para dimensões em vez de simulá-las em um campo derivado com [Próximo ou Anterior](/help/data-views/derived-fields/derived-fields.md#next-or-previous) ou outra lógica sequencial.
+* Classificação numérica: mantenha o campo derivado numérico e permita que a visualização de dados crie uma dimensão classificada na parte superior, em vez de rótulos de intervalo codificados em uma cadeia [Case When](/help/data-views/derived-fields/derived-fields.md#case-when).
 * Lógica condicional: converter a lógica simples de sinalizador 0 ou 1 em:
    * a métrica original com a lógica de filtro incluir ou excluir valores, conforme aplicada no Analysis Workspace.
    * uma métrica filtrada usando a configuração das configurações do componente visualização de dados.
@@ -184,7 +184,7 @@ Esta seção discute os erros do canal de marketing e da lógica da campanha.
 
 >[!NOTE]
 >
->Considere a simplificação de upstream: use o [Preparo de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/data-prep/home), os [conjuntos de dados de pesquisa](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md) ou as funções de campo derivadas, como o [Classify](./derived-fields.md#classify), para consolidar regras de canal de marketing semelhantes e reduzir o número de operadores na sua lógica do [Case When](./derived-fields.md#case-when). Além disso, limite o número de campos de alta cardinalidade referenciados na lógica de classificação de canal (por exemplo: muitas chaves de parâmetro de consulta distintas), pois esses campos aumentam a cardinalidade e o custo da consulta.
+>Considere a simplificação de upstream: use o [Preparo de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/data-prep/home), os [conjuntos de dados de pesquisa](/help/getting-started/cja-upgrade/cja-upgrade-dataset-lookup.md) ou as funções de campo derivadas, como o [Classify](/help/data-views/derived-fields/derived-fields.md#classify), para consolidar regras de canal de marketing semelhantes e reduzir o número de operadores na sua lógica do [Case When](/help/data-views/derived-fields/derived-fields.md#case-when). Além disso, limite o número de campos de alta cardinalidade referenciados na lógica de classificação de canal (por exemplo: muitas chaves de parâmetro de consulta distintas), pois esses campos aumentam a cardinalidade e o custo da consulta.
 
 **Padrões**
 
@@ -211,8 +211,8 @@ Esta seção discute o uso de chaves de string não normalizadas em pesquisas.
 
 **Padrões**
 
-* Uma função [Pesquisa](./derived-fields.md#lookup) sobre um evento ou campo de perfil que alimenta um conjunto de dados de pesquisa.
-* Nenhuma [Letra minúscula](./derived-fields.md#lowercase), [Aparar](./derived-fields.md#trim) ou [Substituição de Regex](./derived-fields.md#regex-replace) precedente padroniza a chave.
+* Uma função [Pesquisa](/help/data-views/derived-fields/derived-fields.md#lookup) sobre um evento ou campo de perfil que alimenta um conjunto de dados de pesquisa.
+* Nenhuma [Letra minúscula](/help/data-views/derived-fields/derived-fields.md#lowercase), [Aparar](/help/data-views/derived-fields/derived-fields.md#trim) ou [Substituição de Regex](/help/data-views/derived-fields/derived-fields.md#regex-replace) precedente padroniza a chave.
 * Candidatos comuns: URL, ID da campanha, email, ID da conta.
 
 **Diagnóstico de riscos: qualidade dos dados, alta manutenção**
@@ -221,7 +221,7 @@ Esta seção discute o uso de chaves de string não normalizadas em pesquisas.
 
 **Recomendações**
 
-* Adicione as funções [Minúsculas](./derived-fields.md#lowercase) e [Cortar](./derived-fields.md#trim) antes da função [Pesquisa](./derived-fields.md#lookup), a menos que haja um motivo documentado para preservar maiúsculas ou minúsculas.
+* Adicione as funções [Minúsculas](/help/data-views/derived-fields/derived-fields.md#lowercase) e [Cortar](/help/data-views/derived-fields/derived-fields.md#trim) antes da função [Pesquisa](/help/data-views/derived-fields/derived-fields.md#lookup), a menos que haja um motivo documentado para preservar maiúsculas ou minúsculas.
 * Se várias transformações já estiverem encadeadas, verifique sua ordem: normalize primeiro e, em seguida, procure.
 
 ## Uso indevido ou excesso de Regex
@@ -230,7 +230,7 @@ Esta seção discute o uso incorreto ou o excesso de alcance da funcionalidade d
 
 **Padrões**
 
-* [Substituição de Regex](./derived-fields.md#regex-replace) ou as condições baseadas em regex usam padrões amplos; as funções [Caso Quando](./derived-fields.md#case-when) mais simples com **[!UICONTROL Contém]** ou **[!UICONTROL Começa com]** são alternativas melhores.
+* [Substituição de Regex](/help/data-views/derived-fields/derived-fields.md#regex-replace) ou as condições baseadas em regex usam padrões amplos; as funções [Caso Quando](/help/data-views/derived-fields/derived-fields.md#case-when) mais simples com **[!UICONTROL Contém]** ou **[!UICONTROL Começa com]** são alternativas melhores.
 
   +++ Exemplo
 
@@ -241,7 +241,7 @@ Esta seção discute o uso incorreto ou o excesso de alcance da funcionalidade d
   +++
 
 * Várias condições de regex se sobrepõem ou estão em conflito.
-* Uso intenso de regex para analisar URLs em vez de usar a função [Análise de URL](./derived-fields.md#url-parse).
+* Uso intenso de regex para analisar URLs em vez de usar a função [Análise de URL](/help/data-views/derived-fields/derived-fields.md#url-parse).
 
 **Diagnóstico de risco: desempenho, qualidade dos dados, alta manutenção**
 
@@ -250,8 +250,8 @@ Esta seção discute o uso incorreto ou o excesso de alcance da funcionalidade d
 
 **Recomendações**
 
-* Preferir [Análise de URL](./derived-fields.md#url-parse) para elementos de URL padrão (domínio, caminho, parâmetros de consulta) em vez de [Substituição de Regex](./derived-fields.md#regex-replace).
-* Para verificações de padrões simples, use a lógica [Caso Quando](./derived-fields.md#case-when) com **[!UICONTROL Contém]**, **[!UICONTROL Começa com]** ou **[!UICONTROL Termina com]**, em vez de expressões regulares com [Substituição de Regex](./derived-fields.md#regex-replace).
+* Preferir [Análise de URL](/help/data-views/derived-fields/derived-fields.md#url-parse) para elementos de URL padrão (domínio, caminho, parâmetros de consulta) em vez de [Substituição de Regex](/help/data-views/derived-fields/derived-fields.md#regex-replace).
+* Para verificações de padrões simples, use a lógica [Caso Quando](/help/data-views/derived-fields/derived-fields.md#case-when) com **[!UICONTROL Contém]**, **[!UICONTROL Começa com]** ou **[!UICONTROL Termina com]**, em vez de expressões regulares com [Substituição de Regex](/help/data-views/derived-fields/derived-fields.md#regex-replace).
 * Sinalizar expressões regulares que usam vários grupos aninhados ou alternações para padrões simples. Ou expressões regulares que podem ser substituídas usando funções de sequência de caracteres de campo derivadas.
 
 ## Lógica de estilo da métrica calculada em campos derivados
@@ -289,12 +289,12 @@ Esta seção discute o uso da lógica de estilo calculada em um campo derivado.
 
 ## Uso excessivo de funções Next, Previous ou sequenciais
 
-Esta seção discute o uso excessivo de [funções Next ou Previous](./derived-fields.md#next-or-previous) ou sequenciais.
+Esta seção discute o uso excessivo de [funções Next ou Previous](/help/data-views/derived-fields/derived-fields.md#next-or-previous) ou sequenciais.
 
 **Padrões**
 
-* Um campo derivado usa várias funções [Next ou Previous](./derived-fields.md#next-or-previous) (próximas ao limite por campo documentado).
-* [Próximo ou Anterior](./derived-fields.md#next-or-previous) é usado para implementar uma lógica de persistência (por exemplo: carregar uma campanha adiante) em vez de usar a persistência de visualização de dados.
+* Um campo derivado usa várias funções [Next ou Previous](/help/data-views/derived-fields/derived-fields.md#next-or-previous) (próximas ao limite por campo documentado).
+* [Próximo ou Anterior](/help/data-views/derived-fields/derived-fields.md#next-or-previous) é usado para implementar uma lógica de persistência (por exemplo: carregar uma campanha adiante) em vez de usar a persistência de visualização de dados.
 
 **Diagnóstico de risco: qualidade dos dados, alta manutenção**
 
@@ -303,8 +303,8 @@ Esta seção discute o uso excessivo de [funções Next ou Previous](./derived-f
 
 **Recomendações**
 
-* Para padrões que se assemelham à persistência padrão (por exemplo, carregar um valor adiante através de uma sessão ou pessoa), use as configurações de [Persistência](/help/data-views/component-settings/persistence.md) da dimensão (**[!UICONTROL Modelo de alocação]** e **[!UICONTROL Expiração]**) na exibição de dados em vez de simular esses padrões com [Próximo ou Anterior](./derived-fields.md#next-or-previous).
-* Reserve [Próximo ou Anterior](./derived-fields.md#next-or-previous) para caminhos avançados de várias etapas ou rótulos de funnel que a persistência de dimensão sozinha não pode atingir (por exemplo: concatenação de sequência de canal).
+* Para padrões que se assemelham à persistência padrão (por exemplo, carregar um valor adiante através de uma sessão ou pessoa), use as configurações de [Persistência](/help/data-views/component-settings/persistence.md) da dimensão (**[!UICONTROL Modelo de alocação]** e **[!UICONTROL Expiração]**) na exibição de dados em vez de simular esses padrões com [Próximo ou Anterior](/help/data-views/derived-fields/derived-fields.md#next-or-previous).
+* Reserve [Próximo ou Anterior](/help/data-views/derived-fields/derived-fields.md#next-or-previous) para caminhos avançados de várias etapas ou rótulos de funnel que a persistência de dimensão sozinha não pode atingir (por exemplo: concatenação de sequência de canal).
 
 ## Ignorando contexto de sessão e nível de pessoa
 
@@ -337,12 +337,12 @@ Esta seção discute as implicações de atingir ou se aproximar dos limites de 
 
 >[!NOTE]
 >
->Reduza a dependência em campos de alta cardinalidade dentro de campos derivados complexos quando possível (por exemplo: use chaves normalizadas ou classificações agrupadas) para limitar o custo da consulta e a probabilidade de atingir [limites de operador ou função](./derived-fields.md#limitations).
+>Reduza a dependência em campos de alta cardinalidade dentro de campos derivados complexos quando possível (por exemplo: use chaves normalizadas ou classificações agrupadas) para limitar o custo da consulta e a probabilidade de atingir [limites de operador ou função](/help/data-views/derived-fields/derived-fields.md#limitations).
 
-Máximo de funções e operadores por campo derivado do CustomCustomer Jornada Analytics [documents](./derived-fields.md#limitations), incluindo limites por tipo de função.atterns**
+Máximo de funções e operadores por campo derivado do CustomCustomer Jornada Analytics [documents](/help/data-views/derived-fields/derived-fields.md#limitations), incluindo limites por tipo de função.atterns**
 
-* Um campo derivado usa muitas operações [Lookup](./derived-fields.md#lookup), [Math](./derived-fields.md#math), [Split](./derived-fields.md#split) ou outras funções.
-* O número de operadores está próximo dos [limites documentados](./derived-fields.md#limitations) (por exemplo: mais de 70% - 80% das contagens permitidas).
+* Um campo derivado usa muitas operações [Lookup](/help/data-views/derived-fields/derived-fields.md#lookup), [Math](/help/data-views/derived-fields/derived-fields.md#math), [Split](/help/data-views/derived-fields/derived-fields.md#split) ou outras funções.
+* O número de operadores está próximo dos [limites documentados](/help/data-views/derived-fields/derived-fields.md#limitations) (por exemplo: mais de 70% - 80% das contagens permitidas).
 
 **Diagnóstico de risco: desempenho, alta manutenção**
 

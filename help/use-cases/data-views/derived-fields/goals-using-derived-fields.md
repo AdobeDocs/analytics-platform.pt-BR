@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: 5cd838f7-e394-4a67-9d2e-e1d08a864ca0
 role: User
-source-git-commit: 39d3a233166e2ce2035df2ce821dd16181e5e13e
+source-git-commit: 35d365dec8bc9afdfd55405dbcfa082280515b18
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 6%
@@ -16,7 +16,7 @@ ht-degree: 6%
 
 Este caso de uso descreve como usar a força de campos derivados para definir metas para uma dimensão específica e, em seguida, usar essas metas em seu projeto do Workspace.
 
-Se você não estiver familiarizado com os campos derivados, consulte o [tutorial](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/derived-fields-in-cja.html?lang=pt-BR) e a [documentação](../data-views/derived-fields/derived-fields.md) para obter uma introdução.
+Se você não estiver familiarizado com os campos derivados, consulte o [tutorial](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/data-views/derived-fields-in-cja.html?lang=pt-BR) e a [documentação](/help/data-views/derived-fields/derived-fields.md) para obter uma introdução.
 
 
 ## Definir metas

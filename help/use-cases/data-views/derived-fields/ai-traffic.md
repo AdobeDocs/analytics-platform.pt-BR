@@ -4,13 +4,13 @@ description: Entenda como você pode usar campos derivados como base para criar 
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+exl-id: 29857457-3fbb-441c-8761-91712b9df20f
+source-git-commit: aa29067a244c588e6d830f0a039db90e99eaf5d3
 workflow-type: tm+mt
 source-wordcount: '1277'
 ht-degree: 1%
 
 ---
-
 
 # Relatório sobre tráfego gerado por LLM e IA
 
@@ -25,12 +25,12 @@ Este artigo de caso de uso explica como usar o recurso de campos derivados do Cu
 
 Para detectar o tráfego gerado por LLM e IA, faça a distinção entre:
 
-* **Rastreadores de LLM**: coletam dados para RAG (geração aumentada) de treinamento e recuperação.
+* **rastreadores LLM**: colete dados para RAG (geração aumentada) de treinamento e recuperação.
 * **Agentes de IA**: funcionam como interfaces que executam tarefas em nome de humanos. Os agentes de IA preferem interagir por meio de APIs, o que ignora os métodos de rastreamento de análise da Web. No entanto, você ainda pode analisar uma parte significativa do tráfego gerado pela IA por meio de sites.
 
 Três métodos principais comuns de detecção para identificar e monitorar o tráfego gerado por LLM e AI são:
 
-* **Identificação do agente do usuário**: quando uma solicitação é feita ao servidor, o cabeçalho Usuário-Agente HTTP é extraído e analisado em relação aos padrões do rastreador e do agente de IA conhecidos. Esse método do lado do servidor requer acesso a cabeçalhos HTTP e é mais eficaz quando implementado na camada de coleta de dados.
+* **Identificação do agente do usuário**: quando uma solicitação é feita ao servidor, o cabeçalho Usuário-Agente HTTP é extraído e analisado em relação aos padrões do agente e do rastreador de IA conhecidos. Esse método do lado do servidor requer acesso a cabeçalhos HTTP e é mais eficaz quando implementado na camada de coleta de dados.
 * **Classificação do referenciador**: o cabeçalho Referenciador HTTP contém a URL da página da Web anterior vinculada à solicitação atual. Esse cabeçalho revela quando os usuários clicam para acessar seu site a partir de interfaces da Web como ChatGPT ou Perplexity.
 * **Detecção de parâmetro de consulta**: os serviços de IA podem anexar parâmetros de URL (particularmente parâmetros UTM) a links. Esses parâmetros persistem no URL e podem ser detectados por meio de implementações padrão de análise, tornando esses parâmetros de URL indicadores valiosos mesmo em cenários de rastreamento do lado do cliente.
 
@@ -63,7 +63,7 @@ A partir de agosto de 2025, os seguintes sinais específicos podem ser identific
 <table>
 <thead>
 <tr>
-<th>Crawler</th>
+<th>Rastreador</th>
 <th>Sequência de agente do usuário</th>
 <th>Finalidade/Comportamento</th>
 </tr>
@@ -72,7 +72,7 @@ A partir de agosto de 2025, os seguintes sinais específicos podem ser identific
 <tr>
 <td><strong>GPTBot</strong></td>
 <td><code>Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; GPTBot/1.1; +<a href="https://openai.com/gptbot" target="_blank" rel="noopener nofollow noreferrer">https://openai.com/gptbot</a></code></td>
-<td><a href="https://platform.openai.com/docs/bots/" target="_blank" rel="noopener nofollow noreferrer">O crawler primário da Web do OpenAI para treinamento de modelos de linguagem e ChatGPT</a></td>
+<td><a href="https://platform.openai.com/docs/bots/" target="_blank" rel="noopener nofollow noreferrer">Rastreador primário da Web do OpenAI para treinamento de modelos de linguagem e ChatGPT</a></td>
 </tr>
 <tr>
 <td><strong>ChatGPT-User</strong></td>
@@ -87,12 +87,12 @@ A partir de agosto de 2025, os seguintes sinais específicos podem ser identific
 <tr>
 <td><strong>OAI-SearchBot</strong></td>
 <td><code>Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; OAI-SearchBot/1.0; +<a href="https://openai.com/searchbot" target="_blank" rel="noopener nofollow noreferrer">https://openai.com/searchbot</a></code></td>
-<td><a href="https://platform.openai.com/docs/bots/" target="_blank" rel="noopener nofollow noreferrer">Rastreador focado em pesquisa do ChatGPT para descoberta de conteúdo</a></td>
+<td><a href="https://platform.openai.com/docs/bots/" target="_blank" rel="noopener nofollow noreferrer">Rastreador de pesquisa da ChatGPT para descoberta de conteúdo</a></td>
 </tr>
 <tr>
 <td><strong>ClaudeBot</strong></td>
 <td><code>Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko); compatible; ClaudeBot/1.0; +claudebot@anthropic.com</code></td>
-<td><a href="https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler" target="_blank" rel="noopener nofollow noreferrer">Crawler da Anthropic para treinamento e atualização do assistente da Claude AI</a></td>
+<td><a href="https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler" target="_blank" rel="noopener nofollow noreferrer">Rastreador da Anthropic para treinamento e atualização do assistente da Claude AI</a></td>
 </tr>
 <tr>
 <td><strong>Claude-User</strong></td>
@@ -107,7 +107,7 @@ A partir de agosto de 2025, os seguintes sinais específicos podem ser identific
 <tr>
 <td><strong>PerplexityBot</strong></td>
 <td><code>Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; PerplexityBot/1.0; +<a href="https://www.perplexity.ai/perplexitybot" target="_blank" rel="noopener nofollow noreferrer">https://perplexity.ai/perplexitybot</a>)</code></td>
-<td><a href="https://docs.perplexity.ai/guides/bots" target="_blank" rel="noopener nofollow noreferrer">Crawler do Perplexity.ai para indexação de dados da Web em tempo real</a></td>
+<td><a href="https://docs.perplexity.ai/guides/bots" target="_blank" rel="noopener nofollow noreferrer">Rastreador do Perplexity.ai para indexação de dados da Web em tempo real</a></td>
 </tr>
 <tr>
 <td><strong>Perplexidade-Usuário</strong></td>
@@ -117,12 +117,12 @@ A partir de agosto de 2025, os seguintes sinais específicos podem ser identific
 <tr>
 <td><strong>Google-Extended</strong></td>
 <td><code>Mozilla/5.0 (compatible; Google-Extended/1.0; +<a href="https://support.google.com/webmasters/answer/182072" target="_blank" rel="noopener nofollow noreferrer">http://www.google.com/bot.html</a>)</code></td>
-<td><a href="https://blog.google/technology/ai/an-update-on-web-publisher-controls/" target="_blank" rel="noopener nofollow noreferrer">Crawler da Google focado em IA para Gemini separado do Googlebot padrão</a></td>
+<td><a href="https://blog.google/technology/ai/an-update-on-web-publisher-controls/" target="_blank" rel="noopener nofollow noreferrer">rastreador Google com foco em IA para Gemini separado do Googlebot padrão</a></td>
 </tr>
 <tr>
 <td><strong>BingBot</strong></td>
 <td><code>Mozilla/5.0 (compatible; BingBot/1.0; +<a href="http://www.bing.com/bot.html" target="_blank" rel="noopener nofollow noreferrer">http://www.bing.com/bot.html</a>)</code></td>
-<td>Rastreador do Microsoft que impulsiona a pesquisa do Bing e o Bing Chat (Copilot)</td>
+<td>rastreador da Microsoft que impulsiona a pesquisa do Bing e o bate-papo do Bing (Copilot)</td>
 </tr>
 <tr>
 <td><strong>DuckAssistBot</strong></td>
@@ -132,7 +132,7 @@ A partir de agosto de 2025, os seguintes sinais específicos podem ser identific
 <tr>
 <td><strong>YouBot</strong></td>
 <td><code>Mozilla/5.0 (compatible; YouBot (+<a href="http://www.you.com" target="_blank" rel="noopener nofollow noreferrer">http://www.you.com</a>))</code></td>
-<td>Rastreador por trás do assistente de pesquisa e navegador da IA do You.com</td>
+<td>Rastreador por trás da Pesquisa com IA e do assistente de navegador da You.com</td>
 </tr>
 <tr>
 <td><strong>meta-externalagent</strong></td>
@@ -142,17 +142,17 @@ A partir de agosto de 2025, os seguintes sinais específicos podem ser identific
 <tr>
 <td><strong>Amazonbot</strong></td>
 <td><code>Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/600.2.5 (KHTML, like Gecko) Version/8.0.2 Safari/600.2.5 (Amazonbot/0.1; +<a href="https://developer.amazon.com/amazonbot" target="_blank" rel="noopener nofollow noreferrer">https://developer.amazon.com/support/amazonbot</a>)</code></td>
-<td><a href="https://developer.amazon.com/amazonbot" target="_blank" rel="noopener nofollow noreferrer">Crawler da Amazon para aplicativos de pesquisa e IA</a></td>
+<td><a href="https://developer.amazon.com/amazonbot" target="_blank" rel="noopener nofollow noreferrer">rastreador da Amazon para aplicativos de pesquisa e IA</a></td>
 </tr>
 <tr>
 <td><strong>Applebot</strong></td>
 <td><code>Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.1 Safari/605.1.15 (Applebot/0.1; +<a href="https://support.apple.com/kb/HT6619" target="_blank" rel="noopener nofollow noreferrer">http://www.apple.com/go/applebot</a>)</code></td>
-<td><a href="https://support.apple.com/en-us/119829" target="_blank" rel="noopener nofollow noreferrer">Crawler da Apple para Spotlight, Siri e Safari</a></td>
+<td><a href="https://support.apple.com/en-us/119829" target="_blank" rel="noopener nofollow noreferrer">rastreador da Apple para Spotlight, Siri e Safari</a></td>
 </tr>
 <tr>
 <td><strong>Applebot-Extended</strong></td>
 <td><code>Mozilla/5.0 (compatible; Applebot-Extended/1.0; +<a href="https://www.apple.com/bot.html" target="_blank" rel="noopener nofollow noreferrer">http://www.apple.com/bot.html</a>)</code></td>
-<td><a href="https://support.apple.com/en-us/119829" target="_blank" rel="noopener nofollow noreferrer">Crawler com foco em IA da Apple para futuros modelos de IA (aceitação)</a></td>
+<td><a href="https://support.apple.com/en-us/119829" target="_blank" rel="noopener nofollow noreferrer">rastreador com foco em IA da Apple para futuros modelos de IA (aceitação)</a></td>
 </tr>
 <tr>
 <td><strong>Bytespider</strong></td>
@@ -212,7 +212,7 @@ A partir de agosto de 2025, os seguintes sinais específicos podem ser identific
 <tr >
 <td>Perplexity AI</td>
 <td>perplexity.ai</td>
-<td>Tráfego da pesquisa de IA com citações</td>
+<td>Tráfego de Pesquisas com IA com citações</td>
 </tr>
 <tr>
 <td>META AI</td>
