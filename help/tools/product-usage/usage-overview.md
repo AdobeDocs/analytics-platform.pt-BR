@@ -52,7 +52,7 @@ Ao habilitar o Uso do produto, as seguintes dimensões estão disponíveis. Se q
    * [!UICONTROL Abrir dicionário de dados]
    * [!UICONTROL Abrir legendas inteligentes]
    * [!UICONTROL Compartilhamento do projeto]
-   * [!UICONTROL  Painel Executar experimentação]
+   * [!UICONTROL &#x200B; Painel Executar experimentação]
    * [!UICONTROL Salvar projeto]
    * [!UICONTROL Cartão de pontuação salvo]
    * [!UICONTROL Enviar arquivo]
