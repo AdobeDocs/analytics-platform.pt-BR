@@ -6,9 +6,9 @@ solution: Customer Journey Analytics
 feature: Basics
 hide: true
 exl-id: fd3b36ab-72c1-469a-b2c7-419813c82425
-source-git-commit: efa2cada4b26d71cce22c0d0e8662b6dd04f38f4
+source-git-commit: d79c6d883f436d97925e007f453879e20b4fcc04
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: '734'
 ht-degree: 100%
 
 ---
@@ -33,7 +33,7 @@ Veja a seguir alguns dos principais benefícios: (para obter uma lista abrangent
 
 * [Transformações de tempo de relatório em visualizações de dados](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md#customer-journey-analytics-data-views)
 
-  As visualizações de dados no Customer Journey Analytics permitem interpretar ainda mais os dados de uma conexão. É possível alterar ou remover dados sem trocar a implementação, usar substrings para manipular dimensões, criar métricas a partir de qualquer valor, segmentar subeventos ou usar campos derivados. Todas essas transformações são feitas de maneira não destrutiva. 
+  As visualizações de dados no Customer Journey Analytics permitem interpretar ainda mais os dados de uma conexão. É possível alterar ou remover dados sem trocar a implementação, usar substrings para manipular dimensões, criar métricas a partir de qualquer valor, segmentar subeventos ou usar campos derivados. Todas essas transformações são feitas de maneira não destrutiva.
 
 * [As transformações se aplicam a dados históricos e novos](/help/getting-started/aa-vs-cja/vrs-dataview-sandbox-adc.md)
 
@@ -45,11 +45,11 @@ Veja a seguir alguns dos principais benefícios: (para obter uma lista abrangent
 
 * [As visualizações de dados substituem os conjuntos de relatórios virtuais](/help/getting-started/aa-to-cja-user.md#changes-to-the-concept-of-virtual-report-suites)
 
-  As visualizações de dados adotam o conceito atual dos conjuntos de relatórios virtuais e o expande para permitir controles adicionais sobre os dados disponibilizados pelas conexões. Essas alterações possibilitam a retroatividade e o ajuste de configurações gerais, como fuso horário e intervalos de tempo limite da sessão. 
+  As visualizações de dados adotam o conceito atual dos conjuntos de relatórios virtuais e o expande para permitir controles adicionais sobre os dados disponibilizados pelas conexões. Essas alterações possibilitam a retroatividade e o ajuste de configurações gerais, como fuso horário e intervalos de tempo limite da sessão.
 
 * [Dimensões e métricas ilimitadas de cliente](/help/getting-started/aa-to-cja-user.md#changes-to-the-concept-of-evars-and-props)
 
-  Os valores podem ser números, texto, objetos, listas ou uma mistura de todos eles. As dimensões podem ser aninhadas ou hierárquicas. 
+  Os valores podem ser números, texto, objetos, listas ou uma mistura de todos eles. As dimensões podem ser aninhadas ou hierárquicas.
 
 ## Entenda o processo de atualização
 
