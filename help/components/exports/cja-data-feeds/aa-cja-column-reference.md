@@ -4,10 +4,10 @@ description: Determine como obter uma determinada coluna de feed de dados do Ado
 feature: Components
 hide: true
 exl-id: 81d6e79e-8324-4726-9a48-10177b0a91b1
-source-git-commit: efa2cada4b26d71cce22c0d0e8662b6dd04f38f4
+source-git-commit: d79c6d883f436d97925e007f453879e20b4fcc04
 workflow-type: tm+mt
-source-wordcount: '3768'
-ht-degree: 47%
+source-wordcount: '3912'
+ht-degree: 48%
 
 ---
 
@@ -228,7 +228,7 @@ ID numérica que representa a dimensão Tipo de conexão.
 
 +++**`cookies`**
 
-A dimensão Suporte a cookies.<br>Y: Habilitado<br>N: Desabilitado<br>U: Desconhecido
+A dimensão Suporte a cookies.<br>Y: Enabled<br>N: Disabled<br>U: Unknown
 
 {{cja-df-post}}
 
@@ -272,7 +272,7 @@ A taxa de câmbio de quando a transação ocorreu. A Adobe faz parceria com a XE
 
 +++**`customer_perspective`**
 
-Determina se a ocorrência é uma ocorrência em segundo plano móvel.
+Determina se é uma ocorrência de plano de fundo móvel.
 
 {{cja-df-post}}
 
@@ -472,7 +472,7 @@ A dimensão Domínio referenciador original. Baseado em `first_hit_referrer`. O 
 
 +++**`first_hit_ref_type`**
 
-Uma ID numérica que representa o tipo do primeiro referenciador do visitante.
+Uma ID numérica que representa o tipo do referenciador do primeiro referenciador do visitante.
 
 {{cja-df-lookup}}
 
@@ -646,7 +646,7 @@ Ação em dispositivo móvel. Coletado automaticamente quando `trackAction` é c
 
 +++**`mobileappid`**
 
-ID do aplicativo móvel. Armazena o nome e a versão do aplicativo no seguinte formato: `[AppName] [BundleVersion]`. 
+ID do aplicativo móvel. Armazena o nome e a versão do aplicativo no seguinte formato: `[AppName] [BundleVersion]`.
 
 `xdm.application.name` + `xdm.application.version`
 
@@ -923,7 +923,7 @@ Resolução do dispositivo móvel. `[Width] x [Height]` em pixels.
 +++
 
 +++**`mobile_id`**
-Se o visitante estiver usando um dispositivo móvel, o ID numérico do dispositivo.
+Se o(a) visitante estiver usando um dispositivo móvel, o ID numérico do dispositivo.
 
 {{cja-df-lookup}}
 
@@ -937,7 +937,7 @@ Um sinalizador que determina se o visitante é único no mês atual.
 
 +++**`mvvar1`** - **`mvvar3`**
 
-Lista de valores de variáveis. Contém uma lista delimitada de valores personalizados dependendo da implementação. As colunas `post_mvvar1` - `post_mvvar3` substituem o delimitador original por `--**--`.
+Listar valores de variáveis. Contém uma lista delimitada de valores personalizados dependendo da implementação. As colunas `post_mvvar1` - `post_mvvar3` substituem o delimitador original por `--**--`.
 
 {{cja-df-post}}
 
@@ -959,7 +959,7 @@ Um sinalizador que determina se a ocorrência atual é uma nova visita. Definido
 
 +++**`os`**
 
-Uma ID numérica que representa o sistema operacional do visitante. Com base na coluna `user_agent`. 
+Uma ID numérica que representa o sistema operacional do visitante. Com base na coluna `user_agent`.
 
 {{cja-df-lookup}}
 
@@ -991,7 +991,7 @@ Semelhante a `pagename`, exceto que não retorna a `page_url`. Somente a coluna 
 
 +++**`page_event`**
 
-O tipo de ocorrência enviado na solicitação da imagem (ocorrência padrão, link de download, link personalizado, link de saída).
+O tipo de ocorrência que é enviado na solicitação da imagem (ocorrência padrão, link de download, link personalizado, link de saída).
 
 {{cja-df-post}}
 
@@ -1103,14 +1103,14 @@ A dimensão Referenciador. Observe que, embora o `referrer` use um tipo de dados
 
 +++**`ref_domain`**
 
-A dimensão Domínio referenciador. Com base na coluna `referrer`. 
+A dimensão Domínio referenciador. Com base na coluna `referrer`.
 
 +++
 
 +++**`ref_type`**
 
 
-Uma ID numérica que representa o tipo de referência da ocorrência. Usada na dimensão Tipo de referenciador.<br>1: Dentro do site<br>2: Outros sites<br>3: Mecanismos de pesquisa<br>4: Disco rígido<br>5: USENET<br>6: Digitado/Marcado (sem referenciador)<br>7: Email<br>8: Sem JavaScript<br>9: Redes Sociais<br>10: Ferramentas de IA de Conversação
+Uma ID numérica que representa o tipo de referência da ocorrência. Usado na dimensão Tipo de referenciador.<br>1: Dentro do seu site<br>2: Outros sites<br>3: Mecanismos de pesquisa<br>4: Disco rígido<br>5: USENET<br>6: Digitado/Marcado (sem referenciador)<br>7: Email<br>8: Sem JavaScript<br>9: Redes sociais<br>10: Ferramentas de IA de conversação
 
 +++
 
@@ -1158,7 +1158,7 @@ Fora de uso. Servidor interno da Adobe que processou o hit.
 
 +++**`s_kwcid`**
 
-A ID de palavra-chave usada em integrações da Adobe Advertising 
+A ID de palavra-chave usada em integrações da Adobe Advertising
 
 {{cja-df-post}}
 
@@ -1646,7 +1646,7 @@ Se uma ID de visitante for recém-gerada, fornece o carimbo de data e hora no ho
 
 +++**`visid_type`**
 
-Não destinado a uso externo; usado internamente pela Adobe para otimizar o processamento. Uma ID numérica que representa o método usado para identificar o visitante.<br>`0`: ID de visitante personalizado ou desconhecido/não aplicável<br>`1`: fallback de IP e agente de usuário <br>`2`: cabeçalho de assinante móvel HTTP <br>`3`: valor de cookie herdado (`s_vi`) <br>`4`: valor de cookie de fallback (`s_fid`) <br>`5`: serviço de identidade
+Não destinado a uso externo; usado internamente pela Adobe para otimizar o processamento. Uma ID numérica que representa o método usado para identificar o visitante.<br>`0`: ID de visitante personalizada ou Desconhecida/não aplicável<br>`1`: IP e fallback do agente do usuário <br>`2`: Cabeçalho do Assinante Móvel HTTP <br>`3`: Valor do cookie herdado (`s_vi`) <br>`4`: Valor do cookie de fallback (`s_fid`) <br>`5`: Serviço de Identidade
 
 {{cja-df-post}}
 
@@ -1654,7 +1654,7 @@ Não destinado a uso externo; usado internamente pela Adobe para otimizar o proc
 
 +++**`visit_keywords`**
 
-A dimensão Palavra-chave de pesquisa. Essa coluna usa um limite de caracteres não padrão de varchar(244) para acomodar a lógica de back-end usada pelo Adobe. A coluna pós-processada é `**post_keywords**`, não `**post_visit_keywords**`.
+A dimensão Palavra-chave de pesquisa. Essa coluna usa um limite de caracteres não padrão de varchar(244) para acomodar a lógica de back-end usada pela Adobe. A coluna pós-processada é `**post_keywords**`, não `**post_visit_keywords**`.
 
 {{cja-df-post}}
 

@@ -2,9 +2,9 @@
 title: Visão geral de uso do produto
 description: Exiba insights e relatórios sobre como sua organização usa o Customer Journey Analytics.
 exl-id: 3806ca7c-ee90-4222-9ffd-2e791c4550e5
-source-git-commit: 22f3059ffef5df76028f36ffa00da8f98956dee1
+source-git-commit: 73238f03021b14567c20c686ab72d84afbaa9f81
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '660'
 ht-degree: 91%
 
 ---
@@ -110,7 +110,7 @@ Ao habilitar o Uso do produto, as seguintes dimensões estão disponíveis. Se q
    * [!UICONTROL Tabela de coorte]
    * [!UICONTROL Fallout]
    * [!UICONTROL Fluxo]
-   * [!UICONTROL Reportlet da tela da jornada]
+   * [!UICONTROL reportlet da tela de Jornada]
    * [!UICONTROL Área]
    * [!UICONTROL Área empilhada]
    * [!UICONTROL Barra]

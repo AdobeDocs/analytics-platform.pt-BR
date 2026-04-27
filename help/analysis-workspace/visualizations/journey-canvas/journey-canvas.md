@@ -4,10 +4,10 @@ title: Visão geral da tela da jornada
 feature: Visualizations
 role: User
 exl-id: be03c3b2-8faf-47b8-b3ab-e953202bf488
-source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+source-git-commit: 73238f03021b14567c20c686ab72d84afbaa9f81
 workflow-type: tm+mt
-source-wordcount: '1996'
-ht-degree: 100%
+source-wordcount: '2022'
+ht-degree: 96%
 
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 100%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta a Visualização de tela da jornada no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**.<br/>Não há visualização equivalente no **Adobe Analytics**._
+_Este artigo documenta a visualização da tela de Jornada no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**.<br/>Não há visualização equivalente no **Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
@@ -59,7 +59,7 @@ A Visualização de tela da jornada permite analisar e obter insights profundos 
 
 Você pode [criar análises de jornadas do usuário](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md) usando qualquer combinação de eventos, itens de dimensão, segmentos e intervalos de datas para criar nós de jornada. Conecte os nós para criar o fluxo da jornada e incluir vários caminhos e pontos de decisão. Arraste os nós na tela para reorganizar os eventos e as condições da jornada. Atualizações de dados em tempo real à medida que você faz alterações.
 
-[Os nós estão conectados](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#logic-when-connecting-nodes) como um &quot;caminho eventual&quot;, o que significa que os visitantes são contados enquanto eventualmente se movem de um nó para outro, independentemente de qualquer evento que ocorra entre os dois nós. O tempo alocado para que os usuários percorram o caminho é determinado pela configuração do container.
+[Os nós estão conectados](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#logic-when-connecting-nodes) como um &quot;caminho eventual&quot;, o que significa que os visitantes são contados enquanto eventualmente se movem de um nó para outro, independentemente de quaisquer eventos que ocorram entre os dois nós. O tempo alocado para que os usuários percorram o caminho é determinado pela configuração do container.
 
 ![Tela da jornada](assets/journey-canvas.png)
 
@@ -206,7 +206,7 @@ Considere os seguintes comportamentos para entender a sincronização entre o Jo
 
   Ao usar um link “Compartilhar com qualquer pessoa”, as alterações feitas no Journey Optimizer não são refletidas na tela de jornada até que o projeto seja salvo no Customer Journey Analytics.
 
-  Para obter mais informações sobre os links “Compartilhar com qualquer pessoa”, consulte [Compartilhar um projeto com qualquer pessoa (sem necessidade de logon)](/help/analysis-workspace/curate-share/share-projects.md#share-a-project-with-anyone-no-login-required) em [Compartilhar projetos](/help/analysis-workspace/curate-share/share-projects.md).
+  Para obter mais informações sobre os links &quot;Compartilhar com qualquer pessoa&quot;, consulte [Compartilhar um projeto com qualquer pessoa (sem logon necessário)](/help/analysis-workspace/curate-share/share-projects.md#share-a-project-with-anyone-no-login-required) em [Compartilhar projetos](/help/analysis-workspace/curate-share/share-projects.md).
 
 ### Diferenças após modificar uma jornada na tela do Journey {#differences-after-modifying}
 
@@ -250,7 +250,7 @@ Certos termos que significam uma coisa no Journey Optimizer significam outra coi
 
 | Termo | Tela de jornada | Journey Optimizer |
 |---------|----------|---------|
-| **Evento** | Uma das várias métricas padrão disponíveis no Customer Journey Analytics. Esta métrica conta itens como receita, assinaturas ou leads gerados.  | A categoria de atividade que aciona uma jornada personalizada, como uma compra online. |
+| **Evento** | Uma das várias métricas padrão disponíveis no Customer Journey Analytics. Esta métrica conta itens como receita, assinaturas ou leads gerados. | A categoria de atividade que aciona uma jornada personalizada, como uma compra online. |
 
 ### Analisar uma jornada do Journey Optimizer na tela de jornada
 
