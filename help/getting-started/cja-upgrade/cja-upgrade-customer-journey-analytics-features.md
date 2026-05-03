@@ -7,8 +7,8 @@ feature: Basics
 exl-id: 4e6cacb9-4eca-4dfb-bce4-e69850507596
 source-git-commit: bf4ff740d8d57fe1001b58e1c227644b8ad057cf
 workflow-type: tm+mt
-source-wordcount: '517'
-ht-degree: 93%
+source-wordcount: '591'
+ht-degree: 100%
 
 ---
 
@@ -36,8 +36,8 @@ ht-degree: 93%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-stitch-customer-care"
->title="Habilitar a compilação para conjuntos de dados relevantes"
->abstract="Se você tiver um campo que contenha um identificador que existe em vários conjuntos de dados, mas não é o identificador principal, é possível usar a compilação para elevar os dados em um ou mais desses conjuntos de dados."
+>title="Ativar a compilação para conjuntos de dados relevantes"
+>abstract="Se houver um campo que contenha um identificador presente em vários conjuntos de dados, mas que não seja o principal, é possível usar a unificação para promover esses dados em um ou mais desses conjuntos de dados."
 
 <!-- markdownlint-enable MD034 -->
 

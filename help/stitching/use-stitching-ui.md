@@ -7,8 +7,8 @@ role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
 source-git-commit: d42f0eb658f26d16bd21bb6ca47d5dd7c228e614
 workflow-type: tm+mt
-source-wordcount: '1717'
-ht-degree: 7%
+source-wordcount: '1788'
+ht-degree: 15%
 
 ---
 
@@ -101,29 +101,29 @@ Você pode habilitar a identificação de identidade ao [adicionar](/help/connec
 
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics"
->title="Compilação de métricas"
+>title="Unificação de métricas"
 >abstract="As métricas de compilação são calculadas usando um conjunto de amostras de dados com carimbos de data e hora de evento dos últimos 7 dias.<br>Este conjunto de amostras de dados geralmente difere dos dados de exemplo usados na tabela **[!UICONTROL Preview]**."
 
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics_gbs_personidcoverage"
->title="Cobertura de ID de pessoa"
->abstract="A cobertura da ID de pessoa selecionada usada para identificação durante o processo de compilação (em tempo real e repetição).<br/>Para obter os melhores resultados de compilação, uma relação (ID persistente, ID de pessoa) deve estar presente no gráfico de identidade para cada ID persistente."
+>title="Cobertura da ID da pessoa"
+>abstract="A cobertura da ID de pessoa selecionada é usada para identificação durante o processo de unificação (em tempo real e repetição).<br/>Para obter os melhores resultados de unificação, uma relação (ID persistente, ID de pessoa) deve estar presente no gráfico de identidade para cada ID persistente."
 
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics_fbs_personidcoverage"
->title="Cobertura de ID de pessoa"
->abstract="A cobertura da ID de pessoa selecionada usada para identificação durante o processo de compilação (em tempo real e repetição).<br/>Para obter melhores resultados de compilação, a ID de pessoa (informações do usuário) deve ser enviada em pelo menos um evento para cada ID persistente (informações do dispositivo)."
+>title="Cobertura da ID da pessoa"
+>abstract="A cobertura da ID de pessoa selecionada é usada para identificação durante o processo de unificação (em tempo real e repetição).<br/>Para obter os melhores resultados de unificação, a ID de pessoa (informações do usuário) deve ser enviada em pelo menos um evento para cada ID persistente (informações do dispositivo)."
 
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics_persistentidcoverage"
 >title="Cobertura de ID persistente"
->abstract="Esse valor é usado para identificação durante o processo de compilação (em tempo real e repetição), caso um valor de ID de pessoa não possa ser detectado. <br/>Eventos sem ID persistente e sem ID de pessoa são descartados dos dados. Para obter melhores resultados de compilação, uma ID persistente deve estar presente em todos os eventos."
+>abstract="Esse valor é usado para identificação durante o processo de compilação (em tempo real e repetição), caso um valor de ID de pessoa não possa ser detectado. <br/>Eventos sem ID persistente e sem ID de pessoa são descartados dos dados. Para obter melhores resultados da unificação, uma ID persistente deve estar presente em todos os eventos."
 
 
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics_badids"
 >title="IDs inválidas"
->abstract="IDs inválidas são valores de ID que afetam seriamente os dados de relatórios."
+>abstract="IDs inválidas são valores que afetam seriamente os dados de relatórios."
 >additional-url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/technotes/badids" text="IDs inválidas"
 
 
@@ -175,7 +175,7 @@ Além da interface padrão de **[!UICONTROL visualização de conjuntos de dados
 
 ![Opções de identificação ao habilitar o recurso](assets/identity-stitching-ui-preview.png)
 
-#### Compilação de métricas
+#### Unificação de métricas
 
 >[!AVAILABILITY]
 >
@@ -190,7 +190,7 @@ Além da interface padrão de **[!UICONTROL visualização de conjuntos de dados
 
   A cobertura de ID de pessoa é mostrada como uma porcentagem e comparada com o que é recomendado em um desenvolvimento estável ou em uma configuração de produção. Quanto maior for o valor dessa cobertura, melhores resultados de compilação serão obtidos com a ID de pessoa selecionada.
 
-* **[!UICONTROL Cobertura de ID persistente]**: esse valor é usado para identificação durante o processo de compilação (em tempo real e repetição), caso um valor de ID de pessoa não possa ser detectado. Eventos sem ID persistente e sem ID de pessoa são descartados dos dados. Para obter melhores resultados de compilação, uma ID persistente deve estar presente em todos os eventos.
+* **[!UICONTROL Cobertura de ID persistente]**: esse valor é usado para identificação durante o processo de compilação (em tempo real e repetição), caso um valor de ID de pessoa não possa ser detectado. Eventos sem ID persistente e de pessoa são descartados dos dados. Para obter melhores resultados da unificação, uma ID persistente deve estar presente em todos os eventos.
 
   A cobertura de ID persistente é mostrada como uma porcentagem e comparada com o mínimo recomendado em um desenvolvimento estável ou em uma configuração de produção.
 
