@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
-source-git-commit: d42f0eb658f26d16bd21bb6ca47d5dd7c228e614
+source-git-commit: 2816ea67c009d461fb05393741b74979dd65a212
 workflow-type: tm+mt
 source-wordcount: '1788'
 ht-degree: 15%
@@ -248,3 +248,4 @@ A compilação habilitada na interface de Conexões pode coexistir sem problemas
 Por exemplo, você tem conjuntos de dados compilados com base na Web no lago de dados como resultado de solicitações de compilação anteriores ou atuais. Você pode adicionar dados compilados de um conjunto de dados da central de atendimento usando a interface Conexões para combinar esses dados com os dados baseados na Web.
 
 Eventualmente, a Adobe migrará seus conjuntos de dados compilados com base em solicitação para a nova experiência de compilação em conexões.
+
