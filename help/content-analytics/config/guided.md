@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
-source-git-commit: b3988dcc0568245bc6aed7aa80cf1c636c61fc7d
+source-git-commit: da88f281e0b7657306c6c90851d615860721fe16
 workflow-type: tm+mt
-source-wordcount: '3432'
-ht-degree: 81%
+source-wordcount: '3511'
+ht-degree: 79%
 
 ---
 
@@ -36,7 +36,7 @@ Para cada configuração, os seguintes detalhes estão disponíveis:
 | **[!UICONTROL Criada em]** | O carimbo de data e hora quando a configuração foi criada. |
 | **[!UICONTROL Modificada em]** | O carimbo de data e hora quando a configuração foi modificada pela última vez. |
 | **[!UICONTROL Sandbox]** | A sandbox na organização em que o Content Analytics é (planejada para ser) configurada e implementada. |
-| **[!UICONTROL Status]** | O status da configuração. O status pode ser:<br/>![StatusGray](/help/assets/icons/StatusGray.svg) **[!UICONTROL Rascunho]**: a configuração é salva para mais tarde e não é implantada.<br/>![StatusRed](/help/assets/icons/StatusRed.svg) **[!UICONTROL Falha]**: falha na configuração. Selecione **[!UICONTROL Editar]** para obter informações sobre a falha. A Adobe aborda proativamente qualquer implementação com falha. Entre em contato com o Atendimento ao cliente para obter mais detalhes.<br/>![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL Concluído]**: a configuração foi concluída e implementada com êxito. |
+| **[!UICONTROL Status]** | O status da configuração. O status pode ser:<br/>![StatusGray](/help/assets/icons/StatusGray.svg) **[!UICONTROL Rascunho]**: A configuração é salva para depois e não é implantada.<br/>![StatusRed](/help/assets/icons/StatusRed.svg) **[!UICONTROL Falha]**: A configuração falhou. Selecione **[!UICONTROL Editar]** para obter informações sobre a falha. A Adobe aborda proativamente qualquer implementação com falha. É possível entrar em contato com o Atendimento ao cliente para obter detalhes.<br/>![StatusGreen](/help/assets/icons/StatusGreen.svg) **[!UICONTROL Complete]**: a configuração foi concluída e implementada com êxito. |
 
 Você pode usar ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) para personalizar a tabela. Selecione quais colunas serão exibidas na caixa de diálogo **[!UICONTROL Personalizar tabela]** e selecione **[!UICONTROL Aplicar]** para aplicar as alterações.
 
@@ -125,7 +125,7 @@ Cada configuração requer um nome exclusivo. Por exemplo, `Example Content Anal
 
 >[!CONTEXTUALHELP]
 >id="ac_onboarding_dataviews_button"
->title="Visualização de dados"
+>title="Exibição de dados"
 >abstract="Para a configuração do Content Analytics, é necessário selecionar uma ou mais visualizações de dados. Assim, você pode mesclar seus dados de Análise de Conteúdo com outros dados."
 
 >[!CONTEXTUALHELP]
@@ -193,7 +193,7 @@ Sua configuração exige a seleção de uma [visualização de dados](/help/data
    É possível executar as seguintes ações:
 
    * Para pesquisar uma visualização de dados específica, use o campo ![Pesquisar](/help/assets/icons/Search.svg).
-   * Para filtrar a lista de visualizações de dados disponíveis, selecione ![Mostrar filtros](/help/assets/icons/Filter.svg). Você pode filtrar a lista por [!UICONTROL Conexão], [!UICONTROL Proprietário] e [!UICONTROL Sandbox].<br/>Use ![Ocultar](/help/assets/icons/Filter.svg) **[!UICONTROL Ocultar segmentos]** para ocultar o painel de segmentos.
+   * Para filtrar a lista de visualizações de dados disponíveis, selecione ![Mostrar filtros](/help/assets/icons/Filter.svg). Você pode filtrar a lista em [!UICONTROL Conexão], [!UICONTROL Proprietário] e [!UICONTROL Sandbox].<br/>Usar ![Ocultar](/help/assets/icons/Filter.svg) **[!UICONTROL Ocultar segmentos]** para ocultar o painel de segmentos.
    * Para definir quais colunas serão exibidas na tabela, selecione ![Configurações de coluna](/help/assets/icons/ColumnSetting.svg). Selecione quais colunas serão exibidas na caixa de diálogo **[!UICONTROL Personalizar tabela]** e selecione **[!UICONTROL Aplicar]** para aplicar as alterações.
 
 1. Selecione a visualização de dados ![SelectBox](/help/assets/icons/SelectBox.svg) que você deseja usar.
@@ -519,3 +519,4 @@ Para começar a coletar dados para sua configuração do Content Analytics, voc�
 >
 >[Configuração manual](manual.md)
 >
+
