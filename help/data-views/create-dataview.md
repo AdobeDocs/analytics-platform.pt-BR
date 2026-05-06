@@ -5,10 +5,10 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+source-git-commit: 8a42b98220875986d35852213a43460d1f583e55
 workflow-type: tm+mt
-source-wordcount: '2794'
-ht-degree: 97%
+source-wordcount: '2959'
+ht-degree: 93%
 
 ---
 
@@ -48,14 +48,11 @@ Para configurar uma visualização de dados nova ou existente:
 
 
 1. Selecione a guia **[!UICONTROL Configurar]** (se ainda não estiver ativa).
-
-
 1. Especifique os detalhes de [!UICONTROL configurações], [!UICONTROL container] e [!UICONTROL calendário] (veja abaixo).
 1. Selecione **[!UICONTROL Salvar e continuar]** para continuar configurando sua visualização de dados nova ou existente. Selecione **[!UICONTROL Salvar]** para salvar a configuração da visualização de dados existente.
 
 
-### Configurações  {#configure-settings}
-
+### Configurações {#configure-settings}
 
 >[!CONTEXTUALHELP]
 >id="dataview_externalid"
@@ -80,7 +77,7 @@ Fornece configurações abrangentes para a visualização de dados.
 >[!CONTEXTUALHELP]
 >id="dataview_dataviewsinadobejourneyoptimizer"
 >title="Visualizações de dados no Journey Optimizer"
->abstract="O Customer Journey Analytics precisa usar uma conexão e uma visualização de dados compatíveis com o Adobe Journey Optimizer. Por padrão, uma conexão e uma visualização de dados são criadas automaticamente para essa finalidade.<br/>Alternativamente, você pode habilitar esta opção para torná-la a visualização de dados padrão usada nos relatórios do Adobe Journey Optimizer. Quando habilitada, todos os componentes necessários para o Journey Optimizer são adicionados a essa visualização de dados, e todos os conjuntos de dados do Journey Optimizer necessários são adicionados à conexão associada a essa visualização de dados."
+>abstract="O Customer Journey Analytics precisa usar uma conexão e uma exibição de dados compatíveis com o Adobe Journey Optimizer. Por padrão, uma conexão e uma visualização de dados são criadas automaticamente para essa finalidade.<br/>Como alternativa, você pode habilitar essa opção para torná-la a visualização de dados padrão usada nos relatórios do Adobe Journey Optimizer. Quando habilitada, todos os componentes necessários para o Journey Optimizer são adicionados a esta exibição de dados, e todos os conjuntos de dados necessários do Journey Optimizer são adicionados à conexão associada a esta exibição de dados."
 >additional-url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/integrations/ajo#connection" text="Quais componentes e conjuntos de dados são adicionados."
 
 
@@ -122,10 +119,10 @@ Indica o formato de calendário que a visualização de dados deve seguir. Você
 | Configuração | Descrição |
 | --- | --- |
 | [!UICONTROL **Fuso horário**] | Escolha em qual fuso horário você deseja que seus dados sejam apresentados. Se você escolher um fuso horário que funcione no Horário de verão, os dados serão automaticamente ajustados para refletir isso. Na primavera, quando os relógios se ajustam uma hora à frente, há um intervalo de uma hora. No outono, quando os relógios são atrasados em uma hora, uma hora é repetida durante o horário de verão. |
-| [!UICONTROL **Tipo de calendário**] | Determine como as semanas do mês são agrupadas.<br>**Gregoriano:** formato de calendário padrão. Os trimestres são agrupados por mês.<br>**4-5-4 Varejo:** um calendário de varejo padronizado em 4-5-4. O primeiro e o último mês do trimestre contêm 4 semanas, enquanto o segundo mês do trimestre possui 5 semanas.<br>**Personalizado (4-5-4):** semelhante ao calendário 4-5-4, exceto que é possível escolher o primeiro dia do ano e o ano em que a semana “extra” ocorre.<br>**Personalizado (4-4-5):** o primeiro e o segundo mês de cada trimestre contêm 4 semanas, enquanto o último mês de cada trimestre possui 5 semanas.<br>**Personalizado (5-4-4):** O primeiro mês de cada trimestre consiste em 5 semanas, enquanto o segundo e o terceiro meses de cada trimestre consistem em 4 semanas. |
+| [!UICONTROL **Tipo de calendário**] | Determine como as semanas do mês são agrupadas.<br>**Gregoriano:** Formato de calendário padrão. Os trimestres são agrupados por mês.<br>**4-5-4 Varejo:** Um calendário de varejo padronizado em 4-5-4. O primeiro e o último mês do trimestre contêm 4 semanas, enquanto o segundo mês do trimestre possui 5 semanas.<br>**Personalizado (4-5-4):** semelhante ao calendário 4-5-4, exceto que é possível escolher o primeiro dia do ano e o ano em que a semana “extra” ocorre.<br>**Personalizado (4-4-5):** o primeiro e o segundo mês de cada trimestre contêm 4 semanas, enquanto o último mês de cada trimestre possui 5 semanas.<br>**Personalizado (5-4-4):** O primeiro mês de cada trimestre consiste em 5 semanas, enquanto o segundo e o terceiro meses de cada trimestre consistem em 4 semanas. |
 | [!UICONTROL **Primeiro mês do ano**] e [!UICONTROL **Primeiro dia da semana**] | Visível para o tipo de calendário gregoriano. Especifique em qual mês deseja que o ano civil comece e o dia em que cada semana inicia. |
 | [!UICONTROL **Primeiro dia do ano atual**] | Visível para tipos de calendário personalizado. Especifique o dia do ano em que deseja que o ano atual comece. O calendário formata automaticamente o primeiro dia de cada semana com base nesse valor. |
-| [!UICONTROL **Ano em que a semana “extra” ocorre**] | Na maioria dos calendários de 364 dias (52 semanas de 7 dias cada), cada ano acumula alguns dias até que uma semana extra seja formada. Essa semana extra é então adicionada ao último mês desse ano. Especifique em qual ano você deseja adicionar a semana extra.<br><br/>**Semanas extras e anos bissextos**<br/> Quando você seleciona um **[!UICONTROL Tipo de calendário]** personalizado **[!UICONTROL Personalizado (4-5-4)]**, **[!UICONTROL Personalizado (4-4-5)]** ou **[!UICONTROL Personalizado (5-4-4)]**), os dias que sobram são acumulados a cada ano até totalizar uma semana extra completa (sete dias). Essa semana extra é adicionada ao ano selecionado em **[!UICONTROL Ano em que a semana “extra” ocorre]**.<br/><br/>Os anos bissextos não são mostrados intencionalmente no **[!UICONTROL Ano em que a semana “extra” ocorre]**. No entanto, um ano bissexto ainda pode conter 53 semanas. Para forçar um ano bissexto a conter 53 semanas, selecione um ano não bissexto em **[!UICONTROL Ano em que a semana “extra” ocorre]** para garantir que o desvio da data cumulativa adicione até sete dias ao ano bissexto alvejado. Por exemplo: para ter 53 semanas em 2024, selecione **[!UICONTROL 2019]**. De 2019 a 2024, o desvio total de datas é de sete dias (2020 (+2), 2021 (+1), 2022 (+1), 2023 (+1) e 2024 (+2)), o que resulta em uma 53ª semana em 2024.<br/><br/>A seleção de **[!UICONTROL Primeiro dia do ano atual]** afeta onde a semana extra é inserida. Para confirmar a sua configuração, use a prévia do calendário. |
+| [!UICONTROL **Ano em que a semana “extra” ocorre**] | Na maioria dos calendários de 364 dias (52 semanas de 7 dias cada), cada ano acumula alguns dias até que uma semana extra seja formada. Essa semana extra é então adicionada ao último mês desse ano. Especifique em qual ano você deseja adicionar a semana extra.<br><br/>**Semanas extras e anos bissextos**<br/> Quando você seleciona um **[!UICONTROL Tipo de calendário]** personalizado **[!UICONTROL Personalizado (4-5-4)]**, **[!UICONTROL Personalizado (4-4-5)]** ou **[!UICONTROL Personalizado (5-4-4)]**), os dias que sobram são acumulados a cada ano até totalizar uma semana extra completa (sete dias). Essa semana extra é adicionada ao ano selecionado em **[!UICONTROL Ano em que a semana “extra” ocorre]**.<br/><br/>Os anos bissextos não são mostrados intencionalmente no **[!UICONTROL Ano em que a semana “extra” ocorre]**. No entanto, um ano bissexto ainda pode conter 53 semanas. Para forçar um ano bissexto a conter 53 semanas, selecione um ano não bissexto em **[!UICONTROL Ano em que a semana “extra” ocorre]** para garantir que o desvio da data cumulativa adicione até sete dias ao ano bissexto alvejado. Por exemplo: para ter 53 semanas em 2024, selecione **[!UICONTROL 2019]**. De 2019 a 2024, o desvio total de datas é de 7 dias (2020 (+2), 2021 (+1), 2022 (+1), 2023 (+1) e 2024 (+2)), o que resulta em uma 53ª semana em 2024.<br/><br/>A seleção para **[!UICONTROL Primeiro dia do ano atual]** afeta onde a semana extra chega. Para confirmar a sua configuração, use a prévia do calendário. |
 
 {style="table-layout:auto"}
 
@@ -143,7 +140,7 @@ Em seguida, você pode definir os componentes de uma visualização de dados, o 
 
    Você pode ver a [!UICONTROL Conexão] no canto superior esquerdo, que contém os conjuntos de dados, e seus [!UICONTROL Campos de esquema] abaixo.  Os componentes já incluídos são componentes padrão (gerados pelo sistema) necessários para todas as visualizações de dados (como métricas de eventos, pessoas e sessões e dimensões de minuto, trimestre e semana). A Adobe também aplica o filtro **[!UICONTROL Contém dados]** e **[!UICONTROL não foi descontinuado]** por padrão, para que só sejam exibidos campos de esquema que contenham dados e não tenham sido descontinuados.
 
-1. Procure um campo de esquema por meio do ![Ícone de pesquisa](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) **[!UICONTROL Procurar campos de esquema]** ou localize um campo por meio de qualquer uma das coleções de conjunto de dados, como ![Pasta](/help/assets/icons/Folder.svg) **[!UICONTROL Conjuntos de dados de evento]** ou ![Pasta](/help/assets/icons/Folder.svg) **[!UICONTROL Conjuntos de dados de pesquisa]**. Para conjuntos de dados de evento, coleções separadas para ![Pasta](/help/assets/icons/Folder.svg) **[!UICONTROL Campos de XDM]** e ![Pasta](/help/assets/icons/Folder.svg) **[!UICONTROL Campos ad hoc e relacionais]** estão disponíveis.<br/>Como alternativa, é possível criar um campo derivado usando a opção ![Ícone de dados](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Criar campo derivado** . Consulte [Campos derivados](./derived-fields/derived-fields.md) para obter mais informações.
+1. Procure um campo de esquema por meio do ![Ícone de pesquisa](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) **[!UICONTROL Procurar campos de esquema]** ou localize um campo por meio de qualquer uma das coleções de conjunto de dados, como ![Pasta](/help/assets/icons/Folder.svg) **[!UICONTROL Conjuntos de dados de evento]** ou ![Pasta](/help/assets/icons/Folder.svg) **[!UICONTROL Conjuntos de dados de pesquisa]**. Para conjuntos de dados de eventos, estão disponíveis coleções separadas para ![Pasta](/help/assets/icons/Folder.svg) **[!UICONTROL campos XDM]** e ![Pasta](/help/assets/icons/Folder.svg) **[!UICONTROL campos relacionais e adhoc]**.<br/>Como alternativa, você pode criar um campo derivado usando o ![ícone de Dados](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Criar campo derivado**. Consulte [Campos derivados](./derived-fields/derived-fields.md) para obter mais informações.
 
 1. Quando você encontrar o campo de esquema específico ou definir o campo derivado, arraste esse campo, como o ![Ícone de alça](https://spectrum.adobe.com/static/icons/workflow_22/Smock_DragHandle_22_N.svg) **[!UICONTROL Nome da página]**, do painel esquerdo até a seção **[!UICONTROL Métricas]** ou **[!UICONTROL Dimensões]**, dentro de **[!UICONTROL Componentes inclusos]**.
 Você pode arrastar o mesmo campo de esquema nas seções de dimensões ou métricas várias vezes e configurar a mesma dimensão ou métrica de maneiras diferentes. Por exemplo, a partir do campo pageName, é possível criar uma dimensão chamada `Product Pages` e outra chamada `Error pages`, usando-se diferentes [Configurações de componentes](component-settings/overview.md) à direita.
@@ -246,7 +243,7 @@ Os **[!UICONTROL Componentes inclusos]** contêm a lista de **[!UICONTROL Métri
 
 
 
-## Configurações  {#dataview-settings}
+## Configurações {#dataview-settings}
 
 1. Selecione a guia **[!UICONTROL Configurações]**.
 
