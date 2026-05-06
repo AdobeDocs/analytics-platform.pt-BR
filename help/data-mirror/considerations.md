@@ -6,7 +6,7 @@ feature: Basics
 role: Admin
 badgePremium: label="Beta"
 hide: true
-source-git-commit: 19351a7155eda77d1768b486c7e39dcf7cdba935
+source-git-commit: 93f38f57021bf66cacd700ce6fbc46338fd6a034
 workflow-type: tm+mt
 source-wordcount: '672'
 ht-degree: 1%
@@ -56,7 +56,7 @@ Portanto, as solicitações de privacidade não devem se limitar ao conjunto de 
 
 O serviço de limpeza opera em *identidades primárias*, mas as tabelas no banco de dados externo espelhadas têm *chaves primárias*, não identidades primárias.
 
-As consequências da diferença entre as identidades primárias e as chaves primárias são que as exclusões de higiene não podem ser executadas diretamente nas tabelas relacionais. Como resultado, você deve:
+As consequências da diferença entre as identidades primárias e as chaves primárias são que as exclusões de higiene não podem ser executadas diretamente nessas tabelas relacionais. Como resultado, você deve:
 
 * Exclua os dados em suas próprias tabelas de origem na solução de data warehouse e verifique se as operações de exclusão fluem pelo CDC (ou pela coluna de alteração manual).
 * Envie solicitações de higiene e privacidade na Adobe para qualquer conjunto de dados downstream baseado em XDM com informações de identidade (por exemplo: visualizações do Customer Journey Analytics, conjuntos de dados do Real-Time Customer Data Platform, conjuntos de dados específicos do Adobe Journey Optimizer e muito mais).
@@ -68,7 +68,7 @@ A diferença entre a identidade primária e a chave primária introduz um modelo
 
 ## Diferenças de governança
 
-Em [esquemas](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/schema/composition) do XDM e em conceitos subjacentes como [grupos de campos](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/schema/composition#field-group), um [campo](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/schema/composition#field) definido em um grupo de campos propaga seus rótulos em todos os conjuntos de dados em que o grupo de campos é usado. Por exemplo, um campo de email `emailID` em um grupo de campos `identities`, é rotulado da mesma forma em todos os conjuntos de dados em que o grupo de campos `identities` é usado.
+Em [esquemas](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/schema/composition) do XDM e em conceitos subjacentes como [grupos de campos](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#field-group), um [campo](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#field) definido em um grupo de campos propaga seus rótulos em todos os conjuntos de dados em que o grupo de campos é usado. Por exemplo, um campo de email `emailID` em um grupo de campos `identities`, é rotulado da mesma forma em todos os conjuntos de dados em que o grupo de campos `identities` é usado.
 
 Em um esquema relacional, um nome de coluna é independente. Uma coluna chamada `email` na tabela `customers` é independente e distinta de uma coluna chamada `email` em uma tabela `prospects`. Esse comportamento implica que rótulos (como rótulos de uso DULE, políticas) devem ser aplicados individualmente aos campos nos conjuntos de dados espelhados. Com base no exemplo acima, você precisa aplicar rótulos tanto ao campo `email` no conjunto de dados `customers` quanto ao campo `email` no conjunto de dados `prospects`.
 
