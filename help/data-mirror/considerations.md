@@ -6,7 +6,7 @@ feature: Basics
 role: Admin
 badgePremium: label="Beta"
 hide: true
-source-git-commit: 19351a7155eda77d1768b486c7e39dcf7cdba935
+source-git-commit: 93f38f57021bf66cacd700ce6fbc46338fd6a034
 workflow-type: tm+mt
 source-wordcount: '672'
 ht-degree: 1%
@@ -56,7 +56,7 @@ Portanto, as solicitações de privacidade não devem se limitar ao conjunto de 
 
 O serviço de limpeza opera em *identidades primárias*, mas as tabelas no banco de dados externo espelhadas têm *chaves primárias*, não identidades primárias.
 
-As consequências da diferença entre as identidades primárias e as chaves primárias são que as exclusões de higiene não podem ser executadas diretamente nas tabelas relacionais. Como resultado, você deve:
+As consequências da diferença entre as identidades primárias e as chaves primárias são que as exclusões de higiene não podem ser executadas diretamente nessas tabelas relacionais. Como resultado, você deve:
 
 * Exclua os dados em suas próprias tabelas de origem na solução de data warehouse e verifique se as operações de exclusão fluem pelo CDC (ou pela coluna de alteração manual).
 * Envie solicitações de higiene e privacidade na Adobe para qualquer conjunto de dados downstream baseado em XDM com informações de identidade (por exemplo: visualizações do Customer Journey Analytics, conjuntos de dados do Real-Time Customer Data Platform, conjuntos de dados específicos do Adobe Journey Optimizer e muito mais).
