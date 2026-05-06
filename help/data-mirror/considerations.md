@@ -6,9 +6,9 @@ feature: Basics
 role: Admin
 badgePremium: label="Beta"
 hide: true
-source-git-commit: 93f38f57021bf66cacd700ce6fbc46338fd6a034
+source-git-commit: 664d14beaa6bc8b01169cef9d50b2ca3a2de44d8
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '832'
 ht-degree: 1%
 
 ---
@@ -21,19 +21,20 @@ Este artigo descreve fatores que você deve considerar ao configurar conjuntos d
 
 Quando uma nova coluna é adicionada a uma tabela de origem em um conjunto de dados espelhado de dados habilitado para CDC, essa alteração pode acionar atualizações para todas as linhas existentes. Essas atualizações são processadas como alterações por meio do CDC, que:
 
-* Podem se comportar como uma reescrita completa de tabela a partir de uma perspectiva de custo.
-* Pode aumentar drasticamente o volume de assimilação, especialmente com qualquer preço futuro de *multiplicador de alteração* (por exemplo, as operações de mesclagem podem ser cobradas a taxas mais altas).
+* Pode se comportar como uma regravação completa de tabela de uma perspectiva de progresso.
+* Pode aumentar drasticamente o volume de assimilação, o que pode fazer com que a atualização exceda seu direito de assimilação.
 
 A estratégia recomendada para colunas na tabela de origem:
 
-* Certifique-se de que a maioria, se não todas, das colunas relevantes seja definida inicialmente.
+* Verifique se todas as colunas relevantes estão definidas inicialmente.
 * Mapeie cada coluna que você pode achar necessária inicialmente.
+* Se uma nova coluna for identificada como necessária, remova o conjunto de dados atual e configure o conector novamente com a coluna atualizada. Isso garante que os dados sejam preenchidos retroativamente de forma mais eficiente e oportuna.
 
 Esta estratégia:
 
 * Evita a evolução dispendiosa do esquema posteriormente (atualizações em massa ao adicionar colunas).
 * Mantém o volume de alterações mais previsível do que quando as colunas são adicionadas ou modificadas posteriormente.
-* Pode incorrer em alguns custos de computação adicionais no lado do banco de dados externo, já que o data warehouse pode interpretar todas as colunas como atualizações.
+* Ajuda a limitar possíveis custos de computação no lado do banco de dados externo, já que o data warehouse pode interpretar a nova coluna como uma atualização para todas as linhas.
 
 Para lidar com novas colunas em tabelas de data warehouse externas, siga estas etapas:
 
@@ -48,7 +49,7 @@ Essa abordagem minimiza o impacto em ambos os lados.
 
 As solicitações de privacidade precisam ocorrer da mesma forma que as solicitações de privacidade são tratadas hoje para esquemas não relacionais, já que as solicitações de privacidade são indiferentes à forma como os dados são estruturados.
 
-Os dados espelhados em um conjunto de dados externo com base em um esquema relacional se tornam parte do ecossistema do Adobe e podem ser compartilhados de várias maneiras. Por exemplo, por meio da publicação de público-alvo.
+Os dados espelhados de um esquema relacional externo se tornam parte do ecossistema do Adobe e podem ser compartilhados em todo esse ecossistema, como por meio da Publicação de público-alvo da Customer Journey Analytics. O envio de uma solicitação de privacidade garante que as identidades e os dados associados sejam tratados corretamente em todo o ecossistema da Adobe.
 
 Portanto, as solicitações de privacidade não devem se limitar ao conjunto de dados espelhado, mas também devem envolver atualizações nos dados de origem no banco de dados externo.
 
@@ -64,11 +65,11 @@ As consequências da diferença entre as identidades primárias e as chaves prim
 A diferença entre a identidade primária e a chave primária introduz um modelo de responsabilidade compartilhada:
 
 * A Adobe processa a higiene onde as identidades estão presentes.
-* Você, como cliente, é responsável por alinhar seus próprios processos de higiene no banco de dados de origem com as solicitações de higiene enviadas ao Adobe.
+* Você, como cliente, é responsável por alinhar seus próprios processos de higiene no banco de dados de origem às solicitações de higiene enviadas à Adobe.
 
 ## Diferenças de governança
 
-Em [esquemas](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/schema/composition) do XDM e em conceitos subjacentes como [grupos de campos](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/schema/composition#field-group), um [campo](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/schema/composition#field) definido em um grupo de campos propaga seus rótulos em todos os conjuntos de dados em que o grupo de campos é usado. Por exemplo, um campo de email `emailID` em um grupo de campos `identities`, é rotulado da mesma forma em todos os conjuntos de dados em que o grupo de campos `identities` é usado.
+Em [esquemas](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/schema/composition) do XDM e em conceitos subjacentes como [grupos de campos](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#field-group), um [campo](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#field) definido em um grupo de campos propaga seus rótulos em todos os conjuntos de dados em que o grupo de campos é usado. Por exemplo, um campo de email `emailID` em um grupo de campos `identities`, é rotulado da mesma forma em todos os conjuntos de dados em que o grupo de campos `identities` é usado.
 
 Em um esquema relacional, um nome de coluna é independente. Uma coluna chamada `email` na tabela `customers` é independente e distinta de uma coluna chamada `email` em uma tabela `prospects`. Esse comportamento implica que rótulos (como rótulos de uso DULE, políticas) devem ser aplicados individualmente aos campos nos conjuntos de dados espelhados. Com base no exemplo acima, você precisa aplicar rótulos tanto ao campo `email` no conjunto de dados `customers` quanto ao campo `email` no conjunto de dados `prospects`.
 
@@ -76,3 +77,18 @@ A diferença de governança tem o seguinte impacto:
 
 * Mais controle manual e trabalho de configuração para você como cliente.
 * Você pode precisar de orientação explícita, de modo que não presuma que a rotulagem única por meio de grupos de campos é suficiente para a governança adequada.
+
+## Compilação
+
+Os esquemas relacionais têm as seguintes considerações, pois estão relacionados à compilação:
+
+* A compilação baseada em gráfico é parcialmente compatível. Esquemas relacionais não podem ser habilitados para perfil/contribuição para o gráfico.
+* A compilação em campo é totalmente compatível.
+
+
+## Chaves e campos do sistema
+
+As seguintes considerações se aplicam a chaves e campos do sistema:
+
+* A chave primária, o descritor de versão e o descritor de carimbo de data e hora precisam ser campos de nível raiz no esquema XDM relacional. Use o [mapeamento de campo](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema) durante a assimilação para dar suporte a este requisito.
+* Você pode omitir campos de origem apropriados durante a [fase de mapeamento](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema).
