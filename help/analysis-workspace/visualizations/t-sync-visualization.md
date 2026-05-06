@@ -5,9 +5,9 @@ title: Gerenciar fontes de dados
 feature: Visualizations
 exl-id: f9e89bef-0e78-49c7-8b7b-1fefd709c0cd
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 28ad4be7b5ff3c58f51fdb882d9b273f53bcea2a
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '437'
 ht-degree: 89%
 
 ---
@@ -28,7 +28,6 @@ ht-degree: 89%
 >id="workspace_freeformtable_showtable"
 >title="Mostrar tabela"
 >abstract="Selecione a opção **[!UICONTROL Mostrar tabela]** para gerar uma nova fonte de dados para a visualização atual, separada da fonte de dados original."
-
 
 A sincronização de visualizações permite controlar qual tabela de forma livre ou fonte de dados corresponde a uma visualização.
 
