@@ -1,16 +1,17 @@
 ---
 title: Configure o Content Analytics
-description: Uma visão geral de como configurar o Content Analytics
+description: Saiba como configurar o Content Analytics para a Web e o canal móvel.
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
-source-git-commit: beb2e35354d3da1fe6d22f4221e30ff0ccde3138
+source-git-commit: b8b0237a092b37d28bec56bba05c30a853097d4f
 workflow-type: tm+mt
-source-wordcount: '771'
-ht-degree: 77%
+source-wordcount: '776'
+ht-degree: 76%
 
 ---
+
 
 # Configure o Content Analytics
 
@@ -39,7 +40,7 @@ Antes de configurar o Content Analytics, verifique se os seguintes pré-requisit
 ### Web
 
 * Você incluiu na lista de permissões o agente de usuário e o endereço IP do serviço de recursos usado no Content Analytics. A string de agente do usuário a ser configurada é: <code>AdobeFeaturization/1.0</code>.
-* Se você implementou o [SDK da web usando o JavaScript](https://experienceleague.adobe.com/pt-br/docs/experience-platform/collection/js/install/library){target="_blank"} para coleta regular de dados comportamentais, verifique se está usando o nome padrão <code>alloy</code> para a biblioteca do JavaScript.
+* Se você implementou o [SDK da web usando o JavaScript](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/install/library){target="_blank"} para coleta regular de dados comportamentais, verifique se está usando o nome padrão <code>alloy</code> para a biblioteca do JavaScript.
 * Você tem uma função de admin de produto do Customer Journey Analytics, com permissões adicionais para gerenciar conexões e visualizações de dados.
 * Se decidir coletar experiências do Content Analytics, certifique-se de configurar e atualizar o controle de versão do Content Analytics com base nas alterações nas suas páginas da Web.
 * Você deve ter [permissões para a coleta de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/collection/permissions){target="_blank"}:

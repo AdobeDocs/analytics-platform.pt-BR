@@ -1,16 +1,17 @@
 ---
-title: Configuração agnóstica de Tags do Content Analytics
-description: Saiba como configurar o Content Analytics sem usar as Tags de coleção de dados da Experience Platform
+title: Configuração Agnóstica de Tags do Content Analytics
+description: Saiba como configurar o Content Analytics sem usar as Tags de coleção de dados da Experience Platform.
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 hide: true
-source-git-commit: d324e2b03d47ba1cf8e5abbadc817b98b27ea68e
+source-git-commit: b8b0237a092b37d28bec56bba05c30a853097d4f
 workflow-type: tm+mt
 source-wordcount: '457'
 ht-degree: 5%
 
 ---
+
 
 # Configuração agnóstica de Tags do Content Analytics
 
@@ -44,7 +45,7 @@ Use o `npm` para instalar a biblioteca.
 
 Carregue a biblioteca diretamente do CDN.
 
-1. Inicialize a [biblioteca JavaScript Web SDK](https://experienceleague.adobe.com/pt-br/docs/experience-platform/collection/js/install/library) e carregue o pacote Content Analytics:
+1. Inicialize a [biblioteca JavaScript Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/install/library) e carregue o pacote Content Analytics:
 
    ```html
    <!-- 1. Load and configure Alloy first -->
@@ -66,7 +67,7 @@ Carregue a biblioteca diretamente do CDN.
    ```
 
    em que
-   * `alloy/2.x.x` refere-se à versão que você deseja usar da [biblioteca JavaScript do Web SDK](https://experienceleague.adobe.com/pt-br/docs/experience-platform/collection/js/install/library).
+   * `alloy/2.x.x` refere-se à versão que você deseja usar da [biblioteca JavaScript do Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/install/library).
    * `content-analytics/1.x.x` refere-se à versão que você deseja usar da biblioteca SDK do Content Analytics.
 
 2. A compilação autônoma expõe `window.contentAnalytics` como a função de inicialização.
