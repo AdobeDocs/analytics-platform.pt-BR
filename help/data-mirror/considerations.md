@@ -6,7 +6,7 @@ feature: Basics
 role: Admin
 badgePremium: label="Beta"
 hide: true
-source-git-commit: 664d14beaa6bc8b01169cef9d50b2ca3a2de44d8
+source-git-commit: 80083aad28e6efd0d9498264cb540d9f2898f2bc
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 1%
@@ -28,7 +28,21 @@ A estratégia recomendada para colunas na tabela de origem:
 
 * Verifique se todas as colunas relevantes estão definidas inicialmente.
 * Mapeie cada coluna que você pode achar necessária inicialmente.
-* Se uma nova coluna for identificada como necessária, remova o conjunto de dados atual e configure o conector novamente com a coluna atualizada. Isso garante que os dados sejam preenchidos retroativamente de forma mais eficiente e oportuna.
+
+Se quiser adicionar uma nova coluna, há duas opções, dependendo se o preenchimento retroativo é obrigatório:
+
+* Preenchimento retroativo:
+
+   * Remover o conjunto de dados atual.
+   * Configure o conector novamente com a coluna atualizada.
+
+  Isso garante que os dados sejam preenchidos retroativamente de forma mais eficiente e oportuna.
+
+* Sem preenchimento retroativo:
+
+   * Adicione a coluna na tabela de origem.
+   * Adicione a coluna no esquema do conjunto de dados de destino.
+   * Atualize o mapeamento para incluir o novo campo (coluna) da tabela de origem para o conjunto de dados de destino.
 
 Esta estratégia:
 
@@ -36,14 +50,6 @@ Esta estratégia:
 * Mantém o volume de alterações mais previsível do que quando as colunas são adicionadas ou modificadas posteriormente.
 * Ajuda a limitar possíveis custos de computação no lado do banco de dados externo, já que o data warehouse pode interpretar a nova coluna como uma atualização para todas as linhas.
 
-Para lidar com novas colunas em tabelas de data warehouse externas, siga estas etapas:
-
-1. Crie um novo schema com a coluna adicionada.
-1. Configure um novo conector de origem que traga os dados para o.
-1. Carregue o preenchimento retroativo adequadamente.
-1. Usar alterações do CDC a partir de agora.
-
-Essa abordagem minimiza o impacto em ambos os lados.
 
 ## Privacy Service
 
@@ -69,7 +75,7 @@ A diferença entre a identidade primária e a chave primária introduz um modelo
 
 ## Diferenças de governança
 
-Em [esquemas](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/schema/composition) do XDM e em conceitos subjacentes como [grupos de campos](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/schema/composition#field-group), um [campo](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/schema/composition#field) definido em um grupo de campos propaga seus rótulos em todos os conjuntos de dados em que o grupo de campos é usado. Por exemplo, um campo de email `emailID` em um grupo de campos `identities`, é rotulado da mesma forma em todos os conjuntos de dados em que o grupo de campos `identities` é usado.
+Em [esquemas](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/schema/composition) do XDM e em conceitos subjacentes como [grupos de campos](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#field-group), um [campo](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#field) definido em um grupo de campos propaga seus rótulos em todos os conjuntos de dados em que o grupo de campos é usado. Por exemplo, um campo de email `emailID` em um grupo de campos `identities`, é rotulado da mesma forma em todos os conjuntos de dados em que o grupo de campos `identities` é usado.
 
 Em um esquema relacional, um nome de coluna é independente. Uma coluna chamada `email` na tabela `customers` é independente e distinta de uma coluna chamada `email` em uma tabela `prospects`. Esse comportamento implica que rótulos (como rótulos de uso DULE, políticas) devem ser aplicados individualmente aos campos nos conjuntos de dados espelhados. Com base no exemplo acima, você precisa aplicar rótulos tanto ao campo `email` no conjunto de dados `customers` quanto ao campo `email` no conjunto de dados `prospects`.
 
@@ -90,5 +96,5 @@ Os esquemas relacionais têm as seguintes considerações, pois estão relaciona
 
 As seguintes considerações se aplicam a chaves e campos do sistema:
 
-* A chave primária, o descritor de versão e o descritor de carimbo de data e hora precisam ser campos de nível raiz no esquema XDM relacional. Use o [mapeamento de campo](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema) durante a assimilação para dar suporte a este requisito.
-* Você pode omitir campos de origem apropriados durante a [fase de mapeamento](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema).
+* A chave primária, o descritor de versão e o descritor de carimbo de data e hora precisam ser campos de nível raiz no esquema XDM relacional. Use o [mapeamento de campo](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema) durante a assimilação para dar suporte a este requisito.
+* Você pode omitir campos de origem apropriados durante a [fase de mapeamento](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema).
