@@ -6,7 +6,7 @@ feature: Basics
 role: Admin
 badgePremium: label="Beta"
 hide: true
-source-git-commit: 664d14beaa6bc8b01169cef9d50b2ca3a2de44d8
+source-git-commit: 80083aad28e6efd0d9498264cb540d9f2898f2bc
 workflow-type: tm+mt
 source-wordcount: '832'
 ht-degree: 1%
@@ -28,7 +28,21 @@ A estratégia recomendada para colunas na tabela de origem:
 
 * Verifique se todas as colunas relevantes estão definidas inicialmente.
 * Mapeie cada coluna que você pode achar necessária inicialmente.
-* Se uma nova coluna for identificada como necessária, remova o conjunto de dados atual e configure o conector novamente com a coluna atualizada. Isso garante que os dados sejam preenchidos retroativamente de forma mais eficiente e oportuna.
+
+Se quiser adicionar uma nova coluna, há duas opções, dependendo se o preenchimento retroativo é obrigatório:
+
+* Preenchimento retroativo:
+
+   * Remover o conjunto de dados atual.
+   * Configure o conector novamente com a coluna atualizada.
+
+  Isso garante que os dados sejam preenchidos retroativamente de forma mais eficiente e oportuna.
+
+* Sem preenchimento retroativo:
+
+   * Adicione a coluna na tabela de origem.
+   * Adicione a coluna no esquema do conjunto de dados de destino.
+   * Atualize o mapeamento para incluir o novo campo (coluna) da tabela de origem para o conjunto de dados de destino.
 
 Esta estratégia:
 
@@ -36,14 +50,6 @@ Esta estratégia:
 * Mantém o volume de alterações mais previsível do que quando as colunas são adicionadas ou modificadas posteriormente.
 * Ajuda a limitar possíveis custos de computação no lado do banco de dados externo, já que o data warehouse pode interpretar a nova coluna como uma atualização para todas as linhas.
 
-Para lidar com novas colunas em tabelas de data warehouse externas, siga estas etapas:
-
-1. Crie um novo schema com a coluna adicionada.
-1. Configure um novo conector de origem que traga os dados para o.
-1. Carregue o preenchimento retroativo adequadamente.
-1. Usar alterações do CDC a partir de agora.
-
-Essa abordagem minimiza o impacto em ambos os lados.
 
 ## Privacy Service
 
