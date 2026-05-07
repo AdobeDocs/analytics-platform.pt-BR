@@ -74,6 +74,6 @@ O Content Analytics usa dados de exibição de imagens da Web e móveis dos conj
 >
 >[Relatórios do Content Analytics](report/report.md)
 >[Configure o Content Analytics](config/configuration.md)
->[Cálculo de rejeições e taxa de rejeição no Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/calculating-bounces-bounce-rate-in-adobe-customer-journey-analytics-options-and-implications-12722)
+>[Cálculo de rejeições e taxa de rejeição no Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/calculating-bounces-bounce-rate-in-adobe-customer-journey-analytics-options-and-implications-12722?profile.language=pt)
 >
 
