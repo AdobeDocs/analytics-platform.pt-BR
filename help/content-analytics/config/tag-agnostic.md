@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 hide: true
-source-git-commit: b8b0237a092b37d28bec56bba05c30a853097d4f
+source-git-commit: 64b96d8b0917975f19c353e26d9e6437d1b4e5ac
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '467'
 ht-degree: 5%
 
 ---
@@ -16,6 +16,11 @@ ht-degree: 5%
 # Configuração agnóstica de Tags do Content Analytics
 
 A biblioteca JavaScript do Adobe Content Analytics permite rastrear eventos relacionados a conteúdo em sites enviando dados de conteúdo para o Adobe Experience Platform por meio do Experience Platform Edge Network. Use essa biblioteca quando quiser implementar o Content Analytics sem tags da Adobe Experience Platform (Launch).
+
+>[!NOTE]
+>
+>Este artigo se aplica ao Content Analytics para o canal da Web.
+
 
 >[!PREREQUISITES]
 >
