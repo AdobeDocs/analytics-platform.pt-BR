@@ -1,16 +1,17 @@
 ---
 title: Visão geral do Content Analytics
-description: Uma visão geral do Content Analytics
+description: Saiba mais sobre o valor e a terminologia do Content Analytics e saiba como o Content Analytics funciona.
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin, User
 exl-id: 0d3be50d-c635-459b-8b01-61d6d4ef0cdf
-source-git-commit: 21bf687f3cff101ee1b3e4be3d870de270f82e89
+source-git-commit: b8b0237a092b37d28bec56bba05c30a853097d4f
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 56%
+source-wordcount: '905'
+ht-degree: 55%
 
 ---
+
 
 # Visão geral do Content Analytics
 
