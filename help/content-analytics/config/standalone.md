@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 exl-id: 35d63b7d-f35a-4a88-ae14-96724d32a931
-source-git-commit: 1930e9da5d1cc8b5fb7ddc592535f035e4842a7b
+source-git-commit: beb2e35354d3da1fe6d22f4221e30ff0ccde3138
 workflow-type: tm+mt
-source-wordcount: '2540'
-ht-degree: 6%
+source-wordcount: '2631'
+ht-degree: 9%
 
 ---
 
@@ -23,7 +23,7 @@ O Content Analytics é licenciado como um produto independente, mas a configura�
 
 Antes de começar a configuração do Content Analytics independente, você deve:
 
-* Ter uma compreensão básica dos conceitos do Web Analytics, familiaridade com sistemas de gerenciamento de tags e conhecimento básico sobre a JavaScript.
+* Ter uma compreensão básica dos conceitos de análise da Web e móvel, familiaridade com sistemas de gerenciamento de tags e conhecimento básico sobre a JavaScript. Para o Content Analytics para o canal móvel, você deve ter habilidades de desenvolvimento de aplicativos móveis.
 * Planeje de 4 a 6 horas para a configuração inicial, além de mais tempo para testar e validar a configuração.
 
 ## Terminologia
@@ -33,27 +33,27 @@ Este guia usa vários termos técnicos, do Experience Platform e do Customer Jou
 | Termo | Explicação |
 |---|---|
 | **Esquema** | Um [esquema](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/schema/composition) é um conjunto de regras que representam e validam a estrutura e o formato dos dados. Em um alto nível, os esquemas fornecem uma definição abstrata de um objeto do mundo real, como um evento que ocorre em um site, como um clique. E descrevem quais dados devem ser incluídos em cada instância desse objeto. |
-| **Conjunto de dados** | Um [conjunto de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/catalog/datasets/overview) é uma construção de armazenamento e gerenciamento para uma coleção de dados, normalmente uma tabela, que contém um esquema (colunas) e campos (linhas). Um conjunto de dados é como uma tabela de banco de dados em que cada linha é um evento do seu site. |
-| **Sequência de dados** | Uma [sequência de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/datastreams/overview) representa a configuração do lado do servidor que direciona os dados do seu site para o conjunto de dados correto no Adobe Experience Platform. Um fluxo de dados atua como uma rodovia de dados que conecta seu site ao armazenamento. |
-| **Tags** | [Tags](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/home) no Experience Platform são a próxima geração de recursos de gerenciamento de tags da Adobe. As tags oferecem aos clientes uma forma simples de implantar e gerenciar tags de análise, marketing e anúncios necessárias para potencializar experiências de cliente relevantes. No Content Analytics, o sistema de gerenciamento de tags da Adobe permite implantar o código de rastreamento em seu site sem precisar editar cada página da mesma forma. A funcionalidade de Tags é semelhante à funcionalidade que você pode conhecer no Google Tag Manager. |
+| **Conjunto de dados** | Um [conjunto de dados](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview) é uma construção de armazenamento e gerenciamento para uma coleção de dados, normalmente uma tabela, que contém um esquema (colunas) e campos (linhas). Um conjunto de dados é como uma tabela de banco de dados em que cada linha é um evento do seu site. |
+| **Sequência de dados** | Uma [sequência de dados](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview) representa a configuração do lado do servidor que direciona os dados do seu site para o conjunto de dados correto no Adobe Experience Platform. Um fluxo de dados atua como uma rodovia de dados que conecta seu site ao armazenamento. |
+| **Tags** | [Tags](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home) no Experience Platform são a próxima geração de recursos de gerenciamento de tags da Adobe. As tags oferecem aos clientes uma forma simples de implantar e gerenciar tags de análise, marketing e anúncios necessárias para potencializar experiências de cliente relevantes. No Content Analytics, o sistema de gerenciamento de tags da Adobe permite implantar o código de rastreamento em seu site sem precisar editar cada página da mesma forma. A funcionalidade de Tags é semelhante à funcionalidade que você pode conhecer no Google Tag Manager. |
 | **Sandbox** | A Experience Platform fornece [sandboxes](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sandbox/home) que particionam uma única instância do Experience Platform em ambientes virtuais separados para ajudar a desenvolver aplicativos de experiência digital. A Content Analytics geralmente usa a sandbox *Produção*. |
-| **Conexão** | [Conexões](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-connections/overview) definem quais conjuntos de dados do Experience Platform são assimilados. Uma conexão define o link entre seu conjunto de dados (em que os dados são armazenados no AEP) e o Customer Journey Analytics (em que você os analisa). Uma conexão disponibiliza os dados coletados para os relatórios. |
+| **Conexão** | [Conexões](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-connections/overview) definem quais conjuntos de dados do Experience Platform são assimilados. Uma conexão define o link entre seu conjunto de dados (em que os dados são armazenados no AEP) e o Customer Journey Analytics (em que você os analisa). Uma conexão disponibiliza os dados coletados para os relatórios. |
 | **Visualização de dados** | Uma [visualização de dados](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-dataviews/data-views) é um container que permite determinar como interpretar dados de uma conexão. Uma visualização de dados especifica todas as dimensões e métricas disponíveis para você criar relatórios. Uma visualização de dados é como uma configuração que determina as linhas e colunas disponíveis para você usar na análise. |
-| **Analysis Workspace** | O [Analysis Workspace](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-workspace/home) é uma interface de navegador de arrastar e soltar usada para criar relatórios e análises do Content Analytics. |
-| **Experiência** | No Content Analytics, uma [experiência](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/content-analytics/content-analytics#terminology) se refere a todo o conteúdo de texto em uma página da Web que pode ser capturado e analisado com base no URL da página. |
-| **Ativo** | No Content Analytics, um [ativo](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/content-analytics/content-analytics#terminology) é um conteúdo individual e exclusivo, como uma imagem. |
+| **Analysis Workspace** | O [Analysis Workspace](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/home) é uma interface de navegador de arrastar e soltar usada para criar relatórios e análises do Content Analytics. |
+| **Experiência** | No Content Analytics, uma [experiência](https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/content-analytics#terminology) se refere a todo o conteúdo de texto em uma página da Web que pode ser capturado e analisado com base no URL da página. |
+| **Ativo** | No Content Analytics, um [ativo](https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/content-analytics#terminology) é um conteúdo individual e exclusivo, como uma imagem. |
 
 
 ## Visão geral da configuração
 
 Esta configuração o orienta na configuração de todos os aplicativos que precisam ter uma implementação **independente** do Content Analytics em funcionamento. Você pode dividir a configuração em três fases, em que cada fase tem como base a anterior:
 
-**Fase 1** - [Preparar seu ambiente](#prepare-your-environment). Nesta fase, você configura as permissões do usuário e verifica sua infraestrutura de dados. Sem essas permissões e estrutura de dados apropriadas, você não poderá concluir as etapas restantes. As etapas envolvidas são:
+**Fase 1** - [Preparar seu ambiente](#prepare-your-environment). Nesta fase, você configura as permissões do usuário e verifica sua infraestrutura de dados. Com essas permissões e estrutura de dados apropriadas, você pode concluir as etapas restantes. As etapas envolvidas são:
 
 1. **Configurar o controle de acesso e as permissões** para oferecer suporte à configuração e à implementação do Content Analytics.
 1. **Configure um esquema e um conjunto de dados** para definir o modelo (esquema) dos dados dos quais você deseja coletar insights de análise de conteúdo e de onde coletar esses dados (conjunto de dados).
 
-**Fase 2** - [Configurar coleta de dados](#configure-data-collection). Nesta fase, você cria o pipeline que captura dados de conteúdo do seu site. Portanto, o Content Analytics sabe qual conteúdo os visitantes interagem com o seu conteúdo.
+**Fase 2** - [Configurar coleta de dados](#configure-data-collection). Nesta fase, você cria o pipeline que captura dados de conteúdo do seu site. Portanto, o Content Analytics sabe com qual conteúdo os visitantes se envolvem.
 
 1. **Configure uma sequência de dados** para configurar como seus dados coletados serão roteados para o conjunto de dados.
 1. **Use marcas de site** para configurar regras e elementos de dados em relação aos dados na camada de dados do site e garantir que os dados sejam enviados para a sequência de dados configurada.
@@ -73,7 +73,7 @@ Nesta fase, você configura as permissões do usuário e verifica sua infraestru
 
 ### Configurar controle de acesso e permissões
 
-Esta seção documenta qual acesso é necessário ao produto, perfis de produto e quais permissões são necessárias para configurar e configurar o Content Analytics independente. Embora você só esteja interessado na funcionalidade do Content Analytics, para que essa funcionalidade funcione corretamente, ainda são necessários acesso e permissões para outros produtos da Experience Platform.
+Esta seção documenta qual acesso é necessário aos produtos, perfis de produtos e quais permissões são necessárias para configurar e configurar o Content Analytics independente. Embora você só esteja interessado na funcionalidade do Content Analytics, para que essa funcionalidade funcione corretamente, ainda são necessários acesso e permissões para outros produtos da Experience Platform.
 
 #### Controle de acesso
 
@@ -164,7 +164,7 @@ Para o Content Analytics, é necessário verificar se os seguintes recursos e pe
       * Exibir sandbox
 
 
-Na interface de Permissões, é possível verificar as funções e as permissões associadas. E quais usuários pertencem à função.
+Na interface de Permissões, é possível verificar as funções e as permissões associadas. A interface também mostra quais usuários pertencem à função.
 
 1. Acesse o Experience Platform para sua organização.
 1. Na tela de boas-vindas, em **[!UICONTROL Acesso rápido]**, selecione **[!UICONTROL Exibir todos]**.
@@ -200,24 +200,18 @@ Para o Content Analytics, é necessário verificar se as seguintes permissões d
    * Todas as visualizações de dados disponíveis.
 
 * Ferramentas de relatório
-   * Acesso guiado à análise?
    * Criação de métricas calculadas
    * Criação de segmentos
-   * Acesso ao Labs?
    * Criação de anotação
-   * Criação de público-alvo?
-   * Visualização de público?
    * Acesso aos logs de auditoria
    * Compartilhar links do projeto com qualquer pessoa
    * Previsão
    * Assistente de IA: conhecimento do produto
    * Data Insights Agent
    * Legendas inteligentes
-   * Contar histórias de dados?
 
 * Ferramentas de visualização de dados
-   * Exportar Tabela Completa?
-   * Extensão do CJA BI?
+   * Exportar tabela completa
 
 Para verificar e atualizar essas permissões para o Customer Journey Analytics:
 
@@ -240,7 +234,7 @@ Para verificar e atualizar essas permissões para o Customer Journey Analytics:
 
 ### Configurar esquema e conjunto de dados
 
-Para coletar dados do seu site, sujeito aos insights do Content Analytics, primeiro é necessário definir que tipo de dados deseja coletar. E também como esses dados são armazenados. Ambos os conceitos são explicados em [Configurar um esquema e um conjunto de dados](/help/data-ingestion/aepwebsdk.md#set-up-a-schema-and-dataset) no [Guia de início rápido do Adobe Experience Platform Web SDK](/help/data-ingestion/aepwebsdk.md).
+Para coletar dados do seu site para o Content Analytics Insights, primeiro é necessário definir que tipo de dados deseja coletar. Você também precisa definir como esses dados são armazenados. Ambos os conceitos são explicados em [Configurar um esquema e um conjunto de dados](/help/data-ingestion/aepwebsdk.md#set-up-a-schema-and-dataset) no [Assimilar dados pela Adobe Experience Platform Web SDK](/help/data-ingestion/aepwebsdk.md) e [Assimilar dados pelo guia de início rápido do Adobe Experience Platform Mobile SDK](/help/data-ingestion/aepmobilesdk.md).
 
 
 ## Configurar coleção de dados
@@ -254,14 +248,14 @@ Você definiu quais dados coletar e como armazená-los. A próxima etapa é gara
 
 ### Usar tags
 
-Você definiu quais dados coletar (esquema), como armazenar esses dados (conjunto de dados) e como os dados coletados do seu site são roteados para o conjunto de dados (fluxo de dados). Como próxima etapa, é necessário marcar o site para configurar regras e elementos de dados em relação aos dados na camada de dados do site. Marcar seu site garante que os dados sejam enviados para o fluxo de dados configurado. A marcação do seu site com a ajuda de Marcas é explicada em [Usar Marcas](/help/data-ingestion/aepwebsdk.md#use-tags) no [Guia de início rápido de Assimilar dados por meio do Adobe Experience Platform Web SDK](/help/data-ingestion/aepwebsdk.md).
+Você definiu quais dados coletar (esquema), como armazenar esses dados (conjunto de dados) e como os dados coletados do seu site são roteados para o conjunto de dados (fluxo de dados). Como próxima etapa, é necessário marcar o site para configurar regras e elementos de dados em relação aos dados na camada de dados do site. Marcar seu site garante que os dados sejam enviados para o fluxo de dados configurado. A marcação do site usando marcas é explicada em Usar marcas nos guias de início rápido do [Web SDK](/help/data-ingestion/aepwebsdk.md#use-tags) e do [Mobile SDK](/help/data-ingestion/aepmobilesdk.md#use-tags).
 
 
 ### Implantar e validar
 
 Agora você pode implantar o código na versão de desenvolvimento do seu site dentro da tag `<head>`. Quando implantado, seu site começa a coletar dados na Adobe Experience Platform. Esses dados são então sujeitos ao Content Analytics.
 
-Valide sua implementação, corrija-a conforme necessário e, depois de correta, implante-a no ambiente de preparo e produção usando o recurso de fluxo de trabalho de publicação de tags
+Valide a implementação, corrija-a sempre que necessário e, uma vez correto, implante-a no ambiente de preparo e produção usando o recurso de fluxo de trabalho de publicação Tags.
 
 
 ## Configurar relatórios
@@ -270,12 +264,12 @@ Nesta fase, você disponibiliza os dados coletados para análise nos relatórios
 
 ### Configurar uma conexão com seu conjunto de dados
 
-Para criar relatórios sobre os dados coletados e configurá-los para o Content Analytics, é necessário configurar uma conexão no Customer Journey Analytics. A conexão se conecta ao conjunto de dados que contém os dados coletados. Como configurar uma conexão é explicado em [Configurar uma conexão](../../data-ingestion/aepwebsdk.md#set-up-a-connection) no [Guia de início rápido do Adobe Experience Platform Web SDK](/help/data-ingestion/aepwebsdk.md).
+Para criar relatórios sobre os dados coletados e configurá-los para o Content Analytics, é necessário configurar uma conexão no Customer Journey Analytics. A conexão se conecta ao conjunto de dados que contém os dados coletados. Consulte [Configurar uma conexão](../../data-ingestion/aepwebsdk.md#set-up-a-connection) no [Web SDK](/help/data-ingestion/aepwebsdk.md) e nos guias de início rápido do [Mobile SDK](/help/data-ingestion/aepmobilesdk.md#set-up-a-connection).
 
 
 ### Configurar uma visualização de dados
 
-A etapa final antes de configurar o Content Analytics é definir uma visualização de dados. Uma visualização de dados é um container específico do Customer Journey Analytics que permite determinar como interpretar dados de uma conexão. Uma visualização de dados permite definir métricas e dimensões com base nos dados de um ou mais conjuntos de dados aos quais o Customer Journey Analytics está conectado. Como configurar uma visualização de dados é explicado em [Configurar uma visualização de dados](/help/data-ingestion/aepwebsdk.md#set-up-a-data-view) no [Guia de início rápido do Adobe Experience Platform Web SDK](/help/data-ingestion/aepwebsdk.md).
+A etapa final antes de configurar o Content Analytics é definir uma visualização de dados. Uma visualização de dados é um container específico do Customer Journey Analytics que permite determinar como interpretar dados de uma conexão. Uma visualização de dados permite definir métricas e dimensões com base nos dados de um ou mais conjuntos de dados aos quais o Customer Journey Analytics está conectado. Consulte [Configurar uma visualização de dados](/help/data-ingestion/aepwebsdk.md#set-up-a-data-view) nos guias de início rápido do [Web SDK](/help/data-ingestion/aepwebsdk.md) e do [Mobile SDK](/help/data-ingestion/aepmobilesdk.md#set-up-a-data-view).
 
 
 ### Configure o Content Analytics
@@ -284,7 +278,7 @@ Agora você tem tudo em vigor para configurar o Content Analytics.
 
 #### Configuração guiada
 
-Use o [assistente de configuração guiada](guided.md) e selecione a exibição de dados criada como parte da etapa [Configurar uma exibição de dados](#set-up-a-data-view). Essa seleção garante que o Content Analytics seja configurado e implementado com base nos dados coletados do seu site.
+Use o [assistente de configuração guiada](guided.md) e selecione a exibição de dados criada como parte da etapa [Configurar uma exibição de dados](#set-up-a-data-view). Essa seleção garante que o Content Analytics seja configurado e implementado com base nos dados coletados do seu site e aplicativo móvel.
 
 Esteja ciente de que o assistente de configuração guiado configura os seguintes objetos específicos adicionais do Content Analytics:
 
@@ -296,7 +290,6 @@ Esteja ciente de que o assistente de configuração guiado configura os seguinte
   >
   >Selecione a opção para criar uma propriedade de Novas Marcas como parte da etapa [Coleção de dados](guided.md#new-configuration-1) do assistente.
   >
-
 
 #### Configuração manual
 

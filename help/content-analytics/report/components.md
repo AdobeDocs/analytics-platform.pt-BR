@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: User
 exl-id: 79bf235a-6f6e-4b04-bcd8-1ff884536648
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+source-git-commit: 21bf687f3cff101ee1b3e4be3d870de270f82e89
 workflow-type: tm+mt
-source-wordcount: '910'
-ht-degree: 100%
+source-wordcount: '1020'
+ht-degree: 88%
 
 ---
 
@@ -21,7 +21,7 @@ O Content Analytics adiciona as seguintes categorias de componentes (dimensões,
 * [Eventos da experiência](#experience-events)
 * [Metadados de ativos](#asset-metadata)
 * [Atributos do ativo](#asset-attributes)
-* [Eventos de ativos](#asset-events)
+* [Eventos do ativo](#asset-events)
 * [Métricas calculadas](#calculated-metrics)
 
 Nas tabelas abaixo, ![gerado por IA](/help/assets/icons/AI.svg) indica um par de atributo/valor gerado por IA ou aprendizado de máquina.
@@ -30,8 +30,12 @@ Nas tabelas abaixo, ![gerado por IA](/help/assets/icons/AI.svg) indica um par 
 
 | Título | Descrição | Tipo |
 |---|---|---|
-| Canal da experiência | O canal da experiência. | Dimensão |
-| ID da experiência | Identificador exclusivo da experiência. | Dimensão |
+| ID SOURCE | Para o Content Analytics, o valor é `ContentAnalytics`. | Dimensão |
+| Canal | O canal da experiência. O valor é `Web` ou `Mobile`. | Dimensão |
+| ID de experiência de conteúdo | Identificador exclusivo da experiência. <br>Para **web**: URL da página da Web. <br/>Para **granular web**: um hash calculou o lado do cliente com base na carga de conteúdo (textos, imagens, ctas) com o prefixo `web-`. <br/>Para **dispositivos móveis**: um hash calculou o lado do cliente com base na carga de conteúdo (textos, imagens, ctas) com o prefixo `mobile-`. | Dimensão |
+| Source de experiência de conteúdo | Para **web**: a URL da página da Web.<br/>Para **celular**: o nome da tela, transmitido pelo Experience Platform Mobile SDK. | Dimensão |
+| Canal de experiência (obsoleto) | O canal da experiência. O valor é `Web` ou `Mobile`. | Dimensão |
+| Extras de experiência | Quaisquer outros dados adicionais que você deseja rastrear. Como ID externa ou posicionamento. | Dimensão |
 | URL da miniatura da experiência | O URL da miniatura da experiência. | Dimensão |
 | Profundidade da porcentagem horizontal da experiência | Valor quantificável da profundidade percentual horizontal da experiência. | Campo derivado de dimensão<br/> |
 | Profundidade da porcentagem vertical da experiência | Valor quantificável da profundidade percentual vertical da experiência. | Campo derivado da dimensão<br/> |
@@ -77,12 +81,14 @@ Nas tabelas abaixo, ![gerado por IA](/help/assets/icons/AI.svg) indica um par 
 | Título | Descrição | Tipo |
 |---|---|---|
 | ID do ativo | Identificador exclusivo do ativo. O binário do ativo determina a exclusividade. Se o binário do ativo mudar, a ID será alterada. O identificador exclusivo pode ser o URL, mas também pode ser um hash criado. | Dimensão |
+| Origem do ativo | | Dimensão |
 | Caminho HTML do ativo | Caminho HTML concatenado do ativo. | Dimensão |
 | URL do link do ativo | Âncora de página mais próxima do ativo. | Dimensão |
 | Largura de exibição do ativo | Largura de exibição do ativo de conteúdo. | Dimensão |
 | Altura de exibição do ativo | Altura de exibição do ativo de conteúdo. | Dimensão |
 | Esquerda absoluta do ativo | Limite esquerdo absoluto do ativo de conteúdo. | Dimensão |
 | Topo absoluto do ativo | Limite superior absoluto do ativo de conteúdo. | Dimensão |
+| Extras do ativo | Quaisquer outros dados adicionais que você deseja rastrear. Como ID externa ou posicionamento. | Dimensão |
 
 {style="table-layout:fixed"}
 
