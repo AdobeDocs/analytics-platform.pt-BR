@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: User
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
-source-git-commit: 93ef16462842a819c3b980d557abaaf0cd547b6c
+source-git-commit: 21bf687f3cff101ee1b3e4be3d870de270f82e89
 workflow-type: tm+mt
-source-wordcount: '1473'
-ht-degree: 77%
+source-wordcount: '1410'
+ht-degree: 47%
 
 ---
 
@@ -18,9 +18,9 @@ Você relata, faz análises e obtém insights sobre [!DNL Content Analytics] no 
 
 Para criar seu próprio relatório do Content Analytics do zero, siga estas etapas:
 
-1. [Crie um novo projeto](/help/analysis-workspace/build-workspace-project/create-projects.md) ou [abra um projeto existente](/help/analysis-workspace/build-workspace-project/open-projects.md) no Workspace.
+1. Crie um [novo projeto](/help/analysis-workspace/build-workspace-project/create-projects.md) ou abra um [projeto existente](/help/analysis-workspace/build-workspace-project/open-projects.md) no Workspace.
 1. [Selecione uma visualização de dados](/help/analysis-workspace/c-panels/panels.md#data-view) para os relatórios do Content Analytics. Os relatórios da análise de conteúdo só estão disponíveis para visualizações de dados [configuradas](/help/content-analytics/config/configuration.md) para o Content Analytics.
-1. Arraste uma visualização de ![Tabela](/help/assets/icons/Table.svg) [tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) até a tela.
+1. Arraste uma visualização de ![Tabela](/help/assets/icons/Table.svg) [Tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) para a tela.
 1. Use [componentes específicos da Análise de Conteúdo](components.md) e outros [componentes](/help/components/overview.md) genéricos (como segmentos, intervalos de datas, anotações) para criar seus insights da Análise de Conteúdo.
 1. Use outras [visualizações](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) para aprimorar o seu projeto.
 
@@ -62,7 +62,7 @@ As miniaturas são exibidas quando você passa o mouse sobre um ponto de dados e
 
 >[!AVAILABILITY]
 >
->A funcionalidade das visualizações de barra e dispersão descrita nesta seção está na fase de Teste limitado da versão e pode ainda não estar disponível em seu ambiente. Essa observação será removida quando a funcionalidade estiver em disponibilidade geral. Para obter informações sobre o processo de lançamento do Customer Journey Analytics, consulte [Lançamentos de recursos do Customer Journey Analytics](/help/release-notes/releases.md).
+>As visualizações de barra e dispersão descritas nesta seção estão em Teste limitado e podem não estar disponíveis em seu ambiente. Essa nota é removida quando a funcionalidade do geralmente está disponível. Para obter informações sobre o processo de lançamento do Customer Journey Analytics, consulte [Lançamentos de recursos do Customer Journey Analytics](/help/release-notes/releases.md).
 >
 
 Você pode abrir uma janela pop-up de visualização. Para fazer isso:
@@ -86,31 +86,31 @@ Você verá os detalhes a seguir.
 
 ## Modelo
 
-Um [modelo](/help/analysis-workspace/templates/use-templates.md) do Content Analytics está disponível para ajudá-lo a saber qual conteúdo e atributos de conteúdo estão tendo melhor desempenho. O modelo faz parte do [canal da web e do caso de uso de engajamento](/help/analysis-workspace/templates/use-templates.md#web-engagement) e detalha como o conteúdo é executado em nível granular. Você pode observar o desempenho de ativos individuais ou atributos específicos. 
+Um [modelo](/help/analysis-workspace/templates/use-templates.md) do Content Analytics está disponível para ajudá-lo a saber qual conteúdo e atributos de conteúdo estão tendo melhor desempenho. O modelo faz parte do [canal da web e do caso de uso de engajamento](/help/analysis-workspace/templates/use-templates.md#web-engagement) e detalha como o conteúdo é executado em nível granular. Você pode observar o desempenho de ativos individuais ou atributos específicos.
 
 Com base no que aprender, você poderá fazer uma série de coisas. Como promover ativos de alto desempenho na sua página inicial, personalizar o conteúdo para segmentos específicos a fim de incluir atributos de alto desempenho ou remanejar um conteúdo que começou a se tornar obsoleto.
 
 Para usar o modelo:
 
 1. Selecione **[!UICONTROL Espaço de trabalho]** no menu principal.
-1. Verifique se você selecionou uma visualização de dados configurada para o Content Analytics. 
+1. Verifique se você selecionou uma visualização de dados configurada para o Content Analytics.
 1. Pesquise ou utilize segmentos (**[!UICONTROL Web]** para **[!UICONTROL Canal]** e **[!UICONTROL Engajamento]** para **[!UICONTROL Casos de uso]**) para encontrar e selecionar o modelo de **[!UICONTROL Análise de Conteúdo]**.
 1. Selecione **[!UICONTROL Usar modelo]**.
 1. Na caixa de diálogo **[!UICONTROL Configurar o modelo]**, selecione uma métrica na caixa de diálogo **[!UICONTROL Selecionar uma métrica de conversão]**. Por exemplo, **[!UICONTROL CTR do ativo]**.
 1. Selecione **[!UICONTROL Continuar]**.
 
-Isso abre um projeto da **[!UICONTROL Visão geral do Content Analytics]** no [Analysis Workspace](/help/analysis-workspace/home.md). O projeto consiste em quatro [painéis](/help/analysis-workspace/c-panels/panels.md), sendo que cada painel fornece [tabelas de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) e [visualizações](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) para responder a uma pergunta específica:
+Isso abre um projeto da **[!UICONTROL Visão geral do Content Analytics]** no [Analysis Workspace](/help/analysis-workspace/home.md). O projeto consiste em quatro [painéis](/help/analysis-workspace/c-panels/panels.md), onde cada painel fornece [tabelas de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) e [visualizações](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) para responder a uma pergunta específica. Você pode usar o detalhamento do **[!UICONTROL Canal de Conteúdo]** para [detalhar](/help/analysis-workspace/c-panels/panels.md#break-down-a-panel) o painel do canal de conteúdo em que está interessado: **[!UICONTROL web]** ou **[!UICONTROL celular]**.
+
+Os quatro painéis são:
 
 * **Qual conteúdo tem melhor desempenho?**
-Esse painel ajuda você a entender quais experiências e quais ativos dessas experiências estão gerando engajamento e conversão. As experiências são uma página da web completa, capturada em um momento específico. Uma experiência pode conter texto e vários ativos de imagem individuais. Um ativo é uma imagem individual.
-
-  O painel consiste nas seguintes visualizações:
+Este painel identifica quais experiências e ativos impulsionam a participação e a conversão. As experiências são páginas da Web completas capturadas em um horário específico ou uma combinação de texto, ativos e chamadas para ação definidas em um aplicativo móvel.
 
    * **Experiências**.
 
      >[!NOTE]
      >
-     >Essas visualizações só são exibidas no modelo quando você configura para [incluir experiências](/help/content-analytics/config/guided.md#experience-capture-and-definition) na sua configuração do Content Analytics.
+     >Essas visualizações só são exibidas no modelo quando você configura o sistema para [incluir experiências](/help/content-analytics/config/guided.md#experience-capture-and-definition) na sua configuração do Content Analytics.
      > 
 
       * **Experience CTR**: uma visualização de [alteração de resumo](/help/analysis-workspace/visualizations/summary-number-change.md) que mostra a Experience CTR.
@@ -120,29 +120,27 @@ Esse painel ajuda você a entender quais experiências e quais ativos dessas exp
    * **Ativos**
 
       * **CTR do ativo**
-Uma visualização da [alteração de resumo](/help/analysis-workspace/visualizations/summary-number-change.md) que mostra o CTR do ativo.
-      * **Principais ativos de conversão**
-Uma visualização de [barra horizontal](/help/analysis-workspace/visualizations/horizontal-bar.md) que mostra os ativos que mais contribuem para a conversão com base na métrica de conversão selecionada.
+Uma visualização de [alteração de resumo](/help/analysis-workspace/visualizations/summary-number-change.md) que mostra o CTR do ativo.
+      * **Principais ativos convertidos**
+Uma visualização de [barra horizontal](/help/analysis-workspace/visualizations/horizontal-bar.md) que mostra os principais ativos convertidos com base na métrica de conversão selecionada.
       * **Ativos com melhor desempenho**
-Uma [tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) (incluindo [miniaturas](#thumbnails) e [visualizações](#previews)) dos ativos com melhor desempenho.
-      * **Ativos: comparação entre visualizações e conversão.**
-Uma visualização de [gráfico de dispersão](/help/analysis-workspace/visualizations/scatterplot.md) que mostra um gráfico de dispersão com uma comparação entre visualizações de ativos e conversões de ativos.
+Uma [tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) (incluindo [miniaturas](#thumbnails) e [visualizações](#previews)) para os ativos de melhor desempenho.
+Assets - visualizações em comparação com a conversão.
+Uma visualização de [gráfico de dispersão](/help/analysis-workspace/visualizations/scatterplot.md) que mostra um gráfico de dispersão de exibições de ativos versus conversões de ativos.
 
 * **Quais atributos de ativos contribuem para a conversão?**
-O Content Analytics usa IA e GenAI para atribuir automaticamente cada ativo [metadados](/help/content-analytics/report/components.md#asset-metadata) e [atributos](/help/content-analytics/report/components.md#asset-attributes), como assuntos, cenas, cores de primeiro plano e muito mais. Um atributo é uma tag de metadados atribuída por IA que descreve o que há em um ativo ou experiência. Por exemplo: <code>cor de primeiro plano: vermelho</code> é um atributo atribuído automaticamente. As visualizações ajudam a identificar quais atributos de seus ativos mais contribuem para a conversão.
+O Content Analytics usa IA e GenAI para atribuir automaticamente metadados e atributos, como assuntos, cenas e cores de primeiro plano, a cada ativo.
 
-  O painel consiste nas seguintes visualizações:
-
-   * **Principais atributos de ativos de conversão**
-Uma [barra horizontal](/help/analysis-workspace/visualizations/horizontal-bar.md) que mostra os atributos de ativos que mais contribuem para a conversão com base na métrica de conversão selecionada.
-   * **Principais atributos de ativos de conversão em relação aos 30 dias anteriores**
-Uma visualização de [barra horizontal](/help/analysis-workspace/visualizations/horizontal-bar.md) que mostra os atributos de ativos que mais contribuem para a conversão comparados aos 30 dias anteriores, com base na métrica de conversão selecionada.
-   * **Dados de atributo dos principais ativos de conversão**
-Uma [tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) que mostra os atributos que mais contribuem para a conversão com base na métrica de conversão selecionada. Selecione uma linha na tabela para atualizar a visualização de tendência do atributo.
+   * **Principais atributos convertidos de ativos**
+Uma [barra horizontal](/help/analysis-workspace/visualizations/horizontal-bar.md) que mostra os atributos de ativo de conversão superior com base na métrica de conversão selecionada.
+   * **Principais atributos de ativos convertidos vs. os 30 dias anteriores**
+Uma visualização de [barra horizontal](/help/analysis-workspace/visualizations/horizontal-bar.md) que mostra os atributos de ativo de conversão principais, em comparação aos 30 dias anteriores, com base na métrica de conversão selecionada.
+   * **Principais conversões de dados de atributos de ativos**
+Uma [tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) que mostra os principais atributos de conversão com base na métrica de conversão selecionada. Selecione uma linha na tabela para atualizar a visualização de tendência do atributo.
    * **Tendência de atributo**
-Uma visualização de [linha](/help/analysis-workspace/visualizations/line.md) que mostra a tendência dos atributos dos principais ativos de conversão selecionados.
+Uma visualização de [linha](/help/analysis-workspace/visualizations/line.md) mostrando a tendência do atributo para o atributo de ativo de conversão superior selecionado.
    * **Cor de primeiro plano do ativo**
-Um exemplo de [tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) que compara o desempenho de itens de uma única categoria de atributo de ativo: Cores de primeiro plano. É possível substituir esse atributo de ativo por outras dimensões de categoria de atributo de ativo.
+Um exemplo [tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) que compara o desempenho de itens de uma única categoria de atributo de ativo: Cores de Primeiro Plano. É possível substituir esse atributo de ativo por outras dimensões de categoria de atributo de ativo.
 
 * **Quais atributos de experiência contribuem para as conversões?**
 
@@ -156,27 +154,25 @@ Um exemplo de [tabela de forma livre](/help/analysis-workspace/visualizations/fr
   O painel consiste nas seguintes visualizações:
 
    * **Principais atributos de experiência de conversão**
-Uma visualização de [barra horizontal](/help/analysis-workspace/visualizations/horizontal-bar.md) que mostra os atributos de experiência que mais contribuem para a conversão com base na métrica de conversão selecionada.
-   * **Principais atributos de experiência de conversão em comparação aos 30 dias anteriores**
-Uma visualização de [barra horizontal](/help/analysis-workspace/visualizations/horizontal-bar.md) que mostra os atributos de experiência que mais contribuem para a conversão comparados aos 30 dias anteriores, com base na métrica de conversão selecionada.
-   * **Dados de atributos das principais experiências de conversão**
-Uma [tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) que mostra as experiências que mais contribuem para a conversão com base na métrica de conversão selecionada. Selecione uma linha na tabela para atualizar a visualização de linha.
+Uma visualização de [barra horizontal](/help/analysis-workspace/visualizations/horizontal-bar.md) que mostra os atributos de experiência de conversão principais com base na métrica de conversão selecionada.
+Principais atributos de experiência de conversão em comparação aos 30 dias anteriores
+Uma visualização de [barra horizontal](/help/analysis-workspace/visualizations/horizontal-bar.md) que mostra os atributos de experiência de conversão principais, em comparação aos 30 dias anteriores, com base na métrica de conversão selecionada.
+   * **Principais dados de atributos de experiência de conversão**
+Uma [tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) que mostra as principais experiências de conversão com base na métrica de conversão selecionada. Selecione uma linha na tabela para atualizar a visualização de linha.
    * **Linha**
-Uma visualização de [linha](/help/analysis-workspace/visualizations/line.md) que mostra a tendência do principal atributo de experiência de conversão selecionado.
+Uma visualização de [linha](/help/analysis-workspace/visualizations/line.md) mostrando a tendência do atributo de experiência de conversão principal selecionado.
    * **Palavras-chave de experiência**
-Uma [tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) que mostra as principais palavras-chave de experiência com base na métrica de conversão selecionada.
+Uma [tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) mostrando as principais palavras-chave de experiência com base na métrica de conversão selecionada.
 
 * **Onde os ativos aparecem no meu site?**
-Um painel que consiste em uma tabela de forma livre que detalha onde os ativos mais visualizados aparecem em seu site. Essa análise ajuda você a entender quais páginas ou seções se beneficiam mais de seus ativos de melhor desempenho e onde otimizar a inserção.
-
-  O painel consiste em uma visualização:
+Esta tabela de forma livre detalha onde seus ativos mais visualizados aparecem. Use essa análise para identificar páginas de alto desempenho e otimizar a inserção de ativos.
 
    * **Onde aparecem os ativos mais visualizados?**
-É possível detalhar qualquer ativo por dimensões para entender melhor onde essa imagem aparece.
+É possível detalhar qualquer ativo por dimensões para ajudá-lo a entender melhor onde essa imagem aparece.
 
      Na [tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) (incluindo [miniaturas](#thumbnails) e [visualizações](#previews)) de exemplo, a **[!UICONTROL ID de percepção do ativo]** é usada em vez da [!UICONTROL ID do ativo]. Às vezes, a mesma imagem pode ser duplicada em seu site com um URL de imagem diferente. O atributo [!UICONTROL ID de percepção do ativo] ajuda a agrupar essas duplicatas em uma única ID.
 
-     Visto que os ativos podem mudar em uma página, cada ativo é detalhado pela **[!UICONTROL ID de experiência]** para identificar em qual versão dessa página o ativo apareceu. Você pode substituir a [!UICONTROL ID da experiência] por outras dimensões que ajudam a entender a localização de um ativo no seu site. Por exemplo, [!UICONTROL Nome da página], [!UICONTROL URL da página] ou [!UICONTROL Seção do site].
+     Como os ativos podem ser alterados em uma página, o sistema detalha cada ativo por **[!UICONTROL ID da experiência]** para identificar a versão da página em que o ativo apareceu. Você pode substituir a [!UICONTROL ID da experiência] por outras dimensões que ajudam a entender a localização de um ativo no seu site. Por exemplo, [!UICONTROL Nome da página], [!UICONTROL URL da página] ou [!UICONTROL Seção do site].
 
      Você também pode trocar a [!UICONTROL ID de percepção do ativo] pela [!UICONTROL ID do ativo] para obter um registro de onde os URLs de imagem específicos estão referenciados.
 
