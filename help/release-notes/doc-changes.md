@@ -4,9 +4,9 @@ description: Lista atualizações de conteúdo do conjunto de documentação do 
 exl-id: 1cfb9810-e083-4a68-9c58-295e674da8d7
 solution: Customer Journey Analytics
 feature: Release Notes
-source-git-commit: 64b96d8b0917975f19c353e26d9e6437d1b4e5ac
+source-git-commit: 43beba33f185e81fcebb4c18acfaa1c236ccd0c7
 workflow-type: tm+mt
-source-wordcount: '6869'
+source-wordcount: '6886'
 ht-degree: 95%
 
 ---
@@ -21,6 +21,7 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | Recurso | Descrição |
 |---|---|
 | **maio de 2026** | |
+| Considerações sobre o Data Mirror | [Documentação](/help/data-mirror/considerations.md) que descreve os fatores que você deve considerar ao configurar [conjuntos de dados do Data Mirror](/help/data-mirror/data-mirror.md). |
 | canal móvel do Content Analytics | Atualizações na [documentação do Content Analytics](/help/content-analytics/content-analytics.md) para descrever os recursos e a configuração do canal móvel do Content Analytics. |
 | **abril de 2026** | |
 | Diretrizes de campos derivados | Adição do artigo com [diretrizes](/help/use-cases/data-views/derived-fields/guidelines.md) (práticas recomendadas, medidas de proteção e armadilhas comuns) para trabalhar com campos derivados. |
