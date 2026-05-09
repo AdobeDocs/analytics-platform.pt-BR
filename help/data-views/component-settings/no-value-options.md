@@ -5,10 +5,10 @@ exl-id: c7f226c5-0058-4151-9c9a-652b37266beb
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: c526531206887acf7c750c8759d4eec5dd24935f
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '329'
-ht-degree: 91%
+source-wordcount: '348'
+ht-degree: 86%
 
 ---
 
@@ -28,7 +28,7 @@ As [!UICONTROL opções de valor nulo] permitem determinar como o Analysis Works
 
 ![Sem opções de valor](../assets/no-value-options.png)
 
-## Configurações  {#settings}
+## Configurações {#settings}
 
 | Configuração | Descrição |
 | --- | --- |
@@ -48,6 +48,6 @@ Ao usar um valor numérico como uma dimensão, você pode
 
 >[!MORELIKETHIS]
 >
->[O manual completo para manipular &quot;Nenhum valor&quot; no Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/the-complete-playbook-for-handling-no-value-in-adobe-cja/ba-p/756696?profile.language=pt#M598).
+>[O manual completo para manipular &quot;Nenhum valor&quot; no Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/the-complete-playbook-for-handling-no-value-in-adobe-cja/ba-p/756696#M598).
 
 

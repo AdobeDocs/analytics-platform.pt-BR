@@ -5,9 +5,9 @@ exl-id: c8b0b71f-8ed3-4aad-a0f8-4d5ad8d7a7bd
 feature: Adobe Product Analytics, Guided Analysis
 keywords: product analytics
 role: User
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '679'
+source-wordcount: '694'
 ht-degree: 98%
 
 ---
@@ -23,11 +23,11 @@ ht-degree: 98%
 
 <!-- markdownlint-enable MD034 -->
 
-A Análise de ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg)**[!UICONTROL funil &#x200B;]**&#x200B;fornece uma representação visual de uma jornada do usuário significativa em seu produto. O eixo horizontal representa cada etapa pela qual um usuário deve passar. O eixo vertical representa a porcentagem de usuários ou sessões em cada etapa. Todas as etapas devem ser feitas em ordem eventual, mas podem ocorrer a qualquer momento na janela de relatórios.
+A Análise de ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg)**[!UICONTROL funil ]**fornece uma representação visual de uma jornada do usuário significativa em seu produto. O eixo horizontal representa cada etapa pela qual um usuário deve passar. O eixo vertical representa a porcentagem de usuários ou sessões em cada etapa. Todas as etapas devem ser feitas em ordem eventual, mas podem ocorrer a qualquer momento na janela de relatórios.
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [análise de atrito do Funnel](https://video.tv.adobe.com/v/3431282/?captions=por_br&quality=12&learn=onn){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [análise de atrito do Funnel](https://video.tv.adobe.com/v/3421663/?quality=12&learn=onn){target="_blank"} para ver um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 
@@ -63,7 +63,7 @@ O painel de consulta permite configurar os seguintes componentes:
 A Análise de [!UICONTROL funil] oferece as seguintes configurações de gráfico, que podem ser ajustadas no menu acima do gráfico:
 
 * **[!UICONTROL Tipo de gráfico]**: o tipo de visualização que você deseja usar. As opções incluem [!UICONTROL Etapas].
-* **[!UICONTROL Conversão de]**: determina o cálculo da porcentagem de etapa a etapa. As opções incluem calcular a conversão a partir da [!UICONTROL Primeira etapa] ou da [!UICONTROL Etapa anterior].
+* **[!UICONTROL Conversão de]**: determina o cálculo de porcentagem de etapa a etapa. As opções incluem calcular a conversão a partir da [!UICONTROL Primeira etapa] ou da [!UICONTROL Etapa anterior].
 
 ### Comparação de tempo
 
@@ -75,7 +75,7 @@ A Análise de [!UICONTROL funil] oferece as seguintes configurações de gráfic
 
 O intervalo de datas desejado para a análise. Há dois componentes nesta configuração:
 
-* **[!UICONTROL Intervalo]**: a granularidade de datas com a qual você deseja exibir os dados de tendência. Esta configuração não afeta análises que não são de tendências, como [Funil](funnel.md).
+* **[!UICONTROL Intervalo]**: a granularidade de data com a qual você deseja exibir os dados de tendência. Esta configuração não afeta análises que não são de tendências, como [Funil](funnel.md).
 * **[!UICONTROL Data]**: as datas inicial e final. As predefinições de intervalo de datas contínuo e os intervalos personalizados salvos anteriormente estão disponíveis para fins de praticidade, ou você pode usar o seletor de calendário para escolher um intervalo de datas fixo.
 
 <!--

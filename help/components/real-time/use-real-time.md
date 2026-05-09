@@ -4,9 +4,9 @@ title: Usar relatório em tempo real
 feature: Real-time Reporting
 role: User
 exl-id: 6e7dba80-5fb9-4554-b989-85eb54a4bd6a
-source-git-commit: 0e5a64e78e5a471f8b7c9fc32fdbae2b2e70230a
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '239'
 ht-degree: 12%
 
 ---
@@ -25,7 +25,7 @@ Para usar o relatório em tempo real, habilite a opção **[!UICONTROL Atualiza�
 * [Atribuição](/help/analysis-workspace/c-panels/attribution.md)
 * [Próximo item ou anterior](/help/analysis-workspace/c-panels/next-previous.md)
 
-Você verá uma mensagem com o carimbo de data e hora da atualização mais recente dos dados. Por exemplo: [!UICONTROL &#x200B; *Última atualização às 07:55 pm*].
+Você verá uma mensagem com o carimbo de data e hora da atualização mais recente dos dados. Por exemplo: [!UICONTROL  *Última atualização às 07:55 pm*].
 
 Selecione o período em tempo real que deseja relatar no menu suspenso. As opções disponíveis são:
 

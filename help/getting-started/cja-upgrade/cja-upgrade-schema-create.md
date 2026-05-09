@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 902e5890-f970-4f1a-b091-9c3e51a987db
-source-git-commit: 3dc53d6955eab3048ebf8a7c9d232b4b5739c6bd
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '1252'
+source-wordcount: '1294'
 ht-degree: 100%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-schema-profile"
 >title="Habilitar o esquema do perfil"
->abstract="Habilite o perfil no esquema para uso na Adobe Real-time CDP.  Essa etapa aparece porque você selecionou a opção de integração com a Adobe Real-time CDP.<br><br>Como esta etapa envolve clicar em uma única caixa, ela leva apenas alguns minutos."
+>abstract="Habilite o perfil no esquema para uso na Adobe Real-time CDP. Essa etapa aparece porque você selecionou a opção de integração com a Adobe Real-time CDP.<br><br>Como essa etapa envolve clicar em uma única caixa, ela leva apenas alguns minutos."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -57,7 +57,7 @@ Para criar um esquema personalizado:
 
 1. Na Adobe Experience Platform, no painel esquerdo, selecione **[!UICONTROL Esquemas]** em [!UICONTROL GERENCIAMENTO DE DADOS].
 
-1. Selecione **[!UICONTROL Criar esquema]**. 
+1. Selecione **[!UICONTROL Criar esquema]**.
 
 1. Na etapa **[!UICONTROL Selecionar uma classe]** do assistente Criar esquema:
 

@@ -4,10 +4,10 @@ description: Saiba como publicar públicos-alvo do Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: 4717a85b9a3c7dc2cbdd8c625ebb5862cbfccd58
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '2391'
-ht-degree: 99%
+source-wordcount: '2478'
+ht-degree: 98%
 
 ---
 
@@ -72,7 +72,7 @@ Leia esta [visão geral](/help/components/audiences/audiences-overview.md) para 
    | Método de criação | Detalhes |
    | --- | --- |
    | Na interface de **[!UICONTROL Públicos-alvo]** publicados | Selecione **[!UICONTROL Componentes]** > **[!UICONTROL Públicos-alvo publicados]** no menu principal do Customer Journey Analytics. A interface Públicos-alvo é exibida. Selecione **[!UICONTROL Criar público-alvo]** para abrir o [!UICONTROL Construtor de públicos-alvo]. |
-   | De uma visualização no Analysis Workspace | Muitas visualizações no Analysis Workspace permitem criar um público-alvo usando o menu de contexto. Por exemplo, você pode selecionar **[!UICONTROL Criar público-alvo]** no menu de contexto de um item em uma [Tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) ou em um nó na [Tela de jornada](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md).<p>Usar esse método preenche previamente o segmento no construtor com a dimensão ou item de dimensão que você selecionou.</p><p>As visualizações a seguir permitem criar um público-alvo usando o menu do botão direito do mouse:</p><ul><li>[Tabela de coorte](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)</li><li>[Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)</li><li>[Fluxo](/help/analysis-workspace/visualizations/c-flow/flow.md)</li><li>[Tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)</li><li>[Tela da jornada](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)</li><li>Observação sobre [Mapa &#x200B;](/help/analysis-workspace/visualizations/map.md#create-an-audience-from-the-map-visualization)<br/>**:** essa visualização está na fase de teste limitado da versão e pode não estar disponível ainda em seu ambiente.</li><li>[Venn](/help/analysis-workspace/visualizations/venn.md)</li></ul><p>**Observação:** públicos-alvo não podem incluir métricas calculadas. Se você tentar criar um público-alvo que contenha uma métrica calculada, ela não será incluída na definição do público-alvo.</p> |
+   | De uma visualização no Analysis Workspace | Muitas visualizações no Analysis Workspace permitem criar um público-alvo usando o menu de contexto. Por exemplo, você pode selecionar **[!UICONTROL Criar público-alvo]** no menu de contexto de um item em uma [Tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) ou em um nó na [Tela de jornada](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md).<p>Usar esse método preenche previamente o segmento no construtor com a dimensão ou item de dimensão que você selecionou.</p><p>As visualizações a seguir permitem criar um público-alvo usando o menu do botão direito do mouse:</p><ul><li>[Tabela de coorte](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)</li><li>[Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)</li><li>[Fluxo](/help/analysis-workspace/visualizations/c-flow/flow.md)</li><li>[Tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)</li><li>[Tela da jornada](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)</li><li>Observação sobre [Mapa ](/help/analysis-workspace/visualizations/map.md#create-an-audience-from-the-map-visualization)<br/>**:** essa visualização está na fase de teste limitado da versão e pode não estar disponível ainda em seu ambiente.</li><li>[Venn](/help/analysis-workspace/visualizations/venn.md)</li></ul><p>**Observação:** públicos-alvo não podem incluir métricas calculadas. Se você tentar criar um público-alvo que contenha uma métrica calculada, ela não será incluída na definição do público-alvo.</p> |
    | Na interface de criação e edição de segmentos | Marque a caixa que diz **[!UICONTROL Criar um público-alvo a partir deste segmento]**. Usar esse método preenche previamente o segmento. Consulte [Criar segmentos](/help/components/segments/seg-create.md) para obter mais informações. |
 
    {style="table-layout:auto"}
@@ -84,7 +84,7 @@ Leia esta [visão geral](/help/components/audiences/audiences-overview.md) para 
 1. Selecione **[!UICONTROL [!UICONTROL Exibir IDs de exemplo]]** para exibir uma amostra de IDs neste público-alvo. Na caixa de diálogo **[!UICONTROL IDs de amostra]**, você pode usar a ![Pesquisa](/help/assets/icons/Search.svg) [!UICONTROL *Pesquisar IDs de amostra*] para procurar IDs de exemplo.
 
 1. Verifique novamente a configuração do público-alvo e clique em **[!UICONTROL Publicar]**.
-Você receberá uma mensagem de confirmação de que o público-alvo foi publicado. Demora apenas um ou dois minutos para esse público-alvo aparecer na Experience Platform. 
+Você receberá uma mensagem de confirmação de que o público-alvo foi publicado. Demora apenas um ou dois minutos para esse público-alvo aparecer na Experience Platform.
 
 1. Selecione **[!UICONTROL Exibir público-alvo na AEP]** na mesma mensagem e você será levado para a [Interface do segmento](https://experienceleague.adobe.com/pt-br/docs/experience-platform/segmentation/ui/overview) na Adobe Experience Platform. Veja mais informações abaixo.
 
@@ -206,7 +206,7 @@ Os públicos-alvo do Customer Journey Analytics não são incluídos no processo
 * **Contagens determinísticas na Real-Time Customer Data Platform**: a contagem na Real-Time Customer Data Platform é fixa e não se altera até o próximo intervalo de publicação.
 * **Fragmentação de perfil**: observe que os perfis existentes na Real-Time Customer Data Platform podem não contribuir para novas contagens de perfis ao importar do Customer Journey Analytics.
 
-Por diferenciar claramente esses aspectos, é possível entender e gerenciar melhor os dados de público-alvo no Customer Journey Analytics e na Real-Time Customer Data Platform.--->
+Ao diferenciar claramente esses aspectos, é possível entender e gerenciar melhor os dados de público-alvo no Customer Journey Analytics e no Real-Time Customer Data Platform.—>
 
 ## Perguntas frequentes {#faq}
 

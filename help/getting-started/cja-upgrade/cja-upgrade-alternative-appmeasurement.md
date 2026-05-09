@@ -5,10 +5,10 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 0bf35c67-c8ae-4349-93fb-b9806c1064a8
-source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '1302'
-ht-degree: 58%
+source-wordcount: '1381'
+ht-degree: 59%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 58%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-appmeasurement-logic"
 >title="Usar a lógica do AppMeasurement com o SDK da web"
->abstract="Em vez de enviar dados por meio de um objeto XDM, é possível enviar todas as variáveis no formato do AppMeasurement por meio do objeto de dados. <br><br>Essa opção economiza tempo de implementação, permitindo mapear a lógica do AppMeasurement para o XDM, em vez de preencher um objeto XDM do zero. No entanto, ela se torna mais complexa com o tempo, pois qualquer campo adicionado no futuro deve ser mapeado para o XDM na sequência de dados."
+>abstract="Em vez de enviar dados por meio de um objeto XDM, é possível enviar todas as variáveis no formato do AppMeasurement por meio do objeto de dados.<br><br>Essa opção economiza tempo de implementação, permitindo mapear a lógica do AppMeasurement para o XDM, em vez de preencher um objeto XDM do zero. No entanto, ela se torna mais complexa com o tempo, pois qualquer campo adicionado no futuro deve ser mapeado para o XDM na sequência de dados."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -28,7 +28,7 @@ ht-degree: 58%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-appmeasurement-logic-step"
 >title="Altere a lógica do AppMeasurement para apontar para o SDK da web"
->abstract="esta etapa é exibida porque você optou por um atalho de implementação. Copie ou altere a lógica do AppMeasurement para preencher o objeto de dados, em vez do objeto s. Por exemplo, altere a atribuição de s.eVar1 para data.__adobe.analytics.eVar1 e repita para todas as variáveis do Analytics."
+>abstract="esta etapa é exibida porque você optou por um atalho de implementação. Copie ou altere a lógica do AppMeasurement para preencher o objeto de dados, em vez do objeto s. Por exemplo, altere a atribuição de s.eVar1 para data.__adobe.analytics.eVar1 e repita o procedimento para todas as variáveis do Analytics."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -40,7 +40,7 @@ Você pode usar sua lógica de coleta de dados de extensão do AppMeasurement ou
 
 ## Vantagens e desvantagens
 
-Este método é mutuamente exclusivo com [o envio de toda a camada de dados para o Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-alternative-appmeasurement.md), pois ambos os métodos realizam a mesma tarefa. (Esse método é preferível ao envio de toda a camada de dados para a Adobe. Ele é mais refinado porque props e evars passam pelos dados.__adobe.analytics._nome-variável_.)
+Este método é mutuamente exclusivo com [o envio de toda a camada de dados para o Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-alternative-appmeasurement.md), pois ambos os métodos realizam a mesma tarefa. (Esse método é preferível ao envio de toda a camada de dados para a Adobe. Ele é mais refinado porque props e evars passam pelos dados.__ adobe.analytics._nome-da-variável_.)
 
 Considere as seguintes vantagens e desvantagens de usar essa alternativa de atualização:
 
@@ -62,15 +62,15 @@ As etapas básicas para migrar uma implementação do Adobe Analytics (AppMeasur
 
    Para obter informações sobre como fazer isso, consulte os seguintes artigos na documentação do Adobe Analytics:
 
-   * [Migrar para o Web SDK usando marcas](https://experienceleague.adobe.com/pt-br/docs/analytics/implementation/aep-edge/web-sdk/analytics-extension-to-web-sdk)
+   * [Migrar para o SDK da web com tags](https://experienceleague.adobe.com/pt-br/docs/analytics/implementation/aep-edge/web-sdk/analytics-extension-to-web-sdk)
 
-   * [Migrar para o Web SDK usando o JavaScript](https://experienceleague.adobe.com/pt-br/docs/analytics/implementation/aep-edge/web-sdk/appmeasurement-to-web-sdk)
+   * [Migrar para o SDK da web com JavaScript](https://experienceleague.adobe.com/pt-br/docs/analytics/implementation/aep-edge/web-sdk/appmeasurement-to-web-sdk)
 
 1. Comece a enviar dados do Edge Network para a Platform.
 
    1. Envie todas as variáveis no formato AppMeasurement por meio do objeto de dados.
 
-      Para obter mais informações, consulte [Mapeamento de variável de objeto de dados para Adobe Analytics](https://experienceleague.adobe.com/pt-br/docs/analytics/implementation/aep-edge/data-var-mapping).
+      Para obter mais informações, consulte [Mapeamento de variável de objeto de dados para Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping).
 
    1. Escolha seu esquema.
 
@@ -96,7 +96,7 @@ As etapas básicas para migrar uma implementação do Adobe Analytics (AppMeasur
 
    1. Use o mapeamento do fluxo de dados para mapear todos os campos no objeto de dados para o esquema XDM.
 
-      Para obter mais informações, consulte [Mapeamento](https://experienceleague.adobe.com/pt-br/docs/experience-platform/datastreams/data-prep?lang=en#mapping) em [Preparação de dados para coleção de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/datastreams/data-prep) na documentação do Experience Platform.
+      Para obter mais informações, consulte [Mapeamento](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep?lang=en#mapping) em [Preparação de dados para coleção de dados](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep) na documentação do Experience Platform.
 
 {{upgrade-final-step}}.
 

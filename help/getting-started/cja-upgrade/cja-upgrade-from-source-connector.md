@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 4c0eef7d-7b0e-43b5-8126-d84d4fffd80c
-source-git-commit: 5faf9668475818773c645b69915ddd5182500aea
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '539'
 ht-degree: 100%
 
 ---
@@ -54,13 +54,13 @@ A seguir está o processo de alto nível para transição do uso exclusivo do co
 
 1. Mapeie cada dimensão do Adobe Analytics do conector de origem do Analytics para a dimensão no esquema do SDK da web.
 
-   1. Na seção **[!UICONTROL Mapear campos padrão]**, selecione a guia **[!UICONTROL Personalizado]**.
+   1. Na seção **[!UICONTROL Mapear campos padrão]**, selecione a guia **[!UICONTROL Personalizar]**.
 
    1. Selecione **[!UICONTROL Adicionar novo mapeamento]**.
 
       ![mapear campos de esquema](assets/schema-mapping.png)
 
-   1. No **[!UICONTROL Campo de origem]**, selecione um campo do Adobe Analytics no grupo de campos do modelo ExperienceEvent do Adobe Analytics. Em seguida, no **[!UICONTROL Campo de destino]**, selecione o campo XDM para o qual você deseja mapeá-lo.
+   1. No campo **[!UICONTROL Origem]**, selecione um campo do Adobe Analytics no grupo de campos do modelo de evento de experiência do Adobe Analytics. Em seguida, no **[!UICONTROL Campo de destino]**, selecione o campo XDM para o qual você deseja mapeá-lo.
 
    1. Repita esse processo para cada campo do grupo de campos do modelo de evento de experiência do Adobe Analytics que você está usando para coletar dados no Adobe Analytics.
 

@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: f96565a2-f556-4b45-b88e-984613614d2e
-source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '745'
+source-wordcount: '758'
 ht-degree: 100%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-source-connector-create"
 >title="Criar o conector de origem do Analytics"
->abstract="Use o conector de origem do Analytics para assimilar dados do conjunto de relatórios e usar no Customer Journey Analytics.<br><br>A criação do conector de origem do Analytics leva apenas alguns minutos com as configurações padrão."
+>abstract="Use o conector de origem do Analytics para assimilar dados do conjunto de relatórios para uso no Customer Journey Analytics.<br><br>A criação do conector de origem do Analytics leva apenas alguns minutos com as configurações padrão."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -28,7 +28,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-source-connector-map-fields"
 >title="Criar o conector de origem do Analytics e mapear campos do esquema"
->abstract="O conector de origem precisa saber como mapear campos do Adobe Analytics no esquema da sua organização. Use esta interface para fornecer ao conector de origem esse mapeamento. Essa etapa faz parte da adição de dados históricos ao Customer Journey Analytics.<br><br>O tempo estimado desta etapa depende muito do número de dimensões e métricas que você precisa mapear. Essa etapa não é tão difícil, mas é monótona e repetitiva. A expectativa é de que o mapeamento da sequência de dados leve aproximadamente uma semana para ser concluída."
+>abstract="O conector de origem precisa saber como mapear campos do Adobe Analytics no esquema da sua organização. Use esta interface para fornecer ao conector de origem esse mapeamento. Essa etapa faz parte da adição de dados históricos ao Customer Journey Analytics.<br><br>O tempo estimado dessa etapa depende muito do número de dimensões e métricas que você precisa mapear. Essa etapa não é tão difícil, mas é monótona e repetitiva. A expectativa é de que o mapeamento da sequência de dados leve aproximadamente uma semana para ser concluída."
 
 <!-- markdownlint-enable MD034 -->
 

@@ -4,10 +4,10 @@ title: Mapa
 feature: Visualizations
 role: User, Admin
 exl-id: 6656b34a-ae1e-4f9f-9c6d-13c54e49625c
-source-git-commit: 211dbd80b21f84ab616569c0d847dcc97f13661c
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '2770'
-ht-degree: 9%
+source-wordcount: '2815'
+ht-degree: 10%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 9%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta a Visualização de mapa no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consulte o [Mapa](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) da versão_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
+_Este artigo documenta a Visualização de mapa no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consulte o [Mapa](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/map-visualization) para a versão_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 
@@ -109,7 +109,7 @@ A seguir estão os modelos e o rótulo de contexto necessário. Sem a presença 
 | Regiões geográficas | [!UICONTROL Geo: Região Geográfica] |
 | Cidades geográficas | [!UICONTROL Geo: Cidade Geográfica] |
 | Estados geográficos dos EUA | [!UICONTROL Geo: Estado Geográfico] |
-| DMA Geográfico dos EUA | [!UICONTROL Geo: Geo Dma] |
+| Geo US DMA | [!UICONTROL Geo: Geo Dma] |
 
 Para adicionar esses rótulos de contexto:
 
@@ -149,7 +149,7 @@ A visualização de mapa no Customer Journey Analytics difere da visualização 
 
 | Recurso | Customer Journey Analytics | Adobe Analytics |
 |---------|----------|---------|
-| Fonte de dados | Use qualquer segmento disponível na visualização de dados como fonte de dados. | Fornece as seguintes opções: <ul><li>Lat/long móveis</li><li>Dimension geográfico<br/>Representa dados de segmentação geográfica sobre a localização do visitante com base no endereço IP do visitante. </li></ul> |
+| Fonte de dados | Use qualquer segmento disponível na visualização de dados como fonte de dados. | Fornece as seguintes opções: <ul><li>Latitude/Longitude de dispositivos móveis</li><li>Dimension geográfico<br/>Representa dados de segmentação geográfica sobre a localização do visitante com base no endereço IP do visitante. </li></ul> |
 | Precisão | Para conjuntos de dados com grande precisão, é possível configurar as dimensões na visualização de dados para mostrar até 5 casas decimais. Isso permite que a visualização do mapa seja precisa em um único metro. <p>Para obter mais informações, consulte [Configurar locais precisos para dimensões](#configure-precise-locations-for-dimensions).</p> | Os dados estão precisos para o nível de [!UICONTROL País], [!UICONTROL Região] e [!UICONTROL Cidade]. (Ele não vai para o nível de DMA ou CEP.) |
 | Criar um segmento a partir de uma seleção | Crie um segmento com base em uma área específica selecionada na visualização de mapa. <p>Para obter mais informações, consulte [Criar um segmento da visualização de mapa](#create-a-segment-from-the-map-visualization).</p> | Crie um segmento com base nos dados que estão sendo relatados na visualização de mapa em geral. |
 | Criar um público-alvo a partir de uma seleção | Crie um público-alvo com base em uma área específica selecionada na visualização de mapa. <p>Para obter mais informações, consulte [Criar um público-alvo da visualização de mapa](#create-an-audience-from-the-map-visualization). | Não é possível criar um público-alvo a partir da visualização do mapa. |

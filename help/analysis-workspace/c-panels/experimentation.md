@@ -4,10 +4,10 @@ title: Painel de experimentação
 feature: Panels
 exl-id: e11169b4-2c73-4dd4-bca7-c26189d60631
 role: User
-source-git-commit: b013518d8f1782219dd2cf9e5b5a89b877e3b92d
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '2175'
-ht-degree: 98%
+source-wordcount: '2318'
+ht-degree: 94%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 98%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta o painel Experimentação no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consult oe [Painel do Analytics for Target](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/panels/a4t-panel) para obter informações sobre como analisar atividades e experiências do Adobe Target no_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics**._
+_Este artigo documenta o painel Experimentação no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consulte o [Painel Analytics for Target](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/panels/a4t-panel) para obter informações sobre como analisar atividades e experiências do Adobe Target no_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics**._
 
 >[!ENDSHADEBOX]
 
@@ -107,7 +107,7 @@ Usar o painel de experimentação:
 
 O painel Experimentação retorna um conjunto avançado de dados e visualizações para ajudá-lo a entender melhor o desempenho de seus experimentos. Na parte superior do painel, são fornecidas visualizações de [alterações de resumo](../visualizations/summary-number-change.md) para lembrá-lo das configurações do painel selecionadas. A qualquer momento, você pode editar o painel selecionando o lápis de edição no canto superior direito.
 
-Você também recebe um resumo de texto que indica se o experimento é conclusivo ou não e resume o resultado. A conclusão se baseia na significância estatística (consulte [Metodologia estatística](#adobes-statistical-methodology)). Você pode ver números resumidos para a variante de melhor desempenho com maior elevação e confiança.
+Você também recebe um resumo de texto que indica se o experimento é conclusivo ou não e resume o resultado. A conclusão se baseia na significância estatística (consulte [Metodologia estatística](#adobes-statistical-methodology).) Você pode ver números de resumo para a variante com melhor desempenho, com o maior aumento e confiança.
 
 Para cada métrica de sucesso selecionada, uma visualização de [tabela de forma livre](../visualizations/freeform-table/freeform-table.md) e uma visualização da [linha](../visualizations/line.md) da taxa de conversão são mostradas.
 
@@ -146,7 +146,7 @@ Uma sequência de confiança de 95% inclui o valor “verdadeiro” da métrica 
 
 O Customer Journey Analytics permite que analistas selecionem qualquer dimensão como experimento. Mas como você interpreta uma análise em que a dimensão escolhida como experimento não é aquela para a qual as pessoas são randomizadas?
 
-Por exemplo, considere um anúncio que uma pessoa vê. Você pode estar interessado em medir a mudança em alguma métrica (por exemplo, receita média) se decidir mostrar às pessoas o *anúncio B* em vez do *anúncio A*. O efeito causal de exibir o anúncio B, em vez do anúncio A, é de importância central para chegar à decisão de marketing. Esse efeito causal pode ser medido como a receita média de toda a população, se você substituísse o status quo de exibir o anúncio A pela estratégia alternativa de exibir o anúncio B.
+Por exemplo, considere um anúncio que uma pessoa vê. Você pode estar interessado em medir a alteração em alguma métrica (por exemplo, receita média) se decidir mostrar pessoas *ad B* em vez de *ad A*. O efeito causal de mostrar o anúncio B, em vez do anúncio A, é de importância central para chegar à decisão de comercialização. Esse efeito causal pode ser medido como a receita média de toda a população, se você substituísse o status quo de exibir o anúncio A pela estratégia alternativa de exibir o anúncio B.
 
 O teste A/B é o padrão ouro no setor para medir objetivamente os efeitos dessas intervenções. A razão crítica pela qual um teste A/B dá origem a uma estimativa causal é devido à randomização de pessoas para receber uma das variantes possíveis.
 
@@ -180,8 +180,8 @@ Métricas calculadas que não são compatíveis com o painel Experimentação t�
 
 ## Usar métricas calculadas no painel Experimentação
 
-Consulte esta publicação do blog para obter informações sobre [como usar métricas calculadas no painel Experimentação](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-derived-metrics-in-cja-s-experimentation-panel/ba-p/593119?profile.language=pt).
+Consulte esta publicação do blog para obter informações sobre [como usar métricas calculadas no painel Experimentação](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-derived-metrics-in-cja-s-experimentation-panel/ba-p/593119).
 
 >[!MORELIKETHIS]
->[Domínio da experimentação do Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/mastering-adobe-customer-journey-analytics-experimentation-your/ba-p/732338?profile.language=pt)
+>[Domínio da experimentação do Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/mastering-adobe-customer-journey-analytics-experimentation-your/ba-p/732338)
 >

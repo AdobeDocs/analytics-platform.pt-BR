@@ -2,9 +2,9 @@
 title: Configurações de recusa de uso do produto
 description: Gerencie configurações de recusa para usuários individuais na organização.
 exl-id: 0ea24582-bab8-4a76-ac00-7c265423e8bb
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '240'
 ht-degree: 85%
 
 ---

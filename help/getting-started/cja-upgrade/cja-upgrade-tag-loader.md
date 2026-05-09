@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 471ecd60-6e1e-4889-93bd-c654b35d40dc
-source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '301'
 ht-degree: 100%
 
 ---
@@ -33,9 +33,9 @@ Para obter o código que faz referência à sua tag:
 
 1. Faça logon em experiencecloud.adobe.com com as suas credenciais do Adobe ID.
 
-1. No Adobe Experience Platform, acesse **[!UICONTROL Coleção de dados]** > **[!UICONTROL Tags]**.
+1. Na Adobe Experience Platform, acesse **[!UICONTROL Coleção de dados]** > **[!UICONTROL Tags]**.
 
-1. Na página **[!UICONTROL Propriedades da tag]**, selecione a tag recém-criada na lista de propriedades para abri-la.
+1. Na página **[!UICONTROL Propriedades da tag]**, selecione a tag recém-criada na lista de propriedades para abri-la.
 
 1. Selecione **[!UICONTROL Ambientes]** no painel esquerdo.
 

@@ -4,9 +4,9 @@ title: Criar projetos
 feature: Workspace Basics
 role: User
 exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
-source-git-commit: 518bebc18611136873fce5c23dd7041afafe1220
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '459'
 ht-degree: 88%
 
 ---
@@ -50,12 +50,12 @@ Agora que você criou um projeto do espaço de trabalho em branco, certifique-se
 >[!CONTEXTUALHELP]
 >id="workspace_project_countrepeatinstances"
 >title="Contar instâncias repetidas"
->abstract="Especifica se as instâncias repetidas devem ser contadas nos relatórios.<br/><br/>Observação: essa configuração não se aplica às visualizações de fluxo ou fallout."
+>abstract="Especifica se as instâncias repetidas são contadas nos relatórios.<br/><br/>Observação: essa configuração não se aplica às visualizações de fluxo ou fallout."
 
 >[!CONTEXTUALHELP]
 >id="workspace_project_repeatinstances"
 >title="Contar instâncias repetidas"
->abstract="Especifica se as instâncias repetidas devem ser contadas nos relatórios.<br/>Observação: essa configuração não se aplica às visualizações de fluxo ou fallout."
+>abstract="Especifica se as instâncias repetidas são contadas nos relatórios.<br/>Observação: essa configuração não se aplica às visualizações de fluxo ou fallout."
 
 
 >[!CONTEXTUALHELP]

@@ -5,9 +5,9 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: product analytics
 role: User
 exl-id: 8a48ad3b-fa30-497e-8306-f8d881b1a335
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '756'
+source-wordcount: '766'
 ht-degree: 98%
 
 ---
@@ -35,7 +35,7 @@ Os recursos que aparecem na parte superior dessa visualização indicam que são
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Análise de engajamento](https://video.tv.adobe.com/v/3447472?captions=por_br){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Análise de engajamento](https://video.tv.adobe.com/v/3429489/&learn=on){target="_blank"} para ver um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 
@@ -82,8 +82,8 @@ A Análise de [!UICONTROL engajamento] oferece as seguintes configurações de g
 
 O intervalo de datas desejado para a análise. Há dois componentes nesta configuração:
 
-* **[!UICONTROL Intervalo]**: a granularidade de data pela qual você deseja exibir dados de tendência. Esta análise trata [!UICONTROL Intervalo] de forma semelhante a [!UICONTROL Contado como] no painel de consulta. Usuários ativos por hora não são aceitos.
-* **[!UICONTROL Data]**: a data inicial e final. As predefinições de intervalo de datas contínuo e os intervalos personalizados salvos anteriormente estão disponíveis para fins de praticidade, ou você pode usar o seletor de calendário para escolher um intervalo de datas fixo.
+* **[!UICONTROL Intervalo]**: a granularidade de datas com a qual você deseja exibir os dados de tendência. Esta análise trata [!UICONTROL Intervalo] de forma semelhante a [!UICONTROL Contado como] no painel de consulta. Usuários ativos por hora não são aceitos.
+* **[!UICONTROL Data]**: as datas inicial e final. As predefinições de intervalo de datas contínuo e os intervalos personalizados salvos anteriormente estão disponíveis para fins de praticidade, ou você pode usar o seletor de calendário para escolher um intervalo de datas fixo.
 
 <!--
 ## Example

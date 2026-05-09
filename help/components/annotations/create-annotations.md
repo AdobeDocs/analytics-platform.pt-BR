@@ -4,10 +4,10 @@ description: Saiba como criar anotações no Analysis Workspace.
 feature: Components
 exl-id: 68fef9b3-dc47-4e56-bea6-d1c4c39fb51b
 role: User, Admin
-source-git-commit: 50b82943d4c59f612240ffc8d83a8a08f09b8331
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '875'
-ht-degree: 91%
+source-wordcount: '877'
+ht-degree: 85%
 
 ---
 
@@ -21,10 +21,10 @@ Você pode criar uma anotação das seguintes maneiras:
 
 ![Criar uma anotação](assets/create-annotation.png)
 
-* **A**.  Na interface principal, selecione **[!UICONTROL Componentes]** e **[!UICONTROL Anotações]**. Selecione ![AddCircle](/help/assets/icons/AddCircle.svg) [!UICONTROL **[!UICONTROL Adicionar]**] no gerenciador de [[!UICONTROL Anotações]](/help/components/annotations/manage-annotations.md).
-* **B**. Em um projeto do espaço de trabalho, no menu de contexto da visualização, selecione **[!UICONTROL Criar anotação a partir da seleção]**.
-* **C**.  Em um projeto do espaço de trabalho, no menu de contexto do gráfico de linha, selecione **[!UICONTROL Anotar seleção]**.
-* **D**. Em um projeto do espaço de trabalho, selecione **[!UICONTROL Componentes]** no menu e **[!UICONTROL Criar anotação]**.
+* **A**. Na interface principal, selecione **[!UICONTROL Componentes]** e selecione **[!UICONTROL Anotações]**. Selecione ![AddCircle](/help/assets/icons/AddCircle.svg) [!UICONTROL **[!UICONTROL Adicionar]**] no gerenciador de [[!UICONTROL Anotações]](/help/components/annotations/manage-annotations.md).
+* **B**. Em um projeto do Workspace, no menu de contexto de uma visualização, selecione **[!UICONTROL Criar anotação a partir da seleção]**.
+* **C**. Em um projeto do Workspace, no menu de contexto em um gráfico de linhas, selecione **[!UICONTROL Anotar Seleção]**.
+* **D**. Em um projeto do Workspace, selecione **[!UICONTROL Componentes]** no menu e selecione **[!UICONTROL Criar anotação]**.
 * **E**.  Em um projeto do espaço de trabalho, use o atalho **[!UICONTROL Ctrl+Shift+O]** (Windows) ou **[!UICONTROL Shift+Command+O]** (macOS)
 
 Para definir a anotação, use o [[!UICONTROL Construtor de anotações]](#annotation-builder).

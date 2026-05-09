@@ -6,10 +6,10 @@ feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
 role: User
-source-git-commit: 973e999b611d578da12018e60becf48efd7a76f8
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '799'
-ht-degree: 51%
+source-wordcount: '838'
+ht-degree: 50%
 
 ---
 
@@ -39,7 +39,7 @@ Para enviar um arquivo aos recipients por email:
 1. Adicione recipients ou grupos. Você também pode inserir endereços de email.
 1. (Somente para clientes do Healthcare Shield) Forneça uma senha para [proteger com senha um relatório agendado](#password-protect-a-new-scheduled-project).
 1. (Opcional) Selecione **[!UICONTROL Mostrar opções de agendamento]** para [agendar uma exportação de arquivo](#schedule-file-export).
-1. Clique em **[!UICONTROL Enviar Agora]**. Selecione **[!UICONTROL Cancelar]** para cancelar.
+1. Clique em **[!UICONTROL Enviar agora]**. Selecione **[!UICONTROL Cancelar]** para cancelar.
 
 
 ## Programar exportação de arquivo {#schedule}
@@ -86,7 +86,7 @@ Para enviar um arquivo por email de acordo com um agendamento para os recipients
 
 >[!NOTE]
 >
->A opção de proteger com senha um projeto agendado aparece somente para clientes do Customer Journey Analytics que compraram o produto complementar [Healthcare Shield](https://business.adobe.com/br/solutions/industries/healthcare.html).
+>A opção de proteger com senha um projeto agendado aparece somente para clientes do Customer Journey Analytics que compraram o produto complementar [Healthcare Shield](https://business.adobe.com/solutions/industries/healthcare.html).
 
 A Adobe usa a senha para criptografar projetos agendados, sejam eles enviados nos formatos .pdf ou .csv.
 
@@ -103,7 +103,7 @@ Os requisitos de senha estão em conformidade com os padrões da Adobe, exigindo
 ### Proteger com senha um novo projeto agendado
 
 1. Depois de salvar o projeto, acesse **[!UICONTROL Compartilhar]** > **[!UICONTROL Enviar arquivo agora]** ou **[!UICONTROL Compartilhar]** > **[!UICONTROL Enviar arquivo conforme agendado]**.
-1. Siga as instruções acima, em [Enviar arquivo agora](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html?lang=pt-BR#now) ou [Enviar arquivo agendado](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html?lang=pt-BR#schedule).
+1. Siga as instruções acima, em [Enviar arquivo agora](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html#now) ou [Enviar arquivo agendado](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html#schedule).
 
 ### Proteger por senha um projeto agendado existente
 

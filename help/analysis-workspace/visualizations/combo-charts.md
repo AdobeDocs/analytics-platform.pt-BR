@@ -4,10 +4,10 @@ title: Combinado
 feature: Visualizations
 exl-id: 06faa997-3a4e-4c41-b64e-64a15ada6552
 role: User
-source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '603'
-ht-degree: 93%
+source-wordcount: '617'
+ht-degree: 92%
 
 ---
 
@@ -25,9 +25,9 @@ ht-degree: 93%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta a visualização combinada no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._
+_Este artigo documenta a visualização combinada no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._
 
-_Consulte [Combinado](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/combo-charts) para ver a versão do_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
+_Consulte [Combinado](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/combo-charts) para ver a versão do_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 
@@ -68,7 +68,7 @@ Lembre-se:
 
    A saída é semelhante a:
 
-   ![Um gráfico de combinação mostrando o período atual em um gráfico de barras e o período de comparação no gráfico de linhas &#x200B;](assets/combo-output.png)
+   ![Um gráfico de combinação mostrando o período atual em um gráfico de barras e o período de comparação no gráfico de linhas ](assets/combo-output.png)
 
    O período atual é mostrado no gráfico de barras. O gráfico de linhas representa o período de comparação. Os pontos no gráfico de linhas são conhecidos como *barras*.
 
