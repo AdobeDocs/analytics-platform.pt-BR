@@ -35,7 +35,7 @@ Os recursos que aparecem na parte superior dessa visualização indicam que são
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Análise de engajamento](https://video.tv.adobe.com/v/3429489/&learn=on){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Análise de engajamento](https://video.tv.adobe.com/v/3447472?captions=por_br){target="_blank"} para ver um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 
