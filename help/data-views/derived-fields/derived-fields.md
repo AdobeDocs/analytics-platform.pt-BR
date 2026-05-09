@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-source-git-commit: aa29067a244c588e6d830f0a039db90e99eaf5d3
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '10297'
+source-wordcount: '10489'
 ht-degree: 99%
 
 ---
@@ -80,7 +80,7 @@ Para definir uma regra no construtor de regras, use a interface de regras.
 |  | Nome | Descrição |
 |---------|----------|--------|
 | A | **Nome da regra** | Por padrão, o nome da regra é **Regra X** (X refere-se a um número de sequência). Para editar o nome de uma regra, selecione-o e digite o novo nome, como `Query Parameter`. |
-| B | **Nome da função** | O nome de função selecionado para a regra, como [!UICONTROL URL PARSE]. Quando a função é a última da sequência de funções e determina os valores da saída final, o nome da função é seguido por [!UICONTROL - FINAL OUTPUT]; por exemplo, [!UICONTROL URL PARSE - FINAL OUTPUT].  <br/>Para mostrar uma janela pop-up com mais informações sobre a função, selecione o ![Ícone de ajuda](assets/Smock_HelpOutline_18_N.svg). |
+| B | **Nome da função** | O nome de função selecionado para a regra, como [!UICONTROL URL PARSE]. Quando a função é a última da sequência de funções e determina os valores da saída final, o nome da função é seguido por [!UICONTROL - FINAL OUTPUT]; por exemplo, [!UICONTROL URL PARSE - FINAL OUTPUT]. <br/>Para mostrar uma janela pop-up com mais informações sobre a função, selecione o ![Ícone de ajuda](assets/Smock_HelpOutline_18_N.svg). |
 | C | **Descrição da regra** | Também é possível adicionar uma descrição a uma regra.<br/>Selecione o ![Ícone de mais](assets/More.svg) e **[!UICONTROL ** Adicionar descrição **]** para adicionar uma descrição, ou **[!UICONTROL **&#x200B; Editar descrição &#x200B;**]** para editar uma descrição existente.<br/>Use o editor para inserir uma descrição. Você pode usar a barra de ferramentas para formatar o texto (utilizando o seletor de estilo, negrito, itálico, sublinhado, direita, esquerda, centralizado, cor, lista numerada, lista com marcadores) e adicionar links para informações externas. <br/>Para concluir a edição da descrição, clique fora do editor. |
 | D | **Área da função** | Define a lógica da função. A interface depende do tipo de função. O menu suspenso [!UICONTROL Campo] ou [!UICONTROL Valor] mostra todas as categorias de campos (regras, campos padrão, campos) disponíveis com base no tipo de entrada que a função espera. Alternativamente, você pode arrastar e soltar um campo do seletor de campos do esquema e campos padrão em um campo ou valor. Quando esse campo arrastado advém de um conjunto de dados de pesquisa, uma função de pesquisa é inserida automaticamente antes da função definida. <br/>Consulte [Referência da função](#function-reference) para informações detalhadas sobre cada uma das funções permitidas. |
 
@@ -431,7 +431,7 @@ Para usar o modelo, é necessário especificar os parâmetros corretos para cada
 +++
 
 
-### Análise de parâmetros UTM
+### Análise de Parâmetros UTM
 
 Este modelo de função extrai o valor de parâmetros de consulta UTM especificados (por exemplo, `utm_source`, `utm_campaign`) do campo de URL selecionado. Use esta função para rotular e agrupar eventos por atribuição de campanha para relatórios de marketing.
 
@@ -495,7 +495,7 @@ Aplica condicionais com base em critérios definidos de um ou mais campos. Em se
 
 | Tipo de dado de entrada | Entrada | Operadores inclusos | Limitações | Saída |
 |---|---|---|---|---|
-| <ul><li>String</li><li>Numérico</li><li>Data</li></ul> | <ul><li>Contêiner [!UICONTROL If], [!UICONTROL Else If]:</p><ul><li>[!UICONTROL Valor]</li><ul><li>Regras</li><li>Campos padrão</li><li>Campos</li></ul><li>[!UICONTROL Critério] (consulte os operadores inclusos com base no tipo de valor selecionado)</li></ul></li><li>[!UICONTROL Em seguida, defina o valor como], [!UICONTROL Caso contrário, defina o valor como]:</p><ul><li>[!UICONTROL Valor]</li><ul><li>Regras</li><li>Campos padrão</li><li>Campos</li></ul></ul></li></ul> | <p>Strings</p><ul><li>Igual a</li><li>Igual a qualquer termo</li><li>Contém a frase</li><li>Contém qualquer termo</li><li>Contém todos os termos</li><li>Começa com</li><li>Começa com qualquer termo</li><li>Termina com</li><li>Termina com qualquer termo</li><li>Não é igual a</li><li>Não é igual a nenhum termo</li><li>Não contém a frase</li><li>Não contém nenhum termo</li><li>Não contém todos os termos</li><li>Não começa com</li><li>Não começa com nenhum termo</li><li>Não termina com</li><li>Não termina com nenhum termo</li><li>Está definido</li><li>Não está definido</li></ul><p>Numérico</p><ul><li>Igual a</li><li>Não é igual a</li><li>É maior que</li><li>É maior ou igual a</li><li>É menor que</li><li>É menor ou igual a</li><li>Está definido</li><li>Não está definido</li></ul><p>Datas</p><ul><li>Igual a</li><li>Não é igual a</li><li>É posterior a</li><li>É posterior ou igual a</li><li>É anterior a</li><li>É anterior ou igual a</li><li>Está definido</li><li>Não está definido</li></ul> | <ul><li>Cinco funções por campo derivado</li><li>Duzentos [operadores](#operators) por campo derivado. Um exemplo de um operador único é “O domínio de referência contém Google”. </li></ul> | <p>Novo campo derivado</p> |
+| <ul><li>String</li><li>Numérico</li><li>Data</li></ul> | <ul><li>Contêiner [!UICONTROL If], [!UICONTROL Else If]:</p><ul><li>[!UICONTROL Valor]</li><ul><li>Regras</li><li>Campos padrão</li><li>Campos</li></ul><li>[!UICONTROL Critério] (consulte os operadores inclusos com base no tipo de valor selecionado)</li></ul></li><li>[!UICONTROL Em seguida, defina o valor como], [!UICONTROL Caso contrário, defina o valor como]:</p><ul><li>[!UICONTROL Valor]</li><ul><li>Regras</li><li>Campos padrão</li><li>Campos</li></ul></ul></li></ul> | <p>Strings</p><ul><li>Igual</li><li>Igual a qualquer termo</li><li>Contém a frase</li><li>Contém qualquer termo</li><li>Contém todos os termos</li><li>Inicia com</li><li>Começa com qualquer termo</li><li>Termina com</li><li>Termina com qualquer termo</li><li>Não é igual</li><li>Não é igual a nenhum termo</li><li>Não contém a frase</li><li>Não contém nenhum termo</li><li>Não contém todos os termos</li><li>Não inicia com</li><li>Não começa com nenhum termo</li><li>Não termina com</li><li>Não termina com nenhum termo</li><li>Está definido</li><li>Não está definido</li></ul><p>Numérico</p><ul><li>Igual</li><li>Não é igual</li><li>É superior a</li><li>É superior ou igual a</li><li>É inferior a</li><li>É inferior ou igual a</li><li>Está definido</li><li>Não está definido</li></ul><p>Datas</p><ul><li>Igual</li><li>Não é igual</li><li>É posterior a</li><li>É posterior ou igual a</li><li>É anterior a</li><li>É anterior ou igual a</li><li>Está definido</li><li>Não está definido</li></ul> | <ul><li>Cinco funções por campo derivado</li><li>Duzentos [operadores](#operators) por campo derivado. Um exemplo de um operador único é “O domínio de referência contém Google”. </li></ul> | <p>Novo campo derivado</p> |
 
 {style="table-layout:auto"}
 
@@ -731,7 +731,7 @@ Define um conjunto de valores que são substituídos por valores correspondentes
 
 | Tipo de dado de entrada | Entrada | Operadores inclusos | Limitações | Saída |
 |---|---|---|---|---|
-| <ul><li>String</li><li>Numérico</li><li>Data</li></ul> | <ul><li>[!UICONTROL Campo a ser classificado]:<ul><li>Regras</li><li>Campos padrão</li><li>Campos</li></ul></li><li>[!UICONTROL Quando o valor for igual a] e [!UICONTROL Substituir valores por]:</p><ul><li>String</li></ul><li>Mostrar valores originais<ul><li>Booleano</li></ul></li></ul> | <p>N/A</p> | <ul><li>Cinco funções por campo derivado</li><li>Duzentos [operadores](#operators) por campo derivado. Cada entrada para [!UICONTROL Quando o valor for igual ao valor original] [!UICONTROL Substituir valor por novo valor] é considerada uma operação.</li></ul> | <p>Novo campo derivado</p> |
+| <ul><li>String</li><li>Numérico</li><li>Data</li></ul> | <ul><li>[!UICONTROL Campo a ser classificado]:<ul><li>Regras</li><li>Campos padrão</li><li>Campos</li></ul></li><li>[!UICONTROL Quando o valor for igual a] e [!UICONTROL Substituir valores por]:</p><ul><li>String</li></ul><li>Mostrar valores originais<ul><li>Booleano</li></ul></li></ul> | <p>N/D</p> | <ul><li>Cinco funções por campo derivado</li><li>Duzentos [operadores](#operators) por campo derivado. Cada entrada para [!UICONTROL Quando o valor for igual ao valor original] [!UICONTROL Substituir valor por novo valor] é considerada uma operação.</li></ul> | <p>Novo campo derivado</p> |
 
 {style="table-layout:auto"}
 
@@ -876,7 +876,7 @@ Combina valores de campos em um mesmo novo campo derivado com delimitadores defi
 
 | Tipo de dado de entrada | Entrada | Operadores inclusos | Limitações | Saída |
 |---|---|---|---|---|
-| <ul><li>String</li></ul> | <ul><li>[!UICONTROL Valor]:<ul><li>Regras</li><li>Campos padrão</li><li>Campos</li><li>String</li></ul></li><li>[!UICONTROL Delimitador]:<ul><li>String</li></ul></li> </ul> | <p>N/A</p> | <p>Duas funções por campo derivado</p> | <p>Novo campo derivado</p> |
+| <ul><li>String</li></ul> | <ul><li>[!UICONTROL Valor]:<ul><li>Regras</li><li>Campos padrão</li><li>Campos</li><li>String</li></ul></li><li>[!UICONTROL Delimitador]:<ul><li>String</li></ul></li> </ul> | <p>N/D</p> | <p>Duas funções por campo derivado</p> | <p>Novo campo derivado</p> |
 
 {style="table-layout:auto"}
 
@@ -961,7 +961,7 @@ Retorna a diferença entre dois campos de data ou dois campos de data e hora.
 
 | Tipo de dado de entrada | Entrada | Operadores inclusos | Limitações | Saída |
 |---|---|---|---|---|
-| <ul><li>Data</li><li>Data/hora</li></ul> | <ul><li>[!UICONTROL Escopo]<ul><li>Evento</li><li>Sessão</li><li>Pessoa</li></ul></li><li>[!UICONTROL Valor]:<ul><li>Data</li><li>Data/hora</li><li>Data estática (inserida pelo usuário)</li><li>Data/hora estáticas (inseridas pelo usuário)</li><li>Data dinâmica<ul><li>Hoje</li></ul></li><li>Data/hora dinâmicas<ul><li>Agora</li></ul></li></ul></li><li>[!UICONTROL Granularidade]:<ul><li>Seconds</li><li>Minutes</li><li>Horas</li><li>Days</li><li>Weeks</li><li>Months</li><li>Trimestres</li><li>Anos</li></ul></li><li>Para cada retorno de data ou data e hora:<ul><li>Primeiro (dentro da sessão ou pessoa)</li><li>Último (dentro da sessão ou pessoa)</li></ul></li></ul> | <p>N/A</p> | <p>Duas funções por campo derivado</p> | <p>Novo campo derivado</p> |
+| <ul><li>Data</li><li>Data-hora</li></ul> | <ul><li>[!UICONTROL Escopo]<ul><li>Evento</li><li>Sessão</li><li>Pessoa</li></ul></li><li>[!UICONTROL Valor]:<ul><li>Data</li><li>Data/hora</li><li>Data estática (inserida pelo usuário)</li><li>Data/hora estáticas (inseridas pelo usuário)</li><li>Data dinâmica<ul><li>Hoje</li></ul></li><li>Data/hora dinâmicas<ul><li>Agora</li></ul></li></ul></li><li>[!UICONTROL Granularidade]:<ul><li>Segundos</li><li>Minutos</li><li>Horas</li><li>Dias</li><li>Semanas</li><li>Meses</li><li>Trimestres</li><li>Anos</li></ul></li><li>Para cada retorno de data ou data e hora:<ul><li>Primeiro (dentro da sessão ou pessoa)</li><li>Último (dentro da sessão ou pessoa)</li></ul></li></ul> | <p>N/D</p> | <p>Duas funções por campo derivado</p> | <p>Novo campo derivado</p> |
 
 {style="table-layout:auto"}
 
@@ -1027,7 +1027,7 @@ Impede a contagem de um valor várias vezes.
 
 | Tipo de dado de entrada | Entrada | Operadores inclusos | Limitações | Saída |
 |---|---|---|---|---|
-| <ul><li>String</li><li>Numérico</li></ul> | <ul><li>[!UICONTROL Valor]:<ul><li>Regras</li><li>Campos padrão</li><li>Campos</li><li>String</li></ul></li><li>[!UICONTROL Escopo]:<ul><li>Pessoa</li><li>Sessão</li></ul></li><li>[!UICONTROL ID de desduplicação]:<ul><li>Regras</li><li>Campos padrão</li><li>Campos</li><li>String</li></ul><li>[!UICONTROL Valor a manter]:<ul><li>Manter a primeira instância</li><li>Manter a última instância</li></ul></li></ul> | <p>N/A</p> | <p>Cinco funções por campo derivado</p> | <p>Novo campo derivado</p> |
+| <ul><li>String</li><li>Numérico</li></ul> | <ul><li>[!UICONTROL Valor]:<ul><li>Regras</li><li>Campos padrão</li><li>Campos</li><li>String</li></ul></li><li>[!UICONTROL Escopo]:<ul><li>Pessoa</li><li>Sessão</li></ul></li><li>[!UICONTROL ID de desduplicação]:<ul><li>Regras</li><li>Campos padrão</li><li>Campos</li><li>String</li></ul><li>[!UICONTROL Valor a manter]:<ul><li>Manter a primeira instância</li><li>Manter a última instância</li></ul></li></ul> | <p>N/D</p> | <p>Cinco funções por campo derivado</p> | <p>Novo campo derivado</p> |
 
 {style="table-layout:auto"}
 
@@ -1237,7 +1237,7 @@ Valores de pesquisa que utilizam um campo de um conjunto de dados de pesquisa e 
 
 | Tipo de dado de entrada | Entrada | Operadores inclusos | Limite | Saída |
 |---|---|---|---|---|
-| <ul><li>String</li><li>Numérico</li><li>Data</li></ul> | <ul><li>[!UICONTROL Campo para aplicar a pesquisa]:</li><ul><li>Regras</li><li>Campos padrão</li><li>Campos</li></ul><li>[!UICONTROL Conjunto de dados de pesquisa]</li><ul><li>Conjunto de dados</li></ul><li>[!UICONTROL Chave correspondente]<ul><li>Regras</li><li>Campos</li></ul></li><li>Valores a serem retornados<ul><li>Regras</li><li>Campos</li></ul></li></ul> | <p>N/A</p> | <p>Três funções por campo derivado</p> | <p>Novo campo derivado ou valor para processamento adicional na próxima regra</p> |
+| <ul><li>String</li><li>Numérico</li><li>Data</li></ul> | <ul><li>[!UICONTROL Campo para aplicar a pesquisa]:</li><ul><li>Regras</li><li>Campos padrão</li><li>Campos</li></ul><li>[!UICONTROL Conjunto de dados de pesquisa]</li><ul><li>Conjunto de dados</li></ul><li>[!UICONTROL Chave correspondente]<ul><li>Regras</li><li>Campos</li></ul></li><li>Valores a serem retornados<ul><li>Regras</li><li>Campos</li></ul></li></ul> | <p>N/D</p> | <p>Três funções por campo derivado</p> | <p>Novo campo derivado ou valor para processamento adicional na próxima regra</p> |
 
 {style="table-layout:auto"}
 
@@ -1294,7 +1294,7 @@ Converte valores de um campo em minúsculas e armazena-os em um novo campo deriv
 
 | Tipo de dado de entrada | Entrada | Operadores inclusos | Limite | Saída |
 |---|---|---|---|---|
-| <ul><li>String</li><li>Numérico</li><li>Data</li></ul> | <ul><li>[!UICONTROL Campo]:</li><ul><li>Regras</li><li>Campos padrão</li><li>Campos</li></ul> | <p>N/A</p> | <p>Duas funções por campo derivado</p> | <p>Novo campo derivado</p> |
+| <ul><li>String</li><li>Numérico</li><li>Data</li></ul> | <ul><li>[!UICONTROL Campo]:</li><ul><li>Regras</li><li>Campos padrão</li><li>Campos</li></ul> | <p>N/D</p> | <p>Duas funções por campo derivado</p> | <p>Novo campo derivado</p> |
 
 {style="table-layout:auto"}
 
@@ -1438,7 +1438,7 @@ Mescla valores de dois campos diferentes em um novo campo derivado.
 
 | Tipo de dado de entrada | Entrada | Operadores inclusos | Limite | Saída |
 |---|---|---|---|---|
-| <ul><li>String</li><li>Numérico</li><li>Data</li></ul> | <ul><li>[!UICONTROL Campo]:</li><ul><li>Regras</li><li>Campos padrão</li><li>Campos</li></ul> | <p>N/A</p> | <p>Cinco funções por campo derivado</p> | <p>Novo campo derivado</p> |
+| <ul><li>String</li><li>Numérico</li><li>Data</li></ul> | <ul><li>[!UICONTROL Campo]:</li><ul><li>Regras</li><li>Campos padrão</li><li>Campos</li></ul> | <p>N/D</p> | <p>Cinco funções por campo derivado</p> | <p>Novo campo derivado</p> |
 
 {style="table-layout:auto"}
 
@@ -1510,7 +1510,7 @@ Pega um campo como entrada e resolve o valor seguinte ou anterior desse campo de
 
 | Tipo de dado de entrada | Entrada | Operadores inclusos | Limite | Saída |
 |---|---|---|---|---|
-| <ul><li>String</li><li>Numérico</li></ul> | <ul><li>[!UICONTROL Campo]:</li><ul><li>Regras</li><li>Campos padrão</li><li>Campos</li></ul><li>[!UICONTROL Método]:<ul><li>Valor anterior</li><li>Próximo valor</li></ul></li><li>[!UICONTROL Escopo]:<ul><li>Pessoa</li><li>Sessão</li></ul></li><li>[!UICONTROL Índice]:<ul><li>Numérico</li></ul><li>[!UICONTROL Incluir repetições]:<ul><li>Booleano</li></ul></li></ul> | <p>N/A</p> | <p>Três funções por campo derivado</p> | <p>Novo campo derivado</p> |
+| <ul><li>String</li><li>Numérico</li></ul> | <ul><li>[!UICONTROL Campo]:</li><ul><li>Regras</li><li>Campos padrão</li><li>Campos</li></ul><li>[!UICONTROL Método]:<ul><li>Valor anterior</li><li>Próximo valor</li></ul></li><li>[!UICONTROL Escopo]:<ul><li>Pessoa</li><li>Sessão</li></ul></li><li>[!UICONTROL Índice]:<ul><li>Numérico</li></ul><li>[!UICONTROL Incluir repetições]:<ul><li>Booleano</li></ul></li></ul> | <p>N/D</p> | <p>Três funções por campo derivado</p> | <p>Novo campo derivado</p> |
 
 {style="table-layout:auto"}
 
@@ -1588,7 +1588,7 @@ Substitui um valor de um campo por meio de uma expressão regular em um novo cam
 
 | Tipo de dado de entrada | Entrada | Operadores inclusos | Limite | Saída |
 |---|---|---|---|---|
-| <ul><li>String</li><li>Numérico</li></ul> | <ul><li>[!UICONTROL Campo]:</li><ul><li>Regras</li><li>Campos padrão</li><li>Campos</li></ul></ul><ul><li>[!UICONTROL Regex]:</li><ul><li>String</li></ul></li><li>[!UICONTROL Formato de saída]:<ul><li>String</li></ul></ul><ul><li>Diferenciar maiúsculas de minúsculas</li><ul><li>Booleano</li></ul></li></ul></li> | <p>N/A</p> | <p>Uma função por campo derivado</p> | <p>Novo campo derivado</p> |
+| <ul><li>String</li><li>Numérico</li></ul> | <ul><li>[!UICONTROL Campo]:</li><ul><li>Regras</li><li>Campos padrão</li><li>Campos</li></ul></ul><ul><li>[!UICONTROL Regex]:</li><ul><li>String</li></ul></li><li>[!UICONTROL Formato de saída]:<ul><li>String</li></ul></ul><ul><li>Diferencia maiúsculas de minúsculas</li><ul><li>Booleano</li></ul></li></ul></li> | <p>N/D</p> | <p>Uma função por campo derivado</p> | <p>Novo campo derivado</p> |
 
 {style="table-layout:auto"}
 
@@ -1609,7 +1609,7 @@ Você gostaria de coletar parte de um URL e usá-la como um identificador de pá
 
 ### Campo derivado {#regex-replace-uc-derivedfield}
 
-Você cria um campo derivado de `Page Identifier`. Use a função [!UICONTROL REGEX REPLACE] para definir uma regra para substituir o valor do campo [!UICONTROL URL de referência] por meio de um [!UICONTROL Regex] de `[^/]+(?=/$|$)` e um [!UICONTROL Formato de saída] de `$1`.
+Você cria um campo derivado `Page Identifier`. Use a função [!UICONTROL REGEX REPLACE] para definir uma regra para substituir o valor do campo [!UICONTROL URL de referência] por meio de um [!UICONTROL Regex] de `[^/]+(?=/$|$)` e um [!UICONTROL Formato de saída] de `$1`.
 
 ![Captura de tela da regra de substituição de regex](assets/regex-replace.png)
 
@@ -1691,7 +1691,7 @@ Divide o valor de um campo em um novo campo derivado.
 
 | Tipo de dado de entrada | Entrada | Operadores inclusos | Limite | Saída |
 |---|---|---|---|---|
-| <ul><li>String</li><li>Numérico</li></ul> | <ul><li>[!UICONTROL Campo]:</li><ul><li>Regras</li><li>Campos padrão</li><li>Campos</li></ul></ul><ul><li>[!UICONTROL Método]:</li><ul><li>Da esquerda</li><li>Da direita</li><li>Converter em matriz</li></ul></li><li>Para o delimitador:<ul><li>String</li></ul><li>Para o índice:<ul><li>Numérico</li></ul></li> | <p>N/A</p> | <p>Duas funções por campo derivado</p> <p>Retorna 10 valores no máximo</p> | <p>Novo campo derivado</p> |
+| <ul><li>String</li><li>Numérico</li></ul> | <ul><li>[!UICONTROL Campo]:</li><ul><li>Regras</li><li>Campos padrão</li><li>Campos</li></ul></ul><ul><li>[!UICONTROL Método]:</li><ul><li>Da esquerda</li><li>Da direita</li><li>Converter em matriz</li></ul></li><li>Para o delimitador:<ul><li>String</li></ul><li>Para o índice:<ul><li>Numérico</li></ul></li> | <p>N/D</p> | <p>Duas funções por campo derivado</p> <p>Retorna 10 valores no máximo</p> | <p>Novo campo derivado</p> |
 
 {style="table-layout:auto"}
 
@@ -1711,9 +1711,9 @@ Você coleta respostas do aplicativo de voz em uma lista delimitada em uma mesma
 
 ### Campo derivado {#split-u1-derivedfield}
 
-Você cria um campo derivado de `Responses`. Use a função [!UICONTROL SPLIT] para definir uma regra para usar o método [!UICONTROL Converter em matriz] para converter os valores do campo [!UICONTROL Resposta do aplicativo de voz], usando `,` como [!UICONTROL Delimitador].
+Você cria um campo derivado `Responses`. Use a função [!UICONTROL SPLIT] para definir uma regra para usar o método [!UICONTROL Converter em matriz] para converter os valores do campo [!UICONTROL Resposta do aplicativo de voz], usando `,` como [!UICONTROL Delimitador].
 
-![Captura de tela da regra de divisão 1](assets/split-1.png)
+![Captura de tela da regra 1 de divisão](assets/split-1.png)
 
 ### Dados após {#split-uc1-dataafter}
 
@@ -1745,7 +1745,7 @@ Você coleta respostas do aplicativo de voz em uma lista delimitada em uma mesma
 
 ### Campo derivado {#split-u2-derivedfield}
 
-Você cria um campo derivado de `First Response`. Use a função [!UICONTROL SPLIT] para definir uma regra para obter o primeiro valor do campo [!UICONTROL Respostas] à esquerda da resposta `,` como delimitador.
+Você cria um campo derivado `First Response`. Use a função [!UICONTROL SPLIT] para definir uma regra para obter o primeiro valor do campo [!UICONTROL Respostas] à esquerda da resposta `,` como delimitador.
 
 ![Captura de tela da regra de divisão: primeiro valor](assets/split-2.png)
 
@@ -1863,7 +1863,7 @@ Corta espaços em branco, caracteres especiais ou número de caracteres do iníc
 
 | Tipo de dado de entrada | Entrada | Operadores inclusos | Limite | Saída |
 |---|---|---|---|---|
-| <ul><li>String</li></ul> | <ul><li>[!UICONTROL Campo]<ul><li>Regras</li><li>Campos padrão</li><li>Campos</li></ul></li><li>Cortar espaço em branco</li><li>Cortar caracteres especiais<ul><li>Entrada de caracteres especiais</li></ul></li><li>Cortar a partir da esquerda<ul><li>De<ul><li>Início da string</li><li>Posição<ul><li>Nº da posição</li></ul></li><li>String<ul><li>Valor da string</li><li>Índice</li><li>Sinalizador para incluir string</li></ul></li></ul></li><li>Para<ul><li>Fim da string</li><li>Posição<ul><li>Nº da posição</li></ul></li><li>String<ul><li>Valor da string</li><li>Índice</li><li>Sinalizador para incluir string</li></ul></li><li>Extensão</li></ul></li></ul></li><li>Cortar a partir da direita<ul><li>De<ul><li>Fim da string</li><li>Posição<ul><li>Nº da posição</li></ul></li><li>String<ul><li>Valor da string</li><li>Índice</li><li>Sinalizador para incluir string</li></ul></li></ul></li><li>Para<ul><li>Início da string</li><li>Posição<ul><li>Nº da posição</li></ul></li><li>String<ul><li>Valor da string</li><li>Índice</li><li>Sinalizador para incluir string</li></ul></li><li>Extensão</li></ul></li></ul></li></ul> | <p>N/A</p> | <p>Uma função por campo derivado</p> | <p>Novo campo derivado</p> |
+| <ul><li>String</li></ul> | <ul><li>[!UICONTROL Campo]<ul><li>Regras</li><li>Campos padrão</li><li>Campos</li></ul></li><li>Cortar espaço em branco</li><li>Cortar caracteres especiais<ul><li>Entrada de caracteres especiais</li></ul></li><li>Cortar a partir da esquerda<ul><li>De <ul><li>Início da string</li><li>Posição<ul><li>Nº da posição</li></ul></li><li>String<ul><li>Valor da string</li><li>Índice</li><li>Sinalizador para incluir string</li></ul></li></ul></li><li>Para<ul><li>Fim da string</li><li>Posição<ul><li>Nº da posição</li></ul></li><li>String<ul><li>Valor da string</li><li>Índice</li><li>Sinalizador para incluir string</li></ul></li><li>Extensão</li></ul></li></ul></li><li>Cortar a partir da direita<ul><li>De <ul><li>Fim da string</li><li>Posição<ul><li>Nº da posição</li></ul></li><li>String<ul><li>Valor da string</li><li>Índice</li><li>Sinalizador para incluir string</li></ul></li></ul></li><li>Para<ul><li>Início da string</li><li>Posição<ul><li>Nº da posição</li></ul></li><li>String<ul><li>Valor da string</li><li>Índice</li><li>Sinalizador para incluir string</li></ul></li><li>Extensão</li></ul></li></ul></li></ul> | <p>N/D</p> | <p>Uma função por campo derivado</p> | <p>Novo campo derivado</p> |
 
 
 ## Caso de uso 1 {#trim-uc1}
@@ -1884,7 +1884,7 @@ Você coleta dados do produto, porém esses dados contêm caracteres de espaço 
 
 Você cria um campo derivado `Product Identifier`. Use a função [!UICONTROL TRIM] para definir uma regra para **[!UICONTROL Cortar espaço em branco]** do campo **[!UICONTROL ID do produto]**.
 
-![Captura de tela da regra 1 de divisão](assets/trim-1.png)
+![Captura de tela da regra de divisão 1](assets/trim-1.png)
 
 ### Dados após {#trim-uc1-dataafter}
 
@@ -1982,7 +1982,7 @@ Altera o tipo de um campo para disponibilizá-lo para transformações adicionai
 
 | Tipo de dado de entrada | Entrada | Operadores inclusos | Limite | Saída |
 |---|---|---|---|---|
-| <ul><li>Numérico</li><li>Data</li><li>Data/hora</li><li>String</li></ul> | <ul><li>[!UICONTROL Campo] | <p><ul><li>Número inteiro<ul><li>Para string</li></ul></li><li>Duplo<ul><li>Para string<ul><li>Incluir o número de casas decimais a serem herdadas (máx. 5?)</li></ul></li><li>Para número inteiro</li></ul></li><li>Byte<ul><li>Para string</li></ul></li><li>Longo<ul><li>Para string</li></ul></li><li>Data<ul><li>Para string<ul><li>Permite definir o formato de saída</li></ul></li><li>Exemplos<ul><li>Data (por exemplo, 7 de janeiro de 2025)<ul><li data-stringify-indent="1" data-stringify-border="0">MM-DD-AA<ul><li data-stringify-indent="2" data-stringify-border="0">Por exemplo, 01-07-25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MM-DD-AAAA<ul><li data-stringify-indent="2" data-stringify-border="0">Por exemplo, 01-07-2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">DD-MM-AA<ul><li data-stringify-indent="2" data-stringify-border="0">Por exemplo, 07-01-25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">DD-MM-AAAA<ul><li data-stringify-indent="2" data-stringify-border="0">Por exemplo, 07-01-2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">AA-MM-DD<ul><li data-stringify-indent="2" data-stringify-border="0">Por exemplo, 25-01-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">AAAA-MM-DD<ul><li data-stringify-indent="2" data-stringify-border="0">Por exemplo, 2025-01-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MM/DD/AA<ul><li data-stringify-indent="2" data-stringify-border="0">Por exemplo, 01/07/25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MM/DD/AAAA<ul><li data-stringify-indent="2" data-stringify-border="0">Por exemplo, 01/07/2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">AAAA/MM/DD<ul><li data-stringify-indent="2" data-stringify-border="0">Por exemplo, 2025/01/07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">AA/MM/DD<ul><li data-stringify-indent="2" data-stringify-border="0">Por exemplo, 25/01/07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MMM DD, AAAA<ul><li data-stringify-indent="2" data-stringify-border="0">Por exemplo, 7 de janeiro de 2025</li></ul></li></ul></li></ul></li></ul></li><li>Data/hora<ul><li>Para string<ul><li>Permite definir o formato de saída</li></ul></li><li>Exemplos<ul><li data-stringify-indent="0" data-stringify-border="0">Data/hora (por exemplo, 7 de janeiro de 2025, às 1:30pm, 52 segundos)<ul><li data-stringify-indent="2" data-stringify-border="0">MM-DD-AA hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Por exemplo, 01-07-25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM-DD-AAAA hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Por exemplo, 01-07-2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">DD-MM-AA hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Por exemplo, 07-01-25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">DD-MM-AAAA hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Por exemplo, 07-01-2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">AA-MM-DD hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Por exemplo, 25-01-07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">AAAA-MM-DD hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Por exemplo, 2025-01-07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM/DD/AA hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Por exemplo, 01/07/25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM/DD/AAAA hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Por exemplo, 01/07/2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">AAAA/MM/DD hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Por exemplo, 2025/01/07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">AA/MM/DD hh:mm :ss<ul><li data-stringify-indent="3" data-stringify-border="0">Por exemplo, 25/01/07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MMM DD, AAAA hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Por exemplo, 7 de janeiro de 2025, 13:30:52</li></ul></li></ul></li></ul></li><li>String<ul><li>Para numérico<ul><li>Se tivermos valores que não são de natureza numérica, eles retornarão nulo.</li><li>É necessário que o usuário insira a precisão e a localidade a serem usadas. </li></ul></li></ul></li></ul></li></ul></p> | <p>Três funções por campo derivado</p> | <p>Novo campo derivado</p> |
+| <ul><li>Numérico</li><li>Data</li><li>Data-hora</li><li>String</li></ul> | <ul><li>[!UICONTROL Campo] | <p><ul><li>Número inteiro<ul><li>Para string</li></ul></li><li>Duplo<ul><li>Para string<ul><li>Incluir o número de casas decimais a serem herdadas (máx. 5?)</li></ul></li><li>Para número inteiro</li></ul></li><li>Byte<ul><li>Para string</li></ul></li><li>Longo<ul><li>Para string</li></ul></li><li>Data<ul><li>Para string<ul><li>Permite definir o formato de saída</li></ul></li><li>Exemplos<ul><li>Data (por exemplo, 7 de janeiro de 2025)<ul><li data-stringify-indent="1" data-stringify-border="0">DD-MM-AA<ul><li data-stringify-indent="2" data-stringify-border="0">Por exemplo, 01-07-25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">DD-MM-AAAA<ul><li data-stringify-indent="2" data-stringify-border="0">Por exemplo, 01-07-2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">DD-MM-AA<ul><li data-stringify-indent="2" data-stringify-border="0">Por exemplo, 07-01-25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">DD-MM-AAAA<ul><li data-stringify-indent="2" data-stringify-border="0">Por exemplo, 07-01-2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">DD-MM-AA<ul><li data-stringify-indent="2" data-stringify-border="0">Por exemplo, 25-01-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">DD-MM-AAAA<ul><li data-stringify-indent="2" data-stringify-border="0">Por exemplo, 2025-01-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">DD/MM/AA<ul><li data-stringify-indent="2" data-stringify-border="0">Por exemplo, 01/07/25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">DD/MM/AAAA<ul><li data-stringify-indent="2" data-stringify-border="0">Por exemplo, 01/07/2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">DD/MM/AAAA<ul><li data-stringify-indent="2" data-stringify-border="0">Por exemplo, 2025/01/07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">DD/MM/AA<ul><li data-stringify-indent="2" data-stringify-border="0">Por exemplo, 25/01/07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">DD de MMM de AAAA<ul><li data-stringify-indent="2" data-stringify-border="0">Por exemplo, 7 de janeiro de 2025</li></ul></li></ul></li></ul></li></ul></li><li>Data-hora<ul><li>Para string<ul><li>Permite definir o formato de saída</li></ul></li><li>Exemplos<ul><li data-stringify-indent="0" data-stringify-border="0">Data/hora (por exemplo, 7 de janeiro de 2025, às 1:30pm, 52 segundos)<ul><li data-stringify-indent="2" data-stringify-border="0">MM-DD-AA hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Por exemplo, 01-07-25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM-DD-AAAA hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Por exemplo, 01-07-2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">DD-MM-AA hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Por exemplo, 07-01-25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">DD-MM-AAAA hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Por exemplo, 07-01-2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">AA-MM-DD hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Por exemplo, 25-01-07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">AAAA-MM-DD hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Por exemplo, 2025-01-07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM/DD/AA hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Por exemplo, 01/07/25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM/DD/AAAA hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Por exemplo, 01/07/2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">AAAA/MM/DD hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Por exemplo, 2025/01/07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">AA/MM/DD hh:mm :ss<ul><li data-stringify-indent="3" data-stringify-border="0">Por exemplo, 25/01/07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MMM DD, AAAA hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Por exemplo, 7 de janeiro de 2025, 13:30:52</li></ul></li></ul></li></ul></li><li>String<ul><li>Para numérico<ul><li>Se tivermos valores que não são de natureza numérica, eles retornarão nulo.</li><li>É necessário que o usuário insira a precisão e a localidade a serem usadas. </li></ul></li></ul></li></ul></li></ul></p> | <p>Três funções por campo derivado</p> | <p>Novo campo derivado</p> |
 
 {style="table-layout:auto"}
 
@@ -2033,7 +2033,7 @@ Analisa diferentes partes de um URL, incluindo protocolo, host, caminho ou parâ
 
 | Tipo de dado de entrada | Entrada | Operadores inclusos | Limite | Saída |
 |---|---|---|---|---|
-| <ul><li>String</li></ul> | <ul><li>[!UICONTROL Campo]:</li><ul><li>Regras</li><li>Campos padrão</li><li>Campos</li></ul><li>[!UICONTROL Opção]:<ul><li>[!UICONTROL Obter protocolo]</li><li>[!UICONTROL Obter host]</li><li>[!UICONTROL Obter caminho]</li><li>[!UICONTROL Obter valor da string de consulta]<ul><li>[!UICONTROL Parâmetro de consulta]:<ul><li>String</li></ul></li></ul></li><li>[!UICONTROL Obter valor de hash]</li></ul></li></ul></li></ul> | <p>N/A</p> | <p>Cinco funções por campo derivado</p> | <p>Novo campo derivado</p> |
+| <ul><li>String</li></ul> | <ul><li>[!UICONTROL Campo]:</li><ul><li>Regras</li><li>Campos padrão</li><li>Campos</li></ul><li>[!UICONTROL Opção]:<ul><li>[!UICONTROL Obter protocolo]</li><li>[!UICONTROL Obter host]</li><li>[!UICONTROL Obter caminho]</li><li>[!UICONTROL Obter valor da string de consulta]<ul><li>[!UICONTROL Parâmetro de consulta]:<ul><li>String</li></ul></li></ul></li><li>[!UICONTROL Obter valor de hash]</li></ul></li></ul></li></ul> | <p>N/D</p> | <p>Cinco funções por campo derivado</p> | <p>Novo campo derivado</p> |
 
 {style="table-layout:auto"}
 
@@ -2116,11 +2116,11 @@ As seguintes limitações se aplicam à funcionalidade Campo derivado em geral:
 
 | Função | Limitações |
 |---|---|
-| <p>Case When</p> | <ul><li>5 Funções Case When por campo derivado</li><li>200 [operadores](#operators) por campo derivado</li></ul> |
+| <p>Caso Quando</p> | <ul><li>5 Funções Case When por campo derivado</li><li>200 [operadores](#operators) por campo derivado</li></ul> |
 | <p>Classificar</p> | <ul><li>5 Classificar funções por campo derivado</li><li>200 [operadores](#operators) por campo derivado</li></ul> |
 | <p>Concatenar</p> | <ul><li>2 Funções concatenadas por campo derivado</li><li>Três valores por função de concatenação</ul> |
-| <p>Cálculo de datas</p> | <ul><li>Duas funções de cálculo de datas por campo derivado</li></ul> |
-| <p>Desduplicar</p> | <ul><li>5 Desduplicar funções por campo derivado</li></ul> |
+| <p>Matemática de datas</p> | <ul><li>Duas funções de cálculo de datas por campo derivado</li></ul> |
+| <p>Desduplicação</p> | <ul><li>5 Desduplicar funções por campo derivado</li></ul> |
 | <p>Profundidade</p> | <ul><li>Três funções de profundidade por campo derivado</li></ul> |
 | <p>Localizar e Substituir</p> | <ul><li>2 Funções Localizar e Substituir por campo derivado</li></ul> |
 | <p>Pesquisa</p> | <ul><li>5 Funções de pesquisa por campo derivado</li></ul> |
@@ -2128,7 +2128,7 @@ As seguintes limitações se aplicam à funcionalidade Campo derivado em geral:
 | <p>Matemática</p> | <ul><li>25 operações por campo derivado</li><li>Cinco funções matemáticas por campo derivado</li></ul> |
 | <p>Mesclar campos</p> | <ul><li>2 Funções Mesclar campos por campo derivado</li></ul> |
 | <p>Próximo ou anterior</p> | <ul><li>3 Funções Próximo ou Anterior por campo derivado</li></ul> |
-| <p>Substituição de Regex</p> | <ul><li>1 Função Substituição de Regex por campo derivado</li></ul> |
+| <p>Substituição de regex</p> | <ul><li>1 Função Substituição de Regex por campo derivado</li></ul> |
 | <p>Dividir</p> | <ul><li>2 funções de divisão por campo derivado</li><li>São retornados 10 valores, no máximo</ul> |
 | <p>Resumir</p> | <ul><li>3 Resumir funções por campo derivado</li></ul> |
 | <p>Cortar</p> | <ul><li>1 Função Cortar por campo derivado</li></ul> |

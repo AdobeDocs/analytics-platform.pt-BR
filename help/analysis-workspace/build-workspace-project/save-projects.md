@@ -4,9 +4,9 @@ title: Salvar Projetos
 feature: Workspace Basics
 role: User
 exl-id: d751057e-6a5f-4605-abc1-9259a1f95a28
-source-git-commit: 873247c643b3be4bb561955af84dd4bbb4e1d81f
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '846'
+source-wordcount: '860'
 ht-degree: 95%
 
 ---
@@ -31,7 +31,7 @@ Para salvar um projeto manualmente, com o projeto aberto no Analysis Workspace, 
 
 * **[!UICONTROL Salvar]**
 
-  Salve as alterações no seu projeto. Se o projeto for compartilhado, os destinatários do projeto também verão as alterações. 
+  Salve as alterações no seu projeto. Se o projeto for compartilhado, os destinatários do projeto também verão as alterações.
 
   Ao salvar o projeto pela primeira vez, uma caixa de diálogo **[!UICONTROL Salvar]** é exibida.
 
@@ -42,7 +42,7 @@ Para salvar um projeto manualmente, com o projeto aberto no Analysis Workspace, 
       * **[!UICONTROL Nome]** (obrigatório). nome do projeto.
       * **[!UICONTROL Descrição]**. Uma descrição do projeto.
       * **[!UICONTROL Tags]**. Pesquise tags no campo [!UICONTROL *Pesquisar tags*] ou adicione novas tags usando **[!UICONTROL ENTER]**.
-      * **[!UICONTROL Pasta]**.  Selecione uma pasta no menu suspenso [!UICONTROL *Selecionar uma pasta*]. Se você não especificar uma pasta, o projeto será salvo na pasta atual na qual você criou um novo projeto.
+      * **[!UICONTROL Pasta]**. Selecione uma pasta no menu suspenso [!UICONTROL *Selecionar uma pasta*]. Se você não especificar uma pasta, o projeto será salvo na pasta atual na qual você criou um novo projeto.
       * **[!UICONTROL Notas de versão]**. Adicionar notas de versão na área de texto *Adicionar notas*.
 
    1. Selecione **[!UICONTROL Salvar]** para salvar o projeto.
@@ -79,7 +79,7 @@ Para salvar um projeto manualmente, com o projeto aberto no Analysis Workspace, 
       * **[!UICONTROL Nome]** (obrigatório). nome do projeto.
       * **[!UICONTROL Descrição]**. Uma descrição do projeto.
       * **[!UICONTROL Tags]**. Pesquise tags no campo [!UICONTROL *Pesquisar tags*] ou adicione novas tags usando **[!UICONTROL ENTER]**.
-      * **[!UICONTROL Pasta]**.  Selecione uma pasta no menu suspenso [!UICONTROL *Selecionar uma pasta*]. Se você não especificar uma pasta, o projeto será salvo na pasta atual na qual você criou um novo projeto.
+      * **[!UICONTROL Pasta]**. Selecione uma pasta no menu suspenso [!UICONTROL *Selecionar uma pasta*]. Se você não especificar uma pasta, o projeto será salvo na pasta atual na qual você criou um novo projeto.
       * **[!UICONTROL Notas de versão]**. Adicionar notas de versão na área de texto *Adicionar notas*.
 
    1. Selecione **[!UICONTROL Salvar]** para salvar o projeto.
@@ -97,7 +97,7 @@ Cannot find this option in CJA
 
 >[!IMPORTANT]
 >
->Mesmo que os novos projetos sejam salvos automaticamente, é necessário salvar cada novo projeto manualmente na **primeira** vez. 
+>Mesmo que os novos projetos sejam salvos automaticamente, é necessário salvar cada novo projeto manualmente na **primeira** vez.
 >
 
 Todos os projetos no Analysis Workspace são salvos automaticamente a cada 2 minutos no computador local. A função de salvar automaticamente inclui projetos recém-criados que ainda não foram salvos manualmente.

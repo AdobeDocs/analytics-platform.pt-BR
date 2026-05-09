@@ -5,10 +5,10 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: product analytics
 exl-id: 2c512184-2d79-4c41-8229-a09e440179ea
 role: User
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '675'
-ht-degree: 99%
+source-wordcount: '692'
+ht-degree: 97%
 
 ---
 

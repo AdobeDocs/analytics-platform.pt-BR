@@ -4,10 +4,10 @@ title: Paletas de cores de visualização
 feature: Workspace Basics
 exl-id: c3c208b9-84a5-4620-ba3c-7e483215e698
 role: User
-source-git-commit: a646d1f35308dc1f1d9f06cf94835534bd8b8da6
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 92%
+source-wordcount: '219'
+ht-degree: 91%
 
 ---
 

@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: bc6c7568-8bd2-4ee1-ab1b-9fa1f6138811
-source-git-commit: 33e962bc3834d6b7d0a49bea9aa06c67547351c1
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '1631'
+source-wordcount: '1664'
 ht-degree: 100%
 
 ---
@@ -53,7 +53,7 @@ Para criar um elemento de dados de nome de página:
 
 1. Faça logon em experiencecloud.adobe.com com as suas credenciais do Adobe ID.
 
-1. No Adobe Experience Platform, acesse **[!UICONTROL Coleção de dados]** > **[!UICONTROL Tags]**.
+1. Na Adobe Experience Platform, acesse **[!UICONTROL Coleção de dados]** > **[!UICONTROL Tags]**.
 
 1. Na página **[!UICONTROL Propriedades da tag]**, selecione a tag recém-criada na lista de propriedades para abri-la.
 
@@ -265,7 +265,7 @@ Para definir uma regra:
 
 Após definir elementos de dados e regras, é necessário criar e publicar a tag. Ao criar um build de biblioteca, você deve atribuí-lo a um ambiente. As extensões, regras e elementos de dados da build são compilados e colocados no ambiente atribuído. Cada ambiente fornece um código incorporado exclusivo que permite integrar a build atribuída ao site.
 
-As tags da Adobe Experience Platform oferecem suporte a fluxos de trabalho de publicação simples e complexos que devem se ajustar à implantação do SDK da web da Adobe Experience Platform. Consulte [Visão geral de publicação](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=pt-BR) para obter mais informações.
+As tags da Adobe Experience Platform são compatíveis com fluxos de trabalho de publicação simples e complexos, que devem acomodar a implantação do SDK da Web da Adobe Experience Platform. Consulte [Visão geral de publicação](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=pt-BR) para obter mais informações.
 
 Para criar e publicar a tag:
 

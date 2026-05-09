@@ -4,10 +4,10 @@ description: Saiba como usar e interpretar o painel Tempo gasto com a reproduç�
 feature: Panels
 exl-id: de0fdbea-71f0-445b-a1e4-c7e895f142d4
 role: User
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '1077'
-ht-degree: 96%
+source-wordcount: '1114'
+ht-degree: 90%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 96%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta o painel Tempo gasto com a reprodução de mídia no_ ![Customer Journey Analytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_.<br/>_Consulte o [painel Tempo gasto com a reprodução de mídia](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent) para a versão do_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
+_Este artigo documenta o painel Tempo gasto com a reprodução da mídia no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_.<br/>_Consulte o [painel Tempo gasto com a reprodução da mídia](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent) da versão_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 
@@ -45,7 +45,7 @@ _Este artigo documenta o painel Tempo gasto com a reprodução de mídia no_ ![C
 >Entre em contato com o representante de vendas da Adobe ou com a equipe de conta da Adobe para obter mais informações.
 >
 
-O painel **[!UICONTROL Tempo gasto com a reprodução de mídia]** permite analisar a reprodução ao longo do tempo, com detalhes sobre o pico de simultaneidade e a capacidade de detalhar e comparar. 
+O painel **[!UICONTROL Tempo gasto com a reprodução de mídia]** permite analisar a reprodução ao longo do tempo, com detalhes sobre o pico de simultaneidade e a capacidade de detalhar e comparar.
 
 No Analysis Workspace, o tempo gasto com a reprodução é a quantidade de tempo gasta com a visualização de fluxos de mídia em um ponto específico no tempo. Inclui pausa, buffer e inicialização.
 
@@ -129,6 +129,6 @@ A única métrica que pode ser usada nesse painel é Tempo gasto com a reproduç
 >[!MORELIKETHIS]
 >
 >[Criar um painel](/help/analysis-workspace/c-panels/panels.md#create-a-panel)
->[Painel de público-alvo médio a cada minuto de mídia](average-minute-audience-panel.md)
+>[Painel de audiência média por minuto de mídia](average-minute-audience-panel.md)
 >[Painel de visualizadores simultâneos de mídia](media-concurrent-viewers.md)
 >

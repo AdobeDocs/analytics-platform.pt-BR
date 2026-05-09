@@ -4,10 +4,10 @@ description: Use o cabeçalho da seção para inserir um cabeçalho de seção n
 feature: Visualizations
 role: User
 exl-id: 7f815879-2b08-4650-a9ce-c55ca5824288
-source-git-commit: 8054aab28c405f6a9dd24306a086c78069032999
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '98'
-ht-degree: 83%
+source-wordcount: '107'
+ht-degree: 57%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 83%
 >[!BEGINSHADEBOX]
 
 
-_Este artigo documenta a visualização do cabeçalho de seção no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consulte [Cabeçalho de seção](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/section-header) para a versão do_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
+_Este artigo documenta a visualização do cabeçalho da Seção em_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consulte [Cabeçalho da seção](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/section-header) para a versão_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 

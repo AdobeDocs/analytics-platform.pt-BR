@@ -4,9 +4,9 @@ title: Totais
 feature: Visualizations
 exl-id: ba14b88c-44c2-45f6-b68f-f5c1263a89dd
 role: User
-source-git-commit: 4599a058cef79a28bd6f9b788c2b202c8235298d
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '502'
 ht-degree: 88%
 
 ---

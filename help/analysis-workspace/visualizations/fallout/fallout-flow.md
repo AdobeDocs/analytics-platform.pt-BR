@@ -4,10 +4,10 @@ title: Visão geral do fallout
 feature: Visualizations
 exl-id: c4338821-64ac-4345-828a-15af18a95ea6
 role: User
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '359'
-ht-degree: 82%
+source-wordcount: '389'
+ht-degree: 74%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 82%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta a visualização de fallout no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consulte [Fallout](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow) para saber a versão do_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
+_Este artigo documenta a visualização de Fallout no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consulte [Fallout](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/fallout/fallout-flow) para a versão_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 

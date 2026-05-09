@@ -4,10 +4,10 @@ description: Saiba como usar tabelas de forma livre, que são a base para a aná
 feature: Visualizations
 exl-id: e5ba9089-c575-47b3-af85-b8b2179396ac
 role: User
-source-git-commit: 75ceeda8f13abba92ff555505b6ebae025533d02
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '784'
-ht-degree: 97%
+source-wordcount: '815'
+ht-degree: 94%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 97%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta a visualização da tabela de forma livre no_ ![Customer Journey Analytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consulte [Tabela de forma livre](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/freeform-table) para a versão do_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
+_Este artigo documenta a visualização da tabela de forma livre no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consulte a [tabela de forma livre](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/freeform-table) para a versão_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 
@@ -73,7 +73,7 @@ Se preferir adicionar vários componentes à tabela primeiro e então renderizar
 * Várias ações estão disponíveis no [menu de contexto](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#context-menu). O menu fornece ações diferentes, com base na seleção do cabeçalho, das linhas ou das colunas da tabela.
 
 
-## Configurações 
+## Configurações
 
 Selecione ![Configuração](/help/assets/icons/Setting.svg) para exibir as **[!UICONTROL Configurações da tabela]**. As seguintes [configurações](../freeform-analysis-visualizations.md#settings) de visualização específicas estão disponíveis:
 
@@ -84,7 +84,7 @@ Selecione ![Configuração](/help/assets/icons/Setting.svg) para exibir as **[!U
 | **[!UICONTROL Visualizações vinculadas]**. | Lista todas as visualizações vinculadas. |
 | **[!UICONTROL Exibir fonte de dados]** | Quando desmarcada, a tabela de forma livre que funciona como fonte de dados para a visualização fica oculta no Workspace. |
 
-### Configurações 
+### Configurações
 
 | Opção | Descrição |
 |---|---|

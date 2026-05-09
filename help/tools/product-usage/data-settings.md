@@ -2,9 +2,9 @@
 title: Configurações dos dados de uso do produto
 description: Habilitar, desabilitar ou definir as configurações de uso do produto.
 exl-id: 85e2b515-78e6-41e8-9947-369b1e65e4fd
-source-git-commit: e7534a1943307f5bbc92a845ddffe0651794b854
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '357'
 ht-degree: 100%
 
 ---

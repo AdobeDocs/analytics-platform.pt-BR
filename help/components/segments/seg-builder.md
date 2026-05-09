@@ -4,9 +4,9 @@ title: Criar segmentos
 feature: Filters, Segments
 role: User
 exl-id: 160021f1-6942-4682-9114-d375307d9912
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '1571'
+source-wordcount: '1691'
 ht-degree: 88%
 
 ---
@@ -45,8 +45,8 @@ A caixa de diálogo **[!UICONTROL Construtor de segmentos]** é usada para cri
    | **[!UICONTROL Segmento somente de projeto]** | Uma caixa de informações para explicar que o segmento só fica visível no projeto em que foi criado e que o segmento não será adicionado à sua lista de componentes. Habilite a opção **[!UICONTROL Tornar este segmento disponível para todos os seus projetos e adicioná-lo à sua lista de componentes]** para alterar essa configuração. Esta caixa de informações só fica visível quando você cria um [segmento rápido](seg-quick.md) e transforma as informações do segmento rápido em um segmento regular usando a opção **[!UICONTROL Abrir construtor]** na interface [!UICONTROL Segmento rápido]. |
    | **[!UICONTROL Título]** ![Obrigatório](/help/assets/icons/Required.svg) | Nomeie o segmento, por exemplo, `Last month mobile customers`. |
    | **[!UICONTROL Descrição]** | Forneça uma descrição para o segmento, por exemplo, `Segment to define the mobile customers for the last month`. |
-   | **[!UICONTROL Tags]** | Organize o segmento criando ou aplicando uma ou mais tags. Comece a digitar para encontrar as tags existentes que você pode selecionar. Ou pressione **[!UICONTROL ENTER]** para adicionar uma nova tag. Selecione ![CrossSize75](/help/assets/icons/CrossSize75.svg) para remover uma tag. |
-   | **[!UICONTROL Definição]** ![obrigatória](/help/assets/icons/Required.svg) | Defina o segmento usando o [Criador de definições](#definition-builder). |
+   | **[!UICONTROL Tags]** | Organize o segmento criando ou aplicando uma ou mais tags. Comece a digitar para encontrar as tags existentes que você pode selecionar. Ou pressione **[!UICONTROL ENTER]** para adicionar uma nova tag. Selecione ![CrossSize75](/help/assets/icons/CrossSize75.svg) para remover uma tag. |
+   | **[!UICONTROL Definição]** ![Obrigatória](/help/assets/icons/Required.svg) | Defina o segmento usando o [Criador de definições](#definition-builder). |
 
    {style="table-layout:auto"}
 

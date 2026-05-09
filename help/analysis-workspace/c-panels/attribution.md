@@ -4,10 +4,10 @@ description: Saiba como usar e interpretar o painel de atribuição no Analysis 
 feature: Panels
 exl-id: 7fdec05b-5d99-48d1-ac1b-c243cb64e487
 role: User
-source-git-commit: ce4a21b1a1e89f14316a92fbdce38281db61e666
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '668'
-ht-degree: 93%
+source-wordcount: '689'
+ht-degree: 90%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 93%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta o painel Atribuição no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_.<br/>_Consulte o [Painel de atribuição](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/panels/attribution) para a versão do_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
+_Este artigo documenta o Painel de atribuição no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_.<br/>_Consulte o [Painel de atribuição](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/panels/attribution) da versão_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 
@@ -39,7 +39,7 @@ O painel **[!UICONTROL Atribuição]** é uma maneira fácil de criar uma análi
 
 O Customer Journey Analytics aprimora a atribuição ao permitir:
 
-* Defina atribuição além da mídia paga: qualquer dimensão, métrica, canal ou evento pode ser aplicado a modelos (por exemplo, pesquisa interna), não apenas campanhas de marketing.
+* Definir a atribuição além da mídia paga: qualquer dimensão, métrica, canal ou evento pode ser aplicado a modelos (por exemplo: pesquisa interna), não apenas campanhas de marketing.
 * Use comparação ilimitada de modelos de atribuição: compare dinamicamente quantos modelos desejar.
 * Evite alterações na implementação: com processamento em tempo de relatório e sessões com reconhecimento de contexto, o contexto da jornada do cliente pode ser incorporado e aplicado em tempo de execução.
 * Construir a sessão que melhor corresponde ao seu cenário de atribuição.

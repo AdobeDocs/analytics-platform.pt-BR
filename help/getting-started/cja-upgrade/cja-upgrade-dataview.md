@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 832f3f9a-1836-43ac-8185-f22ae0ded3aa
-source-git-commit: eb9b749a5c61da3b4b5d2eeeed93bf5e4702a415
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '402'
 ht-degree: 95%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 95%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-dataview"
 >title="Criar uma visualização de dados no Customer Journey Analytics"
->abstract="Uma exibição de dados é um container específico do Customer Journey Analytics que permite determinar como interpretar dados de uma conexão. <br><br>Embora a criação inicial da exibição de dados leve apenas alguns minutos, configurar cada dimensão e métrica com as definições de componente desejadas pode levar vários dias. O ajuste dessas configurações é retroativo para que sua organização possa refiná-los ao longo do tempo."
+>abstract="Uma exibição de dados é um container específico do Customer Journey Analytics que permite determinar como interpretar dados de uma conexão.<br><br>Embora a criação inicial da exibição de dados leve apenas alguns minutos, configurar cada dimensão e métrica com as definições de componente desejadas pode levar vários dias. O ajuste dessas configurações é retroativo para que sua organização possa refiná-los ao longo do tempo."
 
 <!-- markdownlint-enable MD034 -->
 

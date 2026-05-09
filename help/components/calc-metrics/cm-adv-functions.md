@@ -4,10 +4,10 @@ description: Saiba mais sobre funções de métricas calculadas avançadas.
 feature: Calculated Metrics
 exl-id: 3689a499-817d-4a59-8a1f-5f7bda297268
 role: User
-source-git-commit: 76b4ac60c8e3ae2dd62f86a35bdf1c582f60b10f
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '5286'
-ht-degree: 97%
+source-wordcount: '5381'
+ht-degree: 95%
 
 ---
 
@@ -98,7 +98,7 @@ Um caso de uso comum para essa função é quando você deseja obter uma quantid
 
 | Argumento | Descrição |
 |---|---|
-| metric | O cosseno do ângulo que você deseja de -1 a 1 |
+| métrica | O cosseno do ângulo que você deseja de -1 a 1 |
 
 
 
@@ -121,7 +121,7 @@ Um caso de uso comum para essa função é quando você deseja obter uma quantid
 
 | Argumento | Descrição |
 |---|---|
-| metric | O seno do ângulo que você deseja de -1 a 1 |
+| métrica | O seno do ângulo que você deseja de -1 a 1 |
 
 
 
@@ -144,7 +144,7 @@ Um caso de uso comum para essa função é quando você deseja obter uma quantid
 
 | Argumento | Descrição |
 |---|---|
-| metric | A tangente do ângulo que você deseja de -1 a 1 |
+| métrica | A tangente do ângulo que você deseja de -1 a 1 |
 
 
 
@@ -165,7 +165,7 @@ Retorna a probabilidade de uma variável aleatória com distribuição t de estu
 
 | Argumento | Descrição |
 |---|---|
-| metric | A métrica para a qual você deseja a função de distribuição cumulativa da distribuição t de estudantes |
+| métrica | A métrica para a qual você deseja a função de distribuição cumulativa da distribuição t de estudantes |
 | número | Os graus de liberdade da função de distribuição cumulativa da distribuição t de estudantes |
 
 ### Exemplo
@@ -196,7 +196,7 @@ Retorna a probabilidade de uma variável aleatória com distribuição normal te
 
 | Argumento | Descrição |
 |---|---|
-| metric | A métrica para a qual você deseja a função de distribuição cumulativa da distribuição normal padrão |
+| métrica | A métrica para a qual você deseja a função de distribuição cumulativa da distribuição normal padrão |
 
 ### Exemplos
 
@@ -225,7 +225,7 @@ CDF-Z(-3) ? 0.0013499
 
 | Argumento | Descrição |
 |---|---|
-| metric | A métrica que você deseja arredondar |
+| métrica | A métrica que você deseja arredondar |
 
 
 ## Confiança {#confidence}
@@ -319,7 +319,7 @@ Confiança é uma medida probabilística sobre quantos indícios existem de que 
 
 | Argumento | Descrição |
 |---|---|
-| metric | O ângulo, em radianos, para o qual você deseja obter o cosseno |
+| métrica | O ângulo, em radianos, para o qual você deseja obter o cosseno |
 
 
 ## Raiz cúbica {#cube-root}
@@ -341,7 +341,7 @@ Retorna a raiz de cúbica positiva de um número. A raiz cúbica de um número �
 
 | Argumento | Descrição |
 |---|---|
-| metric | A métrica para a qual você deseja calcular a raiz cúbica |
+| métrica | A métrica para a qual você deseja calcular a raiz cúbica |
 
 
 
@@ -352,17 +352,17 @@ Retorna a raiz de cúbica positiva de um número. A raiz cúbica de um número �
 >[!CONTEXTUALHELP]
 >id="functions-cumul"
 >title="Cumulativo"
->abstract="Retorna a soma dos últimos n elementos da coluna x. Se n > 0, soma os últimos n elementos de x. Se n &lt; 0, soma os elementos anteriores."
+>abstract="Retorna a soma dos últimos n elementos da coluna x. Se n > 0, soma os últimos n elementos ou x. Se n &lt; 0, soma os elementos anteriores."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL CUMULATIVE(number, metric)]**
 
-Retorna a soma dos últimos n elementos da coluna x. Se n > 0, soma os últimos n elementos de x. Se n &lt; 0, soma os elementos anteriores.
+Retorna a soma dos últimos n elementos da coluna x. Se n > 0, soma os últimos n elementos ou x. Se n &lt; 0, soma os elementos anteriores.
 
 | Argumento | Descrição |
 | --- | --- |
-| número | O último número N de linhas para o qual retornar a soma. Se N &lt;= 0, usa todas as linhas anteriores.  |
+| número | O último número N de linhas para o qual retornar a soma. Se N &lt;= 0, usa todas as linhas anteriores. |
 | metric | A métrica cuja soma cumulativa você deseja obter. |
 
 ### Exemplos
@@ -381,17 +381,17 @@ Retorna a soma dos últimos n elementos da coluna x. Se n > 0, soma os últimos 
 >[!CONTEXTUALHELP]
 >id="functions-cumul-avg"
 >title="Cumulativo (Média)"
->abstract="Retorna a média dos últimos n elementos da coluna x. Se n > 0, soma os últimos n elementos de x. Se n &lt; 0, soma os elementos precedentes."
+>abstract="Retorna a média dos últimos n elementos da coluna x. Se n > 0, soma os últimos n elementos ou x. Se n &lt; 0, soma os elementos anteriores."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL CUMULATIVE AVERAGE(number, metric)]**
 
-Retorna a média dos últimos n elementos da coluna x. Se n > 0, soma os últimos n elementos de x. Se n &lt; 0, soma os elementos precedentes.
+Retorna a média dos últimos n elementos da coluna x. Se n > 0, soma os últimos n elementos ou x. Se n &lt; 0, soma os elementos anteriores.
 
 | Argumento | Descrição |
 | --- | --- |
-| número | O último número N de linhas para a qual retornar a média. Se N &lt;= 0, usa todas as linhas anteriores.  |
+| número | O último número N de linhas para a qual retornar a média. Se N &lt;= 0, usa todas as linhas anteriores. |
 | metric | A métrica cuja média cumulativa você deseja obter. |
 
 >[!NOTE]
@@ -537,7 +537,7 @@ Igual. A saída é 0 (falso) ou 1 (verdadeiro).
 
 | Argumento | Descrição |
 |---|---|
-| metric | A métrica que deseja arredondar. |
+| métrica | A métrica que deseja arredondar. |
 
 
 ## Maior que {#greather-than}
@@ -610,7 +610,7 @@ Maior ou igual a. A saída é 0 (falso) ou 1 (verdadeiro).
 
 | Argumento | Descrição |
 |---|---|
-| metric | O ângulo, em radianos, para o qual você deseja descobrir o cosseno hiperbólico |
+| métrica | O ângulo, em radianos, para o qual você deseja descobrir o cosseno hiperbólico |
 
 
 
@@ -631,7 +631,7 @@ Maior ou igual a. A saída é 0 (falso) ou 1 (verdadeiro).
 
 | Argumento | Descrição |
 |---|---|
-| metric | O ângulo, em radianos, para o qual você deseja descobrir o seno hiperbólico |
+| métrica | O ângulo, em radianos, para o qual você deseja descobrir o seno hiperbólico |
 
 
 ## Tangente hiperbólica {#hyperbolic-tangent}
@@ -651,7 +651,7 @@ Maior ou igual a. A saída é 0 (falso) ou 1 (verdadeiro).
 
 | Argumento | Descrição |
 |---|---|
-| metric | O ângulo, em radianos, para o qual você deseja descobrir a tangente hiperbólica |
+| métrica | O ângulo, em radianos, para o qual você deseja descobrir a tangente hiperbólica |
 
 
 ## Se {#if}
@@ -675,7 +675,7 @@ Maior ou igual a. A saída é 0 (falso) ou 1 (verdadeiro).
 |---|---|
 | logical_test | Obrigatório. Qualquer valor ou expressão que possa ser avaliada como VERDADEIRA ou FALSA |
 | value_if_true | O valor que você deseja retornar, se o argumento logical_test for considerado VERDADEIRO. (Caso não tenha sido incluído, o padrão para este argumento é 0.) |
-| value_if_false | O valor que você quer que seja retornado se o argumento logical_test for avaliado como FALSE. (Caso não seja incluído, o padrão deste argumento será 0.) |
+| value_if_false | O valor que você deseja retornar se o argumento logical_test for considerado FALSE. (Caso não tenha sido incluído, o padrão para este argumento é 0.) |
 
 
 ## Menor que {#less-than}
@@ -759,14 +759,14 @@ O aumento da proporção em comparação ao valor de controle.
 >[!CONTEXTUALHELP]
 >id="functions-ls-corr-linear"
 >title="Regressão linear: coeficiente de correlação"
->abstract="Regressão linear: Y = a X + b. Retorna o coeficiente de correlação."
+>abstract="Regressão linear: Y = a X + b.  Retorna o coeficiente de correlação."
 
 <!-- markdownlint-enable MD034 -->
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL LINEAR REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE Tabela]{type="Neutral"} Regressão linear: Y = a X + b. Retorna o coeficiente de correlação.
+[!BADGE Tabela]{type="Neutral"} Regressão linear: Y = a X + b.  Retorna o coeficiente de correlação.
 
 
 | Argumento | Descrição |
@@ -791,7 +791,7 @@ O aumento da proporção em comparação ao valor de controle.
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL LINEAR REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE Tabela]{type="Neutral"} Regressão linear: Y = a X + b. Retorna b.
+[!BADGE Tabela]{type="Neutral"} Regressão linear: Y = a X + b. Retorna b.
 
 
 | Argumento | Descrição |
@@ -816,7 +816,7 @@ O aumento da proporção em comparação ao valor de controle.
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL LINEAR REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE Linha]{type="Neutral"} Regressão linear: Y = a X + b. Retorna Y.
+[!BADGE Linha]{type="Neutral"} Regressão linear: Y = a X + b. Retorna Y.
 
 
 | Argumento | Descrição |
@@ -840,7 +840,7 @@ O aumento da proporção em comparação ao valor de controle.
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL LINEAR REGRESSION: SLOPE(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Tabela]{type="Neutral"} Regressão linear: Y = a X + b. Retorna a.
+[!BADGE Tabela]{type="Neutral"} Regressão linear: Y = a X + b. Retorna a.
 
 | Argumento | Descrição |
 |---|---|
@@ -868,7 +868,7 @@ O aumento da proporção em comparação ao valor de controle.
 
 | Argumento | Descrição |
 |---|---|
-| metric | O número real positivo para o qual você deseja obter o logaritmo de base 10 |
+| métrica | O número real positivo para o qual você deseja obter o logaritmo de base 10 |
 
 
 ## Regressão logarítmica: coeficiente de correlação {#log-regression-correlation-coefficient}
@@ -884,7 +884,7 @@ O aumento da proporção em comparação ao valor de controle.
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL LOG REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Tabela]{type="Neutral"} Regressão logarítmica: Y = a ln(X) + b. Retorna o coeficiente de correlação.
+[!BADGE Tabela]{type="Neutral"} Regressão de log: Y = a ln(X) + b. Retorna o coeficiente de correlação.
 
 | Argumento | Descrição |
 |---|---|
@@ -906,7 +906,7 @@ O aumento da proporção em comparação ao valor de controle.
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL LOG REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Tabela]{type="Neutral"} Regressão logarítmica: Y = a ln(X) + b. Retorna b.
+[!BADGE Tabela]{type="Neutral"} Regressão de log: Y = a ln(X) + b. Retorna b.
 
 | Argumento | Descrição |
 |---|---|
@@ -929,7 +929,7 @@ O aumento da proporção em comparação ao valor de controle.
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL LOG REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Linha]{type="Neutral"} Regressão logarítmica: Y = a ln(X) + b. Retorna Y.
+[!BADGE Linha]{type="Neutral"} Regressão de log: Y = a ln(X) + b. Retorna Y.
 
 | Argumento | Descrição |
 |---|---|
@@ -952,7 +952,7 @@ O aumento da proporção em comparação ao valor de controle.
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL LOG REGRESSION: SLOPE(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Tabela]{type="Neutral"} Regressão logarítmica: Y = a ln(X) + b. Retorna a.
+[!BADGE Tabela]{type="Neutral"} Regressão de log: Y = a ln(X) + b. Retorna a.
 
 | Argumento | Descrição |
 |---|---|
@@ -979,7 +979,7 @@ Retorna o logaritmo natural de um número. Os logaritmos naturais são baseados 
 
 | Argumento | Descrição |
 |---|---|
-| metric | O número real positivo para o qual você deseja obter o logaritmo natural |
+| métrica | O número real positivo para o qual você deseja obter o logaritmo natural |
 
 
 
@@ -1087,7 +1087,7 @@ Retorna Pi: 3,14159...
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL POWER REGRESSION: CORRELATION COEFFICIENT(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Tabela]{type="Neutral"} Regressão de potência: Y = b X ^ a. Retorna o coeficiente de correlação.
+[!BADGE Tabela]{type="Neutral"} Regressão de potência: Y = b X ^ a. Retorna o coeficiente de correlação.
 
 | Argumento | Descrição |
 |---|---|
@@ -1111,7 +1111,7 @@ Retorna Pi: 3,14159...
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL POWER REGRESSION: INTERCEPT(metric_X, metric_Y, include_zeros)]**
 
 
-[!BADGE Tabela]{type="Neutral"} Regressão de potência: Y = b X ^ a. Retorna b.
+[!BADGE Tabela]{type="Neutral"} Regressão de potência: Y = b X ^ a. Retorna b.
 
 
 | Argumento | Descrição |
@@ -1134,7 +1134,7 @@ Retorna Pi: 3,14159...
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL POWER REGRESSION: PREDICTED Y(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Linha]{type="Neutral"} Regressão de potência: Y = b X ^ a. Retorna Y.
+[!BADGE Linha]{type="Neutral"} Regressão de potência: Y = b X ^ a. Retorna Y.
 
 | Argumento | Descrição |
 |---|---|
@@ -1157,7 +1157,7 @@ Retorna Pi: 3,14159...
 
 ![Effect](/help/assets/icons/Effect.svg) **[!UICONTROL POWER REGRESSION: SLOPE(metric_X, metric_Y, include_zeros)]**
 
-[!BADGE Tabela]{type="Neutral"} Regressão de potência: Y = b X ^ a. Retorna a.
+[!BADGE Tabela]{type="Neutral"} Regressão de potência: Y = b X ^ a. Retorna a.
 
 | Argumento | Descrição |
 |---|---|
@@ -1355,7 +1355,7 @@ Retorna Pi: 3,14159...
 
 ![Efeito](/help/assets/icons/Effect.svg) **[!UICONTROL VARIAÇÃO DE AMOSTRA(container de normalização, métrica de sucesso)]**
 
-Calcula uma estimativa da variância da amostra usando a fórmula (soma(métrica^2) / (N - 1)) - (soma(métrica))^2/(N*(N-1)). onde N é a contagem do contêiner de normalização.<br/>Isso é usado como parte de cálculos de confiança *válidos em qualquer momento*. Geralmente, esta função não é útil sozinha, mas pode ser usada para verificar cálculos ou executar cálculos de confiança *manualmente*.
+Calcula uma estimativa da variância da amostra usando a fórmula (soma(métrica^2) / (N - 1)) - (soma(métrica))^2/(N*(N-1)). em que N é a contagem do container de normalização.<br/>Isso é usado como parte de cálculos de confiança *válidos em qualquer momento*. Geralmente, esta função não é útil sozinha, mas pode ser usada para verificar cálculos ou executar cálculos de confiança *manualmente*.
 
 | Argumento | Descrição |
 | --- | --- |
@@ -1385,7 +1385,7 @@ Calcula uma estimativa da variância da amostra usando a fórmula (soma(métrica
 
 | Argumento | Descrição |
 |---|---|
-| metric | O ângulo, em radianos, para o qual você deseja obter o seno |
+| métrica | O ângulo, em radianos, para o qual você deseja obter o seno |
 
 
 
@@ -1407,7 +1407,7 @@ O desvio da [MÉDIA](cm-functions.md#mean), dividido pelo desvio padrão. Alias 
 
 | Argumento | Descrição |
 |---|---|
-| metric | A métrica para a qual você deseja obter a pontuação T |
+| métrica | A métrica para a qual você deseja obter a pontuação T |
 | include_zeros | Se os valores zero devem ser incluídos nos cálculos ou não |
 
 
@@ -1428,7 +1428,7 @@ Realiza um teste t caudal m com pontuação t de x e n graus de liberdade.
 
 | Argumento | Descrição |
 |---|---|
-| metric | A métrica na qual você deseja executar um teste T |
+| métrica | A métrica na qual você deseja executar um teste T |
 | degrees | Os graus de liberdade |
 | tails | Comprimento da cauda a ser usada para realizar o teste T |
 
@@ -1475,7 +1475,7 @@ Retorna a tangente do ângulo especificado. Se o ângulo estiver em graus, multi
 
 | Argumento | Descrição |
 |---|---|
-| metric | O ângulo, em radianos, para o qual você deseja obter a tangente |
+| métrica | O ângulo, em radianos, para o qual você deseja obter a tangente |
 
 
 
@@ -1496,7 +1496,7 @@ Retorna a tangente do ângulo especificado. Se o ângulo estiver em graus, multi
 
 | Argumento | Descrição |
 |---|---|
-| metric | A métrica para a qual você deseja obter a pontuação Z |
+| métrica | A métrica para a qual você deseja obter a pontuação Z |
 | include_zeros | Se os valores zero devem ser incluídos nos cálculos ou não |
 
 Uma pontuação Z de 0 (zero) significa que a pontuação é igual à média. A pontuação Z pode ser positiva ou negativa, indicando se está acima ou abaixo da média e por quantos desvios padrão.
@@ -1530,7 +1530,7 @@ Realiza um teste z caudal n com uma pontuação z de x.
 
 | Argumento | Descrição |
 |---|---|
-| metric | A métrica na qual você deseja executar o teste Z |
+| métrica | A métrica na qual você deseja executar o teste Z |
 | tails | O comprimento da cauda a ser usada para executar o teste Z |
 
 >[!NOTE]

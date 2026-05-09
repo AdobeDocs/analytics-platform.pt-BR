@@ -4,10 +4,10 @@ title: Configurações de coluna
 feature: Visualizations
 exl-id: b41d8a12-e8d9-405c-ac71-6567397aec6b
 role: User
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '911'
-ht-degree: 79%
+source-wordcount: '951'
+ht-degree: 74%
 
 ---
 
@@ -30,11 +30,11 @@ Para acessar essas [!UICONTROL configurações], selecione ![Configurações de 
 ![Configurações de coluna](assets/column-settings.png)
 
 
-É possível editar as configurações de diversas colunas de uma só vez. Selecione várias colunas e clique em ![Configuração](/help/assets/icons/Setting.svg) em qualquer uma delas. As alterações feitas serão aplicadas a todas as colunas com as células selecionadas. 
+É possível editar as configurações de diversas colunas de uma só vez. Selecione várias colunas e clique em ![Configuração](/help/assets/icons/Setting.svg) em qualquer uma delas. As alterações feitas serão aplicadas a todas as colunas com as células selecionadas.
 
 | Opção | Descrição |
 | --- | --- |
-| **[!UICONTROL Mostrar total]** | Mostra uma soma da coluna do lado do cliente. Este total **não** remove a duplicação de métricas, como sessões ou pessoas. |
+| **[!UICONTROL Mostrar total]** | Mostra uma soma da coluna do lado do cliente. Este total **não** elimina a duplicação de métricas como sessões ou pessoas. |
 | **[!UICONTROL Exibir total geral]** | Mostra uma soma da coluna do lado do servidor. O total geral remove a duplicação de métricas, como sessões ou pessoas. |
 | **[!UICONTROL Mostrar minigráfico]** | Mostra um gráfico de linhas no cabeçalho da coluna. |
 | **[!UICONTROL Número]** | Determina se uma célula exibe ou oculta o valor numérico da métrica. Por exemplo, se a métrica for Exibições de página, o valor numérico será o número de exibições de página para o item da linha. |
@@ -60,7 +60,7 @@ A formatação condicional aplica formatação a limites superiores, intermediá
 | **[!UICONTROL Usar limites de porcentagem]** | Altera o intervalo limite para se basear em porcentagens em vez de valores absolutos. O intervalo limite de porcentagem funciona com métricas exclusivamente baseadas em porcentagem (como a Taxa de rejeição) e com métricas que possuem uma contagem e uma porcentagem (como Exibições de página). |
 | **[!UICONTROL Geração automática]** | Calcular limites superior/médio/inferior automaticamente de acordo com os dados. O limite superior é o maior valor nesta coluna. O limite inferior é o mais baixo e o ponto médio é a média dos limites superior e inferior. |
 | **[!UICONTROL Personalizado]** | Permite atribuir manualmente o **[!UICONTROL Limite superior]**, o **[!UICONTROL Ponto médio]** e o **[!UICONTROL Limite inferior]**. Os limites oferecem a flexibilidade de determinar quando o valor de uma coluna se torna bom, médio ou ruim. |
-| **[!UICONTROL Paleta de formatação condicional]** | Aplica um conjunto de cores pré-configurado às células. Dependendo de qual dos quatro esquemas de cores disponíveis você selecionar, cores diferentes serão atribuídas a valores altos, valores médios e valores baixos. <br> Substituir uma dimensão na tabela redefine os limites da formatação condicional. Substituir uma métrica recalcula os limites da coluna (na qual haja uma métrica no eixo X e uma dimensão no eixo Y). |
+| **[!UICONTROL Paleta de formatação condicional]** | Aplica um conjunto de cores pré-configurado às células. Dependendo de qual dos quatro esquemas de cores disponíveis você selecionar, cores diferentes serão atribuídas a valores altos, valores de ponto médio e valores baixos. <br> Substituir uma dimensão na tabela redefine os limites da formatação condicional. Substituir uma métrica recalcula os limites da coluna (na qual haja uma métrica no eixo X e uma dimensão no eixo Y). |
 
 ## Usar modelo de atribuição não padrão {#use-non-default-attribution-model}
 

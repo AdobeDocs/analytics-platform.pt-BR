@@ -5,10 +5,10 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '2701'
-ht-degree: 98%
+source-wordcount: '2770'
+ht-degree: 95%
 
 ---
 
@@ -290,7 +290,7 @@ As histórias de dados permitem personalizar tudo. Assim você pode compartilhar
 1. Altere o título, o tipo de gráfico e outras opções do bloco.
 1. Arraste um componente para o bloco.
    ![Criar uma história de dados](assets/data-story3.png)
-Ao arrastar e soltar um componente, como uma visualização em um bloco, o componente é aplicado a todos os slides da história de dados.
+Quando você arrasta e solta um componente, como uma visualização, em um bloco, o componente é aplicado a todos os slides da matéria de dados.
 1. Para aplicar uma alteração somente ao título, mantenha pressionada a tecla Shift para aplicar a alteração.
    ![Criar uma história de dados](assets/data-story4.png)
 

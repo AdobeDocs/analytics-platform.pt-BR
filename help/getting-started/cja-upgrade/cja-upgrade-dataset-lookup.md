@@ -5,9 +5,9 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: f5443ddd-81d0-43cc-99cb-215e7ddf5acf
-source-git-commit: 03e9fb37684f8796a18a76dc0a93c4e14e6e7640
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '818'
 ht-degree: 100%
 
 ---
@@ -41,7 +41,7 @@ Para criar um esquema para usar com um conjunto de dados de pesquisa no Customer
 
 1. No Adobe Experience Platform, selecione **[!UICONTROL Esquemas]** na seção **[!UICONTROL Gerenciamento de dados]** no painel esquerdo.
 
-1. Selecione **[!UICONTROL Criar esquema]**. 
+1. Selecione **[!UICONTROL Criar esquema]**.
 
    ![Botão Criar esquema](assets/schema-create.png)
 

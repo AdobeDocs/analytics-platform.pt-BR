@@ -5,10 +5,10 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: product analytics
 exl-id: 93e6e4f1-bbe4-4a6c-8ec3-54d1f9a8b847
 role: User
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '531'
-ht-degree: 99%
+source-wordcount: '545'
+ht-degree: 97%
 
 ---
 
@@ -46,7 +46,7 @@ O painel de consulta permite configurar os seguintes componentes:
 
 * **[!UICONTROL Exibir]**: alternar entre esta análise e o [Impacto do primeiro uso](first-use-impact.md).
 * **[!UICONTROL Indicadores-chave]**: os eventos que você deseja medir por usuário. Cada indicador principal selecionado é representado como uma linha colorida. Uma linha que representa o evento é adicionada à tabela. É possível incluir até três eventos.
-* **[!UICONTROL Contado como]**: o método de contagem que deseja aplicar aos eventos selecionados. As opções incluem [!UICONTROL Eventos por usuário], [!UICONTROL Porcentagem de usuários], [!UICONTROL Eventos], [!UICONTROL Sessões] e [!UICONTROL Usuários].
+* **[!UICONTROL Contado como]**: o método de contagem que você deseja aplicar aos eventos selecionados. As opções incluem [!UICONTROL Eventos por usuário], [!UICONTROL Porcentagem de usuários], [!UICONTROL Eventos], [!UICONTROL Sessões] e [!UICONTROL Usuários].
 * **[!UICONTROL Fatores]**: a data que você deseja comparar antes e depois.
 * **[!UICONTROL Segmentos]**: o segmento que você deseja medir. O segmento selecionado filtra os dados para se concentrar apenas nas pessoas que correspondem aos critérios do segmento.
 

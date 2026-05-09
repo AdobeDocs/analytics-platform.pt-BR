@@ -4,10 +4,10 @@ title: Configurar Uma Visualização De Fallout
 feature: Visualizations
 exl-id: 3d888673-d7b1-45ef-bd3a-97b98466fb0e
 role: User
-source-git-commit: 295e4c9b3b9dff5ba650456c3f62817b30fe1e3d
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '914'
-ht-degree: 39%
+source-wordcount: '921'
+ht-degree: 38%
 
 ---
 
@@ -61,7 +61,7 @@ As visualizações de fallout não têm limitação sobre o número de pontos de
 
    * Passe o mouse sobre um ponto de contato para ver o fallout e outras informações sobre esse nível. As informações incluem o nome do ponto de contato, a contagem de pessoas e a taxa de sucesso. Você também pode comparar a taxa de sucesso com outros pontos de contato.
 
-## Configurações  {#settings}
+## Configurações {#settings}
 
 >[!CONTEXTUALHELP]
 >id="workspace_fallout_container"

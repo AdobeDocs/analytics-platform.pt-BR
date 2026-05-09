@@ -4,10 +4,10 @@ description: Saiba como publicar públicos-alvo do Customer Journey Analytics
 exl-id: 0221f9f1-df65-4bd6-a31d-33d1a1ba0cfe
 feature: Audiences
 role: User
-source-git-commit: 4717a85b9a3c7dc2cbdd8c625ebb5862cbfccd58
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '2391'
-ht-degree: 99%
+source-wordcount: '2478'
+ht-degree: 98%
 
 ---
 
@@ -84,7 +84,7 @@ Leia esta [visão geral](/help/components/audiences/audiences-overview.md) para 
 1. Selecione **[!UICONTROL [!UICONTROL Exibir IDs de exemplo]]** para exibir uma amostra de IDs neste público-alvo. Na caixa de diálogo **[!UICONTROL IDs de amostra]**, você pode usar a ![Pesquisa](/help/assets/icons/Search.svg) [!UICONTROL *Pesquisar IDs de amostra*] para procurar IDs de exemplo.
 
 1. Verifique novamente a configuração do público-alvo e clique em **[!UICONTROL Publicar]**.
-Você receberá uma mensagem de confirmação de que o público-alvo foi publicado. Demora apenas um ou dois minutos para esse público-alvo aparecer na Experience Platform. 
+Você receberá uma mensagem de confirmação de que o público-alvo foi publicado. Demora apenas um ou dois minutos para esse público-alvo aparecer na Experience Platform.
 
 1. Selecione **[!UICONTROL Exibir público-alvo na AEP]** na mesma mensagem e você será levado para a [Interface do segmento](https://experienceleague.adobe.com/pt-br/docs/experience-platform/segmentation/ui/overview) na Adobe Experience Platform. Veja mais informações abaixo.
 
@@ -206,7 +206,7 @@ Os públicos-alvo do Customer Journey Analytics não são incluídos no processo
 * **Contagens determinísticas na Real-Time Customer Data Platform**: a contagem na Real-Time Customer Data Platform é fixa e não se altera até o próximo intervalo de publicação.
 * **Fragmentação de perfil**: observe que os perfis existentes na Real-Time Customer Data Platform podem não contribuir para novas contagens de perfis ao importar do Customer Journey Analytics.
 
-Por diferenciar claramente esses aspectos, é possível entender e gerenciar melhor os dados de público-alvo no Customer Journey Analytics e na Real-Time Customer Data Platform.--->
+Ao diferenciar claramente esses aspectos, é possível entender e gerenciar melhor os dados de público-alvo no Customer Journey Analytics e no Real-Time Customer Data Platform.—>
 
 ## Perguntas frequentes {#faq}
 

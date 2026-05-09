@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Audiences
 role: Admin
 exl-id: 0db3f6f7-9d7e-41bf-8eb5-02e439bab10a
-source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '1355'
-ht-degree: 29%
+source-wordcount: '1391'
+ht-degree: 32%
 
 ---
 
@@ -79,7 +79,7 @@ Para criar uma configuração de análise de público-alvo:
    | Campo | Descrição |
    |---------|----------|
    | **[!UICONTROL Nome]** | Especifique um nome para a configuração. |
-   | **[!UICONTROL Sandbox]** | Selecione a sandbox da Experience Platform que contém o conjunto de dados do perfil que você deseja adicionar à conexão. Uma única sandbox pode oferecer suporte a até 100 configurações de análise de público-alvo. <p>A Adobe Experience Platform fornece [sandboxes](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sandbox/home) que particionam uma única instância da Platform em ambientes virtuais separados para ajudar a desenvolver aplicativos de experiência digital. Você pode considerar as sandboxes como “silos de dados” que contêm conjuntos de dados. As sandboxes são usadas para controlar o acesso aos conjuntos de dados.</p> |
+   | **[!UICONTROL Sandbox]** | Selecione a sandbox da Experience Platform que contém o conjunto de dados do perfil que você deseja adicionar à conexão. Uma única sandbox pode oferecer suporte a até 100 configurações de análise de público-alvo. <p>A Adobe Experience Platform fornece [sandboxes](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sandbox/home) que particionam uma única instância da Platform em ambientes virtuais separados para ajudar a desenvolver e evoluir aplicativos de experiência digital. Você pode considerar as sandboxes como “silos de dados” que contêm conjuntos de dados. As sandboxes são usadas para controlar o acesso aos conjuntos de dados.</p> |
 
 1. Na seção **[!UICONTROL Conjunto de dados de perfil]**, especifique as seguintes informações:
 

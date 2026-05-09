@@ -5,10 +5,10 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: product analytics
 exl-id: 27eaa7c7-f1e1-4cf1-9d59-67ac552eb430
 role: User
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '658'
-ht-degree: 99%
+source-wordcount: '671'
+ht-degree: 98%
 
 ---
 
@@ -73,8 +73,8 @@ Determina como o evento é categorizado em grupos (compartimentos). Na exibiçã
 
 O intervalo de datas desejado para a análise. Há dois componentes nesta configuração:
 
-* **[!UICONTROL Intervalo]**: a granularidade de data pela qual deseja exibir os dados de tendência. O gráfico e a tabela mostram dados agregados por padrão, com a opção de expandir a tabela para uma exibição de tendências. Na exibição de tendências, os usuários são agrupados com base na frequência de uso no total e em cada intervalo, o que significa que um usuário pode contar para diferentes compartimentos em intervalos distintos.
-* **[!UICONTROL Data]**: a data inicial e a final. As predefinições de intervalo de datas contínuo e os intervalos personalizados salvos anteriormente estão disponíveis para fins de praticidade, ou você pode usar o seletor de calendário para escolher um intervalo de datas fixo.
+* **[!UICONTROL Intervalo]**: a granularidade de data com a qual você deseja exibir os dados de tendência. O gráfico e a tabela mostram dados agregados por padrão, com a opção de expandir a tabela para uma exibição de tendências. Na exibição de tendências, os usuários são agrupados com base na frequência de uso no total e em cada intervalo, o que significa que um usuário pode contar para diferentes compartimentos em intervalos distintos.
+* **[!UICONTROL Data]**: as datas inicial e final. As predefinições de intervalo de datas contínuo e os intervalos personalizados salvos anteriormente estão disponíveis para fins de praticidade, ou você pode usar o seletor de calendário para escolher um intervalo de datas fixo.
 
 
 <!--

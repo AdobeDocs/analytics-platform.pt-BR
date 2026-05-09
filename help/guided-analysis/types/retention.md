@@ -5,10 +5,10 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: product analytics
 exl-id: c35a0ee0-e6b7-47b5-a5bc-308cde1585de
 role: User
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '1262'
-ht-degree: 97%
+source-wordcount: '1278'
+ht-degree: 96%
 
 ---
 
@@ -52,15 +52,15 @@ O painel de consulta permite configurar os seguintes componentes:
 
 * **[!UICONTROL Evento de início]**: os critérios de evento que um usuário deve satisfazer para se qualificar para inclusão na análise. Os usuários que interagem com o evento de início são contados na coluna “Usuários” da tabela. Esse evento serve como denominador das taxas de retenção exibidas. É permitido um evento, e filtros de propriedade podem ser aplicados conforme necessário. Por padrão, os eventos de início e retorno são vinculados, o que significa que um usuário deve realizar o evento selecionado uma vez para ser incluído na coorte e, em seguida, ser contado novamente como um usuário recorrente. No menu “Mais”, é possível desvincular os eventos de início e retorno, se você quiser que a ação de retorno seja diferente da ação de inclusão.
 * **[!UICONTROL Eventos de retorno]**: os critérios de evento que um usuário deve satisfazer para contar como usuário recorrente nos intervalos de duração. É possível selecionar até três eventos de retorno para comparar a retenção.
-* **[!UICONTROL Contado como]**: o método de contagem que você deseja aplicar aos usuários retidos. As opções incluem: 
+* **[!UICONTROL Contado como]**: o método de contagem que você deseja aplicar aos usuários retidos. As opções incluem:
    * **[!UICONTROL Métrica]**: mostrar a quantidade de [!UICONTROL Usuários] ou a [!UICONTROL Porcentagem de usuários] retidos. O denominador para a porcentagem de usuários retidos é a quantidade de usuários inclusos na coorte, sendo o mesmo em todos os intervalos de duração.
-   * **[!UICONTROL Retorno]**: permite controlar como os usuários recorrentes são contados. As opções incluem: 
+   * **[!UICONTROL Retorno]**: permite controlar como os usuários recorrentes são contados. As opções incluem:
       * **[!UICONTROL Em ou após]**: geralmente chamada de retenção “desvinculada”, esta opção contará um usuário se ele retornar na ou após a duração especificada. Por exemplo, no dia 7 ou em qualquer momento depois do dia 7. Esta opção é útil para mostrar como os usuários continuam a se envolver e gera uma curva de retenção mais suave como resultado.
       * **[!UICONTROL Exatamente em]**: geralmente chamada de retenção “vinculada”, esta opção contará um usuário se ele retornar exatamente na duração especificada. Por exemplo, exatamente no dia 7. Esta opção é útil para mostrar como os usuários retornam em intervalos de tempo específicos e gera uma curva de retenção com mais ondulação como resultado. Observação: a análise de coorte no Analysis Workspace usa a contagem “exatamente em” como base para a análise.
-   * **[!UICONTROL Cada]**: o período desejado para cada intervalo de duração. As opções incluem: 
+   * **[!UICONTROL Cada]**: o período desejado para cada intervalo de duração. As opções incluem:
       * **[!UICONTROL Dia/Semana/Mês]**: as opções disponíveis dependem do intervalo de datas selecionado. Estas opções são idênticas à configuração de **[!UICONTROL Intervalo]** ao selecionar o intervalo de datas e atualizam essa configuração automaticamente.
       * **[!UICONTROL Colchetes personalizados]**: esta opção está disponível somente para a configuração “A cada”. Permite que você conte os usuários em um período maior; por exemplo, dias 7-10 em vez de somente no dia 7.
-   * **[!UICONTROL Configurações de duração]**: permitem controlar os intervalos de duração exibidos no gráfico e na tabela. Uma duração é o período após o evento de início em que o evento de retorno ocorreu. Observação: os usuários qualificados para períodos de duração são baseados no tempo decorrido, não em dias do calendário. Por exemplo, se um usuário se qualificar para um evento às 23h00 do dia 6 de setembro e, em seguida, se qualificar para um evento de retorno às 12h00 do dia 7 de setembro, ele não aparecerá no intervalo de duração de um dia. :55:05 Devem decorrer 24 horas antes de o usuário se qualificar para o período de duração de um dia. Os intervalos de duração disponíveis dependem do intervalo de datas definido.
+   * **[!UICONTROL Configurações de duração]**: permitem controlar os intervalos de duração exibidos no gráfico e na tabela. Uma duração é o período após o evento de início em que o evento de retorno ocorreu. Observação: os usuários qualificados para períodos de duração são baseados no tempo decorrido, não em dias do calendário. Por exemplo, se um usuário se qualificar para um evento às 23h00 do dia 6 de setembro e, em seguida, se qualificar para um evento de retorno às 12h00 do dia 7 de setembro, ele não aparecerá no intervalo de duração de um dia. :55:05Devem decorrer 24 horas antes de o usuário se qualificar para o período de duração de um dia. Os intervalos de duração disponíveis dependem do intervalo de datas definido.
       * **[!UICONTROL Durações automáticas]** definem automaticamente os intervalos de duração com base na duração do intervalo de datas e na proximidade do dia atual no qual o intervalo de datas se encontra.
       * **[!UICONTROL Durações personalizadas]** permitem personalizar os quatro intervalos de duração exibidos no gráfico e na tabela.
 * **[!UICONTROL Segmentos]**: os segmentos que você deseja medir. Cada segmento selecionado adiciona uma linha à tabela de coorte. É possível incluir até três segmentos.

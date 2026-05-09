@@ -3,9 +3,9 @@ description: Saiba mais sobre o construtor de métricas calculadas que fornece u
 title: Criar métricas
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-source-git-commit: fa6654e85fd4055d41f42145fa5a4f917a8875c4
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '1677'
+source-wordcount: '1693'
 ht-degree: 93%
 
 ---
@@ -49,7 +49,7 @@ A caixa de diálogo **[!UICONTROL Criador de métricas calculadas]** é usada pa
 
    | Elemento | Descrição |
    | --- | --- |
-   | **[!UICONTROL Visualização de dados]** | É possível selecionar a visualização de dados da métrica calculada. A métrica calculada definida está disponível nos projetos do Workspace com base na visualização de dados selecionada. |
+   | **[!UICONTROL Visualização de dados]** | É possível selecionar a visualização de dados da métrica calculada.  A métrica calculada definida está disponível nos projetos do Workspace com base na visualização de dados selecionada. |
    | **[!UICONTROL Métrica somente do projeto]** | Uma caixa de informações aparece na parte superior desta caixa de diálogo ao editar uma métrica calculada que foi criada para um único projeto, conforme descrito em [Criar métricas calculadas para um único projeto](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project). <p>Se quiser disponibilizar essa métrica calculada para todos os projetos, selecione a opção **[!UICONTROL Disponibilizar essa métrica para todos os seus projetos e adicioná-la à sua lista de componentes]**.</p> |
    | **[!UICONTROL Título]** ![Obrigatório](/help/assets/icons/Required.svg) | Nomeie a métrica calculada, por exemplo, como `Conversion Rate`. |
    | **[!UICONTROL ID externo]** ![Obrigatório](/help/assets/icons/Required.svg) | O nome da métrica calculada ao usar uma ferramenta BI externa e a extensão BI. O valor é definido automaticamente como `undefined_xxx`, a menos que você substitua esse valor. |
@@ -58,7 +58,7 @@ A caixa de diálogo **[!UICONTROL Criador de métricas calculadas]** é usada pa
    | **[!UICONTROL Casas decimais]** | Especifique a quantidade de casas decimais para o formato selecionado. Habilitado somente quando o formato selecionado é “Decimal”, “Moeda” ou “Porcentagem”. |
    | **[!UICONTROL Exibir tendência ascendente como]** | Especifique se uma tendência ascendente da métrica calculada é exibida como ▲ **[!UICONTROL Boa (Verde)]** ou como ▼ **[!UICONTROL Ruim (Vermelho)]**. |
    | **[!UICONTROL Moeda]** | Especifique a moeda da métrica calculada. Habilitado somente quando o formato selecionado é “Moeda”. |
-   | **[!UICONTROL Tags]** | Para organizar a métrica calculada, crie ou aplique uma ou mais tags. Comece a digitar para encontrar as tags existentes que você pode selecionar. Ou pressione **[!UICONTROL ENTER]** para adicionar uma nova tag. Selecione ![CrossSize75](/help/assets/icons/CrossSize75.svg) para remover uma tag. |
+   | **[!UICONTROL Tags]** | Para organizar a métrica calculada, crie ou aplique uma ou mais tags. Comece a digitar para encontrar as tags existentes que você pode selecionar. Ou pressione **[!UICONTROL ENTER]** para adicionar uma nova tag. Selecione ![CrossSize75](/help/assets/icons/CrossSize75.svg) para remover uma tag. |
    | **[!UICONTROL Pré-visualizar]** | A visualização abrange os últimos 90 dias e é uma maneira de medir se você definiu a sua métrica corretamente. |
    | **[!UICONTROL Resumo]** | Exibe um resumo da definição da métrica calculada. <br/>Por exemplo: ![Evento](/help/assets/icons/Event.svg) **[!UICONTROL Total de pedidos]** ![Dividir](/help/assets/icons/Divide.svg) ![Evento](/help/assets/icons/Event.svg) **[!UICONTROL Sessões]**. |
    | **[!UICONTROL Definição]** ![Obrigatória](/help/assets/icons/Required.svg) | Defina o segmento usando o [Criador de definições](#definition-builder). |
@@ -153,7 +153,7 @@ Isso adiciona automaticamente um container de segmento à **[!UICONTROL Defini�
 
    * Selecione ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Adicionar]** de dentro de um container:
 
-      1. Selecione **[!UICONTROL Segmento]**.  Um container de segmento é adicionado à **[!UICONTROL Definição]**.
+      1. Selecione **[!UICONTROL Segmento]**. Um container de segmento é adicionado à **[!UICONTROL Definição]**.
       1. No novo container de segmento, selecione um segmento no menu suspenso [!UICONTROL *Selecionar...*].
 
   >[!TIP]

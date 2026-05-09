@@ -4,10 +4,10 @@ title: Painel do Quick Insights
 feature: Panels
 exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
 role: User
-source-git-commit: ce4a21b1a1e89f14316a92fbdce38281db61e666
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '1148'
-ht-degree: 90%
+source-wordcount: '1166'
+ht-degree: 88%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 90%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta o painel Insights rápidos no_ ![Customer Journey Analytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_.<br/>_Consulte o [painel Insights rápidos](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/panels/quickinsight) para a versão do_ ![Adobe Analytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
+_Este artigo documenta o painel Quick insights no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_.<br/>_Consulte o [painel Quick insights](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/panels/quickinsight) da versão_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 

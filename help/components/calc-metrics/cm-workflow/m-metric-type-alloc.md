@@ -3,10 +3,10 @@ description: Saiba mais sobre tipo de métrica e atribuição.
 title: Tipo de métrica e atribuição
 feature: Calculated Metrics
 exl-id: da73a9ba-542e-436c-bdb2-b629b5b6f760
-source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '612'
-ht-degree: 100%
+source-wordcount: '620'
+ht-degree: 99%
 
 ---
 
@@ -23,7 +23,7 @@ Você pode configurar o tipo de métrica e o [modelo de atribuição](#attributi
 
      | Tipo de métrica | Definição |
      |---|---|
-     | **[!UICONTROL Padrão]** | Se uma fórmula consistir de uma única métrica padrão, ela exibirá dados idênticos à sua métrica não calculada equivalente. Métricas padrão são úteis ao criar métricas calculadas específicas para cada item da linha.  <p>Por exemplo, ![Evento](/help/assets/icons/Event.svg) **[!UICONTROL Pedidos]** ![Dividir](/help/assets/icons/Divide.svg) ![Evento](/help/assets/icons/Event.svg) **[!UICONTROL Sessões]** pega os pedidos de um item da linha específico e divide pelo número de sessões desse item de linha específico. |
+     | **[!UICONTROL Padrão]** | Se uma fórmula consistir de uma única métrica padrão, ela exibirá dados idênticos à sua métrica não calculada equivalente. Métricas padrão são úteis ao criar métricas calculadas específicas para cada item da linha. <p>Por exemplo, ![Evento](/help/assets/icons/Event.svg) **[!UICONTROL Pedidos]** ![Dividir](/help/assets/icons/Divide.svg) ![Evento](/help/assets/icons/Event.svg) **[!UICONTROL Sessões]** pega os pedidos de um item da linha específico e divide pelo número de sessões desse item de linha específico. |
      | **[!UICONTROL Total geral]** | Use o **[!UICONTROL Total geral]** para informar o período de relatórios em cada item da linha. Se uma fórmula consistir em uma única métrica de total geral, a métrica calculada exibirá o mesmo número de total geral em cada item da linha. As métricas de total geral são úteis quando você deseja criar métricas calculadas que se comparam aos dados totais. <p>Por exemplo, ![Evento](/help/assets/icons/Event.svg) **[!UICONTROL Pedidos]** ![Dividir](/help/assets/icons/Divide.svg) ![Evento](/help/assets/icons/Event.svg) **[!UICONTROL Total de sessões]** mostra a proporção de pedidos com relação a todas as sessões, não apenas as sessões com o item da linha específico. Neste exemplo, você especifica **[!UICONTROL Total geral]** para a métrica ![Evento](/help/assets/icons/Event.svg) **[!UICONTROL Sessões]** em sua métrica calculada, que a transformará automaticamente em ![Evento](/help/assets/icons/Event.svg) **[!UICONTROL Total de sessões]**. |
 
    * Especifique a **[!UICONTROL atribuição]**.
@@ -144,7 +144,7 @@ Consulte [Exemplo](#example) para ver um exemplo de uso de um modelo de atribu
 {{attribution-container}}
 
 
-## Janela de pesquisa {#lookback-winwow}
+## Janela de retrospectiva {#lookback-winwow}
 
 >[!CONTEXTUALHELP]
 >id="components_calculatedmetrics_attribution_lookbackwindow"
@@ -162,7 +162,7 @@ Consulte [Exemplo](#example) para ver um exemplo de uso de um modelo de atribu
 
 >[!MORELIKETHIS]
 >
->[Configurações de componentes de atribuição](/help/data-views/component-settings/attribution.md)
+>[Configurações do componente de Atribuição](/help/data-views/component-settings/attribution.md)
 >[Métrica de participação](participation-metric.md)
 >
 

@@ -4,9 +4,9 @@ description: Saiba como exibir e gerenciar logs de auditoria do Customer Journey
 exl-id: 360609f2-b811-49ee-ad4a-a54ceb23bfa3
 feature: Privacy
 role: Admin
-source-git-commit: 2ef96ad194f8c7acec35bd7635c650af4370531a
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '967'
+source-wordcount: '999'
 ht-degree: 98%
 
 ---

@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 exl-id: c39ee568-97f6-4925-ae18-3d4a9dfdb6f5
-source-git-commit: f03c82375a907821c8e3f40b32b4d4200a47323f
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '378'
 ht-degree: 89%
 
 ---

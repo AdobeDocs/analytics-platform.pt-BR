@@ -5,10 +5,10 @@ exl-id: 6300d289-d308-476e-aa4e-05cdae361bb2
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
-source-wordcount: '3739'
-ht-degree: 56%
+source-wordcount: '3784'
+ht-degree: 53%
 
 ---
 
@@ -47,7 +47,7 @@ As informações a seguir descrevem as configurações que um componente de visu
 | [!UICONTROL Nome do campo de esquema] | O nome do campo de esquema. |
 | [!UICONTROL Tipo de conjunto de dados] | Obrigatório. Um campo não editável que mostra de qual tipo de conjunto de dados (evento, pesquisa ou perfil) o componente veio. |
 | [!UICONTROL Conjunto de dados] | Um campo não editável que mostra de qual conjunto de dados o componente se originou. Este campo pode conter vários conjuntos de dados. |
-| [!UICONTROL Tipo de esquema] | Um campo não editável que mostra o tipo de dados do componente.  Embora você possa usar qualquer tipo de campo de esquema compatível na Platform, nem todos os tipos de campos são compatíveis com o Customer Journey Analytics.  Os seguintes tipos de dados são compatíveis: `Integer`, `Int`, `Long`, `Double`, `Float`, `Number`, `Short`, `Byte`, `String` e `Boolean`. Atualmente, apenas o tipo de dados de esquema `String` é permitido em conjuntos de dados de pesquisa. |
+| [!UICONTROL Tipo de esquema] | Um campo não editável que mostra o tipo de dados do componente. Embora você possa usar qualquer tipo de campo de esquema compatível na Platform, nem todos os tipos de campos são compatíveis com o Customer Journey Analytics. Os seguintes tipos de dados são compatíveis: `Integer`, `Int`, `Long`, `Double`, `Float`, `Number`, `Short`, `Byte`, `String` e `Boolean`. Atualmente, apenas o tipo de dados de esquema `String` é permitido em conjuntos de dados de pesquisa. |
 | [!UICONTROL ID de componente] | Obrigatório. A [API do Customer Journey Analytics](https://www.adobe.io/cja-apis/docs) usa esse campo para fazer referência ao componente. Cada componente em uma visualização de dados deve ser exclusivo. A Adobe gera automaticamente uma ID para cada componente; no entanto, você pode clicar no ícone editar e modificar a ID do componente. Alterar a ID do componente interrompe todos os projetos existentes do Workspace que contêm esse componente. Embora cada componente precise de uma ID exclusiva em uma única visualização de dados, é possível usar a mesma ID do componente em outras visualizações de dados. Se você usar a mesma ID do componente em outras visualizações de dados, será possível tornar os projetos do espaço de trabalho compatíveis entre as visualizações de dados. <br/>Para componentes baseados em perfil e pesquisa, a ID do componente tem um prefixo baseado na ID do conjunto de dados (por exemplo: `642b28fcc1f0ee1c074265a0.person.name.firstName`). Quando quiser reutilizar um perfil ou componente baseado em pesquisa (como `person.name.firstName`) no projeto do espaço de trabalho e configurar esse componente em diferentes visualizações de dados, forneça um nome exclusivo para a ID do componente (por exemplo: `myUniqueID.person.name.firstName`) em suas visualizações de dados. |
 | [!UICONTROL Caminho] | Obrigatório. Um campo não editável que mostra o caminho do esquema de onde o componente veio. |
 | [!UICONTROL Rótulos de uso de dados] | Quaisquer rótulos de uso de dados atribuídos a este componente no Adobe Experience Platform. [Saiba mais](/help/data-views/data-governance.md). |
@@ -404,7 +404,7 @@ Os seguintes grupos de rótulos de contexto estão disponíveis, cada um com uma
 | ID de correlação | ID de correlação. |
 | Contagem de ofertas (AJO) | O número de itens de oferta na proposta. |
 | Chave de vinculação de item de decisão | Um identificador composto que combina ID de item com ID de solicitação do Experience Decisioning, permitindo a persistência de dados entre interações. |
-| Provedor de decisão (AJO) | O provedor que teve que tomar a decisão. Esta dimensão é usada quando vários serviços podem tomar decisões para o mesmo posicionamento ou atividade. |
+| Provedor de decisão (AJO) | O provedor que foi solicitado a tomar a decisão. Essa dimensão é usada quando vários serviços podem tomar decisões para a mesma disposição ou atividade. |
 | Provedor de decisão (persistente) (AJO) | O provedor de decisão com a vinculação de persistência habilitada. |
 | ID da política de decisão (AJO) | A ID da política de decisão usada ao decidir quais itens incluir nessa proposta. |
 | Métrica de desduplicação (AJO) | Métrica de desduplicação. |
@@ -427,7 +427,7 @@ Os seguintes grupos de rótulos de contexto estão disponíveis, cada um com uma
 | Dispensas de entrada (AJO) | Contagem total de descartes nos canais de entrada. |
 | Impressões de entrada (AJO) | Contagem total de impressões em canais de entrada. |
 | Envios de entrada (AJO) | Contagem total de envios em canais de entrada. |
-| Entrada acionada (AJO) | A proposta foi escolhida para ser exibida pelo SDK da Adobe. Outros fatores podem impedir que ela seja exibido de fato. |
+| Entrada acionada (AJO) | A proposta foi escolhida para ser exibida pelo SDK do Adobe. Outros fatores podem impedir a exibição real. |
 | É otimizado para o tempo de envio (AJO) | A execução da mensagem é SendTimeOtimized? |
 | É uma jornada de teste | O evento faz parte de uma execução de jornada de teste? |
 | É mensagem de teste (AJO) | A mensagem é enviada como execução de teste? |
@@ -444,7 +444,7 @@ Os seguintes grupos de rótulos de contexto estão disponíveis, cada um com uma
 | Nome da regra de exclusão da jornada | Nome da regra que causou a negação da entrada da jornada. |
 | Exclusões da jornada (AJO) | Indica se o evento de etapa atual resultou em um descarte de jornada para um perfil. Isso normalmente ocorre devido à aplicação das regras de limite ou simultaneidade, impedindo maior progressão na jornada. |
 | Tipo de saída da jornada (AJO) | O tipo de saída que ocorreu para a instância do jornada. |
-| Falhas da jornada | Fornece o estado atual da etapa que terminou de ser executada. |
+| Falhas da jornada | Fornece o estado atual da etapa cuja execução foi concluída. |
 | ID da jornada | A ID da jornada. |
 | Nome da jornada | O nome da jornada. |
 | Nome e versão da jornada | O nome e a versão da jornada. |
@@ -506,7 +506,7 @@ Os seguintes grupos de rótulos de contexto estão disponíveis, cada um com uma
 | ID da lista de assinaturas (AJO) | Identificador exclusivo da lista de assinaturas. |
 | Remoções da lista de assinaturas (AJO) | Contagem total de remoções de uma lista de assinaturas. |
 | Superfície (AJO) | A superfície do canal na qual a mensagem foi exibida. |
-| Direcionados (descontinuado) | Essa contagem do número de vezes que uma proposta foi direcionada a uma pessoa. É o número de vezes que uma proposta foi considerada para exibição a uma pessoa. |
+| Direcionados (descontinuado) | Essa contagem do número de vezes que uma apresentação foi direcionada a uma pessoa. Este é o número de vezes que uma proposta foi considerada para exibição a uma pessoa. |
 | Nome da regra de direcionamento (AJO) | O nome da regra de direcionamento. |
 | Evento de teste (AJO) | Evento de teste. |
 | Hora de início | Hora de início. |
