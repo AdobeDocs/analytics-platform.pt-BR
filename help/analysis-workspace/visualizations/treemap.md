@@ -41,7 +41,7 @@ Com um mapa de árvore, você pode ver padrões que seriam difíceis de detectar
 
 >[!BEGINSHADEBOX]
 
-Veja ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualização de mapa de árvore](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-treemap-visualizations){target="_blank"} para ver um vídeo de demonstração.
+Veja ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualização de mapa de árvore](https://experienceleague.adobe.com/pt-br/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-treemap-visualizations){target="_blank"} para ver um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 
