@@ -1,7 +1,8 @@
 ---
 cloud: Experience Cloud
 solution: Customer Journey Analytics
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
 type: Documentation
 git-repo: https://github.com/AdobeDocs/analytics-platform.en
 description: Esse arquivo inclui metadados em nível de repositório que passam para arquivos TOC.md do guia do usuário no repositório.
