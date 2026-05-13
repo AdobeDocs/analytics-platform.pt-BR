@@ -5,10 +5,14 @@ feature: Visualizations
 exl-id: 4d982430-5d43-482a-ab4e-ab1fc3616f0c
 role: User
 TQID: https://experienceleague.adobe.com/-A-UUiraQfKIjVHrAR5c-lYBBt6-1kPWzHuvtDa6DK0
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
-subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2:
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 227
@@ -20,7 +24,7 @@ ht-degree: 64%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta a barra horizontal e as visualizações de barra horizontal empilhada em_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consulte [Barra horizontal e barra horizontal empilhada](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/horizontal-bar) para a versão_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
+_Este artigo documenta a barra horizontal e as visualizações de barra horizontal empilhada em_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consulte [Barra horizontal e barra horizontal empilhada](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/horizontal-bar) para a versão_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 

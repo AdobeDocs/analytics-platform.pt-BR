@@ -5,9 +5,12 @@ feature: Visualizations
 exl-id: b560389a-1149-4e16-b45a-0c6a1f7d0e1f
 role: User
 TQID: https://experienceleague.adobe.com/6fMQ0qYVbortRLhHTIZUb--mVQa3cdNrIQPAqYs2714
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 297
@@ -37,7 +40,7 @@ ht-degree: 82%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta a visualização de Marcador na_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consulte o [Marcador](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph) da versão_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
+_Este artigo documenta a visualização de Marcador na_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consulte o [Marcador](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph) da versão_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 
@@ -60,7 +63,7 @@ Você pode definir configurações específicas para uma visualização de [!UIC
 
 | Configuração | Descrição |
 |---|---|
-| **[!UICONTROL Opções de marcador]** | Especifique valores para **[!UICONTROL Meta alta]**, **[!UICONTROL Meta intermediária]** e **[!UICONTROL Meta baixa]** na visualização de [!UICONTROL Marcador]. <br/>**[!UICONTROL Meta alta ]**é a meta principal que você está almejando.**[!UICONTROL  Meta baixa ]**e**[!UICONTROL  Meta intermediária ]**criam intervalos abaixo da Meta alta. Observação: quando a opção**[!UICONTROL  Porcentagens ]**estiver marcada, insira metas como números inteiros. Por exemplo: `20` se a sua meta for vinte por cento. |
+| **[!UICONTROL Opções de marcador]** | Especifique valores para **[!UICONTROL Meta alta]**, **[!UICONTROL Meta intermediária]** e **[!UICONTROL Meta baixa]** na visualização de [!UICONTROL Marcador]. <br/>**[!UICONTROL Meta alta &#x200B;]**&#x200B;é a meta principal que você está almejando.**[!UICONTROL &#x200B; Meta baixa &#x200B;]**&#x200B;e&#x200B;**[!UICONTROL &#x200B; Meta intermediária &#x200B;]**&#x200B;criam intervalos abaixo da Meta alta. Observação: quando a opção&#x200B;**[!UICONTROL &#x200B; Porcentagens &#x200B;]**&#x200B;estiver marcada, insira metas como números inteiros. Por exemplo: `20` se a sua meta for vinte por cento. |
 
 >[!MORELIKETHIS]
 >

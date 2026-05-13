@@ -5,9 +5,13 @@ feature: Visualizations
 exl-id: 8872fc58-0957-415d-9958-ce564612ce87
 role: User
 TQID: https://experienceleague.adobe.com/aQNlCX5WKNajckXXobUSIQNLULFHKEq9lYtb-HuFyYs
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 534
@@ -19,7 +23,7 @@ ht-degree: 61%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta as visualizações Número do resumo e Alteração do resumo no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consulte [Número do resumo e Alteração do resumo](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/summary-number-change) para a versão_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
+_Este artigo documenta as visualizações Número do resumo e Alteração do resumo no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consulte [Número do resumo e Alteração do resumo](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/summary-number-change) para a versão_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 

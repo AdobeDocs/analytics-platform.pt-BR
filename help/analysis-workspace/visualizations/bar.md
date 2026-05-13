@@ -5,9 +5,12 @@ feature: Visualizations
 exl-id: a4458694-0c90-4e44-88d5-575737a61c36
 role: User
 TQID: https://experienceleague.adobe.com/8gGSvZ9hyVUW-uHqKwo-6XlS1w-2nvDgYLzkPNMFX9c
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 234
@@ -19,7 +22,7 @@ ht-degree: 68%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta as visualizações de Barras e Barras empilhadas em_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consulte [Barras e Barras empilhadas](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/bar) para a versão_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
+_Este artigo documenta as visualizações de Barras e Barras empilhadas em_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consulte [Barras e Barras empilhadas](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/bar) para a versão_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
 
 
 >[!ENDSHADEBOX]

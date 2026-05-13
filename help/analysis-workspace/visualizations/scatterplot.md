@@ -5,10 +5,15 @@ feature: Visualizations
 exl-id: c01386c9-c51f-46f3-b1a2-41a8d8996d04
 role: User
 TQID: https://experienceleague.adobe.com/qkpKnRbGfAQ2dQSw06QEYlBZ-dycI1NyGtvxC89oidE
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 254
@@ -25,7 +30,7 @@ ht-degree: 51%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta a exibição de Dispersão no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consulte [Dispersão](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/scatterplot) para a versão_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
+_Este artigo documenta a exibição de Dispersão no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consulte [Dispersão](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/scatterplot) para a versão_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 
@@ -40,7 +45,7 @@ A visualização ![DispersãoGráfico](/help/assets/icons/GraphScatter.svg) **[!
 
 
 
-![Exemplo de gráfico de dispersão, mostrando vários itens de dimensão ](assets/scatter.png)
+![Exemplo de gráfico de dispersão, mostrando vários itens de dimensão &#x200B;](assets/scatter.png)
 
 
 >[!BEGINSHADEBOX]

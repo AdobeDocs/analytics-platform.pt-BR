@@ -5,10 +5,15 @@ feature: Real-time Reporting
 role: User
 exl-id: 6e7dba80-5fb9-4554-b989-85eb54a4bd6a
 TQID: https://experienceleague.adobe.com/tQgkfejYepjtgY4eN6cmT4K49I8VUb6les1abWXGGa0
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 239
@@ -30,7 +35,7 @@ Para usar o relatório em tempo real, habilite a opção **[!UICONTROL Atualiza�
 * [Atribuição](/help/analysis-workspace/c-panels/attribution.md)
 * [Próximo item ou anterior](/help/analysis-workspace/c-panels/next-previous.md)
 
-Você verá uma mensagem com o carimbo de data e hora da atualização mais recente dos dados. Por exemplo: [!UICONTROL  *Última atualização às 07:55 pm*].
+Você verá uma mensagem com o carimbo de data e hora da atualização mais recente dos dados. Por exemplo: [!UICONTROL &#x200B; *Última atualização às 07:55 pm*].
 
 Selecione o período em tempo real que deseja relatar no menu suspenso. As opções disponíveis são:
 

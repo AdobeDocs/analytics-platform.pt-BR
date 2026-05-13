@@ -5,9 +5,12 @@ feature: Visualizations
 exl-id: ef606c53-b370-419a-904b-573ee6d70a8d
 role: User
 TQID: https://experienceleague.adobe.com/meCT1nb-OpnYQnu6sTXov6nLci1Uhk0335QbLFrzRUM
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 960
@@ -25,7 +28,7 @@ ht-degree: 91%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta a visualização do resumo da métrica principal em_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consulte o [resumo da métrica principal](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/key-metric) da versão_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
+_Este artigo documenta a visualização do resumo da métrica principal em_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consulte o [resumo da métrica principal](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/key-metric) da versão_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 
