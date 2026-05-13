@@ -2,10 +2,10 @@
 user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Saiba mais sobre o Adobe Customer Journey Analytics e como usar o Analysis Workspace com dados da Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
-source-git-commit: 725ec404666d706801f06eb4ea46628b02506d59
+source-git-commit: d15d85f5904bbada26bfd74fdc45217efeddd723
 workflow-type: tm+mt
 source-wordcount: '1429'
-ht-degree: 92%
+ht-degree: 93%
 
 ---
 
@@ -301,7 +301,7 @@ ht-degree: 92%
       + [Configuração guiada](/help/content-analytics/config/guided.md)
       + [Configuração manual](/help/content-analytics/config/manual.md)
       + [Configuração independente](/help/content-analytics/config/standalone.md)
-      + {hide-from-toc}[Configuração agnóstica de marcas](/help/content-analytics/config/tag-agnostic.md)
+      + [Configuração agnóstica de tags](/help/content-analytics/config/tags-agnostic.md)
       + [Coleção de dados](/help/content-analytics/config/datacollection.md)
 
 + Painéis do Analytics {#cja-dashboards}

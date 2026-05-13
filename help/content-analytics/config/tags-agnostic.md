@@ -4,10 +4,9 @@ description: Saiba como configurar o Content Analytics sem usar as Tags de cole�
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
-hide: true
-source-git-commit: 64b96d8b0917975f19c353e26d9e6437d1b4e5ac
+source-git-commit: d15d85f5904bbada26bfd74fdc45217efeddd723
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '484'
 ht-degree: 5%
 
 ---
@@ -24,7 +23,10 @@ A biblioteca JavaScript do Adobe Content Analytics permite rastrear eventos rela
 
 >[!PREREQUISITES]
 >
->O Adobe Experience Platform Web SDK (Alloy) deve ser inicializado na página antes de chamar `initializeContentLibrary`.
+>* O Adobe Experience Platform Web SDK (Alloy) deve ser inicializado na página antes de chamar `initializeContentLibrary`.
+>* Conclua o assistente de configuração guiada do Content Analytics para orientá-lo por todas as etapas necessárias para definir os pré-requisitos de uma configuração do Content Analytics.
+>* Após a conclusão da configuração guiada, as configurações do JavaScript, específicas para a sua configuração, ficam disponíveis nessa visualização de configuração.
+
 
 ## Instalação
 
@@ -154,8 +156,3 @@ initializeContentLibrary({
   ],
 });
 ```
-
->[!NOTE]
->
->Depois que uma configuração do Content Analytics é definida na interface de [configuração guiada](/help/content-analytics/config/guided.md), as configurações do JavaScript específicas para a sua configuração ficam disponíveis nessa exibição de configuração.
-
