@@ -4,9 +4,13 @@ description: Explica como gerenciar o uso do Customer Journey Analytics.
 role: Admin
 feature: Basics
 exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
-source-git-commit: 6d23203468032510446711ff5a874fd149531a9a
+TQID: https://experienceleague.adobe.com/LbcO4spfU9qS4AT-cV2-Jec3dJnfAZXiBXRA-grdUSg
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: 258
 ht-degree: 37%
 
 ---
@@ -15,11 +19,11 @@ ht-degree: 37%
 
 >[!TIP]
 >
->Use a [**[!UICONTROL interface &#x200B;]**](/help/connections/manage-connections.md#usage) para **&#x200B; exibir &#x200B;** o uso de linhas assimiladas e reportáveis em todas as conexões no Customer Journey Analytics.
+>Use a [**[!UICONTROL interface ]**](/help/connections/manage-connections.md#usage) para** exibir **o uso de linhas assimiladas e reportáveis em todas as conexões no Customer Journey Analytics.
 
 
 
-Você pode gerenciar o uso do Customer Journey Analytics na [**[!UICONTROL interface de Conexões &#x200B;]**](/help/connections/create-connection.md). Nessa interface, é possível definir a retenção de dados do Customer Journey Analytics como uma janela contínua em meses (1 mês, 3 meses, 6 meses etc.), no nível da conexão.
+Você pode gerenciar o uso do Customer Journey Analytics na [**[!UICONTROL interface de Conexões ]**](/help/connections/create-connection.md). Nessa interface, é possível definir a retenção de dados do Customer Journey Analytics como uma janela contínua em meses (1 mês, 3 meses, 6 meses etc.), no nível da conexão.
 
 O principal benefício é armazenar ou relatar apenas dados que sejam aplicáveis e úteis, além de excluir dados mais antigos que não sejam mais úteis. Isso ajuda você a ficar dentro dos limites do contrato e reduz o risco de custo excedente.
 

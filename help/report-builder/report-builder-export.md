@@ -6,16 +6,22 @@ feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 1d5d87d8-1920-406b-8cce-41b89b7ae70b
-source-git-commit: cc20ddf5da5787af0a29b5d18c00abff816071d2
+TQID: https://experienceleague.adobe.com/9oEoM8cI6Bxl-PXmiT-OhskFK3XlaPVkQSFOi4Dyajg
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4id: d76b9e53-27fb-4597-933f-419cc0dd46db
+subfeature_v2: id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817afid: ef46ac31-f951-48d6-bae5-51c52ab47fb8id: f2ef16dc-055a-4bb7-baa5-7039653f3966
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '1303'
-ht-degree: 39%
+source-wordcount: 1309
+ht-degree: 40%
 
 ---
 
 # Agendar pastas de trabalho exportando para destinos na nuvem
 
-Você pode exportar pastas de trabalho do Customer Journey Analytics do Report Builder para provedores de nuvem como Google, Azure e Amazon.
+Você pode exportar pastas de trabalho do Customer Journey Analytics do Report Builder para provedores de nuvem, como Google, Azure e Amazon.
 
 [As vantagens de exportar relatórios do Report Builder para a nuvem](#advantages-of-exporting-to-the-cloud) incluem a capacidade de usar relatórios em ferramentas de terceiros ou combiná-los com dados externos.
 
@@ -69,7 +75,7 @@ Para exportar relatórios do Report Builder:
    | **[!UICONTROL Proteger a pasta de trabalho com senha]** | Especifique uma senha para proteger o arquivo exportado para que somente as pessoas com a senha possam acessá-lo. <p>As senhas devem ter pelo menos 8 caracteres e conter pelo menos 1 número e 1 caractere especial (como `!`,`@`,`#` e `$`).</p> |
    | **[!UICONTROL Email]** | Selecione essa opção para enviar o arquivo para um endereço de email específico. Para obter mais informações, consulte [Agendar pastas de trabalho compartilhando por email](/help/report-builder/schedule-reportbuilder.md). |
    | **[!UICONTROL Outras entregas]** | Selecione esta opção para enviar o arquivo para uma conta de nuvem e, em seguida, use os menus suspensos **[!UICONTROL Conta]** e **[!UICONTROL Local]** descritos abaixo para selecionar a conta e o local. |
-   | **[!UICONTROL Conta]** | Selecione a conta de exportação da nuvem para a qual deseja enviar os dados. <p>Ou, se ainda não tiver configurado uma conta na nuvem que deseja usar, é possível configurar uma nova conta:<ol><li>Selecione [!UICONTROL **Adicionar conta**] e especifique as seguintes informações:<ul><li>[!UICONTROL **Nome da conta de localização**]: especifique um nome para a conta de localização. Esse nome aparece ao criar uma localização </li><li>[!UICONTROL **Descrição da conta de localização**]: insira uma breve descrição da conta para ajudar a diferenciá-la de outras contas do mesmo tipo. </li><li>**[!UICONTROL Disponibilizar a conta para todos os usuários na sua organização]**: selecione esta opção para permitir que outros usuários na sua organização usem a conta. Considere o seguinte ao compartilhar contas:<ul><li>As contas compartilhadas não podem ter o compartilhamento cancelado.</li><li>As contas compartilhadas podem ser editadas somente pelo proprietário da conta.</li><li>Qualquer pessoa pode criar um local para a conta compartilhada.</li></ul></li><li>[!UICONTROL **Tipo de conta**]: selecione o tipo de conta de nuvem para a qual você está exportando. Os tipos de conta disponíveis são Amazon S3 Role ARN, Google Cloud Platform, Azure SAS e Azure RBAC.</li></ul><li>Para concluir a configuração da sua conta, continue com o link abaixo que corresponda ao [!UICONTROL **Tipo de conta**] selecionado:<ul><li>[Amazon S3 Role ARN](/help/components/exports/cloud-export-accounts.md#amazon-s3-role-arn)</li><li>[Google Cloud Platform](/help/components/exports/cloud-export-accounts.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-accounts.md#azure-sas)</li><li>[Azure RBAC](/help/components/exports/cloud-export-accounts.md#azure-rbac)</li></ul></ol> |
+   | **[!UICONTROL Conta]** | Selecione a conta de exportação da nuvem para a qual deseja enviar os dados. <p>Ou, se ainda não tiver configurado uma conta na nuvem que deseja usar, é possível configurar uma nova conta:<ol><li>Selecione [!UICONTROL **Adicionar conta**] e especifique as seguintes informações:<ul><li>[!UICONTROL **Nome da conta de localização**]: especifique um nome para a conta de localização. Esse nome aparece ao criar uma localização </li><li>[!UICONTROL **Descrição da conta de localização**]: insira uma breve descrição da conta para ajudar a diferenciá-la de outras contas do mesmo tipo.</li><li>**[!UICONTROL Disponibilizar a conta para todos os usuários na sua organização]**: selecione esta opção para permitir que outros usuários na sua organização usem a conta. Considere o seguinte ao compartilhar contas:<ul><li>As contas compartilhadas não podem ter o compartilhamento cancelado.</li><li>As contas compartilhadas podem ser editadas somente pelo proprietário da conta.</li><li>Qualquer pessoa pode criar um local para a conta compartilhada.</li></ul></li><li>[!UICONTROL **Tipo de conta**]: selecione o tipo de conta de nuvem para a qual você está exportando. Os tipos de conta disponíveis são Amazon S3 Role ARN, Google Cloud Platform, Azure SAS e Azure RBAC.</li></ul><li>Para concluir a configuração da sua conta, continue com o link abaixo que corresponda ao [!UICONTROL **Tipo de conta**] selecionado:<ul><li>[Amazon S3 Role ARN](/help/components/exports/cloud-export-accounts.md#amazon-s3-role-arn)</li><li>[Google Cloud Platform](/help/components/exports/cloud-export-accounts.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-accounts.md#azure-sas)</li><li>[Azure RBAC](/help/components/exports/cloud-export-accounts.md#azure-rbac)</li></ul></ol> |
    | **[!UICONTROL Localização]** | Selecione a localização na conta aonde deseja que os dados de exportação sejam enviados.<p>Ou, se ainda não tiver configurado a localização que deseja usar na conta selecionada, você pode configurar uma nova localização:<ol><li>Selecione [!UICONTROL **Adicionar localização**] e especifique as seguintes informações: <ul><li>[!UICONTROL **Nome**]: o nome da localização.</li><li>[!UICONTROL **Descrição**]: insira uma breve descrição da localização para ajudar a diferenciá-la de outras localizações na conta.</li><li>**[!UICONTROL Disponibilizar a localização a todos os usuários na sua organização]**: selecione esta opção para permitir que outros usuários na sua organização usem a localização. Considere o seguinte ao compartilhar contas:<ul><li>Os locais compartilhados não podem ter o compartilhamento cancelado.</li><li>Os locais compartilhados podem ser editados somente pelo proprietário da conta.</li><li>Os locais podem ser compartilhados somente se a conta à qual o local está associado também for compartilhada.</li></ul></li><li>[!UICONTROL **Conta de localização**]: selecione a conta na qual deseja criar a localização.</li></ul><li>Para concluir a configuração da sua localização, continue com o link abaixo que corresponda ao tipo de conta selecionado no campo [!UICONTROL **Conta de localização**]:<ul><li>[Amazon S3 Role ARN](/help/components/exports/cloud-export-locations.md#amazon-s3-role-arn)</li><li>[Google Cloud Platform](/help/components/exports/cloud-export-locations.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-locations.md#azure-sas)</li><li>[Azure RBAC](/help/components/exports/cloud-export-locations.md#azure-rbac)</li></ul> |
    | **[!UICONTROL Mostrar opções de agendamento]** | Selecione esta opção para exibir opções adicionais para agendar a exportação. Deixe essa opção desmarcada se desejar enviar a exportação apenas uma vez. Quando essa opção não está selecionada, a exportação é iniciada imediatamente. |
    | **[!UICONTROL Começando em]** | O dia e a hora em que a exportação agendada deve começar. <p>Esta opção está disponível somente ao escolher uma frequência de exportação agendada.</p> |
@@ -102,7 +108,7 @@ A exportação de dados do Customer Journey Analytics para a nuvem permite:
 
 * Saída de dados de estrutura como valores concatenados.
 
-* Exportar uma vez ou de acordo com um agendamento.
+* Exportar uma vez ou de acordo com uma programação.
 
 * Exporte arquivos no formato Excel, PDF ou CSV.
 

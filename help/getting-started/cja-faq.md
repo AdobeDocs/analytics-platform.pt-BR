@@ -5,10 +5,16 @@ exl-id: 778ed2de-bc04-4b09-865e-59e386227e06
 solution: Customer Journey Analytics
 feature: FAQ
 role: User
-source-git-commit: 50b82943d4c59f612240ffc8d83a8a08f09b8331
+TQID: https://experienceleague.adobe.com/HdeLAq13nYEHMV5ns75gTgux9KKRE0on5TiMRw6ZHoo
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5cid: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d3cdead0-685a-4489-9250-4bb709942f66id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '2210'
-ht-degree: 100%
+source-wordcount: 2321
+ht-degree: 97%
 
 ---
 
@@ -76,7 +82,7 @@ Quando ativado pela primeira vez, a Adobe fornece um preenchimento retroativo de
 
 +++
 
-## &#x200B;3. Enviar dados para o [!UICONTROL Customer Journey Analytics] {#ingest}
+## &#x200B;3. Obtendo dados no [!UICONTROL Customer Journey Analytics] {#ingest}
 
 +++**É possível combinar dados de diferentes sandboxes da [!UICONTROL Adobe Experience Platform] em uma conexão do [!UICONTROL Customer Journey Analytics]?**
 
@@ -134,7 +140,7 @@ Não, você pode usar qualquer ID, incluindo um hash de uma ID do cliente, que n
 >
 >Não há um tamanho de dados fixo no Customer Journey Analytics e, portanto, a Adobe não pode definir um tempo de ingestão padrão. A Adobe está trabalhando ativamente para reduzir essas latências por meio de novas atualizações e otimizações de ingestão.
 
-* Dados ou eventos ao vivo: processados e assimilados em 90 minutos, quando os dados estão disponíveis na Adobe Experience Platform. (Tamanho do lote > 50 milhões de linhas: superior a 90 minutos.) Se a compilação estiver habilitada, a ingestão pode levar até 4 horas. Consulte [Medidas de proteção](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/technotes/guardrails) para obter mais detalhes.
+* Dados ou eventos ao vivo: processados e assimilados em 90 minutos, quando os dados estão disponíveis na Adobe Experience Platform. (Tamanho do lote > 50 milhões de linhas: superior a 90 minutos.) Se a compilação estiver ativada, a assimilação pode levar até 4 horas. Consulte [Medidas de proteção](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/technotes/guardrails) para obter mais detalhes.
 * Preenchimentos retroativos pequenos: dentro de sete dias
 * Preenchimentos retroativos grandes: dentro de 30 dias
 
@@ -143,7 +149,7 @@ A Adobe alterou recentemente a forma do processamento de dados no Customer Journ
 * Os dados do evento do dia “atual” são transmitidos como dados em tempo real. Dados com uma hora de evento anterior a 11:59:59 PM (23:59:59) no dia anterior são tratados como preenchimento retroativo.
 * Quaisquer dados de evento com um carimbo de data e hora superior a 24 horas (mesmo que estejam no mesmo lote que os dados mais recentes) são considerados de preenchimento retroativo e serão assimilados com uma prioridade mais baixa.
 
-## &#x200B;5. Definir janela contínua para retenção de dados de [!UICONTROL conexão] {#data-retention}
+## &#x200B;5. Definir janela contínua para retenção de dados de [!UICONTROL Conexão] {#data-retention}
 
 A configuração [**[!UICONTROL Habilitar janela de dados contínua ]**](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=pt-BR#create-connection) permite definir a retenção de dados do Customer Journey Analytics como uma janela contínua em meses (três meses, seis meses, etc). Ela é definida no nível de uma [!UICONTROL conexão], não no nível de um [!UICONTROL conjunto de dados]. A retenção de dados tem por base os carimbos de data e hora do conjunto de dados do evento e se aplica somente aos conjuntos de dados do evento. Não há configuração de retenção de dados para o perfil ou conjuntos de dados de pesquisa, pois não há carimbos de data e hora aplicáveis.
 
@@ -188,7 +194,7 @@ Caso planeje assimilar dados do Adobe Analytics por meio do [conector de origem 
 
 +++**É possível compartilhar/publicar [!UICONTROL públicos-alvo] do [!DNL Customer Journey Analytics] para a Real-Time CDP da Experience Platform ou para outros aplicativos da Experience Cloud?**
 
-Você pode [criar e publicar públicos-alvo](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-components/audiences/publish) identificados no Customer Journey Analytics no Perfil do cliente em tempo real na Adobe Experience Platform para direcionamento e personalização de clientes. 
+Você pode [criar e publicar públicos-alvo](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-components/audiences/publish) identificados no Customer Journey Analytics no Perfil do cliente em tempo real na Adobe Experience Platform para direcionamento e personalização de clientes.
 
 +++
 

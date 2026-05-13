@@ -4,10 +4,15 @@ title: Página de destino do Customer Journey Analytics
 role: User, Admin
 feature: Basics
 exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
-source-git-commit: 1741b2f3fc0588aaf0f403c6f3863ce837e376e9
+TQID: https://experienceleague.adobe.com/yj0864tQCuKNQocyhuqyi-N647uoy2IeqhT9RHmrRK0
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '663'
-ht-degree: 49%
+source-wordcount: 680
+ht-degree: 45%
 
 ---
 
@@ -26,7 +31,7 @@ A landing page do Customer Journey Analytics inclui as seguintes subguias:
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Página de destino no Analysis Workspace](https://experienceleague.adobe.com/pt-br/docs/customer-journey-analytics-learn/tutorials/cja-basics/customer-journey-analytics-landing-page){target="_blank"} para assistir a um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Página de destino no Analysis Workspace](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/cja-basics/customer-journey-analytics-landing-page){target="_blank"} para assistir a um vídeo de demonstração.
 
 {{videoaa}}
 
@@ -39,7 +44,7 @@ A seção **[!UICONTROL Projetos]** no painel esquerdo serve como página inicia
 
 Para acessar projetos no Customer Journey Analytics:
 
-1. Clique na guia [!UICONTROL **Espaço de trabalho**].
+1. Selecione a guia [!UICONTROL **Workspace**].
 
 1. Selecione [!UICONTROL **Projetos**] no painel esquerdo.
 
@@ -57,7 +62,7 @@ Consulte [Projetos](/help/analysis-workspace/build-workspace-project/freeform-o
 
 Para acessar modelos no Customer Journey Analytics:
 
-1. Clique na guia [!UICONTROL **Espaço de trabalho**].
+1. Selecione a guia [!UICONTROL **Workspace**].
 
 1. Na seção [!UICONTROL **Modelos**] no painel esquerdo, você pode selecionar modelos do Adobe ou modelos da empresa.
 
@@ -103,7 +108,7 @@ The available columns are:
 | [!UICONTROL Create new] | Opens the project modal where you can create a Workspace project or a Mobile scorecard or open a company template.  |
 | [!UICONTROL Show less<br> Show more] | Toggles between not showing and showing the banner: ![Top banner](assets/top-banner.png) |
 | [!UICONTROL Workspace project] | Creates a blank [Workspace project](/help/analysis-workspace/home.md) for you to  design and build. |
-| [!UICONTROL Mobile scorecard] | Creates a blank [mobile scorecard](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/curator.html?lang=pt-BR) for you to design and build. |
+| [!UICONTROL Mobile scorecard] | Creates a blank [mobile scorecard](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/curator.html) for you to design and build. |
 | [!UICONTROL Open Training Tutorial] | Opens the Workspace training tutorial that guides you through the process of building a new starter project in a step-by-step tutorial.|
 | [!UICONTROL Open release notes] | Opens the Adobe Analytics section of the latest Adobe Experience Cloud release notes. |
 | Filter icon | Filters by tags, report suites, owners, types, and other filters (Mine, Shared with me, Favorites, and Approved)  |
@@ -127,7 +132,7 @@ A seção **[!UICONTROL Aprendizado]** da guia [!UICONTROL **Workspace**] fornec
 
 Para acessar as informações sobre os caminhos de aprendizagem no Customer Journey Analytics:
 
-1. Clique na guia [!UICONTROL **Espaço de trabalho**].
+1. Selecione a guia [!UICONTROL **Workspace**].
 
 1. Na seção [!UICONTROL **Aprendizado**] no painel esquerdo, selecione [!UICONTROL **Caminhos de aprendizado**].
 
@@ -147,7 +152,7 @@ A página [!UICONTROL **Caminhos de aprendizagem**] oferece os seguintes recurso
 
 Para acessar as informações sobre a atualização para o Customer Journey Analytics:
 
-1. Clique na guia [!UICONTROL **Espaço de trabalho**].
+1. Selecione a guia [!UICONTROL **Workspace**].
 
 1. Na seção [!UICONTROL **Aprendizado**] no painel esquerdo, selecione [!UICONTROL **Atualizar para o Customer Journey Analytics**].
 

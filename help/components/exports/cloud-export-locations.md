@@ -5,9 +5,14 @@ title: Configurar locais de exportação na nuvem
 feature: Components
 exl-id: 93f1cca0-95da-41a0-a4f9-5ab620a5b9da
 role: User, Admin
-source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
+TQID: https://experienceleague.adobe.com/7Ajjn92O63TWPEgA5ddJZ7aOgm22T8C00lLZ-UcRFt4
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '3307'
+source-wordcount: 3307
 ht-degree: 23%
 
 ---
@@ -107,11 +112,11 @@ Para obter informações sobre como gerenciar locais existentes, incluindo exibi
 
    1. Abra o [Microsoft Azure Storage Explorer](https://azure.microsoft.com/en-us/products/storage/storage-explorer/).
 
-   1. Vá para [!UICONTROL **Contas de Armazenamento**] > [!UICONTROL **(Contêineres Anexados)**] > [!UICONTROL **Contêineres Blob**] > **[!UICONTROL cjaexport-_number_]**>*** your_container_name &#x200B;***.
+   1. Vá para [!UICONTROL **Contas de Armazenamento**] > [!UICONTROL **(Contêineres Anexados)**] > [!UICONTROL **Contêineres Blob**] > **[!UICONTROL cjaexport-_number_]**>*** your_container_name ***.
 
       >[!NOTE]
       >
-      >O nome da pasta **[!UICONTROL cjaexport-_number_]**&#x200B;é o nome padrão fornecido pelo Azure Storage Explorer. Se você tiver apenas uma única conexão associada ao URI SAS (o que é normal), o nome desta pasta será&#x200B;**[!UICONTROL cjaexport-1]**.
+      >O nome da pasta **[!UICONTROL cjaexport-_number_]**é o nome padrão fornecido pelo Azure Storage Explorer. Se você tiver apenas uma única conexão associada ao URI SAS (o que é normal), o nome desta pasta será&#x200B;**[!UICONTROL cjaexport-1]**.
 
 
       ![Acessar arquivos no gerenciador de armazenamento do Azure](assets/azure-storage-explorer-access.png)

@@ -5,13 +5,17 @@ exl-id: 9f678225-a9f3-4134-be38-924b8de8d57f
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
+TQID: https://experienceleague.adobe.com/Hj-CQ5QGPLu-Q-e45tYfVVv-56DT5he6ExinxVVog-0
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '946'
+source-wordcount: 951
 ht-degree: 33%
 
 ---
-
 
 # Conjuntos de dados de evento combinados
 
@@ -66,7 +70,7 @@ o conjunto de dados combinado a seguir é usado para os relatórios.
 
 Para ilustrar a importância dos caminhos de esquema, considere este cenário. No primeiro conjunto de dados, `string_color` é baseado no caminho de esquema `_experience.whatever.string_color` e no segundo conjunto de dados no caminho de esquema `_experience.somethingelse.string_color`. Neste cenário, os dados são **não** mesclados em uma coluna no conjunto de dados combinado resultante. Em vez disso, o resultado é duas colunas `string_color` no conjunto de dados combinado:
 
-| id | carimbo de data e hora | _experiência.<br/>seja o que for.<br/>cor_da_string | _experiência.<br/>algo mais.<br/>cor_da_string | string_animal | string_shape | metric_a | metric_b |
+| id | carimbo de data e hora | _experience.<br/>what.<br/>string_color | _experience.<br/>algo mais.<br/>string_color | string_animal | string_shape | metric_a | metric_b |
 |---|---|---|---|---|---|---:|---:|
 | user_310 | 1 Jan 7:02 AM | Vermelho | | Fox | | | |
 | user_310 | 1 Jan 7:04 AM | | | | | 2 | |

@@ -6,9 +6,15 @@ feature: Basics
 exl-id: c258fa39-c0b6-45a1-8547-79516c15a215
 mini-toc-levels: 3
 role: Admin
-source-git-commit: 3cf3e24fc6c2ea2392e0c5bb97df17f25a023f4d
+TQID: https://experienceleague.adobe.com/-Zv1B2pvTFAAgwV1uAV6ik65jtKVRBsF-2rc0tCHuUs
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4id: d76b9e53-27fb-4597-933f-419cc0dd46db
+subfeature_v2: id: a4cd176f-aea0-45b8-80e6-7f1b931e5847id: a67cb189-a535-41f6-afa2-448f39c4759fid: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: bf2b169f-d8b2-488a-97b9-f3bc9532e35cid: bfa38d8a-4e93-4fd8-8cd8-e72c589e3af8id: c38ed341-fab2-46df-9d72-88d8166edebbid: cc092ab1-90ba-4bbc-b4c6-6249d87daf5cid: d13dba12-733d-4914-8d92-d643658bbe5did: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e0cfe18a-f68c-495b-bafc-f6bcc0392d6cid: e1471301-a189-438e-8d48-264a8db508a6id: e44e560d-5e5c-4a5f-9a87-eb8adbb817afid: e8abc408-b05c-427f-9e37-f8b033a6b3c3id: f24857a4-4b64-4b25-b237-d43026362144id: fa6ac035-8403-478b-9ce1-3fe29d211fca
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b23e006f-0a29-4f1d-8fd0-77aa56f3d12bid: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '1568'
+source-wordcount: 1661
 ht-degree: 95%
 
 ---
@@ -53,7 +59,7 @@ Além de ser adicionado como administrador de produto no **Perfil de produto do 
 * Criar, atualizar e excluir [visualizações de dados](/help/data-views/data-views.md).
 * Criar, atualizar e excluir [conexões](/help/connections/overview.md)
 
-  Para executar estas tarefas, os usuários devem fazer parte de um **Perfil de produto da Experience Platform** que forneça as seguintes permissões:
+  Para executar esta tarefa, os usuários precisam fazer parte de um **perfil de produto da Experience Platform** que conceda as seguintes permissões:
 
   | Categoria | Permissão | Descrição |
   |---|---|---|
@@ -126,7 +132,7 @@ A guia **[!UICONTROL Permissões]** faz parte de cada perfil de produto no [Admi
 | [!UICONTROL Ferramentas de relatório] | [!UICONTROL Acesso ao Labs] | Permite que os usuários acessem a guia [Labs](/help/labs/labs.md) no Customer Journey Analytics. |
 | [!UICONTROL Ferramentas de relatório] | [!UICONTROL Criação de anotação] | Permite que os usuários criem [anotações](/help/components/annotations/overview.md). Os usuários podem marcar, compartilhar, excluir e renomear apenas as anotações que criaram ou as anotações compartilhadas com eles. |
 | [!UICONTROL Ferramentas de relatório] | [!UICONTROL Visualização de público-alvo] | Permite que os usuários visualizem [públicos-alco](/help/components/audiences/audiences-overview.md). |
-| [!UICONTROL Ferramentas de relatório] | [!UICONTROL Criação de público-alvo] | Permitir que os usuários criem [públicos-alvo](/help/components/audiences/audiences-overview.md). Exige [Gerenciar segmentos](https://experienceleague.adobe.com/pt-br/docs/experience-platform/access-control/home) no Adobe Experience Platform. |
+| [!UICONTROL Ferramentas de relatório] | [!UICONTROL Criação de público-alvo] | Permite que os usuários criem [públicos-alvo](/help/components/audiences/audiences-overview.md). Exige [Gerenciar segmentos](https://experienceleague.adobe.com/pt-br/docs/experience-platform/access-control/home) no Adobe Experience Platform. |
 | [!UICONTROL Ferramentas de relatório] | [!UICONTROL Narrativa de dados] | Permite que os usuários [gerem apresentações de slides com base em projetos do Espaço de trabalho.](/help/analysis-workspace/curate-share/generate-slides.md) |
 | [!UICONTROL Ferramentas de relatório] | [!UICONTROL Acesso aos logs de auditoria] | Impõe a verificação de permissão na [API](https://developer.adobe.com/cja-apis/docs/endpoints/auditlogs/) e na interface dos registros de auditoria. |
 | [!UICONTROL Ferramentas de relatório] | [!UICONTROL Compartilhar links do projeto com qualquer pessoa] | Permite que os usuários [compartilhem projetos com qualquer pessoa.](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-workspace/curate-share/share-projects) |

@@ -4,9 +4,14 @@ description: Visualizar projetos de protótipo do Customer Journey Analytics
 exl-id: 1abaf0fd-645f-411b-aee1-3e35afe41112
 feature: Labs
 role: User
-source-git-commit: fd033854a3b871c802c38c098d0907062a1c9c07
+TQID: https://experienceleague.adobe.com/toUKCwFyyQJZo-nZFwlo3RxBhccv83ViHPiO9o5yXs8
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: d3cdead0-685a-4489-9250-4bb709942f66id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: 472
 ht-degree: 81%
 
 ---

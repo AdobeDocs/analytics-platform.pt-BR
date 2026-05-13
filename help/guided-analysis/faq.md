@@ -5,10 +5,16 @@ exl-id: b6f92d47-6c09-4338-9dc5-b30bbfbe9f7f
 feature: Guided Analysis
 keywords: product analytics
 role: User
-source-git-commit: 976f481b6886a4f260f44854a30c47ab0dad7955
+TQID: https://experienceleague.adobe.com/4fwNjSWPcLFNewlSHjxJq6MVWQY1Lc0-CpSomNkU69M
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 100%
+source-wordcount: 443
+ht-degree: 89%
 
 ---
 
@@ -60,9 +66,9 @@ A análise guiada e o [Analysis Workspace](../analysis-workspace/home.md) se ali
 
 Embora o [Analysis Workspace](../analysis-workspace/home.md) e a análise guiada utilizem os mesmos dados subjacentes, a maneira como cada ferramenta permite criar consultas desses dados é diferente.
 
-* **O Analysis Workspace é uma experiência centrada na dimensão.** No geral, as tabelas consistem em linhas dimensionais, enquanto as colunas são normalmente compostas por métricas. Os segmentos podem ser aplicados em linhas e colunas para obter os dados desejados.
+* **O Analysis Workspace é uma experiência centralizada em dimensões.** As tabelas geralmente consistem em linhas dimensionais, enquanto as colunas normalmente são métricas. Os segmentos podem ser aplicados em linhas e colunas para obter os dados desejados.
 
-* **A análise guiada é um evento e uma experiência centrada no usuário.** Cada análise se inicia por meio da seleção de eventos; em seguida, é possível adicionar dimensões e segmentos para refinar esses dados do evento.
+* **A análise guiada é um evento e uma experiência centralizada no usuário.** Cada análise é iniciada selecionando eventos, então dimensões e segmentos podem ser adicionados para refinar esses dados do evento.
 
 ![Visualizações do Analysis Workspace e da análise guiada](assets/structure.png){style="border:1px solid gray"}
 

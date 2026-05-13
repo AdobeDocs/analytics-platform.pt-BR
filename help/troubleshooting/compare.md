@@ -6,9 +6,15 @@ solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
 feature: Troubleshooting
 keywords: query service;Query service;sql syntax
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+TQID: https://experienceleague.adobe.com/WT2Phz0aaiJ0Jp403fr6byx9QkncKjvRJpxl9yxPKLE
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: cb6c7d24-631f-46e5-9e39-3a2705f73962id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '720'
+source-wordcount: 770
 ht-degree: 100%
 
 ---
@@ -17,7 +23,7 @@ ht-degree: 100%
 
 À medida que a organização adota o Customer Journey Analytics, é possível notar algumas diferenças nos dados do Adobe Analytics e do Customer Journey Analytics. Essas diferenças são normais e podem ocorrer por vários motivos. O Customer Journey Analytics foi projetado para permitir melhorias em algumas das limitações nos dados do Adobe Analytics. Essa flexibilidade pode causar algumas diferenças na forma como o Customer Journey Analytics interpreta os dados. Consulte este artigo para entender as possíveis diferenças na forma como o Customer Journey Analytics e o Adobe Analytics tratam os dados.
 
-Esta página pressupõe a assimilação de dados do Adobe Analytics na Adobe Experience Platform com o [conector de origem do Analytics](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics), seguida pela criação de uma [conexão](/help/connections/overview.md) e uma [visualização de dados](/help/data-views/data-views.md) no Customer Journey Analytics.
+Esta página pressupõe a assimilação de dados do Adobe Analytics na Adobe Experience Platform com o [conector de origem do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=pt-BR), seguida pela criação de uma [conexão](/help/connections/overview.md) e uma [visualização de dados](/help/data-views/data-views.md) no Customer Journey Analytics.
 
 ![O fluxo de dados do Adobe Analytics através do conector de dados para a Adobe Experience Platform e para o Customer Journey Analytics usando conexões do CJA.](assets/compare.png)
 
@@ -40,7 +46,7 @@ Considere os possíveis motivos a seguir pelos quais os dados podem diferir entr
 
 Se todas as configurações acima forem semelhantes e você quiser validar pelo menos o número de registros entre produtos, siga as seguintes etapas:
 
-1. Nos [Serviços de consulta](https://experienceleague.adobe.com/pt-br/docs/experience-platform/query/home) da Adobe Experience Platform, execute a seguinte consulta de Total de registros por carimbos de data e hora:
+1. No [Serviço de consultas](https://experienceleague.adobe.com/pt-br/docs/experience-platform/query/home) da Adobe Experience Platform, execute a seguinte consulta de Total de registros por carimbos de data e hora:
 
    ```sql
    SELECT
@@ -63,4 +69,4 @@ Se todas as configurações acima forem semelhantes e você quiser validar pelo 
 
    As linhas que correspondem a qualquer um dos critérios acima são excluídas do fluxo de trabalho de assimilação do conector de origem do Analytics e, portanto, também devem ser excluídas ao contar linhas do feed de dados.
 
-1. O total de registros nos serviços de consulta deve corresponder ao número de linhas em um feed de dados para o mesmo período.
+1. O total de registros no Serviço de consultas deve corresponder ao número de linhas em um feed de dados para o mesmo período.

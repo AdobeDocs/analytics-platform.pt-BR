@@ -3,10 +3,16 @@ description: Saiba mais sobre segmentos sequenciais que usam o operador THEN par
 title: Segmentos sequenciais
 feature: Filters, Segments
 exl-id: 64cb10b5-36f0-42c8-b687-ae5de5ced8b5
-source-git-commit: 023808a13ba9e438b33b1183b92d3aa8ac339230
+TQID: https://experienceleague.adobe.com/TqLnqudV-SrIk7SdMT7dUeNBAwaa5FkoZocUkwrod6g
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '2461'
-ht-degree: 3%
+source-wordcount: 2491
+ht-degree: 4%
 
 ---
 
@@ -18,7 +24,7 @@ Você cria segmentos sequenciais usando o operador lógico [!UICONTROL Then] ent
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Segmentação sequencial](https://experienceleague.adobe.com/pt-br/docs/analytics-learn/tutorials/components/segmentation/sequential-segmentation){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Segmentação sequencial](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/components/segmentation/sequential-segmentation){target="_blank"} para ver um vídeo de demonstração.
 
 {{videoaa}}
 
@@ -43,7 +49,7 @@ Um segmento sequencial tem alguma [funcionalidade básica](#basics) e opções a
 
 
 
-As noções básicas para construir um segmento sequencial não são diferentes de construir um segmento regular usando o [Construtor de segmentos](seg-builder.md). Você pode usar o [Criador de definições](seg-builder.md#definition-builder) para criar sua definição de segmento. Nessa construção, você usa componentes, contêineres, operadores e lógica. Um segmento regular se torna um segmento sequencial assim que você seleciona o operador **[!UICONTROL Then]** na definição principal ou em qualquer um dos contêineres usados no [Construtor de definições](seg-builder.md#definition-builder).
+As noções básicas para construir um segmento sequencial não são diferentes de construir um segmento regular usando o [Construtor de segmentos](seg-builder.md). Você pode usar o [Criador de definições](seg-builder.md#definition-builder) para criar sua definição de segmento. Nessa construção, você usa componentes, containers, operadores e lógica. Um segmento regular se torna um segmento sequencial assim que você seleciona o operador **[!UICONTROL Then]** na definição principal ou em qualquer um dos contêineres usados no [Construtor de definições](seg-builder.md#definition-builder).
 
 ### Exemplos
 
@@ -91,7 +97,7 @@ Para aplicar restrições de tempo ao operador **[!UICONTROL Then]**:
 1. Selecione ![Relógio](/help/assets/icons/Clock.svg).
 1. Selecione **[!UICONTROL Dentro]** ou **[!UICONTROL Depois]** no menu de contexto.
 1. Especifique um período (**[!UICONTROL Minuto]**, **[!UICONTROL Hora]**, até **[!UICONTROL Anos]**).
-1. Selecione a ![Divisa](/help/assets/icons/ChevronDown.svg) **[!UICONTROL *número *]**&#x200B;para abrir um pop-up que permita digitar ou especificar um número usando&#x200B;**[!UICONTROL -]**&#x200B;ou&#x200B;**[!UICONTROL +]**.
+1. Selecione a ![Divisa](/help/assets/icons/ChevronDown.svg) **[!UICONTROL *número *]**para abrir um pop-up que permita digitar ou especificar um número usando**[!UICONTROL -]**ou**[!UICONTROL +]**.
 
 Para remover uma restrição de tempo, use ![CrossSize75](/help/assets/icons/CrossSize75.svg).
 
@@ -101,7 +107,7 @@ A tabela abaixo explica com mais detalhes os operadores de restrição de tempo.
 |--- |--- |
 | **[!UICONTROL Depois]** | O operador [!UICONTROL After] é usado para especificar um limite mínimo na quantidade de tempo entre dois pontos de verificação. Ao definir os valores de After, o limite de tempo começa quando o segmento é aplicado. Por exemplo, se o operador [!UICONTROL After] estiver definido em um contêiner para identificar pessoas que visitaram a página A, mas não retornam para visitar a página B depois de um dia, esse dia começará quando o visitante sair da página A.  Para que o visitante seja incluído no segmento, no mínimo, 1440 minutos (um dia) devem se passar após sair da página A para visualizar a página B. |
 | **[!UICONTROL Dentro]** | O operador [!UICONTROL Within] é usado para especificar um limite máximo na quantidade de tempo entre dois pontos de verificação. Por exemplo, se o operador [!UICONTROL Within] estiver definido em um contêiner para identificar pessoas que visitam a página A e retornam para visitar a página B dentro de um dia, esse dia começará quando a pessoa sair da página A. Para ser incluído no segmento, a pessoa tem um tempo máximo de um dia antes de abrir a página B. Para que a pessoa seja incluída no segmento, a abertura da página B deve ocorrer em no máximo 1440 minutos (um dia) após sair da página A para visualizar a página B. |
-| **[!UICONTROL Depois, mas Dentro]** | Ao usar ambos os operadores [!UICONTROL After] e [!UICONTROL Within], ambos os operadores iniciam e terminam em paralelo, não em sequência. <br/>Por exemplo, você compila um segmento com o contêiner definido como: `After = 1 Week(s) and Within = 2 Week(s)`.<br/>As condições para identificar visitantes neste segmento são atendidas somente entre uma e duas semanas. Ambas as condições são aplicadas a partir da primeira exibição de página. |
+| **[!UICONTROL Depois, mas Dentro]** | Ao usar ambos os operadores [!UICONTROL After] e [!UICONTROL Within], ambos os operadores iniciam e terminam em paralelo, não em sequência. <br/>Por exemplo, você constrói um segmento com o contêiner definido como: `After = 1 Week(s) and Within = 2 Week(s)`.<br/>As condições para identificar visitantes neste segmento são atendidas somente entre uma e duas semanas. Ambas as condições são aplicadas a partir da primeira exibição de página. |
 
 
 #### Exemplos
@@ -110,27 +116,27 @@ Alguns exemplos de uso das restrições de tempo.
 
 ##### Operador [!UICONTROL Depois]
 
-Identifique as pessoas que visitaram uma página e, em seguida, outra página somente após duas semanas. Por exemplo, as pessoas que visitaram a Página inicial, mas a variável | Página de sapatos só depois de duas semanas.
+Identifique as pessoas que visitaram uma página e, em seguida, outra página somente após duas semanas. Por exemplo, as pessoas que visitaram a Página inicial, mas a variável | Página de sapatos somente após duas semanas.
 
 ![Sequência após](assets/sequence-after.png)
 
-Se ocorrer uma exibição de página da Página inicial em 1º de junho de 2024 às 00:01, será exibida uma exibição de página para a Página Mulheres | Os sapatos corresponderão desde que essa exibição de página ocorra após 15 de junho de 2024 00:01.
+Se ocorrer uma exibição de página da Página inicial em 1º de junho de 2024 às 00:01, será exibida uma exibição de página para a Página Mulheres | Os sapatos serão iguais, desde que a exibição da página ocorra após 15 de junho de 2024 00:01.
 
 ##### Operador [!UICONTROL Within]
 
-Identifique as pessoas que visitaram uma página e, em seguida, outra página dentro de cinco minutos. Por exemplo, as pessoas que visitaram a Página inicial e, em seguida, a | Página de sapatos em 5 minutos.
+Identifique as pessoas que visitaram uma página e, em seguida, outra página dentro de cinco minutos. Por exemplo, as pessoas que visitaram a Página inicial e, em seguida, a | Sapatos página dentro de 5 minutos.
 
 ![Sequência em](assets/sequence-within.png)
 
-Se uma exibição de página da Página inicial ocorrer em 1 de junho de 2024 às 12:01, uma exibição de página para a página Mulheres | Os sapatos corresponderão, desde que essa exibição de página ocorra antes de 15 de junho de 2024 12:16.
+Se uma exibição de página da Página inicial ocorrer em 1 de junho de 2024 às 12:01, uma exibição de página para a página Mulheres | Os sapatos corresponderão se essa exibição de página ocorrer antes de 15 de junho de 2024 12:16.
 
 ##### [!UICONTROL Depois] mas [!UICONTROL Dentro] operador
 
-Identifique as pessoas que visitaram uma página e, em seguida, visitaram outra página após duas semanas, mas no prazo de um mês. Por exemplo, as pessoas que visitaram a página inicial e depois após duas semanas e dentro de um mês as mulheres | Página de sapatos.
+Identifique as pessoas que visitaram uma página e, em seguida, visitaram outra página após duas semanas, mas no prazo de um mês. Por exemplo, as pessoas que visitaram a página inicial e depois após duas semanas e dentro de um mês as mulheres | Página Sapatos.
 
 ![Sequência após, mas dentro de](assets/sequence-afterbutwithin.png)
 
-Todas as pessoas que acessam a página inicial em 1 de junho de 2024 e que retornam para visitar as mulheres | Página de sapatos após 15 de junho de 2019 00:01, mas antes de 1 de julho de 2019, qualifique-se para o segmento.
+Todas as pessoas que acessam a página inicial em 1 de junho de 2024 e que retornam para visitar as mulheres Página de | Sapatos após 15 de junho de 2019 00:01, mas antes de 1 de julho de 2019 qualifique-se para o segmento.
 
 
 ### Restrições de [!UICONTROL Evento], [!UICONTROL Sessão] e [!UICONTROL Dimension]

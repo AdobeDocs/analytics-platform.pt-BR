@@ -4,9 +4,14 @@ title: Monitorar a integridade do dicionário de dados
 feature: Components
 role: Admin
 exl-id: 8bc89ac7-078d-469d-8627-3905823d4100
-source-git-commit: 4bfa32ba3a7902d31edefab17a00206f922a8382
+TQID: https://experienceleague.adobe.com/RKh01bcmVkoZ2wkHDvBM-oX9rRagVaOqK4fn2A-IpaI
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: df28738e-9c71-4aa8-929e-edde22340cc6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: 242
 ht-degree: 78%
 
 ---
@@ -33,7 +38,7 @@ Para identificar problemas de integridade no dicionário de dados:
 
 1. Abra um projeto do Analysis Workspace.
 
-1. Selecione o ícone do dicionário de dados no lado esquerdo do Analysis Workspace. (Maneiras alternativas de acessar o dicionário de dados são descritas em “Acessar o dicionário de dados” na [Visão geral do dicionário de dados](/help/components/data-dictionary/data-dictionary-overview.md).)
+1. Selecione o ícone do dicionário de dados no lado esquerdo do Analysis Workspace. (Maneiras alternativas de acessar o Dicionário de dados são descritas em “Acessar o Dicionário de dados” em [Visão geral do Dicionário de dados](/help/components/data-dictionary/data-dictionary-overview.md).)
 
    A janela do dicionário de dados é exibida.
 

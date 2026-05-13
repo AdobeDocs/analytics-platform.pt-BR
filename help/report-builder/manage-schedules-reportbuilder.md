@@ -6,16 +6,20 @@ feature: Report Builder
 type: Documentation
 solution: Customer Journey Analytics
 exl-id: 0a0427d9-223e-410b-a8ef-8601390d88aa
-source-git-commit: 9d5c895672e422a82ef68b0af6cd85359c9b11ea
+TQID: https://experienceleague.adobe.com/HcKyD-v3I1hsxWwiDZJwgvO9pH9ifBVOjBapARdYQVQ
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 5%
+source-wordcount: 383
+ht-degree: 6%
 
 ---
 
 # Gerenciar pastas de trabalho programadas
 
-Você pode agendar uma pasta de trabalho para compartilhamento por email ou pela exportação para um destino na nuvem, conforme descrito nos seguintes artigos:
+Você pode agendar um compartilhamento de pasta de trabalho por email ou exportando para um destino de nuvem, conforme descrito nos seguintes artigos:
 
 * [Agendar pastas de trabalho compartilhando por email](/help/report-builder/schedule-reportbuilder.md)
 
@@ -29,7 +33,7 @@ Você pode exibir e gerenciar todas as pastas de trabalho agendadas na guia **[!
 
 1. Selecione **[!UICONTROL Agendar]** no hub do Report Builder
 
-1. Selecione a guia **[!UICONTROL Pastas de trabalho]**. Você verá uma lista de todas as pastas de trabalho agendadas. (Como alternativa, você pode selecionar a guia **[!UICONTROL Herdado]** para exibir uma lista de pastas de trabalho herdadas que precisam ser migradas para o novo Construtor de Relatórios.)
+1. Selecione a guia **[!UICONTROL Pastas de trabalho]**. Você verá uma lista de todas as pastas de trabalho agendadas. (Como alternativa, você pode selecionar a guia **[!UICONTROL Herdado]** para exibir uma lista de pastas de trabalho herdadas que precisam ser migradas para o novo Report Builder.)
 
    ![Pasta de trabalho agendada](assets/scheduled-workbooks.png){zoomable="yes"}
 
@@ -56,10 +60,10 @@ Você pode exibir e gerenciar todas as pastas de trabalho agendadas na guia **[!
    | ![Pause](/help/assets/icons/Pause.svg) | Pausar o agendamento das pastas de trabalho selecionadas. |
    | ![Reproduzir](/help/assets/icons/Play.svg) | Retomar o agendamento das pastas de trabalho selecionadas. |
    | ![Baixar](/help/assets/icons/Download.svg) | Baixe a pasta de trabalho selecionada em uma nova pasta de trabalho. |
-   | ![Excluir](/help/assets/icons/Delete.svg) | Excluir o agendamento das pastas de trabalho selecionadas. |
+   | ![Excluir](/help/assets/icons/Delete.svg) | Exclua o cronograma das pastas de trabalho selecionadas. |
 
 
-## Histórico e status das pastas de trabalho agendadas
+## Histórico e status de pastas de trabalho agendadas
 
 Você pode exibir o histórico e o status de pastas de trabalho agendadas na guia **[!UICONTROL Histórico]**.
 
@@ -77,4 +81,4 @@ Use ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) para definir quais co
    * Um ![CheckmarkCircleGreen](/help/assets/icons/CheckmarkCircleGreen.svg) indica que a pasta de trabalho foi enviada com êxito.
    * Um ![AlertRed](/help/assets/icons/AlertRed.svg) indica que ocorreu um erro.
 
-Como alternativa, você pode selecionar o ![Histórico](/help/assets/icons/History.svg) para uma ou mais pastas de trabalho selecionadas na guia **[!UICONTROL Pastas de Trabalho]**. Esta ação mostra a guia **[!UICONTROL Histórico]** com uma lista filtrada por sua seleção. Selecione ![CrossSize75](/help/assets/icons/CrossSize75.svg) para remover um filtro.
+Como alternativa, você pode selecionar ![Histórico](/help/assets/icons/History.svg) para uma ou mais pastas de trabalho selecionadas na guia **[!UICONTROL Pastas de Trabalho]**. Esta ação mostra a guia **[!UICONTROL Histórico]** com uma lista filtrada por sua seleção. Selecione ![CrossSize75](/help/assets/icons/CrossSize75.svg) para remover um filtro.

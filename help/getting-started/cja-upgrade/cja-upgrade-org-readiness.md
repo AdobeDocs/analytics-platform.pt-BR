@@ -4,10 +4,17 @@ description: Saiba mais sobre as etapas recomendadas ao atualizar do Adobe Analy
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
-source-git-commit: 7c0342a68f75774fd7b29979d3ce610f22d047ae
+exl-id: bd19250e-91c0-49f6-b6dc-3abd641344aa
+TQID: https://experienceleague.adobe.com/DtETa7Qh3l2X9YSjkX56zX8CmDTWVpGvvyrd9HFayt4
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ad5685a0-8296-4a0c-814c-658c10b4af12id: bc7a5a86-1a70-451f-985c-037b65f091d1id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '1100'
-ht-degree: 8%
+source-wordcount: 1186
+ht-degree: 15%
 
 ---
 
@@ -37,10 +44,10 @@ A tabela a seguir aborda alguns recursos principais que você talvez queira dest
 
 | Recurso | Benefícios | Exemplo |
 |---------|----------|---------|
-| **[Acomodação para todos os tipos de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/home)** | O Customer Journey Analytics é combinado com a capacidade da Experience Platform de armazenar todos os tipos de esquemas e tipos de dados. | Uma organização de varejo pode oferecer visibilidade à jornada completa do cliente ao integrar os seguintes tipos de dados em uma única visualização: <ul><li>Transações de sequência de cliques na Web</li><li>Transações do aplicativo móvel</li><li>Transações na loja</li><li>Dados de fidelidade e CRM</li></ul> |
+| **[Acomodação para todos os tipos de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/home)** | O Customer Journey Analytics possui a habilidade da Experience Platform de armazenar toda espécie de esquemas de dados e tipos. | Uma organização de varejo pode oferecer visibilidade à jornada completa do cliente ao integrar os seguintes tipos de dados em uma única visualização: <ul><li>Transações de sequência de cliques na Web</li><li>Transações do aplicativo móvel</li><li>Transações na loja</li><li>Dados de fidelidade e CRM</li></ul> |
 | **[Análise entre canais](/help/use-cases/cross-channel/cross-channel.md)** | Permite uma visão única e consolidada do comportamento do cliente em vários canais, unificando dados de várias propriedades da Web, móveis e offline. | Uma organização de varejo que está coletando dados de vários canais pode executar o seguinte tipo de análise:<p>Um comprador clica em um anúncio de pesquisa pago, navega em jeans online, recebe uma notificação por push e compra na loja dois dias depois. Essa perspectiva unificada permite uma atribuição precisa entre canais, mostrando como os pontos de contato digitais contribuem para as vendas na loja. Ele também oferece suporte para segmentação mais precisa, como direcionar clientes &quot;navegados online, comprados na loja&quot; com ofertas personalizadas. Além disso, ele oferece relatórios de receita claros e em todos os canais em um painel, substituindo insights fragmentados e em silos por uma compreensão holística do comportamento do cliente. |
 | **[Processamento de tempo do relatório](/help/getting-started/aa-to-cja.md#get-comfortable-with-report-time-processing)** | Aplique configurações retroativas e crie várias versões de persistência de variável sem precisar alterar a forma como os dados subjacentes são coletados. | Como o Customer Journey Analytics permite criar e ajustar métricas, dimensões e modelos de atribuição dinamicamente sem assimilar ou reprocessar dados, uma organização de varejo pode ver como uma campanha social recente influenciou as vendas online e na loja sem precisar pedir à engenharia para reconstruir conjuntos de dados. Eles podem alterar instantaneamente o modelo de atribuição de último contato para primeiro contato ou atribuição personalizada baseada em regras. |
-| **[Análise de conteúdo](/help/content-analytics/content-analytics.md)** | Ajuda os profissionais de marketing a entender como o conteúdo afeta os principais indicadores de desempenho definidos por uma empresa. Além dos dados comportamentais, o Content Analytics coleta dados sobre como o conteúdo é consumido e como ele impulsiona o impacto.  | Ao integrar dados da Web, de aplicativos, de email e até mesmo da loja, uma organização de varejo pode ver exatamente como cada parte do conteúdo digital que ela cria contribui para a jornada e a conversão do cliente. <p>A organização de varejo poderia perceber que um &quot;Guia de Estilo de Denim de Verão&quot; em uma plataforma de mídia social popular impulsiona o alto engajamento entre os membros de fidelidade, e que esses membros têm 40% mais probabilidade de comprar denim na loja em uma semana.</p> |
+| **[Content Analytics](/help/content-analytics/content-analytics.md)** | Ajuda os profissionais de marketing a entender como o conteúdo afeta os principais indicadores de desempenho definidos por uma empresa. Além dos dados comportamentais, o Content Analytics coleta dados sobre como o conteúdo é consumido e como ele impulsiona o impacto. | Ao integrar dados da Web, de aplicativos, de email e até mesmo da loja, uma organização de varejo pode ver exatamente como cada parte do conteúdo digital que ela cria contribui para a jornada e a conversão do cliente. <p>A organização de varejo poderia perceber que um &quot;Guia de Estilo de Denim de Verão&quot; em uma plataforma de mídia social popular impulsiona o alto engajamento entre os membros de fidelidade, e que esses membros têm 40% mais probabilidade de comprar denim na loja em uma semana.</p> |
 
 ### Nomear um patrocinador executivo
 
@@ -114,7 +121,7 @@ Consulte os seguintes recursos para ajudar a coletar essas informações:
 
   Fornece informações sobre o número de projetos, segmentos, métricas calculadas, conjuntos de relatórios e usuários na organização.
 
-* [Preparar para migrar componentes e projetos do Adobe Analytics para o Customer Journey Analytics](https://experienceleague.adobe.com/pt-br/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration)
+* [Preparar-se para migrar componentes e projetos do Adobe Analytics para o Customer Journey Analytics](https://experienceleague.adobe.com/pt-br/docs/analytics/admin/admin-tools/component-migration/prepare-component-migration)
 
   Fornece informações sobre como você pode se preparar para migrar componentes, projetos e usuários.
 
@@ -140,7 +147,7 @@ Identifique campeões em toda a organização. Esses campeões devem ser:
 
    * [Tutoriais do Customer Journey Analytics](https://experienceleague.adobe.com/pt-br/docs/customer-journey-analytics-learn/tutorials/overview)
 
-   * [O que é o Customer Journey Analytics?](https://experienceleague.adobe.com/pt-br/docs/customer-journey-analytics-learn/tutorials/cja-basics/what-is-customer-journey-analytics)
+   * [O que é o Customer Journey Analytics?](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/cja-basics/what-is-customer-journey-analytics)
 
    * [Introdução ao Customer Journey Analytics](https://experienceleague.adobe.com/pt-br/docs/customer-journey-analytics-learn/tutorials/cja-basics/understanding-customer-journey-analytics)
 
@@ -149,4 +156,3 @@ Identifique campeões em toda a organização. Esses campeões devem ser:
 ## Siga as etapas de atualização recomendadas
 
 Quando estiver pronto para iniciar o processo de atualização, siga as [etapas de atualização recomendadas](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou as etapas de atualização geradas dinamicamente no Guia de Atualização do Customer Journey Analytics. Para acessar o guia do Customer Journey Analytics, clique na guia **[!UICONTROL Espaço de trabalho]** e selecione **[!UICONTROL Atualizar para o Customer Journey Analytics]** no painel esquerdo. Siga as instruções na tela.
-

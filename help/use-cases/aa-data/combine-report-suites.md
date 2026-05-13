@@ -4,16 +4,20 @@ description: Saiba como usar o Preparo de dados para combinar conjuntos de relat
 exl-id: 2656cc21-3980-4654-bffb-b10908cb21f5
 feature: Use Cases
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+TQID: https://experienceleague.adobe.com/FFiLA3xBgA-xA3PMXX-sMPy7fTLfHhrSDAvLq0KA3g4
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '1321'
+source-wordcount: 1390
 ht-degree: 55%
 
 ---
 
 # Combinar conjuntos de relatórios com esquemas diferentes
 
-O [Conector de origem do Analytics](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics) traz dados do conjunto de relatórios do Adobe Analytics para a Adobe Experience Platform para uso por aplicativos da Adobe Experience Platform, como a Real-time Customer Data Platform e o Customer Journey Analytics (Customer Journey Analytics). Cada conjunto de relatórios trazido para a Adobe Experience Platform é configurado como um fluxo de dados de conexão de origem individual e cada fluxo de dados chega como um conjunto de dados no data lake da Adobe Experience Platform. O conector de origem do Analytics cria um conjunto de dados por conjunto de relatórios.
+O [Conector de origem do Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=pt-BR) traz dados do conjunto de relatórios do Adobe Analytics para a Adobe Experience Platform para uso por aplicativos da Adobe Experience Platform, como a Real-time Customer Data Platform e o Customer Journey Analytics (Customer Journey Analytics). Cada conjunto de relatórios trazido para a Adobe Experience Platform é configurado como um fluxo de dados de conexão de origem individual e cada fluxo de dados chega como um conjunto de dados no data lake da Adobe Experience Platform. O conector de origem do Analytics cria um conjunto de dados por conjunto de relatórios.
 
 Os clientes do Customer Journey Analytics usam [conexões](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=pt-BR) para integrar conjuntos de dados do data lake da Adobe Experience Platform ao Customer Journey Analytics Analysis Workspace. No entanto, ao combinar conjuntos de relatórios em uma conexão, as diferenças de esquema entre conjuntos de relatórios precisam ser resolvidas usando a funcionalidade [Preparo de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/data-prep/home) do Adobe Experience Platform. O objetivo é garantir que variáveis do Adobe Analytics, como props e eVars, tenham um significado consistente no Customer Journey Analytics.
 
@@ -59,7 +63,7 @@ A funcionalidade Preparo de dados do Experience Platform é integrada ao conecto
    | Classe **XDM ExperienceEvent** |
    | Grupo de campos **Modelo ExperienceEvent do Adobe Analytics** |
 
-1. Adicione outro grupo de campos ao esquema ou [crie um grupo de campos personalizado](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html?lang=pt-BR#:~:text=To%20create%20a%20new%20field,section%20in%20the%20left%20rail) e adicione-o ao esquema. Criaremos um novo grupo de campos e o chamaremos de **Campos unificados**. Em seguida, adicionaremos os seguintes campos ao novo grupo de campos:
+1. Adicione outro grupo de campos ao esquema ou [crie um grupo de campos personalizado](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/field-groups.html#:~:text=To%20create%20a%20new%20field,section%20in%20the%20left%20rail) e adicione-o ao esquema. Criaremos um novo grupo de campos e o chamaremos de **Campos unificados**. Em seguida, adicionaremos os seguintes campos ao novo grupo de campos:
 
    | Grupo de campos personalizado “Campos unificados”  |
    | --- |
@@ -158,6 +162,6 @@ Usando o Preparo de dados, você pode combinar a Categoria do cliente na eVar 1 
 
 ## Preparo de dados vs. ID de componente
 
-Conforme descrito acima, o Preparo de dados permite mapear campos diferentes em conjunto em vários conjuntos de relatórios do Adobe Analytics. Isso é útil no Customer Journey Analytics quando você deseja combinar dados de vários conjuntos de dados em uma única conexão do Customer Journey Analytics. No entanto, se você pretende manter os conjuntos de relatórios em conexões Customer Journey Analytics separadas, mas deseja usar um conjunto de relatórios nessas conexões e visualizações de dados, alterar a ID do componente subjacente no Customer Journey Analytics fornece uma maneira de tornar os relatórios compatíveis, mesmo que os esquemas sejam diferentes. Consulte [Configurações do componente](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/overview.html?lang=pt-BR) para obter mais informações.
+Conforme descrito acima, o Preparo de dados permite mapear campos diferentes em conjunto em vários conjuntos de relatórios do Adobe Analytics. Isso é útil no Customer Journey Analytics quando você deseja combinar dados de vários conjuntos de dados em uma única conexão do Customer Journey Analytics. No entanto, se você pretende manter os conjuntos de relatórios em conexões Customer Journey Analytics separadas, mas deseja usar um conjunto de relatórios nessas conexões e visualizações de dados, alterar a ID do componente subjacente no Customer Journey Analytics fornece uma maneira de tornar os relatórios compatíveis, mesmo que os esquemas sejam diferentes. Consulte [Configurações do componente](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/overview.html) para obter mais informações.
 
 A alteração da ID do componente é uma função exclusiva do Customer Journey Analytics e não afeta dados do conector de origem do Analytics enviados para o Perfil do cliente em tempo real e para o RTCDP.

@@ -4,16 +4,22 @@ title: Visão geral do relatório em tempo real
 feature: Real-time Reporting
 role: User
 exl-id: 12fbb760-936d-4e30-958f-764febca5ae7
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+TQID: https://experienceleague.adobe.com/Nvg6DVqDq-IwyPJgyDH2nOmNG41-aCRAYohlj7tjrj4
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '810'
+source-wordcount: 855
 ht-degree: 6%
 
 ---
 
 # Visão geral do relatório em tempo real
 
-Os relatórios em tempo real no Customer Journey Analytics exibem e atualizam em tempo real os dados e visualizações de um ou mais painéis no Analysis Workspace.
+O relatório em tempo real no Customer Journey Analytics exibe e atualiza dados e visualizações em um ou mais painéis no Analysis Workspace em tempo real.
 
 {{ultimate-package}}
 
@@ -68,7 +74,7 @@ Se uma interrupção dos serviços ocorrer por mais de meia hora, os dados em te
 
 Esteja ciente da seguinte limitação para relatórios em tempo real:
 
-* O relatório em tempo real só relata os dados disponíveis em um período contínuo de 24 horas. Dados maiores que   A versão de 24 horas não está disponível para relatórios em tempo real. Assim que a [atualização em tempo real](use-real-time.md) de um relatório for desabilitada ou desabilitada automaticamente, todos os dados relevantes estarão disponíveis mais uma vez no [conjunto de dados consolidado](/help/connections/combined-dataset.md) normalmente usado para relatórios no Customer Journey Analytics.
+* O relatório em tempo real só relata os dados disponíveis em um período contínuo de 24 horas. Os dados com mais de 24 horas não estão disponíveis para relatórios em tempo real. Assim que a [atualização em tempo real](use-real-time.md) de um relatório for desabilitada ou desabilitada automaticamente, todos os dados relevantes estarão disponíveis mais uma vez no [conjunto de dados consolidado](/help/connections/combined-dataset.md) normalmente usado para relatórios no Customer Journey Analytics.
 * A atribuição, a segmentação, as métricas calculadas e muito mais trabalharão apenas nos dados disponíveis no período acumulado de 24 horas. Por exemplo, um segmento *Visitantes repetidos* inclui pouquíssimas pessoas em um relatório em tempo real, pois o relatório inclui apenas pessoas que visitaram várias vezes nas últimas 24 horas. Uma limitação semelhante se aplica quando você cria um relatório em tempo real sobre pessoas que clicaram anteriormente em uma campanha que não está mais ativa.
 * O relatório em tempo real funciona melhor em dados de evento e nível de sessão, e você deve ter cuidado ao usar o relatório em tempo real para dados de nível de pessoa. Como apenas eventos do período contínuo de 24 horas estão disponíveis para relatórios em tempo real, o histórico de eventos de uma pessoa também está limitado a essa janela. Considere a preferência por dados de evento e nível de sessão ao selecionar uma dimensão e métricas (calculadas). E quando você usa funcionalidades como detalhamentos, anteriores ou seguintes e muito mais no painel habilitado para atualização em tempo real.
 * Não é possível combinar a compilação com os relatórios em tempo real. Os relatórios em tempo real abordam dados de nível de evento e sessão e são menos relevantes para dados com base em pessoas.

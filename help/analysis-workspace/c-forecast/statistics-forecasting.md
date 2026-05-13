@@ -4,9 +4,14 @@ title: Técnicas estatísticas
 feature: Visualizations
 role: User
 exl-id: f042a6dd-6af5-4bdd-afc9-07546d8ded6e
-source-git-commit: ce4a21b1a1e89f14316a92fbdce38281db61e666
+TQID: https://experienceleague.adobe.com/hbfehTAPC7nw96Wdm47bdX-D5c4cfTCeCtlHlINBBxI
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: d13dba12-733d-4914-8d92-d643658bbe5d
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: 552
 ht-degree: 4%
 
 ---
@@ -54,6 +59,6 @@ O serviço não faz suposições sobre os dados do usuário. Por exemplo, o serv
 
 ## Referências
 
-1. Taylor, Sean J. e Benjamin Letham: *Previsão em escala.* The American Statistician 72.1 (2018): 37-45.
-1. Triebe, Oskar, et al.: *Neuralprofet: previsão explicável em escala.* arXiv pré-impressão arXiv:2111.15397(2021).
-1. Zhang e Arbor: *Detecção de anomalias em série temporal.* Pedido de patente nos EUA #18/057883.
+1. Taylor, Sean J. e Benjamin Letham: *Previsão em escala.* The American Statistician 72.1 (2018): 37-45 (em inglês).
+1. Triebe, Oskar, et al.: *Neuralprofet: Previsão explicável em escala.* arXiv pré-impressão arXiv:2111.15397(2021).
+1. Zhang e Arbor: *Detecção de anomalias em série temporal.* Pedido de patente norte-americana #18/057883.

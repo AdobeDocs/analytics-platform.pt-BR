@@ -5,10 +5,14 @@ solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 exl-id: 7729c1b9-b3ed-4662-a446-2088389bbd97
-source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
+TQID: https://experienceleague.adobe.com/I7-bKS2jErVibrBHHfItc9oivAy1TJaVtKs7U3pSS78
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '470'
-ht-degree: 2%
+source-wordcount: 521
+ht-degree: 9%
 
 ---
 
@@ -18,10 +22,10 @@ Para oferecer suporte a pesquisas com base em pessoas em dados B2B (incluindo co
 
 Essa transformação só está disponível para conjuntos de dados com dados para esquemas de pesquisa B2B, com base nas seguintes classes:
 
-* [Relação pessoal da conta comercial XDM](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/classes/b2b/business-account-person-relation)
-* [Relação pessoal de oportunidade de negócios XDM](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/classes/b2b/business-opportunity-person-relation)
-* [Membros da Lista de Marketing Comercial XDM](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/classes/b2b/business-marketing-list-members)
-* [Membros da campanha de negócios XDM](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/classes/b2b/business-campaign-members)
+* [Relação pessoal da conta de negócios XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-account-person-relation)
+* [Relação pessoal de oportunidade de negócios XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-opportunity-person-relation)
+* [Membros da lista de marketing de negócios XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-marketing-list-members)
+* [Membros da campanha de negócios XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-campaign-members)
 
 >[!NOTE]
 >
@@ -52,7 +56,7 @@ Para ativar a transformação para um conjunto de dados de pesquisa B2B:
 
 * Selecione **[!UICONTROL Transformar conjunto de dados para pesquisas B2B]**.
 
-  Essa opção transforma o conjunto de dados para que ele possa ser usado para pesquisas baseadas em pessoas em cenários B2B.
+  Esta opção transformará o conjunto de dados para que ele possa ser usado em pesquisas baseadas em pessoas nos cenários de B2B.
 
 
   >[!IMPORTANT]

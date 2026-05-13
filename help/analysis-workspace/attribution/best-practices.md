@@ -3,10 +3,15 @@ title: Práticas recomendadas de atribuição
 description: Entenda as práticas recomendadas para decidir sobre qual modelo de atribuição usar.
 feature: Attribution
 exl-id: 92c6039c-f950-4746-8b34-ba18be258c08
-source-git-commit: ee6eb18fc2a720e61670c571847bacf836b0b039
+TQID: https://experienceleague.adobe.com/noNo2rP-srAtUJbG-kYgipLHknMsWWZR4iJwDv-2ioc
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '422'
-ht-degree: 66%
+source-wordcount: 466
+ht-degree: 63%
 
 ---
 
@@ -53,7 +58,7 @@ Nesse caso, você usaria o [modelo de atribuição Inverse J-shape](/help/analys
 
 Suponha que sua hipótese seja: *&quot;Em um setor específico (como o de viagens), a janela de atribuição é de 60 ou 90 dias, não 30 dias, porque os clientes fazem muita pesquisa antes de comprar um produto.*&quot;
 
-Nesse caso, você alteraria sua [janela de retrospectiva](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/attribution/models) para 90 dias.
+Nesse caso, você alteraria sua [janela de retrospectiva](https://experienceleague.adobe.com/en/docs/analytics/analyze/analysis-workspace/attribution/models) para 90 dias.
 
 ## Usar atribuição algorítmica
 
@@ -63,5 +68,5 @@ Se você ainda não tiver um modelo de atribuição que forneça respostas satis
 
 * Talvez seja necessário usar os serviços de um cientista de dados, em vez de depender apenas do Analysis Workspace.
 * Você pode confiar em dados brutos, como os feeds de dados da Adobe.
-* Considere usar o [Customer Journey Analytics](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-overview), por exemplo, se desejar considerar seus dados de impressões.
+* Considere usar o [Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-overview), por exemplo, se desejar considerar seus dados de impressões.
 

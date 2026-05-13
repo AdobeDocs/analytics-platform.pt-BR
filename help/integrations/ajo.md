@@ -4,10 +4,16 @@ description: Traga dados gerados pelo Adobe Journey Optimizer e analise-os usand
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
-source-git-commit: 830e16ecd4c43da114c63af51e4bb6e88bbb4ff8
+TQID: https://experienceleague.adobe.com/kmZ-AYMcKxwZftFSqJQpTH3zDTDT1CxlNw-MVO6Ikn4
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: cb6c7d24-631f-46e5-9e39-3a2705f73962id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '3770'
-ht-degree: 93%
+source-wordcount: 3841
+ht-degree: 90%
 
 ---
 
@@ -43,12 +49,12 @@ A conexão tem o nome **[!UICONTROL Conexão Habilitada para AJO (*nome da sandb
 
 | Nome do conjunto de dados | Esquema | Tipo de conjunto de dados | Tipo de fonte de dados | ID de pessoa | Chave | Chave correspondente | Importar novos dados | Dados de preenchimento retroativo |
 |---|---|---|---|---|---|---|---|---|
-| [!UICONTROL Conjunto de dados de entidade do AJO] | [!UICONTROL Esquema de registro de entidade do AJO] | [!UICONTROL Pesquisa] | [!UICONTROL Outro] | - | ` _id` | `_experience. decisioning. propositions. scopeDetails. correlationID` | ![Status verde](assets/../../connections/assets/status-green.svg) Ativado | ![Status cinza](assets/../../connections/assets/status-gray.svg) Desativado |
-| [!UICONTROL Eventos de etapa da jornada] | [!UICONTROL Esquema de evento de etapa da jornada do Journey Orchestration] | [!UICONTROL Evento] | [!UICONTROL Outro] | [!UICONTROL IdentityMap(\&lt;primary\>)] | - | - | ![Status verde](assets/../../connections/assets/status-green.svg) Ativado | ![Status cinza](assets/../../connections/assets/status-gray.svg) Desativado |
-| [!UICONTROL Conjunto de dados de eventos de experiência de rastreamento de email do AJO] | [!UICONTROL Esquema de evento de experiência de rastreamento de email do AJO] | [!UICONTROL Evento] | [!UICONTROL Outro] | [!UICONTROL IdentityMap(\&lt;primary\>)] | - | - | ![Status verde](assets/../../connections/assets/status-green.svg) Ativado | ![Status cinza](assets/../../connections/assets/status-gray.svg) Desativado |
+| [!UICONTROL Conjunto de dados de entidade do AJO] | [!UICONTROL Esquema de registro de entidade do AJO] | [!UICONTROL Pesquisa] | [!UICONTROL Outro] | - | ` _id` | `_experience. decisioning. propositions. scopeDetails. correlationID` | ![Status verde](assets/../../connections/assets/status-green.svg) Ativado | ![Status cinza](assets/../../connections/assets/status-gray.svg) Desativado |
+| [!UICONTROL Eventos de etapa da jornada] | [!UICONTROL Esquema de evento de etapa da jornada do Journey Orchestration] | [!UICONTROL Evento] | [!UICONTROL Outro] | [!UICONTROL  IdentityMap(\&lt;primary\>)] | - | - | ![Status verde](assets/../../connections/assets/status-green.svg) Ativado | ![Status cinza](assets/../../connections/assets/status-gray.svg) Desativado |
+| [!UICONTROL Conjunto de dados de eventos de experiência de rastreamento de email do AJO] | [!UICONTROL Esquema de evento de experiência de rastreamento de email do AJO] | [!UICONTROL Evento] | [!UICONTROL Outro] | [!UICONTROL IdentityMap(\&lt;primary\>)] | - | - | ![Status verde](assets/../../connections/assets/status-green.svg) Ativado | ![Status cinza](assets/../../connections/assets/status-gray.svg) Desativado |
 | [!UICONTROL Conjunto de dados de evento de feedback de mensagem do AJO] | [!UICONTROL Esquema de evento de feedback de mensagem do AJO] | [!UICONTROL Evento] | [!UICONTROL Outro] | [!UICONTROL IdentityMap(\&lt;primary\>)] | - | - | ![Status verde](assets/../../connections/assets/status-green.svg) Ativado | ![Status cinza](assets/../../connections/assets/status-gray.svg) Desativado |
 | [!UICONTROL Conjunto de dados de evento de experiência de rastreamento por push do AJO] | [!UICONTROL Esquema de evento de experiência de rastreamento por push do AJO] | [!UICONTROL Evento] | [!UICONTROL Outro] | [!UICONTROL IdentityMap(\&lt;primary\>)] | - | - | ![Status verde](assets/../../connections/assets/status-green.svg) Ativado | ![Status cinza](assets/../../connections/assets/status-gray.svg) Desativado |
-| [!UICONTROL Conjunto de Dados do Evento de Feedback de Mensagens do AJO - Não Perfil] <br/>(Consulte a seção [Conjuntos de dados complementares de alta taxa de transferência](#high-throughput-add-on-datasets) abaixo) | [!UICONTROL Esquema de evento de feedback de mensagem do AJO] | [!UICONTROL Evento] | [!UICONTROL Outro] | [!UICONTROL IdentityMap(\&lt;primary\>)] | - | - | ![Status verde](assets/../../connections/assets/status-green.svg) Ativado | ![Status cinza](assets/../../connections/assets/status-gray.svg) Desativado |
+| [!UICONTROL Conjunto de Dados do Evento de Feedback de Mensagens do AJO - Não Perfil] <br/>(Consulte a seção [Conjuntos de dados complementares de alta taxa de transferência](#high-throughput-add-on-datasets) abaixo) | [!UICONTROL Esquema de evento de feedback de mensagem do AJO] | [!UICONTROL Evento] | [!UICONTROL Outro] | [!UICONTROL IdentityMap(\&lt;primary\>)] | - | - | ![Status verde](assets/../../connections/assets/status-green.svg) Ativado | ![Status cinza](assets/../../connections/assets/status-gray.svg) Desativado |
 | [!UICONTROL Conjunto de dados do evento de experiência de rastreamento de email do AJO - Não Perfil] <br/>(Consulte a seção [conjuntos de dados complementares de alta taxa de transferência](#high-throughput-add-on-datasets) abaixo) | [!UICONTROL Esquema de evento de experiência de rastreamento de email do AJO] | [!UICONTROL Evento] | [!UICONTROL Outro] | [!UICONTROL IdentityMap(\&lt;primary\>)] | - | - | ![Status verde](assets/../../connections/assets/status-green.svg) Ativado | ![Status cinza](assets/../../connections/assets/status-gray.svg) Desativado |
 
 #### Conjuntos de dados complementares de alto throughput
@@ -64,7 +70,7 @@ Quando o complemento de mensagens transacionais de alta capacidade estiver ativa
 * **[!UICONTROL Widget de latência P95 de 7 dias consecutivos]**: mostra a latência P95 como um valor único, incluindo a alteração de porcentagem em relação à semana anterior.
 * **[!UICONTROL Widget de taxa de transferência P95 de 7 dias consecutivos]**: mostra a taxa de transferência P95 como um valor único, incluindo a alteração de porcentagem em relação à semana anterior.
 
-Para obter mais informações sobre esses conjuntos de dados e o complemento de mensagens transacionais de Alta Taxa de Transferência, consulte [Ativar modo de Alta Taxa de Transferência para campanhas acionadas por API](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/campaigns/api-triggered-campaigns/api-triggered-high-throughput) na documentação do Adobe Journey Optimizer.
+Para obter mais informações sobre esses conjuntos de dados e o complemento de mensagens transacionais de Alta Taxa de Transferência, consulte [Ativar modo de Alta Taxa de Transferência para campanhas acionadas por API](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/api-triggered-campaigns/api-triggered-high-throughput) na documentação do Adobe Journey Optimizer.
 
 ### Visualização de dados
 
@@ -72,7 +78,7 @@ A visualização de dados tem o nome **Visualização de dados habilitada para o
 
 * Na guia **[!UICONTROL Configurar]**, os seguintes valores são definidos imediatamente.
 
-  | Configurações  | Valor |
+  | Configurações | Valor |
   |---|---|
   | [!UICONTROL Conexão] | Conexão habilitada para o AJO (*nome da sandbox*) |
   | [!UICONTROL Nome] | `AJO Enabled Data View (`_`sandbox name`_`)` |
@@ -83,7 +89,7 @@ A visualização de dados tem o nome **Visualização de dados habilitada para o
 
   | Compatibilidade | Valor |
   |---|---|
-  | [!UICONTROL Definir como visualização de dados padrão no Adobe Journey Optimizer] | Habilitado (padrão).<br/><br/>Esta opção de configuração permite designar uma visualização de dados para usar com o Journey Optimizer, sem a necessidade de configuração manual. Para obter informações sobre como habilitar essa opção de configuração (se ainda não estiver habilitada por padrão), consulte a seção [Compatibilidade](/help/data-views/create-dataview.md#compatibility) em [Criar ou editar uma visualização de dados](/help/data-views/create-dataview.md). <br/><br/>Ao desabilitar a opção, uma caixa de diálogo pergunta se você deseja continuar com a alteração da visualização de dados padrão. Ao selecionar **[!UICONTROL Continuar]**, é necessário selecionar outra visualização de dados como padrão. Clique em **[!UICONTROL Confirmar]** para confirmar a seleção. Selecione **[!UICONTROL Cancelar]** para cancelar a alteração da visualização de dados padrão. |
+  | [!UICONTROL Definir como visualização de dados padrão no Adobe Journey Optimizer] | Habilitado (padrão).<br/><br/>Essa opção de configuração permite designar uma exibição de dados para usar com o Journey Optimizer, sem a necessidade de configuração manual. Para obter informações sobre como habilitar essa opção de configuração (se ainda não estiver habilitada por padrão), consulte a seção [Compatibilidade](/help/data-views/create-dataview.md#compatibility) em [Criar ou editar uma visualização de dados](/help/data-views/create-dataview.md). <br/><br/>Ao desabilitar a opção, uma caixa de diálogo pergunta se você deseja continuar com a alteração da visualização de dados padrão. Ao selecionar **[!UICONTROL Continuar]**, é necessário selecionar outra visualização de dados como padrão. Clique em **[!UICONTROL Confirmar]** para confirmar a seleção. Selecione **[!UICONTROL Cancelar]** para cancelar a alteração da visualização de dados padrão. |
 
   | Containers | Valor |
   |---|---|
@@ -130,7 +136,7 @@ Selecione e configure os seguintes conjuntos de dados:
 | --- | --- | --- | --- |
 | Conjunto de dados de evento de feedback de mensagem do AJO | Evento | ID de pessoa: `IdentityMap` | Contém eventos de entrega de mensagem, como “[!UICONTROL Envios]” e “[!UICONTROL Rejeições]”. |
 | Conjunto de dados de evento de experiência de rastreamento de email do AJO | Evento | ID de pessoa: `IdentityMap` | Contém eventos de rastreamento de email, como “[!UICONTROL Aberturas]”, “[!UICONTROL Cliques]” e “[!UICONTROL Cancelamentos de assinatura]”. |
-| Conjunto de dados de evento de experiência de rastreamento por push do AJO | Evento | ID da pessoa: `IdentityMap` | Contém eventos de rastreamento de push, como “[!UICONTROL Inicializações do aplicativo]”. |
+| Conjunto de dados de evento de experiência de rastreamento por push do AJO | Evento | ID de pessoa: `IdentityMap` | Contém eventos de rastreamento de push, como “[!UICONTROL Inicializações do aplicativo]”. |
 | Eventos de etapa da jornada | Evento | ID de pessoa: `_experience.journeyOrchestration.`<br>`stepEvents.profileID` | Contém eventos que mostram quais perfis participaram de cada nó da jornada. |
 | Conjunto de dados de entidade do AJO | Pesquisa | Chave: `_id`<br>Chave correspondente: `_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | Contém classificações que associam metadados de jornada e campanha a todos os dados de evento do Journey Optimizer. |
 | Conjunto de dados do evento de feedback de mensagens do AJO - Não perfil | Evento | ID de pessoa: `IdentityMap` | Contém eventos de feedback de delivery de mensagem que não são de perfil. Disponível somente quando o [complemento de mensagens transacionais de Alta Taxa de Transferência](#high-throughput-add-on-datasets) está habilitado. |
@@ -230,7 +236,7 @@ Você pode criar as seguintes métricas em uma visualização de dados para obte
 | Métrica de desduplicação (AJO) | Métrica de desduplicação | Conjunto de dados de evento de experiência de rastreamento por push do AJO, Eventos de etapa da jornada, Conjunto de dados de evento de feedback de mensagem do AJO, Conjunto de dados de evento de experiência de rastreamento de email do AJO | `_id` | Tipo de componente: métrica |
 | Entregues (AJO) | Contagem total de mensagens entregues. | Conjunto de dados de evento de experiência de rastreamento por push do AJO, Eventos de etapa da jornada, Conjunto de dados de evento de feedback de mensagem do AJO, Conjunto de dados de evento de experiência de rastreamento de email do AJO | Campos derivados | Tipo de componente: métrica (campo derivado) |
 | Descartado (AJO) | Conta todas as vezes em que a mensagem no aplicativo é fechada pelo SDK da Adobe, independentemente da ação escolhida pelo usuário final para fechá-la. | Conjunto de dados de evento de experiência de rastreamento por push do AJO, Eventos de etapa da jornada, Conjunto de dados de evento de feedback de mensagem do AJO, Conjunto de dados de evento de experiência de rastreamento de email do AJO | `_experience.decisioning.`<br/>`propositionEventType.dismiss` | Tipo de componente: métrica |
-| Exibições (AJO) | Essa contagem exibe as mensagens do AJO. Isso inclui aberturas de emails, exibições da web e exibições no aplicativo. As plataformas móveis não relatam exibições de mensagens SMS e de push, portanto, não são contadas. | Conjunto de dados de evento de experiência de rastreamento por push do AJO, Eventos de etapa da jornada, Conjunto de dados de evento de experiência de rastreamento de email do AJO, Conjunto de dados de evento de feedback de mensagem do AJO | Campos derivados | Tipo de componente: métrica (campo derivado) |
+| Exibições (AJO) | Essa contagem exibe mensagens do AJO. Isso inclui aberturas de email, exibições da Web e exibições no aplicativo. As plataformas móveis não relatam exibições de SMS e mensagens de push; portanto, não são contadas. | Conjunto de dados de evento de experiência de rastreamento por push do AJO, Eventos de etapa da jornada, Conjunto de dados de evento de experiência de rastreamento de email do AJO, Conjunto de dados de evento de feedback de mensagem do AJO | Campos derivados | Tipo de componente: métrica (campo derivado) |
 | Aberturas de email (AJO) | Contagem total de aberturas de email | Conjunto de dados de evento de experiência de rastreamento de email do AJO | `_experience.customerJourneyManagement.`<br/>`messageInteraction.interactionType` | Tipo de componente: métrica |
 | Cliques de entrada (AJO) | Contagem total de cliques nos canais de entrada | Conjunto de dados de evento de experiência de rastreamento por push do AJO, Eventos de etapa da jornada, Conjunto de dados de evento de feedback de mensagem do AJO, Conjunto de dados de evento de experiência de rastreamento de email do AJO | `_experience.decisioning.`<br/>`propositionEventType.interact` | Tipo de componente: métrica |
 | Dispensas de entrada (AJO) | Contagem total de recusas nos canais de entrada | Conjunto de dados de evento de experiência de rastreamento por push do AJO, Eventos de etapa da jornada, Conjunto de dados de evento de feedback de mensagem do AJO, Conjunto de dados de evento de experiência de rastreamento de email do AJO | `_experience.decisioning.`<br/>`propositionEventType.dismiss` | Tipo de componente: métrica |
@@ -254,8 +260,8 @@ Você pode criar as seguintes métricas em uma visualização de dados para obte
 | Reclamação de spam (AJO) | Contagem total de reclamações de spam | Conjunto de dados de evento de experiência de rastreamento de email do AJO | `_experience.customerJourneyManagement.`<br/>`messageInteraction.interactionType` | Tipo de componente: métrica |
 | Adições à lista de assinaturas (AJO) | Contagem total de adições à lista de assinaturas. | Conjunto de dados de evento de experiência de rastreamento de email do AJO | Campos derivados | Tipo de componente: métrica (campo derivado) |
 | Remoções da lista de assinaturas (AJO) | Contagem total de remoções da lista de assinaturas. | Conjunto de dados de evento de experiência de rastreamento de email do AJO | Campos derivados | Tipo de componente: métrica (campo derivado) |
-| Direcionados (AJO) | Essa contagem do número de vezes que uma proposta foi direcionada a uma pessoa. É o número de vezes que uma proposta foi considerada para exibição a uma pessoa. | Conjunto de dados de evento de experiência de rastreamento por push do AJO, Eventos de etapa da jornada, Conjunto de dados de evento de feedback de mensagem do AJO, Conjunto de dados de evento de experiência de rastreamento de email do AJO | Campos derivados | Tipo de componente: métrica (campo derivado) |
-| Acionados (AJO) | A proposta foi escolhida para ser exibida pelo SDK da Adobe. Outros fatores podem impedir que ela seja exibido de fato. | Conjunto de dados de evento de experiência de rastreamento por push do AJO, Eventos de etapa da jornada, Conjunto de dados de evento de feedback de mensagem do AJO, Conjunto de dados de evento de experiência de rastreamento de email do AJO | `_experience.decisioning.`<br/>`propositionEventType.trigger` | Tipo de componente: métrica |
+| Direcionados (AJO) | Essa contagem do número de vezes que uma apresentação foi direcionada a uma pessoa. Este é o número de vezes que uma proposta foi considerada para exibição a uma pessoa. | Conjunto de dados de evento de experiência de rastreamento por push do AJO, Eventos de etapa da jornada, Conjunto de dados de evento de feedback de mensagem do AJO, Conjunto de dados de evento de experiência de rastreamento de email do AJO | Campos derivados | Tipo de componente: métrica (campo derivado) |
+| Acionados (AJO) | A proposta foi escolhida para ser exibida pelo SDK do Adobe. Outros fatores podem impedir a exibição real. | Conjunto de dados de evento de experiência de rastreamento por push do AJO, Eventos de etapa da jornada, Conjunto de dados de evento de feedback de mensagem do AJO, Conjunto de dados de evento de experiência de rastreamento de email do AJO | `_experience.decisioning.`<br/>`propositionEventType.trigger` | Tipo de componente: métrica |
 | Visitantes únicos no experimento (AJO) | Os visitantes únicos no experimento | Conjunto de dados de entidade do AJO | `_experience.customerJourneyManagement.`<br/>`entities.experiment.experimentId` | Tipo de componente: métrica |
 | Cancelamentos de inscrições (AJO) | Contagem total de cancelamentos de inscrições | Conjunto de dados de evento de experiência de rastreamento de email do AJO | `_experience.customerJourneyManagement.`<br/>`messageInteraction.interactionType` | Tipo de componente: métrica |
 

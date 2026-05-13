@@ -5,10 +5,14 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 exl-id: 1c42efac-b3d2-437b-8b0b-9c6fdfed8520
 role: Admin
-source-git-commit: d1ba2d203738ca9bf74d17bb93712eff26f88f25
+TQID: https://experienceleague.adobe.com/ovkuHhI-eEqKyD3dYuZgivexC4VQ0AIMZuIa3GokO6M
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '982'
-ht-degree: 54%
+source-wordcount: 1022
+ht-degree: 58%
 
 ---
 
@@ -36,7 +40,7 @@ O Customer Journey Analytics oferece suporte a dois tipos de compilação: [comp
 
 Antes de usar a compilação, verifique se a sua organização está preparada com o seguinte:
 
-- A compilação inclui a mesclagem de dados de usuário autenticados e não autenticados. Cumpra as leis e regulamentos aplicáveis e obtenha as permissões necessárias do usuário final antes de ativar a compilação em um conjunto de dados de evento.
+- A compilação inclui a mesclagem de dados de usuário autenticados e não autenticados. Certifique-se de cumprir as leis e regulamentações aplicáveis, incluindo obter as permissões necessárias do usuário final, antes de ativar a compilação em um conjunto de dados de eventos.
 
 - Importe os dados desejados para a Adobe Experience Platform:
 

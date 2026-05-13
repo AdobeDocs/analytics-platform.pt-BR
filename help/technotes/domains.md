@@ -3,10 +3,15 @@ title: Domínios usados pelo Customer Journey Analytics
 description: Se o firewall da sua organização bloquear endereços IP originados da Adobe, use esta lista para atualizar as configurações do firewall.
 role: Admin
 exl-id: 0c3e7b2e-cb48-4e14-ae18-65258ebce1b4
-source-git-commit: 8ffbca5dd83987a90d7b744d236e0556314000dd
+TQID: https://experienceleague.adobe.com/d-nNfumskelDKrgCPQpyoZIagJrGcniXyQgACaHh5tA
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '152'
-ht-degree: 20%
+source-wordcount: 170
+ht-degree: 18%
 
 ---
 
@@ -21,17 +26,17 @@ Algumas configurações de firewall bloqueiam domínios dos quais a Customer Jou
 | Amazon CloudFront | `d30ln29764hddd.cloudfront.net` |
 | Gainsight | `esp.aptrinsic.com`, `esp-m.aptrinsic.com` |
 | LaunchDarkly | `app.launchdarkly.com` |
-| Armazenamento Microsoft® Azure Blob | `awaascicdprodva7.blob.core.windows.net` |
-| CDN do Microsoft® Azure | `aauicdnva7.azureedge.net` |
+| Microsoft® Azure Blob Storage | `awaascicdprodva7.blob.core.windows.net` |
+| Microsoft® Azure CDN | `aauicdnva7.azureedge.net` |
 
 {style="table-layout:auto"}
 
 ## Domínios da Adobe Experience Cloud
 
-Além dos domínios acima, o Adobe Experience Cloud depende de vários domínios para a coleta de dados e exportação de relatórios. Consulte [Domínios usados pelo Adobe Experience Cloud](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/data-collection/domains) para obter esta lista de domínios.
+Além dos domínios acima, o Adobe Experience Cloud depende de vários domínios para a coleta de dados e exportação de relatórios. Consulte [Domínios usados pelo Adobe Experience Cloud](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/domains) para obter esta lista de domínios.
 
 >[!MORELIKETHIS]
 >
 >[Endereços IP usados pelo Customer Journey Analytics](ip-addresses.md)
 >
->[Domínios usados pelo Adobe Experience Cloud](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/data-collection/domains)
+>[Domínios usados pelo Adobe Experience Cloud](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/domains)

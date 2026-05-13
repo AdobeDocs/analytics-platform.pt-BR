@@ -6,10 +6,16 @@ feature: Use Cases
 role: User
 badgePremium: label="B2B Edition"
 exl-id: f959a77b-ccfb-43f2-93bb-b330e73d59ac
-source-git-commit: 50b82943d4c59f612240ffc8d83a8a08f09b8331
+TQID: https://experienceleague.adobe.com/kC8CrnfMIaJ-YQ8J6xi1ZeMnDBtQUBaUWZSmz9egUFk
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817afid: e4a0bad2-b448-47f1-9fa6-222ebdb3b5b0
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '1727'
-ht-degree: 10%
+source-wordcount: 1740
+ht-degree: 13%
 
 ---
 
@@ -53,13 +59,13 @@ Um exemplo de referência de design de solução pode ser semelhante a:
 | Nome do evento |
 | Funil |
 | Canal de interação |
-| ID do lead |
+| ID de informações privilegiadas |
 | Canal de marketing |
 | ID do evento de marketing |
 | Tipo de evento de marketing |
 | ID de oportunidade |
 | Página |
-| Detalhes da página |
+| Detalhes da Página |
 | Domínio de referência |
 | ID do Representante de Vendas |
 | Nome do estágio de vendas |
@@ -359,7 +365,7 @@ Por padrão, todos os [componentes padrão](/help/data-views/component-reference
 1. Selecione **[!UICONTROL Salvar e continuar]**.
 
 
-### Configurações 
+### Configurações
 
 1. Opcionalmente, é possível definir [configurações](/help/data-views/create-dataview.md#settings-1) específicas para a visualização de dados:
 

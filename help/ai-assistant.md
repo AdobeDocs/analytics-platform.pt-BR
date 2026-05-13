@@ -5,13 +5,17 @@ role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
 exl-id: 7a4f15c4-7fd6-4a6a-9b83-7c1f3b95be16
-source-git-commit: 82b36895fe5186f0133c128d434470ea7f875677
+TQID: https://experienceleague.adobe.com/ALTfdJVKpXNRGSHFkLiP7-NonJ-q9GmG6X72AF8ij24
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: 660
 ht-degree: 100%
 
 ---
-
 
 # Assistente de IA do Adobe Customer Journey Analytics
 
@@ -23,7 +27,7 @@ Como usuário iniciante, você pode usar o Assistente de IA para aprender concei
 
 Veja alguns exemplos de perguntas conceituais:
 
-* Qual é a diferença entre ingestão em lote e por transmissão?
+* Qual é a diferença entre ingestão em lote e ingestão de transmissão?
 * Para que o Customer Journey Analytics é melhor utilizado?
 * Como configurar uma visualização de dados?
 
@@ -41,7 +45,7 @@ O Assistente de IA do Customer Journey Analytics está disponível para todos os
 
 ## Análise de dados
 
-O Data Insights Agent, acessível pelo Assistente de IA no Customer Journey Analytics, é um agente de conversação de IA generativa que responde de forma rápida e eficiente a perguntas sobre seus dados. Ele cria visualizações relevantes no Analysis Workspace usando componentes da visualização de dados e seus dados reais.
+O Data Insights Agent, acessível pelo Assistente de IA no Customer Journey Analytics, é um agente de conversação de IA generativa que responde de forma rápida e eficiente a perguntas sobre seus dados. Ele cria visualizações relevantes no Analysis Workspace, usando componentes da visualização de dados e os seus dados reais.
 
 Para mais informações sobre como usar o Data Insights Agent dentro do Assistente de IA, consulte [Visualizar dados com o Data Insights Agent](/help/data-analysis-ai.md).
 

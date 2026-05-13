@@ -4,10 +4,15 @@ description: Conectar e validar caso de uso para a extensão do BI em várias fe
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: cb0102923f10f39becd40cc4187d2e11fb8c4e2f
+exl-id: d122a415-fb22-48f7-9377-8349dba274e5
+TQID: https://experienceleague.adobe.com/HPvTvrapyxOEwxewBLNpLTRYZK-dfpfj1Y8rjJyL-IU
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '1864'
-ht-degree: 5%
+source-wordcount: 2021
+ht-degree: 10%
 
 ---
 
@@ -60,7 +65,7 @@ Ao analisar os casos de uso, substitua esses objetos de exemplo por objetos apro
       1. Selecione **[!UICONTROL OK]**.
    1. Na caixa de diálogo **[!UICONTROL Banco de dados PostgreSQL]** - **[!UICONTROL Banco de Dados]**:
       ![Usuário e Senha do Power BI Desktop](../assets/powerbi-userpassword.png)
-      1. Use ![Copiar](/help/assets/icons/Copy.svg) para copiar os valores de **[!UICONTROL Nome de Usuário]** e **[!UICONTROL Senha]** do painel **[!UICONTROL Consulta]** **[!UICONTROL Credenciais em Expiração]** do Experience Platform nos campos **[!UICONTROL Nome de usuário]** e **[!UICONTROL Senha]**. Se você estiver usando uma [credencial sem expiração](https://experienceleague.adobe.com/pt-br/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect), use a senha da sua credencial sem expiração.
+      1. Use ![Copiar](/help/assets/icons/Copy.svg) para copiar os valores de **[!UICONTROL Nome de Usuário]** e **[!UICONTROL Senha]** do painel **[!UICONTROL Consulta]** **[!UICONTROL Credenciais em Expiração]** do Experience Platform nos campos **[!UICONTROL Nome de usuário]** e **[!UICONTROL Senha]**. Se você estiver usando uma [credencial sem expiração](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect), use a senha da sua credencial sem expiração.
       1. Verifique se o menu suspenso do **[!UICONTROL Selecione a qual nível aplicar essas configurações]** está definido como o **[!UICONTROL Servidor]** definido anteriormente.
       1. Selecione **[!UICONTROL Conectar]**.
    1. Na caixa de diálogo **[!UICONTROL Navegador]**, as visualizações de dados são recuperadas. Essa recuperação pode levar algum tempo. Depois de recuperado, você verá o seguinte no Power BI Desktop.
@@ -115,7 +120,7 @@ O Power BI Desktop oferece suporte aos seguintes cenários para o parâmetro `FL
       1. Use ![Copiar](/help/assets/icons/Copy.svg) para copiar e colar o **[!UICONTROL Banco de Dados]** do painel **[!UICONTROL Consulta]** **[!UICONTROL Credenciais em Expiração]** do Experience Platform no **[!UICONTROL Banco de Dados]**. Adicione `%3FFLATTEN` ao valor que você colar. Por exemplo: `prod:cja%3FFLATTEN`.
       1. Selecione **[!UICONTROL Nome de Usuário e Senha]** no menu suspenso **[!UICONTROL Autenticação]**.
       1. Use ![Copiar](/help/assets/icons/Copy.svg) para copiar e colar o **[!UICONTROL Nome de Usuário]** do painel **[!UICONTROL Consulta]** **[!UICONTROL Credenciais em Expiração]** do Experience Platform para o **[!UICONTROL Nome de Usuário]**.
-      1. Use ![Copiar](/help/assets/icons/Copy.svg) para copiar e colar a **[!UICONTROL Senha]** do painel **[!UICONTROL Consulta]** **[!UICONTROL Credenciais em Expiração]** do Experience Platform para a **[!UICONTROL Senha]**. Se você estiver usando uma [credencial sem expiração](https://experienceleague.adobe.com/pt-br/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect), use a senha da sua credencial sem expiração.
+      1. Use ![Copiar](/help/assets/icons/Copy.svg) para copiar e colar a **[!UICONTROL Senha]** do painel **[!UICONTROL Consulta]** **[!UICONTROL Credenciais em Expiração]** do Experience Platform para a **[!UICONTROL Senha]**. Se você estiver usando uma [credencial sem expiração](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/credentials?lang=en#use-credential-to-connect), use a senha da sua credencial sem expiração.
       1. Verifique se **[!UICONTROL Exigir SSL]** está marcado.
       1. Selecione **[!UICONTROL Fazer logon]**.
 
@@ -341,7 +346,7 @@ O Jupyter Notebook dá suporte aos seguintes cenários para o parâmetro `FLATTE
 
 1. Iniciar RStudio.
 1. Crie um novo arquivo do R Markdown ou baixe [este arquivo de exemplo do R Markdown](../assets/BI-Extension.Rmd.zip).
-1. Na primeira parte, insira as seguintes instruções entre ` ` ``{r} ` e ` `` ` `. Use ![Copiar](/help/assets/icons/Copy.svg) para copiar e colar valores do painel **[!UICONTROL Consulta]** **[!UICONTROL Credenciais em Expiração]** do Experience Platform para os valores necessários para os vários parâmetros, como `host`, `dbname` e `user`. Por exemplo:
+1. Na primeira parte, insira as seguintes instruções entre ` ```{r} ` e ` ``` `. Use ![Copiar](/help/assets/icons/Copy.svg) para copiar e colar valores do painel **[!UICONTROL Consulta]** **[!UICONTROL Credenciais em Expiração]** do Experience Platform para os valores necessários para os vários parâmetros, como `host`, `dbname` e `user`. Por exemplo:
 
    ```R
    library(rstudioapi)
@@ -362,7 +367,7 @@ O Jupyter Notebook dá suporte aos seguintes cenários para o parâmetro `FLATTE
 
    ![Etapa de configuração do Studio 1](../assets/rstudio-config-step1.png)
 
-1. Crie uma nova parte e insira as seguintes instruções entre ` ` `` {r} ` e ` `` ` `.
+1. Crie uma nova parte e insira as seguintes instruções entre ` ``` {r} ` e ` ``` `.
 
    ```R
    con <- dbConnect(
@@ -379,7 +384,7 @@ O Jupyter Notebook dá suporte aos seguintes cenários para o parâmetro `FLATTE
 1. Execute o pedaço. Você não deve ver nenhuma saída se a conexão for bem-sucedida.
 
 
-1. Crie uma nova parte e insira as seguintes instruções entre ` ` `` {r} ` e ` `` ` `.
+1. Crie uma nova parte e insira as seguintes instruções entre ` ``` {r} ` e ` ``` `.
 
    ```R
    views <- dbListTables(con)
@@ -389,7 +394,7 @@ O Jupyter Notebook dá suporte aos seguintes cenários para o parâmetro `FLATTE
 1. Execute o pedaço. Você deve ver `character(0)` como a única saída.
 
 
-1. Crie uma nova parte e insira as seguintes instruções entre ` ` `` {r} ` e ` `` ` `.
+1. Crie uma nova parte e insira as seguintes instruções entre ` ``` {r} ` e ` ``` `.
 
    ```R
    glimpse(dv)

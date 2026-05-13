@@ -5,10 +5,16 @@ exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: 0e9dc47b80db142801a94dcbf31470d99a610949
+TQID: https://experienceleague.adobe.com/qEgO-lqYk8ipVP99IBazrKAb7Jer-AN96-PY-f1KdPQ
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '1357'
-ht-degree: 28%
+source-wordcount: 1443
+ht-degree: 24%
 
 ---
 
@@ -39,7 +45,7 @@ Por exemplo, ao criar uma visualização de dados, você pode criar uma métrica
 1. Abra a seção **[!UICONTROL Incluir/Excluir Valores]** e especifique o seguinte:
    1. Habilitar **[!UICONTROL Definir inclusão/exclusão de valores]**.
    1. Selecione **[!UICONTROL Se todos os critérios forem atendidos]** de **[!UICONTROL Corresponder]**.
-   1. Especifique `confirmation`. O texto para **[!UICONTROL page_title]** indica que esta página está relacionada à colocação de um pedido. Depois de revisar todos os títulos de página em que esses critérios são atendidos, um `1` será contado para cada instância. O resultado é uma nova métrica (não uma métrica calculada). Uma métrica que tenha valores incluídos/excluídos pode ser usada em qualquer outra métrica. Essas métricas funcionam com atribuição, segmentos e em qualquer lugar que você puder usar as métricas padrão.
+   1. Especifique `confirmation`. O texto para **[!UICONTROL page_title]** indica que esta página está relacionada à colocação de um pedido. Depois de revisar todos os títulos de página em que esses critérios são atendidos, um `1` será contado para cada instância. O resultado é uma nova métrica (não uma métrica calculada). Uma métrica que tenha valores de inclusão/exclusão pode ser usada em qualquer outra métrica. Essas métricas funcionam com atribuição, segmentos e em qualquer lugar que você puder usar as métricas padrão.
 
    ![Dimension para métrica](../assets/string-to-metric.gif){width=100%}
 1. Você pode especificar ainda mais um modelo de atribuição para essa métrica, como [!UICONTROL Último contato], com uma [!UICONTROL Janela de pesquisa] de [!UICONTROL Sessão].
@@ -60,9 +66,9 @@ Anteriormente, os números inteiros eram automaticamente tratados como métricas
 
 ## Usar dimensões numéricas como métricas em diagramas de fluxo {#numeric}
 
-Você pode usar uma dimensão numérica para inserir métricas na visualização [!UICONTROL &#x200B; Fluxo].
+Você pode usar uma dimensão numérica para inserir métricas na visualização [!UICONTROL  Fluxo].
 
-1. Na guia Visualizações de dados [Componentes](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-dataviews/create-dataview), arraste o campo de esquema [!UICONTROL Canais de marketing] para a área [!UICONTROL Métricas] em [!UICONTROL Componentes incluídos].
+1. Na guia Visualizações de dados [Componentes](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/create-dataview), arraste o campo de esquema [!UICONTROL Canais de marketing] para a área [!UICONTROL Métricas] em [!UICONTROL Componentes incluídos].
 2. No relatório do Espaço de trabalho, esse fluxo mostra [!UICONTROL Canais de marketing] fluindo para [!UICONTROL Pedidos]:
 
 ![Fluxo do Canal de marketing dos emails para Saída/pedidos.](../assets/flow.png)
@@ -73,14 +79,14 @@ Esse recurso é especificamente aplicável a campos com base em matriz. A funcio
 
 Por exemplo, use a funcionalidade de inclusão/exclusão nas Visualizações de dados para focalizar produtos que geraram vendas superiores a US$ 50. Portanto, se você tiver um pedido que inclua uma compra de produto de US$ 50 e uma compra de produto de US$ 25, a funcionalidade de inclusão/exclusão removerá a compra de produto de US$ 25, não o pedido inteiro.
 
-1. Na guia Visualizações de dados [Componentes](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-dataviews/create-dataview), arraste o campo de esquema **[!UICONTROL Receita]** para a área **[!UICONTROL Métricas]** em [!UICONTROL Componentes incluídos].
+1. Na guia Visualizações de dados [Componentes](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/create-dataview), arraste o campo de esquema **[!UICONTROL Receita]** para a área **[!UICONTROL Métricas]** em [!UICONTROL Componentes incluídos].
 1. Selecione a métrica e configure o seguinte no lado direito:
 a. Em **[!UICONTROL Formato]**, selecione **[!UICONTROL Moeda]**.
 b. Em **[!UICONTROL Moeda]**, selecione **[!UICONTROL USD]**.
 c. Em **[!UICONTROL Incluir/Excluir valores]**, marque a caixa de seleção ao lado de **[!UICONTROL Definir valores de inclusão/exclusão]**.
-d. Em **[!UICONTROL Corresponder]**, selecione **[!UICONTROL Se todos os critérios forem atendidos]**.
-e. Em **[!UICONTROL Critérios]**, selecione **[!UICONTROL é maior ou igual a]**.
-f. Especifique `50` como o valor.
+d) Em **[!UICONTROL Corresponder]**, selecione **[!UICONTROL Se todos os critérios forem atendidos]**.
+e. Em **[!UICONTROL Critério]**, selecione **[!UICONTROL é maior ou igual a]**.
+f) Especifique `50` como o valor.
 
 Essas novas configurações permitem que você visualize somente a receita de alto valor e filtre qualquer valor abaixo de US$ 50.
 
@@ -112,11 +118,11 @@ Você pode determinar se uma sessão é realmente a primeira sessão de um usuá
 
 Uma dimensão e duas métricas facilitam esse relatório:
 
-* [Tipo de sessão](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-dataviews/component-reference) - Esta dimensão tem dois valores: [!UICONTROL Novo] e [!UICONTROL Retorno]. O item de linha [!UICONTROL Novo] inclui todo o comportamento (ou seja, métricas em relação a essa dimensão) de uma sessão que foi determinada como a primeira sessão definida por uma pessoa. Todo o restante está incluído no item da linha [!UICONTROL Retorno] (supondo que tudo pertença a uma sessão). Quando as métricas não fazem parte de nenhuma sessão, elas se encaixam no intervalo “Não aplicável” dessa dimensão.
+* [Tipo de sessão](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-reference) - Esta dimensão tem dois valores: [!UICONTROL Novo] e [!UICONTROL Retorno]. O item de linha [!UICONTROL Novo] inclui todo o comportamento (ou seja, métricas em relação a essa dimensão) de uma sessão que foi determinada como a primeira sessão definida por uma pessoa. Todo o restante está incluído no item da linha [!UICONTROL Retorno] (supondo que tudo pertença a uma sessão). Quando as métricas não fazem parte de nenhuma sessão, elas se encaixam no intervalo “Não aplicável” dessa dimensão.
 
-* [Primeiras sessões](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-dataviews/component-reference). A métrica Primeiras sessões é definida como a primeira sessão definida de uma pessoa na janela de relatórios.
+* [Primeiras sessões](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-reference). A métrica Primeiras sessões é definida como a primeira sessão definida de uma pessoa na janela de relatórios.
 
-* [Sessões de Retorno](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-dataviews/component-reference) A métrica de Sessões de Retorno é o número de sessões que não foram a primeira sessão de uma pessoa.—>
+* [Sessões de Retorno](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-reference) A métrica de Sessões de Retorno é o número de sessões que não foram a primeira sessão de uma pessoa.—>
 
 Para acessar os componentes:
 

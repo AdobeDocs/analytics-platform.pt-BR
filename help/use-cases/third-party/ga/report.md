@@ -5,9 +5,14 @@ exl-id: a7ac3c8d-c0d9-4fc2-80d7-c2b388250586
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
-source-git-commit: e07b901f66a59aba1a7a517443eec73387d23c57
+TQID: https://experienceleague.adobe.com/uguWrl31MZgtfsGCbzPkTRpmhH2ttVD-VXQ2rkK8fcs
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: e9001ce2-5245-4a8e-8601-dd958009072f
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '681'
+source-wordcount: 685
 ht-degree: 85%
 
 ---
