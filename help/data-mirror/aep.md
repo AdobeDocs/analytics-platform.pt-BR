@@ -6,10 +6,18 @@ feature: Basics
 role: Admin
 badgePremium: label="Beta"
 exl-id: 87593d7d-9456-48f8-8d39-5c3d95fe51ec
-source-git-commit: cd3baec708f1811a7cbc37dfe0a9c3af75eb97c3
+TQID: https://experienceleague.adobe.com/rcgrYTjQHpf0C79aQxqr5PfUvZv-yLY2neH0nZ-HBjs
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '550'
-ht-degree: 2%
+source-wordcount: 604
+ht-degree: 6%
 
 ---
 
@@ -55,7 +63,7 @@ Para configurar o conector de origem para as soluções nativas de data warehous
 
 Para obter autenticação em relação à solução nativa de data warehouse compatível, consulte a documentação relevante do Experience Platform:
 
-* [Databricks do Azure](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/databases/databricks)
+* [Azure Databricks](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/databases/databricks)
 * [Google BigQuery](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/databases/bigquery)
 * [Snowflake](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/databases/snowflake)
 
@@ -82,7 +90,7 @@ Mapeie os campos da tabela na solução nativa de data warehouse para os campos 
 Defina um agendamento para espelhar os dados da tabela na solução nativa de data warehouse para o conjunto de dados na Experience Platform.
 
 
-### Revisão
+### Revisar
 
 Revise as configurações do conector de origem para a solução nativa de data warehouse que oferece suporte ao espelhamento de dados e à captura de dados de alteração.
 
@@ -92,6 +100,6 @@ Após concluir a configuração do conector de origem, um fluxo de dados é cria
 
 >[!MORELIKETHIS]
 >
->[guia de início rápido do Data Mirror: Espelhar e usar dados relacionais](relational.md)
+>[Guia de início rápido do Data Mirror: espelhar e usar dados relacionais](relational.md)
 >[Data Mirror (documentação do Experience Platform)](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-mirror/overview)
 >[Esquemas relacionais (documentação do Experience Platform)](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/schema/relational)

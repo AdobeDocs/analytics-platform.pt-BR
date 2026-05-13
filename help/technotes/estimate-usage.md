@@ -4,9 +4,16 @@ description: Explica como gerenciar o uso do Customer Journey Analytics.
 role: Admin
 feature: Basics
 exl-id: 7a5d1173-8d78-4360-a97a-1ab0a60af135
-source-git-commit: 6d23203468032510446711ff5a874fd149531a9a
+TQID: https://experienceleague.adobe.com/LbcO4spfU9qS4AT-cV2-Jec3dJnfAZXiBXRA-grdUSg
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: 258
 ht-degree: 37%
 
 ---

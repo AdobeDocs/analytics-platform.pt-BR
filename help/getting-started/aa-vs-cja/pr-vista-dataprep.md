@@ -4,10 +4,24 @@ description: Saiba mais sobre a transformação de dados usando regras de proces
 exl-id: 049ad97e-0b4f-4163-a022-32661e48bf13
 feature: Basics
 role: User
-source-git-commit: 359fe2a718ccef816377083aceb2652b4a905072
+TQID: https://experienceleague.adobe.com/MuJbtTwSbGbKBifnyWz6SNybYX9JsMpIL9QwVJv031Y
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 97%
+source-wordcount: 632
+ht-degree: 92%
 
 ---
 
@@ -22,7 +36,7 @@ As regras de processamento do Adobe Analytics [e as regras VISTA](https://experi
 Os dados coletados e armazenados no Adobe Analytics podem ser transformados por regras de processamento, regras VISTA ou ambas. Mas os conjuntos de relatórios que são encaminhados à Platform por meio do conector de origem do Analytics podem ser transformados mais uma vez usando o preparo de dados. Isso pode ser desejável para vários fins:
 
 * **Resolução de diferenças de esquema entre conjuntos de relatórios para uso no Customer Journey Analytics e/ou na RTCDP**. Por exemplo, o conjunto de relatórios A define `eVar1` como “Termo de pesquisa” e o conjunto de relatórios B define `eVar2` como “Termo de pesquisa”. Você pode usar o preparo de dados para mapear as duas eVars diferentes em um campo comum que contenha dados de ambas as eVars. Isso permite [combinar conjuntos de relatórios com esquemas diferentes](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/combine-report-suites.html?lang=pt-BR) em uma [conexão do Customer Journey Analytics](/help/connections/overview.md) ou para utilizar na [Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/understanding-the-real-time-customer-data-platform.html?lang=pt-BR).
-* **Mapeamento de campos de `eVars` com nomes semanticamente significativos**. As `eVars` e `props` provenientes do conector de origem do Analytics são mapeadas para campos como _\_experience.analytics.customDimensions.eVars.eVar1_. O preparo de dados pode ser usado para mapear campos de `eVar` e `prop` para novos campos que tenham nomes mais significativos para seus usuários ou que correspondam a nomes provenientes de outras fontes de dados. (Isso também pode ser alcançado por outros meios, como renomeando os campos em uma [visualização de dados do Customer Journey Analytics](/help/data-views/create-dataview.md).)
+* **Mapeamento de campos de `eVars` com nomes semanticamente significativos**. As `eVars` e `props` provenientes do conector de origem do Analytics são mapeadas para campos como _\_ experience.analytics.customDimensions.eVars.eVar1_. O preparo de dados pode ser usado para mapear campos de `eVar` e `prop` para novos campos que tenham nomes mais significativos para seus usuários ou que correspondam a nomes provenientes de outras fontes de dados. (Isso também pode ser alcançado por outros meios, como renomeando os campos em uma [visualização de dados do Customer Journey Analytics](/help/data-views/create-dataview.md).)
 * **Dados de transformação geral**. O preparo de dados possui centenas de funções de mapeamento que podem ser usadas para computar e calcular novos campos com base nos dados provenientes do conector de origem do Analytics. Você pode dividir campos delimitados em campos separados. É possível combinar campos. Você pode manipular strings. Você pode extrair informações de um campo, com base em expressões regulares e muito mais.
 
 ## Preparo e classificação de dados {#classifications}
@@ -31,4 +45,4 @@ O Preparo de dados se cruzou com [classificações](https://experienceleague.ado
 
 Por exemplo, em um campo delimitado, é possível usar o Preparo de dados para dividir esse campo em vários campos individuais sem o uso de classificações. Geralmente, as classificações são uma maneira de adicionar metadados a um campo, através do upload de um arquivo de pesquisa que é fornecido fora do fluxo dos eventos de entrada do Analytics.
 
-Por exemplo, você pode fazer upload de um arquivo de classificação que agrupa SKUs por “tamanho”, “marca”, “cor” etc. Outra diferença entre classificações e Preparo de dados é que as classificações se aplicam aos dados _tanto históricos quanto futuros_. Por outro lado, os mapeamentos de Preparo de dados são aplicados _antecipadamente_ para dados a partir do momento em que o mapeamento é criado.
+Por exemplo, você pode fazer upload de um arquivo de classificação que agrupa SKUs em &quot;tamanho&quot;, &quot;marca&quot;, &quot;cor&quot; etc. Outra diferença entre classificações e Preparo de dados é que as classificações se aplicam aos dados _tanto históricos quanto futuros_. Por outro lado, os mapeamentos de Preparo de dados são aplicados _antecipadamente_ para dados a partir do momento em que o mapeamento é criado.

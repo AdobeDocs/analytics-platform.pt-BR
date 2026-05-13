@@ -5,9 +5,21 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 87da2447-f114-432a-9f63-e660c2541d0f
 role: Admin
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+TQID: https://experienceleague.adobe.com/Rzq3IeZudRcTRC60v2RsijL-g-rno7xPS6Lc5jZlMbs
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2:
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '1497'
+source-wordcount: 1497
 ht-degree: 100%
 
 ---
@@ -36,7 +48,7 @@ Você pode cancelar solicitações individuais que estão consumindo uma grande 
 
 1. Selecione a conexão na qual deseja cancelar solicitações de relatórios. <!--double-check this step-->
 
-   Para mais informações sobre os dados disponíveis nesta página, consulte [Exibir atividades de relatórios no gerenciador de atividades de relatórios](/help/reporting-activity-manager/reporting-activity.md).
+   Para obter mais informações sobre os dados disponíveis nesta página, consulte [Exibir atividade de relatório no Gerenciador de atividades de relatórios](/help/reporting-activity-manager/reporting-activity.md).
 
 1. Selecione a guia [!UICONTROL **Solicitações**] e escolha uma ou mais solicitações.
 
@@ -50,7 +62,7 @@ Você pode cancelar solicitações individuais que estão consumindo uma grande 
 
 1. (Opcional) Para restringir solicitações futuras em um determinado período:
 
-   1. Habilite a opção de [!UICONTROL **Restringir solicitações seguintes**].
+   1. Habilite a opção para [!UICONTROL **Restringir solicitações subsequentes**].
 
       ![Cancelar uma solicitação, mostrando a opção de “Restringir solicitações seguintes” selecionada e a mensagem de cancelamento.](assets/restrict-subsequent-requests.png)
 
@@ -77,7 +89,7 @@ Você pode cancelar todas as solicitações associadas a um ou mais usuários. A
 
 1. Selecione a conexão na qual deseja cancelar solicitações de relatórios. <!--double-check this step-->
 
-   Para mais informações sobre os dados disponíveis nesta página, consulte [Exibir atividades de relatórios no gerenciador de atividades de relatórios](/help/reporting-activity-manager/reporting-activity.md).
+   Para obter mais informações sobre os dados disponíveis nesta página, consulte [Exibir atividade de relatório no Gerenciador de atividades de relatórios](/help/reporting-activity-manager/reporting-activity.md).
 
 1. Selecione a guia [!UICONTROL **Usuários**] e escolha um ou mais usuários.
 
@@ -102,23 +114,23 @@ Você pode cancelar todas as solicitações associadas a um ou mais usuários. A
       | [!UICONTROL **Usuário e projeto**] | Usuários(as) selecionados(as) serão temporariamente restringidos(as) de fazer solicitações de relatórios para os projetos associados. <p>Esta é a opção menos restritiva.</p> |
       | [!UICONTROL **Usuário**] | Usuários(as) selecionados(as) serão temporariamente restringidos(as) de fazer solicitações de relatórios. |
       | [!UICONTROL **Projeto**] | Os projetos associados a usuários(as) selecionados(as) ficarão fechados a quaisquer solicitações de relatórios feitas por um(a) usuário(a). |
-      | [!UICONTROL **Restringir por**] | Escolha por quanto tempo as solicitações serão restringidas. É possível escolher as opções 1 minuto (padrão), 5 minutos, 10 minutos, 15 minutos ou 30 minutos. <!--double-check this--> <p>Não é possível remover uma restrição antecipadamente após defini-la.</p> |
+      | [!UICONTROL **Restrito para**] | Escolha por quanto tempo as solicitações serão restringidas. É possível escolher as opções 1 minuto (padrão), 5 minutos, 10 minutos, 15 minutos ou 30 minutos. <!--double-check this--> <p>Não é possível remover uma restrição antecipadamente após defini-la.</p> |
 
       {style="table-layout:auto"}
 
 1. Selecione [!UICONTROL **Continuar com cancelamento**].
 
-   Uma notificação é exibida no Analysis Workspace, informando aos usuários que a solicitação foi cancelada. Para obter mais informações sobre como isso aparece no Analysis Workspace, consulte [Experiência quando usuários acessam um relatório cancelado](#experience-when-users-access-a-cancelled-report).
+   Uma notificação é exibida no Analysis Workspace, informando aos usuários que a solicitação foi cancelada. Para mais informações sobre como isso aparece no Analysis Workspace, consulte [Experiência quando usuários acessam um relatório cancelado](#experience-when-users-access-a-cancelled-report).
 
 ## Cancelar solicitações por projeto
 
 É possível cancelar todas as solicitações associadas a um ou mais projetos. Ao cancelar solicitações associadas a um projeto, é possível optar por restringir ainda mais as solicitações associadas a esse projeto para um determinado período.
 
-1. No Customer Journey Analytics, vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Gerenciador de atividades de relatórios]**.
+1. No Customer Journey Analytics, acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Gerenciador de atividades de relatórios]**.
 
 1. Selecione a conexão na qual deseja cancelar solicitações de relatórios. <!--double-check this step-->
 
-   Para obter mais informações sobre os dados disponíveis nesta página, consulte [Exibir atividade de relatório no Gerenciador de atividades de relatórios](/help/reporting-activity-manager/reporting-activity.md).
+   Para mais informações sobre os dados disponíveis nesta página, consulte [Exibir atividades de relatórios no gerenciador de atividades de relatórios](/help/reporting-activity-manager/reporting-activity.md).
 
 1. Selecione a guia [!UICONTROL **Projetos**] e escolha um ou mais projetos.
 
@@ -132,7 +144,7 @@ Você pode cancelar todas as solicitações associadas a um ou mais usuários. A
 
 1. (Opcional) Para restringir solicitações futuras em um determinado período:
 
-   1. Habilite a opção para [!UICONTROL **Restringir solicitações subsequentes**].
+   1. Habilite a opção de [!UICONTROL **Restringir solicitações seguintes**].
 
       ![Cancelar uma solicitação mostrando a opção Restringir solicitações subsequentes por projeto](assets/restrict-subsequent-requests-project.png)
 
@@ -143,13 +155,13 @@ Você pode cancelar todas as solicitações associadas a um ou mais usuários. A
       | [!UICONTROL **Usuário e projeto**] | Os projetos selecionados ficarão temporariamente fechados a solicitações de relatórios feitas por usuários(as) associados(as).<p>Esta é a opção menos restritiva.</p> |
       | [!UICONTROL **Usuário**] | Usuários(as) associados(as) aos projetos selecionados serão restringidos(as) de fazer solicitações de relatórios. |
       | [!UICONTROL **Projeto**] | Os projetos selecionados ficarão temporariamente fechados a qualquer solicitação de relatório feita por usuários. |
-      | [!UICONTROL **Restringido por**] | Escolha por quanto tempo as solicitações serão restringidas. É possível escolher as opções 1 minuto (padrão), 5 minutos, 10 minutos, 15 minutos ou 30 minutos. <!--double-check this--> <p>Não é possível remover uma restrição antecipadamente após defini-la.</p> |
+      | [!UICONTROL **Restrito para**] | Escolha por quanto tempo as solicitações serão restringidas. É possível escolher as opções 1 minuto (padrão), 5 minutos, 10 minutos, 15 minutos ou 30 minutos. <!--double-check this--> <p>Não é possível remover uma restrição antecipadamente após defini-la.</p> |
 
       {style="table-layout:auto"}
 
 1. Selecione [!UICONTROL **Continuar com cancelamento**].
 
-   Uma notificação é exibida no Analysis Workspace, informando aos usuários que a solicitação foi cancelada. Para obter mais informações sobre como isso aparece no Analysis Workspace, consulte [Experiência quando usuários acessam um relatório cancelado](#experience-when-users-access-a-cancelled-report).
+   Uma notificação é exibida no Analysis Workspace, informando aos usuários que a solicitação foi cancelada. Para mais informações sobre como isso aparece no Analysis Workspace, consulte [Experiência quando usuários acessam um relatório cancelado](#experience-when-users-access-a-cancelled-report).
 
 ## Cancelar solicitações por aplicativo
 
@@ -170,11 +182,11 @@ Os aplicativos incluem:
 
 Para cancelar solicitações por aplicativo:
 
-1. No Customer Journey Analytics, vá para **[!UICONTROL Ferramentas]** > **[!UICONTROL Gerenciador de atividades de relatórios]**.
+1. No Customer Journey Analytics, acesse **[!UICONTROL Ferramentas]** > **[!UICONTROL Gerenciador de atividades de relatórios]**.
 
 1. Selecione a conexão na qual deseja cancelar solicitações de relatórios. <!--double-check this step-->
 
-   Para obter mais informações sobre os dados disponíveis nesta página, consulte [Exibir atividade de relatório no Gerenciador de atividades de relatórios](/help/reporting-activity-manager/reporting-activity.md).
+   Para mais informações sobre os dados disponíveis nesta página, consulte [Exibir atividades de relatórios no gerenciador de atividades de relatórios](/help/reporting-activity-manager/reporting-activity.md).
 
 1. Selecione a guia [!UICONTROL **Aplicativos**] e escolha um ou mais aplicativos.
 
@@ -199,7 +211,7 @@ Para cancelar solicitações por aplicativo:
       | [!UICONTROL **Usuário e projeto**] | Os aplicativos selecionados ficarão temporariamente fechados a qualquer solicitação de relatório feita por usuários associados e projetos.<p>Esta é a opção menos restritiva.</p> |
       | [!UICONTROL **Usuário**] | Usuários associados aos aplicativos selecionados serão impedidos de fazer qualquer solicitação de relatório. |
       | [!UICONTROL **Projeto**] | Os projetos associados aos aplicativos selecionados ficarão fechados a qualquer solicitação de relatório feita por usuários. |
-      | [!UICONTROL **Restringido por**] | Escolha por quanto tempo as solicitações serão restringidas. É possível escolher as opções 1 minuto (padrão), 5 minutos, 10 minutos, 15 minutos ou 30 minutos. <!--double-check this--> <p>Não é possível remover uma restrição antecipadamente após defini-la.</p> |
+      | [!UICONTROL **Restrito para**] | Escolha por quanto tempo as solicitações serão restringidas. É possível escolher as opções 1 minuto (padrão), 5 minutos, 10 minutos, 15 minutos ou 30 minutos. <!--double-check this--> <p>Não é possível remover uma restrição antecipadamente após defini-la.</p> |
 
       {style="table-layout:auto"}
 

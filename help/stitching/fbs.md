@@ -5,10 +5,20 @@ solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
 exl-id: e5cb55e7-aed0-4598-a727-72e6488f5aa8
-source-git-commit: 2e2620bdc6875b13492013f4ec108bae0302a25a
+TQID: https://experienceleague.adobe.com/xqNEj5V-fQTo-8j5S9Ad-5ZezRjjr8kdt2Xmx0U8xDI
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '1797'
-ht-degree: 9%
+source-wordcount: 1902
+ht-degree: 82%
 
 ---
 
@@ -25,13 +35,13 @@ Você pode usar a compilação em campo ao usar o Customer Journey Analytics com
 
 ## IdentityMap
 
-A compilação em campo oferece suporte ao uso do [`identityMap` grupo de campos](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/schema/composition#identity) nos seguintes cenários:
+A compilação em campo oferece suporte ao uso do grupo de campos do [`identityMap`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/schema/composition#identity) nos seguintes cenários:
 
-- Uso da identidade primária em `identityMap` namespaces para definir a persistentID:
+- Uso da identidade principal em namespaces do `identityMap` para definir a persistentID:
    - Se várias identidades primárias forem encontradas em namespaces diferentes, as identidades nos namespaces serão classificadas lexicograficamente e a primeira identidade será selecionada.
    - Se várias identidades primárias forem encontradas em um único namespace, a primeira identidade primária lexicográfica disponível será selecionada.
 
-  No exemplo abaixo, os namespaces e as identidades resultam em uma lista de identidades primárias classificada e, por fim, na identidade selecionada.
+  No exemplo abaixo, os namespaces e as identidades resultam em uma lista ordenada de identidades primárias e, por fim, na identidade selecionada.
 
   <table style="table-layout:auto">
      <tr>
@@ -92,14 +102,14 @@ A compilação em campo oferece suporte ao uso do [`identityMap` grupo de campos
     </tr>
   </table>
 
-## Como funciona a compilação em campo
+## Como a compilação em campo funciona
 
 A compilação faz um mínimo de duas passagens de dados em um determinado conjunto de dados.
 
 - **Compilação em tempo real**: tenta compilar cada ocorrência (evento) à medida que elas chegam. As ocorrências de dispositivos que são *novos* para o conjunto de dados (nunca foram autenticadas) normalmente não são compiladas neste nível. As ocorrências de dispositivos já reconhecidos são compiladas imediatamente.
 
 - **Repetir compilação**: *repete* dados com base em identificadores exclusivos (IDs de pessoa). É nesse estágio que as ocorrências de dispositivos anteriormente desconhecidos (IDs persistentes) se tornam compiladas (para IDs de pessoa). Dois parâmetros determinam a repetição: **frequência** e **janela de pesquisa**. A Adobe oferece as seguintes combinações desses parâmetros:
-   - **Pesquisa diária em uma frequência diária**: os dados são repetidos todos os dias com uma janela de pesquisa de 24 horas. Essa opção tem a vantagem de que as repetições são muito mais frequentes, mas os perfis não autenticados devem se autenticar no mesmo dia em que visitam o site.
+   - **Pesquisa diária em uma frequência diária**: os dados são repetidos todos os dias com uma janela de pesquisa de 24 horas. Essa opção tem a vantagem de as repetições serem muito mais frequentes, mas as pessoas não autenticadas devem se autenticar no mesmo dia em que visitam o site.
    - **Pesquisa semanal em uma frequência semanal**: os dados são repetidos uma vez por semana com uma janela de pesquisa semanal (consulte [opções](overview.md#options)). Essa opção tem uma vantagem que permite que sessões não autenticadas tenham um tempo muito mais tolerante para autenticação. No entanto, os dados não compilados com menos de uma semana não são reprocessados até a próxima repetição semanal.
    - **Pesquisa quinzenal em uma frequência semanal**: os dados são repetidos uma vez por semana com uma janela de pesquisa quinzenal (consulte [opções](overview.md#)). Essa opção tem uma vantagem que permite que sessões não autenticadas tenham um tempo muito mais tolerante para autenticação. No entanto, os dados não compilados com menos de duas semanas não são reprocessados até a próxima repetição semanal.
    - **Pesquisa mensal em uma frequência semanal**: os dados são repetidos todas as semanas com uma janela de pesquisa mensal (consulte [opções](overview.md#options)). Essa opção tem uma vantagem que permite que sessões não autenticadas tenham um tempo muito mais tolerante para autenticação. No entanto, os dados não compilados com menos de um mês não são reprocessados até a próxima repetição semanal.
@@ -108,7 +118,7 @@ A compilação faz um mínimo de duas passagens de dados em um determinado conju
 
   >[!IMPORTANT]
   >
-  >O processo de descompilação, como parte das solicitações de privacidade, muda no início de 2025. O processo de descompilação atual recompila os eventos usando a versão mais recente de identidades conhecidas. Essa reatribuição de eventos para outra identidade pode ter consequências legais indesejáveis. Para solucionar essas preocupações, a partir de 2025, o novo processo de descompilação atualiza os eventos que são objeto da solicitação de privacidade com a ID persistente.
+  >O processo de descompilação, como parte das solicitações de privacidade, mudou no início de 2025. O processo de descompilação atual compila novamente os eventos usando a versão mais recente de identidades conhecidas. Essa reatribuição de eventos para outra identidade pode ter consequências legais indesejáveis. Para solucionar essas preocupações, a partir de 2025, o novo processo de descompilação atualiza os eventos que são objeto da solicitação de privacidade com a ID persistente.
   > 
 
 
@@ -122,35 +132,35 @@ A compilação em tempo real tenta compilar cada evento após a coleção em dis
 
 Considere o exemplo a seguir, em que Bob registra eventos diferentes como parte de um conjunto de dados de evento.
 
-*Dados como aparecem no dia em que são coletados:*
+*Dados conforme apresentados no dia da coleta:*
 
 | Evento | Carimbo de data e hora | ID persistente (ID do cookie) | ID da pessoa | ID resultante (após a compilação em tempo real) |
 |---|---|---|---|---|
-| 1 | 2023-05-12 12:01 | `246` ![SetaDireita](/help/assets/icons/ArrowRight.svg) | - | **`246`** |
-| 2 | 2023-05-12 12:02 | `246` | `Bob` ![SetaDireita](/help/assets/icons/ArrowRight.svg) | `Bob` |
-| 3 | 2023-05-12 12:03 | `246` | `Bob` ![SetaDireita](/help/assets/icons/ArrowRight.svg) | `Bob` ![Seta para baixo](/help/assets/icons/ArrowDown.svg) |
+| 1 | 2023-05-12 12:01 | `246` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | - | **`246`** |
+| 2 | 2023-05-12 12:02 | `246` | `Bob` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` |
+| 3 | 2023-05-12 12:03 | `246` | `Bob` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` ![ArrowDown](/help/assets/icons/ArrowDown.svg) |
 | 4 | 2023-05-12 12:04 | `246` | - | **`Bob`** |
-| 5 | 2023-05-12 12:05 | `246` | `Bob` ![SetaDireita](/help/assets/icons/ArrowRight.svg) | `Bob` ![Seta para baixo](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) |
+| 5 | 2023-05-12 12:05 | `246` | `Bob` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` ![Arrow Down](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowDown_18_N.svg) |
 | 6 | 2023-05-12 12:06 | `246` | - | **`Bob`** |
-| 7 | 2023-05-12 12:07 | `246` | `Bob` ![SetaDireita](/help/assets/icons/ArrowRight.svg) | `Bob` |
-| 8 | 2023-05-12 12:03 | `3579` ![SetaDireita](/help/assets/icons/ArrowRight.svg) | - | **`3579`** |
-| 9 | 2023-05-12 12:09 | `3579` ![SetaDireita](/help/assets/icons/ArrowRight.svg) | - | **`3579`** |
-| 10 | 2023-05-12 12:02 | `81911` ![SetaDireita](/help/assets/icons/ArrowRight.svg) | - | **`81911`** |
-| 11 | 2023-05-12 12:05 | `81911` | `Bob` ![SetaDireita](/help/assets/icons/ArrowRight.svg) | `Bob` ![Seta para baixo](/help/assets/icons/ArrowDown.svg) |
+| 7 | 2023-05-12 12:07 | `246` | `Bob` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` |
+| 8 | 2023-05-12 12:03 | `3579` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | - | **`3579`** |
+| 9 | 2023-05-12 12:09 | `3579` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | - | **`3579`** |
+| 10 | 2023-05-12 12:02 | `81911` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | - | **`81911`** |
+| 11 | 2023-05-12 12:05 | `81911` | `Bob` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` ![ArrowDown](/help/assets/icons/ArrowDown.svg) |
 | 12 | 2023-05-12 12:12 | `81911` | - | **`Bob`** |
 | | | **3 dispositivos** | | **4 pessoas**:<br/>`246`, `Bob`, `3579`, `81911` |
 
 Os eventos não autenticados e autenticados em novos dispositivos são contados como pessoas separadas (temporariamente). Eventos não autenticados em dispositivos reconhecidos são compilados em tempo real.
 
-A atribuição funciona quando a variável personalizada de identificação está vinculada a um dispositivo. No exemplo acima, todos os eventos, exceto o 1, 8, 9 e 10, são compilados em tempo real (todos eles usam o identificador `Bob`). A compilação em tempo real &quot;resolve&quot; a ID resultante para o evento 4, 6 e 12.
+A atribuição funciona quando a variável personalizada de identificação está vinculada a um dispositivo. No exemplo acima, todos os eventos, exceto os eventos 1, 8, 9 e 10, são compilados em tempo real (todos usam o identificador `Bob`). A compilação em tempo real &quot;resolve&quot; a ID resultante para o evento 4, 6 e 12.
 
-Os dados atrasados (dados com um carimbo de data e hora superior a 24 horas) são tratados com base no &quot;melhor esforço&quot;, priorizando a compilação de dados atuais para obter a mais alta qualidade.
+Os dados atrasados (dados com um carimbo de data e hora superior a 24 horas) são tratados com base no “melhor esforço”, priorizando a compilação de dados atuais para obter a mais alta qualidade.
 
 +++ 
 
-### Etapa 2: Repetir a compilação
+### Etapa 2: repetir a compilação
 
-Em intervalos regulares (uma vez por semana ou uma vez por dia, dependendo da janela de pesquisa escolhida), a repetição da compilação recalcula os dados históricos com base nos dispositivos que agora ela reconhece. Se um dispositivo enviar dados inicialmente sem autenticação e fizer logon, a repetição da compilação vinculará esses eventos não autenticados à pessoa correta.
+Em intervalos regulares (uma vez por semana ou uma vez por dia, dependendo da janela de pesquisa escolhida), repetir a compilação recalcula os dados históricos com base nos dispositivos que agora ele reconhece. Se um dispositivo enviar dados inicialmente sem estar autenticado e, em seguida, fizer logon, a repetição da compilação vincula esses eventos não autenticados à pessoa correta.
 
 +++ Detalhes
 
@@ -161,48 +171,48 @@ A tabela a seguir representa os mesmos dados acima, mas mostra números diferent
 | Evento | Carimbo de data e hora | ID persistente (ID do cookie) | ID da pessoa | ID resultante (após a compilação em tempo real) | ID resultante (após a repetição) |
 |---|---|---|---|---|---|
 | 1 | 2023-05-12 12:01 | `246` | - | `246` | **`Bob`** |
-| 2 | 2023-05-12 12:02 | `246` | `Bob` ![SetaDireita](/help/assets/icons/ArrowRight.svg) | `Bob` | `Bob` ![Seta para cima](/help/assets/icons/ArrowUp.svg) |
-| 3 | 2023-05-12 12:03 | `246` | `Bob` ![SetaDireita](/help/assets/icons/ArrowRight.svg) | `Bob` | Bob |
+| 2 | 2023-05-12 12:02 | `246` | `Bob` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` | `Bob` ![ArrowUp](/help/assets/icons/ArrowUp.svg) |
+| 3 | 2023-05-12 12:03 | `246` | `Bob` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` | Bob |
 | 4 | 2023-05-12 12:04 | `246` | - | **`Bob`** | `Bob` |
-| 5 | 2023-05-12 12:05 | `246` | `Bob` ![SetaDireita](/help/assets/icons/ArrowRight.svg) | `Bob` ![Seta para baixo](/help/assets/icons/ArrowDown.svg) | `Bob` |
+| 5 | 2023-05-12 12:05 | `246` | `Bob` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` ![ArrowDown](/help/assets/icons/ArrowDown.svg) | `Bob` |
 | 6 | 2023-05-12 12:06 | `246` | - | **`Bob`** | `Bob` |
-| 7 | 2023-05-12 12:07 | `246` | `Bob` ![SetaDireita](/help/assets/icons/ArrowRight.svg) | `Bob` | `Bob` |
-| 8 | 2023-05-12 12:03 | `3579` ![SetaDireita](/help/assets/icons/ArrowRight.svg) | - | **`3579`** | **`3579`** |
-| 9 | 2023-05-12 12:09 | `3579` ![SetaDireita](/help/assets/icons/ArrowRight.svg) | - | **`3579`** | **`3579`** |
+| 7 | 2023-05-12 12:07 | `246` | `Bob` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` | `Bob` |
+| 8 | 2023-05-12 12:03 | `3579` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | - | **`3579`** | **`3579`** |
+| 9 | 2023-05-12 12:09 | `3579` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | - | **`3579`** | **`3579`** |
 | 10 | 2023-05-12 12:02 | `81911` | - | `81911` | **`Bob`** |
-| 11 | 2023-05-12 12:05 | `81911` | `Bob` ![SetaDireita](/help/assets/icons/ArrowRight.svg) | `Bob` ![Seta para baixo](/help/assets/icons/ArrowDown.svg) | `Bob` ![Seta para cima](/help/assets/icons/ArrowUp.svg) |
+| 11 | 2023-05-12 12:05 | `81911` | `Bob` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` ![ArrowDown](/help/assets/icons/ArrowDown.svg) | `Bob` ![ArrowUp](/help/assets/icons/ArrowUp.svg) |
 | 12 | 2023-05-12 12:12 | `81911` | - | **`Bob`** | `Bob` |
 | | | **3 dispositivos** | | **4 pessoas**:<br/>`246`, `Bob`, `3579`, `81911` | **2 pessoas**:<br/>`Bob`, `3579` |
 
 {style="table-layout:auto"}
 
-A atribuição funciona quando a variável personalizada de identificação está vinculada a um dispositivo. No exemplo acima, o evento 1 e 10 são compilados como resultado da repetição, deixando apenas o evento 8 e o 9 não compilados. E reduzindo a métrica de pessoas (cumulativa) para 2.
+A atribuição funciona quando a variável personalizada de identificação está vinculada a um dispositivo. No exemplo acima, os eventos 1 e 10 são compilados como resultado da repetição, deixando apenas os eventos 8 e 9 não compilados. E reduzindo a métrica de pessoas (cumulativa) para 2.
 
 +++ 
 
-### Etapa 3: Solicitação de privacidade
+### Etapa 3: solicitação de privacidade
 
 Ao receber uma solicitação de privacidade, qualquer informação de identificador definida pelo processo de compilação para o valor de ID de pessoa é atualizada em todos os registros para um valor de ID persistente para o usuário sujeito à solicitação de privacidade.
 
 +++ Detalhes
 
-A tabela a seguir representa os mesmos dados acima, mas mostra o efeito que uma solicitação de privacidade para Bob tem nos dados após o processamento. As linhas em que Bob é autenticado são removidas (2, 3, 5, 7 e 11) juntamente com a remoção de Bob como uma ID de pessoa para outras linhas.
+A tabela a seguir representa os mesmos dados acima, mas mostra o efeito que uma solicitação de privacidade para Bob tem nos dados após o processamento. As linhas em que Bob é autenticado são removidas (2, 3, 5, 7 e 11) juntamente com a remoção de Bob como uma ID de pessoa nas outras linhas.
 
 *Os mesmos dados após uma solicitação de privacidade para Bob:*
 
 | Evento | Carimbo de data e hora | ID persistente (ID do cookie) | ID da pessoa | ID resultante (após a compilação em tempo real) | ID resultante (após a repetição) | ID da pessoa | ID resultante (após solicitação de privacidade) |
 |---|---|---|---|---|---|---|---|
 | 1 | 2023-05-12 12:01 | `246` | - | `246` | **`Bob`** | - | `246` |
-| 2 | 2023-05-12 12:02 | `246` | Bob ![SetaDireita](/help/assets/icons/ArrowRight.svg) | `Bob` | `Bob` ![Seta para Cima](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowUp_18_N.svg) | ![RemoverCírculo](/help/assets/icons/RemoveCircle.svg) | `246` |
-| 3 | 2023-05-12 12:03 | `246` | Bob ![SetaDireita](/help/assets/icons/ArrowRight.svg) | `Bob` ![Seta para baixo](/help/assets/icons/ArrowDown.svg) | `Bob` | ![RemoverCírculo](/help/assets/icons/RemoveCircle.svg) | `246` |
+| 2 | 2023-05-12 12:02 | `246` | Bob ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` | `Bob` ![Arrow Up](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ArrowUp_18_N.svg) | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) | `246` |
+| 3 | 2023-05-12 12:03 | `246` | Bob ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` ![ArrowDown](/help/assets/icons/ArrowDown.svg) | `Bob` | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) | `246` |
 | 4 | 2023-05-12 12:04 | `246` | - | **`Bob`** | `Bob` | - | `246` |
-| 5 | 2023-05-12 12:05 | `246` | Bob ![SetaDireita](/help/assets/icons/ArrowRight.svg) | `Bob` ![Seta para baixo](/help/assets/icons/ArrowDown.svg) | `Bob` | ![RemoverCírculo](/help/assets/icons/RemoveCircle.svg) | `246` |
+| 5 | 2023-05-12 12:05 | `246` | Bob ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` ![ArrowDown](/help/assets/icons/ArrowDown.svg) | `Bob` | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) | `246` |
 | 6 | 2023-05-12 12:06 | `246` | - | **`Bob`** | `Bob` | - | `246` |
-| 7 | 2023-05-12 12:07 | `246` | `Bob` ![SetaDireita](/help/assets/icons/ArrowRight.svg) | `Bob` | `Bob` | ![RemoverCírculo](/help/assets/icons/RemoveCircle.svg) | `246` |
-| 8 | 2023-05-12 12:03 | `3579` ![SetaDireita](/help/assets/icons/ArrowRight.svg) | - | **`3579`** | **`3579`** | - | `3579` |
-| 9 | 2023-05-12 12:09 | `3579` ![SetaDireita](/help/assets/icons/ArrowRight.svg) | - | **`3579`** | **`3579`** | - | `3579` |
+| 7 | 2023-05-12 12:07 | `246` | `Bob` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` | `Bob` | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) | `246` |
+| 8 | 2023-05-12 12:03 | `3579` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | - | **`3579`** | **`3579`** | - | `3579` |
+| 9 | 2023-05-12 12:09 | `3579` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | - | **`3579`** | **`3579`** | - | `3579` |
 | 10 | 2023-05-12 12:02 | `81911` | - | `81911` | **`Bob`** | - | `81911` |
-| 11 | 2023-05-12 12:05 | `81911` | `Bob` ![SetaDireita](/help/assets/icons/ArrowRight.svg) | `Bob` ![Seta para baixo](/help/assets/icons/ArrowDown.svg) | `Bob` ![Seta para cima](/help/assets/icons/ArrowUp.svg) | ![RemoverCírculo](/help/assets/icons/RemoveCircle.svg) | `81911` |
+| 11 | 2023-05-12 12:05 | `81911` | `Bob` ![ArrowRight](/help/assets/icons/ArrowRight.svg) | `Bob` ![ArrowDown](/help/assets/icons/ArrowDown.svg) | `Bob` ![ArrowUp](/help/assets/icons/ArrowUp.svg) | ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) | `81911` |
 | 12 | 2023-05-12 12:12 | `81911` | - | **`Bob`** | `Bob` | - | `81911` |
 | | | **3 dispositivos** | | **4 pessoas**:<br/>246, `Bob`, `3579`, `81911` | **2 pessoas**:<br/>Bob, `3579` |  | **3 pessoas**:<br/>`246`, `3579`, `81911` |
 
@@ -212,10 +222,10 @@ A tabela a seguir representa os mesmos dados acima, mas mostra o efeito que uma 
 
 Os seguintes pré-requisitos se aplicam especificamente à compilação em campo:
 
-- O conjunto de dados do evento no Adobe Experience Platform, ao qual você deseja aplicar a compilação, deve ter duas colunas que ajudem a identificar perfis:
+- O conjunto de dados do evento na Adobe Experience Platform, ao qual você deseja aplicar a compilação, deve ter duas colunas que ajudem a identificar perfis:
 
-   - Uma **ID persistente**, um identificador disponível em cada linha. Por exemplo, uma ID de visitante gerada por uma biblioteca AppMeasurement do Adobe Analytics ou uma ECID gerada pelo serviço de identidade da Adobe Experience Platform.
-   - Uma **ID de pessoa**, um identificador disponível em apenas algumas linhas. Por exemplo, um nome de usuário ou endereço de email com hash depois que um perfil é autenticado. Você pode usar praticamente qualquer identificador que desejar. A compilação considera esse campo como mantendo as informações reais da ID de pessoa. Para obter melhores resultados de compilação, uma ID de pessoa deve ser enviada nos eventos do conjunto de dados pelo menos uma vez para cada ID persistente. Se você planeja incluir esse conjunto de dados em uma conexão do Customer Journey Analytics, é preferível que os outros conjuntos de dados também tenham um identificador comum semelhante.
+   - Uma **ID persistente**, um identificador disponível em cada linha. Por exemplo, uma ID de visitante gerada por uma biblioteca AppMeasurement do Adobe Analytics ou uma ECID gerada pelo Adobe Experience Platform Identity Service.
+   - Uma **ID de pessoa**, um identificador disponível apenas em algumas linhas. Por exemplo, um nome de usuário ou endereço de email com hash quando um perfil é autenticado. Você pode usar praticamente qualquer identificador que desejar. A compilação considera que esse campo mantém as informações reais da ID de pessoa. Para obter melhores resultados de compilação, uma ID de pessoa deve ser enviada nos eventos do conjunto de dados pelo menos uma vez para cada ID persistente. Se você planeja incluir esse conjunto de dados em uma conexão do Customer Journey Analytics, é preferível que os outros conjuntos de dados também tenham um identificador comum semelhante.
 
 <!--
 - Both columns (persistent ID and person ID) must be defined as an identity field with an identity namespace in the schema for the dataset you want to stitch. When using identity stitching in Real-time Customer Data Platform, using the [`identityMap` field group](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/schema/composition#identity), you still need to add identity fields with an identity namespace. This identification of identity fields is required as Customer Journey Analytics stitching does not support the `identityMap` field group. When adding an identity field in the schema, while also using the `identityMap` field group, do not set the additional identity field as a primary identity. Setting an additional identity field as primary identity interferes with the `identityMap` field group used for Real-time Customer Data Platform.
@@ -226,12 +236,12 @@ Os seguintes pré-requisitos se aplicam especificamente à compilação em campo
 
 As seguintes limitações se aplicam especificamente à compilação em campo:
 
-- Os recursos atuais de rechaveamento são limitados a uma etapa (ID persistente para ID de pessoa). O rechaveamento de várias etapas (por exemplo, ID persistente para uma ID de pessoa e, em seguida, para outra ID de pessoa) não é suportado.
+- Os recursos atuais de rechaveamento são limitados a uma etapa (ID persistente para ID de pessoa). O rechaveamento de várias etapas (por exemplo, ID persistente para uma ID de pessoa e, em seguida, para outra ID de pessoa) não é aceito.
 - Se várias pessoas compartilharem um dispositivo e o número total de transições entre usuários exceder 50.000, o Customer Journey Analytics interromperá a compilação de dados para esse dispositivo.
 - Não há suporte para mapas de ID personalizados usados em sua organização.
-- A compilação diferencia maiúsculas e minúsculas. Para conjuntos de dados gerados por meio do conector de origem do Analytics, a Adobe recomenda revisar quaisquer regras VISTA ou regras de processamento que se aplicam ao campo de ID de pessoa. Essa revisão garante que nenhuma dessas regras introduza novos formulários da mesma ID. Por exemplo, você deve garantir que nenhuma regra VISTA ou de processamento introduza letras minúsculas no campo de ID de pessoa em apenas uma parte dos eventos.
+- A compilação diferencia maiúsculas e minúsculas. Para conjuntos de dados gerados por meio do conector de origem do Analytics, a Adobe recomenda revisar quaisquer regras VISTA ou regras de processamento que se aplicam ao campo de ID de pessoa. A revisão garante que nenhuma dessas regras introduza novas formas da mesma ID. Por exemplo, você deve garantir que nenhuma regra VISTA ou de processamento introduza letras minúsculas no campo de ID de pessoa em apenas uma parte dos eventos.
 - A compilação não combina nem concatena campos.
-- O campo de ID de pessoa deve conter um único tipo de ID (IDs de um único namespace). Por exemplo, o campo ID de pessoa não deve conter uma combinação de IDs de logon e IDs de email.
-- Se vários eventos ocorrerem com o mesmo carimbo de data e hora para a mesma ID persistente, mas com valores diferentes no campo de ID de pessoa, a compilação selecionará a ID com base na ordem alfabética. Portanto, se a ID persistente A tiver dois eventos com o mesmo carimbo de data e hora e um dos eventos especificar Bob e o outro especificar Ann, a compilação selecionará Ann.
+- O campo de ID de pessoa deve conter um único tipo de ID (ou seja, IDs de um único namespace). Por exemplo, o campo ID de pessoa não deve conter uma combinação de IDs de logon e IDs de email.
+- Se vários eventos ocorrerem com o mesmo carimbo de data e hora para a mesma ID persistente, mas com valores diferentes no campo de ID de pessoa, a compilação seleciona a ID por ordem alfabética. Portanto, se a ID persistente A tiver dois eventos com o mesmo carimbo de data e hora e um dos eventos especificar Bob e o outro especificar Ann, a compilação em campo escolherá Ann.
 - Tenha cuidado com cenários em que as IDs de pessoa contêm valores de espaço reservado, por exemplo `Undefined`. Consulte as [Perguntas frequentes](faq.md) para obter mais informações.
 - Não é possível usar o mesmo namespace para a ID persistente e a ID de pessoa. Os namespaces precisam ser mutuamente exclusivos.

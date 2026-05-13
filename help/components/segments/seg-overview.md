@@ -4,13 +4,27 @@ description: Entenda para que os filtros são usados e como criar um segmento si
 exl-id: 21183e98-6593-4b22-99c7-4a03231acfe9
 feature: Filters, Segments
 role: User
-source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
+TQID: https://experienceleague.adobe.com/omsyiimc8b3EsGvJYb0V-jHqOxUp-8S7fFQ8dXUGUxs
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '1474'
+source-wordcount: 1494
 ht-degree: 99%
 
 ---
-
 
 # Visão geral da segmentação
 
@@ -75,7 +89,7 @@ An example of a complex sequential segment if you want to find the persons that
 | The person went to the main landing page A, excluded the campaign page B, and then viewed the Product page C.| The person again went to the main landing page A, excluded the campaign page B, and went again to the Product page C, and then to a new page D. | The person entered and followed that same path as in the first and second visits, then excluded page F to go directly to a targeted product on page G. |
 -->
 
-## Containers de segmento {#containers}
+## Containers de segmentos {#containers}
 
 Os segmentos são baseados em uma hierarquia de nível de Pessoa, Sessão e Evento usando um modelo de container aninhado. Os containers aninhados permitem definir condições entre e dentro dos containers.
 
@@ -128,7 +142,7 @@ Os containers de pessoa podem incluir valores com base no histórico geral de um
 
 ### Container de sessão
 
-O container de sessão permite identificar as interações da página ou as interações do aplicativo móvel, campanhas ou conversões de uma sessão específica. O container de sessão é o mais usado porque captura comportamentos da sessão inteira depois de atender a regra. O container de sessão também permite definir quais sessões você deseja incluir ou excluir na criação e aplicação de um segmento. Ao definir um segmento com uma condição simples como `Page Name equals Checkout`, o container de sessão resulta em:
+O container de sessão permite identificar as interações da página ou as interações do aplicativo móvel, campanhas ou conversões de uma sessão específica. O container de sessão é o mais usado porque captura comportamentos da sessão inteira depois de atender a regra. O container de sessão também permite definir quais sessões você deseja incluir ou excluir na criação e aplicação de um segmento.  Ao definir um segmento com uma condição simples como `Page Name equals Checkout`, o container de sessão resulta em:
 
 - Todas as sessões em que uma página com o nome `Checkout` é visitada.
 - Todos os dados de evento dessas sessões.
@@ -146,7 +160,7 @@ Os containers de sessão incluem valores com base em eventos por sessão:
 - Métricas de participação.
 - Métricas alocadas de forma linear.
 
-As visualizações de dados no Customer Journey Analytics permitem determinar a duração de uma sessão e também quando uma nova sessão deve ser criada. Por exemplo, é possível definir uma nova sessão de aplicativo móvel toda vez que um usuário o inicia. Consulte [Configurações de sessão](/help/data-views/session-settings.md) para obter mais informações. 
+As visualizações de dados no Customer Journey Analytics permitem determinar a duração de uma sessão e também quando uma nova sessão deve ser criada. Por exemplo, é possível definir uma nova sessão de aplicativo móvel toda vez que um usuário o inicia. Consulte [Configurações de sessão](/help/data-views/session-settings.md) para obter mais informações.
 
 ### Container de evento
 
@@ -207,7 +221,7 @@ Traditional Analytics comes with numerous out-of-the-box templates and calculate
 >[!MORELIKETHIS]
 >
 >[Criar segmentos](seg-create.md)
->&#x200B;>[Construtor de segmentos](seg-builder.md)
->&#x200B;>[Segmentos rápidos](seg-quick.md)
->&#x200B;>[Segmentos sequenciais](seg-sequential-build.md)
->&#x200B;>[Gerenciar segmentos](seg-manage.md)
+>[Construtor de segmentos](seg-builder.md)
+>[Segmentos rápidos](seg-quick.md)
+>[Segmentos sequenciais](seg-sequential-build.md)
+>[Gerenciar segmentos](seg-manage.md)

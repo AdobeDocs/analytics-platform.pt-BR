@@ -5,9 +5,25 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
+TQID: https://experienceleague.adobe.com/90JULA8fFxPQSbVLHr3hJ8o5algJAfNz9SjjLFecyJc
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '10330'
+source-wordcount: 10330
 ht-degree: 89%
 
 ---
@@ -787,7 +803,7 @@ No caso de um conjunto de dados de pesquisa em uma conexão baseada em conta, vo
 |---|---|
 | **[!UICONTROL Chave]** | A chave a ser usada para um conjunto de dados de pesquisa. <p>Se um registro não contiver um valor da chave selecionada do conjunto de dados de pesquisa, ele será ignorado. |
 | **[!UICONTROL Tipo de chave correspondente]** | Selecione como unir os conjuntos de dados: com base nas opções **[!UICONTROL Corresponder por campo]** ou **[!UICONTROL Corresponder por container]**. Consulte [Corresponder por container de campo](/help/getting-started/cja-b2b-concepts-features.md#match-by-container-or-field) para obter mais informações. |
-| **[!UICONTROL Chave correspondente]** | A chave correspondente para entrar em um dos conjuntos de dados de evento. Se esta lista estiver vazia, provavelmente você não adicionou ou configurou um conjunto de dados de eventos. <br/><br/>Com base no **[!UICONTROL Tipo de chave correspondente]**, escolha o valor apropriado:<ul><li>**[!UICONTROL Corresponder por campo]**: ![Corresponder por campo](assets/match-by-field.png)<br/>Selecione um campo no menu suspenso **[!UICONTROL Chave correspondente]** para entrar com um dos conjuntos de dados de evento. Se esta lista estiver vazia, você provavelmente não adicionou nem configurou um conjunto de dados de evento.</li><li>**[!UICONTROL Corresponder por container]**: ![Corresponder por container](assets/match-by-container.png)<br/>Selecione um container do menu suspenso **[!UICONTROL Chave correspondente]** para entrar com um dos conjuntos de dados de evento. Os containers inclusos como parte da configuração da conexão determinam os containers disponíveis para seleção.</li></ul> |
+| **[!UICONTROL Chave correspondente]** | A chave correspondente para entrar em um dos conjuntos de dados de evento. Se esta lista estiver vazia, você provavelmente não adicionou nem configurou um conjunto de dados de evento. <br/><br/>Com base no **[!UICONTROL Tipo de chave correspondente]**, escolha o valor apropriado:<ul><li>**[!UICONTROL Corresponder por campo]**: ![Corresponder por campo](assets/match-by-field.png)<br/>Selecione um campo no menu suspenso **[!UICONTROL Chave correspondente]** para entrar com um dos conjuntos de dados de evento. Se esta lista estiver vazia, você provavelmente não adicionou nem configurou um conjunto de dados de evento.</li><li>**[!UICONTROL Corresponder por container]**: ![Corresponder por container](assets/match-by-container.png)<br/>Selecione um container do menu suspenso **[!UICONTROL Chave correspondente]** para entrar com um dos conjuntos de dados de evento. Os containers inclusos como parte da configuração da conexão determinam os containers disponíveis para seleção.</li></ul> |
 | **[!UICONTROL Campo de conta global]** | A ID de conta global a ser usada para a geração de relatórios baseados em contas. |
 
 

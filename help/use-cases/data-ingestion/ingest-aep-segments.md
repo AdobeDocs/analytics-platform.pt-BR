@@ -1,18 +1,32 @@
 ---
-title: Assimilar e use públicos-alvo da Experience Platform
+title: Ingerir e usar públicos-alvo da Experience Platform
 description: Explica como assimilar e usar públicos-alvo da Experience Platform no Customer Journey Analytics para análise adicional.
 solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: cb5a4f98-9869-4410-8df2-b2f2c1ee8c57
 role: Admin
-source-git-commit: a30b4286207eb72f7674bb4f6ba4cf0a1aecd280
+TQID: https://experienceleague.adobe.com/cyNvsdN-bSBY2VqCdxAZvWhyTx8--sOUMifbuYrZKTM
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '1588'
-ht-degree: 10%
+source-wordcount: 1680
+ht-degree: 13%
 
 ---
 
-# Assimilar e use públicos-alvo da Experience Platform
+# Ingerir e usar públicos-alvo da Experience Platform
 
 Esse caso de uso explora uma solução temporária para assimilar públicos da Experience Platform na Customer Journey Analytics. Esses públicos-alvo podem ter sido criados no Construtor de segmentos do Experience Platform, no Adobe Audience Manager ou em outras ferramentas e são armazenados no Perfil do cliente em tempo real. Os públicos-alvo consistem em um conjunto de IDs de perfil, juntamente com quaisquer atributos, eventos e muito mais aplicáveis. Você deseja trazer esses dados de público-alvo para a Customer Journey Analytics para análise adicional.
 
@@ -39,7 +53,7 @@ A solução provisória envolve as seguintes etapas:
 1. [Relatar e analisar (Interface do Customer Journey Analytics)](#report-and-analyze).
 
 
-### Selecionar públicos
+### Selecionar públicos-alvo
 
 A solução começa com a identificação de públicos-alvo que você deseja assimilar na Customer Journey Analytics.
 
@@ -84,7 +98,7 @@ curl -X POST \
 }'
 ```
 
-Onde:
+Em que:
 
 * `DATASET_NAME` é o nome amigável do conjunto de dados. Por exemplo, `Segment Export Job Dataset for CJA`.
 
@@ -94,7 +108,7 @@ Onde:
 ["@/dataSets/{DATASET_ID}"]
 ```
 
-Onde:
+Em que:
 
 * `DATASET_ID` é o identificador do conjunto de dados criado.
 
@@ -146,7 +160,7 @@ curl -X POST https://platform.adobe.io/data/core/ups/export/jobs \
 }'
 ```
 
-Em que 
+Em que
 
 * `COMMA_SEPARATED_LIST_OF_FULLY_QUALIFIED_FIELD_NAMES` pode ser algo como `_demoemea.identification.core.ecid, _demoemea.identification.core.email, _demoemea.identification.core.phoneNumber, person.gender, person.name.firstName, person.name.lastName`. Certifique-se de incluir pelo menos os campos relevantes (como a personID (email)) que deseja usar na Análise de Jornada do cliente.
 * `AUDIENCE_ID_x` são os identificadores de público-alvo dos públicos que você deseja exportar.
@@ -163,7 +177,7 @@ Em que
 }
 ```
 
-Em que 
+Em que
 
 * `EXPORT_JOB_ID` é o identificador do trabalho de exportação.
 
@@ -243,7 +257,7 @@ FROM (
 WHERE value.status = 'realized' AND (key = '{AUDIENCE_ID_1}' OR key = 'AUDIENCE_ID_2' OR key = 'AUDIENCE_ID_3')
 ```
 
-Onde:
+Em que:
 
 * `IDENTITY_TO_USE_AS_PERSON_ID` é um dos campos que você definiu como parte do trabalho de exportação. Por exemplo: `_demoemea.identification.core.email`.
 * `DATASET_TABLE_NAME` é o nome da tabela do conjunto de dados.
@@ -270,7 +284,7 @@ O resultado da consulta, no formato JSON, deve ser semelhante a:
 ]
 ```
 
-Onde:
+Em que:
 
 * `PERSON_ID_x` são os valores do identificador que você deseja usar como a ID de pessoa. Por exemplo, `john.doe@gmail.com` quando você usa email.
 * `AUDIENCE_ID_x` são os identificadores de público.
@@ -306,7 +320,7 @@ O JSON final deve ser semelhante a:
 ]
 ```
 
-Onde:
+Em que:
 
 * `TENANT_NAME` é o nome do locatário. Por exemplo: `_demoemea`.
 * `PERSON_ID_x` são os valores do identificador que você deseja usar como a ID de pessoa. Por exemplo, `john.doe@gmail.com` quando você usa email.
@@ -385,7 +399,7 @@ Na interface do Customer Journey Analytics:
 
    ![Conexão - Conjunto de dados com dados de público exportados](assets/connection-add-dataset.png)
 
-1. **[!UICONTROL Salve]** a conexão.
+1. Selecione **[!UICONTROL Salvar]** para salvar a conexão.
 
 +++
 

@@ -5,10 +5,23 @@ exl-id: 6ecbae45-9add-4554-8d83-b06ad016fea9
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: 0e9dc47b80db142801a94dcbf31470d99a610949
+TQID: https://experienceleague.adobe.com/qEgO-lqYk8ipVP99IBazrKAb7Jer-AN96-PY-f1KdPQ
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '1357'
-ht-degree: 28%
+source-wordcount: 1443
+ht-degree: 24%
 
 ---
 
@@ -39,7 +52,7 @@ Por exemplo, ao criar uma visualização de dados, você pode criar uma métrica
 1. Abra a seção **[!UICONTROL Incluir/Excluir Valores]** e especifique o seguinte:
    1. Habilitar **[!UICONTROL Definir inclusão/exclusão de valores]**.
    1. Selecione **[!UICONTROL Se todos os critérios forem atendidos]** de **[!UICONTROL Corresponder]**.
-   1. Especifique `confirmation`. O texto para **[!UICONTROL page_title]** indica que esta página está relacionada à colocação de um pedido. Depois de revisar todos os títulos de página em que esses critérios são atendidos, um `1` será contado para cada instância. O resultado é uma nova métrica (não uma métrica calculada). Uma métrica que tenha valores incluídos/excluídos pode ser usada em qualquer outra métrica. Essas métricas funcionam com atribuição, segmentos e em qualquer lugar que você puder usar as métricas padrão.
+   1. Especifique `confirmation`. O texto para **[!UICONTROL page_title]** indica que esta página está relacionada à colocação de um pedido. Depois de revisar todos os títulos de página em que esses critérios são atendidos, um `1` será contado para cada instância. O resultado é uma nova métrica (não uma métrica calculada). Uma métrica que tenha valores de inclusão/exclusão pode ser usada em qualquer outra métrica. Essas métricas funcionam com atribuição, segmentos e em qualquer lugar que você puder usar as métricas padrão.
 
    ![Dimension para métrica](../assets/string-to-metric.gif){width=100%}
 1. Você pode especificar ainda mais um modelo de atribuição para essa métrica, como [!UICONTROL Último contato], com uma [!UICONTROL Janela de pesquisa] de [!UICONTROL Sessão].
@@ -78,9 +91,9 @@ Por exemplo, use a funcionalidade de inclusão/exclusão nas Visualizações de 
 a. Em **[!UICONTROL Formato]**, selecione **[!UICONTROL Moeda]**.
 b. Em **[!UICONTROL Moeda]**, selecione **[!UICONTROL USD]**.
 c. Em **[!UICONTROL Incluir/Excluir valores]**, marque a caixa de seleção ao lado de **[!UICONTROL Definir valores de inclusão/exclusão]**.
-d. Em **[!UICONTROL Corresponder]**, selecione **[!UICONTROL Se todos os critérios forem atendidos]**.
-e. Em **[!UICONTROL Critérios]**, selecione **[!UICONTROL é maior ou igual a]**.
-f. Especifique `50` como o valor.
+d) Em **[!UICONTROL Corresponder]**, selecione **[!UICONTROL Se todos os critérios forem atendidos]**.
+e. Em **[!UICONTROL Critério]**, selecione **[!UICONTROL é maior ou igual a]**.
+f) Especifique `50` como o valor.
 
 Essas novas configurações permitem que você visualize somente a receita de alto valor e filtre qualquer valor abaixo de US$ 50.
 

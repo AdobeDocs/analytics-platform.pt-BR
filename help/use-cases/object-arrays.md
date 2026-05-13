@@ -5,10 +5,19 @@ exl-id: 59318da7-5408-4a9d-82aa-8bcbec7f7364
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
-source-git-commit: aff01f4fc3520d461ca800382cc24d8d948d9cbc
+TQID: https://experienceleague.adobe.com/0-w9vsmAOeIMa0nRpQiYf3q5152wIHd411sUDgTpCzM
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '489'
-ht-degree: 61%
+source-wordcount: 518
+ht-degree: 59%
 
 ---
 
@@ -76,7 +85,7 @@ Ao criar uma visualização de dados, as seguintes dimensões e métricas estão
    * produto : garantia : nome
    * produto : garantia : tipo
 * **Métricas:**
-   * produto : ordens
+   * produto : pedidos
    * produto : unidades
    * produto : receita
    * produto : garantia
@@ -242,7 +251,7 @@ Um pedido de produto existe sem um nome de garantia vinculado a ele, portanto, o
 +}
 ```
 
-Observe as ordens que não têm um nome vinculado a elas. Esses são os pedidos atribuídos ao item de dimensão “Não especificado”.
+Observe os pedidos que não têm um nome vinculado a eles. Esses são os pedidos atribuídos ao item de dimensão “Não especificado”.
 
 ### Combinar métricas
 

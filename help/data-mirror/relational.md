@@ -6,10 +6,25 @@ feature: Basics
 role: Admin
 badgePremium: label="Beta"
 exl-id: 17f72954-085c-46a8-bc28-6af0a4eb159a
-source-git-commit: cd3baec708f1811a7cbc37dfe0a9c3af75eb97c3
+TQID: https://experienceleague.adobe.com/DhV4VNrG4WR1iQP9VqjvV16iEpfShbBir7N1JfeRbCM
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+  - id: c38ed341-fab2-46df-9d72-88d8166edebb
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '2351'
-ht-degree: 14%
+source-wordcount: 2356
+ht-degree: 15%
 
 ---
 
@@ -127,7 +142,7 @@ Defina um esquema que modele esses dados. Para configurar o esquema:
 
 1. Na interface da Adobe Experience Platform, no painel à esquerda, selecione **[!UICONTROL Esquemas]** em **[!UICONTROL Gerenciamento de dados]**.
 
-1. Selecione **[!UICONTROL Criar esquema]**. 
+1. Selecione **[!UICONTROL Criar esquema]**.
 1. No menu suspenso, selecione **[!UICONTROL Relacional]**.
 1. Se você vir um pop-up com a opção para selecionar entre **[!UICONTROL Criar manualmente]** ou **[!UICONTROL Carregar um arquivo DDL]**:
    1. Selecione **[!UICONTROL Criar manualmente]**.
@@ -225,7 +240,7 @@ Na etapa **[!UICONTROL Autenticação]**, selecione:
 
    1. Selecione **[!UICONTROL Próximo]**.
 
-  Consulte a documentação do Experience Platform para obter detalhes sobre como conectar e autenticar quando você usa o [Azure Databricks](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/databases/databricks) ou o conector [Snowflake](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/databases/snowflake).
+  Consulte a documentação do Experience Platform para obter detalhes sobre como conectar e autenticar quando você usa o [Azure Databricks](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/databases/databricks) ou o conector do [Snowflake](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/databases/snowflake).
 
 
 ### Selecionar dados
@@ -279,7 +294,7 @@ Na etapa **[!UICONTROL Agendamento]**:
 1. Clique em **[!UICONTROL Avançar]** para continuar.
 
 
-### Revisão
+### Revisar
 
 Na etapa **[!UICONTROL Revisão]**.
 
@@ -351,7 +366,7 @@ Para criar a visualização de dados:
 
 4. Na etapa **[!UICONTROL Componentes]**:
 
-   1. Adicione qualquer campo de esquema e/ou componente padrão que você deseja incluir nas caixas de componentes **[!UICONTROL MÉTRICAS]** ou **[!UICONTROL DIMENSÕES]**. Adicione campos relevantes do conjunto de dados que contém os dados espelhados. Para acessar esses campos:
+   1. Adicione qualquer campo de esquema e/ou componente padrão que deseja incluir às caixas de componentes **[!UICONTROL MÉTRICAS]** ou **[!UICONTROL DIMENSÃO]**. Adicione campos relevantes do conjunto de dados que contém os dados espelhados. Para acessar esses campos:
 
       1. Selecione **[!UICONTROL Conjuntos de dados de evento]**.
       1. Selecione **[!UICONTROL Campos Adhoc e Relacionais]**.

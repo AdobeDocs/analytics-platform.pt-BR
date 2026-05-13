@@ -4,9 +4,20 @@ description: Traga dados gerados pela gestão de decisões do Adobe Journey Opti
 exl-id: fde45264-46cf-4c68-9872-7fb739748f21
 feature: Experience Platform Integration
 role: Admin
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+TQID: https://experienceleague.adobe.com/kSBDrh6xQ-vi59JbirhxURFLIiG3BNQWeBZFJgygaG8
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '701'
+source-wordcount: 753
 ht-degree: 100%
 
 ---
@@ -32,10 +43,10 @@ Selecione e configure os seguintes conjuntos de dados:
 
 | Conjunto de dados | Tipo de conjunto de dados | Configurações de conexão | Descrição |
 | --- | --- | --- | --- |
-| ODE DecisonEvents: _sandbox_ de decisão | Evento | ID da pessoa: `IdentityMap` | Contém dados gerados automaticamente para eventos de decisão da gestão de decisões. _Sandbox_ refere-se ao nome específico da sandbox. |
-| Conjunto de dados do evento de feedback de mensagem do Adobe Journey Optimizer | Evento | ID da pessoa: `IdentityMap` | Contém eventos de entrega de mensagens. |
-| Conjunto de dados de evento de experiência de rastreamento de email do Adobe Journey Optimizer | Evento | ID da pessoa: `IdentityMap` | Contém eventos de rastreamento de email. |
-| Conjunto de dados de evento de experiência de rastreamento de push do Adobe Journey Optimizer | Evento | ID da pessoa: `IdentityMap` | Contém eventos de rastreamento de push. |
+| ODE DecisonEvents: _sandbox_ de decisão | Evento | ID de pessoa: `IdentityMap` | Contém dados gerados automaticamente para eventos de decisão da gestão de decisões. _Sandbox_ refere-se ao nome específico da sandbox. |
+| Conjunto de dados do evento de feedback de mensagem do Adobe Journey Optimizer | Evento | ID de pessoa: `IdentityMap` | Contém eventos de entrega de mensagens. |
+| Conjunto de dados de evento de experiência de rastreamento de email do Adobe Journey Optimizer | Evento | ID de pessoa: `IdentityMap` | Contém eventos de rastreamento de email. |
+| Conjunto de dados de evento de experiência de rastreamento de push do Adobe Journey Optimizer | Evento | ID de pessoa: `IdentityMap` | Contém eventos de rastreamento de push. |
 | Conjunto de dados da entidade do Adobe Journey Optimizer | Pesquisa | Chave: `_id`<br>Chave correspondente: `_experience.decisioning.propositions.`<br>`scopeDetails.correlationID` | Contém classificações que associam metadados de jornada e campanha a todos os dados de evento do Adobe Journey Optimizer. |
 
 {style="table-layout:auto"}

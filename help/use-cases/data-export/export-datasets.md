@@ -5,10 +5,17 @@ solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 exl-id: b861f765-b18d-4be2-b4c7-c66186d37d99
-source-git-commit: 9fef1fddbb4b51efb9282e3ef13501bd498a4546
+TQID: https://experienceleague.adobe.com/0R5S0Bmx8nJxyCRFycmkEm0KN-43zlRYEDHdKSO-IR4
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '848'
-ht-degree: 2%
+source-wordcount: 1187
+ht-degree: 3%
 
 ---
 
@@ -30,11 +37,11 @@ Você pode exportar conjuntos de dados brutos do data lake na Experience Platfor
 
 Os seguintes destinos de armazenamento na nuvem são compatíveis:
 
-- [Armazenamento do Azure Data Lake Gen2](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/catalog/cloud-storage/adls-gen2)
-- [Zona de Aterrissagem de Dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone)
-- [Armazenamento na nuvem do Google](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/catalog/cloud-storage/google-cloud-storage)
+- [Azure Data Lake Storage Gen2](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/catalog/cloud-storage/adls-gen2)
+- [Data Landing Zone](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone)
+- [Google Cloud Storage](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/catalog/cloud-storage/google-cloud-storage)
 - [Amazon S3](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/catalog/cloud-storage/amazon-s3#changelog)
-- [Blob do Azure](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/catalog/cloud-storage/azure-blob#changelog)
+- [Azure Blob](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/catalog/cloud-storage/azure-blob#changelog)
 - [SFTP](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/catalog/cloud-storage/sftp#changelog)
 
 

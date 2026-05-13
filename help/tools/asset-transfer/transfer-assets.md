@@ -4,9 +4,21 @@ description: Saiba como transferir componentes de um usuário para outro
 role: Admin
 solution: Customer Journey Analytics
 exl-id: c5ed81ea-1d55-4193-9bb1-a2a93ebde91f
-source-git-commit: 3e521cb4ef532d57b9f408fc12dcf138f130f059
+TQID: https://experienceleague.adobe.com/jjqF5CYG0y7OfRA9oGihAQwXQCOW00gkiEwwbfH3jrU
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+  - id: e4a0bad2-b448-47f1-9fa6-222ebdb3b5b0
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: 856
 ht-degree: 98%
 
 ---
@@ -79,13 +91,13 @@ Há três resultados possíveis para uma transferência:
 
 - Serviços dependentes que causam falhas: a transferência de ativos interage com um serviço diferente para cada tipo de componente (por exemplo, problemas de rede, problemas de serviço downstream), portanto, isso pode causar uma falha parcial ou completa ou falhas intermitentes.
 
-- Componente ausente ou transferido por outro(a) admin: um componente foi excluído por outro usuário ou transferido por outro(a) admin para outra pessoa enquanto um trabalho de transferência de ativos ainda estava em andamento.
+- Componente ausente ou transferido por outro(a) admin: um componente foi excluído por outro usuário ou transferido por outro(a) admin para outra pessoa enquanto um processo de transferência de ativos ainda estava em andamento.
 
 - O corpo da API POST não é preenchido corretamente: um componente pode não ser enviado no corpo da API POST quando vários tipos de componentes são selecionados.
 
-- O usuário não existe: o usuário foi excluído durante a transferência ou se tornou inválido por outro motivo. Se o usuário se tornar inválido antes do início da transferência, a ferramenta detectará essa informação e não processará o trabalho. Se o usuário foi excluído durante a transferência, isso poderá causar falhas parciais.
+- O usuário não existe: o usuário foi excluído durante a transferência ou se tornou inválido por outro motivo. Se o usuário se tornar inválido antes do início da transferência, a ferramenta detectará essa informação e não executará o processo. Se o usuário foi excluído durante a transferência, isso poderá causar falhas parciais.
 
-- Falha de conexão/rede: a conexão cai no meio da transferência. Todos os lotes de trabalhos de transferência que já foram transmitidos para o back-end ainda serão processados até a conclusão, mas o usuário não verá a mensagem de resultado da transferência com um resumo das tarefas bem-sucedidas e das que falharam.
+- Falha de conexão/rede: a conexão cai no meio da transferência. Todos os lotes de processos de transferência que já foram transmitidos para o back-end ainda serão processados até a conclusão, mas o usuário não verá a mensagem de resultado da transferência com um resumo das tarefas bem-sucedidas e das que falharam.
 
 - Guia do navegador fechada durante a transferência: no caso de transferências muito grandes, se a guia do navegador fechar ou a navegação pela página for interrompida durante a transferência, somente as solicitações de rede feitas antes disso ocorrer transferirão corretamente os ativos. Se o usuário navegar de volta para a página, a mensagem de status de resposta que indica quais ativos foram transferidos e quais não foram não será exibida.
 

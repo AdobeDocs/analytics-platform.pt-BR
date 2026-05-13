@@ -4,9 +4,19 @@ title: Usar relatório em tempo real
 feature: Real-time Reporting
 role: User
 exl-id: 6e7dba80-5fb9-4554-b989-85eb54a4bd6a
-source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
+TQID: https://experienceleague.adobe.com/tQgkfejYepjtgY4eN6cmT4K49I8VUb6les1abWXGGa0
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: 239
 ht-degree: 12%
 
 ---

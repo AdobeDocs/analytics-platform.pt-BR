@@ -4,9 +4,23 @@ title: Erros e solução de problemas
 feature: Workspace Basics
 exl-id: 792c3b2e-bd24-4e98-b9ea-983c1189d52e
 role: User
-source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
+TQID: https://experienceleague.adobe.com/sRztp43YkOt8oCDqPJH17s5jc9ukMa1NJsl9ZpOY-MQ
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2:
+  - id: a8b1c240-f315-46e3-b813-f545c4279dd1
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: 588
 ht-degree: 100%
 
 ---
@@ -22,7 +36,7 @@ Estas são algumas mensagens de erro comuns que você poderá ver ao usar o Anal
 | Mensagem de erro | Por que o erro ocorre? | Otimização |
 | --- | --- | --- |
 | [!UICONTROL A visualização dos dados está apresentando um volume excessivo de relatórios. Tente novamente mais tarde.] | Sua organização está tentando executar muitas solicitações simultâneas em uma exibição de dados específica. Os fatores que contribuem para esse erro são solicitações de API, projetos agendados, relatórios agendados, alertas agendados e usuários simultâneos que criam solicitações de relatórios. | Distribua as solicitações e os cronogramas na exibição de dados de forma mais uniforme ao longo do dia.<p>Admins podem usar o [Gerenciador de atividades de relatórios para identificar e cancelar solicitações](/help/reporting-activity-manager/reporting-activity-overview.md) que estão consumindo a capacidade de gerar relatórios.</p> |
-| [!UICONTROL Este relatório é complexo demais. Confira as práticas recomendadas para criar relatórios do Analysis Workspace.] | Sua solicitação de relatório é muito grande e não pode ser executada. Os fatores que contribuem para esse erro são o tempo limite devido à complexidade da solicitação. | Simplifique sua solicitação. Por exemplo, reduza o intervalo de datas, simplifique os critérios de segmento ou remova algumas colunas ou linhas da tabela. Considere também dividir a tabela em solicitações separadas. |
+| [!UICONTROL Este relatório é complexo demais. Confira as práticas recomendadas para criar relatórios do Analysis Workspace.] | Sua solicitação de relatório é muito grande e não pode ser executada. Os fatores que contribuem para esse erro são o tempo-limite devido à complexidade da solicitação. | Simplifique sua solicitação. Por exemplo, reduza o intervalo de datas, simplifique os critérios de segmento ou remova algumas colunas ou linhas da tabela. Considere também dividir a tabela em solicitações separadas. |
 | [!UICONTROL A visualização de dados está excedendo sua capacidade de relatórios no momento. Simplifique a solicitação ou tente novamente mais tarde.] | Sua organização está tentando executar muitas solicitações simultâneas em uma exibição de dados específica. Os fatores que contribuem para esse erro são solicitações de API, projetos agendados e usuários simultâneos que criam solicitações de relatórios. | Distribua as solicitações e os cronogramas na exibição de dados de forma mais uniforme ao longo do dia. |
 | [!UICONTROL Ocorreu um erro de sistema. Registre uma solicitação junto ao Atendimento ao cliente em **[!UICONTROL Ajuda > Enviar tíquete de suporte]** e inclua o código de erro.] | A Adobe está enfrentando um problema que precisa ser resolvido. | Envie o código de erro ao Atendimento ao cliente. |
 | [!UICONTROL Erro 500: Falha ao carregar a página] | Problemas com a rede local, como [configurações de firewall](/help/technotes/ip-addresses.md) da empresa, contribuem para esse erro. Além disso, a Adobe pode estar enfrentando um problema que precisa ser resolvido. | Tente fazer logon novamente após alguns minutos. Se o problema persistir, envie o código de ID da instância do EIM para o Atendimento ao cliente. |

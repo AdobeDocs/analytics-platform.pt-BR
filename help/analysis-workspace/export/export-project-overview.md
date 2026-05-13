@@ -5,9 +5,16 @@ title: Como exportar dados do projeto
 feature: Curate and Share
 exl-id: 3d467050-4bf0-4bdb-b7d2-eba67fbd526d
 role: User
-source-git-commit: 50b82943d4c59f612240ffc8d83a8a08f09b8331
+TQID: https://experienceleague.adobe.com/THoHVmp3vbNeG4C9teqfWmp8mpaHGBsda-zKSFaF8Is
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: 299
 ht-degree: 100%
 
 ---
@@ -22,7 +29,7 @@ As seções a seguir descrevem os tipos de arquivo compatíveis, os vários mét
 
 Você pode exportar relatórios do Customer Journey Analytics como um arquivo PDF, CSV ou JSON.
 
-* **PDF:** fornece uma maneira fácil de compartilhar dados visuais com as partes interessadas. Arquivos PDF contêm todas as tabelas e visualizações exibidas (visíveis) no projeto. 
+* **PDF:** fornece uma maneira fácil de compartilhar dados visuais com as partes interessadas. Arquivos PDF contêm todas as tabelas e visualizações exibidas (visíveis) no projeto.
 
 * **CSV:** permite exibir dados brutos em um aplicativo de planilhas, como o Excel. Arquivos CSV contêm dados de texto sem formatação.
 

@@ -6,13 +6,29 @@ feature: Basics
 role: User, Admin
 badgePremium: label="B2B Edition"
 exl-id: df2cc922-d214-49b9-8fdb-443cc1dac05b
-source-git-commit: a9c22cfd7077fd9e1ac4b9ea4ec0e016e9d2425b
+TQID: https://experienceleague.adobe.com/pXiDvk--5tAJYGj8lfq7KQfVLQqVOePbBZqCXT10rZ0
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '1468'
+source-wordcount: 1485
 ht-degree: 2%
 
 ---
-
 
 # Conceitos e recursos do B2B edition
 
@@ -55,7 +71,7 @@ A hierarquia e os relacionamentos entre os contêineres são predeterminados. Op
 | Conta | Uma empresa que é um cliente ou um cliente potencial de seu negócio. A empresa pode ser uma subsidiária ou divisão de uma organização maior. Conta representa a organização para a qual você está vendendo e que deseja rastrear nesse nível de organização. |
 | Conta global (opcional) | A principal empresa-mãe de um grupo de empresas relacionadas. Uma conta global não tem uma empresa principal, mas pode ter subsidiárias ou divisões pertencentes à conta global. Quando você tem o contêiner de Conta global configurado em sua conexão, uma conta que não tem pai ou subsidiárias deve ser listada nos campos conta e conta global. |
 | Oportunidade (opcional) | Uma coleção de produtos e serviços que são vendidos juntos. Uma oportunidade frequentemente envolvia várias etapas do ciclo de vendas até o fechamento da venda.<br>Você usaria os dados para medir a progressão da oportunidade por meio do funnel de vendas. Por exemplo, um relatório que fornece detalhes sobre as principais oportunidades que passaram do estágio 3 para o estágio 4. |
-| Grupo de compras (opcional) | Uma coleção de pessoas em uma organização que está envolvida no processo de tomada de decisão para comprar um produto ou serviço. <br/>Você usaria os dados do grupo de compras para acompanhar grupos de compras através do gerenciamento de campanhas. Por exemplo, crie um segmento de público-alvo de grupos-chave de compra.<br/> Provavelmente você deseja realizar uma pesquisa a partir do grupo de compras para os dados do perfil, para poder relatar as pessoas de um grupo de compras. |
+| Grupo de compras (opcional) | Uma coleção de pessoas em uma organização que está envolvida no processo de tomada de decisão para comprar um produto ou serviço. <br/>Você usaria os dados do grupo de compras para acompanhar grupos de compras através do gerenciamento de campanhas. Por exemplo, crie um segmento de público-alvo de grupos-chave de compra.<br/> É provável que você queira uma pesquisa do grupo de compras para os dados do perfil, de modo que possa relatar as pessoas de um grupo de compras. |
 | Pessoa | Um indivíduo, geralmente identificado por um endereço de e-mail exclusivo que interagiu com a empresa. <br/>Você usaria os dados do perfil para identificar as pessoas que trabalham em uma conta. Por exemplo: direcione a todas as pessoas em uma conta que se inscreveram para uma conferência. |
 
 >[!IMPORTANT]
@@ -87,7 +103,7 @@ O B2B do Customer Journey Analytics distingue entre os seguintes tipos de dados 
 | Tipo de dados | Séries cronológicas | Registros de contêiner | Registros de campo |
 |---|---|---|---|
 | **Conjuntos de dados** | **Conjuntos de dados de eventos**<br/> Por exemplo:<ul><li>Análise digital</li><li>Eventos do CRM</li><li>Eventos presenciais</li><li>Dados da central de atendimento</li></ul> | **Conjuntos de dados de perfil**<br/> Por exemplo:<ul><li>Registros CRM</li><li>Registros B2B do AJO</li><li>Registros da CDP</li><ul> | **Classificações**<br/> Por exemplo:<ul><li>Registros de campanha</li><li>Registros da lista de marketing</li><li>Metadados de conteúdo</li><li>Registros de produto</li></ul> |
-| Requisitos | **Carimbo de data/hora**<br> Todos os registros precisam:<ul><li>ID da Conta</li><li>ID de conta global (opcional)</li></ul> | **ID da conta**<br> Os registros precisam de uma ID de contêiner, como:<ul><li>Conta</li><li>Pessoa</li><li>Oportunidade</li><li>Grupo de compra</li></ul> | **Chave correspondente**<br> Os registros precisam de uma ID contida em um contêiner ou conjunto de dados de evento, como:<ul><li>ID da campanha</li><li>ID de conteúdo</li><li>Identificação do produto</li></ul> |
+| Requisitos | **Carimbo de data/hora**<br> Todos os registros precisam:<ul><li>ID da conta</li><li>ID de conta global (opcional)</li></ul> | **ID da conta**<br> Os registros precisam de uma ID de contêiner, como:<ul><li>Conta</li><li>Pessoa</li><li>Oportunidade</li><li>Grupo de compra</li></ul> | **Chave correspondente**<br> Os registros precisam de uma ID contida em um contêiner ou conjunto de dados de evento, como:<ul><li>ID da campanha</li><li>ID de conteúdo</li><li>Identificação do produto</li></ul> |
 
 {style="table-layout:fixed"}
 

@@ -5,10 +5,23 @@ title: Configurar contas de exportação na nuvem
 feature: Components
 exl-id: 7c9d100f-0dbd-4dd2-b20b-d2ee117f1b7a
 role: User, Admin
-source-git-commit: 25f46c50b6578026ff3aaae5019306bdcf82f211
+TQID: https://experienceleague.adobe.com/RJMRWr4ooIKHzfZ9auhh2hUvequxGTodCL4ba5ScoDg
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '2242'
-ht-degree: 31%
+source-wordcount: 2473
+ht-degree: 34%
 
 ---
 
@@ -220,7 +233,7 @@ Para obter informações sobre como gerenciar contas existentes, incluindo exibi
    |---------|----------|
    | [!UICONTROL **ID do aplicativo**] | Copie essa ID do aplicativo do Azure que você criou. No Microsoft Azure, essas informações se localizam na guia **Visão geral** do aplicativo. Para obter mais informações, consulte a [documentação do Microsoft Azure sobre como registrar um aplicativo na plataforma de identidade da Microsoft](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
    | [!UICONTROL **ID do locatário**] | Copie essa ID do aplicativo do Azure que você criou. No Microsoft Azure, essas informações se localizam na guia **Visão geral** do aplicativo. Para obter mais informações, consulte a [documentação do Microsoft Azure sobre como registrar um aplicativo na plataforma de identidade da Microsoft](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). |
-   | [!UICONTROL **URI do cofre de chaves**] | <p>O caminho para o URI do SAS no Azure Key Vault. Para configurar o Azure SAS, é necessário armazenar um URI do SAS como um segredo usando o Azure Key Vault. Para obter informações, consulte a [documentação do Microsoft Azure sobre como definir e recuperar um segredo do cofre de chaves do Azure](https://learn.microsoft.com/en-us/azure/key-vault/secrets/quick-create-portal?source=recommendations).</p><p>Depois que o URI do cofre de chaves for criado:<ul><li>Adicione uma política de acesso no cofre de chaves para conceder permissão ao aplicativo do Azure que você criou.<p>Para obter informações, consulte a [documentação do Microsoft Azure sobre como atribuir uma política de acesso do cofre de chaves](https://learn.microsoft.com/pt-br/azure/key-vault/general/assign-access-policy?tabs=azure-portal).</p><p>Ou</p><p>Se quiser conceder uma função de acesso diretamente sem criar uma política de acesso, consulte a [documentação do Microsoft Azure sobre como atribuir funções do Azure com o portal do Azure](https://learn.microsoft.com/pt-br/azure/role-based-access-control/role-assignments-portal). Isso adiciona a atribuição de função para a ID do aplicativo acessar o URI do cofre de chaves. </p></li><li>Verifique se a ID do Aplicativo recebeu a função interna `Key Vault Certificate User` para acessar o URI do cofre de chaves.<p>Para obter mais informações, consulte [Funções integradas do Azure](https://learn.microsoft.com/pt-br/azure/role-based-access-control/built-in-roles).</p></li></ul> |
+   | [!UICONTROL **URI do cofre de chaves**] | <p>O caminho para o URI do SAS no Azure Key Vault.  Para configurar o Azure SAS, é necessário armazenar um URI do SAS como um segredo usando o Azure Key Vault. Para obter informações, consulte a [documentação do Microsoft Azure sobre como definir e recuperar um segredo do cofre de chaves do Azure](https://learn.microsoft.com/en-us/azure/key-vault/secrets/quick-create-portal?source=recommendations).</p><p>Depois que o URI do cofre de chaves for criado:<ul><li>Adicione uma política de acesso no cofre de chaves para conceder permissão ao aplicativo do Azure que você criou.<p>Para obter informações, consulte a [documentação do Microsoft Azure sobre como atribuir uma política de acesso do cofre de chaves](https://learn.microsoft.com/pt-br/azure/key-vault/general/assign-access-policy?tabs=azure-portal).</p><p>Ou</p><p>Se quiser conceder uma função de acesso diretamente sem criar uma política de acesso, consulte a [documentação do Microsoft Azure sobre como atribuir funções do Azure com o portal do Azure](https://learn.microsoft.com/pt-br/azure/role-based-access-control/role-assignments-portal). Isso adiciona a atribuição de função para a ID do aplicativo acessar o URI do cofre de chaves. </p></li><li>Verifique se a ID do Aplicativo recebeu a função interna `Key Vault Certificate User` para acessar o URI do cofre de chaves.<p>Para obter mais informações, consulte [Funções integradas do Azure](https://learn.microsoft.com/pt-br/azure/role-based-access-control/built-in-roles).</p></li></ul> |
    | [!UICONTROL **Nome secreto do cofre de chaves**] | O nome secreto que você criou ao adicionar o segredo ao cofre de chaves do Azure. No Microsoft Azure, essas informações se localizam no cofre de chaves que você criou, nas páginas de configurações do **cofre de chaves**. Para obter mais informações, consulte a [documentação do Microsoft Azure sobre como definir e recuperar um segredo do cofre de chaves do Azure](https://learn.microsoft.com/en-us/azure/key-vault/secrets/quick-create-portal?source=recommendations). |
    | [!UICONTROL **Segredo da conta de localização**] | Copie o segredo do aplicativo do Azure que você criou. No Microsoft Azure, essas informações se localizam na guia **Certificados e segredos** do aplicativo. Para obter mais informações, consulte a [documentação do Microsoft Azure sobre como registrar um aplicativo com a Microsoft identity platform](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). <!-- need to grant permission to the bucket. Jun will send info on where that is documented) --> |
 

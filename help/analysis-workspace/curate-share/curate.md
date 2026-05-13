@@ -5,9 +5,24 @@ title: Preparar projetos
 feature: Curate and Share
 exl-id: f9636191-8414-458c-9881-8c03f3d45efb
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+TQID: https://experienceleague.adobe.com/FX7KMzyOtrWzD-RUT-iEQZvJslmaes8dej76Jbj79OA
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+subfeature_v2:
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: 518
 ht-degree: 100%
 
 ---
@@ -25,7 +40,7 @@ A preparação permite limitar os componentes (dimensões, métricas, segmentos,
 Os componentes usados no projeto serão adicionados automaticamente.
 Se um projeto tiver várias visualizações de dados, você verá um destino de preparação para cada visualização de dados do projeto.
 1. (Opcional) Para adicionar outros componentes, arraste os que deseja compartilhar do painel esquerdo até a zona de destino **[!UICONTROL Preparar componentes]** da visualização de dados.
-1. Selecione **[!UICONTROL Concluído]**. 
+1. Selecione **[!UICONTROL Concluído]**.
 
 <!--
 Curation can also be applied from the [!UICONTROL Share] menu by selecting **[!UICONTROL Curate and Share]**. This option automatically curates the project to the components in use in the project. You can add additional components following the steps above.
@@ -42,7 +57,7 @@ Para remover a curadoria do projeto e restaurar o conjunto completo de component
 
 1. Clique em **[!UICONTROL Compartilhar]** > **[!UICONTROL Preparar dados do projeto]**.
 1. Clique em **[!UICONTROL Remover preparação]**.
-1. Selecione **[!UICONTROL Concluído]**. 
+1. Selecione **[!UICONTROL Concluído]**.
 
 ## Opções de preparação de componentes
 

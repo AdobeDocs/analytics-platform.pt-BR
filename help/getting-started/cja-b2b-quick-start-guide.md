@@ -6,13 +6,26 @@ feature: Basics
 role: User, Admin
 badgePremium: label="B2B Edition"
 exl-id: ff8d419e-5cc6-4e1b-8cf8-9dbaa8054179
-source-git-commit: 3c13ae26a9ef48454467fc21b8faaa9e078c7f9f
+TQID: https://experienceleague.adobe.com/SjixkRCOmeUYuhZCVO7-7tLHalpnXO6QCVE1BiG9h2E
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+subfeature_v2:
+  - id: a67cb189-a535-41f6-afa2-448f39c4759f
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '396'
-ht-degree: 100%
+source-wordcount: 431
+ht-degree: 88%
 
 ---
-
 
 # Guia de início rápido da B2B Edition
 
@@ -33,9 +46,9 @@ Os seguintes pré-requisitos se aplicam na implementação do Customer Journey A
 | Tarefa | Detalhes |
 | --- | --- |
 | **Etapa 1: enviar dados B2B para a Experience Platform** | Esta etapa, realizada na Experience Platform, envolve várias subetapas:<ul><li>**Etapa 1a: preparar o esquema de dados**: use o [Adobe Experience Data Model (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=pt-BR) para padronizar dados B2B e [definir esquemas](https://experienceleague.adobe.com/pt-br/docs/experience-platform/rtcdp/schemas/b2b) para seus dados B2B.</li><li>**Etapa 1b: criar um conjunto de dados com base no esquema**: os dados na Platform consistem em conjuntos de dados, como dados de conta, dados de oportunidade, dados de grupos de compra, dados de campanha, dados de lista de marketing, conjuntos de dados de email, conjuntos de dados de CRM, conjuntos de dados de POS e muito mais. Cada conjunto de dados consiste de um esquema e lotes de dados. Você pode [criar um conjunto de dados na Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-datasets.html?lang=pt-BR).</li><li>**Etapa 1c: assimilar dados na Experience Platform**: você tem [várias opções](https://experienceleague.adobe.com/pt-br/docs/experience-platform/ingestion/home).</li></ul> |
-| **Etapa 2: Criar conexões entre conjuntos de dados da plataforma e do Customer Journey Analytics** | Uma conexão permite integrar conjuntos de dados da Adobe Experience Platform ao Espaço de trabalho. Para gerar relatórios sobre conjuntos de dados da Experience Platform, primeiro você precisa estabelecer uma conexão entre os conjuntos de dados na Experience Platform e no Workspace. Você tem outras opções ao configurar uma conexão com o B2B Edition. <br>Consulte [Criar ou editar uma conexão](/help/connections/create-connection.md). |
-| **Etapa 3: criar visualizações de dados** | Uma visualização de dados é uma visualização *filtrada* dos dados. É possível criar visualizações de dados diferentes para a mesma conexão, com configurações diferentes para o tempo-limite da visita, atribuição etc. É possível criar várias visualizações de dados para um único conjunto de dados. Você tem mais opções ao configurar uma visualização de dados com o B2B Edition.<br>Consulte [Criar uma visualização de dados](/help/data-views/create-dataview.md). |
-| **Etapa 4: Relatório dos dados entre canais no Espaço de trabalho** | Depois de criar conexões e visualizações de dados, analise os dados B2B que você trouxe usando o potencial e a flexibilidade do Analysis Workspace.<br>Consulte [Fazer análise básica](/help/analysis-workspace/perform-basic-analysis.md) e [Fazer análise avançada](/help/analysis-workspace/perform-adv-analysis.md). |
+| **Etapa 2: Criar conexões entre conjuntos de dados da plataforma e do Customer Journey Analytics** | Uma conexão permite integrar conjuntos de dados da Adobe Experience Platform ao Espaço de trabalho. Para criar relatórios sobre conjuntos de dados da Experience Platform, primeiro é necessário estabelecer uma conexão entre os conjuntos de dados na Experience Platform e no Espaço de trabalho. Você tem outras opções ao configurar uma conexão com o B2B Edition. <br>Consulte [Criar ou editar uma conexão](/help/connections/create-connection.md). |
+| **Etapa 3: Criar visualizações de dados** | Uma visualização de dados é uma visualização *filtrada* dos dados. É possível criar visualizações de dados diferentes para a mesma conexão, com configurações diferentes para o tempo-limite da visita, atribuição etc. É possível criar várias visualizações de dados para um único conjunto de dados. Você tem opções adicionais ao configurar uma visualização de dados com a B2B edition.<br>Consulte [Criar uma visualização de dados](/help/data-views/create-dataview.md). |
+| **Etapa 4: relatório dos dados entre canais no Workspace** | Depois de criar conexões e visualizações de dados, analise os dados B2B que você trouxe usando a eficiência e a flexibilidade do Analysis Workspace.<br>Consulte [Fazer análise básica](/help/analysis-workspace/perform-basic-analysis.md) e [Fazer análise avançada](/help/analysis-workspace/perform-adv-analysis.md). |
 
 <!--
 

@@ -6,9 +6,21 @@ feature: Basics
 role: Admin
 badgePremium: label="Beta"
 exl-id: f40e1263-1f4a-416c-a045-15fbe68ce509
-source-git-commit: dc3aa31c280c1a8ee8a0187edeca9bd34a2c9e2e
+TQID: https://experienceleague.adobe.com/DQPOxMBENhGi4lgQyyBeu4lla2LDw1Ag2vvwp5befaU
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+  - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+source-git-commit: 1d292cb0c123e41553a85cd0579ef30b7ab3a64c
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: 447
 ht-degree: 4%
 
 ---

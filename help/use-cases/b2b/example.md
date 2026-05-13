@@ -5,10 +5,22 @@ solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: e8ebf5e7-0b80-4d46-8a5f-b7ae832eda4f
 role: User
-source-git-commit: a133f60e66b34a851d2e8e1c0a853cdbc1f8d51f
+TQID: https://experienceleague.adobe.com/vtwD-kgpmITrgGmc3SsY-xLkukMLtfwiyDWqc-OAQsI
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '1373'
-ht-degree: 6%
+source-wordcount: 1417
+ht-degree: 8%
 
 ---
 
@@ -99,8 +111,8 @@ Você pode, por exemplo, adicionar os seguintes componentes à visualização de
 |---|---|---|---|
 | Receita anual da conta | Conjunto de dados da conta B2B | Duplo | accountOrganization.annualRevenue.amount |
 | Número de funcionários | Conjunto de dados da conta B2B | Número inteiro | accountOrganization.numberOfEmployees |
-| Custo Efetivo da Campanha | Conjunto de dados da campanha B2B | Duplo | actualCost.amount |
-| Custo orçado da campanha | Conjunto de dados da campanha B2B | Duplo | budgetedCost.amount |
+| Custo Efetivo da Campanha | Conjunto de dados da campanha B2B | Duplo | atualCost.amount |
+| Custo orçado da campanha | Conjunto de dados da campanha B2B | Duplo | budgetCost.amount |
 | Receita de oportunidade esperada | Conjunto de dados de oportunidade B2B | Duplo | expectedRevenue.amount |
 | Receita esperada da campanha | Conjunto de dados da campanha B2B | Duplo | expectedRevenue.amount |
 | Valor da oportunidade | Conjunto de dados de oportunidade B2B | Duplo | opportunityAmount.amount |
@@ -118,7 +130,7 @@ Você pode, por exemplo, adicionar os seguintes componentes à visualização de
 |---|---|---|---|
 | Nome da conta | Conjunto de dados da conta B2B | String | accountName |
 | Nome da campanha | Conjunto de dados da campanha B2B | String | campaignName |
-| Nome do canal | Conjunto de dados da campanha B2B | String | channelName |
+| Nome do Canal | Conjunto de dados da campanha B2B | String | channelName |
 | País | Conjunto de dados da conta B2B | String | accountBillingAddress.country |
 | Nome da Categoria de Previsão | Conjunto de dados de oportunidade B2B | String | forecastCategoryName |
 | Setor | Conjunto de dados da conta B2B | String | accountOrganization.industry |

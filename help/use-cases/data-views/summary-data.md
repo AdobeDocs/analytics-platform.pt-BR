@@ -5,10 +5,26 @@ solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 exl-id: 80139806-618a-46ff-b2c4-32d7bb85a526
-source-git-commit: b54083d85c0e07605c567a8d44824884cdc18c4d
+TQID: https://experienceleague.adobe.com/ST-1vL8gbeSqaYYHakxjYWcDOryNucEVHiONAQk7gU4
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '5014'
-ht-degree: 15%
+source-wordcount: 4858
+ht-degree: 16%
 
 ---
 
@@ -50,7 +66,7 @@ Você usa os seguintes exemplos de dados de resumo para este caso de uso, mostra
 | 17 | Campanha 321 | 20 | 2500 | def321 | facebook | def-adgroup | 07-2024-18T18:20:39.000Z |
 | 18 | Campanha 321 | 15 | 2250 | ghi321 | facebook | ghi-adgroup | 07-2024-18T18:20:39.000Z |
 
-[![Download de dados](/help/assets/icons/DataDownload.svg)](./assets/summary-data.csv)
+[![DataDownload](/help/assets/icons/DataDownload.svg) Baixar dados de resumo de amostra](./assets/summary-data.csv)
 
 +++
 
@@ -249,7 +265,7 @@ Os dados do evento estão disponíveis no Conjunto de dados de exemplo do evento
 | 2024-07-18T19:15:39+00:00 | 178 | página de confirmação | person-142def654 |  | 1 | 174,25 |
 | 2024-07-18T19:15:39+00:00 | 179 | página inicial | person-143ghi654 | ghi654 |  |  |
 
-[![Download de dados](/help/assets/icons/DataDownload.svg)](./assets/event-data.csv)
+[![DataDownload](/help/assets/icons/DataDownload.svg) Baixar dados de evento de amostra](./assets/event-data.csv)
 
 +++
 
@@ -278,7 +294,7 @@ Os dados de pesquisa estão disponíveis no Conjunto de dados de pesquisa de exe
 | 17 | def321 | def-adgroup | Campanha 321 |
 | 18 | ghi321 | ghi-adgroup | Campanha 321 |
 
-[![Download de dados](/help/assets/icons/DataDownload.svg)](./assets/lookup-data.csv)
+[![DataDownload](/help/assets/icons/DataDownload.svg) Baixar dados de pesquisa de amostra](./assets/lookup-data.csv)
 +++
 
 >[!INFO]
@@ -293,7 +309,7 @@ Os dados de resumo precisam de um esquema de resumo no Experience Platform. Um e
 
 Para criar um esquema de resumo no Experience Platform:
 
-1. Selecione **[!UICONTROL Experience Platform]** na   ![Aplicativo](/help/assets/icons/Apps.svg)   alternador de aplicativos.
+1. Selecione **[!UICONTROL Experience Platform]** no alternador de aplicativos ![App](/help/assets/icons/Apps.svg).
 1. Selecione **[!UICONTROL Esquemas]** no painel esquerdo.
 1. Selecione ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Criar esquema]**.
 1. Selecione **[!UICONTROL Manual]** na caixa de diálogo **[!UICONTROL Criar um esquema]**. Em seguida, use **[!UICONTROL Selecionar]** para continuar.
@@ -342,7 +358,7 @@ Para armazenar os dados de resumo na Experience Platform, primeiro é necessári
 
 Para criar um conjunto de dados:
 
-1. Selecione **[!UICONTROL Experience Platform]** na   ![Aplicativo](/help/assets/icons/Apps.svg)   alternador de aplicativos.
+1. Selecione **[!UICONTROL Experience Platform]** no alternador de aplicativos ![App](/help/assets/icons/Apps.svg).
 1. Selecione **[!UICONTROL Conjuntos de dados]** no painel esquerdo.
 1. Selecione ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Criar conjunto de dados]**.
 1. Na tela **[!UICONTROL Conjuntos de Dados]** > **[!UICONTROL Criar conjuntos de dados]**, selecione **[!UICONTROL Criar conjunto de dados do esquema]**.
@@ -356,7 +372,7 @@ Você verá uma tela exibindo os detalhes do novo conjunto de dados.
 
 Para fazer upload dos dados de amostra neste conjunto de dados:
 
-1. Selecione **[!UICONTROL Experience Platform]** na   ![Aplicativo](/help/assets/icons/Apps.svg)   alternador de aplicativos.
+1. Selecione **[!UICONTROL Experience Platform]** no alternador de aplicativos ![App](/help/assets/icons/Apps.svg).
 1. Selecione **[!UICONTROL Fluxos de trabalho]** no painel esquerdo.
    1. Selecione **[!UICONTROL Mapear CSV para esquema XDM]** nas opções **[!UICONTROL Assimilação de dados]** na tela **[!UICONTROL Fluxos de trabalho]**.
    1. Selecione **[!UICONTROL Iniciar]** no painel **[!UICONTROL Mapear CSV para esquema XDM]**.
@@ -386,7 +402,7 @@ Em **[!UICONTROL Fontes]** > **[!UICONTROL Fluxo de dados - XX/XX/XXXX, XX:XX XX
 Para usar seus dados de exemplo no Customer Journey Analytics, você cria uma conexão que inclui o Conjunto de dados de resumo de exemplo da Experience Platform.
 
 
-1. Selecione **[!UICONTROL Customer Journey Analytics]** na   ![Aplicativo](/help/assets/icons/Apps.svg)   alternador de aplicativos.
+1. Selecione **[!UICONTROL Customer Journey Analytics]** no alternador de aplicativos ![App](/help/assets/icons/Apps.svg).
 1. Selecione **[!UICONTROL Conexões]**, opcionalmente de **[!UICONTROL Gerenciamento de dados]**, no menu superior.
 1. Selecione **[!UICONTROL Criar nova conexão]**.
 1. Em **[!UICONTROL Conexões]** > **[!UICONTROL Conexão sem título]**:
@@ -427,7 +443,7 @@ Os dados dos conjuntos de dados são adicionados ao Customer Journey Analytics, 
 
 Após algum tempo, verifique se os dados dos conjuntos de dados foram carregados corretamente na Customer Journey Analytics.
 
-1. Selecione **[!UICONTROL Customer Journey Analytics]** na   ![Aplicativo](/help/assets/icons/Apps.svg)   alternador de aplicativos.
+1. Selecione **[!UICONTROL Customer Journey Analytics]** no alternador de aplicativos ![App](/help/assets/icons/Apps.svg).
 1. Selecione **[!UICONTROL Conexões]**, opcionalmente de **[!UICONTROL Gerenciamento de dados]**, no menu superior.
 1. Selecione sua conexão, por exemplo **[!UICONTROL Exemplo de Conexão Usando Dados de Resumo]**.
 1. Selecione um intervalo de datas apropriado nos detalhes de **[!UICONTROL Conexão]** > **[!UICONTROL Exemplo de Conexão Usando dados de Resumo]**.
@@ -442,7 +458,7 @@ Na lista de **[!UICONTROL Conjuntos de dados]**, os valores na coluna **[!UICONT
 
 Para garantir que você possa relatar os dados corretos no Workspace, é necessário criar uma visualização de dados contendo as métricas e dimensões relevantes.
 
-1. Selecione **[!UICONTROL Customer Journey Analytics]** na   ![Aplicativo](/help/assets/icons/Apps.svg)   alternador de aplicativos.
+1. Selecione **[!UICONTROL Customer Journey Analytics]** no alternador de aplicativos ![App](/help/assets/icons/Apps.svg).
 1. Selecione **[!UICONTROL Visualizações de dados]**, opcionalmente em **[!UICONTROL Gerenciamento de dados]**, no menu superior.
 1. Selecione **[!UICONTROL Criar nova visualização de dados]**.
 1. Em **[!UICONTROL Visualizações de dados]**, passe pelas telas do assistente para configurar sua visualização de dados.
@@ -468,7 +484,7 @@ Para garantir que você possa relatar os dados corretos no Workspace, é necess�
          | Nome do componente | Conjunto de dados | Tipo de dados de esquema | Caminho do esquema |
          |---|---|---|---|
          | Grupo de publicidade (pesquisa) | Exemplo de conjunto de dados de pesquisa | String | *_tenant*.ad_group |
-         | Grupo de publicidade | Exemplo de conjunto de dados de resumo | String | *_tenant*.ad_group |
+         | Grupo de Publicidade | Exemplo de conjunto de dados de resumo | String | *_tenant*.ad_group |
          | ID da campanha | Exemplo de conjunto de dados de resumo | String | *_tenant*.campaign_id |
          | Nome da campanha (pesquisa) | Exemplo de conjunto de dados de pesquisa | String | *_tenant*.campaign_name |
          | Nome da campanha | Exemplo de conjunto de dados de resumo | String | *_tenant*.campaign_name |
@@ -541,7 +557,7 @@ Agora você configurou a visualização de dados para o relatório adequado sobr
 
 Para relatar os dados de resumo, crie um novo Projeto no Analysis Workspace.
 
-1. Selecione **[!UICONTROL Customer Journey Analytics]** na   ![Aplicativo](/help/assets/icons/Apps.svg)   alternador de aplicativos.
+1. Selecione **[!UICONTROL Customer Journey Analytics]** no alternador de aplicativos ![App](/help/assets/icons/Apps.svg).
 1. Selecione **[!UICONTROL Workspace]** no menu superior.
 1. Selecione **[!UICONTROL Criar projeto]**.
 1. Selecione **[!UICONTROL Projeto do Workspace em branco]** na caixa de diálogo com opções para criar um projeto do Workspace em branco.
@@ -571,7 +587,7 @@ Você deseja usar o potencial de criar relatórios sobre dados de resumo e gerar
    1. Especifique `Return on Ad Spend` para o **[!UICONTROL Nome]**.
    1. Selecione **[!UICONTROL Moeda]** para **[!UICONTROL Formato]**.
    1. Selecione `2` para **[!UICONTROL Casas decimais]**.
-   1. Usar ![Evento](/help/assets/icons/Event.svg) **[!UICONTROL Receita (Último contato | 30 dias)]** **[!UICONTROL -]** ![Evento](/help/assets/icons/Event.svg) **[!UICONTROL Custo]** como **[!UICONTROL Definição]**.
+   1. Usar Receita De ![Evento](/help/assets/icons/Event.svg) **[!UICONTROL De Uso (Último Contato | 30 Dias)]** **[!UICONTROL -]** ![Evento](/help/assets/icons/Event.svg) **[!UICONTROL Custo]** como **[!UICONTROL Definição]**.
    1. Selecione **[!UICONTROL Salvar]**.
 
 Adicione suas métricas calculadas ao relatório.

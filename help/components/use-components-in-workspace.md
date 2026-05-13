@@ -4,10 +4,27 @@ title: Usar componentes em um projeto
 feature: Components
 role: User
 exl-id: 97bdfb9e-a27e-4a6b-b6cc-21a292398037
-source-git-commit: c209341400bf4e0c00719075f0fc82f81ca9dbb4
+TQID: https://experienceleague.adobe.com/kXVC79sHZMIdUELOC6KjtT7tJdh9pVySu-jApef-8lk
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+  - id: df28738e-9c71-4aa8-929e-edde22340cc6
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 100%
+source-wordcount: 954
+ht-degree: 92%
 
 ---
 
@@ -97,7 +114,7 @@ Você pode usar segmentos no Analysis Workspace de qualquer uma das seguintes ma
 
 * Adicionar segmentos a um painel
 Ao adicionar segmentos a um painel, os segmentos se aplicam a todo o conteúdo do painel.
-Para obter informações sobre como usar a zona de destino de segmentos em um painel para segmentar o painel, consulte [Zona de destino](/help/analysis-workspace/c-panels/panels.md#drop-zone) na [Visão geral de painéis](/help/analysis-workspace/c-panels/panels.md).
+Para obter informações sobre como usar a zona de destino do segmento em um painel para segmentar o painel, consulte [Zona de destino](/help/analysis-workspace/c-panels/panels.md#drop-zone) na [Visão geral de painéis](/help/analysis-workspace/c-panels/panels.md).
 
 * Adicionar segmentos a uma visualização
 Ao adicionar segmentos a uma coluna em uma tabela de forma livre, os segmentos se aplicam a todo o conteúdo na coluna da tabela. Você também pode adicionar segmentos como parte de uma visualização de fallout.

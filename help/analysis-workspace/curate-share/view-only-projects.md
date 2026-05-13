@@ -5,10 +5,19 @@ title: Projetos somente leitura
 feature: Curate and Share
 exl-id: 2bc26444-aeea-4695-92a5-a2b45ac18e0d
 role: User
-source-git-commit: 084c995658a5cf698d253f1c15229f621a8c55d5
+TQID: https://experienceleague.adobe.com/Rliyf5y-VNnCKEBemXYfHiXOqlYb98nEpPSLHBPOS3o
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '303'
-ht-degree: 37%
+source-wordcount: 328
+ht-degree: 39%
 
 ---
 
@@ -46,7 +55,7 @@ Algumas das interações habilitadas mais importantes em um projeto somente visu
 | **Tabelas de forma livre** | <li>Paginação e classificação</li><li>Passagem</li><li>Seleções de células que atualizam visualizações vinculadas</li><li>No menu de contexto > Obter link de visualização</li><li>No menu de contexto > Copiar para a área de transferência</li> |
 | **Visualizações** | <li>Clicar para ativar/desativar legenda</li><li>Passagem</li><li>No menu de contexto > Obter link de visualização</li><li>Recolher/expandir</li><li>Fluxo - expandir nós de fluxo</li><li>Mapa - zoom</li></ul> |
 | **Painéis** | <li>Segmentos suspensos interativos</li><li>No menu de contexto > Obter link do painel</li><li>Recolher/expandir</li> |
-| **Projeto** | <li>Como inspecionar todos os ícones de informações</li><li>Menu Projeto - Novo, Abrir, Definir como página inicial, Atualizar, Baixar CSV/PDF, Informações e configurações limitadas do projeto</li><li>Menu Compartilhar - Obter link do projeto, Enviar arquivo agora</li><li>Menu Ajuda - Todas as ações, exceto as opções de Dicas e Depurador</li> |
+| **Projeto** | <li>Como inspecionar todos os ícones de informações</li><li>Menu Projeto - Novo, Abrir, Definir como página de destino, Atualizar, Baixar CSV/PDF, Informações e configurações limitadas do projeto</li><li>Menu Compartilhar - Obter link do projeto, Enviar arquivo agora</li><li>Menu Ajuda - Todas as ações, exceto as opções de Dicas e Depurador</li> |
 
 
 ## Compartilhe com qualquer pessoa

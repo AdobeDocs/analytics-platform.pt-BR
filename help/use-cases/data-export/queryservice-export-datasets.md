@@ -5,10 +5,25 @@ solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
 exl-id: 14a90758-91eb-4610-8802-1edfdb8b9689
-source-git-commit: 20ead546897ad517840f95a5ec4dcd7f830afe8c
+TQID: https://experienceleague.adobe.com/J-5oxLDw4sLVFcXYQhN5cpTkH76C5wAfWFECrIydb-s
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '2642'
-ht-degree: 3%
+source-wordcount: 3355
+ht-degree: 5%
 
 ---
 
@@ -107,7 +122,7 @@ Com base na implementação, os dados de nível de ocorrência tradicionalmente 
 | `geo\_*` | `placeContext.geo.* ` | sequência, número | Dados de geolocalização, como país, região, cidade e outros |
 | `event_list` | `commerce.purchases`, `commerce.productViews`, `commerce.productListOpens`, `commerce.checkouts`, `commerce.productListAdds`, `commerce.productListRemovals`, `commerce.productListViews`, `_experience.analytics.event101to200.*`, ..., `_experience.analytics.event901_1000.*` | string | Eventos de comércio padrão e personalizados acionados na ocorrência. |
 | `page_event` | `web.webInteraction.type` | string | O tipo de ocorrência enviado na solicitação da imagem (ocorrência padrão, link de download, link de saída ou link personalizado clicado). |
-| `page_event` | `web.webInteraction.linkClicks.value` | número | O tipo de ocorrência enviado na solicitação da imagem (ocorrência padrão, link de download, link de saída ou link personalizado clicado). |
+| `page_event` | `web.webInteraction.linkClicks.value` | number | O tipo de ocorrência enviado na solicitação da imagem (ocorrência padrão, link de download, link de saída ou link personalizado clicado). |
 | `page_event_var_1` | `web.webInteraction.URL` | string | Uma variável usada somente em solicitações de imagem de rastreamento de link. Essa variável contém o URL do link de download, link de saída, ou link personalizado clicado. |
 | `page_event_var_2` | `web.webInteraction.name` | string | Uma variável usada somente em solicitações de imagem de rastreamento de link. Isso lista o nome personalizado do link, se for especificado. |
 | `paid_search` | `search.isPaid` | booleano | Um sinalizador que é definido se a ocorrência corresponder à detecção de pesquisa paga. |
@@ -360,11 +375,11 @@ Depois de criar e agendar sua consulta e verificar os resultados, você pode exp
 
 Os seguintes destinos de armazenamento na nuvem são compatíveis:
 
-- [Armazenamento do Azure Data Lake Gen2](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/catalog/cloud-storage/adls-gen2)
-- [Zona de Aterrissagem de Dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone)
-- [Armazenamento na nuvem do Google](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/catalog/cloud-storage/google-cloud-storage)
+- [Azure Data Lake Storage Gen2](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/catalog/cloud-storage/adls-gen2)
+- [Data Landing Zone](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/catalog/cloud-storage/data-landing-zone)
+- [Google Cloud Storage](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/catalog/cloud-storage/google-cloud-storage)
 - [Amazon S3](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/catalog/cloud-storage/amazon-s3)
-- [Blob do Azure](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/catalog/cloud-storage/azure-blob)
+- [Azure Blob](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/catalog/cloud-storage/azure-blob)
 - [SFTP](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/catalog/cloud-storage/sftp)
 
 

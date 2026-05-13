@@ -5,9 +5,28 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5e3f0aa0-ba24-48c8-948c-ebb5c270f34d
-source-git-commit: 4dcf9ab808475cc3cc48cab4c076b6c3cfb66f8a
+TQID: https://experienceleague.adobe.com/BbWd23ta6mwz6hu6EKhVRJJ-8rKY5OvQ4nRQ3cFfW0Q
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '1075'
+source-wordcount: 1183
 ht-degree: 100%
 
 ---
@@ -28,7 +47,7 @@ Exemplos de identidades podem ser uma ID do cliente, ID da conta ou ID de email.
 * A ID não contém PII. Aplique hash a qualquer item que possa ser sensível.
 * A ID usa o mesmo formato em todas as fontes (mesmo comprimento, mesmo método de hash etc.)
 
-Em conjuntos de dados como o Adobe Analytics, uma identidade pode não existir em todas as linhas de dados, mas uma identidade secundária sim. Nesse caso, a [análise entre canais (também conhecida como “Identificação”)](/help/stitching/overview.md) pode ser usada para preencher a lacuna entre linhas quando um cliente é identificado apenas por seu ECID e quando uma identidade é coletada (por exemplo, quando um cliente se autentica). 
+Em conjuntos de dados como o Adobe Analytics, uma identidade pode não existir em todas as linhas de dados, mas uma identidade secundária sim. Nesse caso, a [análise entre canais (também conhecida como “Identificação”)](/help/stitching/overview.md) pode ser usada para preencher a lacuna entre linhas quando um cliente é identificado apenas por seu ECID e quando uma identidade é coletada (por exemplo, quando um cliente se autentica).
 
 ### Alinhar as variáveis
 
@@ -92,7 +111,7 @@ Estes são alguns vídeos para orientá-lo:
 
 * Se tiver definido um calendário personalizado no Adobe Analytics, você terá [recursos de calendário personalizado](/help/components/date-ranges/overview.md) semelhantes no Customer Journey Analytics. É preciso garantir que o seu calendário esteja definido corretamente.
 
-* No Customer Journey Analytics, é possível definir um tempo limite de sessão personalizado, bem como uma métrica que iniciará uma nova sessão. É possível criar visualizações de dados com diferentes definições de sessão para obter insights acima e além do que era possível no Adobe Analytics. Esse recurso pode ser particularmente benéfico para conjuntos de dados de dispositivos móveis.
+* No Customer Journey Analytics, é possível definir um tempo-limite de sessão personalizado, bem como uma métrica que iniciará uma nova sessão. É possível criar visualizações de dados com diferentes definições de sessão para obter insights acima e além do que era possível no Adobe Analytics. Esse recurso pode ser particularmente benéfico para conjuntos de dados de dispositivos móveis.
 
 * Considere fornecer um dicionário de dados para seus usuários. Ou estenda o SDR para incluir o nome do campo da Experience Platform para elementos do esquema.
 

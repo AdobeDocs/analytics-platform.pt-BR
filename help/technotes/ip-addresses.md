@@ -5,10 +5,19 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 5c52986c-7ff3-45b5-9039-2bfb6529238c
 role: Admin
-source-git-commit: 0e4ea634a604a65484a57f5af8021badb86a865a
+TQID: https://experienceleague.adobe.com/y9JHTZnh51-jd-WNj8p6OBmkB5iOIT6vZ2ouHUKtHAI
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '188'
-ht-degree: 34%
+source-wordcount: 198
+ht-degree: 32%
 
 ---
 
@@ -16,7 +25,7 @@ ht-degree: 34%
 
 Algumas configurações de firewall bloqueiam endereços IP dos servidores de coleção de dados da Adobe ou dos servidores responsáveis por acessar os dados do Você pode usar essa lista de intervalos para alterar as configurações de firewall da sua organização para permitir acesso e enviar dados de dentro da organização.
 
-Incluir na lista de permissões Esta página inclui endereços ip que você precisa adicionar ao seu arquivo para que os sistemas de saída funcionem, como [exportar dados para um provedor de nuvem](/help/analysis-workspace/export/export-cloud.md).
+Esta página inclui endereços ip que você precisa adicionar ao seu incluo na lista de permissões para que os sistemas de saída funcionem, como [exportar dados para um provedor de nuvem](/help/analysis-workspace/export/export-cloud.md).
 
 >[!IMPORTANT]
 >

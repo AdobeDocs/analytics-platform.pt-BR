@@ -4,9 +4,17 @@ description: Avisos para a extensão BI em várias ferramentas de BI no Customer
 solution: Customer Journey Analytics
 feature: Data Views
 role: User
-source-git-commit: cb0102923f10f39becd40cc4187d2e11fb8c4e2f
+exl-id: b6e8ebd9-4fda-41d1-ac37-ca869f5ee57c
+TQID: https://experienceleague.adobe.com/6xHQWSBoZSfiDzjAj2akci4pX3uwdnaYXr3yXOvN0Xs
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: 743
 ht-degree: 0%
 
 ---

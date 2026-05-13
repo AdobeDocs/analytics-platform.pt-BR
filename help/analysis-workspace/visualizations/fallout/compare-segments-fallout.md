@@ -5,9 +5,18 @@ title: Aplicar Segmentos Na Análise De Fallout
 feature: Visualizations
 exl-id: 85b1024f-acd2-43b7-b4b1-b10961ba43e8
 role: User
-source-git-commit: 50b82943d4c59f612240ffc8d83a8a08f09b8331
+TQID: https://experienceleague.adobe.com/dALRSMOkjvcuOBQw4j1LkCHVBXkZPKVhIJL7afl8u0M
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: 484
 ht-degree: 23%
 
 ---

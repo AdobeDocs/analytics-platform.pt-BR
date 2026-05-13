@@ -5,9 +5,18 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 exl-id: 417443ae-a1ab-483b-a8fd-cff5ee8b6263
-source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
+TQID: https://experienceleague.adobe.com/Le3nM2krrdqEqvPORV1iv4egFsLSBkdxup2q5Owh2OA
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '1150'
+source-wordcount: 1166
 ht-degree: 96%
 
 ---
@@ -114,7 +123,7 @@ O fuso horário dos seus dados de resumo é definido na camada do esquema de res
   | 2024-07-30T01:00:00-05:00 | *GMT padrão* | 2024-07-30T06:00:00 | PST | 2024-07-29T23:00:00 |
   | 02/08/2024 | *GMT padrão* | 02/08/2024 T00:00:00 | IST | 02/08/2024 T05:00:00 |
   | 29/07/2024 T01:00:00 | `America/`<br/>`Los_Angeles` | 28/07/2024 T18:00:00 | PST | 2024-07-28T18:00:00 |
-  | 30/07/2024 T01:00:00-05:00 | `Australia/`<br/>`Sydney` | 30/07/2024 T17:00:00 | CET | 30/07/2024 T08:00:00 |
+  | 2024-07-30T01:00:00-05:00 | `Australia/`<br/>`Sydney` | 30/07/2024 T17:00:00 | CET | 30/07/2024 T08:00:00 |
 
   Para fusos horários com uma diferença de 30 minutos (por exemplo, IST, Horário padrão da Índia), essa diferença é descartada ao relatar dados de resumo. Por exemplo: 12:30 é relatado como 12:00.
 

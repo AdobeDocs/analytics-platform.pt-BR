@@ -2,10 +2,33 @@
 title: Análise de produtos no Customer Journey Analytics
 description: Saiba quais recursos você pode usar no Customer Journey Analytics para executar análises de produto de maneira eficaz.
 exl-id: b185a2ed-18c8-4fb3-8c69-693d5fee0e67
-source-git-commit: 38be838fccf896a12da3fbadac50e578081312ba
+TQID: https://experienceleague.adobe.com/24OrFfxJY7XuqMYoTrmijM5xRfsdGhfA-aKe5tY-7xw
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: bfa38d8a-4e93-4fd8-8cd8-e72c589e3af8
+  - id: bfef374d-acfd-4c57-bf74-a2b36053c545
+  - id: c91f8bd2-df97-4c6a-afcd-f1cde8221302
+  - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+  - id: d3c978ee-1ff0-4475-968a-721e2dd99ef1
+  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+  - id: f3ca85c1-72de-4df2-97ed-05753cd77c47
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '826'
-ht-degree: 1%
+source-wordcount: 894
+ht-degree: 3%
 
 ---
 
@@ -33,7 +56,7 @@ Os seguintes recursos da Adobe Experience Platform e da Customer Journey Analyti
 * Adobe Experience Platform
    * [Conjuntos de dados&#x200B;](https://experienceleague.adobe.com/pt-br/docs/experience-platform/catalog/datasets/overview)
    * [Preparação de dados&#x200B;](https://experienceleague.adobe.com/pt-br/docs/experience-platform/data-prep/home)
-   * [Distiller de Dados&#x200B;](https://experienceleague.adobe.com/pt-br/docs/experience-platform/query/data-distiller/overview)
+   * [Distiller de dados&#x200B;](https://experienceleague.adobe.com/pt-br/docs/experience-platform/query/data-distiller/overview)
 * Customer Journey Analytics
    * [Conexões&#x200B;](/help/connections/overview.md)
    * [Visualizações de dados](/help/data-views/data-views.md), incluindo [campos derivados&#x200B;](/help/data-views/derived-fields/derived-fields.md)
@@ -100,7 +123,7 @@ Os seguintes recursos no Experience Cloud permitem que você atue com eficiênci
 * Ativar públicos-alvo por meio de produtos da Experience Cloud:
    * [Execute experimentos](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/content-management/content-experiment/get-started-experiment) no AJO e no Adobe Target e meça o impacto das variações no Customer Journey Analytics usando o [Painel de experimentação](/help/analysis-workspace/c-panels/experimentation.md)
    * [Fornecer compromissos no aplicativo](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/channels/in-app/get-started-in-app) aos usuários no AJO
-* [Ativar públicos-alvo](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/ui/activate/activation-overview) para destinos externos com a CDP em tempo real do Adobe&#x200B;
+* [Ativar públicos-alvo](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/ui/activate/activation-overview) para destinos externos com a CDP em tempo real do &#x200B;
 
 ## Compartilhar insights para a organização&#x200B;
 

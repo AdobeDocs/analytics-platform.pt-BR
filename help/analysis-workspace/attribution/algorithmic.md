@@ -4,10 +4,18 @@ description: Entenda os detalhes do modelo de atribuição algorítmica.
 feature: Attribution
 role: User, Admin
 exl-id: dd2b2a5b-9c36-4534-999f-f96604f29eab
-source-git-commit: 211dbd80b21f84ab616569c0d847dcc97f13661c
+TQID: https://experienceleague.adobe.com/t9MaGZioEVgtaMgoTpemXlvulgaDFo-XBtM6-G8562Q
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '270'
-ht-degree: 44%
+source-wordcount: 272
+ht-degree: 42%
 
 ---
 

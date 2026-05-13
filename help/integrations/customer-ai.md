@@ -5,10 +5,22 @@ role: Admin
 solution: Customer Journey Analytics
 exl-id: 5411f843-be3b-4059-a3b9-a4e1928ee8a9
 feature: Experience Platform Integration
-source-git-commit: ed7e9a6c34c5f8ba9ba4f75be05768409cbc158d
+TQID: https://experienceleague.adobe.com/zpptSfNRGiYd0850P01C03FtTv5CUuZh1qD6NfEsnJc
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '960'
-ht-degree: 97%
+source-wordcount: 983
+ht-degree: 93%
 
 ---
 
@@ -20,25 +32,25 @@ A [IA do cliente](https://experienceleague.adobe.com/docs/experience-platform/in
 
 Com a ajuda de fatores influentes, a IA do cliente pode informar o que um cliente deve fazer e por quê. Além disso, os profissionais de marketing podem se beneficiar das previsões e insights da IA do cliente para personalizar as experiências do cliente, disponibilizando as ofertas e mensagens mais apropriadas.
 
-A IA do cliente depende de dados comportamentais individuais e de dados de perfil para pontuação de propensão. A IA do cliente é flexível, pois pode receber várias fontes de dados, incluindo Adobe Analytics, Adobe Audience Manager, dados de eventos de experiência do consumidor e dados de eventos de experiência. Se você usar o conector de origem da Experience Platform para trazer os dados do Adobe Audience Manager e do Adobe Analytics, o modelo seleciona automaticamente os tipos de evento padrão para treinar e pontuar o modelo. Se você trouxer seu próprio conjunto de dados de Evento de experiência sem tipos de evento padrão, todos os campos relevantes precisarão ser mapeados como eventos personalizados ou atributos de perfil se você quiser usá-lo no modelo. Isso pode ser feito na etapa de configuração da IA do cliente na Experience Platform. 
+A IA do cliente depende de dados comportamentais individuais e de dados de perfil para pontuação de propensão. A IA do cliente é flexível, pois pode receber várias fontes de dados, incluindo Adobe Analytics, Adobe Audience Manager, dados de eventos de experiência do consumidor e dados de eventos de experiência. Se você usar o conector de origem da Experience Platform para trazer os dados do Adobe Audience Manager e do Adobe Analytics, o modelo seleciona automaticamente os tipos de evento padrão para treinar e pontuar o modelo. Se você trouxer seu próprio conjunto de dados de Evento de experiência sem tipos de evento padrão, todos os campos relevantes precisarão ser mapeados como eventos personalizados ou atributos de perfil se você quiser usá-lo no modelo. Isso pode ser feito na etapa de configuração da IA do cliente na Experience Platform.
 
 A IA do cliente pode integrar-se ao Customer Journey Analytics, permitindo que os conjuntos de dados habilitados para a IA do cliente sejam aproveitados nas visualizações de dados e relatórios do Customer Journey Analytics. É possível:
 
-* **Rastrear as pontuações de propensão de um segmento de usuários ao longo do tempo**. 
+* **Rastrear as pontuações de propensão de um segmento de usuários ao longo do tempo**.
    * Caso de uso: entender a probabilidade de conversão de clientes em um segmento específico.
    * Exemplo: um(a) profissional de marketing em uma rede de hotéis quer entender a probabilidade de clientes de um hotel comprarem ingressos para um programa no teatro do hotel.
-* **Analise quais eventos ou atributos de sucesso estão associados às pontuações de propensão**. 
+* **Analise quais eventos ou atributos de sucesso estão associados às pontuações de propensão**.
    * Caso de uso: entender os atributos ou eventos de sucesso associados às pontuações de propensão.
    * Exemplo: um(a) profissional de marketing de uma rede de hotéis quer entender como as compras de ingressos para programas no teatro de um hotel estão associadas às pontuações de propensão.
-* **Siga o fluxo de entrada de propensão do cliente em diferentes casos de pontuação**. 
+* **Siga o fluxo de entrada de propensão do cliente em diferentes casos de pontuação**.
    * Caso de uso: descobrir quais pessoas eram inicialmente usuários de baixa propensão e, com o tempo, se tornaram usuários de alta propensão.
    * Exemplo: um(a) profissional de marketing em uma rede de hotéis quer entender quais clientes do hotel foram identificados(as) inicialmente como clientes com baixa propensão a comprar ingressos para um programa, mas que com o tempo se tornaram clientes com alta propensão a comprar ingressos para um programa.
-* **Veja a distribuição da propensão**. 
+* **Veja a distribuição da propensão**.
    * Caso de uso: entender a distribuição das pontuações de propensão para maior precisão na definição de segmentos.
-   * Exemplo: um varejista deseja aplicar uma promoção específica que oferece US$ 50 de desconto em um produto. É possível que queiram executar apenas uma promoção muito limitada devido ao orçamento ou outros fatores. Os dados são analisados e decide-se direcionar a promoção apenas a clientes com uma propensão superior a 80%.
-* **Examine a “propensão de se realizar uma ação” de um coorte específico ao longo do tempo**. 
-   * Caso de uso: rastrear um coorte específico ao longo do tempo. 
-   * Exemplo: um(a) profissional de marketing em uma rede de hotéis quer rastrear clientes de nível bronze em comparação com os de nível prata, ou os de nível prata em comparação com os de nível ouro, ao longo do tempo. É possível visualizar a propensão de cada coorte em efetuar reservas no hotel ao longo do tempo. 
+   * Exemplo: um varejista deseja aplicar uma promoção específica que oferece US$ 50 de desconto em um produto. Eles podem querer executar apenas uma promoção muito limitada devido ao orçamento, etc. Eles analisam os dados e decidem segmentar apenas os 80%+ de seus clientes.
+* **Examine a “propensão de se realizar uma ação” de um coorte específico ao longo do tempo**.
+   * Caso de uso: rastrear um coorte específico ao longo do tempo.
+   * Exemplo: um(a) profissional de marketing em uma rede de hotéis quer rastrear clientes de nível bronze em comparação com os de nível prata, ou os de nível prata em comparação com os de nível ouro, ao longo do tempo. É possível visualizar a propensão de cada coorte em efetuar reservas no hotel ao longo do tempo.
 
 Para integrar de fato os dados da IA do cliente ao Customer Journey Analytics, siga estas etapas:
 
@@ -67,7 +79,7 @@ Veja um exemplo de um esquema XDM que o Customer Journey Analytics traria como p
 
 ![Esquema de CAI](assets/cai-schema.png)
 
-(Observe que o exemplo mostra um conjunto de dados de perfil; o mesmo conjunto de objetos de esquema seria parte de um conjunto de dados de evento de experiência que o Customer Journey Analytics capturaria. O conjunto de dados do Evento de experiência incluiria carimbos de data e hora como a data da pontuação.) Cada cliente classificado neste modelo teria uma pontuação, uma scoreDate, etc. associada a eles.
+(Observe que o exemplo mostra um conjunto de dados de perfil; o mesmo conjunto de objetos de esquema seria parte de um conjunto de dados de evento de experiência que o Customer Journey Analytics capturaria. O conjunto de dados do Evento de experiência incluiria carimbos de data e hora como a data da pontuação.) Cada cliente classificado neste modelo teria uma pontuação, uma scoreDate, etc. associados a ele.
 
 ## Etapa 3: Criar visualizações de dados com base nessas conexões
 

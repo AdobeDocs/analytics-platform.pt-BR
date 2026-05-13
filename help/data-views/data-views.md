@@ -5,10 +5,27 @@ exl-id: f69e6e38-ac98-49a6-b0ce-f642af2932ae
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
-source-git-commit: 4f1299595077a1756a6ad0c4f5ef5e0247ab4973
+TQID: https://experienceleague.adobe.com/WNPt241AppdCZVtsYmyLM2mRa2nqvrfYFbIP6K5NR1U
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2:
+  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+  - id: c38ed341-fab2-46df-9d72-88d8166edebb
+  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: '1096'
-ht-degree: 93%
+source-wordcount: 1124
+ht-degree: 88%
 
 ---
 
@@ -20,7 +37,7 @@ Uma visualização de dados é um container específico do Customer Journey Anal
 >
 >Todas as configurações selecionadas ou alteradas em uma visualização de dados são retroativas e não destrutivas. Em outras palavras, elas não alteram permanentemente os dados subjacentes.
 
-Você pode criar visualizações de dados diferentes para a mesma conexão, com conjuntos de componentes muito diferentes (dimensões/métricas). Ou crie exibições de dados com configurações diferentes para o tempo-limite da visita, atribuição etc. Por exemplo, você pode ter uma visualização de dados em que todas as dimensões estão definidas como [!UICONTROL Último contato], e, simultaneamente, outra visualização de dados (com base no mesmo conjunto de dados) com todas as dimensões definidas com [!UICONTROL Primeiro contato].
+Você pode criar visualizações de dados diferentes para a mesma conexão, com conjuntos de componentes muito diferentes (dimensões/métricas). Ou criar visualizações de dados com configurações diferentes para o tempo limite da visita, atribuição etc. Por exemplo, você pode ter uma visualização de dados em que todas as dimensões estão definidas como [!UICONTROL Último contato], e, simultaneamente, outra visualização de dados (com base no mesmo conjunto de dados) com todas as dimensões definidas como [!UICONTROL Primeiro contato].
 
 Os projetos do Espaço de trabalho no Customer Journey Analytics são baseados em visualizações de dados.
 
@@ -46,7 +63,7 @@ As visualizações de dados permitem que você altere espontaneamente as configu
 * Você pode exibir mais informações relacionadas ao esquema sobre componentes. Como:
 
    * o tipo de conjunto de dados (evento, perfil, pesquisa, resumo) do qual o componente se origina,
-   * de que tipo de esquema (string, número inteiro, etc.) ele se origina e
+   * que tipo de esquema (sequência, número inteiro etc.) Proveniente de, e
    * o caminho do esquema (o campo XDM no qual ele se baseia).
 
 * Você pode marcar um componente para facilitar a pesquisa no Workspace.
