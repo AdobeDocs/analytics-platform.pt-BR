@@ -5,27 +5,15 @@ feature: Visualizations
 role: User
 exl-id: 53984934-6fba-4f15-aeeb-d91039260553
 TQID: https://experienceleague.adobe.com/pC3wjv6Q7RHRfDfHq75CP2Lqd-HzN-s7iLZ9t4N4ZR0
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: aff2ef09-fc60-4018-9197-e2befd623064
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
-  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: d9715c3da9893e1c47b702acb4daef5e666bedd7
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: aff2ef09-fc60-4018-9197-e2befd623064id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5cid: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 11f60dbdd2858f173896a131c08229e0c7f29a69
 workflow-type: tm+mt
-source-wordcount: 6252
-ht-degree: 98%
+source-wordcount: 6456
+ht-degree: 91%
 
 ---
 
@@ -454,6 +442,8 @@ A opção para aplicar um detalhamento aos dados está disponível para os segui
 
 * Várias setas entre nós
 
+* Dados de fallout (quando o fallout é mostrado em um nó)
+
 Considere o seguinte ao aplicar um detalhamento:
 
 * Os detalhamentos são aplicados à métrica principal. A métrica secundária não é afetada.
@@ -466,13 +456,15 @@ Considere o seguinte ao aplicar um detalhamento:
 
 #### Aplicar um detalhamento a um ou mais nós ou setas
 
-1. Em uma visualização da Tela de jornada, selecione um ou mais nós aos quais deseja aplicar um detalhamento e clique com o botão direito do mouse em um dos nós selecionados.
+1. Em uma visualização da tela de Jornada, siga um destes procedimentos:
 
-   Ou
+   * Clique com o botão direito do mouse no fallout que está saindo de um nó (quando o fallout for exibido) ao qual você deseja aplicar um detalhamento.
 
-   Em uma visualização da Tela de jornada, selecione uma ou mais setas entre 2 nós nos quais deseja aplicar o detalhamento e clique com o botão direito do mouse em uma das setas selecionadas.
+   * Selecione um ou mais nós aos quais deseja aplicar um detalhamento e clique com o botão direito do mouse em um dos nós selecionados.
 
-   Para selecionar vários nós ou setas, mantenha pressionada a tecla Command (no Mac) ou Ctrl (no Windows).
+   * Selecione uma ou mais setas entre 2 nós aos quais deseja aplicar um detalhamento e clique com o botão direito do mouse em uma das setas selecionadas.
+
+     Para selecionar vários nós ou setas, mantenha pressionada a tecla Command (no Mac) ou Ctrl (no Windows).
 
 1. Selecione [!UICONTROL **Detalhamento**].
 
@@ -514,17 +506,21 @@ A opção para criar um público-alvo está disponível para os seguintes objeto
 
 * Várias setas entre nós
 
+* Dados de fallout (quando o fallout é mostrado em um nó)
+
 Ao criar um público-alvo a partir de vários nós ou setas, eles são unidos com o operador OR.
 
 Para criar um público-alvo:
 
-1. Em uma visualização da Tela de jornada, selecione um ou mais nós onde deseja criar um público-alvo e clique com o botão direito do mouse em um dos nós selecionados.
+1. Em uma visualização da tela de Jornada, siga um destes procedimentos:
 
-   Ou
+   * Clique com o botão direito do mouse no fallout que está saindo de um nó (quando o fallout é exibido) para o qual você deseja criar um público-alvo.
 
-   Em uma visualização da Tela de jornada, selecione uma ou mais setas entre 2 nós onde deseja criar um público-alvo e clique com o botão direito do mouse em uma das setas selecionadas.
+   * Selecione um ou mais nós para os quais deseja criar um público-alvo e clique com o botão direito do mouse em um dos nós selecionados.
 
-   Para selecionar vários nós ou setas, mantenha pressionada a tecla Command (no Mac) ou Ctrl (no Windows).
+   * Selecione uma ou mais setas entre 2 nós para os quais deseja criar um público-alvo e clique com o botão direito do mouse em uma das setas selecionadas.
+
+     Para selecionar vários nós ou setas, mantenha pressionada a tecla Command (no Mac) ou Ctrl (no Windows).
 
    >[!NOTE]
    >
@@ -548,21 +544,33 @@ A opção de tendência está disponível para os seguintes objetos na tela:
 
 * Várias setas entre nós
 
+* Dados de fallout (quando o fallout é mostrado em um nó)
+
 Para visualizar os dados de tendência:
 
-1. Em uma visualização da tela “Jornada”, selecione um ou mais nós cujos dados de tendência você deseja exibir e clique com o botão direito do mouse em um dos nós selecionados.
+1. Em uma visualização da tela de Jornada, siga um destes procedimentos:
 
-   Ou
+   * Clique com o botão direito do mouse no fallout que está saindo de um nó (quando o fallout for exibido) para o qual você deseja exibir dados de tendência.
 
-   Em uma visualização da tela “Jornada”, selecione uma ou mais setas entre dois nós cujos dados de tendência você deseja exibir e clique com o botão direito do mouse em uma das setas selecionadas.
+   * Selecione um ou mais nós para os quais deseja exibir dados de tendência e clique com o botão direito do mouse em um dos nós selecionados.
 
-   Para selecionar vários nós ou setas, mantenha pressionada a tecla Command (no Mac) ou Ctrl (no Windows).
+   * Selecione uma ou mais setas entre dois nós para os quais deseja exibir dados de tendência e clique com o botão direito do mouse em uma das setas selecionadas.
+
+     Para selecionar vários nós ou setas, mantenha pressionada a tecla Command (no Mac) ou Ctrl (no Windows).
 
 1. Selecione [!UICONTROL **Tendência**].
 
 ### Criar um segmento com base em um nó ou uma seta
 
-Você pode criar um novo segmento com base em um nó ou uma seta em uma jornada. Depois de criar o segmento, você pode usá-lo em qualquer lugar do Analysis Workspace.
+A opção para criar um segmento está disponível para os seguintes objetos na tela:
+
+* Nós individuais
+
+* As setas entre nós
+
+* Dados de fallout (quando o fallout é mostrado em um nó)
+
+Depois de criar o segmento, você pode usá-lo em qualquer lugar do Analysis Workspace.
 
 Segmentos criados a partir da tela “Jornada” usam a [segmentação sequencial](/help/components/segments/seg-sequential-build.md). Isso significa que o segmento usa o operador “THEN” para vincular a sequência de eventos (a jornada) pela qual as pessoas fluíram, levando até o nó ou a seta selecionada. Todos os eventos que correspondem ao nó ou à seta selecionada são incluídos no segmento.
 
@@ -570,11 +578,11 @@ Se você criar um segmento com base em um nó para o qual haja vários caminhos 
 
 Para criar um segmento:
 
-1. Em uma visualização da tela “Jornada”, clique com o botão direito do mouse no nó ou na seta que deseja usar para criar o segmento.
+1. Em uma visualização da tela de Jornada, clique com o botão direito do mouse no nó, na seta ou nos dados de fallout que deseja usar para criar o segmento.
 
-1. Selecione [!UICONTROL **Criar segmento a partir de um nó**] ou [!UICONTROL **Criar segmento a partir de uma seta**].
+1. Selecione [!UICONTROL **Criar segmento do nó**], [!UICONTROL **Criar segmento a partir da seta**] ou [!UICONTROL **Criar segmento a partir do fallout**].
 
-   O construtor de segmentos é exibido. Na seção [!UICONTROL **Definição**], a definição do segmento é criada com base no nó ou na seta selecionada e em seu contexto dentro da jornada.
+   O construtor de segmentos é exibido. Na seção [!UICONTROL **Definição**], a definição de segmento é criada com base no nó, seta ou fallout selecionado e seu contexto na jornada.
 
 1. Especifique um título para o segmento e faça quaisquer outras alterações desejadas. Para obter mais informações sobre como criar um segmento, consulte [Construtor de segmentos](/help/components/segments/seg-builder.md).
 
@@ -589,6 +597,22 @@ Para excluir nós na tela “Jornada”:
 1. Em uma visualização da tela “Jornada”, selecione um ou mais nós que deseja excluir, e clique com o botão direito do mouse em um dos nós selecionados.
 
 1. Clique em [!UICONTROL **Excluir**].
+
+### Excluir nós
+
+Quando você exclui um nó de uma jornada, os dados da jornada são atualizados para excluir usuários que passaram por esse nó. A definição de segmento para a jornada também é atualizada para excluir usuários que passaram por esse nó.
+
+Para excluir um nó de uma jornada:
+
+1. Em uma visualização da tela de Jornada, clique com o botão direito do mouse no nó que deseja excluir.
+
+1. Selecione [!UICONTROL **Excluir da jornada**].
+
+Para incluir novamente um nó excluído na jornada:
+
+1. Em uma visualização da tela de Jornada, clique com o botão direito do mouse no nó excluído.
+
+1. Selecione [!UICONTROL **Remover exclusão de jornada**].
 
 ### Excluir setas entre nós
 
