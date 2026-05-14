@@ -5,53 +5,31 @@ title: Visão geral do feed de dados do Analytics
 feature: Components
 hide: true
 exl-id: 991a7861-cbde-4d55-935c-d56c8031853e
-source-git-commit: d79c6d883f436d97925e007f453879e20b4fcc04
+source-git-commit: 5e77857ca846767e3b9e7479baa4a4b18c6e3c8f
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 40%
+source-wordcount: '221'
+ht-degree: 21%
 
 ---
 
 # Visão geral dos feeds de dados
 
-Os feeds de dados são uma maneira avançada de obter dados brutos do Customer Journey Analytics. Esses dados brutos podem ser usados em outras plataformas fora da Adobe para uso a critério da sua organização. Os dados são fornecidos em lotes por hora, no final de cada hora, ou em lotes diários, no final de cada dia.
+Os feeds de dados são uma maneira avançada de obter dados brutos do Customer Journey Analytics. Você pode usar esses dados brutos em outras plataformas fora da Adobe, a critério da sua organização. Os dados são fornecidos em lotes por hora, no final de cada hora, ou em lotes diários, no final de cada dia.
 
 ## Pré-requisitos
 
-Verifique se você atende a todos os requisitos a seguir antes de utilizar os feeds de dados.
+Verifique se você atende a todos os requisitos a seguir antes de usar os feeds de dados:
 
-* Uma implementação em funcionamento com dados assimilados na Adobe Customer Journey Analytics. <!-- For more information, see Data ingestion overview - add link -->
-* Sua conta é um administrador de produto do Analytics ou pertence a um perfil de produto com acesso a feeds de dados. <!--???-->
-* Um bucket configurado no Amazon S3, Google Cloud Platform, Azure RBAC ou Azure SAS.<!--Which cloud providers do we support??-->
-* (Herdado: obrigatório apenas para tipos de destino FTP e SFTP herdados) Tenha um site FTP e credenciais acessíveis (credenciais FTP fornecidas pela sua organização).<!--Delete???-->
+* Uma implementação em funcionamento com dados sendo assimilados na Adobe Customer Journey Analytics <!-- For more information, see Data ingestion overview - add link -->
+* Sua conta é um administrador de produto do Analytics ou pertence a um perfil de produto com acesso a feeds de dados <!--???-->
+* Um bucket configurado em {DNL Amazon S3}, {DNL Google Cloud Platform}, {DNL Azure RBAC} ou {DNL Azure SAS}
 
-## Comparar feeds de dados no Customer Journey Analytics e no Adobe Analytics
+## Introdução
 
-A funcionalidade do feed de dados no Customer Journey Analytics é diferente da Adobe Analytics. Para obter mais informações, consulte [Comparar feeds de dados no Customer Journey Analytics e no Adobe Analytics](/help/components/exports/cja-data-feeds/df-comparison.md).
+Para começar a usar os feeds de dados no Customer Journey Analytics, primeiro entenda como os feeds de dados no Customer Journey Analytics diferem dos feeds de dados no Adobe Analytics. Depois de entender as diferenças, é possível mapear feeds de dados do Adobe Analytics para o Customer Journey Analytics e, em seguida, começar a criar um feed de dados.
 
+1. [Entender as diferenças entre os feeds de dados no Customer Journey Analytics e no Adobe Analytics](/help/components/exports/cja-data-feeds/df-comparison.md).
 
-## Próximas etapas
+1. [Mapear colunas do feed de dados do Adobe Analytics para o Customer Journey Analytics](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md).
 
-Os recursos a seguir ajudam você a entender o fluxo de trabalho básico de obtenção dos feeds de dados. Depois de entender o fluxo de trabalho básico, você pode trabalhar com as equipes na organização para armazenar ou assimilar dados brutos em um banco de dados.
-
-* Práticas recomendadas do feed de dados<!--add link-->: práticas recomendadas para criar e gerenciar feeds de dados.
-* Criar um feed de dados<!--add link-->: Detalhes técnicos para criar um feed de dados, explicando campos individuais com mais detalhes
-* Gerenciar feeds de dados<!--add link-->: Saiba mais sobre como navegar na interface do feed de dados
-* Conteúdo do feed de dados <!--add link-->: Entenda o que está dentro do arquivo compactado
-* Definições de coluna de dados <!--add link-->: uma lista abrangente de todas as colunas disponíveis.
-
-<!-- Is this still the output users can download from the destination? I aske Jun. -->
-
->[!BEGINSHADEBOX]
-
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Navegar pela interface do feed de dados](https://video.tv.adobe.com/v/3428567?captions=por_br&quality=12&learn=on){target="_blank"} para assistir um vídeo de demonstração.
-
->[!ENDSHADEBOX]
-
-
-
->[!BEGINSHADEBOX]
-
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Localizar a ID do feed de dados](https://video.tv.adobe.com/v/3480887?captions=por_br&quality=12&learn=on){target="_blank"} para assistir um vídeo de demonstração.
-
->[!ENDSHADEBOX]
+1. [Criar um feed de dados](/help/components/exports/cja-data-feeds/create-feed.md).
