@@ -22,9 +22,9 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 11f60dbdd2858f173896a131c08229e0c7f29a69
+source-git-commit: 5513a755345188e6f7ff5d4c566d807d09e25f68
 workflow-type: tm+mt
-source-wordcount: 6456
+source-wordcount: 6457
 ht-degree: 91%
 
 ---
@@ -466,7 +466,7 @@ Considere o seguinte ao aplicar um detalhamento:
 
 * Os dados de detalhamento são atualizados se as alterações forem feitas em um ponto anterior da jornada.
 
-#### Aplicar um detalhamento a um ou mais nós ou setas
+#### Aplicar um detalhamento a nós, setas ou dados de fallout
 
 1. Em uma visualização da tela de Jornada, siga um destes procedimentos:
 
@@ -572,7 +572,7 @@ Para visualizar os dados de tendência:
 
 1. Selecione [!UICONTROL **Tendência**].
 
-### Criar um segmento com base em um nó ou uma seta
+### Criar um segmento com base em um nó, seta ou dados de fallout
 
 A opção para criar um segmento está disponível para os seguintes objetos na tela:
 
@@ -612,7 +612,7 @@ Para excluir nós na tela “Jornada”:
 
 ### Excluir nós
 
-Quando você exclui um nó de uma jornada, os dados da jornada são atualizados para excluir usuários que passaram por esse nó. A definição de segmento para a jornada também é atualizada para excluir usuários que passaram por esse nó.
+Quando você exclui um nó de uma jornada, os dados da jornada são atualizados para excluir jornadas que passaram por esse nó. A definição de segmento para a jornada também é atualizada para excluir jornadas que passaram por esse nó.
 
 Para excluir um nó de uma jornada:
 
