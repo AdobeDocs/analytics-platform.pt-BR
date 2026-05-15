@@ -18,9 +18,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: d15d85f5904bbada26bfd74fdc45217efeddd723
+source-git-commit: 8fc9bde3d0b9eebfcc8185aff78ce0f7f2e7704f
 workflow-type: tm+mt
-source-wordcount: 4071
+source-wordcount: 4074
 ht-degree: 47%
 
 ---
@@ -505,7 +505,7 @@ Para configurar a coleta de dados do:
       1. Especifique um **[!UICONTROL nome de tag]**, por exemplo, `ACA Test for Documentation`.
       1. Especifique **[!UICONTROL Domínios]**, por exemplo, `example.com`.
 
-     Use uma nova propriedade de marcas se desejar criar uma [implementação agnóstica](/help/content-analytics/config/tags-agnostic.md) de marcas do Content Analytics para o canal da Web. A propriedade Tags é criada, mas você não usará a propriedade na implementação agnóstica. No entanto, a implementação agnóstica exige que você execute o assistente de configuração guiada pelo menos uma vez.
+     Use uma nova propriedade de marcas se desejar criar uma implementação agnóstica de marcas para o canal da Web, usando a [biblioteca JavaScript do Content Analytics](/help/content-analytics/config/tags-agnostic.md). A propriedade Tags é criada, mas você não usará a propriedade na implementação agnóstica. No entanto, a implementação agnóstica exige que você execute o assistente de configuração guiada pelo menos uma vez.
 
 * Indique quais páginas devem ser incluídas ou excluídas ao coletar dados para o Content Analytics. Exclua páginas pessoalmente identificáveis.
 
