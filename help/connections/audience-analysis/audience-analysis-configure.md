@@ -8,7 +8,7 @@ exl-id: 0db3f6f7-9d7e-41bf-8eb5-02e439bab10a
 source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
 source-wordcount: '1391'
-ht-degree: 32%
+ht-degree: 33%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 32%
 >[!CONTEXTUALHELP]
 >id="cja-audience-namespace"
 >title="Usar namespace de identidade primário"
->abstract="Habilite esta opção se quiser que o Customer Journey Analytics encontre a identidade no mapa de identidade que está marcada com um atributo primary=true e use essa identidade como a ID de pessoa para essa linha. Essa identidade é a chave primária usada na Experience Platform para particionamento. <br/>Se você deixar esta opção desabilitada, selecione um namespace no campo Namespace de identidade abaixo. O Customer Journey Analytics pesquisará cada linha do mapa de identidade para encontrar a chave desse namespace e usará a identidade sob esse namespace como a ID de pessoa para essa linha."
+>abstract="Habilite esta opção se quiser que o Customer Journey Analytics encontre a identidade no mapa de identidade que está marcada com um atributo primary=true e use essa identidade como a ID de pessoa para essa linha. Essa identidade é a chave primária usada na Experience Platform para particionamento. <br/>Se deixar essa opção desativada, selecione um namespace no campo Namespace de identidade abaixo. O Customer Journey Analytics pesquisará cada linha do mapa de identidade para encontrar a chave desse namespace e usará a identidade sob esse namespace como a ID de pessoa para essa linha."
 
 <!-- markdownlint-enable MD034 -->
 

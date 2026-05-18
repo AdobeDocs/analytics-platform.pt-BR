@@ -19,7 +19,7 @@ role_v2:
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 3307
-ht-degree: 23%
+ht-degree: 25%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 23%
 >[!CONTEXTUALHELP]
 >id="cja-export-file-name"
 >title="Nome e caminho do arquivo"
->abstract="Especifique um nome de arquivo personalizado dinâmico a ser usado para exportações automatizadas enviadas para este local. Você também pode preceder o nome do arquivo com um caminho de arquivo personalizado dinâmico. <br/>Use variáveis no nome e no caminho do arquivo para torná-las dinâmicas. <br/>Por exemplo, se você especificar `${yyyy}/${MM}/${dd}/my-report-${instance_id}-${idx}`, uma exportação que é automaticamente enviada para este destino em 15 de janeiro de 2026 terá o seguinte caminho de arquivo e nome: `[prefix_folder_name]/2026/01/15/my-report-[UUID]-1.csv` <br/>Clique no link abaixo para obter uma lista de variáveis disponíveis."
+>abstract="Especifique um nome de arquivo personalizado dinâmico a ser usado para exportações automatizadas enviadas para este local. Você também pode preceder o nome do arquivo com um caminho de arquivo personalizado dinâmico. <br/>Use variáveis no nome e no caminho do arquivo para torná-las dinâmicas. <br/>Por exemplo, se especificar `${yyyy}/${MM}/${dd}/my-report-${instance_id}-${idx}`, uma exportação que é automaticamente enviada para este destino em 15 de janeiro de 2026 terá o seguinte caminho de arquivo e nome: `[prefix_folder_name]/2026/01/15/my-report-[UUID]-1.csv` <br/>Clique no link abaixo para obter uma lista de variáveis disponíveis."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -207,7 +207,7 @@ Para obter informações sobre como gerenciar locais existentes, incluindo exibi
 
    | Campo | Função |
    |---------|----------|
-   | [!UICONTROL **Contêiner**] | O container na conta especificada para onde você deseja que os dados do Customer Journey Analytics sejam enviados. Conceda permissões para fazer upload de arquivos para o aplicativo do Azure que você criou anteriormente. |
+   | [!UICONTROL **Container**] | O container na conta especificada para onde você deseja que os dados do Customer Journey Analytics sejam enviados. Conceda permissões para fazer upload de arquivos para o aplicativo do Azure que você criou anteriormente. |
    | [!UICONTROL **Prefixo**] | A pasta no container onde você deseja inserir os dados. Especifique um nome de pasta estática e adicione uma barra após o nome para criar a pasta. Por exemplo, `folder_name/`<p>Verifique se a ID do aplicativo que você especificou ao configurar a conta do Azure RBAC recebeu a função `Storage Blob Data Contributor` para acessar o container (pasta).</p> <p>Para obter mais informações, consulte [Funções integradas do Azure](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles).</p> |
    | [!UICONTROL **Nome e caminho do arquivo**] | Especifique um nome de arquivo personalizado dinâmico a ser usado para exportações automatizadas enviadas para este local. Você também pode preceder o nome do arquivo com um caminho de arquivo personalizado dinâmico. <p>Essa opção permite automatizar a criação de nomes de arquivos e o posicionamento de pastas, de modo que os nomes de arquivos sejam previsíveis e organizados em pastas de maneira lógica. Por exemplo, os nomes de arquivos podem ser nomeados de acordo com o dia em que foram entregues e, em seguida, colocados em pastas que correspondem a cada mês.</p> <p>Use qualquer uma das seguintes variáveis no nome e no caminho do arquivo para torná-las dinâmicas:</p><ul><li>**{yyyy}**: ano civil de 4 dígitos (diferencia maiúsculas de minúsculas)</li><li>**{yy}**: ano civil de 2 dígitos (diferencia maiúsculas de minúsculas)</li><li>**{MM}**: mês de 2 dígitos (diferencia maiúsculas de minúsculas)</li><li>**{dd}**: dia de 2 dígitos (diferencia maiúsculas de minúsculas)</li><li>**{HH}**: hora com 2 dígitos (diferencia maiúsculas de minúsculas)</li><li>**{mm}**: minutos de 2 dígitos (diferencia maiúsculas de minúsculas)</li><li>**{ss}**: segundos de 2 dígitos (diferencia maiúsculas de minúsculas)</li><li>**{fff}**: nanossegundos de 3 dígitos (diferencia maiúsculas de minúsculas)</li><li>**{instance_id}**: UUID da solicitação (instância)</li><li>**{export_id}**: Exportar (agendar) UUID</li><li>**{idx}**: Índice começa em 0 (incrementado para cada arquivo)</li><li>**{total}**: Número total de arquivos para todo o trabalho de transferência</li><li>**{completion_millis}**: Tempo de transferência em milissegundos</li></ul></p><p>Por exemplo, se você especificar `${yyyy}/${MM}/${dd}/my-report-${instance_id} -${idx}`, uma exportação que é enviada automaticamente para este destino em 15 de janeiro de 2026 terá o seguinte caminho de arquivo e nome: [prefix_folder_name]/2026/01/15/my-report-[UUID]-1.csv</p> |
    | [!UICONTROL **Conta**] | A conta de armazenamento do Azure. |

@@ -17,7 +17,7 @@ role_v2:
 source-git-commit: caf1e4497d5dbe370ce23481ee1fbf1b6db59bf6
 workflow-type: tm+mt
 source-wordcount: 1788
-ht-degree: 15%
+ht-degree: 20%
 
 ---
 
@@ -111,7 +111,7 @@ Você pode habilitar a identificação de identidade ao [adicionar](/help/connec
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics"
 >title="Unificação de métricas"
->abstract="As métricas de compilação são calculadas usando um conjunto de amostras de dados com carimbos de data e hora de evento dos últimos 7 dias.<br>Este conjunto de amostras de dados geralmente difere dos dados de exemplo usados na tabela **[!UICONTROL Preview]**."
+>abstract="As métricas de unificação são calculadas usando um conjunto de amostras de dados com carimbos de data e hora de evento dos últimos 7 dias.<br>Este conjunto de amostras de dados geralmente difere dos dados de amostra usados na tabela de **[!UICONTROL Visualização]**."
 
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics_gbs_personidcoverage"
@@ -126,7 +126,7 @@ Você pode habilitar a identificação de identidade ao [adicionar](/help/connec
 >[!CONTEXTUALHELP]
 >id="connection_stitchingmetrics_persistentidcoverage"
 >title="Cobertura de ID persistente"
->abstract="Esse valor é usado para identificação durante o processo de compilação (em tempo real e repetição), caso um valor de ID de pessoa não possa ser detectado. <br/>Eventos sem ID persistente e sem ID de pessoa são descartados dos dados. Para obter melhores resultados da unificação, uma ID persistente deve estar presente em todos os eventos."
+>abstract="Esse valor é usado para identificação durante o processo de unificação (em tempo real e repetição), caso um valor de ID de pessoa não possa ser detectado. <br/>Eventos sem ID persistente e sem ID de pessoa são descartados dos dados. Para obter melhores resultados da unificação, uma ID persistente deve estar presente em todos os eventos."
 
 
 >[!CONTEXTUALHELP]

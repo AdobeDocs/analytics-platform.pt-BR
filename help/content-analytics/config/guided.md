@@ -21,7 +21,7 @@ topic_v2:
 source-git-commit: add42fb00c3ce65d9c40bb023bd6bf8bdd397ee1
 workflow-type: tm+mt
 source-wordcount: 4111
-ht-degree: 46%
+ht-degree: 61%
 
 ---
 
@@ -92,7 +92,7 @@ O assistente de configuração guiado consiste em quatro seções ([Detalhes](#d
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_connection_header"
 >title="Conexão"
->abstract="Selecione uma conexão existente do Customer Journey Analytics com a qual você deseja mesclar seus dados do Content Analytics."
+>abstract="Selecione uma conexão do Customer Journey Analytics para mesclar com os dados do Content Analytics."
 
 Cada configuração requer um nome exclusivo. Por exemplo, `Example Content Analytics configuration`. O nome é necessário para salvar ou implementar uma configuração.
 
@@ -164,37 +164,37 @@ Se você já tiver selecionado uma conexão, mas quiser alterá-la:
 >[!CONTEXTUALHELP]
 >id="ac_onboarding_dataviews_button"
 >title="Exibição de dados"
->abstract="Para a configuração do Content Analytics, é necessário selecionar uma ou mais visualizações de dados. Assim, você pode mesclar seus dados de Análise de Conteúdo com outros dados."
+>abstract="Para a configuração do Content Analytics, é necessário selecionar uma ou mais exibições de dados. Assim, você pode mesclar seus dados de Análise de Conteúdo com outros dados."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataviews_header"
 >title="Visualizações de dados"
->abstract="Selecione uma ou mais visualizações de dados existentes no Customer Journey Analytics que você deseja mesclar com os dados do Content Analytics."
+>abstract="Selecione uma ou mais visualizações de dados do Customer Journey Analytics para mesclar com os dados do Content Analytics."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataviews_header_alt"
 >title="Visualizações de dados"
->abstract="Selecione uma ou mais visualizações de dados existentes do Customer Journey Analytics com as quais você deseja mesclar seus dados do Content Analytics.<br/>"
+>abstract="Selecione uma ou mais visualizações de dados do Customer Journey Analytics para mesclar com os dados do Content Analytics.<br/>"
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataviews_new_dialog"
 >title="Visualizações de dados selecionadas"
->abstract="Você modificou as visualizações de dados selecionadas para essa configuração. As visualizações de dados selecionadas serão atualizadas para incluir métricas e dimensões do Content Analytics. Essas métricas e dimensões serão removidas das visualizações de dados selecionadas anteriormente que não estão mais selecionadas.<br/><br/>Se uma conexão diferente estiver associada às visualizações de dados selecionadas, a conexão será atualizada para incluir conjuntos de dados do Content Analytics. Os conjuntos de dados do Content Analytics não são removidos da conexão selecionada originalmente.<br/><br/>Todas as visualizações de dados selecionadas herdam os canais que fazem parte dessa configuração."
+>abstract="As visualizações de dados selecionadas foram modificadas para essa configuração. A visualização de dados selecionada será atualizada para incluir métricas e dimensões do Content Analytics. Essas métricas e dimensões serão removidas das visualizações de dados selecionadas anteriormente que não estão mais selecionadas.<br/><br/>Se uma conexão diferente estiver associada às visualizações de dados selecionadas, a conexão será atualizada para incluir conjuntos de dados do Content Analytics. Os conjuntos de dados do Content Analytics não são removidos da conexão selecionada originalmente.<br/><br/>Todas as visualizações de dados selecionadas herdam os canais que fazem parte dessa configuração."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataviews_change_dialog"
 >title="Visualizações de dados selecionadas"
->abstract="Você modificou as visualizações de dados selecionadas para essa configuração. As visualizações de dados selecionadas serão atualizadas para incluir métricas e dimensões do Content Analytics. Essas métricas e dimensões serão removidas das visualizações de dados selecionadas anteriormente que não estão mais selecionadas.<br/><br/>Se uma conexão diferente estiver associada às visualizações de dados selecionadas, a conexão será atualizada para incluir conjuntos de dados do Content Analytics. Os conjuntos de dados do Content Analytics não são removidos da conexão selecionada originalmente.<br/><br/>Todas as visualizações de dados selecionadas herdam os canais que fazem parte dessa configuração."
+>abstract="As visualizações de dados selecionadas foram modificadas para essa configuração. A visualização de dados selecionada será atualizada para incluir métricas e dimensões do Content Analytics. Essas métricas e dimensões serão removidas das visualizações de dados selecionadas anteriormente que não estão mais selecionadas.<br/><br/>Se uma conexão diferente estiver associada à visualização de dados selecionada, ela será atualizada para incluir conjuntos de dados do Content Analytics. Os conjuntos de dados do Content Analytics não são removidos da conexão selecionada originalmente.<br/><br/>Todas as visualizações de dados selecionadas herdam os canais que fazem parte dessa configuração."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataviews_current_cleanup_labels_dialog"
 >title="Visualizações de dados selecionadas"
->abstract="Você modificou as visualizações de dados selecionadas para essa configuração. As visualizações de dados selecionadas serão atualizadas para incluir métricas e dimensões do Content Analytics. Essas métricas e dimensões serão removidas das visualizações de dados selecionadas anteriormente que não estão mais selecionadas.<br/><br/>Se uma conexão diferente estiver associada às visualizações de dados selecionadas, a conexão será atualizada para incluir conjuntos de dados do Content Analytics. Os conjuntos de dados do Content Analytics não são removidos da conexão selecionada originalmente.<br/><br/>Todas as visualizações de dados selecionadas herdam os canais que fazem parte dessa configuração."
+>abstract="As visualizações de dados selecionadas foram modificadas para essa configuração. A visualização de dados selecionada será atualizada para incluir métricas e dimensões do Content Analytics. Essas métricas e dimensões serão removidas das visualizações de dados selecionadas anteriormente que não estão mais selecionadas.<br/><br/>Se uma conexão diferente estiver associada à visualização de dados selecionada, ela será atualizada para incluir conjuntos de dados do Content Analytics. Os conjuntos de dados do Content Analytics não são removidos da conexão selecionada originalmente.<br/><br/>Todas as visualizações de dados selecionadas herdam os canais que fazem parte dessa configuração."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataviews_prev_cleanup_labels_dialog"
 >title="Visualizações de dados selecionadas"
->abstract="Você modificou as visualizações de dados selecionadas para essa configuração. As visualizações de dados selecionadas serão atualizadas para incluir métricas e dimensões do Content Analytics. Essas métricas e dimensões serão removidas das visualizações de dados selecionadas anteriormente que não estão mais selecionadas.<br/><br/>Se uma conexão diferente estiver associada às visualizações de dados selecionadas, a conexão será atualizada para incluir conjuntos de dados do Content Analytics. Os conjuntos de dados do Content Analytics não são removidos da conexão selecionada originalmente.<br/><br/>Todas as visualizações de dados selecionadas herdam os canais que fazem parte dessa configuração."
+>abstract="As visualizações de dados selecionadas foram modificadas para essa configuração. A visualização de dados selecionada será atualizada para incluir métricas e dimensões do Content Analytics. Essas métricas e dimensões serão removidas das visualizações de dados selecionadas anteriormente que não estão mais selecionadas.<br/><br/>Se uma conexão diferente estiver associada à visualização de dados selecionada, ela será atualizada para incluir conjuntos de dados do Content Analytics. Os conjuntos de dados do Content Analytics não são removidos da conexão selecionada originalmente.<br/><br/>Todas as visualizações de dados selecionadas herdam os canais que fazem parte dessa configuração."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_channels_button"
@@ -250,7 +250,7 @@ Em seguida, você pode configurar o canal com mais detalhes. Esta configuração
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_experience_locations_header"
 >title="Coleção de dados de locais de experiência móvel"
->abstract="Indique quais locais de experiência devem ser **excluídos** ao coletar dados para o Content Analytics. Exclua locais de experiência identificáveis pessoalmente."
+>abstract="Indique quais locais de experiências devem ser **excluídos** ao coletar dados para o Content Analytics. Exclua locais de experiência identificáveis pessoalmente."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_asset_locations_boldheader"
@@ -270,7 +270,7 @@ Em seguida, você pode configurar o canal com mais detalhes. Esta configuração
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_asset_urls_header"
 >title="Coleta de dados de URLs de ativos móveis"
->abstract="Indique quais URLs de ativos devem ser **excluídas** ao coletar dados para o Content Analytics. Exclua URLs de ativos pessoalmente identificáveis."
+>abstract="Indique quais URLs de ativos devem ser **excluídos** ao coletar dados para o Content Analytics. Exclua URLs de ativos pessoalmente identificáveis."
 
 Para o canal móvel, você pode configurar a [captura e definição de experiência](#experience-capture-and-definition), a [coleção de dados](#data-collection) e as [substituições de cabeçalho](#header-overrides).
 
@@ -528,7 +528,7 @@ Para configurar a coleta de dados do:
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_header_overrides_header"
 >title="Substituições de cabeçalho"
->abstract="Recurso avançado para ignorar a detecção de bot ou tráfego de porta. O Content Analytics inclui seus cabeçalhos HTTP personalizados ao chamar seus pontos de extremidade."
+>abstract="Recurso avançado para ignorar a detecção de bots ou tráfego de porta. O Content Analytics inclui os cabeçalhos HTTP personalizados ao chamar os pontos de extremidade."
 
 <!-- needs modification for mobile channel -->
 
