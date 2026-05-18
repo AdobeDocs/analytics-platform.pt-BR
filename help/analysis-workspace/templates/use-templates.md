@@ -7,7 +7,7 @@ exl-id: d61f215d-9089-4014-9c5a-97f5d7134f34
 source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
 workflow-type: tm+mt
 source-wordcount: '21144'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -280,7 +280,7 @@ Estes são os modelos disponíveis:
 >[!CONTEXTUALHELP]
 >id="aa-template--falloutReport"
 >title="Visualize onde as pessoas saem ou continuam por uma sequência predefinida de páginas."
->abstract="**Isso pode ajudar** a entender melhor de onde as pessoas estão saindo da jornada do usuário.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como analisar taxas de conversão por meio de processos específicos no site (como um processo de compra ou registro) ou analisar correlações entre eventos no site. (Por exemplo, a porcentagem de pessoas que acessaram sua política de privacidade e compraram um produto.) Você também pode usar esse template para fazer comparações lado a lado de dois segmentos diferentes no mesmo relatório.<br/>Este modelo usa a visualização de fallout."
+>abstract="**Isso pode ajudar** a entender melhor de onde as pessoas estão saindo da jornada do usuário.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como analisar taxas de conversão por meio de processos específicos no site (como um processo de compra ou registro) ou analisar correlações entre eventos no site. (Por exemplo, a porcentagem de pessoas que acessaram sua política de privacidade e compraram um produto.) Também é possível usar este modelo para fazer comparações lado a lado de dois segmentos diferentes no mesmo relatório.<br/>Este modelo usa a visualização de fallout."
 
 >[!CONTEXTUALHELP]
 >id="aa-template--cross-device-analysis"
@@ -487,7 +487,7 @@ Estes são os modelos disponíveis:
 >[!CONTEXTUALHELP]
 >id="template--audienceOverview"
 >title="Veja quais públicos-alvo são representados entre as pessoas que visitam seu site."
->abstract="**Isso pode ajudá-lo** a entender melhor as informações gerais sobre os públicos, onde eles se originaram (RTCDP, Customer Journey Analytics e assim por diante), a sobreposição de públicos e muito mais.<br/>**Com base no que você aprendeu, é possível** fazer várias coisas, como usar os dados para se concentrar nos esforços de marketing para esses públicos específicos ou criar experiências personalizadas para clientes que abrangem vários públicos.<br/>Este modelo usa as dimensões Nome do Público-Alvo, Origem do Público-Alvo, Nome do Público-Alvo Encerrado e Origem do Público-Alvo Encerrado."
+>abstract="**Isso pode ajudar** a entender melhor as informações gerais sobre os públicos-alvo, onde eles se originaram (RTCDP, Customer Journey Analytics e assim por diante), a sobreposição de públicos-alvo e muito mais.<br/>**Com base no que aprender, é possível** fazer várias coisas, como usar os dados para direcionar os esforços de campanhas de marketing para esses públicos específicos ou criar experiências personalizadas para clientes que pertencem a vários públicos.<br/>Este modelo usa as dimensões Nome do público-alvo, Origem do público-alvo, Nome do público-alvo encerrado e Origem do público-alvo encerrado."
 
 <!--AA only-->
 
@@ -654,7 +654,7 @@ Estes são os modelos disponíveis:
 
 | Nome do modelo | Por que usar este modelo <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
-| **[!UICONTROL Visão geral do público-alvo]** | Veja quais públicos-alvo são representados entre as pessoas que visitam seu site.<p>**Isso pode ajudá-lo** a entender melhor as informações gerais sobre os públicos, onde eles se originaram (RTCDP, Customer Journey Analytics e assim por diante), a sobreposição de públicos e muito mais.</p><p>**Com base no que você aprendeu, é possível** fazer várias coisas, como usar os dados para se concentrar nos esforços de marketing para esses públicos específicos ou criar experiências personalizadas para clientes que abrangem vários públicos.</p><p>Esse modelo usa as dimensões Nome do público-alvo, Origem do público-alvo, Nome do público-alvo encerrado e Origem do público-alvo encerrado.</p><p>Para obter mais informações, consulte [Analisar públicos-alvo da Experience Platform na Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).</p> |
+| **[!UICONTROL Visão geral do público-alvo]** | Veja quais públicos-alvo são representados entre as pessoas que visitam seu site.<p>**Isso pode ajudar** a entender melhor as informações gerais sobre os públicos-alvo, onde eles se originaram (RTCDP, Customer Journey Analytics e assim por diante), a sobreposição de públicos-alvo e muito mais.</p><p>**Com base no que aprender, é possível** fazer várias coisas, como usar os dados para direcionar os esforços de campanhas de marketing para esses públicos específicos ou criar experiências personalizadas para clientes que pertencem a vários públicos.</p><p>Esse modelo usa as dimensões Nome do público-alvo, Origem do público-alvo, Nome do público-alvo encerrado e Origem do público-alvo encerrado.</p><p>Para obter mais informações, consulte [Analisar públicos-alvo da Experience Platform na Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).</p> |
 | [!UICONTROL **Visitantes novos versus recorrentes**] | Veja uma comparação entre novos visitantes e visitantes recorrentes. <p>**Isso pode ajudar** a entender melhor a eficácia do site na retenção da fidelidade do cliente ou a taxa com que você está adquirindo novos clientes.</p><p>**Com base no que aprender, você poderá** fazer várias coisas, como oferecer incentivos para compras futuras a visitantes novos, incentivando o seu retorno.</p><!-- This template uses the --> |
 | **ID de pessoa** | Visualize o comportamento individual de usuários em vários canais.<p>**Isso pode ajudar** a entender melhor a jornada completa do cliente e as interações em vários pontos de contato.</p><p>**Com base no que aprender, você poderá** fazer várias coisas, como personalizar as campanhas de marketing para direcionar melhor as preferências dos usuários.</p><!-- This template uses the --> |
 | **Países geográficos** | Veja o país de origem das pessoas que visitam o site.<p>**Isso pode ajudar** a entender melhor quais são os principais países de origem de visitantes do site.</p><p>**Com base no que aprender, você poderá** fazer várias coisas, como usar os dados para aumentar o foco das campanhas de marketing nesses países ou garantir que a experiência do site seja ideal em países com diferentes idiomas nativos.</p><p>Este modelo usa a dimensão “Países”. </p> |
@@ -752,7 +752,7 @@ Estes são os modelos disponíveis:
 >[!CONTEXTUALHELP]
 >id="template--referringDomainRankedReport"
 >title="Veja em quais domínios as pessoas clicam para acessar o seu site."
->abstract="**Isso pode ajudar** a entender quais sites de terceiros geram mais tráfego para o seu site. (Um link deve existir no site externo e um visitante deve clicar nele para que o item de dimensão seja exibido.)<br/>**Com base no que você aprende, é possível** fazer várias coisas, como criar ou ajustar o conteúdo para alinhar-se mais estreitamente aos interesses dos visitantes que vêm dos principais domínios de referência. <br/>Este modelo usa a dimensão “Domínio referenciador”."
+>abstract="**Isso pode ajudar** a entender quais sites de terceiros geram mais tráfego para o seu site. (Deve existir um link no site externo e o visitante deve clicar nele para exibir o item da dimensão.)<br/>**Com base no que aprender, é possível** realizar várias ações, como criar ou ajustar o conteúdo para melhor se alinhar aos interesses de visitantes que chegam dos principais domínios referenciadores. <br/>Este modelo usa a dimensão “Domínio referenciador”."
 
 >[!CONTEXTUALHELP]
 >id="template--referringDomainOriginalRankedReport"
@@ -1044,7 +1044,7 @@ Estes são os modelos disponíveis:
 >[!CONTEXTUALHELP]
 >id="cja-template--ajo-landing-page"
 >title="Visualize o comportamento do usuário, padrões de engajamento, taxas de conversão e outras métricas principais."
->abstract="**Isso pode ajudar** a entender melhor a eficácia da página de destino. <br/>**Com base no que aprender, você poderá** fazer várias coisas, como otimizar o desempenho da página de destino."
+>abstract="**Isso pode ajudar** a entender melhor a eficiência da página de destino. <br/>**Com base no que aprender, você poderá** fazer várias coisas, como otimizar o desempenho da página de destino."
 
 >[!CONTEXTUALHELP]
 >id="cja-template--ajo-channel"
@@ -1071,16 +1071,16 @@ Estes são os modelos disponíveis:
 >[!CONTEXTUALHELP]
 >id="template--brand-concierge--concierge"
 >title="Analise o engajamento do usuário por meio de padrões de conversa, feedback dos usuários e da eficácia das suas recomendações."
->abstract="**Isso pode ajudá-lo** a identificar padrões de envolvimento, avaliar a qualidade da conversa, rastrear tendências de satisfação do cliente e medir a eficácia das recomendações de link.<br/>**Com base no que você aprende, é possível** fazer várias coisas, como refinar as respostas do seu agente de IA, desenvolver conteúdo direcionado para problemas frequentes, melhorar os algoritmos de recomendação ou criar caminhos especializados para diferentes segmentos de usuários."
+>abstract="**Isso pode ajudar** a identificar padrões de engajamento, avaliar a qualidade da conversa, rastrear tendências de satisfação do cliente e medir a eficácia das recomendações de link.<br/>**Com base no que aprender, é possível** realizar várias ações, como refinar as respostas do agente de IA, desenvolver conteúdo direcionado para problemas frequentes, melhorar algoritmos de recomendação ou criar caminhos especializados para diferentes segmentos de usuários."
 
 >[!CONTEXTUALHELP]
 >id="template--brand-concierge--meeting"
 >title="Monitore o ciclo de vida completo das solicitações de reunião B2B. Monitore as taxas de conversão, o desempenho do consultor e identifique os canais de geração de clientes potenciais mais eficazes."
->abstract="**Isso pode ajudá-lo** a acompanhar as taxas de conversão de reuniões, identificar membros de equipe com alto desempenho, entender as tendências sazonais no comportamento de reserva e identificar quais páginas geram as solicitações de reunião mais valiosas.<br/>**Com base no que você aprendeu, é possível** executar várias ações, como otimizar o processo de solicitação de reunião, redistribuir recursos em páginas de alta conversão, desenvolver treinamento direcionado para consultores com taxas de reserva mais baixas ou implementar novas estratégias para reduzir as reuniões perdidas."
+>abstract="**Isso pode ajudar** a acompanhar as taxas de conversão de reuniões, identificar membros da equipe com alto desempenho, entender as tendências sazonais no comportamento de reserva e identificar quais páginas geram as solicitações de reunião mais valiosas.<br/>**Com base no que aprender, é possível** realizar várias ações, como otimizar o processo de solicitação de reunião, redistribuir recursos para páginas com alta conversão, desenvolver treinamento direcionado para consultores com taxas de reserva mais baixas ou implementar novas estratégias para reduzir as reuniões perdidas."
 
 | Nome do modelo | Por que usar este modelo <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
-| [!UICONTROL **visão geral do Brand Concierge**] | Analise o engajamento do usuário por meio de padrões de conversa, feedback dos usuários e da eficácia das suas recomendações. <p>**Isso pode ajudá-lo** a identificar padrões de envolvimento, avaliar a qualidade da conversa, rastrear tendências de satisfação do cliente e medir a eficácia das recomendações de link.</p><p>**Com base no que você aprende, é possível** fazer várias coisas, como refinar as respostas do seu agente de IA, desenvolver conteúdo direcionado para problemas frequentes, melhorar os algoritmos de recomendação ou criar caminhos especializados para diferentes segmentos de usuários.</p> |
+| [!UICONTROL **visão geral do Brand Concierge**] | Analise o engajamento do usuário por meio de padrões de conversa, feedback dos usuários e da eficácia das suas recomendações. <p>**Isso pode ajudar** a identificar padrões de engajamento, avaliar a qualidade da conversa, rastrear tendências de satisfação do cliente e medir a eficácia das recomendações de link.</p><p>**Com base no que aprender, é possível** realizar várias ações, como refinar as respostas do agente de IA, desenvolver conteúdo direcionado para problemas frequentes, melhorar algoritmos de recomendação ou criar caminhos especializados para diferentes segmentos de usuários.</p> |
 | **Reuniões B2B do Brand Concierge** | Rastreie o ciclo de vida completo das solicitações de reunião B2B. Monitore as taxas de conversão, avalie o desempenho da reserva do consultor e identifique os canais de geração de leads mais eficientes. <p>**Isso pode ajudá-lo** a controlar as taxas de conversão das reuniões, identificar membros da equipe com alto desempenho, entender as tendências sazonais no comportamento de reserva e identificar quais URLs de páginas geram as solicitações de reunião mais valiosas. </p><p>**Com base no que você aprendeu, é possível** executar várias ações, como otimizar o processo de solicitação de reunião, redistribuir recursos para URLs de página com alta conversão, desenvolver treinamento direcionado para consultores com taxas de reserva mais baixas ou implementar novas estratégias para reduzir as reuniões perdidas.</p> |
 
 
@@ -1121,11 +1121,11 @@ Estes são os modelos disponíveis:
 
 | Nome do modelo | Por que usar este modelo <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
-| [!UICONTROL **Insights do modelo incremental do Mix Modeler**] | Veja insights de modelos selecionados gerados pelo Mix Modeler.<p>**Isso pode ajudá-lo** a entender melhor os insights incrementais dos modelos gerados no Mix Modeler. <p>**Com base nesses insights**, você poderá:<ul><li>Visualizar e quantificar o impacto das atividades de marketing da organização.</li><li>Identificar os canais de alto desempenho.</li><li>Identificar os canais que podem precisar de otimização.</li></ul></p> |
+| [!UICONTROL **Insights do modelo incremental do Mix Modeler**] | Veja insights de modelos selecionados gerados pelo Mix Modeler.<p>**Isso pode ajudar** a entender melhor os insights incrementais dos modelos gerados no Mix Modeler. <p>**Com base nesses insights**, é possível:<ul><li>Visualizar e quantificar o impacto das atividades de marketing da organização.</li><li>Identificar os canais de alto desempenho.</li><li>Identificar os canais que podem precisar de otimização.</li></ul></p> |
 
 <!-- CJA only -->
 
 >[!CONTEXTUALHELP]
 >id="template--mixmodeler-incremental-models-insights"
 >title="Veja insights de modelos selecionados gerados pelo Mix Modeler."
->abstract="**Isso pode ajudá-lo** a entender melhor os insights incrementais dos modelos gerados no Mix Modeler. <br/>**Com base nesses insights**, você poderá:<ul><li>Visualizar e quantificar o impacto das atividades de marketing da organização.</li><li>Identificar os canais de alto desempenho.</li><li>Identificar os canais que podem precisar de otimização.</li></ul>"
+>abstract="**Isso pode ajudar** a entender melhor os insights incrementais dos modelos gerados no Mix Modeler. <br/>**Com base nesses insights**, é possível:<ul><li>Visualizar e quantificar o impacto das atividades de marketing da organização.</li><li>Identificar os canais de alto desempenho.</li><li>Identificar os canais que podem precisar de otimização.</li></ul>"
