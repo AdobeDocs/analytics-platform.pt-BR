@@ -6,16 +6,13 @@ feature: Curate and Share
 exl-id: 3d467050-4bf0-4bdb-b7d2-eba67fbd526d
 role: User
 TQID: https://experienceleague.adobe.com/THoHVmp3vbNeG4C9teqfWmp8mpaHGBsda-zKSFaF8Is
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 247b308f55a1ac29c5fc8a7d689580451af43378
 workflow-type: tm+mt
 source-wordcount: 299
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -42,7 +39,7 @@ Há vários métodos disponíveis para exportar a partir do Analysis Workspace. 
 | Método de exportação | Use este método se quiser... |
 |---------|----------|
 | [Baixar para a sua estação de trabalho](/help/analysis-workspace/export/download-send.md) | <li>Baixar projetos para a sua estação de trabalho pessoal.</li><li>Baixar somente dados ad hoc (não programado).</li> <li>Baixar até 50 mil linhas.</li> <!--true? Are there 2 different options to download to your workstation? is this emailing it? --> |
-| [Enviar a outros usuários](/help/analysis-workspace/export/t-schedule-report.md) | <li>Enviar dados exportados do Customer Journey Analytics por email a outros usuários da sua organização.</li><li>Enviar o email de maneira ad hoc ou conforme uma programação.</li> <li>Incluir até 50 mil linhas no email.</li> <!--true?--> |
+| [Enviar a outros usuários](/help/analysis-workspace/export/t-schedule-report.md) | <li>Enviar dados exportados do Customer Journey Analytics por email a outros usuários da sua organização.</li><li>Enviar o email de maneira ad hoc ou conforme uma programação.</li> <li>Incluir no máximo 400 linhas no email.</li> <!--true?--> |
 | [Exportar para uma localização na nuvem](/help/analysis-workspace/export/export-cloud.md) | <li>Exportar para um local na nuvem, como <ul><li>Zona de destino de dados da Adobe Experience Platform</li><li>Google Cloud Platform</li><li>Microsoft Azure</li><li>Amazon S3</li><li>Snowflake</li></ul></li><li>Exportar dados de maneira ad hoc ou conforme uma programação.</li><li>Armazenar quantidades maiores de dados do Customer Journey Analytics.</li><li>Exportar tabelas completas com milhares ou milhões de linhas.<!-- What other things? Wiki talks about things that aren't even possible in Data Warehouse. What are they? --> </li> |
 
 {style="table-layout:auto"}
