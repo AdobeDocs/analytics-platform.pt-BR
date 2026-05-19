@@ -27,7 +27,7 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+source-git-commit: dfa7d88f871edf97b688d3263eb68017ba047690
 workflow-type: tm+mt
 source-wordcount: 21144
 ht-degree: 98%
@@ -406,7 +406,7 @@ Estes são os modelos disponíveis:
 >[!CONTEXTUALHELP]
 >id="template--content-analytics"
 >title="Saiba qual conteúdo e atributos de conteúdo apresentam melhor desempenho."
->abstract="**Isso pode ajudar você** a saber como seu conteúdo está se saindo em um nível granular. É possível analisar o desempenho de ativos individuais ou atributos específicos. O Content Analytics usa IA para gerar atributos automaticamente e marcar seu conteúdo com eles. <a href="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/content-analytics/content-analytics" target="&quot;_blank&quot;">Saiba mais</a>.<br/>**Com base no que aprender, você poderá** fazer uma série de coisas, como promover ativos de alto desempenho na sua página inicial, personalizar conteúdo para segmentos específicos a fim de incluir atributos de alto desempenho ou eliminar conteúdo que está próximo de se tornar obsoleto."
+>abstract="**Isso pode ajudar você** a saber como seu conteúdo está se saindo em um nível granular. É possível analisar o desempenho de ativos individuais ou atributos específicos. O Content Analytics usa IA para gerar atributos automaticamente e marcar seu conteúdo com eles. <a href="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/content-analytics/content-analytics" target="_blank">Saiba mais</a>.<br/>**Com base no que aprender, você poderá** fazer uma série de coisas, como promover ativos de alto desempenho na sua página inicial, personalizar conteúdo para segmentos específicos a fim de incluir atributos de alto desempenho ou eliminar conteúdo que está próximo de se tornar obsoleto."
 
 
 Estes são os modelos disponíveis:
@@ -1072,7 +1072,7 @@ Estes são os modelos disponíveis:
 >[!CONTEXTUALHELP]
 >id="cja-template--ajo-channel"
 >title="Visualize um resumo completo das métricas de engajamento e tráfego para todas as campanhas e jornadas no ambiente."
->abstract="**Isso pode ajudar** a entender melhor a eficiência de alto nível das campanhas e jornadas. <br/>**Com base no que aprender, você poderá** fazer várias coisas, como ajustar as campanhas e jornadas com base nos níveis de engajamento do público-alvo."
+>abstract="**Isso pode ajudar** a entender melhor a eficácia de alto nível das campanhas e jornadas. <br/>**Com base no que aprender, você poderá** fazer várias coisas, como ajustar as campanhas e jornadas com base nos níveis de engajamento do público-alvo."
 
 >[!CONTEXTUALHELP]
 >id="cja-template--ajo-subscription"
