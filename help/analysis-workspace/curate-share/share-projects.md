@@ -6,30 +6,15 @@ feature: Curate and Share
 exl-id: ac4ed73a-e890-46cc-be08-4ccedf66b47d
 role: User
 TQID: https://experienceleague.adobe.com/qAYUiD5wa5PhvEjTi397PC4n0xX0rWKJSYaAjCR6jtg
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
-subfeature_v2:
-  - id: a3b826fd-7a63-4a83-8736-83eee6668f44
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: c38ed341-fab2-46df-9d72-88d8166edebb
-  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
-  - id: f21d8c43-b886-433b-93ea-5982cbfc16b7
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4id: d76b9e53-27fb-4597-933f-419cc0dd46db
+subfeature_v2: id: a3b826fd-7a63-4a83-8736-83eee6668f44id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: c38ed341-fab2-46df-9d72-88d8166edebbid: e44e560d-5e5c-4a5f-9a87-eb8adbb817afid: f21d8c43-b886-433b-93ea-5982cbfc16b7
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080bid: e1e0219c-f879-479f-8427-888ed2a6e9c2id: eddd9b14-83bd-4ff4-9072-54a4a484abb7id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 0145475e18cfbc3ae3a83e5e3838cdec02b57bda
 workflow-type: tm+mt
-source-wordcount: 2185
-ht-degree: 96%
+source-wordcount: 2181
+ht-degree: 89%
 
 ---
 
@@ -61,7 +46,7 @@ Qualquer [preparação](curate.md) feita antes do compartilhamento será refleti
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Compartilhamento de projetos no Analysis Workspace](https://experienceleague.adobe.com/pt-br/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/curate-and-share/share-with-anyone-in-analysis-workspace){target="_blank"} para assistir a um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Compartilhamento de projetos no Analysis Workspace](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/curate-and-share/share-with-anyone-in-analysis-workspace){target="_blank"} para assistir a um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 
@@ -80,9 +65,9 @@ Você pode compartilhar uma função específica com usuários ou grupos ou comp
 
 Ao compartilhar uma função de projeto específica com usuários e grupos em sua organização, considere o seguinte:
 
-* As funções do projeto (**[!UICONTROL Editar original]**, **[!UICONTROL Editar cópia]** e **[!UICONTROL Somente leitura]**) estão vinculadas ao usuário e à ID específica do projeto. As funções do projeto são independentes das permissões de usuário gerenciadas no [Admin Console da Adobe Experience Cloud](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/administration/admin-getting-started).
+* As funções do projeto (**[!UICONTROL Editar original]**, **[!UICONTROL Editar cópia]** e **[!UICONTROL Somente leitura]**) estão vinculadas ao usuário e à ID específica do projeto. As funções do projeto são independentes das permissões de usuário gerenciadas no [CX Enterprise Admin Console](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/administration/admin-getting-started).
 
-* No Customer Journey Analytics, os grupos são definidos por perfis de produto no [Admin Console da Adobe Experience Cloud](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/administration/admin-getting-started). Os administradores podem compartilhar com qualquer grupo, incluindo *Todos*. Quem não é administrador pode compartilhar com qualquer grupo em que seja membro, exceto *Todos*.
+* No Customer Journey Analytics, os grupos são definidos por perfis de produtos no [CX Enterprise Admin Console](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/administration/admin-getting-started). Os administradores podem compartilhar com qualquer grupo, incluindo *Todos*. Quem não é administrador pode compartilhar com qualquer grupo em que seja membro, exceto *Todos*.
 
 * Um usuário que é colocado em várias funções sempre obtém a melhor experiência. Isso pode ocorrer se um usuário for adicionado como pessoa e como parte de um grupo. Por exemplo, se for dada a um usuário a função **[!UICONTROL Editar original]** como pessoa e a função **[!UICONTROL Somente leitura]** como membro de um grupo, o usuário receberá uma experiência de projeto **[!UICONTROL Editar original]**.
 
@@ -152,8 +137,8 @@ Para compartilhar o link do projeto com os usuários em sua organização:
 
 >[!CONTEXTUALHELP]
 >id="workspace_share_with_anyone_require_aec_authentication"
->title="Exige autenticação da Experience Cloud"
->abstract="A sua organização exige que usuários façam logon na Experience Cloud para usar este link."
+>title="Exigir autenticação do CX Enterprise"
+>abstract="Sua organização exige que os usuários façam logon no CX Enterprise para usar esse link."
 
 
 É possível conceder [acesso somente de leitura](/help/analysis-workspace/curate-share/view-only-projects.md) a projetos do Analysis Workspace a pessoas que não têm acesso ao Customer Journey Analytics. Esse acesso concedido pode incluir:
@@ -176,11 +161,11 @@ Para compartilhar o link do projeto com os usuários em sua organização:
 >
 >* Um projeto pode se tornar inacessível se muitos usuários tentarem acessar um determinado link ao mesmo tempo. Por padrão, mais de 190 pessoas podem acessar um único link a cada 5 minutos. Se sua organização atingir esse limite, aguarde 5 minutos e tente acessar o link novamente.
 >
->* Para as licenças [!DNL Healthcare Shield] e [!DNL Privacy & Security Shield], o recurso [!UICONTROL Compartilhar com qualquer pessoa] exige a autenticação da Experience Cloud. Para clientes do [!DNL Healthcare Shield], um aviso de “conformidade com a HIPAA” aparece, mas ainda é possível usar esse recurso após a autenticação na Experience Cloud.
+>* Para as licenças [!DNL Healthcare Shield] e [!DNL Privacy & Security Shield], o recurso [!UICONTROL Compartilhar com qualquer pessoa] requer a autenticação do CX Enterprise. Para [!DNL Healthcare Shield] clientes, um aviso de &quot;conformidade com a HIPAA&quot; é exibido, mas você ainda pode usar esse recurso após a autenticação no CX Enterprise.
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Compartilhar com qualquer pessoa](https://experienceleague.adobe.com/pt-br/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/curate-and-share/share-with-anyone-in-analysis-workspace){target="_blank"} para assistir a um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Compartilhar com qualquer pessoa](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/curate-and-share/share-with-anyone-in-analysis-workspace){target="_blank"} para assistir a um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 
@@ -203,15 +188,15 @@ Para compartilhar um projeto do Analysis Workspace com qualquer pessoa:
 
 1. Escolha se deseja habilitar a seguinte opção de segurança (esta opção pode ser controlada pelo administrador do Customer Journey Analytics):
 
-   * **[!UICONTROL Exigir autenticação da Experience Cloud]:**
+   * **[!UICONTROL Exigir autenticação do CX Enterprise]:**
 
-     Quando esta opção está habilitada, os únicos usuários que podem acessar o projeto são aqueles que podem fazer logon na organização da Adobe Experience Cloud onde o projeto que você está compartilhando foi criado. No entanto, usuários com os quais você compartilha não precisam ter acesso ao Customer Journey Analytics.
+     Quando essa opção é ativada, os únicos usuários que podem acessar o projeto são aqueles que podem fazer logon na organização da CX Enterprise em que o projeto que você está compartilhando foi criado. No entanto, usuários com os quais você compartilha não precisam ter acesso ao Customer Journey Analytics.
 
      Os administradores do Customer Journey Analytics podem configurar essa preferência para a empresa, conforme descrito em [Preferências](/help/analysis-workspace/user-preferences.md). É possível encontrar os seguintes cenários, dependendo de como a administração configurou essa opção:
 
       * Se essa opção não estiver visível, a administração do Customer Journey Analytics não habilitou esse recurso.
 
-      * Se essa opção estiver habilitada e não puder ser desabilitada, isso significa que o administrador do Customer Journey Analytics exige a autenticação da Experience Cloud para qualquer pessoa que acesse projetos do Analysis Workspace. Esse é sempre o caso de organizações que adquirem uma licença do Healthcare Shield.
+      * Se essa opção estiver ativada e você não puder desativá-la, a opção bloqueada significa que o administrador do Customer Journey Analytics requer a autenticação do CX Enterprise para qualquer pessoa que acessar os projetos da Analysis Workspace. Esse é sempre o caso de organizações que adquirem uma licença do Healthcare Shield.
 
 1. Ao lado do campo **[!UICONTROL Compartilhar com qualquer pessoa (sem necessidade de fazer logon)]**, clique no ícone ![Link](/help/assets/icons/Link.svg) para copiar o link para a área de transferência do seu sistema.
 
@@ -235,7 +220,7 @@ Você pode compartilhar os componentes integrados que fazem parte do seu projeto
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Compartilhar componentes integrados no Analysis Workspace](https://experienceleague.adobe.com/pt-br/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/curate-and-share/share-with-anyone-in-analysis-workspace){target="_blank"} para assistir a um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Compartilhar componentes integrados no Analysis Workspace](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/curate-and-share/share-with-anyone-in-analysis-workspace){target="_blank"} para assistir a um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 

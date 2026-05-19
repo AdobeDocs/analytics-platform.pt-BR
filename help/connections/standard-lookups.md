@@ -6,24 +6,15 @@ solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 TQID: https://experienceleague.adobe.com/QSgHLiPoLQyr0DzEvWfSt535YR6Kch-XhWUyPXOO6gU
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 14557a59902110b1768d61e621adfb3f76ee9930
 workflow-type: tm+mt
 source-wordcount: 442
-ht-degree: 43%
+ht-degree: 42%
 
 ---
 
@@ -34,7 +25,7 @@ ht-degree: 43%
 >As Pesquisas padrão só estão disponíveis para fontes de dados do conector de origem do Analytics no Customer Journey Analytics. Você pode usá-las com implementações padrão do Adobe Analytics, com o [SDK da Web da Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=pt-BR) ou com as APIs de coleção de dados da Experience Platform.
 >
 
-Pesquisas padrão (também conhecidas por pesquisas fornecidas pela Adobe) aprimoram a capacidade do Customer Journey Analytics em relatar algumas dimensões/atributos que não são úteis por si mesmos, mas são úteis quando unidos a outros dados. Exemplos incluem atributos de dispositivos móveis e atributos de dimensões de SO e navegador, como números de versão do navegador. Uma &quot;Pesquisa padrão&quot; é semelhante a um conjunto de dados de pesquisa. As pesquisas padrão são aplicáveis em organizações da Experience Cloud. Eles são aplicados automaticamente a todos os conjuntos de dados de evento que contêm determinados campos de esquema XDM (veja abaixo os campos específicos). Existe um conjunto de dados de pesquisa padrão para cada localização de esquema que a Adobe está classificando.
+Pesquisas padrão (também conhecidas por pesquisas fornecidas pela Adobe) aprimoram a capacidade do Customer Journey Analytics em relatar algumas dimensões/atributos que não são úteis por si mesmos, mas são úteis quando unidos a outros dados. Exemplos incluem atributos de dispositivos móveis e atributos de dimensões de SO e navegador, como números de versão do navegador. Uma &quot;Pesquisa padrão&quot; é semelhante a um conjunto de dados de pesquisa. As pesquisas padrão são aplicáveis em organizações CX Enterprise. Eles são aplicados automaticamente a todos os conjuntos de dados de evento que contêm determinados campos de esquema XDM (veja abaixo os campos específicos). Existe um conjunto de dados de pesquisa padrão para cada localização de esquema que a Adobe está classificando.
 
 No Adobe Analytics tradicional, essas dimensões são exibidas sozinhas, enquanto no Customer Journey Analytics é necessário incluir essas dimensões ativamente ao criar visualizações de dados. No fluxo de trabalho Conexões, você seleciona um conjunto de dados que é sinalizado com uma chave para pesquisa padrão. A interface de exibições de dados de usuário inclui automaticamente todas as dimensões de pesquisa padrão disponíveis para relatórios. Os arquivos de pesquisa são automaticamente mantidos atualizados e disponíveis em todas as regiões e para todas as contas. Eles são armazenados em organizações específicas da região associadas ao cliente.
 

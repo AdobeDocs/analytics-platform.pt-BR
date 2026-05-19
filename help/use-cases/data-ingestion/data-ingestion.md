@@ -5,10 +5,10 @@ exl-id: 4a47c587-f48e-4e29-b97f-00c7d7e6972c
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
-source-git-commit: 46d799ad2621d83906908a3f60a59a1027c6518c
+source-git-commit: 0145475e18cfbc3ae3a83e5e3838cdec02b57bda
 workflow-type: tm+mt
-source-wordcount: '676'
-ht-degree: 89%
+source-wordcount: '827'
+ht-degree: 86%
 
 ---
 
@@ -29,12 +29,12 @@ Esse fluxo de trabalho utiliza o conector de origem do Analytics e varia depende
 
 ## Assimilar dados via Adobe Experience Platform Web SDK e Edge Network
 
-[O Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=pt-BR) é uma biblioteca JavaScript no lado do cliente que permite aos clientes da Adobe Experience Cloud interagir com os vários serviços na Experience Cloud por meio da Adobe Experience Platform Edge Network.
+O [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=pt-BR) é uma biblioteca JavaScript do lado do cliente que permite que os clientes do Adobe CX Enterprise interajam com os vários serviços no CX Enterprise por meio do Adobe Experience Platform Edge Network.
 
-1. [Configure a extensão do Adobe Experience Platform Web SDK nas marcas](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/sdk/overview.html?lang=pt-BR) para enviar dados para o Adobe Experience Cloud pelas propriedades da Web, por meio do Adobe Experience Platform Edge Network.
+1. [Configure a extensão do Adobe Experience Platform Web SDK nas tags](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/sdk/overview.html?lang=pt-BR) para enviar dados para o CX Enterprise a partir das propriedades da Web, por meio do Adobe Experience Platform Edge Network.
 1. Use o [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html?lang=pt-BR) para criar uma ou mais [conexões](/help/connections/create-connection.md) e [visualizações de dados](/help/data-views/data-views.md) que informarão seu relatórios entre canais.
 
-## Assimilar dados com ingestão em lote e por streaming
+## Assimilar dados com ingestão em lote e ingestão de transmissão
 
 A Adobe Experience Platform reúne dados de várias fontes para ajudar os profissionais de marketing a entender melhor o comportamento de seus clientes. A ingestão de dados da Adobe Experience Platform representa os vários métodos pelos quais a plataforma ingere dados dessas fontes e também como esses dados são mantidos no Data Lake para uso pelos serviços downstream da plataforma.
 
@@ -43,14 +43,14 @@ A Adobe Experience Platform reúne dados de várias fontes para ajudar os profis
 1. Configure a [Ingestão em lote](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html?lang=pt-BR#batch) para ingerir dados na Adobe Experience Platform como arquivos em lote. Os dados assimilados podem ser os dados do perfil de um arquivo simples em um sistema CRM (como um arquivo parquet) ou dados que estejam em conformidade com um esquema conhecido no registro do Experience Data Model (XDM).
 1. Use o [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html?lang=pt-BR) para criar uma ou mais [conexões](/help/connections/create-connection.md) e [visualizações de dados](/help/data-views/data-views.md) que informarão seu relatórios entre canais.
 
-### Ingestão por streaming
+### Ingestão de transmissão
 
-1. Configure a [Ingestão por streaming](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=pt-BR#streaming) para enviar dados de dispositivos no lado do cliente e do servidor para a Experience Platform em tempo real.
+1. Configure a [Ingestão de transmissão](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=pt-BR#streaming) para enviar dados de dispositivos no lado do cliente e do servidor para a Experience Platform em tempo real.
 1. Use o [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html?lang=pt-BR) para criar uma ou mais [conexões](/help/connections/create-connection.md) e [visualizações de dados](/help/data-views/data-views.md) que informarão seu relatórios entre canais.
 
 ## Trazer dados do Google Analytics para analisar no Customer Journey Analytics
 
-Consulte este tutorial sobre como [Analisar dados do Google Analytics usando o Customer Journey Analytics](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/module12/ex5.html?lang=pt-BR) para ver as etapas em detalhes.
+Consulte este tutorial sobre como [Analisar dados do Google Analytics usando o Customer Journey Analytics](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/module12/ex5.html) para ver as etapas em detalhes.
 
 ## Usar a API de inserção de dados em massa para obter dados no Analytics e, em seguida, assimilar por meio do conector de origem do Analytics no Experience Platform
 

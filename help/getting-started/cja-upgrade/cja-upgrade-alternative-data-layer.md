@@ -6,22 +6,14 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 3a0d03d1-def0-45e6-8eb2-115b88497e6d
 TQID: https://experienceleague.adobe.com/86uAMXhpBXaVnjA8Zh2G7Ail-XKR2HjrYNyge5BRMRc
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: d3cdead0-685a-4489-9250-4bb709942f66id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 14557a59902110b1768d61e621adfb3f76ee9930
 workflow-type: tm+mt
 source-wordcount: 696
-ht-degree: 56%
+ht-degree: 54%
 
 ---
 
@@ -68,7 +60,7 @@ Veja a seguir as vantagens e desvantagens de usar essa alternativa de atualizaç
 
 | Vantagens | Desvantagens |
 |----------|---------|
-| <ul><li>**Mostra todas as vantagens de hospedar dados na Experience Edge Network**: <p>As vantagens incluem:</p><ul><li>Geração de relatórios com alto desempenho e disponibilidade de dados devido à capacidade da Adobe Experience Platform de potencializar [casos de uso de personalização em tempo real](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html?lang=pt-BR)</li><li>Consolidar a implementação da coleção de dados da Adobe Experience Cloud entre outros produtos da Experience Cloud (AJO, RTCDP e assim por diante)</li><li>Não dependente da nomenclatura do Adobe Analytics (prop, eVar, evento etc.)</li></ul><li>**Usa a lógica da camada de dados atual**: este método usa a lógica da camada de dados atual no lugar de uma implementação convencional do Web SDK. Embora essa abordagem exija alguma configuração, ela não requer uma implementação completamente nova do zero e não requer o preenchimento de elementos de dados ou regras de tag. Ela permite mapear dados da camada de dados para o XDM, em vez de preencher um objeto XDM do zero.</li></ul> | <ul><li>**Requisito de mapeamento para envio de dados para a Platform**: quando sua organização estiver pronta para usar o Customer Journey Analytics, envie dados para um conjunto de dados na Adobe Experience Platform. <p>Como essa opção permite que você coloque toda a camada de dados do lado do cliente no objeto de dados e envie-a para a Adobe, isso resulta em uma quantidade significativa de dados que a Adobe não consegue interpretar prontamente. Para permitir que o Adobe interprete os dados, você deve usar o mapeamento de fluxo de dados para mapear cada campo individual para o campo XDM desejado.</p></li><li>**Implementação rígida**: a implementação está restrita ao que a camada de dados fornece no momento em que a ocorrência é enviada. Isso pode ser aceitável para organizações com necessidades básicas de dados, mas a maioria das organizações deve evitar esse tipo de implementação rígida em favor de uma implementação mais flexível que permita o preenchimento de elementos de dados.</li><li>**As alterações futuras são mais difíceis de implementar**: qualquer campo adicionado aos dados posteriormente deve ser mapeado para o XDM na sequência de dados.</li></ul> |
+| <ul><li>**Mostra todas as vantagens de hospedar dados na Experience Edge Network**: <p>As vantagens incluem:</p><ul><li>Geração de relatórios com alto desempenho e disponibilidade de dados devido à capacidade da Adobe Experience Platform de potencializar [casos de uso de personalização em tempo real](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html?lang=pt-BR)</li><li>Consolidar a implementação da coleta de dados do Adobe CX Enterprise entre outros produtos CX Enterprise (AJO, RTCDP e assim por diante)</li><li>Não dependente da nomenclatura do Adobe Analytics (prop, eVar, evento etc.)</li></ul><li>**Usa a lógica da camada de dados atual**: este método usa a lógica da camada de dados atual no lugar de uma implementação convencional do Web SDK. Embora essa abordagem exija alguma configuração, ela não requer uma implementação completamente nova do zero e não requer o preenchimento de elementos de dados ou regras de tag. Ela permite mapear dados da camada de dados para o XDM, em vez de preencher um objeto XDM do zero.</li></ul> | <ul><li>**Requisito de mapeamento para envio de dados para a Platform**: quando sua organização estiver pronta para usar o Customer Journey Analytics, envie dados para um conjunto de dados na Adobe Experience Platform. <p>Como essa opção permite que você coloque toda a camada de dados do lado do cliente no objeto de dados e envie-a para a Adobe, isso resulta em uma quantidade significativa de dados que a Adobe não consegue interpretar prontamente. Para permitir que o Adobe interprete os dados, você deve usar o mapeamento de fluxo de dados para mapear cada campo individual para o campo XDM desejado.</p></li><li>**Implementação rígida**: a implementação está restrita ao que a camada de dados fornece no momento em que a ocorrência é enviada. Isso pode ser aceitável para organizações com necessidades básicas de dados, mas a maioria das organizações deve evitar esse tipo de implementação rígida em favor de uma implementação mais flexível que permita o preenchimento de elementos de dados.</li><li>**As alterações futuras são mais difíceis de implementar**: qualquer campo adicionado aos dados posteriormente deve ser mapeado para o XDM na sequência de dados.</li></ul> |
 
 {style="table-layout:auto"}
 
