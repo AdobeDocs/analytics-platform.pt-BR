@@ -4,14 +4,19 @@ title: Mapa de árvore
 feature: Visualizations
 exl-id: fc39d1a9-9e83-40f3-af28-f4803647ad0b
 role: User
-TQID: https://experienceleague.adobe.com/iDj77obGLF0uWx0GT9ZWufHn0UYIaKfJQ-Si9OlX27Y
+autotag-review: '2026-05-19T08:27:33.715Z'
+TQID: 'https://experienceleague.adobe.com/ImY8koSZ7h0HC1uM5oj5IMSn5jXNAMw8vRzfpO7o0Nk'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2:
+  - id: ddf59f64-0e46-4986-a525-056acc143c70
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+topic_v2:
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 195
 ht-degree: 71%

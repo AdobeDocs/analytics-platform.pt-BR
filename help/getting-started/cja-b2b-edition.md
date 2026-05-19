@@ -6,12 +6,17 @@ feature: Basics
 role: User, Admin
 badgePremium: label="B2B Edition"
 exl-id: 89e482b8-8082-4413-8fd3-cc1331780af4
-TQID: https://experienceleague.adobe.com/s2qVXxi4n5SFhMVIxRAVLERoIs6YKEswZkXnZmTeIkk
+autotag-review: '2026-05-19T08:05:36.015Z'
+TQID: 'https://experienceleague.adobe.com/bPTcvFJRFMoTueec6I8Dtk1ajv5qrmZhHfLVycDLuBw'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+  - id: d3f42e9e-bb51-4077-a732-358b801d8b29
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2:
+  - id: e8abc408-b05c-427f-9e37-f8b033a6b3c3
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
@@ -20,8 +25,9 @@ topic_v2:
   - id: addf009e-030a-4310-8534-776a3e62ed48
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 483
 ht-degree: 94%

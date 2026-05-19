@@ -5,7 +5,8 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: e4762cca-b2da-422b-b48f-2a5fec14c97f
-TQID: https://experienceleague.adobe.com/fJvLj97dw-O8ojIDUVI1ylsZTSi-RD-ghR3XZXoC3uI
+autotag-review: '2026-05-19T06:30:45.150Z'
+TQID: 'https://experienceleague.adobe.com/Qyb6t5w-DTcecgqvhUE6NplDrlPmW2lzhk0RWbf7g-g'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
 feature_v2:
@@ -23,8 +24,9 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 1539
 ht-degree: 94%

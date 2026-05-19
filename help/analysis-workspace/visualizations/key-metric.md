@@ -4,14 +4,19 @@ title: Resumo da métrica principal
 feature: Visualizations
 exl-id: ef606c53-b370-419a-904b-573ee6d70a8d
 role: User
-TQID: https://experienceleague.adobe.com/meCT1nb-OpnYQnu6sTXov6nLci1Uhk0335QbLFrzRUM
+autotag-review: '2026-05-19T08:31:00.048Z'
+TQID: 'https://experienceleague.adobe.com/y3VfcvJp8lCmBLHy4-zPEb6Y7dzjfcDPjSMlKGPNR-A'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2:
+  - id: ddf59f64-0e46-4986-a525-056acc143c70
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+topic_v2:
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 960
 ht-degree: 91%

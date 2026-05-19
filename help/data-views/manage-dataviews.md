@@ -5,10 +5,25 @@ solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
 exl-id: c5cf15ab-3eb1-4e6b-93a3-3d89694ca0ea
-source-git-commit: e65dd6f71c75c06aac078c22ea7d77eed75cd381
+autotag-review: '2026-05-19T10:45:24.919Z'
+TQID: 'https://experienceleague.adobe.com/fPYOLKGTjiZDeSWLRhvkywKht8Yoq4k54EOcazJw74M'
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+subfeature_v2:
+  - id: e1471301-a189-438e-8d48-264a8db508a6
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: '922'
-ht-degree: 10%
+source-wordcount: 933
+ht-degree: 12%
 
 ---
 
@@ -27,9 +42,9 @@ As seguintes colunas e ícones estão disponíveis na tabela:
 
 | Coluna ou ícone | Descrição |
 | --- | --- |
-| **[!UICONTROL Nome]** | O nome da visualização dos dados. |
-| ![Informações](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) | Para exibir informações sobre a exibição de dados, selecione ![InfoOutline](/help/assets/icons/InfoOutline.svg) ao lado do nome da exibição de dados.<br/>Uma janela pop-up exibe detalhes sobre a visualização de dados. |
-| ![Mais](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) | Selecione ![Mais](/help/assets/icons/More.svg) para abrir um menu de contexto. Você pode selecionar:<br/>![Editar](/help/assets/icons/Edit.svg) **[!UICONTROL Editar]** para [editar](#edit-data-views) uma exibição de dados.<br/>![Copiar](/help/assets/icons/Copy.svg) **[!UICONTROL Copiar]** para [copiar uma exibição de dados](#copy-data-views).<br/>![Excluir](/help/assets/icons/Delete.svg) **[!UICONTROL Excluir]** para [excluir](#delete-data-views) uma exibição de dados.<br/>![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Export para CSV]** para [exportar os detalhes do modo de exibição de dados para um arquivo CSV](#export-data-views-to-csv).<br/>![ProjectAdd](/help/assets/icons/ProjectAdd.svg) **[!UICONTROL Create project]** to [create a new Workspace project](#create-project-from-data-views) for the data view.<br/>![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Habilitar para o Data Insights Agent]** para habilitar uma exibição de dados para o Data Insights Agent.<br/>![RemoveCircle](/help/assets/icons/RemoveCircle.svg) **[!UICONTROL Desabilitar para o Data Insights Agent]** desabilitar uma exibição de dados para o Data Insights Agent. |
+| **[!UICONTROL Nome]** | O nome da visualização de dados. |
+| ![Informações](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) | Para exibir informações sobre o modo de exibição de dados, selecione ![InfoOutline](/help/assets/icons/InfoOutline.svg) ao lado do nome do modo de exibição de dados.<br/>Uma janela pop-up exibe detalhes sobre o modo de exibição de dados. |
+| ![Mais](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) | Selecione ![Mais](/help/assets/icons/More.svg) para abrir um menu de contexto. Você pode selecionar:<br/>![Editar](/help/assets/icons/Edit.svg) **[!UICONTROL Editar]** para [editar](#edit-data-views) uma exibição de dados.<br/>![Copiar](/help/assets/icons/Copy.svg) **[!UICONTROL Copiar]** para [copiar uma exibição de dados](#copy-data-views).<br/>![Excluir](/help/assets/icons/Delete.svg) **[!UICONTROL Excluir]** para [excluir](#delete-data-views) uma exibição de dados.<br/>![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Exportar para CSV]** para [exportar os detalhes da exibição de dados para um arquivo CSV](#export-data-views-to-csv).<br/>![ProjectAdd](/help/assets/icons/ProjectAdd.svg) **[!UICONTROL Criar projeto]** para [criar um novo projeto do Workspace](#create-project-from-data-views) para a exibição de dados.<br/>![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Habilitar para Data Insights Agent]** para habilitar uma exibição de dados para o Data Insights Agent.<br/>![RemoveCircle](/help/assets/icons/RemoveCircle.svg) **[!UICONTROL Disable para o Data Insights Agent]** para desabilitar uma exibição de dados para o Data Insights Agent. |
 | **[!UICONTROL Conexão]** | O nome da conexão associada à visualização de dados. |
 | **[!UICONTROL Sandbox]** | O nome da sandbox associada à visualização de dados. |
 | **[!UICONTROL Proprietário]** | O proprietário da visualização de dados. |
