@@ -24,10 +24,10 @@ role_v2:
 topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: 5771edbe491ceeeaf487dd5eeb2ffb67ef880f96
 workflow-type: tm+mt
-source-wordcount: 1526
-ht-degree: 99%
+source-wordcount: 1530
+ht-degree: 97%
 
 ---
 
@@ -159,7 +159,7 @@ A sincronização de visualizações permite controlar qual tabela de dados ou f
 
 Para começar a usar o Analysis Workspace:
 
-1. Faça logon na [Adobe Experience Cloud](https://experience.adobe.com).
+1. Faça logon no [Adobe CX Enterprise](https://experience.adobe.com) usando suas credenciais da Adobe ID.
 1. Selecione **[!UICONTROL Customer Journey Analytics]** no alternador de aplicativos ![App](/help/assets/icons/Apps.svg) na parte superior direita da interface.
 1. A página **[!UICONTROL Projetos]** do Analysis Workspace é exibida por padrão. Se um projeto específico for selecionado para você ou se você estiver trabalhando nele recentemente, esse projeto será mostrado por padrão.
 
@@ -181,5 +181,5 @@ Quando você terminar de criar o projeto e a coleta de insights acionáveis come
 
 - A página [Aprendizado](/help/getting-started/landing.md#learning) no Customer Journey Analytics. Esta página é uma ótima maneira de se familiarizar com o Analysis Workspace. Especialmente para aprender os conceitos básicos do Workspace. Esse modelo orienta sobre a terminologia comum e as etapas para criar sua primeira análise no Workspace
 - A Adobe oferece centenas de [tutoriais de treinamento em vídeo do Analytics](https://experienceleague.adobe.com/pt-br/docs/analytics-learn/tutorials/overview).
-- Consulte [Notas da versão do Adobe Experience Cloud](https://experienceleague.adobe.com/pt-br/docs/release-notes/experience-cloud/current) para saber mais sobre novos recursos.
+- Consulte as [notas de versão do CX Enterprise](https://experienceleague.adobe.com/pt-br/docs/release-notes/experience-cloud/current) para obter atualizações sobre novos recursos.
 

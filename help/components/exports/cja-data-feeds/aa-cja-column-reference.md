@@ -4,7 +4,7 @@ description: Determine como obter uma determinada coluna de feed de dados do Ado
 feature: Components
 hide: true
 exl-id: 81d6e79e-8324-4726-9a48-10177b0a91b1
-source-git-commit: d79c6d883f436d97925e007f453879e20b4fcc04
+source-git-commit: 5771edbe491ceeeaf487dd5eeb2ffb67ef880f96
 workflow-type: tm+mt
 source-wordcount: '3912'
 ht-degree: 48%

@@ -25,10 +25,10 @@ topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: 5771edbe491ceeeaf487dd5eeb2ffb67ef880f96
 workflow-type: tm+mt
-source-wordcount: 2321
-ht-degree: 97%
+source-wordcount: 2320
+ht-degree: 95%
 
 ---
 
@@ -206,7 +206,7 @@ Caso planeje assimilar dados do Adobe Analytics por meio do [conector de origem 
 
 ## &#x200B;8. Componentes do [!UICONTROL Adobe Analytics]
 
-+++**É possível compartilhar/publicar [!UICONTROL públicos-alvo] do [!DNL Customer Journey Analytics] para a Real-Time CDP da Experience Platform ou para outros aplicativos da Experience Cloud?**
++++**É possível compartilhar/publicar [!UICONTROL públicos-alvo] de [!DNL Customer Journey Analytics] no Experience Platform Real-Time CDP ou em outros aplicativos do CX Enterprise?**
 
 Você pode [criar e publicar públicos-alvo](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-components/audiences/publish) identificados no Customer Journey Analytics no Perfil do cliente em tempo real na Adobe Experience Platform para direcionamento e personalização de clientes.
 
@@ -267,7 +267,7 @@ Leia mais sobre as [implicações da exclusão de conjuntos de dados e conexões
 
 ## &#x200B;12. Coleta de dados regionais
 
-A Adobe Experience Cloud usa a Coleta de Dados Regionais (RDC) para que as interações entre seus visitantes e as soluções da Adobe e de terceiros ocorram o mais próximo possível de seus visitantes. Depois que os dados são coletados regionalmente em um Centro de Coleta de Dados (DCC, também conhecido como local da borda, parte da rede de borda da Platform), eles são encaminhados por uma conexão segura para as soluções relevantes com base na configuração do fluxo de dados e/ou encaminhamento de eventos.
+A Adobe CX Enterprise usa a RDC (Coleta de dados regionais) para que as interações entre seus visitantes e as soluções da Adobe e de terceiros ocorram o mais próximo possível de seus visitantes. Depois que os dados são coletados regionalmente em um Centro de Coleta de Dados (DCC, também conhecido como local da borda, parte da rede de borda da Platform), eles são encaminhados por uma conexão segura para as soluções relevantes com base na configuração do fluxo de dados e/ou encaminhamento de eventos.
 
 ![Fluxo de dados usando redes de borda](https://experienceleague.adobe.com/docs/experience-platform/assets/collection.png)
 
