@@ -6,13 +6,10 @@ feature: Connections
 role: Admin
 exl-id: 7729c1b9-b3ed-4662-a446-2088389bbd97
 TQID: https://experienceleague.adobe.com/I7-bKS2jErVibrBHHfItc9oivAy1TJaVtKs7U3pSS78
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
 workflow-type: tm+mt
 source-wordcount: 521
 ht-degree: 9%
@@ -25,10 +22,10 @@ Para oferecer suporte a pesquisas com base em pessoas em dados B2B (incluindo co
 
 Essa transformação só está disponível para conjuntos de dados com dados para esquemas de pesquisa B2B, com base nas seguintes classes:
 
-* [Relação pessoal da conta de negócios XDM](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/classes/b2b/business-account-person-relation)
-* [Relação pessoal de oportunidade de negócios XDM](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/classes/b2b/business-opportunity-person-relation)
-* [Membros da lista de marketing de negócios XDM](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/classes/b2b/business-marketing-list-members)
-* [Membros da campanha de negócios XDM](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/classes/b2b/business-campaign-members)
+* [Relação pessoal da conta de negócios XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-account-person-relation)
+* [Relação pessoal de oportunidade de negócios XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-opportunity-person-relation)
+* [Membros da lista de marketing de negócios XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-marketing-list-members)
+* [Membros da campanha de negócios XDM](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/b2b/business-campaign-members)
 
 >[!NOTE]
 >
@@ -78,4 +75,4 @@ Os conjuntos de dados não transformados para esquemas baseados nas quatro class
 
 A transformação modifica o conjunto de dados de cada uma das quatro classes de esquema (laranja na ilustração abaixo) para que cada identificador de pessoa crie uma matriz (objeto) para os dados relevantes (contas, oportunidades, listas de marketing ou campanhas) nos conjuntos de dados de pesquisa (rosa na ilustração abaixo). Essa transformação permite o funcionamento correto de pesquisas baseadas em ID de pessoa.
 
-![Esquemas B2B](./assets/b2b-schemas.svg)
+![Esquemas B2B](./assets/b2b-schemas.png)

@@ -6,23 +6,14 @@ feature: Content Analytics
 role: Admin
 exl-id: 3ea46223-c7d0-4b1f-bc84-4f35494f13a0
 TQID: https://experienceleague.adobe.com/a-Mu3MKfpRsUqgxx7JWP3NR4vji62VaNFi-hI5teDZI
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: d9715c3da9893e1c47b702acb4daef5e666bedd7
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: d3cdead0-685a-4489-9250-4bb709942f66id: e0eb8757-182f-49f3-94a4-1587d16f5094id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
 workflow-type: tm+mt
-source-wordcount: 776
-ht-degree: 76%
+source-wordcount: 780
+ht-degree: 75%
 
 ---
 
@@ -33,10 +24,9 @@ Este artigo documenta, em alto nível, como configurar o Content Analytics.
 
 Antes de configurar o Content Analytics, verifique se os [pré-requisitos](#prerequisites) foram atendidos, se você tem o [controle de acesso](#access-control) necessário e se tem conhecimento das [limitações](#limitations).
 
+As etapas para configurar o Content Analytics são:
 
-Etapas de alto nível
-
-![Configuração do Content Analytics](../assets/aca-configuration.svg){zoomable="yes"}
+![Configuração do Content Analytics](../assets/aca-configuration.png){zoomable="yes"}
 
 1. Use o [assistente de configuração guiada](guided.md) do Content Analytics para guiar você por todas as etapas necessárias para definir os pré-requisitos de configuração do Content Analytics. Você pode salvar as configurações a qualquer momento e retornar mais tarde.
 1. Após definir os valores de configuração desejados, você pode implementá-los. Esta implementação cria todos os artefatos necessários, com base no que você configurou no assistente.
@@ -54,7 +44,7 @@ Antes de configurar o Content Analytics, verifique se os seguintes pré-requisit
 ### Web
 
 * Você incluiu na lista de permissões o agente de usuário e o endereço IP do serviço de recursos usado no Content Analytics. A string de agente do usuário a ser configurada é: <code>AdobeFeaturization/1.0</code>.
-* Se você implementou o [SDK da web usando o JavaScript](https://experienceleague.adobe.com/pt-br/docs/experience-platform/collection/js/install/library){target="_blank"} para coleta regular de dados comportamentais, verifique se está usando o nome padrão <code>alloy</code> para a biblioteca do JavaScript.
+* Se você implementou o [SDK da web usando o JavaScript](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/install/library){target="_blank"} para coleta regular de dados comportamentais, verifique se está usando o nome padrão <code>alloy</code> para a biblioteca do JavaScript.
 * Você tem uma função de admin de produto do Customer Journey Analytics, com permissões adicionais para gerenciar conexões e visualizações de dados.
 * Se decidir coletar experiências do Content Analytics, certifique-se de configurar e atualizar o controle de versão do Content Analytics com base nas alterações nas suas páginas da Web.
 * Você deve ter [permissões para a coleta de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/collection/permissions){target="_blank"}:
