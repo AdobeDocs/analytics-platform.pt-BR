@@ -160,9 +160,9 @@ Para incluir outra pessoa em seu comentário:
 
 ## Receber notificações sobre comentários
 
-Proprietários do projeto e [pessoas específicas mencionadas por você](#include-others-in-a-comment) recebem notificações com base nas configurações de notificação do CX Enterprise. Por padrão, eles recebem uma notificação no aplicativo, visível do [ícone de notificação do CX Enterprise](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#view-notifications) ![ícone de notificação do CX Enterprise](assets/experience-cloud-notification.svg) no Customer Journey Analytics.
+Proprietários do projeto e [pessoas específicas mencionadas por você](#include-others-in-a-comment) recebem notificações com base nas configurações de notificação do CX Enterprise. Por padrão, eles recebem uma notificação no aplicativo, visível do [ícone de notificação do CX Enterprise](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/features/account-preferences#view-notifications) ![ícone de notificação do CX Enterprise](assets/experience-cloud-notification.svg) no Customer Journey Analytics.
 
-Além disso, as pessoas podem definir suas configurações de notificação do CX Enterprise para receber notificações por email e notificações do Slack ao [assinar notificações por email](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) e [assinar notificações do Slack](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#slack).
+Além disso, as pessoas podem definir suas configurações de notificação do CX Enterprise para receber notificações por email e notificações do Slack ao [assinar notificações por email](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/features/account-preferences#subscribe-to-in-app-and-email-notifications) e [assinar notificações do Slack](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/features/account-preferences#slack).
 
 ## Inserir um selo para um comentário existente
 
