@@ -21,10 +21,10 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: 14557a59902110b1768d61e621adfb3f76ee9930
 workflow-type: tm+mt
 source-wordcount: 720
-ht-degree: 69%
+ht-degree: 65%
 
 ---
 
@@ -34,7 +34,7 @@ Em alguns casos, os usuários executivos podem precisar de assistência adiciona
 
 ## Garantir que os usuários do aplicativo tenham acesso ao Adobe Analytics
 
-1. Configure novos usuários no [Admin Console da Experience Cloud](https://experienceleague.adobe.com/pt-br/docs/analytics/admin/admin-console/permissions/product-profile).
+1. Configure novos usuários no [CX Enterprise Admin Console](https://experienceleague.adobe.com/pt-br/docs/analytics/admin/admin-console/permissions/product-profile).
 
 1. Para compartilhar cartões de pontuação, você deve conceder permissões aos usuários do aplicativo para que acessem componentes do cartão de pontuação, como o Analysis Workspace, as visualizações de dados nas quais os cartões de pontuação são baseados, bem como segmentos, métricas e dimensões.
 
@@ -75,7 +75,7 @@ Após o download e a instalação, os usuários executivos podem fazer logon no 
 
    A tela **[!UICONTROL Escolher uma empresa]** é exibida. Essa tela lista as empresas de logon às quais o usuário executivo pertence.
 
-1. Faça com que eles toquem no nome da empresa de logon ou na Experience Cloud Org que se aplica ao cartão de pontuação que você compartilhou.
+1. Faça com que eles toquem no nome da empresa de logon ou na CX Enterprise Org que se aplica ao cartão de pontuação que você compartilhou.
 
    A lista do cartão de pontuação mostra todos os cartões de pontuação que foram compartilhados com o executivo na empresa de logon.
 

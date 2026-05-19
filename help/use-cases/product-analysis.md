@@ -25,7 +25,7 @@ topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: 14557a59902110b1768d61e621adfb3f76ee9930
 workflow-type: tm+mt
 source-wordcount: 894
 ht-degree: 3%
@@ -117,10 +117,10 @@ Os seguintes recursos no Customer Journey Analytics ajudam a rastrear a retenç�
 
 Os insights agregam valor somente quando orientam a ação. Converta os resultados da análise em ações que melhoram a experiência do usuário e oferecem suporte ao crescimento do produto a longo prazo.
 
-Os seguintes recursos no Experience Cloud permitem que você atue com eficiência em insights:
+Os seguintes recursos do CX Enterprise permitem que você atue com eficiência em insights:
 
 * [Criar e publicar públicos-alvo](/help/components/audiences/publish.md)&#x200B; para ativação do Customer Journey Analytics
-* Ativar públicos-alvo por meio de produtos da Experience Cloud:
+* Ative públicos-alvo por meio de produtos CX Enterprise:
    * [Execute experimentos](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/content-management/content-experiment/get-started-experiment) no AJO e no Adobe Target e meça o impacto das variações no Customer Journey Analytics usando o [Painel de experimentação](/help/analysis-workspace/c-panels/experimentation.md)
    * [Fornecer compromissos no aplicativo](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/channels/in-app/get-started-in-app) aos usuários no AJO
 * [Ativar públicos-alvo](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/ui/activate/activation-overview) para destinos externos com a CDP em tempo real do &#x200B;
