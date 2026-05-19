@@ -158,4 +158,4 @@ Esta página inclui endereços ip que você precisa adicionar ao seu incluo na l
 >
 >[Domínios usados pelo Customer Journey Analytics](domains.md)
 >
->[Endereços IP usados pelo CX Enterprise](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/ip-addresses)
+>[Endereços IP usados pelo CX Enterprise](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/data-collection/ip-addresses)
