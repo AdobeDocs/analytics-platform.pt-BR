@@ -6,11 +6,17 @@ exl-id: 7055cbc9-19b3-40f0-b8d4-52d241224827
 role: User
 autotag-review: '2026-05-19T08:39:50.563Z'
 TQID: 'https://experienceleague.adobe.com/QqjZAQQWPWP8ykksBH5k9TrW8Cgd-Lt6mSnczBREGfs'
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
-subfeature_v2: id: ddf59f64-0e46-4986-a525-056acc143c70
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d00e9f03-e50b-4162-b143-0c0817c937c2
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2:
+  - id: ddf59f64-0e46-4986-a525-056acc143c70
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 1843
@@ -183,7 +189,7 @@ Use um menu de contexto em qualquer nó na visualização de fluxo com as seguin
 | **[!UICONTROL Excluir item]** ou **[!UICONTROL Restaurar itens excluídos]** | Remove um nó específico da coluna e o cria automaticamente como filtro na parte superior da coluna. Para restaurar o item excluído, selecione **[!UICONTROL Restaurar item excluído]** no menu de contexto. você também pode abrir o segmento na parte superior da coluna e remover a caixa de seleção com o item que acabou de excluir. |
 | **[!UICONTROL Tendência]** | Crie um diagrama de tendências para o nó. |
 | **[!UICONTROL Mostrar próxima coluna]** / **[!UICONTROL Mostrar coluna anterior]** | Revela a próxima coluna (direita) ou a coluna anterior (esquerda) da visualização. |
-| **[!UICONTROL Ocultar coluna]**n | Oculta a coluna selecionada da visualização. |
+| **[!UICONTROL Ocultar coluna]**&#x200B;n | Oculta a coluna selecionada da visualização. |
 | **[!UICONTROL Expandir toda a coluna]** | Expanda uma coluna para mostrar todos os nós. Por padrão, somente os cinco nós principais são exibidos. |
 | **[!UICONTROL Criar público-alvo a partir da seleção]** | Cria um público-alvo com base na coluna selecionada. |
 | **[!UICONTROL Recolher toda a coluna]** | Ocultar todos os nós em uma coluna. |

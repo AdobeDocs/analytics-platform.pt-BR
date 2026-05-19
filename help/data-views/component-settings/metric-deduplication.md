@@ -7,11 +7,17 @@ feature: Data Views
 role: Admin
 autotag-review: '2026-05-19T09:10:57.728Z'
 TQID: 'https://experienceleague.adobe.com/bCgBjD9r0cQ3O73fEip-EQHItMHQSX-2AECydDxR9Ms'
-product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071
-subfeature_v2: id: e1471301-a189-438e-8d48-264a8db508a6
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d00e9f03-e50b-4162-b143-0c0817c937c2
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2:
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2:
+  - id: e1471301-a189-438e-8d48-264a8db508a6
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 342
@@ -38,7 +44,7 @@ A desduplicação de métrica permite configurar uma métrica para contar apenas
 | Configuração | Descrição |
 | --- | --- |
 | [!UICONTROL Desduplicação de métrica] | Uma caixa de seleção que permite ativar a desduplicação de métrica. Desabilitado por padrão. |
-| [!UICONTROL Escopo de desduplicação] | Permite determinar até que ponto a verificação única vai.<br/>**[!UICONTROL Conta global ]**: somente a primeira ocorrência de métrica na janela de relatório é contada.<br/>**[!UICONTROL Conta]**: somente a primeira ocorrência de métrica na janela de relatório é contada.<br/>**[!UICONTROL Oportunidade ]**: somente a primeira ocorrência de métrica na janela de relatório é contada.<br/>**[!UICONTROL Grupo de compras]**: somente a primeira ocorrência de métrica na janela de relatório é contada.<br/>**[!UICONTROL Pessoa ]**: somente a primeira ocorrência de métrica na janela de relatório é contada.<br>**[!UICONTROL Sessão]**: somente a primeira ocorrência de métrica da sessão é contada.<br> |
+| [!UICONTROL Escopo de desduplicação] | Permite determinar até que ponto a verificação única vai.<br/>**[!UICONTROL Conta global &#x200B;]**: somente a primeira ocorrência de métrica na janela de relatório é contada.<br/>**[!UICONTROL Conta]**: somente a primeira ocorrência de métrica na janela de relatório é contada.<br/>**[!UICONTROL Oportunidade &#x200B;]**: somente a primeira ocorrência de métrica na janela de relatório é contada.<br/>**[!UICONTROL Grupo de compras]**: somente a primeira ocorrência de métrica na janela de relatório é contada.<br/>**[!UICONTROL Pessoa &#x200B;]**: somente a primeira ocorrência de métrica na janela de relatório é contada.<br>**[!UICONTROL Sessão]**: somente a primeira ocorrência de métrica da sessão é contada.<br> |
 | [!UICONTROL ID de desduplicação] | Em vez de aplicar a desduplicação na própria métrica, é possível aplicá-la com base em uma dimensão. Importante para que dimensões como a ID de compra possam aplicar a desduplicação. |
 | [!UICONTROL Valor a manter] | <ul><li>**Manter primeira instância**: use essa opção em situações em que a instância inicial da métrica é válida. O mais comum provavelmente seria uma confirmação de compra. Mesmo que alguém inadvertidamente recarregue a página e obtenhamos outra instância de confirmação de compra, o evento inicial ainda será o válido.</li><li>**Manter última instância**: use essa opção em situações em que faça mais sentido coletar a última instância. Exemplo: alguém faz uma atualização no seu perfil online. Queremos contabilizar apenas uma dessas atualizações por sessão. No entanto, eles podem atualizar o perfil várias vezes durante a sessão. Se mantivermos a primeira instância, podem haver atividades que não estão relacionadas ao evento. Nesse caso, faz mais sentido manter a última instância.</li></ul> |
 
