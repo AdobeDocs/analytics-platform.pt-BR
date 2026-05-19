@@ -23,7 +23,7 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
 workflow-type: tm+mt
 source-wordcount: 1485
 ht-degree: 2%
@@ -55,7 +55,7 @@ O Customer Journey Analytics é construído com base no conceito de três contê
 
 É possível redefinir como esses containers são nomeados ao configurar uma visualização de dados, mas a hierarquia e os relacionamentos entre os containers são predeterminados. O contêiner Sessão é gerado com base em como você define uma sessão nas [Configurações de sessão](/help/data-views/session-settings.md) da sua visualização de dados.
 
-![B2C](assets/b2c-containers.svg){zoomable="yes"}
+![B2C](assets/b2c-containers.png){zoomable="yes"}
 
 
 ### Containers B2B
@@ -64,7 +64,7 @@ No Customer Journey Analytics B2B edition, um contêiner de Conta é adicionado 
 
 A hierarquia e os relacionamentos entre os contêineres são predeterminados. Oportunidade, Grupo de Compras e Pessoa são todos contêineres irmãos do contêiner Conta. Nessa hierarquia, o contêiner Sessão entre o contêiner Pessoa e o contêiner Evento é gerado com base em como você define uma sessão nas [Configurações da sessão](/help/data-views/session-settings.md) na sua visualização de dados. Os contêineres de sessão adicionais, por exemplo, entre o contêiner Conta e o contêiner Evento, não são gerados e suportados no momento. Consulte a tabela abaixo para obter uma descrição e a utilização básica dos containers B2B.
 
-![B2B](assets/b2b-containers.svg){zoomable="yes"}
+![B2B](assets/b2b-containers.png){zoomable="yes"}
 
 | Contêiner B2B | Descrição<br/>Caso de uso básico |
 |---|---|
@@ -109,7 +109,7 @@ O B2B do Customer Journey Analytics distingue entre os seguintes tipos de dados 
 
 Um exemplo de conexão baseada em conta no B2B edition do Customer Journey Analytics:
 
-![Exemplo de conexão baseada em conta](assets/b2b-datasets.svg)
+![Exemplo de conexão baseada em conta](assets/b2b-datasets.png)
 
 O Customer Journey Analytics B2B edition oferece a interface [Mapa de conexão](/help/connections/create-connection.md#connection-map) para fornecer uma visão geral das relações entre conjuntos de dados na sua conexão.
 

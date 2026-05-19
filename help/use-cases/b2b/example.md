@@ -17,7 +17,7 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
 workflow-type: tm+mt
 source-wordcount: 1417
 ht-degree: 8%
@@ -60,7 +60,7 @@ A relação entre os esquemas de pesquisa B2B, o esquema de perfil e o esquema d
 
 Para garantir uma configuração adequada de uma conexão que suporte pesquisas baseadas em pessoas de seus dados B2B, use a seguinte ilustração para obter uma visão geral e siga estas etapas:
 
-![Esquemas B2B anotados](assets/b2b-schemas-annotated.svg)
+![Esquemas B2B anotados](assets/b2b-schemas-annotated.png)
 
 1. Adicione conjuntos de dados da tabela acima à conexão.
 1. Para cada conjunto de dados de pesquisa adicionado à sua conexão, defina explicitamente a relação com um conjunto de dados de evento usando a **[!UICONTROL Chave]** e a **[!UICONTROL Chave correspondente]** na caixa de diálogo **[!UICONTROL Editar conjunto de dados]**.

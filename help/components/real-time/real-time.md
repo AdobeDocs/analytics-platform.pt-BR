@@ -18,7 +18,7 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
 workflow-type: tm+mt
 source-wordcount: 855
 ht-degree: 6%
@@ -63,7 +63,7 @@ Os relatórios em tempo real usam um conjunto de dados consolidado que é comple
 * Relatórios em tempo real em um conjunto de dados consolidado que contém até 24 horas de dados contínuos.
 * Emissão de relatórios padrão no conjunto de dados consolidado que contém até 13 meses de dados contínuos (ou mais, caso você tenha licenciado o Complemento de capacidade de dados estendida).
 
-![Relatório em tempo real](assets/real-time-reporting-latencies.svg){zoomable="yes"}
+![Relatório em tempo real](assets/real-time-reporting-latencies.png){zoomable="yes"}
 
 ### Latências
 

@@ -15,7 +15,7 @@ role_v2:
 topic_v2:
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
 workflow-type: tm+mt
 source-wordcount: 1902
 ht-degree: 82%
@@ -30,14 +30,14 @@ Se as informações de ID de pessoa não puderem ser recuperadas para um evento,
 
 Você pode usar a compilação em campo ao usar o Customer Journey Analytics como uma solução independente (sem acesso ao Serviço de identidade da Experience Platform e ao gráfico de identidade associado). Ou quando não quiser usar o gráfico de identidade disponível.
 
-![Compilação em campo](/help/stitching/assets/fbs.svg)
+![Compilação em campo](/help/stitching/assets/fbs.png)
 
 
 ## IdentityMap
 
 A compilação em campo oferece suporte ao uso do grupo de campos do [`identityMap`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/schema/composition#identity) nos seguintes cenários:
 
-- Uso da identidade principal em namespaces do `identityMap` para definir a persistentID:
+- Uso da identidade princiapl em namespaces `identityMap` para definir a persistentID:
    - Se várias identidades primárias forem encontradas em namespaces diferentes, as identidades nos namespaces serão classificadas lexicograficamente e a primeira identidade será selecionada.
    - Se várias identidades primárias forem encontradas em um único namespace, a primeira identidade primária lexicográfica disponível será selecionada.
 

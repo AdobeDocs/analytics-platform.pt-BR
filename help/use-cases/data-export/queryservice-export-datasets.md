@@ -20,7 +20,7 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
 workflow-type: tm+mt
 source-wordcount: 3355
 ht-degree: 5%
@@ -45,7 +45,7 @@ A exportação de dados usando o Serviço de consulta (Data Distiller) e a expor
 - definindo uma **consulta agendada** que gera os dados para seu feed de dados como um conjunto de dados de saída ![conjunto de dados de saída](../assets/output-dataset.svg), usando o **Serviço de Consulta**.
 - definindo uma **exportação do conjunto de dados agendada** que exporta o conjunto de dados de saída para um destino de armazenamento na nuvem, usando a **exportação do conjunto de dados**.
 
-![Feed de dados](../assets/queryservice-export-datasets.svg)
+![Feed de dados](../assets/queryservice-export-datasets.png)
 
 
 ## Pré-requisitos

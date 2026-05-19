@@ -23,7 +23,7 @@ topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
 workflow-type: tm+mt
 source-wordcount: 1186
 ht-degree: 96%
@@ -36,7 +36,7 @@ O Customer Journey Analytics é a solução analítica de próxima geração da 
 
 A arquitetura de alto nível do Customer Journey Analytics pode ser vista aqui:
 
-![Arquitetura do Customer Journey Analytics](assets/cja-overview.svg)
+![Arquitetura do Customer Journey Analytics](assets/cja-overview.png)
 
 Essa arquitetura ilustra como o Customer Journey Analytics permite:
 

@@ -12,7 +12,7 @@ feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
 workflow-type: tm+mt
 source-wordcount: 1187
 ht-degree: 3%
@@ -29,7 +29,7 @@ Este artigo descreve como o [!DNL Customer Journey Analytics Export datasets] po
 
 A exportação de dados usando o [!DNL Experience Platform Export datasets] permite exportar dados das visualizações de dados do Customer Journey Analytics para qualquer destino de armazenamento na nuvem.
 
-![Extensão de BI](../assets/export-datasets.svg)
+![Extensão de BI](../assets/export-datasets.png)
 
 ## Mais informações
 

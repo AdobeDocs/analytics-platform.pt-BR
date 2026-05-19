@@ -12,7 +12,7 @@ feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
 workflow-type: tm+mt
 source-wordcount: 521
 ht-degree: 9%
@@ -78,4 +78,4 @@ Os conjuntos de dados não transformados para esquemas baseados nas quatro class
 
 A transformação modifica o conjunto de dados de cada uma das quatro classes de esquema (laranja na ilustração abaixo) para que cada identificador de pessoa crie uma matriz (objeto) para os dados relevantes (contas, oportunidades, listas de marketing ou campanhas) nos conjuntos de dados de pesquisa (rosa na ilustração abaixo). Essa transformação permite o funcionamento correto de pesquisas baseadas em ID de pessoa.
 
-![Esquemas B2B](./assets/b2b-schemas.svg)
+![Esquemas B2B](./assets/b2b-schemas.png)

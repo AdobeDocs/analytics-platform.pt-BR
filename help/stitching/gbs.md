@@ -15,7 +15,7 @@ role_v2:
 topic_v2:
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
 workflow-type: tm+mt
 source-wordcount: 1899
 ht-degree: 70%
@@ -29,7 +29,7 @@ Na compilação baseada em gráfico, você especifica um conjunto de dados de ev
 Se as informações de ID de pessoa não puderem ser recuperadas para um evento, a ID persistente será usada para esse evento *não compilado*. Como resultado, em uma [visualização de dados](/help/data-views/data-views.md) associada a uma [conexão](/help/connections/overview.md) que contém o conjunto de dados habilitado para compilação, o componente de visualização de dados da ID de pessoa contém o valor da ID de pessoa ou o valor da ID persistente no nível do evento.
 
 
-![Compilação baseada em gráfico](/help/stitching/assets/gbs.svg)
+![Compilação baseada em gráfico](/help/stitching/assets/gbs.png)
 
 ## IdentityMap
 
@@ -122,7 +122,7 @@ Os dados além da janela de pesquisa não são repetidos. Um perfil deve ser aut
 
 Considere as duas atualizações de gráfico de identidade a seguir ao longo do tempo para o visitante A (com ID persistente `246`) e o visitante B (com ID persistente `3579`) e como essas atualizações afetam as etapas na compilação baseada em gráfico.
 
-![Gráfico de identidade 3579](assets/identity-graphs.svg)
+![Gráfico de identidade 3579](assets/identity-graphs.png)
 
 Você pode visualizar um gráfico de identidade ao longo do tempo para um perfil específico usando o [Visualizador de gráfico de identidade](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/features/identity-graph-viewer). Consulte também [Lógica de vinculação do Identity Service](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/features/identity-linking-logic) para entender melhor a lógica usada ao vincular identidades.
 
@@ -172,7 +172,7 @@ Com uma repetição da compilação ocorrendo em 2023-05-13 16:30, com uma confi
 Com uma repetição da compilação ocorrendo em 2023-05-13 16:30, com uma configuração da janela de retrospectiva de sete dias, todos os eventos da amostra são recompilados.
 
 
-| | Hora | ID persistente<br/>`ECID` | Namespace<br/>`Email` ![MapeamentoDeDados](/help/assets/icons/DataMapping.svg) | ID resultante<br/>(após compilação em tempo real) | ID resultante<br/>(após 7 dias de repetição) |
+| | Hora | ID persistente<br/>`ECID` | Namespace<br/>`Email` ![DataMapping](/help/assets/icons/DataMapping.svg) | ID resultante<br/>(após compilação em tempo real) | ID resultante<br/>(após 7 dias de repetição) |
 |---|---|---|---|---|---|
 | ![Repetir](/help/assets/icons/Replay.svg) 1 | 2023-05-12 11:00 | `246` | `246` ![Ramificação1](/help/assets/icons/Branch1.svg) *indefinida* | `246` | `a.b@yahoo.co.uk` |
 | ![Repetir](/help/assets/icons/Replay.svg) 2 | 2023-05-12 14:00 | `246` | `246` ![Ramificação1](/help/assets/icons/Branch1.svg) `bob.a@gmail.com` | `bob.a@gmail.com` | `a.b@yahoo.co.uk` |

@@ -14,7 +14,7 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
 workflow-type: tm+mt
 source-wordcount: 1129
 ht-degree: 100%
@@ -32,7 +32,7 @@ Você tem várias opções para assimilar dados no Customer Journey Analytics. A
 
 A arquitetura de alto nível do Customer Journey Analytics pode ser vista aqui:
 
-![Arquitetura do Customer Journey Analytics](/help/getting-started/assets/cja-overview.svg)
+![Arquitetura do Customer Journey Analytics](/help/getting-started/assets/cja-overview.png)
 
 Essa arquitetura ilustra como o Customer Journey Analytics permite:
 

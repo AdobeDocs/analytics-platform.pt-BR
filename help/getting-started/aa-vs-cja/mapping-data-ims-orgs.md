@@ -15,7 +15,7 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
 workflow-type: tm+mt
 source-wordcount: 1127
 ht-degree: 2%
@@ -43,7 +43,7 @@ Com o recurso *Mapeamento de dados entre IMS*, você pode solicitar que a Adobe 
 
 | Ilustração | Explicação |
 |---|---|
-| ![Mapear dados em várias organizações IMS](/help/getting-started/assets/map-data-across-ims-orgs.svg) | Esse mapeamento permite relatar conjuntos de relatórios que existem na Organização IMS 1, Organização IMS 2 e Organização IMS 3 de uma conexão no Customer Journey Analytics provisionada na Organização IMS 3. |
+| ![Mapear dados em várias organizações IMS](/help/getting-started/assets/map-data-across-ims-orgs.png) | Esse mapeamento permite relatar conjuntos de relatórios que existem na Organização IMS 1, Organização IMS 2 e Organização IMS 3 de uma conexão no Customer Journey Analytics provisionada na Organização IMS 3. |
 
 {style="table-layout:fixed"}
 
