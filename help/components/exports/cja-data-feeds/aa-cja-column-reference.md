@@ -4,9 +4,16 @@ description: Determine como obter uma determinada coluna de feed de dados do Ado
 feature: Components
 hide: true
 exl-id: 81d6e79e-8324-4726-9a48-10177b0a91b1
-source-git-commit: 5771edbe491ceeeaf487dd5eeb2ffb67ef880f96
+autotag-review: '2026-05-19T09:53:49.596Z'
+TQID: 'https://experienceleague.adobe.com/Yt2CmGRpO6s8natf9s-KLsMBKHc-qdSQHvi3UyPyLgg'
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: ae3aff40-b2f6-4df1-8c01-0b0720d1510fid: b3197353-f189-4932-8378-3f3bc40e6071id: ce577701-5b9e-4fe4-8fa3-4eedea976da4id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5eid: eb00932f-4d46-46bc-b1d8-10de7588db8d
+subfeature_v2: id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d00e9f03-e50b-4162-b143-0c0817c937c2id: d3cdead0-685a-4489-9250-4bb709942f66id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: '3912'
+source-wordcount: 3912
 ht-degree: 48%
 
 ---
@@ -19,7 +26,7 @@ Essa referência ajuda os engenheiros de dados a avaliar as colunas do feed de d
 
 >[!NOTE]
 >
->Esta referência inclui apenas colunas consideradas atuais pelo Adobe, com base na [referência de coluna de feed de dados do Analytics](https://experienceleague.adobe.com/pt-br/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference). Se você tiver uma coluna de feed de dados do Analytics não listada nesta tabela que usa ativamente, consulte o documento de design de solução da sua organização para determinar seu melhor equivalente no Customer Journey Analytics.
+>Esta referência inclui apenas colunas consideradas atuais pelo Adobe, com base na [referência de coluna de feed de dados do Analytics](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference). Se você tiver uma coluna de feed de dados do Analytics não listada nesta tabela que usa ativamente, consulte o documento de design de solução da sua organização para determinar seu melhor equivalente no Customer Journey Analytics.
 
 +++**`accept_language`**
 
@@ -140,7 +147,7 @@ Dicas do cliente coletadas por meio da API JavaScript de dicas do cliente de usu
 
 No Adobe Analytics, as dicas do cliente foram incluídas como uma sequência concatenada nessa coluna. É considerada uma abordagem mais moderna do que a coluna `user_agent`.
 
-Você pode coletar esses dados usando a cadeia de contexto [`highEntropyUserAgentHints`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/collection/js/commands/configure/context) ao configurar o Web SDK. Vários campos XDM são preenchidos em vez de uma longa string concatenada:
+Você pode coletar esses dados usando a cadeia de contexto [`highEntropyUserAgentHints`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/configure/context) ao configurar o Web SDK. Vários campos XDM são preenchidos em vez de uma longa string concatenada:
 
 * **Versão do sistema operacional**: `xdm.environment.browserDetails.userAgentClientHints.platformVersion`
 * **Arquitetura**: `xdm.environment.browserDetails.userAgentClientHints.architecture`
@@ -150,7 +157,7 @@ Você pode coletar esses dados usando a cadeia de contexto [`highEntropyUserAgen
 * **Nome do navegador**: `xdm.environment.browserDetails.userAgentClientHints.brand`
 * **Versão do navegador**: `xdm.environment.browserDetails.userAgentClientHints.version`
 
-Consulte [User agent client hints](https://experienceleague.adobe.com/pt-br/docs/experience-platform/collection/use-cases/client-hints) para obter mais informações.
+Consulte [User agent client hints](https://experienceleague.adobe.com/en/docs/experience-platform/collection/use-cases/client-hints) para obter mais informações.
 
 {{cja-df-ua}}
 
@@ -296,7 +303,7 @@ O Customer Journey Analytics não tem um conceito de conjunto de relatórios de 
 
 A ID de visitante personalizada, se definida usando `visitorID`.
 
-O Customer Journey Analytics oferece suporte a qualquer número de identidades usando [`identityMap`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/field-groups/profile/identitymap). Se sua organização usa identidades personalizadas, provavelmente está no mapa de identidade.
+O Customer Journey Analytics oferece suporte a qualquer número de identidades usando [`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap). Se sua organização usa identidades personalizadas, provavelmente está no mapa de identidade.
 
 {{cja-df-post}}
 
@@ -362,7 +369,7 @@ Lista cada evento que foi contado como duplicado.
 
 {{cja-df-na}}
 
-O Customer Journey Analytics não tem um campo único que atue como um sinalizador de desduplicação para todas as métricas. Em vez disso, cada métrica contém suas próprias [Configurações do componente de desduplicação de métrica](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication). Dessa forma, não há um campo equivalente no Customer Journey Analytics para essa coluna do feed de dados do Adobe Analytics.
+O Customer Journey Analytics não tem um campo único que atue como um sinalizador de desduplicação para todas as métricas. Em vez disso, cada métrica contém suas próprias [Configurações do componente de desduplicação de métrica](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication). Dessa forma, não há um campo equivalente no Customer Journey Analytics para essa coluna do feed de dados do Adobe Analytics.
 
 +++
 
@@ -370,7 +377,7 @@ O Customer Journey Analytics não tem um campo único que atue como um sinalizad
 
 Um sinalizador que determina se o evento de compra para esta ocorrência é ignorado por estar duplicado.
 
-Embora não haja uma tradução direta para essa coluna do feed de dados do Analytics, sua funcionalidade de agir para desduplicar compras ainda existe. Se estiver usando o grupo de campos [[!UICONTROL Detalhes do Commerce]](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/field-groups/event/commerce-details), você poderá definir [Configurações do componente de desduplicação de métrica](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication), onde a **[!UICONTROL ID de Desduplicação]** é `xdm.commerce.purchases.id`.
+Embora não haja uma tradução direta para essa coluna do feed de dados do Analytics, sua funcionalidade de agir para desduplicar compras ainda existe. Se estiver usando o grupo de campos [[!UICONTROL Detalhes do Commerce]](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/commerce-details), você poderá definir [Configurações do componente de desduplicação de métrica](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication), onde a **[!UICONTROL ID de Desduplicação]** é `xdm.commerce.purchases.id`.
 
 Se for necessária uma tradução direta quando você quiser um sinalizador de compras duplicadas, poderá usar um [Campo derivado](/help/data-views/derived-fields/derived-fields.md) usando a função **Desduplicar** no conjunto de regras.
 
@@ -405,7 +412,7 @@ Essa coluna provavelmente mapeia dezenas de métricas separadas, dependendo da i
 
 {{cja-df-post}}
 
-Se o esquema usar o grupo de campos [[!UICONTROL Detalhes do Commerce]](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/field-groups/event/commerce-details), algumas métricas poderão mapear diretamente para os seguintes campos XDM:
+Se o esquema usar o grupo de campos [[!UICONTROL Detalhes do Commerce]](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/commerce-details), algumas métricas poderão mapear diretamente para os seguintes campos XDM:
 
 * **Check-outs**: `xdm.commerce.checkouts.value`
 * **Adições ao carrinho**: `xdm.commerce.productListAdds.value`
@@ -418,7 +425,7 @@ Se o esquema usar o grupo de campos [[!UICONTROL Detalhes do Commerce]](https://
 Algumas métricas podem usar a serialização de eventos, que é a forma como o Adobe Analytics permite o controle total sobre a desduplicação. Você pode usar a configuração do componente [Desduplicação de métrica](/help/data-views/component-settings/metric-deduplication.md) para obter a paridade de desduplicação.
 
 * Se a sua métrica for desduplicada por visita no Adobe Analytics, você poderá definir o escopo de desduplicação para sessão nas configurações de componente dessa métrica.
-* Se sua métrica for desduplicada por ID de evento no Adobe Analytics, é provável que o objeto XDM para essa métrica contenha um campo `value` e `id`. Se o esquema usar o grupo de campos [[!UICONTROL Detalhes do Commerce]](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/field-groups/event/commerce-details), essas métricas provavelmente residirão nesses campos XDM, que você pode definir para o campo **[!UICONTROL ID de Desduplicação]** nas configurações de componente da métrica:
+* Se sua métrica for desduplicada por ID de evento no Adobe Analytics, é provável que o objeto XDM para essa métrica contenha um campo `value` e `id`. Se o esquema usar o grupo de campos [[!UICONTROL Detalhes do Commerce]](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/event/commerce-details), essas métricas provavelmente residirão nesses campos XDM, que você pode definir para o campo **[!UICONTROL ID de Desduplicação]** nas configurações de componente da métrica:
 
    * **Check-outs**: `xdm.commerce.checkouts.id`
    * **Adições ao carrinho**: `xdm.commerce.productListAdds.id`
@@ -437,7 +444,7 @@ Um sinalizador que determina se a ocorrência é excluída dos relatórios. A co
 
 O Customer Journey Analytics não respeita as &quot;ocorrências excluídas&quot; prontas para uso. No entanto, é possível recriar essa funcionalidade se você tiver um campo XDM que sinaliza determinadas ocorrências a serem excluídas:
 
-1. Verifique se o campo XDM que sinaliza as ocorrências excluídas está incluído como um componente (dimensão ou métrica, dependendo de como você configurou esse sinalizador). Selecionar [Ocultar componente nos relatórios](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-dataviews/component-settings/overview) provavelmente é benéfico para este campo.
+1. Verifique se o campo XDM que sinaliza as ocorrências excluídas está incluído como um componente (dimensão ou métrica, dependendo de como você configurou esse sinalizador). Selecionar [Ocultar componente nos relatórios](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/overview) provavelmente é benéfico para este campo.
 1. Em [Configurações de visualização de dados](/help/data-views/session-settings.md), selecione o menu suspenso **[!UICONTROL Adicionar segmento]** e selecione **[!UICONTROL Criar segmento]**.
 1. Crie um segmento que exclua todos os eventos em que o componente de ocorrência de exclusão existe ou contém valores que você deseja excluir.
 1. Selecione **[!UICONTROL Salvar]** no segmento e na visualização de dados.

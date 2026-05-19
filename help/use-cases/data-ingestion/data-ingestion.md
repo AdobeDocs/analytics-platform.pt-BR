@@ -5,9 +5,16 @@ exl-id: 4a47c587-f48e-4e29-b97f-00c7d7e6972c
 solution: Customer Journey Analytics
 feature: Use Cases
 role: Admin
-source-git-commit: 0145475e18cfbc3ae3a83e5e3838cdec02b57bda
+autotag-review: '2026-05-19T11:01:56.579Z'
+TQID: 'https://experienceleague.adobe.com/Uqoyk9k3hEOB90hzLtXhoYtmfX18wmXPHp-AWxgNIwU'
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071id: d76b9e53-27fb-4597-933f-419cc0dd46dbid: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+subfeature_v2: id: bfef374d-acfd-4c57-bf74-a2b36053c545id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d00e9f03-e50b-4162-b143-0c0817c937c2id: d3cdead0-685a-4489-9250-4bb709942f66id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: 827
 ht-degree: 86%
 
 ---
@@ -50,7 +57,7 @@ A Adobe Experience Platform reúne dados de várias fontes para ajudar os profis
 
 ## Trazer dados do Google Analytics para analisar no Customer Journey Analytics
 
-Consulte este tutorial sobre como [Analisar dados do Google Analytics usando o Customer Journey Analytics](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/module12/ex5.html?lang=pt-BR) para ver as etapas em detalhes.
+Consulte este tutorial sobre como [Analisar dados do Google Analytics usando o Customer Journey Analytics](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/module12/ex5.html) para ver as etapas em detalhes.
 
 ## Usar a API de inserção de dados em massa para obter dados no Analytics e, em seguida, assimilar por meio do conector de origem do Analytics no Experience Platform
 

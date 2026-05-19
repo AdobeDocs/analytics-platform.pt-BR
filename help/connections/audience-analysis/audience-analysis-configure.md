@@ -5,9 +5,16 @@ solution: Customer Journey Analytics
 feature: Audiences
 role: Admin
 exl-id: 0db3f6f7-9d7e-41bf-8eb5-02e439bab10a
-source-git-commit: ba9ae0e5084aaf1b14cff0ac89abd9b9f3569cc0
+autotag-review: '2026-05-19T10:44:07.732Z'
+TQID: 'https://experienceleague.adobe.com/pJMss6WVPH8LAAJXlmblmeMOHvOmk5dq0Zzy-Ab-Mt0'
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071id: c73c4213-d623-4126-81f4-80b42e5e2656id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+subfeature_v2: id: d3fb138f-79e4-4a81-aedb-76dd93560085
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d00e9f03-e50b-4162-b143-0c0817c937c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: '1391'
+source-wordcount: 1391
 ht-degree: 33%
 
 ---
@@ -86,7 +93,7 @@ Para criar uma configuração de análise de público-alvo:
    | Campo | Descrição |
    |---------|----------|
    | **[!UICONTROL Política de mesclagem]** | Selecione a política de mesclagem que corresponde ao conjunto de dados do perfil que você deseja usar para a análise do público-alvo. <p>As Políticas de mesclagem determinam como o Adobe Experience Platform combina dados de perfil de vários conjuntos de dados em perfis de cliente unificados usados para criação de público-alvo. A política de mesclagem selecionada afeta os atributos do perfil que são incluídos nos públicos-alvo. Todos os dias, um instantâneo desses dados é gerado no Experience Platform. Esse instantâneo fornece uma exibição estática dos dados em um momento específico e não inclui dados de evento.</p><p>Selecione a política de mesclagem **[!UICONTROL Timebased]** padrão se você vir várias políticas de mesclagem e não tiver certeza sobre qual escolher. Você também pode consultar sua equipe de dados para entender melhor quais públicos-alvo estão associados a cada política de mesclagem.</p> |
-   | **[!UICONTROL Conjunto de dados de perfil]** | O conjunto de dados do perfil associado à política de mesclagem selecionada. Este conjunto de dados de perfil inclui os dados de público-alvo da Experience Platform que você deseja analisar. Esse conjunto de dados de perfil é adicionado à conexão selecionada.<p>Depois de escolher uma política de mesclagem, a exportação de instantâneo de perfil é exibida. Por exemplo: `Profile-Snapshot-Export-abbc7093-80f4-4b49-b96e-e743397d763f`.</p><p>Para obter mais informações, consulte [Conjuntos de dados do atributo de perfil](https://experienceleague.adobe.com/pt-br/docs/experience-platform/dashboards/query#profile-attribute-datasets) no Guia de Painéis do Experience Platform.</p> |
+   | **[!UICONTROL Conjunto de dados de perfil]** | O conjunto de dados do perfil associado à política de mesclagem selecionada. Este conjunto de dados de perfil inclui os dados de público-alvo da Experience Platform que você deseja analisar. Esse conjunto de dados de perfil é adicionado à conexão selecionada.<p>Depois de escolher uma política de mesclagem, a exportação de instantâneo de perfil é exibida. Por exemplo: `Profile-Snapshot-Export-abbc7093-80f4-4b49-b96e-e743397d763f`.</p><p>Para obter mais informações, consulte [Conjuntos de dados do atributo de perfil](https://experienceleague.adobe.com/en/docs/experience-platform/dashboards/query#profile-attribute-datasets) no Guia de Painéis do Experience Platform.</p> |
 
 1. Na seção **[!UICONTROL Conexão]**, clique em **[!UICONTROL Selecionar uma conexão]**.
 
@@ -102,7 +109,7 @@ Para criar uma configuração de análise de público-alvo:
    | **[!UICONTROL Usar namespace de identidade primário]** | Esta opção mostra se você selecionar **[!UICONTROL Mapa de identidade]** para a ID de pessoa. <p>Habilite esta opção se quiser que o Customer Journey Analytics encontre a identidade no mapa de identidade que está marcada com um atributo primary=true e use essa identidade como a ID de pessoa para essa linha. Essa identidade é a chave primária usada na Experience Platform para particionamento. Além disso, essa identidade também é a principal candidata a ser usada como ID de pessoa do Customer Journey Analytics (dependendo de como o conjunto de dados está configurado na conexão do Customer Journey Analytics).</p> |
    | **[!UICONTROL Namespace de identidade]** | Esta opção mostra se você selecionar **[!UICONTROL Mapa de identidade]** para a ID de pessoa. Essa opção estará desativada se você usar o Namespace de ID primária. <p>Os namespaces de identidade são um componente do [Serviço de identidade da Experience Platform](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/features/namespaces). Os namespaces servem como indicadores do contexto ao qual uma identidade está relacionada. Se você especificar um namespace, o Customer Journey Analytics pesquisará no Mapa de identidade de cada linha por essa chave de namespace e usará a identidade sob essa namespace como a ID de pessoa para essa linha. Como o Customer Journey Analytics não pode fazer uma verificação completa do conjunto de dados de todas as linhas para determinar quais namespaces estão presentes, todos os namespaces possíveis são exibidos no menu suspenso. Você deve saber quais namespaces estão especificados nos dados; esses namespaces não são detectados automaticamente.</p> |
 
-   <!-- Add this when B2B releases for AuA **[!UICONTROL Account ID]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}|  (only displayed for account-based connections) The Account ID that is used to support account-based reporting for the dataset. -->
+   <!-- Add this when B2B releases for AuA **[!UICONTROL Account ID]** [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}|  (only displayed for account-based connections) The Account ID that is used to support account-based reporting for the dataset. -->
 
 1. Na seção **[!UICONTROL Visualizações de dados]**, clique em **[!UICONTROL Selecionar visualizações de dados]**.
 
