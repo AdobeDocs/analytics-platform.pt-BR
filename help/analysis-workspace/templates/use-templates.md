@@ -1072,7 +1072,7 @@ Estes são os modelos disponíveis:
 >[!CONTEXTUALHELP]
 >id="cja-template--ajo-channel"
 >title="Visualize um resumo completo das métricas de engajamento e tráfego para todas as campanhas e jornadas no ambiente."
->abstract="**Isso pode ajudar** a entender melhor a eficiência de alto nível das campanhas e jornadas. <br/>**Com base no que aprender, você poderá** fazer várias coisas, como ajustar as campanhas e jornadas com base nos níveis de engajamento do público-alvo."
+>abstract="**Isso pode ajudar** a entender melhor a eficácia de alto nível das campanhas e jornadas. <br/>**Com base no que aprender, você poderá** fazer várias coisas, como ajustar as campanhas e jornadas com base nos níveis de engajamento do público-alvo."
 
 >[!CONTEXTUALHELP]
 >id="cja-template--ajo-subscription"
