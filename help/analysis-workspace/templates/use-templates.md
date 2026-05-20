@@ -27,9 +27,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 2c808412ce401447d356a896b1caef7872106ddc
+source-git-commit: bdc5b3671b5810419b13a42b0ba138f9dffc34cb
 workflow-type: tm+mt
-source-wordcount: 21132
+source-wordcount: 21144
 ht-degree: 98%
 
 ---
@@ -406,7 +406,7 @@ Estes são os modelos disponíveis:
 >[!CONTEXTUALHELP]
 >id="template--content-analytics"
 >title="Saiba qual conteúdo e atributos de conteúdo apresentam melhor desempenho."
->abstract="**Isso pode ajudar você** a saber como seu conteúdo está se saindo em um nível granular. É possível analisar o desempenho de ativos individuais ou atributos específicos. O Content Analytics usa IA para gerar atributos automaticamente e marcar seu conteúdo com eles. [Mais informações &#x200B;](/help/content-analytics/content-analytics.md)<br/>**Com base no que você aprende, é possível** fazer várias coisas, como promover ativos de alto desempenho na sua home page, personalizar o conteúdo de segmentos específicos para incluir atributos de alto desempenho ou remover o conteúdo que começou a ficar obsoleto."
+>abstract="**Isso pode ajudar você** a saber como seu conteúdo está se saindo em um nível granular. É possível analisar o desempenho de ativos individuais ou atributos específicos. O Content Analytics usa IA para gerar atributos automaticamente e marcar seu conteúdo com eles. [Mais informações](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/content-analytics/content-analytics){target="_blank"}.<br/>**Com base no que aprender, você poderá** fazer uma série de coisas, como promover ativos de alto desempenho na sua página inicial, personalizar conteúdo para segmentos específicos a fim de incluir atributos de alto desempenho ou eliminar conteúdo que está próximo de se tornar obsoleto."
 
 
 Estes são os modelos disponíveis:
@@ -840,7 +840,7 @@ Estes são os modelos disponíveis:
 >[!CONTEXTUALHELP]
 >id="template--mobile-app-journeys"
 >title="Veja os principais padrões de uso do aplicativo móvel."
->abstract="**Isso pode ajudar** a entender melhor como as pessoas usam o aplicativo. <br/>**Com base no que aprender, você poderá** fazer várias coisas, como melhorar a transição de pessoas de uma tela à outra para direcionar os fluxos de trabalho mais comuns."
+>abstract="**Isso pode ajudar** a entender melhor como as pessoas usam seu aplicativo. <br/>**Com base no que aprender, você poderá** fazer várias coisas, como melhorar a transição de pessoas de uma tela à outra para direcionar os fluxos de trabalho mais comuns."
 
 >[!CONTEXTUALHELP]
 >id="template--mobile-app-key-metrics"
@@ -855,7 +855,7 @@ Estes são os modelos disponíveis:
 >[!CONTEXTUALHELP]
 >id="template--mobile-app-performance-template"
 >title="Veja o desempenho do aplicativo e onde usuários estão com problemas."
->abstract="**Isso pode ajudar** a entender se as pessoas que usam o aplicativo estão encontrando lentidão ou desempenho degradado. <br/>**Com base no que aprender, você poderá** fazer várias coisas, como corrigir problemas existentes ou melhorar o desempenho do aplicativo antes que eles ocorram."
+>abstract="**Isso pode ajudar** a entender se as pessoas que usam o aplicativo estão encontrando lentidão ou um desempenho reduzido. <br/>**Com base no que aprender, você poderá** fazer várias coisas, como corrigir problemas existentes ou melhorar o desempenho do aplicativo antes que eles ocorram."
 
 >[!CONTEXTUALHELP]
 >id="template--mobile-app-retention"
