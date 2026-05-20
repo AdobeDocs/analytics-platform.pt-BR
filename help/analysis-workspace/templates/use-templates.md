@@ -27,9 +27,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 347135b036e8232f3c93c57c845f6c5491a75918
+source-git-commit: 2c808412ce401447d356a896b1caef7872106ddc
 workflow-type: tm+mt
-source-wordcount: 21131
+source-wordcount: 21132
 ht-degree: 98%
 
 ---
@@ -406,7 +406,7 @@ Estes são os modelos disponíveis:
 >[!CONTEXTUALHELP]
 >id="template--content-analytics"
 >title="Saiba qual conteúdo e atributos de conteúdo apresentam melhor desempenho."
->abstract="**Isso pode ajudar você** a saber como seu conteúdo está se saindo em um nível granular. É possível analisar o desempenho de ativos individuais ou atributos específicos. O Content Analytics usa IA para gerar atributos automaticamente e marcar seu conteúdo com eles.<br/>**Com base no que aprender, você poderá** fazer uma série de coisas, como promover ativos de alto desempenho na sua página inicial, personalizar conteúdo para segmentos específicos a fim de incluir atributos de alto desempenho ou eliminar conteúdo que está próximo de se tornar obsoleto."
+>abstract="**Isso pode ajudar você** a saber como seu conteúdo está se saindo em um nível granular. É possível analisar o desempenho de ativos individuais ou atributos específicos. O Content Analytics usa IA para gerar atributos automaticamente e marcar seu conteúdo com eles. [Mais informações &#x200B;](/help/content-analytics/content-analytics.md)<br/>**Com base no que você aprende, é possível** fazer várias coisas, como promover ativos de alto desempenho na sua home page, personalizar o conteúdo de segmentos específicos para incluir atributos de alto desempenho ou remover o conteúdo que começou a ficar obsoleto."
 
 
 Estes são os modelos disponíveis:
@@ -855,7 +855,7 @@ Estes são os modelos disponíveis:
 >[!CONTEXTUALHELP]
 >id="template--mobile-app-performance-template"
 >title="Veja o desempenho do aplicativo e onde usuários estão com problemas."
->abstract="**Isso pode ajudar** a entender se as pessoas que usam o aplicativo estão encontrando lentidão ou um desempenho reduzido. <br/>**Com base no que aprender, você poderá** fazer várias coisas, como corrigir problemas existentes ou melhorar o desempenho do aplicativo antes que eles ocorram."
+>abstract="**Isso pode ajudar** a entender se as pessoas que usam o aplicativo estão encontrando lentidão ou desempenho degradado. <br/>**Com base no que aprender, você poderá** fazer várias coisas, como corrigir problemas existentes ou melhorar o desempenho do aplicativo antes que eles ocorram."
 
 >[!CONTEXTUALHELP]
 >id="template--mobile-app-retention"
@@ -1067,12 +1067,12 @@ Estes são os modelos disponíveis:
 >[!CONTEXTUALHELP]
 >id="cja-template--ajo-landing-page"
 >title="Visualize o comportamento do usuário, padrões de engajamento, taxas de conversão e outras métricas principais."
->abstract="**Isso pode ajudar** a entender melhor a eficiência da página de destino. <br/>**Com base no que aprender, você poderá** fazer várias coisas, como otimizar o desempenho da página de destino."
+>abstract="**Isso pode ajudar** a entender melhor a eficácia da página de destino. <br/>**Com base no que aprender, você poderá** fazer várias coisas, como otimizar o desempenho da página de destino."
 
 >[!CONTEXTUALHELP]
 >id="cja-template--ajo-channel"
 >title="Visualize um resumo completo das métricas de engajamento e tráfego para todas as campanhas e jornadas no ambiente."
->abstract="**Isso pode ajudar** a entender melhor a eficiência de alto nível das campanhas e jornadas. <br/>**Com base no que aprender, você poderá** fazer várias coisas, como ajustar as campanhas e jornadas com base nos níveis de engajamento do público-alvo."
+>abstract="**Isso pode ajudar** a entender melhor a eficácia de alto nível das campanhas e jornadas. <br/>**Com base no que aprender, você poderá** fazer várias coisas, como ajustar as campanhas e jornadas com base nos níveis de engajamento do público-alvo."
 
 >[!CONTEXTUALHELP]
 >id="cja-template--ajo-subscription"
