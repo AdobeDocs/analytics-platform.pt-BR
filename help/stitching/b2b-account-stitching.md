@@ -20,9 +20,9 @@ role_v2:
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: ff99ee131e9bae9fc2815fb54e5b5c14577450f7
+source-git-commit: 5964c5f87364e5ba78e866d753819d7e7f605b30
 workflow-type: tm+mt
-source-wordcount: 994
+source-wordcount: 1169
 ht-degree: 2%
 
 ---
@@ -39,7 +39,7 @@ Sem a compilação de conta, qualquer evento que não contenha uma ID de conta s
 
 A compilação de conta executa as seguintes operações em seus conjuntos de dados:
 
-* **Elevar a identidade da pessoa**: a ID de pessoa em cada evento é elevada ao namespace de identidade desejado usando o gráfico de identidade.
+* **Elevar a identidade da pessoa**: a ID da pessoa em cada evento é elevada ao namespace de identidade configurado usando o gráfico de identidade.
 * **Adicionar informações de conta ausentes**: para eventos que contêm uma ID de pessoa, o [mapeamento de pessoa para conta](#prerequisites) é usado para derivar e adicionar as informações de conta. Qualquer informação de conta no próprio evento é usada como um método de fallback.
 
 ## Pré-requisitos
@@ -54,11 +54,44 @@ Antes de ativar a compilação de conta B2B, prepare os seguintes conjuntos de d
 >
 >O campo de ID de pessoa no seu conjunto de dados de **[!UICONTROL pessoa para conta]** deve ser marcado como uma identidade no esquema.
 
-## Ativar compilação de conta
+## Ativar compilação de conta {#enable-account-stitching}
 
 Você ativa e configura a compilação de conta B2B no nível da conexão e, em seguida, ativa a compilação de conta em conjuntos de dados de evento individuais nessa conexão.
 
-### Definir configurações de compilação B2B
+### Definir configurações de compilação B2B {#configure-b2b-stitching-settings}
+
+>[!CONTEXTUALHELP]
+>id="connection_b2b_stitching_open_configuration"
+>title="Configurar a compilação de conta B2B"
+>abstract="Selecione **[!UICONTROL Abrir configuração de compilação B2B]** para configurar a compilação de conta B2B. Se a conexão ainda não tiver sido salva, a configuração será rotulada com **[!UICONTROL _Alterações não salvas_]**."
+
+>[!CONTEXTUALHELP]
+>id="connection_b2b_stitching_person_identifier_namespace"
+>title="Namespace do identificador de pessoa"
+>abstract="Selecione um namespace de identificador de pessoa, por exemplo, Email, para o qual você deseja que qualquer ID de pessoa seja elevada."
+
+>[!CONTEXTUALHELP]
+>id="connection_b2b_stitching_person_to_account_dataset"
+>title="Conjunto de dados de pessoa para conta"
+>abstract="Selecione o conjunto de dados de pesquisa que mapeia IDs de pessoa para IDs de conta."
+
+>[!CONTEXTUALHELP]
+>id="connection_b2b_stitching_person"
+>title="Pessoa"
+>abstract="Selecione o campo no conjunto de dados que contém a ID de pessoa. Este campo deve ser marcado como uma identidade e não pode ser igual ao campo **[!UICONTROL Conta]** ou ao campo **[!UICONTROL Hora de início]**."
+
+>[!CONTEXTUALHELP]
+>id="connection_b2b_stitching_account"
+>title="Conta"
+>abstract="Selecione o campo no conjunto de dados que contém a ID da conta. Este campo não pode ser igual ao campo **[!UICONTROL Pessoa]** ou ao campo **[!UICONTROL Hora de início]**."
+
+>[!CONTEXTUALHELP]
+>id="connection_b2b_stitching_start_time"
+>title="Hora de início"
+>abstract="Selecione um campo de carimbo de data e hora que indique quando o relacionamento entre pessoa e conta se tornou ativo."
+>additional-url=""
+>additional-url=""
+
 
 1. No Customer Journey Analytics, navegue até **[!UICONTROL Conexões]** e [crie uma nova conexão](/help/connections/create-connection.md#create-a-connection) ou [edite uma conexão existente](/help/connections/create-connection.md#edit-a-connection).
 
@@ -85,9 +118,9 @@ Você ativa e configura a compilação de conta B2B no nível da conexão e, em 
       | Campo | Obrigatório | Descrição |
       |---|:---:|---|
       | **[!UICONTROL Conjunto de dados de Pessoa para Conta]** | ![Obrigatório](/help/assets/icons/Required.svg) | Selecione a pesquisa (conjunto de dados de série não temporal ou de registro) que mapeia pessoas para contas. |
-      | **[!UICONTROL Campo de pessoa]** | ![Obrigatório](/help/assets/icons/Required.svg) | Selecione o campo no conjunto de dados que contém a ID de pessoa. Este campo deve ser marcado como uma identidade e não pode ser igual ao campo **[!UICONTROL Conta]** ou ao campo **[!UICONTROL Hora de início]**. |
-      | **[!UICONTROL Campo de conta]** | ![Obrigatório](/help/assets/icons/Required.svg) | Selecione o campo no conjunto de dados que contém a ID da conta. Este campo não pode ser igual ao campo **[!UICONTROL Pessoa]** ou ao campo **[!UICONTROL Hora de início]**. |
-      | **Campo de hora de início** | | Selecione um campo de carimbo de data e hora que indique quando o relacionamento entre pessoa e conta se tornou ativo. |
+      | **[!UICONTROL Pessoa]** | ![Obrigatório](/help/assets/icons/Required.svg) | Selecione o campo no conjunto de dados que contém a ID de pessoa. Este campo deve ser marcado como uma identidade e não pode ser igual ao campo **[!UICONTROL Conta]** ou ao campo **[!UICONTROL Hora de início]**. |
+      | **[!UICONTROL Conta]** | ![Obrigatório](/help/assets/icons/Required.svg) | Selecione o campo no conjunto de dados que contém a ID da conta. Este campo não pode ser igual ao campo **[!UICONTROL Pessoa]** ou ao campo **[!UICONTROL Hora de início]**. |
+      | **Hora de início** | | Selecione um campo de carimbo de data e hora que indique quando o relacionamento entre pessoa e conta se tornou ativo. |
 
       >[!NOTE]
       >
@@ -99,6 +132,15 @@ Você ativa e configura a compilação de conta B2B no nível da conexão e, em 
 
 
 ### Ativar a compilação B2B em conjuntos de dados do evento
+
+
+>[!CONTEXTUALHELP]
+>id="connection_b2b_stitching_enable_person_to_account"
+>title="Permitir que a pessoa realize a compilação de conta"
+>abstract="Se ativado, esse conjunto de dados usa a compilação de conta B2B. A ID de pessoa selecionada é usada para pesquisar a ID da conta com base no conjunto de dados de pessoa para conta.<br/>Se desabilitado, este conjunto de dados *não* usa a compilação de conta B2B."
+>additional-url=""
+>additional-url=""
+
 
 Depois de configurar a compilação B2B no nível da conexão, você deve ativar a compilação de conta B2B individualmente para cada conjunto de dados de evento que você deseja compilar.
 
@@ -112,7 +154,7 @@ Depois de configurar a compilação B2B no nível da conexão, você deve ativar
 
 Quando **[!UICONTROL Habilitar identificação de Pessoa por Conta]** estiver **ativado**, você configurou a identificação de conta B2B para o conjunto de dados.
 
-* A configuração de uma ID de pessoa é obrigatória. Essa ID de pessoa é usada para pesquisar a ID da conta com base no [conjunto de dados de Pessoa para Conta](#prerequisites).
+* A configuração de uma ID de pessoa é obrigatória. Essa ID de pessoa é usada para pesquisar a ID da conta com base no [conjunto de dados de pessoa para conta](#prerequisites).
 * A configuração de uma ID de conta é opcional.
 
 ![Compilação de conta B2B no conjunto de dados do evento em](assets/b2b-event-dataset-stitching-on.png)
