@@ -20,10 +20,10 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: 19cf20236196ab9c2518bf299a36d32f65210227
 workflow-type: tm+mt
-source-wordcount: 2341
-ht-degree: 79%
+source-wordcount: 2373
+ht-degree: 71%
 
 ---
 
@@ -33,7 +33,9 @@ Confira abaixo algumas perguntas frequentes sobre a compilação:
 
 ## Mover entre canais
 
-+++ Como posso usar a compilação para ver como as pessoas mudam de um tipo de canal para outro?
+**Pergunta**: Como posso usar a compilação para ver como as pessoas mudam de um canal para outro?
+
++++Resposta
 
 Você pode usar uma visualização de fluxo com a dimensão ID do conjunto de dados.
 
@@ -48,13 +50,17 @@ Se você quiser renomear itens de dimensão da ID de conjunto de dados, poderá 
 
 ## Reproduzir novamente
 
-+++ Até que ponto no passado a compilação reproduz perfis novamente?
+**Pergunta**: Até que ponto a compilação de perfis de repetição faz?
+
++++Resposta
 
 A janela de pesquisa para rechaveamento depende da frequência com a qual você deseja reproduzir dados novamente. Por exemplo, se você configurar a compilação para reproduzir os dados novamente uma vez por semana, a janela de pesquisa para rechaveamento será de sete dias. Se você configurar a compilação para reproduzir os dados novamente todos os dias, a janela de pesquisa para rechaveamento será de um dia.
 
 +++
 
-+++ Quando o processo de repetição é executado exatamente?
+**Pergunta**: Quando o processo de repetição é executado exatamente?
+
++++Resposta
 
 * A repetição **weekly** começa a cada **sábado** noite (fuso horário do cliente) e os dados são atualizados nos relatórios do Customer Journey Analytics até segunda-feira de manhã.
 * A repetição **diária** é executada por volta de **3:00.** (fuso horário do cliente) e os dados são atualizados nos relatórios do Customer Journey Analytics pela manhã.
@@ -68,7 +74,9 @@ A janela de pesquisa para rechaveamento depende da frequência com a qual você 
 
 ## Dispositivos compartilhados
 
-+++ Como os dispositivos compartilhados são manipulados?
+**Pergunta**: como os dispositivos compartilhados são manipulados?
+
++++Resposta
 
 Em algumas situações, é possível que várias pessoas façam logon no mesmo dispositivo. Os exemplos incluem um dispositivo compartilhado em casa, PCs compartilhados em uma biblioteca ou um quiosque em uma loja de varejo.
 
@@ -80,7 +88,9 @@ Consulte o caso de uso [Dispositivos compartilhados](/help/use-cases/stitching/s
 
 ## Várias IDs persistentes
 
-+++ Como a a compilação lida com situações em que uma mesma pessoa tem várias IDs persistentes?
+**Pergunta**: Como a compilação lida com situações em que uma única pessoa tem muitas IDs persistentes?
+
++++Resposta
 
 Em algumas situações, um usuário individual pode ser associado a muitas IDs persistentes. Um exemplo é um indivíduo que limpa os cookies do navegador com frequência ou que usa o modo privado/anônimo do navegador.
 
@@ -92,7 +102,9 @@ Para a compilação baseada em gráficos, uma única pessoa pode ter muitas IDs 
 
 ## Processo de compilação
 
-+++ Após entrar em contato com minha equipe de contas da Adobe e fornecer as informações desejadas, quanto tempo levará para o conjunto de dados rechaveado ser disponibilizado?
+**Pergunta**: Assim que eu entrar em contato com minha equipe de conta da Adobe com as informações desejadas, quanto tempo levará para o conjunto de dados rechaveado ficar disponível?
+
++++Resposta
 
 A compilação em tempo real está disponível aproximadamente uma semana depois de a Adobe habilitar a compilação. A disponibilidade do preenchimento retroativo depende da quantidade de dados existentes. Os pequenos conjuntos de dados (menos de um milhão de eventos por dia) normalmente levam alguns dias, enquanto grandes conjuntos de dados (um bilhão de eventos por dia) podem levar uma semana ou mais.
 
@@ -100,7 +112,9 @@ A compilação em tempo real está disponível aproximadamente uma semana depois
 
 ## Análise entre dispositivos versus análise entre canais
 
-+++ Qual é a diferença entre a análise entre dispositivos (um recurso do Analytics tradicional) e a análise entre canais?
+**Pergunta**: qual é a diferença entre a análise entre dispositivos (um recurso no Analytics tradicional) e a análise entre canais?
+
++++Resposta
 
 A [análise entre dispositivos](https://experienceleague.adobe.com/pt-br/docs/analytics/components/cda/overview) é um recurso específico do Adobe Analytics tradicional que permite compreender como as pessoas operam em diversos dispositivos. Ela oferece dois fluxos de trabalho para vincular dados do dispositivo: compilação em campo e gráfico do dispositivo.
 
@@ -110,7 +124,9 @@ A análise entre canais é um recurso específico do Customer Journey Analytics 
 
 ## Privacidade
 
-+++ Como a compilação trata as solicitações de privacidade?
+**Pergunta**: Como a compilação trata as solicitações de privacidade?
+
++++Resposta
 
 A Adobe trata as solicitações de privacidade de acordo com as leis locais e internacionais. A Adobe oferece o [Adobe Experience Platform Privacy Service](https://experienceleague.adobe.com/pt-br/docs/experience-platform/privacy/home) para enviar solicitações de acesso e exclusão de dados. As solicitações se aplicam aos conjuntos de dados originais e rechaveados.
 
@@ -192,7 +208,9 @@ Quando uma solicitação de privacidade é recebida em referência ao cliente co
 
 ## Valores de IDs persistentes em branco
 
-+++ O que acontece se o campo de ID persistente de um ou mais eventos estiver em branco?
+**Pergunta**: o que acontece se o campo de ID persistente em um ou mais eventos estiver em branco?
+
++++Resposta
 
 Se o campo ID persistente estiver em branco em um evento em um conjunto de dados que está sendo compilado , a ID resultante desse evento será determinada de uma das duas formas a seguir:
 
@@ -204,7 +222,9 @@ Se o campo ID persistente estiver em branco em um evento em um conjunto de dados
 
 ## Valores de IDs de pessoas indefinidos
 
-+++ O que acontece se o campo de ID de pessoa de um ou mais eventos contiver valores de espaço reservado, como `Undefined`?
+**Pergunta**: o que acontece se o campo de ID de pessoa em um ou mais eventos tiver valores de espaço reservado, como `Undefined`?
+
++++Resposta
 
 Tenha cuidado com o “recolhimento de pessoas”, que ocorre quando a compilação é aplicada a dados que usam valores de espaço reservado para IDs transitórias. Na tabela de exemplo abaixo, IDs de pessoas indefinidas oriundas de um conjunto de dados proveniente de um sistema de CRM são preenchidas com o valor “Indefinido”, resultando na representação incorreta de pessoas.
 
@@ -226,7 +246,9 @@ Tenha cuidado com o “recolhimento de pessoas”, que ocorre quando a compilaç
 
 ## Comparação de métricas
 
-+++ Qual é a comparação entre as métricas nos conjuntos de dados compilados do Customer Journey Analytics e métricas semelhantes em conjuntos de dados não compilados do Customer Journey Analytics e o Adobe Analytics?
+**Pergunta**: Como as métricas nos conjuntos de dados compilados do Customer Journey Analytics se comparam com métricas semelhantes nos conjuntos de dados não compilados do Customer Journey Analytics e com o Adobe Analytics?
+
++++Resposta
 
 Certas métricas do Customer Journey Analytics são semelhantes às métricas do Analytics tradicional, mas outras são diferentes, dependendo do que você está comparando. A tabela abaixo compara várias métricas comuns:
 
@@ -242,7 +264,9 @@ Outras métricas pode ser semelhantes no Customer Journey Analytics e no Adobe A
 
 ## Mapa de identidade
 
-+++ O Customer Journey Analytics pode usar campos do mapa de identidade?
+**Pergunta**: o Customer Journey Analytics pode usar campos do Mapa de identidade?
+
++++Resposta
 
 Sim, o Customer Journey Analytics pode usar campos do mapa de identidade para compilação [baseada em campos](/help/stitching/fbs.md#identitymap) e [baseada em gráficos](/help/stitching/gbs.md#identitymap).
 
@@ -250,7 +274,9 @@ Sim, o Customer Journey Analytics pode usar campos do mapa de identidade para co
 
 ## Alternar para a compilação baseada em gráficos
 
-+++ Os dados precisam ser assimilados novamente para alternar da compilação em campos para a compilação em gráficos?
+**Pergunta**: os dados precisarão ser assimilados novamente para alternar da compilação em campo para a compilação em gráfico?
+
++++Resposta
 
 Os dados não precisam ser assimilados novamente na Experience Platform. No entanto, os dados precisam ser reconfigurados no Customer Journey Analytics. Siga estas etapas:
 
@@ -265,7 +291,9 @@ Os dados não precisam ser assimilados novamente na Experience Platform. No enta
 
 ## Problemas na geração de relatórios
 
-+++ Ocorreria algum problema nos relatórios existentes?
+**Pergunta**: haveria alguma interrupção nos relatórios existentes?
+
++++Resposta
 
 Se você seguir as etapas descritas acima, não. Caso contrário, solicite suporte adicional à Adobe Consulting.
 
@@ -273,7 +301,9 @@ Se você seguir as etapas descritas acima, não. Caso contrário, solicite supor
 
 ## Habilitar um conjunto de dados para o serviço de identidade
 
-+++ Como faço para habilitar um conjunto de dados somente para o serviço de identidade? 
+**Pergunta**: como habilitar um conjunto de dados somente para o Serviço de Identidade?
+
++++Resposta
 
 Certifique-se de que um conjunto de dados esteja ativado para que o Serviço de identidade use o conjunto de dados na compilação baseada em gráfico.
 
@@ -298,12 +328,14 @@ Qualquer uso da tag `unifiedProfile` na solicitação, enquanto você não tiver
 
 Consulte [Criar um conjunto de dados habilitado para perfil e identidade](https://experienceleague.adobe.com/pt-br/docs/experience-platform/catalog/datasets/enable-for-profile#enable-the-dataset) para obter mais informações.
 
-+++ 
++++
 
 
 ## Valores de namespace compilados
 
-+++ Por que os valores de namespace compilados nem sempre correspondem ao valor de namespace de identidade que você pode usar em outro conjunto de dados na conexão do CJA?
+**Pergunta**: Por que os valores de namespace compilados nem sempre correspondem ao valor de namespace de identidade que você pode usar em outro conjunto de dados na conexão com o CJA?
+
++++Resposta
 
 Por padrão, os valores de namespace compilados estão em minúsculas. Então, `custEmail` torna-se `custemail`. Se você tiver outro conjunto de dados com um valor de namespace de identidade de `custEmail`, os dois valores não corresponderão. Para contornar esse comportamento nos relatórios, você pode usar a função de campo derivada [lowercase()](/help/data-views/derived-fields/derived-fields.md#lowercase) para corresponder aos valores do namespace de identidade.
 
