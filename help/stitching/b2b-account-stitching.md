@@ -20,9 +20,9 @@ role_v2:
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 5964c5f87364e5ba78e866d753819d7e7f605b30
+source-git-commit: d95b7e2710fac7ce851c1c5ecba229a4221f08ac
 workflow-type: tm+mt
-source-wordcount: 1169
+source-wordcount: 1178
 ht-degree: 2%
 
 ---
@@ -137,7 +137,7 @@ Você ativa e configura a compilação de conta B2B no nível da conexão e, em 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_enable_person_to_account"
 >title="Permitir que a pessoa realize a compilação de conta"
->abstract="Se ativado, esse conjunto de dados usa a compilação de conta B2B. A ID de pessoa selecionada é usada para pesquisar a ID da conta com base no conjunto de dados de pessoa para conta.<br/>Se desabilitado, este conjunto de dados *não* usa a compilação de conta B2B."
+>abstract="Se ativado, esse conjunto de dados usa a compilação de conta B2B. Selecione uma **[!UICONTROL ID de pessoa]** necessária para pesquisar a ID da conta com base no conjunto de dados de pessoa para conta.<br/>Se desabilitado, este conjunto de dados *não* usa a compilação de contas B2B e você precisa selecionar uma **[!UICONTROL ID de Conta]** necessária."
 >additional-url=""
 >additional-url=""
 
