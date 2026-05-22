@@ -20,9 +20,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: de8f8e06f074fdcb0219ce7286785d870c2093b4
 workflow-type: tm+mt
-source-wordcount: 599
+source-wordcount: 589
 ht-degree: 22%
 
 ---
@@ -45,7 +45,9 @@ O gerenciador de Alertas tem os seguintes elementos de interface:
 
 ### Lista de alertas
 
-A lista de alertas ➊ exibe todos os alertas que você possui, os alertas que foram segmentados para todos os seus projetos e os alertas que foram compartilhados com você. A lista tem as seguintes colunas:
+A lista de alertas ➊ exibe os alertas criados. Se você for um administrador, verá todos os alertas.
+
+A lista tem as seguintes colunas:
 
 | Coluna | Descrição |
 |---|---|
@@ -54,7 +56,7 @@ A lista de alertas ➊ exibe todos os alertas que você possui, os alertas que f
 | **[!UICONTROL Tipo]** | Mostra se o alerta é um alerta de dados do Customer Journey Analytics ou um alerta de uso de chamada do servidor. |
 | **[!UICONTROL Habilitado]** | Indica se o alerta está ativado ou desativado. |
 | **[!UICONTROL Visualização de dados]** | As visualizações de dados às quais este alerta se aplica. |
-| **[!UICONTROL Proprietário]** | O proprietário do alerta. Como um usuário não administrador, você só verá os alertas que possui ou que são compartilhados com você. |
+| **[!UICONTROL Proprietário]** | O proprietário do alerta. Como um usuário não administrador, você verá somente os alertas que possui. Um administrador pode visualizar todos os alertas. |
 | **[!UICONTROL Tags]** | As tags para este alerta. |
 | **[!UICONTROL Data de validade]** | A data e hora em que o alerta está definido para expirar. |
 | **[!UICONTROL Data de modificação]** | A data e a hora em que o alerta foi modificado pela última vez. |

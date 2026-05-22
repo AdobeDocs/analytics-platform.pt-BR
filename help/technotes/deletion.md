@@ -22,9 +22,9 @@ subfeature_v2:
   - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: de8f8e06f074fdcb0219ce7286785d870c2093b4
 workflow-type: tm+mt
-source-wordcount: 965
+source-wordcount: 997
 ht-degree: 9%
 
 ---
@@ -51,6 +51,7 @@ Considere as seguintes implicações antes de excluir conjuntos de dados ou lote
 
 | Ação | Implicações |
 | --- | --- |
+| Excluir um ou mais registros de um conjunto de dados no [!UICONTROL Experience Platform] | Os registros são excluídos das conexões do Customer Journey Analytics que têm o conjunto de dados definido como parte da configuração da conexão. |
 | Excluir um conjunto de dados no [!UICONTROL Experience Platform] | O fluxo de dados desse conjunto de dados na Experience Platform é interrompido para qualquer conexão que inclua esse conjunto de dados. Qualquer dado desse conjunto de dados é excluído automaticamente das conexões associadas do Customer Journey Analytics. |
 | Excluir um lote de um conjunto de dados no [!UICONTROL Experience Platform] | Se um lote for excluído de um conjunto de dados do [!UICONTROL Adobe Experience Platform], o mesmo lote será removido de qualquer conexão do [!UICONTROL Customer Journey Analytics] que contenha esse lote específico. [!UICONTROL O Customer Journey Analytics] é notificado de lotes que foram excluídos na [!UICONTROL Adobe Experience Platform]. |
 | Excluir um lote de [!UICONTROL Experience Platform] **enquanto ele estiver sendo assimilado** na [!UICONTROL Customer Journey Analytics] | Se houver apenas um lote no conjunto de dados, nenhum dado ou dado parcial desse lote será exibido no [!UICONTROL Customer Journey Analytics]. A ingestão será revertida. Por exemplo, se houver cinco lotes no conjunto de dados e três deles já tiverem sido assimilados quando o quarto lote tiver sido excluído, os dados desses três lotes aparecerão no [!UICONTROL Customer Journey Analytics]. |
