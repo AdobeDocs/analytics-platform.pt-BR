@@ -16,10 +16,10 @@ subfeature_v2:
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: 7f8ab656c7dbf508b2a78fd2022592faf883c56e
 workflow-type: tm+mt
-source-wordcount: 766
-ht-degree: 98%
+source-wordcount: 758
+ht-degree: 100%
 
 ---
 
@@ -44,11 +44,7 @@ Os recursos que aparecem na parte superior dessa visualização indicam que são
 * Os recursos na parte inferior esquerda da matriz são os recursos de **baixo impacto**. Eles não são amplamente adotados ou usados com frequência.
 * Os recursos na parte inferior direita da matriz são os recursos **únicos**. Eles são amplamente adotados, mas não são usados com frequência.
 
->[!BEGINSHADEBOX]
-
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Análise de engajamento](https://video.tv.adobe.com/v/3447472?captions=por_br){target="_blank"} para ver um vídeo de demonstração.
-
->[!ENDSHADEBOX]
+>[!VIDEO](https://video.tv.adobe.com/v/3447472/?captions=por_br&quality=12&learn=on)
 
 ## Casos de uso
 
