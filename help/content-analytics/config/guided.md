@@ -28,7 +28,7 @@ topic_v2:
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 4111
-ht-degree: 61%
+ht-degree: 63%
 
 ---
 
@@ -186,7 +186,7 @@ Se você já tiver selecionado uma conexão, mas quiser alterá-la:
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataviews_new_dialog"
 >title="Visualizações de dados selecionadas"
->abstract="As visualizações de dados selecionadas foram modificadas para essa configuração. A visualização de dados selecionada será atualizada para incluir métricas e dimensões do Content Analytics. Essas métricas e dimensões serão removidas das visualizações de dados selecionadas anteriormente que não estão mais selecionadas.<br/><br/>Se uma conexão diferente estiver associada às visualizações de dados selecionadas, a conexão será atualizada para incluir conjuntos de dados do Content Analytics. Os conjuntos de dados do Content Analytics não são removidos da conexão selecionada originalmente.<br/><br/>Todas as visualizações de dados selecionadas herdam os canais que fazem parte dessa configuração."
+>abstract="As visualizações de dados selecionadas foram modificadas para essa configuração. A visualização de dados selecionada será atualizada para incluir métricas e dimensões do Content Analytics. Essas métricas e dimensões serão removidas das visualizações de dados selecionadas anteriormente que não estão mais selecionadas.<br/><br/>Se uma conexão diferente estiver associada às visualizações de dados selecionadas, ela será atualizada para incluir conjuntos de dados do Content Analytics. Os conjuntos de dados do Content Analytics não são removidos da conexão selecionada originalmente.<br/><br/>Todas as visualizações de dados selecionadas herdam os canais que fazem parte dessa configuração."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataviews_change_dialog"
@@ -257,7 +257,7 @@ Em seguida, você pode configurar o canal com mais detalhes. Esta configuração
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_experience_locations_header"
 >title="Coleção de dados de locais de experiência móvel"
->abstract="Indique quais locais de experiências devem ser **excluídos** ao coletar dados para o Content Analytics. Exclua locais de experiência identificáveis pessoalmente."
+>abstract="Indique quais locais de experiências devem ser **excluídos** ao coletar dados para o Content Analytics. Certifique-se de excluir as localizações de experiência com dados de identificação pessoal."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_asset_locations_boldheader"
@@ -267,7 +267,7 @@ Em seguida, você pode configurar o canal com mais detalhes. Esta configuração
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_asset_locations_header"
 >title="Coleta de dados de locais de ativos móveis"
->abstract="Indique quais locais de ativos devem ser **excluídos** ao coletar dados para o Content Analytics. Certifique-se de excluir as localizações de ativos pessoalmente identificáveis."
+>abstract="Indique quais locais de ativos devem ser **excluídos** ao coletar dados para o Content Analytics. Certifique-se de excluir as localizações de ativos com dados de identificação pessoal."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_asset_urls_boldheader"
@@ -277,7 +277,7 @@ Em seguida, você pode configurar o canal com mais detalhes. Esta configuração
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_mobile_asset_urls_header"
 >title="Coleta de dados de URLs de ativos móveis"
->abstract="Indique quais URLs de ativos devem ser **excluídos** ao coletar dados para o Content Analytics. Exclua URLs de ativos pessoalmente identificáveis."
+>abstract="Indique quais URLs de ativos devem ser **excluídos** ao coletar dados para o Content Analytics. Certifique-se de excluir URLs de ativos com dados de identificação pessoal."
 
 Para o canal móvel, você pode configurar a [captura e definição de experiência](#experience-capture-and-definition), a [coleção de dados](#data-collection) e as [substituições de cabeçalho](#header-overrides).
 
@@ -309,15 +309,15 @@ Para configurar a coleta de dados do:
       1. Especifique um **[!UICONTROL nome de tag]**, por exemplo, `ACA Test for Documentation`.
       1. Especifique **[!UICONTROL Domínios]**, por exemplo, `example.com`.
 
-* Indique quais locais de experiência devem ser excluídos ao coletar dados para o Content Analytics. Exclua locais de experiência identificáveis pessoalmente.
+* Indique quais locais de experiência devem ser excluídos ao coletar dados para o Content Analytics. Certifique-se de excluir as localizações de experiência com dados de identificação pessoal.
 
   Especifique uma **[!UICONTROL Cadeia de caracteres de expressão regular]** para **[!UICONTROL Locais de experiência a serem excluídos]**. <br/>Por exemplo: `^(?!.*documentation).*` para excluir todos os locais de experiência de documentação do Content Analytics.
 
-* Indique quais locais de ativos devem ser excluídos ao coletar dados para o Content Analytics. Certifique-se de excluir as localizações de ativos pessoalmente identificáveis.
+* Indique quais locais de ativos devem ser excluídos ao coletar dados para o Content Analytics. Certifique-se de excluir as localizações de ativos com dados de identificação pessoal.
 
   Especifique uma **[!UICONTROL cadeia de caracteres de expressão regular]** para **[!UICONTROL locais de ativos a serem excluídos]**. <br/>Por exemplo: `^(?!.*(logo\.jpg)).*$` para excluir todas as localizações de ativos com imagens de logotipo do JPEG da Content Analytics.
 
-* Indique quais URLs de ativos devem ser excluídos ao coletar dados para o Content Analytics. Exclua URLs de ativos pessoalmente identificáveis.
+* Indique quais URLs de ativos devem ser excluídos ao coletar dados para o Content Analytics. Certifique-se de excluir URLs de ativos com dados de identificação pessoal.
 
   Especifique uma **[!UICONTROL cadeia de caracteres de expressão regular]** para **[!UICONTROL URLs de ativos a serem excluídos]**. <br/>Por exemplo: `^(?!.*(logo\.jpg)).*$` para excluir todas as URLs de ativos referentes a imagens de logotipo do JPEG da Content Analytics.
 
@@ -393,7 +393,7 @@ Para o canal Web, você pode configurar [captura e definição de experiência](
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_pages_excluded_header"
 >title="Coleção de dados"
->abstract="Indique quais páginas devem ser **incluídas** ou **excluídas** ao coletar dados para o Content Analytics. Exclua páginas pessoalmente identificáveis."
+>abstract="Indique quais páginas devem ser **incluídas** ou **excluídas** ao coletar dados para o Content Analytics. Certifique-se de excluir páginas com dados de identificação pessoal."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_assets_excluded_boldheader"
@@ -403,7 +403,7 @@ Para o canal Web, você pode configurar [captura e definição de experiência](
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_assets_excluded_header"
 >title="Coleção de dados"
->abstract="Indique quais ativos devem ser **incluídos** ou **excluídos** ao coletar dados para o Content Analytics. Exclua os ativos de identificação pessoal."
+>abstract="Indique quais ativos devem ser **incluídos** ou **excluídos** ao coletar dados para o Content Analytics. Certifique-se de excluir ativos com dados de identificação pessoal."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_experiences_edit_button"
@@ -441,7 +441,7 @@ Para o canal Web, você pode configurar [captura e definição de experiência](
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_datacollection_web_assets_header"
 >title="Coleção de dados de ativos da Web"
->abstract="Indique quais ativos devem ser **incluídos** ou **excluídos** ao coletar dados para o Content Analytics. Exclua os ativos de identificação pessoal."
+>abstract="Indique quais ativos devem ser **incluídos** ou **excluídos** ao coletar dados para o Content Analytics. Certifique-se de excluir ativos com dados de identificação pessoal."
 
 
 ##### Captura e definição de experiência {#web-experience-capture-and-definition}
@@ -516,11 +516,11 @@ Para configurar a coleta de dados do:
 
      Use uma nova propriedade de marcas se desejar criar uma implementação agnóstica de marcas para o canal da Web, usando a [biblioteca JavaScript do Content Analytics](/help/content-analytics/config/tags-agnostic.md). A propriedade Tags é criada, mas você não usará a propriedade na implementação agnóstica. No entanto, a implementação agnóstica exige que você execute o assistente de configuração guiada pelo menos uma vez.
 
-* Indique quais páginas devem ser incluídas ou excluídas ao coletar dados para o Content Analytics. Exclua páginas pessoalmente identificáveis.
+* Indique quais páginas devem ser incluídas ou excluídas ao coletar dados para o Content Analytics. Certifique-se de excluir páginas com dados de identificação pessoal.
 
   Especifique uma **[!UICONTROL Cadeia de caracteres de expressão regular]** para **[!UICONTROL Páginas a serem incluídas/excluídas]**. <br/>Por exemplo: `^(?!.*documentation).*` para excluir todas as páginas de documentação do Content Analytics.
 
-* Indique quais ativos devem ser incluídos ou excluídos ao coletar dados para o Content Analytics. Exclua os ativos de identificação pessoal.
+* Indique quais ativos devem ser incluídos ou excluídos ao coletar dados para o Content Analytics. Certifique-se de excluir ativos com dados de identificação pessoal.
 
   Especifique uma **[!UICONTROL Cadeia de caracteres de expressão regular]** para **[!UICONTROL Ativo a ser incluído/excluído]**. <br/>Por exemplo: `^(?!.*(logo\.jpg)).*$` para excluir todas as imagens JPEG de logotipo do Content Analytics.
 

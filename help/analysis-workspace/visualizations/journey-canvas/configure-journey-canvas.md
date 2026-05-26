@@ -24,8 +24,8 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: c6b215f9fe718d0d3e8f81b7f55421c909b69c5a
 workflow-type: tm+mt
-source-wordcount: 6493
-ht-degree: 90%
+source-wordcount: 6499
+ht-degree: 91%
 
 ---
 
@@ -93,7 +93,7 @@ Consulte [Visão geral da tela de jornada](/help/analysis-workspace/visualizatio
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_percentage_value"
 >title="Escolha como as porcentagens são calculadas"
->abstract="As porcentagens exibidas em cada nó se baseiam nas métricas primárias e secundárias configuradas. Você pode escolher se as porcentagens estão relacionadas ao nó inicial, ao nó anterior ou a todos os dados no conjunto de relatórios."
+>abstract="As porcentagens exibidas em cada nó se baseiam nas métricas primárias e secundárias configuradas. É possível escolher se as porcentagens estarão relacionadas ao nó inicial, ao nó anterior ou a todos os dados no conjunto de relatórios."
 
 <!-- markdownlint-enable MD034 -->
 
