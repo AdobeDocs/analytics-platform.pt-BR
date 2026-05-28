@@ -1,32 +1,17 @@
 ---
 title: Medidas de proteção do Customer Journey Analytics
-description: Saiba mais sobre as Medidas de proteção do Customer Journey Analytics
+description: Saiba mais sobre as medidas de proteção para o Customer Journey Analytics
 solution: Customer Journey Analytics
 feature: Administration
 role: Admin
 exl-id: f093ac54-7d31-449b-a441-a65856a1d535
 TQID: https://experienceleague.adobe.com/vNCqAk1-4e34AJrXqzHJgrTDtly-FZTqOGRISjkX5Q8
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
-subfeature_v2:
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
-  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
-  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4id: d76b9e53-27fb-4597-933f-419cc0dd46db
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5cid: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817afid: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: e1e0219c-f879-479f-8427-888ed2a6e9c2id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: df1ab1af7757ef012b4c233e6206ee6c6cde6686
 workflow-type: tm+mt
 source-wordcount: 2441
 ht-degree: 9%
@@ -35,16 +20,16 @@ ht-degree: 9%
 
 # Medidas de proteção do Customer Journey Analytics
 
-Este documento fornece limites para vários componentes do Customer Journey Analytics. Para obter Medidas de Proteção, Parâmetros de Escopo e Direitos, consulte a [Descrição do Produto para o Customer Journey Analytics](https://helpx.adobe.com/br/legal/product-descriptions/customer-journey-analytics.html), a [Descrição do Produto para o Complemento do Adobe Analytics: Customer Journey Analytics](https://helpx.adobe.com/br/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html) ou a [Descrição do Produto para o Customer Journey Analytics B2B edition](https://helpx.adobe.com/br/legal/product-descriptions/customer-journey-analytics-b2b.html).
+Este documento fornece limites para vários componentes do Customer Journey Analytics. Para obter medidas de proteção, parâmetros de escopo e direitos, consulte a [Descrição do Produto para o Customer Journey Analytics](https://helpx.adobe.com/br/legal/product-descriptions/customer-journey-analytics.html), a [Descrição do Produto para o Complemento do Adobe Analytics: Customer Journey Analytics](https://helpx.adobe.com/br/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html) ou a [Descrição do Produto para o Customer Journey Analytics B2B edition](https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics-b2b.html).
 
 ## Tipos de limite
 
 Há dois tipos de limites padrão neste documento:
 
-| Tipo de grade de proteção | Descrição |
+| tipo de grade de proteção | Descrição |
 |----------|---------|
-| **Medidas de Proteção de Desempenho (limite flexível)** | As Medidas de proteção de desempenho são limites de uso relacionados ao escopo dos seus casos de uso. Ao exceder as medidas de proteção de desempenho, você pode enfrentar degradação e latência do desempenho. A Adobe não é responsável por essa degradação de desempenho. Os clientes que excederem consistentemente uma Garantia de desempenho podem optar por licenciar capacidade adicional para evitar a degradação do desempenho. |
-| **Medidas de Proteção aplicadas pelo sistema (limite rígido)** | As Medidas de proteção aplicadas pelo sistema são aplicadas pela interface do usuário ou API do Customer Journey Analytics. Esses são limites que você não pode exceder, pois a interface do usuário e a API o impedem de fazer isso ou retornam um erro. |
+| **Medidas de proteção de desempenho (limite flexível)** | As medidas de proteção de desempenho são limites de uso relacionados ao escopo dos seus casos de uso. Ao exceder as medidas de proteção de desempenho, você pode enfrentar degradação e latência do desempenho. A Adobe não é responsável por essa degradação de desempenho. Os clientes que excederem consistentemente uma garantia de desempenho podem optar por licenciar capacidade adicional para evitar a degradação do desempenho. |
+| **Medidas de proteção aplicadas pelo sistema (limite rígido)** | As medidas de proteção aplicadas pelo sistema são aplicadas pela interface do usuário ou API do Customer Journey Analytics. Esses são limites que você não pode exceder, pois a interface do usuário e a API o impedem de fazer isso ou retornam um erro. |
 
 {style="table-layout:auto"}
 
@@ -86,7 +71,7 @@ Alguns dos recursos e seu valor associado para o limite dependem do pacote do Cu
 {style="table-layout:auto"}
 
 
-<!-- at flatview GA, add: - Dimension columns per freeform table - 5 - System-enforced Guardrail - Maximum number of dimensions per freeform table. -->
+<!-- at flatview GA, add: - Dimension columns per freeform table - 5 - System-enforced guardrail - Maximum number of dimensions per freeform table. -->
 
 <!--
 
@@ -113,7 +98,7 @@ Alguns dos recursos e seu valor associado para o limite dependem do pacote do Cu
 
 {style="table-layout:auto"}
 
-Consulte também [Proteções da Real-time Customer Data Platform](https://experienceleague.adobe.com/pt-br/docs/experience-platform/rtcdp/guardrails/overview) da Experience Platform.
+Consulte também [Medidas de proteção da Real-time Customer Data Platform](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/guardrails/overview) da Experience Platform.
 
 
 ## Expiração automatizada do conjunto de dados
@@ -156,11 +141,11 @@ Consulte também [Proteções da Real-time Customer Data Platform](https://exper
 | Linhas por pessoa | 1 milhão | Proteção imposta pelo sistema | Número máximo de linhas por ID de pessoa única em um determinado mês em uma conexão. |
 | Linhas por dia | 2,5 bilhões | Proteção de desempenho | Número médio máximo de linhas por dia em uma conexão. |
 | Linhas por conexão por ano | Varia de acordo com o data center atribuído (consulte a descrição para obter mais informações) | Proteção de desempenho | Limite de linha por ano em uma conexão. Os limites listados abaixo entram em vigor em 20 de janeiro de 2026 e podem aumentar com o tempo, para permitir mais linhas por conexão. <p>O limite de linha varia dependendo do data center atribuído, da seguinte maneira:</p><ul><li>**EUA Azure (padrão para clientes dos EUA)**: aproximadamente 500 bilhões (cerca de 42 bilhões por mês)</li><li>**EUA AWS (disponível por solicitação para clientes dos EUA)**: aproximadamente 30 bilhões (cerca de 2,5 bilhões por mês)</li><li>**Amsterdã**: aproximadamente 200 bilhões (cerca de 16,5 bilhões por mês)</li><li>**Todos os outros data centers**: 25 bilhões (cerca de 2 bilhões por mês)</li></ul><p>Se você espera exceder esses limites e deseja evitar problemas de degradação de desempenho, entre em contato com a equipe de conta da Adobe para discutir configurações alternativas.</p><p>As organizações podem escolher seu data center ao implementar inicialmente o AEP+Apps. Normalmente, essa decisão se baseia nos requisitos de residência de dados de cada cliente. Todos os casos de uso do AEP+Apps (não apenas volumes de linhas no Customer Journey Analytics) devem ser considerados ao escolher um data center.</p><p>Para obter informações sobre como visualizar a qual data center você está atribuído, consulte [locais de hospedagem do Customer Journey Analytics](/help/technotes/data-centers.md).</p> |
-| Tamanho da linha | 2 | Proteção de desempenho / Proteção imposta pelo sistema | Tamanho médio em quilobytes por linha de dados assimilados na Customer Journey Analytics (limite flexível). Um limite estático para o tamanho da linha é determinado pelas Medidas de proteção para assimilação de dados no Experience Platform. |
+| Tamanho da linha | 2 | Proteção de desempenho / Proteção imposta pelo sistema | Tamanho médio em quilobytes por linha de dados assimilados na Customer Journey Analytics (limite flexível). Um limite estático para o tamanho da linha é determinado por medidas de proteção para a assimilação de dados no Experience Platform. |
 
 {style="table-layout:auto"}
 
-Consulte também [Medidas de proteção para assimilação de dados](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=pt-BR) do Experience Platform.
+Consulte também [Medidas de proteção para assimilação de dados](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html) do Experience Platform.
 
 
 ## Exportação de dados de destinos
@@ -172,7 +157,7 @@ Consulte também [Medidas de proteção para assimilação de dados](https://exp
 
 {style="table-layout:auto"}
 
-Consulte também [Medidas de proteção de exportação do conjunto de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/guardrails#dataset-exports) do Experience Platform
+Consulte também [Medidas de proteção de exportação do conjunto de dados](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/guardrails#dataset-exports) do Experience Platform
 
 
 ## Zona de aterrissagem de dados
@@ -288,7 +273,7 @@ Consulte também [Medidas de proteção de exportação do conjunto de dados](ht
 
 >[!NOTE]
 >
->Os tempos de processamento abaixo são Medidas de proteção, não contratos de nível de serviço (SLAs). A latência varia dependendo da configuração do cliente, dos volumes de dados e dos aplicativos do consumidor. Os tempos de processamento real geralmente são mais rápidos. Consulte seu contrato com a Customer Journey Analytics para obter os termos contratuais e SLAs específicos. Consulte [Medidas de proteção para assimilação de dados](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html?lang=pt-BR) do Experience Platform para obter mais informações.
+>Os tempos de processamento abaixo são medidas de proteção, não contratos de nível de serviço (SLAs). A latência varia dependendo da configuração do cliente, dos volumes de dados e dos aplicativos do consumidor. Os tempos de processamento real geralmente são mais rápidos. Consulte seu contrato com a Customer Journey Analytics para obter os termos contratuais e SLAs específicos. Consulte [Medidas de proteção para assimilação de dados](https://experienceleague.adobe.com/docs/experience-platform/ingestion/guardrails.html) do Experience Platform para obter mais informações.
 
 | Fluxo de dados | Latência esperada |
 |---|---|
