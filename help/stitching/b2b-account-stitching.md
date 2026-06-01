@@ -23,7 +23,7 @@ topic_v2:
 source-git-commit: 11156e1f2db094595cc3333ccb0b896037da4715
 workflow-type: tm+mt
 source-wordcount: 1178
-ht-degree: 2%
+ht-degree: 25%
 
 ---
 
@@ -68,12 +68,12 @@ Você ativa e configura a compilação de conta B2B no nível da conexão e, em 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_person_identifier_namespace"
 >title="Namespace do identificador de pessoa"
->abstract="Selecione um namespace de identificador de pessoa, por exemplo, Email, para o qual você deseja que qualquer ID de pessoa seja elevada."
+>abstract="Selecione um namespace de identificador de pessoa, por exemplo, email, para o qual você deseja elevar qualquer ID de pessoa."
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_person_to_account_dataset"
 >title="Conjunto de dados de pessoa para conta"
->abstract="Selecione o conjunto de dados de pesquisa que mapeia IDs de pessoa para IDs de conta."
+>abstract="Selecione o conjunto de dados de pesquisa que mapeia IDs de pessoas para IDs de contas."
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_person"
@@ -131,13 +131,13 @@ Você ativa e configura a compilação de conta B2B no nível da conexão e, em 
    1. O indicador **[!UICONTROL _Alterações não salvas_]** é exibido ao lado do botão **Abrir configuração de compilação B2B** até que você [salve](#save) a conexão.
 
 
-### Ativar a compilação B2B em conjuntos de dados do evento
+### Habilite a compilação B2B em conjuntos de dados do evento
 
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_enable_person_to_account"
->title="Permitir que a pessoa realize a compilação de conta"
->abstract="Se ativado, esse conjunto de dados usa a compilação de conta B2B. Selecione uma **[!UICONTROL ID de pessoa]** necessária para pesquisar a ID da conta com base no conjunto de dados de pessoa para conta.<br/>Se desabilitado, este conjunto de dados *não* usa a compilação de contas B2B e você precisa selecionar uma **[!UICONTROL ID de Conta]** necessária."
+>title="Habilitar compilação entre pessoa e conta"
+>abstract="Se habilitado, esse conjunto de dados usa a compilação de conta B2B. Selecione uma **[!UICONTROL ID de pessoa]** necessária para pesquisar a ID da conta com base no conjunto de dados de pessoa para conta.<br/>Se desabilitado, este conjunto de dados *não* usa a compilação de contas B2B e você precisa selecionar uma **[!UICONTROL ID de conta]** necessária."
 >additional-url=""
 >additional-url=""
 
