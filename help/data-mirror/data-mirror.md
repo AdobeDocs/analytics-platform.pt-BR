@@ -26,10 +26,10 @@ topic_v2:
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+source-git-commit: b4547b6c48adb97f6749ef54147f369632c44fa9
 workflow-type: tm+mt
-source-wordcount: 447
-ht-degree: 4%
+source-wordcount: 496
+ht-degree: 3%
 
 ---
 
@@ -62,6 +62,13 @@ Consulte também a [documentação do Experience Platform sobre o Data Mirror](h
 >O Data Mirror é um recurso atualmente na versão beta que oferece suporte à sincronização de dados de data warehouses selecionados usando a captura de dados de alteração (CDC) para análise no Customer Journey Analytics.<br/>Esse recurso estará disponível para o Customer Journey Analytics em 18 de junho de 2026. Consulte a Descrição do produto aplicável para entender como isso pode afetar o consumo anual do limite de assimilação no futuro. Observe que sua organização continuará a ter acesso ao recurso quando o Data Mirror passar da versão beta para a disponível geral.
 >
 
+>[!IMPORTANT]
+>
+>Os conjuntos de dados de captura de alterações criados no Experience Platform para fins do Data Mirror para Customer Journey Analytics não devem ser reutilizados em outras soluções da Experience Platform, como o Real-Time Customer Data Platform ou o Journey Optimizer. Se quiser usar os mesmos dados para essas soluções, considere criar conjuntos de dados alternativos com esses mesmos dados.
+>
+
+
+
 O Experience Platform Data Mirror for Customer Journey Analytics está disponível para soluções nativas de data warehouse selecionadas ([!DNL Azure Databricks], [!DNL Google BigQuery] e [!DNL Snowflake]). A versão para Customer Journey Analytics do Experience Platform Data Mirror requer a configuração adequada dos seguintes aplicativos ou componentes:
 
 * [Soluções nativas de data warehouse](datawarehouse.md)
@@ -70,6 +77,6 @@ O Experience Platform Data Mirror for Customer Journey Analytics está disponív
 
 >[!MORELIKETHIS]
 >
->[Guia de início rápido do Data Mirror: espelhar e usar dados relacionais](relational.md)
+>[guia de início rápido do Data Mirror: Espelhar e usar dados relacionais](relational.md)
 >[Data Mirror (documentação do Experience Platform)](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-mirror/overview)
 >[Esquemas relacionais (documentação do Experience Platform)](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/schema/relational)
