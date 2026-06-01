@@ -93,13 +93,13 @@ Para verificar essa estratégia de ID, execute um piloto controlado de compilaç
 
 +++Mapear campos de dados de origem do Marketo para seus destinos XDM
 
-Mapeie os objetos [Pessoas](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) e [Atividades](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) aos respectivos campos de público-alvo do esquema XDM.
+Mapeie os objetos [Pessoas](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) e [Atividades](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/adobe-applications/mapping/marketo) aos respectivos campos de público-alvo do esquema XDM.
 
 +++
 
 +++Assimilar dados do Marketo na Adobe Experience Platform
 
-Use o [conector do Marketo Engage](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo) para trazer dados do Marketo para o Experience Platform e manter esses dados atualizados usando os aplicativos da Experience Platform.
+Use o [conector do Marketo Engage](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo) para trazer dados do Marketo para o Experience Platform e manter esses dados atualizados usando os aplicativos da Experience Platform.
 
 +++
 
