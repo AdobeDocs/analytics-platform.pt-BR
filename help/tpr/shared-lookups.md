@@ -5,7 +5,7 @@ solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 hide: true
-source-git-commit: f7bbbaf0b737ab33088c7c585d6415f93deff4c8
+source-git-commit: e1c7ffa9a2ac58717ee0050d4e7019b6f3f94518
 workflow-type: tm+mt
 source-wordcount: '2431'
 ht-degree: 13%
@@ -333,7 +333,7 @@ Em vez de corresponder por contêiner, você também pode optar por corresponder
 | O-987 | BigCo DX | **A-456** | A-789 | Abertura | **$16M** |
 | O-888 | Giant DX | **A-789** | A-789 | Abertura | **$13M** |
 
-* 3 oportunidades para a conta A-123 (Acme) com um total de **$13M**.
+* 3 oportunidades para a conta A-123 (Acme) com um total de **$11M**.
 * 2 oportunidades para a conta A-456 (BigCo) com um total de **$23M**.
 * 1 oportunidade para a conta A-789 (Giant) com um total de **$13M**.
 
