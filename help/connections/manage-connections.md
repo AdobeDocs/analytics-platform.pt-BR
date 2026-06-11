@@ -24,9 +24,9 @@ topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 4882eaa340d1139b8f93affb645219c999d293f0
+source-git-commit: 3b6264a1e159632e5a3246554c055488cfc6b39b
 workflow-type: tm+mt
-source-wordcount: 5865
+source-wordcount: 5863
 ht-degree: 93%
 
 ---
@@ -63,7 +63,7 @@ Depois de [criar ou editar uma ou mais conexões](/help/connections/create-conne
 A interface **[!UICONTROL Lista]** é a interface padrão para Conexões. Se não for selecionada, clique na guia **[!UICONTROL Lista]** para acessar a interface.
 
 A interface **[!UICONTROL Lista]** mostra uma tabela de todas as conexões disponíveis.
-
+△
 ![exibição de lista](assets/list-view.png)
 
 As seguintes colunas ou ícones estão disponíveis na tabela.
@@ -434,7 +434,7 @@ Quando uma linha do conjunto de dados é selecionada na tabela de conjuntos de d
 
 
 >[!CONTEXTUALHELP]
->id="connections_extendeddatacapacitiyrows"
+>id="connections_extendeddatacapacityrows"
 >title="Linhas de capacidade de dados estendida"
 >abstract="O número total de linhas disponíveis durante um período superior aos últimos 13 meses para o mês atual, com uma alteração de porcentagem em comparação ao mês anterior. Por exemplo, em 1º de fevereiro de 2024, o número mostra o total de linhas disponíveis com um carimbo de data e hora de evento anterior a janeiro de 2023."
 
@@ -460,7 +460,7 @@ Quando uma linha do conjunto de dados é selecionada na tabela de conjuntos de d
 
 
 >[!CONTEXTUALHELP]
->id="connections_b2b_correportablebpp"
+>id="connections_b2b_coreportablebpp"
 >title="Linhas relatáveis do perfil do empresário principal"
 >abstract="O número total de linhas relatáveis de perfil de negócios disponíveis nos últimos 13 meses para o mês atual, com uma alteração de porcentagem em comparação ao mês anterior.  Por exemplo, em 1.º de fevereiro de 2024, o número mostra o total de linhas disponíveis com um carimbo de data e hora de evento de janeiro de 2023 a janeiro de 2024."
 
