@@ -24,10 +24,10 @@ topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 632179a04d3fa05943ff1cc15c3670e7a81b3ea2
+source-git-commit: ffa7a6d6502dc687b5bbd0aafe4b7e7ec82313fe
 workflow-type: tm+mt
-source-wordcount: 5863
-ht-degree: 93%
+source-wordcount: 5831
+ht-degree: 91%
 
 ---
 
@@ -420,17 +420,17 @@ Quando uma linha do conjunto de dados é selecionada na tabela de conjuntos de d
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_corereportablerows"
 >title="Principais linhas relatáveis"
->abstract="As linhas principais de relatório são valores de instantâneo, não totais agregados. Esses valores são atualizados dinamicamente com base no último mês no intervalo de datas selecionado. Se um cliente selecionar janeiro a março, os valores refletirão o instantâneo de março."
+>abstract="As linhas principais de relatório são valores de instantâneo, não totais agregados. Esses valores são atualizados dinamicamente com base no último mês no intervalo de datas selecionado. Os valores refletem o instantâneo do mês selecionado."
 
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_historicalreportablerows"
 >title="Linhas históricas para relatório"
->abstract="As linhas históricas de relatório são valores de instantâneo, não totais agregados. Esses valores são atualizados dinamicamente com base no último mês no intervalo de datas selecionado. Se um cliente selecionar janeiro a março, os valores refletirão o instantâneo de março."
+>abstract="As linhas históricas de relatório são valores de instantâneo, não totais agregados. Esses valores são atualizados dinamicamente com base no último mês no intervalo de datas selecionado. Os valores refletem o instantâneo do mês selecionado."
 
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_cumulativereportablerows"
 >title="Linhas relatáveis cumulativas"
->abstract="As linhas relatáveis cumulativas são valores de instantâneo, não totais agregados. Esses valores são atualizados dinamicamente com base no último mês no intervalo de datas selecionado. Se um cliente selecionar janeiro a março, os valores refletirão o instantâneo de março."
+>abstract="As linhas relatáveis cumulativas são valores de instantâneo, não totais agregados. Esses valores são atualizados dinamicamente com base no último mês no intervalo de datas selecionado. Os valores refletem o instantâneo do mês selecionado."
 
 
 >[!CONTEXTUALHELP]
@@ -441,7 +441,7 @@ Quando uma linha do conjunto de dados é selecionada na tabela de conjuntos de d
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_extendeddatacapacityrows"
 >title="Linhas de capacidade de dados estendida"
->abstract="As linhas de capacidade de dados estendida são valores de instantâneo, não totais agregados. Esses valores são atualizados dinamicamente com base no último mês no intervalo de datas selecionado. Se um cliente selecionar janeiro a março, os valores refletirão o instantâneo de março."
+>abstract="As linhas de capacidade de dados estendidos são valores de instantâneo, não totais agregados. Esses valores são atualizados dinamicamente com base no último mês no intervalo de datas selecionado. Os valores refletem o instantâneo do mês selecionado."
 
 >[!CONTEXTUALHELP]
 >id="connections_aca_corereportablerows"
@@ -456,7 +456,7 @@ Quando uma linha do conjunto de dados é selecionada na tabela de conjuntos de d
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_aca_corereportablerows"
 >title="Linhas principais relatáveis do Content Analytics"
->abstract="As principais linhas reportáveis do Content Analytics são valores de instantâneo, não totais agregados. Esses valores são atualizados dinamicamente com base no último mês no intervalo de datas selecionado. Se um cliente selecionar janeiro a março, os valores refletirão o instantâneo de março."
+>abstract="As principais linhas reportáveis do Content Analytics são valores de instantâneo, não totais agregados. Esses valores são atualizados dinamicamente com base no último mês no intervalo de datas selecionado. Os valores refletem o instantâneo do mês selecionado."
 
 
 >[!CONTEXTUALHELP]
@@ -472,12 +472,12 @@ Quando uma linha do conjunto de dados é selecionada na tabela de conjuntos de d
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_b2b_corereportablebpp"
 >title="Linhas relatáveis do perfil empresarial principal"
->abstract="As linhas reportáveis do perfil de negócios principal são valores de instantâneo, não totais agregados. Esses valores são atualizados dinamicamente com base no último mês no intervalo de datas selecionado. Se um cliente selecionar janeiro a março, os valores refletirão o instantâneo de março."
+>abstract="As linhas reportáveis do perfil de negócios principal são valores de instantâneo, não totais agregados. Esses valores são atualizados dinamicamente com base no último mês no intervalo de datas selecionado. Os valores refletem o instantâneo do mês selecionado."
 
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_b2b_historicalreportablebpp"
 >title="Linhas reportáveis do perfil de negócios histórico"
->abstract="As linhas reportáveis do perfil de negócios histórico são valores de instantâneo, não totais agregados. Esses valores são atualizados dinamicamente com base no último mês no intervalo de datas selecionado. Se um cliente selecionar janeiro a março, os valores refletirão o instantâneo de março."
+>abstract="As linhas reportáveis do perfil de negócios histórico são valores de instantâneo, não totais agregados. Esses valores são atualizados dinamicamente com base no último mês no intervalo de datas selecionado. Os valores refletem o instantâneo do mês selecionado."
 
 >[!CONTEXTUALHELP]
 >id="connections_monthlymediastarts"
@@ -487,7 +487,7 @@ Quando uma linha do conjunto de dados é selecionada na tabela de conjuntos de d
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_monthlymediastarts"
 >title="Início mensal da mídia"
->abstract="Os inícios mensais da mídia são valores de instantâneo, não totais agregados. Esses valores são atualizados dinamicamente com base no último mês no intervalo de datas selecionado. Se um cliente selecionar janeiro a março, os valores refletirão o instantâneo de março."
+>abstract="Os inícios mensais da mídia são valores de instantâneo, não totais agregados. Esses valores são atualizados dinamicamente com base no último mês no intervalo de datas selecionado. Os valores refletem o instantâneo do mês selecionado."
 
 
 A interface de [!UICONTROL Uso] mostra o uso de linhas assimiladas e relatáveis em todas as conexões. Se não estiver selecionada, selecione a guia **[!UICONTROL Uso]** para acessar a interface.
