@@ -33,9 +33,9 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+source-git-commit: 50c7bb7b18b45b5ffac0eebacca2bb0d2ed0c28d
 workflow-type: tm+mt
-source-wordcount: 6915
+source-wordcount: 6944
 ht-degree: 94%
 
 ---
@@ -49,6 +49,8 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 
 | Recurso | Descrição |
 |---|---|
+| **junho de 2026** | |
+| Novo guia do GA4 | Adicionada a [Transição do Google Analytics 4 para o Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/compare-aa-cja/ga-to-cja/home). |
 | **maio de 2026** | |
 | Biblioteca JavaScript para Content Analytics | Documentação sobre como implementar o Content Analytics para o canal da Web usando a [biblioteca JavaScript do Content Analytics](/help/content-analytics/config/tags-agnostic.md) sem precisar das Tags de coleção de dados do Experience Platform. |
 | Considerações sobre o Data Mirror | [Documentação](/help/data-mirror/considerations.md) que descreve os fatores que você deve considerar ao configurar [conjuntos de dados do Data Mirror](/help/data-mirror/data-mirror.md). |
@@ -172,7 +174,7 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | Informações necessárias ao exportar relatórios do Customer Journey Analytics para a Google Cloud Platform ao usar restrições de política da organização | Adição da ID de organização da Google Cloud Platform de propriedade da Adobe à documentação [Configurar locais de exportação da nuvem](/help/components/exports/cloud-export-locations.md) para exportar relatórios do Customer Journey Analytics para a Google Cloud Platform. <p>Essas informações são necessárias somente para organizações que estejam usando as [Restrições de política da organização](https://cloud.google.com/storage/docs/org-policy-constraints) na Google Cloud Platform.</p> |
 | Documentação sobre a adição de componentes a projetos | Adição de informações gerais sobre como [adicionar os vários tipos de componente a projetos no Analysis Workspace](/help/components/use-components-in-workspace.md). |
 | Casos de uso de exportação de dados | Conjunto de novos artigos que descrevem [casos de uso de exportação de dados](/help/use-cases/data-export/overview.md) e como usar as funcionalidades da Experience Platform e do Customer Journey Analytics para implementar esses casos de uso |
-| Nova documentação para atualização do Adobe Analytics para o Customer Journey Analytics | Para organizações que estão atualizando do Adobe Analytics para o Customer Journey Analytics, há várias opções de atualização e várias considerações a serem levadas em conta com base na implementação atual do Adobe Analytics em uma organização e nas metas de longo prazo.<p>Novos recursos de documentação agora estão disponíveis para ajudar você a entender melhor:</p><ul><li>Os vários caminhos de atualização existentes</li><li>Quais caminhos de atualização estão disponíveis com base na implementação atual do Adobe Analytics de uma organização</li><li>As vantagens e desvantagens de cada caminho de atualização</li><li>Orientação passo a passo para cada caminho de atualização</li><li>Considerações para manuseio de dados históricos</li><li>E muito mais!</li></ul><p>[Introdução à atualização para o Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md).</p> |
+| Nova documentação para atualização do Adobe Analytics para o Customer Journey Analytics | Para organizações que estão atualizando do Adobe Analytics para o Customer Journey Analytics, há várias opções de atualização e várias considerações a serem levadas em conta com base na implementação atual do Adobe Analytics em uma organização e nas metas de longo prazo.<p>Novos recursos de documentação agora estão disponíveis para ajudar você a entender melhor:</p><ul><li>Os vários caminhos de atualização existentes</li><li>Quais caminhos de atualização estão disponíveis com base na implementação atual do Adobe Analytics de uma organização</li><li>As vantagens e desvantagens de cada caminho de atualização</li><li>Orientação passo a passo para cada caminho de atualização</li><li>Considerações para manuseio de dados históricos</li><li>E muito mais.</li></ul><p>[Introdução à atualização para o Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-getstarted.md).</p> |
 | Atualização da documentação sobre intervalos de datas personalizados | Atualização de capturas de tela e procedimentos relacionados a [exemplos de intervalos de datas](/help/components/date-ranges/custom-date-ranges.md) para corresponder aos recursos e ao design atuais do produto. |
 | Informações gerais sobre Dimensões | Adição de informações sobre [dimensões](/help/components/dimensions/overview.md). |
 | Exemplos de conectores de origem | Adição de exemplos de conectores de origem disponíveis ao descrever como [usar um conector de origem](/help/data-ingestion/sources.md#use-a-source-connector) para assimilar dados. |
