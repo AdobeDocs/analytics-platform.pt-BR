@@ -21,16 +21,16 @@ topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: e9001ce2-5245-4a8e-8601-dd958009072f
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+source-git-commit: 046df00868ca4a5b3bab3eb36cca7d91b141333a
 workflow-type: tm+mt
-source-wordcount: 685
-ht-degree: 85%
+source-wordcount: 704
+ht-degree: 83%
 
 ---
 
 # Relatório de dados do Google Analytics
 
-Assim que os dados forem disponibilizados no Customer Journey Analytics, veja os exemplos a seguir que fornecem cenários úteis para a criação de relatórios sobre esses dados.
+Assim que os dados forem disponibilizados no Customer Journey Analytics, veja os exemplos a seguir que fornecem cenários úteis para a criação de relatórios sobre esses dados. Para obter uma pesquisa abrangente de equivalentes de relatório GA4 no Customer Journey Analytics, consulte [Relatórios GA4 no Customer Journey Analytics](/help/getting-started/ga-to-cja/reports.md).
 
 ## Visualizar dados da Web e dados do aplicativo como conjuntos de dados combinados
 
