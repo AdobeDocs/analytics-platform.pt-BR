@@ -234,7 +234,7 @@ Arraste qualquer uma dessas dimensões do painel Componentes para uma [[!UICONTR
 
 >[!NOTE]
 >
->Como os navegadores modernos reduziram os detalhes na sequência Usuário-Agente, valores completos e precisos dependem da coleta das [Dicas do cliente do usuário-agente](https://experienceleague.adobe.com/en/docs/experience-platform/collection/use-cases/client-hints) na configuração do Web SDK.
+>Como os navegadores modernos reduziram os detalhes na sequência Usuário-Agente, valores completos e precisos dependem da coleta das [Dicas do cliente do usuário-agente](https://experienceleague.adobe.com/pt-br/docs/experience-platform/collection/use-cases/client-hints) na configuração do Web SDK.
 
 +++
 
