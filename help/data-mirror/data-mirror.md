@@ -4,7 +4,6 @@ description: Entenda como sincronizar dados entre soluções nativas de data war
 solution: Customer Journey Analytics
 feature: Basics
 role: Admin
-badgePremium: label="Beta"
 exl-id: f40e1263-1f4a-416c-a045-15fbe68ce509
 autotag-review: '2026-05-19T08:55:53.979Z'
 TQID: 'https://experienceleague.adobe.com/10YCh2cnMTVriKKVOyYfzFfngvGQ2VVHOxzedE5NpWA'
@@ -26,16 +25,14 @@ topic_v2:
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: b4547b6c48adb97f6749ef54147f369632c44fa9
+source-git-commit: 2b0204c229a7d53c0a497fe448c165acf84536ad
 workflow-type: tm+mt
-source-wordcount: 496
+source-wordcount: 455
 ht-degree: 3%
 
 ---
 
 # Visão geral do Experience Platform Data Mirror
-
-{{release-limited-testing}}
 
 O Data Mirror é um recurso do Experience Platform que permite a assimilação de alterações no nível da linha de bancos de dados externos no data lake usando esquemas relacionais. Ele preserva os relacionamentos de dados, impõe exclusividade e oferece suporte ao controle de versão sem exigir processos de extração, transformação e carregamento (ETL) de upstream.
 
@@ -59,7 +56,7 @@ Consulte também a [documentação do Experience Platform sobre o Data Mirror](h
 
 >[!NOTE]
 >
->O Data Mirror é um recurso atualmente na versão beta que oferece suporte à sincronização de dados de data warehouses selecionados usando a captura de dados de alteração (CDC) para análise no Customer Journey Analytics.<br/>Esse recurso estará disponível para o Customer Journey Analytics em 18 de junho de 2026. Consulte a Descrição do produto aplicável para entender como isso pode afetar o consumo anual do limite de assimilação no futuro. Observe que sua organização continuará a ter acesso ao recurso quando o Data Mirror passar da versão beta para a disponível geral.
+>O Data Mirror é um recurso que oferece suporte à sincronização de dados de data warehouses selecionados usando a captura de dados de alteração (CDC) para análise no Customer Journey Analytics.<br/>Consulte a Descrição do produto aplicável para entender como o recurso pode afetar o consumo anual do limite de assimilação.
 >
 
 >[!IMPORTANT]

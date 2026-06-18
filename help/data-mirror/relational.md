@@ -4,7 +4,6 @@ description: Explicar como espelhar e usar dados relacionais no Customer Journey
 solution: Customer Journey Analytics
 feature: Basics
 role: Admin
-badgePremium: label="Beta"
 exl-id: 17f72954-085c-46a8-bc28-6af0a4eb159a
 TQID: https://experienceleague.adobe.com/DhV4VNrG4WR1iQP9VqjvV16iEpfShbBir7N1JfeRbCM
 product_v2:
@@ -21,16 +20,14 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: 2b0204c229a7d53c0a497fe448c165acf84536ad
 workflow-type: tm+mt
-source-wordcount: 2356
+source-wordcount: 2355
 ht-degree: 15%
 
 ---
 
 # Espelhar e usar dados relacionais
-
-{{release-limited-testing}}
 
 Este guia de início rápido explica como usar o [Experience Platform Data Mirror for Customer Journey Analytics](data-mirror.md) para espelhar dados relacionais de uma solução nativa de data warehouse no Adobe Experience Platform. E então usar aqueles dados no Customer Journey Analytics.
 

@@ -26,10 +26,10 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+source-git-commit: 9c87ce4fb30c7d1d66ce88174443369ef44a7377
 workflow-type: tm+mt
-source-wordcount: 528
-ht-degree: 0%
+source-wordcount: 623
+ht-degree: 3%
 
 ---
 
@@ -64,7 +64,7 @@ Todas as conexões existentes são consideradas [conexões baseadas em pessoas](
 
 Para implementar recursos B2B na implementação existente, é necessário seguir estas etapas:
 
-1. Modelar seus dados B2B. O Customer Journey Analytics B2B edition presume pelo menos dados de eventos de série temporal baseados em conta e se beneficia de dados adicionais de perfil ou registro de pesquisa. Como dados de conta, dados de grupo de compras, dados de oportunidade, dados de membro da lista de marketing e muito mais.
+1. Modelar seus dados B2B. Você pode usar o [Adobe Experience Data Model (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=pt-BR) para padronizar dados B2B e definir esquemas para seus dados B2B.<br/>Você pode basear seus esquemas nas [classes padrão fornecidas no Real-time CDP B2B edition](https://experienceleague.adobe.com/pt-br/docs/experience-platform/rtcdp/schemas/b2b) ou pode usar suas próprias classes e esquemas personalizados. Os artigos [casos de uso](/help/use-cases/b2b/b2b-edition/use-cases-overview.md) usam esquemas e classes da Real-time CDP B2B edition. No entanto, não é necessária uma licença da Real-time CDP B2B edition para utilizar esquemas e classes padrão. <br/>O Customer Journey Analytics B2B edition presume pelo menos dados de eventos de série temporal baseados em conta e se beneficia de dados adicionais de perfil ou de registro de pesquisa. Como dados de conta, dados de grupo de compras, dados de oportunidade, dados de membro da lista de marketing e muito mais.
 
    * Defina qual identificador você deseja usar como o identificador de conta principal (ID da conta). Geralmente, um CRM existente ou outra ferramenta (por exemplo: Demandbase) ajuda a determinar esse identificador.
    * Identifique identificadores adicionais para os outros dados B2B que você planeja usar: identificador de conta global, identificador de oportunidade, identificador de grupo de compra e identificador de pessoa.

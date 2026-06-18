@@ -23,10 +23,10 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
+source-git-commit: 9c87ce4fb30c7d1d66ce88174443369ef44a7377
 workflow-type: tm+mt
-source-wordcount: 1485
-ht-degree: 2%
+source-wordcount: 1545
+ht-degree: 3%
 
 ---
 
@@ -91,10 +91,13 @@ Você pode usar os contêineres B2B para a funcionalidade B2B específica no Ana
 * **Atribuição**: você pode usar os novos contêineres B2B no [painel de atribuição](/help/analysis-workspace/c-panels/attribution.md), nas [configurações de componente de atribuição](/help/data-views/component-settings/attribution.md), nas [métricas calculadas](/help/components/calc-metrics/cm-workflow/m-metric-type-alloc.md) ou nas [colunas em uma tabela de Forma livre](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md). As pesquisas de conta são estendidas para 13 meses.
 
 * **Visualizações**: [Fall out](/help/analysis-workspace/visualizations/fallout/fallout-flow.md), [Flow](/help/analysis-workspace/visualizations/c-flow/flow.md), [Tela de Jornada](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) e [Tabela de coorte](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md), as visualizações dão suporte aos novos contêineres B2B. Por exemplo: você pode usar os novos contêineres para entender como os grupos de compras consomem conteúdo ou como os coortes de oportunidades avançam para o fechamento de uma venda.
-Você também pode definir o contêiner padrão para essas visualizações nas [preferências do usuário](/help/analysis-workspace/user-preferences.md#visualizations-preferences).
+Você também pode definir o container padrão para essas visualizações nas [preferências do usuário](/help/analysis-workspace/user-preferences.md#visualizations-preferences).
 
 Segmentos, atribuição e visualizações junto com os contêineres B2B oferecem suporte a você na análise e nos insights B2B profundos.
 
+## Esquemas
+
+O Editor B2B do Customer Journey Analytics usa o [Adobe Experience Data Model (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=pt-BR) para padronizar dados B2B e definir esquemas para seus dados B2B. Você pode basear seus esquemas nas [classes padrão fornecidas na Real-time CDP B2B edition](https://experienceleague.adobe.com/pt-br/docs/experience-platform/rtcdp/schemas/b2b) ou pode usar suas próprias classes e esquemas personalizados. Os artigos [casos de uso](/help/use-cases/b2b/b2b-edition/use-cases-overview.md) usam esquemas e classes da Real-time CDP B2B edition. No entanto, não é necessária uma licença da Real-time CDP B2B edition para utilizar esquemas e classes padrão.
 
 ## Conjuntos de dados
 
@@ -103,7 +106,7 @@ O B2B do Customer Journey Analytics distingue entre os seguintes tipos de dados 
 | Tipo de dados | Séries cronológicas | Registros de contêiner | Registros de campo |
 |---|---|---|---|
 | **Conjuntos de dados** | **Conjuntos de dados de eventos**<br/> Por exemplo:<ul><li>Análise digital</li><li>Eventos do CRM</li><li>Eventos presenciais</li><li>Dados da central de atendimento</li></ul> | **Conjuntos de dados de perfil**<br/> Por exemplo:<ul><li>Registros CRM</li><li>Registros B2B do AJO</li><li>Registros da CDP</li><ul> | **Classificações**<br/> Por exemplo:<ul><li>Registros de campanha</li><li>Registros da lista de marketing</li><li>Metadados de conteúdo</li><li>Registros de produto</li></ul> |
-| Requisitos | **Carimbo de data/hora**<br> Todos os registros precisam:<ul><li>ID da conta</li><li>ID de conta global (opcional)</li></ul> | **ID da conta**<br> Os registros precisam de uma ID de contêiner, como:<ul><li>Conta</li><li>Pessoa</li><li>Oportunidade</li><li>Grupo de compra</li></ul> | **Chave correspondente**<br> Os registros precisam de uma ID contida em um contêiner ou conjunto de dados de evento, como:<ul><li>ID da campanha</li><li>ID de conteúdo</li><li>Identificação do produto</li></ul> |
+| Requisitos | **Carimbo de data/hora**<br> Todos os registros precisam:<ul><li>ID da Conta</li><li>ID de conta global (opcional)</li></ul> | **ID da conta**<br> Os registros precisam de uma ID de contêiner, como:<ul><li>Conta</li><li>Pessoa</li><li>Oportunidade</li><li>Grupo de compra</li></ul> | **Chave correspondente**<br> Os registros precisam de uma ID contida em um contêiner ou conjunto de dados de evento, como:<ul><li>ID da campanha</li><li>ID de conteúdo</li><li>Identificação do produto</li></ul> |
 
 {style="table-layout:fixed"}
 
