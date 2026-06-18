@@ -4,25 +4,16 @@ description: Entenda as considerações adicionais a serem consideradas quando q
 solution: Customer Journey Analytics
 feature: Basics
 role: Admin
-badgePremium: label="Beta"
 autotag-review: '2026-05-19T06:55:09.938Z'
 TQID: 'https://experienceleague.adobe.com/uZjXZUKUMeXLxxpTRrkCZrPsGhxseSxOtJ9X0ZjG5wU'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-subfeature_v2:
-  - id: bfef374d-acfd-4c57-bf74-a2b36053c545
-  - id: e1471301-a189-438e-8d48-264a8db508a6
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: df1ab1af7757ef012b4c233e6206ee6c6cde6686
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2: id: bfef374d-acfd-4c57-bf74-a2b36053c545id: e1471301-a189-438e-8d48-264a8db508a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: d00e9f03-e50b-4162-b143-0c0817c937c2id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 2b0204c229a7d53c0a497fe448c165acf84536ad
 workflow-type: tm+mt
-source-wordcount: 889
+source-wordcount: 888
 ht-degree: 1%
 
 ---
@@ -89,7 +80,7 @@ A diferença entre a identidade primária e a chave primária introduz um modelo
 
 ## Diferenças de governança
 
-Em [esquemas](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/schema/composition) do XDM e em conceitos subjacentes como [grupos de campos](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/schema/composition#field-group), um [campo](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/schema/composition#field) definido em um grupo de campos propaga seus rótulos em todos os conjuntos de dados em que o grupo de campos é usado. Por exemplo, um campo de email `emailID` em um grupo de campos `identities`, é rotulado da mesma forma em todos os conjuntos de dados em que o grupo de campos `identities` é usado.
+Em [esquemas](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/schema/composition) do XDM e em conceitos subjacentes como [grupos de campos](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#field-group), um [campo](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#field) definido em um grupo de campos propaga seus rótulos em todos os conjuntos de dados em que o grupo de campos é usado. Por exemplo, um campo de email `emailID` em um grupo de campos `identities`, é rotulado da mesma forma em todos os conjuntos de dados em que o grupo de campos `identities` é usado.
 
 Em um esquema relacional, um nome de coluna é independente. Uma coluna chamada `email` na tabela `customers` é independente e distinta de uma coluna chamada `email` em uma tabela `prospects`. Esse comportamento implica que rótulos (como rótulos de uso DULE, políticas) devem ser aplicados individualmente aos campos nos conjuntos de dados espelhados. Com base no exemplo acima, você precisa aplicar rótulos tanto ao campo `email` no conjunto de dados `customers` quanto ao campo `email` no conjunto de dados `prospects`.
 
@@ -110,9 +101,9 @@ Os esquemas relacionais têm as seguintes considerações, pois estão relaciona
 
 As seguintes considerações se aplicam a chaves e campos do sistema:
 
-* A chave primária, o descritor de versão e o descritor de carimbo de data e hora precisam ser campos de nível raiz no esquema XDM relacional. Use o [mapeamento de campo](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema) durante a assimilação para dar suporte a este requisito.
-* Você pode omitir campos de origem apropriados durante a [fase de mapeamento](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema).
+* A chave primária, o descritor de versão e o descritor de carimbo de data e hora precisam ser campos de nível raiz no esquema XDM relacional. Use o [mapeamento de campo](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema) durante a assimilação para dar suporte a este requisito.
+* Você pode omitir campos de origem apropriados durante a [fase de mapeamento](https://experienceleague.adobe.com/en/docs/experience-platform/sources/ui-tutorials/dataflow/databases#map-data-fields-to-an-xdm-schema).
 
 ## Tamanho do lote de dados espelhados
 
-Para qualquer conjunto de dados espelhado configurado como parte de uma conexão, você deve garantir que cada um dos lotes para assimilar dados para o conjunto de dados espelhado não exceda 100 GB. Consulte as [Medidas de proteção para assimilação de lotes](https://experienceleague.adobe.com/pt-br/docs/experience-platform/ingestion/guardrails#guardrails-for-batch-ingestion){target="_blank"} para obter mais detalhes.
+Para qualquer conjunto de dados espelhado configurado como parte de uma conexão, você deve garantir que cada um dos lotes para assimilar dados para o conjunto de dados espelhado não exceda 100 GB. Consulte as [Medidas de proteção para assimilação de lotes](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/guardrails#guardrails-for-batch-ingestion){target="_blank"} para obter mais detalhes.
