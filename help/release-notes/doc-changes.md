@@ -36,7 +36,7 @@ topic_v2:
 source-git-commit: 50c7bb7b18b45b5ffac0eebacca2bb0d2ed0c28d
 workflow-type: tm+mt
 source-wordcount: 6944
-ht-degree: 94%
+ht-degree: 99%
 
 ---
 
@@ -51,25 +51,25 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 |---|---|
 | **junho de 2026** | |
 | Novo guia do GA4 | Adicionada a [Transição do Google Analytics 4 para o Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/compare-aa-cja/ga-to-cja/home). |
-| **maio de 2026** | |
-| Biblioteca JavaScript para Content Analytics | Documentação sobre como implementar o Content Analytics para o canal da Web usando a [biblioteca JavaScript do Content Analytics](/help/content-analytics/config/tags-agnostic.md) sem precisar das Tags de coleção de dados do Experience Platform. |
-| Considerações sobre o Data Mirror | [Documentação](/help/data-mirror/considerations.md) que descreve os fatores que você deve considerar ao configurar [conjuntos de dados do Data Mirror](/help/data-mirror/data-mirror.md). |
-| canal móvel do Content Analytics | Atualizações na [documentação do Content Analytics](/help/content-analytics/content-analytics.md) para descrever os recursos e a configuração do canal móvel do Content Analytics. |
-| **abril de 2026** | |
+| **Maio de 2026** | |
+| Biblioteca JavaScript para Content Analytics | Documentação sobre como implementar o Content Analytics para o canal da web usando a [Biblioteca JavaScript do Content Analytics](/help/content-analytics/config/tags-agnostic.md) sem precisar das Tags de coleção de dados da Experience Platform. |
+| Considerações sobre o Data Mirror | [Documentação](/help/data-mirror/considerations.md) que descreve os fatores que devem ser considerados ao configurar [conjuntos de dados do Data Mirror](/help/data-mirror/data-mirror.md). |
+| Canal móvel do Content Analytics | Atualizações na [documentação do Content Analytics](/help/content-analytics/content-analytics.md) para descrever os recursos e a configuração do canal móvel do Content Analytics. |
+| **Abril de 2026** | |
 | Diretrizes de campos derivados | Adição do artigo com [diretrizes](/help/use-cases/data-views/derived-fields/guidelines.md) (práticas recomendadas, medidas de proteção e armadilhas comuns) para trabalhar com campos derivados. |
-| Adição da documentação ausente para dois conjuntos de dados que podem ser incluídos ao integrar o Journey Optimizer | [Dois conjuntos de dados adicionais gerados pelo sistema e que não sejam de perfil](/help/integrations/ajo.md#high-throughput-add-on-datasets) são incluídos na conexão quando o complemento de mensagens transacionais de Alta Taxa de Transferência está habilitado para sua Organização IMS. |
-| Casos de uso da análise de coorte atualizados | Com base no feedback adicionado, os exemplos do Analytics Workspace para os casos de uso da análise de coorte. |
+| Adição da documentação ausente para dois conjuntos de dados que podem ser incluídos ao integrar o Journey Optimizer | [Dois conjuntos de dados adicionais gerados pelo sistema e que não são relacionados a perfis](/help/integrations/ajo.md#high-throughput-add-on-datasets) são incluídos na conexão quando o complemento de mensagens transacionais de alta taxa de transferência está habilitado para a Organização IMS. |
+| Casos de uso de análise de coorte atualizados | Com base no feedback, foram adicionados exemplos do Analysis Workspace para os casos de uso de análise de coorte. |
 | **Março de 2026** | |
-| Detalhar um painel | Documentação sobre a [área de lançamento de um painel](/help/analysis-workspace/c-panels/panels.md#drop-zone) reestruturada para oferecer suporte à nova funcionalidade [de detalhamento](/help/analysis-workspace/c-panels/panels.md#break-down-a-panel). |
-| Nota técnica sobre IDs inválidas (BAVIDs) | Nova [nota técnica sobre IDs inválidas](/help/technotes/badids.md). A nota técnica explica a definição de uma ID inválida, onde as IDs inválidas são usadas na interface do Customer Journey Analytics e como investigar os dados em sua conexão para IDs inválidas. |
-| Redesign de visualização de conjuntos de dados em Conexões | Atualização da documentação para obter uma experiência aprimorada de visualização de dados ao [adicionar](/help/connections/create-connection.md#add-datasets) ou [editar](/help/connections/create-connection.md#edit-a-dataset) conjuntos de dados em conexões baseadas em pessoas, incluindo a documentação sobre [informações adicionais de visualização de compilação](/help/stitching/use-stitching-ui.md#datasets-preview) para conjuntos de dados habilitados para compilação. |
-| Miniaturas e visualizações do Content Analytics | Documentação sobre [miniaturas](/help/content-analytics/report/report.md#thumbnails) e [visualizações](/help/content-analytics/report/report.md#previews) para obter visualizações adicionais no Content Analytics. |
+| Detalhar um painel | Documentação sobre a [área de soltar de um painel](/help/analysis-workspace/c-panels/panels.md#drop-zone) reestruturada para oferecer suporte à nova funcionalidade [detalhar](/help/analysis-workspace/c-panels/panels.md#break-down-a-panel). |
+| Nota técnica sobre IDs inválidas (BAVIDs) | Nova [nota técnica sobre IDs inválidas](/help/technotes/badids.md). A nota técnica explica a definição de uma ID inválida, onde as IDs inválidas são usadas na interface do Customer Journey Analytics e como investigar os dados na conexão para IDs inválidas. |
+| Redesign da visualização de conjuntos de dados nas Conexões | Atualização da documentação para obter uma experiência aprimorada de visualização de dados ao [adicionar](/help/connections/create-connection.md#add-datasets) ou [editar](/help/connections/create-connection.md#edit-a-dataset) conjuntos de dados em conexões baseadas em pessoa, incluindo a documentação sobre [informações adicionais da visualização de compilação](/help/stitching/use-stitching-ui.md#datasets-preview) para conjuntos de dados habilitados para compilação. |
+| Miniaturas e visualizações do Content Analytics | Documentação sobre [miniaturas](/help/content-analytics/report/report.md#thumbnails) e [visualizações](/help/content-analytics/report/report.md#previews) para visualizações adicionais no Content Analytics. |
 | **Fevereiro de 2026** | |
-| Substituições de cabeçalho | Documentação sobre a [configuração adicional de substituições de cabeçalho](/help/content-analytics/config/guided.md#header-overrides) para o Content Analytics. |
-| Garantia de métricas calculadas | Atualização da [garantia do número máximo de métricas calculadas para uma organização](/help/technotes/guardrails.md#segments-and-calculated-metrics). O máximo agora é de 50 mil. |
+| Substituições de cabeçalho | Documentação sobre a [configuração adicional de substituições de cabeçalho](/help/content-analytics/config/guided.md#header-overrides) do Content Analytics. |
+| Medidas de proteção de métricas calculadas | Atualização das [medidas de proteção do número máximo de métricas calculadas para uma organização](/help/technotes/guardrails.md#segments-and-calculated-metrics). O máximo agora é de 50.000. |
 | Content Analytics independente | Adição de documentação para uma [configuração independente do Content Analytics](/help/content-analytics/config/standalone.md). |
 | **Janeiro de 2026** | |
-| Projetar um esquema | Adição de informações e contexto substanciais ao [Arquiteto de seu esquema para uso com o Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md). |
+| Projetar um esquema | Adição de informações substanciais e contexto para [Projete o seu esquema para uso com o Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-architect.md). |
 
 
 ## 2025
@@ -77,7 +77,7 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | Recurso | Descrição |
 | --- | --- |
 | **Dezembro de 2025** | |
-| Implicações das alterações na sandbox | Adicionadas as implicações da exclusão ou redefinição de uma sandbox ao artigo [Implicações de exclusão e redefinição](/help/technotes/deletion.md). |
+| Consequências das alterações na sandbox | Adição das consequências de uma exclusão ou redefinição de sandbox ao artigo [Consequências da exclusão e da redefinição](/help/technotes/deletion.md). |
 | **Novembro de 2025** | |
 | Medidas de proteção para linhas por dia em uma conexão | [Medidas de proteção para limites de transferência de dados](/help/technotes/guardrails.md) sobre o número médio máximo de linhas por dia em uma conexão foram adicionadas. |
 | **Outubro de 2025** | |
@@ -115,7 +115,7 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | Adobe Content Analytics | O [Content Analytics](/help/content-analytics/content-analytics.md) permite investigar de forma rápida e fácil grandes volumes de dados de conteúdo para descobrir tendências, detectar anomalias, identificar a fadiga de conteúdo e obter insights sobre a exposição do conteúdo. |
 | Campos XDM atualizados para coleta de dados de transmissão de mídia na Adobe Experience Platform | Ao coletar dados de mídia de streaming na Adobe Experience Platform, os caminhos de campos de XDM mostrados na seção “Caminho do campo de XDM” da documentação de parâmetros de mídia de streaming não devem mais ser usados. Esses caminhos de campo são encontrados nas seguintes páginas e estão marcados como “Obsoletos”: [Parâmetros de áudio e vídeo](https://experienceleague.adobe.com/pt-br/docs/media-analytics/using/implementation/variables/audio-video-parameters), [Parâmetros de anúncios](https://experienceleague.adobe.com/pt-br/docs/media-analytics/using/implementation/variables/ad-parameters), [Parâmetros de capítulo](https://experienceleague.adobe.com/pt-br/docs/media-analytics/using/implementation/variables/chapter-parameters), [Parâmetros de estado do player](https://experienceleague.adobe.com/pt-br/docs/media-analytics/using/implementation/variables/player-state-parameters) e [Parâmetros de qualidade](https://experienceleague.adobe.com/pt-br/docs/media-analytics/using/implementation/variables/quality-parameters). |
 | Coleção de mídia: atualizações do conector de origem da Adobe para o novo XDM de relatórios de mídia | O Conector de origem do Analytics mapeia automaticamente dados de mídia de streaming no Adobe Analytics para os mesmos campos usados pelo SDK da web. Antes, os dados eram mapeados para os locais antigo e novo, mas somente o novo local será usado no futuro. [Saiba mais](https://experienceleague.adobe.com/pt-br/docs/analytics/implementation/aep-edge/xdm-var-mapping) |
-| Alteração de terminologia: “Filtros” para “Segmentos” | Anteriormente, o Adobe Customer Journey Analytics chamava os segmentos de “filtros”. Essa terminologia foi alinhada com o Adobe Analytics. Agora, os “filtros” são chamados de “segmentos”. (Obviamente, os filtros de pesquisa ainda são chamados de &quot;filtros&quot;.) A interface do usuário e a documentação foram atualizadas. |
+| Alteração de terminologia: “Filtros” para “Segmentos” | Anteriormente, o Adobe Customer Journey Analytics chamava os segmentos de “filtros”. Essa terminologia foi alinhada com o Adobe Analytics. Agora, os “filtros” são chamados de “segmentos”. (Obviamente, os filtros de pesquisa ainda são chamados de &quot;filtros&quot;.) A interface e a documentação foram atualizadas. |
 | **Março de 2025** | |
 | Casos de uso do Quantum Metric | Adição de casos de uso para coleta de dados do [Quantum Metric](/help/use-cases/third-party/quantum-metric/qm-overview.md). |
 | Modelo de uso do produto | Um novo modelo do Workspace permite exibir como o produto Customer Journey Analytics é usado na sua organização. [Saiba mais](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-workspace/templates/use-templates). |
@@ -362,7 +362,7 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | Setembro de 2021 | Documentação de [calendários do cliente](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=pt-BR#calendar) |
 | Setembro de 2021 | Documentação de [campos booleanos](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/component-settings/behavior.html?lang=pt-BR) |
 | Setembro de 2021 | Divida as configurações do componente nas visualizações de dados em arquivos individuais:<ul><li>Visão geral das configurações de [[!UICONTROL Componente]](/help/data-views/component-settings/overview.md)</li><li>Configurações do componente de [[!UICONTROL Atribuição]](/help/data-views/component-settings/attribution.md)</li><li>Configurações do componente de [[!UICONTROL Comportamento]](/help/data-views/component-settings/behavior.md)</li><li>Configurações do componente de [[!UICONTROL Formato]](/help/data-views/component-settings/format.md)</li><li>Configurações do componente de [[!UICONTROL Inclusão/exclusão]](/help/data-views/component-settings/include-exclude-values.md)</li><li>Configurações do componente de [[!UICONTROL Desduplicação de métrica]](/help/data-views/component-settings/metric-deduplication.md)</li><li>Configurações do componente de [[!UICONTROL Valor nulo]](/help/data-views/component-settings/no-value-options.md)</li><li>Configurações do componente de [[!UICONTROL Persistência]](/help/data-views/component-settings/persistence.md)</li><li>Configurações do componente de [[!UICONTROL Segmentação de valor]](/help/data-views/component-settings/value-bucketing.md)</li></ul> |
-| Setembro de 2021 | Nova seção sobre as [implicações da mesclagem de conjuntos de relatórios](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=pt-BR#6.-considerations-when-merging-report-suites-in-cja) no Customer Journey Analytics. |
+| Setembro de 2021 | Nova seção sobre as [implicações da mesclagem de conjuntos de relatórios](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2c-overview/cja-faq#6.-considerations-when-merging-report-suites-in-cja) no Customer Journey Analytics. |
 | **Agosto de 2021** | |
 | Agosto de 2021 | Nova seção sobre a experiência aprimorada das [Conexões](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/manage-connections.html?lang=pt-BR) no Customer Journey Analytics. |
 | Agosto de 2021 | Nova seção sobre [distinção entre maiúsculas e minúsculas nas dimensões da Visualização de dados](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=pt-BR#configure-behavior-settings). |
