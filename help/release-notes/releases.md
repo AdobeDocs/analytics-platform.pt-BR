@@ -19,9 +19,9 @@ topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 402
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -35,9 +35,9 @@ O [!UICONTROL Analysis Workspace] usa sinalizadores de recursos (também conheci
 
 * **Teste limitado**: uma versão em fases começa com testes feitos por usuários internos da Adobe. Ela é então disponibilizada para um pequeno grupo de contas de clientes para garantir que o recurso atenda às necessidades e expectativas do cliente.
 
-* **Início da implantação**: a implantação de uma versão em fases começa com a fase de teste limitado. A versão é redimensionada de 0% a 100% de disponibilidade aos clientes ao longo de alguns meses. A implementação em fases acontece no nível da organização corporativa CX, de modo que todos os usuários autorizados em uma organização recebem a mesma experiência.
+* **Início da implantação**: a implantação de uma versão em fases começa com a fase de teste limitado. A versão é redimensionada de 0% a 100% de disponibilidade aos clientes ao longo de alguns meses. A implementação em fases acontece no nível da organização CX Enterprise, de modo que todos os usuários autorizados em uma organização recebam a mesma experiência.
 
-* **Disponibilidade Geral (GA)**: o recurso está disponível para 100% das organizações CX Enterprise autorizadas e a versão do recurso está concluída.
+* **Disponibilidade geral (GA)**: o recurso está disponível para 100% das organizações CX Enterprise autorizadas e o seu lançamento está concluído.
 
 Com cada versão de recurso, a linha do tempo de RTP para GA pode variar. O objetivo é manter as versões curtas, para que, dentro de 2 meses do início do lançamento (RTP), um recurso tenha GA.
 
