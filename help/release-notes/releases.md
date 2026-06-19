@@ -5,23 +5,15 @@ exl-id: aebe709a-4cc7-4197-86e9-b26ab2874375
 feature: Release Notes
 autotag-review: '2026-05-19T09:19:46.530Z'
 TQID: 'https://experienceleague.adobe.com/nNV-qOa3LVmHUMLf-R2MwNHY0N67hxG2DWbVrpA-ZpI'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
-subfeature_v2:
-  - id: a8e39571-4463-4aa3-8b3f-4e2341ecf3b3
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: d76b9e53-27fb-4597-933f-419cc0dd46db
+subfeature_v2: id: a8e39571-4463-4aa3-8b3f-4e2341ecf3b3
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: 402
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -35,9 +27,9 @@ O [!UICONTROL Analysis Workspace] usa sinalizadores de recursos (também conheci
 
 * **Teste limitado**: uma versão em fases começa com testes feitos por usuários internos da Adobe. Ela é então disponibilizada para um pequeno grupo de contas de clientes para garantir que o recurso atenda às necessidades e expectativas do cliente.
 
-* **Início da implantação**: a implantação de uma versão em fases começa com a fase de teste limitado. A versão é redimensionada de 0% a 100% de disponibilidade aos clientes ao longo de alguns meses. A implementação em fases acontece no nível da organização corporativa CX, de modo que todos os usuários autorizados em uma organização recebem a mesma experiência.
+* **Início da implantação**: a implantação de uma versão em fases começa com a fase de teste limitado. A versão é redimensionada de 0% a 100% de disponibilidade aos clientes ao longo de alguns meses. A implementação em fases acontece no nível da organização CX Enterprise, de modo que todos os usuários autorizados em uma organização recebam a mesma experiência.
 
-* **Disponibilidade Geral (GA)**: o recurso está disponível para 100% das organizações CX Enterprise autorizadas e a versão do recurso está concluída.
+* **Disponibilidade geral (GA)**: o recurso está disponível para 100% das organizações CX Enterprise autorizadas e o seu lançamento está concluído.
 
 Com cada versão de recurso, a linha do tempo de RTP para GA pode variar. O objetivo é manter as versões curtas, para que, dentro de 2 meses do início do lançamento (RTP), um recurso tenha GA.
 
