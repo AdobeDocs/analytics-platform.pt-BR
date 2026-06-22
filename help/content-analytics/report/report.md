@@ -6,26 +6,15 @@ feature: Content Analytics
 role: User
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
 TQID: https://experienceleague.adobe.com/IM7-a-jp-lLfuGKj-CM2McnFXcus2-x-ffLC8UUKAmY
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: ad5685a0-8296-4a0c-814c-658c10b4af12
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: d3c978ee-1ff0-4475-968a-721e2dd99ef1
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 236959f0e060e35a285777f40b8d1ef90855ed5c
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ad5685a0-8296-4a0c-814c-658c10b4af12id: bc7a5a86-1a70-451f-985c-037b65f091d1id: d3c978ee-1ff0-4475-968a-721e2dd99ef1id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 537fc30db0f6e6bddc54df7bbcc04d802226958f
 workflow-type: tm+mt
-source-wordcount: 1438
-ht-degree: 46%
+source-wordcount: 1215
+ht-degree: 51%
 
 ---
 
@@ -74,18 +63,11 @@ As miniaturas são exibidas quando você passa o mouse sobre um ponto de dados e
 
 ### Linha
 
-{{release-limited-testing-section}}
-
 ![Miniaturas do Content Analytics para a linha](/help/content-analytics/assets/aca-line-thumbnail.png)
 
 As miniaturas são exibidas quando você passa o mouse sobre um ponto de dados em uma [linha](/help/analysis-workspace/visualizations/line.md).
 
 ## Visualizações
-
->[!AVAILABILITY]
->
->As visualizações de barra e dispersão descritas nesta seção estão em Teste limitado e podem não estar disponíveis em seu ambiente. Essa nota é removida quando a funcionalidade do geralmente está disponível. Para obter informações sobre o processo de lançamento do Customer Journey Analytics, consulte [Lançamentos de recursos do Customer Journey Analytics](/help/release-notes/releases.md).
->
 
 Você pode abrir uma janela pop-up de visualização. Para fazer isso:
 
@@ -129,7 +111,7 @@ Você pode usar o detalhamento do **[!UICONTROL Canal de Conteúdo]** para [deta
 
 Os quatro painéis são:
 
-* **Qual conteúdo tem melhor desempenho?**
+* **Que conteúdo tem o melhor desempenho?**
 Este painel identifica quais experiências e ativos impulsionam a participação e a conversão. As experiências são páginas da Web completas capturadas em um horário específico ou uma combinação de texto, ativos e chamadas para ação definidas em um aplicativo móvel.
 
    * **Experiências**.
@@ -154,7 +136,7 @@ Uma [tabela de forma livre](/help/analysis-workspace/visualizations/freeform-tab
 Assets - visualizações em comparação com a conversão.
 Uma visualização de [gráfico de dispersão](/help/analysis-workspace/visualizations/scatterplot.md) que mostra um gráfico de dispersão de exibições de ativos versus conversões de ativos.
 
-* **Quais atributos de ativos contribuem para a conversão?**
+* **Quais atributos de ativo contribuem para as conversões?**
 O Content Analytics usa IA e GenAI para atribuir automaticamente metadados e atributos, como assuntos, cenas e cores de primeiro plano, a cada ativo.
 
    * **Principais atributos convertidos de ativos**
@@ -193,7 +175,7 @@ Uma [tabela de forma livre](/help/analysis-workspace/visualizations/freeform-tab
 * **Onde os ativos aparecem no meu site?**
 Esta tabela de forma livre detalha onde seus ativos mais visualizados aparecem. Use essa análise para identificar páginas de alto desempenho e otimizar a inserção de ativos.
 
-   * **Onde aparecem os ativos mais visualizados?**
+   * **Onde aparecem os ativos mais exibidos?**
 É possível detalhar qualquer ativo por dimensões para ajudá-lo a entender melhor onde essa imagem aparece.
 
      Na [tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) (incluindo [miniaturas](#thumbnails) e [visualizações](#previews)) de exemplo, a **[!UICONTROL ID de percepção do ativo]** é usada em vez da [!UICONTROL ID do ativo]. Às vezes, a mesma imagem pode ser duplicada em seu site com um URL de imagem diferente. O atributo [!UICONTROL ID de percepção do ativo] ajuda a agrupar essas duplicatas em uma única ID.
