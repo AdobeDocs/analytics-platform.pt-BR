@@ -27,7 +27,7 @@ topic_v2:
 source-git-commit: 4d42c345b98683ef7d4b802262bd7f0f24b45692
 workflow-type: tm+mt
 source-wordcount: 5868
-ht-degree: 91%
+ht-degree: 95%
 
 ---
 
@@ -445,8 +445,8 @@ Quando uma linha do conjunto de dados é selecionada na tabela de conjuntos de d
 
 >[!CONTEXTUALHELP]
 >id="connections_aca_corereportablerows"
->title="Linhas principais relatáveis do Content Analytics"
->abstract="O número total de linhas específicas do Content Analytics disponíveis nos últimos 13 meses para o mês atual, com uma alteração de porcentagem em comparação ao mês anterior.  Por exemplo, em 1.º de fevereiro de 2024, o número mostra o total de linhas disponíveis com um carimbo de data e hora de evento de janeiro de 2023 a janeiro de 2024."
+>title="Linhas relatáveis principais do Content Analytics"
+>abstract="O número total de linhas específicas do Content Analytics disponíveis nos últimos 13 meses para o mês atual, com uma variação percentual em comparação com o mês anterior.  Por exemplo, em 1º de fevereiro de 2024, o número mostra o total de linhas disponíveis com um carimbo de data e hora do evento de janeiro de 2023 a janeiro de 2024."
 
 >[!CONTEXTUALHELP]
 >id="connections_usage_aca_monthlyreportablerows"
@@ -455,39 +455,39 @@ Quando uma linha do conjunto de dados é selecionada na tabela de conjuntos de d
 
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_aca_corereportablerows"
->title="Linhas principais relatáveis do Content Analytics"
->abstract="As principais linhas reportáveis do Content Analytics são valores de instantâneo, não totais agregados. Esses valores são atualizados dinamicamente com base no último mês no intervalo de datas selecionado. Os valores refletem o instantâneo do mês selecionado."
+>title="Linhas relatáveis principais do Content Analytics"
+>abstract="As linhas relatáveis principais do Content Analytics são valores instantâneos, não totais agregados. Esses valores são atualizados dinamicamente com base no último mês do intervalo de datas selecionado. Os valores refletem o instantâneo do mês selecionado."
 
 
 >[!CONTEXTUALHELP]
 >id="connections_b2b_coreportablebpp"
->title="Linhas relatáveis do perfil do empresário principal"
->abstract="O número total de linhas relatáveis de perfil de negócios disponíveis nos últimos 13 meses para o mês atual, com uma alteração de porcentagem em comparação ao mês anterior.  Por exemplo, em 1.º de fevereiro de 2024, o número mostra o total de linhas disponíveis com um carimbo de data e hora de evento de janeiro de 2023 a janeiro de 2024."
+>title="Linhas relatáveis principais do perfil do empresário"
+>abstract="O número total de linhas relatáveis de perfil de empresa disponíveis nos últimos 13 meses para o mês atual, com uma variação percentual em comparação ao mês anterior.  Por exemplo, em 1º de fevereiro de 2024, o número mostra o total de linhas disponíveis com um carimbo de data e hora do evento de janeiro de 2023 a janeiro de 2024."
 
 >[!CONTEXTUALHELP]
 >id="connections_b2b_historicalreportablebpp"
->title="Linhas reportáveis do perfil de negócios histórico"
->abstract="O número total de linhas relatáveis de perfil de negócios disponíveis em um período superior a 13 meses para o mês atual, com uma alteração de porcentagem em comparação ao mês anterior. Por exemplo, em 1º de fevereiro de 2024, o número mostra o total de linhas disponíveis com um carimbo de data e hora de evento anterior a janeiro de 2023."
+>title="Linhas relatáveis históricas de perfil de empresa"
+>abstract="O número total de linhas relatáveis de perfil de empresa disponíveis durante um período superior aos últimos 13 meses no mês atual, com uma variação percentual em comparação ao mês anterior. Por exemplo, em 1º de fevereiro de 2024, o número mostra o total de linhas disponíveis com um carimbo de data e hora de evento anterior a janeiro de 2023."
 
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_b2b_corereportablebpp"
->title="Linhas relatáveis do perfil empresarial principal"
->abstract="As linhas reportáveis do perfil de negócios principal são valores de instantâneo, não totais agregados. Esses valores são atualizados dinamicamente com base no último mês no intervalo de datas selecionado. Os valores refletem o instantâneo do mês selecionado."
+>title="Linhas relatáveis principais do perfil de empresa"
+>abstract="As linhas relatáveis principais do perfil de empresa são valores instantâneos, não totais agregados. Esses valores são atualizados dinamicamente com base no último mês do intervalo de datas selecionado. Os valores refletem o instantâneo do mês selecionado."
 
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_b2b_historicalreportablebpp"
->title="Linhas reportáveis do perfil de negócios histórico"
->abstract="As linhas reportáveis do perfil de negócios histórico são valores de instantâneo, não totais agregados. Esses valores são atualizados dinamicamente com base no último mês no intervalo de datas selecionado. Os valores refletem o instantâneo do mês selecionado."
+>title="Linhas relatáveis históricas do perfil de empresa"
+>abstract="As linhas relatáveis históricas do perfil de empresa são valores instantâneos, não totais agregados. Esses valores são atualizados dinamicamente com base no último mês do intervalo de datas selecionado. Os valores refletem o instantâneo do mês selecionado."
 
 >[!CONTEXTUALHELP]
 >id="connections_monthlymediastarts"
->title="Início mensal da mídia"
->abstract="O número total de inícios mensais da mídia disponíveis nos últimos 13 meses para o mês atual, com uma mudança de porcentagem em relação ao mês anterior.  Por exemplo, em 1º de fevereiro de 2024, o número mostra o total de inícios da mídia disponíveis com um carimbo de data e hora do evento de janeiro de 2023 a janeiro de 2024."
+>title="Inícios mensais da mídia"
+>abstract="O número total de inícios mensais da mídia disponíveis nos últimos 13 meses para o mês atual, com uma alteração percentual em comparação ao mês anterior.  Por exemplo, em 1º de fevereiro de 2024, o número mostra o total de inícios da mídia disponíveis com um carimbo de data e hora de evento de janeiro de 2023 a janeiro de 2024."
 
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_monthlymediastarts"
->title="Início mensal da mídia"
->abstract="Os inícios mensais da mídia são valores de instantâneo, não totais agregados. Esses valores são atualizados dinamicamente com base no último mês no intervalo de datas selecionado. Os valores refletem o instantâneo do mês selecionado."
+>title="Inícios mensais da mídia"
+>abstract="Os inícios mensais da mídia são valores instantâneos, não totais agregados. Esses valores são atualizados dinamicamente com base no último mês do intervalo de datas selecionado. Os valores refletem o instantâneo do mês selecionado."
 
 
 >[!CONTEXTUALHELP]
