@@ -5,23 +5,49 @@ feature: Components
 role: Admin
 exl-id: 8bc89ac7-078d-469d-8627-3905823d4100
 TQID: https://experienceleague.adobe.com/RKh01bcmVkoZ2wkHDvBM-oX9rRagVaOqK4fn2A-IpaI
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: df28738e-9c71-4aa8-929e-edde22340cc6
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: df28738e-9c71-4aa8-929e-edde22340cc6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: b7493ad9283b5830c36b8e3ac942bf9295b693f8
 workflow-type: tm+mt
-source-wordcount: 242
-ht-degree: 78%
+source-wordcount: 461
+ht-degree: 88%
 
 ---
 
-# Monitorar a integridade do dicionário de dados
+# Monitorar a integridade do dicionário de dados {#monitor-data-dictionary}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="component_datadictionary"
+>title="Dicionário de dados"
+>abstract="Quando esta opção estiver selecionada, o componente principal será compartilhado com todos que tiverem acesso aos componentes duplicados (os proprietários e todos com quem os componentes forem compartilhados). Esses usuários podem selecionar o componente principal na lista de componentes para projetos futuros. No entanto, não é possível editar o componente, mesmo que ele seja o proprietário de um componente duplicado que foi consolidado. <br/>Esta opção está disponível somente quando o componente principal é um segmento, uma métrica calculada ou um intervalo de datas. Métricas e dimensões estão sempre disponíveis para todos os usuários.
+>
+>When this option is deselected, the primary component still replaces duplicates in existing projects and segments, but users who didn't previously have access to it can't access it from the component list for future projects. "
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="datadictionary_share_primary"
+>title="Compartilhar componente principal"
+>abstract="Quando esta opção estiver selecionada, o componente principal será compartilhado com todos que tiverem acesso aos componentes duplicados (os proprietários e todos com quem os componentes forem compartilhados). Esses usuários podem selecionar o componente principal na lista de componentes para projetos futuros. No entanto, não é possível editar o componente, mesmo que ele seja o proprietário de um componente duplicado que foi consolidado. <br/>Esta opção está disponível somente quando o componente principal é um segmento, uma métrica calculada ou um intervalo de datas. Métricas e dimensões estão sempre disponíveis para todos os usuários.
+>
+>When this option is deselected, the primary component still replaces duplicates in existing projects and segments, but users who didn't previously have access to it can't access it from the component list for future projects. "
+
+<!-- markdownlint-disable MD034 -->
+
+<!-- markdownlint-enable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="datadictionary_delete_duplicates"
+>title="Excluir duplicados substituídos"
+>abstract="Quando essa opção estiver selecionada, os duplicados consolidados não estarão mais disponíveis para uso. Desmarque essa opção se desejar que os duplicados continuem disponíveis."
+
+<!-- markdownlint-enable MD034 -->
 
 Os administradores do Customer Journey Analytics são responsáveis por manter um dicionário de dados íntegro.
 
