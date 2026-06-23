@@ -25,10 +25,10 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+source-git-commit: e557971b741732dae55ba56ee4a44c039a5e3d78
 workflow-type: tm+mt
-source-wordcount: 4111
-ht-degree: 64%
+source-wordcount: 4177
+ht-degree: 63%
 
 ---
 
@@ -546,6 +546,13 @@ Opcionalmente, você pode especificar na seção **[!UICONTROL Substituições d
 1. Habilitar **[!UICONTROL Configurar substituições de cabeçalho]**.
 1. Insira o **[!UICONTROL Nome do cabeçalho]**. Por exemplo, `x-asset-service`.
 1. Insira o **[!UICONTROL Valor do cabeçalho]**. O que quer que você especifique é secreto e não visível na interface do usuário (a menos que você selecione explicitamente para revelar o valor ![Visibilidade](/help/assets/icons/Visibility.svg) durante a entrada).
+
+
+>[!CONTEXTUALHELP]
+>id="aca_onboarding_paidmedia_adplatforms_nosourceconnectors"
+>title="Nenhum conector de origem"
+>abstract="A mídia paga requer conectores de origem do Experience Platform para seus editores de anúncios. Nenhum conector do Google Ads ou Meta Ads está disponível nesta sandbox. Configure um ou mais desses conectores na interface **[!UICONTROL Experience Platform]** > **[!UICONTROL Fontes]** e retorne a esta etapa para continuar a configuração da mídia paga do Content Analytics."
+>additional-url="https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/advertising/ads" text="Origem de anúncios do Google"
 
 #### Salvar {#web-save}
 
