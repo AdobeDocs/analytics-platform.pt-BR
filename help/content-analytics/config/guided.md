@@ -377,7 +377,7 @@ Para o canal Web, você pode configurar [captura e definição de experiência](
 >id="aca_onboarding_datacollection_button"
 >title="Coleção de dados"
 >abstract="Defina qual propriedade de tags você deseja usar ou crie uma nova. Defina também as páginas e os ativos que deseja incluir ou excluir usando expressões regulares.<br/>Para uma implementação independente de tags, selecione **[!UICONTROL Criar novo]**.  É criada uma propriedade Tags, mas você não é obrigado a usá-la."
->additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/configuration/tags-agnostic" text="Biblioteca JavaScript do Content Analytics"
+>additional-url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/content-analytics/configuration/tags-agnostic" text="Biblioteca JavaScript do Content Analytics"
 
 
 >[!CONTEXTUALHELP]
@@ -552,7 +552,7 @@ Opcionalmente, você pode especificar na seção **[!UICONTROL Substituições d
 >id="aca_onboarding_paidmedia_adplatforms_nosourceconnectors"
 >title="Nenhum conector de origem"
 >abstract="A mídia paga requer conectores de origem do Experience Platform para seus editores de anúncios. Nenhum conector do Google Ads ou Meta Ads está disponível nesta sandbox. Configure um ou mais desses conectores na interface **[!UICONTROL Experience Platform]** > **[!UICONTROL Fontes]** e retorne a esta etapa para continuar a configuração da mídia paga do Content Analytics."
->additional-url="https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/advertising/ads" text="Origem de anúncios do Google"
+>additional-url="https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/advertising/ads" text="Origem de anúncios do Google"
 
 #### Salvar {#web-save}
 
