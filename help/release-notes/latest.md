@@ -27,16 +27,16 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 537fc30db0f6e6bddc54df7bbcc04d802226958f
+source-git-commit: 9d0d572a176bf61f2b02ba1c98f0fc4202797692
 workflow-type: tm+mt
-source-wordcount: 229
-ht-degree: 51%
+source-wordcount: 298
+ht-degree: 39%
 
 ---
 
 # Notas de versão atuais do Customer Journey Analytics (junho de 2026)
 
-**Última atualização**: 22 de junho de 2026
+**Última atualização**: 23 de junho de 2026
 
 Essas notas de versão abrangem o período de junho de 2026. As versões do Adobe Customer Journey Analytics operam em um [modelo de entrega contínua](releases.md) que permite uma abordagem escalável e em fases para a implantação de recursos. Sendo assim, essas notas de versão são atualizadas várias vezes por mês. Verifique-as regularmente.
 
@@ -45,6 +45,7 @@ Essas notas de versão abrangem o período de junho de 2026. As versões do Adob
 | Recurso e descrição | [Início da implantação](releases.md) | [Disponibilidade geral](releases.md) |
 | -----------|-----------|-----------|
 | A **Data Mirror** <br/>[Data Mirror](/help/data-mirror/data-mirror.md) é um recurso da Experience Platform que permite a assimilação de alterações no nível da linha (captura de dados de alteração) de soluções de data warehouse externas ([!DNL Snowflake], [!DNL Azure Databricks] e [!DNL Google BigQuery]) na Customer Journey Analytics usando esquemas relacionais. Ele preserva os relacionamentos de dados, impõe exclusividade e oferece suporte ao controle de versão sem exigir processos de extração, transformação e carregamento (ETL) de upstream. | 25 de março de 2026 | 17 de junho de 2026 |
+| **Validar seus dados no Assistente de IA** <br/>Você pode usar o Assistente de IA para [validar a qualidade dos dados de seus conjuntos de dados do Adobe Experience Platform](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-ai/experience-cloud-ai/agents/data-validation). Desenvolvido pela Agent Orchestrator, o recurso de validação de dados pode executar validações estatísticas e semânticas em conjuntos de dados, analisar campos de conjuntos de dados, identificar problemas de qualidade de dados e retornar resumos de linguagem natural com insights acionáveis. | | 22 de junho de 2026 |
 
 ### Correções no Customer Journey Analytics
 
