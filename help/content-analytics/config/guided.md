@@ -25,7 +25,7 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: e557971b741732dae55ba56ee4a44c039a5e3d78
+source-git-commit: 6af3e9063dc192814c888e786ca61ff1703aedf5
 workflow-type: tm+mt
 source-wordcount: 4177
 ht-degree: 63%
@@ -554,7 +554,7 @@ Opcionalmente, você pode especificar na seção **[!UICONTROL Substituições d
 >abstract="A mídia paga requer conectores de origem do Experience Platform para seus editores de anúncios. Nenhum conector do Google Ads ou Meta Ads está disponível nesta sandbox. Configure um ou mais desses conectores na interface **[!UICONTROL Experience Platform]** > **[!UICONTROL Fontes]** e retorne a esta etapa para continuar a configuração da mídia paga do Content Analytics."
 >additional-url="https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/advertising/ads" text="Origem de anúncios do Google"
 
-#### Salvar {#web-save}
+##### Salvar {#web-save}
 
 Depois de especificar os detalhes do canal Web, selecione **[!UICONTROL Salvar]** para salvar a configuração. Selecione **[!UICONTROL Cancelar]** para cancelar a configuração.
 
