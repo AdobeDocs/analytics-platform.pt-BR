@@ -27,16 +27,16 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 9d0d572a176bf61f2b02ba1c98f0fc4202797692
+source-git-commit: 8cdfe0db0aabba05fbebe7d9215182e0fca31d66
 workflow-type: tm+mt
-source-wordcount: 298
-ht-degree: 39%
+source-wordcount: 615
+ht-degree: 44%
 
 ---
 
 # Notas de versão atuais do Customer Journey Analytics (junho de 2026)
 
-**Última atualização**: 23 de junho de 2026
+**Última atualização**: 25 de junho de 2026
 
 Essas notas de versão abrangem o período de junho de 2026. As versões do Adobe Customer Journey Analytics operam em um [modelo de entrega contínua](releases.md) que permite uma abordagem escalável e em fases para a implantação de recursos. Sendo assim, essas notas de versão são atualizadas várias vezes por mês. Verifique-as regularmente.
 
@@ -49,21 +49,27 @@ Essas notas de versão abrangem o período de junho de 2026. As versões do Adob
 
 ### Correções no Customer Journey Analytics
 
-**Analysis Workspace**:
+**Analysis Workspace**: AN-456858, AN-455865, AN-455706, AN-455592, AN-455484, AN-455180, AN-454999, AN-454170, AN-454145, AN-453793, AN-452921, AN-452009, AN-451958, AN-451643, AN-451600, AN-451525, AN-451477, AN-451262, AN-45161, AN-450772, AN-443594, AN-434416
 **Componentes**:
-**Conexões**:
+**Conexões**: AN-457065, AN-453705
 **Content Analytics**: AN-451203, AN-447596
 **Análise guiada**:
-**Exportações**:
-**Visualizações de dados**:
+**Exportações**: AN-452006, AN-451989, AN-440567
+**Visualizações de dados**: AN-451198
 **Implementação**:
-**Report Builder**: AN-440912
-**Relatórios**:
+**Report Builder**: AN-440912, AN-457586, AN-457533, AN-455713, AN-455623, AN-455063, AN-454512, AN-454053, AN-453977, AN-453781, AN-453683, AN-451974, AN-451735, AN-451731, AN-451190, AN-449813, AN-447173, AN-447139, AN-446184, AN-445794, AN-445354, AN-442819
+**Relatórios**: AN-454589, AN-454517, AN-453982, AN-451822, AN-451497, AN-451463, AN-451259, AN-451215, AN-450661, AN-447699, AN-448375, AN-447692
 **Segmentação**:
-**Relatórios agendados**:
+**Relatórios agendados**: AN-451980, AN-451882, AN-450715
 **Métricas e dimensões compartilhadas**:
 **Análise de público-alvo**: AN-449656, AN-450400
-**Outros**:
+**Outros**: AN-457063, AN-454140, AN-453937, AN-453825, AN-452959, AN-452934, AN-452296, AN-451781, AN-450974
+
+## Recursos adiados
+
+| Recurso e descrição | [Início da implantação](releases.md) | [Disponibilidade geral](releases.md) |
+| -----------|-----------|-----------|
+| **Serviços de mídia de streaming: compatibilidade com dados de programação** <br/>Agora é possível fazer upload de dados de programação de conteúdo ao vivo anterior de mídia de streaming para acompanhar o número de visualizadores de forma mais fácil e precisa.<p>Veja a seguir alguns exemplos de conteúdo ao vivo que são compatíveis com o upload de dados de programação:</p><ul><li>Plataformas FAST (TV com suporte a anúncios gratuitos)</li><li>Transmissões locais</li><li>Esportes ao vivo</li></ul><p>O upload de dados de programação permite acompanhar os dados de de número de visualizadores de programas individuais que foram executados durante o período designado no arquivo de upload. É possível até coletar dados do número de visualizadores para tópicos ou segmentos de programa específicos.</p><p>Esses recursos estão disponíveis independentemente de como você implementou a coleta de mídias de transmissão.</p><p>Anteriormente, era difícil vincular com precisão uma determinada sessão a programas específicos ao analisar o conteúdo ao vivo e não era possível vincular uma determinada sessão a tópicos ou segmentos de programa individuais.</p><p>Para obter mais informações, consulte [Fazer upload de dados de agendamento para rastrear conteúdo ao vivo](https://experienceleague.adobe.com/pt-br/docs/media-analytics/using/media-use-cases/track-schedule-data) | 29 de outubro de 2025 | A ser determinado<p>(Planejado originalmente para 29 de outubro de 2025)</p> |
 
 >[!MORELIKETHIS]
 >
