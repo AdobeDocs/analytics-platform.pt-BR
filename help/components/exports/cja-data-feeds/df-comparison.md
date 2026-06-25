@@ -18,9 +18,9 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+source-git-commit: 8c577ff8508f15944ced77aaf20b692c911fdd3e
 workflow-type: tm+mt
-source-wordcount: 934
+source-wordcount: 933
 ht-degree: 2%
 
 ---
@@ -45,7 +45,7 @@ Os feeds de dados no Customer Journey Analytics e no Adobe Analytics permitem ex
 | **Métricas calculadas**<br/> | Não disponível | Não disponível |
 | **Modelo de persistência** | Flexível. As configurações de persistência da visualização de dados (alocação e expiração) são aplicadas no momento do relatório em que o feed é gerado. Dá suporte a todas as configurações de alocação disponíveis em uma visualização de dados: **Original**, **Mais Recente**, **Todos**, **Primeiro Conhecido** e **Último Conhecido**. | Somente **os modelos de atribuição mais recentes (último contato)** e **valores originais (primeiro contato)** são representados. A alocação linear é tratada da mesma forma que o último contato. |
 | **Formato de arquivo de saída** | Parquet<p>Suporta nativamente dados complexos aninhados e estruturados. As listas de produtos são representadas como arrays estruturados/objetos aninhados. </p><p>Requer uma ferramenta sensível ao Parquet para leitura, como BigQuery, Snowflake ou Apache Spark.</p> | TSV<p>Linhas planas legíveis por humanos. Não é compatível nativamente com dados estruturados; campos complexos, como listas de produtos, devem ser codificados como strings delimitadas proprietárias que exigem lógica de análise personalizada.</p> |
-| **Destinos do delivery** | Amazon S3, Azure RBAC, Azure SAS, Plataforma de nuvem Google, Snowflake. | Amazon S3, Azure RBAC, Azure SAS, Google Cloud Platform. Também suporta **SFTP**. |
+| **Destinos do delivery** | Amazon S3, Azure RBAC, Azure SAS, Google Cloud Platform. | Amazon S3, Azure RBAC, Azure SAS, Google Cloud Platform. Também suporta **SFTP**. |
 
 {style="table-layout:auto"}
 
