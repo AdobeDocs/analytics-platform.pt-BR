@@ -18,7 +18,7 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: b31ae6194d30115f4d653addaf5efff5790e987c
+source-git-commit: 9c3546c33914feb7a00b5bb78a575dd511cabb5f
 workflow-type: tm+mt
 source-wordcount: 2675
 ht-degree: 29%
@@ -228,4 +228,5 @@ Antes de criar um feed de dados, é importante ter uma compreensão básica dos 
    | [!UICONTROL **Habilitar manifesto**] | Escolha se deseja incluir um arquivo de manifesto em cada entrega do feed de dados. O arquivo de manifesto contém informações para cada arquivo incluído no feed de dados. |
 
 1. Selecione **[!UICONTROL Salvar]**.
+
 
