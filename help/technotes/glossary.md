@@ -23,9 +23,9 @@ topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+source-git-commit: 28cfbe249f20361bf56f0a6216bc715dae5a6d3a
 workflow-type: tm+mt
-source-wordcount: 327
+source-wordcount: 331
 ht-degree: 95%
 
 ---
@@ -38,12 +38,11 @@ Alguns termos do Customer Journey Analytics diferem de como eles têm sido usado
 | --- | --- | --- |
 | Conjunto de dados de pesquisa | Classificação | Use a pesquisa para recuperar o valor do conjunto de dados especificado para uma chave/chave correspondente (em um conjunto de dados de evento) onde há uma relação de 1 para 1. Por exemplo, você pode especificar &quot;tracking_code&quot; como a chave que corresponde ao &quot;tracking_code&quot; no conjunto de dados do evento. |
 | Conjunto de dados Perfil | Atributo do cliente | Se você capturar os dados de clientes de empresas em um banco de dados de gerenciamento de relacionamento com o cliente (CRM), será possível fazer upload dos dados em um conjunto de dados de perfil na Adobe Experience Platform. Depois de criar uma conexão com esse conjunto de dados no Customer Journey Analytics e criar uma visualização de dados, use os dados no Espaço de trabalho. |
-| Organização corporativa CX | Empresa de logon | Consulte [Organizações e vinculação de contas](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html?lang=pt-BR#topic_C31CB834F109465A82ED57FF0563B3F1). |
+| Organização da CX Enterprise (Experience Cloud) | Empresa de logon | Consulte [Organizações e vinculação de contas](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html?lang=pt-BR#topic_C31CB834F109465A82ED57FF0563B3F1). |
 | N/D | Conjunto de relatórios | Os conjuntos de relatórios no sentido tradicional do Adobe Analytics não existem mais. Em vez disso, você cria [visualizações de dados](/help/data-views/create-dataview.md) (virtuais) a partir dos conjuntos de dados da Plataforma aos quais você estabeleceu conexões. |
 | Segmento | Segmento | Segmentos usados para serem &quot;filtros&quot;. Eles foram renomeados como &quot;segmentos&quot;. |
 | Visualização de dados | Conjunto de relatórios virtual | No Adobe Analytics, um conjunto de relatórios virtual é uma exibição filtrada de um conjunto de relatórios principal. A principal diferença entre um conjunto de relatórios virtual e uma visualização de dados no Customer Journey Analytics é que o conjunto de relatórios virtual é um subconjunto de um conjunto de relatórios “base” ou “principal” e, como tal, herda algumas de suas configurações. Como os conjuntos de relatórios principal/base não existem mais, você define visualizações de dados com suas próprias configurações. |
 
 ## Glossário da Adobe Experience Platform
 
-A Adobe Experience Platform padroniza dados e conteúdo em toda a empresa, acionando perfis de consumidor em tempo real, permitindo a ciência de dados e acelerando a velocidade do conteúdo para impulsionar a personalização da experiência na jornada do cliente.
-Consulte o [Glossário da Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/glossary.html?lang=pt-BR) para obter mais informações.
+A Adobe Experience Platform padroniza dados e conteúdo em toda a empresa, acionando perfis de consumidor em tempo real, permitindo a ciência de dados e acelerando a velocidade do conteúdo para impulsionar a personalização da experiência na jornada do cliente.Consulte o [Glossário da Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/glossary.html?lang=pt-BR) para obter mais informações.

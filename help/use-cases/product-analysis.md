@@ -25,10 +25,10 @@ topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 14557a59902110b1768d61e621adfb3f76ee9930
+source-git-commit: 28cfbe249f20361bf56f0a6216bc715dae5a6d3a
 workflow-type: tm+mt
-source-wordcount: 894
-ht-degree: 3%
+source-wordcount: 896
+ht-degree: 4%
 
 ---
 
@@ -54,15 +54,15 @@ Dados precisos do produto são a base de uma análise eficaz do produto. A assim
 Os seguintes recursos da Adobe Experience Platform e da Customer Journey Analytics permitem assimilar e gerenciar os dados do produto em escala:
 
 * Adobe Experience Platform
-   * [Conjuntos de dados&#x200B;](https://experienceleague.adobe.com/pt-br/docs/experience-platform/catalog/datasets/overview)
-   * [Preparação de dados&#x200B;](https://experienceleague.adobe.com/pt-br/docs/experience-platform/data-prep/home)
-   * [Distiller de dados&#x200B;](https://experienceleague.adobe.com/pt-br/docs/experience-platform/query/data-distiller/overview)
+   * [Conjuntos de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/catalog/datasets/overview)
+   * [Preparação de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/data-prep/home)
+   * [Destilador de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/query/data-distiller/overview)
 * Customer Journey Analytics
-   * [Conexões&#x200B;](/help/connections/overview.md)
+   * [Conexões](/help/connections/overview.md)
    * [Visualizações de dados](/help/data-views/data-views.md), incluindo [campos derivados&#x200B;](/help/data-views/derived-fields/derived-fields.md)
-   * [Segmentos&#x200B;](/help/components/segments/seg-overview.md)
+   * [Segmentos](/help/components/segments/seg-overview.md)
    * [Métricas calculadas](/help/components/calc-metrics/calc-metr-overview.md)
-   * [Análise guiada&#x200B;: Linha do tempo&#x200B;](/help/guided-analysis/types/timeline.md)
+   * [Análise guiada: Linha do tempo](/help/guided-analysis/types/timeline.md)
 
 ## Aquisição e ativação de medida
 
@@ -75,10 +75,10 @@ O crescimento do produto depende de insights acionáveis do topo da funnel que a
 
 Os seguintes recursos no Customer Journey Analytics permitem medir a aquisição e a ativação de maneira eficaz:
 
-* [Análise guiada&#x200B;: Crescimento ativo](/help/guided-analysis/types/active-growth.md)
+* [Análise guiada: Crescimento ativo](/help/guided-analysis/types/active-growth.md)
 * [Análise guiada: Crescimento líquido](/help/guided-analysis/types/net-growth.md)
 * [Análise guiada: tendências](/help/guided-analysis//types/trends.md)
-* [Painel de atribuição&#x200B;](/help/analysis-workspace/c-panels/attribution.md)
+* [Painel de atribuição](/help/analysis-workspace/c-panels/attribution.md)
 * [Tabela de forma livre](/help/analysis-workspace/c-panels/freeform-panel.md) que inclui a dimensão de canal de marketing (criando usando um [campo derivado](/help/data-views/derived-fields/derived-fields.md))
 
 ## Medir o engajamento e a adoção
@@ -95,9 +95,9 @@ Os seguintes recursos no Customer Journey Analytics ajudam você a rastrear o en
 * [Análise guiada: Funnel](/help/guided-analysis/types/funnel.md)
 * [Análise guiada: Tendências de conversão](/help/guided-analysis/types/conversion-trends.md)
 * [Análise guiada: impacto na versão](/help/guided-analysis/types/release-impact.md)
-* [Análise guiada: impacto da primeira utilização&#x200B;](/help/guided-analysis/types/first-use-impact.md)
+* [Análise guiada: impacto da primeira utilização](/help/guided-analysis/types/first-use-impact.md)
 * [Análise guiada: Linha do tempo](/help/guided-analysis/types/timeline.md)
-* [Tabelas de forma livre&#x200B;](/help/analysis-workspace/c-panels/freeform-panel.md)
+* [Tabelas de forma livre](/help/analysis-workspace/c-panels/freeform-panel.md)
 * [Fluxo](/help/analysis-workspace/visualizations/c-flow/flow.md)
 
 ## Medir retenção e churn
@@ -108,10 +108,10 @@ A retenção mede quantos usuários continuam a interagir com o produto após a 
 
 Os seguintes recursos no Customer Journey Analytics ajudam a rastrear a retenção e o abandono com eficiência:
 
-* [Análise guiada: Retenção](/help/guided-analysis/types/retention.md)&#x200B;
+* [Análise guiada: Retenção](/help/guided-analysis/types/retention.md)
 * [Análise guiada: Crescimento ativo](/help/guided-analysis/types/active-growth.md)
 * [Análise guiada: Crescimento líquido](/help/guided-analysis/types/net-growth.md)
-* [Tabela de coorte&#x200B;](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
+* [Tabela de coorte](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)
 
 ## Insights de produto acionáveis
 
@@ -119,13 +119,13 @@ Os insights agregam valor somente quando orientam a ação. Converta os resultad
 
 Os seguintes recursos do CX Enterprise permitem que você atue com eficiência em insights:
 
-* [Criar e publicar públicos-alvo](/help/components/audiences/publish.md)&#x200B; para ativação do Customer Journey Analytics
+* [Criar e publicar públicos-alvo](/help/components/audiences/publish.md) para ativação da Customer Journey Analytics
 * Ative públicos-alvo por meio de produtos CX Enterprise:
    * [Execute experimentos](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/content-management/content-experiment/get-started-experiment) no AJO e no Adobe Target e meça o impacto das variações no Customer Journey Analytics usando o [Painel de experimentação](/help/analysis-workspace/c-panels/experimentation.md)
-   * [Fornecer compromissos no aplicativo](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/channels/in-app/get-started-in-app) aos usuários no AJO
-* [Ativar públicos-alvo](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/ui/activate/activation-overview) para destinos externos com a CDP em tempo real do &#x200B;
+   * [Fornecer compromissos no aplicativo](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/channels/in-app/get-started-in-app) aos usuários no AJO.
+* [Ative públicos](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/ui/activate/activation-overview) para destinos externos com a CDP em tempo real do Adobe.
 
-## Compartilhar insights para a organização&#x200B;
+## Compartilhar insights para a organização
 
 Comunique os principais resultados entre as equipes para alinhar esforços, promover a colaboração e garantir que todos trabalhem em prol de metas de produtos e negócios compartilhadas.
 
