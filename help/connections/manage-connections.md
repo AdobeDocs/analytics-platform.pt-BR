@@ -26,8 +26,8 @@ topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 4d42c345b98683ef7d4b802262bd7f0f24b45692
 workflow-type: tm+mt
-source-wordcount: 5868
-ht-degree: 95%
+source-wordcount: 5884
+ht-degree: 97%
 
 ---
 
@@ -62,8 +62,7 @@ Depois de [criar ou editar uma ou mais conexões](/help/connections/create-conne
 
 A interface **[!UICONTROL Lista]** é a interface padrão para Conexões. Se não for selecionada, clique na guia **[!UICONTROL Lista]** para acessar a interface.
 
-A interface **[!UICONTROL Lista]** mostra uma tabela de todas as conexões disponíveis.
-△
+A interface **[!UICONTROL Lista]** mostra uma tabela de todas as conexões disponíveis.△
 ![exibição de lista](assets/list-view.png)
 
 As seguintes colunas ou ícones estão disponíveis na tabela.
@@ -441,7 +440,7 @@ Quando uma linha do conjunto de dados é selecionada na tabela de conjuntos de d
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_extendeddatacapacityrows"
 >title="Linhas de capacidade de dados estendida"
->abstract="As linhas de capacidade de dados estendidos são valores de instantâneo, não totais agregados. Esses valores são atualizados dinamicamente com base no último mês no intervalo de datas selecionado. Os valores refletem o instantâneo do mês selecionado."
+>abstract="As linhas de capacidade de dados estendida representam valores instantâneos, e não totais agregados. Esses valores são atualizados dinamicamente com base no último mês no intervalo de datas selecionado. Os valores refletem o instantâneo do mês selecionado."
 
 >[!CONTEXTUALHELP]
 >id="connections_aca_corereportablerows"
@@ -493,7 +492,7 @@ Quando uma linha do conjunto de dados é selecionada na tabela de conjuntos de d
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_aca_monthlyreportablerows"
 >title="Linhas mensais do Content Analytics"
->abstract="As linhas mensais do Content Analytics são valores de instantâneo, não totais agregados. Esses valores são atualizados dinamicamente com base no último mês no intervalo de datas selecionado. Os valores refletem o instantâneo do mês selecionado."
+>abstract="As linhas do Content Analytics mensal são valores de snapshot, não totais agregados. Esses valores são atualizados dinamicamente com base no último mês no intervalo de datas selecionado. Os valores refletem o instantâneo do mês selecionado."
 
 
 
@@ -584,6 +583,5 @@ A interface “Uso” consiste em dois painéis:
 
 >[!MORELIKETHIS]
 >
->[Exibir, solucionar problemas e modificar as configurações de conexão](https://experienceleague.adobe.com/pt-br/docs/customer-journey-analytics-learn/tutorials/connections/connections-details-experience-in-cja).
->[Gerenciar o uso do Customer Journey Analytics](/help/technotes/estimate-usage.md)
+>Tutorial sobre [Exibir, resolver problemas e modificar configurações de conexão](https://experienceleague.adobe.com/pt-br/docs/customer-journey-analytics-learn/tutorials/connections/connections-details-experience-in-cja).Gerenciar o uso do Customer Journey Analytics&rbrack;(/help/technotes/estimate-usage.md)
 >
