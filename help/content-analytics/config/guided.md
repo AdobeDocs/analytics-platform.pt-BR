@@ -28,7 +28,7 @@ topic_v2:
 source-git-commit: 6af3e9063dc192814c888e786ca61ff1703aedf5
 workflow-type: tm+mt
 source-wordcount: 4177
-ht-degree: 63%
+ht-degree: 65%
 
 ---
 
@@ -551,7 +551,7 @@ Opcionalmente, você pode especificar na seção **[!UICONTROL Substituições d
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_paidmedia_adplatforms_nosourceconnectors"
 >title="Nenhum conector de origem"
->abstract="A mídia paga requer conectores de origem do Experience Platform para seus editores de anúncios. Nenhum conector do Google Ads ou Meta Ads está disponível nesta sandbox. Configure um ou mais desses conectores na interface **[!UICONTROL Experience Platform]** > **[!UICONTROL Fontes]** e retorne a esta etapa para continuar a configuração da mídia paga do Content Analytics."
+>abstract="A mídia paga requer conectores de origem do Experience Platform para seus editores de anúncios. Nenhum conector do Google Ads ou Meta Ads está disponível nesta sandbox. Configure um ou mais desses conectores na interface **[!UICONTROL Experience Platform]** > **[!UICONTROL Origens]** e retorne a esta etapa para continuar a configuração da mídia paga do Content Analytics."
 >additional-url="https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/advertising/ads" text="Origem de anúncios do Google"
 
 ##### Salvar {#web-save}
