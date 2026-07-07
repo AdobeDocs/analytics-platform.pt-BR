@@ -19,7 +19,7 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: 9c3546c33914feb7a00b5bb78a575dd511cabb5f
+source-git-commit: 66a8a96da6710d20b01b9315fe87ba38c54c2511
 workflow-type: tm+mt
 source-wordcount: 221
 ht-degree: 21%
@@ -27,6 +27,8 @@ ht-degree: 21%
 ---
 
 # Visão geral dos feeds de dados
+
+{{release-limited-testing}}
 
 Os feeds de dados são uma maneira avançada de obter dados brutos do Customer Journey Analytics. Você pode usar esses dados brutos em outras plataformas fora da Adobe, a critério da sua organização. Os dados são fornecidos em lotes por hora, no final de cada hora, ou em lotes diários, no final de cada dia.
 

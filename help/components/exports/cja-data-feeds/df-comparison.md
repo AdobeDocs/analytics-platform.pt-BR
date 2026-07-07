@@ -18,7 +18,7 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: 840107d7c99277b0d75a5344b59109c6690b0596
+source-git-commit: 66a8a96da6710d20b01b9315fe87ba38c54c2511
 workflow-type: tm+mt
 source-wordcount: 954
 ht-degree: 2%
@@ -26,6 +26,8 @@ ht-degree: 2%
 ---
 
 # Comparar feeds de dados no Customer Journey Analytics e no Adobe Analytics
+
+{{release-limited-testing}}
 
 Os feeds de dados no Customer Journey Analytics e no Adobe Analytics permitem exportar dados brutos para plataformas de terceiros. Se você usou feeds de dados anteriormente no Adobe Analytics, use as seguintes informações para entender as diferenças nos recursos e conceitos disponíveis:
 
