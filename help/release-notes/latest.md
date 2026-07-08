@@ -27,10 +27,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: ce00cd801894776f2128a86504f5c78afe438986
+source-git-commit: 4dd845eaf5f101e21a8e754ac588cb837398b975
 workflow-type: tm+mt
-source-wordcount: 655
-ht-degree: 44%
+source-wordcount: 666
+ht-degree: 41%
 
 ---
 
@@ -44,10 +44,10 @@ Essas notas de versão abrangem o período de julho de 2026. As versões do Adob
 
 | Recurso e descrição | [Início da implantação](releases.md) | [Disponibilidade geral](releases.md) |
 | -----------|-----------|-----------|
-| **A análise de subevento** <br/>A análise de subevento permite analisar dados em um nível mais granular do que o nível do evento. Em vez de filtrar eventos inteiros, você pode segmentar em containers individuais em um evento. <p>Por exemplo, você pode segmentar em uma categoria de produto específica sem incluir todos os outros produtos comprados na mesma ordem. Você também pode definir objetos ou matrizes que fazem parte dos dados do evento como contêineres separados em uma visualização de dados.</p> | 15 de julho de 2026 | Final de julho de 2026 |
+| **A análise de subevento** <br/>A análise de subevento permite analisar dados em um nível mais granular do que o nível do evento. Em vez de filtrar eventos inteiros, você pode segmentar em containers individuais em um evento. <p>Por exemplo, você pode segmentar em uma categoria de produto específica sem incluir todos os outros produtos comprados na mesma ordem. Você também pode definir objetos ou matrizes que fazem parte dos dados do evento como contêineres separados em uma visualização de dados.</p><p>(Link para a documentação a seguir).</p> | 15 de julho de 2026 | Final de julho de 2026 |
 | **B2B edition: suporte para conjuntos de dados ad hoc e relacionais** <br/>Os conjuntos de dados ad hoc e relacionais agora também são suportados em conexões baseadas em conta no Customer Journey Analytics B2B edition.<p>(Link para a documentação a seguir).</p> | | 20 de julho de 2026 |
 | **Content Analytics: dados de mídia paga** <br/>A mídia paga agora está disponível como um terceiro canal para o Content Analytics.<p>(Link para a documentação a seguir).</p> | | 31 de julho de 2026 |
-| **Atualização da interface do usuário de Uso das Conexões** <br/>Você pode ver os detalhes de uso de cada módulo individual, como o Customer Journey Analytics ou o Customer Journey Analytics B2B edition. Além disso, agora é possível detalhar os relatórios de uso de cada um dos módulos por mês.<p>(Link para a documentação a seguir).</p> | | 31 de julho de 2026 |
+| **Atualização da interface de Uso de Conexões** <br/>Na interface de Uso ao gerenciar conexões, você pode ver os detalhes de uso de cada módulo individual, como o Customer Journey Analytics ou o Customer Journey Analytics B2B edition. <p>Além disso, agora é possível detalhar os relatórios de uso de cada um dos módulos por mês.</p><p>(Link para a documentação a seguir).</p> | | 31 de julho de 2026 |
 | **CX Enterprise Co-worker: valide seus dados ao migrar do Adobe Analytics para o Customer Journey Analytics** <br/>Uma nova habilidade no CX Enterprise Co-worker permite validar os dados da implementação do Customer Journey Analytics em relação aos dados da implementação existente do Adobe Analytics. <p>Essa habilidade compara automaticamente cada dimensão, métrica e tendência individualmente, conforme necessário. Ele também pode comparar todos os conjuntos de relatórios do Adobe Analytics com todas as visualizações de dados do Customer Journey Analytics. A habilidade gera insights e recomendações orientados por IA que você pode implementar para facilitar a migração para o Customer Journey Analytics.</p><p>(Link para a documentação a seguir).</p> | | Final de julho de 2026 |
 
 ### Correções no Customer Journey Analytics
@@ -67,13 +67,13 @@ Essas notas de versão abrangem o período de julho de 2026. As versões do Adob
 **Relatórios agendados**: AN-450715
 **Métricas e dimensões compartilhadas**:
 **Análise de público-alvo**:
-**Outros**: AN-457063,
+**Outros**: AN-457063
 
 ## Recursos adiados
 
 | Recurso e descrição | [Início da implantação](releases.md) | [Disponibilidade geral](releases.md) |
 | -----------|-----------|-----------|
-| **Serviços de mídia de streaming: compatibilidade com dados de programação** <br/>Agora é possível fazer upload de dados de programação de conteúdo ao vivo anterior de mídia de streaming para acompanhar o número de visualizadores de forma mais fácil e precisa.<p>Veja a seguir alguns exemplos de conteúdo ao vivo que são compatíveis com o upload de dados de programação:</p><ul><li>Plataformas FAST (TV com suporte a anúncios gratuitos)</li><li>Transmissões locais</li><li>Esportes ao vivo</li></ul><p>O upload de dados de programação permite acompanhar os dados de de número de visualizadores de programas individuais que foram executados durante o período designado no arquivo de upload. É possível até coletar dados do número de visualizadores para tópicos ou segmentos de programa específicos.</p><p>Esses recursos estão disponíveis independentemente de como você implementou a coleta de mídias de transmissão.</p><p>Anteriormente, era difícil vincular com precisão uma determinada sessão a programas específicos ao analisar o conteúdo ao vivo e não era possível vincular uma determinada sessão a tópicos ou segmentos de programa individuais.</p><p>Para obter mais informações, consulte [Fazer upload de dados de agendamento para rastrear conteúdo ao vivo](https://experienceleague.adobe.com/pt-br/docs/media-analytics/using/media-use-cases/track-schedule-data) | 29 de outubro de 2025 | A ser determinado<p>(Planejado originalmente para 29 de outubro de 2025)</p> |
+| **Serviços de mídia de streaming: compatibilidade com dados de programação** <br/>Agora é possível fazer upload de dados de programação de conteúdo ao vivo anterior de mídia de streaming para acompanhar o número de visualizadores de forma mais fácil e precisa.<p>Veja a seguir alguns exemplos de conteúdo ao vivo que são compatíveis com o upload de dados de programação:</p><ul><li>Plataformas FAST (TV com suporte a anúncios gratuitos)</li><li>Transmissões locais</li><li>Esportes ao vivo</li></ul><p>O upload de dados de programação permite acompanhar os dados de de número de visualizadores de programas individuais que foram executados durante o período designado no arquivo de upload. É possível até coletar dados do número de visualizadores para tópicos ou segmentos de programa específicos.</p><p>Esses recursos estão disponíveis independentemente de como você implementou a coleta de mídias de transmissão.</p><p>Anteriormente, era difícil vincular com precisão uma determinada sessão a programas específicos ao analisar o conteúdo ao vivo e não era possível vincular uma determinada sessão a tópicos ou segmentos de programa individuais.</p><p>Para obter mais informações, consulte [Carregar dados de agendamento para rastrear o conteúdo ao vivo](https://experienceleague.adobe.com/pt-br/docs/media-analytics/using/media-use-cases/track-schedule-data). | 29 de outubro de 2025 | A ser determinado<p>(Planejado originalmente para 29 de outubro de 2025)</p> |
 
 >[!MORELIKETHIS]
 >
