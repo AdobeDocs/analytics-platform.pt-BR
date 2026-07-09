@@ -26,10 +26,10 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: 9efc51843684b8cad96d01f7ada99eafc5950b42
 workflow-type: tm+mt
-source-wordcount: 3648
-ht-degree: 87%
+source-wordcount: 3523
+ht-degree: 84%
 
 ---
 
@@ -57,7 +57,6 @@ Para isso, é necessário:
 >
 > Este guia de início rápido é um guia simplificado sobre como assimilar dados coletados de seu site na Adobe Experience Platform e usar no Customer Journey Analytics. É altamente recomendável estudar as informações adicionais quando referidas.
 
-
 ## Configurar um esquema e um conjunto de dados
 
 Para assimilar dados na Adobe Experience Platform, primeiro é necessário definir quais dados você deseja coletar. Todos os dados assimilados na Adobe Experience Platform devem estar em conformidade com uma estrutura padrão e desnormalizada para que sejam reconhecidos e utilizados pelos recursos e capacidades downstream. O Experience Data Model (XDM) é a estrutura padrão que fornece essa estrutura no formato de esquemas.
@@ -68,15 +67,14 @@ Todos os dados assimilados na Adobe Experience Platform devem estar em conformid
 
 ### Configurar um esquema
 
-Você deseja rastrear o mínimo de dados de perfis que visitam seu site, por exemplo, nome de página e identificação.
-Primeiro, você deve definir um esquema que modele esses dados.
+Você deseja rastrear o mínimo de dados de perfis que visitam seu site, por exemplo, nome de página e identificação.Primeiro, você deve definir um esquema que modele esses dados.
 
 Para configurar o esquema:
 
 1. Na interface do usuário da Adobe Experience Platform, no painel esquerdo, selecione **[!UICONTROL Esquemas]** no [!UICONTROL GERENCIAMENTO DE DADOS].
 
 1. Selecione **[!UICONTROL Criar esquema]**.
-.
+
 1. Na etapa Selecionar uma classe do assistente Criar esquema:
 
    1. Selecione **[!UICONTROL Evento de experiência]**.
@@ -301,7 +299,7 @@ Para criar e configurar a extensão do SDK da Web da Adobe Experience Platform:
 
 Consulte [Configurar a extensão do SDK da Web da Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration.html?lang=pt-BR) para obter mais informações.
 
-O SDK da web inclui o [!UICONTROL Serviço de ID da Adobe Experience Cloud] nativamente; portanto, não é necessário adicionar a extensão do serviço de ID à sua tag.
+O Web SDK inclui o Experience Platform Identity Service, portanto, não é necessário adicionar a extensão de tag do [!UICONTROL Experience Cloud ID Service] à propriedade.
 
 #### **Elementos de dados**
 
@@ -333,27 +331,7 @@ Para definir um elemento de dados de nome de página:
 
    - Selecione **[!UICONTROL Salvar]**.
 
-Agora você deseja configurar um elemento de dados que faça referência à ID da Experience Cloud, fornecida automaticamente pelo SDK da Web da Adobe Experience Platform e disponível por meio da extensão do Serviço da Experience Cloud ID.
-
-Para definir um elemento de dados da ECID:
-
-1. Selecione **[!UICONTROL Elementos de dados]** no painel esquerdo.
-
-2. Selecione **[!UICONTROL Adicionar elemento de dados]**.
-
-3. Na caixa de diálogo [!UICONTROL Criar elemento de dados]:
-
-   - Nomeie seu elemento de dados, por exemplo `ECID`.
-
-   - Selecione **[!UICONTROL Serviço da Experience Cloud ID]** da lista [!UICONTROL Extensão].
-
-   - Selecione **[!UICONTROL ECID]** na lista [!UICONTROL Tipo de elemento de dados].
-
-     ![Elemento de dados da ECID](./assets/ecid-dataelement.png)
-
-   - Selecione **[!UICONTROL Salvar]**.
-
-Por fim, agora é possível mapear qualquer um dos elementos de dados específicos para o esquema definido anteriormente. Você define outro elemento de dados que fornece uma representação do esquema XDM.
+Em seguida, agora você deseja mapear qualquer um dos elementos de dados específicos para o esquema definido anteriormente. Você define outro elemento de dados que fornece uma representação do esquema XDM.
 
 Para definir um elemento de dados de objeto XDM:
 
@@ -372,13 +350,6 @@ Para definir um elemento de dados de objeto XDM:
    - Selecione a sandbox na lista [!UICONTROL Sandbox].
 
    - Selecione o esquema na lista [!UICONTROL Esquema].
-
-   - Mapeie o atributo `identification > core > ecid`, definido no esquema, no elemento de dados da ECID. Selecione o ícone de cilindro para escolher facilmente o elemento de dados da ECID na lista de elementos de dados.
-
-     ![Selecionar elemento de dados da ECID](./assets/pick-ecid-dataelement.png)
-
-     ![Mapear elemento de dados da ECID](./assets/map-ecid.png)
-
 
    - Mapeie o atributo `web > webPageDetails > name`, definido no esquema, para o elemento de dados Nome da página.
 
@@ -621,4 +592,4 @@ Consulte [Visão geral do Analysis Workspace](../analysis-workspace/home.md) par
 
 >[!SUCCESS]
 >
->Você concluiu todas as etapas. Começando por definir quais dados você deseja coletar (esquema) e onde armazená-los (conjunto de dados) no Adobe Experience Platform. Em seguida, você configurou um fluxo de dados na Edge Network para garantir que os dados possam ser encaminhados para esse conjunto de dados. Em seguida, você definiu e implantou a tag contendo as extensões (SDK da Web da Adobe Experience Platform, Serviço da Experience Cloud ID), os elementos de dados e as regras para capturar dados do seu site e enviar esses dados para o armazenamento de dados. Você definiu uma conexão no Customer Journey Analytics para usar os dados de rastreamento do site e outros dados. A definição da visualização de dados permite especificar qual dimensão e métricas usar e, por fim, criar seu primeiro projeto visualizando e analisando seus dados.
+>Você concluiu todas as etapas. Começando por definir quais dados você deseja coletar (esquema) e onde armazená-los (conjunto de dados) no Adobe Experience Platform. Em seguida, você configurou um fluxo de dados na Edge Network para garantir que os dados possam ser encaminhados para esse conjunto de dados. Em seguida, você definiu e implantou sua tag contendo a extensão, os elementos de dados e as regras do Adobe Experience Platform Web SDK para capturar dados do site e enviá-los para o fluxo de dados. Você definiu uma conexão no Customer Journey Analytics para usar os dados de rastreamento do site e outros dados. A definição da visualização de dados permite especificar qual dimensão e métricas usar e, por fim, criar seu primeiro projeto visualizando e analisando seus dados.

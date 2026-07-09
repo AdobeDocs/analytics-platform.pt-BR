@@ -23,10 +23,10 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: 9efc51843684b8cad96d01f7ada99eafc5950b42
 workflow-type: tm+mt
-source-wordcount: 1224
-ht-degree: 77%
+source-wordcount: 1223
+ht-degree: 76%
 
 ---
 
@@ -36,12 +36,10 @@ Este guia de início rápido explica como você pode usar os dados coletados pel
 
 >[!PREREQUISITES]
 >
->Você tem o Adobe Analytics licenciado e implantado em um ou mais de seus sites, usando qualquer um dos métodos de implementação documentados:
+>Você licenciou e implantou o Adobe Analytics em um ou mais sites usando qualquer um dos métodos de implementação documentados:
 >
 >- [Implementar o Analytics usando a Experience Platform Edge](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/overview.html?lang=pt-BR)
->
 >- [Implementar o Analytics usando a extensão do Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/launch/overview.html?lang=pt-BR)
->
 >- [Implementar o Analytics usando JavaScript](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=pt-BR)
 
 Para isso, é necessário:
@@ -102,7 +100,6 @@ Depois que a conexão é criada, o fluxo de dados é criado automaticamente para
 Quando a ingestão inicial for concluída, os dados do conjunto de relatórios do Adobe Analytics estarão prontos para serem usados pelo Customer Journey Analytics.
 
 Consulte [Criar uma conexão de origem do Adobe Analytics na interface do usuário](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=pt-BR) para obter um tutorial muito mais abrangente.
-
 
 ## Configurar uma conexão
 
