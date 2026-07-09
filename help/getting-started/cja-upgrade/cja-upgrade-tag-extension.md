@@ -7,23 +7,15 @@ feature: Basics
 exl-id: 382d2b00-939a-4fff-be02-7a98d457a455
 autotag-review: '2026-05-19T08:18:58.656Z'
 TQID: 'https://experienceleague.adobe.com/8Wld534ijt7cmJnlbq4cB7tURTb8hch99Z6FIrhzAcQ'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
-subfeature_v2:
-  - id: eed59de6-f140-4dd2-beca-afcbb0f6a2c5
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: d76b9e53-27fb-4597-933f-419cc0dd46db
+subfeature_v2: id: eed59de6-f140-4dd2-beca-afcbb0f6a2c5
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d00e9f03-e50b-4162-b143-0c0817c937c2id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 9efc51843684b8cad96d01f7ada99eafc5950b42
 workflow-type: tm+mt
 source-wordcount: 316
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -42,7 +34,7 @@ ht-degree: 100%
 
 Você pode usar o recurso de tags na Adobe Experience Platform para implementar o código no seu site a fim de coletar dados. Esta solução de gerenciamento de tags permite implantar o código do junto com outros requisitos de marcação. As tags oferecem integração perfeita com a Adobe Experience Platform usando a extensão do SDK da Web da Adobe Experience Platform.
 
-As informações a seguir descrevem como adicionar a extensão do SDK da web à sua tag. Para mais informações, consulte a [Configuração da extensão de tags do SDK da web](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration) na documentação da Experience Platform. O SDK da web inclui o [!UICONTROL Serviço de ID da Adobe Experience Cloud] nativamente; portanto, não é necessário adicionar a extensão do serviço de ID à sua tag.
+As informações a seguir descrevem como adicionar a extensão do SDK da web à sua tag. Para mais informações, consulte a [Configuração da extensão de tags do SDK da web](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration) na documentação da Experience Platform. O Web SDK inclui o Experience Platform Identity Service, portanto, não é necessário adicionar a extensão [!UICONTROL Experience Cloud ID Service] à sua marca.
 
 Depois de [criar uma tag](/help/getting-started/cja-upgrade/cja-upgrade-tag-property.md), é necessário configurá-la com a extensão do SDK da web da Adobe Experience Platform. Isso garante que você possa enviar dados à Adobe Experience Platform (por meio da sua sequência de dados).
 
