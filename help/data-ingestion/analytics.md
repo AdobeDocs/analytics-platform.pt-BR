@@ -38,7 +38,7 @@ Este guia de início rápido explica como você pode usar os dados coletados pel
 >
 >Você licenciou e implantou o Adobe Analytics em um ou mais sites usando qualquer um dos métodos de implementação documentados:
 >
->- [Implementar o Analytics usando a Experience Platform Edge](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/overview.html)
+>- [Implementar o Analytics usando a Experience Platform Edge](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/overview.html?lang=pt-BR)
 >- [Implementar o Analytics usando a extensão do Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/launch/overview.html?lang=pt-BR)
 >- [Implementar o Analytics usando JavaScript](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=pt-BR)
 
