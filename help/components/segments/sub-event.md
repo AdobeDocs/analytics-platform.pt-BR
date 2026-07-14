@@ -3,13 +3,12 @@ title: Análise de sub-eventos
 description: Saiba como a análise de subeventos permite filtrar produtos individuais ou outros contêineres em um evento no Customer Jornada Analytics, eliminando a sangria de atribuição nos relatórios de produtos.
 feature: Segmentation
 hold: true
-feature_v2:
-  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
-subfeature_v2:
-  - id: a544b409-2610-410d-a842-474ac1d0d54e
-source-git-commit: b4bec7c8e476bc2dbffce42bd52ff535b90dcb86
+hide: true
+feature_v2: id: c153fd90-23e1-4614-81d3-3cc7571227f7
+subfeature_v2: id: a544b409-2610-410d-a842-474ac1d0d54e
+source-git-commit: c504a631398d14479c9a2b70d9ef43ac88e35704
 workflow-type: tm+mt
-source-wordcount: 564
+source-wordcount: 565
 ht-degree: 0%
 
 ---
@@ -32,9 +31,9 @@ Na análise de sub-evento, a lógica de exclusão se comporta de forma diferente
 
 ## Exemplo
 
-Você deseja medir a receita somente da categoria de conjuntos profissionais. Sem a análise de sub-evento, a aplicação de um segmento para trajes profissionais inclui a receita de cada produto em qualquer pedido (evento) que contenha pelo menos um produto com a categoria de trajes profissionais. Com a análise de subeventos, você define o escopo do filtro para o nível do produto e retorna somente a receita para produtos da categoria de trajes profissionais.
+Você deseja medir a receita somente da categoria de roupas profissionais. Sem a análise de sub-evento, a aplicação de um segmento para trajes profissionais inclui a receita de cada produto em qualquer pedido (evento) que contenha pelo menos um produto com a categoria de trajes profissionais. Com a análise de subeventos, você define o escopo do filtro para o nível do produto e retorna somente a receita para produtos da categoria de trajes profissionais.
 
-Também é possível medir a receita online de todas as outras categorias, exceto a categoria Homens.
+Você também deseja medir a receita online de todas as outras categorias, exceto a categoria de trajes profissionais.
 
 >[!BEGINTABS]
 
@@ -48,7 +47,7 @@ Como resultado, todos os pedidos contendo pelo menos um **[!UICONTROL Conjuntos 
 
 >[!TAB Análise de sub-evento]
 
-No construtor de segmentação ou como parte de um **[!UICONTROL Segmento rápido]**, você especifica **[!UICONTROL Incluir]** o **[!UICONTROL Dimension]** **[!UICONTROL product_category]** **[!UICONTROL igual]** **[!UICONTROL Conjuntos profissionais]** no contêiner **[!UICONTROL Produtos]**.
+No construtor de segmentação ou como parte de um **[!UICONTROL Segmento rápido]**, você especifica **[!UICONTROL Incluir]** o **[!UICONTROL Dimension]** **[!UICONTROL product_category]** **[!UICONTROL igual]** **[!UICONTROL Professional Suits]** no contêiner **[!UICONTROL Produtos]**.
 
 ![Painel que mostra a segmentação no nível de subevento para conjuntos profissionais de categorias de produtos](./assets/product-category-segmentation-subevents.png)
 
