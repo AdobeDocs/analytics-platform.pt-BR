@@ -5,6 +5,7 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
+hold: true
 TQID: https://experienceleague.adobe.com/zpiJFUF8RnIdFQWf29FBpRznWO3Ejs-j2szx69kdMNE
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
@@ -22,10 +23,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: beb7a3c1-66ab-4786-b879-7621375b3c40
-source-git-commit: 536a1c7151521b26fccd486704d5c9426b039f53
+source-git-commit: b342654b753f679f86750e43efbed1eb149e1b17
 workflow-type: tm+mt
-source-wordcount: 10387
-ht-degree: 97%
+source-wordcount: 10573
+ht-degree: 98%
 
 ---
 
@@ -302,6 +303,8 @@ Este modelo de função converte uma lista limitada em uma matriz.
 Para usar o modelo, é necessário especificar os parâmetros corretos para cada função listada como parte das regras no modelo. Consulte [Referência da função](#function-reference) para mais informações.
 
 ![Captura de tela do construtor de regras de obter todos os valores na lista delimitada](assets/function-template-get-all-values-in-delimited-list.png)
+
+O campo derivado fica disponível como um [contêiner personalizado](/help/data-views/create-dataview.md#containers-1) que pode ser selecionado na visualização de dados e usado para a [análise de subeventos](/help/components/segments/sub-event.md) em um projeto de espaço de trabalho.
 
 +++
 
@@ -755,8 +758,7 @@ Define um conjunto de valores que são substituídos por valores correspondentes
 
 ## Caso de uso 1 {#classify-uc1}
 
-Você tem um arquivo CSV que inclui uma coluna de chave para `hotelID` e uma ou mais colunas adicionais associadas ao `hotelID`: `city`, `rooms`, `hotel name`.
-Você está coletando [!DNL Hotel ID] em uma dimensão, mas gostaria de criar uma dimensão [!DNL Hotel Name] derivada de `hotelID` no arquivo CSV.
+Você tem um arquivo CSV que inclui uma coluna de chaves para `hotelID` e uma ou mais colunas adicionais associadas a `hotelID`: `city`, `rooms`, `hotel name`.Você está coletando [!DNL Hotel ID] em uma dimensão, mas gostaria de criar uma dimensão [!DNL Hotel Name] derivada de `hotelID` no arquivo CSV.
 
 **Estrutura e conteúdo do arquivo CSV**
 
@@ -1014,8 +1016,7 @@ Alternativamente, você pode usar o valor de conveniência do intervalo de datas
 
 Você quer entender o tempo de pesquisa em minutos antes que um cliente faça um pedido durante uma sessão.
 
-Você define um novo campo derivado `Time Between Search And Order In Minutes` que é o resultado de duas funções [[!UICONTROL CASE WHEN]](#case-when) para definir valores de [!UICONTROL Tempo de Pesquisa] e [!UICONTROL Tempo de Pedido].
-Em seguida, use esses dois valores para calcular a diferença com uma função [!UICONTROL DATA MATH] com [!UICONTROL Escopo] definido como [!UICONTROL Sessão], valores definidos como [!UICONTROL Tempo de Pesquisa] e [!UICONTROL Tempo de Pedido] e [!UICONTROL Granularidade da saída] definidos como [!UICONTROL Minuto]. Para ambos os valores, selecione [!UICONTROL Retornar o primeiro] para garantir que o primeiro [!UICONTROL Tempo de Pesquisa] e o [!UICONTROL Tempo de Pedido] sejam retornados.
+Você define um novo campo derivado `Time Between Search And Order In Minutes`, que é o resultado de duas funções [[!UICONTROL CASE WHEN]](#case-when), para definir os valores de [!UICONTROL Tempo de pesquisa] e [!UICONTROL Tempo de pedido].Em seguida, você usa esses dois valores para calcular a diferença com uma função [!UICONTROL DATE MATH] com o [!UICONTROL Escopo] definido como [!UICONTROL Sessão], valores definidos como [!UICONTROL Tempo de pesquisa] e [!UICONTROL Tempo de pedido], e [!UICONTROL Granularidade de saída] definida como [!UICONTROL Minuto]. Para ambos os valores, selecione [!UICONTROL Retornar o primeiro] para garantir que o primeiro [!UICONTROL Tempo de pesquisa] e o primeiro [!UICONTROL Tempo de pedido] sejam retornados.
 
 ![Captura de tela da regra de cálculo de datas 3](assets/datemath-3.png)
 
@@ -1287,8 +1288,7 @@ Você pode inserir rapidamente uma função de [!UICONTROL Pesquisa] no construt
 1. Selecione **[!UICONTROL Campos do esquema]** no seletor.
 1. Selecione o ![Ícone de campo do esquema](assets/Smock_Folder_18_N.svg) **[!UICONTROL Conjuntos de dados de pesquisa]**.
 1. Selecione o seu conjunto de dados de pesquisa e localize o campo que deseja usar para pesquisar.
-1. Arraste e solte o campo de pesquisa em qualquer um dos campos de entrada disponíveis para uma função (por exemplo, Caso Quando). Quando válida, uma caixa azul, rotulada **[!UICONTROL + Adicionar]**, permite soltar o campo e inserir automaticamente uma função de Pesquisa antes da função na qual você soltou o campo de pesquisa. A função Lookup inserida é preenchida automaticamente com valores relevantes para todos os campos.
-   ![Arrastar pesquisa](assets/lookup-drag.png)
+1. Arraste e solte o campo de pesquisa em qualquer um dos campos de entrada disponíveis para uma função (por exemplo, “Case When”). Quando válida, uma caixa azul rotulada **[!UICONTROL + Adicionar]** permite soltar o campo e inserir automaticamente uma função de pesquisa antes da função na qual você soltou o campo de pesquisa. A função de pesquisa inserida é preenchida automaticamente com valores relevantes para todos os campos.   ![Arrastar pesquisa](assets/lookup-drag.png)
 
 +++
 
@@ -1409,8 +1409,7 @@ Você define um campo derivado de `Corrected Annual Revenue`. Use a função [!U
 
 Para criar uma fórmula:
 
-1. Basta começar a digitar no campo Fórmula e os campos numéricos que correspondem ao que você digita aparecerão em um menu pop-up. Como alternativa, você pode arrastar e soltar um campo numérico dos campos disponíveis no painel esquerdo.
-   ![Mais informações de matemática 1](assets/math-more-info-1.png)
+1. Basta começar a digitar no campo “Fórmula”, e os campos numéricos que correspondem ao que você digitar aparecerão em um menu pop-up. Alternativamente, você pode arrastar e soltar um campo numérico a partir dos campos disponíveis no painel esquerdo.   ![Mais informações de matemática 1](assets/math-more-info-1.png)
 
 1. Adicione o operando (por exemplo, `*` para multiplicar) seguido por outro campo ou um valor estático. Você pode usar parênteses para definir fórmulas mais complexas.
 
