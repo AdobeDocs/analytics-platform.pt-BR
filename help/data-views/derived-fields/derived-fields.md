@@ -5,27 +5,17 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
+hold: true
 TQID: https://experienceleague.adobe.com/zpiJFUF8RnIdFQWf29FBpRznWO3Ejs-j2szx69kdMNE
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: beb7a3c1-66ab-4786-b879-7621375b3c40
-source-git-commit: 536a1c7151521b26fccd486704d5c9426b039f53
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ad333ea6-e90d-4c8f-8d61-9f8690784d6fid: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: beb7a3c1-66ab-4786-b879-7621375b3c40
+source-git-commit: b342654b753f679f86750e43efbed1eb149e1b17
 workflow-type: tm+mt
-source-wordcount: 10387
-ht-degree: 97%
+source-wordcount: 10573
+ht-degree: 98%
 
 ---
 
@@ -74,8 +64,8 @@ Ao criar ou editar um campo derivado, você usa a interface de campos derivados.
 |---------|----------|--------|
 | 1 | **Selector** | Use a área do seletor para selecionar, arrastar e soltar a sua função, modelo de função, campo do esquema ou campo padrão no construtor de regras. <br/>Use o menu suspenso para selecionar entre: <br/>![Função](assets/Smock_Function_18_N.svg) [!UICONTROL Funções]: lista as [funções](#function-reference) disponíveis; </br>![Ícone do modelo de função](assets/Smock_FileTemplate_18_N.svg) [!UICONTROL Modelos de função]: lista os [Modelos de função](#function-templates) disponíveis; <br/>![Ícone de campo do esquema](assets/Smock_Folder_18_N.svg) [!UICONTROL Campos do esquema]: lista os campos disponíveis a partir de categorias de conjunto de dados (evento, perfil, pesquisa) e campos derivados definidos anteriormente; e <br/>![Ícone de campo padrão](assets/Smock_DragHandle_18_N.svg) [!UICONTROL Campos padrão]: campos padrão disponíveis (como ID do conjunto de dados da Platform). Somente os campos padrão de strings e números são exibidos no seletor. Se a função permitir outros tipos de dado, os campos padrão com esses outros tipos de dado poderão ser selecionados para valores ou campos na interface de regras.<br/>É possível pesquisar por função, modelos de função, campos do esquema e campos padrão, utilizando-se a caixa de pesquisa ![Ícone de pesquisa](assets/Smock_Search_18_N.svg). <br/>Você pode filtrar a lista de objetos selecionados por meio de ![Ícone de Filtro](assets/Smock_Filter_18_N.svg) Filtrar e especificar filtros na caixa de diálogo [!UICONTROL Filtrar campos por]. Você pode remover filtros facilmente por meio do ![Ícone de fechar](assets/CrossSize75.svg) de cada filtro. |
 | 2 | **Construtor de regras** | Você cria o campo derivado sequencialmente com base em uma ou mais regras. Uma regra é uma implementação específica de uma função e, portanto, sempre está associada a apenas uma função. Para criar uma regra, arraste e solte uma função no construtor de regras. O tipo de função determina a interface da regra.<br/>Consulte [Interface da regra](#rule-interface) para mais informações. <br/>É possível inserir uma função no início, fim ou entre regras já disponíveis no construtor de regras. A última regra no construtor de regras determina a saída final do campo derivado. |
-| 3 | **[!UICONTROL **&#x200B; Configurações do campo &#x200B;**]** | É possível nomear e descrever o campo derivado e inspecionar seu tipo de campo. |
-| 4 | **[!UICONTROL **&#x200B; Saída final &#x200B;**]** | Esta área mostra uma visualização atualizada dinamicamente dos valores de saída com base nos dados dos últimos 30 dias e nas alterações feitas no campo derivado no construtor de regras. |
+| 3 | **[!UICONTROL ** Configurações do campo **]** | É possível nomear e descrever o campo derivado e inspecionar seu tipo de campo. |
+| 4 | **[!UICONTROL ** Saída final **]** | Esta área mostra uma visualização atualizada dinamicamente dos valores de saída com base nos dados dos últimos 30 dias e nas alterações feitas no campo derivado no construtor de regras. |
 
 {style="table-layout:auto"}
 
@@ -84,7 +74,7 @@ Ao criar ou editar um campo derivado, você usa a interface de campos derivados.
 Quando você acessa a interface de campos derivados pela primeira vez, o assistente [!UICONTROL Iniciar com um modelo de campo] é exibido.
 
 1. Selecione o modelo que melhor descreva o tipo de campo que você está tentando criar.
-2. Clique no botão **[!UICONTROL **&#x200B; Selecionar &#x200B;**]** para continuar.
+2. Clique no botão **[!UICONTROL ** Selecionar **]** para continuar.
 
 A caixa de diálogo de campos derivados é preenchida com as regras (e funções) necessárias ou úteis para o tipo de campo selecionado. Consulte [Modelos de função](#function-templates) para mais informações sobre os modelos disponíveis.
 
@@ -98,7 +88,7 @@ Para definir uma regra no construtor de regras, use a interface de regras.
 |---------|----------|--------|
 | A | **Nome da regra** | Por padrão, o nome da regra é **Regra X** (X refere-se a um número de sequência). Para editar o nome de uma regra, selecione-o e digite o novo nome, como `Query Parameter`. |
 | B | **Nome da função** | O nome de função selecionado para a regra, como [!UICONTROL URL PARSE]. Quando a função é a última da sequência de funções e determina os valores da saída final, o nome da função é seguido por [!UICONTROL - FINAL OUTPUT]; por exemplo, [!UICONTROL URL PARSE - FINAL OUTPUT]. <br/>Para mostrar uma janela pop-up com mais informações sobre a função, selecione o ![Ícone de ajuda](assets/Smock_HelpOutline_18_N.svg). |
-| C | **Descrição da regra** | Também é possível adicionar uma descrição a uma regra.<br/>Selecione o ![Ícone de mais](assets/More.svg) e **[!UICONTROL ** Adicionar descrição **]** para adicionar uma descrição, ou **[!UICONTROL **&#x200B; Editar descrição &#x200B;**]** para editar uma descrição existente.<br/>Use o editor para inserir uma descrição. Você pode usar a barra de ferramentas para formatar o texto (utilizando o seletor de estilo, negrito, itálico, sublinhado, direita, esquerda, centralizado, cor, lista numerada, lista com marcadores) e adicionar links para informações externas. <br/>Para concluir a edição da descrição, clique fora do editor. |
+| C | **Descrição da regra** | Também é possível adicionar uma descrição a uma regra.<br/>Selecione o ![Ícone de mais](assets/More.svg) e **[!UICONTROL ** Adicionar descrição **]** para adicionar uma descrição, ou **[!UICONTROL ** Editar descrição **]** para editar uma descrição existente.<br/>Use o editor para inserir uma descrição. Você pode usar a barra de ferramentas para formatar o texto (utilizando o seletor de estilo, negrito, itálico, sublinhado, direita, esquerda, centralizado, cor, lista numerada, lista com marcadores) e adicionar links para informações externas. <br/>Para concluir a edição da descrição, clique fora do editor. |
 | D | **Área da função** | Define a lógica da função. A interface depende do tipo de função. O menu suspenso [!UICONTROL Campo] ou [!UICONTROL Valor] mostra todas as categorias de campos (regras, campos padrão, campos) disponíveis com base no tipo de entrada que a função espera. Alternativamente, você pode arrastar e soltar um campo do seletor de campos do esquema e campos padrão em um campo ou valor. Quando esse campo arrastado advém de um conjunto de dados de pesquisa, uma função de pesquisa é inserida automaticamente antes da função definida. <br/>Consulte [Referência da função](#function-reference) para informações detalhadas sobre cada uma das funções permitidas. |
 
 {style="table-layout:auto"}
@@ -107,36 +97,36 @@ Para definir uma regra no construtor de regras, use a interface de regras.
 
 1. Selecione uma visualização de dados existente ou crie uma visualização de dados. Consulte [Visualizações de dados](../data-views.md) para mais informações.
 
-2. Selecione a guia **[!UICONTROL **&#x200B; Componentes &#x200B;**]** da visualização de dados.
+2. Selecione a guia **[!UICONTROL ** Componentes **]** da visualização de dados.
 
-3. Selecione **[!UICONTROL **&#x200B; Criar campo derivado &#x200B;**]** no painel esquerdo.
+3. Selecione **[!UICONTROL ** Criar campo derivado **]** no painel esquerdo.
 
 4. Para definir o campo derivado, use a interface [!UICONTROL Criar campo derivado]. Consulte [Interface de campos derivados](#derived-field-interface).
 
-   Para salvar o novo campo derivado, selecione **[!UICONTROL **&#x200B; Salvar &#x200B;**]**.
+   Para salvar o novo campo derivado, selecione **[!UICONTROL ** Salvar **]**.
 
-5. O novo campo derivado é adicionado ao container [!UICONTROL Campos derivados >] como parte dos **[!UICONTROL **&#x200B; Campos do esquema &#x200B;**]** no painel esquerdo da visualização de dados.
+5. O novo campo derivado é adicionado ao container [!UICONTROL Campos derivados >] como parte dos **[!UICONTROL ** Campos do esquema **]** no painel esquerdo da visualização de dados.
 
 
 ## Editar um campo derivado {#edit}
 
 1. Selecione uma visualização de dados existente. Consulte [Visualizações de dados](../data-views.md) para mais informações.
 
-2. Selecione a guia **[!UICONTROL **&#x200B; Componentes &#x200B;**]** da visualização de dados.
+2. Selecione a guia **[!UICONTROL ** Componentes **]** da visualização de dados.
 
-3. Selecione a guia **[!UICONTROL **&#x200B; Campos do esquema &#x200B;**]** no painel [!UICONTROL Conexão] à esquerda.
+3. Selecione a guia **[!UICONTROL ** Campos do esquema **]** no painel [!UICONTROL Conexão] à esquerda.
 
-4. Selecione o container **[!UICONTROL **&#x200B; Campos derivados >**]**.
+4. Selecione o container **[!UICONTROL ** Campos derivados >**]**.
 
 5. Passe o mouse sobre o campo derivado que você deseja editar e selecione o ![Ícone de editar](assets/Smock_Edit_18_N.svg).
 
 6. Para editar o campo derivado, use a interface [!UICONTROL Editar campo derivado]. Consulte [Interface de campos derivados](#derived-field-interface).
 
-   - Selecione **[!UICONTROL **&#x200B; Salvar &#x200B;**]** para salvar o campo derivado atualizado.
+   - Selecione **[!UICONTROL ** Salvar **]** para salvar o campo derivado atualizado.
 
-   - Selecione **[!UICONTROL **&#x200B; Cancelar &#x200B;**]** para cancelar todas as alterações feitas no campo derivado.
+   - Selecione **[!UICONTROL ** Cancelar **]** para cancelar todas as alterações feitas no campo derivado.
 
-   - Selecione **[!UICONTROL **&#x200B; Salvar como &#x200B;**]** para salvar o campo derivado como um novo campo derivado. O novo campo derivado tem o mesmo nome que o campo derivado editado original, com a adição de `(copy)`.
+   - Selecione **[!UICONTROL ** Salvar como **]** para salvar o campo derivado como um novo campo derivado. O novo campo derivado tem o mesmo nome que o campo derivado editado original, com a adição de `(copy)`.
 
 Alternativamente, se você tiver usado um campo derivado como um componente para dimensões ou métricas na visualização de dados:
 
@@ -146,11 +136,11 @@ Alternativamente, se você tiver usado um campo derivado como um componente para
 
 1. Para editar o campo derivado, use a interface [!UICONTROL Editar campo derivado]. Consulte [Interface de campos derivados](#derived-field-interface).
 
-   - Selecione **[!UICONTROL **&#x200B; Salvar &#x200B;**]** para salvar o campo derivado atualizado.
+   - Selecione **[!UICONTROL ** Salvar **]** para salvar o campo derivado atualizado.
 
-   - Selecione **[!UICONTROL **&#x200B; Cancelar &#x200B;**]** para cancelar todas as alterações feitas no campo derivado.
+   - Selecione **[!UICONTROL ** Cancelar **]** para cancelar todas as alterações feitas no campo derivado.
 
-   - Selecione **[!UICONTROL **&#x200B; Salvar como &#x200B;**]** para salvar o campo derivado como um novo campo derivado. O novo campo derivado tem o mesmo nome que o campo derivado editado original, com a adição de `(copy)`.
+   - Selecione **[!UICONTROL ** Salvar como **]** para salvar o campo derivado como um novo campo derivado. O novo campo derivado tem o mesmo nome que o campo derivado editado original, com a adição de `(copy)`.
 
 
 
@@ -158,11 +148,11 @@ Alternativamente, se você tiver usado um campo derivado como um componente para
 
 1. Selecione uma visualização de dados existente. Consulte [Visualizações de dados](../data-views.md) para mais informações.
 
-2. Selecione a guia **[!UICONTROL **&#x200B; Componentes &#x200B;**]** da visualização de dados.
+2. Selecione a guia **[!UICONTROL ** Componentes **]** da visualização de dados.
 
-3. Selecione a guia **[!UICONTROL **&#x200B; Campos do esquema &#x200B;**]** no painel [!UICONTROL Conexão].
+3. Selecione a guia **[!UICONTROL ** Campos do esquema **]** no painel [!UICONTROL Conexão].
 
-4. Selecione o container **[!UICONTROL **&#x200B; Campos derivados >**]**.
+4. Selecione o container **[!UICONTROL ** Campos derivados >**]**.
 
 5. Passe o mouse sobre o campo derivado que você deseja excluir e selecione o ![Ícone de editar](assets/Smock_Edit_18_N.svg).
 
@@ -170,7 +160,7 @@ Alternativamente, se você tiver usado um campo derivado como um componente para
 
    A caixa de diálogo [!UICONTROL Excluir componente] solicita que você confirme a exclusão. Considere todas as referências externas que possam existir ao campo derivado fora da visualização de dados.
 
-   - Selecione **[!UICONTROL **&#x200B; Continuar &#x200B;**]** para excluir o campo derivado.
+   - Selecione **[!UICONTROL ** Continuar **]** para excluir o campo derivado.
 
 Alternativamente, se você tiver usado um campo derivado como um componente para dimensões ou métricas na visualização de dados:
 
@@ -182,7 +172,7 @@ Alternativamente, se você tiver usado um campo derivado como um componente para
 
    A caixa de diálogo [!UICONTROL Excluir componente] solicita que você confirme a exclusão. Considere todas as referências externas que possam existir ao campo derivado fora da visualização de dados.
 
-   - Selecione **[!UICONTROL **&#x200B; Continuar &#x200B;**]** para excluir o campo derivado.
+   - Selecione **[!UICONTROL ** Continuar **]** para excluir o campo derivado.
 
 >[!NOTE]
 >
@@ -302,6 +292,8 @@ Este modelo de função converte uma lista limitada em uma matriz.
 Para usar o modelo, é necessário especificar os parâmetros corretos para cada função listada como parte das regras no modelo. Consulte [Referência da função](#function-reference) para mais informações.
 
 ![Captura de tela do construtor de regras de obter todos os valores na lista delimitada](assets/function-template-get-all-values-in-delimited-list.png)
+
+O campo derivado fica disponível como um [contêiner personalizado](/help/data-views/create-dataview.md#containers-1) que pode ser selecionado na visualização de dados e usado para a [análise de subeventos](/help/components/segments/sub-event.md) em um projeto de espaço de trabalho.
 
 +++
 
@@ -755,8 +747,7 @@ Define um conjunto de valores que são substituídos por valores correspondentes
 
 ## Caso de uso 1 {#classify-uc1}
 
-Você tem um arquivo CSV que inclui uma coluna de chave para `hotelID` e uma ou mais colunas adicionais associadas ao `hotelID`: `city`, `rooms`, `hotel name`.
-Você está coletando [!DNL Hotel ID] em uma dimensão, mas gostaria de criar uma dimensão [!DNL Hotel Name] derivada de `hotelID` no arquivo CSV.
+Você tem um arquivo CSV que inclui uma coluna de chaves para `hotelID` e uma ou mais colunas adicionais associadas a `hotelID`: `city`, `rooms`, `hotel name`.Você está coletando [!DNL Hotel ID] em uma dimensão, mas gostaria de criar uma dimensão [!DNL Hotel Name] derivada de `hotelID` no arquivo CSV.
 
 **Estrutura e conteúdo do arquivo CSV**
 
@@ -1014,8 +1005,7 @@ Alternativamente, você pode usar o valor de conveniência do intervalo de datas
 
 Você quer entender o tempo de pesquisa em minutos antes que um cliente faça um pedido durante uma sessão.
 
-Você define um novo campo derivado `Time Between Search And Order In Minutes` que é o resultado de duas funções [[!UICONTROL CASE WHEN]](#case-when) para definir valores de [!UICONTROL Tempo de Pesquisa] e [!UICONTROL Tempo de Pedido].
-Em seguida, use esses dois valores para calcular a diferença com uma função [!UICONTROL DATA MATH] com [!UICONTROL Escopo] definido como [!UICONTROL Sessão], valores definidos como [!UICONTROL Tempo de Pesquisa] e [!UICONTROL Tempo de Pedido] e [!UICONTROL Granularidade da saída] definidos como [!UICONTROL Minuto]. Para ambos os valores, selecione [!UICONTROL Retornar o primeiro] para garantir que o primeiro [!UICONTROL Tempo de Pesquisa] e o [!UICONTROL Tempo de Pedido] sejam retornados.
+Você define um novo campo derivado `Time Between Search And Order In Minutes`, que é o resultado de duas funções [[!UICONTROL CASE WHEN]](#case-when), para definir os valores de [!UICONTROL Tempo de pesquisa] e [!UICONTROL Tempo de pedido].Em seguida, você usa esses dois valores para calcular a diferença com uma função [!UICONTROL DATE MATH] com o [!UICONTROL Escopo] definido como [!UICONTROL Sessão], valores definidos como [!UICONTROL Tempo de pesquisa] e [!UICONTROL Tempo de pedido], e [!UICONTROL Granularidade de saída] definida como [!UICONTROL Minuto]. Para ambos os valores, selecione [!UICONTROL Retornar o primeiro] para garantir que o primeiro [!UICONTROL Tempo de pesquisa] e o primeiro [!UICONTROL Tempo de pedido] sejam retornados.
 
 ![Captura de tela da regra de cálculo de datas 3](assets/datemath-3.png)
 
@@ -1287,8 +1277,7 @@ Você pode inserir rapidamente uma função de [!UICONTROL Pesquisa] no construt
 1. Selecione **[!UICONTROL Campos do esquema]** no seletor.
 1. Selecione o ![Ícone de campo do esquema](assets/Smock_Folder_18_N.svg) **[!UICONTROL Conjuntos de dados de pesquisa]**.
 1. Selecione o seu conjunto de dados de pesquisa e localize o campo que deseja usar para pesquisar.
-1. Arraste e solte o campo de pesquisa em qualquer um dos campos de entrada disponíveis para uma função (por exemplo, Caso Quando). Quando válida, uma caixa azul, rotulada **[!UICONTROL + Adicionar]**, permite soltar o campo e inserir automaticamente uma função de Pesquisa antes da função na qual você soltou o campo de pesquisa. A função Lookup inserida é preenchida automaticamente com valores relevantes para todos os campos.
-   ![Arrastar pesquisa](assets/lookup-drag.png)
+1. Arraste e solte o campo de pesquisa em qualquer um dos campos de entrada disponíveis para uma função (por exemplo, “Case When”). Quando válida, uma caixa azul rotulada **[!UICONTROL + Adicionar]** permite soltar o campo e inserir automaticamente uma função de pesquisa antes da função na qual você soltou o campo de pesquisa. A função de pesquisa inserida é preenchida automaticamente com valores relevantes para todos os campos.   ![Arrastar pesquisa](assets/lookup-drag.png)
 
 +++
 
@@ -1409,8 +1398,7 @@ Você define um campo derivado de `Corrected Annual Revenue`. Use a função [!U
 
 Para criar uma fórmula:
 
-1. Basta começar a digitar no campo Fórmula e os campos numéricos que correspondem ao que você digita aparecerão em um menu pop-up. Como alternativa, você pode arrastar e soltar um campo numérico dos campos disponíveis no painel esquerdo.
-   ![Mais informações de matemática 1](assets/math-more-info-1.png)
+1. Basta começar a digitar no campo “Fórmula”, e os campos numéricos que correspondem ao que você digitar aparecerão em um menu pop-up. Alternativamente, você pode arrastar e soltar um campo numérico a partir dos campos disponíveis no painel esquerdo.   ![Mais informações de matemática 1](assets/math-more-info-1.png)
 
 1. Adicione o operando (por exemplo, `*` para multiplicar) seguido por outro campo ou um valor estático. Você pode usar parênteses para definir fórmulas mais complexas.
 
@@ -1617,10 +1605,10 @@ Você gostaria de coletar parte de um URL e usá-la como um identificador de pá
 
 | URL da página |
 |---|
-| `https://business.adobe.com/br/products/analytics/adobe-analytics-benefits.html` |
-| `https://business.adobe.com/br/products/analytics/adobe-analytics.html` |
-| `https://business.adobe.com/br/products/experience-platform/customer-journey-analytics.html` |
-| `https://business.adobe.com/br/products/experience-platform/adobe-experience-platform.html` |
+| `https://business.adobe.com/products/analytics/adobe-analytics-benefits.html` |
+| `https://business.adobe.com/products/analytics/adobe-analytics.html` |
+| `https://business.adobe.com/products/experience-platform/customer-journey-analytics.html` |
+| `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html` |
 
 {style="table-layout:auto"}
 
@@ -2178,6 +2166,6 @@ O suporte para campos de pesquisa e perfil em Campos derivados permite transform
 >[!MORELIKETHIS]
 >
 >- [Blog: como aproveitar ao máximo seus dados: uma estrutura para usar campos derivados no Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/making-the-most-of-your-data-a-framework-for-using-derived/ba-p/601670?profile.language=pt)
->- [Blog: casos de uso de campos derivados no Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/derived-fields-use-cases-for-customer-journey-analytics/ba-p/601679?profile.language=pt)
->- [Blog: melhorias nos campos derivados do Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/adobe-customer-journey-analytics-derived-fields-enhancements/ba-p/697808?profile.language=pt)
+>- [Blog: casos de uso de campos derivados no Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/derived-fields-use-cases-for-customer-journey-analytics/ba-p/601679)
+>- [Blog: melhorias nos campos derivados do Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/adobe-customer-journey-analytics-derived-fields-enhancements/ba-p/697808)
 

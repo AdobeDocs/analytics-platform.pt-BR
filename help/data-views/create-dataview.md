@@ -5,29 +5,17 @@ exl-id: 02494ef6-cc32-43e8-84a4-6149e50b9d78
 solution: Customer Journey Analytics
 feature: Data Views
 role: Admin
+hold: true
 TQID: https://experienceleague.adobe.com/EXiKrWVfmMRgZ4GF0OR410Mr2-P5IEjPy3Hf0FmRDJ8
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
-  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: d9715c3da9893e1c47b702acb4daef5e666bedd7
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: cb6c7d24-631f-46e5-9e39-3a2705f73962id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c1579802-ddd4-4214-8a91-97b2066abe11id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: b342654b753f679f86750e43efbed1eb149e1b17
 workflow-type: tm+mt
-source-wordcount: 2959
-ht-degree: 93%
+source-wordcount: 3278
+ht-degree: 84%
 
 ---
 
@@ -38,7 +26,7 @@ A criação de uma visualização de dados envolve criar métricas e dimensões 
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Criar ou editar uma visualização de dados](https://experienceleague.adobe.com/pt-br/docs/customer-journey-analytics-learn/tutorials/data-views/overview-of-configuring-data-views-for-cja){target="_blank"} para assistir a um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Criar ou editar uma visualização de dados](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/data-views/overview-of-configuring-data-views-for-cja){target="_blank"} para assistir a um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 
@@ -63,11 +51,16 @@ Para configurar uma visualização de dados nova ou existente:
 
 ![Configurar visualização de dados B2B](assets/dataview-configure-b2b.png)
 
+>[!TAB Guia Contêineres separados]
+
+![Configurar exibição de dados com a guia de contêineres separada](assets/data-view-configure-containers.png)
+
+
 >[!ENDTABS]
 
 
 1. Selecione a guia **[!UICONTROL Configurar]** (se ainda não estiver ativa).
-1. Especifique os detalhes de [!UICONTROL configurações], [!UICONTROL container] e [!UICONTROL calendário] (veja abaixo).
+1. Especifique os detalhes de **[!UICONTROL configurações]**, **[!UICONTROL container]** e **[!UICONTROL calendário]** (veja abaixo).
 1. Selecione **[!UICONTROL Salvar e continuar]** para continuar configurando sua visualização de dados nova ou existente. Selecione **[!UICONTROL Salvar]** para salvar a configuração da visualização de dados existente.
 
 
@@ -116,15 +109,18 @@ Determina o nome dos containers para a visualização de dados. Os nomes dos con
 
 | Configuração | Descrição |
 | --- | --- |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Nome do container da conta global &#x200B;]** | `Global Account` (padrão). O container [!UICONTROL Conta global] inclui todas as sessões e eventos para contas globais no intervalo de tempo especificado. Se sua organização usa um termo diferente, é possível renomear o container aqui. |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Nome do container de conta &#x200B;]** | `Account` (padrão). O container [!UICONTROL Conta] inclui todas as sessões e eventos para contas no intervalo de tempo especificado. Se sua organização usa um termo diferente, é possível renomear o container aqui. |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Nome do container de oportunidade &#x200B;]** | `Opportunity` (padrão). O container [!UICONTROL Oportunidade] inclui todas as sessões e eventos para oportunidades no intervalo de tempo especificado. Se sua organização usa um termo diferente, é possível renomear o container aqui. |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Nome do container de grupo de compra &#x200B;]** | `Buying Group` (padrão). O container [!UICONTROL Grupo de compra] inclui todas as sessões e eventos para grupos de compra no intervalo de tempo especificado. Se sua organização usa um termo diferente, é possível renomear o container aqui. |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Nome do container da conta global ]** | `Global Account` (padrão). O container [!UICONTROL Conta global] inclui todas as sessões e eventos para contas globais no intervalo de tempo especificado. Se sua organização usa um termo diferente, é possível renomear o container aqui. |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Nome do container de conta ]** | `Account` (padrão). O container [!UICONTROL Conta] inclui todas as sessões e eventos para contas no intervalo de tempo especificado. Se sua organização usa um termo diferente, é possível renomear o container aqui. |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Nome do container de oportunidade ]** | `Opportunity` (padrão). O container [!UICONTROL Oportunidade] inclui todas as sessões e eventos para oportunidades no intervalo de tempo especificado. Se sua organização usa um termo diferente, é possível renomear o container aqui. |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Nome do container de grupo de compra ]** | `Buying Group` (padrão). O container [!UICONTROL Grupo de compra] inclui todas as sessões e eventos para grupos de compra no intervalo de tempo especificado. Se sua organização usa um termo diferente, é possível renomear o container aqui. |
 | **[!UICONTROL Nome do container de pessoas]** | `Person` (padrão). O container [!UICONTROL Pessoa] inclui todas as sessões e eventos de pessoas dentro do intervalo de tempo especificado. Se sua organização usar um termo diferente (por exemplo, &quot;Visitante&quot; ou &quot;Usuário&quot;), você poderá renomear o container aqui. |
 | **[!UICONTROL Nome do container da sessão]** | `Session` (padrão). O container [!UICONTROL Sessão] permite identificar as interações de página, campanhas ou conversões de uma sessão específica. Você pode renomear o container como &quot;Visita&quot; ou com qualquer outro termo que desejar. |
 | **[!UICONTROL Nome do container do evento]** | `Event` (padrão). O container [!UICONTROL Evento] define eventos individuais em um conjunto de dados. Se sua organização usar um termo diferente (por exemplo, &quot;Ocorrências&quot; ou &quot;Exibições de página&quot;), você poderá renomear o container aqui. |
 
 {style="table-layout:auto"}
+
+Quando você vir **[!UICONTROL Os contêineres foram movidos. Os contêineres agora estão disponíveis na guia Contêineres dedicada]**. Você pode definir contêineres em uma guia [Contêineres](#containers-1) separada.
+
 
 ### Configurações de IA
 
@@ -145,6 +141,77 @@ Indica o formato de calendário que a visualização de dados deve seguir. Você
 
 {style="table-layout:auto"}
 
+## Containers
+
+{{release-limited-testing-section}}
+
+
+>[!BEGINTABS]
+
+>[!TAB Padrão]
+
+![Configurar visualização de dados](assets/data-view-containers-b2c.png)
+
+>[!TAB B2B Edition]
+
+![Configurar visualização de dados B2B](assets/data-view-containers-b2b.png)
+
+>[!ENDTABS]
+
+Na guia **[!UICONTROL Contêineres]**, é possível renomear contêineres do sistema e adicionar contêineres personalizados.
+
+Você adiciona contêineres personalizados à sua visualização de dados para que possa usar esses contêineres para [análise de subevento](/help/components/segments/sub-event.md). Os contêineres personalizados podem ser definidos em:
+
+* objetos ou matrizes disponíveis nos conjuntos de dados que fazem parte da conexão. Por exemplo, **[!UICONTROL productListItems]**, **[!UICONTROL content_assets]** ou **[!UICONTROL placeContext.ativePOIs]**.
+* campos derivados que retornam uma matriz com o uso da função [Split](/help/data-views/derived-fields/derived-fields.md#split).
+* componentes de exibição de dados configurados para retornar uma matriz usando as configurações de componente [Substring](/help/data-views/component-settings/substring.md) com a opção [Delimitador](/help/data-views/component-settings/substring.md#delimiter).
+
+### Containers do sistema
+
+Para renomear contêineres do sistema:
+
+1. Selecione ![Editar](/help/assets/icons/Edit.svg) para editar o **[!UICONTROL Nome de exibição]** do contêiner.
+1. Defina um novo nome para o container.
+1. Selecione **[!UICONTROL Salvar]**.
+
+
+### Containers personalizados
+
+Para adicionar um contêiner personalizado:
+
+1. Selecione **[!UICONTROL Adicionar contêiner personalizado]**.
+1. No diálogo **[!UICONTROL Adicionar contêiner]**:
+   1. Selecione um contêiner no menu suspenso **[!UICONTROL Contêiner]**. Por exemplo: **[!UICONTROL productListItems.productCategories]**. Após a seleção, você verá valores atualizados para **[!UICONTROL Caminho do esquema]** e **[!UICONTROL Tipo de esquema]**.
+
+   1. Digite um **[!UICONTROL Nome de exibição]** para o contêiner. Por exemplo: `Product Categories`.
+   1. Selecione **[!UICONTROL Salvar]**.
+
+Para editar um contêiner personalizado:
+
+1. Selecione ![Mais](/help/assets/icons/More.svg) para o contêiner personalizado na coluna **[!UICONTROL Nome de exibição]**.
+1. Selecione ![Editar](/help/assets/icons/Edit.svg) **[!UICONTROL Editar]** no menu de contexto.
+1. Na caixa de diálogo **[!UICONTROL Editar container]**:
+   1. Modifique o **[!UICONTROL Contêiner]**, o **[!UICONTROL Nome de exibição]** ou ambos.
+   1. Selecione **[!UICONTROL Salvar]**.
+
+Para excluir um contêiner personalizado:
+
+1. Selecione ![Mais](/help/assets/icons/More.svg) para o contêiner personalizado na coluna Nome para exibição.
+1. Selecione ![Excluir](/help/assets/icons/Delete.svg) **[!UICONTROL Excluir]** no menu de contexto.
+
+   >[!NOTE]
+   >
+   >O container personalizado é excluído sem confirmação.
+   >
+
+Para alterar a lista de contêineres personalizados:
+
+1. Selecione ![ColumnSetting](/help/assets/icons/ColumnSetting.svg).
+1. Em **[!UICONTROL Personalizar tabela]**:
+   1. Selecione as colunas a serem exibidas.
+   1. Selecione **[!UICONTROL Salvar]**.
+
+
 ## Componentes
 
 Em seguida, você pode definir os componentes de uma visualização de dados, o que significa que é possível criar métricas e dimensões com base em elementos do esquema. Você também pode usar os componentes padrão.
@@ -157,13 +224,11 @@ Em seguida, você pode definir os componentes de uma visualização de dados, o 
 
    ![Guia Componentes](assets/dataview-components.png)
 
-   Você pode ver a [!UICONTROL Conexão] no canto superior esquerdo, que contém os conjuntos de dados, e seus [!UICONTROL Campos de esquema] abaixo.  Os componentes já incluídos são componentes padrão (gerados pelo sistema) necessários para todas as visualizações de dados (como métricas de eventos, pessoas e sessões e dimensões de minuto, trimestre e semana). A Adobe também aplica o filtro **[!UICONTROL Contém dados]** e **[!UICONTROL não foi descontinuado]** por padrão, para que só sejam exibidos campos de esquema que contenham dados e não tenham sido descontinuados.
+   Você pode ver a [!UICONTROL Conexão] no canto superior esquerdo, que contém os conjuntos de dados, e seus [!UICONTROL Campos de esquema] abaixo.  Os componentes já incluídos são componentes padrão (gerados pelo sistema) necessários para todas as visualizações de dados (como métricas de eventos, pessoas e sessões e dimensões de minuto, trimestre e semana).<ul><li>Quando você define c[contêineres personalizados](#containers-1), as métricas desses contêineres são automaticamente adicionadas e identificadas usando ![ShowAllLayer](/help/assets/icons/ShowAllLayer.svg) **[!UICONTROL _nome do contêiner personalizado _Ocorrências]**.</li><li>O filtro **[!UICONTROL não está obsoleto]** é aplicado por padrão, de modo que apenas os campos de Esquema aparecem que não estão obsoletos.</li></ul>
 
 1. Procure um campo de esquema por meio do ![Ícone de pesquisa](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) **[!UICONTROL Procurar campos de esquema]** ou localize um campo por meio de qualquer uma das coleções de conjunto de dados, como ![Pasta](/help/assets/icons/Folder.svg) **[!UICONTROL Conjuntos de dados de evento]** ou ![Pasta](/help/assets/icons/Folder.svg) **[!UICONTROL Conjuntos de dados de pesquisa]**. Para conjuntos de dados de eventos, estão disponíveis coleções separadas para ![Pasta](/help/assets/icons/Folder.svg) **[!UICONTROL campos XDM]** e ![Pasta](/help/assets/icons/Folder.svg) **[!UICONTROL campos relacionais e adhoc]**.<br/>Como alternativa, você pode criar um campo derivado usando o ![ícone de Dados](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) **Criar campo derivado**. Consulte [Campos derivados](./derived-fields/derived-fields.md) para obter mais informações.
 
-1. Quando você encontrar o campo de esquema específico ou definir o campo derivado, arraste esse campo, como o ![Ícone de alça](https://spectrum.adobe.com/static/icons/workflow_22/Smock_DragHandle_22_N.svg) **[!UICONTROL Nome da página]**, do painel esquerdo até a seção **[!UICONTROL Métricas]** ou **[!UICONTROL Dimensões]**, dentro de **[!UICONTROL Componentes inclusos]**.
-Você pode arrastar o mesmo campo de esquema nas seções de dimensões ou métricas várias vezes e configurar a mesma dimensão ou métrica de maneiras diferentes. Por exemplo, a partir do campo pageName, é possível criar uma dimensão chamada `Product Pages` e outra chamada `Error pages`, usando-se diferentes [Configurações de componentes](component-settings/overview.md) à direita.
-Se você arrastar uma pasta de campos de esquema a partir do painel esquerdo, os campos contidos na pasta serão ordenados automaticamente nas seções correspondentes. Os campos de string terminam na seção [!UICONTROL Dimensão] e os esquemas do tipo numérico terminam na seção [!UICONTROL Métricas]. Você também pode clicar em **[!UICONTROL Adicionar tudo]**, e todos os campos de esquema são adicionados a seus respectivos locais.
+1. Quando você encontrar o campo de esquema específico ou definir o campo derivado, arraste esse campo, como o ![Ícone de alça](https://spectrum.adobe.com/static/icons/workflow_22/Smock_DragHandle_22_N.svg) **[!UICONTROL Nome da página]**, do painel esquerdo até a seção **[!UICONTROL Métricas]** ou **[!UICONTROL Dimensões]**, dentro de **[!UICONTROL Componentes inclusos]**.Você pode arrastar o mesmo campo de esquema nas seções de dimensões ou métricas várias vezes e configurar a mesma dimensão ou métrica de maneiras diferentes. Por exemplo, a partir do campo pageName, é possível criar uma dimensão chamada `Product Pages` e outra chamada `Error pages`, usando-se diferentes [Configurações de componentes](component-settings/overview.md) à direita.Se você arrastar uma pasta de campos de esquema a partir do painel esquerdo, os campos contidos na pasta serão ordenados automaticamente nas seções correspondentes. Os campos de string terminam na seção [!UICONTROL Dimensão] e os esquemas do tipo numérico terminam na seção [!UICONTROL Métricas]. Você também pode clicar em **[!UICONTROL Adicionar tudo]**, e todos os campos de esquema são adicionados a seus respectivos locais.
 
 1. Ao selecionar um componente, as configurações são exibidas no lado direito.
 
