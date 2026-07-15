@@ -2,9 +2,9 @@
 user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Saiba mais sobre o Adobe Customer Journey Analytics e como usar o Analysis Workspace com dados da Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
-source-git-commit: 6b2b6fbf16c7aa7a7a31bb46ac63e4150bf2cfc8
+source-git-commit: 2b0562aa931f2909192929d9ccf2312f08c0d712
 workflow-type: tm+mt
-source-wordcount: '1452'
+source-wordcount: '1462'
 ht-degree: 92%
 
 ---
@@ -145,6 +145,12 @@ ht-degree: 92%
       + [Gerenciar](/help/connections/audience-analysis/audience-analysis-manage.md)
       + [Analisar](/help/connections/audience-analysis/analyze-audiences.md)
       + [Casos de uso](/help/connections/audience-analysis/audience-analysis-use-cases.md)
+   + Relatórios e filtragem de consentimento {#consent-reporting-filtering}
+      + [Visão geral](/help/connections/consent-reporting-filtering/consent-overview.md)
+      + [Configurar](/help/connections/consent-reporting-filtering/consent-configure.md)
+      + [Gerenciar](/help/connections/consent-reporting-filtering/consent-manage.md)
+      + [Analisar](/help/connections/consent-reporting-filtering/consent-analyze.md)
+      + [Casos de uso](/help/connections/consent-reporting-filtering/consent-use-cases.md)
 + Visualizações de dados {#cja-dataviews}
    + [Visão geral das exibições de dados](../data-views/data-views.md)
    + [Criar ou editar uma visualização de dados](../data-views/create-dataview.md)

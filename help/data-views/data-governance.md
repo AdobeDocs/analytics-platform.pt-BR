@@ -4,6 +4,7 @@ description: Saiba como as políticas e os rótulos de dados definidos na Adobe 
 exl-id: 1de5070f-a91c-4fe6-addb-a89d59a280b7
 feature: Data Views, Data Governance
 role: Admin
+hold: true
 autotag-review: '2026-05-19T08:59:31.818Z'
 TQID: 'https://experienceleague.adobe.com/SoIHLRSx90B4j8EkHWBVt3rVtt-968TN8ocWU2zuYN4'
 product_v2:
@@ -22,22 +23,27 @@ topic_v2:
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+source-git-commit: 1254207526535e44c848dfeed0052339fbd8d65d
 workflow-type: tm+mt
-source-wordcount: 622
-ht-degree: 99%
+source-wordcount: 745
+ht-degree: 66%
 
 ---
 
-# Rótulos e políticas
+# Rótulos, políticas e ações de marketing
 
 Ao criar um conjunto de dados na Experience Platform, é possível criar [rótulos de uso de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/data-governance/labels/reference) para alguns ou todos os elementos no conjunto de dados. É possível visualizar esses rótulos e políticas no Customer Journey Analytics.
 
-Os rótulos seguintes são de especial interesse para o Customer Journey Analytics:
+Os seguintes rótulos e ações de marketing são de especial interesse para o Customer Journey Analytics:
 
-* O rótulo `C8` - **[!UICONTROL Sem medição]**. Esse rótulo significa que os dados não podem ser usados para análise nos sites ou aplicativos da sua organização.
 
-* O rótulo `C12`: **[!UICONTROL sem exportação de dados gerais]**. Os campos de esquema rotulados dessa maneira não podem ser exportados nem baixados do Customer Journey Analytics (por meio de relatórios, exportação, API etc.)
+| Rótulo | Ação de marketing | Definição |
+|---------|----------|---------|
+| `C2` | [!UICONTROL Exportar para terceiros] | O rótulo e a ação de marketing associada significam que os dados não podem ser exportados para terceiros se a política DULE correspondente estiver habilitada. |
+| `C3` | [!UICONTROL Combinar com dados diretamente identificáveis] | O rótulo e a ação de marketing associada significam que os dados não podem ser combinados ou usados com informações diretamente identificáveis, se a política DULE correspondente estiver habilitada. |
+| `C8` | [!UICONTROL Analytics] | O rótulo e a ação de marketing associada significam que os dados não podem ser usados para análises nos sites ou aplicativos de sua organização, se a política DULE correspondente estiver habilitada. |
+| `C9` | [!UICONTROL Ciência de dados] | O rótulo e a ação de marketing associada significam que os dados não podem ser usados em workflows de ciência de dados, se a política DULE correspondente estiver habilitada. |
+| `C12` | [!UICONTROL Exportação de dados] | O rótulo e a ação de marketing associada significam que os campos de esquema rotulados dessa maneira não podem ser exportados ou baixados do Customer Journey Analytics (por meio de relatórios, exportação, API e assim por diante), se a política DULE correspondente estiver habilitada. |
 
 >[!NOTE]
 >
@@ -45,10 +51,17 @@ Os rótulos seguintes são de especial interesse para o Customer Journey Analyti
 
 A rotulação por si só não significa que esses rótulos de uso de dados serão aplicados. É para isso que as políticas são usadas. Você pode criar suas políticas usando a [Interface da Experience Platform](https://experienceleague.adobe.com/pt-br/docs/experience-platform/data-governance/policies/user-guide) ou por meio da [API do serviço de política](https://experienceleague.adobe.com/pt-br/docs/experience-platform/data-governance/api/overview) na Experience Platform.
 
-Duas políticas definidas pela Adobe estão disponíveis na Experience Platform que podem ser exibidas no Customer Journey Analytics e afetar relatórios e exportação de dados:
+Cinco políticas definidas pela Adobe estão disponíveis no Experience Platform que podem aparecer no Customer Journey Analytics e afetar a geração de relatórios e a exportação de dados:
 
-* Política de **[!UICONTROL Restrição de análise de uso e medição baseada no usuário]** usando o rótulo `C8` e
-* política de **[!UICONTROL Restrição de exportação de dados]** usando o rótulo `C12`.
+
+| Política | Rótulo |
+|---------|----------|
+| [!UICONTROL Restringir exportação de dados de terceiros] | `C2` |
+| [!UICONTROL Restringir a combinação de dados diretamente identificáveis] | `C3` |
+| [!UICONTROL Restringir análise de uso e medição baseada em usuário] | `C8` |
+| [!UICONTROL Restringir ciência de dados] | `C9` |
+| [!UICONTROL Restringir exportação de dados] | `C12` |
+
 
 ## Exibir rótulos de dados em visualizações de dados do Customer Journey Analytics
 
@@ -82,7 +95,7 @@ Clique em **[!UICONTROL Aplicar]** para ver quais políticas estão habilitada
 
 ## Como as políticas habilitadas afetam as visualizações de dados
 
-Se uma ou mais políticas estiverem ativadas com rótulos C8 ou C12, os componentes do esquema que têm determinados rótulos de dados aplicados não poderão ser adicionados às visualizações de dados.
+Se uma ou mais políticas forem ativadas com rótulos C1, C2, C3, C8, C9 ou C12, os componentes do esquema que têm determinados rótulos de dados aplicados não poderão ser adicionados às visualizações de dados.
 
 Esses componentes ficam esmaecidos na lista [!UICONTROL Campos do esquema] no painel esquerdo:
 
