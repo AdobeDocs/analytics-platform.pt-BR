@@ -4,7 +4,6 @@ title: Configurações de linha
 feature: Visualizations
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
 role: User
-hold: true
 TQID: https://experienceleague.adobe.com/qQKmobJ4J1RPezRG-hk38l7JNioIshzjMaKXWVoUWsM
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
@@ -17,10 +16,10 @@ subfeature_v2:
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 8a63b9948d58c4057db7fa74b36e9d0e0210f946
+source-git-commit: 28959f1ea858dee686e6d13025621c4a6164c319
 workflow-type: tm+mt
-source-wordcount: 1596
-ht-degree: 56%
+source-wordcount: 1602
+ht-degree: 55%
 
 ---
 
@@ -90,9 +89,9 @@ As opções adicionais de menu de contexto a seguir estão disponíveis ao selec
 | **[!UICONTROL Seleção de tendências]** | Cria uma visualização de gráfico de linhas de tendência para a seleção. |
 | **[!UICONTROL Exibir somente as linhas selecionadas]** | Exibe somente as linhas selecionadas na visualização. |
 | **[!UICONTROL Exibir todas as linhas]** | Exibe todas as linhas na visualização. |
-| **[!UICONTROL Renomear linha selecionada]** | Renomeie a linha selecionada. Insira um **[!UICONTROL Nome]** na caixa de diálogo **[!UICONTROL Renomear linha selecionada]**. Selecione **[!UICONTROL OK]** para confirmar ou **[!UICONTROL Cancelar]** para cancelar. Depois que uma linha em uma tabela de forma livre é renomeada, o nome da dimensão na coluna de cabeçalho é anexado com **[!UICONTROL (modificado)]** e um ícone de ![engrenagem](/help/assets/icons/Gear.svg) está disponível para redefinir linhas renomeadas na coluna de cabeçalho de dimensão. Consulte [Exemplo de classificação embutida](#inline-classifications-example). |
-| **[!UICONTROL Combinar linhas selecionadas]** | Combinar as linhas selecionadas. Insira um **[!UICONTROL Nome]** na caixa de diálogo **[!UICONTROL Combinar linhas selecionadas]**. Selecione **[!UICONTROL OK]** para confirmar ou **[!UICONTROL Cancelar]** para cancelar. Uma vez que as linhas em uma tabela de forma livre são combinadas, o nome da dimensão na coluna de cabeçalho é anexado com **[!UICONTROL (modificado)]** e um ícone de ![engrenagem](/help/assets/icons/Gear.svg) está disponível para redefinir linhas renomeadas na coluna de cabeçalho de dimensão. Consulte [Exemplo de classificação embutida](#inline-classifications-example). |
-| **[!UICONTROL Criar como campo derivado]** | *Você deve ser um administrador de produto do Customer Journey Analytics para ver esta opção do menu de contexto.*<br/> Disponível em qualquer linha selecionada de uma tabela de forma livre que é modificada como resultado da renomeação ou combinação de linhas. Quando selecionada, a [Interface de campo derivada](/help/data-views/derived-fields/derived-fields.md#create-a-derived-field) é aberta com as modificações feitas na tabela de forma livre já preenchidas previamente. Consulte [Exemplo de classificação embutida](#inline-classifications-example). |
+| **[!UICONTROL Renomear linha selecionada]** | *Disponibilidade de Teste Limitada*<br/> Renomeie a linha selecionada. Insira um **[!UICONTROL Nome]** na caixa de diálogo **[!UICONTROL Renomear linha selecionada]**. Selecione **[!UICONTROL OK]** para confirmar ou **[!UICONTROL Cancelar]** para cancelar. Depois que uma linha em uma tabela de forma livre é renomeada, o nome da dimensão na coluna de cabeçalho é anexado com **[!UICONTROL (modificado)]** e um ícone de ![engrenagem](/help/assets/icons/Gear.svg) está disponível para redefinir linhas renomeadas na coluna de cabeçalho de dimensão. Consulte [Exemplo de classificação embutida](#inline-classifications-example). |
+| **[!UICONTROL Combinar linhas selecionadas]** | *Disponibilidade de Teste Limitada*<br/> Combine as linhas selecionadas. Insira um **[!UICONTROL Nome]** na caixa de diálogo **[!UICONTROL Combinar linhas selecionadas]**. Selecione **[!UICONTROL OK]** para confirmar ou **[!UICONTROL Cancelar]** para cancelar. Uma vez que as linhas em uma tabela de forma livre são combinadas, o nome da dimensão na coluna de cabeçalho é anexado com **[!UICONTROL (modificado)]** e um ícone de ![engrenagem](/help/assets/icons/Gear.svg) está disponível para redefinir linhas renomeadas na coluna de cabeçalho de dimensão. Consulte [Exemplo de classificação embutida](#inline-classifications-example). |
+| **[!UICONTROL Criar como campo derivado]** | *Disponibilidade limitada de testes *<br/>*É necessário ser administrador de produto da Customer Journey Analytics para ver esta opção do menu de contexto.*<br/> Disponível em qualquer linha selecionada de uma tabela de forma livre que é modificada como resultado da renomeação ou combinação de linhas. Quando selecionada, a [Interface de campo derivada](/help/data-views/derived-fields/derived-fields.md#create-a-derived-field) é aberta com as modificações feitas na tabela de forma livre já preenchidas previamente. Consulte [Exemplo de classificação embutida](#inline-classifications-example). |
 | **[!UICONTROL Criar anotação a partir da seleção]** | Abra o [Construtor de anotações](/help/components/annotations/create-annotations.md#annotation-builder) para criar uma anotação para a seleção. |
 | **[!UICONTROL Criar segmento a partir da seleção]** | Abra o [Construtor de segmentos](/help/components/segments/seg-builder.md) para criar um segmento a partir da seleção. |
 | **[!UICONTROL Criar público-alvo a partir da seleção]** | Abra o [Construtor de público-alvo](/help/components/audiences/publish.md#audience-builder) para criar um público a partir da seleção. |
@@ -118,6 +117,8 @@ Você pode definir a [densidade da exibição](https://experienceleague.adobe.co
 
 
 ## Exemplo de classificações embutidas
+
+{{release-limited-testing-section}}
 
 Este exemplo ilustra como usar as opções de menu de contexto **[!UICONTROL Renomear linha selecionada]**, **[!UICONTROL Combinar linhas selecionadas]** e **[!UICONTROL Criar como campo derivado]**. E como redefinir a tabela de forma livre modificada.
 

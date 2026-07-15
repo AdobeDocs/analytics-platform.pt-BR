@@ -20,10 +20,10 @@ role_v2:
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 11156e1f2db094595cc3333ccb0b896037da4715
+source-git-commit: 8f55bd26df5d06a459b275beb9c92669e15b2fd0
 workflow-type: tm+mt
-source-wordcount: 1178
-ht-degree: 25%
+source-wordcount: 1203
+ht-degree: 20%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 25%
 
 A compilação de conta B2B enriquece seus conjuntos de dados de evento com informações de conta e permite a análise completa da jornada completa do cliente no Customer Journey Analytics. Quando os eventos não têm uma ID de conta, que o Customer Journey Analytics B2B edition exige para assimilação, a compilação de conta deriva e adiciona essas informações automaticamente usando um [conjunto de dados de mapeamento de pessoa para conta](#prerequisites) fornecido por você.
 
-Sem a compilação de conta, qualquer evento que não contenha uma ID de conta será descartado durante a assimilação. A compilação de conta elimina essa barreira ao pesquisar a conta associada à pessoa em cada evento, adicionando a ID da conta à medida que o evento é assimilado e retroativamente.
+Sem a compilação de conta, qualquer evento que não contenha uma ID de conta será descartado durante a assimilação. A compilação de contas resolve essa limitação procurando a conta associada à pessoa em cada evento, adicionando a ID da conta à medida que o evento é assimilado e retroativamente.
 
 >[!NOTE]
 >
@@ -68,12 +68,12 @@ Você ativa e configura a compilação de conta B2B no nível da conexão e, em 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_person_identifier_namespace"
 >title="Namespace do identificador de pessoa"
->abstract="Selecione um namespace de identificador de pessoa, por exemplo, email, para o qual você deseja elevar qualquer ID de pessoa."
+>abstract="Selecione o namespace de identidade da pessoa mais relevante para seu relatório. Por exemplo, Email."
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_person_to_account_dataset"
 >title="Conjunto de dados de pessoa para conta"
->abstract="Selecione o conjunto de dados de pesquisa que mapeia IDs de pessoas para IDs de contas."
+>abstract="Selecione o campo no conjunto de dados que contém IDs de pessoa. O namespace desse campo pode ser diferente ou igual ao namespace do identificador de pessoa selecionado (configuração de compilação B2B). Se os dois namespaces forem diferentes, vincule os namespaces no Gráfico de identidade."
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_person"
@@ -83,14 +83,12 @@ Você ativa e configura a compilação de conta B2B no nível da conexão e, em 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_account"
 >title="Conta"
->abstract="Selecione o campo no conjunto de dados que contém a ID da conta. Este campo não pode ser igual ao campo **[!UICONTROL Pessoa]** ou ao campo **[!UICONTROL Hora de início]**."
+>abstract="Selecione o campo no conjunto de dados que contém os valores do identificador de conta exclusivo. As informações da ID da conta serão disponibilizadas nas linhas de qualquer conjunto de dados de evento com a compilação ativada."
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_start_time"
 >title="Hora de início"
 >abstract="Selecione um campo de carimbo de data e hora que indique quando o relacionamento entre pessoa e conta se tornou ativo."
->additional-url=""
->additional-url=""
 
 
 1. No Customer Journey Analytics, navegue até **[!UICONTROL Conexões]** e [crie uma nova conexão](/help/connections/create-connection.md#create-a-connection) ou [edite uma conexão existente](/help/connections/create-connection.md#edit-a-connection).
@@ -138,8 +136,6 @@ Você ativa e configura a compilação de conta B2B no nível da conexão e, em 
 >id="connection_b2b_stitching_enable_person_to_account"
 >title="Habilitar compilação entre pessoa e conta"
 >abstract="Se habilitado, esse conjunto de dados usa a compilação de conta B2B. Selecione uma **[!UICONTROL ID de pessoa]** necessária para pesquisar a ID da conta com base no conjunto de dados de pessoa para conta.<br/>Se desabilitado, este conjunto de dados *não* usa a compilação de contas B2B e você precisa selecionar uma **[!UICONTROL ID de conta]** necessária."
->additional-url=""
->additional-url=""
 
 
 Depois de configurar a compilação B2B no nível da conexão, você deve ativar a compilação de conta B2B individualmente para cada conjunto de dados de evento que você deseja compilar.
@@ -180,7 +176,7 @@ Depois de definir a configuração de compilação B2B e terminar de adicionar o
 
 >[!IMPORTANT]
 >
->Depois que uma conexão é salva, a configuração de compilação B2B se torna imutável. Para exibir suas configurações depois de salvar, selecione **Abrir configuração de compilação B2B**. Todos os campos serão mostrados em um estado somente leitura. Além disso, se o conjunto de dados usado para [mapeamento de pessoa para conta](#prerequisites) for excluído no Experience Platform, essa conexão será excluída.
+>Depois que uma conexão é salva, a configuração de compilação B2B se torna imutável. Para exibir suas configurações depois de salvar, selecione **Abrir configuração de compilação B2B**. Todos os campos aparecem em um estado somente leitura. Além disso, se o conjunto de dados usado para [mapeamento de pessoa para conta](#prerequisites) for excluído no Experience Platform, essa conexão será excluída.
 
 ## Agendamento de atualização de dados
 
@@ -195,7 +191,7 @@ A compilação de conta deriva o mapa de identidade do seu [conjunto de dados de
 
 A compilação de conta atende às solicitações padrão de privacidade e higiene para identidades de pessoas, de acordo com o comportamento de compilação B2C. Se uma ID de pessoa for removida posteriormente por meio de uma solicitação de Privacidade ou Higiene, a compilação associada executada usando o gráfico de identidade será revertida.
 
-Entidades B2B, como contas, IDs de conta e IDs de conta globais que são adicionadas aos eventos por meio da compilação, não são removidas como parte das solicitações de privacidade ou higiene. Esses valores não contêm informações de identificação pessoal, portanto, não há obrigação legal de remover esses valores.
+Entidades B2B, como contas, IDs de conta e IDs de conta global adicionadas aos eventos por meio da compilação, não são removidas durante solicitações de privacidade ou higiene. Esses valores não contêm informações de identificação pessoal, portanto, não há obrigação legal de remover esses valores.
 
 >[!MORELIKETHIS]
 >
