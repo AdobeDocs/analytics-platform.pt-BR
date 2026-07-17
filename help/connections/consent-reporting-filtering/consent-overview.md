@@ -5,23 +5,14 @@ solution: Customer Journey Analytics
 feature: Privacy
 role: Admin
 hold: true
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
-  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
-subfeature_v2:
-  - id: ffe2fd81-0630-49b3-a33b-4b8899e89c51
-  - id: d3fb138f-79e4-4a81-aedb-76dd93560085
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: eafeab50e86b3e98f372c70a0fd43494015ca002
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: eb00932f-4d46-46bc-b1d8-10de7588db8did: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+subfeature_v2: id: ffe2fd81-0630-49b3-a33b-4b8899e89c51id: d3fb138f-79e4-4a81-aedb-76dd93560085
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 91cd8d3d5c290f52e4ae15713693be1fc83baa92
 workflow-type: tm+mt
-source-wordcount: 990
+source-wordcount: 1058
 ht-degree: 2%
 
 ---
@@ -29,6 +20,15 @@ ht-degree: 2%
 # Visão geral do relatório e da filtragem de consentimento
 
 O relatório e a filtragem de consentimento usam os dados de associação à política de consentimento armazenados em seus conjuntos de dados de perfil do Adobe Experience Platform para ajudar você a relatar o consentimento do visitante e, opcionalmente, excluir visitantes que não consentiram antes que seus dados sejam assimilados na Customer Journey Analytics.
+
+## Pré-requisitos
+
+Antes de configurar o relatório de consentimento e a filtragem, verifique se:
+
+* Sua organização licenciou o Adobe Healthcare Shield ou o Privacy &amp; Security Shield.
+* Você tem permissões de administrador do sistema no Customer Journey Analytics.
+* A sandbox que você deseja usar contém um conjunto de dados de Perfil com dados de associação de política de consentimento no campo `consentPoliciesIDMap`.
+* A conexão que você deseja configurar já existe. Para obter mais informações, consulte [Criar ou editar uma conexão](/help/connections/create-connection.md).
 
 O diagrama a seguir e a tabela associada mostram uma representação de alto nível de como o relatório e a filtragem de consentimento disponibilizam os dados de política de consentimento no Analysis Workspace e filtram os dados do visitante no momento da assimilação:
 
