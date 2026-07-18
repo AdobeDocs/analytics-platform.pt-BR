@@ -17,9 +17,9 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-source-git-commit: eafeab50e86b3e98f372c70a0fd43494015ca002
+source-git-commit: 91cd8d3d5c290f52e4ae15713693be1fc83baa92
 workflow-type: tm+mt
-source-wordcount: 385
+source-wordcount: 388
 ht-degree: 2%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 2%
 
 Você pode assimilar dados de política de consentimento de conjuntos de dados de perfil da Experience Platform em uma conexão do Customer Journey Analytics.
 
-Depois de [criar um relatório de consentimento e uma configuração de filtragem](/help/connections/consent-reporting-filtering/consent-configure.md), os dados da política de consentimento ficam disponíveis como novos componentes nas visualizações de dados na conexão configurada. Você pode usar esses componentes em qualquer lugar no Analysis Workspace se tiver acesso a uma visualização de dados em que eles existem.
+Depois de [criar um relatório de consentimento e uma configuração de filtragem](/help/connections/consent-reporting-filtering/consent-configure.md) e habilitar os relatórios, os dados da política de consentimento ficam disponíveis como novos componentes nas exibições de dados na conexão configurada. Você pode usar esses componentes em qualquer lugar no Analysis Workspace se tiver acesso a uma visualização de dados em que eles existem.
 
 ## Componentes da política de consentimento
 

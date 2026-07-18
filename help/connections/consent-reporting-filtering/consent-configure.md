@@ -18,9 +18,9 @@ role_v2:
 topic_v2:
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: eafeab50e86b3e98f372c70a0fd43494015ca002
+source-git-commit: 91cd8d3d5c290f52e4ae15713693be1fc83baa92
 workflow-type: tm+mt
-source-wordcount: 759
+source-wordcount: 728
 ht-degree: 2%
 
 ---
@@ -32,14 +32,6 @@ Os administradores do sistema podem ativar o relatório de consentimento e, opci
 >[!IMPORTANT]
 >
 >A filtragem por consentimento exclui dados de visitantes que não consentiram no momento da assimilação. Os dados excluídos pela filtragem não são armazenados no Customer Journey Analytics e não podem ser recuperados por datas anteriores. Analise suas seleções de ação de marketing com cuidado antes de habilitar a filtragem.
-
-## Pré-requisitos
-
-Antes de configurar o relatório de consentimento e a filtragem, verifique se:
-
-* Você tem permissões de administrador do sistema no Customer Journey Analytics.
-* A sandbox que você deseja usar contém um conjunto de dados de Perfil com dados de associação de política de consentimento no campo `consentPoliciesIDMap`.
-* A conexão que você deseja configurar já existe. Para obter mais informações, consulte [Criar ou editar uma conexão](/help/connections/create-connection.md).
 
 ## Criar uma configuração
 
@@ -58,17 +50,21 @@ Para criar um relatório de consentimento e uma configuração de filtragem:
    | **[!UICONTROL Nome]** | Especifique um nome para a configuração. |
    | **[!UICONTROL Sandbox]** | Selecione a sandbox da Experience Platform que contém o conjunto de dados Perfil com os dados de associação da política de consentimento. <p>Existe um máximo de um conjunto de dados de pesquisa de política de consentimento por sandbox. Várias configurações no mesmo sandbox compartilham o mesmo conjunto de dados de pesquisa.</p> |
 
-1. Na seção **[!UICONTROL Conjunto de dados de perfil]**, selecione o conjunto de dados de perfil que contém os dados de associação à política de consentimento (o campo `consentPoliciesIDMap`) sobre o qual você deseja criar relatórios. Esse conjunto de dados de Perfil é adicionado à conexão selecionada.
+1. Na seção **[!UICONTROL Conjunto de dados de perfil]**, selecione o conjunto de dados de perfil que contém os dados de associação à política de consentimento (o campo `consentPoliciesIDMap`) sobre o qual você deseja criar relatórios. Ao habilitar o relatório de consentimento, esse conjunto de dados de Perfil é adicionado à conexão selecionada se ainda não fizer parte dele.
 
 1. Na seção **[!UICONTROL Conexão]**, selecione **[!UICONTROL Selecionar uma conexão]**, marque a caixa de seleção ao lado de uma ou mais conexões a serem configuradas e selecione **[!UICONTROL Usar conexão]**.
 
    O relatório e a filtragem de consentimento são aplicados no nível da conexão. Todas as visualizações de dados em uma conexão configurada herdam o mesmo comportamento.
 
+1. Na seção **[!UICONTROL Visualizações de dados]**, clique em **[!UICONTROL Selecionar visualizações de dados]**.
+
+1. Na caixa de diálogo Visualizações de dados, marque a caixa de seleção ao lado de uma ou mais visualizações de dados que você deseja usar para o relatório de consentimento. Essas visualizações de dados são configuradas automaticamente com dados de consentimento do Experience Platform para a geração de relatórios.
+
+1. Selecione **[!UICONTROL Usar visualizações de dados]**.
+
 1. (Opcional) Na seção **[!UICONTROL Filtragem]**, você pode habilitar a filtragem para as seguintes ações de marketing:
 
    >[!NOTE]
-   >
-   >Deixe ambos os botões desmarcados para ativar o relatório de consentimento sem filtragem.
    >
    >Quando a filtragem de uma ação de marketing está habilitada, o Customer Journey Analytics assimila os dados de um visitante somente se ele corresponder às **todas** políticas de consentimento que se aplicam a essa ação de marketing. Para obter mais informações, consulte [Filtragem de consentimento](/help/connections/consent-reporting-filtering/consent-overview.md#consent-filtering) em [Visão geral do relatório e da filtragem de consentimento](/help/connections/consent-reporting-filtering/consent-overview.md).
 
@@ -79,12 +75,11 @@ Para criar um relatório de consentimento e uma configuração de filtragem:
 
 1. Selecione **[!UICONTROL Criar]** para criar a configuração.
 
-   Customer Journey Analytics automaticamente:
+   Se você ativou os relatórios, o Customer Journey Analytics automaticamente:
 
    * Adiciona o conjunto de dados do Perfil selecionado à conexão.
    * Cria um conjunto de dados de pesquisa de política de consentimento para a sandbox (se ainda não existir uma) e sincroniza nomes e descrições de política da Experience Platform.
    * Adiciona os componentes da política de consentimento (dimensões, métricas e um campo derivado) às visualizações de dados na conexão configurada.
-   * Aplica o rótulo interno **consent** aos novos componentes para que você possa filtrá-los na exibição de dados. Para obter mais informações sobre rótulos internos, consulte [Rótulos e políticas](/help/data-views/data-governance.md).
 
 1. Depois que a configuração for concluída, [exiba os componentes da política de consentimento na exibição de dados](#view-consent-policy-components-in-the-data-view) para verificar se eles estão disponíveis.
 

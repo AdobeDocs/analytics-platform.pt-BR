@@ -19,9 +19,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: eafeab50e86b3e98f372c70a0fd43494015ca002
+source-git-commit: 91cd8d3d5c290f52e4ae15713693be1fc83baa92
 workflow-type: tm+mt
-source-wordcount: 990
+source-wordcount: 1058
 ht-degree: 2%
 
 ---
@@ -29,6 +29,15 @@ ht-degree: 2%
 # Visão geral do relatório e da filtragem de consentimento
 
 O relatório e a filtragem de consentimento usam os dados de associação à política de consentimento armazenados em seus conjuntos de dados de perfil do Adobe Experience Platform para ajudar você a relatar o consentimento do visitante e, opcionalmente, excluir visitantes que não consentiram antes que seus dados sejam assimilados na Customer Journey Analytics.
+
+## Pré-requisitos
+
+Antes de configurar o relatório de consentimento e a filtragem, verifique se:
+
+* Sua organização licenciou o Adobe Healthcare Shield ou o Privacy &amp; Security Shield.
+* Você tem permissões de administrador do sistema no Customer Journey Analytics.
+* A sandbox que você deseja usar contém um conjunto de dados de Perfil com dados de associação de política de consentimento no campo `consentPoliciesIDMap`.
+* A conexão que você deseja configurar já existe. Para obter mais informações, consulte [Criar ou editar uma conexão](/help/connections/create-connection.md).
 
 O diagrama a seguir e a tabela associada mostram uma representação de alto nível de como o relatório e a filtragem de consentimento disponibilizam os dados de política de consentimento no Analysis Workspace e filtram os dados do visitante no momento da assimilação:
 
