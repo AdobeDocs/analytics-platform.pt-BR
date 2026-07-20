@@ -5,20 +5,13 @@ feature: Visualizations
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
 role: User
 TQID: https://experienceleague.adobe.com/qQKmobJ4J1RPezRG-hk38l7JNioIshzjMaKXWVoUWsM
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: c2d922af3eaf86e487e6c2a5318c7693f1be3dcc
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: cb6c7d24-631f-46e5-9e39-3a2705f73962id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: f51766fdcb891b8cea93ea047b011792dc3c0ae6
 workflow-type: tm+mt
-source-wordcount: 1626
+source-wordcount: 1628
 ht-degree: 55%
 
 ---
@@ -37,7 +30,7 @@ As configurações de linha variam de acordo com qual componente foi arrastado p
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Configurações de linha e coluna em uma tabela de forma livre](https://experienceleague.adobe.com/pt-br/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/row-and-column-settings-in-freeform-tables){target="_blank"} para assistir a um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Configurações de linha e coluna em uma tabela de forma livre](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/row-and-column-settings-in-freeform-tables){target="_blank"} para assistir a um vídeo de demonstração.
 
 {{videoaa}}
 
@@ -113,14 +106,14 @@ As opções adicionais de menu de contexto a seguir estão disponíveis ao selec
 
 ## Modificar altura da linha
 
-Você pode definir a [densidade da exibição](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density) de um projeto como **[!UICONTROL Compacto]**, **[!UICONTROL Confortável]** e **[!UICONTROL Expandido]**.
+Você pode definir a [densidade da exibição](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density) de um projeto como **[!UICONTROL Compacto]**, **[!UICONTROL Confortável]** e **[!UICONTROL Expandido]**.
 
 
 ## Classificações em linha
 
 As classificações em linha permitem renomear ou combinar linhas em uma tabela de forma livre. E para criar um campo derivado das linhas modificadas em uma tabela.
 
-O exemplo abaixo ilustra como usar as opções de menu de contexto **[!UICONTROL Renomear linha selecionada]**, **[!UICONTROL Combinar linhas selecionadas]** e **[!UICONTROL Criar como campo derivado]**. E como redefinir a tabela de forma livre modificada.
+O exemplo abaixo ilustra como usar as opções de menu de contexto **[!UICONTROL Renomear linha selecionada]**, **[!UICONTROL Combinar linhas selecionadas]** e **[!UICONTROL Criar linhas modificadas como campo derivado]**. E como redefinir a tabela de forma livre modificada.
 
 * Renomeie a linha **[!UICONTROL Nenhum valor]** para **[!UICONTROL Outros]**.
 
