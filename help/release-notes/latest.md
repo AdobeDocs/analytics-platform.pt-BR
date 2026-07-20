@@ -27,10 +27,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 4dd845eaf5f101e21a8e754ac588cb837398b975
+source-git-commit: 587265d7613f732af811a77a947b0ce96ccad9bf
 workflow-type: tm+mt
-source-wordcount: 666
-ht-degree: 41%
+source-wordcount: 696
+ht-degree: 39%
 
 ---
 
@@ -49,6 +49,7 @@ Essas notas de versão abrangem o período de julho de 2026. As versões do Adob
 | **Content Analytics: dados de mídia paga** <br/>A mídia paga agora está disponível como um terceiro canal para o Content Analytics.<p>(Link para a documentação a seguir).</p> | | 31 de julho de 2026 |
 | **Atualização da interface de Uso de Conexões** <br/>Na interface de Uso ao gerenciar conexões, você pode ver os detalhes de uso de cada módulo individual, como o Customer Journey Analytics ou o Customer Journey Analytics B2B edition. <p>Além disso, agora é possível detalhar os relatórios de uso de cada um dos módulos por mês.</p><p>(Link para a documentação a seguir).</p> | | 31 de julho de 2026 |
 | **CX Enterprise Co-worker: valide seus dados ao migrar do Adobe Analytics para o Customer Journey Analytics** <br/>Uma nova habilidade no CX Enterprise Co-worker permite validar os dados da implementação do Customer Journey Analytics em relação aos dados da implementação existente do Adobe Analytics. <p>Essa habilidade compara automaticamente cada dimensão, métrica e tendência individualmente, conforme necessário. Ele também pode comparar todos os conjuntos de relatórios do Adobe Analytics com todas as visualizações de dados do Customer Journey Analytics. A habilidade gera insights e recomendações orientados por IA que você pode implementar para facilitar a migração para o Customer Journey Analytics.</p><p>(Link para a documentação a seguir).</p> | | Final de julho de 2026 |
+| **As classificações embutidas**<br/>[&#x200B; as classificações embutidas](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md#inline-classifications) permitem renomear ou combinar linhas em uma tabela de forma livre. E para criar um campo derivado das linhas modificadas em uma tabela. | | 20 de julho de 2026 |
 
 ### Correções no Customer Journey Analytics
 

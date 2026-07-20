@@ -16,9 +16,9 @@ subfeature_v2:
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 28959f1ea858dee686e6d13025621c4a6164c319
+source-git-commit: f51766fdcb891b8cea93ea047b011792dc3c0ae6
 workflow-type: tm+mt
-source-wordcount: 1602
+source-wordcount: 1628
 ht-degree: 55%
 
 ---
@@ -89,9 +89,9 @@ As opções adicionais de menu de contexto a seguir estão disponíveis ao selec
 | **[!UICONTROL Seleção de tendências]** | Cria uma visualização de gráfico de linhas de tendência para a seleção. |
 | **[!UICONTROL Exibir somente as linhas selecionadas]** | Exibe somente as linhas selecionadas na visualização. |
 | **[!UICONTROL Exibir todas as linhas]** | Exibe todas as linhas na visualização. |
-| **[!UICONTROL Renomear linha selecionada]** | *Disponibilidade de Teste Limitada*<br/> Renomeie a linha selecionada. Insira um **[!UICONTROL Nome]** na caixa de diálogo **[!UICONTROL Renomear linha selecionada]**. Selecione **[!UICONTROL OK]** para confirmar ou **[!UICONTROL Cancelar]** para cancelar. Depois que uma linha em uma tabela de forma livre é renomeada, o nome da dimensão na coluna de cabeçalho é anexado com **[!UICONTROL (modificado)]** e um ícone de ![engrenagem](/help/assets/icons/Gear.svg) está disponível para redefinir linhas renomeadas na coluna de cabeçalho de dimensão. Consulte [Exemplo de classificação embutida](#inline-classifications-example). |
-| **[!UICONTROL Combinar linhas selecionadas]** | *Disponibilidade de Teste Limitada*<br/> Combine as linhas selecionadas. Insira um **[!UICONTROL Nome]** na caixa de diálogo **[!UICONTROL Combinar linhas selecionadas]**. Selecione **[!UICONTROL OK]** para confirmar ou **[!UICONTROL Cancelar]** para cancelar. Uma vez que as linhas em uma tabela de forma livre são combinadas, o nome da dimensão na coluna de cabeçalho é anexado com **[!UICONTROL (modificado)]** e um ícone de ![engrenagem](/help/assets/icons/Gear.svg) está disponível para redefinir linhas renomeadas na coluna de cabeçalho de dimensão. Consulte [Exemplo de classificação embutida](#inline-classifications-example). |
-| **[!UICONTROL Criar como campo derivado]** | *Disponibilidade limitada de testes *<br/>*É necessário ser administrador de produto da Customer Journey Analytics para ver esta opção do menu de contexto.*<br/> Disponível em qualquer linha selecionada de uma tabela de forma livre que é modificada como resultado da renomeação ou combinação de linhas. Quando selecionada, a [Interface de campo derivada](/help/data-views/derived-fields/derived-fields.md#create-a-derived-field) é aberta com as modificações feitas na tabela de forma livre já preenchidas previamente. Consulte [Exemplo de classificação embutida](#inline-classifications-example). |
+| **[!UICONTROL Renomear linha selecionada]** | Renomeie a linha selecionada. Insira um **[!UICONTROL Nome]** na caixa de diálogo **[!UICONTROL Renomear linha selecionada]**. Selecione **[!UICONTROL OK]** para confirmar ou **[!UICONTROL Cancelar]** para cancelar. Depois que uma linha em uma tabela de forma livre é renomeada, o nome da dimensão na coluna de cabeçalho é anexado com **[!UICONTROL (modificado)]** e um ícone de ![engrenagem](/help/assets/icons/Gear.svg) está disponível para redefinir as linhas modificadas na coluna de cabeçalho de dimensão. Consulte [Classificações integradas](#inline-classifications). |
+| **[!UICONTROL Combinar linhas selecionadas]** | Combinar as linhas selecionadas. Insira um **[!UICONTROL Nome]** na caixa de diálogo **[!UICONTROL Combinar linhas selecionadas]**. Selecione **[!UICONTROL OK]** para confirmar ou **[!UICONTROL Cancelar]** para cancelar. Uma vez que as linhas em uma tabela de forma livre são combinadas, o nome da dimensão na coluna de cabeçalho é anexado com **[!UICONTROL (modificado)]** e um ícone de ![engrenagem](/help/assets/icons/Gear.svg) está disponível para redefinir as linhas modificadas na coluna de cabeçalho de dimensão. Consulte [Classificações integradas](#inline-classifications). |
+| **[!UICONTROL Criar linhas modificadas como campo derivado]** | *Você deve ser um administrador de produto do Customer Journey Analytics para ver esta opção do menu de contexto.*<br/> Disponível em qualquer linha selecionada de uma tabela de forma livre que é modificada como resultado da renomeação ou combinação de linhas. Quando selecionada, a [Interface de campo derivada](/help/data-views/derived-fields/derived-fields.md#create-a-derived-field) é aberta com as modificações feitas na tabela de forma livre já preenchidas previamente. Consulte [Classificações integradas](#inline-classifications). |
 | **[!UICONTROL Criar anotação a partir da seleção]** | Abra o [Construtor de anotações](/help/components/annotations/create-annotations.md#annotation-builder) para criar uma anotação para a seleção. |
 | **[!UICONTROL Criar segmento a partir da seleção]** | Abra o [Construtor de segmentos](/help/components/segments/seg-builder.md) para criar um segmento a partir da seleção. |
 | **[!UICONTROL Criar público-alvo a partir da seleção]** | Abra o [Construtor de público-alvo](/help/components/audiences/publish.md#audience-builder) para criar um público a partir da seleção. |
@@ -116,52 +116,52 @@ As opções adicionais de menu de contexto a seguir estão disponíveis ao selec
 Você pode definir a [densidade da exibição](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density) de um projeto como **[!UICONTROL Compacto]**, **[!UICONTROL Confortável]** e **[!UICONTROL Expandido]**.
 
 
-## Exemplo de classificações embutidas
+## Classificações em linha
 
-{{release-limited-testing-section}}
+As classificações em linha permitem renomear ou combinar linhas em uma tabela de forma livre. E para criar um campo derivado das linhas modificadas em uma tabela.
 
-Este exemplo ilustra como usar as opções de menu de contexto **[!UICONTROL Renomear linha selecionada]**, **[!UICONTROL Combinar linhas selecionadas]** e **[!UICONTROL Criar como campo derivado]**. E como redefinir a tabela de forma livre modificada.
+O exemplo abaixo ilustra como usar as opções de menu de contexto **[!UICONTROL Renomear linha selecionada]**, **[!UICONTROL Combinar linhas selecionadas]** e **[!UICONTROL Criar linhas modificadas como campo derivado]**. E como redefinir a tabela de forma livre modificada.
 
 * Renomeie a linha **[!UICONTROL Nenhum valor]** para **[!UICONTROL Outros]**.
 
-   1. Selecione **[!UICONTROL Renomear linha selecionada]** no menu de contexto na linha **[!UICONTROL Nenhum valor]** selecionada.
+  1. Selecione **[!UICONTROL Renomear linha selecionada]** no menu de contexto na linha **[!UICONTROL Nenhum valor]** selecionada.
 
-      ![Selecione a opção Renomear menu de contexto de linha selecionado](assets/context-rename.png)
+     ![Selecione a opção Renomear menu de contexto de linha selecionado](assets/context-rename.png)
 
-   1. Na caixa de diálogo **[!UICONTROL Renomear linha selecionada]**:
+  1. Na caixa de diálogo **[!UICONTROL Renomear linha selecionada]**:
 
-      ![Caixa de diálogo Renomear linha selecionada](assets/dialog-rename.png)
+     ![Caixa de diálogo Renomear linha selecionada](assets/dialog-rename.png)
 
-      1. Inserir <code>Outros</code> para **[!UICONTROL Nome]**.
-      1. Selecione **[!UICONTROL OK]**.
+     1. Inserir <code>Outros</code> para **[!UICONTROL Nome]**.
+     1. Selecione **[!UICONTROL OK]**.
 
 * Combine **[!UICONTROL Homens]** e **[!UICONTROL Mulheres]** linhas em uma linha **[!UICONTROL Adultos]**.
 
-   1. Selecione a linha **[!UICONTROL Homens]** e **[!UICONTROL Mulheres]**.
-   1. Selecione **[!UICONTROL Combinar linhas selecionadas]** no menu de contexto de qualquer uma das linhas selecionadas.
+  1. Selecione a linha **[!UICONTROL Homens]** e **[!UICONTROL Mulheres]**.
+  1. Selecione **[!UICONTROL Combinar linhas selecionadas]** no menu de contexto de qualquer uma das linhas selecionadas.
 
-      ![Selecione a opção de menu Combinar linhas selecionadas](assets/context-combine.png)
+     ![Selecione a opção de menu Combinar linhas selecionadas](assets/context-combine.png)
 
-   1. Na caixa de diálogo **[!UICONTROL Combinar linhas selecionadas]**:
+  1. Na caixa de diálogo **[!UICONTROL Combinar linhas selecionadas]**:
 
-      ![Caixa de diálogo Combinar linha selecionada](assets/dialog-combine.png)
+     ![Caixa de diálogo Combinar linha selecionada](assets/dialog-combine.png)
 
-      1. Inserir <code>Adultos</code> para **[!UICONTROL Nome]**.
-      1. Selecione **[!UICONTROL OK]**.
+     1. Inserir <code>Adultos</code> para **[!UICONTROL Nome]**.
+     1. Selecione **[!UICONTROL OK]**.
 
 * Crie um campo derivado a partir das modificações na tabela de forma livre.
 
-   1. Selecione **[!UICONTROL Criar como campo derivado]** no menu de contexto para qualquer linha selecionada na tabela modificada.
+  1. Selecione **[!UICONTROL Criar linhas modificadas como campo derivado]** no menu de contexto para qualquer linha selecionada na tabela modificada.
 
-      ![Selecione a opção de menu Criar como campo derivado](assets/context-derived.png)
+     ![Selecione a opção de menu Criar linhas modificadas como campo derivado](assets/context-derived.png)
 
-   1. Inspecione, modifique opcionalmente e salve a definição do campo derivado com base em todas as modificações feitas na tabela.
+  1. Inspecione, modifique opcionalmente e salve a definição do campo derivado com base em todas as modificações feitas na tabela.
 
-      ![Criar caixa de diálogo de campo derivado](assets/dialog-derived.png)
+     ![Criar caixa de diálogo de campo derivado](assets/dialog-derived.png)
 
 * Redefinir a tabela de forma livre para o estado anterior às modificações.
 
-   1. Selecione ![engrenagem](/help/assets/icons/Gear.svg) próximo a **[!UICONTROL _nome da dimensão _(modificado)]**.
-   1. Selecione **[!UICONTROL Redefinir linhas renomeadas]** no pop-up **[!UICONTROL Linhas renomeadas]**.
+  1. Selecione ![engrenagem](/help/assets/icons/Gear.svg) próximo a **[!UICONTROL _nome da dimensão _(modificado)]**.
+  1. Selecione **[!UICONTROL Redefinir linhas modificadas]** no pop-up **[!UICONTROL Linhas renomeadas]**.
 
-      ![Redefinir tabela de forma livre](assets/popup-reset.png)
+     ![Redefinir tabela de forma livre](assets/popup-reset.png)

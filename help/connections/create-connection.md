@@ -21,7 +21,7 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 3eae7d76014165ec03151b7c2ec87952f357d4a3
+source-git-commit: 2a7629993e235d66844db036ccce88e57fc20562
 workflow-type: tm+mt
 source-wordcount: 10479
 ht-degree: 90%
@@ -419,7 +419,7 @@ Você [adiciona um ou mais conjuntos de dados](#add-datasets) ou [edita conjunto
 >[!CONTEXTUALHELP]
 >id="connection_b2bstitching_accountid"
 >title="ID da Conta"
->abstract="Opcionalmente, selecione uma ID de conta nos campos de identidade que não seja de identidade ou de identidade que não seja de pessoa disponíveis definidos no esquema do conjunto de dados. Os valores contidos serão usados como identificador de conta exclusivo no nível da linha, sempre que as informações da ID da conta relacionada não estiverem disponíveis no conjunto de dados de pessoa para conta."
+>abstract="Opcionalmente, selecione uma ID de conta nos campos de identidade que não seja de pessoas ou que não seja de pessoas disponíveis definidos no esquema XDM. Os valores contidos serão usados como identificador de conta exclusivo no nível da linha, sempre que as informações da ID da conta relacionada não estiverem disponíveis no conjunto de dados de pessoa para conta."
 
 >[!CONTEXTUALHELP]
 >id="connection_accountfield"
@@ -582,8 +582,8 @@ Alternativamente, os tipos de conjunto de dados listados acima podem ser baseado
    * Para mostrar namespaces para cada uma das colunas na tabela, habilite **[!UICONTROL Mostrar namespace da coluna]**.
    * Para pesquisar nos dados de exemplo, use ![Pesquisar](/help/assets/icons/Search.svg).
    * Para configurar quais colunas serão exibidas, selecione ![ColumnSetting](/help/assets/icons/ColumnSetting.svg). <br/>Na caixa de diálogo **[!UICONTROL Personalizar tabela]**:
-      1. Selecione as colunas que deseja mostrar na tabela.
-      1. Selecione **[!UICONTROL Aplicar]** para aplicar a seleção ou **[!UICONTROL Cancelar]** para cancelar a seleção.
+     1. Selecione as colunas que deseja mostrar na tabela.
+     1. Selecione **[!UICONTROL Aplicar]** para aplicar a seleção ou **[!UICONTROL Cancelar]** para cancelar a seleção.
    * Para exibir os dados de colunas que contêm dados de matriz ou objeto, selecione **[!UICONTROL Valores]**.
 
    O painel **[!UICONTROL Informações do conjunto de dados]** mostra detalhes sobre o conjunto de dados. Selecione o valor do **[!UICONTROL Esquema]** ou do **[!UICONTROL Conjunto de Dados]** para abrir a interface relevante no Experience Platform em uma nova guia do navegador.
@@ -674,8 +674,8 @@ Para editar um conjunto de dados que já foi configurado para uma conexão, na i
    * Para mostrar namespaces para cada uma das colunas na tabela, habilite **[!UICONTROL Mostrar namespace da coluna]**.
    * Para pesquisar nos dados de exemplo, use ![Pesquisar](/help/assets/icons/Search.svg).
    * Para configurar quais colunas serão exibidas, selecione ![ColumnSetting](/help/assets/icons/ColumnSetting.svg). <br/>Na caixa de diálogo **[!UICONTROL Personalizar tabela]**:
-      1. Selecione as colunas que deseja mostrar na tabela.
-      1. Selecione **[!UICONTROL Aplicar]** para aplicar a seleção ou **[!UICONTROL Cancelar]** para cancelar a seleção.
+     1. Selecione as colunas que deseja mostrar na tabela.
+     1. Selecione **[!UICONTROL Aplicar]** para aplicar a seleção ou **[!UICONTROL Cancelar]** para cancelar a seleção.
    * Para exibir os dados de colunas que contêm dados de matriz ou objeto, selecione **[!UICONTROL Valores]**.
 
    O painel **[!UICONTROL Informações do conjunto de dados]** mostra detalhes sobre o conjunto de dados. Selecione o valor do **[!UICONTROL Esquema]** ou do **[!UICONTROL Conjunto de Dados]** para abrir a interface relevante no Experience Platform em uma nova guia do navegador.

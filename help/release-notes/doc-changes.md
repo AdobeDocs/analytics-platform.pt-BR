@@ -33,9 +33,9 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 50c7bb7b18b45b5ffac0eebacca2bb0d2ed0c28d
+source-git-commit: 587265d7613f732af811a77a947b0ce96ccad9bf
 workflow-type: tm+mt
-source-wordcount: 6944
+source-wordcount: 6952
 ht-degree: 99%
 
 ---
@@ -49,6 +49,8 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 
 | Recurso | Descrição |
 |---|---|
+| **julho de 2026** | |
+| Classificações em linha | Documentação de [classificações embutidas](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md#inline-classifications). |
 | **junho de 2026** | |
 | Novo guia do GA4 | Adicionada a [Transição do Google Analytics 4 para o Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/compare-aa-cja/ga-to-cja/home). |
 | **Maio de 2026** | |
