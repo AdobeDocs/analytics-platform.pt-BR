@@ -5,21 +5,14 @@ feature: Visualizations
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
 role: User
 TQID: https://experienceleague.adobe.com/qQKmobJ4J1RPezRG-hk38l7JNioIshzjMaKXWVoUWsM
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: f51766fdcb891b8cea93ea047b011792dc3c0ae6
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: cb6c7d24-631f-46e5-9e39-3a2705f73962id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: b988d8cee94e40c6bed62f7ef22f209b7e38f46c
 workflow-type: tm+mt
-source-wordcount: 1628
-ht-degree: 55%
+source-wordcount: 1630
+ht-degree: 53%
 
 ---
 
@@ -37,7 +30,7 @@ As configurações de linha variam de acordo com qual componente foi arrastado p
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Configurações de linha e coluna em uma tabela de forma livre](https://experienceleague.adobe.com/pt-br/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/row-and-column-settings-in-freeform-tables){target="_blank"} para assistir a um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Configurações de linha e coluna em uma tabela de forma livre](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/row-and-column-settings-in-freeform-tables){target="_blank"} para assistir a um vídeo de demonstração.
 
 {{videoaa}}
 
@@ -106,17 +99,19 @@ As opções adicionais de menu de contexto a seguir estão disponíveis ao selec
 | **[!UICONTROL Modificar modelos de atribuição]** | Permite modificar o modelo de atribuição da coluna. |
 | **[!UICONTROL Comparar modelo de atribuição]** | Permite especificar um novo modelo de atribuição e compará-lo ao modelo de atribuição da coluna selecionada. Uma nova coluna é adicionada com as métricas do novo modelo de atribuição. Além disso, uma coluna de Variação porcentual é adicionada para comparação. |
 | **[!UICONTROL Redefinir larguras de coluna]** | Redefine as larguras das colunas para a largura padrão. |
-| **[!UICONTROL Criar anotação a partir da seleção]** | Abre os **[!UICONTROL detalhes da anotação]** para adicionar uma anotação. |
-| **[!UICONTROL Criar segmento a partir da seleção]** | Abra o **[!UICONTROL Construtor de segmentos]** para criar um segmento a partir da seleção. |
-| **[!UICONTROL Criar público-alvo a partir da seleção]** | Abre a caixa de diálogo **[!UICONTROL Criar público-alvo]** para criar um público-alvo a partir da seleção. |
+| **[!UICONTROL Criar anotação a partir da seleção]** | Abra o [Construtor de anotações](/help/components/annotations/create-annotations.md#annotation-builder) para criar uma anotação para a seleção. |
+| **[!UICONTROL Criar segmento a partir da seleção]** | Abra o [Construtor de segmentos](/help/components/segments/seg-builder.md) para criar um segmento a partir da seleção. |
+| **[!UICONTROL Criar público-alvo a partir da seleção]** | Abra o [Construtor de público-alvo](/help/components/audiences/publish.md#audience-builder) para criar um público a partir da seleção. |
 
 
 ## Modificar altura da linha
 
-Você pode definir a [densidade da exibição](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density) de um projeto como **[!UICONTROL Compacto]**, **[!UICONTROL Confortável]** e **[!UICONTROL Expandido]**.
+Você pode definir a [densidade da exibição](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density) de um projeto como **[!UICONTROL Compacto]**, **[!UICONTROL Confortável]** e **[!UICONTROL Expandido]**.
 
 
-## Classificações em linha
+## Classificações em linha {#inline-classifications-example}
+
+{{release-limited-testing-section}}
 
 As classificações em linha permitem renomear ou combinar linhas em uma tabela de forma livre. E para criar um campo derivado das linhas modificadas em uma tabela.
 
@@ -162,6 +157,6 @@ O exemplo abaixo ilustra como usar as opções de menu de contexto **[!UICONTROL
 * Redefinir a tabela de forma livre para o estado anterior às modificações.
 
   1. Selecione ![engrenagem](/help/assets/icons/Gear.svg) próximo a **[!UICONTROL _nome da dimensão _(modificado)]**.
-  1. Selecione **[!UICONTROL Redefinir linhas modificadas]** no pop-up **[!UICONTROL Linhas renomeadas]**.
+  1. Selecione **[!UICONTROL Redefinir linhas modificadas]** na janela pop-up **[!UICONTROL Linhas modificadas]**.
 
      ![Redefinir tabela de forma livre](assets/popup-reset.png)
