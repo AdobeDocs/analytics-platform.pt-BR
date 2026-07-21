@@ -27,9 +27,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: b988d8cee94e40c6bed62f7ef22f209b7e38f46c
+source-git-commit: 3fcb9c403ace295c1a7e62c21d8bb444a4f9c011
 workflow-type: tm+mt
-source-wordcount: 699
+source-wordcount: 696
 ht-degree: 39%
 
 ---
@@ -44,7 +44,7 @@ Essas notas de versão abrangem o período de julho de 2026. As versões do Adob
 
 | Recurso e descrição | [Início da implantação](releases.md) | [Disponibilidade geral](releases.md) |
 | -----------|-----------|-----------|
-| **A análise de subevento** <br/>A análise de subevento permite analisar dados em um nível mais granular do que o nível do evento. Em vez de filtrar eventos inteiros, você pode segmentar em containers individuais em um evento. <p>Por exemplo, você pode segmentar em uma categoria de produto específica sem incluir todos os outros produtos comprados na mesma ordem. Você também pode definir objetos ou matrizes que fazem parte dos dados do evento como contêineres separados em uma visualização de dados.</p><p>(Link para a documentação a seguir).</p> | 15 de julho de 2026 | Final de julho de 2026 |
+| **A análise de subevento** <br/>[A análise de subevento](/help/components/segments/sub-event.md) permite que você analise dados em um nível mais granular do que o nível do evento. Em vez de filtrar eventos inteiros, você pode segmentar em containers individuais em um evento. <p>Por exemplo, você pode segmentar em uma categoria de produto específica sem incluir todos os outros produtos comprados na mesma ordem. Você também pode definir objetos ou matrizes que fazem parte dos seus dados de evento como [contêineres personalizados](/help/data-views/create-dataview.md#custom-containers) separados em uma visualização de dados. | 21 de julho de 2026 | Final de julho de 2026 |
 | **B2B edition: suporte para conjuntos de dados ad hoc e relacionais** <br/>Os conjuntos de dados ad hoc e relacionais agora também são suportados em conexões baseadas em conta no Customer Journey Analytics B2B edition.<p>(Link para a documentação a seguir).</p> | | 20 de julho de 2026 |
 | **Content Analytics: dados de mídia paga** <br/>A mídia paga agora está disponível como um terceiro canal para o Content Analytics.<p>(Link para a documentação a seguir).</p> | | 31 de julho de 2026 |
 | **Atualização da interface de Uso de Conexões** <br/>Na interface de Uso ao gerenciar conexões, você pode ver os detalhes de uso de cada módulo individual, como o Customer Journey Analytics ou o Customer Journey Analytics B2B edition. <p>Além disso, agora é possível detalhar os relatórios de uso de cada um dos módulos por mês.</p><p>(Link para a documentação a seguir).</p> | | 31 de julho de 2026 |

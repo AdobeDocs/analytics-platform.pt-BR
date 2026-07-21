@@ -22,10 +22,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: beb7a3c1-66ab-4786-b879-7621375b3c40
-source-git-commit: 28959f1ea858dee686e6d13025621c4a6164c319
+source-git-commit: 3fcb9c403ace295c1a7e62c21d8bb444a4f9c011
 workflow-type: tm+mt
-source-wordcount: 10573
-ht-degree: 98%
+source-wordcount: 10442
+ht-degree: 97%
 
 ---
 
@@ -481,16 +481,16 @@ Para usar o template, você deve especificar os parâmetros de cada função lis
 Para cada função compatível, confira os detalhes abaixo sobre:
 
 - especificações:
-   - tipo de dado de entrada: tipo de dado compatível,
-   - entrada: valores possíveis para a entrada,
-   - operadores inclusos: operadores compatíveis com esta função (se houver),
-   - limitações: limitações aplicáveis a esta função específica,
-   - saída.
+  - tipo de dado de entrada: tipo de dado compatível,
+  - entrada: valores possíveis para a entrada,
+  - operadores inclusos: operadores compatíveis com esta função (se houver),
+  - limitações: limitações aplicáveis a esta função específica,
+  - saída.
 
 - casos de uso, incluindo:
-   - dados antes de definir o campo derivado,
-   - como definir o campo derivado,
-   - dados após definir o campo derivado.
+  - dados antes de definir o campo derivado,
+  - como definir o campo derivado,
+  - dados após definir o campo derivado.
 
 - restrições (se aplicável).
 
@@ -756,7 +756,8 @@ Define um conjunto de valores que são substituídos por valores correspondentes
 
 ## Caso de uso 1 {#classify-uc1}
 
-Você tem um arquivo CSV que inclui uma coluna de chaves para `hotelID` e uma ou mais colunas adicionais associadas a `hotelID`: `city`, `rooms`, `hotel name`.Você está coletando [!DNL Hotel ID] em uma dimensão, mas gostaria de criar uma dimensão [!DNL Hotel Name] derivada de `hotelID` no arquivo CSV.
+Você tem um arquivo CSV que inclui uma coluna de chave para `hotelID` e uma ou mais colunas adicionais associadas ao `hotelID`: `city`, `rooms`, `hotel name`.
+Você está coletando [!DNL Hotel ID] em uma dimensão, mas gostaria de criar uma dimensão [!DNL Hotel Name] derivada de `hotelID` no arquivo CSV.
 
 **Estrutura e conteúdo do arquivo CSV**
 
@@ -1014,7 +1015,8 @@ Alternativamente, você pode usar o valor de conveniência do intervalo de datas
 
 Você quer entender o tempo de pesquisa em minutos antes que um cliente faça um pedido durante uma sessão.
 
-Você define um novo campo derivado `Time Between Search And Order In Minutes`, que é o resultado de duas funções [[!UICONTROL CASE WHEN]](#case-when), para definir os valores de [!UICONTROL Tempo de pesquisa] e [!UICONTROL Tempo de pedido].Em seguida, você usa esses dois valores para calcular a diferença com uma função [!UICONTROL DATE MATH] com o [!UICONTROL Escopo] definido como [!UICONTROL Sessão], valores definidos como [!UICONTROL Tempo de pesquisa] e [!UICONTROL Tempo de pedido], e [!UICONTROL Granularidade de saída] definida como [!UICONTROL Minuto]. Para ambos os valores, selecione [!UICONTROL Retornar o primeiro] para garantir que o primeiro [!UICONTROL Tempo de pesquisa] e o primeiro [!UICONTROL Tempo de pedido] sejam retornados.
+Você define um novo campo derivado `Time Between Search And Order In Minutes` que é o resultado de duas funções [[!UICONTROL CASE WHEN]](#case-when) para definir valores de [!UICONTROL Tempo de Pesquisa] e [!UICONTROL Tempo de Pedido].
+Em seguida, use esses dois valores para calcular a diferença com uma função [!UICONTROL DATA MATH] com [!UICONTROL Escopo] definido como [!UICONTROL Sessão], valores definidos como [!UICONTROL Tempo de Pesquisa] e [!UICONTROL Tempo de Pedido] e [!UICONTROL Granularidade da saída] definidos como [!UICONTROL Minuto]. Para ambos os valores, selecione [!UICONTROL Retornar o primeiro] para garantir que o primeiro [!UICONTROL Tempo de Pesquisa] e o [!UICONTROL Tempo de Pedido] sejam retornados.
 
 ![Captura de tela da regra de cálculo de datas 3](assets/datemath-3.png)
 
@@ -1286,7 +1288,8 @@ Você pode inserir rapidamente uma função de [!UICONTROL Pesquisa] no construt
 1. Selecione **[!UICONTROL Campos do esquema]** no seletor.
 1. Selecione o ![Ícone de campo do esquema](assets/Smock_Folder_18_N.svg) **[!UICONTROL Conjuntos de dados de pesquisa]**.
 1. Selecione o seu conjunto de dados de pesquisa e localize o campo que deseja usar para pesquisar.
-1. Arraste e solte o campo de pesquisa em qualquer um dos campos de entrada disponíveis para uma função (por exemplo, “Case When”). Quando válida, uma caixa azul rotulada **[!UICONTROL + Adicionar]** permite soltar o campo e inserir automaticamente uma função de pesquisa antes da função na qual você soltou o campo de pesquisa. A função de pesquisa inserida é preenchida automaticamente com valores relevantes para todos os campos.   ![Arrastar pesquisa](assets/lookup-drag.png)
+1. Arraste e solte o campo de pesquisa em qualquer um dos campos de entrada disponíveis para uma função (por exemplo, Caso Quando). Quando válida, uma caixa azul, rotulada **[!UICONTROL + Adicionar]**, permite soltar o campo e inserir automaticamente uma função de Pesquisa antes da função na qual você soltou o campo de pesquisa. A função Lookup inserida é preenchida automaticamente com valores relevantes para todos os campos.
+   ![Arrastar pesquisa](assets/lookup-drag.png)
 
 +++
 
@@ -1407,7 +1410,8 @@ Você define um campo derivado de `Corrected Annual Revenue`. Use a função [!U
 
 Para criar uma fórmula:
 
-1. Basta começar a digitar no campo “Fórmula”, e os campos numéricos que correspondem ao que você digitar aparecerão em um menu pop-up. Alternativamente, você pode arrastar e soltar um campo numérico a partir dos campos disponíveis no painel esquerdo.   ![Mais informações de matemática 1](assets/math-more-info-1.png)
+1. Basta começar a digitar no campo Fórmula e os campos numéricos que correspondem ao que você digita aparecerão em um menu pop-up. Como alternativa, você pode arrastar e soltar um campo numérico dos campos disponíveis no painel esquerdo.
+   ![Mais informações de matemática 1](assets/math-more-info-1.png)
 
 1. Adicione o operando (por exemplo, `*` para multiplicar) seguido por outro campo ou um valor estático. Você pode usar parênteses para definir fórmulas mais complexas.
 
@@ -1423,11 +1427,11 @@ Há algumas considerações importantes ao trabalhar com números estáticos na 
 - Você não pode usar o operador de elevação a uma potência (`ˆ`) em um valor estático.
 - Se você estiver usando vários valores estáticos em uma fórmula, esses valores estáticos deverão ser agrupados por meio de parênteses, para que a fórmula seja válida. Por exemplo:
 
-   - Esta fórmula retorna um erro.
-     ![Mais informações de matemática 4](assets/math-more-info-4.png)
+  - Esta fórmula retorna um erro.
+    ![Mais informações de matemática 4](assets/math-more-info-4.png)
 
-   - Esta fórmula é válida.
-     ![Mais informações de matemática 5](assets/math-more-info-5.png)
+  - Esta fórmula é válida.
+    ![Mais informações de matemática 5](assets/math-more-info-5.png)
 
 Use a função de matemática para cálculos baseados no nível de ocorrência. Use a função [Resumir](#summarize) para cálculos baseados em eventos, sessões ou escopos de pessoas.
 
@@ -1783,6 +1787,10 @@ Você cria um campo derivado de `Second Response` para pegar o último valor do 
 
 {style="table-layout:auto"}
 
+## Contêiner personalizado
+
+O campo derivado fica disponível como um [contêiner personalizado](/help/data-views/create-dataview.md#containers-1) que pode ser selecionado na visualização de dados e usado para a [análise de subeventos](/help/components/segments/sub-event.md) em um projeto de espaço de trabalho.
+
 +++
 
 <!-- SUMMARIZE -->
@@ -1996,7 +2004,7 @@ Altera o tipo de um campo para disponibilizá-lo para transformações adicionai
 
 | Tipo de dado de entrada | Entrada | Operadores inclusos | Limite | Saída |
 |---|---|---|---|---|
-| <ul><li>Numérico</li><li>Data</li><li>Data/hora</li><li>String</li></ul> | <ul><li>[!UICONTROL Campo] | <p><ul><li>Número inteiro<ul><li>Para string</li></ul></li><li>Duplo<ul><li>Para string<ul><li>Incluir o número de casas decimais a serem herdadas (máx. 5?)</li></ul></li><li>Para número inteiro</li></ul></li><li>Byte<ul><li>Para string</li></ul></li><li>Longo<ul><li>Para string</li></ul></li><li>Data<ul><li>Para string<ul><li>Permite definir o formato de saída</li></ul></li><li>Exemplos<ul><li>Data (por exemplo, 7 de janeiro de 2025)<ul><li data-stringify-indent="1" data-stringify-border="0">MM-DD-AA<ul><li data-stringify-indent="2" data-stringify-border="0">Por exemplo, 01-07-25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MM-DD-AAAA<ul><li data-stringify-indent="2" data-stringify-border="0">Por exemplo, 01-07-2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">DD-MM-AA<ul><li data-stringify-indent="2" data-stringify-border="0">Por exemplo, 07-01-25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">DD-MM-AAAA<ul><li data-stringify-indent="2" data-stringify-border="0">Por exemplo, 07-01-2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">AA-MM-DD<ul><li data-stringify-indent="2" data-stringify-border="0">Por exemplo, 25-01-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">AAAA-MM-DD<ul><li data-stringify-indent="2" data-stringify-border="0">Por exemplo, 2025-01-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MM/DD/AA<ul><li data-stringify-indent="2" data-stringify-border="0">Por exemplo, 01/07/25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MM/DD/AAAA<ul><li data-stringify-indent="2" data-stringify-border="0">Por exemplo, 01/07/2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">AAAA/MM/DD<ul><li data-stringify-indent="2" data-stringify-border="0">Por exemplo, 2025/01/07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">AA/MM/DD<ul><li data-stringify-indent="2" data-stringify-border="0">Por exemplo, 25/01/07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MMM DD, AAAA<ul><li data-stringify-indent="2" data-stringify-border="0">Por exemplo, 7 de janeiro de 2025</li></ul></li></ul></li></ul></li></ul></li><li>Data/hora<ul><li>Para string<ul><li>Permite definir o formato de saída</li></ul></li><li>Exemplos<ul><li data-stringify-indent="0" data-stringify-border="0">Data/hora (por exemplo, 7 de janeiro de 2025, às 1:30pm, 52 segundos)<ul><li data-stringify-indent="2" data-stringify-border="0">MM-DD-AA hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Por exemplo, 01-07-25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM-DD-AAAA hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Por exemplo, 01-07-2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">DD-MM-AA hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Por exemplo, 07-01-25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">DD-MM-AAAA hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Por exemplo, 07-01-2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">AA-MM-DD hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Por exemplo, 25-01-07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">AAAA-MM-DD hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Por exemplo, 2025-01-07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM/DD/AA hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Por exemplo, 01/07/25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM/DD/AAAA hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Por exemplo, 01/07/2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">AAAA/MM/DD hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Por exemplo, 2025/01/07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">AA/MM/DD hh:mm :ss<ul><li data-stringify-indent="3" data-stringify-border="0">Por exemplo, 25/01/07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MMM DD, AAAA hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Por exemplo, 7 de janeiro de 2025, 13:30:52</li></ul></li></ul></li></ul></li><li>String<ul><li>Para numérico<ul><li>Se tivermos valores que não são de natureza numérica, eles retornarão nulo.</li><li>É necessário que o usuário insira a precisão e a localidade a serem usadas. </li></ul></li></ul></li></ul></li></ul></p> | <p>Três funções por campo derivado</p> | <p>Novo campo derivado</p> |
+| <ul><li>Numérico</li><li>Data</li><li>Data/hora</li><li>String</li></ul> | <ul><li>[!UICONTROL Campo] | <p><ul><li>Número inteiro<ul><li>Para string</li></ul></li><li>Duplo<ul><li>Para string<ul><li>Incluir o número de casas decimais a serem herdadas (máx. 5?)</li></ul></li><li>Para número inteiro</li></ul></li><li>Byte<ul><li>Para string</li></ul></li><li>Longo<ul><li>Para string</li></ul></li><li>Data<ul><li>Para string<ul><li>Permite definir o formato de saída</li></ul></li><li>Exemplos<ul><li>Data (por exemplo, 7 de janeiro de 2025)<ul><li data-stringify-indent="1" data-stringify-border="0">MM-DD-AA<ul><li data-stringify-indent="2" data-stringify-border="0">Por exemplo, 01-07-25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MM-DD-AAAA<ul><li data-stringify-indent="2" data-stringify-border="0">Por exemplo, 01-07-2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">DD-MM-AA<ul><li data-stringify-indent="2" data-stringify-border="0">Por exemplo, 07-01-25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">DD-MM-AAAA<ul><li data-stringify-indent="2" data-stringify-border="0">Por exemplo, 07-01-2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">AA-MM-DD<ul><li data-stringify-indent="2" data-stringify-border="0">Por exemplo, 25-01-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">AAAA-MM-DD<ul><li data-stringify-indent="2" data-stringify-border="0">Por exemplo, 2025-01-07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MM/DD/AA<ul><li data-stringify-indent="2" data-stringify-border="0">Por exemplo, 01/07/25</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MM/DD/AAAA<ul><li data-stringify-indent="2" data-stringify-border="0">Por exemplo, 01/07/2025</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">AAAA/MM/DD<ul><li data-stringify-indent="2" data-stringify-border="0">Por exemplo, 2025/01/07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">AA/MM/DD<ul><li data-stringify-indent="2" data-stringify-border="0">Por exemplo, 25/01/07</li></ul></li><li data-stringify-indent="1" data-stringify-border="0">MMM DD, AAAA<ul><li data-stringify-indent="2" data-stringify-border="0">Por exemplo, 7 de janeiro de 2025</li></ul></li></ul></li></ul></li></ul></li><li>Data/hora<ul><li>Para string<ul><li>Permite definir o formato de saída</li></ul></li><li>Exemplos<ul><li data-stringify-indent="0" data-stringify-border="0">Data e hora (exemplo de 7 de janeiro de 2025 às 13h30, 52 segundos)<ul><li data-stringify-indent="2" data-stringify-border="0">MM-DD-AA hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Por exemplo, 01-07-25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM-DD-AAAA hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Por exemplo, 01-07-2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">DD-MM-AA hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Por exemplo, 07-01-25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">DD-MM-AAAA hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Por exemplo, 07-01-2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">AA-MM-DD hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Por exemplo, 25-01-07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">AAAA-MM-DD hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Por exemplo, 2025-01-07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM/DD/AA hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Por exemplo, 01/07/25 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MM/DD/AAAA hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Por exemplo, 01/07/2025 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">AAAA/MM/DD hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Por exemplo, 2025/01/07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">AA/MM/DD hh:mm :ss<ul><li data-stringify-indent="3" data-stringify-border="0">Por exemplo, 25/01/07 13:30:52</li></ul></li><li data-stringify-indent="2" data-stringify-border="0">MMM DD, AAAA hhmmss<ul><li data-stringify-indent="3" data-stringify-border="0">Por exemplo, 7 de janeiro de 2025, 13:30:52</li></ul></li></ul></li></ul></li><li>String<ul><li>Para numérico<ul><li>Se tivermos valores que não são de natureza numérica, eles retornarão nulo.</li><li>É necessário que o usuário insira a precisão e a localidade a serem usadas. </li></ul></li></ul></li></ul></li></ul></p> | <p>Três funções por campo derivado</p> | <p>Novo campo derivado</p> |
 
 {style="table-layout:auto"}
 
@@ -2122,7 +2130,7 @@ Você define um campo derivado `Query String CID`. Use a função [!UICONTROL UR
 As seguintes limitações se aplicam à funcionalidade Campo derivado em geral:
 
 - Você pode usar no máximo dez campos de esquema diferentes (sem incluir campos padrão) ao definir regras para um campo derivado.
-   - A partir desse máximo de dez campos de esquema diferentes, somente um máximo de três campos de esquema de pesquisa ou esquema de perfil são permitidos.
+  - A partir desse máximo de dez campos de esquema diferentes, somente um máximo de três campos de esquema de pesquisa ou esquema de perfil são permitidos.
 - Você pode contar com um número máximo de campos derivados por conexão do Customer Journey Analytics, dependendo do pacote que você licenciar. Consulte a [descrição do produto](https://helpx.adobe.com/br/legal/product-descriptions/customer-journey-analytics.html){target="_blank"} para obter mais informações.
 
 
