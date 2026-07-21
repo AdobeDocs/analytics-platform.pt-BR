@@ -5,18 +5,11 @@ feature: Visualizations
 exl-id: a9438d83-498d-4b22-9e5e-c357bd3a2680
 role: User
 TQID: https://experienceleague.adobe.com/qQKmobJ4J1RPezRG-hk38l7JNioIshzjMaKXWVoUWsM
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: b988d8cee94e40c6bed62f7ef22f209b7e38f46c
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: cb6c7d24-631f-46e5-9e39-3a2705f73962id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: 54e64aeb652d41a39e52b01c0a54edd1ecfd0cdc
 workflow-type: tm+mt
 source-wordcount: 1630
 ht-degree: 53%
@@ -37,7 +30,7 @@ As configurações de linha variam de acordo com qual componente foi arrastado p
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Configurações de linha e coluna em uma tabela de forma livre](https://experienceleague.adobe.com/pt-br/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/row-and-column-settings-in-freeform-tables){target="_blank"} para assistir a um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Configurações de linha e coluna em uma tabela de forma livre](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/row-and-column-settings-in-freeform-tables){target="_blank"} para assistir a um vídeo de demonstração.
 
 {{videoaa}}
 
@@ -89,9 +82,9 @@ As opções adicionais de menu de contexto a seguir estão disponíveis ao selec
 | **[!UICONTROL Seleção de tendências]** | Cria uma visualização de gráfico de linhas de tendência para a seleção. |
 | **[!UICONTROL Exibir somente as linhas selecionadas]** | Exibe somente as linhas selecionadas na visualização. |
 | **[!UICONTROL Exibir todas as linhas]** | Exibe todas as linhas na visualização. |
-| **[!UICONTROL Renomear linha selecionada]** | Renomeie a linha selecionada. Insira um **[!UICONTROL Nome]** na caixa de diálogo **[!UICONTROL Renomear linha selecionada]**. Selecione **[!UICONTROL OK]** para confirmar ou **[!UICONTROL Cancelar]** para cancelar. Depois que uma linha em uma tabela de forma livre é renomeada, o nome da dimensão na coluna de cabeçalho é anexado com **[!UICONTROL (modificado)]** e um ícone de ![engrenagem](/help/assets/icons/Gear.svg) está disponível para redefinir as linhas modificadas na coluna de cabeçalho de dimensão. Consulte [Classificações integradas](#inline-classifications). |
-| **[!UICONTROL Combinar linhas selecionadas]** | Combinar as linhas selecionadas. Insira um **[!UICONTROL Nome]** na caixa de diálogo **[!UICONTROL Combinar linhas selecionadas]**. Selecione **[!UICONTROL OK]** para confirmar ou **[!UICONTROL Cancelar]** para cancelar. Uma vez que as linhas em uma tabela de forma livre são combinadas, o nome da dimensão na coluna de cabeçalho é anexado com **[!UICONTROL (modificado)]** e um ícone de ![engrenagem](/help/assets/icons/Gear.svg) está disponível para redefinir as linhas modificadas na coluna de cabeçalho de dimensão. Consulte [Classificações integradas](#inline-classifications). |
-| **[!UICONTROL Criar linhas modificadas como campo derivado]** | *Você deve ser um administrador de produto do Customer Journey Analytics para ver esta opção do menu de contexto.*<br/> Disponível em qualquer linha selecionada de uma tabela de forma livre que é modificada como resultado da renomeação ou combinação de linhas. Quando selecionada, a [Interface de campo derivada](/help/data-views/derived-fields/derived-fields.md#create-a-derived-field) é aberta com as modificações feitas na tabela de forma livre já preenchidas previamente. Consulte [Classificações integradas](#inline-classifications). |
+| **[!UICONTROL Renomear linha selecionada]** | Renomeie a linha selecionada. Insira um **[!UICONTROL Nome]** na caixa de diálogo **[!UICONTROL Renomear linha selecionada]**. Selecione **[!UICONTROL OK]** para confirmar ou **[!UICONTROL Cancelar]** para cancelar. Depois que uma linha em uma tabela de forma livre é renomeada, o nome da dimensão na coluna de cabeçalho é anexado com **[!UICONTROL (modificado)]** e um ícone de ![engrenagem](/help/assets/icons/Gear.svg) está disponível para redefinir as linhas modificadas na coluna de cabeçalho de dimensão. Consulte [Classificações integradas](#inline-classifications-example). |
+| **[!UICONTROL Combinar linhas selecionadas]** | Combinar as linhas selecionadas. Insira um **[!UICONTROL Nome]** na caixa de diálogo **[!UICONTROL Combinar linhas selecionadas]**. Selecione **[!UICONTROL OK]** para confirmar ou **[!UICONTROL Cancelar]** para cancelar. Uma vez que as linhas em uma tabela de forma livre são combinadas, o nome da dimensão na coluna de cabeçalho é anexado com **[!UICONTROL (modificado)]** e um ícone de ![engrenagem](/help/assets/icons/Gear.svg) está disponível para redefinir as linhas modificadas na coluna de cabeçalho de dimensão. Consulte [Classificações integradas](#inline-classifications-example). |
+| **[!UICONTROL Criar linhas modificadas como campo derivado]** | *Você deve ser um administrador de produto do Customer Journey Analytics para ver esta opção do menu de contexto.*<br/> Disponível em qualquer linha selecionada de uma tabela de forma livre que é modificada como resultado da renomeação ou combinação de linhas. Quando selecionada, a [Interface de campo derivada](/help/data-views/derived-fields/derived-fields.md#create-a-derived-field) é aberta com as modificações feitas na tabela de forma livre já preenchidas previamente. Consulte [Classificações integradas](#inline-classifications-example). |
 | **[!UICONTROL Criar anotação a partir da seleção]** | Abra o [Construtor de anotações](/help/components/annotations/create-annotations.md#annotation-builder) para criar uma anotação para a seleção. |
 | **[!UICONTROL Criar segmento a partir da seleção]** | Abra o [Construtor de segmentos](/help/components/segments/seg-builder.md) para criar um segmento a partir da seleção. |
 | **[!UICONTROL Criar público-alvo a partir da seleção]** | Abra o [Construtor de público-alvo](/help/components/audiences/publish.md#audience-builder) para criar um público a partir da seleção. |
@@ -113,7 +106,7 @@ As opções adicionais de menu de contexto a seguir estão disponíveis ao selec
 
 ## Modificar altura da linha
 
-Você pode definir a [densidade da exibição](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density) de um projeto como **[!UICONTROL Compacto]**, **[!UICONTROL Confortável]** e **[!UICONTROL Expandido]**.
+Você pode definir a [densidade da exibição](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/build-workspace-project/view-density) de um projeto como **[!UICONTROL Compacto]**, **[!UICONTROL Confortável]** e **[!UICONTROL Expandido]**.
 
 
 ## Classificações em linha {#inline-classifications-example}
