@@ -22,10 +22,10 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: c6b215f9fe718d0d3e8f81b7f55421c909b69c5a
+source-git-commit: 782311939794bab0f04da1df3dccdc3a9847449f
 workflow-type: tm+mt
-source-wordcount: 6499
-ht-degree: 91%
+source-wordcount: 6697
+ht-degree: 88%
 
 ---
 
@@ -92,8 +92,44 @@ Consulte [Visão geral da tela de jornada](/help/analysis-workspace/visualizatio
 
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_percentage_value"
->title="Escolha como as porcentagens são calculadas"
+>title="Valor percentual"
 >abstract="As porcentagens exibidas em cada nó se baseiam nas métricas primárias e secundárias configuradas. É possível escolher se as porcentagens estarão relacionadas ao nó inicial, ao nó anterior ou a todos os dados no conjunto de relatórios."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_journeycanvas_arrow_settings"
+>title="Configurações de seta"
+>abstract="Escolha se deseja mostrar ou ocultar rótulos na tela de desenho. Rótulos são nomes personalizados criados na tela de Jornada."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_journeycanvas_arrow_settings_ajo"
+>title="Configurações de seta"
+>abstract="Escolha se deseja mostrar ou ocultar rótulos e valores na tela de desenho. Os rótulos podem ser nomes personalizados criados na tela de Jornada ou podem ser rótulos ou condições criadas no Journey Optimizer. Os valores são números e porcentagens que indicam as pessoas ou sessões que foram movidas de um nó para o próximo na jornada. "
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_journeycanvas_show_fallout"
+>title="Mostrar fallout"
+>abstract="Os dados de fallout mostram a porcentagem e o número de pessoas ou sessões em cada nó da jornada que nunca chegaram ao próximo nó da jornada. Eles podem ter executado outras ações no site, mas nunca atendem aos critérios definidos pelo próximo nó na jornada.<br/>Os dados de fallout mostram pessoas ou sessões (independentemente da métrica primária escolhida) e são baseados na configuração do contêiner da tela de Jornada."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_journeycanvas_compare"
+>title="Comparar a"
+>abstract="O intervalo de datas usado para comparar os dados de jornada atuais com um período anterior. Quando você seleciona um intervalo de datas de comparação, cada nó na jornada mostra a alteração percentual entre o intervalo de datas atual e o intervalo de datas de comparação selecionado, com base na métrica principal. "
 
 <!-- markdownlint-enable MD034 -->
 
