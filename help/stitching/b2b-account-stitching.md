@@ -7,23 +7,15 @@ hide: true
 role: Admin
 autotag-review: '2026-05-19T11:01:07.331Z'
 TQID: 'https://experienceleague.adobe.com/-7rHOhYVCp-nSMqdE7YlAlCJ0zRQYvPOViMHSCNuKV8'
-product_v2:
-  - id: d3f42e9e-bb51-4077-a732-358b801d8b29
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-subfeature_v2:
-  - id: faea9abd-7024-4c5e-a5b4-87919e09b24b
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 2a7629993e235d66844db036ccce88e57fc20562
+product_v2: id: d3f42e9e-bb51-4077-a732-358b801d8b29id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2: id: faea9abd-7024-4c5e-a5b4-87919e09b24b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: d00e9f03-e50b-4162-b143-0c0817c937c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 1dce83d0b5c760830084c1bf4e14f613b998dc10
 workflow-type: tm+mt
-source-wordcount: 1239
-ht-degree: 13%
+source-wordcount: 1245
+ht-degree: 11%
 
 ---
 
@@ -77,12 +69,12 @@ Você ativa e configura a compilação de conta B2B no nível da conexão e, em 
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_person"
->title="Pessoa"
+>title="ID da pessoa"
 >abstract="Selecione o campo no conjunto de dados que contém IDs de pessoa. O namespace deste campo pode ser diferente ou igual ao namespace do identificador de pessoa selecionado. Se forem diferentes, os dois namespaces precisarão ser vinculados no gráfico de identidade."
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_account"
->title="Conta"
+>title="ID da Conta"
 >abstract="Selecione o campo no conjunto de dados que contém os valores do identificador de conta exclusivo. As informações da ID da conta serão disponibilizadas nas linhas de qualquer conjunto de dados de evento com a **[!UICONTROL compilação de Pessoa para Conta]** habilitada."
 
 >[!CONTEXTUALHELP]
@@ -116,8 +108,8 @@ Você ativa e configura a compilação de conta B2B no nível da conexão e, em 
       | Campo | Obrigatório | Descrição |
       |---|:---:|---|
       | **[!UICONTROL Conjunto de dados de Pessoa para Conta]** | ![Obrigatório](/help/assets/icons/Required.svg) | Selecione a pesquisa (conjunto de dados de série não temporal ou de registro) que mapeia pessoas para contas. |
-      | **[!UICONTROL Pessoa]** | ![Obrigatório](/help/assets/icons/Required.svg) | Selecione o campo no conjunto de dados que contém a ID de pessoa. Este campo deve ser marcado como uma identidade e não pode ser igual ao campo **[!UICONTROL Conta]** ou ao campo **[!UICONTROL Hora de início]**. |
-      | **[!UICONTROL Conta]** | ![Obrigatório](/help/assets/icons/Required.svg) | Selecione o campo no conjunto de dados que contém a ID da conta. Este campo não pode ser igual ao campo **[!UICONTROL Pessoa]** ou ao campo **[!UICONTROL Hora de início]**. |
+      | **[!UICONTROL ID de pessoa]** | ![Obrigatório](/help/assets/icons/Required.svg) | Selecione o campo no conjunto de dados que contém a ID de pessoa. Este campo deve ser marcado como uma identidade e não pode ser igual ao campo **[!UICONTROL ID da Conta]** ou ao campo **[!UICONTROL Hora de início]**. |
+      | **[!UICONTROL ID de conta]** | ![Obrigatório](/help/assets/icons/Required.svg) | Selecione o campo no conjunto de dados que contém a ID da conta. Este campo não pode ser igual ao campo **[!UICONTROL ID da pessoa]** ou ao campo **[!UICONTROL Hora de início]**. |
       | **Hora de início** | | Selecione um campo de carimbo de data e hora que indique quando o relacionamento entre pessoa e conta se tornou ativo. |
 
       >[!NOTE]
@@ -136,7 +128,7 @@ Você ativa e configura a compilação de conta B2B no nível da conexão e, em 
 >id="connection_b2b_stitching_enable_person_to_account"
 >title="Habilitar compilação entre pessoa e conta"
 >abstract="Se ativado, esse conjunto de dados usa a compilação de Pessoa B2B para Conta. Os valores de **[!UICONTROL ID de pessoa]** serão elevados para os valores do **[!UICONTROL Namespace do identificador de pessoa]** configurado, em seguida, usados para pesquisar a ID de conta com base no conjunto de dados de pessoa para conta.<br/>Se desabilitado, este conjunto de dados não usa a compilação de Pessoa B2B para Conta e você precisa selecionar uma **[!UICONTROL ID de Conta]** necessária."
->additional-url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/stitching/b2b-account-stitching#configure-b2b-stitching-settings" text="Definir configurações de compilação B2B"
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/b2b-account-stitching#configure-b2b-stitching-settings" text="Definir configurações de compilação B2B"
 
 Depois de configurar a compilação B2B no nível da conexão, você deve ativar a compilação de conta B2B individualmente para cada conjunto de dados de evento que você deseja compilar.
 
