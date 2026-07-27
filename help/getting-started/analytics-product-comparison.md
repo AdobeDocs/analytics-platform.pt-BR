@@ -4,22 +4,15 @@ description: Compare os atributos do cliente dos relatórios do Jornada Analytic
 keywords: sequência de cliques;feed de dados;datafeed;comparação de produto;Analysis Workspace;Report Builder;Exportação de tabela completa
 feature: Components
 hold: true
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: d5ecbbc28bc3892a2114de2c73df3287f22cf1a0
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d00e9f03-e50b-4162-b143-0c0817c937c2
+source-git-commit: c7fc5df2a0fd7393b48bfe6bdfa7dccdfffde46c
 workflow-type: tm+mt
-source-wordcount: 345
-ht-degree: 59%
+source-wordcount: 390
+ht-degree: 53%
 
 ---
 
@@ -32,16 +25,15 @@ Use esta página para comparar os relatórios do Customer Journey Analytics e as
 |---|---|---|---|---|---|---|
 | **Método de acesso** | Navegador | Microsoft Excel | Navegador | Configurar por meio do navegador | Ferramentas RESTful API | Ferramentas compatíveis com MCP |
 | **Granularidade de dados** | Agregado | Agregado | Agregado | Evento | Agregado | Agregado |
-| **Experience Cloud ID (ECID) disponível** | Não | Não | Sim | Sim | Não | Não |
+| **Experience Cloud ID (ECID) disponível** | Não | Não | Não | Sim | Não | Não |
 | **Carimbo de data e hora disponível** | Não | Não | Não | Sim | Não | Não |
 | **Nível de processamento** | Totalmente processado | Totalmente processado | Totalmente processado | Totalmente processado | Totalmente processado | Totalmente processado |
 | **Dados do filtro de bot incluídos** | Não | Não | Não | Não | Não | Não |
-| **Baixo tráfego (únicos excedidos) aparece** <br> [Saiba mais](/help/components/dimensions/high-cardinality.md) | Sim | Sim | Não | Não | Sim | Sim |
-| **Limite de linha visível (antes da paginação)** | 400 | 50,000 | Ilimitado | Ilimitado | 50,000 | 50,000 |
-| **Várias visualizações de dados** | Sim | Sim | Não | Não | Sim | Sim |
+| **Limite de linha visível (antes da paginação)** | 400 | 50,000 | Limite de 3 milhões, 30 milhões, 150 milhões ou 300 milhões, dependendo do nível | Limite de 3 milhões, 30 milhões, 150 milhões ou 300 milhões, dependendo do nível | 50,000 | 50,000 |
+| **Várias visualizações de dados** | Sim, um projeto pode conter dados de várias visualizações de dados | Sim, um projeto pode conter dados de várias visualizações de dados | Não, uma exportação pode conter dados de apenas uma visualização de dados | Não, uma exportação pode conter dados de apenas uma visualização de dados | Sim | Sim |
 | **Quantidade de detalhamentos** | Ilimitado | Até 2 | Ilimitado | Ilimitado | Ilimitado, executar em vários queries | Ilimitado |
 | **Segmentação** <br> [Saiba mais](/help/components/segments/seg-overview.md) | Sim | Sim | Sim | Sim, com [limitações](/help/components/exports/cja-data-feeds/df-segmentation.md) | Sim | Sim |
-| **Métricas calculadas** <br> [Saiba mais](/help/components/calc-metrics/calc-metr-overview.md) | Sim, com o [Attribution](/help/analysis-workspace/attribution/overview.md) | Sim, com Atribuição | Não | Não | Sim, com Atribuição | Sim, com Atribuição |
+| **Métricas calculadas** <br> [Saiba mais](/help/components/calc-metrics/calc-metr-overview.md) | Sim | Sim | Sim, com [limitações](/help/analysis-workspace/export/export-cloud.md#calculated-metric-functions-support) | Não | Sim | Sim |
 | **Campos derivados** <br> [Saiba mais](/help/data-views/derived-fields/derived-fields.md) | Sim | Sim | Sim | Sim | Sim | Sim |
 | **Análise de coorte** | [Sim](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | Não | Não | Não | Não | Não |
 | **Atribuição** <br> [Saiba mais](/help/analysis-workspace/attribution/overview.md) | Sim | Limitado | Não | Não | Sim | Sim |

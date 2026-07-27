@@ -6,25 +6,12 @@ feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
 TQID: https://experienceleague.adobe.com/7Bqz2dh9v-BhLey5fWNjnQkgFAXQd3QDnTzz8rd7BFA
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-  - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
-subfeature_v2:
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: d3c978ee-1ff0-4475-968a-721e2dd99ef1
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
-  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: d3c978ee-1ff0-4475-968a-721e2dd99ef1id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817afid: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+source-git-commit: c7fc5df2a0fd7393b48bfe6bdfa7dccdfffde46c
 workflow-type: tm+mt
 source-wordcount: 3268
 ht-degree: 58%
@@ -238,22 +225,22 @@ Os seguintes recursos não são compatíveis e são removidos automaticamente da
 
 Os seguintes componentes não são compatíveis, e o Analysis Workspace solicita que você os remova da tabela ao executar uma exportação de tabela completa:
 
-* Métricas calculadas que usam funções sem suporte na definição de métrica (consulte [Funções de métrica calculada sem suporte](#unsupported-calculated-metric-functions) para obter mais informações)
+* Métricas calculadas que usam funções sem suporte na definição de métrica (consulte [Funções de métrica calculada sem suporte](#calculated-metric-functions-support) para obter mais informações)
 * Componentes que foram impedidos por um administrador de serem exportados (consulte a seção *Segmento nas políticas de governança de dados nas visualizações de dados* em [Rótulos e políticas](/help/data-views/data-governance.md) para obter mais informações)
 * Qualquer dimensão que satisfaça todos os seguintes critérios:
-   * É criado a partir de um campo que faz parte de uma [matriz de objetos](/help/use-cases/object-arrays.md) (semelhante às variáveis de vários valores no Adobe Analytics).
-   * Tem [persistência habilitada](/help/data-views/component-settings/persistence.md).
-   * Não está usando uma [dimensão de associação](/help/use-cases/data-views/binding-dimensions-metrics.md).
+  * É criado a partir de um campo que faz parte de uma [matriz de objetos](/help/use-cases/object-arrays.md) (semelhante às variáveis de vários valores no Adobe Analytics).
+  * Tem [persistência habilitada](/help/data-views/component-settings/persistence.md).
+  * Não está usando uma [dimensão de associação](/help/use-cases/data-views/binding-dimensions-metrics.md).
 * Várias dimensões que são de campos que referenciam diferentes [matrizes de objetos](/help/use-cases/object-arrays.md). (Várias dimensões que referenciam a mesma matriz de objetos são permitidas.)
 * Mais de 10 dimensões e 10 métricas por relatório (até 10 dimensões e 10 métricas são compatíveis)
 * Colunas da tabela:
-   * Intervalos de datas
-   * Dimensões
+  * Intervalos de datas
+  * Dimensões
 * Linhas da tabela:
-   * Métricas calculadas
-   * Métricas
-   * Intervalos de datas
-   * Segmentos
+  * Métricas calculadas
+  * Métricas
+  * Intervalos de datas
+  * Segmentos
 
 ## Suporte a funções de métrica calculada
 
