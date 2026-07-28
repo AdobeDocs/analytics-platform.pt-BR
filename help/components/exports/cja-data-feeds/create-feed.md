@@ -18,10 +18,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: 0cc15e1c3dcbd8609a47954af8602ad617c67a51
+source-git-commit: bb3fcdcd879c503c311a58cf2fd982dd38305c6a
 workflow-type: tm+mt
-source-wordcount: 2774
-ht-degree: 28%
+source-wordcount: 3225
+ht-degree: 26%
 
 ---
 
@@ -97,25 +97,28 @@ Antes de criar um feed de dados, é importante ter uma compreensão básica dos 
    |---------|----------|
    | [!UICONTROL **Nome**] | O nome do feed de dados. Os nomes devem ser exclusivos na visualização de dados selecionada e podem ter até 255 caracteres. <!--[Learn more](/help/export/analytics-data-feed/df-faq.md#must-feed-names-be-unique)--> |
    | [!UICONTROL **Tags**] | Aplique tags ao feed de dados para facilitar a categorização. <!--You can filter on tags as described in [Filter and search the list of data feeds](/help/export/analytics-data-feed/df-manage-feeds.md#filter-and-search-the-list-of-data-feeds) in [Manage data feeds](/help/export/analytics-data-feed/df-manage-feeds.md).--> |
-   | [!UICONTROL **Descrição**] | Especifique uma descrição para o feed de dados. A descrição adicionada fica visível ao editar o feed de dados. |
+   | [!UICONTROL **Descrição**] | Especifique uma descrição para o feed de dados (até 500 caracteres). A descrição adicionada fica visível ao editar o feed de dados. |
    | [!UICONTROL **Visualização de dados**] | Selecione a visualização de dados que contém os dados que você deseja exportar.<p>Considere o seguinte ao selecionar uma visualização de dados:</p> <ul><li>Se vários feeds de dados forem criados para a mesma visualização, cada feed de dados deverá ter definições de coluna diferentes.</li><li>A lista de colunas disponíveis depende da empresa de logon à qual a visualização de dados selecionada pertence. Se você alterar a visualização de dados, a lista de colunas disponíveis poderá ser alterada. </li></ul> |
 
 1. Selecione [!UICONTROL **Próximo**].
 
 1. Na guia [!UICONTROL **Estrutura de dados**], verifique se a exibição de dados correta está selecionada no campo **[!UICONTROL Exibição de dados]**.
 
+   <!--add screenshot-->
+
 1. No menu suspenso [!UICONTROL **Segmentos**], procure e selecione segmentos para filtrar os dados incluídos no feed.
 
    Quando você aplica vários segmentos, eles são agrupados com um operador AND. (Para unir segmentos com um operador OU, primeiro você deve criar um novo segmento no construtor de segmentos e, em seguida, aplicar o novo segmento ao feed de dados.)
 
-1. Adicione componentes à configuração do feed de dados. No painel à esquerda, localize todos os componentes que deseja incluir e arraste-os para a tela para criar sua estrutura de dados. Para selecionar vários componentes, mantenha a tecla **[!UICONTROL Shift]**, **[!UICONTROL Command]** (no macOS) ou **[!UICONTROL Ctrl]** (no Windows) pressionada.
+1. Adicione componentes à configuração do feed de dados. O painel esquerdo mostra apenas componentes válidos para feeds de dados.
 
-   >[!NOTE]
-   >
-   >Os dados do agente usuário e os dados de pesquisa do dispositivo não podem existir na mesma configuração de feed de dados. Um erro é exibido se você tentar adicionar componentes conflitantes. Para obter mais informações, consulte [Configurar pesquisa de dispositivo](https://experienceleague.adobe.com/pt-br/docs/experience-platform/datastreams/configure#geolocation-device-lookup) em [Criar e configurar sequências de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/datastreams/configure) no guia Coleção de dados.
+   * **Arrastar e soltar**: arraste os componentes do painel esquerdo para a tela. Mantenha o **[!UICONTROL Shift]** pressionado, ou mantenha pressionado o **[!UICONTROL Command]** (macOS) ou o **[!UICONTROL Ctrl]** (Windows) para selecionar e arrastar vários componentes de uma só vez.
+   * **Botão de adição**: selecione o ícone de adição ![Adicionar](/help/assets/icons/Add.svg) ao lado de qualquer componente no painel esquerdo para adicioná-lo à tela.
+   * **[!UICONTROL Mostrar tudo]**: selecione **[!UICONTROL Mostrar tudo]** na parte inferior da lista de componentes para abrir uma caixa de diálogo mostrando todos os componentes disponíveis. Marque a caixa de seleção ao lado de cada componente que você deseja adicionar e selecione **[!UICONTROL Adicionar selecionado]**. Quando um termo de pesquisa ou uma marca de filtro está ativa no painel à esquerda, o botão **[!UICONTROL Adicionar tudo]** também é exibido, permitindo adicionar todos os resultados filtrados de uma só vez.
 
+   Quando você adiciona um componente que pertence a um campo de matriz XDM (por exemplo, um campo de proposta do Adobe Journey Optimizer), ele aparece na tela como um grupo aninhado recolhível em vez de um item simples. O grupo reflete a estrutura de dados subjacente e as saídas como uma matriz aninhada no arquivo exportado.
 
-   Use as informações a seguir para entender as dimensões que sempre estão incluídas, as dimensões que não podem ser incluídas e as métricas que devem ser substituídas:
+   <!--add screenshot-->
 
    +++ Dimensões que são sempre incluídas nos feeds de dados
 
@@ -155,6 +158,47 @@ Antes de criar um feed de dados, é importante ter uma compreensão básica dos 
    | Semana | Semana em que um evento ocorreu | Não disponível |
    | Semana do ano | Semana do ano em que um evento ocorreu | Não disponível |
    | Ano | Ano em que um evento ocorreu | Não disponível |
+
+   +++
+
+   +++ Dimensões que não podem ser usadas juntas nos feeds de dados
+
+   >[!IMPORTANT]
+   >
+   >Determinadas dimensões não podem ser usadas juntas em conjuntos de dados do Experience Platform e, portanto, não podem ser incluídas no mesmo feed de dados.
+   >
+   >Se você optar por incluir as dimensões **Agente do Usuário** ou **ID do Mobile** no feed de dados, as dimensões listadas abaixo não poderão ser adicionadas ao feed de dados.
+   >
+   >Se você usar o Web SDK, essa restrição será imposta nos fluxos de dados antes que os dados cheguem a um conjunto de dados do Experience Platform. Para obter mais informações, consulte [Configurar pesquisa de dispositivo](https://experienceleague.adobe.com/pt-br/docs/experience-platform/datastreams/configure#geolocation-device-lookup) em [Criar e configurar sequências de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/datastreams/configure) no guia Coleção de dados.
+
+   As seguintes dimensões não podem ser usadas junto com as dimensões **Agente de Usuário** ou **ID de Dispositivo Móvel**:
+
+   * Tipo de navegador
+   * Navegador
+   * Fabricante do dispositivo móvel
+   * Tipo de dispositivo móvel
+   * Suporte a Áudio Remoto
+   * DRM Remoto
+   * Java VM Móvel
+   * Serviços de Informação Remotos
+   * Suporte a Imagem Remota
+   * Intensidade de Cor Remota
+   * Protocolos de Rede Remota
+   * Número do dispositivo móvel
+   * Extensão máx. de email móvel
+   * Decoração de correio para dispositivo móvel
+   * Push To Talk para dispositivo móvel
+   * Largura da tela do dispositivo móvel
+   * Extensão máx. do URL do navegador para dispositivo móvel
+   * Sistema operacional de dispositivos móveis (descontinuado)
+   * Altura da tela do dispositivo móvel
+   * Suporte a Vídeo Remoto
+   * Suporte a Cookie Remoto
+   * Extensão max do marcador de dispositivo móvel
+   * Tamanho da tela do dispositivo móvel
+   * Nome do dispositivo móvel
+   * Tipos de sistema operacional
+   * Sistemas operacionais
 
    +++
 
@@ -207,17 +251,29 @@ Antes de criar um feed de dados, é importante ter uma compreensão básica dos 
 
    +++
 
+1. (Opcional) Reordene os componentes na tela arrastando-os. A ordem definida é preservada como a ordem das colunas no arquivo de feed de dados exportado.
 
-1. Na guia [!UICONTROL **Entrega**], especifique as seguintes informações:
+1. (Opcional) Use os painéis **[!UICONTROL Resumo do feed]** e **[!UICONTROL Visualização do esquema]** no lado direito da página para examinar sua estrutura de dados antes de continuar:
+
+   * O **[!UICONTROL Resumo do feed]** mostra uma contagem ativa do total de componentes, colunas, dimensões e métricas que você adicionou.
+   * A **[!UICONTROL visualização de esquema]** mostra uma representação JSON do esquema de feed de dados que é atualizado à medida que você adiciona ou reordena componentes.
+   * O botão **[!UICONTROL Linhas de exemplo]** abre uma caixa de diálogo que mostra linhas de saída de exemplo para que você possa verificar se a estrutura parece correta. Essa caixa de diálogo mostra apenas dados de exemplo e não reflete seus dados reais.
+
+   <!--add screenshot-->
+
+1. Na guia [!UICONTROL **Entrega**], na seção [!UICONTROL **Agendamento**], escolha o tipo de feed que deseja criar (ativo ou preenchimento retroativo) e especifique a janela de relatórios, a frequência e outras opções de configuração:
+
+   <!--add screenshot-->
 
    | Campo | Função |
    |---------|----------|
-   | [!UICONTROL **Tipo de feed**] | Selecione o tipo de feed que deseja criar:<ul><li>[!UICONTROL **Feed ativo**]: exporta dados atuais e futuros.</li><li>[!UICONTROL **Feed de preenchimento retroativo**]: exporta dados históricos entre duas datas anteriores.</li></ul> |
-   | [!UICONTROL **Data de início**] | Especifique a data em que deseja que o feed de dados comece. Para iniciar imediatamente o processamento dos feeds de dados de dados históricos, verifique se [!UICONTROL **Feed de preenchimento retroativo**] está selecionado e defina essa data como qualquer data no passado quando os dados estiverem sendo coletados. A data de início é baseada no fuso horário da visualização de dados. |
-   | [!UICONTROL **Data final**] | Especifique a data em que deseja que o feed de dados termine. A data de término é baseada no fuso horário da visualização de dados. |
-   | [!UICONTROL **Frequência**] | Selecione a frequência com que o feed de dados deve ser enviado. Eventos com carimbos de data e hora que caem na janela de frequência são incluídos na entrega do feed de dados. Os campos [!UICONTROL **Intervalo de datas de retrospectiva**] e [!UICONTROL **Atraso de processamento**] também podem afetar quais eventos são incluídos nos dados para a frequência de entrega escolhida.<p>Para feeds ao vivo, selecione para incluir uma hora de dados ou um dia de dados. Os feeds de preenchimento retroativo devem ser diários.</p><ul><li>**Diariamente**: os feeds contêm dados de um dia inteiro, da meia-noite a meia-noite no fuso horário da visualização de dados. Use essa opção para feeds de preenchimento retroativo ou para feeds em tempo real.</li><li>**Por hora**: os feeds contêm dados de uma hora. Use essa opção para feeds em tempo real.</li></ul> |
-   | [!UICONTROL **Intervalo de datas de retrospectiva**] | Controla até que data o Customer Journey Analytics analisa ao processar a entrega do feed de dados. <p>Essa configuração não altera a janela de frequência (hora ou dia), que define o intervalo de tempo dos eventos a serem incluídos na saída do feed de dados. No entanto, o intervalo de datas da retrospectiva pode influenciar os dados entregues, das seguintes maneiras: </p><ul><li>**Qualificação do segmento**: quando um segmento é aplicado à sua definição de feed de dados, todos os eventos dentro do intervalo de datas da pesquisa determinam se uma pessoa se qualifica. A configuração de contêiner do segmento determina o escopo. (Os contêineres possíveis são: Pessoa, Sessão ou Evento. B2B tem os seguintes contêineres adicionais: Conta global, Conta, Oportunidade, Grupo de compras.)  <p>Por exemplo, se um contêiner Pessoa for usado e a pessoa for qualificada durante o intervalo de datas da retrospectiva, todos os eventos dessa pessoa durante a janela de frequência também serão qualificados.</p></li><li>**Cálculo de sessão**: os limites de sessão são calculados usando dados dentro do intervalo de datas da pesquisa.</li><li>**Transformações de campo derivadas**: quaisquer funções de campo derivadas que referenciam contêineres usam o intervalo de datas da pesquisa em exportações de feed de dados.</li><li>**Persistência do Dimension**: se você optar por definir a persistência em uma dimensão individual, também escolha uma expiração para determinar por quanto tempo um item de dimensão persiste além do evento em que está definido. <p>O intervalo de datas de pesquisa afeta a persistência da dimensão quando a expiração é definida como uma das seguintes opções na visualização de dados:</p><ul><li>Para cada dimensão na definição de feed de dados que usa [!UICONTROL **Janela de relatório**] como expiração, o intervalo de datas de retrospectiva se torna a nova janela de relatório.</li><li>Para cada dimensão na definição de feed de dados que usa [!UICONTROL **Tempo personalizado**] como sua expiração, e se o tempo personalizado selecionado se estender além do intervalo de datas da pesquisa, o tempo personalizado será ignorado e o intervalo de datas da pesquisa será usado para a expiração da dimensão.<p>Para obter mais informações sobre como configurar a persistência em dimensões na visualização de dados, consulte [Configurações do componente de Persistência](/help/data-views/component-settings/persistence.md).</p></li></ul> |
-   | [!UICONTROL **Atraso no processamento**] | Escolha o tempo de espera antes do processamento de um arquivo de feed de dados. Quaisquer ocorrências de chegada tardia que chegarem durante o atraso de processamento serão incluídas no feed de dados. <p>Atrasos de processamento são úteis por vários motivos, como para dar às implementações móveis uma oportunidade para que os dispositivos offline fiquem online e enviem dados ou para acomodar os processos do lado do servidor de sua organização no gerenciamento de arquivos processados anteriormente. </p><p>Você pode atrasar um feed por 2, 3, 4 ou 8 horas.<p>As sessões devem ser iniciadas após o limite do atraso de processamento para serem incluídas; as sessões que iniciam antes do limite e terminam dentro do atraso de processamento não são incluídas.</p> |
+   | [!UICONTROL **Tipo de feed**] | Selecione o tipo de feed que deseja criar:<ul><li>[!UICONTROL **Feed ativo**]: exporta dados atuais e futuros.</li><li>[!UICONTROL **Feed de preenchimento retroativo**]: exporta dados históricos. </li></ul> |
+   | [!UICONTROL **Data de início**] | A data em que o feed de dados começa. Para feeds ao vivo, isso deve ser hoje ou uma data futura. Para feeds de preenchimento retroativo, essa deve ser uma data passada na janela de retenção de dados da visualização de dados. A data de início é baseada no fuso horário da visualização de dados. |
+   | [!UICONTROL **Data de expiração**] <br/>Disponível somente para feeds em tempo real | A data em que o feed de dados expira e não é mais executado. A data é baseada no fuso horário da visualização de dados. |
+   | [!UICONTROL **Data final**]<br/> Disponível somente para feeds de preenchimento retroativo | A data em que o feed de dados termina. A data final não pode ser no futuro. A data é baseada no fuso horário da visualização de dados. |
+   | [!UICONTROL **Frequência**] | Selecione a frequência com que o feed de dados deve ser enviado. Eventos com carimbos de data e hora que caem na janela de frequência são incluídos na entrega do feed de dados. Os campos [!UICONTROL **Intervalo de datas de retrospectiva**] e [!UICONTROL **Atraso de processamento**] também podem afetar quais eventos são incluídos nos dados para a frequência de entrega escolhida.<p>Para feeds ao vivo, selecione para incluir uma hora de dados ou um dia de dados. Para feeds de preenchimento retroativo, este campo está bloqueado para **Diariamente** e não pode ser alterado.</p><ul><li>**Diariamente**: os feeds contêm dados de um dia inteiro, da meia-noite a meia-noite no fuso horário da visualização de dados. <p>Essa opção é necessária para feeds de preenchimento retroativo e opcional para feeds em tempo real.</p></li><li>**Por hora**: os feeds contêm dados de uma hora. <p>Essa opção está disponível somente para feeds em tempo real.</p></li></ul> |
+   | [!UICONTROL **Intervalo de datas de retrospectiva**] | Controla até que data o Customer Journey Analytics analisa ao processar a entrega do feed de dados. O padrão é 30 dias. <p>Essa configuração não altera a janela de frequência (hora ou dia), que define o intervalo de tempo dos eventos a serem incluídos na saída do feed de dados. No entanto, o intervalo de datas da retrospectiva pode influenciar os dados entregues, das seguintes maneiras: </p><ul><li>**Qualificação do segmento**: quando um segmento é aplicado à sua definição de feed de dados, todos os eventos dentro do intervalo de datas da pesquisa determinam se uma pessoa se qualifica. A configuração de contêiner do segmento determina o escopo. (Os contêineres possíveis são: Pessoa, Sessão ou Evento. B2B tem os seguintes contêineres adicionais: Conta global, Conta, Oportunidade, Grupo de compras.)  <p>Por exemplo, se um contêiner Pessoa for usado e a pessoa for qualificada durante o intervalo de datas da retrospectiva, todos os eventos dessa pessoa durante a janela de frequência também serão qualificados.</p></li><li>**Cálculo de sessão**: os limites de sessão são calculados usando dados dentro do intervalo de datas da pesquisa.</li><li>**Transformações de campo derivadas**: quaisquer funções de campo derivadas que referenciam contêineres usam o intervalo de datas da pesquisa em exportações de feed de dados.</li><li>**Persistência do Dimension**: se você optar por definir a persistência em uma dimensão individual, também escolha uma expiração para determinar por quanto tempo um item de dimensão persiste além do evento em que está definido. <p>O intervalo de datas de pesquisa afeta a persistência da dimensão quando a expiração é definida como uma das seguintes opções na visualização de dados:</p><ul><li>Para cada dimensão na definição de feed de dados que usa [!UICONTROL **Janela de relatório**] como expiração, o intervalo de datas de retrospectiva se torna a nova janela de relatório.</li><li>Para cada dimensão na definição de feed de dados que usa [!UICONTROL **Tempo personalizado**] como sua expiração, e se o tempo personalizado selecionado se estender além do intervalo de datas da pesquisa, o tempo personalizado será ignorado e o intervalo de datas da pesquisa será usado para a expiração da dimensão.<p>Para obter mais informações sobre como configurar a persistência em dimensões na visualização de dados, consulte [Configurações do componente de Persistência](/help/data-views/component-settings/persistence.md).</p></li></ul> |
+   | [!UICONTROL **Atraso no processamento**] | Escolha o tempo de espera antes do processamento de um arquivo de feed de dados. O padrão é 2 horas. Quaisquer ocorrências de chegada tardia que chegarem durante o atraso de processamento serão incluídas no feed de dados. <p>Atrasos de processamento são úteis por vários motivos, como para dar às implementações móveis uma oportunidade para que os dispositivos offline fiquem online e enviem dados ou para acomodar os processos do lado do servidor de sua organização no gerenciamento de arquivos processados anteriormente. </p><p>Você pode atrasar um feed por 2, 3, 4 ou 8 horas.</p><p>As sessões devem ser iniciadas após o limite do atraso de processamento para serem incluídas; as sessões que iniciam antes do limite e terminam dentro do atraso de processamento não são incluídas.</p> |
    | [!UICONTROL **Formato de compactação**] | Selecione o formato de compactação dos arquivos de saída do Parquet entregues ao destino da nuvem. Escolha entre os seguintes formatos:<ul><li>[!UICONTROL **Snappy**]: compactação e descompactação rápidas com tamanhos de arquivo moderados. Amplamente compatível com plataformas de dados modernas, como BigQuery, Snowflake e Apache Spark.</li><li>[!UICONTROL **GZip**]: amplamente compatível, inclusive com ferramentas que não oferecem suporte nativo ao Snappy. Recomendado se o pipeline downstream exigir um padrão de compactação amplamente reconhecido.</li><li>[!UICONTROL **Z Padrão (Zstd)**]: alta eficiência de compactação com descompactação rápida. Adequado se minimizar o tamanho do arquivo é uma prioridade e suas ferramentas suportam Zstd.</li></ul> |
 
 1. Na guia [!UICONTROL **Entrega**], na seção [!UICONTROL **Destino**], configure o destino para onde deseja que os dados sejam enviados.

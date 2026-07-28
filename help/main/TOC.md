@@ -2,10 +2,10 @@
 user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Saiba mais sobre o Adobe Customer Journey Analytics e como usar o Analysis Workspace com dados da Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
-source-git-commit: ea98309e823b1d4249ac09ca11f0d9f22406c8f3
+source-git-commit: cd71195e30ae7fcc877b395a2756a924fa61b11c
 workflow-type: tm+mt
-source-wordcount: '1462'
-ht-degree: 92%
+source-wordcount: '1469'
+ht-degree: 91%
 
 ---
 
@@ -33,6 +33,7 @@ ht-degree: 92%
     + [Página de destino](../getting-started/landing.md)
     + [Perguntas frequentes](../getting-started/cja-faq.md)
     + [Comparar com soluções de BI](../getting-started/cja-vs-bi.md)
+    + {hide-from-toc}[Comparação de produtos do Analytics](/help/getting-started/analytics-product-comparison.md)
     + [Assistente de IA](../ai-assistant.md)
     + [Data Insights Agent](../data-analysis-ai.md)
   + Customer Journey Analytics B2B Edition {#cja-b2b}
@@ -425,6 +426,7 @@ ht-degree: 92%
       + {hide-from-toc}[Preparar para mapear colunas](/help/components/exports/cja-data-feeds/df-column-mapping-prep.md)
       + {hide-from-toc}[Mapear colunas](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)
       + {hide-from-toc}[Criar um feed de dados](/help/components/exports/cja-data-feeds/create-feed.md)
+      + {hide-from-toc}[Segmentação em feeds de dados](/help/components/exports/cja-data-feeds/df-segmentation.md)
   + Dicionário de dados {#data-dictionary}
     + [Visão geral](../components/data-dictionary/data-dictionary-overview.md)
     + [Exibir informações de componente no dicionário de dados](../components/data-dictionary/view-data-dictionary.md)
