@@ -16,10 +16,10 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: c7fc5df2a0fd7393b48bfe6bdfa7dccdfffde46c
+source-git-commit: e686fca2c77a8f9739298ece01ccf0fa2fe87b3b
 workflow-type: tm+mt
-source-wordcount: 390
-ht-degree: 53%
+source-wordcount: 464
+ht-degree: 44%
 
 ---
 
@@ -28,26 +28,23 @@ ht-degree: 53%
 
 Use esta página para comparar os relatórios do Customer Journey Analytics e as ferramentas de exportação em atributos-chave para ajudá-lo a escolher a ferramenta certa para suas necessidades de análise ou exportação de dados.
 
-| Nome do produto e link de ajuda | [Analysis Workspace](/help/analysis-workspace/home.md) | [Report Builder](/help/report-builder/rb-overview.md) | [Exportação de tabela completa](/help/analysis-workspace/export/export-cloud.md) | [Feeds de dados](/help/components/exports/cja-data-feeds/data-feed-overview.md) | [APIs](https://developer.adobe.com/cja-apis/docs/) | MCP |
-|---|---|---|---|---|---|---|
-| **Método de acesso** | Navegador | Microsoft Excel | Navegador | Configurar por meio do navegador | Ferramentas RESTful API | Ferramentas compatíveis com MCP |
-| **Granularidade de dados** | Agregado | Agregado | Agregado | Evento | Agregado | Agregado |
-| **Experience Cloud ID (ECID) disponível** | Não | Não | Não | Sim | Não | Não |
-| **Carimbo de data e hora disponível** | Não | Não | Não | Sim | Não | Não |
-| **Nível de processamento** | Totalmente processado | Totalmente processado | Totalmente processado | Totalmente processado | Totalmente processado | Totalmente processado |
-| **Dados do filtro de bot incluídos** | Não | Não | Não | Não | Não | Não |
-| **Limite de linha visível (antes da paginação)** | 400 | 50,000 | Limite de 3 milhões, 30 milhões, 150 milhões ou 300 milhões, dependendo do nível | Limite de 3 milhões, 30 milhões, 150 milhões ou 300 milhões, dependendo do nível | 50,000 | 50,000 |
-| **Várias visualizações de dados** | Sim, um projeto pode conter dados de várias visualizações de dados | Sim, um projeto pode conter dados de várias visualizações de dados | Não, uma exportação pode conter dados de apenas uma visualização de dados | Não, uma exportação pode conter dados de apenas uma visualização de dados | Sim | Sim |
-| **Quantidade de detalhamentos** | Ilimitado | Até 2 | Ilimitado | Ilimitado | Ilimitado, executar em vários queries | Ilimitado |
-| **Segmentação** <br> [Saiba mais](/help/components/segments/seg-overview.md) | Sim | Sim | Sim | Sim, com [limitações](/help/components/exports/cja-data-feeds/df-segmentation.md) | Sim | Sim |
-| **Métricas calculadas** <br> [Saiba mais](/help/components/calc-metrics/calc-metr-overview.md) | Sim | Sim | Sim, com [limitações](/help/analysis-workspace/export/export-cloud.md#calculated-metric-functions-support) | Não | Sim | Sim |
-| **Campos derivados** <br> [Saiba mais](/help/data-views/derived-fields/derived-fields.md) | Sim | Sim | Sim | Sim | Sim | Sim |
-| **Análise de coorte** | [Sim](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md) | Não | Não | Não | Não | Não |
-| **Atribuição** <br> [Saiba mais](/help/analysis-workspace/attribution/overview.md) | Sim | Limitado | Não | Não | Sim | Sim |
-| **Preparação** <br> [Saiba mais](/help/analysis-workspace/curate-share/curate.md) | Sim, com em projetos e visualizações de dados | Não | Não | Sim, na visualização de dados | Sim, na visualização de dados | Sim, na visualização de dados |
-| **Compartilhamento de projeto** <br> [Saiba mais](/help/analysis-workspace/curate-share/share-projects.md) | Sim, com funções de projeto | Não | Não | Não | Não | Não |
-| **Delivery programado** | Sim | Sim | Sim | Sim | Não | Não |
-| **Destinos do delivery** | Email | Email | Amazon S3, Azure RBAC, Azure SAS, GCP | Amazon S3, Azure RBAC, Azure SAS, GCP | — | — |
-| **Processamento de tempo do relatório de exibição de dados** <br> [Saiba mais](/help/data-views/data-views.md) | Sim | Sim | Não | Não | Sim | Sim |
+| Nome do produto e link de ajuda | [Analysis Workspace](/help/analysis-workspace/home.md) | [Report Builder](/help/report-builder/rb-overview.md) | [Exportação de tabela completa](/help/analysis-workspace/export/export-cloud.md) | [Feeds de dados](/help/components/exports/cja-data-feeds/data-feed-overview.md) | [APIs](https://developer.adobe.com/cja-apis/docs/) | MCP | Extensão BI | Colaborador |
+|---|---|---|---|---|---|---|---|---|
+| **Método de acesso** | Navegador | Microsoft Excel | Navegador | Configurar por meio do navegador | Ferramentas RESTful API | Ferramentas compatíveis com MCP | Ferramentas de BI | Ferramentas compatíveis com MCP |
+| **Granularidade de dados** | Agregado | Agregado | Agregado | Evento | Agregado | Agregado | Agregado | Agregado |
+| **Experience Cloud ID (ECID) disponível** | Não | Não | Não | Sim | Não | Não | Não | Não |
+| **Carimbo de data e hora disponível** | Não | Não | Não | Sim | Não | Não | Não | Não |
+| **Nível de processamento** | Totalmente processado | Totalmente processado, com relatório em tempo real separado | Totalmente processado | Totalmente processado | Totalmente processado | Totalmente processado | Totalmente processado | Totalmente processado |
+| **Onde a filtragem de bot é aplicada** | No [Datastream](https://experienceleague.adobe.com/pt-br/docs/experience-platform/datastreams/bot-detection) e/ou no [CJA](/help/data-views/derived-fields/derived-fields.md#simple-bot-detection) | No [Datastream](https://experienceleague.adobe.com/pt-br/docs/experience-platform/datastreams/bot-detection) e/ou no [CJA](/help/data-views/derived-fields/derived-fields.md#simple-bot-detection) | No [Datastream](https://experienceleague.adobe.com/pt-br/docs/experience-platform/datastreams/bot-detection) e/ou no [CJA](/help/data-views/derived-fields/derived-fields.md#simple-bot-detection) | No [Datastream](https://experienceleague.adobe.com/pt-br/docs/experience-platform/datastreams/bot-detection) e/ou no [CJA](/help/data-views/derived-fields/derived-fields.md#simple-bot-detection) |  |  | No [Datastream](https://experienceleague.adobe.com/pt-br/docs/experience-platform/datastreams/bot-detection) e/ou no [CJA](/help/data-views/derived-fields/derived-fields.md#simple-bot-detection) | |
+| **Limite de linha visível (antes da paginação)** | 400 | 50,000 | Limite de 3 milhões, 30 milhões, 150 milhões ou 300 milhões, dependendo do nível | Dependente da camada | 50,000 | 50,000 | 50,000 | 50,000 |
+| **Várias visualizações de dados** | Sim, um projeto pode conter dados de várias visualizações de dados | Sim, um projeto pode conter dados de várias visualizações de dados | Não, uma exportação pode conter dados de apenas uma visualização de dados | Não, uma exportação pode conter dados de apenas uma visualização de dados | Não, cada consulta pode referenciar apenas uma visualização de dados | Não, cada consulta pode referenciar apenas uma visualização de dados | Não, cada consulta pode referenciar apenas uma visualização de dados | Sim, se solicitado pelo usuário |
+| **Número de colunas da dimensão** | Até 5 | ? | Até 10 | Ilimitado | Até 5 | ? | ? | ? |
+| **Número de colunas de métrica** | ? | ? | Até 10 | Ilimitado | ? | ? | ? | ? |
+| **Segmentação** <br> [Saiba mais](/help/components/segments/seg-overview.md) | Sim | Sim | Sim | Sim, com [limitações](/help/components/exports/cja-data-feeds/df-segmentation.md) | Sim | Sim | Sim | Sim |
+| **Métricas calculadas** <br> [Saiba mais](/help/components/calc-metrics/calc-metr-overview.md) | Sim | Sim | Sim, com [limitações](/help/analysis-workspace/export/export-cloud.md#calculated-metric-functions-support) | Não | Sim | Sim | Sim | Sim |
+| **Campos derivados** <br> [Saiba mais](/help/data-views/derived-fields/derived-fields.md) | Sim | Sim | Sim | Sim | Sim | Sim | Sim | Sim |
+| **Atribuição** <br> [Saiba mais](/help/analysis-workspace/attribution/overview.md) | Sim | Limitado | Sim, com [limitações](/help/analysis-workspace/export/export-cloud.md#attribution-behavior) | Não | Sim | Sim | Sim | Sim |
+| **Delivery programado** | Sim | Sim | Sim | Sim | — | — | — | — |
+| **Destinos do delivery** | Email | Email | Amazon S3, Azure RBAC, Azure SAS, GCP | Amazon S3, Azure RBAC, Azure SAS, GCP | — | — | — | — |
 
 {style="table-layout:auto"}

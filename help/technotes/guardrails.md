@@ -26,7 +26,7 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: df1ab1af7757ef012b4c233e6206ee6c6cde6686
+source-git-commit: e686fca2c77a8f9739298ece01ccf0fa2fe87b3b
 workflow-type: tm+mt
 source-wordcount: 2441
 ht-degree: 9%
@@ -250,8 +250,8 @@ Consulte também [Medidas de proteção de exportação do conjunto de dados](ht
 | Nome | Valor | Tipo de limite | Descrição |
 |---|--:|---|---|
 | Linhas por Relatório | 3 milhões - 300 milhões | Proteção imposta pelo sistema | Número máximo de linhas de relatório por relatório. O valor varia dependendo do pacote do Customer Journey Analytics (consulte Descrição do produto). |
-| Detalhamentos por tabela | 5 | Proteção imposta pelo sistema | Número máximo de detalhamentos por tabela. |
-| Métricas por tabela | 5 | Proteção imposta pelo sistema | Número máximo de métricas por tabela. |
+| Dimensões por tabela | 10 | Proteção imposta pelo sistema | Número máximo de dimensões por tabela. |
+| Métricas por tabela | 10 | Proteção imposta pelo sistema | Número máximo de métricas por tabela. |
 | Frequência de programação | 1 | Proteção imposta pelo sistema | As exportações podem ser agendadas uma vez (1) por dia ou em um agendamento mais longo (por exemplo: uma vez a cada 2 dias ou semanalmente). |
 
 {style="table-layout:auto"}
