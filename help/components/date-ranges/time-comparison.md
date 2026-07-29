@@ -5,20 +5,14 @@ feature: Calendar
 exl-id: 08113536-658f-486b-ac56-6c531240c3c2
 role: User
 TQID: https://experienceleague.adobe.com/LhPSvchJbDMPV-HmGSA2JaBZxoPQ7UyEKd7GMS-33UU
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+source-git-commit: a4b5baeec55de64b1fbaf009b9da34c93cf12f24
 workflow-type: tm+mt
-source-wordcount: 770
-ht-degree: 90%
+source-wordcount: 798
+ht-degree: 75%
 
 ---
 
@@ -28,10 +22,10 @@ A comparação de datas no Analysis Workspace permite pegar qualquer coluna cont
 
 ## Comparar períodos
 
-A análise demanda contexto, o qual normalmente é fornecido por um período anterior. Por exemplo, a pergunta *Quão melhor ou pior você está fazendo agora em comparação com este período do ano passado?* é fundamental para entender sua empresa. A comparação de datas inclui automaticamente uma coluna de *diferença*, que mostra a porcentagem de mudanças em comparação com um período específico.
+A análise requer contexto, e um período anterior geralmente fornece essas informações. Por exemplo, a pergunta *Quão melhor ou pior você está fazendo agora em comparação com este período do ano passado?* é fundamental para entender sua empresa. A comparação de datas inclui automaticamente uma coluna de *diferença*, que mostra a porcentagem de mudanças em comparação com um período específico.
 
 1. Crie uma [Tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) com qualquer dimensão e métrica que deseja comparar ao longo de um período.
-1. Defina o período no painel ou coluna para determinar o intervalo da comparação e se é uma comparação de tempo contínua ou fixa.
+1. Para determinar o período de comparação e se é uma comparação de tempo variável ou fixa, defina o período no painel ou na coluna.
 
    Para criar uma comparação temporal contínua, defina o intervalo de datas do painel ou da coluna para um intervalo de datas contínuo (como **[!UICONTROL Últimos 7 dias]**, **[!UICONTROL Últimos 30 dias]** e assim por diante).
 
@@ -65,7 +59,7 @@ A análise demanda contexto, o qual normalmente é fornecido por um período ant
 
 ## Adicionar uma coluna de período para comparação
 
-Agora é possível adicionar um período a cada coluna de uma tabela, permitindo adicionar um período diferente do definido no seu calendário.
+Agora é possível adicionar um período a cada coluna na tabela. Isso permite adicionar um período diferente daquele definido para o seu calendário.
 
 1. Clique com o botão direito do mouse em uma coluna na tabela e selecione **[!UICONTROL Adicionar coluna de período]**.
 
@@ -95,7 +89,7 @@ Agora é possível adicionar um período a cada coluna de uma tabela, permitindo
 
 É possível alinhar as datas de cada coluna para que todas iniciem na mesma linha.
 
-Por exemplo, suponhamos que você fez uma comparação diária entre a última semana (terminando em 5 de outubro de 2024) e a semana anterior. Por padrão, a coluna esquerda iniciará em 22 de setembro, e a coluna da direita, em 29 de setembro.
+Por exemplo, suponhamos que você fez uma comparação diária entre a última semana (terminando em 5 de outubro de 2024) e a semana anterior. Por padrão, a coluna da esquerda começa com 22 de setembro e a coluna da direita começa com 29 de setembro.
 
 ![Datas não alinhadas](assets/not-align-dates.png)
 
@@ -105,7 +99,8 @@ Por exemplo, suponhamos que você fez uma comparação diária entre a última s
 
 Considere o seguinte ao usar essa opção:
 
-* Essa configuração é habilitada por padrão para todos os novos projetos.
+* O sistema ativa essa configuração por padrão para todos os novos projetos.
 
 * Essa configuração se aplica a toda a tabela. Por exemplo, se você alterar essa configuração para um detalhamento na tabela, ela será aplicada à tabela inteira.
 
+* Quando essa configuração estiver ativada, pequenos rótulos de data aparecerão no canto superior direito de todas as células da coluna para anotar a célula com a data (e hora, quando relevante) apropriada.
