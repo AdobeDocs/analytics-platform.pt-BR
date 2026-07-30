@@ -3,7 +3,8 @@ title: Integração do LLM Optimizer
 description: Integrar o LLM Optimizer com o Customer Journey Analytics
 feature: Experience Platform Integration
 role: User
-feature_v2: id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+feature_v2:
+  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
 source-git-commit: 3aa4e0c98e9a3e4163dad992e598638892fc88cd
 workflow-type: tm+mt
 source-wordcount: 2539
