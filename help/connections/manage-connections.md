@@ -8,26 +8,15 @@ feature: Connections
 role: Admin
 autotag-review: '2026-05-19T08:50:02.853Z'
 TQID: 'https://experienceleague.adobe.com/iJ5jp3wtWSrJzCnJqIceIHwwLideF-U2puXvit5GFac'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
-subfeature_v2:
-  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 4d42c345b98683ef7d4b802262bd7f0f24b45692
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+subfeature_v2: id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d00e9f03-e50b-4162-b143-0c0817c937c2id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 88ff7c4124d4612a3411b315a605aec29bc9a218
 workflow-type: tm+mt
-source-wordcount: 5884
-ht-degree: 97%
+source-wordcount: 7300
+ht-degree: 87%
 
 ---
 
@@ -46,7 +35,7 @@ ht-degree: 97%
 
 Depois de [criar ou editar uma ou mais conexões](/help/connections/create-connection.md), você poderá gerenciá-las em **[!UICONTROL Conexões]**. A interface [!UICONTROL Conexões] permite:
 
-* Exibir imediatamente todas as suas conexões, incluindo o proprietário, a sandbox e quando elas foram criadas e modificadas.
+* Visualize todas as suas conexões, incluindo o proprietário, a sandbox e quando as conexões foram criadas e modificadas.
 * Editar uma conexão.
 * Exclua uma conexão.
 * Crie uma visualização de dados a partir de uma conexão.
@@ -62,7 +51,8 @@ Depois de [criar ou editar uma ou mais conexões](/help/connections/create-conne
 
 A interface **[!UICONTROL Lista]** é a interface padrão para Conexões. Se não for selecionada, clique na guia **[!UICONTROL Lista]** para acessar a interface.
 
-A interface **[!UICONTROL Lista]** mostra uma tabela de todas as conexões disponíveis.△
+A interface **[!UICONTROL Lista]** mostra uma tabela de todas as conexões disponíveis.
+△
 ![exibição de lista](assets/list-view.png)
 
 As seguintes colunas ou ícones estão disponíveis na tabela.
@@ -73,14 +63,14 @@ As seguintes colunas ou ícones estão disponíveis na tabela.
 | ![Informações](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) | Para exibir informações sobre [!UICONTROL Conjuntos de dados incluídos], [!UICONTROL Sandbox], [!UICONTROL Proprietário] e muito mais, selecione ![Informações](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) ao lado do nome da conexão.<p>Uma janela pop-up exibe detalhes sobre o conjunto de dados. <p>![Janela pop-up de informações da conexão](assets/connection-info-popup.png) |
 | ![Visualização de dados](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) | Para [criar uma exibição de dados](#create-a-data-view) para a conexão, selecione ![Exibição de dados](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg). Esse ícone só é exibido quando nenhuma exibição de dados já está associada à conexão. |
 | ![Mais](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) | Selecione ![Mais](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) para abrir um menu de contexto. Você pode selecionar: <p>![Editar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Editar]** para [editar](#edit-a-connection) uma conexão.<p>![Excluir](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Delete_18_N.svg) **[!UICONTROL Excluir]** para [excluir](#delete-a-connection) uma conexão.<p>![Visualização de dados](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataAdd_18_N.svg) **[!UICONTROL Criar nova visualização de dados]** para [criar uma nova visualização de dados](#create-a-data-view) para a conexão.<p>![GraphPathing](/help/assets/icons/GraphPathing.svg) **[!UICONTROL Mapa de conexão]** para exibir um [mapa de conexão](#map-a-connection) para a conexão. |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Tipo de conexão &#x200B;]** | O tipo de conexão: com base em **[!UICONTROL Pessoa]** ou em **[!UICONTROL Conta]**. |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Tipo de conexão ]** | O tipo de conexão: com base em **[!UICONTROL Pessoa]** ou em **[!UICONTROL Conta]**. |
 | **[!UICONTROL Conjuntos de dados]** | Um ou mais links para os conjuntos de dados que fazem parte da conexão. É possível selecionar o hiperlink do conjunto de dados para exibi-lo na conexão. Se mais conjuntos de dados fizerem parte da conexão selecionada, selecione **[!UICONTROL +*x* mais]** para mostrar um painel **[!UICONTROL Conjuntos de dados incluídos]**. Este painel mostra links para todos os conjuntos de dados e uma opção para ![Pesquisar](/help/assets/icons/Search.svg) pesquisar conjuntos de dados específicos que fazem parte da conexão.<p>![Conjuntos de dados incluídos](assets/datasets-included.png)<p>Selecione o nome de um conjunto de dados para abri-lo na interface da Experience Platform em uma nova guia. |
 | **[!UICONTROL Sandbox]** | A [sandbox da Adobe Experience Platform](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sandbox/home) da qual essa conexão obtém seus conjuntos de dados. Você seleciona esta sandbox ao criar a conexão. Não é possível alterar a sandbox depois que uma conexão é salva. |
 | **[!UICONTROL Proprietário]** | A pessoa que criou a conexão. |
-| **[!UICONTROL Importar novos dados]** | O status da importação de novos dados para conjuntos de dados: <p>![Status verde](assets/status-green.svg) **[!UICONTROL _x _Ligado]**&#x200B;para conjuntos de dados configurados para importar novos dados e<p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _x Desativado_]** para conjuntos de dados não configurados para importar novos dados. |
+| **[!UICONTROL Importar novos dados]** | O status da importação de novos dados para conjuntos de dados: <p>![Status verde](assets/status-green.svg) **[!UICONTROL _x _Ligado]**para conjuntos de dados configurados para importar novos dados e<p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _x Desativado_]** para conjuntos de dados não configurados para importar novos dados. |
 | **[!UICONTROL Data de criação]** | O carimbo de data e hora em que a conexão foi criada. |
 | **[!UICONTROL Última modificação]** | O carimbo de data e hora da última atualização da conexão. |
-| **[!UICONTROL Dados de preenchimento retroativo]** | O status para dados de preenchimento retroativo em conjuntos de dados.<p>![Status vermelho](assets/status-red.svg)   **[!UICONTROL _x _preenchimentos retroativos com falha]**&#x200B;para o número de preenchimentos retroativos com falha entre conjuntos de dados,<p>![Status laranja](assets/status-orange.svg)   **[!UICONTROL _x _processamento de preenchimentos retroativos]**&#x200B;para o número de processamentos de preenchimentos retroativos em conjuntos de dados,<p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _preenchimentos retroativos concluídos]**&#x200B;para o número de preenchimentos retroativos concluídos para conjuntos de dados e<p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _Desativado_]** caso nenhum preenchimento retroativo seja definido para os conjuntos de dados na conexão. |
+| **[!UICONTROL Dados de preenchimento retroativo]** | O status para dados de preenchimento retroativo em conjuntos de dados.<p>![Status vermelho](assets/status-red.svg)   **[!UICONTROL _x _preenchimentos retroativos com falha]**para o número de preenchimentos retroativos com falha entre conjuntos de dados,<p>![Status laranja](assets/status-orange.svg)   **[!UICONTROL _x _processamento de preenchimentos retroativos]**para o número de processamentos de preenchimentos retroativos em conjuntos de dados,<p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _preenchimentos retroativos concluídos]**para o número de preenchimentos retroativos concluídos para conjuntos de dados e<p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _Desativado_]** caso nenhum preenchimento retroativo seja definido para os conjuntos de dados na conexão. |
 | **[!UICONTROL Integrações]** | Mostra todos os aplicativos da Experience Platform que estão habilitados com a conexão. |
 | **[!UICONTROL Usar no CJA]** | Mostra se a conexão foi habilitada para uso com o Customer Journey Analytics. |
 
@@ -164,11 +154,11 @@ Consulte [Criação e edição de uma visualização de dados](/help/data-views/
 
 ### Conexões do Journey Optimizer
 
-Você pode usar uma conexão do Journey Optimizer no Customer Journey Analytics para agregar o seguinte valor à sua conexão:
+Você pode usar uma conexão Journey Optimizer no Customer Journey Analytics para fornecer o seguinte valor adicional à sua conexão:
 
 * Execute uma análise detalhada dos dados do Journey Optimizer no Customer Journey Analytics (usando o botão **[!UICONTROL Analisar no CJA]** no Journey Optimizer).
 
-  Para obter mais informações, consulte [Analisar no Customer Journey Analytics](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/reporting/channel-report/report-cja-manage#cja-template) na documentação do Journey Optimizer.
+  Para obter mais informações, consulte [Analisar no Customer Journey Analytics](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/reporting/channel-report/report-cja-manage#cja-template).
 
 * Editar a conexão do Journey Optimizer e as visualizações de dados associadas.
 
@@ -177,7 +167,7 @@ Você pode usar uma conexão do Journey Optimizer no Customer Journey Analytics 
 
 >[!IMPORTANT]
 >
->Ao habilitar uma conexão do Journey Optimizer para uso com o Customer Journey Analytics, conforme descrito nesta seção, cada linha de dados dentro da conexão é contabilizada no seu limite mensal de linhas de dados licenciadas para o Customer Journey Analytics e aparece na interface de Uso de conexões. Selecione a opção **[!UICONTROL Usar no CJA]** na conexão somente se você estiver confortável com o uso adicional de Linhas de dados no Customer Journey Analytics.
+>Quando você habilita uma conexão do Journey Optimizer para o Customer Journey Analytics, cada linha conta para suas linhas licenciadas mensais e é exibida na interface do usuário de uso das conexões. Selecione a opção **[!UICONTROL Usar no CJA]** na conexão somente se você estiver confortável com o uso adicional de Linhas de dados no Customer Journey Analytics.
 >
 >**Se você tinha direito ao Customer Journey Analytics e ao Journey Optimizer entre outubro de 2024 e outubro de 2025, consulte o documento a seguir sobre [Conexões habilitadas para o AJO](https://view.adobe.com/viewer/1ed94fc35c7860b260766c620889e7a0#1)**.
 
@@ -297,9 +287,9 @@ A tabela de conjuntos de dados exibe as seguintes colunas para cada conjunto de 
 | **[!UICONTROL Tipo de conjunto de dados]** | O [tipo de conjunto de dados](create-connection.md#dataset-types). O tipo pode ser **[!UICONTROL Evento]**, **[!UICONTROL Perfil]**, **[!UICONTROL Pesquisa]** ou **[!UICONTROL Resumo]**. Um conjunto de dados ad hoc ou relacional é identificado por **[!UICONTROL (Ad hoc)]** ou **[!UICONTROL (Relacional)]**. Por exemplo, **[!UICONTROL Evento (ad hoc)]** ou **[!UICONTROL Pesquisa (relacional)]**. |
 | **[!UICONTROL Compilado]** | Se um conjunto de dados estiver [habilitado para compilação na Interface do Usuário de Conexão](/help/stitching/use-stitching-ui.md), o valor será **[!UICONTROL true]**. Caso contrário, o valor é **[!UICONTROL false]**. Os conjuntos de dados compilados que são o resultado da [solicitação para compilar o procedimento](/help/stitching//use-stitching.md) não são identificados como compilados nesta tabela e, por padrão, têm um valor de **[!UICONTROL false]**. |
 | **[!UICONTROL Esquema]** | O esquema da Experience Platform no qual esse conjunto de dados se baseia. |
-| **[!UICONTROL Importar novos dados]** | O status de importação de novos dados para o conjunto de dados: <p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _Ativado]**&#x200B;se o conjunto de dados estiver configurado para importar novos dados e<p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _x Desativado_]** se o conjunto de dados estiver configurado para não importar uma nova importação de dados. |
-| **[!UICONTROL Transformar dados]** | O status de transformação dos conjuntos de dados de pesquisa B2B aplicáveis. Consulte [Transformar conjuntos de dados para pesquisas B2B](transform-datasets-b2b-lookups.md) para obter mais informações.<p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _Ativado]**&#x200B;para conjuntos de dados aplicáveis habilitados para transformação, <p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _x Desativado_]** para conjuntos de dados aplicáveis não habilitados para transformação e<p>**[!UICONTROL N/D]** para todos os outros conjuntos de dados, não aplicável para transformação. |
-| **[!UICONTROL Dados de preenchimento retroativo]** | O status dos dados de preenchimento retroativo do conjunto de dados.<p>![Status vermelho](assets/status-red.svg)   **[!UICONTROL _x _preenchimentos retroativos com falha]**&#x200B;para o número de preenchimentos retroativos com falha,<p>![Status vermelho](assets/status-orange.svg)   **[!UICONTROL _x _processamento de preenchimentos retroativos]**&#x200B;para o número de preenchimentos retroativos em processamento,<p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _preenchimentos retroativos concluídos]**&#x200B;para o número de preenchimentos retroativos concluídos e<p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _Desativado_]** caso os preenchimentos retroativos não estejam configurados. |
+| **[!UICONTROL Importar novos dados]** | O status de importação de novos dados para o conjunto de dados: <p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _Ativado]**se o conjunto de dados estiver configurado para importar novos dados e<p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _x Desativado_]** se o conjunto de dados estiver configurado para não importar uma nova importação de dados. |
+| **[!UICONTROL Transformar dados]** | O status de transformação dos conjuntos de dados de pesquisa B2B aplicáveis. Consulte [Transformar conjuntos de dados para pesquisas B2B](transform-datasets-b2b-lookups.md) para obter mais informações.<p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _Ativado]**para conjuntos de dados aplicáveis habilitados para transformação, <p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _x Desativado_]** para conjuntos de dados aplicáveis não habilitados para transformação e<p>**[!UICONTROL N/D]** para todos os outros conjuntos de dados, não aplicável para transformação. |
+| **[!UICONTROL Dados de preenchimento retroativo]** | O status dos dados de preenchimento retroativo do conjunto de dados.<p>![Status vermelho](assets/status-red.svg)   **[!UICONTROL _x _preenchimentos retroativos com falha]**para o número de preenchimentos retroativos com falha,<p>![Status vermelho](assets/status-orange.svg)   **[!UICONTROL _x _processamento de preenchimentos retroativos]**para o número de preenchimentos retroativos em processamento,<p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _preenchimentos retroativos concluídos]**para o número de preenchimentos retroativos concluídos e<p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _Desativado_]** caso os preenchimentos retroativos não estejam configurados. |
 
 >[!IMPORTANT]
 >
@@ -320,12 +310,12 @@ Quando nenhum conjunto de dados individual é selecionado na tabela de conjuntos
 | **[!UICONTROL Descrição da conexão]** | Uma descrição mais detalhada que descreve o propósito desta conexão. |
 | **[!UICONTROL Sandbox]** | A [sandbox da Adobe Experience Platform](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sandbox/home) da qual essa conexão obtém seus conjuntos de dados. Você seleciona esta sandbox ao criar a conexão. Não é possível alterar a sandbox depois que uma conexão é salva. |
 | **[!UICONTROL ID da conexão]** | Um identificador gerado para a conexão. Você pode usar a opção ![Copiar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) para copiar o valor. |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Tipo de ID primária &#x200B;]** | O tipo de ID primária da conexão: **[!UICONTROL Pessoa]** para uma conexão baseada em pessoas ou **[!UICONTROL Conta]** para uma conexão baseada em contas. |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Containers &#x200B;]** | Os containers configurados para a conexão. |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Tipo de ID primária ]** | O tipo de ID primária da conexão: **[!UICONTROL Pessoa]** para uma conexão baseada em pessoas ou **[!UICONTROL Conta]** para uma conexão baseada em contas. |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Containers ]** | Os containers configurados para a conexão. |
 | **[!UICONTROL Visualizações de dados usando conexão]** | As visualizações de dados que usam esta conexão. |
-| **[!UICONTROL Importar novos dados]** | O status da importação de novos dados para conjuntos de dados: <p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _Ativado]**&#x200B;para quantos conjuntos de dados estão configurados para importar novos dados e<p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _x Desativado_]** para quantos conjuntos de dados a nova importação de dados está desativada. |
-| **[!UICONTROL Dados de preenchimento retroativo]** | O status dos dados de preenchimento retroativo para conjuntos de dados.<p>![Status vermelho](assets/status-red.svg)   **[!UICONTROL _x _preenchimentos retroativos com falha]**&#x200B;para o número de preenchimentos retroativos com falha entre conjuntos de dados,<p>![Status vermelho](assets/status-orange.svg)   **[!UICONTROL _x _processamento de preenchimentos retroativos]**&#x200B;para o número de processamentos de preenchimentos retroativos em conjuntos de dados,<p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _preenchimentos retroativos concluídos]**&#x200B;para o número de preenchimentos retroativos concluídos para conjuntos de dados e<p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _Desativado_]** caso nenhum preenchimento retroativo seja definido para os conjuntos de dados na conexão. |
-| **[!UICONTROL Transformar dados]** | O status de transformação dos conjuntos de dados de pesquisa B2B aplicáveis. Consulte [Transformar conjuntos de dados para pesquisas B2B](transform-datasets-b2b-lookups.md) para obter mais informações.<p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _Ativado]**&#x200B;para o número de conjuntos de dados habilitados para transformação. |
+| **[!UICONTROL Importar novos dados]** | O status da importação de novos dados para conjuntos de dados: <p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _Ativado]**para quantos conjuntos de dados estão configurados para importar novos dados e<p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _x Desativado_]** para quantos conjuntos de dados a nova importação de dados está desativada. |
+| **[!UICONTROL Dados de preenchimento retroativo]** | O status dos dados de preenchimento retroativo para conjuntos de dados.<p>![Status vermelho](assets/status-red.svg)   **[!UICONTROL _x _preenchimentos retroativos com falha]**para o número de preenchimentos retroativos com falha entre conjuntos de dados,<p>![Status vermelho](assets/status-orange.svg)   **[!UICONTROL _x _processamento de preenchimentos retroativos]**para o número de processamentos de preenchimentos retroativos em conjuntos de dados,<p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _preenchimentos retroativos concluídos]**para o número de preenchimentos retroativos concluídos para conjuntos de dados e<p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _Desativado_]** caso nenhum preenchimento retroativo seja definido para os conjuntos de dados na conexão. |
+| **[!UICONTROL Transformar dados]** | O status de transformação dos conjuntos de dados de pesquisa B2B aplicáveis. Consulte [Transformar conjuntos de dados para pesquisas B2B](transform-datasets-b2b-lookups.md) para obter mais informações.<p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _Ativado]**para o número de conjuntos de dados habilitados para transformação. |
 | **[!UICONTROL Criado por]** | O nome da pessoa que criou a conexão. |
 | **[!UICONTROL Última modificação]** | O carimbo de data/hora da última alteração feita na conexão. |
 | **[!UICONTROL Modificado pela última vez por]** | O nome da última pessoa que modificou a conexão. |
@@ -336,8 +326,8 @@ Quando uma linha do conjunto de dados é selecionada na tabela de conjuntos de d
 
 | Detalhes | Descrição |
 | --- | --- |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL ID da conta global &#x200B;]** | A identidade que você especificou como a ID de conta global da conexão. Aplica-se somente a uma conexão baseada em contas para a qual um container de conta global foi configurado. |
-| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL ID da conta &#x200B;]** | A identidade que você especificou como a ID de conta da conexão. Aplica-se somente a uma conexão baseada em contas para a qual nenhum container de conta global foi configurado. |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL ID da conta global ]** | A identidade que você especificou como a ID de conta global da conexão. Aplica-se somente a uma conexão baseada em contas para a qual um container de conta global foi configurado. |
+| [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL ID da conta ]** | A identidade que você especificou como a ID de conta da conexão. Aplica-se somente a uma conexão baseada em contas para a qual nenhum container de conta global foi configurado. |
 | **[!UICONTROL ID de pessoa]** | A identidade especificada como a ID de pessoa da conexão. |
 | **[!UICONTROL Chave]** | A chave especificada para um conjunto de dados de pesquisa. |
 | **[!UICONTROL Chave correspondente]** | A chave correspondente especificada para um conjunto de dados de pesquisa. |
@@ -348,8 +338,8 @@ Quando uma linha do conjunto de dados é selecionada na tabela de conjuntos de d
 | **[!UICONTROL Lotes adicionados]** | O número de lotes adicionados a uma conexão. |
 | **[!UICONTROL Registros excluídos]** | O número de registros do conjunto de dados (linhas) removidos de uma conexão durante o intervalo de datas selecionado. |
 | **[!UICONTROL Última adição]** | O carimbo de data e hora do último lote adicionado a uma conexão. |
-| **[!UICONTROL Importar novos dados]** | O status de importação de novos dados para o conjunto de dados: <p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _Ativado]**&#x200B;se o conjunto de dados estiver configurado para importar novos dados e<p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _x Desativado_]** se o conjunto de dados estiver configurado para não importar novos dados. |
-| **[!UICONTROL Dados de preenchimento retroativo]** | O status dos dados de preenchimento retroativo do conjunto de dados.<p>![Status vermelho](assets/status-red.svg)   **[!UICONTROL _x _preenchimentos retroativos com falha]**&#x200B;para o número de preenchimentos retroativos com falha,<p>![Status vermelho](assets/status-orange.svg)   **[!UICONTROL _x _processamento de preenchimentos retroativos]**&#x200B;para o número de preenchimentos retroativos em processamento,<p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _preenchimentos retroativos concluídos]**&#x200B;para o número de preenchimentos retroativos concluídos e<p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _Desativado_]**, caso nenhum preenchimento retroativo tenha sido configurado.<p>Para mostrar uma caixa de diálogo com uma visão geral dos preenchimentos retroativos anteriores do conjunto de dados, selecione <img src="./assets/pastbackfill.svg" alt="Preenchimentos retroativos anteriores" width="15"/> **[!UICONTROL Preenchimentos retroativos anteriores]**. |
+| **[!UICONTROL Importar novos dados]** | O status de importação de novos dados para o conjunto de dados: <p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _Ativado]**se o conjunto de dados estiver configurado para importar novos dados e<p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _x Desativado_]** se o conjunto de dados estiver configurado para não importar novos dados. |
+| **[!UICONTROL Dados de preenchimento retroativo]** | O status dos dados de preenchimento retroativo do conjunto de dados.<p>![Status vermelho](assets/status-red.svg)   **[!UICONTROL _x _preenchimentos retroativos com falha]**para o número de preenchimentos retroativos com falha,<p>![Status vermelho](assets/status-orange.svg)   **[!UICONTROL _x _processamento de preenchimentos retroativos]**para o número de preenchimentos retroativos em processamento,<p>![Status verde](assets/status-green.svg)   **[!UICONTROL _x _preenchimentos retroativos concluídos]**para o número de preenchimentos retroativos concluídos e<p>![Status cinza](assets/status-gray.svg)   **[!UICONTROL _Desativado_]**, caso nenhum preenchimento retroativo tenha sido configurado.<p>Para mostrar uma caixa de diálogo com uma visão geral dos preenchimentos retroativos anteriores do conjunto de dados, selecione <img src="./assets/pastbackfill.svg" alt="Preenchimentos retroativos anteriores" width="15"/> **[!UICONTROL Preenchimentos retroativos anteriores]**. |
 | **[!UICONTROL Tipo de fonte de dados]** | Tipo de fonte de dados, conforme definido quando o conjunto de dados foi adicionado à conexão. |
 | **[!UICONTROL Tipo de conjunto de dados]** | O [tipo de conjunto de dados](create-connection.md#dataset-types). O tipo pode ser **[!UICONTROL Evento]**, **[!UICONTROL Perfil]**, **[!UICONTROL Pesquisa]** ou **[!UICONTROL Resumo]**. Um conjunto de dados ad hoc ou relacional é identificado por **[!UICONTROL (Ad hoc)]** ou **[!UICONTROL (Relacional)]**. Por exemplo, **[!UICONTROL Evento (ad hoc)]** ou **[!UICONTROL Pesquisa (relacional)]**. |
 | **[!UICONTROL Esquema]** | O esquema da Adobe Experience Platform no qual esse conjunto de dados se baseia. |
@@ -498,9 +488,13 @@ Quando uma linha do conjunto de dados é selecionada na tabela de conjuntos de d
 
 A interface de [!UICONTROL Uso] mostra o uso de linhas assimiladas e relatáveis em todas as conexões. Se não estiver selecionada, selecione a guia **[!UICONTROL Uso]** para acessar a interface.
 
-Essa interface ajuda a determinar se o uso do Customer Journey Analytics está em conformidade com o que foi acordado contratualmente. Além dos propósitos de monitoramento, você pode usar a interface “Uso” para planejar a renovação da sua licença do Customer Journey Analytics.
+Essa interface ajuda você a determinar se o uso do Customer Journey Analytics está em conformidade com o que foi concordado contratualmente. Além dos propósitos de monitoramento, você pode usar a interface “Uso” para planejar a renovação da sua licença do Customer Journey Analytics.
 
-A interface “Uso” utiliza as seguintes métricas:
+Para cada módulo ao qual você tem direito, uma seção que pode ser recolhida está disponível com detalhes de uso.
+
+### Uso do CJA
+
+A interface de **[!UICONTROL Uso do CJA]** usa as seguintes métricas:
 
 | Nome da métrica | Descrição |
 |---|---|
@@ -517,23 +511,21 @@ A interface “Uso” utiliza as seguintes métricas:
 >Desde julho de 2024, os dados são coletados para os registros principal, histórico e total. Entre em contato com o gerente da conta para obter dados históricos anteriores.
 >
 
-A interface “Uso” consiste em dois painéis:
+A interface **[!UICONTROL Uso do CJA]** consiste em dois painéis:
 
 * O painel **[!UICONTROL Métricas de uso principais]**, que exibe:
 
-   * Quatro visualizações de resumo que exibem as alterações totais e percentuais do mês anterior para:
+  * Quatro visualizações de resumo que exibem as alterações totais e percentuais do mês anterior para:
 
-      * **[!UICONTROL Linhas relatáveis de dados principais]**. O número total de linhas disponíveis nos últimos 13 meses para o mês atual, com uma alteração de porcentagem em comparação ao mês anterior. Por exemplo, em 1.º de fevereiro de 2024, o número mostra o total de linhas disponíveis com um carimbo de data e hora de evento de janeiro de 2023 a janeiro de 2024.
-      * **[!UICONTROL Linhas relatáveis de dados históricos]**. O número total de linhas disponíveis durante um período superior aos últimos 13 meses para o mês atual, com uma alteração de porcentagem em comparação ao mês anterior. Por exemplo, em 1º de fevereiro de 2024, o número mostra o total de linhas disponíveis com um carimbo de data e hora de evento anterior a janeiro de 2023.
-      * **[!UICONTROL Volume de dados principais]**. A quantidade total de dados armazenados em disco com carimbo de data e hora no mês atual (em TB), com uma alteração percentual em comparação com o mês anterior.
-      * **[!UICONTROL Tamanho médio das linhas]**. A quantidade média de armazenamento consumida por cada linha de dados assimilados e armazenados no mês atual (em KB), com uma alteração percentual em comparação com o mês anterior.
+    * **[!UICONTROL Linhas relatáveis de dados principais]**. O número total de linhas disponíveis nos últimos 13 meses para o mês atual, com uma alteração de porcentagem em comparação ao mês anterior. Por exemplo, em 1.º de fevereiro de 2024, o número mostra o total de linhas disponíveis com um carimbo de data e hora de evento de janeiro de 2023 a janeiro de 2024.
+    * **[!UICONTROL Linhas da Capacidade de Dados Estendida]**. O número total de linhas disponíveis durante um período superior aos últimos 13 meses para o mês atual, com uma alteração de porcentagem em comparação ao mês anterior. Por exemplo, em 1º de fevereiro de 2024, o número mostra o total de linhas disponíveis com um carimbo de data e hora de evento anterior a janeiro de 2023.
+    * **[!UICONTROL Linhas assimiladas mensalmente]**. As linhas assimiladas durante o mês de faturamento, com uma alteração de porcentagem em relação ao mês anterior
+    * **[!UICONTROL Volume de dados principais]**. A quantidade total de dados armazenados em disco com carimbo de data e hora no mês atual (em TB), com uma alteração percentual em comparação com o mês anterior.
+    * **[!UICONTROL Tamanho médio das linhas]**. O armazenamento médio consumido por cada linha assimilada do mês atual (em kB), com a alteração percentual do mês anterior.
 
-   * Uma visualização de barras verticais empilhadas que exibe as **[!UICONTROL linhas relatáveis de dados principais e históricos]** dos últimos 13 meses.
+  * Duas visualizações de barra vertical que exibem as **[!UICONTROL Linhas dos dados principais reportáveis]** e **[!UICONTROL Linhas da Capacidade de Dados Estendida]** para os últimos 13 meses.
 
-     Quando você passa o cursor do mouse sobre qualquer barra empilhada na visualização, uma janela pop-up mostra a quantidade de linhas referente a essa parte específica da barra. No exemplo abaixo, as linhas relatáveis de dados principais são mostradas para o mês atual (agosto de 2025: 936 milhões (936.347.325)).
-
-
-     ![Métricas de uso principais](assets/usage-key-usage-metrics.png)
+    Quando você passa o cursor do mouse sobre qualquer barra empilhada na visualização, uma janela pop-up mostra a quantidade de linhas referente a essa parte específica da barra.
 
 * Um painel combinado que contém três subpainéis referentes a:
 
@@ -541,9 +533,7 @@ A interface “Uso” consiste em dois painéis:
 
   O subpainel de **[!UICONTROL Linhas assimiladas]** mede a quantidade total de registros adicionados ao sistema a cada mês, fornecendo insights sobre o crescimento dos dados e as taxas de ingestão. O subpainel fornece um resumo do total de linhas assimiladas deste mês e a mudança em relação ao mês anterior.
 
-  ![Linhas assimiladas](assets/usage-ingested-rows.png)
-
-  Você pode passar o mouse sobre pontos de dados na visualização para exibir uma janela pop-up com mais detalhes.
+  Você pode passar o mouse sobre pontos de dados na visualização para exibir uma janela pop-up com mais detalhes. Você pode selecionar um **[!UICONTROL Intervalo de tempo]** que se aplica a **[!UICONTROL linhas assimiladas]** e **[!UICONTROL linhas relatáveis]**. Use o ![Calendário](/help/assets/icons/Calendar.svg) para selecionar o intervalo de tempo.
 
   +++
 
@@ -551,12 +541,175 @@ A interface “Uso” consiste em dois painéis:
 
   A visualização de **[!UICONTROL Linhas relatáveis]** rastreia a quantidade de linhas disponíveis para relatórios, subtraindo as linhas ignoradas e excluídas das linhas assimiladas, e atuando como uma métrica principal de faturamento e uso de dados. O subpainel fornece dois resumos:
 
-   * **[!UICONTROL Total do último mês]**: um resumo do total de linhas relatáveis até este mês.
-   * **[!UICONTROL Este mês]**: um resumo do total de linhas relatáveis deste mês e a diferença em relação ao mês anterior.
+  * **[!UICONTROL Total de linhas reportáveis]**: um resumo do total de linhas reportáveis até este mês.
+  * **[!UICONTROL Mês reportável mensal]**: um resumo do total de linhas reportáveis deste mês e a alteração em relação ao mês anterior.
 
-  ![Linhas relatáveis](assets/usage-reportable-rows.png)
+  Você pode passar o mouse sobre pontos de dados na visualização para exibir uma janela pop-up com mais detalhes. Você pode selecionar um **[!UICONTROL Intervalo de tempo]** que se aplica a **[!UICONTROL linhas assimiladas]** e **[!UICONTROL linhas relatáveis]**. Use o ![Calendário](/help/assets/icons/Calendar.svg) para selecionar o intervalo de tempo.
 
-  Você pode passar o mouse sobre pontos de dados na visualização para exibir uma janela pop-up com mais detalhes.
+  +++
+
+  +++ Detalhamento
+
+  Você pode usar a tabela de **[!UICONTROL Detalhamento]** para exibir métricas detalhadas por conexão, conjunto de dados, sandbox e tags. Os conjuntos de dados são relatados com IDs em vez de nomes, pois os nomes dos conjuntos de dados podem ser modificados durante um período de relatório. Conjuntos de dados ou conexões desconhecidos são exibidos com seus IDs.
+
+  Para meses anteriores a setembro de 2024, os dados foram coletados no nível do conjunto de dados e são exibidos como [!UICONTROL Outros conjuntos de dados] para maior clareza. A partir de setembro de 2024, os dados serão coletados em um nível de conjunto de dados granular e [!UICONTROL Outros conjuntos de dados] não serão mais exibidos.
+
+  * Para alterar o detalhamento, selecione uma combinação de **[!UICONTROL Exibir por]** e **[!UICONTROL Detalhar por]**.
+
+    | Opções de **[!UICONTROL Exibir por]** | Opções de **[!UICONTROL Detalhar por]** |
+    |---|---|
+    | **[!UICONTROL Conexão]** | **[!UICONTROL -]** e **[!UICONTROL Conjunto de dados]** |
+    | **[!UICONTROL Conjunto de dados]** | **[!UICONTROL -]** |
+    | **[!UICONTROL Sandbox]** | **[!UICONTROL Conexão]** |
+    | **[!UICONTROL Tag]** | **[!UICONTROL Conexão]** |
+
+  Você pode selecionar um mês para o qual deseja obter o detalhamento. Selecione um mês em **[!UICONTROL Mês de detalhamento]**.
+
+
+  +++
+
+### Uso do Content Analytics
+
+A interface de **[!UICONTROL Uso do Content Analytics]** usa as seguintes métricas:
+
+| Nome da métrica | Descrição |
+|---|---|
+| **Linhas Relatáveis Principais do Content Analytics** | O número total de linhas específicas do Content Analytics disponíveis nos últimos 13 meses para o mês atual, com uma variação percentual em comparação com o mês anterior.  Por exemplo, em 1º de fevereiro de 2024, o número mostra o total de linhas disponíveis com um carimbo de data e hora do evento de janeiro de 2023 a janeiro de 2024. |
+| **Linhas mensais do Content Analytics** | Rastreia o número de linhas do Content Analytics disponíveis para relatórios. Linhas relatáveis são as linhas assimiladas menos as linhas que são ignoradas e excluídas durante a assimilação. As linhas relatáveis servem como uma métrica principal para cobrança e uso de dados. |
+
+>[!NOTE]
+>
+>Desde julho de 2024, os dados são coletados para os registros principal, histórico e total. Entre em contato com o gerente da conta para obter dados históricos anteriores.
+>
+
+A interface **[!UICONTROL Uso do Content Analytics]** consiste em dois painéis:
+
+* O painel **[!UICONTROL Métricas de uso principais]**, que exibe:
+
+  * Duas visualizações de resumo que exibem o total e o percentual do mês anterior para:
+
+    * **[!UICONTROL Linhas Relatáveis Principais Do Analytics Principal]**. O número total de linhas específicas do Content Analytics disponíveis nos últimos 13 meses para o mês atual, com uma variação percentual em comparação com o mês anterior.  Por exemplo, em 1º de fevereiro de 2024, o número mostra o total de linhas disponíveis com um carimbo de data e hora do evento de janeiro de 2023 a janeiro de 2024.
+    * **Linhas mensais do Content Analytics**. Rastreia o número de linhas do Content Analytics disponíveis para relatórios. Linhas relatáveis são as linhas assimiladas menos as linhas que são ignoradas e excluídas durante a assimilação. As linhas relatáveis servem como uma métrica principal para cobrança e uso de dados.
+
+  * Uma visualização de barra vertical empilhada que mostra as **[!UICONTROL Linhas Principais do Content Analytics]** dos últimos 13 meses.
+
+    Quando você passa o cursor do mouse sobre qualquer barra empilhada na visualização, uma janela pop-up mostra a quantidade de linhas referente a essa parte específica da barra.
+
+* Um painel combinado, mostrando dois subpainéis para:
+
+  +++ Linhas mensais do Content Analytics
+
+  O subpainel **[!UICONTROL Linhas mensais do Content Analytics]** mede o número total de registros mensais do Content Analytics adicionados ao sistema a cada mês, fornecendo ao insight taxas de crescimento e assimilação de dados. O subpainel fornece um resumo do total de linhas assimiladas deste mês e a mudança em relação ao mês anterior.
+
+  Você pode passar o mouse sobre pontos de dados na visualização para exibir uma janela pop-up com mais detalhes. Você pode selecionar um **[!UICONTROL Intervalo de tempo]** ou usar o ![Calendário](/help/assets/icons/Calendar.svg) para selecionar o intervalo de tempo.
+
+  +++
+
+  +++ Detalhamento
+
+  Você pode usar a tabela de **[!UICONTROL Detalhamento]** para exibir métricas detalhadas por conexão, conjunto de dados, sandbox e tags. Os conjuntos de dados são relatados com IDs em vez de nomes, pois os nomes dos conjuntos de dados podem ser modificados durante um período de relatório. Conjuntos de dados ou conexões desconhecidos são exibidos com seus IDs.
+
+  Para meses anteriores a setembro de 2024, os dados foram coletados no nível do conjunto de dados e são exibidos como [!UICONTROL Outros conjuntos de dados] para maior clareza. A partir de setembro de 2024, os dados serão coletados em um nível de conjunto de dados granular e [!UICONTROL Outros conjuntos de dados] não serão mais exibidos.
+
+  * Para alterar o detalhamento, selecione uma combinação de **[!UICONTROL Exibir por]** e **[!UICONTROL Detalhar por]**.
+
+    | Opções de **[!UICONTROL Exibir por]** | Opções de **[!UICONTROL Detalhar por]** |
+    |---|---|
+    | **[!UICONTROL Conexão]** | **[!UICONTROL -]** e **[!UICONTROL Conjunto de dados]** |
+    | **[!UICONTROL Conjunto de dados]** | **[!UICONTROL -]** |
+    | **[!UICONTROL Sandbox]** | **[!UICONTROL Conexão]** |
+    | **[!UICONTROL Tag]** | **[!UICONTROL Conexão]** |
+
+  Você pode selecionar um mês para o qual deseja obter o detalhamento. Selecione um mês em **[!UICONTROL Mês de detalhamento]**.
+
+  +++
+
+
+### Uso do CJA B2B Edition
+
+A interface de **[!UICONTROL Uso do CJA B2B edition]** usa as seguintes métricas:
+
+| Nome da métrica | Descrição |
+|---|---|
+| **BPP Relatável Principal** | O número total de linhas reportáveis de perfil de empresário disponíveis nos últimos 13 meses para o mês atual, com uma alteração de porcentagem em comparação ao mês anterior.  Por exemplo, em 1.º de fevereiro de 2024, o número mostra o total de linhas disponíveis com um carimbo de data e hora de evento de janeiro de 2023 a janeiro de 2024. |
+| **BPP Histórico Relatável** | O número total de linhas reportáveis de perfil de empresário disponíveis durante um período superior a 13 meses para o mês atual, com uma alteração de porcentagem em comparação ao mês anterior. Por exemplo, em 1º de fevereiro de 2024, o número mostra o total de linhas disponíveis com um carimbo de data e hora de evento anterior a janeiro de 2023. |
+
+>[!NOTE]
+>
+>Desde julho de 2024, os dados são coletados para os registros principal, histórico e total. Entre em contato com o gerente da conta para obter dados históricos anteriores.
+>
+
+A interface **[!UICONTROL Uso do CJA B2B edition]** consiste em um painel que mostra subpainéis para:
+
++++ BPP reportável principal
+
+O subpainel **[!UICONTROL PRINCIPAIS BPP]** reportáveis mede o número total de registros mensais principais de perfis empresariais reportáveis adicionados ao sistema a cada mês, fornecendo à insight taxas de crescimento e assimilação de dados. O subpainel fornece um resumo do total de linhas assimiladas deste mês e a mudança em relação ao mês anterior.
+
+Você pode passar o mouse sobre pontos de dados na visualização para exibir um pop-up com mais detalhes que se aplicam a **[!UICONTROL BPP Relatável Principal]** e **[!UICONTROL BPP Relatável Histórico]**. Use o ![Calendário](/help/assets/icons/Calendar.svg) para selecionar o intervalo de tempo.
+
++++
+
++++ BPP histórico reportável.
+
+O subpainel **[!UICONTROL BPP histórico reportável]** mede o número total de registros mensais históricos de perfis de empresários reportáveis adicionados ao sistema a cada mês, fornecendo à insight taxas de crescimento e assimilação de dados. O subpainel fornece um resumo do total de linhas assimiladas deste mês e a mudança em relação ao mês anterior.
+
+Você pode passar o mouse sobre pontos de dados na visualização para exibir um pop-up com mais detalhes que se aplicam a **[!UICONTROL BPP Relatável Principal]** e **[!UICONTROL BPP Relatável Histórico]**. Use o ![Calendário](/help/assets/icons/Calendar.svg) para selecionar o intervalo de tempo.
+
++++
+
++++ Detalhamento
+
+Você pode usar a tabela de **[!UICONTROL Detalhamento]** para exibir métricas detalhadas por conexão, conjunto de dados, sandbox e tags. Os conjuntos de dados são relatados com IDs em vez de nomes, pois os nomes dos conjuntos de dados podem ser modificados durante um período de relatório. Conjuntos de dados ou conexões desconhecidos são exibidos com seus IDs.
+
+Para meses anteriores a setembro de 2024, os dados foram coletados no nível do conjunto de dados e são exibidos como [!UICONTROL Outros conjuntos de dados] para maior clareza. Desde setembro de 2024, os dados são coletados na camada dos conjunto de dados granulares, e [!UICONTROL outros conjuntos de dados] não são mais exibidos.
+
+* Para alterar o detalhamento, selecione uma combinação de **[!UICONTROL Exibir por]** e **[!UICONTROL Detalhar por]**.
+
+  | Opções de **[!UICONTROL Exibir por]** | Opções de **[!UICONTROL Detalhar por]** |
+  |---|---|
+  | **[!UICONTROL Conexão]** | **[!UICONTROL -]** e **[!UICONTROL Conjunto de dados]** |
+  | **[!UICONTROL Conjunto de dados]** | **[!UICONTROL -]** |
+  | **[!UICONTROL Sandbox]** | **[!UICONTROL Conexão]** |
+  | **[!UICONTROL Tag]** | **[!UICONTROL Conexão]** |
+
+Você pode selecionar um mês para o qual deseja obter o detalhamento. Selecione um mês em **[!UICONTROL Mês de detalhamento]**.
+
++++
+
+
+### Uso de streaming de mídia
+
+A interface **[!UICONTROL Uso de Mídia de Streaming]** usa as seguintes métricas:
+
+| Nome da métrica | Descrição |
+|---|---|
+| **Inícios mensais da mídia** | O número total de inícios mensais da mídia disponíveis nos últimos 13 meses para o mês atual, com uma alteração percentual em comparação ao mês anterior.  Por exemplo, em 1º de fevereiro de 2024, o número mostra o total de inícios da mídia disponíveis com um carimbo de data e hora de evento de janeiro de 2023 a janeiro de 2024. |
+
+>[!NOTE]
+>
+>Desde julho de 2024, os dados são coletados para os registros principal, histórico e total. Entre em contato com o gerente da conta para obter dados históricos anteriores.
+>
+
+
+A interface **[!UICONTROL Uso de Mídia de Streaming]** consiste em dois painéis:
+
+* O painel **[!UICONTROL Métricas de uso principais]**, que exibe:
+
+  * Uma visualização resumida que mostra as alterações totais e percentuais do mês anterior para **[!UICONTROL Inícios mensais da mídia]**.
+
+    O número total de inícios mensais da mídia disponíveis nos últimos 13 meses para o mês atual, com uma alteração percentual em comparação ao mês anterior.  Por exemplo, em 1º de fevereiro de 2024, o número mostra o total de inícios da mídia disponíveis com um carimbo de data e hora de evento de janeiro de 2023 a janeiro de 2024.
+
+  * Uma visualização de barra vertical empilhada que exibe os **[!UICONTROL Inícios mensais da mídia]** dos últimos 13 meses.
+
+    Quando você passa o cursor do mouse sobre qualquer barra empilhada na visualização, uma janela pop-up mostra a quantidade de linhas referente a essa parte específica da barra.
+
+* Um painel combinado, mostrando dois subpainéis para:
+
+  +++ Inícios de mídia mensais
+
+  O subpainel **[!UICONTROL Inícios mensais da mídia]** mede o número total de registros de inícios mensais da mídia adicionados ao sistema a cada mês, fornecendo à insight taxas de crescimento e assimilação de dados. O subpainel fornece um resumo do total de linhas assimiladas deste mês e a mudança em relação ao mês anterior.
+
+  Você pode passar o mouse sobre pontos de dados na visualização para exibir uma janela pop-up com mais detalhes. Você pode selecionar um **[!UICONTROL Intervalo de tempo]** ou usar o ![Calendário](/help/assets/icons/Calendar.svg) para selecionar o intervalo de tempo.
 
   +++
 
@@ -566,22 +719,22 @@ A interface “Uso” consiste em dois painéis:
 
   Para meses anteriores a setembro de 2024, os dados foram coletados no nível do conjunto de dados e são exibidos como [!UICONTROL Outros conjuntos de dados] para maior clareza. Desde setembro de 2024, os dados são coletados na camada dos conjunto de dados granulares, e [!UICONTROL outros conjuntos de dados] não são mais exibidos.
 
-   * Para alterar o detalhamento, selecione uma combinação de **[!UICONTROL Exibir por]** e **[!UICONTROL Detalhar por]**.
+  * Para alterar o detalhamento, selecione uma combinação de **[!UICONTROL Exibir por]** e **[!UICONTROL Detalhar por]**.
 
-     | Opções de **[!UICONTROL Exibir por]** | Opções de **[!UICONTROL Detalhar por]** |
-     |---|---|
-     | **[!UICONTROL Conexão]** | **[!UICONTROL -]** e **[!UICONTROL Conjunto de dados]** |
-     | **[!UICONTROL Conjunto de dados]** | **[!UICONTROL -]** |
-     | **[!UICONTROL Sandbox]** | **[!UICONTROL Conexão]** |
-     | **[!UICONTROL Tag]** | **[!UICONTROL Conexão]** |
+    | Opções de **[!UICONTROL Exibir por]** | Opções de **[!UICONTROL Detalhar por]** |
+    |---|---|
+    | **[!UICONTROL Conexão]** | **[!UICONTROL -]** e **[!UICONTROL Conjunto de dados]** |
+    | **[!UICONTROL Conjunto de dados]** | **[!UICONTROL -]** |
+    | **[!UICONTROL Sandbox]** | **[!UICONTROL Conexão]** |
+    | **[!UICONTROL Tag]** | **[!UICONTROL Conexão]** |
 
-  ![Detalhamento](assets/usage-detail-breakdown.png)
+  Você pode selecionar um mês para o qual deseja obter o detalhamento. Selecione um mês em **[!UICONTROL Mês de detalhamento]**.
 
   +++
 
-  Você pode definir um **[!UICONTROL Intervalo de tempo]** em meses para relatar. Use o ![Calendário](/help/assets/icons/Calendar.svg) para selecionar o intervalo de tempo.
 
 >[!MORELIKETHIS]
 >
->Tutorial sobre [Exibir, resolver problemas e modificar configurações de conexão](https://experienceleague.adobe.com/pt-br/docs/customer-journey-analytics-learn/tutorials/connections/connections-details-experience-in-cja).Gerenciar o uso do Customer Journey Analytics&rbrack;(/help/technotes/estimate-usage.md)
+>[Exibir, solucionar problemas e modificar as configurações de conexão](https://experienceleague.adobe.com/pt-br/docs/customer-journey-analytics-learn/tutorials/connections/connections-details-experience-in-cja).
+>[Gerenciar o uso do Customer Journey Analytics](/help/technotes/estimate-usage.md)
 >
