@@ -16,9 +16,9 @@ subfeature_v2:
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 54e64aeb652d41a39e52b01c0a54edd1ecfd0cdc
+source-git-commit: 88ff7c4124d4612a3411b315a605aec29bc9a218
 workflow-type: tm+mt
-source-wordcount: 1630
+source-wordcount: 1650
 ht-degree: 53%
 
 ---
@@ -51,7 +51,7 @@ Para alterar o número de linhas exibidas:
 
    ![Tabela de forma livre que mostra o menu suspenso do número de linhas exibidas. Há 400 linhas selecionadas.](assets/change-row-count.gif)
 
-1. No menu suspenso, selecione o número de linhas que deseja que a tabela exiba.
+1. No menu suspenso, selecione o número de linhas da tabela a ser exibida.
 
 
 ## Menu de contexto
@@ -118,8 +118,6 @@ Você pode definir a [densidade da exibição](https://experienceleague.adobe.co
 
 ## Classificações em linha {#inline-classifications-example}
 
-{{release-limited-testing-section}}
-
 As classificações em linha permitem renomear ou combinar linhas em uma tabela de forma livre. E para criar um campo derivado das linhas modificadas em uma tabela.
 
 O exemplo abaixo ilustra como usar as opções de menu de contexto **[!UICONTROL Renomear linha selecionada]**, **[!UICONTROL Combinar linhas selecionadas]** e **[!UICONTROL Criar linhas modificadas como campo derivado]**. E como redefinir a tabela de forma livre modificada.
@@ -139,7 +137,7 @@ O exemplo abaixo ilustra como usar as opções de menu de contexto **[!UICONTROL
 
 * Combine **[!UICONTROL Homens]** e **[!UICONTROL Mulheres]** linhas em uma linha **[!UICONTROL Adultos]**.
 
-  1. Selecione a linha **[!UICONTROL Homens]** e **[!UICONTROL Mulheres]**.
+  1. Selecione as linhas **[!UICONTROL Homens]** e **[!UICONTROL Mulheres]**.
   1. Selecione **[!UICONTROL Combinar linhas selecionadas]** no menu de contexto de qualquer uma das linhas selecionadas.
 
      ![Selecione a opção de menu Combinar linhas selecionadas](assets/context-combine.png)
@@ -152,6 +150,11 @@ O exemplo abaixo ilustra como usar as opções de menu de contexto **[!UICONTROL
      1. Selecione **[!UICONTROL OK]**.
 
 * Crie um campo derivado a partir das modificações na tabela de forma livre.
+
+  >[!NOTE]
+  >
+  >  Você só poderá criar um campo derivado de modificações na tabela de forma livre quando for um administrador de produto do Customer Journey Analytics.
+
 
   1. Selecione **[!UICONTROL Criar linhas modificadas como campo derivado]** no menu de contexto para qualquer linha selecionada na tabela modificada.
 

@@ -24,10 +24,10 @@ topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 4d42c345b98683ef7d4b802262bd7f0f24b45692
+source-git-commit: 88ff7c4124d4612a3411b315a605aec29bc9a218
 workflow-type: tm+mt
-source-wordcount: 5884
-ht-degree: 97%
+source-wordcount: 7300
+ht-degree: 87%
 
 ---
 
@@ -46,7 +46,7 @@ ht-degree: 97%
 
 Depois de [criar ou editar uma ou mais conexões](/help/connections/create-connection.md), você poderá gerenciá-las em **[!UICONTROL Conexões]**. A interface [!UICONTROL Conexões] permite:
 
-* Exibir imediatamente todas as suas conexões, incluindo o proprietário, a sandbox e quando elas foram criadas e modificadas.
+* Visualize todas as suas conexões, incluindo o proprietário, a sandbox e quando as conexões foram criadas e modificadas.
 * Editar uma conexão.
 * Exclua uma conexão.
 * Crie uma visualização de dados a partir de uma conexão.
@@ -62,7 +62,8 @@ Depois de [criar ou editar uma ou mais conexões](/help/connections/create-conne
 
 A interface **[!UICONTROL Lista]** é a interface padrão para Conexões. Se não for selecionada, clique na guia **[!UICONTROL Lista]** para acessar a interface.
 
-A interface **[!UICONTROL Lista]** mostra uma tabela de todas as conexões disponíveis.△
+A interface **[!UICONTROL Lista]** mostra uma tabela de todas as conexões disponíveis.
+△
 ![exibição de lista](assets/list-view.png)
 
 As seguintes colunas ou ícones estão disponíveis na tabela.
@@ -164,11 +165,11 @@ Consulte [Criação e edição de uma visualização de dados](/help/data-views/
 
 ### Conexões do Journey Optimizer
 
-Você pode usar uma conexão do Journey Optimizer no Customer Journey Analytics para agregar o seguinte valor à sua conexão:
+Você pode usar uma conexão Journey Optimizer no Customer Journey Analytics para fornecer o seguinte valor adicional à sua conexão:
 
 * Execute uma análise detalhada dos dados do Journey Optimizer no Customer Journey Analytics (usando o botão **[!UICONTROL Analisar no CJA]** no Journey Optimizer).
 
-  Para obter mais informações, consulte [Analisar no Customer Journey Analytics](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/reporting/channel-report/report-cja-manage#cja-template) na documentação do Journey Optimizer.
+  Para obter mais informações, consulte [Analisar no Customer Journey Analytics](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/reporting/channel-report/report-cja-manage#cja-template).
 
 * Editar a conexão do Journey Optimizer e as visualizações de dados associadas.
 
@@ -177,7 +178,7 @@ Você pode usar uma conexão do Journey Optimizer no Customer Journey Analytics 
 
 >[!IMPORTANT]
 >
->Ao habilitar uma conexão do Journey Optimizer para uso com o Customer Journey Analytics, conforme descrito nesta seção, cada linha de dados dentro da conexão é contabilizada no seu limite mensal de linhas de dados licenciadas para o Customer Journey Analytics e aparece na interface de Uso de conexões. Selecione a opção **[!UICONTROL Usar no CJA]** na conexão somente se você estiver confortável com o uso adicional de Linhas de dados no Customer Journey Analytics.
+>Quando você habilita uma conexão do Journey Optimizer para o Customer Journey Analytics, cada linha conta para suas linhas licenciadas mensais e é exibida na interface do usuário de uso das conexões. Selecione a opção **[!UICONTROL Usar no CJA]** na conexão somente se você estiver confortável com o uso adicional de Linhas de dados no Customer Journey Analytics.
 >
 >**Se você tinha direito ao Customer Journey Analytics e ao Journey Optimizer entre outubro de 2024 e outubro de 2025, consulte o documento a seguir sobre [Conexões habilitadas para o AJO](https://view.adobe.com/viewer/1ed94fc35c7860b260766c620889e7a0#1)**.
 
@@ -498,9 +499,13 @@ Quando uma linha do conjunto de dados é selecionada na tabela de conjuntos de d
 
 A interface de [!UICONTROL Uso] mostra o uso de linhas assimiladas e relatáveis em todas as conexões. Se não estiver selecionada, selecione a guia **[!UICONTROL Uso]** para acessar a interface.
 
-Essa interface ajuda a determinar se o uso do Customer Journey Analytics está em conformidade com o que foi acordado contratualmente. Além dos propósitos de monitoramento, você pode usar a interface “Uso” para planejar a renovação da sua licença do Customer Journey Analytics.
+Essa interface ajuda você a determinar se o uso do Customer Journey Analytics está em conformidade com o que foi concordado contratualmente. Além dos propósitos de monitoramento, você pode usar a interface “Uso” para planejar a renovação da sua licença do Customer Journey Analytics.
 
-A interface “Uso” utiliza as seguintes métricas:
+Para cada módulo ao qual você tem direito, uma seção que pode ser recolhida está disponível com detalhes de uso.
+
+### Uso do CJA
+
+A interface de **[!UICONTROL Uso do CJA]** usa as seguintes métricas:
 
 | Nome da métrica | Descrição |
 |---|---|
@@ -517,23 +522,21 @@ A interface “Uso” utiliza as seguintes métricas:
 >Desde julho de 2024, os dados são coletados para os registros principal, histórico e total. Entre em contato com o gerente da conta para obter dados históricos anteriores.
 >
 
-A interface “Uso” consiste em dois painéis:
+A interface **[!UICONTROL Uso do CJA]** consiste em dois painéis:
 
 * O painel **[!UICONTROL Métricas de uso principais]**, que exibe:
 
-   * Quatro visualizações de resumo que exibem as alterações totais e percentuais do mês anterior para:
+  * Quatro visualizações de resumo que exibem as alterações totais e percentuais do mês anterior para:
 
-      * **[!UICONTROL Linhas relatáveis de dados principais]**. O número total de linhas disponíveis nos últimos 13 meses para o mês atual, com uma alteração de porcentagem em comparação ao mês anterior. Por exemplo, em 1.º de fevereiro de 2024, o número mostra o total de linhas disponíveis com um carimbo de data e hora de evento de janeiro de 2023 a janeiro de 2024.
-      * **[!UICONTROL Linhas relatáveis de dados históricos]**. O número total de linhas disponíveis durante um período superior aos últimos 13 meses para o mês atual, com uma alteração de porcentagem em comparação ao mês anterior. Por exemplo, em 1º de fevereiro de 2024, o número mostra o total de linhas disponíveis com um carimbo de data e hora de evento anterior a janeiro de 2023.
-      * **[!UICONTROL Volume de dados principais]**. A quantidade total de dados armazenados em disco com carimbo de data e hora no mês atual (em TB), com uma alteração percentual em comparação com o mês anterior.
-      * **[!UICONTROL Tamanho médio das linhas]**. A quantidade média de armazenamento consumida por cada linha de dados assimilados e armazenados no mês atual (em KB), com uma alteração percentual em comparação com o mês anterior.
+    * **[!UICONTROL Linhas relatáveis de dados principais]**. O número total de linhas disponíveis nos últimos 13 meses para o mês atual, com uma alteração de porcentagem em comparação ao mês anterior. Por exemplo, em 1.º de fevereiro de 2024, o número mostra o total de linhas disponíveis com um carimbo de data e hora de evento de janeiro de 2023 a janeiro de 2024.
+    * **[!UICONTROL Linhas da Capacidade de Dados Estendida]**. O número total de linhas disponíveis durante um período superior aos últimos 13 meses para o mês atual, com uma alteração de porcentagem em comparação ao mês anterior. Por exemplo, em 1º de fevereiro de 2024, o número mostra o total de linhas disponíveis com um carimbo de data e hora de evento anterior a janeiro de 2023.
+    * **[!UICONTROL Linhas assimiladas mensalmente]**. As linhas assimiladas durante o mês de faturamento, com uma alteração de porcentagem em relação ao mês anterior
+    * **[!UICONTROL Volume de dados principais]**. A quantidade total de dados armazenados em disco com carimbo de data e hora no mês atual (em TB), com uma alteração percentual em comparação com o mês anterior.
+    * **[!UICONTROL Tamanho médio das linhas]**. O armazenamento médio consumido por cada linha assimilada do mês atual (em kB), com a alteração percentual do mês anterior.
 
-   * Uma visualização de barras verticais empilhadas que exibe as **[!UICONTROL linhas relatáveis de dados principais e históricos]** dos últimos 13 meses.
+  * Duas visualizações de barra vertical que exibem as **[!UICONTROL Linhas dos dados principais reportáveis]** e **[!UICONTROL Linhas da Capacidade de Dados Estendida]** para os últimos 13 meses.
 
-     Quando você passa o cursor do mouse sobre qualquer barra empilhada na visualização, uma janela pop-up mostra a quantidade de linhas referente a essa parte específica da barra. No exemplo abaixo, as linhas relatáveis de dados principais são mostradas para o mês atual (agosto de 2025: 936 milhões (936.347.325)).
-
-
-     ![Métricas de uso principais](assets/usage-key-usage-metrics.png)
+    Quando você passa o cursor do mouse sobre qualquer barra empilhada na visualização, uma janela pop-up mostra a quantidade de linhas referente a essa parte específica da barra.
 
 * Um painel combinado que contém três subpainéis referentes a:
 
@@ -541,9 +544,7 @@ A interface “Uso” consiste em dois painéis:
 
   O subpainel de **[!UICONTROL Linhas assimiladas]** mede a quantidade total de registros adicionados ao sistema a cada mês, fornecendo insights sobre o crescimento dos dados e as taxas de ingestão. O subpainel fornece um resumo do total de linhas assimiladas deste mês e a mudança em relação ao mês anterior.
 
-  ![Linhas assimiladas](assets/usage-ingested-rows.png)
-
-  Você pode passar o mouse sobre pontos de dados na visualização para exibir uma janela pop-up com mais detalhes.
+  Você pode passar o mouse sobre pontos de dados na visualização para exibir uma janela pop-up com mais detalhes. Você pode selecionar um **[!UICONTROL Intervalo de tempo]** que se aplica a **[!UICONTROL linhas assimiladas]** e **[!UICONTROL linhas relatáveis]**. Use o ![Calendário](/help/assets/icons/Calendar.svg) para selecionar o intervalo de tempo.
 
   +++
 
@@ -551,12 +552,175 @@ A interface “Uso” consiste em dois painéis:
 
   A visualização de **[!UICONTROL Linhas relatáveis]** rastreia a quantidade de linhas disponíveis para relatórios, subtraindo as linhas ignoradas e excluídas das linhas assimiladas, e atuando como uma métrica principal de faturamento e uso de dados. O subpainel fornece dois resumos:
 
-   * **[!UICONTROL Total do último mês]**: um resumo do total de linhas relatáveis até este mês.
-   * **[!UICONTROL Este mês]**: um resumo do total de linhas relatáveis deste mês e a diferença em relação ao mês anterior.
+  * **[!UICONTROL Total de linhas reportáveis]**: um resumo do total de linhas reportáveis até este mês.
+  * **[!UICONTROL Mês reportável mensal]**: um resumo do total de linhas reportáveis deste mês e a alteração em relação ao mês anterior.
 
-  ![Linhas relatáveis](assets/usage-reportable-rows.png)
+  Você pode passar o mouse sobre pontos de dados na visualização para exibir uma janela pop-up com mais detalhes. Você pode selecionar um **[!UICONTROL Intervalo de tempo]** que se aplica a **[!UICONTROL linhas assimiladas]** e **[!UICONTROL linhas relatáveis]**. Use o ![Calendário](/help/assets/icons/Calendar.svg) para selecionar o intervalo de tempo.
 
-  Você pode passar o mouse sobre pontos de dados na visualização para exibir uma janela pop-up com mais detalhes.
+  +++
+
+  +++ Detalhamento
+
+  Você pode usar a tabela de **[!UICONTROL Detalhamento]** para exibir métricas detalhadas por conexão, conjunto de dados, sandbox e tags. Os conjuntos de dados são relatados com IDs em vez de nomes, pois os nomes dos conjuntos de dados podem ser modificados durante um período de relatório. Conjuntos de dados ou conexões desconhecidos são exibidos com seus IDs.
+
+  Para meses anteriores a setembro de 2024, os dados foram coletados no nível do conjunto de dados e são exibidos como [!UICONTROL Outros conjuntos de dados] para maior clareza. A partir de setembro de 2024, os dados serão coletados em um nível de conjunto de dados granular e [!UICONTROL Outros conjuntos de dados] não serão mais exibidos.
+
+  * Para alterar o detalhamento, selecione uma combinação de **[!UICONTROL Exibir por]** e **[!UICONTROL Detalhar por]**.
+
+    | Opções de **[!UICONTROL Exibir por]** | Opções de **[!UICONTROL Detalhar por]** |
+    |---|---|
+    | **[!UICONTROL Conexão]** | **[!UICONTROL -]** e **[!UICONTROL Conjunto de dados]** |
+    | **[!UICONTROL Conjunto de dados]** | **[!UICONTROL -]** |
+    | **[!UICONTROL Sandbox]** | **[!UICONTROL Conexão]** |
+    | **[!UICONTROL Tag]** | **[!UICONTROL Conexão]** |
+
+  Você pode selecionar um mês para o qual deseja obter o detalhamento. Selecione um mês em **[!UICONTROL Mês de detalhamento]**.
+
+
+  +++
+
+### Uso do Content Analytics
+
+A interface de **[!UICONTROL Uso do Content Analytics]** usa as seguintes métricas:
+
+| Nome da métrica | Descrição |
+|---|---|
+| **Linhas Relatáveis Principais do Content Analytics** | O número total de linhas específicas do Content Analytics disponíveis nos últimos 13 meses para o mês atual, com uma variação percentual em comparação com o mês anterior.  Por exemplo, em 1º de fevereiro de 2024, o número mostra o total de linhas disponíveis com um carimbo de data e hora do evento de janeiro de 2023 a janeiro de 2024. |
+| **Linhas mensais do Content Analytics** | Rastreia o número de linhas do Content Analytics disponíveis para relatórios. Linhas relatáveis são as linhas assimiladas menos as linhas que são ignoradas e excluídas durante a assimilação. As linhas relatáveis servem como uma métrica principal para cobrança e uso de dados. |
+
+>[!NOTE]
+>
+>Desde julho de 2024, os dados são coletados para os registros principal, histórico e total. Entre em contato com o gerente da conta para obter dados históricos anteriores.
+>
+
+A interface **[!UICONTROL Uso do Content Analytics]** consiste em dois painéis:
+
+* O painel **[!UICONTROL Métricas de uso principais]**, que exibe:
+
+  * Duas visualizações de resumo que exibem o total e o percentual do mês anterior para:
+
+    * **[!UICONTROL Linhas Relatáveis Principais Do Analytics Principal]**. O número total de linhas específicas do Content Analytics disponíveis nos últimos 13 meses para o mês atual, com uma variação percentual em comparação com o mês anterior.  Por exemplo, em 1º de fevereiro de 2024, o número mostra o total de linhas disponíveis com um carimbo de data e hora do evento de janeiro de 2023 a janeiro de 2024.
+    * **Linhas mensais do Content Analytics**. Rastreia o número de linhas do Content Analytics disponíveis para relatórios. Linhas relatáveis são as linhas assimiladas menos as linhas que são ignoradas e excluídas durante a assimilação. As linhas relatáveis servem como uma métrica principal para cobrança e uso de dados.
+
+  * Uma visualização de barra vertical empilhada que mostra as **[!UICONTROL Linhas Principais do Content Analytics]** dos últimos 13 meses.
+
+    Quando você passa o cursor do mouse sobre qualquer barra empilhada na visualização, uma janela pop-up mostra a quantidade de linhas referente a essa parte específica da barra.
+
+* Um painel combinado, mostrando dois subpainéis para:
+
+  +++ Linhas mensais do Content Analytics
+
+  O subpainel **[!UICONTROL Linhas mensais do Content Analytics]** mede o número total de registros mensais do Content Analytics adicionados ao sistema a cada mês, fornecendo ao insight taxas de crescimento e assimilação de dados. O subpainel fornece um resumo do total de linhas assimiladas deste mês e a mudança em relação ao mês anterior.
+
+  Você pode passar o mouse sobre pontos de dados na visualização para exibir uma janela pop-up com mais detalhes. Você pode selecionar um **[!UICONTROL Intervalo de tempo]** ou usar o ![Calendário](/help/assets/icons/Calendar.svg) para selecionar o intervalo de tempo.
+
+  +++
+
+  +++ Detalhamento
+
+  Você pode usar a tabela de **[!UICONTROL Detalhamento]** para exibir métricas detalhadas por conexão, conjunto de dados, sandbox e tags. Os conjuntos de dados são relatados com IDs em vez de nomes, pois os nomes dos conjuntos de dados podem ser modificados durante um período de relatório. Conjuntos de dados ou conexões desconhecidos são exibidos com seus IDs.
+
+  Para meses anteriores a setembro de 2024, os dados foram coletados no nível do conjunto de dados e são exibidos como [!UICONTROL Outros conjuntos de dados] para maior clareza. A partir de setembro de 2024, os dados serão coletados em um nível de conjunto de dados granular e [!UICONTROL Outros conjuntos de dados] não serão mais exibidos.
+
+  * Para alterar o detalhamento, selecione uma combinação de **[!UICONTROL Exibir por]** e **[!UICONTROL Detalhar por]**.
+
+    | Opções de **[!UICONTROL Exibir por]** | Opções de **[!UICONTROL Detalhar por]** |
+    |---|---|
+    | **[!UICONTROL Conexão]** | **[!UICONTROL -]** e **[!UICONTROL Conjunto de dados]** |
+    | **[!UICONTROL Conjunto de dados]** | **[!UICONTROL -]** |
+    | **[!UICONTROL Sandbox]** | **[!UICONTROL Conexão]** |
+    | **[!UICONTROL Tag]** | **[!UICONTROL Conexão]** |
+
+  Você pode selecionar um mês para o qual deseja obter o detalhamento. Selecione um mês em **[!UICONTROL Mês de detalhamento]**.
+
+  +++
+
+
+### Uso do CJA B2B Edition
+
+A interface de **[!UICONTROL Uso do CJA B2B edition]** usa as seguintes métricas:
+
+| Nome da métrica | Descrição |
+|---|---|
+| **BPP Relatável Principal** | O número total de linhas reportáveis de perfil de empresário disponíveis nos últimos 13 meses para o mês atual, com uma alteração de porcentagem em comparação ao mês anterior.  Por exemplo, em 1.º de fevereiro de 2024, o número mostra o total de linhas disponíveis com um carimbo de data e hora de evento de janeiro de 2023 a janeiro de 2024. |
+| **BPP Histórico Relatável** | O número total de linhas reportáveis de perfil de empresário disponíveis durante um período superior a 13 meses para o mês atual, com uma alteração de porcentagem em comparação ao mês anterior. Por exemplo, em 1º de fevereiro de 2024, o número mostra o total de linhas disponíveis com um carimbo de data e hora de evento anterior a janeiro de 2023. |
+
+>[!NOTE]
+>
+>Desde julho de 2024, os dados são coletados para os registros principal, histórico e total. Entre em contato com o gerente da conta para obter dados históricos anteriores.
+>
+
+A interface **[!UICONTROL Uso do CJA B2B edition]** consiste em um painel que mostra subpainéis para:
+
++++ BPP reportável principal
+
+O subpainel **[!UICONTROL PRINCIPAIS BPP]** reportáveis mede o número total de registros mensais principais de perfis empresariais reportáveis adicionados ao sistema a cada mês, fornecendo à insight taxas de crescimento e assimilação de dados. O subpainel fornece um resumo do total de linhas assimiladas deste mês e a mudança em relação ao mês anterior.
+
+Você pode passar o mouse sobre pontos de dados na visualização para exibir um pop-up com mais detalhes que se aplicam a **[!UICONTROL BPP Relatável Principal]** e **[!UICONTROL BPP Relatável Histórico]**. Use o ![Calendário](/help/assets/icons/Calendar.svg) para selecionar o intervalo de tempo.
+
++++
+
++++ BPP histórico reportável.
+
+O subpainel **[!UICONTROL BPP histórico reportável]** mede o número total de registros mensais históricos de perfis de empresários reportáveis adicionados ao sistema a cada mês, fornecendo à insight taxas de crescimento e assimilação de dados. O subpainel fornece um resumo do total de linhas assimiladas deste mês e a mudança em relação ao mês anterior.
+
+Você pode passar o mouse sobre pontos de dados na visualização para exibir um pop-up com mais detalhes que se aplicam a **[!UICONTROL BPP Relatável Principal]** e **[!UICONTROL BPP Relatável Histórico]**. Use o ![Calendário](/help/assets/icons/Calendar.svg) para selecionar o intervalo de tempo.
+
++++
+
++++ Detalhamento
+
+Você pode usar a tabela de **[!UICONTROL Detalhamento]** para exibir métricas detalhadas por conexão, conjunto de dados, sandbox e tags. Os conjuntos de dados são relatados com IDs em vez de nomes, pois os nomes dos conjuntos de dados podem ser modificados durante um período de relatório. Conjuntos de dados ou conexões desconhecidos são exibidos com seus IDs.
+
+Para meses anteriores a setembro de 2024, os dados foram coletados no nível do conjunto de dados e são exibidos como [!UICONTROL Outros conjuntos de dados] para maior clareza. Desde setembro de 2024, os dados são coletados na camada dos conjunto de dados granulares, e [!UICONTROL outros conjuntos de dados] não são mais exibidos.
+
+* Para alterar o detalhamento, selecione uma combinação de **[!UICONTROL Exibir por]** e **[!UICONTROL Detalhar por]**.
+
+  | Opções de **[!UICONTROL Exibir por]** | Opções de **[!UICONTROL Detalhar por]** |
+  |---|---|
+  | **[!UICONTROL Conexão]** | **[!UICONTROL -]** e **[!UICONTROL Conjunto de dados]** |
+  | **[!UICONTROL Conjunto de dados]** | **[!UICONTROL -]** |
+  | **[!UICONTROL Sandbox]** | **[!UICONTROL Conexão]** |
+  | **[!UICONTROL Tag]** | **[!UICONTROL Conexão]** |
+
+Você pode selecionar um mês para o qual deseja obter o detalhamento. Selecione um mês em **[!UICONTROL Mês de detalhamento]**.
+
++++
+
+
+### Uso de streaming de mídia
+
+A interface **[!UICONTROL Uso de Mídia de Streaming]** usa as seguintes métricas:
+
+| Nome da métrica | Descrição |
+|---|---|
+| **Inícios mensais da mídia** | O número total de inícios mensais da mídia disponíveis nos últimos 13 meses para o mês atual, com uma alteração percentual em comparação ao mês anterior.  Por exemplo, em 1º de fevereiro de 2024, o número mostra o total de inícios da mídia disponíveis com um carimbo de data e hora de evento de janeiro de 2023 a janeiro de 2024. |
+
+>[!NOTE]
+>
+>Desde julho de 2024, os dados são coletados para os registros principal, histórico e total. Entre em contato com o gerente da conta para obter dados históricos anteriores.
+>
+
+
+A interface **[!UICONTROL Uso de Mídia de Streaming]** consiste em dois painéis:
+
+* O painel **[!UICONTROL Métricas de uso principais]**, que exibe:
+
+  * Uma visualização resumida que mostra as alterações totais e percentuais do mês anterior para **[!UICONTROL Inícios mensais da mídia]**.
+
+    O número total de inícios mensais da mídia disponíveis nos últimos 13 meses para o mês atual, com uma alteração percentual em comparação ao mês anterior.  Por exemplo, em 1º de fevereiro de 2024, o número mostra o total de inícios da mídia disponíveis com um carimbo de data e hora de evento de janeiro de 2023 a janeiro de 2024.
+
+  * Uma visualização de barra vertical empilhada que exibe os **[!UICONTROL Inícios mensais da mídia]** dos últimos 13 meses.
+
+    Quando você passa o cursor do mouse sobre qualquer barra empilhada na visualização, uma janela pop-up mostra a quantidade de linhas referente a essa parte específica da barra.
+
+* Um painel combinado, mostrando dois subpainéis para:
+
+  +++ Inícios de mídia mensais
+
+  O subpainel **[!UICONTROL Inícios mensais da mídia]** mede o número total de registros de inícios mensais da mídia adicionados ao sistema a cada mês, fornecendo à insight taxas de crescimento e assimilação de dados. O subpainel fornece um resumo do total de linhas assimiladas deste mês e a mudança em relação ao mês anterior.
+
+  Você pode passar o mouse sobre pontos de dados na visualização para exibir uma janela pop-up com mais detalhes. Você pode selecionar um **[!UICONTROL Intervalo de tempo]** ou usar o ![Calendário](/help/assets/icons/Calendar.svg) para selecionar o intervalo de tempo.
 
   +++
 
@@ -566,22 +730,22 @@ A interface “Uso” consiste em dois painéis:
 
   Para meses anteriores a setembro de 2024, os dados foram coletados no nível do conjunto de dados e são exibidos como [!UICONTROL Outros conjuntos de dados] para maior clareza. Desde setembro de 2024, os dados são coletados na camada dos conjunto de dados granulares, e [!UICONTROL outros conjuntos de dados] não são mais exibidos.
 
-   * Para alterar o detalhamento, selecione uma combinação de **[!UICONTROL Exibir por]** e **[!UICONTROL Detalhar por]**.
+  * Para alterar o detalhamento, selecione uma combinação de **[!UICONTROL Exibir por]** e **[!UICONTROL Detalhar por]**.
 
-     | Opções de **[!UICONTROL Exibir por]** | Opções de **[!UICONTROL Detalhar por]** |
-     |---|---|
-     | **[!UICONTROL Conexão]** | **[!UICONTROL -]** e **[!UICONTROL Conjunto de dados]** |
-     | **[!UICONTROL Conjunto de dados]** | **[!UICONTROL -]** |
-     | **[!UICONTROL Sandbox]** | **[!UICONTROL Conexão]** |
-     | **[!UICONTROL Tag]** | **[!UICONTROL Conexão]** |
+    | Opções de **[!UICONTROL Exibir por]** | Opções de **[!UICONTROL Detalhar por]** |
+    |---|---|
+    | **[!UICONTROL Conexão]** | **[!UICONTROL -]** e **[!UICONTROL Conjunto de dados]** |
+    | **[!UICONTROL Conjunto de dados]** | **[!UICONTROL -]** |
+    | **[!UICONTROL Sandbox]** | **[!UICONTROL Conexão]** |
+    | **[!UICONTROL Tag]** | **[!UICONTROL Conexão]** |
 
-  ![Detalhamento](assets/usage-detail-breakdown.png)
+  Você pode selecionar um mês para o qual deseja obter o detalhamento. Selecione um mês em **[!UICONTROL Mês de detalhamento]**.
 
   +++
 
-  Você pode definir um **[!UICONTROL Intervalo de tempo]** em meses para relatar. Use o ![Calendário](/help/assets/icons/Calendar.svg) para selecionar o intervalo de tempo.
 
 >[!MORELIKETHIS]
 >
->Tutorial sobre [Exibir, resolver problemas e modificar configurações de conexão](https://experienceleague.adobe.com/pt-br/docs/customer-journey-analytics-learn/tutorials/connections/connections-details-experience-in-cja).Gerenciar o uso do Customer Journey Analytics&rbrack;(/help/technotes/estimate-usage.md)
+>[Exibir, solucionar problemas e modificar as configurações de conexão](https://experienceleague.adobe.com/pt-br/docs/customer-journey-analytics-learn/tutorials/connections/connections-details-experience-in-cja).
+>[Gerenciar o uso do Customer Journey Analytics](/help/technotes/estimate-usage.md)
 >
