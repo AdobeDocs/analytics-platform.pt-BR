@@ -27,10 +27,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: d16eaa5e7939585f7ade164ef0c680095b8ed2c3
+source-git-commit: ffa9d10d58481d19627633b6a2030c11b6d5b229
 workflow-type: tm+mt
-source-wordcount: 799
-ht-degree: 33%
+source-wordcount: 826
+ht-degree: 32%
 
 ---
 
@@ -44,6 +44,7 @@ Essas notas de versão abrangem o período de julho de 2026. As versões do Adob
 
 | Recurso e descrição | [Início da implantação](releases.md) | [Disponibilidade geral](releases.md) |
 | -----------|-----------|-----------|
+| **Integração do LLM Optimizer**<br> A [integração de entrada do LLM Optimizer](/help/integrations/llmo.md#inbound-integration) permite assimilar dados do LLM Optimizer na Customer Journey Analytics para análise adicional. | 28 de julho de 2026 | 28 de julho de 2026 |
 | **A análise de subevento** <br/>[A análise de subevento](/help/components/segments/sub-event.md) permite que você analise dados em um nível mais granular do que o nível do evento. Em vez de filtrar eventos inteiros, você pode segmentar em containers individuais em um evento. <p>Por exemplo, você pode segmentar em uma categoria de produto específica sem incluir todos os outros produtos comprados na mesma ordem. Você também pode definir objetos ou matrizes que fazem parte dos seus dados de evento como [contêineres personalizados](/help/data-views/create-dataview.md#custom-containers) separados em uma visualização de dados. | 21 de julho de 2026 | Final de julho de 2026 |
 | **B2B edition: suporte para conjuntos de dados ad hoc e relacionais** <br/>Os conjuntos de dados ad hoc e relacionais agora também são suportados em conexões baseadas em conta no Customer Journey Analytics B2B edition.<p>(Link para a documentação a seguir).</p> | | 20 de julho de 2026 |
 | **CX Enterprise Coworker: analisar dados do Customer Journey Analytics** <br/>O Adobe CX Enterprise Coworker Chat agora pode executar uma análise avançada de dados que antes só era possível no Analysis Workspace. O Bate-papo com colegas de trabalho acessa os dados das visualizações de dados do Customer Journey Analytics, permitindo que você explore esses dados e obtenha respostas para prompts em linguagem natural.<p>Para obter mais informações, consulte [Analisar dados do Customer Journey Analytics com o Chat do Colaborador](https://experienceleague.adobe.com/pt-br/docs/cx-enterprise-coworker/content/chat/analytics-chat).</p> | | 23 de julho de 2026 |
