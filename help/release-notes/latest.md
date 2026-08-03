@@ -3,74 +3,54 @@ title: Notas de versão atuais do Customer Journey Analytics
 description: Exibir as notas de versão mais recentes do Customer Journey Analytics
 exl-id: e8eab856-34e0-4875-b441-b1e680b9e111
 feature: Release Notes
+hold: true
 TQID: https://experienceleague.adobe.com/EQKhna8E33DddZQGWe3ASBKMY9r-UsfuUcJg7DMwH0w
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
-  - id: ad5685a0-8296-4a0c-814c-658c10b4af12
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
-  - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
-  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
-  - id: d3c978ee-1ff0-4475-968a-721e2dd99ef1
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 2f745f65808e47fd6c0862fe23b6de6ca12ecfff
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ad333ea6-e90d-4c8f-8d61-9f8690784d6fid: ad5685a0-8296-4a0c-814c-658c10b4af12id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: bcaa1b08-8269-4ff3-a0c2-f599783b6107id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5cid: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7id: d3c978ee-1ff0-4475-968a-721e2dd99ef1id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: d3547118dae86f9cf00255bab08e6a1e31b52842
 workflow-type: tm+mt
-source-wordcount: 826
-ht-degree: 32%
+source-wordcount: 711
+ht-degree: 39%
 
 ---
 
-# Notas de versão atuais do Customer Journey Analytics (julho de 2026)
+# Notas de versão atuais do Customer Journey Analytics (agosto de 2026)
 
-**Última atualização**: 8 de julho de 2026
+**Última atualização**: 4 de agosto de 2026
 
-Essas notas de versão abrangem o período de julho de 2026. As versões do Adobe Customer Journey Analytics operam em um [modelo de entrega contínua](releases.md) que permite uma abordagem escalável e em fases para a implantação de recursos. Sendo assim, essas notas de versão são atualizadas várias vezes por mês. Verifique-as regularmente.
+Essas notas de versão abrangem o período de agosto de 2026. As versões do Adobe Customer Journey Analytics operam em um [modelo de entrega contínua](releases.md) que permite uma abordagem escalável e em fases para a implantação de recursos. Sendo assim, essas notas de versão são atualizadas várias vezes por mês. Verifique-as regularmente.
 
 ## Recursos novos ou atualizados
 
 | Recurso e descrição | [Início da implantação](releases.md) | [Disponibilidade geral](releases.md) |
 | -----------|-----------|-----------|
-| **Integração do Brand Visibility**<br> A [integração de entrada do Brand Visibility](/help/integrations/bv.md#inbound-integration) permite assimilar dados do Brand Visibility no Customer Journey Analytics para análise adicional. | 28 de julho de 2026 | 28 de julho de 2026 |
-| **A análise de subevento** <br/>[A análise de subevento](/help/components/segments/sub-event.md) permite que você analise dados em um nível mais granular do que o nível do evento. Em vez de filtrar eventos inteiros, você pode segmentar em containers individuais em um evento. <p>Por exemplo, você pode segmentar em uma categoria de produto específica sem incluir todos os outros produtos comprados na mesma ordem. Você também pode definir objetos ou matrizes que fazem parte dos seus dados de evento como [contêineres personalizados](/help/data-views/create-dataview.md#custom-containers) separados em uma visualização de dados. | 21 de julho de 2026 | Final de julho de 2026 |
-| **B2B edition: suporte para conjuntos de dados ad hoc e relacionais** <br/>Os conjuntos de dados ad hoc e relacionais agora também são suportados em conexões baseadas em conta no Customer Journey Analytics B2B edition.<p>(Link para a documentação a seguir).</p> | | 20 de julho de 2026 |
-| **CX Enterprise Coworker: analisar dados do Customer Journey Analytics** <br/>O Adobe CX Enterprise Coworker Chat agora pode executar uma análise avançada de dados que antes só era possível no Analysis Workspace. O Bate-papo com colegas de trabalho acessa os dados das visualizações de dados do Customer Journey Analytics, permitindo que você explore esses dados e obtenha respostas para prompts em linguagem natural.<p>Para obter mais informações, consulte [Analisar dados do Customer Journey Analytics com o Chat do Colaborador](https://experienceleague.adobe.com/pt-br/docs/cx-enterprise-coworker/content/chat/analytics-chat).</p> | | 23 de julho de 2026 |
-| **CX Enterprise Co-worker: valide seus dados ao migrar do Adobe Analytics para o Customer Journey Analytics** <br/>Uma nova habilidade no CX Enterprise Co-worker permite validar os dados da implementação do Customer Journey Analytics em relação aos dados da implementação existente do Adobe Analytics. <p>Essa habilidade compara automaticamente cada dimensão, métrica e tendência individualmente, conforme necessário. Ele também pode comparar todos os conjuntos de relatórios do Adobe Analytics com todas as visualizações de dados do Customer Journey Analytics. A habilidade gera insights e recomendações orientados por IA que você pode implementar para facilitar a migração para o Customer Journey Analytics.</p><p>Para obter mais informações, consulte [Validar dados com o Colaborador ao atualizar do Adobe Analytics para o Customer Journey Analytics](https://experienceleague.adobe.com/pt-br/docs/cx-enterprise-ai/experience-cloud-ai/coworker/data-validation-aa-cja).</p> | | 24 de julho de 2026 |
-| **As classificações embutidas**<br/>[&#x200B; as classificações embutidas](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md#inline-classifications) permitem renomear ou combinar linhas em uma tabela de forma livre. E para criar um campo derivado das linhas modificadas em uma tabela. | 20 de julho de 2026 | 25 de julho de 2026 |
-| **Content Analytics: dados de mídia paga** <br/>A mídia paga agora está disponível como um terceiro canal para o Content Analytics.<p>(Link para a documentação a seguir).</p> | | 31 de julho de 2026 |
-| **Atualização da interface de Uso de Conexões** <br/>Na [interface de Uso](/help/connections/manage-connections.md#usage), ao gerenciar conexões, você pode ver os detalhes de uso de cada módulo individual, como o Customer Journey Analytics ou o Customer Journey Analytics B2B edition. <br/>Além disso, agora você pode detalhar os relatórios de uso de cada um dos módulos por mês. | 23 de julho de 2026 | 30 de julho de 2026 |
+| **Use os dados do Analytics no LLM Optimizer**<br> Conecte o LLM Optimizer aos dados do Customer Journey Analytics da sua organização para que você possa medir como a descoberta orientada por IA se traduz em envolvimento real com o site e em resultados comerciais.<p>(Link para a documentação a seguir).</p> | | 14 de agosto de 2026 |
+| **Aprimoramentos na tela de Jornada**<br> Os seguintes aprimoramentos na tela de Jornada estão disponíveis:<ul><li>Compare a jornada a um intervalo de tempo anterior. Compare a jornada atual com a jornada 4 semanas antes, 2 trimestres antes, 1 ano antes ou com um intervalo de datas personalizado.</li><li>Para um nó selecionado, mostre os itens de dimensão principais que vêm após o nó selecionado em qualquer ponto da jornada. Use-a quando o nó selecionado for o evento principal na análise e você quiser ver o que as pessoas fazem em qualquer ponto depois.<p>Anteriormente, somente os nós imediatos principais podiam ser exibidos antes ou depois do nó selecionado. </p></li><li>Alterar a forma e o estilo das setas entre os nós. Arraste as setas entre os nós para alterar a forma (curvatura) da seta e clique com o botão direito do mouse em uma seta para alterar seu estilo para qualquer uma das seguintes opções: sólido, tracejado, pontilhado, tracejado-ponto ou animado.</li></ul><p></p>Para  mais informações, consulte [Configurar uma visualização da tela de jornada](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md). |  | 18 de agosto de 2026 |
+| **Suporte para rótulos de uso de dados adicionais**<br> O Customer Journey Analytics agora oferece suporte aos seguintes rótulos de uso de dados adicionais para elementos em um conjunto de dados:<ul><li>C2 - Restringir a exportação de dados de terceiros (disponível agora)</li><li>C3 - Restringir combinação de dados diretamente identificáveis (disponível agora)</li><li>C9 - Restringir a ciência de dados (lançamento previsto para agosto)</li></ul><p>Para obter mais informações, consulte [Rótulos, políticas e ações de marketing](/help/data-views/data-governance.md).</p> | | Agosto de 2026 |
+| **Filtragem e relatórios de política de consentimento**<br> Agora você pode informar quais visitantes correspondem às suas políticas de consentimento da Adobe Experience Platform. (As dimensões e métricas da política de consentimento são adicionadas às visualizações de dados em sua conexão.)<p>Além disso, você pode excluir visitantes que não consentiram antes que seus dados sejam assimilados na Customer Journey Analytics.</p><p>Para obter mais informações, consulte Visão geral do relatório e da filtragem de consentimento.</p> | | Agosto de 2026 |
+| **Planejador de migração: do Adobe Analytics para o Customer Journey Analytics**<br> O Planejador de migração fornece um assistente de migração que automatiza algumas das tarefas mais complexas e demoradas associadas a uma atualização do Adobe Analytics para o Customer Journey Analytics, incluindo a criação do esquema XDM e a migração do AppMeasurement ou da extensão (tags) do Analytics para o Experience Platform Web SDK. <p>(Link para a documentação a seguir).</p> | | Final de agosto ou setembro de 2026 |
 
 ### Correções no Customer Journey Analytics
 
-**Analysis Workspace**: AN-457527, AN-451161, AN-459034, AN-458071, AN-458398
+**Analysis Workspace**:
 **Componentes**:
-**Conexões**: AN-457065
+**Conexões**:
 **Content Analytics**:
 **Análise guiada**:
 **Exportações**:
-**Visualizações de dados**: AN-453201
+**Visualizações de dados**:
 **Assimilação de dados**:
 **Implementação**:
-**Report Builder**: AN-457533, AN-453683
-**Relatórios**: AN-457607, AN-447692, AN-451259, AN-455713
+**Report Builder**:
+**Relatórios**:
 **Segmentação**:
-**Relatórios agendados**: AN-450715
+**Relatórios agendados**:
 **Métricas e dimensões compartilhadas**:
 **Análise de público-alvo**:
-**Outros**: AN-457063
+**Outros**:
 
 ## Recursos adiados
 
