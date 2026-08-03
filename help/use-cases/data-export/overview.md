@@ -6,22 +6,11 @@ feature: Use Cases
 role: Admin
 exl-id: 8b9c164e-01da-4b43-8e2c-99904223cae5
 TQID: https://experienceleague.adobe.com/ad4wWxqEZZxsnSTpus7pxFMlwNo3nNUpHeS9VfxrEdw
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
-subfeature_v2:
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
-  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8cid: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: d00e9f03-e50b-4162-b143-0c0817c937c2id: d095671a-1355-40aa-8b5f-06c33c68080bid: d3cdead0-685a-4489-9250-4bb709942f66id: eb30f47f-d87a-400f-8f78-63ce7979ff56
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 806
@@ -68,8 +57,8 @@ No Customer Journey Analytics, os eventos não são coletados em ordem, e uma ID
 
 * A compilação pode _reproduzir_ dados diariamente ou semanalmente, associando eventos anônimos a eventos conhecidos. Consulte [Costura](../../stitching/overview.md) para obter mais informações.
 * A sessão e os valores persistentes mudam sempre
-   * novos dados são coletados ou
-   * a compilação adiciona eventos ao histórico de uma pessoa.
+  * novos dados são coletados ou
+  * a compilação adiciona eventos ao histórico de uma pessoa.
 
 O processamento no tempo do relatório afeta a exportação de dados do Customer Journey Analytics. As exportações que incluem valores persistentes não corresponderão aos relatórios do Customer Journey Analytics e os valores desaparecerão com o tempo.
 
@@ -77,22 +66,22 @@ Para consistência de métrica, é preferível usar os novos recursos no Custome
 
 * novas fontes de dados e processamento sujeitos à exportação de dados
 
-   * incluir fontes de dados não digitais,
-   * aplicar atribuição e sessão personalizadas com base em regras de negócios e
-   * mantenha as jornadas do cliente atualizadas com a compilação.
+  * incluir fontes de dados não digitais,
+  * aplicar atribuição e sessão personalizadas com base em regras de negócios e
+  * mantenha as jornadas do cliente atualizadas com a compilação.
 
 * realização de casos de uso de exportação de dados personalizados
 
-   * exporte dados para onde precisar, incluindo ferramentas do Business Intelligence (BI) e destinos em nuvem,
-   * manter os dados sincronizados com o Analysis Workspace por meio da integração de ferramentas de BI,
-   * não é necessário replicar a lógica de processamento em seus próprios sistemas,
-   * novo suporte para métricas calculadas, campos derivados e segmentação e
+  * exporte dados para onde precisar, incluindo ferramentas do Business Intelligence (BI) e destinos em nuvem,
+  * manter os dados sincronizados com o Analysis Workspace por meio da integração de ferramentas de BI,
+  * não é necessário replicar a lógica de processamento em seus próprios sistemas,
+  * novo suporte para métricas calculadas, campos derivados e segmentação e
 
 * consideração da segurança e da governança de dados por projeto
 
-   * monitorar todas as exportações de dados por usuário e destino,
-   * definir limites sobre quais dados estão disponíveis para exportação e
-   * definir alertas para problemas de entrega e limites nas janelas de entrega programada.
+  * monitorar todas as exportações de dados por usuário e destino,
+  * definir limites sobre quais dados estão disponíveis para exportação e
+  * definir alertas para problemas de entrega e limites nas janelas de entrega programada.
 
 
 ## Casos de uso e funcionalidades
