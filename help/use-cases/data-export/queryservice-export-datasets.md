@@ -22,7 +22,7 @@ topic_v2:
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
 source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
 workflow-type: tm+mt
-source-wordcount: 3355
+source-wordcount: 3315
 ht-degree: 5%
 
 ---
@@ -122,7 +122,7 @@ Com base na implementação, os dados de nível de ocorrência tradicionalmente 
 | `geo\_*` | `placeContext.geo.* ` | sequência, número | Dados de geolocalização, como país, região, cidade e outros |
 | `event_list` | `commerce.purchases`, `commerce.productViews`, `commerce.productListOpens`, `commerce.checkouts`, `commerce.productListAdds`, `commerce.productListRemovals`, `commerce.productListViews`, `_experience.analytics.event101to200.*`, ..., `_experience.analytics.event901_1000.*` | string | Eventos de comércio padrão e personalizados acionados na ocorrência. |
 | `page_event` | `web.webInteraction.type` | string | O tipo de ocorrência enviado na solicitação da imagem (ocorrência padrão, link de download, link de saída ou link personalizado clicado). |
-| `page_event` | `web.webInteraction.linkClicks.value` | number | O tipo de ocorrência enviado na solicitação da imagem (ocorrência padrão, link de download, link de saída ou link personalizado clicado). |
+| `page_event` | `web.webInteraction.linkClicks.value` | número | O tipo de ocorrência enviado na solicitação da imagem (ocorrência padrão, link de download, link de saída ou link personalizado clicado). |
 | `page_event_var_1` | `web.webInteraction.URL` | string | Uma variável usada somente em solicitações de imagem de rastreamento de link. Essa variável contém o URL do link de download, link de saída, ou link personalizado clicado. |
 | `page_event_var_2` | `web.webInteraction.name` | string | Uma variável usada somente em solicitações de imagem de rastreamento de link. Isso lista o nome personalizado do link, se for especificado. |
 | `paid_search` | `search.isPaid` | booleano | Um sinalizador que é definido se a ocorrência corresponder à detecção de pesquisa paga. |
@@ -209,11 +209,11 @@ Veja abaixo um exemplo de como aplicar corretamente a atribuição entre sessõe
 
   Para fazer isso, você tem que...
 
-   - Use uma tabela de status de processamento, `checkpoint_log`, para acompanhar o horário atual versus o último horário de assimilação. Consulte [este guia](https://experienceleague.adobe.com/pt-br/docs/experience-platform/query/key-concepts/incremental-load) para obter mais informações.
-   - desabilite o descarte de colunas do sistema para que você possa usar `_acp_system_metadata.ingestTime`.
-   - Use um `SELECT` interno, na maioria das vezes, para coletar os campos que deseja usar e restringir os eventos ao seu período de pesquisa para cálculos de sessão e/ou atribuição. Por exemplo, 90 dias.
-   - Use um próximo nível `SELECT` para aplicar suas funções de sessão e/ou janela de atribuição e outros cálculos.
-   - Use `INSERT INTO` na tabela de saída para restringir a retrospectiva apenas aos eventos que chegaram desde o último tempo de processamento. Para fazer isso, filtre por `_acp_system_metadata.ingestTime ` em relação ao tempo armazenado pela última vez na tabela de status de processamento.
+  - Use uma tabela de status de processamento, `checkpoint_log`, para acompanhar o horário atual versus o último horário de assimilação. Consulte [este guia](https://experienceleague.adobe.com/pt-br/docs/experience-platform/query/key-concepts/incremental-load) para obter mais informações.
+  - desabilite o descarte de colunas do sistema para que você possa usar `_acp_system_metadata.ingestTime`.
+  - Use um `SELECT` interno, na maioria das vezes, para coletar os campos que deseja usar e restringir os eventos ao seu período de pesquisa para cálculos de sessão e/ou atribuição. Por exemplo, 90 dias.
+  - Use um próximo nível `SELECT` para aplicar suas funções de sessão e/ou janela de atribuição e outros cálculos.
+  - Use `INSERT INTO` na tabela de saída para restringir a retrospectiva apenas aos eventos que chegaram desde o último tempo de processamento. Para fazer isso, filtre por `_acp_system_metadata.ingestTime ` em relação ao tempo armazenado pela última vez na tabela de status de processamento.
 
   **Exemplo de funções da janela de sessão**
 

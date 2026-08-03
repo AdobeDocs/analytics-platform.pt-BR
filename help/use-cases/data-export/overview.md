@@ -68,8 +68,8 @@ No Customer Journey Analytics, os eventos não são coletados em ordem, e uma ID
 
 * A compilação pode _reproduzir_ dados diariamente ou semanalmente, associando eventos anônimos a eventos conhecidos. Consulte [Costura](../../stitching/overview.md) para obter mais informações.
 * A sessão e os valores persistentes mudam sempre
-   * novos dados são coletados ou
-   * a compilação adiciona eventos ao histórico de uma pessoa.
+  * novos dados são coletados ou
+  * a compilação adiciona eventos ao histórico de uma pessoa.
 
 O processamento no tempo do relatório afeta a exportação de dados do Customer Journey Analytics. As exportações que incluem valores persistentes não corresponderão aos relatórios do Customer Journey Analytics e os valores desaparecerão com o tempo.
 
@@ -77,22 +77,22 @@ Para consistência de métrica, é preferível usar os novos recursos no Custome
 
 * novas fontes de dados e processamento sujeitos à exportação de dados
 
-   * incluir fontes de dados não digitais,
-   * aplicar atribuição e sessão personalizadas com base em regras de negócios e
-   * mantenha as jornadas do cliente atualizadas com a compilação.
+  * incluir fontes de dados não digitais,
+  * aplicar atribuição e sessão personalizadas com base em regras de negócios e
+  * mantenha as jornadas do cliente atualizadas com a compilação.
 
 * realização de casos de uso de exportação de dados personalizados
 
-   * exporte dados para onde precisar, incluindo ferramentas do Business Intelligence (BI) e destinos em nuvem,
-   * manter os dados sincronizados com o Analysis Workspace por meio da integração de ferramentas de BI,
-   * não é necessário replicar a lógica de processamento em seus próprios sistemas,
-   * novo suporte para métricas calculadas, campos derivados e segmentação e
+  * exporte dados para onde precisar, incluindo ferramentas do Business Intelligence (BI) e destinos em nuvem,
+  * manter os dados sincronizados com o Analysis Workspace por meio da integração de ferramentas de BI,
+  * não é necessário replicar a lógica de processamento em seus próprios sistemas,
+  * novo suporte para métricas calculadas, campos derivados e segmentação e
 
 * consideração da segurança e da governança de dados por projeto
 
-   * monitorar todas as exportações de dados por usuário e destino,
-   * definir limites sobre quais dados estão disponíveis para exportação e
-   * definir alertas para problemas de entrega e limites nas janelas de entrega programada.
+  * monitorar todas as exportações de dados por usuário e destino,
+  * definir limites sobre quais dados estão disponíveis para exportação e
+  * definir alertas para problemas de entrega e limites nas janelas de entrega programada.
 
 
 ## Casos de uso e funcionalidades
