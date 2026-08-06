@@ -26,10 +26,10 @@ topic_v2:
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 14557a59902110b1768d61e621adfb3f76ee9930
+source-git-commit: 19bd7f26d503f7397c283dca8f8b71b2d6854adb
 workflow-type: tm+mt
-source-wordcount: 3352
-ht-degree: 95%
+source-wordcount: 3367
+ht-degree: 93%
 
 ---
 
@@ -170,7 +170,7 @@ Cada etapa fornece uma explicação de alto nível de um processo mais detalhado
 
    Use [o modelo de função de canais de marketing](/help/data-views/derived-fields/derived-fields.md#marketing-channels){target="_blank"} em campos derivados para criar um campo derivado para canais de marketing rapidamente.
 
-1. Compare os dados da implementação antiga no Adobe Analytics com os dados da nova implementação no Customer Journey Analytics e certifique-se de entender as diferenças e por que elas existem. <!-- Expound on this. Link to somewhere? There will be a lot of differences. -->
+1. [Compare os dados no Adobe Analytics da implementação antiga com os dados no Customer Journey Analytics da nova implementação](https://experienceleague.adobe.com/pt-br/docs/cx-enterprise-ai/experience-cloud-ai/coworker/data-validation-aa-cja) e compreenda as diferenças e por que elas existem.
 
 1. Transfira dados históricos do Adobe Analytics por meio do conector de origem do Analytics:
 
