@@ -19,10 +19,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 91cd8d3d5c290f52e4ae15713693be1fc83baa92
+source-git-commit: 55a5bc2160a7dc426b9436116362264ab9f90390
 workflow-type: tm+mt
-source-wordcount: 1058
-ht-degree: 2%
+source-wordcount: 1060
+ht-degree: 3%
 
 ---
 
@@ -81,8 +81,8 @@ Considere o seguinte ao usar a filtragem de consentimento:
 
   | Ação de marketing | Descrição |
   |---------|----------|
-  | **[!UICONTROL Analytics]** | Relatórios padrão do Customer Journey Analytics no Analysis Workspace. |
-  | **[!UICONTROL Ciência de dados]** | Casos de uso de análise avançada, aprendizado de máquina e ciência de dados. |
+  | **[!UICONTROL Dados do Analytics]** | Relatórios padrão do Customer Journey Analytics no Analysis Workspace. |
+  | **[!UICONTROL Dados de ciência de dados]** | Casos de uso de análise avançada, aprendizado de máquina e ciência de dados. |
 
 * Os dados de um visitante são assimilados somente se o visitante corresponder a **todas** as políticas de consentimento aplicáveis. Se alguma política aplicável não for aplicada ao visitante, os dados dele serão excluídos.
 

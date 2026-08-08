@@ -18,9 +18,9 @@ role_v2:
 topic_v2:
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 91cd8d3d5c290f52e4ae15713693be1fc83baa92
+source-git-commit: 55a5bc2160a7dc426b9436116362264ab9f90390
 workflow-type: tm+mt
-source-wordcount: 728
+source-wordcount: 770
 ht-degree: 2%
 
 ---
@@ -62,7 +62,11 @@ Para criar um relatório de consentimento e uma configuração de filtragem:
 
 1. Selecione **[!UICONTROL Usar visualizações de dados]**.
 
-1. (Opcional) Na seção **[!UICONTROL Filtragem]**, você pode habilitar a filtragem para as seguintes ações de marketing:
+1. (Opcional) Na seção **[!UICONTROL Filtragem]**, selecione [!UICONTROL **Habilitar filtragem**] para filtrar dados de consentimento.
+
+   Quando a filtragem está ativada, o Customer Journey Analytics assimila os dados de um visitante somente se o visitante corresponder a qualquer política de consentimento ativada. Para obter mais informações, consulte [Filtragem de consentimento](/help/connections/consent-reporting-filtering/consent-overview.md#consent-filtering) em [Visão geral do relatório e da filtragem de consentimento](/help/connections/consent-reporting-filtering/consent-overview.md).
+
+1. (Opcional) Ativar a filtragem para as seguintes ações de marketing:
 
    >[!NOTE]
    >
@@ -70,8 +74,8 @@ Para criar um relatório de consentimento e uma configuração de filtragem:
 
    | Ação de marketing | Descrição |
    |---------|----------|
-   | **[!UICONTROL Analytics]** | Filtrar dados usados para relatórios padrão do Customer Journey Analytics no Analysis Workspace. |
-   | **[!UICONTROL Ciência de dados]** | Filtre dados usados para análises avançadas, aprendizado de máquina e casos de uso de ciência de dados. |
+   | **[!UICONTROL Dados do Analytics]** | Filtrar dados usados para relatórios padrão do Customer Journey Analytics no Analysis Workspace. |
+   | **[!UICONTROL Dados de ciência de dados]** | Filtre dados usados para análises avançadas, aprendizado de máquina e casos de uso de ciência de dados. |
 
 1. Selecione **[!UICONTROL Criar]** para criar a configuração.
 
