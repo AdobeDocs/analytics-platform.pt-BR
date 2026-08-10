@@ -5,27 +5,55 @@ solution: Customer Journey Analytics
 feature: Privacy
 role: Admin
 hold: true
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
-  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
-subfeature_v2:
-  - id: ffe2fd81-0630-49b3-a33b-4b8899e89c51
-  - id: d3fb138f-79e4-4a81-aedb-76dd93560085
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 55a5bc2160a7dc426b9436116362264ab9f90390
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: eb00932f-4d46-46bc-b1d8-10de7588db8did: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+subfeature_v2: id: ffe2fd81-0630-49b3-a33b-4b8899e89c51id: d3fb138f-79e4-4a81-aedb-76dd93560085
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: de01c1e07af1a3e746e7cdb2dc95d36a420e883d
 workflow-type: tm+mt
-source-wordcount: 770
-ht-degree: 2%
+source-wordcount: 981
+ht-degree: 14%
 
 ---
 
-# Configurar relatório e filtragem de consentimento
+# Configurar relatório e filtragem de consentimento {#configure-consent-reporting}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-consent-merge-policy"
+>title="Política de mesclagem"
+>abstract="As políticas de mesclagem combinam dados de perfil de vários conjuntos de dados em perfis de cliente unificados usados para a criação de público-alvo. Selecione “Baseado em tempo padrão” se você vir várias políticas de mesclagem e não tiver certeza sobre qual escolher. Ou consulte sua equipe de dados para saber quais públicos-alvo estão associados a cada política de mesclagem."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-consent-sandbox"
+>title="Sandbox"
+>abstract="Selecione a sandbox que contém os conjuntos de dados de perfil corretos da Experience Platform. Esses conjuntos de dados precisam conter os dados de consentimento que você deseja relatar no Analysis Workspace."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-consent-person-id"
+>title="ID da pessoa"
+>abstract="Selecione um campo do esquema baseado em modelo que representa a ID de pessoa. A seleção é limitada à lista de campos no esquema marcados como &quot;Identidade&quot; e que têm um namespace de identidade."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-consent-identity-namespace"
+>title="Usar namespace de identidade primário"
+>abstract="Ative esta opção se quiser que o Customer Journey Analytics localize a identidade no Mapa de identidade que está marcada com um atributo primário=verdadeiro e usa essa identidade como a ID de pessoa para essa linha. Essa identidade é a chave primária usada na Experience Platform para particionamento. <br/>Se deixar essa opção desativada, selecione um namespace no campo Namespace de identidade abaixo. O Customer Journey Analytics pesquisará cada linha do mapa de identidade para encontrar a chave desse namespace e usará a identidade sob esse namespace como a ID de pessoa para essa linha."
+
+<!-- markdownlint-enable MD034 -->
 
 Os administradores do sistema podem ativar o relatório de consentimento e, opcionalmente, a filtragem de consentimento para uma ou mais conexões. Para obter informações gerais, consulte [Visão geral do relatório e da filtragem de consentimento](/help/connections/consent-reporting-filtering/consent-overview.md).
 
