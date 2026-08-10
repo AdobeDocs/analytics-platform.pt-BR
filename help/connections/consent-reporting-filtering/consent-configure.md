@@ -4,7 +4,7 @@ description: Saiba como usar o assistente de provisionamento para ativar o relat
 solution: Customer Journey Analytics
 feature: Privacy
 role: Admin
-hold: true
+hide: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
 feature_v2:
@@ -18,14 +18,50 @@ role_v2:
 topic_v2:
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 55a5bc2160a7dc426b9436116362264ab9f90390
+source-git-commit: 7bb16378fc8813ca126cb786c5d36bf9daa0fe7d
 workflow-type: tm+mt
-source-wordcount: 770
-ht-degree: 2%
+source-wordcount: 981
+ht-degree: 14%
 
 ---
 
-# Configurar relatório e filtragem de consentimento
+# Configurar relatório e filtragem de consentimento {#configure-consent-reporting}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-consent-merge-policy"
+>title="Política de mesclagem"
+>abstract="As políticas de mesclagem combinam dados de perfil de vários conjuntos de dados em perfis de cliente unificados usados para a criação de público-alvo. Selecione “Baseado em tempo padrão” se você vir várias políticas de mesclagem e não tiver certeza sobre qual escolher. Ou consulte sua equipe de dados para saber quais públicos-alvo estão associados a cada política de mesclagem."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-consent-sandbox"
+>title="Sandbox"
+>abstract="Selecione a sandbox que contém os conjuntos de dados de perfil corretos da Experience Platform. Esses conjuntos de dados precisam conter os dados de consentimento que você deseja relatar no Analysis Workspace."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-consent-person-id"
+>title="ID da pessoa"
+>abstract="Selecione um campo do esquema baseado em modelo que representa a ID de pessoa. A seleção é limitada à lista de campos no esquema marcados como &quot;Identidade&quot; e que têm um namespace de identidade."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja-consent-identity-namespace"
+>title="Usar namespace de identidade primário"
+>abstract="Ative esta opção se quiser que o Customer Journey Analytics localize a identidade no Mapa de identidade que está marcada com um atributo primário=verdadeiro e usa essa identidade como a ID de pessoa para essa linha. Essa identidade é a chave primária usada na Experience Platform para particionamento. <br/>Se deixar essa opção desativada, selecione um namespace no campo Namespace de identidade abaixo. O Customer Journey Analytics pesquisará cada linha do mapa de identidade para encontrar a chave desse namespace e usará a identidade sob esse namespace como a ID de pessoa para essa linha."
+
+<!-- markdownlint-enable MD034 -->
 
 Os administradores do sistema podem ativar o relatório de consentimento e, opcionalmente, a filtragem de consentimento para uma ou mais conexões. Para obter informações gerais, consulte [Visão geral do relatório e da filtragem de consentimento](/help/connections/consent-reporting-filtering/consent-overview.md).
 
