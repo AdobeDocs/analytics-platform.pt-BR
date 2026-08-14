@@ -18,10 +18,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: bb3fcdcd879c503c311a58cf2fd982dd38305c6a
+source-git-commit: 06e88df9fddaf292cfeef11e9b7d9a08e47cc7c5
 workflow-type: tm+mt
-source-wordcount: 3225
-ht-degree: 26%
+source-wordcount: 3709
+ht-degree: 22%
 
 ---
 
@@ -35,7 +35,7 @@ Ao criar um feed de dados, você fornece à Adobe:
 
 * Os dados para inclusão em cada arquivo
 
-* A frequência com que os dados são enviados (incluindo o atraso de processamento para capturar ocorrências de chegada tardia)
+* A frequência com que os dados são enviados (incluindo o atraso de processamento para capturar eventos de chegada tardia)
 
 Antes de criar um feed de dados, é importante ter uma compreensão básica dos feeds de dados e garantir o atendimento de todos os pré-requisitos. Para obter mais informações, consulte: [Visão geral dos feeds de dados](data-feed-overview.md).
 
@@ -64,7 +64,25 @@ Antes de criar um feed de dados, é importante ter uma compreensão básica dos 
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_lookback_date_range"
 >title="Intervalo de datas da retrospectiva"
->abstract="Controla até que data o Customer Journey Analytics analisa ao processar a entrega do feed de dados.<br/>Essa configuração não altera a janela de frequência (hora ou dia). No entanto, o intervalo de datas da retrospectiva pode influenciar os dados entregues. A qualificação de segmento, o cálculo de sessão, algumas transformações de campo derivadas e a persistência de dimensão são afetados pelo intervalo de datas da retrospectiva."
+>abstract="Controla a aparência retroativa do Customer Journey Analytics ao encontrar eventos que se qualificam para uma entrega de feed de dados.<br/>Eventos que estão fora da janela de frequência (a hora ou o dia específico) ainda poderão ser incluídos se tiverem ocorrido dentro do intervalo de datas da retrospectiva. A inclusão de um evento depende dos seguintes fatores: qualificação de segmento, cálculo de sessão, transformações de campo derivadas e persistência de dimensão.<br/>Um intervalo de datas de retrospectiva mais longo normalmente resulta em mais eventos; um intervalo mais curto resulta em melhor desempenho de entrega."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_datafeed_lookback_date_range"
+>title="Intervalo de datas da retrospectiva"
+>abstract="Controla a aparência retroativa do Customer Journey Analytics ao encontrar eventos que se qualificam para uma entrega de feed de dados. Essa configuração é semelhante à janela de relatórios do Analysis Workspace, mas apresenta diferenças importantes.<br/>Eventos que estão fora da janela de frequência (a hora ou o dia específico) ainda poderão ser incluídos se tiverem ocorrido dentro do intervalo de datas da retrospectiva. A inclusão de um evento depende dos seguintes fatores: qualificação de segmento, cálculo de sessão, transformações de campo derivadas e persistência de dimensão.<br/>Um intervalo de datas de retrospectiva mais longo normalmente resulta em mais eventos; um intervalo mais curto resulta em melhor desempenho de entrega."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_datafeed_processing_delay"
+>title="Atraso no processamento"
+>abstract="O tempo de espera por eventos de chegada tardia antes de processar um arquivo de feed de dados. Quaisquer ocorrências de chegada tardia que chegarem durante o período de tempo de atraso de processamento serão incluídas no feed de dados. <p>Atrasos de processamento são úteis por vários motivos, como para dar às implementações móveis uma oportunidade para que os dispositivos offline fiquem online e enviem dados ou para acomodar os processos do lado do servidor de sua organização no gerenciamento de arquivos processados anteriormente.</p><p>As sessões devem ser iniciadas após o limite do atraso de processamento para serem incluídas; as sessões que iniciam antes do limite e terminam dentro do atraso de processamento não são incluídas.</p><p>O Customer Journey Analytics determina dinamicamente o atraso ideal com base no tempo que os eventos de chegada tardia normalmente levam para o feed, mas você pode defini-lo manualmente para atrasar por 2, 3, 4 ou 8 horas.</p>"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -81,7 +99,9 @@ Antes de criar um feed de dados, é importante ter uma compreensão básica dos 
 
 1. Selecione [!UICONTROL **Customer Journey Analytics**] no alternador de aplicativos ![App](/help/assets/icons/Apps.svg) na parte superior direita da interface.
 
-1. Na barra de navegação superior, vá para [!UICONTROL **Componentes**] > [!UICONTROL **Feeds de dados**].
+1. Na barra de navegação superior, vá para [!UICONTROL **Componentes**] > [!UICONTROL **Exportações**].
+
+1. Selecione a guia [!UICONTROL **Feeds de dados**].
 
 1. Selecione [!UICONTROL **Criar**] no canto superior direito da tela.
 
@@ -108,7 +128,7 @@ Antes de criar um feed de dados, é importante ter uma compreensão básica dos 
 
 1. No menu suspenso [!UICONTROL **Segmentos**], procure e selecione segmentos para filtrar os dados incluídos no feed.
 
-   Quando você aplica vários segmentos, eles são agrupados com um operador AND. (Para unir segmentos com um operador OU, primeiro você deve criar um novo segmento no construtor de segmentos e, em seguida, aplicar o novo segmento ao feed de dados.)
+   Quando você aplica vários segmentos, eles são agrupados com um operador AND. Para unir segmentos com um operador OU, primeiro você deve criar um novo segmento no construtor de segmentos e, em seguida, aplicar o novo segmento ao feed de dados.
 
 1. Adicione componentes à configuração do feed de dados. O painel esquerdo mostra apenas componentes válidos para feeds de dados.
 
@@ -128,7 +148,7 @@ Antes de criar um feed de dados, é importante ter uma compreensão básica dos 
    |---|---|---|---|
    | Carimbo de data e hora UTC | A data e a hora em que o evento ocorreu, representadas no fuso horário UTC. Suporta granularidade de subsegundos (microssegundos). | Obrigatório | Não disponível |
    | ID da linha | O identificador exclusivo de cada linha incluída no feed de dados. | Obrigatório | Não disponível |
-   | ID da sessão | O identificador exclusivo de cada sessão incluída no feed de dados. | Obrigatório | Não disponível |
+   | ID da sessão | O identificador exclusivo para cada sessão incluído no feed de dados. | Obrigatório | Não disponível |
    | ID da pessoa | O identificador de pessoa para a visualização de dados e a conexão | Obrigatório | Padrão opcional |
    | ID da conta [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | ID da conta ao usar o contêiner Conta | Obrigatório | Padrão opcional |
 
@@ -253,6 +273,14 @@ Antes de criar um feed de dados, é importante ter uma compreensão básica dos 
 
 1. (Opcional) Reordene os componentes na tela arrastando-os. A ordem definida é preservada como a ordem das colunas no arquivo de feed de dados exportado.
 
+1. (Opcional) Altere a ID do componente exibida na saída do feed de dados.
+
+   1. Passe o mouse sobre um componente na tela de desenho, em seguida, selecione o ícone de informações.
+
+   1. No campo ID do componente, especifique uma nova ID do componente.
+
+      <!--add screenshot-->
+
 1. (Opcional) Use os painéis **[!UICONTROL Resumo do feed]** e **[!UICONTROL Visualização do esquema]** no lado direito da página para examinar sua estrutura de dados antes de continuar:
 
    * O **[!UICONTROL Resumo do feed]** mostra uma contagem ativa do total de componentes, colunas, dimensões e métricas que você adicionou.
@@ -271,9 +299,9 @@ Antes de criar um feed de dados, é importante ter uma compreensão básica dos 
    | [!UICONTROL **Data de início**] | A data em que o feed de dados começa. Para feeds ao vivo, isso deve ser hoje ou uma data futura. Para feeds de preenchimento retroativo, essa deve ser uma data passada na janela de retenção de dados da visualização de dados. A data de início é baseada no fuso horário da visualização de dados. |
    | [!UICONTROL **Data de expiração**] <br/>Disponível somente para feeds em tempo real | A data em que o feed de dados expira e não é mais executado. A data é baseada no fuso horário da visualização de dados. |
    | [!UICONTROL **Data final**]<br/> Disponível somente para feeds de preenchimento retroativo | A data em que o feed de dados termina. A data final não pode ser no futuro. A data é baseada no fuso horário da visualização de dados. |
-   | [!UICONTROL **Frequência**] | Selecione a frequência com que o feed de dados deve ser enviado. Eventos com carimbos de data e hora que caem na janela de frequência são incluídos na entrega do feed de dados. Os campos [!UICONTROL **Intervalo de datas de retrospectiva**] e [!UICONTROL **Atraso de processamento**] também podem afetar quais eventos são incluídos nos dados para a frequência de entrega escolhida.<p>Para feeds ao vivo, selecione para incluir uma hora de dados ou um dia de dados. Para feeds de preenchimento retroativo, este campo está bloqueado para **Diariamente** e não pode ser alterado.</p><ul><li>**Diariamente**: os feeds contêm dados de um dia inteiro, da meia-noite a meia-noite no fuso horário da visualização de dados. <p>Essa opção é necessária para feeds de preenchimento retroativo e opcional para feeds em tempo real.</p></li><li>**Por hora**: os feeds contêm dados de uma hora. <p>Essa opção está disponível somente para feeds em tempo real.</p></li></ul> |
-   | [!UICONTROL **Intervalo de datas de retrospectiva**] | Controla até que data o Customer Journey Analytics analisa ao processar a entrega do feed de dados. O padrão é 30 dias. <p>Essa configuração não altera a janela de frequência (hora ou dia), que define o intervalo de tempo dos eventos a serem incluídos na saída do feed de dados. No entanto, o intervalo de datas da retrospectiva pode influenciar os dados entregues, das seguintes maneiras: </p><ul><li>**Qualificação do segmento**: quando um segmento é aplicado à sua definição de feed de dados, todos os eventos dentro do intervalo de datas da pesquisa determinam se uma pessoa se qualifica. A configuração de contêiner do segmento determina o escopo. (Os contêineres possíveis são: Pessoa, Sessão ou Evento. B2B tem os seguintes contêineres adicionais: Conta global, Conta, Oportunidade, Grupo de compras.)  <p>Por exemplo, se um contêiner Pessoa for usado e a pessoa for qualificada durante o intervalo de datas da retrospectiva, todos os eventos dessa pessoa durante a janela de frequência também serão qualificados.</p></li><li>**Cálculo de sessão**: os limites de sessão são calculados usando dados dentro do intervalo de datas da pesquisa.</li><li>**Transformações de campo derivadas**: quaisquer funções de campo derivadas que referenciam contêineres usam o intervalo de datas da pesquisa em exportações de feed de dados.</li><li>**Persistência do Dimension**: se você optar por definir a persistência em uma dimensão individual, também escolha uma expiração para determinar por quanto tempo um item de dimensão persiste além do evento em que está definido. <p>O intervalo de datas de pesquisa afeta a persistência da dimensão quando a expiração é definida como uma das seguintes opções na visualização de dados:</p><ul><li>Para cada dimensão na definição de feed de dados que usa [!UICONTROL **Janela de relatório**] como expiração, o intervalo de datas de retrospectiva se torna a nova janela de relatório.</li><li>Para cada dimensão na definição de feed de dados que usa [!UICONTROL **Tempo personalizado**] como sua expiração, e se o tempo personalizado selecionado se estender além do intervalo de datas da pesquisa, o tempo personalizado será ignorado e o intervalo de datas da pesquisa será usado para a expiração da dimensão.<p>Para obter mais informações sobre como configurar a persistência em dimensões na visualização de dados, consulte [Configurações do componente de Persistência](/help/data-views/component-settings/persistence.md).</p></li></ul> |
-   | [!UICONTROL **Atraso no processamento**] | Escolha o tempo de espera antes do processamento de um arquivo de feed de dados. O padrão é 2 horas. Quaisquer ocorrências de chegada tardia que chegarem durante o atraso de processamento serão incluídas no feed de dados. <p>Atrasos de processamento são úteis por vários motivos, como para dar às implementações móveis uma oportunidade para que os dispositivos offline fiquem online e enviem dados ou para acomodar os processos do lado do servidor de sua organização no gerenciamento de arquivos processados anteriormente. </p><p>Você pode atrasar um feed por 2, 3, 4 ou 8 horas.</p><p>As sessões devem ser iniciadas após o limite do atraso de processamento para serem incluídas; as sessões que iniciam antes do limite e terminam dentro do atraso de processamento não são incluídas.</p> |
+   | [!UICONTROL **Frequência**] | Selecione a frequência com que o feed de dados deve ser enviado. Eventos com carimbos de data e hora que caem na janela de frequência são incluídos na entrega do feed de dados. Os campos [!UICONTROL **Intervalo de datas de retrospectiva**] e [!UICONTROL **Atraso de processamento**] também podem afetar quais eventos são incluídos nos dados para a frequência de entrega escolhida.<p>Para feeds ao vivo, selecione para incluir uma hora de dados ou um dia de dados. Para feeds de preenchimento retroativo, este campo está bloqueado para **Diariamente** e não pode ser alterado.</p><ul><li>**Diariamente**: os feeds contêm dados de um dia inteiro, da meia-noite a meia-noite no fuso horário da visualização de dados. <p>Essa opção é necessária para feeds de preenchimento retroativo e é opcional para feeds em tempo real.</p></li><li>**Por hora**: os feeds contêm dados de uma hora. <p>Essa opção está disponível somente para feeds em tempo real.</p></li></ul> |
+   | [!UICONTROL **Intervalo de datas de retrospectiva**] | Controla até que data o Customer Journey Analytics analisa ao processar a entrega do feed de dados. O padrão é 30 dias. <p>Ao configurar essa opção, considere os seguintes conceitos importantes:</p><ul><li>Um intervalo de datas de pesquisa mais longo normalmente resulta em mais eventos; um intervalo mais curto resulta em melhor desempenho do delivery.</li><li>O intervalo de datas da retrospectiva nos feeds de dados é semelhante ao intervalo de datas do relatório no Analysis Workspace, mas há [diferenças principais](/help/components/exports/cja-data-feeds/df-comparison-workspace.md#differences). Essas diferenças podem resultar em telas de dados entre os relatórios do Workspace e as entregas do feed de dados. </li><li>Essa configuração não altera a janela de frequência (hora ou dia), que define o intervalo de tempo dos eventos a serem incluídos na saída do feed de dados. <p>Os eventos que estão fora da janela de frequência ainda poderão ser incluídos se ocorrerem dentro do intervalo de datas da retrospectiva, dependendo dos seguintes fatores: </p><ul><li>**Qualificação do segmento**: quando um segmento é aplicado à sua definição de feed de dados, todos os eventos dentro do intervalo de datas da pesquisa determinam se uma pessoa se qualifica. A configuração de contêiner do segmento determina o escopo. (Os contêineres possíveis são: Pessoa, Sessão ou Evento. B2B inclui os seguintes contêineres adicionais: Conta global, Conta, Oportunidade, Grupo de compras.)  <p>Por exemplo, se um segmento for aplicado chamado _pessoas que compraram_, uma retrospectiva de uma semana incluirá eventos para a hora ou o dia determinado (a janela de frequência) para pessoas que compraram nos últimos 7 dias. Uma pesquisa de 90 dias incluiria eventos para pessoas que compraram nos últimos 90 dias</p></li><li>**Cálculo de sessão**: os limites de sessão são calculados usando dados dentro do intervalo de datas da pesquisa.</li><li>**Transformações de campo derivadas**: quaisquer funções de campo derivadas que referenciam contêineres usam o intervalo de datas da pesquisa em exportações de feed de dados.</li><li>**Persistência do Dimension**: se você optar por definir a persistência em uma dimensão individual, também escolha uma expiração para determinar por quanto tempo um item de dimensão persiste além do evento em que está definido. As dimensões definidas para persistir usam o intervalo de datas da retrospectiva para determinar a qualificação para exportações de feed de dados.  <p>O intervalo de datas de pesquisa afeta a persistência da dimensão quando a expiração é definida como uma das seguintes opções na visualização de dados:</p><ul><li>Para cada dimensão na definição de feed de dados que usa [!UICONTROL **Janela de relatório**] como expiração, o intervalo de datas de retrospectiva se torna a nova janela de relatório.</li><li>Para cada dimensão na definição de feed de dados que usa [!UICONTROL **Tempo personalizado**] como sua expiração, e se o tempo personalizado selecionado se estender além do intervalo de datas da pesquisa, o tempo personalizado será ignorado e o intervalo de datas da pesquisa será usado para a expiração da dimensão.<p>Para obter mais informações sobre como configurar a persistência em dimensões na visualização de dados, consulte [Configurações do componente de Persistência](/help/data-views/component-settings/persistence.md).</p></li></ul><p>Defina o intervalo de datas da pesquisa com um valor igual ou maior que o conjunto de persistências em dimensões em seus dados. Por exemplo, se uma dimensão de campanha tiver uma expiração de 30 dias e uma pessoa clicar nessa campanha duas semanas atrás, um intervalo de datas de retrospectiva de 7 dias não manterá o valor.</p></ul> |
+   | [!UICONTROL **Atraso no processamento**] | Escolha o tempo de espera antes do processamento de um arquivo de feed de dados. O padrão é 2 horas. Todos os eventos de chegada tardia que chegam durante o atraso de processamento são incluídos no feed de dados. <p>Atrasos de processamento são úteis por vários motivos, como para dar às implementações móveis uma oportunidade para que os dispositivos offline fiquem online e enviem dados ou para acomodar os processos do lado do servidor de sua organização no gerenciamento de arquivos processados anteriormente. </p><p>As sessões devem ser iniciadas após o limite do atraso de processamento para serem incluídas; as sessões que iniciam antes do limite e terminam dentro do atraso de processamento não são incluídas.</p><p>O Customer Journey Analytics determina dinamicamente o atraso ideal com base no tempo que os eventos de chegada tardia normalmente levam para o feed, mas você pode defini-lo manualmente para atrasar por 2, 3, 4 ou 8 horas.</p> |
    | [!UICONTROL **Formato de compactação**] | Selecione o formato de compactação dos arquivos de saída do Parquet entregues ao destino da nuvem. Escolha entre os seguintes formatos:<ul><li>[!UICONTROL **Snappy**]: compactação e descompactação rápidas com tamanhos de arquivo moderados. Amplamente compatível com plataformas de dados modernas, como BigQuery, Snowflake e Apache Spark.</li><li>[!UICONTROL **GZip**]: amplamente compatível, inclusive com ferramentas que não oferecem suporte nativo ao Snappy. Recomendado se o pipeline downstream exigir um padrão de compactação amplamente reconhecido.</li><li>[!UICONTROL **Z Padrão (Zstd)**]: alta eficiência de compactação com descompactação rápida. Adequado se minimizar o tamanho do arquivo é uma prioridade e suas ferramentas suportam Zstd.</li></ul> |
 
 1. Na guia [!UICONTROL **Entrega**], na seção [!UICONTROL **Destino**], configure o destino para onde deseja que os dados sejam enviados.
