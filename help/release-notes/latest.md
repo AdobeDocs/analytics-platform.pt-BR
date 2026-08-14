@@ -27,10 +27,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 07846fea9f2d7fd966bcd924025aeae0c157cf9e
+source-git-commit: 3d3015ac59eefd5bd5e948996b2880310332a5e1
 workflow-type: tm+mt
-source-wordcount: 910
-ht-degree: 30%
+source-wordcount: 989
+ht-degree: 27%
 
 ---
 
@@ -45,6 +45,7 @@ Essas notas de versão abrangem o período de agosto de 2026. As versões do Ado
 | Recurso e descrição | [Início da implantação](releases.md) | [Disponibilidade geral](releases.md) |
 | -----------|-----------|-----------|
 | **Aprimoramentos na tela de Jornada**<br> Os seguintes aprimoramentos na tela de Jornada estão disponíveis:<ul><li>Compare a jornada a um intervalo de tempo anterior. Compare a jornada atual com a jornada 4 semanas antes, 2 trimestres antes, 1 ano antes ou com um intervalo de datas personalizado.</li><li>Para um nó selecionado, mostre os itens de dimensão principais que vêm após o nó selecionado em qualquer ponto da jornada. Use-a quando o nó selecionado for o evento principal na análise e você quiser ver o que as pessoas fazem em qualquer ponto depois.<p>Anteriormente, somente os nós imediatos principais podiam ser exibidos antes ou depois do nó selecionado. </p></li><li>Alterar a forma e o estilo das setas entre os nós. Arraste as setas entre os nós para alterar a forma (curvatura) da seta e clique com o botão direito do mouse em uma seta para alterar seu estilo para qualquer um dos seguintes: sólido, tracejado, pontilhado, tracejado-ponto ou animado.</li></ul><p></p>Para  mais informações, consulte [Configurar uma visualização da tela de jornada](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md). |  | 18 de agosto de 2026 |
+| **Limitar segmentos ao intervalo de datas do relatório**<br/> Os dados em um relatório do Workspace podem se estender além do intervalo de datas do relatório quando um segmento inclui componentes de intervalo de datas.<p>Uma nova opção está disponível e permite limitar os resultados ao intervalo de datas do relatório, independentemente de quaisquer componentes de data incluídos no segmento. <p>Essa opção está disponível ao criar ou modificar um segmento cujo container de nível superior é Pessoa.</p><p>Para obter mais informações, consulte [Criar segmentos](/help/components/segments/seg-builder.md#components).</p> | 26 de agosto de 2026 | 9 de setembro de 2026 |
 | **Suporte para rótulos de uso de dados adicionais**<br> O Customer Journey Analytics agora oferece suporte aos seguintes rótulos de uso de dados adicionais para elementos em um conjunto de dados:<ul><li>C2 - Restringir a exportação de dados de terceiros (disponível agora)</li><li>C3 - Restringir combinação de dados diretamente identificáveis (disponível agora)</li><li>C9 - Restringir a ciência de dados (lançamento previsto para agosto ou setembro)</li></ul><p>Para obter mais informações, consulte [Rótulos, políticas e ações de marketing](/help/data-views/data-governance.md).</p> | | Agosto ou setembro de 2026 |
 | **Filtragem e relatórios de política de consentimento**<br> Agora você pode informar quais visitantes correspondem às suas políticas de consentimento da Adobe Experience Platform. (As dimensões e métricas da política de consentimento são adicionadas às visualizações de dados em sua conexão.)<p>Além disso, você pode excluir visitantes que não consentiram antes que seus dados sejam assimilados na Customer Journey Analytics.</p><p>Para obter mais informações, consulte Visão geral do relatório e da filtragem de consentimento.</p> | | Agosto de 2026 |
 | **Content Analytics: dados de mídia paga** <br/>A mídia paga agora está disponível como um terceiro canal para o Content Analytics.<p>(Link para a documentação a seguir).</p> | | 31 de agosto de 2026 |
