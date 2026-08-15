@@ -23,10 +23,10 @@ topic_v2:
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: 1254207526535e44c848dfeed0052339fbd8d65d
+source-git-commit: 0b6dc1d738b5f1a8aa430c990f8eb24df5d95653
 workflow-type: tm+mt
-source-wordcount: 745
-ht-degree: 66%
+source-wordcount: 770
+ht-degree: 65%
 
 ---
 
@@ -95,7 +95,9 @@ Clique em **[!UICONTROL Aplicar]** para ver quais políticas estão habilitada
 
 ## Como as políticas habilitadas afetam as visualizações de dados
 
-Se uma ou mais políticas forem ativadas com rótulos C1, C2, C3, C8, C9 ou C12, os componentes do esquema que têm determinados rótulos de dados aplicados não poderão ser adicionados às visualizações de dados.
+Se uma ou mais políticas forem ativadas com C3 ou C8, os componentes do esquema que têm determinados rótulos de dados aplicados não poderão ser adicionados às visualizações de dados.
+
+Se uma ou mais políticas forem ativadas com C9, quaisquer componentes do esquema rotulados com C9 não estarão disponíveis para uso com [servidores MCP do Analytics](https://developer.adobe.com/analytics-mcp/docs/).
 
 Esses componentes ficam esmaecidos na lista [!UICONTROL Campos do esquema] no painel esquerdo:
 
