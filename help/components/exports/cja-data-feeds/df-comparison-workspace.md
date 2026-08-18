@@ -4,9 +4,9 @@ keywords: sequência de cliques;feed de dados;datafeed;Feed de dados
 title: Comparar a funcionalidade de feeds de dados no Customer Journey Analytics e no Adobe Analytics
 feature: Components
 hide: true
-source-git-commit: a72ed21bdea40e2441443d7218d9fd7c906adc3e
+source-git-commit: de8748a1dddbc0ddaadca4c805c9b4aba99a4267
 workflow-type: tm+mt
-source-wordcount: '704'
+source-wordcount: '719'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,9 @@ Os dados em uma exportação de feed de dados nem sempre correspondem exatamente
 
 ## Intervalo de datas de pesquisa (feeds de dados) vs. Intervalo de datas do relatório (Analysis Workspace)
 
-O intervalo de datas da retrospectiva nos feeds de dados determina a retrospectiva do Customer Journey Analytics ao encontrar eventos que se qualificam para uma entrega de feed de dados. Nesse sentido, o intervalo de datas de retrospectiva é semelhante ao intervalo de datas do relatório no Analysis Workspace. No entanto, existem diferenças importantes.
+O intervalo de datas da retrospectiva nos feeds de dados determina a retrospectiva do Customer Journey Analytics ao encontrar eventos que se qualificam para uma entrega de feed de dados. Para obter detalhes sobre o intervalo de datas da retrospectiva, incluindo exemplos, consulte [Entender o intervalo de datas da retrospectiva](/help/components/exports/cja-data-feeds/create-feed.md#understand-the-lookback-date-range).
+
+Nesse sentido, o intervalo de datas de retrospectiva é semelhante ao intervalo de datas do relatório no Analysis Workspace. No entanto, existem diferenças importantes.
 
 | Principais diferenças | Intervalo de datas do relatório (Analysis Workspace) | Intervalo de datas de pesquisa (feeds de dados) |
 |---------|---------|----------|

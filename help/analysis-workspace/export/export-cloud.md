@@ -6,27 +6,14 @@ feature: Curate and Share
 exl-id: 072eadcc-43ff-42e3-86ee-82062fa02eba
 role: User
 TQID: https://experienceleague.adobe.com/7Bqz2dh9v-BhLey5fWNjnQkgFAXQd3QDnTzz8rd7BFA
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-  - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
-subfeature_v2:
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: d3c978ee-1ff0-4475-968a-721e2dd99ef1
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
-  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-source-git-commit: c7fc5df2a0fd7393b48bfe6bdfa7dccdfffde46c
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: d3c978ee-1ff0-4475-968a-721e2dd99ef1id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817afid: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+source-git-commit: f62c202f92ffc842a9abe2a91bec5231a606f67c
 workflow-type: tm+mt
-source-wordcount: 3268
+source-wordcount: 3275
 ht-degree: 58%
 
 ---
@@ -167,7 +154,7 @@ Para exportar tabelas completas do Analysis Workspace:
    | Exibir destinos para todos os usuários | Os administradores do sistema podem selecionar essa opção para exibir todas as contas e locais, independentemente de quem os criou. |
    | Conta | Selecione a conta de exportação para a nuvem à qual deseja enviar os dados. <p>Ou, se ainda não tiver configurado uma conta na nuvem que deseja usar, é possível configurar uma nova conta:<ol><li>No menu suspenso **[!UICONTROL Conta]**, selecione **[!UICONTROL Adicionar conta]** e especifique as seguintes informações:<ul><li>**[!UICONTROL Nome da conta de localização]**: especifique um nome para a conta de localização. Esse nome aparece ao criar uma localização </li><li>**[!UICONTROL Descrição da conta de localização]**: insira uma breve descrição da conta para ajudar a diferenciá-la de outras contas do mesmo tipo.</li><li>**Disponibilizar a conta para todos os usuários da sua organização**: selecione essa opção se desejar permitir que outros usuários da organização usem a conta.</li><li>**[!UICONTROL Tipo de conta]**: selecione o tipo de conta da nuvem para a qual você está exportando. Os tipos de conta disponíveis são Amazon S3 Role ARN, Google Cloud Platform, Azure SAS, Azure RBAC, Snowflake e AEP Data Landing Zone.</li></ul><li>Para concluir a configuração da sua conta, continue com o link abaixo que corresponda ao **[!UICONTROL Tipo de conta]** selecionado:<ul><li>[AEP Data Landing Zone](/help/components/exports/cloud-export-accounts.md#aep-data-landing-zone)</li><li>[Amazon S3 Role ARN](/help/components/exports/cloud-export-accounts.md#amazon-s3-role-arn)</li><li>[Google Cloud Platform](/help/components/exports/cloud-export-accounts.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-accounts.md#azure-sas)</li><li>[Azure RBAC](/help/components/exports/cloud-export-accounts.md#azure-rbac)</li><li>[Snowflake](/help/components/exports/cloud-export-accounts.md#snowflake)</li></ul></ol> |
    | Localização | Selecione a localização na conta aonde deseja que os dados de exportação sejam enviados.<p>Ou, se ainda não tiver configurado uma conta na nuvem que deseja usar, é possível configurar uma nova conta:<ol><li>No menu suspenso **[!UICONTROL Local]**, selecione **[!UICONTROL Adicionar local]** e especifique as seguintes informações:<ul><li>**[!UICONTROL Nome]**: o nome da localização.</li><li>**[!UICONTROL Descrição]**: insira uma breve descrição da localização para ajudar a diferenciá-la de outras localizações na conta.</li><li>**Disponibilizar a localização a todos os usuários na sua organização**: selecione esta opção se desejar permitir que outros usuários na sua organização usem a localização.</li><li>**[!UICONTROL Conta de localização]**: selecione a conta na qual deseja criar a localização.</li></ul><li>Para concluir a configuração da sua localização, continue com o link abaixo que corresponda ao tipo de conta selecionado no campo **[!UICONTROL Conta de localização]**:<ul><li>[AEP Data Landing Zone](/help/components/exports/cloud-export-locations.md#aep-data-landing-zone).</li><li>[Amazon S3 Role ARN](/help/components/exports/cloud-export-locations.md#amazon-s3-role-arn)</li><li>[Google Cloud Platform](/help/components/exports/cloud-export-locations.md#google-cloud-platform)</li><li>[Azure SAS](/help/components/exports/cloud-export-locations.md#azure-sas)</li><li>[Azure RBAC](/help/components/exports/cloud-export-locations.md#azure-rbac)</li><li>[Snowflake](/help/components/exports/cloud-export-locations.md#snowflake)</li></ul> |
-   | Notificações | Adicione usuários e grupos para receberem notificações quando a exportação falhar ou estiver prestes a expirar. Comece a digitar o nome ou endereço de email de um usuário ou comece a digitar o nome de um grupo e, em seguida, selecione-o quando ele for exibido na lista suspensa. |
+   | Notificação de problemas, quando concluído ou quando expirar | Adicione usuários e grupos para receberem notificações quando a exportação falhar ou estiver prestes a expirar. Comece a digitar o nome ou endereço de email de um usuário ou comece a digitar o nome de um grupo e, em seguida, selecione-o quando ele for exibido na lista suspensa. |
 
    {style="table-layout:auto"}
 
