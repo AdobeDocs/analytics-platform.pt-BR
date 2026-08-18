@@ -7,28 +7,15 @@ role: Admin
 exl-id: 4aff664c-3cd9-4591-8122-6ebff10e4a76
 autotag-review: '2026-05-19T08:54:42.845Z'
 TQID: 'https://experienceleague.adobe.com/kEqjocKd5pNypjQlF70HeF1bKuoG9Qi-AT6nJiIwuV0'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: ad5685a0-8296-4a0c-814c-658c10b4af12
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c18d9e03-ac7d-4811-9c92-3e92ddc70ade
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 6af3e9063dc192814c888e786ca61ff1703aedf5
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ad5685a0-8296-4a0c-814c-658c10b4af12
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c18d9e03-ac7d-4811-9c92-3e92ddc70adeid: d00e9f03-e50b-4162-b143-0c0817c937c2id: d3cdead0-685a-4489-9250-4bb709942f66id: e0eb8757-182f-49f3-94a4-1587d16f5094id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 6c137d20d25cff6fe4630dedb33cfa8b88c121aa
 workflow-type: tm+mt
-source-wordcount: 4177
-ht-degree: 65%
+source-wordcount: 4186
+ht-degree: 64%
 
 ---
 
@@ -84,12 +71,12 @@ O assistente de configuração guiado consiste em quatro seções ([Detalhes](#d
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_details_button"
 >title="Detalhes"
->abstract="Insira um nome para a conexão. Nas seções **[!UICONTROL Exibição de dados]**, **[!UICONTROL Captura e definição de experiência]** e **[!UICONTROL Coleção de dados]**, é possível fornecer mais detalhes para garantir que a análise de conteúdo seja configurada corretamente."
+>abstract="Insira um nome para a conexão. Forneça um nome para a configuração e escolha a sandbox que contém os dados de análise de conteúdo que você deseja analisar."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_details_name_header"
 >title="Detalhes"
->abstract="Este guia define os requisitos necessários para configurar o Content Analytics. Forneça um nome para esta configuração"
+>abstract="Este guia define os requisitos necessários para configurar o Content Analytics. Forneça um nome para esta configuração e selecione a sandbox que contém os dados de análise de conteúdo que você deseja analisar."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_connection_boldheader"
@@ -297,17 +284,17 @@ Para configurar a coleta de dados do:
 
 * Use uma propriedade de Tags para dispositivos móveis existente ou crie uma nova propriedade de Tags para dispositivos móveis.
 
-   * Para usar uma propriedade existente de Tags para dispositivos móveis:
+  * Para usar uma propriedade existente de Tags para dispositivos móveis:
 
-      1. Selecione **[!UICONTROL Escolher existente]**.
-      2. Selecione uma propriedade existente no menu suspenso **[!UICONTROL Propriedade de tags]**. Comece a digitar para pesquisar e limitar as opções disponíveis. Não é possível selecionar uma propriedade Tags que outra configuração implementada do Content Analytics já usa.
+    1. Selecione **[!UICONTROL Escolher existente]**.
+    2. Selecione uma propriedade existente no menu suspenso **[!UICONTROL Propriedade de tags]**. Comece a digitar para pesquisar e limitar as opções disponíveis. Não é possível selecionar uma propriedade Tags que outra configuração implementada do Content Analytics já usa.
 
 
-   * Para criar uma nova propriedade de Tags para dispositivos móveis:
+  * Para criar uma nova propriedade de Tags para dispositivos móveis:
 
-      1. Selecione **[!UICONTROL Criar nova]**.
-      1. Especifique um **[!UICONTROL nome de tag]**, por exemplo, `ACA Test for Documentation`.
-      1. Especifique **[!UICONTROL Domínios]**, por exemplo, `example.com`.
+    1. Selecione **[!UICONTROL Criar nova]**.
+    1. Especifique um **[!UICONTROL nome de tag]**, por exemplo, `ACA Test for Documentation`.
+    1. Especifique **[!UICONTROL Domínios]**, por exemplo, `example.com`.
 
 * Indique quais locais de experiência devem ser excluídos ao coletar dados para o Content Analytics. Certifique-se de excluir as localizações de experiência com dados de identificação pessoal.
 
@@ -377,7 +364,7 @@ Para o canal Web, você pode configurar [captura e definição de experiência](
 >id="aca_onboarding_datacollection_button"
 >title="Coleção de dados"
 >abstract="Defina qual propriedade de tags você deseja usar ou crie uma nova. Defina também as páginas e os ativos que deseja incluir ou excluir usando expressões regulares.<br/>Para uma implementação independente de tags, selecione **[!UICONTROL Criar novo]**.  É criada uma propriedade Tags, mas você não é obrigado a usá-la."
->additional-url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/content-analytics/configuration/tags-agnostic" text="Biblioteca JavaScript do Content Analytics"
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/configuration/tags-agnostic" text="Biblioteca JavaScript do Content Analytics"
 
 
 >[!CONTEXTUALHELP]
@@ -489,8 +476,8 @@ Para editar experiências existentes ou incluir novas experiências em uma confi
 
 * Habilitar ou desabilitar a opção **[!UICONTROL Incluir experiências]**:
 
-   * O processo que gera atributos de experiência a partir de dados do evento do Content Analytics
-   * O modelo de relatórios no Customer Journey Analytics.
+  * O processo que gera atributos de experiência a partir de dados do evento do Content Analytics
+  * O modelo de relatórios no Customer Journey Analytics.
 
 * Selecione ![Editar](/help/assets/icons/Edit.svg) **[!UICONTROL Editar]** para editar ainda mais a configuração da coleta de dados para experiências no Content Analytics. Sua tela será redirecionada para a [extensão do Adobe Content Analytics](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/extensions/client/content-analytics/overview#configure-event-segmenting) na propriedade de tags associada à configuração atual.
 
@@ -502,19 +489,19 @@ Para configurar a coleta de dados do:
 
 * Use uma propriedade de Tags da Web existente ou crie uma nova propriedade de Tags da Web.
 
-   * Para usar uma propriedade existente de Tags da Web:
+  * Para usar uma propriedade existente de Tags da Web:
 
-      1. Selecione **[!UICONTROL Escolher existente]**.
-      2. Selecione uma propriedade existente no menu suspenso **[!UICONTROL Propriedade de tags]**. Comece a digitar para pesquisar e limitar as opções disponíveis. Não é possível selecionar uma propriedade Tags que outra configuração implementada do Content Analytics já usa.
+    1. Selecione **[!UICONTROL Escolher existente]**.
+    2. Selecione uma propriedade existente no menu suspenso **[!UICONTROL Propriedade de tags]**. Comece a digitar para pesquisar e limitar as opções disponíveis. Não é possível selecionar uma propriedade Tags que outra configuração implementada do Content Analytics já usa.
 
 
-   * Para criar uma nova propriedade de Tags da Web:
+  * Para criar uma nova propriedade de Tags da Web:
 
-      1. Selecione **[!UICONTROL Criar nova]**.
-      1. Especifique um **[!UICONTROL nome de tag]**, por exemplo, `ACA Test for Documentation`.
-      1. Especifique **[!UICONTROL Domínios]**, por exemplo, `example.com`.
+    1. Selecione **[!UICONTROL Criar nova]**.
+    1. Especifique um **[!UICONTROL nome de tag]**, por exemplo, `ACA Test for Documentation`.
+    1. Especifique **[!UICONTROL Domínios]**, por exemplo, `example.com`.
 
-     Use uma nova propriedade de marcas se desejar criar uma implementação agnóstica de marcas para o canal da Web, usando a [biblioteca JavaScript do Content Analytics](/help/content-analytics/config/tags-agnostic.md). A propriedade Tags é criada, mas você não usará a propriedade na implementação agnóstica. No entanto, a implementação agnóstica exige que você execute o assistente de configuração guiada pelo menos uma vez.
+    Use uma nova propriedade de marcas se desejar criar uma implementação agnóstica de marcas para o canal da Web, usando a [biblioteca JavaScript do Content Analytics](/help/content-analytics/config/tags-agnostic.md). A propriedade Tags é criada, mas você não usará a propriedade na implementação agnóstica. No entanto, a implementação agnóstica exige que você execute o assistente de configuração guiada pelo menos uma vez.
 
 * Indique quais páginas devem ser incluídas ou excluídas ao coletar dados para o Content Analytics. Certifique-se de excluir páginas com dados de identificação pessoal.
 
@@ -582,24 +569,24 @@ Ao criar ou editar uma configuração, você tem estas opções:
 * **[!UICONTROL Salvar para mais tarde]**: as alterações feitas em uma configuração são salvas. Você pode rever a configuração posteriormente para fazer mais alterações ou implementar a configuração. É necessário somente um valor de [!UICONTROL Nome] para salvar uma configuração.
 * **[!UICONTROL Implementar]**: as definições ou alterações feitas em uma configuração são salvas e implementadas. Todos os campos marcados como ![Obrigatório](/help/assets/icons/Required.svg) precisam ter valores adequados. A implementação consiste em:
 
-   * Configuração do **[!UICONTROL Customer Journey Analytics]**:
-      * A visualização de dados selecionada é atualizada para incluir dimensões e métricas do Content Analytics.
-      * A conexão vinculada à visualização de dados selecionada é modificada para incluir eventos e conjuntos de dados de atributos do Content Analytics.
-      * Um modelo de relatório do Content Analytics é adicionado ao espaço de trabalho.
+  * Configuração do **[!UICONTROL Customer Journey Analytics]**:
+    * A visualização de dados selecionada é atualizada para incluir dimensões e métricas do Content Analytics.
+    * A conexão vinculada à visualização de dados selecionada é modificada para incluir eventos e conjuntos de dados de atributos do Content Analytics.
+    * Um modelo de relatório do Content Analytics é adicionado ao espaço de trabalho.
 
 
-   * Configuração da **[!UICONTROL Adobe Experience Platform]**:
-      * A criação de esquemas para modelar eventos do Content Analytics, atributos de ativos e (se configurados) atributos de experiência.
-      * A criação de conjuntos de dados para coletar eventos do Content Analytics, atributos de ativos e (se configurados) atributos de experiência.
-      * A criação de um fluxo de dados que usa o serviço de caracterização para gerar e atualizar atributos de conteúdo de eventos do Content Analytics.
+  * Configuração da **[!UICONTROL Adobe Experience Platform]**:
+    * A criação de esquemas para modelar eventos do Content Analytics, atributos de ativos e (se configurados) atributos de experiência.
+    * A criação de conjuntos de dados para coletar eventos do Content Analytics, atributos de ativos e (se configurados) atributos de experiência.
+    * A criação de um fluxo de dados que usa o serviço de caracterização para gerar e atualizar atributos de conteúdo de eventos do Content Analytics.
 
 
-   * Configuração da **[!UICONTROL Coleção de dados]**:
-      * A propriedade de tags nova ou existente é configurada para dar auxiliar a coleta de dados do Content Analytics. Essa configuração implica a inclusão da extensão do Adobe Content Analytics para tags.
-      * Uma sequência de dados é criada para eventos do Content Analytics.
-      * A extensão do Adobe Content Analytics é configurada para garantir que os eventos do Content Analytics sejam enviados para a sequência de dados do Content Analytics.
-      * Se o Web SDK ou o Mobile SDK não estiver configurado para a propriedade Tags, uma nova configuração do Web SDK ou do Mobile SDK será criada para enviar somente eventos do Content Analytics.
-      * Se o Web SDK ou o Mobile SDK estiver configurado para a propriedade Tags, nenhuma alteração será feita na configuração existente do Web SDK ou do Mobile SDK.
+  * Configuração da **[!UICONTROL Coleção de dados]**:
+    * A propriedade de tags nova ou existente é configurada para dar auxiliar a coleta de dados do Content Analytics. Essa configuração implica a inclusão da extensão do Adobe Content Analytics para tags.
+    * Uma sequência de dados é criada para eventos do Content Analytics.
+    * A extensão do Adobe Content Analytics é configurada para garantir que os eventos do Content Analytics sejam enviados para a sequência de dados do Content Analytics.
+    * Se o Web SDK ou o Mobile SDK não estiver configurado para a propriedade Tags, uma nova configuração do Web SDK ou do Mobile SDK será criada para enviar somente eventos do Content Analytics.
+    * Se o Web SDK ou o Mobile SDK estiver configurado para a propriedade Tags, nenhuma alteração será feita na configuração existente do Web SDK ou do Mobile SDK.
 
 
 * **[!UICONTROL Salvar]**: as alterações feitas em uma configuração implementada são salvas e a implementação é atualizada.
