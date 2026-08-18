@@ -5,10 +5,10 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
 hide: true
-source-git-commit: 6c137d20d25cff6fe4630dedb33cfa8b88c121aa
+source-git-commit: 30194647c56e7eaa8441b915d16f53ba3ff1bd40
 workflow-type: tm+mt
-source-wordcount: '101'
-ht-degree: 8%
+source-wordcount: '102'
+ht-degree: 9%
 
 ---
 
@@ -36,10 +36,10 @@ ht-degree: 8%
 >title="Conexão"
 >abstract="Selecione a conexão no Customer Journey Analytics à qual os dados da conversa são adicionados."
 
-## Exibição de dados
+## Visualização de dados
 
 >[!CONTEXTUALHELP]
 >id="conversation-insights_config_dataview"
->title="Conexão"
+>title="Visualização de dados
 >abstract="Selecione a visualização de dados associada à sua conexão que você deseja usar para análise de Insights de conversa. As métricas e dimensões do Insights de conversa serão adicionadas à visualização de dados selecionada."
 
