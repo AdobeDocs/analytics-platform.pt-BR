@@ -26,9 +26,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: e686fca2c77a8f9739298ece01ccf0fa2fe87b3b
+source-git-commit: d2016e34b4b73c6eebb05097aa43f823c578c2b6
 workflow-type: tm+mt
-source-wordcount: 2441
+source-wordcount: 2440
 ht-degree: 9%
 
 ---
@@ -109,7 +109,7 @@ Alguns dos recursos e seu valor associado para o limite dependem do pacote do Cu
 | Frequência de atualização do público-alvo | 4 | Proteção imposta pelo sistema | A frequência máxima em horas que um [público-alvo](../components/audiences/audiences-overview.md) pode ser atualizado. |
 | Janela de pesquisa de atualização de público-alvo | 90 | Proteção imposta pelo sistema | Número máximo de dias para a janela de retrospectiva de atualização. |
 | Atualização da data de expiração do público-alvo | 13 | Proteção imposta pelo sistema | Número máximo de meses em que o público-alvo deixa de ser atualizado a partir da data de criação. Os clientes podem estender isso por mais 13 meses. |
-| Número de públicos-alvo atualizados | 75, 150 | Proteção imposta pelo sistema | Número máximo de públicos-alvo para atualização. O valor varia dependendo do pacote do Customer Journey Analytics (consulte Descrição do produto). |
+| Número de públicos-alvo atualizados | 75 - 150 | Proteção imposta pelo sistema | Número máximo de [públicos-alvo configurados para atualizar](/help/components/audiences/publish.md#audience-builder) em uma frequência agendada (atualizações únicas não contam para esse limite). O valor varia dependendo do pacote do Customer Journey Analytics (consulte Descrição do produto). |
 
 {style="table-layout:auto"}
 
@@ -301,7 +301,7 @@ Consulte também [Medidas de proteção de exportação do conjunto de dados](ht
 | Costura (recurso opcional; consulte [Visão geral da compilação](../stitching/overview.md) para obter mais informações) | &lt; 4 horas |
 | Preenchimento retroativo do Adobe Analytics Source Connector de menos de 10 bilhões de eventos (máximo de 13 meses de dados históricos) | &lt; 4 semanas |
 | Publicação de público-alvo no perfil do cliente em tempo real, incluindo a criação automática do segmento de transmissão e permitindo que o segmento esteja pronto para receber os dados. | aprox. 60 minutos |
-| Frequência de atualização para públicos | Atualização única: latência inferior a 5 minutos.<br/>Atualizar a cada 4 horas, diariamente, semanalmente, mensalmente (a latência é indissociável da taxa de atualização). |
+| Frequência de atualização para públicos | Atualize a cada 4 horas, diariamente, semanalmente, mensalmente. |
 
 | Latências do relatório em tempo real | Latência esperada |
 |---|---|

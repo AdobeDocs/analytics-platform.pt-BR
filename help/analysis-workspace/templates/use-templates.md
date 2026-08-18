@@ -27,9 +27,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: f4e142a3eb5294cedd6d9e6666845dadcfcc415d
+source-git-commit: 89f0a1e54662c59d474b1fba28eb8420612e9243
 workflow-type: tm+mt
-source-wordcount: 21144
+source-wordcount: 21140
 ht-degree: 98%
 
 ---
@@ -624,8 +624,8 @@ Estes são os modelos disponíveis:
 
 >[!CONTEXTUALHELP]
 >id="template--consentpolicyoverview"
->title="Veja o país de origem das pessoas que visitam o site."
->abstract="**Isso pode ajudar** a entender melhor quais são os principais países de origem de visitantes do site.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como usar os dados para aumentar o foco das campanhas de marketing nesses países ou garantir que a experiência do site seja ideal em países com diferentes idiomas nativos.<br/>Este modelo usa a dimensão “Países”."
+>title="Exibir visitantes com base nos dados de associação à política de consentimento da Adobe Experience Platform."
+>abstract="**Isso pode ajudá-lo** como ponto de partida para relatórios sobre associação à política de consentimento do visitante. Quando uma visualização de dados é configurada para relatórios de consentimento, o Customer Journey Analytics disponibiliza automaticamente um modelo de análise de política de consentimento no Analysis Workspace. <br/>**Com base no que você aprende, é possível** fazer várias coisas, como excluir visitantes que não consentiram dos relatórios de análise."
 
 >[!CONTEXTUALHELP]
 >id="template--countrygeoreport"
