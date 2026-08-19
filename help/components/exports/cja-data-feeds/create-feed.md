@@ -5,22 +5,14 @@ hide: true
 feature: Components
 autotag-review: '2026-05-19T08:45:44.870Z'
 TQID: 'https://experienceleague.adobe.com/QgBD7vCkw4YA568XOLlwTnw8eZVZybXr3DFbM1ZKYDw'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: de8748a1dddbc0ddaadca4c805c9b4aba99a4267
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d00e9f03-e50b-4162-b143-0c0817c937c2
+source-git-commit: e2e75dda2d61cd707b2a224ec5ac43a492ffa42e
 workflow-type: tm+mt
-source-wordcount: 4036
+source-wordcount: 4066
 ht-degree: 20%
 
 ---
@@ -160,6 +152,26 @@ Antes de criar um feed de dados, é importante ter uma compreensão básica dos 
    | Semana | Semana em que um evento ocorreu | Não disponível |
    | Semana do ano | Semana do ano em que um evento ocorreu | Não disponível |
    | Ano | Ano em que um evento ocorreu | Não disponível |
+
+   +++
+
+   +++ Métricas que não podem ser incluídas nos feeds de dados
+
+   As seguintes métricas padrão do Customer Journey Analytics não podem ser incluídas nos feeds de dados:
+
+   | Nome da métrica | Notas | Feeds de dados |
+   |---|---|---|
+   | Perfil de visitantes do Adobe | | Não disponível |
+   | União de oportunidades da Adobe | | Não disponível |
+   | Perfil de oportunidades da Adobe | | Não disponível |
+   | União de contas do Adobe | | Não disponível |
+   | Perfil de contas do Adobe | | Não disponível |
+   | União de grupos de compra da Adobe | | Não disponível |
+   | Perfil de grupos de compra da Adobe | | Não disponível |
+   | União de contas globais da Adobe | | Não disponível |
+   | Perfil de contas globais da Adobe | | Não disponível |
+   | União de pessoas da Adobe | | Não disponível |
+   | Perfil de pessoas da Adobe | | Não disponível |
 
    +++
 
@@ -318,20 +330,20 @@ Antes de criar um feed de dados, é importante ter uma compreensão básica dos 
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_lookback_date_range"
 >title="Intervalo de datas da retrospectiva"
->abstract="Controla até que data o Customer Journey Analytics analisa ao processar a entrega do feed de dados. Essa configuração é semelhante ao intervalo de datas dos relatórios do Analysis Workspace, mas apresenta diferenças importantes:<ul><li>Os eventos são incluídos no feed de dados se tiverem carimbos de data e hora que estejam na janela de frequência, não no intervalo de datas da retrospectiva. (No Analysis Workspace, os eventos são incluídos em um relatório se tiverem carimbos de data e hora que estejam dentro do intervalo de datas do relatório.)</li><li>Eventos com carimbos de data e hora que se enquadram no intervalo de datas da retrospectiva (mas fora da janela de frequência) ainda podem influenciar quais dados aparecem no feed por meio da qualificação de segmento, cálculo de sessão, transformações de campo derivadas e persistência de dimensão.</li><p>Um intervalo de datas de pesquisa mais longo normalmente resulta em eventos mais precisos; um intervalo mais curto resulta em melhor desempenho de delivery.</p>"
+>abstract="Controla a aparência retroativa do Customer Journey Analytics ao processar cada delivery.<p>A janela de frequência (hora ou dia) determina quais eventos são incluídos no feed de dados, enquanto o **intervalo de datas da retrospectiva** fornece o contexto histórico necessário para classificar corretamente esses eventos.</p><p>A qualificação de segmento, a persistência de dimensão, o cálculo de sessão e as transformações de campo derivadas podem afetar os eventos incluídos.</p><p>Uma pesquisa mais longa melhora a precisão; uma pesquisa mais curta melhora o desempenho.</p>"
 
 <!-- markdownlint-enable MD034 -->
 
+O intervalo de datas de pesquisa controla a aparência retroativa do Customer Journey Analytics ao processar cada entrega de feed de dados.
 
-
-O intervalo de datas de pesquisa controla a aparência retroativa do Customer Journey Analytics ao processar a entrega do feed de dados. O padrão é 30 dias.
+Os eventos ainda devem ter carimbos de data e hora que se enquadrem na janela de frequência (hora ou dia) a serem incluídos na entrega, mas os dados que se enquadrarem no **intervalo de datas de retrospectiva** fornecem o contexto histórico necessário para classificar corretamente esses eventos.
 
 Ao configurar essa opção, considere os seguintes conceitos importantes:
 
 * Um intervalo de datas de pesquisa mais longo normalmente resulta em dados mais precisos; um intervalo mais curto resulta em melhor desempenho do delivery.
-* O intervalo de datas da retrospectiva nos feeds de dados é semelhante ao intervalo de datas do relatório no Analysis Workspace, mas há [diferenças principais](/help/components/exports/cja-data-feeds/df-comparison-workspace.md#differences). Essas diferenças podem resultar em telas de dados entre os relatórios do Workspace e as entregas do feed de dados.
-* O intervalo de datas da retrospectiva não altera a janela de frequência (hora ou dia), que define o intervalo de tempo dos eventos a serem incluídos na saída do feed de dados.
-* Os dados que se enquadram no intervalo de datas da retrospectiva podem influenciar o que está incluído no feed de dados (janela de frequência), dependendo dos fatores descritos nas seções abaixo.
+* O intervalo de datas de pesquisa, junto com a janela de frequência, funciona de forma semelhante ao intervalo de datas do relatório do Analysis Workspace. Entretanto, há [diferenças importantes](/help/components/exports/cja-data-feeds/df-comparison-workspace.md#differences). Essas diferenças podem resultar em telas de dados entre os relatórios do Workspace e as entregas do feed de dados.
+
+Qualificação de segmento, cálculo de sessão, persistência de dimensão e transformações de campo derivadas são considerados ao processar dados dentro do intervalo de datas de lookback:
 
 ### Qualificação de segmento
 
@@ -357,10 +369,6 @@ Nesse caso, os usuários são incluídos no feed de dados somente se atenderem *
 ### Cálculo de sessão
 
 Os limites da sessão são calculados usando dados dentro do intervalo de datas da retrospectiva. Talvez isso seja mais importante em relação à ID da sessão? Isso pode afetar a ID da sessão? Pode afetar muitas coisas, como a persistência baseada em sessões.
-
-### Transformações de campo derivadas
-
-Quaisquer funções de campo derivadas que fazem referência a contêineres usam o intervalo de datas de retrospectiva nas exportações de feed de dados. Quais recursos de data existem em campos derivados? Não tenho certeza de como isso se aplica.
 
 ### Persistência do Dimension
 
@@ -393,6 +401,9 @@ Nesse caso, a campanha original é exibida na saída do feed de dados somente se
 
 >[!ENDSHADEBOX]
 
+### Transformações de campo derivadas
+
+Quaisquer funções de campo derivadas que fazem referência a contêineres usam o intervalo de datas de retrospectiva nas exportações de feed de dados. Quais recursos de data existem em campos derivados? Não tenho certeza de como isso se aplica.
 
 
 
