@@ -18,10 +18,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: 06e88df9fddaf292cfeef11e9b7d9a08e47cc7c5
+source-git-commit: de8748a1dddbc0ddaadca4c805c9b4aba99a4267
 workflow-type: tm+mt
-source-wordcount: 3709
-ht-degree: 22%
+source-wordcount: 4036
+ht-degree: 20%
 
 ---
 
@@ -54,26 +54,8 @@ Antes de criar um feed de dados, é importante ter uma compreensão básica dos 
 
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_notify"
->title="Notificar quando concluído"
->abstract="Especifique um ou mais endereços de email para os quais deseja entregar uma notificação após o envio do feed de dados. Para inserir vários endereços de email, separe-os por vírgula."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja_datafeed_lookback_date_range"
->title="Intervalo de datas da retrospectiva"
->abstract="Controla a aparência retroativa do Customer Journey Analytics ao encontrar eventos que se qualificam para uma entrega de feed de dados.<br/>Eventos que estão fora da janela de frequência (a hora ou o dia específico) ainda poderão ser incluídos se tiverem ocorrido dentro do intervalo de datas da retrospectiva. A inclusão de um evento depende dos seguintes fatores: qualificação de segmento, cálculo de sessão, transformações de campo derivadas e persistência de dimensão.<br/>Um intervalo de datas de retrospectiva mais longo normalmente resulta em mais eventos; um intervalo mais curto resulta em melhor desempenho de entrega."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja_datafeed_lookback_date_range"
->title="Intervalo de datas da retrospectiva"
->abstract="Controla a aparência retroativa do Customer Journey Analytics ao encontrar eventos que se qualificam para uma entrega de feed de dados. Essa configuração é semelhante à janela de relatórios do Analysis Workspace, mas apresenta diferenças importantes.<br/>Eventos que estão fora da janela de frequência (a hora ou o dia específico) ainda poderão ser incluídos se tiverem ocorrido dentro do intervalo de datas da retrospectiva. A inclusão de um evento depende dos seguintes fatores: qualificação de segmento, cálculo de sessão, transformações de campo derivadas e persistência de dimensão.<br/>Um intervalo de datas de retrospectiva mais longo normalmente resulta em mais eventos; um intervalo mais curto resulta em melhor desempenho de entrega."
+>title="Notificar sobre problemas, quando estiverem concluídos e quando estiverem expirando"
+>abstract="Especifique um ou mais endereços de email nos quais uma notificação deve ser entregue quando o feed de dados for concluído, expirar ou encontrar problemas. Separe vários endereços de email com vírgula."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -300,7 +282,7 @@ Antes de criar um feed de dados, é importante ter uma compreensão básica dos 
    | [!UICONTROL **Data de expiração**] <br/>Disponível somente para feeds em tempo real | A data em que o feed de dados expira e não é mais executado. A data é baseada no fuso horário da visualização de dados. |
    | [!UICONTROL **Data final**]<br/> Disponível somente para feeds de preenchimento retroativo | A data em que o feed de dados termina. A data final não pode ser no futuro. A data é baseada no fuso horário da visualização de dados. |
    | [!UICONTROL **Frequência**] | Selecione a frequência com que o feed de dados deve ser enviado. Eventos com carimbos de data e hora que caem na janela de frequência são incluídos na entrega do feed de dados. Os campos [!UICONTROL **Intervalo de datas de retrospectiva**] e [!UICONTROL **Atraso de processamento**] também podem afetar quais eventos são incluídos nos dados para a frequência de entrega escolhida.<p>Para feeds ao vivo, selecione para incluir uma hora de dados ou um dia de dados. Para feeds de preenchimento retroativo, este campo está bloqueado para **Diariamente** e não pode ser alterado.</p><ul><li>**Diariamente**: os feeds contêm dados de um dia inteiro, da meia-noite a meia-noite no fuso horário da visualização de dados. <p>Essa opção é necessária para feeds de preenchimento retroativo e é opcional para feeds em tempo real.</p></li><li>**Por hora**: os feeds contêm dados de uma hora. <p>Essa opção está disponível somente para feeds em tempo real.</p></li></ul> |
-   | [!UICONTROL **Intervalo de datas de retrospectiva**] | Controla até que data o Customer Journey Analytics analisa ao processar a entrega do feed de dados. O padrão é 30 dias. <p>Ao configurar essa opção, considere os seguintes conceitos importantes:</p><ul><li>Um intervalo de datas de pesquisa mais longo normalmente resulta em mais eventos; um intervalo mais curto resulta em melhor desempenho do delivery.</li><li>O intervalo de datas da retrospectiva nos feeds de dados é semelhante ao intervalo de datas do relatório no Analysis Workspace, mas há [diferenças principais](/help/components/exports/cja-data-feeds/df-comparison-workspace.md#differences). Essas diferenças podem resultar em telas de dados entre os relatórios do Workspace e as entregas do feed de dados. </li><li>Essa configuração não altera a janela de frequência (hora ou dia), que define o intervalo de tempo dos eventos a serem incluídos na saída do feed de dados. <p>Os eventos que estão fora da janela de frequência ainda poderão ser incluídos se ocorrerem dentro do intervalo de datas da retrospectiva, dependendo dos seguintes fatores: </p><ul><li>**Qualificação do segmento**: quando um segmento é aplicado à sua definição de feed de dados, todos os eventos dentro do intervalo de datas da pesquisa determinam se uma pessoa se qualifica. A configuração de contêiner do segmento determina o escopo. (Os contêineres possíveis são: Pessoa, Sessão ou Evento. B2B inclui os seguintes contêineres adicionais: Conta global, Conta, Oportunidade, Grupo de compras.)  <p>Por exemplo, se um segmento for aplicado chamado _pessoas que compraram_, uma retrospectiva de uma semana incluirá eventos para a hora ou o dia determinado (a janela de frequência) para pessoas que compraram nos últimos 7 dias. Uma pesquisa de 90 dias incluiria eventos para pessoas que compraram nos últimos 90 dias</p></li><li>**Cálculo de sessão**: os limites de sessão são calculados usando dados dentro do intervalo de datas da pesquisa.</li><li>**Transformações de campo derivadas**: quaisquer funções de campo derivadas que referenciam contêineres usam o intervalo de datas da pesquisa em exportações de feed de dados.</li><li>**Persistência do Dimension**: se você optar por definir a persistência em uma dimensão individual, também escolha uma expiração para determinar por quanto tempo um item de dimensão persiste além do evento em que está definido. As dimensões definidas para persistir usam o intervalo de datas da retrospectiva para determinar a qualificação para exportações de feed de dados.  <p>O intervalo de datas de pesquisa afeta a persistência da dimensão quando a expiração é definida como uma das seguintes opções na visualização de dados:</p><ul><li>Para cada dimensão na definição de feed de dados que usa [!UICONTROL **Janela de relatório**] como expiração, o intervalo de datas de retrospectiva se torna a nova janela de relatório.</li><li>Para cada dimensão na definição de feed de dados que usa [!UICONTROL **Tempo personalizado**] como sua expiração, e se o tempo personalizado selecionado se estender além do intervalo de datas da pesquisa, o tempo personalizado será ignorado e o intervalo de datas da pesquisa será usado para a expiração da dimensão.<p>Para obter mais informações sobre como configurar a persistência em dimensões na visualização de dados, consulte [Configurações do componente de Persistência](/help/data-views/component-settings/persistence.md).</p></li></ul><p>Defina o intervalo de datas da pesquisa com um valor igual ou maior que o conjunto de persistências em dimensões em seus dados. Por exemplo, se uma dimensão de campanha tiver uma expiração de 30 dias e uma pessoa clicar nessa campanha duas semanas atrás, um intervalo de datas de retrospectiva de 7 dias não manterá o valor.</p></ul> |
+   | [!UICONTROL **Intervalo de datas de retrospectiva**] | Controla até que data o Customer Journey Analytics analisa ao processar a entrega do feed de dados. O padrão é 30 dias. <p>O intervalo de datas da pesquisa afeta a qualificação de segmento, o cálculo de sessão, as transformações de campo derivadas e a persistência de dimensão. <p>Antes de configurar esta opção, veja os detalhes e os exemplos descritos na seção abaixo, [Entenda o intervalo de datas da retrospectiva](#understand-the-lookback-date-range).</p> |
    | [!UICONTROL **Atraso no processamento**] | Escolha o tempo de espera antes do processamento de um arquivo de feed de dados. O padrão é 2 horas. Todos os eventos de chegada tardia que chegam durante o atraso de processamento são incluídos no feed de dados. <p>Atrasos de processamento são úteis por vários motivos, como para dar às implementações móveis uma oportunidade para que os dispositivos offline fiquem online e enviem dados ou para acomodar os processos do lado do servidor de sua organização no gerenciamento de arquivos processados anteriormente. </p><p>As sessões devem ser iniciadas após o limite do atraso de processamento para serem incluídas; as sessões que iniciam antes do limite e terminam dentro do atraso de processamento não são incluídas.</p><p>O Customer Journey Analytics determina dinamicamente o atraso ideal com base no tempo que os eventos de chegada tardia normalmente levam para o feed, mas você pode defini-lo manualmente para atrasar por 2, 3, 4 ou 8 horas.</p> |
    | [!UICONTROL **Formato de compactação**] | Selecione o formato de compactação dos arquivos de saída do Parquet entregues ao destino da nuvem. Escolha entre os seguintes formatos:<ul><li>[!UICONTROL **Snappy**]: compactação e descompactação rápidas com tamanhos de arquivo moderados. Amplamente compatível com plataformas de dados modernas, como BigQuery, Snowflake e Apache Spark.</li><li>[!UICONTROL **GZip**]: amplamente compatível, inclusive com ferramentas que não oferecem suporte nativo ao Snappy. Recomendado se o pipeline downstream exigir um padrão de compactação amplamente reconhecido.</li><li>[!UICONTROL **Z Padrão (Zstd)**]: alta eficiência de compactação com descompactação rápida. Adequado se minimizar o tamanho do arquivo é uma prioridade e suas ferramentas suportam Zstd.</li></ul> |
 
@@ -324,9 +306,93 @@ Antes de criar um feed de dados, é importante ter uma compreensão básica dos 
    | [!UICONTROL **Exibir destinos para todos os usuários**] | Se você for um administrador do sistema, poderá habilitar essa opção para exibir destinos criados por todos os usuários em sua organização. Quando esta opção está desativada, somente os destinos que você criou são exibidos. |
    | [!UICONTROL **Conta**] | Realize uma das seguintes ações:<ul><li>**Usar uma conta existente:** Selecione o menu suspenso ao lado do campo **[!UICONTROL Conta]**. Ou comece digitando o nome da conta e selecione-o no menu suspenso. <p>As contas estão disponíveis somente se você as configurar ou se forem compartilhadas com uma organização da qual você faz parte.</p></li><li>**Criar uma nova conta:** Selecione **[!UICONTROL Adicionar conta]** no menu suspenso **[!UICONTROL Conta]**. Para obter informações sobre como configurar a conta, consulte [Configurar contas de exportação na nuvem](/help/components/exports/cloud-export-accounts.md).</li></ul> |
    | [!UICONTROL **Localização**] | Realize uma das seguintes ações:<ul><li>**Usar um local existente:** Selecione o menu suspenso ao lado do campo **[!UICONTROL Local]**. Ou comece digitando o nome do local e selecione-o no menu suspenso.</li><li>**Criar um novo local:** Selecione **[!UICONTROL Adicionar local]** no menu suspenso **[!UICONTROL Local]**. Para obter informações sobre como configurar o local, consulte [Configurar locais de exportação na nuvem](/help/components/exports/cloud-export-locations.md).</li></ul> |
-   | [!UICONTROL **Notificar quando concluído**] | Especifique um ou mais endereços de email nos quais uma notificação deve ser entregue após o feed de dados ser enviado com êxito ou após uma falha no envio. Para inserir vários endereços de email, separe-os por vírgula. |
+   | [!UICONTROL **Notificar por email quando concluído**] | Especifique um ou mais endereços de email nos quais uma notificação deve ser entregue após o feed de dados ser enviado com êxito ou após uma falha no envio. Para inserir vários endereços de email, separe-os por vírgula. |
    | [!UICONTROL **Habilitar manifesto**] | Escolha se deseja incluir um arquivo de manifesto em cada entrega do feed de dados. O arquivo de manifesto contém informações para cada arquivo incluído no feed de dados. |
 
 1. Selecione **[!UICONTROL Salvar]**.
+
+## Entender o intervalo de datas da pesquisa {#data-feed-lookback-date-range}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_datafeed_lookback_date_range"
+>title="Intervalo de datas da retrospectiva"
+>abstract="Controla até que data o Customer Journey Analytics analisa ao processar a entrega do feed de dados. Essa configuração é semelhante ao intervalo de datas dos relatórios do Analysis Workspace, mas apresenta diferenças importantes:<ul><li>Os eventos são incluídos no feed de dados se tiverem carimbos de data e hora que estejam na janela de frequência, não no intervalo de datas da retrospectiva. (No Analysis Workspace, os eventos são incluídos em um relatório se tiverem carimbos de data e hora que estejam dentro do intervalo de datas do relatório.)</li><li>Eventos com carimbos de data e hora que se enquadram no intervalo de datas da retrospectiva (mas fora da janela de frequência) ainda podem influenciar quais dados aparecem no feed por meio da qualificação de segmento, cálculo de sessão, transformações de campo derivadas e persistência de dimensão.</li><p>Um intervalo de datas de pesquisa mais longo normalmente resulta em eventos mais precisos; um intervalo mais curto resulta em melhor desempenho de delivery.</p>"
+
+<!-- markdownlint-enable MD034 -->
+
+
+
+O intervalo de datas de pesquisa controla a aparência retroativa do Customer Journey Analytics ao processar a entrega do feed de dados. O padrão é 30 dias.
+
+Ao configurar essa opção, considere os seguintes conceitos importantes:
+
+* Um intervalo de datas de pesquisa mais longo normalmente resulta em dados mais precisos; um intervalo mais curto resulta em melhor desempenho do delivery.
+* O intervalo de datas da retrospectiva nos feeds de dados é semelhante ao intervalo de datas do relatório no Analysis Workspace, mas há [diferenças principais](/help/components/exports/cja-data-feeds/df-comparison-workspace.md#differences). Essas diferenças podem resultar em telas de dados entre os relatórios do Workspace e as entregas do feed de dados.
+* O intervalo de datas da retrospectiva não altera a janela de frequência (hora ou dia), que define o intervalo de tempo dos eventos a serem incluídos na saída do feed de dados.
+* Os dados que se enquadram no intervalo de datas da retrospectiva podem influenciar o que está incluído no feed de dados (janela de frequência), dependendo dos fatores descritos nas seções abaixo.
+
+### Qualificação de segmento
+
+Quando um segmento é aplicado à definição do feed de dados, os dados dentro do intervalo de datas da retrospectiva determinam quais eventos, sessões ou pessoas se qualificam para o segmento. A configuração de contêiner do segmento determina o escopo. (Os contêineres possíveis são: Pessoa, Sessão ou Evento. B2B inclui os seguintes contêineres adicionais: Conta global, Conta, Oportunidade, Grupo de compras.)
+
+>[!BEGINSHADEBOX]
+
+**Exemplo:**
+
+Suponha que você queira criar um feed de dados para entender o comportamento dos usuários que fazem parte de uma campanha de marketing específica, Campanha B.
+
+Para fazer isso, aplique um segmento ao feed de dados chamado _Usuários na Campanha B_, indicando que somente os eventos vinculados aos usuários neste segmento devem ser incluídos no feed de dados.
+
+Nesse caso, os usuários são incluídos no feed de dados somente se atenderem **às duas** condições a seguir:
+
+* O usuário tinha um evento com um carimbo de data e hora que está na janela de frequência do feed de dados (a hora ou o dia especificado do feed de dados).
+* O usuário qualificado para o _segmento B_ da campanha **em algum momento dentro do intervalo de datas da retrospectiva**.
+
+  Para um evento de qualificação ocorrido há 9 dias, isso significa que o usuário **seria incluído** no feed de dados se o intervalo de datas da retrospectiva fosse definido como 30 dias, mas o usuário **não seria incluído** no feed de dados se o intervalo de datas da retrospectiva fosse definido como 7 dias.
+
+>[!ENDSHADEBOX]
+
+### Cálculo de sessão
+
+Os limites da sessão são calculados usando dados dentro do intervalo de datas da retrospectiva. Talvez isso seja mais importante em relação à ID da sessão? Isso pode afetar a ID da sessão? Pode afetar muitas coisas, como a persistência baseada em sessões.
+
+### Transformações de campo derivadas
+
+Quaisquer funções de campo derivadas que fazem referência a contêineres usam o intervalo de datas de retrospectiva nas exportações de feed de dados. Quais recursos de data existem em campos derivados? Não tenho certeza de como isso se aplica.
+
+### Persistência do Dimension
+
+Ao definir a persistência em uma dimensão individual, você também define uma expiração para determinar por quanto tempo o item de dimensão persiste além do evento em que está definido.
+
+O intervalo de datas de pesquisa afeta a persistência da dimensão quando a expiração é definida como uma das seguintes opções na visualização de dados:
+
+* [!UICONTROL **Janela de relatório de pessoa**]: o intervalo de datas da retrospectiva torna-se a nova janela de relatório para cada dimensão na definição de feed de dados que usa [!UICONTROL **Janela de relatório de pessoa**] como sua expiração.
+* [!UICONTROL **Tempo personalizado**]: se o tempo personalizado selecionado se estender além do intervalo de datas da pesquisa, o tempo personalizado será ignorado e o intervalo de datas da pesquisa será usado para a expiração da dimensão para cada dimensão na definição de feed de dados que usa [!UICONTROL **Tempo personalizado**] como sua expiração. Valores que ocorreram antes do intervalo de datas da retrospectiva não são considerados.
+
+  Para obter mais informações sobre como configurar a persistência em dimensões na visualização de dados, consulte [Configurações do componente de Persistência](/help/data-views/component-settings/persistence.md).
+
+Para obter os dados mais precisos, considere definir o intervalo de datas de pesquisa com um valor igual ou maior que o conjunto de persistência em dimensões em seus dados. No entanto, lembre-se de que um intervalo de datas de lookback mais curto resulta em melhor desempenho para as entregas do feed de dados.
+
+>[!BEGINSHADEBOX]
+
+**Exemplo:**
+
+Suponha que, em seu feed de dados, você queira saber qual usuário de campanha de marketing viu originalmente antes de acessar seu site.
+
+Para fazer isso, defina a persistência na dimensão Campanhas com Original como o modelo de alocação.
+
+Nesse caso, a campanha original é exibida na saída do feed de dados somente se os usuários atenderem **ambos** das seguintes condições:
+
+* O usuário tinha um evento com um carimbo de data e hora que está na janela de frequência do feed de dados (a hora ou o dia especificado do feed de dados).
+
+* O usuário se qualificou para a campanha original **em algum momento dentro do intervalo de datas da retrospectiva**.
+
+  Se o usuário se qualificasse para a campanha original há 9 dias, a campanha original **seria incluída** no feed de dados se o intervalo de datas da retrospectiva fosse definido como 30 dias, mas a campanha original **não seria incluída** no feed de dados se o intervalo de datas da retrospectiva fosse definido como 7 dias.
+
+>[!ENDSHADEBOX]
+
+
 
 
