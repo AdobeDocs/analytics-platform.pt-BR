@@ -18,9 +18,9 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: 66a8a96da6710d20b01b9315fe87ba38c54c2511
+source-git-commit: 87de19a64e49f83c99df7980828b97a1da2c2d16
 workflow-type: tm+mt
-source-wordcount: 954
+source-wordcount: 1074
 ht-degree: 2%
 
 ---
@@ -31,6 +31,43 @@ ht-degree: 2%
 
 Os feeds de dados no Customer Journey Analytics e no Adobe Analytics permitem exportar dados brutos para plataformas de terceiros. Se você usou feeds de dados anteriormente no Adobe Analytics, use as seguintes informações para entender as diferenças nos recursos e conceitos disponíveis:
 
+## Funcionalidade disponível somente nos feeds de dados do Customer Journey Analytics
+
+* Campos derivados
+
+  Incluir componentes de campo derivados em feeds de dados.
+
+* Compilação
+
+  Permite a resolução de identidade entre dispositivos, vinculando eventos em dispositivos a uma única pessoa.
+
+* Visualização estruturada dos dados
+
+  Usa dados estruturados ao criar feeds de dados em arquivos entregues. Os feeds de dados do Adobe Analytics usam uma string.
+
+* Painel de componentes com dimensões e métricas correspondentes ao Analysis Workspace
+
+  Usa dimensões e métricas disponíveis na visualização de dados. No Adobe Analytics, uma lista predefinida de campos e colunas é usada.
+
+* Quaisquer segmentos aplicados à visualização de dados são herdados automaticamente no feed de dados
+
+* Segmentos podem ser aplicados diretamente ao feed de dados (além de quaisquer segmentos já aplicados na visualização de dados)
+
+* Os feeds correspondem ao fuso horário de visualização de dados <!-- how did it work in AA? -->
+
+* Parquet delivery
+
+  Gera um arquivo Parquet moderno, que suporta nativamente dados aninhados e estruturados complexos. As listas de produtos são representadas como arrays estruturados/objetos aninhados.
+
+* Caminhos de estilo Hive
+
+* As alterações feitas nos componentes na visualização de dados são propagadas para feeds de dados
+
+<!-- * Web MCP when it's added -->
+
+
+## Comparação de funcionalidade
+
 | **Conceitos e opções de configuração** | **Customer Journey Analytics** | **Adobe Analytics** |
 |---------|----------|---------|
 | **Entrada de dados**<br/> O tipo de dados que pode ser coletado e incluído nos feeds de dados. | Suporta entrada de dados entre canais, incluindo dados da Web, dados da central de atendimento, dados de pontos de venda e muito mais. | Oferece suporte principalmente à entrada de dados da Web e móveis. Outros tipos de dados (como call center ou dados de ponto de venda) podem ser assimilados por meio de fontes de dados, mas com recursos de processamento muito limitados. |
@@ -39,8 +76,6 @@ Os feeds de dados no Customer Journey Analytics e no Adobe Analytics permitem ex
 | **Ocorrências de chegada tardia**<br/> Ocorrências cujos carimbos de data/hora pertencem a uma janela de frequência de entrega anterior, mas chegam após o término dessa janela. <p>Por exemplo, as ocorrências de chegada tardia podem vir de um aplicativo móvel que armazena eventos em buffer enquanto está offline e os envia quando ele se reconecta.</p> | A configuração **Atraso de processamento** controla quanto tempo o sistema aguarda depois que a janela de frequência é fechada antes de acionar a exportação, reservando mais tempo para que os dados atrasados cheguem. | As ocorrências de chegada tardia podem ser **incluídas ou excluídas** por meio da opção de configuração **Ocorrências de chegada tardia**. <p>A configuração **Janela de pesquisa** controla até que ponto o sistema alcança para incluir dados atrasados.</p> |
 | **Ocorrências fora de ordem**<br/> Ocorrências cujos carimbos de data/hora não correspondem à ordem em que foram recebidas. | Como o Customer Journey Analytics aceita transmissão e dados em lote, não há garantia de que os eventos de uma determinada pessoa chegarão na ordem de carimbo de data e hora. Embora o Customer Journey Analytics seja reordenado por carimbo de data e hora por pessoa, ele só pode exportar os dados recebidos. Isso significa que as ocorrências de chegada tardia podem ser exportadas após as ocorrências com um carimbo de data e hora posterior.<p>A configuração **Atraso de processamento** ajuda a reduzir eventos fora de ordem na saída do feed de dados, dando mais tempo para que os dados em lote cheguem antes da exportação. A ordenação de eventos no delivery não é garantida.</p><p>**Importante**: o consumidor final dos dados do feed de dados deve ser capaz de lidar com carimbos de data/hora que estejam fora de ordem, por pessoa, pois a ordem de ocorrências na entrega do feed de dados não é garantida.</p> | O Adobe Analytics exige que os dados cheguem em ordem por visitante no momento da coleta, mas a ordem de ocorrência na entrega do feed de dados não é garantida.</p> |
 | **Janela de preenchimento retroativo**<br/> Exporta dados históricos entre duas datas anteriores. | Limitado à janela de dados contínuos da conexão. | Limitado ao limite de retenção de dados do conjunto de relatórios: **25 meses** por padrão. |
-| **Segmentação** | Os segmentos podem ser aplicados a feeds de dados por meio do segmento de visualização de dados, de um segmento específico do feed ou de ambos. | Segmentos não podem ser aplicados. |
-| **Compilação** | Compatível. Permite a resolução de identidade entre dispositivos, vinculando eventos em dispositivos a uma única pessoa. | Não suportado. Os dados compilados não podem ser exportados por meio de feeds de dados do Adobe Analytics. |
 | **Esquema**<br/> O esquema de feed de dados determina quais colunas estão disponíveis para inclusão em um feed de dados. | O esquema do feed de dados é baseado na configuração da visualização de dados.  Os componentes disponíveis para inclusão no esquema de feed de dados são um subconjunto dos componentes disponíveis na configuração da visualização de dados.</p> | Uma lista estática predefinida de ~1.100+ variáveis. Muitas colunas são exportadas como **pares pré e pós-processados** (por exemplo, `eVar1` / `post_eVar1`), o que responde por grande parte da contagem de colunas. |
 | **Pesquisas**<br/> As pesquisas dinâmicas permitem que você receba arquivos de pesquisa adicionais no seu feed de dados, caso contrário, não estarão disponíveis. | Não é necessário, pois pesquisas e classificações estão disponíveis como dimensões com curadoria direta na visualização de dados. Ao preparar uma pesquisa ou classificação como uma dimensão na visualização de dados, os valores resolvidos aparecem como colunas regulares na saída do Parquet, em linha com os dados do evento, não como arquivos de referência separados. | Usado para corresponder um número de uma coluna de feed de dados a um valor real. Específico de um determinado conjunto de itens (navegador, sistema operacional, dispositivo móvel e são aplicados como um arquivo separado que vem com o feed de dados). |
 | **Definição de sessão**<br/> <!--(could be included in the data processing section instead)--> | Definido na visualização de dados . | Definido no momento da coleta. |

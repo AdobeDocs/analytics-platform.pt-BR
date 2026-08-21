@@ -21,10 +21,10 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: d2016e34b4b73c6eebb05097aa43f823c578c2b6
+source-git-commit: 87de19a64e49f83c99df7980828b97a1da2c2d16
 workflow-type: tm+mt
 source-wordcount: 2520
-ht-degree: 94%
+ht-degree: 93%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="components_audiences_refreshfrequency"
 >title="Frequência de atualização"
->abstract="A frequência com que a associação de um público-alvo é reavaliada.<br/>Os públicos-alvo únicos são avaliados apenas uma vez e não contam para o limite de atualização."
+>abstract="A frequência com que a associação de um público-alvo é reavaliada.<br/>As solicitações únicas são avaliadas apenas uma vez e não contam para o limite de atualização."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -44,7 +44,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="components_audiences_audiencelimit"
 >title="Atualizar limite de público"
->abstract="O número de públicos-alvo em seu ambiente configurados para atualização automática com uma frequência programada. Os limites estão entre 75 e 150, dependendo dos seus direitos do Customer Journey Analytics. Atualizações únicas não contam para esse limite."
+>abstract="O número de públicos-alvo em seu ambiente configurados para atualização automática com uma frequência programada. Os limites estão entre 75 e 150, dependendo dos seus direitos do Customer Journey Analytics. Solicitações únicas não contam para esse limite."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -117,7 +117,7 @@ Defina essas configurações para definir ou atualizar seu público-alvo.
 | **[!UICONTROL Nome]** | O nome do público-alvo. Por exemplo, `Really Interested in Potential Car Buyers` |
 | **[!UICONTROL Tags]** | Todas as tags que você deseja atribuir ao público-alvo para fins organizacionais. É possível selecionar uma ou mais tags pré-existentes ou inserir uma nova. |
 | **[!UICONTROL Descrição]** | Uma descrição do público-alvo, para diferenciá-lo dos demais. Por exemplo, `Build an audience of really interested potential car buyers` |
-| **[!UICONTROL Frequência de atualização]** | A frequência na qual você deseja atualizar o público-alvo.<p/><p>É possível configurar uma atualização agendada em um número limitado de públicos (entre 75 e 150), dependendo do seu direito ao Customer Journey Analytics. </p><p>Você pode escolher entre as seguintes opções:</p><ul><li>Público-alvo **[!UICONTROL único]**: um público-alvo (padrão) que não precisa de atualização. Por exemplo, essa opção pode ser útil para campanhas específicas e únicas.<br/>É necessário especificar um **[!UICONTROL Intervalo de datas único]**. Você pode usar o ![Calendário](/help/assets/icons/Calendar.svg) para inserir um intervalo de datas.</li><li>Um público-alvo atualizado. Você pode selecionar entre as seguintes opções de atualização programada:<ul><li>**[!UICONTROL A cada 4 horas]**: um público-alvo que é atualizado a cada 4 horas.</li><li>**[!UICONTROL Diariamente]**: um público-alvo que é atualizado diariamente</li><li>**[!UICONTROL Semanalmente]**: um público-alvo que é atualizado semanalmente.</li><li>**[!UICONTROL Mensal]**: um público-alvo que é atualizado mensalmente</li></ul></li>Para atualizar públicos-alvo, é necessário especificar:<ul><li>**[!UICONTROL Atualizar janela de retrospectiva]**. Defina o número de dias da retrospectiva, a partir de hoje, com base na qual o público-alvo será avaliado. Você pode selecionar entre opções ou definir um Tempo personalizado. O máximo é de 90 dias.</li><li>**[!UICONTROL Data de expiração]**: define quando o público-alvo para de atualizar. Você pode usar o ![Calendário](/help/assets/icons/Calendar.svg) para selecionar uma data. O padrão é 1 ano a partir da data de criação. Públicos-alvo que expiram são tratados de forma semelhante aos relatórios agendados que expiram. O administrador recebe um email um mês antes de o público-alvo expirar.</li></ul></ul> |
+| **[!UICONTROL Frequência de atualização]** | A frequência na qual você deseja atualizar o público-alvo.<p/><p>É possível configurar uma atualização agendada em um número limitado de públicos (entre 75 e 150), dependendo do seu direito ao Customer Journey Analytics. </p><p>Você pode escolher entre as seguintes opções:</p><ul><li>**[!UICONTROL Uma vez]**: uma solicitação única que não precisa de atualização. Por exemplo, essa opção pode ser útil para campanhas específicas e únicas.<br/>É necessário especificar um **[!UICONTROL Intervalo de datas único]**. Você pode usar o ![Calendário](/help/assets/icons/Calendar.svg) para inserir um intervalo de datas.</li><li>Um público-alvo atualizado. Você pode selecionar entre as seguintes opções de atualização programada:<ul><li>**[!UICONTROL A cada 4 horas]**: um público-alvo que é atualizado a cada 4 horas.</li><li>**[!UICONTROL Diariamente]**: um público-alvo que é atualizado diariamente</li><li>**[!UICONTROL Semanalmente]**: um público-alvo que é atualizado semanalmente.</li><li>**[!UICONTROL Mensal]**: um público-alvo que é atualizado mensalmente</li></ul></li>Para atualizar públicos-alvo, é necessário especificar:<ul><li>**[!UICONTROL Atualizar janela de retrospectiva]**. Defina o número de dias da retrospectiva, a partir de hoje, com base na qual o público-alvo será avaliado. Você pode selecionar entre opções ou definir um Tempo personalizado. O máximo é de 90 dias.</li><li>**[!UICONTROL Data de expiração]**: define quando o público-alvo para de atualizar. Você pode usar o ![Calendário](/help/assets/icons/Calendar.svg) para selecionar uma data. O padrão é 1 ano a partir da data de criação. Públicos-alvo que expiram são tratados de forma semelhante aos relatórios agendados que expiram. O administrador recebe um email um mês antes de o público-alvo expirar.</li></ul></ul> |
 | **[!UICONTROL Filtro]** | Os filtros são a principal entrada para o público-alvo. Arraste e solte um ou mais segmentos do painel ![Segmentação](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segmento]** à esquerda para a área Segmento. É possível usar a opção ![Pesquisa](/help/assets/icons/Search.svg) [!UICONTROL *Pesquisar segmentos*] para pesquisar segmentos. Você pode adicionar até 20 segmentos. Os segmentos podem ser unidos com operadores **[!UICONTROL E]** ou **[!UICONTROL Ou]**.<p>Ao criar um público-alvo a partir de uma visualização no Analysis Workspace (como uma tabela de forma livre ou uma tela de jornada), todos os segmentos aplicados ao painel ou à coluna são preservados. É possível remover qualquer segmento aplicado automaticamente.</p> |
 | **[!UICONTROL Visualização de dados]** | Selecione ![Informações](/help/assets/icons/Info.svg) para mostrar ou ocultar a [Visualização de dados](#data-preview) para o intervalo de datas selecionado. |
 
