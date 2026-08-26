@@ -5,16 +5,16 @@ solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 hide: true
-source-git-commit: f7bbbaf0b737ab33088c7c585d6415f93deff4c8
+source-git-commit: 1ce48a6e077ee1069c55f3ef8969ed2eced4742e
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1388'
 ht-degree: 4%
 
 ---
 
 # Relatório de população total
 
-Os relatórios de população total apresentam a capacidade de analisar e relatar entidades definidas em conjuntos de dados de perfil e pesquisa e além de séries de eventos com base no tempo de conjuntos de dados de eventos. Essa capacidade permite novas classes de consultas, métricas e definições de público-alvo que refletem o escopo completo de uma base de clientes empresariais.
+Os relatórios de população total apresentam a capacidade de analisar e relatar entidades definidas em conjuntos de dados de perfil e pesquisa existentes em uma conexão do Customer Journey Analytics. Essa análise e esses relatórios estão além de séries de eventos com base no tempo de conjuntos de dados de eventos. A capacidade permite novas classes de consultas, métricas e definições de público-alvo que refletem o escopo completo de uma base de clientes empresariais.
 
 O Customer Journey Analytics é construído em torno de eventos. Cada métrica, cada visualização, cada painel, cada relatório é ancorado em um intervalo de datas e em eventos que ocorrem durante esse intervalo de datas. Você faz perguntas sobre as soluções, como:
 
