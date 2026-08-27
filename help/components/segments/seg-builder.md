@@ -17,10 +17,10 @@ subfeature_v2:
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 859a195e89c44d3951ca79ce7f93f9dd77cd4f5c
+source-git-commit: e65b2ec10593c19ab056ecf72716a9267cfc0528
 workflow-type: tm+mt
-source-wordcount: 1812
-ht-degree: 75%
+source-wordcount: 1932
+ht-degree: 71%
 
 ---
 
@@ -94,8 +94,22 @@ Para adicionar um componente:
 1. Arraste e solte um componente do painel de componentes em **[!UICONTROL Arraste e solte métricas, segmentos e/ou dimensões aqui]**.
    * Você pode usar a ![Pesquisa](/help/assets/icons/Search.svg) na barra de componentes para procurar componentes específicos.
    * Você pode usar o ![Filtro](/help/assets/icons/Filter.svg) na barra de componentes para filtrar por ![Marca de seleção](/help/assets/icons/Checkmark.svg) **[!UICONTROL Aprovado]**, ![Estrela](/help/assets/icons/Star.svg) **[!UICONTROL Favoritos]**, ![DataDimension](/help/assets/icons2/DataDimension.svg) **[!UICONTROL Dimensões]**, ![Evento](/help/assets/icons/Event.svg) **[!UICONTROL Métricas]**, ![Segmentação](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segmentos]**, ![Calendário](/help/assets/icons/Calendar.svg) **[!UICONTROL Intervalos de datas]** e componentes de ![Camada](/help/assets/icons/Layer.svg) **[!UICONTROL *contêiner *]**(como produtos, Assets de conteúdo). Você também pode filtrar em ![Rótulo](/help/assets/icons/Label.svg) tags.
+
 1. Especifique os detalhes do componente. Por exemplo, selecione um valor em **[!UICONTROL Selecionar valor]**. Ou insira um valor. Como você pode especificar um ou mais valores, bem como quais podem ser selecionados, depende do componente e do operador.
-1. Opcionalmente, modifique o operador padrão. Por exemplo, de **[!UICONTROL é igual a]** para **[!UICONTROL é igual a qualquer um entre]**. Consulte [Operadores](seg-operators.md) para obter uma visão geral detalhada dos operadores disponíveis.
+
+1. (Opcional) Habilite a opção para [!UICONTROL **Limitar resultados ao intervalo de datas do relatório**].
+
+   Os dados em um relatório do Workspace podem se estender além do intervalo de datas do relatório se o segmento incluir componentes de intervalo de datas.
+
+   Ative esta opção para limitar os resultados ao intervalo de datas do relatório independentemente de quaisquer componentes de data incluídos no segmento.
+
+   Esta opção é exibida somente quando a [!UICONTROL **Pessoa**] é selecionada como o escopo (contêiner) da sua definição no menu suspenso **[!UICONTROL Incluir]** ou **[!UICONTROL Excluir]**.
+
+   **OBSERVAÇÃO**: esta funcionalidade está na fase de Teste Limitado da versão e pode ainda não estar disponível em seu ambiente. Essa observação será removida quando a funcionalidade estiver em disponibilidade geral. Para obter informações sobre o processo de lançamento do Customer Journey Analytics, consulte [Lançamentos de recursos do Customer Journey Analytics](/help/release-notes/releases.md).
+
+1. (Opcional) Modifique o operador padrão.
+
+   Por exemplo, de **[!UICONTROL é igual a]** para **[!UICONTROL é igual a qualquer um entre]**. Consulte [Operadores](seg-operators.md) para obter uma visão geral detalhada dos operadores disponíveis.
 
 Para editar um componente:
 
