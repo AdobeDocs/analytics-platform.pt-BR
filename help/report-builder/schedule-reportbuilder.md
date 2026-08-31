@@ -16,10 +16,10 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: 563f5d89ee9977a956565f68cb2b75adcfb37c0f
 workflow-type: tm+mt
-source-wordcount: 878
-ht-degree: 14%
+source-wordcount: 934
+ht-degree: 13%
 
 ---
 
@@ -29,8 +29,11 @@ Depois de salvar a pasta de trabalho e concluir a análise, é possível compart
 
 Você pode criar várias programações para uma única pasta de trabalho. Por exemplo, você cria dois cronogramas para enviar uma pasta de trabalho para sua equipe diariamente e para seu gerente uma vez por semana.
 
-O recurso de programação também permite configurar a proteção por senha para uma pasta de trabalho e editar pastas de trabalho programadas anteriormente.
+O recurso de programação também permite configurar a proteção por senha para uma pasta de trabalho e editar a programação para pastas de trabalho programadas anteriormente.
 
+>[!NOTE]
+>
+>Um agendamento envia a versão da pasta de trabalho que existia quando você criou o agendamento. Posteriormente, se você alterar e salvar a pasta de trabalho, a programação existente não selecionará essas alterações e continuará a enviar a versão original. Para distribuir uma pasta de trabalho atualizada, crie um novo agendamento depois de salvar as alterações.
 
 >[!BEGINSHADEBOX]
 

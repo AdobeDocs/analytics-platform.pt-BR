@@ -23,10 +23,10 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: 563f5d89ee9977a956565f68cb2b75adcfb37c0f
 workflow-type: tm+mt
-source-wordcount: 1309
-ht-degree: 40%
+source-wordcount: 1343
+ht-degree: 39%
 
 ---
 
@@ -53,10 +53,6 @@ Use o processo a seguir ao exportar pastas de trabalho do Report Builder para a 
 ![O processo de exportação descrito nas etapas 1 a 4.](assets/report-builder-export-process.png)
 
 ## Exportar um relatório do Report Builder
-
->[!NOTE]
->
->Antes de exportar os dados conforme descrito nesta seção, saiba mais sobre o [processo de exportação](#understand-the-export-process) na seção acima.
 
 Para exportar relatórios do Report Builder:
 
@@ -100,6 +96,10 @@ Para exportar relatórios do Report Builder:
    Os dados são enviados à conta da nuvem especificada com a frequência especificada.
 
 1. (Opcional) Após criar a exportação, independentemente de você ter optado por enviá-la agora ou de acordo com um agendamento definido, será possível exibi-la e gerenciá-la na página [Exportações](/help/components/exports/manage-exports.md) e nos [Logs de exportação](/help/components/exports/manage-export-logs.md).</p>
+
+>[!NOTE]
+>
+>Um agendamento exporta a versão da pasta de trabalho que existia quando você criou o agendamento. Posteriormente, se você alterar e salvar a pasta de trabalho, a programação existente não selecionará essas alterações e continuará a exportar a versão original. Para exportar uma pasta de trabalho atualizada, crie um novo agendamento depois de salvar as alterações.
 
 ## Gerenciar exportações
 
