@@ -21,9 +21,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 2a7629993e235d66844db036ccce88e57fc20562
+source-git-commit: 9c0ddbb48c5cb1c62bded02d1455f2631ab1679f
 workflow-type: tm+mt
-source-wordcount: 10479
+source-wordcount: 10488
 ht-degree: 90%
 
 ---
@@ -413,8 +413,8 @@ Você [adiciona um ou mais conjuntos de dados](#add-datasets) ou [edita conjunto
 
 >[!CONTEXTUALHELP]
 >id="connection_b2bstitching_personid"
->title="ID da pessoa"
->abstract="Selecione um campo do tipo identity ou identityMap, com ótima cobertura em eventos. Os valores contidos serão elevados para os do namespace do identificador de pessoa configurado anteriormente."
+>title="ID de pessoa persistente"
+>abstract="Selecione um campo do tipo identity ou identityMap que esteja disponível em todos os eventos, como o campo que contém ECIDs. Esses identificadores serão elevados para as IDs de pessoa do namespace do identificador de pessoa configurado anteriormente."
 
 >[!CONTEXTUALHELP]
 >id="connection_b2bstitching_accountid"
