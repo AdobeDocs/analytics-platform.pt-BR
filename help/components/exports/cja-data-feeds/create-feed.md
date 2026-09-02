@@ -5,22 +5,14 @@ hide: true
 feature: Components
 autotag-review: '2026-05-19T08:45:44.870Z'
 TQID: 'https://experienceleague.adobe.com/QgBD7vCkw4YA568XOLlwTnw8eZVZybXr3DFbM1ZKYDw'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: fdd9b5738103166d7c64666f85d0c508c7176fd0
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d00e9f03-e50b-4162-b143-0c0817c937c2
+source-git-commit: f5a7272f80aaba167974f2218bc84408d47f62d4
 workflow-type: tm+mt
-source-wordcount: 4178
+source-wordcount: 4217
 ht-degree: 21%
 
 ---
@@ -77,6 +69,15 @@ Antes de criar um feed de dados, é importante ter uma compreensão básica dos 
 
 <!-- markdownlint-enable MD034 -->
 
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_datafeed_required_dimensions"
+>title="Dimensões obrigatórias"
+>abstract="Todo feed de dados deve incluir determinadas dimensões, identificadas por um rótulo **Obrigatório** ao lado do nome da dimensão. Essas dimensões fornecem a estrutura mínima necessária para a análise no nível do evento."
+
+<!-- markdownlint-enable MD034 -->
+
 1. Faça logon em [experiencecloud.adobe.com](https://experiencecloud.adobe.com) usando as credenciais da Adobe ID.
 
 1. Selecione [!UICONTROL **Customer Journey Analytics**] no alternador de aplicativos ![App](/help/assets/icons/Apps.svg) na parte superior direita da interface.
@@ -114,13 +115,13 @@ Antes de criar um feed de dados, é importante ter uma compreensão básica dos 
 
    Os segmentos aplicados aqui complementam quaisquer segmentos que já possam ter sido aplicados na visualização de dados.
 
-1. (Opcional) No painel à esquerda, use o campo **pesquisa** para localizar componentes específicos ou selecione o ícone **Classificar** ícone ![Classificar componentes](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg) para aplicar qualquer uma das seguintes opções de classificação:
+1. (Opcional) No painel à esquerda, use o campo **pesquisa** para localizar componentes específicos. Ou selecione o ícone **Classificar** ![Ícone Classificar componentes](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg) para aplicar qualquer uma das seguintes opções de classificação:
 
    | Opção | Função |
-   |---------|----------|
+   | --------- | ---------- |
    | [!UICONTROL **Recomendado**] | Classifica componentes com aqueles recomendados no topo da lista. Os componentes usados com mais frequência e mais recentemente por você ou outras pessoas em sua organização são mostrados em uma posição superior na lista. |
    | [!UICONTROL **Ordem alfabética**] | Classifica os componentes em ordem alfabética. |
-   | [!UICONTROL **Categórico**] | Classifica componentes de acordo com o tipo de componente (dimensão, métrica, segmento, intervalo de datas). |
+   | [!UICONTROL **Categórico**] | Classifica componentes semelhantes a [!UICONTROL **Recomendado**], exceto que as métricas calculadas e as métricas padrão são agrupadas separadamente, em vez de serem misturadas. |
 
 1. Adicione componentes à configuração do feed de dados. O painel esquerdo mostra apenas componentes válidos para feeds de dados.
 

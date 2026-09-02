@@ -7,22 +7,15 @@ hide: true
 exl-id: 991a7861-cbde-4d55-935c-d56c8031853e
 autotag-review: '2026-05-19T08:45:11.428Z'
 TQID: 'https://experienceleague.adobe.com/TO8lEW8-GE-sIGj3vmm0X1zCgpg-0VpS1wjs0-HQjg8'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: de8748a1dddbc0ddaadca4c805c9b4aba99a4267
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d00e9f03-e50b-4162-b143-0c0817c937c2
+source-git-commit: 4872f0078640fbd358a60a6d7baeb3ea575d3559
 workflow-type: tm+mt
-source-wordcount: 230
-ht-degree: 20%
+source-wordcount: 252
+ht-degree: 18%
 
 ---
 
@@ -31,6 +24,8 @@ ht-degree: 20%
 {{release-limited-testing}}
 
 Os feeds de dados são uma maneira avançada de obter dados brutos do Customer Journey Analytics. Você pode usar esses dados brutos em outras plataformas fora da Adobe, a critério da sua organização. Os dados são fornecidos em lotes por hora, no final de cada hora, ou em lotes diários, no final de cada dia.
+
+Para obter uma comparação dos feeds de dados com outros métodos de exportação do Customer Journey Analytics, como Exportação de tabela completa, consulte [Comparação de produtos do Analytics](/help/getting-started/analytics-product-comparison.md).
 
 ## Pré-requisitos
 
