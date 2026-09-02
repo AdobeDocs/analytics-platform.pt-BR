@@ -2,9 +2,9 @@
 user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Saiba mais sobre o Adobe Customer Journey Analytics e como usar o Analysis Workspace com dados da Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
-source-git-commit: 144df28d7146435a225d5e8eefb3b10fee702045
+source-git-commit: 6b14b7df4c897c42c963fb93c48e7331b0264589
 workflow-type: tm+mt
-source-wordcount: '1482'
+source-wordcount: '1484'
 ht-degree: 91%
 
 ---
@@ -467,11 +467,12 @@ ht-degree: 91%
   + [Visão geral](/help/stitching/overview.md)
   + [Compilação em campo](/help/stitching/fbs.md)
   + [Compilação baseada em gráfico](/help/stitching/gbs.md)
-  + {hide-from-toc}[Compilação de conta B2B](/help/stitching/b2b-account-stitching.md)
   + [Solicitar compilação](/help/stitching/use-stitching.md)
   + [Habilitar compilação](/help/stitching/use-stitching-ui.md)
   + [Validar compilação](/help/stitching/validate.md)
   + [Perguntas frequentes](/help/stitching/faq.md)
+  + B2B {#b2b}
+    + [Compilação de pessoa para conta](/help/stitching/b2b/b2b-person-to-account-stitching.md)
 
 + Relatório de população total {#tpr}
   + {hide-from-toc}[Visão geral](/help/tpr/tpr.md)
@@ -586,3 +587,4 @@ ht-degree: 91%
 
 + [API do Customer Journey Analytics](https://developer.adobe.com/cja-apis/docs/)
 + [Servidor MCP do Customer Journey Analytics](https://developer.adobe.com/analytics-mcp/docs/cja/)
+

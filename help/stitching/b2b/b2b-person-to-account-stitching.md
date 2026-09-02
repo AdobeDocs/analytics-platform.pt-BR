@@ -1,9 +1,8 @@
 ---
-title: Compilação de conta B2B
-description: Saiba como a compilação de conta B2B no Customer Journey Analytics enriquece conjuntos de dados de eventos com informações de conta e permite a análise completa da jornada em seus dados B2B.
+title: Compilação De Pessoa Por Conta B2B
+description: Saiba como a compilação de contas de pessoas B2B no Customer Journey Analytics enriquece conjuntos de dados de eventos com informações de conta e permite a análise completa da jornada em seus dados B2B.
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
-hide: true
 role: Admin
 autotag-review: '2026-05-19T11:01:07.331Z'
 TQID: 'https://experienceleague.adobe.com/-7rHOhYVCp-nSMqdE7YlAlCJ0zRQYvPOViMHSCNuKV8'
@@ -20,29 +19,29 @@ role_v2:
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 0552cfeb3d7ee834ba7928a40dc151b782dc9330
+source-git-commit: a971b268208ec49b5ccd84b11543263ff3a1abea
 workflow-type: tm+mt
-source-wordcount: 1926
-ht-degree: 13%
+source-wordcount: 2100
+ht-degree: 15%
 
 ---
 
-# Compilação de conta B2B
+# Compilação de pessoa B2B para conta
 
-A compilação de conta B2B enriquece seus conjuntos de dados de evento com identidades de conta e permite a análise completa da jornada completa do cliente no Customer Journey Analytics. Quando os eventos não têm uma ID de conta, que o Customer Journey Analytics B2B edition exige para assimilação, a compilação de conta deriva e adiciona essas informações automaticamente usando um [conjunto de dados de mapeamento de pessoa para conta](#prerequisites) fornecido por você.
+A compilação de pessoa para conta B2B enriquece seus conjuntos de dados de evento com identidades de conta e permite a análise completa da jornada completa do cliente no Customer Journey Analytics. Quando os eventos não têm uma ID de conta, que o Customer Journey Analytics B2B edition exige para assimilação, a compilação de pessoa para conta deriva e adiciona essas informações automaticamente usando um [conjunto de dados de mapeamento de pessoa para conta](#prerequisites) fornecido por você.
 
-Sem a compilação de conta, qualquer evento que não contenha uma ID de conta será descartado durante a assimilação. A compilação de contas resolve essa limitação procurando a conta associada à pessoa em cada evento, adicionando a ID da conta à medida que o evento é assimilado e retroativamente.
+Sem a identificação de pessoa por conta, qualquer evento que não contenha uma ID de conta será descartado durante a assimilação. A compilação de pessoa para conta resolve essa limitação, pesquisando a conta associada à pessoa em cada evento, adicionando a ID da conta à medida que o evento é assimilado e retroativamente.
 
 >[!NOTE]
 >
->A compilação de conta B2B requer que você tenha direito ao [Customer Journey Analytics B2B edition](/help/getting-started/cja-b2b-edition.md) em seu ambiente para poder configurar a funcionalidade.
+>A compilação de contas de pessoas B2B requer que você tenha direito ao [Customer Journey Analytics B2B edition](/help/getting-started/cja-b2b-edition.md) em seu ambiente para poder configurar a funcionalidade.
 
-A compilação de conta executa as seguintes operações em seus conjuntos de dados:
+A compilação de pessoa para conta executa as seguintes operações em seus conjuntos de dados:
 
-* **Elevar a identidade da pessoa**: a ID da pessoa em cada evento é elevada ao namespace de identidade configurado usando o gráfico de identidade.
-* **Adicionar identidades de conta ausentes**: para eventos que contêm uma ID de pessoa, o [mapeamento de pessoa para conta](#prerequisites) é usado para derivar e adicionar a identidade da conta. Qualquer identidade de conta no próprio evento é usada como um método de fallback.
+* **Elevar a identidade da pessoa**: assim como a [abordagem de compilação B2C](/help/stitching/overview.md), você configurará um campo contendo IDs de pessoa persistentes. Usando o gráfico de identidade, a ID de pessoa persistente em cada evento é elevada a uma ID de pessoa a partir do namespace do identificador de pessoa configurado.
+* **Adicionar identidades de conta ausentes**: depois de obter as informações de ID de pessoa para um evento, o [mapeamento de pessoa para conta](#prerequisites) é usado para derivar e adicionar as informações de identidade da conta. Qualquer identidade de conta disponível no próprio evento é usada como um método de fallback.&quot;
 
-## Como funciona a compilação de conta B2B
+## Como funciona a compilação de pessoa B2B para conta
 
 Para ilustrar como a compilação de conta B2B funciona, o conjunto de dados mostrado abaixo é usado como ponto de partida.
 
@@ -50,7 +49,7 @@ Para ilustrar como a compilação de conta B2B funciona, o conjunto de dados mos
 
 No Customer Journey Analytics B2B edition, os eventos sem ID de conta neste conjunto de dados de exemplo não compilado são ignorados e não são assimilados (![DeleteOutline](/help/assets/icons/DeleteOutline.svg)).
 
-| Ação | Carimbo de data e hora | ID persistente | ID da Conta | ID da pessoa | Tipo de evento |
+| Ação | Carimbo de data e hora | ID persistente | ID de conta | ID de pessoa | Tipo de evento |
 |:---:|--:|--|---|---|---|
 | ![AdiçãodeDados](/help/assets/icons/DataAdd.svg) | 1/3/25 | 1234 | Adobe | matt@adobe.com | Page view |
 | ![ExcluirFiltro](/help/assets/icons/DeleteOutline.svg) | 1/3/25 | 5678 |  | | |
@@ -60,7 +59,7 @@ No Customer Journey Analytics B2B edition, os eventos sem ID de conta neste conj
 | ![AdiçãodeDados](/help/assets/icons/DataAdd.svg) | 6/1/25 | 8989 | Ubiquidade | cassidy@ubiquity.com | |
 | ![ExcluirFiltro](/help/assets/icons/DeleteOutline.svg) | 6/2/25 | 1111 |  | | |
 
-A compilação de conta B2B impede que os eventos sejam ignorados e não assimilados usando as seguintes operações:
+A compilação de pessoa B2B para conta impede que os eventos sejam ignorados e não assimilados usando as seguintes operações:
 
 * [Elevar identidades de pessoas](#elevate-person-identities).
 * [Adicionar identidades de conta ausentes](#add-missing-account-identitiers).
@@ -70,9 +69,9 @@ A compilação de conta B2B impede que os eventos sejam ignorados e não assimil
 
 +++ Detalhes
 
-Para oferecer suporte à compilação de conta B2B, você fornece um conjunto de dados de mapeamento de pessoa para conta. Por exemplo:
+Para oferecer suporte à compilação de pessoa B2B para conta, você fornece um conjunto de dados de mapeamento de pessoa para conta. Por exemplo:
 
-| ID do CRM | ID da Conta |
+| ID do CRM | ID de conta |
 |---|---|
 | 12hsd123 | Adobe |
 | f82jsd32 | Céu |
@@ -82,7 +81,7 @@ Para oferecer suporte à compilação de conta B2B, você fornece um conjunto de
 
 Esse conjunto de dados de mapeamento de pessoa para conta é elevado usando a compilação baseada em gráfico. Por exemplo, você fornece o email como o namespace a ser usado. O resultado é um conjunto de dados de mapeamento de pessoa para conta atualizado com IDs de pessoa elevadas.
 
-| ID do CRM | ID de pessoa elevada | ID da Conta |
+| ID do CRM | ID de pessoa elevada | ID de conta |
 |---|---|---|
 | 12hsd123 | matt@adobe.com | Adobe |
 | f82jsd32 | emily@sky.com | Céu |
@@ -91,6 +90,8 @@ Esse conjunto de dados de mapeamento de pessoa para conta é elevado usando a co
 | fs453ghi | carmen@adobe.com | Adobe |
 
 A compilação baseada em gráfico também é usada para elevar as IDs de pessoa no conjunto de dados do evento de experiência. Por exemplo, consulte o valor atualizado de **emily@adobe.com**.
+
+A compilação baseada em gráfico também é usada para elevar as IDs de pessoa no conjunto de dados do evento de experiência. Por exemplo, você configura o campo ID persistente (ECID) para ser usado como ID de pessoa persistente quando [habilita a compilação no conjunto de dados](#enable-b2b-stitching-on-event-datasets). Com base em `5678` como valor de ECID e `emily@adobe.com` como valor de Email, `emily@adobe.com` é definido como ID de pessoa elevada no evento relacionado.
 
 | Carimbo de data e hora | ID persistente | ID da conta original | ID de pessoa original | ID de pessoa elevada |
 |--|--|---|---|---|
@@ -125,7 +126,7 @@ O conjunto de dados de pessoa para conta é usado mais uma vez para elevar as ID
 
 ### Resultado
 
-Este exemplo mostra como a compilação de conta B2B atualiza seus dados de evento de experiência com identificadores de pessoa ausentes e identificadores de conta ausentes e incorretos, com base no conjunto de dados de mapeamento de pessoa para conta fornecido como entrada.
+Este exemplo mostra como a compilação de conta B2B atualiza seus dados de evento de experiência com identificadores de pessoa ausentes ou identificadores de conta ausentes e incorretos, com base no conjunto de dados de mapeamento de pessoa para conta fornecido como entrada.
 
 
 ## Pré-requisitos
@@ -140,11 +141,11 @@ Antes de ativar a compilação de conta B2B, prepare os seguintes conjuntos de d
 >
 >O campo de ID de pessoa no seu conjunto de dados de **[!UICONTROL pessoa para conta]** deve ser marcado como uma identidade no esquema.
 
-## Ativar compilação de conta {#enable-account-stitching}
+## Habilitar compilação entre pessoa e conta {#enable-account-stitching}
 
-Primeiro, ative e configure a compilação de conta B2B no nível de conexão. Quando a compilação de conta B2B é configurada para uma conexão, você pode ativar a compilação de conta em conjuntos de dados de evento individuais nessa conexão.
+Primeiro, você ativa e configura a compilação B2B no nível da conexão. Quando a compilação B2B é configurada para uma conexão, você pode ativar a pessoa para compilar a conta em conjuntos de dados de evento individuais nessa conexão.
 
-### Definir configurações de compilação B2B {#configure-b2b-stitching-settings}
+### Configurar pessoa B2B para configurações de compilação da conta {#configure-b2b-stitching-settings}
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_open_configuration"
@@ -154,22 +155,22 @@ Primeiro, ative e configure a compilação de conta B2B no nível de conexão. Q
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_person_identifier_namespace"
 >title="Namespace do identificador de pessoa"
->abstract="Selecione o namespace de identidade da pessoa mais relevante para seu relatório. Por exemplo, Email. Qualquer conjunto de dados de evento com a **[!UICONTROL compilação de Pessoa para Conta]** habilitada tem a ID de pessoa persistente elevada a este namespace de identificador de pessoa."
+>abstract="Selecione o namespace de identidade de pessoa mais relevante para seus relatórios. Por exemplo, Email. Qualquer conjunto de dados de evento com a **[!UICONTROL compilação de Pessoa para Conta]** habilitada tem a ID de pessoa persistente elevada a este namespace de identificador de pessoa."
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_person_to_account_dataset"
 >title="Conjunto de dados de pessoa para conta"
->abstract="Selecione o conjunto de dados de pesquisa que mapeia IDs de pessoa para IDs de conta."
+>abstract="Selecione o conjunto de dados de pesquisa que mapeia IDs de pessoas para IDs de contas."
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_person"
->title="ID da pessoa"
->abstract="Selecione o campo no conjunto de dados que contém IDs de pessoa. O namespace deste campo pode ser diferente ou igual ao namespace do identificador de pessoa selecionado. Se forem diferentes, os dois namespaces precisarão ser vinculados no gráfico de identidade."
+>title="ID de pessoa"
+>abstract="Selecione o campo no conjunto de dados que contém as IDs de pessoa. O namespace deste campo pode ser diferente ou igual ao namespace do identificador de pessoa selecionado. Se forem diferentes, os dois namespaces precisam ser vinculados no gráfico de identidade."
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_account"
->title="ID da Conta"
->abstract="Selecione o campo no conjunto de dados que contém os valores do identificador de conta exclusivo. As informações da ID da conta serão disponibilizadas nas linhas de qualquer conjunto de dados de evento com a **[!UICONTROL compilação de Pessoa para Conta]** habilitada."
+>title="ID de conta"
+>abstract="Selecione o campo no conjunto de dados que contém os valores do identificador exclusivo de conta. As informações da ID da conta serão disponibilizadas nas linhas de qualquer conjunto de dados de evento com a **[!UICONTROL compilação de Pessoa para Conta]** habilitada."
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_start_time"
@@ -183,27 +184,27 @@ Primeiro, ative e configure a compilação de conta B2B no nível de conexão. Q
 >abstract="Opcionalmente, selecione o campo que representa a data e a hora em que o mapeamento de pessoa para conta foi criado. Útil para cenários em que uma pessoa troca várias contas ao longo do tempo."
 
 
-1. No Customer Journey Analytics, navegue até **[!UICONTROL Conexões]** e [crie uma nova conexão](/help/connections/create-connection.md#create-a-connection) ou [edite uma conexão existente](/help/connections/create-connection.md#edit-a-connection).
+1. No Customer Journey Analytics, navegue até **[!UICONTROL Conexões]** e [crie uma nova conexão](/help/connections/create-connection.md#create-a-connection).
 
 1. Em **[!UICONTROL Configurações de conexão]**, defina a **[!UICONTROL ID Primária]** como ![Compilação](/help/assets/icons/Building.svg) **[!UICONTROL Conta]**.
 
-1. Selecione os **[!UICONTROL Contêineres opcionais]** que deseja usar na conexão B2B. Não é possível modificar a seleção desses containers após salvar uma configuração de compilação B2B.
+1. Selecione os **[!UICONTROL Contêineres opcionais]** que deseja usar na conexão B2B. Não é possível modificar a seleção desses contêineres depois de salvar uma pessoa B2B na configuração de compilação da conta.
 
 1. Selecione **[!UICONTROL Abrir configuração de compilação B2B]**.
 
-   ![Configuração de compilação de conta B2B](assets/b2b-account-stitching-configuration.png)
+   ![Configuração de compilação de conta B2B](../assets/b2b-account-stitching-configuration.png)
 
    >[!NOTE]
    >
-   >Uma configuração de compilação B2B configurada anteriormente para uma conexão não salva é indicada com **[!UICONTROL _alterações não salvas_]**. Você não pode modificar **[!UICONTROL Contêineres opcionais]** para uma configuração de compilação B2B configurada anteriormente.
+   >Uma pessoa B2B configurada anteriormente para configurar a compilação de conta para uma conexão não salva é indicada com **[!UICONTROL _Alterações não salvas_]**. Você não pode modificar **[!UICONTROL Contêineres opcionais]** de uma pessoa B2B configurada anteriormente para a configuração de compilação da conta.
 
 1. Na caixa de diálogo **[!UICONTROL Configuração de compilação B2B]**:
 
-   ![Configuração de compilação B2B](assets/b2b-stitching-configuration.png)
+   ![Configuração de compilação de pessoa B2B](../assets/b2b-stitching-configuration.png)
 
    1. Configurar a seção **[!UICONTROL Pessoa]**:
 
-      * Selecione um **[!UICONTROL Namespace de identificador de pessoa]**, por exemplo **[!UICONTROL Email]**, para o qual você deseja que qualquer ID de pessoa seja elevada. Este campo é obrigatório.
+      * Selecione o namespace de identidade da pessoa mais relevante para seu relatório, como Email. Qualquer conjunto de dados de evento com compilação de Pessoa para conta ativada tem a ID de pessoa persistente elevada para esse namespace de identificador de pessoa. Este campo é obrigatório.
 
    1. Configure a seção **[!UICONTROL Conta]** abaixo de **[!UICONTROL Pessoa para Conta]**.
 
@@ -222,16 +223,16 @@ Primeiro, ative e configure a compilação de conta B2B no nível de conexão. Q
 
    1. O indicador **[!UICONTROL _Alterações não salvas_]** é exibido ao lado do botão **Abrir configuração de compilação B2B** até que você [salve](#save) a conexão.
 
-### Habilite a compilação B2B em conjuntos de dados do evento
+### Permitir que a pessoa B2B contabilize a compilação em conjuntos de dados do evento
 
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_enable_person_to_account"
 >title="Habilitar compilação entre pessoa e conta"
->abstract="Se ativado, esse conjunto de dados usa a compilação de Pessoa B2B para Conta. Os valores de **[!UICONTROL ID de Pessoa Persistente]** serão elevados para os valores do **[!UICONTROL Namespace do identificador de pessoa]** configurado, em seguida, usados para pesquisar a ID da conta com base no conjunto de dados de pessoa para conta.<br/>Se desabilitado, este conjunto de dados não usa a compilação de Pessoa B2B para Conta e você precisa selecionar uma **[!UICONTROL ID de Conta]** necessária."
->additional-url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/stitching/b2b-account-stitching#configure-b2b-stitching-settings" text="Definir configurações de compilação B2B"
+>abstract="Se habilitada, esse conjunto de dados usa a compilação de Pessoa para Conta B2B. Os valores de **[!UICONTROL ID de Pessoa Persistente]** serão elevados para os valores do **[!UICONTROL Namespace do identificador de pessoa]** configurado, em seguida, usados para pesquisar a ID da conta com base no conjunto de dados de pessoa para conta.<br/>Se desabilitado, este conjunto de dados não usa a compilação de Pessoa B2B para Conta e você precisa selecionar uma **[!UICONTROL ID de Conta]** necessária."
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/b2b-account-stitching#configure-b2b-stitching-settings" text="Configurar pessoa B2B para configurações de compilação da conta"
 
-Depois de configurar a compilação B2B no nível da conexão, você deve ativar a compilação de conta B2B individualmente para cada conjunto de dados de evento que você deseja compilar.
+Depois de configurar a pessoa B2B para a compilação de conta no nível de conexão, você deve permitir que a pessoa B2B contabilize a compilação individualmente para cada conjunto de dados de evento que você deseja compilar.
 
 1. Nas configurações de Conexão, selecione **[!UICONTROL Adicionar conjuntos de dados]** ou abra as configurações para um conjunto de dados de evento existente.<br/>Consulte [Adicionar conjuntos de dados](/help/connections/create-connection.md#add-datasets) ou [Editar um conjunto de dados](/help/connections/create-connection.md#edit-a-dataset) para obter mais informações.
 
@@ -246,7 +247,7 @@ Quando **[!UICONTROL Habilitar identificação de Pessoa por Conta]** estiver **
 * A configuração de uma ID de pessoa é obrigatória. Essa ID de pessoa é usada para pesquisar a ID da conta com base no [conjunto de dados de pessoa para conta](#prerequisites).
 * A configuração de uma ID de conta é opcional.
 
-![Compilação de conta B2B no conjunto de dados do evento em](assets/b2b-event-dataset-stitching-on.png)
+![Compilação de conta B2B no conjunto de dados do evento em](../assets/b2b-event-dataset-stitching-on.png)
 
 >[!TAB Desligado]
 
@@ -255,21 +256,18 @@ Quando **[!UICONTROL Habilitar a compilação de Pessoa para Conta]** está **de
 * A configuração de uma ID de conta é obrigatória.
 * A configuração de uma ID de pessoa é opcional.
 
-![Compilação de conta B2B no conjunto de dados de evento desativada](assets/b2b-event-dataset-stitching-off.png)
-
+![Compilação de conta B2B no conjunto de dados de evento desativada](../assets/b2b-event-dataset-stitching-off.png)
 
 >[!ENDTABS]
 
 
-
-
 ### Salvar
 
-Depois de definir a configuração de compilação B2B e terminar de adicionar ou editar conjuntos de dados, selecione **[!UICONTROL Salvar]** para salvar a conexão.
+Depois de configurar a pessoa B2B para configuração de compilação de conta e terminar de adicionar ou editar conjuntos de dados, selecione **[!UICONTROL Salvar]** para salvar a conexão.
 
 >[!IMPORTANT]
 >
->Depois que uma conexão é salva, a configuração de compilação B2B se torna imutável. Para exibir suas configurações depois de salvar, selecione **Abrir configuração de compilação B2B**. Todos os campos aparecem em um estado somente leitura. Além disso, se o conjunto de dados usado para [mapeamento de pessoa para conta](#prerequisites) for excluído no Experience Platform, essa conexão será excluída.
+>Depois que uma conexão é salva, a configuração de compilação da pessoa B2B para conta se torna imutável. Para exibir suas configurações depois de salvar, selecione **Abrir configuração de compilação B2B**. Todos os campos aparecem em um estado somente leitura. Além disso, se o conjunto de dados usado para [mapeamento de pessoa para conta](#prerequisites) for excluído no Experience Platform, a configuração de compilação será excluída e a conexão entrará em um estado inválido, sinalizado com uma mensagem de aviso na interface do usuário.
 
 ## Agendamento de atualização de dados
 
@@ -288,7 +286,7 @@ Entidades B2B, como contas, IDs de conta e IDs de conta global adicionadas aos e
 
 >[!MORELIKETHIS]
 >
->* [Visão geral da compilação](overview.md)
->* [Configurar uma conexão para B2B](../connections/create-connection.md)
->* [Perguntas frequentes sobre compilação](faq.md)
+>* [Visão geral da compilação](../overview.md)
+>* [Configurar uma conexão para B2B](/help/connections/create-connection.md)
+>* [Perguntas frequentes sobre compilação](../faq.md)
 

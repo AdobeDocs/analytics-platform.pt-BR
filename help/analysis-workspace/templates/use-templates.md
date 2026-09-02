@@ -27,10 +27,10 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: e8f86da8d18cfa6a30e4a8330ae5492e9d0aa2f0
+source-git-commit: bac086b2636f835a5dc494b9cd05eb7b560f0bed
 workflow-type: tm+mt
-source-wordcount: 21213
-ht-degree: 98%
+source-wordcount: 21458
+ht-degree: 97%
 
 ---
 
@@ -153,17 +153,17 @@ Para acessar todos os modelos pré-criados disponíveis:
 
    * **[[!UICONTROL Mais popular]](#most-popular)**
 
-   * **[[!UICONTROL Web]** > **[!UICONTROL Engajamento]](#engagement)**
+   * **[!UICONTROL Web]** > **[[!UICONTROL Compromisso]](#web-engagement)**
 
-   * **[[!UICONTROL Web]** > **[!UICONTROL Conversão]](#web-conversion)**
+   * **[!UICONTROL Web]** > **[[!UICONTROL Conversão]](#web-conversion)**
 
-   * **[[!UICONTROL Web]** > **[!UICONTROL Público-alvo]](#web-audience)**
+   * **[!UICONTROL Web]** > **[[!UICONTROL Público]](#web-audience)**
 
-   * **[[!UICONTROL Web]** > **[!UICONTROL Aquisição]](#web-acquisition)**
+   * **[!UICONTROL Web]** > **[[!UICONTROL Aquisição]](#web-acquisition)**
 
-   * **[[!UICONTROL Dispositivos móveis]** > **[!UICONTROL Aplicativo móvel]](#mobile-mobile-app)**
+   * **[!UICONTROL Dispositivo móvel]** > **[[!UICONTROL Aplicativo móvel]](#mobile-mobile-app)**
 
-   * **[[!UICONTROL Dispositivos móveis]** > **[!UICONTROL Informações do dispositivo móvel]](#mobile-mobile-device-information)**
+   * **[!UICONTROL Dispositivo móvel]** > **[[!UICONTROL Informações do dispositivo móvel]](#mobile-mobile-device-information)**
 
    * **[[!UICONTROL Partição de tempo]](#time-parting)**
 
@@ -171,7 +171,13 @@ Para acessar todos os modelos pré-criados disponíveis:
 
    * **[[!UICONTROL Outros canais]](#other-channels)**
 
-   * **[[!UICONTROL AJO]](#ajo)**
+   * **[[!UICONTROL Journey Optimizer]](#ajo-templates)**
+
+   * **[[!UICONTROL Brand Concierge]](#brand-concierge)**
+
+   * **[[!UICONTROL Mix Modeler]](#mix-modeler)**
+
+
 
 ### Mais popular {#most-popular}
 
@@ -409,6 +415,12 @@ Estes são os modelos disponíveis:
 >abstract="**Isso pode ajudar você** a saber como seu conteúdo está se saindo em um nível granular. É possível analisar o desempenho de ativos individuais ou atributos específicos. O Content Analytics usa IA para gerar atributos automaticamente e marcar seu conteúdo com eles. [Mais Informações](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/content-analytics/content-analytics).<br/>**Com base no que aprender, você poderá** fazer uma série de coisas, como promover ativos de alto desempenho na sua página inicial, personalizar conteúdo para segmentos específicos a fim de incluir atributos de alto desempenho ou eliminar conteúdo que está próximo de se tornar obsoleto."
 
 
+
+>[!CONTEXTUALHELP]
+>id="template--content-analytics-paid-media"
+>title="Saiba qual conteúdo de mídia paga e atributos de conteúdo estão tendo o melhor desempenho."
+>abstract="**Isso pode ajudá-lo** a saber mais sobre o desempenho granular do conteúdo de mídia paga. Você pode analisar o alcance, o envolvimento, os gastos e a eficiência da mídia paga em redes, contas, campanhas, experiências e ativos. As métricas e dimensões nesse painel permanecem intencionalmente no resumo de ativos de mídia paga. Não combine conjuntos de dados de resumo com dados do evento.  [Mais Informações](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/content-analytics/content-analytics).<br/>**Com base no que você aprende, é possível** fazer várias coisas, como focalizar novamente em como você gasta dinheiro em seus canais de mídia pagos, gastar mais dinheiro em campanhas de baixo desempenho ou gastar mais dinheiro em campanhas com ativos de alto desempenho."
+
 Estes são os modelos disponíveis:
 
 &#x200B;| Nome do modelo | Por que usar este modelo <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
@@ -427,7 +439,8 @@ Estes são os modelos disponíveis:
 | **Páginas de entrada** | Veja as principais páginas que as pessoas acessam quando visitam o site pela primeira vez. <p>**Isso pode ajudar** a saber quais páginas estão gerando mais tráfego para o site ou entender melhor as primeiras impressões que visitantes têm sobre o site.</p><p>**Com base no que aprender, você poderá** fazer várias coisas, como otimizar a experiência inicial que as pessoas têm no site ou garantir que as páginas que as pessoas veem ao entrar no site sejam acolhedoras e forneçam os links necessários para outras áreas do site.</p><p>Este modelo usa a métrica “Sessões”. Ele também usa a visualização de barras e a visualização de tabela de forma livre.</p> |
 | **Páginas de saída** | Confira as principais páginas que as pessoas acessam imediatamente antes de sair do site.<p>**Isso pode ajudar** a entender melhor quais páginas estão afastando as pessoas do site. </p><p>**Com base no que aprender, você poderá** fazer várias coisas, como atualizar as páginas de saída comuns para otimizar a experiência que as pessoas têm antes de sair ou incluir conteúdo e links para incentivá-las a permanecerem no site.</p><p>Este modelo usa a métrica “Sessões”. Ele também usa a visualização de barras e a visualização de tabela de forma livre.</p> |
 | **Visão geral de uso do produto** | Visualize como o produto Customer Journey Analytics é usado em sua organização. <p>**Isso pode ajudar** a entender melhor quantas pessoas estão usando o Customer Journey Analytics, com que frequência o usam e as tendências de uso ao longo do tempo. Você também pode ver o número de projetos que estão sendo criados, detalhes sobre esses projetos (como quais componentes, visualizações e painéis são usados com mais frequência) e muitas outras estatísticas de uso.</p><p>**Com base no que aprender, você poderá** fazer várias coisas, como excluir projetos ou componentes não utilizados ou fornecer treinamento a usuários para recursos populares.</p> |
-| **Content Analytics** | Saiba qual conteúdo e atributos de conteúdo apresentam melhor desempenho.<p>**Isso pode ajudar você** a saber como seu conteúdo está se saindo em um nível granular. É possível analisar o desempenho de ativos individuais ou atributos específicos. O Content Analytics usa IA para gerar atributos automaticamente e marcar seu conteúdo com eles. Consulte [Content Analytics](/help/content-analytics/content-analytics.md){target="_blank"} para mais informações.</p><p>**Com base no que aprender, você poderá** fazer uma série de coisas, como promover ativos de alto desempenho na sua página inicial, personalizar conteúdo para segmentos específicos a fim de incluir atributos de alto desempenho ou eliminar conteúdo que está próximo de se tornar obsoleto.</p> |
+| **Content Analytics** | Saiba qual conteúdo e atributos de conteúdo apresentam melhor desempenho.<p>**Isso pode ajudar você** a saber como seu conteúdo está se saindo em um nível granular. É possível analisar o desempenho de ativos individuais ou atributos específicos. O Content Analytics usa IA para gerar atributos automaticamente e marcar seu conteúdo com eles. Consulte [Content Analytics](/help/content-analytics/content-analytics.md) para mais informações.</p><p>**Com base no que aprender, você poderá** fazer uma série de coisas, como promover ativos de alto desempenho na sua página inicial, personalizar conteúdo para segmentos específicos a fim de incluir atributos de alto desempenho ou eliminar conteúdo que está próximo de se tornar obsoleto.</p> |
+| **Content Analytics de mídia paga** | Saiba qual conteúdo de mídia paga e atributos de conteúdo estão tendo o melhor desempenho.<p>**Isso pode ajudá-lo** a saber mais sobre o desempenho granular do conteúdo de mídia paga. Você pode analisar o alcance, o envolvimento, os gastos e a eficiência da mídia paga em redes, contas, campanhas, experiências e ativos. As métricas e dimensões nesse painel permanecem intencionalmente no resumo de ativos de mídia paga. Não combine conjuntos de dados de resumo com dados do evento. Consulte [Content Analytics](/help/content-analytics/content-analytics.md) para mais informações.<p/><p>**Com base no que você aprende, é possível** fazer várias coisas, como focalizar novamente em como você gasta dinheiro em seus canais de mídia pagos, gastar mais dinheiro em campanhas de baixo desempenho ou gastar mais dinheiro em campanhas com ativos de alto desempenho.</p> |
 
 ### Web: conversão {#web-conversion}
 
@@ -1051,7 +1064,7 @@ Estes são os modelos disponíveis:
 | **Pesquisa** | Visualize o engajamento dos usuários referente às suas pesquisas. Visualize a quantidade de inícios e conclusões, as principais perguntas e respostas, e a quantidade de participantes novatos em comparação com os recorrentes.<p>**Isso pode ajudar** a entender melhor os níveis de engajamento e a taxa de sucesso das suas pesquisas.</p><p>**Com base nessas informações, você pode** fazer várias coisas, como ajustar as pesquisas futuras para obter uma participação maior.</p><p>Este modelo usa as métricas Usuários, Eventos, Inícios de pesquisas, Conclusões de pesquisas e Taxa de conclusão de pesquisas.</p> |
 | **Visão geral de uso do produto** | Veja como sua organização usa o Customer Journey Analytics.<p>**Isso pode ajudar** a entender melhor quantas pessoas na organização usam o Customer Journey Analytics, a frequência de uso e as tendências desses dados ao longo do tempo. Também é possível ver o número de projetos criados e detalhes sobre esses projetos. Veja quais componentes, visualizações e painéis são usados com mais frequência, entre outras estatísticas de uso. [Saiba mais](/help/tools/product-usage/usage-overview.md)</p><p>**Com base no que aprender, você poderá** fazer várias coisas, como excluir projetos ou componentes não utilizados ou fornecer treinamento a usuários para recursos populares.</p> |
 
-### Journey Optimizer {#AJO-templates}
+### Journey Optimizer {#ajo-templates}
 
 <!--CJA only-->
 
@@ -1139,13 +1152,7 @@ Estes são os modelos disponíveis:
 | [!UICONTROL **Atividade de grupos de compra B2B**] | Visualize a atividade de grupos de compra em cada conta para informar as opções de marketing por conta e por grupo de compra.<p>**Isso pode ajudar** a visualizar quais grupos de compra e quais pessoas dentro desses grupos estão mais engajadas, destacando as lacunas na participação dos grupos.</p><p>**Com base no que você aprender, será possível**, entre outras coisas, tentar engajar mais as pessoas em grupos de compra que parecem não estar engajados.</p> |
 
 
-### Modelos do Mix Modeler {#mix-modeler-templates}
-
-Estes são os modelos disponíveis:
-
-&#x200B;| Nome do modelo | Por que usar este modelo <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
-| --- | --- |
-| [!UICONTROL **Insights do modelo incremental do Mix Modeler**] | Veja insights de modelos selecionados gerados pelo Mix Modeler.<p>**Isso pode ajudar** a entender melhor os insights incrementais dos modelos gerados no Mix Modeler. <p>**Com base nesses insights**, é possível:<ul><li>Visualizar e quantificar o impacto das atividades de marketing da organização.</li><li>Identificar os canais de alto desempenho.</li><li>Identificar os canais que podem precisar de otimização.</li></ul></p> |
+### Mix Modeler {#mix-modeler-templates}
 
 <!-- CJA only -->
 
@@ -1153,3 +1160,13 @@ Estes são os modelos disponíveis:
 >id="template--mixmodeler-incremental-models-insights"
 >title="Veja insights de modelos selecionados gerados pelo Mix Modeler."
 >abstract="**Isso pode ajudar** a entender melhor os insights incrementais dos modelos gerados no Mix Modeler. <br/>**Com base nesses insights**, é possível:<ul><li>Visualizar e quantificar o impacto das atividades de marketing da organização.</li><li>Identificar os canais de alto desempenho.</li><li>Identificar os canais que podem precisar de otimização.</li></ul>"
+
+Estes são os modelos disponíveis:
+
+&#x200B;| Nome do modelo | Por que usar este modelo <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
+| --- | --- |
+| [!UICONTROL **Insights do modelo incremental do Mix Modeler**] | Veja insights de modelos selecionados gerados pelo Mix Modeler.<p>**Isso pode ajudar** a entender melhor os insights incrementais dos modelos gerados no Mix Modeler. <p>**Com base nesses insights**, é possível:<ul><li>Visualizar e quantificar o impacto das atividades de marketing da organização.</li><li>Identificar os canais de alto desempenho.</li><li>Identificar os canais que podem precisar de otimização.</li></ul></p> |
+
+
+
+
