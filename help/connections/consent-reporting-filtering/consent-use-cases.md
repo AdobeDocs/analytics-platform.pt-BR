@@ -17,9 +17,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 7bb16378fc8813ca126cb786c5d36bf9daa0fe7d
+source-git-commit: 4661a066f90991e6fb149c6909ef4a9f75cf02ac
 workflow-type: tm+mt
-source-wordcount: 585
+source-wordcount: 590
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Entenda quantos visitantes correspondem a cada política de consentimento antes 
 
 1. Crie uma configuração e selecione a sandbox, o Conjunto de dados de perfil e a conexão que contêm seus dados de associação de política de consentimento.
 
-1. Deixe as opções de filtragem do **[!UICONTROL Analytics]** e do **[!UICONTROL Data science]** desativadas.
+1. Deixe os **[!UICONTROL dados do Analytics]** e os **[!UICONTROL dados da ciência de dados]** desativados.
 
 1. No Analysis Workspace, crie uma tabela de forma livre com a dimensão **[!UICONTROL Nome da política]** e a métrica **[!UICONTROL Visitantes com consentimento]** para ver a cobertura por política.
 
@@ -70,7 +70,7 @@ Certifique-se de que os relatórios padrão incluam somente visitantes que conse
 
 1. Crie ou edite uma configuração para a conexão que alimenta os relatórios de análise.
 
-1. Habilitar a opção de filtragem **[!UICONTROL Analytics]**.
+1. Habilite a opção de filtragem **[!UICONTROL Dados do Analytics]**.
 
 1. Confirme a configuração. A partir desse ponto, o Customer Journey Analytics assimilará os dados de um visitante somente se ele corresponder a todas as políticas de consentimento que se aplicam à ação de marketing do Analytics.
 
@@ -86,7 +86,7 @@ Aplique diferentes requisitos de consentimento a relatórios padrão e casos de 
 
 1. Crie ou edite uma configuração para a conexão relevante.
 
-1. Habilite a opção **[!UICONTROL Analytics]**, a opção **[!UICONTROL Data science]** ou ambas, dependendo dos requisitos de consentimento para cada caso de uso.
+1. Habilite a opção **[!UICONTROL Dados do Analytics]**, **[!UICONTROL Dados de ciência de dados]** ou ambos, dependendo dos requisitos de consentimento para cada caso de uso.
 
 1. Confirme a configuração. O Customer Journey Analytics avalia as políticas de consentimento que se aplicam a cada ação de marketing ativada de maneira independente.
 

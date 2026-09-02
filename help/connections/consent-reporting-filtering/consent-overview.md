@@ -19,16 +19,16 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 7bb16378fc8813ca126cb786c5d36bf9daa0fe7d
+source-git-commit: 4661a066f90991e6fb149c6909ef4a9f75cf02ac
 workflow-type: tm+mt
-source-wordcount: 1060
-ht-degree: 3%
+source-wordcount: 1311
+ht-degree: 1%
 
 ---
 
 # Visão geral do relatório e da filtragem de consentimento
 
-O relatório e a filtragem de consentimento usam os dados de associação à política de consentimento armazenados em seus conjuntos de dados de perfil do Adobe Experience Platform para ajudar você a relatar o consentimento do visitante e, opcionalmente, excluir visitantes que não consentiram antes que seus dados sejam assimilados na Customer Journey Analytics.
+O relatório e a filtragem de consentimento usam os dados de associação da política de consentimento armazenados nos conjuntos de dados do Perfil do Adobe Experience Platform para ajudar você a relatar o consentimento do visitante. Além disso, você pode optar por excluir visitantes que não consentiram antes que seus dados sejam assimilados na Customer Journey Analytics.
 
 ## Pré-requisitos
 
@@ -55,7 +55,23 @@ O diagrama a seguir e a tabela associada mostram uma representação de alto ní
 
 ## Relatório de consentimento vs. filtragem
 
-Os relatórios e a filtragem de consentimento são dois recursos separados. Você pode ativar os relatórios de consentimento por conta própria ou ativar os relatórios e a filtragem juntos.
+Os relatórios e a filtragem de consentimento são dois recursos separados. **Relatórios de consentimento** permite que você use o Analysis Workspace para informar quais visitantes correspondem às várias políticas de consentimento configuradas nos conjuntos de dados do seu Perfil do Experience Platform. **A filtragem por consentimento** instrui o Customer Journey Analytics a excluir visitantes que não consentiram no momento da assimilação.
+
+Você pode ativar o relatório de consentimento ou a filtragem individualmente, ou usar ambos juntos. Habilitar o relatório de consentimento sozinho é suficiente para muitos casos de uso de negócios.
+
+As informações a seguir descrevem os motivos para usar cada configuração:
+
+* **Mais comuns:**
+
+  **Usar dados de consentimento para relatórios (sem filtragem)**: essa configuração é útil quando você deseja analisar a associação à política de consentimento no Analysis Workspace e não é necessário excluir nenhum dado de visitante da assimilação.
+
+* **Menos comum:**
+
+  **Usar dados de consentimento para relatórios e filtrar dados de consentimento**: essa configuração é útil quando você deseja analisar dados de associação de política de consentimento na Analysis Workspace e quando sua organização também exige que você exclua dados de visitantes que não consentiram no momento da assimilação.
+
+* **Incomum:**
+
+  **Filtrar dados de consentimento (sem relatórios)**: esta configuração é incomum, mas pode ser útil quando sua organização exige que você exclua dados de visitantes que não consentiram no momento da assimilação, mas você não precisa relatar sobre outras opções de consentimento que não fazem parte dos dados filtrados. Por exemplo, os requisitos de conformidade de sua organização podem exigir que você filtre dados com base no consentimento, sem exigir a criação e a manutenção do conjunto de dados de pesquisa de política de consentimento que os relatórios usam.
 
 ### Relatório de consentimento
 
@@ -79,10 +95,12 @@ Considere o seguinte ao usar a filtragem de consentimento:
 
   Uma ação de marketing representa uma categoria de uso de dados. O Customer Journey Analytics determina quais políticas de consentimento se aplicam a cada ação de marketing e você habilita a filtragem de cada ação de marketing independentemente ao [criar sua configuração](/help/connections/consent-reporting-filtering/consent-configure.md#create-a-configuration).
 
+  As ações de marketing estão vinculadas aos rótulos e políticas de uso de dados configurados no Experience Platform. Para obter mais informações, consulte [Rótulos, políticas e ações de marketing](/help/data-views/data-governance.md).
+
   | Ação de marketing | Descrição |
-  |---------|----------|
-  | **[!UICONTROL Dados do Analytics]** | Relatórios padrão do Customer Journey Analytics no Analysis Workspace. |
-  | **[!UICONTROL Dados de ciência de dados]** | Casos de uso de análise avançada, aprendizado de máquina e ciência de dados. |
+  | --------- | ---------- |
+  | **[!UICONTROL Dados do Analytics]** | Filtrar dados usados para relatórios padrão do Customer Journey Analytics no Analysis Workspace. |
+  | **[!UICONTROL Dados de ciência de dados]** | Filtre dados usados para análises avançadas, aprendizado de máquina e casos de uso de ciência de dados. |
 
 * Os dados de um visitante são assimilados somente se o visitante corresponder a **todas** as políticas de consentimento aplicáveis. Se alguma política aplicável não for aplicada ao visitante, os dados dele serão excluídos.
 

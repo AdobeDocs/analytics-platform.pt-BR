@@ -27,9 +27,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 89f0a1e54662c59d474b1fba28eb8420612e9243
+source-git-commit: e8f86da8d18cfa6a30e4a8330ae5492e9d0aa2f0
 workflow-type: tm+mt
-source-wordcount: 21140
+source-wordcount: 21213
 ht-degree: 98%
 
 ---
@@ -677,6 +677,7 @@ Estes são os modelos disponíveis:
 
 &#x200B;| Nome do modelo | Por que usar este modelo <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
+| [!UICONTROL **Visão geral da política de consentimento**] | Exibir visitantes com base nos dados de associação à política de consentimento da Adobe Experience Platform.<p>**Isso pode ajudá-lo** como ponto de partida para relatórios sobre associação à política de consentimento do visitante. Quando uma visualização de dados é configurada para relatórios de consentimento, o Customer Journey Analytics disponibiliza automaticamente um modelo de análise de política de consentimento no Analysis Workspace. <br/>**Com base no que você aprende, é possível** fazer várias coisas, como excluir visitantes que não consentiram dos relatórios de análise.</p> |
 | **[!UICONTROL Visão geral do público-alvo]** | Veja quais públicos-alvo são representados entre as pessoas que visitam seu site.<p>**Isso pode ajudar** a entender melhor as informações gerais sobre os públicos-alvo, onde eles se originaram (RTCDP, Customer Journey Analytics e assim por diante), a sobreposição de públicos-alvo e muito mais.</p><p>**Com base no que aprender, é possível** fazer várias coisas, como usar os dados para direcionar os esforços de campanhas de marketing para esses públicos específicos ou criar experiências personalizadas para clientes que pertencem a vários públicos.</p><p>Esse modelo usa as dimensões Nome do público-alvo, Origem do público-alvo, Nome do público-alvo encerrado e Origem do público-alvo encerrado.</p><p>Para obter mais informações, consulte [Analisar públicos-alvo da Experience Platform na Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).</p> |
 | [!UICONTROL **Visitantes novos versus recorrentes**] | Veja uma comparação entre novos visitantes e visitantes recorrentes. <p>**Isso pode ajudar** a entender melhor a eficácia do site na retenção da fidelidade do cliente ou a taxa com que você está adquirindo novos clientes.</p><p>**Com base no que aprender, você poderá** fazer várias coisas, como oferecer incentivos para compras futuras a visitantes novos, incentivando o seu retorno.</p><!-- This template uses the --> |
 | **ID de pessoa** | Visualize o comportamento individual de usuários em vários canais.<p>**Isso pode ajudar** a entender melhor a jornada completa do cliente e as interações em vários pontos de contato.</p><p>**Com base no que aprender, você poderá** fazer várias coisas, como personalizar as campanhas de marketing para direcionar melhor as preferências dos usuários.</p><!-- This template uses the --> |
