@@ -6,23 +6,11 @@ feature: Basics
 exl-id: 9984200a-71e6-4697-b46f-f53e8d4c507f
 role: Admin
 TQID: https://experienceleague.adobe.com/KSyql1S40ikIGYXmnvqaTtApViuAgVaPRqfVu-nk-8k
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: c38ed341-fab2-46df-9d72-88d8166edebb
-  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-  - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: c38ed341-fab2-46df-9d72-88d8166edebbid: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: e1e0219c-f879-479f-8427-888ed2a6e9c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 2044
@@ -256,7 +244,7 @@ Para criar um conector de origem da API HTTP:
 
 Você pode copiar o URL do ponto de acesso de transmissão e usá-lo para configurar seu aplicativo de fidelidade para transmitir dados para o conjunto de dados de fidelidade da Adobe Experience Platform.
 
-Consulte [Criar uma conexão de transmissão da API HTTP usando a interface do usuário](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html?lang=pt-BR) para obter um tutorial muito mais abrangente que explique:
+Consulte [Criar uma conexão de transmissão da API HTTP usando a interface do usuário](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html) para obter um tutorial muito mais abrangente que explique:
 
 - como usar autenticação,
 - como mapear dados quando os dados recebidos não são compatíveis com o esquema XDM e
@@ -297,11 +285,11 @@ Para criar sua conexão:
 
    - Para cada conjunto de dados:
 
-      - Selecione uma [!UICONTROL ID de pessoa] a partir das identidades disponíveis definidas nos esquemas de conjunto de dados da Adobe Experience Platform.
+     - Selecione uma [!UICONTROL ID de pessoa] a partir das identidades disponíveis definidas nos esquemas de conjunto de dados da Adobe Experience Platform.
 
-      - Selecione a fonte de dados correta na lista [!UICONTROL Tipo de fonte de dados]. Se você especificar **[!UICONTROL Outros]**, em seguida, adicione uma descrição para a fonte de dados.
+     - Selecione a fonte de dados correta na lista [!UICONTROL Tipo de fonte de dados]. Se você especificar **[!UICONTROL Outros]**, em seguida, adicione uma descrição para a fonte de dados.
 
-      - Definir **[!UICONTROL Importar todos os novos dados]** e **[!UICONTROL Preenchimento retroativo de conjunto de dados com dados existentes]** de acordo com suas preferências.
+     - Definir **[!UICONTROL Importar todos os novos dados]** e **[!UICONTROL Preenchimento retroativo de conjunto de dados com dados existentes]** de acordo com suas preferências.
 
      ![Configurar conjuntos de dados](./assets/cja-connections-3.png)
 

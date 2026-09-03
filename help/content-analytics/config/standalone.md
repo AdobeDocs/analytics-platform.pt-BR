@@ -6,29 +6,15 @@ feature: Content Analytics
 role: Admin
 exl-id: 35d63b7d-f35a-4a88-ae14-96724d32a931
 TQID: https://experienceleague.adobe.com/gWxcD93bl5qrSNaMf1CJF4yoIUrAg6qUF8b-4RXLquQ
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
-subfeature_v2:
-  - id: a67cb189-a535-41f6-afa2-448f39c4759f
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12b
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: d76b9e53-27fb-4597-933f-419cc0dd46db
+subfeature_v2: id: a67cb189-a535-41f6-afa2-448f39c4759f
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b23e006f-0a29-4f1d-8fd0-77aa56f3d12bid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: eddd9b14-83bd-4ff4-9072-54a4a484abb7id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: d9715c3da9893e1c47b702acb4daef5e666bedd7
 workflow-type: tm+mt
 source-wordcount: 2631
-ht-degree: 9%
+ht-degree: 10%
 
 ---
 
@@ -60,8 +46,8 @@ Este guia usa vários termos técnicos, do Experience Platform e do Customer Jou
 | **Conexão** | [Conexões](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-connections/overview) definem quais conjuntos de dados do Experience Platform são assimilados. Uma conexão define o link entre seu conjunto de dados (em que os dados são armazenados no AEP) e o Customer Journey Analytics (em que você os analisa). Uma conexão disponibiliza os dados coletados para os relatórios. |
 | **Visualização de dados** | Uma [visualização de dados](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-dataviews/data-views) é um container que permite determinar como interpretar dados de uma conexão. Uma visualização de dados especifica todas as dimensões e métricas disponíveis para você criar relatórios. Uma visualização de dados é como uma configuração que determina as linhas e colunas disponíveis para você usar na análise. |
 | **Analysis Workspace** | O [Analysis Workspace](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-workspace/home) é uma interface de navegador de arrastar e soltar usada para criar relatórios e análises do Content Analytics. |
-| **Experiência** | No Content Analytics, uma [experiência](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/content-analytics/content-analytics#terminology) se refere a todo o conteúdo de texto em uma página da Web que pode ser capturado e analisado com base no URL da página. |
-| **Ativo** | No Content Analytics, um [ativo](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/content-analytics/content-analytics#terminology) é um conteúdo individual e exclusivo, como uma imagem. |
+| **Experiência** | No Content Analytics, uma [experiência](https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/content-analytics#terminology) se refere a todo o conteúdo de texto em uma página da Web que pode ser capturado e analisado com base no URL da página. |
+| **Ativo** | No Content Analytics, um [ativo](https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/content-analytics#terminology) é um conteúdo individual e exclusivo, como uma imagem. |
 
 
 ## Visão geral da configuração
@@ -111,15 +97,15 @@ Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Gerenciar u
 Você precisa ser um administrador de produto dos seguintes produtos e perfis de produto para o Content Analytics independente:
 
 * Adobe Experience Platform
-   * AEP-Padrão-Todos-os-Usuários (o perfil padrão para acessar a sandbox de produção)
+  * AEP-Padrão-Todos-os-Usuários (o perfil padrão para acessar a sandbox de produção)
 
 * Coleção de dados da Adobe Experience Platform
-   * Acesso a Todos os Dados da Coleção de Dados Padrão
+  * Acesso a Todos os Dados da Coleção de Dados Padrão
 
 * Adobe Experience Platform Privacy Service
 
 * Customer Journey Analytics (Personalizado)
-   * Customer Journey Analytics (ou qualquer outro perfil de produto provisionado padrão)
+  * Customer Journey Analytics (ou qualquer outro perfil de produto provisionado padrão)
 
 Você define o acesso de administrador de produto por meio da Admin Console:
 
@@ -157,31 +143,31 @@ Para o Content Analytics, é necessário verificar se os seguintes recursos e pe
 
 * Função de Produção padrão de acesso integral
 
-   * Coleta de dados
-      * Exibir fluxos de dados
-      * Gerenciar fluxos de dados
+  * Coleta de dados
+    * Exibir fluxos de dados
+    * Gerenciar fluxos de dados
 
-   * Gerenciamento de dados
-      * Visualizar conjuntos de dados
-      * Gerenciar conjuntos de dados
+  * Gerenciamento de dados
+    * Visualizar conjuntos de dados
+    * Gerenciar conjuntos de dados
 
-   * Modelagem de dados
-      * Visualizar esquemas
-      * Gerenciar esquemas
-      * Gerenciar metadados de identidade
+  * Modelagem de dados
+    * Visualizar esquemas
+    * Gerenciar esquemas
+    * Gerenciar metadados de identidade
 
 
 * Função Administradores de sandbox
 
-   * Sandboxes
-      * Prod
-      * (qualquer outra sandbox que você deseja usar para o Content Analytics)
+  * Sandboxes
+    * Prod
+    * (qualquer outra sandbox que você deseja usar para o Content Analytics)
 
-   * Administração de sandbox
-      * Gerenciar pacotes
-      * Gerenciar sandboxes
-      * Redefinir sandbox
-      * Exibir sandbox
+  * Administração de sandbox
+    * Gerenciar pacotes
+    * Gerenciar sandboxes
+    * Redefinir sandbox
+    * Exibir sandbox
 
 
 Na interface de Permissões, é possível verificar as funções e as permissões associadas. A interface também mostra quais usuários pertencem à função.
@@ -217,21 +203,21 @@ O Customer Journey Analytics não oferece suporte ao controle de acesso baseado 
 Para o Content Analytics, é necessário verificar se as seguintes permissões de perfil de produto do Customer Journey Analytics estão incluídas:
 
 * Visualizações de dados
-   * Todas as visualizações de dados disponíveis.
+  * Todas as visualizações de dados disponíveis.
 
 * Ferramentas de relatório
-   * Criação de métricas calculadas
-   * Criação de segmentos
-   * Criação de anotação
-   * Acesso aos logs de auditoria
-   * Compartilhar links do projeto com qualquer pessoa
-   * Previsão
-   * Assistente de IA: conhecimento do produto
-   * Data Insights Agent
-   * Legendas inteligentes
+  * Criação de métricas calculadas
+  * Criação de segmentos
+  * Criação de anotação
+  * Acesso aos logs de auditoria
+  * Compartilhar links do projeto com qualquer pessoa
+  * Previsão
+  * Assistente de IA: conhecimento do produto
+  * Data Insights Agent
+  * Legendas inteligentes
 
 * Ferramentas de visualização de dados
-   * Exportar tabela completa
+  * Exportar tabela completa
 
 Para verificar e atualizar essas permissões para o Customer Journey Analytics:
 

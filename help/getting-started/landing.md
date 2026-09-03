@@ -5,16 +5,10 @@ role: User, Admin
 feature: Basics
 exl-id: 65c7bc26-7160-4bba-b764-5b0fa8686fca
 TQID: https://experienceleague.adobe.com/yj0864tQCuKNQocyhuqyi-N647uoy2IeqhT9RHmrRK0
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 source-git-commit: 0145475e18cfbc3ae3a83e5e3838cdec02b57bda
 workflow-type: tm+mt
 source-wordcount: 680
@@ -37,7 +31,7 @@ A landing page do Customer Journey Analytics inclui as seguintes subguias:
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Página de destino no Analysis Workspace](https://experienceleague.adobe.com/pt-br/docs/customer-journey-analytics-learn/tutorials/cja-basics/customer-journey-analytics-landing-page){target="_blank"} para assistir a um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Página de destino no Analysis Workspace](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/cja-basics/customer-journey-analytics-landing-page){target="_blank"} para assistir a um vídeo de demonstração.
 
 {{videoaa}}
 
@@ -114,7 +108,7 @@ The available columns are:
 | [!UICONTROL Create new] | Opens the project modal where you can create a Workspace project or a Mobile scorecard or open a company template.  |
 | [!UICONTROL Show less<br> Show more] | Toggles between not showing and showing the banner: ![Top banner](assets/top-banner.png) |
 | [!UICONTROL Workspace project] | Creates a blank [Workspace project](/help/analysis-workspace/home.md) for you to  design and build. |
-| [!UICONTROL Mobile scorecard] | Creates a blank [mobile scorecard](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/curator.html?lang=pt-BR) for you to design and build. |
+| [!UICONTROL Mobile scorecard] | Creates a blank [mobile scorecard](https://experienceleague.adobe.com/docs/analytics/analyze/mobapp/curator.html) for you to design and build. |
 | [!UICONTROL Open Training Tutorial] | Opens the Workspace training tutorial that guides you through the process of building a new starter project in a step-by-step tutorial.|
 | [!UICONTROL Open release notes] | Opens the Adobe Analytics section of the latest CX Enterprise release notes. |
 | Filter icon | Filters by tags, report suites, owners, types, and other filters (Mine, Shared with me, Favorites, and Approved)  |
@@ -150,8 +144,8 @@ A página [!UICONTROL **Caminhos de aprendizagem**] oferece os seguintes recurso
 * **Filtrar conteúdo:** use o recurso ![Filtrar](/help/assets/icons/Filter.svg) para separar o conteúdo de aprendizado por **[!UICONTROL tipo]** (**[!UICONTROL Documento]**, **[!UICONTROL Vídeo]** e **[!UICONTROL Tours e tutoriais]**) e **[!UICONTROL nível de experiência]** (**[!UICONTROL Iniciante]**, **[!UICONTROL Intermediário]** ou **[!UICONTROL Avançado]**).
 * **Monitorar progresso:** após selecionar um conteúdo, uma tag de ![Marca de seleção de círculo](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL visualizado]** é exibida. Essa tag ajuda a monitorar o progresso pelo conteúdo de aprendizagem. É possível selecionar a tag ![Marca de seleção de círculo](/help/assets/icons/CheckmarkCircle.svg) **[!UICONTROL visualizado]** para removê-la de um conteúdo.
 * **Exibir conteúdo adicional:** ao assistir a qualquer vídeo, selecione **[!UICONTROL Saiba mais]** para ver o conteúdo da documentação relacionada na Experience League. Ou, na página Aprendizagem, selecione uma das seguintes opções para exibir o conteúdo adicional:
-   * **[!UICONTROL Visitar o YouTube]:** veja a lista de reprodução completa do Analysis Workspace no YouTube.
-   * [!UICONTROL **Visitar a Experience League**]: veja o conjunto completo da documentação do Customer Journey Analytics na Experience League.
+  * **[!UICONTROL Visitar o YouTube]:** veja a lista de reprodução completa do Analysis Workspace no YouTube.
+  * [!UICONTROL **Visitar a Experience League**]: veja o conjunto completo da documentação do Customer Journey Analytics na Experience League.
 * **Conceitos básicos para novos usuários:** o tour [!UICONTROL Aprendizado dos conceitos básicos do espaço de trabalho] é recomendado para novos usuários. Esse tour leva você diretamente ao espaço de trabalho e explica sobre as ações mais comuns. Também é possível revisitar esse tour a qualquer momento no espaço de trabalho por meio da dica de ferramenta do cabeçalho do [painel de forma livre](/help/analysis-workspace/c-panels/freeform-panel.md) ou de um [painel em branco](/help/analysis-workspace/c-panels/blank-panel.md).
 
 ### Atualizar para o Customer Journey Analytics

@@ -5,19 +5,11 @@ feature: Panels
 exl-id: 09ebc3af-34ac-4f1f-8a5d-90da008f8697
 role: User
 TQID: https://experienceleague.adobe.com/G2HFW3lyH16Hh9IGbBgX85eyO0O9i56-dJeK-LqBPJw
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: bc7a5a86-1a70-451f-985c-037b65f091d1id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 1166
@@ -39,7 +31,7 @@ ht-degree: 88%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta o painel Quick insights no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**&#x200B;_.<br/>_Consulte o [painel Quick insights](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/panels/quickinsight) da versão_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
+_Este artigo documenta o painel Quick insights no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**_.<br/>_Consulte o [painel Quick insights](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/panels/quickinsight) da versão_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 
@@ -139,13 +131,13 @@ Outras dicas úteis aparecerão no [!UICONTROL Criador de insights rápidos] e a
 
   ![Resultados do Criador de insights rápidos](assets/qibuilder-result.png)
 
-   * **[!UICONTROL Analisar]** a dimensão **[!UICONTROL detalhada por]**: permite usar até três níveis de detalhamento em dimensões para encontrar os dados específicos dos quais precisa. Consulte ➊, ➋ e ➌.
+  * **[!UICONTROL Analisar]** a dimensão **[!UICONTROL detalhada por]**: permite usar até três níveis de detalhamento em dimensões para encontrar os dados específicos dos quais precisa. Consulte ➊, ➋ e ➌.
 
-   * Adicionar mais métricas **[!UICONTROL por]**: permite adicionar um máximo de duas métricas. Consulte ➍ e ➎.
+  * Adicionar mais métricas **[!UICONTROL por]**: permite adicionar um máximo de duas métricas. Consulte ➍ e ➎.
 
-   * **[!UICONTROL segmentar por]**: você pode adicionar mais 2 segmentos. Por exemplo, adicione Reservas como um segmento e combine-o com os segmentos Pessoas que reservam com frequência e Primeiro voo para fazer uma comparação. Consulte ➏, ➐ e ➑.
+  * **[!UICONTROL segmentar por]**: você pode adicionar mais 2 segmentos. Por exemplo, adicione Reservas como um segmento e combine-o com os segmentos Pessoas que reservam com frequência e Primeiro voo para fazer uma comparação. Consulte ➏, ➐ e ➑.
 
-   * em: permite especificar o intervalo de datas. Consulte ➒.
+  * em: permite especificar o intervalo de datas. Consulte ➒.
 
 ## Limitações conhecidas
 

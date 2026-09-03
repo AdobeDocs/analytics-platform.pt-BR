@@ -7,25 +7,14 @@ role: User, Admin
 badgePremium: label="B2B Edition"
 exl-id: df2cc922-d214-49b9-8fdb-443cc1dac05b
 TQID: https://experienceleague.adobe.com/pXiDvk--5tAJYGj8lfq7KQfVLQqVOePbBZqCXT10rZ0
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
-  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 9c87ce4fb30c7d1d66ce88174443369ef44a7377
 workflow-type: tm+mt
-source-wordcount: 1545
+source-wordcount: 1592
 ht-degree: 3%
 
 ---
@@ -91,7 +80,7 @@ Você pode usar os contêineres B2B para a funcionalidade B2B específica no Ana
 * **Atribuição**: você pode usar os novos contêineres B2B no [painel de atribuição](/help/analysis-workspace/c-panels/attribution.md), nas [configurações de componente de atribuição](/help/data-views/component-settings/attribution.md), nas [métricas calculadas](/help/components/calc-metrics/cm-workflow/m-metric-type-alloc.md) ou nas [colunas em uma tabela de Forma livre](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/column-settings.md). As pesquisas de conta são estendidas para 13 meses.
 
 * **Visualizações**: [Fall out](/help/analysis-workspace/visualizations/fallout/fallout-flow.md), [Flow](/help/analysis-workspace/visualizations/c-flow/flow.md), [Tela de Jornada](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) e [Tabela de coorte](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md), as visualizações dão suporte aos novos contêineres B2B. Por exemplo: você pode usar os novos contêineres para entender como os grupos de compras consomem conteúdo ou como os coortes de oportunidades avançam para o fechamento de uma venda.
-Você também pode definir o container padrão para essas visualizações nas [preferências do usuário](/help/analysis-workspace/user-preferences.md#visualizations-preferences).
+Você também pode definir o contêiner padrão para essas visualizações nas [preferências do usuário](/help/analysis-workspace/user-preferences.md#visualizations-preferences).
 
 Segmentos, atribuição e visualizações junto com os contêineres B2B oferecem suporte a você na análise e nos insights B2B profundos.
 

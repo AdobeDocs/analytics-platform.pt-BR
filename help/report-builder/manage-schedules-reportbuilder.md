@@ -7,16 +7,12 @@ type: Documentation
 solution: Customer Journey Analytics
 exl-id: 0a0427d9-223e-410b-a8ef-8601390d88aa
 TQID: https://experienceleague.adobe.com/HcKyD-v3I1hsxWwiDZJwgvO9pH9ifBVOjBapARdYQVQ
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: 383
+source-wordcount: 387
 ht-degree: 6%
 
 ---
@@ -78,7 +74,7 @@ Você pode exibir o histórico e o status de pastas de trabalho agendadas na gui
    ![Histórico agendado](assets/scheduled-workbooks-history.png){zoomable="yes"}
 
    Use a ![Pesquisa](/help/assets/icons/Search.svg) para procurar pastas de trabalho específicas na lista.
-Use ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) para definir quais colunas mostrar.
+   Use ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) para definir quais colunas mostrar.
 
    A guia **[!UICONTROL Histórico]** permite examinar o status de cada tarefa agendada. Uma linha separada documenta a alteração de status para cada tarefa agendada.
 

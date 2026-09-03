@@ -6,19 +6,14 @@ exl-id: ef606c53-b370-419a-904b-573ee6d70a8d
 role: User
 autotag-review: '2026-05-19T08:31:00.048Z'
 TQID: 'https://experienceleague.adobe.com/y3VfcvJp8lCmBLHy4-zPEb6Y7dzjfcDPjSMlKGPNR-A'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-subfeature_v2:
-  - id: ddf59f64-0e46-4986-a525-056acc143c70
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656
+subfeature_v2: id: ddf59f64-0e46-4986-a525-056acc143c70
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: 960
+source-wordcount: 969
 ht-degree: 91%
 
 ---
@@ -33,7 +28,7 @@ ht-degree: 91%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta a visualização do resumo da métrica principal em_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consulte o [resumo da métrica principal](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/key-metric) da versão_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
+_Este artigo documenta a visualização do resumo da métrica principal em_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consulte o [resumo da métrica principal](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/key-metric) da versão_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 
@@ -151,7 +146,7 @@ Como parte das configurações de visualização, configurações específicas d
 | **[!UICONTROL Mostrar porcentagem de comparação e linha de tendência]** | Mostrar ou ocultar dados de comparação. Quando ocultos, o gráfico de linhas de comparação e os objetos de alteração de resumo não aparecem na visualização. |
 | **[!UICONTROL Mostrar número total]** | Mostrar ou ocultar o número do resumo |
 | **[!UICONTROL Mostrar diferença bruta]** | Mostrar ou ocultar diferença bruta entre o valor total da métrica no intervalo de datas principal e o intervalo de datas secundário |
-| **[!UICONTROL Abreviar valor]** | Selecione **[!UICONTROL Abreviar valor]** para abreviar de forma inteligente o valor do número. Quando selecionado, insira um número para definir a quantidade de abreviação. Por exemplo:<br/><table><tr><td>**Valor original**</td><td>**Abreviação**</td><td>**Resultado**</td></tr><tr><td>$12,011,141.25</td><td>Não selecionado</td><td align="right">$12,011,141.25</td></tr><tr><td>$12,011,141.25</td><td>Selecionado, definido como 1</td><td align="right">US$ 12 milhões</td></tr><tr><td>$12,011,141.25</td><td>Selecionado, definido como 2</td><td align="right">US$ 12,0 milhões</td></tr><tr><td>$12,011,141.25</td><td>Selecionado, definido como 2</td><td align="right">US$ 12,011 milhões</td></tr><tr><td>$12,011,141.25</td><td>Selecionado, definido como 3</td><td align="right">US$ 12,011 milhões</td></tr></table> |
+| **[!UICONTROL Abreviar valor]** | Selecione **[!UICONTROL Abreviar valor]** para abreviar de forma inteligente o valor do número. Quando selecionado, insira um número para definir a quantidade de abreviação. Por exemplo:<br/><table><tr><td>**Valor original**</td><td>**Abreviação**</td><td>**Resultado**</td></tr><tr><td>US$ 12.011.141,25</td><td>Não selecionado</td><td align="right">US$ 12.011.141,25</td></tr><tr><td>US$ 12.011.141,25</td><td>Selecionado, definido como 1</td><td align="right">US$ 12 milhões</td></tr><tr><td>US$ 12.011.141,25</td><td>Selecionado, definido como 2</td><td align="right">US$ 12,0 milhões</td></tr><tr><td>US$ 12.011.141,25</td><td>Selecionado, definido como 2</td><td align="right">US$ 12,011 milhões</td></tr><tr><td>US$ 12.011.141,25</td><td>Selecionado, definido como 3</td><td align="right">US$ 12,011 milhões</td></tr></table> |
 
 ## Editar visualização
 

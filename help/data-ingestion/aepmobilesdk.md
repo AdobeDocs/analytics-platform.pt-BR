@@ -6,26 +6,11 @@ feature: Basics
 exl-id: fb48b031-e093-4490-b457-69dbb5debe8d
 role: Admin
 TQID: https://experienceleague.adobe.com/rbgqDkQLPbw-EfhMyUL-eVXZZ1cxMXiQmvU7Si2WCZ8
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: c38ed341-fab2-46df-9d72-88d8166edebb
-  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
-  - id: df28738e-9c71-4aa8-929e-edde22340cc6
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-  - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: c38ed341-fab2-46df-9d72-88d8166edebbid: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7id: df28738e-9c71-4aa8-929e-edde22340cc6id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 3536
@@ -270,7 +255,7 @@ Para implementar o código em seu site para realmente coletar dados, use o recur
 
    Nomeie a tag, selecione **[!UICONTROL Celular]**. Selecione **[!UICONTROL Salvar]** para continuar.
 
-   ![Criar uma propriedade da &#x200B;](./assets/create-mobile-property.png)
+   ![Criar uma propriedade da ](./assets/create-mobile-property.png)
 
 ### Configurar sua tag
 
@@ -357,27 +342,27 @@ Para definir uma regra:
 
    - Na caixa de diálogo [!UICONTROL Configuração de evento]:
 
-      - Selecione **[!UICONTROL Mobile Core]** na lista [!UICONTROL Extension].
+     - Selecione **[!UICONTROL Mobile Core]** na lista [!UICONTROL Extension].
 
-      - Selecione **[!UICONTROL Primeiro Plano]** na lista [!UICONTROL Tipo de Evento].
+     - Selecione **[!UICONTROL Primeiro Plano]** na lista [!UICONTROL Tipo de Evento].
 
-      - Selecione **[!UICONTROL Manter alterações]**.
+     - Selecione **[!UICONTROL Manter alterações]**.
 
    - Clique em ![Mais](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) ao lado de [!UICONTROL Mobile Core - Primeiro Plano].
 
-      - Selecione **[!UICONTROL Mobile Core]** na lista [!UICONTROL Extension].
+     - Selecione **[!UICONTROL Mobile Core]** na lista [!UICONTROL Extension].
 
-      - Selecione **[!UICONTROL Plano de Fundo]** na lista [!UICONTROL Tipo de Evento].
+     - Selecione **[!UICONTROL Plano de Fundo]** na lista [!UICONTROL Tipo de Evento].
 
-      - Selecione **[!UICONTROL Manter alterações]**.
+     - Selecione **[!UICONTROL Manter alterações]**.
 
    - Clique em ![Adição](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) abaixo de [!UICONTROL AÇÕES]. Na caixa de diálogo [!UICONTROL Configuração de ação]:
 
-      - Selecione **[!UICONTROL Adobe Experience Platform Edge Network]** na lista [!UICONTROL Extension].
+     - Selecione **[!UICONTROL Adobe Experience Platform Edge Network]** na lista [!UICONTROL Extension].
 
-      - Selecione **[!UICONTROL Encaminhar evento para Edge Network]** na lista [!UICONTROL Tipo de Ação].
+     - Selecione **[!UICONTROL Encaminhar evento para Edge Network]** na lista [!UICONTROL Tipo de Ação].
 
-      - Selecione **[!UICONTROL Manter alterações]**.
+     - Selecione **[!UICONTROL Manter alterações]**.
 
    - Sua regra deve ter a seguinte aparência:
 
@@ -448,7 +433,7 @@ Agora você pode implantar o código no aplicativo móvel. Quando implantado, o 
 
 Valide a implementação, corrija-a sempre que necessário e, uma vez correto, implante-a no ambiente de preparo e produção usando o recurso de fluxo de trabalho de publicação Tags.
 
-Consulte [Tutorial Implementar o Adobe Experience Cloud em aplicativos para dispositivos móveis](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=pt-BR) para obter informações muito mais detalhadas.
+Consulte [Tutorial Implementar a Adobe Experience Cloud em aplicativos para dispositivos móveis](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=pt-BR) para obter informações muito mais detalhadas.
 
 ## Configurar uma conexão
 
@@ -484,11 +469,11 @@ Para criar sua conexão:
 
    - Para cada conjunto de dados:
 
-      - Selecione uma [!UICONTROL ID de pessoa] a partir das identidades disponíveis definidas nos esquemas de conjunto de dados da Adobe Experience Platform.
+     - Selecione uma [!UICONTROL ID de pessoa] a partir das identidades disponíveis definidas nos esquemas de conjunto de dados da Adobe Experience Platform.
 
-      - Selecione a fonte de dados correta na lista [!UICONTROL Tipo de fonte de dados]. Se você especificar **[!UICONTROL Outros]**, em seguida, adicione uma descrição para a fonte de dados.
+     - Selecione a fonte de dados correta na lista [!UICONTROL Tipo de fonte de dados]. Se você especificar **[!UICONTROL Outros]**, em seguida, adicione uma descrição para a fonte de dados.
 
-      - Definir **[!UICONTROL Importar todos os novos dados]** e **[!UICONTROL Preenchimento retroativo de conjunto de dados com dados existentes]** de acordo com suas preferências.
+     - Definir **[!UICONTROL Importar todos os novos dados]** e **[!UICONTROL Preenchimento retroativo de conjunto de dados com dados existentes]** de acordo com suas preferências.
 
      ![Configurar conjuntos de dados](./assets/cja-connections-ajopushid.png)
 

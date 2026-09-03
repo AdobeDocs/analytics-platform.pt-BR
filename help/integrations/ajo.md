@@ -5,20 +5,11 @@ exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
 TQID: https://experienceleague.adobe.com/kmZ-AYMcKxwZftFSqJQpTH3zDTDT1CxlNw-MVO6Ikn4
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: cb6c7d24-631f-46e5-9e39-3a2705f73962id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: bcc5edb5-84c3-4940-9f84-ed88b6c16274
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 3841
@@ -59,7 +50,7 @@ A conexão tem o nome **[!UICONTROL Conexão Habilitada para AJO (*nome da sandb
 | Nome do conjunto de dados | Esquema | Tipo de conjunto de dados | Tipo de fonte de dados | ID de pessoa | Chave | Chave correspondente | Importar novos dados | Dados de preenchimento retroativo |
 |---|---|---|---|---|---|---|---|---|
 | [!UICONTROL Conjunto de dados de entidade do AJO] | [!UICONTROL Esquema de registro de entidade do AJO] | [!UICONTROL Pesquisa] | [!UICONTROL Outro] | - | ` _id` | `_experience. decisioning. propositions. scopeDetails. correlationID` | ![Status verde](assets/../../connections/assets/status-green.svg) Ativado | ![Status cinza](assets/../../connections/assets/status-gray.svg) Desativado |
-| [!UICONTROL Eventos de etapa da jornada] | [!UICONTROL Esquema de evento de etapa da jornada do Journey Orchestration] | [!UICONTROL Evento] | [!UICONTROL Outro] | [!UICONTROL IdentityMap(\&lt;primary\>)] | - | - | ![Status verde](assets/../../connections/assets/status-green.svg) Ativado | ![Status cinza](assets/../../connections/assets/status-gray.svg) Desativado |
+| [!UICONTROL Eventos de etapa da jornada] | [!UICONTROL Esquema de evento de etapa da jornada do Journey Orchestration] | [!UICONTROL Evento] | [!UICONTROL Outro] | [!UICONTROL  IdentityMap(\&lt;primary\>)] | - | - | ![Status verde](assets/../../connections/assets/status-green.svg) Ativado | ![Status cinza](assets/../../connections/assets/status-gray.svg) Desativado |
 | [!UICONTROL Conjunto de dados de eventos de experiência de rastreamento de email do AJO] | [!UICONTROL Esquema de evento de experiência de rastreamento de email do AJO] | [!UICONTROL Evento] | [!UICONTROL Outro] | [!UICONTROL IdentityMap(\&lt;primary\>)] | - | - | ![Status verde](assets/../../connections/assets/status-green.svg) Ativado | ![Status cinza](assets/../../connections/assets/status-gray.svg) Desativado |
 | [!UICONTROL Conjunto de dados de evento de feedback de mensagem do AJO] | [!UICONTROL Esquema de evento de feedback de mensagem do AJO] | [!UICONTROL Evento] | [!UICONTROL Outro] | [!UICONTROL IdentityMap(\&lt;primary\>)] | - | - | ![Status verde](assets/../../connections/assets/status-green.svg) Ativado | ![Status cinza](assets/../../connections/assets/status-gray.svg) Desativado |
 | [!UICONTROL Conjunto de dados de evento de experiência de rastreamento por push do AJO] | [!UICONTROL Esquema de evento de experiência de rastreamento por push do AJO] | [!UICONTROL Evento] | [!UICONTROL Outro] | [!UICONTROL IdentityMap(\&lt;primary\>)] | - | - | ![Status verde](assets/../../connections/assets/status-green.svg) Ativado | ![Status cinza](assets/../../connections/assets/status-gray.svg) Desativado |
@@ -79,7 +70,7 @@ Quando o complemento de mensagens transacionais de alta capacidade estiver ativa
 * **[!UICONTROL Widget de latência P95 de 7 dias consecutivos]**: mostra a latência P95 como um valor único, incluindo a alteração de porcentagem em relação à semana anterior.
 * **[!UICONTROL Widget de taxa de transferência P95 de 7 dias consecutivos]**: mostra a taxa de transferência P95 como um valor único, incluindo a alteração de porcentagem em relação à semana anterior.
 
-Para obter mais informações sobre esses conjuntos de dados e o complemento de mensagens transacionais de Alta Taxa de Transferência, consulte [Ativar modo de Alta Taxa de Transferência para campanhas acionadas por API](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/campaigns/api-triggered-campaigns/api-triggered-high-throughput) na documentação do Adobe Journey Optimizer.
+Para obter mais informações sobre esses conjuntos de dados e o complemento de mensagens transacionais de Alta Taxa de Transferência, consulte [Ativar modo de Alta Taxa de Transferência para campanhas acionadas por API](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/api-triggered-campaigns/api-triggered-high-throughput) na documentação do Adobe Journey Optimizer.
 
 ### Visualização de dados
 
@@ -115,10 +106,10 @@ A visualização de dados tem o nome **Visualização de dados habilitada para o
 
 
 * Na guia **Componentes**:
-   * Todas as métricas e dimensões que têm [!UICONTROL (AJO)] anexado ao nome são adicionadas automaticamente como parte dessa configuração automática.
-   * Algumas métricas ou dimensões que foram adicionadas automaticamente são baseadas em campos derivados. Esses campos derivados são criados especificamente para essa integração. Por exemplo, a métrica [!UICONTROL Cliques na página de destino (AJO)] se baseia no campo derivado [!UICONTROL Cliques na página de destino].
-   * Algumas métricas ou dimensões têm configuração adicional. Por exemplo, [!UICONTROL Reclamação de spam (AJO)] tem as configurações [!UICONTROL Formato] e [!UICONTROL Incluir/Excluir valores] aplicadas.
-   * Todas as métricas e dimensões adicionadas automaticamente têm um rótulo de contexto chamado `:`*`name_of_metric_or_dimension`*. Por exemplo, a métrica [!UICONTROL Cliques na página de destino (AJO)] tem o rótulo de contexto `:Landing page clicks (AJO)`.
+  * Todas as métricas e dimensões que têm [!UICONTROL (AJO)] anexado ao nome são adicionadas automaticamente como parte dessa configuração automática.
+  * Algumas métricas ou dimensões que foram adicionadas automaticamente são baseadas em campos derivados. Esses campos derivados são criados especificamente para essa integração. Por exemplo, a métrica [!UICONTROL Cliques na página de destino (AJO)] se baseia no campo derivado [!UICONTROL Cliques na página de destino].
+  * Algumas métricas ou dimensões têm configuração adicional. Por exemplo, [!UICONTROL Reclamação de spam (AJO)] tem as configurações [!UICONTROL Formato] e [!UICONTROL Incluir/Excluir valores] aplicadas.
+  * Todas as métricas e dimensões adicionadas automaticamente têm um rótulo de contexto chamado `:`*`name_of_metric_or_dimension`*. Por exemplo, a métrica [!UICONTROL Cliques na página de destino (AJO)] tem o rótulo de contexto `:Landing page clicks (AJO)`.
 
 * A guia **[!UICONTROL Configurações]** não utiliza nenhum valor de configuração específico
 

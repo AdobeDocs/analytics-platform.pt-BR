@@ -6,19 +6,11 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: product analytics
 role: User
 TQID: https://experienceleague.adobe.com/Mq-IJRaA3-aplBEJe2XmorAD696XzmOj69YcpotF1dU
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: bcc5edb5-84c3-4940-9f84-ed88b6c16274id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 7f8ab656c7dbf508b2a78fd2022592faf883c56e
 workflow-type: tm+mt
 source-wordcount: 849
@@ -39,7 +31,7 @@ ht-degree: 92%
 
 A análise de ![GraphTrend](/help/assets/icons/GraphTrend.svg) **[!UICONTROL Tendências]** fornece informações valiosas sobre o desempenho do seu produto ou o comportamento dos seus usuários ao longo do tempo. O eixo horizontal desse relatório é um intervalo de tempo, enquanto o eixo vertical mede os eventos desejados.
 
->[!VIDEO](https://video.tv.adobe.com/v/3423444/?captions=por_br&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3421666/?quality=12&learn=on)
 
 ## Casos de uso
 
@@ -76,9 +68,9 @@ Adicionar dados adicionais ao gráfico. Quando mais de uma série estiver visív
 
 * **[!UICONTROL Detecção de anomalias]**: executa a [detecção de anomalias](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) na análise de tendências. As anomalias são exibidas como pontos sobre os quais você pode passar o mouse para obter mais informações.
 * **[!UICONTROL Sobreposição de linha de tendências]**: adiciona uma linha de tendência ao gráfico para ajudar a distinguir um padrão mais claro nos dados.
-   * [!UICONTROL Linear]: cria uma linha de regressão reta. Melhor para dados lineares simples que aumentam ou diminuem a uma taxa estável. Equação: `y = a + b * x`
-   * [!UICONTROL Logarítmico]: cria uma linha de regressão curva. Melhor para dados que aumentam ou diminuem rapidamente, e então ficam mais nivelados. Equação: `y = a + b * log(x)`
-   * [!UICONTROL Média móvel]: cria uma linha de tendências suave com base em um conjunto de médias. Também conhecida como média variável, a média móvel usa um número específico de pontos de dados (determinado pela sua seleção), calcula a média deles e usa a média como um ponto na linha. Os exemplos incluem média móvel de sete dias ou média móvel de quatro semanas. As opções de média móvel disponíveis dependem do intervalo e do intervalo de datas selecionados.
+  * [!UICONTROL Linear]: cria uma linha de regressão reta. Melhor para dados lineares simples que aumentam ou diminuem a uma taxa estável. Equação: `y = a + b * x`
+  * [!UICONTROL Logarítmico]: cria uma linha de regressão curva. Melhor para dados que aumentam ou diminuem rapidamente, e então ficam mais nivelados. Equação: `y = a + b * log(x)`
+  * [!UICONTROL Média móvel]: cria uma linha de tendências suave com base em um conjunto de médias. Também conhecida como média variável, a média móvel usa um número específico de pontos de dados (determinado pela sua seleção), calcula a média deles e usa a média como um ponto na linha. Os exemplos incluem média móvel de sete dias ou média móvel de quatro semanas. As opções de média móvel disponíveis dependem do intervalo e do intervalo de datas selecionados.
 
 ### Comparação de tempo
 

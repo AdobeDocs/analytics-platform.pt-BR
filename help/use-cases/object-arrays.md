@@ -7,19 +7,11 @@ feature: Use Cases
 role: Admin
 autotag-review: '2026-05-19T09:33:58.249Z'
 TQID: 'https://experienceleague.adobe.com/FJOAnB2Dumw9txeabYMfrIqE1uihee-TcA8ZFcAbU2Y'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-subfeature_v2:
-  - id: e8abc408-b05c-427f-9e37-f8b033a6b3c3
-  - id: bfef374d-acfd-4c57-bf74-a2b36053c545
-  - id: cf731116-8803-4027-85aa-9c0a126e8321
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2: id: e8abc408-b05c-427f-9e37-f8b033a6b3c3id: bfef374d-acfd-4c57-bf74-a2b36053c545id: cf731116-8803-4027-85aa-9c0a126e8321
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 518
@@ -82,20 +74,20 @@ O evento a seguir é um objeto JSON que representa uma compra feita por um clien
 Ao criar uma visualização de dados, as seguintes dimensões e métricas estão disponíveis (com base no esquema):
 
 * **Dimensões:**
-   * ID
-   * produto : SKU
-   * produto : nome
-   * produto : order_id
-   * produto : garantia : cobertura
-   * produto : garantia : comprimento
-   * produto : garantia : nome
-   * produto : garantia : tipo
+  * ID
+  * produto : SKU
+  * produto : nome
+  * produto : order_id
+  * produto : garantia : cobertura
+  * produto : garantia : comprimento
+  * produto : garantia : nome
+  * produto : garantia : tipo
 * **Métricas:**
-   * produto : pedidos
-   * produto : unidades
-   * produto : receita
-   * produto : garantia
-   * produto : garantia : receita
+  * produto : pedidos
+  * produto : unidades
+  * produto : receita
+  * produto : garantia
+  * produto : garantia : receita
 
 ### Exemplos de mesmos eventos (comportamento do relatório)
 
@@ -285,5 +277,5 @@ A aplicação dessa métrica calculada exibe os resultados desejados:
 
 ## Limitações
 
-As limitações se aplicam aos arrays nos dados usados pelo Customer Journey Analytics e modelados como parte de um esquema no Experience Platform. Consulte [Limites do modelo de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/profile/guardrails#data-model-limits) e [Limites de tamanho de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/profile/guardrails#data-size-limits) nas [Medidas de proteção padrão para dados e segmentação do Perfil do cliente em tempo real](https://experienceleague.adobe.com/pt-br/docs/experience-platform/profile/guardrails).
+As limitações se aplicam aos arrays nos dados usados pelo Customer Journey Analytics e modelados como parte de um esquema no Experience Platform. Consulte [Limites do modelo de dados](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails#data-model-limits) e [Limites de tamanho de dados](https://experienceleague.adobe.com/en/docs/experience-platform/profile/guardrails#data-size-limits) nas [Medidas de proteção padrão para dados e segmentação do Perfil do cliente em tempo real](https://experienceleague.adobe.com/pt-br/docs/experience-platform/profile/guardrails).
 

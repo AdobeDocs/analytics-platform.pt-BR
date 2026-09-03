@@ -7,20 +7,11 @@ role: Admin
 exl-id: 92cffcc5-d7a7-47f5-869d-1fc665594bf4
 autotag-review: '2026-05-19T08:56:46.637Z'
 TQID: 'https://experienceleague.adobe.com/A3GkkNVAO9qpbOqCrZnf6PNJfRuwMaodJVOOuSRg0w8'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: e1471301-a189-438e-8d48-264a8db508a6
-  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
-  - id: bfef374d-acfd-4c57-bf74-a2b36053c545
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: b3197353-f189-4932-8378-3f3bc40e6071id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: e1471301-a189-438e-8d48-264a8db508a6id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7id: bfef374d-acfd-4c57-bf74-a2b36053c545
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: 2b0204c229a7d53c0a497fe448c165acf84536ad
 workflow-type: tm+mt
 source-wordcount: 441
@@ -67,8 +58,8 @@ Para obter mais informações, leia o [[!DNL Azure Databricks] guia sobre como h
 
 Leia a documentação a seguir para obter as etapas sobre como habilitar a captura de dados de alteração para sua conexão de origem do [!DNL Azure Databricks]:
 
-* [Criar uma [!DNL Azure Databricks] conexão básica](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/api-tutorials/create/databases/databricks).
-* [Criar uma conexão de origem para um banco de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
+* [Criar uma [!DNL Azure Databricks] conexão básica](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/create/databases/databricks).
+* [Criar uma conexão de origem para um banco de dados](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
 
 ## [!DNL Google BigQuery]
 
@@ -78,8 +69,8 @@ Para obter mais informações, leia o manual sobre [instruções de linguagem de
 
 Leia a documentação a seguir para obter as etapas sobre como habilitar a captura de dados de alteração para sua conexão de origem do [!DNL Google BigQuery]:
 
-* [Criar uma [!DNL Google BigQuery] conexão básica](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/api-tutorials/create/databases/bigquery).
-* [Criar uma conexão de origem para um banco de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
+* [Criar uma [!DNL Google BigQuery] conexão básica](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/create/databases/bigquery).
+* [Criar uma conexão de origem para um banco de dados](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
 
 ## [!DNL Snowflake]
 
@@ -95,8 +86,8 @@ Para obter mais informações, leia o [[!DNL Snowflake] guia sobre como usar a c
 
 Leia a documentação a seguir para obter as etapas sobre como habilitar a captura de dados de alteração para sua conexão de origem do [!DNL Snowflake]:
 
-* [Criar uma [!DNL Snowflake] conexão básica](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/api-tutorials/create/databases/snowflake).
-* [Criar uma conexão de origem para um banco de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
+* [Criar uma [!DNL Snowflake] conexão básica](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/create/databases/snowflake).
+* [Criar uma conexão de origem para um banco de dados](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
 
 
 >[!MORELIKETHIS]

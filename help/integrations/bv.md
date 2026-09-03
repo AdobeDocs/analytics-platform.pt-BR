@@ -5,7 +5,7 @@ feature: Experience Platform Integration
 role: User
 source-git-commit: e90a8d978f8d910f426dcb0fbf28881724d0f5a7
 workflow-type: tm+mt
-source-wordcount: '2543'
+source-wordcount: '2545'
 ht-degree: 2%
 
 ---
@@ -60,7 +60,7 @@ A segunda maneira é um bot ou agente que solicita as páginas diretamente. Isso
 O conector gerenciado do Brand Visibility fornece os dados para o Experience Platform como um conjunto de dados de resumo. Para medi-la no Customer Journey Analytics, você mesmo conclui duas etapas de configuração:
 
 1. Crie uma conexão que inclua o conjunto de dados do Brand Visibility. Consulte [Criar ou editar uma conexão](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-connections/create-connection){target="_blank"}.
-2. Crie uma visualização de dados nessa conexão. A visualização de dados disponibiliza as dimensões e métricas abaixo no Analysis Workspace. Consulte [Criar ou editar uma visualização de dados](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-dataviews/create-dataview){target="_blank"}.
+2. Crie uma visualização de dados nessa conexão. A visualização de dados disponibiliza as dimensões e métricas abaixo no Analysis Workspace. Consulte [Criar ou editar uma visualização de dados](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/create-dataview){target="_blank"}.
 
 O conjunto de dados:
 

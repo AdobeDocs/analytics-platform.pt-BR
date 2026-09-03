@@ -7,19 +7,11 @@ role: Admin
 exl-id: ea5c9114-1fc3-4686-b184-2850acb42b5c
 autotag-review: '2026-05-19T09:24:07.100Z'
 TQID: 'https://experienceleague.adobe.com/f-HOhKLpbM4u4MAzzoUCc0cMvVIu1k3FXg4FShValVE'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-subfeature_v2:
-  - id: faea9abd-7024-4c5e-a5b4-87919e09b24b
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2: id: faea9abd-7024-4c5e-a5b4-87919e09b24b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: d00e9f03-e50b-4162-b143-0c0817c937c2id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 711e4bd71a4939eec96a6c454242e96b350fe4e2
 workflow-type: tm+mt
 source-wordcount: 2017
@@ -35,7 +27,7 @@ Na compilação baseada em gráfico, você especifica um conjunto de dados de ev
 
 >[!NOTE]
 >
->O [Serviço de Identidade](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/home) é um serviço principal da Experience Platform que não requer licenciamento adicional. Consulte [Noções básicas sobre a função do serviço de identidade na infraestrutura do Experience Platform](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/home#understanding-the-role-of-identity-service-within-the-experience-platform-infrastructure) para obter mais informações.
+>O [Serviço de Identidade](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/home) é um serviço principal da Experience Platform que não requer licenciamento adicional. Consulte [Noções básicas sobre a função do serviço de identidade na infraestrutura do Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home#understanding-the-role-of-identity-service-within-the-experience-platform-infrastructure) para obter mais informações.
 >
 
 Se as informações de ID de pessoa não puderem ser recuperadas para um evento, a ID persistente será usada para esse evento *não compilado*. Como resultado, em uma [visualização de dados](/help/data-views/data-views.md) associada a uma [conexão](/help/connections/overview.md) que contém o conjunto de dados habilitado para compilação, o componente de visualização de dados da ID de pessoa contém o valor da ID de pessoa ou o valor da ID persistente no nível do evento.
@@ -231,7 +223,7 @@ Os seguintes pré-requisitos aplicam-se especificamente à compilação baseada 
   - Todos os conjuntos de dados que contêm essas identidades relevantes devem ser [habilitados para assimilação de dados do gráfico de identidade](faq.md#enable-a-dataset-for-the-identity-service). Essa ativação garante que as identidades recebidas sejam adicionadas ao gráfico ao longo do tempo de todas as fontes necessárias.
   - Se você já estiver usando o Perfil de dados do cliente em tempo real ou o Adobe Journey Optimizer por algum tempo, o gráfico já deverá estar configurado até certo ponto.<br/>Se o preenchimento retroativo de compilação histórica também for necessário para o conjunto de dados habilitado com compilação baseada em gráfico, o gráfico já deverá conter identidades históricas para todo o período para obter os resultados de compilação desejados.
 - Se quiser usar a compilação com base em gráficos e antecipar que o conjunto de dados do evento contribua para o gráfico de identidade, você deve [habilitar o conjunto de dados para o Serviço de identidade](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service).
-- A ID persistente e a ID de pessoa podem ser usadas com [identityMap](#identitymap). Ou a ID persistente e a ID de pessoa podem ser campos do esquema XDM, nesse caso, os campos devem ser [definidos como uma identidade](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/ui/fields/identity?lang=en) no esquema.
+- A ID persistente e a ID de pessoa podem ser usadas com [identityMap](#identitymap). Ou a ID persistente e a ID de pessoa podem ser campos do esquema XDM, nesse caso, os campos devem ser [definidos como uma identidade](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity?lang=en) no esquema.
 
 >[!NOTE]
 >

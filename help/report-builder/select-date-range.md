@@ -7,19 +7,13 @@ type: Documentation
 exl-id: 7252214f-a7d6-451b-99c9-d39e8e47120b
 solution: Customer Journey Analytics
 TQID: https://experienceleague.adobe.com/g7-pu7H2LQVNRShRj5Jr6gGWYfB-eMxoLRexdfBUGiE
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
-  - id: f2ef16dc-055a-4bb7-baa5-7039653f3966
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: cb6c7d24-631f-46e5-9e39-3a2705f73962id: f2ef16dc-055a-4bb7-baa5-7039653f3966
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: 859
+source-wordcount: 860
 ht-degree: 52%
 
 ---
@@ -63,10 +57,10 @@ Para definir datas do acumulado:
 
    - Ao selecionar **[!UICONTROL Início de]** ou **[!UICONTROL Fim de]**, você pode criar uma expressão completa. Por exemplo: **[!UICONTROL Fim do]** **[!UICONTROL ano atual]** **[!UICONTROL mais]** `1` **[!UICONTROL dia]**. Escolha o valor apropriado para cada parte individual da expressão.
 
-      - Selecione um valor para o atual. Por exemplo, **[!UICONTROL ano atual]**.
-      - Selecione um valor para um cálculo adicional opcional. Por exemplo, **[!UICONTROL mais]**.
-      - Após definir um cálculo adicional, especifique um valor. Por exemplo, `1`.
-      - Depois de especificar um cálculo adicional, selecione o período a ser usado para o cálculo. Por exemplo, **[!UICONTROL dia]**.
+     - Selecione um valor para o atual. Por exemplo, **[!UICONTROL ano atual]**.
+     - Selecione um valor para um cálculo adicional opcional. Por exemplo, **[!UICONTROL mais]**.
+     - Após definir um cálculo adicional, especifique um valor. Por exemplo, `1`.
+     - Depois de especificar um cálculo adicional, selecione o período a ser usado para o cálculo. Por exemplo, **[!UICONTROL dia]**.
 
    - Ao selecionar **[!UICONTROL Dia Fixo]**, especifique um dia fixo ou use o seletor para selecionar um dia.
 

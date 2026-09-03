@@ -7,18 +7,11 @@ role: Admin
 exl-id: 4f71fbf2-290b-4076-b2ad-b086c2b854d9
 autotag-review: '2026-05-19T06:53:00.572Z'
 TQID: 'https://experienceleague.adobe.com/6vut30l-BSIxhTK96Tt3BG01q-rjHagcmer0WZ2GL-c'
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
-subfeature_v2:
-  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: d76b9e53-27fb-4597-933f-419cc0dd46db
+subfeature_v2: id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
 source-wordcount: 632
@@ -41,8 +34,8 @@ Este artigo fornece contexto sobre IDs inválidas e como detectar a presença ou
 No Customer Journey Analytics, como parte de todos os dados definidos em uma conexão, uma ID incorreta é um identificador:
 
 * com um valor de ID específico que se origina
-   * de um campo de ID de pessoa (conjuntos de dados não compilados), **ou**
-   * de uma ID persistente ou um campo de ID de pessoa (conjuntos de dados habilitados para compilação),
+  * de um campo de ID de pessoa (conjuntos de dados não compilados), **ou**
+  * de uma ID persistente ou um campo de ID de pessoa (conjuntos de dados habilitados para compilação),
 
   **e**
 * está em mais de um milhão (1.000.000) eventos nos dados de conexão (contados para todos os conjuntos de dados na conexão), no prazo de um mês.

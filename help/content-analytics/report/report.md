@@ -6,26 +6,15 @@ feature: Content Analytics
 role: User
 exl-id: 6e756ae8-b969-46f1-95b8-d8fbb0d058ed
 TQID: https://experienceleague.adobe.com/IM7-a-jp-lLfuGKj-CM2McnFXcus2-x-ffLC8UUKAmY
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: ad5685a0-8296-4a0c-814c-658c10b4af12
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: d3c978ee-1ff0-4475-968a-721e2dd99ef1
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ad5685a0-8296-4a0c-814c-658c10b4af12id: bc7a5a86-1a70-451f-985c-037b65f091d1id: d3c978ee-1ff0-4475-968a-721e2dd99ef1id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 537fc30db0f6e6bddc54df7bbcc04d802226958f
 workflow-type: tm+mt
-source-wordcount: 1215
-ht-degree: 51%
+source-wordcount: 1365
+ht-degree: 48%
 
 ---
 
@@ -122,44 +111,44 @@ Você pode usar o detalhamento do **[!UICONTROL Canal de Conteúdo]** para [deta
 
 Os quatro painéis são:
 
-* **Que conteúdo tem o melhor desempenho?**
+* **Qual conteúdo tem melhor desempenho?**
 Este painel identifica quais experiências e ativos impulsionam a participação e a conversão. As experiências são páginas da Web completas capturadas em um horário específico ou uma combinação de texto, ativos e chamadas para ação definidas em um aplicativo móvel.
 
-   * **Experiências**.
+  * **Experiências**.
 
-     >[!NOTE]
-     >
-     >Essas visualizações só são exibidas no modelo quando você configura o sistema para [incluir experiências](/help/content-analytics/config/guided.md#experience-capture-and-definition) na sua configuração do Content Analytics.
-     > 
+    >[!NOTE]
+    >
+    >Essas visualizações só são exibidas no modelo quando você configura o sistema para [incluir experiências](/help/content-analytics/config/guided.md#experience-capture-and-definition) na sua configuração do Content Analytics.
+    > 
 
-      * **Experience CTR**: uma visualização de [alteração de resumo](/help/analysis-workspace/visualizations/summary-number-change.md) que mostra a Experience CTR.
-      * **Principais experiências de conversão**: uma visualização de [barra horizontal](/help/analysis-workspace/visualizations/horizontal-bar.md) que mostra as experiências que mais contribuem para a conversão com base na métrica de conversão selecionada.
-      * **Experiências com melhor desempenho**: uma [tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) (incluindo [miniaturas](#thumbnails) e [visualizações](#previews)) para as experiências com melhor desempenho.
+    * **Experience CTR**: uma visualização de [alteração de resumo](/help/analysis-workspace/visualizations/summary-number-change.md) que mostra a Experience CTR.
+    * **Principais experiências de conversão**: uma visualização de [barra horizontal](/help/analysis-workspace/visualizations/horizontal-bar.md) que mostra as experiências que mais contribuem para a conversão com base na métrica de conversão selecionada.
+    * **Experiências com melhor desempenho**: uma [tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) (incluindo [miniaturas](#thumbnails) e [visualizações](#previews)) para as experiências com melhor desempenho.
 
-   * **Ativos**
+  * **Ativos**
 
-      * **CTR do ativo**
-Uma visualização de [alteração de resumo](/help/analysis-workspace/visualizations/summary-number-change.md) que mostra o CTR do ativo.
-      * **Principais ativos convertidos**
-Uma visualização de [barra horizontal](/help/analysis-workspace/visualizations/horizontal-bar.md) que mostra os principais ativos convertidos com base na métrica de conversão selecionada.
-      * **Ativos com melhor desempenho**
-Uma [tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) (incluindo [miniaturas](#thumbnails) e [visualizações](#previews)) para os ativos de melhor desempenho.
-Assets - visualizações em comparação com a conversão.
-Uma visualização de [gráfico de dispersão](/help/analysis-workspace/visualizations/scatterplot.md) que mostra um gráfico de dispersão de exibições de ativos versus conversões de ativos.
+    * **CTR do ativo**
+      Uma visualização de [alteração de resumo](/help/analysis-workspace/visualizations/summary-number-change.md) que mostra o CTR do ativo.
+    * **Principais ativos convertidos**
+      Uma visualização de [barra horizontal](/help/analysis-workspace/visualizations/horizontal-bar.md) que mostra os principais ativos convertidos com base na métrica de conversão selecionada.
+    * **Ativos com melhor desempenho**
+      Uma [tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) (incluindo [miniaturas](#thumbnails) e [visualizações](#previews)) para os ativos de melhor desempenho.
+      Assets - visualizações em comparação com a conversão.
+      Uma visualização de [gráfico de dispersão](/help/analysis-workspace/visualizations/scatterplot.md) que mostra um gráfico de dispersão de exibições de ativos versus conversões de ativos.
 
-* **Quais atributos de ativo contribuem para as conversões?**
+* **Quais atributos de ativos contribuem para a conversão?**
 O Content Analytics usa IA e GenAI para atribuir automaticamente metadados e atributos, como assuntos, cenas e cores de primeiro plano, a cada ativo.
 
-   * **Principais atributos convertidos de ativos**
-Uma [barra horizontal](/help/analysis-workspace/visualizations/horizontal-bar.md) que mostra os atributos de ativo de conversão superior com base na métrica de conversão selecionada.
-   * **Principais atributos de ativos convertidos vs. os 30 dias anteriores**
-Uma visualização de [barra horizontal](/help/analysis-workspace/visualizations/horizontal-bar.md) que mostra os atributos de ativo de conversão principais, em comparação aos 30 dias anteriores, com base na métrica de conversão selecionada.
-   * **Principais conversões de dados de atributos de ativos**
-Uma [tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) que mostra os principais atributos de conversão com base na métrica de conversão selecionada. Selecione uma linha na tabela para atualizar a visualização de tendência do atributo.
-   * **Tendência de atributo**
-Uma visualização de [linha](/help/analysis-workspace/visualizations/line.md) mostrando a tendência do atributo para o atributo de ativo de conversão superior selecionado.
-   * **Cor de primeiro plano do ativo**
-Um exemplo [tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) que compara o desempenho de itens de uma única categoria de atributo de ativo: Cores de Primeiro Plano. É possível substituir esse atributo de ativo por outras dimensões de categoria de atributo de ativo.
+  * **Principais atributos convertidos de ativos**
+    Uma [barra horizontal](/help/analysis-workspace/visualizations/horizontal-bar.md) que mostra os atributos de ativo de conversão superior com base na métrica de conversão selecionada.
+  * **Principais atributos de ativos convertidos vs. os 30 dias anteriores**
+    Uma visualização de [barra horizontal](/help/analysis-workspace/visualizations/horizontal-bar.md) que mostra os atributos de ativo de conversão principais, em comparação aos 30 dias anteriores, com base na métrica de conversão selecionada.
+  * **Principais conversões de dados de atributos de ativos**
+    Uma [tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) que mostra os principais atributos de conversão com base na métrica de conversão selecionada. Selecione uma linha na tabela para atualizar a visualização de tendência do atributo.
+  * **Tendência de atributo**
+    Uma visualização de [linha](/help/analysis-workspace/visualizations/line.md) mostrando a tendência do atributo para o atributo de ativo de conversão superior selecionado.
+  * **Cor de primeiro plano do ativo**
+    Um exemplo [tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) que compara o desempenho de itens de uma única categoria de atributo de ativo: Cores de Primeiro Plano. É possível substituir esse atributo de ativo por outras dimensões de categoria de atributo de ativo.
 
 * **Quais atributos de experiência contribuem para as conversões?**
 
@@ -172,28 +161,28 @@ Um exemplo [tabela de forma livre](/help/analysis-workspace/visualizations/freef
 
   O painel consiste nas seguintes visualizações:
 
-   * **Principais atributos de experiência de conversão**
-Uma visualização de [barra horizontal](/help/analysis-workspace/visualizations/horizontal-bar.md) que mostra os atributos de experiência de conversão principais com base na métrica de conversão selecionada.
-Principais atributos de experiência de conversão em comparação aos 30 dias anteriores
-Uma visualização de [barra horizontal](/help/analysis-workspace/visualizations/horizontal-bar.md) que mostra os atributos de experiência de conversão principais, em comparação aos 30 dias anteriores, com base na métrica de conversão selecionada.
-   * **Principais dados de atributos de experiência de conversão**
-Uma [tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) que mostra as principais experiências de conversão com base na métrica de conversão selecionada. Selecione uma linha na tabela para atualizar a visualização de linha.
-   * **Linha**
-Uma visualização de [linha](/help/analysis-workspace/visualizations/line.md) mostrando a tendência do atributo de experiência de conversão principal selecionado.
-   * **Palavras-chave de experiência**
-Uma [tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) mostrando as principais palavras-chave de experiência com base na métrica de conversão selecionada.
+  * **Principais atributos de experiência de conversão**
+    Uma visualização de [barra horizontal](/help/analysis-workspace/visualizations/horizontal-bar.md) que mostra os atributos de experiência de conversão principais com base na métrica de conversão selecionada.
+    Principais atributos de experiência de conversão em comparação aos 30 dias anteriores
+    Uma visualização de [barra horizontal](/help/analysis-workspace/visualizations/horizontal-bar.md) que mostra os atributos de experiência de conversão principais, em comparação aos 30 dias anteriores, com base na métrica de conversão selecionada.
+  * **Principais dados de atributos de experiência de conversão**
+    Uma [tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) que mostra as principais experiências de conversão com base na métrica de conversão selecionada. Selecione uma linha na tabela para atualizar a visualização de linha.
+  * **Linha**
+    Uma visualização de [linha](/help/analysis-workspace/visualizations/line.md) mostrando a tendência do atributo de experiência de conversão principal selecionado.
+  * **Palavras-chave de experiência**
+    Uma [tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) mostrando as principais palavras-chave de experiência com base na métrica de conversão selecionada.
 
 * **Onde os ativos aparecem no meu site?**
 Esta tabela de forma livre detalha onde seus ativos mais visualizados aparecem. Use essa análise para identificar páginas de alto desempenho e otimizar a inserção de ativos.
 
-   * **Onde aparecem os ativos mais exibidos?**
-É possível detalhar qualquer ativo por dimensões para ajudá-lo a entender melhor onde essa imagem aparece.
+  * **Onde aparecem os ativos mais visualizados?**
+    É possível detalhar qualquer ativo por dimensões para ajudá-lo a entender melhor onde essa imagem aparece.
 
-     Na [tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) (incluindo [miniaturas](#thumbnails) e [visualizações](#previews)) de exemplo, a **[!UICONTROL ID de percepção do ativo]** é usada em vez da [!UICONTROL ID do ativo]. Às vezes, a mesma imagem pode ser duplicada em seu site com um URL de imagem diferente. O atributo [!UICONTROL ID de percepção do ativo] ajuda a agrupar essas duplicatas em uma única ID.
+    Na [tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) (incluindo [miniaturas](#thumbnails) e [visualizações](#previews)) de exemplo, a **[!UICONTROL ID de percepção do ativo]** é usada em vez da [!UICONTROL ID do ativo]. Às vezes, a mesma imagem pode ser duplicada em seu site com um URL de imagem diferente. O atributo [!UICONTROL ID de percepção do ativo] ajuda a agrupar essas duplicatas em uma única ID.
 
-     Como os ativos podem ser alterados em uma página, o sistema detalha cada ativo por **[!UICONTROL ID da experiência]** para identificar a versão da página em que o ativo apareceu. Você pode substituir a [!UICONTROL ID da experiência] por outras dimensões que ajudam a entender a localização de um ativo no seu site. Por exemplo, [!UICONTROL Nome da página], [!UICONTROL URL da página] ou [!UICONTROL Seção do site].
+    Como os ativos podem ser alterados em uma página, o sistema detalha cada ativo por **[!UICONTROL ID da experiência]** para identificar a versão da página em que o ativo apareceu. Você pode substituir a [!UICONTROL ID da experiência] por outras dimensões que ajudam a entender a localização de um ativo no seu site. Por exemplo, [!UICONTROL Nome da página], [!UICONTROL URL da página] ou [!UICONTROL Seção do site].
 
-     Você também pode trocar a [!UICONTROL ID de percepção do ativo] pela [!UICONTROL ID do ativo] para obter um registro de onde os URLs de imagem específicos estão referenciados.
+    Você também pode trocar a [!UICONTROL ID de percepção do ativo] pela [!UICONTROL ID do ativo] para obter um registro de onde os URLs de imagem específicos estão referenciados.
 
 
 >[!MORELIKETHIS]

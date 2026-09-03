@@ -6,20 +6,11 @@ feature: Adobe Product Analytics, Guided Analysis
 keywords: product analytics
 role: User
 TQID: https://experienceleague.adobe.com/-AW7cK4fHNV58e539KKcqBx-pRpIpIRWcrS7CA9ZUYc
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: bcc5edb5-84c3-4940-9f84-ed88b6c16274id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
 source-git-commit: 7f8ab656c7dbf508b2a78fd2022592faf883c56e
 workflow-type: tm+mt
 source-wordcount: 685
@@ -40,7 +31,7 @@ ht-degree: 100%
 
 A Análise de ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg)**[!UICONTROL funil ]**fornece uma representação visual de uma jornada do usuário significativa em seu produto. O eixo horizontal representa cada etapa pela qual um usuário deve passar. O eixo vertical representa a porcentagem de usuários ou sessões em cada etapa. Todas as etapas devem ser feitas em ordem eventual, mas podem ocorrer a qualquer momento na janela de relatórios.
 
->[!VIDEO](https://video.tv.adobe.com/v/3431282/?captions=por_br&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3421663/?quality=12&learn=on)
 
 ## Casos de uso
 
@@ -62,10 +53,10 @@ O painel de consulta permite configurar os seguintes componentes:
 
 * **[!UICONTROL Exibir]**: alternar entre esta análise e [Tendências de conversão](conversion-trends.md).
 * **[!UICONTROL Etapas]**: os pontos de contato do evento que você deseja rastrear. Cada barra no gráfico representa uma etapa. É possível incluir até dez etapas.
-   * [!UICONTROL Comparar]: cada etapa fornece uma opção para comparar vários eventos em uma única etapa de funil, criando um &quot;funil bifurcado&quot;. Esse recurso permite comparar o atrito de duas jornadas lado a lado, sem precisar criar duas análises separadas. É útil quando há opções de etapa ou um experimento A/B está sendo executado no funil. Consulte [Funil](https://experienceleague.adobe.com/pt-br/docs/customer-journey-analytics-learn/tutorials/guided-analysis/funnel) nos tutoriais do Customer Journey Analytics para ver um vídeo que explica como comparar funis.
+  * [!UICONTROL Comparar]: cada etapa fornece uma opção para comparar vários eventos em uma única etapa de funil, criando um &quot;funil bifurcado&quot;. Esse recurso permite comparar o atrito de duas jornadas lado a lado, sem precisar criar duas análises separadas. É útil quando há opções de etapa ou um experimento A/B está sendo executado no funil. Consulte [Funil](https://experienceleague.adobe.com/pt-br/docs/customer-journey-analytics-learn/tutorials/guided-analysis/funnel) nos tutoriais do Customer Journey Analytics para ver um vídeo que explica como comparar funis.
 * **[!UICONTROL Contado como]**: o escopo que você deseja aplicar ao funil. As opções incluem [!UICONTROL Sessões] e [!UICONTROL Usuários].
-   * [!UICONTROL Sessões]: todas as etapas devem ocorrer na mesma sessão para serem contadas.
-   * [!UICONTROL Usuários]: todas as etapas devem ocorrer na janela de relatórios selecionada para serem contadas.
+  * [!UICONTROL Sessões]: todas as etapas devem ocorrer na mesma sessão para serem contadas.
+  * [!UICONTROL Usuários]: todas as etapas devem ocorrer na janela de relatórios selecionada para serem contadas.
 * **[!UICONTROL Segmentos]**: os segmentos nos quais você deseja comparar o funil. Cada segmento selecionado divide cada etapa em várias barras. Cada cor representa um segmento diferente. É possível incluir até três segmentos.
 
 ### Configurações de gráficos

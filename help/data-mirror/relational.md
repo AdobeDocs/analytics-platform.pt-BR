@@ -6,23 +6,14 @@ feature: Basics
 role: Admin
 exl-id: 17f72954-085c-46a8-bc28-6af0a4eb159a
 TQID: https://experienceleague.adobe.com/DhV4VNrG4WR1iQP9VqjvV16iEpfShbBir7N1JfeRbCM
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: c38ed341-fab2-46df-9d72-88d8166edebb
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: c38ed341-fab2-46df-9d72-88d8166edebbid: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 2b0204c229a7d53c0a497fe448c165acf84536ad
 workflow-type: tm+mt
-source-wordcount: 2355
+source-wordcount: 2375
 ht-degree: 15%
 
 ---
@@ -65,26 +56,26 @@ Em [!DNL Google BigQuery], os seguintes dados de exemplo são armazenados e atua
 
 | carimbo de data e hora | id | pagename | personid | trackingcode | ordens | valor de receita |
 | :---                      |  ---: | :---              | :---            | :---          |   ---: | :---           |
-| 03/2025-06T19:15:39+00:00 | 10001 | página inicial | person-1abc123 | abc123 |        |                |
-| 03/2025-06T19:15:39+00:00 | 10002 | página de confirmação | person-1abc123 |               | 1 | 174,25 |
-| 03/2025-06T19:15:39+00:00 | 10003 | página inicial | person-2def123 | def123 |        |                |
-| 03/2025-06T19:15:39+00:00 | 10004 | página inicial | person-3ghi123 | ghi123 |        |                |
-| 03/2025-06T19:15:39+00:00 | 10005 | página de confirmação | person-3ghi123 |               | 1 | 149,25 |
-| 03/2025-06T19:15:39+00:00 | 10006 | página inicial | person-4abc456 | abc456 |        |                |
-| 03/2025-06T19:15:39+00:00 | 10007 | página inicial | person-5def456 | def456 |        |                |
-| 03/2025-06T19:15:39+00:00 | 10008 | página inicial | pessoa-6ghi456 | ghi456 |        |                |
-| 03/2025-06T19:15:39+00:00 | 10009 | página de confirmação | pessoa-6ghi456 |               | 1 | 159,25 |
-| 03/2025-06T19:15:39+00:00 | 10010 | página inicial | person-7abc789 | abc789 |        |                |
-| 03/2025-06T19:15:39+00:00 | 10011 | página inicial | pessoa-8def789 | def789 |        |                |
-| 03/2025-06T19:15:39+00:00 | 10012 | página inicial | pessoa-9ghi789 | ghi789 |        |                |
-| 03/2025-06T19:15:39+00:00 | 10013 | página de confirmação | pessoa-9ghi789 |               | 1 | 124,25 |
-| 03/2025-06T19:15:39+00:00 | 10014 | página inicial | person-10abc987 | abc987 |        |                |
-| 03/2025-06T19:15:39+00:00 | 10015 | página inicial | person-11def987 | def987 |        |                |
-| 03/2025-06T19:15:39+00:00 | 10016 | página inicial | person-12ghi987 | ghi987 |        |                |
-| 03/2025-06T19:15:39+00:00 | 10017 | página inicial | person-13abc654 | abc654 |        |                |
-| 03/2025-06T19:15:39+00:00 | 10018 | página inicial | person-14def654 | def654 |        |                |
-| 03/2025-06T19:15:39+00:00 | 10019 | página inicial | person-15ghi654 | ghi654 |        |                |
-| 03/2025-06T19:15:39+00:00 | 10020 | página de confirmação | person-15ghi654 |               | 1 | 174,25 |
+| 2025-03-06T19:15:39+00:00 | 10001 | página inicial | person-1abc123 | abc123 |        |                |
+| 2025-03-06T19:15:39+00:00 | 10002 | página de confirmação | person-1abc123 |               | 1 | 174,25 |
+| 2025-03-06T19:15:39+00:00 | 10003 | página inicial | person-2def123 | def123 |        |                |
+| 2025-03-06T19:15:39+00:00 | 10004 | página inicial | person-3ghi123 | ghi123 |        |                |
+| 2025-03-06T19:15:39+00:00 | 10005 | página de confirmação | person-3ghi123 |               | 1 | 149,25 |
+| 2025-03-06T19:15:39+00:00 | 10006 | página inicial | person-4abc456 | abc456 |        |                |
+| 2025-03-06T19:15:39+00:00 | 10007 | página inicial | person-5def456 | def456 |        |                |
+| 2025-03-06T19:15:39+00:00 | 10008 | página inicial | pessoa-6ghi456 | ghi456 |        |                |
+| 2025-03-06T19:15:39+00:00 | 10009 | página de confirmação | pessoa-6ghi456 |               | 1 | 159,25 |
+| 2025-03-06T19:15:39+00:00 | 10010 | página inicial | person-7abc789 | abc789 |        |                |
+| 2025-03-06T19:15:39+00:00 | 10011 | página inicial | pessoa-8def789 | def789 |        |                |
+| 2025-03-06T19:15:39+00:00 | 10012 | página inicial | pessoa-9ghi789 | ghi789 |        |                |
+| 2025-03-06T19:15:39+00:00 | 10013 | página de confirmação | pessoa-9ghi789 |               | 1 | 124,25 |
+| 2025-03-06T19:15:39+00:00 | 10014 | página inicial | person-10abc987 | abc987 |        |                |
+| 2025-03-06T19:15:39+00:00 | 10015 | página inicial | person-11def987 | def987 |        |                |
+| 2025-03-06T19:15:39+00:00 | 10016 | página inicial | person-12ghi987 | ghi987 |        |                |
+| 2025-03-06T19:15:39+00:00 | 10017 | página inicial | person-13abc654 | abc654 |        |                |
+| 2025-03-06T19:15:39+00:00 | 10018 | página inicial | person-14def654 | def654 |        |                |
+| 2025-03-06T19:15:39+00:00 | 10019 | página inicial | person-15ghi654 | ghi654 |        |                |
+| 2025-03-06T19:15:39+00:00 | 10020 | página de confirmação | person-15ghi654 |               | 1 | 174,25 |
 
 +++
 
@@ -227,17 +218,17 @@ Na etapa **[!UICONTROL Autenticação]**, selecione:
 
 * **[!UICONTROL Conta existente]** quando você já tiver uma configuração de conta para o Google BigQuery. Continue na etapa [Selecionar dados](#select-data).
 * **[!UICONTROL Nova conta]** quando precisar se conectar ao Google BigQuery.
-   1. Especifique um **[!UICONTROL Nome da conta]** e (opcional) **[!UICONTROL Descrição]**.
-   1. Selecione seu **[!UICONTROL Tipo de autenticação]**: **[!UICONTROL Autenticação Básica]** ou **[!UICONTROL Autenticação de Serviço]**. Com base na sua seleção, forneça a entrada necessária.
-   1. Selecionar **[!UICONTROL Conectar à origem]**
+  1. Especifique um **[!UICONTROL Nome da conta]** e (opcional) **[!UICONTROL Descrição]**.
+  1. Selecione seu **[!UICONTROL Tipo de autenticação]**: **[!UICONTROL Autenticação Básica]** ou **[!UICONTROL Autenticação de Serviço]**. Com base na sua seleção, forneça a entrada necessária.
+  1. Selecionar **[!UICONTROL Conectar à origem]**
 
-      ![Google BigQuery - Autenticação](assets/googlebg-authentication.png)
+     ![Google BigQuery - Autenticação](assets/googlebg-authentication.png)
 
-      Sua conexão foi verificada. Um ![CheckmarkCircleGreen](/help/assets/icons/CheckmarkCircleGreen.svg) **[!UICONTROL Connected]** indicou uma conexão bem-sucedida.
+     Sua conexão foi verificada. Um ![CheckmarkCircleGreen](/help/assets/icons/CheckmarkCircleGreen.svg) **[!UICONTROL Connected]** indicou uma conexão bem-sucedida.
 
-   1. Selecione **[!UICONTROL Próximo]**.
+  1. Selecione **[!UICONTROL Próximo]**.
 
-  Consulte a documentação do Experience Platform para obter detalhes sobre como conectar e autenticar quando você usa o [Azure Databricks](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/databases/databricks) ou o conector do [Snowflake](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/databases/snowflake).
+  Consulte a documentação do Experience Platform para obter detalhes sobre como conectar e autenticar quando você usa o [Azure Databricks](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/databricks) ou o conector do [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake).
 
 
 ### Selecionar dados

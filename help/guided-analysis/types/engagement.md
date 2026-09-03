@@ -6,16 +6,10 @@ keywords: product analytics
 role: User
 exl-id: 8a48ad3b-fa30-497e-8306-f8d881b1a335
 TQID: https://experienceleague.adobe.com/sqRGQu7Vg5jdCGXT-NWIeExSrBeMVK5hXg0VvD2LtIM
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: bc7a5a86-1a70-451f-985c-037b65f091d1
-  - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: bc7a5a86-1a70-451f-985c-037b65f091d1id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: 7f8ab656c7dbf508b2a78fd2022592faf883c56e
 workflow-type: tm+mt
 source-wordcount: 758
@@ -44,7 +38,7 @@ Os recursos que aparecem na parte superior dessa visualização indicam que são
 * Os recursos na parte inferior esquerda da matriz são os recursos de **baixo impacto**. Eles não são amplamente adotados ou usados com frequência.
 * Os recursos na parte inferior direita da matriz são os recursos **únicos**. Eles são amplamente adotados, mas não são usados com frequência.
 
->[!VIDEO](https://video.tv.adobe.com/v/3447472/?captions=por_br&quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3429489/?quality=12&learn=on)
 
 ## Casos de uso
 
@@ -77,8 +71,8 @@ O painel de consulta permite configurar os seguintes componentes:
 A Análise de [!UICONTROL engajamento] oferece as seguintes configurações de gráfico, que podem ser ajustadas no menu acima do gráfico:
 
 * **[!UICONTROL Medianas]**: determina onde as linhas medianas são exibidas e como os pontos plotados se relacionam a essas medianas.
-   * **[!UICONTROL Padrão]**: mostra o valor absoluto de uso e engajamento.
-   * **[!UICONTROL Normalizado]**: mostra as alterações relativas de cada mediana.
+  * **[!UICONTROL Padrão]**: mostra o valor absoluto de uso e engajamento.
+  * **[!UICONTROL Normalizado]**: mostra as alterações relativas de cada mediana.
 * **[!UICONTROL Sobreposição de eventos principais]**: veja como seus eventos estão se saindo em comparação com os 20 eventos principais, com base na empresa e na recenticidade e relevância do usuário (o mesmo algoritmo aplicado ao seletor de eventos no painel de consulta).
 
 ### Comparação de tempo

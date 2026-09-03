@@ -5,19 +5,10 @@ feature: Workspace Basics
 role: User, Admin
 exl-id: 029be0c8-ec78-4bb7-a6cd-bb303b5ac82a
 TQID: https://experienceleague.adobe.com/kXRxlgfo9-F6KyXQ590--TZOZcVqvHkZZGS6alcAC0E
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: a8b1c240-f315-46e3-b813-f545c4279dd1
-  - id: aff2ef09-fc60-4018-9197-e2befd623064
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: e4a0bad2-b448-47f1-9fa6-222ebdb3b5b0
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: a8b1c240-f315-46e3-b813-f545c4279dd1id: aff2ef09-fc60-4018-9197-e2befd623064id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: e4a0bad2-b448-47f1-9fa6-222ebdb3b5b0
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 478
@@ -35,13 +26,13 @@ Dependendo do pacote do Customer Journey Analytics, você também pode usar aler
 * Enviar alertas por email ou SMS com links para projetos do Analysis Workspace gerados automaticamente.
 * Criar alertas *empilhados* que capturam várias métricas em um único alerta.
 * Criar alertas com base em:
-   * As anomalias nas métricas existentes estão acima ou abaixo dos valores limite esperados.
+  * As anomalias nas métricas existentes estão acima ou abaixo dos valores limite esperados.
 
-     [A detecção de anomalias](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) cria um valor esperado além de um limite superior e inferior usando dados históricos. Se o valor da métrica real ultrapassar o limite superior ou ficar abaixo do limite inferior definido como o valor do limite, esse evento será considerado uma anomalia no nível de confiança do limite e acionará o alerta. Um limite mais alto (por exemplo: 99% ou 99,9%) implica uma banda mais ampla, o que resulta em menos alertas causados por anomalias mais extremas. Um limite mais baixo (por exemplo: 90%) implica uma faixa mais estreita, o que resulta em mais alertas causados por anomalias menos extremas.
-   * Alterações nas métricas em uma porcentagem específica.
-   * Métricas acima, abaixo ou igual a um valor específico. (disponível somente para clientes do Adobe Analytics com um pacote Select, Prime ou Ultimate)
+    [A detecção de anomalias](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) cria um valor esperado além de um limite superior e inferior usando dados históricos. Se o valor da métrica real ultrapassar o limite superior ou ficar abaixo do limite inferior definido como o valor do limite, esse evento será considerado uma anomalia no nível de confiança do limite e acionará o alerta. Um limite mais alto (por exemplo: 99% ou 99,9%) implica uma banda mais ampla, o que resulta em menos alertas causados por anomalias mais extremas. Um limite mais baixo (por exemplo: 90%) implica uma faixa mais estreita, o que resulta em mais alertas causados por anomalias menos extremas.
+  * Alterações nas métricas em uma porcentagem específica.
+  * Métricas acima, abaixo ou igual a um valor específico. (disponível somente para clientes do Adobe Analytics com um pacote Select, Prime ou Ultimate)
 
-Este [tutorial em vídeo](https://experienceleague.adobe.com/pt-br/docs/analytics-learn/tutorials/data-science/intelligent-alerts) fornece uma visão geral básica dos alertas.
+Este [tutorial em vídeo](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/data-science/intelligent-alerts) fornece uma visão geral básica dos alertas.
 
 
 
