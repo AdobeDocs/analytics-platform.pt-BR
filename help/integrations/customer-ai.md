@@ -42,20 +42,20 @@ A IA do cliente depende de dados comportamentais individuais e de dados de perfi
 A IA do cliente pode integrar-se ao Customer Journey Analytics, permitindo que os conjuntos de dados habilitados para a IA do cliente sejam aproveitados nas visualizações de dados e relatórios do Customer Journey Analytics. É possível:
 
 * **Rastrear as pontuações de propensão de um segmento de usuários ao longo do tempo**.
-   * Caso de uso: entender a probabilidade de conversão de clientes em um segmento específico.
-   * Exemplo: um(a) profissional de marketing em uma rede de hotéis quer entender a probabilidade de clientes de um hotel comprarem ingressos para um programa no teatro do hotel.
+  * Caso de uso: entender a probabilidade de conversão de clientes em um segmento específico.
+  * Exemplo: um(a) profissional de marketing em uma rede de hotéis quer entender a probabilidade de clientes de um hotel comprarem ingressos para um programa no teatro do hotel.
 * **Analise quais eventos ou atributos de sucesso estão associados às pontuações de propensão**.
-   * Caso de uso: entender os atributos ou eventos de sucesso associados às pontuações de propensão.
-   * Exemplo: um(a) profissional de marketing de uma rede de hotéis quer entender como as compras de ingressos para programas no teatro de um hotel estão associadas às pontuações de propensão.
+  * Caso de uso: entender os atributos ou eventos de sucesso associados às pontuações de propensão.
+  * Exemplo: um(a) profissional de marketing de uma rede de hotéis quer entender como as compras de ingressos para programas no teatro de um hotel estão associadas às pontuações de propensão.
 * **Siga o fluxo de entrada de propensão do cliente em diferentes casos de pontuação**.
-   * Caso de uso: descobrir quais pessoas eram inicialmente usuários de baixa propensão e, com o tempo, se tornaram usuários de alta propensão.
-   * Exemplo: um(a) profissional de marketing em uma rede de hotéis quer entender quais clientes do hotel foram identificados(as) inicialmente como clientes com baixa propensão a comprar ingressos para um programa, mas que com o tempo se tornaram clientes com alta propensão a comprar ingressos para um programa.
+  * Caso de uso: descobrir quais pessoas eram inicialmente usuários de baixa propensão e, com o tempo, se tornaram usuários de alta propensão.
+  * Exemplo: um(a) profissional de marketing em uma rede de hotéis quer entender quais clientes do hotel foram identificados(as) inicialmente como clientes com baixa propensão a comprar ingressos para um programa, mas que com o tempo se tornaram clientes com alta propensão a comprar ingressos para um programa.
 * **Veja a distribuição da propensão**.
-   * Caso de uso: entender a distribuição das pontuações de propensão para maior precisão na definição de segmentos.
-   * Exemplo: um varejista deseja aplicar uma promoção específica que oferece US$ 50 de desconto em um produto. Eles podem querer executar apenas uma promoção muito limitada devido ao orçamento, etc. Eles analisam os dados e decidem segmentar apenas os 80%+ de seus clientes.
+  * Caso de uso: entender a distribuição das pontuações de propensão para maior precisão na definição de segmentos.
+  * Exemplo: um varejista deseja aplicar uma promoção específica que oferece US$ 50 de desconto em um produto. Eles podem querer executar apenas uma promoção muito limitada devido ao orçamento, etc. Eles analisam os dados e decidem segmentar apenas os 80%+ de seus clientes.
 * **Examine a “propensão de se realizar uma ação” de um coorte específico ao longo do tempo**.
-   * Caso de uso: rastrear um coorte específico ao longo do tempo.
-   * Exemplo: um(a) profissional de marketing em uma rede de hotéis quer rastrear clientes de nível bronze em comparação com os de nível prata, ou os de nível prata em comparação com os de nível ouro, ao longo do tempo. É possível visualizar a propensão de cada coorte em efetuar reservas no hotel ao longo do tempo.
+  * Caso de uso: rastrear um coorte específico ao longo do tempo.
+  * Exemplo: um(a) profissional de marketing em uma rede de hotéis quer rastrear clientes de nível bronze em comparação com os de nível prata, ou os de nível prata em comparação com os de nível ouro, ao longo do tempo. É possível visualizar a propensão de cada coorte em efetuar reservas no hotel ao longo do tempo.
 
 Para integrar de fato os dados da IA do cliente ao Customer Journey Analytics, siga estas etapas:
 

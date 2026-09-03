@@ -165,11 +165,11 @@ Ao exibir a tabela, considere o seguinte:
 
 * Você pode pesquisar ou filtrar a lista de conexões:
 
-   * Use o campo de pesquisa para procurar uma conexão específica. Comece a digitar o nome ou ID da conexão e a lista de conexões será atualizada conforme você digita.
+  * Use o campo de pesquisa para procurar uma conexão específica. Comece a digitar o nome ou ID da conexão e a lista de conexões será atualizada conforme você digita.
 
-   * Selecione o ícone [!UICONTROL **Filtro**] ![Ícone Filtro](assets/filter-icon.png) para expandir a lista de opções de filtro. Você pode filtrar por [!UICONTROL **Status**], [!UICONTROL **Complexidade**], [!UICONTROL **Aplicativo**], [!UICONTROL **Usuário**] ou [!UICONTROL **Projeto**].
+  * Selecione o ícone [!UICONTROL **Filtro**] ![Ícone Filtro](assets/filter-icon.png) para expandir a lista de opções de filtro. Você pode filtrar por [!UICONTROL **Status**], [!UICONTROL **Complexidade**], [!UICONTROL **Aplicativo**], [!UICONTROL **Usuário**] ou [!UICONTROL **Projeto**].
 
-   * Você pode selecionar [!UICONTROL **Ocultar gráficos**] para mostrar apenas a tabela.
+  * Você pode selecionar [!UICONTROL **Ocultar gráficos**] para mostrar apenas a tabela.
 
 ![guias de tabela](assets/report-activity-tabs.png)
 

@@ -19,8 +19,8 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: 1114
-ht-degree: 90%
+source-wordcount: 1119
+ht-degree: 89%
 
 ---
 
@@ -104,7 +104,7 @@ Você pode configurar o painel Tempo gasto com a reprodução de mídia usando e
 | Números de resumo do painel | Para visualizar os detalhes de data ou hora do tempo gasto com a reprodução, um número de resumo está disponível. O Máximo mostra detalhes para a simultaneidade de pico. O Mínimo mostra detalhes para o vale. O total soma o tempo total gasto com a reprodução para a seleção. O padrão do painel mostra somente o Máximo, mas você pode alterá-lo para mostrar Mínimo, Total ou qualquer combinação dos três.<br>Se você estiver usando detalhamentos, um número de resumo será exibido para cada um. |
 | Detalhamento por séries | Como opção, você pode detalhar a visualização por segmentos, dimensões, itens de dimensão ou intervalos de datas.<p>- É possível exibir até 10 linhas por vez. Os detalhamentos são limitados a um único nível.</p><p>- Ao arrastar uma dimensão, os itens de dimensão principais serão selecionados automaticamente com base no intervalo de datas do painel selecionado.</p>- Para comparar intervalos de datas, arraste 2 ou mais intervalos de datas para o segmento de detalhamento em série. |
 | Formato de tempo | É possível visualizar o tempo gasto com a reprodução em `Hours:Minutes:Seconds` (padrão) ou em `Minutes` (que é exibido em números inteiros, arredondados em 0,5). |
-| Exibição da sequência de data | Se você inseriu pelo menos dois segmentos de intervalo de datas como detalhamentos de série, verá a opção de selecionar sobreposição (padrão) ou sequencial. “Sobreposição” exibe as linhas com uma origem comum no eixo x para que evoluam em paralelo, enquanto que “Sequencial” exibe as linhas com suas origens específicas no eixo x. Se os dados se alinharem (por exemplo, o segmento 1 termina às 20h e o segmento 2 começa às 20h), as linhas serão exibidas em sequência.:44:45 |
+| Exibição da sequência de data | Se você inseriu pelo menos dois segmentos de intervalo de datas como detalhamentos de série, verá a opção de selecionar sobreposição (padrão) ou sequencial. “Sobreposição” exibe as linhas com uma origem comum no eixo x para que evoluam em paralelo, enquanto que “Sequencial” exibe as linhas com suas origens específicas no eixo x. Se os dados se alinharem (por exemplo, o segmento 1 termina às 20h44 e o segmento 2 começa às 20h45), as linhas serão exibidas em sequência. |
 
 
 ![A exibição padrão do Tempo gasto com a reprodução de mídia.](assets/mpts_default_view.png)

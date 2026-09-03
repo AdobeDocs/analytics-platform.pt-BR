@@ -36,8 +36,8 @@ Para isso, você deseja analisar e explorar:
 
 * Impacto de marketing:
 
-   * Em campanhas, canais e conteúdo.
-   * Em grupos de compras dentro de contas,
+  * Em campanhas, canais e conteúdo.
+  * Em grupos de compras dentro de contas,
 
 * Progressão do pipeline de vendas.
 * oportunidades de venda adicional e venda cruzada.

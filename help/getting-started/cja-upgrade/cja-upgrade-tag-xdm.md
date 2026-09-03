@@ -195,27 +195,27 @@ Para definir uma regra:
 
    * **[!UICONTROL Eventos]**: selecione **[!UICONTROL + Adicionar]**. Em seguida, na caixa de diálogo **[!UICONTROL Configuração de evento]**, especifique as seguintes informações. Quando terminar, selecione **[!UICONTROL Manter alterações]**.
 
-      * **[!UICONTROL Extensão]**: selecione **[!UICONTROL Núcleo]** na lista.
+     * **[!UICONTROL Extensão]**: selecione **[!UICONTROL Núcleo]** na lista.
 
-      * **[!UICONTROL Tipo de evento]**: selecione **[!UICONTROL Janela carregada]** na lista.
+     * **[!UICONTROL Tipo de evento]**: selecione **[!UICONTROL Janela carregada]** na lista.
 
-        ![Regra - Configuração de evento](assets/event-windowloaded-pageview.png)
+       ![Regra - Configuração de evento](assets/event-windowloaded-pageview.png)
 
    * **[!UICONTROL Ações]**: selecione **[!UICONTROL + Adicionar]**. Em seguida, na caixa de diálogo [!UICONTROL Configuração de ação], especifique as seguintes informações. Quando terminar, selecione **[!UICONTROL Manter alterações]**.
 
-      * **[!UICONTROL Extensão]**: selecione **[!UICONTROL SDK da web da Adobe Experience Platform]** na lista.
+     * **[!UICONTROL Extensão]**: selecione **[!UICONTROL SDK da web da Adobe Experience Platform]** na lista.
 
-      * **[!UICONTROL Tipo de ação]**: selecione **[!UICONTROL Enviar evento]** na lista.
+     * **[!UICONTROL Tipo de ação]**: selecione **[!UICONTROL Enviar evento]** na lista.
 
-      * **[!UICONTROL Tipo]**: selecione **[!UICONTROL Exibições de página da web]** na lista.
+     * **[!UICONTROL Tipo]**: selecione **[!UICONTROL Exibições de página da web]** na lista.
 
-      * **[!UICONTROL Dados XDM]**: clique no ícone do cilindro e selecione **[!UICONTROL XDM: exibição de página]** na lista de elementos de dados.
+     * **[!UICONTROL Dados XDM]**: clique no ícone do cilindro e selecione **[!UICONTROL XDM: exibição de página]** na lista de elementos de dados.
 
-        ![Regra - Configuração de ação](assets/action-pageview-xdm.png)
+       ![Regra - Configuração de ação](assets/action-pageview-xdm.png)
 
-        Sua regra deve ter a seguinte aparência:
+       Sua regra deve ter a seguinte aparência:
 
-        ![Criar regra](assets/rule-pageview.png)
+       ![Criar regra](assets/rule-pageview.png)
 
 1. Selecione **[!UICONTROL Salvar]**.
 

@@ -26,7 +26,7 @@ topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 88ff7c4124d4612a3411b315a605aec29bc9a218
 workflow-type: tm+mt
-source-wordcount: 7300
+source-wordcount: 7319
 ht-degree: 87%
 
 ---
@@ -746,6 +746,6 @@ A interface **[!UICONTROL Uso de Mídia de Streaming]** consiste em dois painéi
 
 >[!MORELIKETHIS]
 >
->[Exibir, solucionar problemas e modificar as configurações de conexão](https://experienceleague.adobe.com/pt-br/docs/customer-journey-analytics-learn/tutorials/connections/connections-details-experience-in-cja).
+>Tutorial sobre [Exibir, resolver problemas e modificar configurações de conexão](https://experienceleague.adobe.com/pt-br/docs/customer-journey-analytics-learn/tutorials/connections/connections-details-experience-in-cja).
 >[Gerenciar o uso do Customer Journey Analytics](/help/technotes/estimate-usage.md)
 >

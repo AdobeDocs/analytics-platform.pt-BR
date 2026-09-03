@@ -43,7 +43,7 @@ topic_v2:
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 1661
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -124,16 +124,16 @@ Além de ser adicionado como administrador de produto no **Perfil de produto do 
 
   Para que os usuários usem a extensão de BI, um administrador de produto
 
-   * precisa garantir que as permissões da Experience Platform referentes ao usuário incluam uma função que tenha o recurso de serviço de consulta com as opções de gerenciar consultas e gerenciar integração do serviço de consulta. Para obter mais informações sobre permissões da Experience Platform, consulte [Gerenciar permissões de um perfil de produto](https://experienceleague.adobe.com/pt-br/docs/experience-platform/access-control/ui/permissions).
+  * precisa garantir que as permissões da Experience Platform referentes ao usuário incluam uma função que tenha o recurso de serviço de consulta com as opções de gerenciar consultas e gerenciar integração do serviço de consulta. Para obter mais informações sobre permissões da Experience Platform, consulte [Gerenciar permissões de um perfil de produto](https://experienceleague.adobe.com/pt-br/docs/experience-platform/access-control/ui/permissions).
 
-     | Categoria | Permissão | Descrição |
-     |---|---|---|
-     | [!UICONTROL Serviço de Consultas] | [!UICONTROL Gerenciar consultas] | Acesso para ler, criar, editar e excluir consultas SQL estruturadas de dados da Platform. |
-     | [!UICONTROL Serviço de Consultas] | [!UICONTROL Gerenciar integração do serviço de consulta] | Acesso para criar, atualizar e excluir credenciais sem expiração para acesso ao serviço de consulta. |
+    | Categoria | Permissão | Descrição |
+    |---|---|---|
+    | [!UICONTROL Serviço de Consultas] | [!UICONTROL Gerenciar consultas] | Acesso para ler, criar, editar e excluir consultas SQL estruturadas de dados da Platform. |
+    | [!UICONTROL Serviço de Consultas] | [!UICONTROL Gerenciar integração do serviço de consulta] | Acesso para criar, atualizar e excluir credenciais sem expiração para acesso ao serviço de consulta. |
 
-   * precisa garantir as permissões adequadas do Customer Journey Analytics referentes ao usuário:
-      * permissão para acessar as visualizações de dados relevantes. Consulte [!UICONTROL Visualizações de dados] em [Acesso no nível do usuário](#user-level-access).
-      * permissão para acessar a extensão de BI do Customer Journey Analytics. Consulte [!UICONTROL Ferramentas de visualização de dados] em [Acesso no nível do usuário](#user-level-access).
+  * precisa garantir as permissões adequadas do Customer Journey Analytics referentes ao usuário:
+    * permissão para acessar as visualizações de dados relevantes. Consulte [!UICONTROL Visualizações de dados] em [Acesso no nível do usuário](#user-level-access).
+    * permissão para acessar a extensão de BI do Customer Journey Analytics. Consulte [!UICONTROL Ferramentas de visualização de dados] em [Acesso no nível do usuário](#user-level-access).
 
 ### Função de administrador de perfil de produto
 

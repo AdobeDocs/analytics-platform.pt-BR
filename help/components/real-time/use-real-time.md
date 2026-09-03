@@ -23,7 +23,7 @@ topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: 239
+source-wordcount: 242
 ht-degree: 12%
 
 ---
@@ -54,7 +54,7 @@ Selecione o período em tempo real que deseja relatar no menu suspenso. As opç�
 
 Todas as visualizações no painel agora são atualizadas a cada minuto, por no máximo 30 minutos, enquanto a guia do navegador com o painel habilitado para atualização em tempo real está ativa.
 
-Como exemplo, veja abaixo um instantâneo de um **[!UICONTROL Painel de relatórios em tempo real]** que atualiza a visualização de barra **[!UICONTROL Receita total / Hora]** e a tabela de forma livre **[!UICONTROL Receita total / Hora]** conforme o tempo passa de **[!UICONTROL *06:26pm*]** para **[!UICONTROL *06:27 pm *]**.
+Como exemplo, veja abaixo um instantâneo de um **[!UICONTROL Painel de relatórios em tempo real]** que atualiza a visualização de barra **[!UICONTROL Receita total / Hora]** e a tabela de forma livre **[!UICONTROL Receita total / Hora]** à medida que o tempo muda de **[!UICONTROL *06:26pm *]**&#x200B;para&#x200B;**[!UICONTROL * 06:27 pm *]**.
 
 ![Atualização em tempo real](assets/real-time-refresh.gif)
 

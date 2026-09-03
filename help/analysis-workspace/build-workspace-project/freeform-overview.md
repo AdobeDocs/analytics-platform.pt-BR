@@ -168,8 +168,8 @@ Se o espaço for limitado para exibir os filtros individuais, você verá **[!UI
 
 * Para remover um filtro:
 
-   1. Use **[!UICONTROL *x *filtros]**![ChevronDown](/help/assets/icons/ChevronDown.svg) para abrir um menu de contexto com os tipos de filtro e os filtros individuais.
-   1. Selecione ![CrossSize75](/help/assets/icons/CrossSize75.svg) para remover um filtro.
+  1. Use **[!UICONTROL *x *filtros]**![ChevronDown](/help/assets/icons/ChevronDown.svg) para abrir um menu de contexto com os tipos de filtro e os filtros individuais.
+  1. Selecione ![CrossSize75](/help/assets/icons/CrossSize75.svg) para remover um filtro.
 
 
 <!--

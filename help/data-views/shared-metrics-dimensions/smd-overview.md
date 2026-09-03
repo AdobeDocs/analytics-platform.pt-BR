@@ -61,40 +61,40 @@ Todas as dimensões e métricas compartilhadas são exibidas abaixo dos quatro c
 ![Visualização de dimensões e métricas disponíveis](assets/shared-metrics-dimensions.png)
 
 * **Filtro**: selecione o ícone ![Filtrar](../../assets/icons/Filter.svg) para mostrar ou ocultar os filtros disponíveis. Os seguintes filtros estão disponíveis:
-   * **[!UICONTROL Tipo de componente]**: exibir somente dimensões ou métricas.
-   * **[!UICONTROL Conjunto de Dados]**: exibir somente componentes nos quais o conjunto de dados esteja incluído nas visualizações de dados nas quais um componente está compartilhado.
-   * **[!UICONTROL Visualização de dados]**: visualizar somente componentes compartilhados com essa visualização de dados.
-   * **[!UICONTROL Criado por]**: exibir somente componentes criados por um determinado usuário.
-   * **[!UICONTROL Duplicatas]**: exibir somente componentes que tenham a mesma identificação de componente que outro componente. Esses filtros são idênticos à revisão de componentes por meio dos cartões de visão geral.
+  * **[!UICONTROL Tipo de componente]**: exibir somente dimensões ou métricas.
+  * **[!UICONTROL Conjunto de Dados]**: exibir somente componentes nos quais o conjunto de dados esteja incluído nas visualizações de dados nas quais um componente está compartilhado.
+  * **[!UICONTROL Visualização de dados]**: visualizar somente componentes compartilhados com essa visualização de dados.
+  * **[!UICONTROL Criado por]**: exibir somente componentes criados por um determinado usuário.
+  * **[!UICONTROL Duplicatas]**: exibir somente componentes que tenham a mesma identificação de componente que outro componente. Esses filtros são idênticos à revisão de componentes por meio dos cartões de visão geral.
 * **Pesquisa**: use o ícone ![Pesquisar](../../assets/icons/Search.svg) para procurar um componente por nome.
 * **[!UICONTROL Conexão]**: um menu suspenso que altera a [conexão](/help/connections/overview.md). As dimensões e métricas compartilhadas são sempre específicas para uma única conexão.
 * **[!UICONTROL Personalizar tabela]**: selecione o ícone ![Personalizar tabela](/help/assets/icons/ColumnSetting.svg) para mostrar ou ocultar colunas na tabela. As opções disponíveis incluem:
-   * **[!UICONTROL Nome do campo]**: o nome da dimensão ou métrica compartilhada. Este campo está sempre visível.
-   * **[!UICONTROL Tipo]**: indica se o componente é uma dimensão ou uma métrica. Este campo está sempre visível.
-   * **[!UICONTROL Tipo de conjunto de dados]**: o tipo de conjunto de dados. A maioria dos conjuntos de dados é de eventos.
-   * **[!UICONTROL Compartilhado para visualização de dados]**: todas as visualizações de dados nas quais este componente é compartilhado. Este campo está sempre visível. Selecione o link para abrir uma modal que lista todas as visualizações de dados nas quais esse componente está disponível.
-   * **[!UICONTROL Conjuntos de dados]**: todos os conjuntos de dados incluídos em cada visualização de dados à qual este componente é compartilhado. Selecione o link para abrir uma modal que lista todos os conjuntos de dados do componente.
-   * **[!UICONTROL Criado por]**: o nome da pessoa que criou ou importou o componente para a interface de métricas e dimensões compartilhadas.
-   * **[!UICONTROL Tipo de esquema]**: o formato em que os dados são armazenados. Os exemplos incluem `string`, `double` ou `boolean`.
-   * **[!UICONTROL ID do Componente]**: a ID do componente da dimensão ou métrica. Todos os componentes que compartilham a mesma ID de componente nessa interface devem ser revisados e desduplicados.
-   * **[!UICONTROL Esquema]**: o caminho do esquema para a dimensão ou métrica. Por exemplo, `web.webPageDetails.URL`.
-   * **[!UICONTROL Descrição]**: a [descrição](/help/data-views/component-settings/overview.md) do componente.
-   * **[!UICONTROL Rótulos de contexto]**: os [rótulos de contexto](/help/data-views/component-settings/overview.md) do componente.
-   * **[!UICONTROL Incluir/Excluir valores]**: lista o número de regras conforme especificado em [Incluir/excluir valores](/help/data-views/component-settings/include-exclude-values.md).
-   * **[!UICONTROL Rótulos de uso de dados]**: os [rótulos de uso de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/data-governance/labels/overview) para o campo de esquema.
-   * **[!UICONTROL Obsoleto]**: indica se o sinalizador obsoleto está definido.
-   * **[!UICONTROL Formato]**: o formato em que os valores aparecem. Os booleanos normalmente aparecem como `True | False`, as métricas normalmente aparecem como `Decimal`, etc.
-   * **[!UICONTROL Desduplicação de métrica]**: as configurações de [Desduplicação de métrica](/help/data-views/component-settings/metric-deduplication.md) do componente.
-   * **[!UICONTROL Comportamento]**: as configurações [Comportamento](/help/data-views/component-settings/behavior.md) do componente.
-   * **[!UICONTROL Atribuição]**: as configurações de [Atribuição](/help/data-views/component-settings/attribution.md) do componente.
-   * **[!UICONTROL Nenhuma opção de valor]**: as [Nenhuma opção de valor](/help/data-views/component-settings/no-value-options.md) do componente.
-   * **[!UICONTROL Classificação de valor]**: as configurações de [Classificação de valor](/help/data-views/component-settings/value-bucketing.md) do componente.
-   * **[!UICONTROL Persistence]**: as configurações [Persistence](/help/data-views/component-settings/persistence.md) do componente.
-   * **[!UICONTROL Minúsculas]**: indica se o componente está habilitado para minúsculas com base nas configurações [Comportamento](/help/data-views/component-settings/behavior.md) do componente.
-   * **[!UICONTROL Substring]**: as configurações de [Substring](/help/data-views/component-settings/substring.md) do componente.
-   * **[!UICONTROL Grupo de dados de resumo]**: as configurações do [grupo de dados de resumo](/help/data-views/component-settings/summary-data-group.md) do componente.
-   * **[!UICONTROL Data de criação]**: a data de criação ou de importação do componente.
-   * **[!UICONTROL Última modificação]**: se o componente foi modificado depois de ter sido criado, a data em que foi modificado pela última vez.
+  * **[!UICONTROL Nome do campo]**: o nome da dimensão ou métrica compartilhada. Este campo está sempre visível.
+  * **[!UICONTROL Tipo]**: indica se o componente é uma dimensão ou uma métrica. Este campo está sempre visível.
+  * **[!UICONTROL Tipo de conjunto de dados]**: o tipo de conjunto de dados. A maioria dos conjuntos de dados é de eventos.
+  * **[!UICONTROL Compartilhado para visualização de dados]**: todas as visualizações de dados nas quais este componente é compartilhado. Este campo está sempre visível. Selecione o link para abrir uma modal que lista todas as visualizações de dados nas quais esse componente está disponível.
+  * **[!UICONTROL Conjuntos de dados]**: todos os conjuntos de dados incluídos em cada visualização de dados à qual este componente é compartilhado. Selecione o link para abrir uma modal que lista todos os conjuntos de dados do componente.
+  * **[!UICONTROL Criado por]**: o nome da pessoa que criou ou importou o componente para a interface de métricas e dimensões compartilhadas.
+  * **[!UICONTROL Tipo de esquema]**: o formato em que os dados são armazenados. Os exemplos incluem `string`, `double` ou `boolean`.
+  * **[!UICONTROL ID do Componente]**: a ID do componente da dimensão ou métrica. Todos os componentes que compartilham a mesma ID de componente nessa interface devem ser revisados e desduplicados.
+  * **[!UICONTROL Esquema]**: o caminho do esquema para a dimensão ou métrica. Por exemplo, `web.webPageDetails.URL`.
+  * **[!UICONTROL Descrição]**: a [descrição](/help/data-views/component-settings/overview.md) do componente.
+  * **[!UICONTROL Rótulos de contexto]**: os [rótulos de contexto](/help/data-views/component-settings/overview.md) do componente.
+  * **[!UICONTROL Incluir/Excluir valores]**: lista o número de regras conforme especificado em [Incluir/excluir valores](/help/data-views/component-settings/include-exclude-values.md).
+  * **[!UICONTROL Rótulos de uso de dados]**: os [rótulos de uso de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/data-governance/labels/overview) para o campo de esquema.
+  * **[!UICONTROL Obsoleto]**: indica se o sinalizador obsoleto está definido.
+  * **[!UICONTROL Formato]**: o formato em que os valores aparecem. Os booleanos normalmente aparecem como `True | False`, as métricas normalmente aparecem como `Decimal`, etc.
+  * **[!UICONTROL Desduplicação de métrica]**: as configurações de [Desduplicação de métrica](/help/data-views/component-settings/metric-deduplication.md) do componente.
+  * **[!UICONTROL Comportamento]**: as configurações [Comportamento](/help/data-views/component-settings/behavior.md) do componente.
+  * **[!UICONTROL Atribuição]**: as configurações de [Atribuição](/help/data-views/component-settings/attribution.md) do componente.
+  * **[!UICONTROL Nenhuma opção de valor]**: as [Nenhuma opção de valor](/help/data-views/component-settings/no-value-options.md) do componente.
+  * **[!UICONTROL Classificação de valor]**: as configurações de [Classificação de valor](/help/data-views/component-settings/value-bucketing.md) do componente.
+  * **[!UICONTROL Persistence]**: as configurações [Persistence](/help/data-views/component-settings/persistence.md) do componente.
+  * **[!UICONTROL Minúsculas]**: indica se o componente está habilitado para minúsculas com base nas configurações [Comportamento](/help/data-views/component-settings/behavior.md) do componente.
+  * **[!UICONTROL Substring]**: as configurações de [Substring](/help/data-views/component-settings/substring.md) do componente.
+  * **[!UICONTROL Grupo de dados de resumo]**: as configurações do [grupo de dados de resumo](/help/data-views/component-settings/summary-data-group.md) do componente.
+  * **[!UICONTROL Data de criação]**: a data de criação ou de importação do componente.
+  * **[!UICONTROL Última modificação]**: se o componente foi modificado depois de ter sido criado, a data em que foi modificado pela última vez.
 * **[!UICONTROL Histórico de trabalhos]**: se você importar ou compartilhar um grande número de componentes, um trabalho será criado automaticamente. Selecione o ícone ![Histórico](/help/assets/icons/History.svg) para abrir uma janela modal que mostre todas as instâncias de importação de dimensões e métricas de visualizações de dados individuais. Se nenhuma das ações de importação ou compartilhamento for grande o suficiente para acionar um trabalho, esse botão não aparecerá.
 
 ## Editar componentes ou compartilhar componentes em visualizações de dados

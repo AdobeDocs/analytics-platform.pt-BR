@@ -22,7 +22,7 @@ topic_v2:
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
 source-wordcount: 1680
-ht-degree: 13%
+ht-degree: 14%
 
 ---
 
@@ -497,7 +497,7 @@ You can now report on `audienceMembershipId`, `audienceMembershipIdName` and `pe
 
 * Você deve executar esse processo regularmente para que os dados do público-alvo sejam atualizados constantemente no Customer Journey Analytics.
 * Você pode importar vários públicos-alvo em uma única conexão do Customer Journey Analytics. Isso adiciona mais complexidade ao processo, mas é possível. Para que isso funcione, é necessário fazer algumas modificações no processo acima:
-   1. Execute esse processo para cada público-alvo desejado em sua coleção de públicos-alvo no RTCP.
-   1. A Customer Journey Analytics oferece suporte a matrizes/matrizes de objetos em conjuntos de dados de perfil. Usar uma [matriz de objetos](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/complex-data/object-arrays.html?lang=pt-BR) para `audienceMembershipId` ou `audienceMembershipIdName` é a melhor opção.
-   1. Na visualização de dados, crie uma nova dimensão usando a transformação de Substring no campo `audienceMembershipId` para converter a string de valores separados por vírgula em uma matriz. OBSERVAÇÃO: atualmente, há um limite de 10 valores na matriz.
-   1. Agora você pode relatar sobre esta nova dimensão `audienceMembershipIds` no Customer Journey Analytics Workspace.
+  1. Execute esse processo para cada público-alvo desejado em sua coleção de públicos-alvo no RTCP.
+  1. A Customer Journey Analytics oferece suporte a matrizes/matrizes de objetos em conjuntos de dados de perfil. Usar uma [matriz de objetos](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-usecases/complex-data/object-arrays.html?lang=pt-BR) para `audienceMembershipId` ou `audienceMembershipIdName` é a melhor opção.
+  1. Na visualização de dados, crie uma nova dimensão usando a transformação de Substring no campo `audienceMembershipId` para converter a string de valores separados por vírgula em uma matriz. OBSERVAÇÃO: atualmente, há um limite de 10 valores na matriz.
+  1. Agora você pode relatar sobre esta nova dimensão `audienceMembershipIds` no Customer Journey Analytics Workspace.

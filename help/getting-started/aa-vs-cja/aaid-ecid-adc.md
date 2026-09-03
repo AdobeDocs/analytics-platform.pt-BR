@@ -65,7 +65,8 @@ Os itens entre colchetes angulares &lt;> representam locais onde os valores reai
 
 No identityMap:
 
-* Se a ECID estiver presente, ela será marcada como a identidade principal do evento. Observe que, nesse caso, a AAID pode se basear na ECID de acordo com a discussão acima.Caso contrário, a AAID é marcada como a identidade principal do evento.
+* Se a ECID estiver presente, ela será marcada como a identidade principal do evento. Observe que, nesse caso, a AAID pode se basear na ECID de acordo com a discussão acima.
+Caso contrário, a AAID é marcada como a identidade principal do evento.
 * AACUSTOMID nunca é marcada como a ID principal do evento. No entanto, se AACUSTOMID estiver presente, a AAID é baseado na AACUSTOMID de acordo com a discussão acima.
 
 Quando a identidade ou as identidades são copiadas para o `identityMap`, o `endUserIDs._experience.mcid.namespace.code` também é definido no mesmo evento:

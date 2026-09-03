@@ -23,7 +23,7 @@ topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 7f8ab656c7dbf508b2a78fd2022592faf883c56e
 workflow-type: tm+mt
-source-wordcount: 582
+source-wordcount: 583
 ht-degree: 100%
 
 ---
@@ -76,9 +76,9 @@ O painel de consulta permite configurar os seguintes componentes:
 A análise da [!UICONTROL Linha do tempo] oferece as seguintes configurações de gráfico, que podem ser ajustadas no menu acima do gráfico:
 
 * **[!UICONTROL Mostrar como]**: mostra os valores de propriedade desejados.
-   * [!UICONTROL Mostrar tudo]: mostra todos os valores de propriedade de uma sessão.
-   * [!UICONTROL Realçar]: destaca visualmente os valores de propriedade de uma sessão que correspondem aos filtros de consulta.
-   * [!UICONTROL Exibir somente]: mostra somente valores de propriedade de uma sessão que correspondem aos filtros de consulta.
+  * [!UICONTROL Mostrar tudo]: mostra todos os valores de propriedade de uma sessão.
+  * [!UICONTROL Realçar]: destaca visualmente os valores de propriedade de uma sessão que correspondem aos filtros de consulta.
+  * [!UICONTROL Exibir somente]: mostra somente valores de propriedade de uma sessão que correspondem aos filtros de consulta.
 
 ### Intervalo de datas
 

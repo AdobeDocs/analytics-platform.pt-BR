@@ -35,11 +35,11 @@ Dependendo do pacote do Customer Journey Analytics, você também pode usar aler
 * Enviar alertas por email ou SMS com links para projetos do Analysis Workspace gerados automaticamente.
 * Criar alertas *empilhados* que capturam várias métricas em um único alerta.
 * Criar alertas com base em:
-   * As anomalias nas métricas existentes estão acima ou abaixo dos valores limite esperados.
+  * As anomalias nas métricas existentes estão acima ou abaixo dos valores limite esperados.
 
-     [A detecção de anomalias](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) cria um valor esperado além de um limite superior e inferior usando dados históricos. Se o valor da métrica real ultrapassar o limite superior ou ficar abaixo do limite inferior definido como o valor do limite, esse evento será considerado uma anomalia no nível de confiança do limite e acionará o alerta. Um limite mais alto (por exemplo: 99% ou 99,9%) implica uma banda mais ampla, o que resulta em menos alertas causados por anomalias mais extremas. Um limite mais baixo (por exemplo: 90%) implica uma faixa mais estreita, o que resulta em mais alertas causados por anomalias menos extremas.
-   * Alterações nas métricas em uma porcentagem específica.
-   * Métricas acima, abaixo ou igual a um valor específico. (disponível somente para clientes do Adobe Analytics com um pacote Select, Prime ou Ultimate)
+    [A detecção de anomalias](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) cria um valor esperado além de um limite superior e inferior usando dados históricos. Se o valor da métrica real ultrapassar o limite superior ou ficar abaixo do limite inferior definido como o valor do limite, esse evento será considerado uma anomalia no nível de confiança do limite e acionará o alerta. Um limite mais alto (por exemplo: 99% ou 99,9%) implica uma banda mais ampla, o que resulta em menos alertas causados por anomalias mais extremas. Um limite mais baixo (por exemplo: 90%) implica uma faixa mais estreita, o que resulta em mais alertas causados por anomalias menos extremas.
+  * Alterações nas métricas em uma porcentagem específica.
+  * Métricas acima, abaixo ou igual a um valor específico. (disponível somente para clientes do Adobe Analytics com um pacote Select, Prime ou Ultimate)
 
 Este [tutorial em vídeo](https://experienceleague.adobe.com/pt-br/docs/analytics-learn/tutorials/data-science/intelligent-alerts) fornece uma visão geral básica dos alertas.
 

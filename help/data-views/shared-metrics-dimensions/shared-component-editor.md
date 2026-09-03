@@ -40,9 +40,9 @@ A parte superior direita inclui três botões:
 A interface inclui três colunas/seções principais:
 
 * **Seletor de campo de esquema**: localize os campos de esquema desejados e arraste-os para a área de componentes incluída.
-   * **Conexão**: a conexão ativa. Altere a conexão ativa no [gerenciador de métricas e dimensões compartilhado](smd-overview.md).
-   * **Lista de componentes**: você pode escolher entre selecionar [!UICONTROL Campos de esquema] (novas dimensões e métricas compartilhadas) ou [!UICONTROL Métricas e dimensões] (componentes compartilhados existentes) no menu suspenso.
-   * **Pesquisa**: use a pesquisa de texto do ![ícone de Pesquisa](/help/assets/icons/Search.svg) para localizar o campo de esquema desejado ou o componente compartilhado por nome. Você também pode usar filtros ![Ícone de filtro](/help/assets/icons/Filter.svg) para restringir a lista de componentes. O filtro `Is not deprecated` está ativo por padrão.
-   * **Criar campo derivado**: permite [criar um campo derivado](/help/data-views/derived-fields/derived-fields.md).
+  * **Conexão**: a conexão ativa. Altere a conexão ativa no [gerenciador de métricas e dimensões compartilhado](smd-overview.md).
+  * **Lista de componentes**: você pode escolher entre selecionar [!UICONTROL Campos de esquema] (novas dimensões e métricas compartilhadas) ou [!UICONTROL Métricas e dimensões] (componentes compartilhados existentes) no menu suspenso.
+  * **Pesquisa**: use a pesquisa de texto do ![ícone de Pesquisa](/help/assets/icons/Search.svg) para localizar o campo de esquema desejado ou o componente compartilhado por nome. Você também pode usar filtros ![Ícone de filtro](/help/assets/icons/Filter.svg) para restringir a lista de componentes. O filtro `Is not deprecated` está ativo por padrão.
+  * **Criar campo derivado**: permite [criar um campo derivado](/help/data-views/derived-fields/derived-fields.md).
 * **Componentes incluídos**: os componentes configurados para serem compartilhados. Ao criar componentes compartilhados, você pode arrastar mais de um campo de esquema para essa área para criar vários componentes simultaneamente. Ao editar componentes compartilhados, você pode selecionar vários componentes para editar, o que lista todos os componentes selecionados nesta área.
 * **Configurações de componente**: ao selecionar um componente na área de componentes incluídos, todas as configurações disponíveis podem ser definidas nesta coluna. Consulte [Configurações de componente](/help/data-views/component-settings/overview.md) para obter todas as opções disponíveis para dimensões e métricas. Shift + clicar em vários elementos na área de componentes incluída permite editar quaisquer campos comuns simultaneamente.

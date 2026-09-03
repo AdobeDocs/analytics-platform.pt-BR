@@ -81,49 +81,49 @@ Clique duas vezes no botão info (i) ao lado de uma descrição.
 Os seguintes itens são mostrados:
 
 * **[!UICONTROL Nome da ação]**: a ação executada. Os valores possíveis incluem:
-   * API_REQUEST: qualquer ação aciona uma solicitação de API de back-end. São exibidos detalhes sobre qual foi a solicitação da API.
-   * APPROVE: uma ação de “aprovação” foi executada.
-   * CREATE: uma ação “criar” foi executada.
-   * DELETE: uma ação “excluir” foi executada.
-   * EDIT: uma ação “editar” foi executada.
-   * EMBARGO: ao restringir uma solicitação no [Gerenciador de atividades de relatórios](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/reporting-activity-manager/reporting-activity-cancel-requests), a ação é registrada no log de auditoria sob o nome EMBARGO.
-   * EXPORT: uma ação “exportar” foi executada.
-   * ORG_CHANGE: uma ação de alteração da organização foi executada.
-   * REFRESH: uma ação “atualizar” foi executada.
-   * SHARE: uma ação “compartilhar” foi executada.
-   * TRANSFER: uma ação de transferência foi executada.
-   * UNAPPROVE: uma ação “desaprovar” foi executada.
-   * UNSHARE: Uma ação “deixar de compartilhar” foi executada.
+  * API_REQUEST: qualquer ação aciona uma solicitação de API de back-end. São exibidos detalhes sobre qual foi a solicitação da API.
+  * APPROVE: uma ação de “aprovação” foi executada.
+  * CREATE: uma ação “criar” foi executada.
+  * DELETE: uma ação “excluir” foi executada.
+  * EDIT: uma ação “editar” foi executada.
+  * EMBARGO: ao restringir uma solicitação no [Gerenciador de atividades de relatórios](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/reporting-activity-manager/reporting-activity-cancel-requests), a ação é registrada no log de auditoria sob o nome EMBARGO.
+  * EXPORT: uma ação “exportar” foi executada.
+  * ORG_CHANGE: uma ação de alteração da organização foi executada.
+  * REFRESH: uma ação “atualizar” foi executada.
+  * SHARE: uma ação “compartilhar” foi executada.
+  * TRANSFER: uma ação de transferência foi executada.
+  * UNAPPROVE: uma ação “desaprovar” foi executada.
+  * UNSHARE: Uma ação “deixar de compartilhar” foi executada.
 * **[!UICONTROL Data de criação]**: a data e a hora em que a ação foi executada.
 * **[!UICONTROL Descrição]**: um resumo da ação.
 * **[!UICONTROL Nome do usuário]**: o usuário que executou a ação. Às vezes, o nome de usuário pode estar ausente. Considere usar o recurso [Uso do produto](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/tools/product-usage/usage-overview), pois ele sempre inclui o nome de usuário de logon.
 * **[!UICONTROL Email]**: o endereço de email do usuário que executou a ação.
 * **[!UICONTROL Nome do componente]**: o componente no qual o usuário executou uma ação.
 * **[!UICONTROL Tipo de componente]**: o tipo de componente. Os valores possíveis incluem:
-   * ANNOTATION
-   * PÚBLICO-ALVO
-   * CALCULATED_METRIC
-   * CONNECTION
-   * DATA_GROUP
-   * DATA_VIEW
-   * DATASET_STITCHING
-   * DATE_RANGE
-   * FEATURE_ACCESS
-   * FILTRO
-   * IMS_ORG
-   * MOBILE
-   * PROJECT (Workspace)
-   * REPORT
-   * SCHEDULED_PROJECT
-   * USER
-   * USER_GROUP
+  * ANNOTATION
+  * PÚBLICO-ALVO
+  * CALCULATED_METRIC
+  * CONNECTION
+  * DATA_GROUP
+  * DATA_VIEW
+  * DATASET_STITCHING
+  * DATE_RANGE
+  * FEATURE_ACCESS
+  * FILTRO
+  * IMS_ORG
+  * MOBILE
+  * PROJECT (Workspace)
+  * REPORT
+  * SCHEDULED_PROJECT
+  * USER
+  * USER_GROUP
 * **[!UICONTROL ID do componente]**: a ID do componente no qual o usuário executou uma ação.
 * **[!UICONTROL ID da organização IMS]**: a ID da organização IMS, no formato de `ABC123@AdobeOrg`.
 * **[!UICONTROL ID de log]**: um identificador exclusivo que identifica esta entrada de log.
 * **[!UICONTROL ID de usuário]**: o identificador exclusivo que identifica o usuário que executou a ação.
 * **[!UICONTROL Tipo de usuário]**: o tipo de autenticação usado. Os valores válidos incluem:
-   * IMS
-   * OKTA
+  * IMS
+  * OKTA
 
 ### Filtrar logs de auditoria
 

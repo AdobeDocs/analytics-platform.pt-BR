@@ -77,8 +77,8 @@ O painel de consulta permite configurar os seguintes componentes:
 A Análise de [!UICONTROL engajamento] oferece as seguintes configurações de gráfico, que podem ser ajustadas no menu acima do gráfico:
 
 * **[!UICONTROL Medianas]**: determina onde as linhas medianas são exibidas e como os pontos plotados se relacionam a essas medianas.
-   * **[!UICONTROL Padrão]**: mostra o valor absoluto de uso e engajamento.
-   * **[!UICONTROL Normalizado]**: mostra as alterações relativas de cada mediana.
+  * **[!UICONTROL Padrão]**: mostra o valor absoluto de uso e engajamento.
+  * **[!UICONTROL Normalizado]**: mostra as alterações relativas de cada mediana.
 * **[!UICONTROL Sobreposição de eventos principais]**: veja como seus eventos estão se saindo em comparação com os 20 eventos principais, com base na empresa e na recenticidade e relevância do usuário (o mesmo algoritmo aplicado ao seletor de eventos no painel de consulta).
 
 ### Comparação de tempo

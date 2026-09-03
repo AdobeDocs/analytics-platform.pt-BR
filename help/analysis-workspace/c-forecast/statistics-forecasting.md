@@ -65,5 +65,5 @@ O serviço não faz suposições sobre os dados do usuário. Por exemplo, o serv
 ## Referências
 
 1. Taylor, Sean J. e Benjamin Letham: *Previsão em escala.* The American Statistician 72.1 (2018): 37-45 (em inglês).
-1. Triebe, Oskar, et al.: *Neuralprofet: Previsão explicável em escala.* arXiv pré-impressão arXiv:2111.15397(2021).
+1. Triebe, Oskar, et al.: *Neuralprofet: Previsão explicável em escala.* Pré-impressão arXiv:2111.15397(2021).
 1. Zhang e Arbor: *Detecção de anomalias em série temporal.* Pedido de patente norte-americana #18/057883.

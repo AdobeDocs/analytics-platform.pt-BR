@@ -28,7 +28,7 @@ topic_v2:
 source-git-commit: d9715c3da9893e1c47b702acb4daef5e666bedd7
 workflow-type: tm+mt
 source-wordcount: 2631
-ht-degree: 9%
+ht-degree: 10%
 
 ---
 
@@ -111,15 +111,15 @@ Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Gerenciar u
 Você precisa ser um administrador de produto dos seguintes produtos e perfis de produto para o Content Analytics independente:
 
 * Adobe Experience Platform
-   * AEP-Padrão-Todos-os-Usuários (o perfil padrão para acessar a sandbox de produção)
+  * AEP-Padrão-Todos-os-Usuários (o perfil padrão para acessar a sandbox de produção)
 
 * Coleção de dados da Adobe Experience Platform
-   * Acesso a Todos os Dados da Coleção de Dados Padrão
+  * Acesso a Todos os Dados da Coleção de Dados Padrão
 
 * Adobe Experience Platform Privacy Service
 
 * Customer Journey Analytics (Personalizado)
-   * Customer Journey Analytics (ou qualquer outro perfil de produto provisionado padrão)
+  * Customer Journey Analytics (ou qualquer outro perfil de produto provisionado padrão)
 
 Você define o acesso de administrador de produto por meio da Admin Console:
 
@@ -157,31 +157,31 @@ Para o Content Analytics, é necessário verificar se os seguintes recursos e pe
 
 * Função de Produção padrão de acesso integral
 
-   * Coleta de dados
-      * Exibir fluxos de dados
-      * Gerenciar fluxos de dados
+  * Coleta de dados
+    * Exibir fluxos de dados
+    * Gerenciar fluxos de dados
 
-   * Gerenciamento de dados
-      * Visualizar conjuntos de dados
-      * Gerenciar conjuntos de dados
+  * Gerenciamento de dados
+    * Visualizar conjuntos de dados
+    * Gerenciar conjuntos de dados
 
-   * Modelagem de dados
-      * Visualizar esquemas
-      * Gerenciar esquemas
-      * Gerenciar metadados de identidade
+  * Modelagem de dados
+    * Visualizar esquemas
+    * Gerenciar esquemas
+    * Gerenciar metadados de identidade
 
 
 * Função Administradores de sandbox
 
-   * Sandboxes
-      * Prod
-      * (qualquer outra sandbox que você deseja usar para o Content Analytics)
+  * Sandboxes
+    * Prod
+    * (qualquer outra sandbox que você deseja usar para o Content Analytics)
 
-   * Administração de sandbox
-      * Gerenciar pacotes
-      * Gerenciar sandboxes
-      * Redefinir sandbox
-      * Exibir sandbox
+  * Administração de sandbox
+    * Gerenciar pacotes
+    * Gerenciar sandboxes
+    * Redefinir sandbox
+    * Exibir sandbox
 
 
 Na interface de Permissões, é possível verificar as funções e as permissões associadas. A interface também mostra quais usuários pertencem à função.
@@ -217,21 +217,21 @@ O Customer Journey Analytics não oferece suporte ao controle de acesso baseado 
 Para o Content Analytics, é necessário verificar se as seguintes permissões de perfil de produto do Customer Journey Analytics estão incluídas:
 
 * Visualizações de dados
-   * Todas as visualizações de dados disponíveis.
+  * Todas as visualizações de dados disponíveis.
 
 * Ferramentas de relatório
-   * Criação de métricas calculadas
-   * Criação de segmentos
-   * Criação de anotação
-   * Acesso aos logs de auditoria
-   * Compartilhar links do projeto com qualquer pessoa
-   * Previsão
-   * Assistente de IA: conhecimento do produto
-   * Data Insights Agent
-   * Legendas inteligentes
+  * Criação de métricas calculadas
+  * Criação de segmentos
+  * Criação de anotação
+  * Acesso aos logs de auditoria
+  * Compartilhar links do projeto com qualquer pessoa
+  * Previsão
+  * Assistente de IA: conhecimento do produto
+  * Data Insights Agent
+  * Legendas inteligentes
 
 * Ferramentas de visualização de dados
-   * Exportar tabela completa
+  * Exportar tabela completa
 
 Para verificar e atualizar essas permissões para o Customer Journey Analytics:
 

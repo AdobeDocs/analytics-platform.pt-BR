@@ -43,9 +43,9 @@ O Report Builder para Customer Journey Analytics é compatível com os seguintes
 
   Todos os usuários do Excel para desktop do Windows devem instalar o Microsoft Edge Webview2 para usar o suplemento. Para instalar:
 
-   1. Vá para <https://developer.microsoft.com/en-us/microsoft-edge/webview2/>.
-   1. Selecione e baixe a versão apropriada do **[!UICONTROL Instalador autônomo Evergreen]** para sua plataforma.
-   1. Execute o instalador e siga os prompts de instalação.
+  1. Vá para <https://developer.microsoft.com/en-us/microsoft-edge/webview2/>.
+  1. Selecione e baixe a versão apropriada do **[!UICONTROL Instalador autônomo Evergreen]** para sua plataforma.
+  1. Execute o instalador e siga os prompts de instalação.
 
 ### Web Office
 

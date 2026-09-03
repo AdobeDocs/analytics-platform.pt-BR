@@ -71,15 +71,15 @@ Os parâmetros a seguir controlam o acesso ao recurso do Assistente de IA:
 * **Acesso contratual**: se você não conseguir usar o Assistente de IA, entre em contato com o(a) admin da organização ou representante de conta da Adobe. Antes da sua organização poder usar o Assistente de IA, você deve concordar com determinados termos legais relacionados à IA generativa.
 
 * **Permissões**: no [!UICONTROL Adobe Admin Console], a permissão [!UICONTROL Ferramentas de relatórios] **[!UICONTROL Assistente de IA: conhecimento do produto]** determina o acesso a esta ferramenta. Um(a) [admin de perfil de produto](https://helpx.adobe.com/br/enterprise/using/manage-product-profiles.html) precisa seguir estas etapas no [!UICONTROL Admin Console]:
-   1. Navegue até **[!UICONTROL Admin Console]** > **[!UICONTROL Produtos e serviços]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Perfis de produtos]**
-   1. Selecione o título do perfil de produto para o qual você deseja fornecer acesso ao [!UICONTROL Assistente de IA: conhecimento do produto].
-   1. No perfil de produto específico, selecione **[!UICONTROL Permissões]**.
-   1. Selecione ![Editar](/help/assets/icons/Edit.svg) para editar as **[!UICONTROL Ferramentas de relatório]**.
-   1. Clique no ![AddCircle](/help/assets/icons/AddCircle.svg) para adicionar **Assistente de IA: conhecimento do produto** a **[!UICONTROL Itens de permissão incluídos]**.
+  1. Navegue até **[!UICONTROL Admin Console]** > **[!UICONTROL Produtos e serviços]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Perfis de produtos]**
+  1. Selecione o título do perfil de produto para o qual você deseja fornecer acesso ao [!UICONTROL Assistente de IA: conhecimento do produto].
+  1. No perfil de produto específico, selecione **[!UICONTROL Permissões]**.
+  1. Selecione ![Editar](/help/assets/icons/Edit.svg) para editar as **[!UICONTROL Ferramentas de relatório]**.
+  1. Clique no ![AddCircle](/help/assets/icons/AddCircle.svg) para adicionar **Assistente de IA: conhecimento do produto** a **[!UICONTROL Itens de permissão incluídos]**.
 
-      ![Adicionar permissão](assets/ai-assistant-permissions.png).
+     ![Adicionar permissão](assets/ai-assistant-permissions.png).
 
-   1. Clique em **[!UICONTROL Salvar]** para salvar as permissões.
+  1. Clique em **[!UICONTROL Salvar]** para salvar as permissões.
 
 Consulte [Controle de acesso](/help/technotes/access-control.md#access-control) para obter mais informações.
 

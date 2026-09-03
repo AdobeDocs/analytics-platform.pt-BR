@@ -41,8 +41,8 @@ Este artigo fornece contexto sobre IDs inválidas e como detectar a presença ou
 No Customer Journey Analytics, como parte de todos os dados definidos em uma conexão, uma ID incorreta é um identificador:
 
 * com um valor de ID específico que se origina
-   * de um campo de ID de pessoa (conjuntos de dados não compilados), **ou**
-   * de uma ID persistente ou um campo de ID de pessoa (conjuntos de dados habilitados para compilação),
+  * de um campo de ID de pessoa (conjuntos de dados não compilados), **ou**
+  * de uma ID persistente ou um campo de ID de pessoa (conjuntos de dados habilitados para compilação),
 
   **e**
 * está em mais de um milhão (1.000.000) eventos nos dados de conexão (contados para todos os conjuntos de dados na conexão), no prazo de um mês.

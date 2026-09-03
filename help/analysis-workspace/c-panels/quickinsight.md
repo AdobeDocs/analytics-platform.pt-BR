@@ -139,13 +139,13 @@ Outras dicas úteis aparecerão no [!UICONTROL Criador de insights rápidos] e a
 
   ![Resultados do Criador de insights rápidos](assets/qibuilder-result.png)
 
-   * **[!UICONTROL Analisar]** a dimensão **[!UICONTROL detalhada por]**: permite usar até três níveis de detalhamento em dimensões para encontrar os dados específicos dos quais precisa. Consulte ➊, ➋ e ➌.
+  * **[!UICONTROL Analisar]** a dimensão **[!UICONTROL detalhada por]**: permite usar até três níveis de detalhamento em dimensões para encontrar os dados específicos dos quais precisa. Consulte ➊, ➋ e ➌.
 
-   * Adicionar mais métricas **[!UICONTROL por]**: permite adicionar um máximo de duas métricas. Consulte ➍ e ➎.
+  * Adicionar mais métricas **[!UICONTROL por]**: permite adicionar um máximo de duas métricas. Consulte ➍ e ➎.
 
-   * **[!UICONTROL segmentar por]**: você pode adicionar mais 2 segmentos. Por exemplo, adicione Reservas como um segmento e combine-o com os segmentos Pessoas que reservam com frequência e Primeiro voo para fazer uma comparação. Consulte ➏, ➐ e ➑.
+  * **[!UICONTROL segmentar por]**: você pode adicionar mais 2 segmentos. Por exemplo, adicione Reservas como um segmento e combine-o com os segmentos Pessoas que reservam com frequência e Primeiro voo para fazer uma comparação. Consulte ➏, ➐ e ➑.
 
-   * em: permite especificar o intervalo de datas. Consulte ➒.
+  * em: permite especificar o intervalo de datas. Consulte ➒.
 
 ## Limitações conhecidas
 

@@ -16,7 +16,7 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: 383
+source-wordcount: 387
 ht-degree: 6%
 
 ---
@@ -78,7 +78,7 @@ Você pode exibir o histórico e o status de pastas de trabalho agendadas na gui
    ![Histórico agendado](assets/scheduled-workbooks-history.png){zoomable="yes"}
 
    Use a ![Pesquisa](/help/assets/icons/Search.svg) para procurar pastas de trabalho específicas na lista.
-Use ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) para definir quais colunas mostrar.
+   Use ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) para definir quais colunas mostrar.
 
    A guia **[!UICONTROL Histórico]** permite examinar o status de cada tarefa agendada. Uma linha separada documenta a alteração de status para cada tarefa agendada.
 

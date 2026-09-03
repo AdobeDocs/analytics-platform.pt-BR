@@ -20,10 +20,10 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: d9715c3da9893e1c47b702acb4daef5e666bedd7
+source-git-commit: 3e9a9042bfe707971c4e37d319a23ab9bdc80075
 workflow-type: tm+mt
-source-wordcount: 1023
-ht-degree: 86%
+source-wordcount: 1869
+ht-degree: 56%
 
 ---
 
@@ -38,6 +38,7 @@ O Content Analytics adiciona as seguintes categorias de componentes (dimensões,
 * [Metadados de ativos](#asset-metadata)
 * [Atributos do ativo](#asset-attributes)
 * [Eventos do ativo](#asset-events)
+* [Mídia paga](#paid-media)
 * [Métricas calculadas](#calculated-metrics)
 
 Nas tabelas abaixo, ![gerado por IA](/help/assets/icons/AI.svg) indica um par de atributo/valor gerado por IA ou aprendizado de máquina.
@@ -47,7 +48,7 @@ Nas tabelas abaixo, ![gerado por IA](/help/assets/icons/AI.svg) indica um par 
 | Título | Descrição | Tipo |
 |---|---|---|
 | ID SOURCE | Para o Content Analytics, o valor é `ContentAnalytics`. | Dimensão |
-| Canal | O canal da experiência. O valor é `Web` ou `Mobile`. | Dimensão |
+| Canal | O canal da experiência. O valor é `Web`, `Mobile` ou `Paid Media`. | Dimensão |
 | ID de experiência de conteúdo | Identificador exclusivo da experiência. <br>Para **web**: URL da página da Web. <br/>Para **granular web**: um hash calculou o lado do cliente com base na carga de conteúdo (textos, imagens, ctas) com o prefixo `web-`. <br/>Para **dispositivos móveis**: um hash calculou o lado do cliente com base na carga de conteúdo (textos, imagens, ctas) com o prefixo `mobile-`. | Dimensão |
 | Source de experiência de conteúdo | Para **web**: a URL da página da Web.<br/>Para **celular**: o nome da tela, transmitido pelo Experience Platform Mobile SDK. | Dimensão |
 | Canal de experiência (obsoleto) | O canal da experiência. O valor é `Web` ou `Mobile`. | Dimensão |
@@ -156,6 +157,116 @@ Nas tabelas abaixo, ![gerado por IA](/help/assets/icons/AI.svg) indica um par 
 
 {style="table-layout:fixed"}
 -->
+
+## Mídia paga
+
+Esses componentes são adicionados a uma visualização de dados quando o canal **Mídia paga** é habilitado por meio de um [conector de origem da Mídia paga do Adobe Experience Platform](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/home) (por exemplo, Meta Ads ou Google Ads). Eles permitem que você emita relatórios sobre entidades de mídia paga, criativas e gastas com conteúdo da Web e móvel.
+
+Os **Atributos do ativo** e os **Atributos da experiência** gerados por IA descritos acima também estão disponíveis para criações de mídia paga — o mesmo recurso é executado nos canais da Web, Móvel e Mídia paga.
+
+### Dimensões de mídia paga
+
+| Título | Descrição | Tipo |
+|---|---|---|
+| Rede de publicidade | A plataforma de publicidade da qual os dados de mídia paga foram assimilados. | Dimensão |
+| Nome da conta | Nome da conta do anúncio. | Dimensão |
+| Nome da campanha | Nome da campanha de mídia paga. | Dimensão |
+| Nome do Grupo de Publicidade | Nome do grupo de anúncios (conjunto de anúncios Meta/grupo de anúncios Google). | Dimensão |
+| Nome do anúncio | Nome do anúncio individual. | Dimensão |
+| Nome da experiência | Nome da experiência do anúncio (composição criativa). | Dimensão |
+| Nome do ativo | Nome do ativo criativo. | Dimensão |
+| Status de campanha | Status da campanha. | Dimensão |
+| Status do Grupo de Publicidade | Status do grupo de publicidade. | Dimensão |
+| Status da Publicidade | Status do anúncio. | Dimensão |
+| Status de serviço | Status de fornecimento detalhado indicando se a entidade está fornecendo no momento. | Dimensão |
+| Moeda da conta | Moeda da conta de anúncio. | Dimensão |
+| Fuso horário da conta | Fuso horário da conta do anúncio. | Dimensão |
+| Tipo de conta | Tipo da conta de publicidade. | Dimensão |
+| Nome da Empresa da Conta | Nome comercial associado à conta do anúncio. | Dimensão |
+| Tipo de campanha | Tipo de canal principal da campanha. | Dimensão |
+| Objetivo da campanha | Objetivo ou meta da campanha. | Dimensão |
+| Estratégia de lance de campanha | Estratégia de lance para a campanha. | Dimensão |
+| Tipo de orçamento da campanha | Tipo de alocação de orçamento para a campanha. | Dimensão |
+| Orçamento diário da campanha | Valor do orçamento diário, na moeda da conta de anúncio. | Dimensão |
+| Orçamento vitalício da campanha | Valor do orçamento vitalício, na moeda da conta de anúncio. | Dimensão |
+| Hora de início da campanha | Quando a campanha começou. | Dimensão |
+| Hora de término da campanha | Quando a campanha terminou. | Dimensão |
+| Tipo de grupo de anúncios | Tipo do grupo de publicidade. | Dimensão |
+| Estratégia de lance de grupo de anúncios | Estratégia de lance para o grupo de anúncios. | Dimensão |
+| Objetivo de otimização do grupo de publicidade | Meta de otimização para o grupo de anúncios. | Dimensão |
+| Horário de início do grupo de anúncios | Quando o grupo de anúncios começou. | Dimensão |
+| Hora de término do grupo do anúncio | Quando o grupo de anúncios terminou. | Dimensão |
+| Tipo de anúncio | Tipo/formato do anúncio. | Dimensão |
+| Status da revisão do anúncio | Status de revisão/aprovação do anúncio. | Dimensão |
+| Tipo de Creative do anúncio | Tipo de criativo usado pelo anúncio. | Dimensão |
+| Título do anúncio | Título do criativo do anúncio. | Dimensão |
+| Ad Call to action | Call-to-action do criativo do anúncio. | Dimensão |
+| URL de destino do anúncio | URL de aterrissagem/destino do anúncio. | Dimensão |
+| Adicionar URL de exibição | URL de exibição mostrado no anúncio. | Dimensão |
+| Tipo de experiência | Tipo/formato da experiência do anúncio. | Dimensão |
+| URL da página inicial da experiência | URL da página de aterrissagem da experiência. | Dimensão |
+| Experience Call to action | Call-to-action da experiência. | Dimensão |
+| Tipo do ativo | Tipo do ativo criativo (por exemplo, imagem ou vídeo). | Dimensão |
+| Largura do ativo | Largura do ativo, em pixels. | Dimensão |
+| Altura do ativo | Altura do ativo, em pixels. | Dimensão |
+| Taxa de proporção do ativo | Taxa de proporção do ativo. | Dimensão |
+| Orientação do ativo | Orientação do ativo. | Dimensão |
+| Tipo de dispositivo | Detalhamento do tipo de dispositivo para as métricas relatadas. | Dimensão |
+| Posicionamento | Detalhamento do posicionamento para as métricas relatadas. | Dimensão |
+| Plataforma | Detalhamento da plataforma para as métricas relatadas. | Dimensão |
+| País | Detalhamento por país das métricas relatadas. | Dimensão |
+| Região | Detalhamento de região para as métricas relatadas. | Dimensão |
+
+{style="table-layout:fixed"}
+
+### Métricas de mídia paga
+
+| Título | Descrição | Tipo |
+|---|---|---|
+| Impressões | Número de vezes que o anúncio foi exibido. | Métrica |
+| Cliques | Número de cliques no anúncio. | Métrica |
+| Gastos | Valor gasto, na moeda da conta de anúncio. | Métrica |
+| Conversões | Número total de conversões. | Métrica |
+| Valor de conversão | Valor total das conversões. | Métrica |
+| Alcance | Número de pessoas únicas que viram o anúncio. | Métrica |
+| Envolvimentos | Número de envolvimentos com o anúncio. | Métrica |
+| Exibições de vídeo | Total de visualizações do vídeo. | Métrica |
+| Conclusões de vídeo | Número de vídeos assistidos até a conclusão. | Métrica |
+| Reproduções de vídeo | Número de reproduções de vídeo. | Métrica |
+| Compras | Número de conversões de compra. | Métrica |
+| Adicionar ao carrinho | Número de conversões de adição ao carrinho. | Métrica |
+| Clientes potenciais | Número de conversões de clientes potenciais. | Métrica |
+| Registros | Número de conversões de registro. | Métrica |
+| Downloads | Número de conversões de download. | Métrica |
+| Subscrições | Número de conversões de assinatura. | Métrica |
+| Visualizações da página de destino | Total de exibições da página de aterrissagem. | Métrica |
+| Conversões pós-clique | Conversões atribuídas a um clique. | Métrica |
+| Conversões pós-visualização | Conversões atribuídas a uma exibição. | Métrica |
+| Valor total do pedido | Valor total de pedidos. | Métrica |
+| Cliques em links | Número de cliques em links. | Métrica |
+| Cliques de saída | Número de cliques de saída. | Métrica |
+| Instalações de aplicativos | Número de instalações de aplicativos. | Métrica |
+| Envios de clientes potenciais | Número de envios de formulário de cliente potencial. | Métrica |
+
+{style="table-layout:fixed"}
+
+### Métricas calculadas de mídia paga
+
+| Título | Descrição | Tipo |
+|---|---|---|
+| Índice de click-through | Cliques divididos por impressões. | Métrica calculada |
+| Custo por clique | Gasto dividido por cliques. | Métrica calculada |
+| Custo por Milha | Custo por mil impressões. | Métrica calculada |
+| Custo por conversão | Gasto dividido por conversões. | Métrica calculada |
+| Retorno do investimento em publicidade | Valor de conversão dividido por gasto. | Métrica calculada |
+| Frequência | Impressões divididas pelo alcance. | Métrica calculada |
+| Taxa de participação | Envolvimentos divididos por impressões. | Métrica calculada |
+| Taxa de conclusão do vídeo | Conclusões de vídeo divididas por reproduções de vídeo. | Métrica calculada |
+| Índice de conversão | Conversões divididas por cliques. | Métrica calculada |
+| Valor médio de pedido | Valor total do pedido dividido por compras. | Métrica calculada |
+
+{style="table-layout:fixed"}
+
 
 ## Métricas calculadas
 

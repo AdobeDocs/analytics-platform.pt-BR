@@ -41,17 +41,17 @@ A versão inicial da Análise de público-alvo estabelece a base essencial neces
 
 * **Os dados de associação de público-alvo são precisos somente para o dia anterior (&quot;ontem&quot;)**: os dados de associação de público-alvo sempre conterão o conjunto de dados de instantâneo de perfil mais recente gerado pelo Serviço de Perfil Unificado. Esse conjunto de dados de perfil é um instantâneo diário e é preciso somente para o dia anterior (&quot;ontem&quot;), com ele sendo automaticamente gerado e reprocessado todas as noites. As dimensões de público-alvo estão disponíveis para relatórios e detalhamentos, não para reconstruir estados históricos de público-alvo.
 
-   * Exemplo: independentemente da janela de tempo do relatório escolhida, o público-alvo reportável do CJA sempre respeitará o estado de associação de público-alvo presente no instantâneo de perfil assimilado mais recente (&quot;ontem&quot;).
+  * Exemplo: independentemente da janela de tempo do relatório escolhida, o público-alvo reportável do CJA sempre respeitará o estado de associação de público-alvo presente no instantâneo de perfil assimilado mais recente (&quot;ontem&quot;).
 
-      * Como exemplo, ampliar a janela de tempo do relatório para &quot;últimos 30 dias&quot; incluirá mais eventos e dará a impressão de que o tamanho do público-alvo está mudando. No entanto, a composição do perfil do público-alvo sempre corresponderá ao instantâneo de &quot;ontem&quot;, independentemente da janela de tempo escolhida.
+    * Como exemplo, ampliar a janela de tempo do relatório para &quot;últimos 30 dias&quot; incluirá mais eventos e dará a impressão de que o tamanho do público-alvo está mudando. No entanto, a composição do perfil do público-alvo sempre corresponderá ao instantâneo de &quot;ontem&quot;, independentemente da janela de tempo escolhida.
 
 * **As dimensões devem ter um evento correspondente a ser incluído**: as dimensões de Análise de Público-Alvo só podem ser analisadas onde houver eventos correspondentes no CJA. Se um comportamento, canal ou momento do ciclo de vida não for representado como um evento na conexão do CJA, ele não poderá ser analisado.
 
-   * Exemplo: um público-alvo usado para direcionar pessoas com um anúncio incluiria significativamente mais pessoas no público-alvo do RTCDP do que no público-alvo do CJA. Isso ocorre porque o público-alvo do CJA é limitado às pessoas que tiveram um evento no CJA durante a janela de relatórios.
+  * Exemplo: um público-alvo usado para direcionar pessoas com um anúncio incluiria significativamente mais pessoas no público-alvo do RTCDP do que no público-alvo do CJA. Isso ocorre porque o público-alvo do CJA é limitado às pessoas que tiveram um evento no CJA durante a janela de relatórios.
 
 * **A resolução de identidade é baseada exclusivamente em um único namespace**: a resolução de identidade depende totalmente do namespace de identidade selecionado como parte da configuração da Análise de Público-Alvo. A análise será restrita a esse namespace de identidade, com eventos que caem fora dele não estando disponíveis para relatórios de análise de público-alvo.
 
-   * Exemplo: para um conjunto de dados de evento compilado que combina o CRM e a ECID, e a configuração da Análise de público-alvo usa a ID do CRM, somente as linhas que contêm uma ID do CRM serão reconhecidas como parte do público-alvo reportável no CJA. Portanto, o tamanho do público resultante pode ser menor do que o previsto.
+  * Exemplo: para um conjunto de dados de evento compilado que combina o CRM e a ECID, e a configuração da Análise de público-alvo usa a ID do CRM, somente as linhas que contêm uma ID do CRM serão reconhecidas como parte do público-alvo reportável no CJA. Portanto, o tamanho do público resultante pode ser menor do que o previsto.
 
 ## Exemplo de casos de uso
 
@@ -145,9 +145,9 @@ Entenda o comportamento dos clientes que deixaram um público-alvo importante re
 
    * Filtre para perfis que saíram do Audience X ontem e observe:
 
-      * O comportamento deles até a saída (últimas sessões, erros, exposição de preço/oferta, mix de canais).
+     * O comportamento deles até a saída (últimas sessões, erros, exposição de preço/oferta, mix de canais).
 
-      * Seu comportamento após a saída (eles trocaram de produto, fizeram downgrade e ficaram inativos).
+     * Seu comportamento após a saída (eles trocaram de produto, fizeram downgrade e ficaram inativos).
 
    * Detalhe esse coorte de saída por região, dispositivo, estabilidade, nível de valor para encontrar bolsos de alto impacto.
 

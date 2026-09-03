@@ -108,8 +108,8 @@ Os benefícios dos rótulos de contexto são:
 * **Consistência**: todas as pessoas na sua organização que trabalham em um ou mais projetos baseados em uma visualização de dados que usa rótulos de contexto têm o mesmo comportamento.
 * **Visibilidade de recursos e modelos**: certas visualizações e recursos só aparecem quando o rótulo de contexto adequado é atribuído. Por exemplo:
 
-   * Uma visualização de [Mapa](/help/analysis-workspace/visualizations/map.md) é exibida corretamente somente quando o Customer Journey Analytics sabe quais componentes representam latitude e longitude.
-   * Os [modelos](/help/analysis-workspace/templates/use-templates.md) específicos ficam visíveis somente quando os rótulos de contexto corretos são aplicados e os componentes associados ficam disponíveis.
+  * Uma visualização de [Mapa](/help/analysis-workspace/visualizations/map.md) é exibida corretamente somente quando o Customer Journey Analytics sabe quais componentes representam latitude e longitude.
+  * Os [modelos](/help/analysis-workspace/templates/use-templates.md) específicos ficam visíveis somente quando os rótulos de contexto corretos são aplicados e os componentes associados ficam disponíveis.
 
 Os rótulos de contexto podem ser necessários nas seguintes situações:
 

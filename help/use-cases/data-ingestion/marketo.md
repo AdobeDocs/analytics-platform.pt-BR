@@ -29,8 +29,8 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: e430f26e2b6357a288adb4389a266f26acab68c4
 workflow-type: tm+mt
-source-wordcount: 1448
-ht-degree: 8%
+source-wordcount: 1476
+ht-degree: 9%
 
 ---
 
@@ -120,7 +120,7 @@ Uma [visualização de dados](/help/data-views/data-views.md) é um container es
 
 Um caso de uso que você pode explorar é: Quantas visitas de páginas da Web por clientes potenciais você teve em abril-junho de 2020?
 
-1. Abra o [Analytics Workspace](/help/analysis-workspace/home.md) e crie um novo projeto.
+1. Abrir [Espaço de trabalho do Analytics](/help/analysis-workspace/home.md) e criar um novo projeto.
 Clientes com CDP B2B/B2P podem realizar análise no estilo B2C no Customer Journey Analytics. Os objetos B2B ainda não estão disponíveis.
 
 1. Crie um [segmento](/help/components/segments/seg-create.md) para exibições de página da Web da seguinte maneira - Tipo de evento = web.webpagedetails.pageViews :

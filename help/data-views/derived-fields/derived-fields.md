@@ -24,8 +24,8 @@ topic_v2:
   - id: beb7a3c1-66ab-4786-b879-7621375b3c40
 source-git-commit: 3fcb9c403ace295c1a7e62c21d8bb444a4f9c011
 workflow-type: tm+mt
-source-wordcount: 10442
-ht-degree: 97%
+source-wordcount: 10602
+ht-degree: 98%
 
 ---
 
@@ -756,7 +756,7 @@ Define um conjunto de valores que são substituídos por valores correspondentes
 
 ## Caso de uso 1 {#classify-uc1}
 
-Você tem um arquivo CSV que inclui uma coluna de chave para `hotelID` e uma ou mais colunas adicionais associadas ao `hotelID`: `city`, `rooms`, `hotel name`.
+Você tem um arquivo CSV que inclui uma coluna de chaves para `hotelID` e uma ou mais colunas adicionais associadas a `hotelID`: `city`, `rooms`, `hotel name`.
 Você está coletando [!DNL Hotel ID] em uma dimensão, mas gostaria de criar uma dimensão [!DNL Hotel Name] derivada de `hotelID` no arquivo CSV.
 
 **Estrutura e conteúdo do arquivo CSV**
@@ -1015,8 +1015,8 @@ Alternativamente, você pode usar o valor de conveniência do intervalo de datas
 
 Você quer entender o tempo de pesquisa em minutos antes que um cliente faça um pedido durante uma sessão.
 
-Você define um novo campo derivado `Time Between Search And Order In Minutes` que é o resultado de duas funções [[!UICONTROL CASE WHEN]](#case-when) para definir valores de [!UICONTROL Tempo de Pesquisa] e [!UICONTROL Tempo de Pedido].
-Em seguida, use esses dois valores para calcular a diferença com uma função [!UICONTROL DATA MATH] com [!UICONTROL Escopo] definido como [!UICONTROL Sessão], valores definidos como [!UICONTROL Tempo de Pesquisa] e [!UICONTROL Tempo de Pedido] e [!UICONTROL Granularidade da saída] definidos como [!UICONTROL Minuto]. Para ambos os valores, selecione [!UICONTROL Retornar o primeiro] para garantir que o primeiro [!UICONTROL Tempo de Pesquisa] e o [!UICONTROL Tempo de Pedido] sejam retornados.
+Você define um novo campo derivado `Time Between Search And Order In Minutes`, que é o resultado de duas funções [[!UICONTROL CASE WHEN]](#case-when), para definir os valores de [!UICONTROL Tempo de pesquisa] e [!UICONTROL Tempo de pedido].
+Em seguida, você usa esses dois valores para calcular a diferença com uma função [!UICONTROL DATE MATH] com o [!UICONTROL Escopo] definido como [!UICONTROL Sessão], valores definidos como [!UICONTROL Tempo de pesquisa] e [!UICONTROL Tempo de pedido], e [!UICONTROL Granularidade de saída] definida como [!UICONTROL Minuto]. Para ambos os valores, selecione [!UICONTROL Retornar o primeiro] para garantir que o primeiro [!UICONTROL Tempo de pesquisa] e o primeiro [!UICONTROL Tempo de pedido] sejam retornados.
 
 ![Captura de tela da regra de cálculo de datas 3](assets/datemath-3.png)
 
@@ -1288,7 +1288,7 @@ Você pode inserir rapidamente uma função de [!UICONTROL Pesquisa] no construt
 1. Selecione **[!UICONTROL Campos do esquema]** no seletor.
 1. Selecione o ![Ícone de campo do esquema](assets/Smock_Folder_18_N.svg) **[!UICONTROL Conjuntos de dados de pesquisa]**.
 1. Selecione o seu conjunto de dados de pesquisa e localize o campo que deseja usar para pesquisar.
-1. Arraste e solte o campo de pesquisa em qualquer um dos campos de entrada disponíveis para uma função (por exemplo, Caso Quando). Quando válida, uma caixa azul, rotulada **[!UICONTROL + Adicionar]**, permite soltar o campo e inserir automaticamente uma função de Pesquisa antes da função na qual você soltou o campo de pesquisa. A função Lookup inserida é preenchida automaticamente com valores relevantes para todos os campos.
+1. Arraste e solte o campo de pesquisa em qualquer um dos campos de entrada disponíveis para uma função (por exemplo, “Case When”). Quando válida, uma caixa azul rotulada **[!UICONTROL + Adicionar]** permite soltar o campo e inserir automaticamente uma função de pesquisa antes da função na qual você soltou o campo de pesquisa. A função de pesquisa inserida é preenchida automaticamente com valores relevantes para todos os campos.
    ![Arrastar pesquisa](assets/lookup-drag.png)
 
 +++
@@ -1410,7 +1410,7 @@ Você define um campo derivado de `Corrected Annual Revenue`. Use a função [!U
 
 Para criar uma fórmula:
 
-1. Basta começar a digitar no campo Fórmula e os campos numéricos que correspondem ao que você digita aparecerão em um menu pop-up. Como alternativa, você pode arrastar e soltar um campo numérico dos campos disponíveis no painel esquerdo.
+1. Basta começar a digitar no campo “Fórmula”, e os campos numéricos que correspondem ao que você digitar aparecerão em um menu pop-up. Alternativamente, você pode arrastar e soltar um campo numérico a partir dos campos disponíveis no painel esquerdo.
    ![Mais informações de matemática 1](assets/math-more-info-1.png)
 
 1. Adicione o operando (por exemplo, `*` para multiplicar) seguido por outro campo ou um valor estático. Você pode usar parênteses para definir fórmulas mais complexas.

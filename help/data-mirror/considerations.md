@@ -46,16 +46,16 @@ Se quiser adicionar uma nova coluna, há duas opções, dependendo se o preenchi
 
 * Preenchimento retroativo:
 
-   * Remover o conjunto de dados atual.
-   * Configure o conector novamente com a coluna atualizada.
+  * Remover o conjunto de dados atual.
+  * Configure o conector novamente com a coluna atualizada.
 
   Isso garante que os dados sejam preenchidos retroativamente de forma mais eficiente e oportuna.
 
 * Sem preenchimento retroativo:
 
-   * Adicione a coluna na tabela de origem.
-   * Adicione a coluna no esquema do conjunto de dados de destino.
-   * Atualize o mapeamento para incluir o novo campo (coluna) da tabela de origem para o conjunto de dados de destino.
+  * Adicione a coluna na tabela de origem.
+  * Adicione a coluna no esquema do conjunto de dados de destino.
+  * Atualize o mapeamento para incluir o novo campo (coluna) da tabela de origem para o conjunto de dados de destino.
 
 Esta estratégia:
 

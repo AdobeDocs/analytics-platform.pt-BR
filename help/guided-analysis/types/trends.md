@@ -76,9 +76,9 @@ Adicionar dados adicionais ao gráfico. Quando mais de uma série estiver visív
 
 * **[!UICONTROL Detecção de anomalias]**: executa a [detecção de anomalias](/help/analysis-workspace/c-anomaly-detection/anomaly-detection.md) na análise de tendências. As anomalias são exibidas como pontos sobre os quais você pode passar o mouse para obter mais informações.
 * **[!UICONTROL Sobreposição de linha de tendências]**: adiciona uma linha de tendência ao gráfico para ajudar a distinguir um padrão mais claro nos dados.
-   * [!UICONTROL Linear]: cria uma linha de regressão reta. Melhor para dados lineares simples que aumentam ou diminuem a uma taxa estável. Equação: `y = a + b * x`
-   * [!UICONTROL Logarítmico]: cria uma linha de regressão curva. Melhor para dados que aumentam ou diminuem rapidamente, e então ficam mais nivelados. Equação: `y = a + b * log(x)`
-   * [!UICONTROL Média móvel]: cria uma linha de tendências suave com base em um conjunto de médias. Também conhecida como média variável, a média móvel usa um número específico de pontos de dados (determinado pela sua seleção), calcula a média deles e usa a média como um ponto na linha. Os exemplos incluem média móvel de sete dias ou média móvel de quatro semanas. As opções de média móvel disponíveis dependem do intervalo e do intervalo de datas selecionados.
+  * [!UICONTROL Linear]: cria uma linha de regressão reta. Melhor para dados lineares simples que aumentam ou diminuem a uma taxa estável. Equação: `y = a + b * x`
+  * [!UICONTROL Logarítmico]: cria uma linha de regressão curva. Melhor para dados que aumentam ou diminuem rapidamente, e então ficam mais nivelados. Equação: `y = a + b * log(x)`
+  * [!UICONTROL Média móvel]: cria uma linha de tendências suave com base em um conjunto de médias. Também conhecida como média variável, a média móvel usa um número específico de pontos de dados (determinado pela sua seleção), calcula a média deles e usa a média como um ponto na linha. Os exemplos incluem média móvel de sete dias ou média móvel de quatro semanas. As opções de média móvel disponíveis dependem do intervalo e do intervalo de datas selecionados.
 
 ### Comparação de tempo
 

@@ -123,7 +123,7 @@ Para adicionar novos slides, passe o mouse sobre ou clique em um slide e selecio
    * Toque no ícone de duplicação para duplicar o slide já existente.
 1. Se você criar um slide em branco, arraste e solte componentes do painel esquerdo ou escolha um layout para preencher automaticamente o slide com os dados do bloco.
    ![Criar uma história de dados](assets/data-story2.png)
-Para excluir um slide, toque no ícone de lixeira.
+   Para excluir um slide, toque no ícone de lixeira.
 
 ### Personalizar uma história de dados {#customize-data-story}
 
@@ -135,7 +135,7 @@ As histórias de dados permitem personalizar tudo. Assim você pode compartilhar
 1. Altere o título, o tipo de gráfico e outras opções do bloco.
 1. Arraste um componente para o bloco.
    ![Criar uma história de dados](assets/data-story3.png)
-Quando você arrasta e solta um componente, como uma visualização, em um bloco, o componente é aplicado a todos os slides da matéria de dados.
+   Quando você arrasta e solta um componente, como uma visualização, em um bloco, o componente é aplicado a todos os slides da matéria de dados.
 1. Para aplicar uma alteração somente ao título, mantenha pressionada a tecla Shift para aplicar a alteração.
    ![Criar uma história de dados](assets/data-story4.png)
 

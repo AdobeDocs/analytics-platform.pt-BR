@@ -19,7 +19,7 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: 859
+source-wordcount: 860
 ht-degree: 52%
 
 ---
@@ -63,10 +63,10 @@ Para definir datas do acumulado:
 
    - Ao selecionar **[!UICONTROL Início de]** ou **[!UICONTROL Fim de]**, você pode criar uma expressão completa. Por exemplo: **[!UICONTROL Fim do]** **[!UICONTROL ano atual]** **[!UICONTROL mais]** `1` **[!UICONTROL dia]**. Escolha o valor apropriado para cada parte individual da expressão.
 
-      - Selecione um valor para o atual. Por exemplo, **[!UICONTROL ano atual]**.
-      - Selecione um valor para um cálculo adicional opcional. Por exemplo, **[!UICONTROL mais]**.
-      - Após definir um cálculo adicional, especifique um valor. Por exemplo, `1`.
-      - Depois de especificar um cálculo adicional, selecione o período a ser usado para o cálculo. Por exemplo, **[!UICONTROL dia]**.
+     - Selecione um valor para o atual. Por exemplo, **[!UICONTROL ano atual]**.
+     - Selecione um valor para um cálculo adicional opcional. Por exemplo, **[!UICONTROL mais]**.
+     - Após definir um cálculo adicional, especifique um valor. Por exemplo, `1`.
+     - Depois de especificar um cálculo adicional, selecione o período a ser usado para o cálculo. Por exemplo, **[!UICONTROL dia]**.
 
    - Ao selecionar **[!UICONTROL Dia Fixo]**, especifique um dia fixo ou use o seletor para selecionar um dia.
 

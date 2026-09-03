@@ -16,7 +16,7 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: 540
+source-wordcount: 542
 ht-degree: 92%
 
 ---
@@ -77,12 +77,12 @@ Também é possível selecionar uma **[!UICONTROL predefinição]** no menu susp
 
      ![Datas contínuas](assets/rolliing-dates.png)
 
-      1. Selecione **[!UICONTROL Início de]**, **[!UICONTROL Fim de]** ou **[!UICONTROL Dia fixo]**.
-      1. Ao selecionar **[!UICONTROL Início de]** ou **[!UICONTROL Fim de]**, você pode criar uma expressão completa. Por exemplo: **[!UICONTROL Fim do]** **[!UICONTROL trimestre atual]** **[!UICONTROL menos]** `20` **[!UICONTROL dias]**. Escolha o valor apropriado para cada parte individual da expressão.
-         * Selecione um valor para o atual. Por exemplo, **[!UICONTROL trimestre atual]**.
-         * Selecione um valor para o cálculo adicional. Por exemplo, **[!UICONTROL menos]**.
-         * Após definir um cálculo adicional, especifique um valor. Por exemplo, `20`.
-         * Depois de especificar um cálculo adicional, selecione o período a ser usado para o cálculo. Por exemplo, **[!UICONTROL dias]**.
+     1. Selecione **[!UICONTROL Início de]**, **[!UICONTROL Fim de]** ou **[!UICONTROL Dia fixo]**.
+     1. Ao selecionar **[!UICONTROL Início de]** ou **[!UICONTROL Fim de]**, você pode criar uma expressão completa. Por exemplo: **[!UICONTROL Fim do]** **[!UICONTROL trimestre atual]** **[!UICONTROL menos]** `20` **[!UICONTROL dias]**. Escolha o valor apropriado para cada parte individual da expressão.
+        * Selecione um valor para o atual. Por exemplo, **[!UICONTROL trimestre atual]**.
+        * Selecione um valor para o cálculo adicional. Por exemplo, **[!UICONTROL menos]**.
+        * Após definir um cálculo adicional, especifique um valor. Por exemplo, `20`.
+        * Depois de especificar um cálculo adicional, selecione o período a ser usado para o cálculo. Por exemplo, **[!UICONTROL dias]**.
 
      Selecione **[!UICONTROL Ocultar detalhes]** para ocultar os detalhes do cálculo de datas contínuas.
 

@@ -19,7 +19,7 @@ topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
 source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
 workflow-type: tm+mt
-source-wordcount: 1022
+source-wordcount: 1024
 ht-degree: 58%
 
 ---
@@ -52,8 +52,8 @@ Antes de usar a compilação, verifique se a sua organização está preparada c
 
 - Importe os dados desejados para a Adobe Experience Platform:
 
-   - Para dados do Adobe Analytics, consulte [Uso de dados do conjunto de relatórios do Adobe Analytics no Customer Journey Analytics](/help/getting-started/aa-vs-cja/aa-data-in-cja.md).
-   - Para outros tipos de dados, consulte [Criar um esquema](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/tutorials/create-schema-ui) e [Assimilar dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/ingestion/home) na documentação da Adobe Experience Platform.
+  - Para dados do Adobe Analytics, consulte [Uso de dados do conjunto de relatórios do Adobe Analytics no Customer Journey Analytics](/help/getting-started/aa-vs-cja/aa-data-in-cja.md).
+  - Para outros tipos de dados, consulte [Criar um esquema](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/tutorials/create-schema-ui) e [Assimilar dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/ingestion/home) na documentação da Adobe Experience Platform.
 
 Ao definir sua conexão do Customer Journey Analytics, você se beneficiará da análise entre canais por combinar um ou mais conjuntos de dados compilados com outros conjuntos de dados, como dados da central de atendimento. Essa configuração de conexão pressupõe que esses outros conjuntos de dados já contenham uma ID de pessoa do mesmo namespace no máximo de linhas possível.
 

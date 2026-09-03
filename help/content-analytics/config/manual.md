@@ -21,8 +21,8 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: d9715c3da9893e1c47b702acb4daef5e666bedd7
 workflow-type: tm+mt
-source-wordcount: 720
-ht-degree: 62%
+source-wordcount: 721
+ht-degree: 66%
 
 ---
 
@@ -50,13 +50,13 @@ Para interromper a coleta de dados de uma configuração Content Analytics imple
 
 * Para **web**:
 
-   1. Remova o [código incorporado](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/publish/environments/environments) no elemento `<head>` das páginas no seu ambiente de desenvolvimento, preparação ou produção, sujeito à Análise de conteúdo.
-   1. Exclua a propriedade de Tags da Web associada à sua configuração do Content Analytics.
+  1. Remova o [código incorporado](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/publish/environments/environments) no elemento `<head>` das páginas no seu ambiente de desenvolvimento, preparação ou produção, sujeito à Análise de conteúdo.
+  1. Exclua a propriedade de Tags da Web associada à sua configuração do Content Analytics.
 
 * Para **celular**:
 
-   1. Remova a [extensão do Content Analytics](https://developer.adobe.com/client-sdks/solution/adobe-content-analytics/) do seu aplicativo.
-   1. Exclua a propriedade de Tags móveis associada à sua configuração do Content Analytics.
+  1. Remova a [extensão do Content Analytics](https://developer.adobe.com/client-sdks/solution/adobe-content-analytics/) do seu aplicativo.
+  1. Exclua a propriedade de Tags móveis associada à sua configuração do Content Analytics.
 
 Siga o [fluxo de publicação](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/publish/overview){target="_blank"} para aplicar as alterações.
 

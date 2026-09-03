@@ -133,4 +133,4 @@ O painel de filtro consiste nas seções a seguir.
 
 | Tags | Descrição |
 |---|---|
-| ![Tags](/help/components/audiences/assets/audiences-filter-tags.png){width="300"} | A seção **[!UICONTROL Tags]** permite filtrar por tags. <ul><li>Você pode usar a ![Pesquisa](/help/assets/icons/Search.svg) para procurar as tags que deseja usar para filtrar. |
+| ![Tags](/help/components/audiences/assets/audiences-filter-tags.png){width="300"} | A seção **[!UICONTROL Tags]** permite filtrar por tags. <ul><li>Você pode usar a ![Pesquisa](/help/assets/icons/Search.svg) para procurar as tags que deseja usar para filtrar. |

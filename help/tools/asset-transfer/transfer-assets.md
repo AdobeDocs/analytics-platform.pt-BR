@@ -18,7 +18,7 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: 856
+source-wordcount: 857
 ht-degree: 98%
 
 ---
@@ -43,7 +43,7 @@ A transferência de ativos exige a permissão de admin de produto do Customer Jo
 
    >[!IMPORTANT]
    >
-   >Você só pode fazer uma transferência de 1:1, de um usuário para outro. Não há suporte para transferências “um para muitos” ou “muitos para um”.
+   >Você só pode fazer uma transferência 1:1 de um usuário para outro. Não há suporte para transferências “um para muitos” ou “muitos para um”.
 
 
 1. Depois de selecionar um usuário, a opção Transferir ativos é exibida na parte inferior da tela.

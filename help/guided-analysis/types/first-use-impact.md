@@ -46,9 +46,9 @@ Os casos de uso desta análise incluem:
 * **Implementações em fases**: como a análise busca o primeiro uso do recurso em vez de uma data fixa, essa análise é útil se você implementar os recursos em fases ao longo do tempo.
 * **Análise de nova versão do produto**: se você estiver lançando uma nova versão do seu produto, poderá comparar o desempenho dos principais indicadores antes e depois que os usuários foram expostos à nova versão pela primeira vez. Selecione “qualquer evento” como o primeiro evento de uso e filtre-o para a propriedade Número de versão.
 * **Melhorias em recursos existentes**: se você estiver fazendo melhorias em um recurso existente em seu produto, poderá comparar o desempenho dos principais indicadores antes e depois que os usuários foram expostos a essas novas melhorias pela primeira vez. É possível realizar essa análise de uma ou mais maneiras, dependendo da instrumentação do recurso.
-   * Selecione um evento que represente a melhoria como seu evento de primeiro uso
-   * Selecionar a data em que as alterações começaram a ser implantadas
-   * Segmentar a análise para o grupo de pessoas expostas às melhorias
+  * Selecione um evento que represente a melhoria como seu evento de primeiro uso
+  * Selecionar a data em que as alterações começaram a ser implantadas
+  * Segmentar a análise para o grupo de pessoas expostas às melhorias
 * **Eficácia da campanha**: quando um usuário clica em uma determinada campanha, você pode comparar o desempenho dos indicadores principais antes e depois da interação do usuário com essa campanha.
 
 ## Interface
@@ -63,8 +63,8 @@ O painel de consulta permite configurar os seguintes componentes:
 * **[!UICONTROL Indicadores-chave]**: os eventos que você deseja medir por usuário. Cada indicador principal selecionado é representado como uma linha colorida. Uma linha que representa o evento é adicionada à tabela. É possível incluir até três eventos.
 * **[!UICONTROL Contado como]**: o método de contagem que você deseja aplicar aos eventos selecionados. As opções incluem [!UICONTROL Eventos por usuário], [!UICONTROL Eventos], [!UICONTROL Sessões] e [!UICONTROL Usuários].
 * **[!UICONTROL Fatores]**: há dois fatores para esta análise:
-   * **[!UICONTROL Data]**: até que ponto você quer começar a procurar o evento de primeiro uso que ocorreu.
-   * **[!UICONTROL Evento]**: o evento que você deseja procurar para o primeiro uso, para centralizar a análise.
+  * **[!UICONTROL Data]**: até que ponto você quer começar a procurar o evento de primeiro uso que ocorreu.
+  * **[!UICONTROL Evento]**: o evento que você deseja procurar para o primeiro uso, para centralizar a análise.
 * **[!UICONTROL Segmentos]**: o segmento que você deseja medir. O segmento selecionado filtra os dados para se concentrar apenas nas pessoas que correspondem aos critérios do segmento. Um único segmento é compatível com essa análise.
 
 ### Configurações de gráficos

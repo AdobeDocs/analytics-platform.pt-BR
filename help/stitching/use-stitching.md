@@ -42,11 +42,11 @@ ht-degree: 27%
    - A ID do conjunto de dados que você deseja rechavear.
    - O nome da coluna (caminho de identidade e namespace) da ID persistente para o conjunto de dados desejado (o identificador que aparece em cada linha).
    - Se o conjunto de dados suportar `identityMap`:
-      - Para a compilação em campo, especifique o namespace para as IDs persistente e de pessoa.
-      - Para a compilação baseada em gráfico, especifique o namespace da ID persistente e o namespace de identidade a ser usado para consultar o gráfico de identidade.
+     - Para a compilação em campo, especifique o namespace para as IDs persistente e de pessoa.
+     - Para a compilação baseada em gráfico, especifique o namespace da ID persistente e o namespace de identidade a ser usado para consultar o gráfico de identidade.
    - Se o conjunto de dados não suportar `identityMap`:
-      - Para a compilação em campo, o nome da coluna da ID de pessoa para o conjunto de dados desejado (o identificador de pessoa, que também atua como um link entre conjuntos de dados no contexto de uma conexão).
-      - Para a compilação baseada em gráfico, o namespace de identidade que você deseja usar para consultar o gráfico de identidade.
+     - Para a compilação em campo, o nome da coluna da ID de pessoa para o conjunto de dados desejado (o identificador de pessoa, que também atua como um link entre conjuntos de dados no contexto de uma conexão).
+     - Para a compilação baseada em gráfico, o namespace de identidade que você deseja usar para consultar o gráfico de identidade.
    - Sua preferência por janela de retrospectiva e frequência de repetição. Consulte seu pacote do Customer Journey Analytics para obter as [opções](#options) disponíveis.
    - Nome da sandbox.
 

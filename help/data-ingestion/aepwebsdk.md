@@ -67,7 +67,8 @@ Todos os dados assimilados na Adobe Experience Platform devem estar em conformid
 
 ### Configurar um esquema
 
-Você deseja rastrear o mínimo de dados de perfis que visitam seu site, por exemplo, nome de página e identificação.Primeiro, você deve definir um esquema que modele esses dados.
+Você deseja rastrear o mínimo de dados de perfis que visitam seu site, por exemplo, nome de página e identificação.
+Primeiro, você deve definir um esquema que modele esses dados.
 
 Para configurar o esquema:
 
@@ -376,13 +377,13 @@ Para definir uma regra:
 
    - Na caixa de diálogo [!UICONTROL Configuração de evento]:
 
-      - Selecione **[!UICONTROL Núcleo]** na lista [!UICONTROL Extensão].
+     - Selecione **[!UICONTROL Núcleo]** na lista [!UICONTROL Extensão].
 
-      - Selecione **[!UICONTROL Janela carregada]** na lista [!UICONTROL Tipo de evento].
+     - Selecione **[!UICONTROL Janela carregada]** na lista [!UICONTROL Tipo de evento].
 
-        ![Regra - Configuração de evento](./assets/event-windowloaded-pageview.png)
+       ![Regra - Configuração de evento](./assets/event-windowloaded-pageview.png)
 
-      - Selecione **[!UICONTROL Manter alterações]**.
+     - Selecione **[!UICONTROL Manter alterações]**.
 
 
 
@@ -390,17 +391,17 @@ Para definir uma regra:
 
    - Na caixa de diálogo [!UICONTROL Configuração de ação]:
 
-      - Selecione **[!UICONTROL SDK da Web da Adobe Experience Platform]** na lista [!UICONTROL Extensão].
+     - Selecione **[!UICONTROL SDK da Web da Adobe Experience Platform]** na lista [!UICONTROL Extensão].
 
-      - Selecione **[!UICONTROL Enviar evento]** na lista [!UICONTROL Tipo de ação].
+     - Selecione **[!UICONTROL Enviar evento]** na lista [!UICONTROL Tipo de ação].
 
-      - Selecione **[!UICONTROL web.webpagedetails.pageViews]** na lista [!UICONTROL Tipo].
+     - Selecione **[!UICONTROL web.webpagedetails.pageViews]** na lista [!UICONTROL Tipo].
 
-      - Selecione o ícone do cilindro ao lado de [!UICONTROL Dados XDM] e Selecione **[!UICONTROL XDM - Exibição de página]** na lista de elementos de dados.
+     - Selecione o ícone do cilindro ao lado de [!UICONTROL Dados XDM] e Selecione **[!UICONTROL XDM - Exibição de página]** na lista de elementos de dados.
 
      ![Regra - Configuração de ação](./assets/action-pageview-xdm.png)
 
-      - Selecione **[!UICONTROL Manter alterações]**.
+     - Selecione **[!UICONTROL Manter alterações]**.
 
    - Sua regra deve ter a seguinte aparência:
 
@@ -511,11 +512,11 @@ Para criar sua conexão:
 
    - Para cada conjunto de dados:
 
-      - Selecione uma [!UICONTROL ID de pessoa] a partir das identidades disponíveis definidas nos esquemas de conjunto de dados da Adobe Experience Platform.
+     - Selecione uma [!UICONTROL ID de pessoa] a partir das identidades disponíveis definidas nos esquemas de conjunto de dados da Adobe Experience Platform.
 
-      - Selecione a fonte de dados correta na lista [!UICONTROL Tipo de fonte de dados]. Se você especificar **[!UICONTROL Outros]**, em seguida, adicione uma descrição para a fonte de dados.
+     - Selecione a fonte de dados correta na lista [!UICONTROL Tipo de fonte de dados]. Se você especificar **[!UICONTROL Outros]**, em seguida, adicione uma descrição para a fonte de dados.
 
-      - Definir **[!UICONTROL Importar todos os novos dados]** e **[!UICONTROL Preenchimento retroativo de conjunto de dados com dados existentes]** de acordo com suas preferências.
+     - Definir **[!UICONTROL Importar todos os novos dados]** e **[!UICONTROL Preenchimento retroativo de conjunto de dados com dados existentes]** de acordo com suas preferências.
 
      ![Configurar conjuntos de dados](./assets/cja-connections-3b.png)
 

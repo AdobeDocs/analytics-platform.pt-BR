@@ -102,7 +102,8 @@ Para compartilhar uma função de projeto específica com usuários ou grupos na
 
    Ou
 
-   Para compartilhar somente um projeto individual, abra o projeto que deseja compartilhar e clique em **[!UICONTROL Compartilhar]** > **[!UICONTROL Compartilhar com usuários do Espaço de trabalho]**.Se houver alterações não salvas, será solicitado que salve o projeto primeiro.
+   Para compartilhar somente um projeto individual, abra o projeto que deseja compartilhar e clique em **[!UICONTROL Compartilhar]** > **[!UICONTROL Compartilhar com usuários do Espaço de trabalho]**.
+   Se houver alterações não salvas, será solicitado que salve o projeto primeiro.
 
    A caixa de diálogo Compartilhar projeto é exibida. As seções [!UICONTROL **Compartilhar por link**] e [!UICONTROL **Configurações**] da caixa de diálogo estão visíveis somente ao compartilhar um único projeto.
 
@@ -208,9 +209,9 @@ Para compartilhar um projeto do Analysis Workspace com qualquer pessoa:
 
      Os administradores do Customer Journey Analytics podem configurar essa preferência para a empresa, conforme descrito em [Preferências](/help/analysis-workspace/user-preferences.md). É possível encontrar os seguintes cenários, dependendo de como a administração configurou essa opção:
 
-      * Se essa opção não estiver visível, a administração do Customer Journey Analytics não habilitou esse recurso.
+     * Se essa opção não estiver visível, a administração do Customer Journey Analytics não habilitou esse recurso.
 
-      * Se essa opção estiver ativada e você não puder desativá-la, a opção bloqueada significa que o administrador do Customer Journey Analytics requer a autenticação do CX Enterprise para qualquer pessoa que acessar os projetos da Analysis Workspace. Esse é sempre o caso de organizações que adquirem uma licença do Healthcare Shield.
+     * Se essa opção estiver ativada e você não puder desativá-la, a opção bloqueada significa que o administrador do Customer Journey Analytics requer a autenticação do CX Enterprise para qualquer pessoa que acessar os projetos da Analysis Workspace. Esse é sempre o caso de organizações que adquirem uma licença do Healthcare Shield.
 
 1. Ao lado do campo **[!UICONTROL Compartilhar com qualquer pessoa (sem necessidade de fazer logon)]**, clique no ícone ![Link](/help/assets/icons/Link.svg) para copiar o link para a área de transferência do seu sistema.
 

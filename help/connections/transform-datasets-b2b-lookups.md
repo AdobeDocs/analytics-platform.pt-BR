@@ -61,8 +61,8 @@ Para ativar a transformação para um conjunto de dados de pesquisa B2B:
 
 * Verifique, para cada conjunto de dados, os valores sugeridos para **[!UICONTROL Chave]** e **[!UICONTROL Chave correspondente]**. Se alterar os valores dos valores sugeridos, você verá um aviso solicitando que continue. Você deve ter certeza de que:
 
-   * O valor selecionado para **Chave** é baseado no tipo de dados da ID de pessoa.
-   * O valor selecionado para **Chave Correspondente** é definido como o campo de identidade principal para o conjunto de dados do evento.
+  * O valor selecionado para **Chave** é baseado no tipo de dados da ID de pessoa.
+  * O valor selecionado para **Chave Correspondente** é definido como o campo de identidade principal para o conjunto de dados do evento.
 
 * Selecione as opções para importar novos dados e preenchimento retroativo de conjunto de dados.
 

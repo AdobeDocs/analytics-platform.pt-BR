@@ -21,7 +21,7 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: 1494
+source-wordcount: 1496
 ht-degree: 99%
 
 ---
@@ -47,9 +47,9 @@ Utilize o [Gerenciador de segmentos](seg-manage.md) para gerenciá-los.
 O planejamento adequado dos segmentos (especialmente como admin) aumenta as chances de que eles sejam usados. Considere o seguinte ao planejar segmentos:
 
 - **Público-alvo**: quem usará os segmentos? Forneça uma boa descrição do segmento para que o público-alvo o entenda:
-   - Para que esse segmento é útil?
+  - Para que esse segmento é útil?
 
-   - Quando devo usar este segmento?
+  - Quando devo usar este segmento?
 
 - **Escopo**: qual [container de segmento](#segment-containers) melhor representa os dados que você procura? Use o menor container possível.
 

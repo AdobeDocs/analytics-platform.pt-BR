@@ -20,7 +20,7 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: 2491
+source-wordcount: 2496
 ht-degree: 4%
 
 ---
@@ -47,8 +47,8 @@ Um segmento sequencial tem alguma [funcionalidade básica](#basics) e opções a
 
 * Quais dados [incluir](#include) como parte da sequência geral para a definição do segmento. Ou para uma sequência definida como parte de um container. Por padrão, todos os dados correspondentes são considerados. Esses dados são identificados por ![UserGroup](/help/assets/icons/UserGroup.svg) [!UICONTROL Incluir todos].
 
-   * Selecione ![SequenceBefore](/help/assets/icons/SequenceBefore.svg) **[!UICONTROL Only Before Sequence]** para considerar apenas os dados antes da sequência.
-   * Selecione ![SequenceAfter](/help/assets/icons/SequenceAfter.svg) **[!UICONTROL Only After Sequence]** para considerar apenas os dados após a sequência.
+  * Selecione ![SequenceBefore](/help/assets/icons/SequenceBefore.svg) **[!UICONTROL Only Before Sequence]** para considerar apenas os dados antes da sequência.
+  * Selecione ![SequenceAfter](/help/assets/icons/SequenceAfter.svg) **[!UICONTROL Only After Sequence]** para considerar apenas os dados após a sequência.
 
 * Quais dados [excluir](#exclude) como parte da definição de segmento sequencial.
 
@@ -129,7 +129,7 @@ Identifique as pessoas que visitaram uma página e, em seguida, outra página so
 
 ![Sequência após](assets/sequence-after.png)
 
-Se ocorrer uma exibição de página da Página inicial em 1º de junho de 2024 às 00:01, será exibida uma exibição de página para a Página Mulheres | Os sapatos serão iguais, desde que a exibição da página ocorra após 15 de junho de 2024 00:01.
+Se ocorrer uma exibição de página da Página inicial em 1 de junho de 2024 às 00:01, será exibida uma exibição de página para a Página mulheres | Sapatos corresponderão desde que essa exibição de página ocorra após 15 de junho de 2024 às 00:01.
 
 ##### Operador [!UICONTROL Within]
 
@@ -137,7 +137,7 @@ Identifique as pessoas que visitaram uma página e, em seguida, outra página de
 
 ![Sequência em](assets/sequence-within.png)
 
-Se uma exibição de página da Página inicial ocorrer em 1 de junho de 2024 às 12:01, uma exibição de página para a página Mulheres | Os sapatos corresponderão se essa exibição de página ocorrer antes de 15 de junho de 2024 12:16.
+Se uma exibição de página da Página inicial ocorrer em 1 de junho de 2024 às 12h01, uma exibição de página para a Página inicial será exibida para Mulheres | Os sapatos corresponderão desde que essa exibição de página ocorra antes de 15 de junho de 2024 às 12:16.
 
 ##### [!UICONTROL Depois] mas [!UICONTROL Dentro] operador
 
@@ -145,7 +145,7 @@ Identifique as pessoas que visitaram uma página e, em seguida, visitaram outra 
 
 ![Sequência após, mas dentro de](assets/sequence-afterbutwithin.png)
 
-Todas as pessoas que acessam a página inicial em 1 de junho de 2024 e que retornam para visitar as mulheres Página de | Sapatos após 15 de junho de 2019 00:01, mas antes de 1 de julho de 2019 qualifique-se para o segmento.
+Todas as pessoas que acessam a página inicial em 1 de junho de 2024 e que retornam para visitar as mulheres | Página de sapatos após 15 de junho de 2019 00:01, mas antes de 1 de julho de 2019 qualifique-se para o segmento.
 
 
 ### Restrições de [!UICONTROL Evento], [!UICONTROL Sessão] e [!UICONTROL Dimension]
