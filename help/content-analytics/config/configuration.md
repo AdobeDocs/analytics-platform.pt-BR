@@ -58,7 +58,7 @@ Antes de configurar o Content Analytics, verifique se os seguintes pré-requisit
 ### Web
 
 * Você incluiu na lista de permissões o agente de usuário e o endereço IP do serviço de recursos usado no Content Analytics. A string de agente do usuário a ser configurada é: <code>AdobeFeaturization/1.0</code>.
-* Se você implementou o [SDK da web usando o JavaScript](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/install/library){target="_blank"} para coleta regular de dados comportamentais, verifique se está usando o nome padrão <code>alloy</code> para a biblioteca do JavaScript.
+* Se você implementou o [SDK da web usando o JavaScript](https://experienceleague.adobe.com/pt-br/docs/experience-platform/collection/js/install/library){target="_blank"} para coleta regular de dados comportamentais, verifique se está usando o nome padrão <code>alloy</code> para a biblioteca do JavaScript.
 * Você tem uma função de admin de produto do Customer Journey Analytics, com permissões adicionais para gerenciar conexões e visualizações de dados.
 * Se decidir coletar experiências do Content Analytics, certifique-se de configurar e atualizar o controle de versão do Content Analytics com base nas alterações nas suas páginas da Web.
 * Você deve ter [permissões para a coleta de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/collection/permissions){target="_blank"}:

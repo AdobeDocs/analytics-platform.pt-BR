@@ -44,10 +44,10 @@ Algumas configurações de firewall bloqueiam domínios dos quais a Customer Jou
 
 ## Domínios do CX Enterprise
 
-Além dos domínios acima, o CX Enterprise conta com vários domínios para coleta de dados e exportação de relatórios. Consulte [Domínios usados pelo CX Enterprise](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/domains) para obter esta lista de domínios.
+Além dos domínios acima, o CX Enterprise conta com vários domínios para coleta de dados e exportação de relatórios. Consulte [Domínios usados pelo CX Enterprise](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/data-collection/domains) para obter esta lista de domínios.
 
 >[!MORELIKETHIS]
 >
 >[Endereços IP usados pelo Customer Journey Analytics](ip-addresses.md)
 >
->[Domínios usados pelo CX Enterprise](https://experienceleague.adobe.com/en/docs/core-services/interface/data-collection/domains)
+>[Domínios usados pelo CX Enterprise](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/data-collection/domains)

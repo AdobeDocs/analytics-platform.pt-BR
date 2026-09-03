@@ -133,7 +133,7 @@ O Content Analytics trata as identidades do canal da Web da seguinte maneira:
 * A compilação baseada em campo não é compatível porque o esquema é de propriedade do sistema. Portanto, não é possível adicionar outro campo ao esquema para oferecer suporte à compilação baseada em campo
 
 
-Para garantir que os dados de identidade da Content Analytics e os dados de identidade da Web SDK sejam compilados corretamente no nível do campo, modifique o Web SDK [em antes de enviar o retorno de chamada](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/configure/onbeforeeventsend){target="_blank"} do evento.
+Para garantir que os dados de identidade da Content Analytics e os dados de identidade da Web SDK sejam compilados corretamente no nível do campo, modifique o Web SDK [em antes de enviar o retorno de chamada](https://experienceleague.adobe.com/pt-br/docs/experience-platform/collection/js/commands/configure/onbeforeeventsend){target="_blank"} do evento.
 
 1. Navegue até a propriedade **[!UICONTROL Tags]**, que contém as extensões do SDK da web da Adobe Experience Platform e do Adobe Content Analytics.
 1. Selecione **[!UICONTROL Extensões]** de ![Plug](/help/assets/icons/Plug.svg).

@@ -194,8 +194,8 @@ Métricas calculadas que não são compatíveis com o painel Experimentação t�
 
 ## Usar métricas calculadas no painel Experimentação
 
-Consulte esta publicação do blog para obter informações sobre [como usar métricas calculadas no painel Experimentação](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-derived-metrics-in-cja-s-experimentation-panel/ba-p/593119).
+Consulte esta publicação do blog para obter informações sobre [como usar métricas calculadas no painel Experimentação](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/using-derived-metrics-in-cja-s-experimentation-panel/ba-p/593119?profile.language=pt).
 
 >[!MORELIKETHIS]
->[Domínio da experimentação do Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/mastering-adobe-customer-journey-analytics-experimentation-your/ba-p/732338)
+>[Domínio da experimentação do Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/mastering-adobe-customer-journey-analytics-experimentation-your/ba-p/732338?profile.language=pt)
 >
