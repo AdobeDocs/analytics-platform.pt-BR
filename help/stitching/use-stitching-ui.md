@@ -38,58 +38,58 @@ Se você atender aos pré-requisitos, talvez queira executar algumas verificaç�
 * Se você for usar os campos [Esquema do Experience Data Model (XDM)](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/home) para ID persistente ou ID de pessoa, verifique se as identidades estão marcadas corretamente no esquema para o conjunto de dados do evento. [Consulte Visão geral do namespace de identidade](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/features/namespaces).
 * Verifique a cobertura de identidade para ID persistente e ID de pessoa:
 
-   * **[!UICONTROL ID Persistente]**
+  * **[!UICONTROL ID Persistente]**
 
-     Consulte 7 dias de dados nos quais o campo de ID persistente não é nulo e divida por uma consulta de 7 dias de dados para todos os eventos no conjunto de dados. Esse percentual deve estar acima de 95%.
+    Consulte 7 dias de dados nos quais o campo de ID persistente não é nulo e divida por uma consulta de 7 dias de dados para todos os eventos no conjunto de dados. Esse percentual deve estar acima de 95%.
 
-     Exemplo de uma consulta que você pode usar para verificação:
+    Exemplo de uma consulta que você pode usar para verificação:
 
-     ```sql
-     SELECT
-       COUNT(*) AS total_events,
-       COUNT({PERSISTENT_ID_FIELD}) AS events_with_persistentid,
-       ROUND(COUNT({PERSISTENT_ID_FIELD}) / COUNT(*), 2) AS percent_with_persistentid_not_null
-     FROM 
-       {DATASET_TABLE_NAME}
-     WHERE
-       TO_TIMESTAMP(timestamp, '{FORMAT_STRING}') >= TIMESTAMP '{START_DATE}'
-       AND TO_TIMESTAMP(timestamp, 'FORMAT_STRING') < TIMESTAMP '{END_DATE}';
-     ```
+    ```sql
+    SELECT
+      COUNT(*) AS total_events,
+      COUNT({PERSISTENT_ID_FIELD}) AS events_with_persistentid,
+      ROUND(COUNT({PERSISTENT_ID_FIELD}) / COUNT(*), 2) AS percent_with_persistentid_not_null
+    FROM 
+      {DATASET_TABLE_NAME}
+    WHERE
+      TO_TIMESTAMP(timestamp, '{FORMAT_STRING}') >= TIMESTAMP '{START_DATE}'
+      AND TO_TIMESTAMP(timestamp, 'FORMAT_STRING') < TIMESTAMP '{END_DATE}';
+    ```
 
-     Em que:
+    Em que:
 
-      * `{PERSISTENT_ID_FIELD}` é o campo para a ID persistente. Por exemplo: `identityMap.ecid[0]`.
+    * `{PERSISTENT_ID_FIELD}` é o campo para a ID persistente. Por exemplo: `identityMap.ecid[0]`.
+    * `{DATASET_TABLE_NAME}` é o nome da tabela para o conjunto de dados do evento.
+    * `{FORMAT_STRING}` é a cadeia de caracteres de formato do campo de carimbo de data/hora. Por exemplo: `MM/DD/YY HH12:MI AM`.
+    * `{START_DATE}`é a data de início. Por exemplo: `2024-01-01 00:00:00`.
+    * `{END_DATE}` é a data de término em formato padrão. Por exemplo: `2024-01-08 00:00:00`.
+
+
+  * **[!UICONTROL ID de pessoa]**
+    * Para a compilação baseada em gráficos, verifique se o gráfico de identidade contém fragmentos que vinculam valores de ID do namespace de ID persistente e do namespace de ID de pessoa escolhidos. Você pode executar um teste acessando o [Visualizador de gráficos de identidade da Experience Platform](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"} e consultando o gráfico por alguns valores de ID persistentes de amostra. Verifique se esses valores de ID persistente estão vinculados aos valores de ID de pessoa no gráfico.
+    * Para a compilação em campo, consulte 7 dias de dados nos quais o campo de ID de pessoa não é nulo e divida por uma consulta de 7 dias de dados para todos os eventos no conjunto de dados. Idealmente, essa porcentagem deve ficar acima de 5%.
+
+      Exemplo de uma consulta que você pode usar para verificação:
+
+      ```sql
+      SELECT
+        COUNT(*) AS total_events,
+        COUNT({PERSON_ID_FIELD}) AS events_with_personid,
+        ROUND(COUNT({PERSON_ID_FIELD}) / COUNT(*), 2) AS percent_with_personid_not_null
+      FROM 
+        {DATASET_TABLE_NAME}
+      WHERE
+        TO_TIMESTAMP(timestamp, '{FORMAT_STRING}') >= TIMESTAMP '{START_DATE}'
+        AND TO_TIMESTAMP(timestamp, 'FORMAT_STRING') < TIMESTAMP '{END_DATE}';
+      ```
+
+      Em que:
+
+      * `{PERSON_ID_FIELD}` é o campo para a ID de pessoa. Por exemplo: `identityMap.crmId[0]`.
       * `{DATASET_TABLE_NAME}` é o nome da tabela para o conjunto de dados do evento.
       * `{FORMAT_STRING}` é a cadeia de caracteres de formato do campo de carimbo de data/hora. Por exemplo: `MM/DD/YY HH12:MI AM`.
-      * `{START_DATE}`é a data de início. Por exemplo: `2024-01-01 00:00:00`.
+      * `{START_DATE}` é a data de início. Por exemplo: `2024-01-01 00:00:00`.
       * `{END_DATE}` é a data de término em formato padrão. Por exemplo: `2024-01-08 00:00:00`.
-
-
-   * **[!UICONTROL ID de pessoa]**
-      * Para a compilação baseada em gráficos, verifique se o gráfico de identidade contém fragmentos que vinculam valores de ID do namespace de ID persistente e do namespace de ID de pessoa escolhidos. Você pode executar um teste acessando o [Visualizador de gráficos de identidade da Experience Platform](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"} e consultando o gráfico por alguns valores de ID persistentes de amostra. Verifique se esses valores de ID persistente estão vinculados aos valores de ID de pessoa no gráfico.
-      * Para a compilação em campo, consulte 7 dias de dados nos quais o campo de ID de pessoa não é nulo e divida por uma consulta de 7 dias de dados para todos os eventos no conjunto de dados. Idealmente, essa porcentagem deve ficar acima de 5%.
-
-        Exemplo de uma consulta que você pode usar para verificação:
-
-        ```sql
-        SELECT
-          COUNT(*) AS total_events,
-          COUNT({PERSON_ID_FIELD}) AS events_with_personid,
-          ROUND(COUNT({PERSON_ID_FIELD}) / COUNT(*), 2) AS percent_with_personid_not_null
-        FROM 
-          {DATASET_TABLE_NAME}
-        WHERE
-          TO_TIMESTAMP(timestamp, '{FORMAT_STRING}') >= TIMESTAMP '{START_DATE}'
-          AND TO_TIMESTAMP(timestamp, 'FORMAT_STRING') < TIMESTAMP '{END_DATE}';
-        ```
-
-        Em que:
-
-         * `{PERSON_ID_FIELD}` é o campo para a ID de pessoa. Por exemplo: `identityMap.crmId[0]`.
-         * `{DATASET_TABLE_NAME}` é o nome da tabela para o conjunto de dados do evento.
-         * `{FORMAT_STRING}` é a cadeia de caracteres de formato do campo de carimbo de data/hora. Por exemplo: `MM/DD/YY HH12:MI AM`.
-         * `{START_DATE}` é a data de início. Por exemplo: `2024-01-01 00:00:00`.
-         * `{END_DATE}` é a data de término em formato padrão. Por exemplo: `2024-01-08 00:00:00`.
 
 
 
@@ -194,8 +194,8 @@ Além da interface padrão de **[!UICONTROL visualização de conjuntos de dados
 **[!UICONTROL As métricas de compilação]** são calculadas usando um conjunto de amostras de dados com carimbos de data/hora de eventos dos últimos 7 dias. Este conjunto de amostras de dados geralmente difere dos dados de amostra usados na tabela **[!UICONTROL Preview]**. As métricas de compilação fornecem detalhes para:
 
 * **[!UICONTROL Cobertura da ID de pessoa]**: a cobertura da ID de pessoa selecionada usada para identificação durante o processo de compilação (em tempo real e repetição).
-   * Para obter os melhores resultados de compilação em campo, uma ID de pessoa (informações do usuário) deve ser enviada em pelo menos um evento para cada ID persistente (informações do dispositivo).
-   * Para obter os melhores resultados de compilação com base em gráfico, uma relação (ID persistente, ID de pessoa) deve estar presente no gráfico de identidade para cada ID persistente.
+  * Para obter os melhores resultados de compilação em campo, uma ID de pessoa (informações do usuário) deve ser enviada em pelo menos um evento para cada ID persistente (informações do dispositivo).
+  * Para obter os melhores resultados de compilação com base em gráfico, uma relação (ID persistente, ID de pessoa) deve estar presente no gráfico de identidade para cada ID persistente.
 
   A cobertura de ID de pessoa é mostrada como uma porcentagem e comparada com o que é recomendado em um desenvolvimento estável ou em uma configuração de produção. Quanto maior for o valor dessa cobertura, melhores resultados de compilação serão obtidos com a ID de pessoa selecionada.
 

@@ -49,7 +49,7 @@ ht-degree: 11%
 
 >[!CONTEXTUALHELP]
 >id="cja-consent-person-id"
->title="ID da pessoa"
+>title="ID de pessoa"
 >abstract="Selecione um campo do esquema baseado em modelo que representa a ID de pessoa. A seleção é limitada à lista de campos no esquema marcados como &quot;Identidade&quot; e que têm um namespace de identidade."
 
 <!-- markdownlint-enable MD034 -->

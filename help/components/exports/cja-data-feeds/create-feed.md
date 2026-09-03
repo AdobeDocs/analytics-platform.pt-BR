@@ -18,10 +18,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: 8a5568b3b6136bc3f8b507f551fbb6d169e4b88a
+source-git-commit: f5a7272f80aaba167974f2218bc84408d47f62d4
 workflow-type: tm+mt
-source-wordcount: 4088
-ht-degree: 20%
+source-wordcount: 4217
+ht-degree: 21%
 
 ---
 
@@ -73,7 +73,16 @@ Antes de criar um feed de dados, é importante ter uma compreensão básica dos 
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_user-agent"
 >title=""
->abstract="Os dados do agente usuário e os dados de pesquisa do dispositivo não podem existir na mesma configuração de feed de dados."
+>abstract="Os dados do agente do usuário e os dados de pesquisa de dispositivos não podem coexistir na mesma configuração de feed de dados."
+
+<!-- markdownlint-enable MD034 -->
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_datafeed_required_dimensions"
+>title="Dimensões obrigatórias"
+>abstract="Todo feed de dados deve incluir determinadas dimensões, identificadas por um rótulo **Obrigatório** ao lado do nome da dimensão. Essas dimensões fornecem a estrutura mínima necessária para a análise no nível do evento."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -113,6 +122,14 @@ Antes de criar um feed de dados, é importante ter uma compreensão básica dos 
    Quando você aplica vários segmentos, eles são agrupados com um operador AND. Para unir segmentos com um operador OU, primeiro você deve criar um novo segmento no construtor de segmentos e, em seguida, aplicar o novo segmento ao feed de dados.
 
    Os segmentos aplicados aqui complementam quaisquer segmentos que já possam ter sido aplicados na visualização de dados.
+
+1. (Opcional) No painel à esquerda, use o campo **pesquisa** para localizar componentes específicos. Ou selecione o ícone **Classificar** ![Ícone Classificar componentes](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg) para aplicar qualquer uma das seguintes opções de classificação:
+
+   | Opção | Função |
+   | --------- | ---------- |
+   | [!UICONTROL **Recomendado**] | Classifica componentes com aqueles recomendados no topo da lista. Os componentes usados com mais frequência e mais recentemente por você ou outras pessoas em sua organização são mostrados em uma posição superior na lista. |
+   | [!UICONTROL **Ordem alfabética**] | Classifica os componentes em ordem alfabética. |
+   | [!UICONTROL **Categórico**] | Classifica componentes semelhantes a [!UICONTROL **Recomendado**], exceto que as métricas calculadas e as métricas padrão são agrupadas separadamente, em vez de serem misturadas. |
 
 1. Adicione componentes à configuração do feed de dados. O painel esquerdo mostra apenas componentes válidos para feeds de dados.
 

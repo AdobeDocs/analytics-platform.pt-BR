@@ -27,7 +27,7 @@ topic_v2:
 source-git-commit: 28959f1ea858dee686e6d13025621c4a6164c319
 workflow-type: tm+mt
 source-wordcount: 3152
-ht-degree: 74%
+ht-degree: 77%
 
 ---
 
@@ -87,7 +87,7 @@ Fornece configurações abrangentes para a visualização de dados.
 >[!CONTEXTUALHELP]
 >id="dataview_dataviewsinadobejourneyoptimizer"
 >title="Visualizações de dados no Journey Optimizer"
->abstract="O Customer Journey Analytics requer uma conexão e uma visualização de dados compatíveis com o Adobe Journey Optimizer. O sistema cria uma conexão e uma visualização de dados por padrão. Como alternativa, ative essa opção para definir essa como a visualização de dados padrão para relatórios do Adobe Journey Optimizer, que adiciona os componentes necessários à visualização de dados e aos conjuntos de dados à conexão."
+>abstract="O Customer Journey Analytics requer uma conexão e uma exibição de dados compatível com o Adobe Journey Optimizer. O sistema cria uma conexão e uma visualização de dados por padrão. Como alternativa, ative essa opção para definir essa como a visualização de dados padrão para relatórios do Adobe Journey Optimizer, que adiciona os componentes necessários à visualização de dados e aos conjuntos de dados à conexão."
 >additional-url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/integrations/ajo#connection" text="Quais componentes e conjuntos de dados são adicionados."
 
 
@@ -292,7 +292,7 @@ Você pode filtrar ![Ícone de filtro](https://spectrum.adobe.com/static/icons/w
 >[!CONTEXTUALHELP]
 >id="dataview_includedcomponents_filter_datagovernance_policies"
 >title="Políticas"
->abstract="Para oferecer suporte à conformidade de dados, implemente as políticas de uso de dados. Essas políticas descrevem ações de marketing permitidas ou restritas em dados no Experience Platform. Os filtros de políticas aplicam a política habilitada à Visualização de dados."
+>abstract="Para oferecer suporte à conformidade de dados, implemente as políticas de uso de dados. Essas políticas descrevem as ações de marketing permitidas ou restritas sobre os dados na Experience Platform. Os filtros de políticas aplicam a política habilitada à Visualização de dados."
 >additional-url="https://experienceleague.adobe.com/pt-br/docs/experience-platform/data-governance/labels/overview" text="Visão geral dos rótulos de uso de dados"
 
 
@@ -312,10 +312,10 @@ A seção **[!UICONTROL Componentes incluídos]** contém a lista de **[!UICONTR
 
   Na caixa de diálogo **[!UICONTROL Filtrar campo por]**, você pode filtrar as seguintes categorias:
 
-   * **[!UICONTROL Tipo de dados]**: você pode selecionar um ou mais dos seguintes tipos de dados: [!UICONTROL String], [!UICONTROL Número inteiro], [!UICONTROL Curto], [!UICONTROL Booleano], [!UICONTROL Duplo], [!UICONTROL Byte], [!UICONTROL Longo], [!UICONTROL Data] ou [!UICONTROL Data/hora].
-   * **[!UICONTROL Conjuntos de dados]**: selecione um ou mais conjuntos de dados.
-   * **[!UICONTROL Governança de dados]**: selecione um ou mais rótulos das subcategorias [!UICONTROL Rótulos personalizados], [!UICONTROL Rótulos de contrato], [!UICONTROL Rótulos de identidade], [!UICONTROL Rótulos de sensibilidade], [!UICONTROL ecossistema de parceiros] ou [!UICONTROL Políticas].
-   * **[!UICONTROL Outros]**: selecione uma ou mais das opções [!UICONTROL Contém dados], [!UICONTROL É identidade] ou [!UICONTROL Não foi descontinuado].
+  * **[!UICONTROL Tipo de dados]**: você pode selecionar um ou mais dos seguintes tipos de dados: [!UICONTROL String], [!UICONTROL Número inteiro], [!UICONTROL Curto], [!UICONTROL Booleano], [!UICONTROL Duplo], [!UICONTROL Byte], [!UICONTROL Longo], [!UICONTROL Data] ou [!UICONTROL Data/hora].
+  * **[!UICONTROL Conjuntos de dados]**: selecione um ou mais conjuntos de dados.
+  * **[!UICONTROL Governança de dados]**: selecione um ou mais rótulos das subcategorias [!UICONTROL Rótulos personalizados], [!UICONTROL Rótulos de contrato], [!UICONTROL Rótulos de identidade], [!UICONTROL Rótulos de sensibilidade], [!UICONTROL ecossistema de parceiros] ou [!UICONTROL Políticas].
+  * **[!UICONTROL Outros]**: selecione uma ou mais das opções [!UICONTROL Contém dados], [!UICONTROL É identidade] ou [!UICONTROL Não foi descontinuado].
 
   Selecione **[!UICONTROL Aplicar]** para aplicar os filtros.
 
