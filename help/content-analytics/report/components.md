@@ -4,23 +4,15 @@ description: Saiba mais sobre os detalhes dos componentes específicos do Conten
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: User
+hold: true
 exl-id: 79bf235a-6f6e-4b04-bcd8-1ff884536648
 TQID: https://experienceleague.adobe.com/grwbNht938ivCsnzlFBzP8Ga8h1udmQLcZngxY6s0-4
-product_v2:
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: c73c4213-d623-4126-81f4-80b42e5e2656
-  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
-subfeature_v2:
-  - id: ad5685a0-8296-4a0c-814c-658c10b4af12
-  - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
-  - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
-  - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 3e9a9042bfe707971c4e37d319a23ab9bdc80075
+product_v2: id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: c73c4213-d623-4126-81f4-80b42e5e2656id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+subfeature_v2: id: ad5685a0-8296-4a0c-814c-658c10b4af12id: b1f5d324-a668-4e51-a59b-6fc0862d7310id: df7fb1db-aa1b-4314-98ac-59dbfcc3044fid: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+source-git-commit: 8490c4128ac906ba9421b91f9b9da433b91d084d
 workflow-type: tm+mt
 source-wordcount: 1869
 ht-degree: 56%
@@ -38,8 +30,8 @@ O Content Analytics adiciona as seguintes categorias de componentes (dimensões,
 * [Metadados de ativos](#asset-metadata)
 * [Atributos do ativo](#asset-attributes)
 * [Eventos do ativo](#asset-events)
-* [Mídia paga](#paid-media)
 * [Métricas calculadas](#calculated-metrics)
+* [Mídia paga](#paid-media)
 
 Nas tabelas abaixo, ![gerado por IA](/help/assets/icons/AI.svg) indica um par de atributo/valor gerado por IA ou aprendizado de máquina.
 
@@ -158,11 +150,23 @@ Nas tabelas abaixo, ![gerado por IA](/help/assets/icons/AI.svg) indica um par 
 {style="table-layout:fixed"}
 -->
 
+
+## Métricas calculadas
+
+| Título | Descrição | Tipo |
+|---|---|---|
+| Taxa de click-through do ativo | Cliques e exibições do ativo | Métrica calculada |
+| Índice de click-through da experiência | Cliques e exibições da experiência | Métrica calculada |
+
+{style="table-layout:fixed"}
+
+
+
 ## Mídia paga
 
 Esses componentes são adicionados a uma visualização de dados quando o canal **Mídia paga** é habilitado por meio de um [conector de origem da Mídia paga do Adobe Experience Platform](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/home) (por exemplo, Meta Ads ou Google Ads). Eles permitem que você emita relatórios sobre entidades de mídia paga, criativas e gastas com conteúdo da Web e móvel.
 
-Os **Atributos do ativo** e os **Atributos da experiência** gerados por IA descritos acima também estão disponíveis para criações de mídia paga — o mesmo recurso é executado nos canais da Web, Móvel e Mídia paga.
+Os [Atributos do ativo](#asset-attributes) e os [Atributos da experiência](#experience-attributes) gerados por IA descritos acima também estão disponíveis para criações de mídia paga. O mesmo recurso é executado nos canais da Web, de dispositivos móveis e de mídia paga.
 
 ### Dimensões de mídia paga
 
@@ -266,14 +270,3 @@ Os **Atributos do ativo** e os **Atributos da experiência** gerados por IA desc
 | Valor médio de pedido | Valor total do pedido dividido por compras. | Métrica calculada |
 
 {style="table-layout:fixed"}
-
-
-## Métricas calculadas
-
-| Título | Descrição | Tipo |
-|---|---|---|
-| Taxa de click-through do ativo | Cliques e exibições do ativo | Métrica calculada |
-| Índice de click-through da experiência | Cliques e exibições da experiência | Métrica calculada |
-
-{style="table-layout:fixed"}
-
