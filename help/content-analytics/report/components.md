@@ -20,7 +20,7 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 3e9a9042bfe707971c4e37d319a23ab9bdc80075
+source-git-commit: e3936b74ba4b4cf23e1b7235e545091a8cb546ed
 workflow-type: tm+mt
 source-wordcount: 1869
 ht-degree: 56%
@@ -38,8 +38,8 @@ O Content Analytics adiciona as seguintes categorias de componentes (dimensões,
 * [Metadados de ativos](#asset-metadata)
 * [Atributos do ativo](#asset-attributes)
 * [Eventos do ativo](#asset-events)
-* [Mídia paga](#paid-media)
 * [Métricas calculadas](#calculated-metrics)
+* [Mídia paga](#paid-media)
 
 Nas tabelas abaixo, ![gerado por IA](/help/assets/icons/AI.svg) indica um par de atributo/valor gerado por IA ou aprendizado de máquina.
 
@@ -158,11 +158,23 @@ Nas tabelas abaixo, ![gerado por IA](/help/assets/icons/AI.svg) indica um par 
 {style="table-layout:fixed"}
 -->
 
+
+## Métricas calculadas
+
+| Título | Descrição | Tipo |
+|---|---|---|
+| Taxa de click-through do ativo | Cliques e exibições do ativo | Métrica calculada |
+| Índice de click-through da experiência | Cliques e exibições da experiência | Métrica calculada |
+
+{style="table-layout:fixed"}
+
+
+
 ## Mídia paga
 
 Esses componentes são adicionados a uma visualização de dados quando o canal **Mídia paga** é habilitado por meio de um [conector de origem da Mídia paga do Adobe Experience Platform](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/home) (por exemplo, Meta Ads ou Google Ads). Eles permitem que você emita relatórios sobre entidades de mídia paga, criativas e gastas com conteúdo da Web e móvel.
 
-Os **Atributos do ativo** e os **Atributos da experiência** gerados por IA descritos acima também estão disponíveis para criações de mídia paga — o mesmo recurso é executado nos canais da Web, Móvel e Mídia paga.
+Os [Atributos do ativo](#asset-attributes) e os [Atributos da experiência](#experience-attributes) gerados por IA descritos acima também estão disponíveis para criações de mídia paga. O mesmo recurso é executado nos canais da Web, de dispositivos móveis e de mídia paga.
 
 ### Dimensões de mídia paga
 
@@ -266,14 +278,3 @@ Os **Atributos do ativo** e os **Atributos da experiência** gerados por IA desc
 | Valor médio de pedido | Valor total do pedido dividido por compras. | Métrica calculada |
 
 {style="table-layout:fixed"}
-
-
-## Métricas calculadas
-
-| Título | Descrição | Tipo |
-|---|---|---|
-| Taxa de click-through do ativo | Cliques e exibições do ativo | Métrica calculada |
-| Índice de click-through da experiência | Cliques e exibições da experiência | Métrica calculada |
-
-{style="table-layout:fixed"}
-

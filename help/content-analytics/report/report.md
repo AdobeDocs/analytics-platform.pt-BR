@@ -22,10 +22,10 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 537fc30db0f6e6bddc54df7bbcc04d802226958f
+source-git-commit: e3936b74ba4b4cf23e1b7235e545091a8cb546ed
 workflow-type: tm+mt
-source-wordcount: 1365
-ht-degree: 48%
+source-wordcount: 1643
+ht-degree: 41%
 
 ---
 
@@ -99,7 +99,11 @@ Você verá os detalhes a seguir.
 | **[!UICONTROL Atributos da experiência]**: os [atributos](/help/content-analytics/report/components.md#experience-attributes) da experiência. | **[!UICONTROL Atributos do ativo]**: os [atributos](/help/content-analytics/report/components.md#asset-attributes) do ativo. |
 
 
-## Modelo
+## Modelos
+
+O Content Analytics oferece dois modelos de projeto no Workspace para criar rapidamente um projeto.
+
+### Modelo do Content Analytics
 
 Um [modelo](/help/analysis-workspace/templates/use-templates.md) do Content Analytics está disponível para ajudá-lo a saber qual conteúdo e atributos de conteúdo estão tendo melhor desempenho. O modelo faz parte do [canal da web e do caso de uso de engajamento](/help/analysis-workspace/templates/use-templates.md#web-engagement) e detalha como o conteúdo é executado em nível granular. Você pode observar o desempenho de ativos individuais ou atributos específicos.
 
@@ -195,6 +199,21 @@ Esta tabela de forma livre detalha onde seus ativos mais visualizados aparecem. 
 
     Você também pode trocar a [!UICONTROL ID de percepção do ativo] pela [!UICONTROL ID do ativo] para obter um registro de onde os URLs de imagem específicos estão referenciados.
 
+
+### Modelo de Content Analytics de mídia paga
+
+Um [modelo](/help/analysis-workspace/templates/use-templates.md) de Content Analytics de mídia paga está disponível para ajudá-lo a saber qual conteúdo de mídia paga e atributos de conteúdo estão tendo o melhor desempenho. O modelo faz parte do [canal da Web e caso de uso de Envolvimento](/help/analysis-workspace/templates/use-templates.md#web-engagement) e ajuda você a entender o desempenho granular do conteúdo de mídia paga. Você pode analisar o alcance, o envolvimento, os gastos e a eficiência da mídia paga em redes, contas, campanhas, experiências e ativos. As métricas e dimensões nesse painel permanecem intencionalmente no resumo de ativos de mídia paga. Não combine conjuntos de dados de resumo dos painéis neste modelo com dados de evento.
+
+Com base no que você aprende, é possível fazer várias coisas, como focar novamente em como você gasta dinheiro em canais de mídia pagos, gasta mais dinheiro em campanhas de baixo desempenho ou gasta mais dinheiro em campanhas com ativos de alto desempenho.
+
+Para usar o modelo:
+
+1. Selecione **[!UICONTROL Espaço de trabalho]** no menu principal.
+1. Verifique se você selecionou uma visualização de dados configurada para o Content Analytics.
+1. Procure ou use segmentos (**[!UICONTROL Web]** para **[!UICONTROL Canal]** e **[!UICONTROL Envolvimento]** para **[!UICONTROL Caso de Uso]**&#x200B;s) para localizar e selecionar o modelo **[!UICONTROL Content Analytics de mídia paga]**.
+1. Selecione **[!UICONTROL Usar modelo]**.
+
+Um projeto **[!UICONTROL Content Analytics - Dados de Resumo de Mídia Paga]** é aberto no [Analysis Workspace](/help/analysis-workspace/home.md). O projeto consiste no **[!UICONTROL Desempenho de Mídia Paga]** [painel](/help/analysis-workspace/c-panels/panels.md), com [tabelas de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) e [visualizações](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md). Use o painel para analisar o alcance, o engajamento, os gastos e a eficiência da mídia paga em redes, contas, campanhas, experiências e ativos. As métricas e dimensões no painel permanecem intencionalmente na estrutura de resumo de ativos de mídia paga; não combine conjuntos de dados de resumo com dados do evento.
 
 >[!MORELIKETHIS]
 >
