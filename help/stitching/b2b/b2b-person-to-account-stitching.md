@@ -19,16 +19,16 @@ role_v2:
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: e3936b74ba4b4cf23e1b7235e545091a8cb546ed
+source-git-commit: ae08f7a010c6c8cdb262bd96e51c2b677a4cb70a
 workflow-type: tm+mt
-source-wordcount: 2116
-ht-degree: 15%
+source-wordcount: 2230
+ht-degree: 16%
 
 ---
 
 # Compilação de pessoa B2B para conta
 
-A compilação de pessoa para conta B2B enriquece seus conjuntos de dados de evento com identidades de conta e permite a análise completa da jornada completa do cliente no Customer Journey Analytics. Quando os eventos não têm uma ID de conta, que o Customer Journey Analytics B2B edition requer para assimilação, a compilação de pessoa para conta deriva e adiciona essas informações automaticamente usando um [conjunto de dados de mapeamento de pessoa para conta](#prerequisites) fornecido por você.
+A compilação de pessoa para conta B2B enriquece seus conjuntos de dados de evento com identidades de conta e permite a análise completa da jornada completa do cliente no Customer Journey Analytics. Quando os eventos não têm uma ID de conta, que o Customer Journey Analytics B2B edition requer para assimilação, a compilação de pessoa para conta deriva e adiciona essas informações automaticamente usando um [usuário para o conjunto de dados de mapeamento de conta](#prerequisites) fornecido por você.
 
 Sem a identificação de pessoa por conta, qualquer evento que não contenha uma ID de conta será descartado durante a assimilação. A compilação de pessoa para conta resolve essa limitação procurando a conta associada à pessoa em cada evento, adicionando a ID da conta à medida que o evento é assimilado e retroativamente.
 
@@ -52,7 +52,7 @@ No Customer Journey Analytics B2B edition, os eventos sem ID de conta neste conj
 | Ação | Carimbo de data e hora | ID persistente | ID de conta | ID de pessoa | Tipo de evento |
 |:---:|--:|--|---|---|---|
 | ![AdiçãodeDados](/help/assets/icons/DataAdd.svg) | 1/3/25 | 1234 | Adobe | matt@adobe.com | Page view |
-| ![ExcluirFiltro](/help/assets/icons/DeleteOutline.svg) | 1/3/25 | 5678 |  | | |
+| ![ExcluirFiltro](/help/assets/icons/DeleteOutline.svg) | 1/3/25 | 5678 |  |  | |
 | ![AdiçãodeDados](/help/assets/icons/DataAdd.svg) | 3/4/25 | 9012 | Ubiquidade | cory@sky.com |  |
 | ![AdiçãodeDados](/help/assets/icons/DataAdd.svg) | 3/7/25 | 4321 | Céu | emily@sky.com | Central de atendimento |
 | ![ExcluirFiltro](/help/assets/icons/DeleteOutline.svg) | 5/5/25 | 6106 | | carmen@adobe.com |  |
@@ -69,29 +69,31 @@ A compilação de pessoa B2B para conta impede que os eventos sejam ignorados e 
 
 +++ Detalhes
 
-Para oferecer suporte a pessoas B2B para a compilação de conta, você fornece uma pessoa para o conjunto de dados de mapeamento de conta. Por exemplo:
+Para auxiliar uma pessoa B2B a fazer a compilação de conta, ao [definir as configurações de compilação B2B](#configure-b2b-person-to-account-stitching-settings), você fornece um namespace de identificador de pessoa principal (por exemplo, Email) e uma pessoa para o conjunto de dados de mapeamento de conta.
+O namespace da ID de pessoa do conjunto de dados de pessoa para conta pode ser o mesmo que o principal (Email) ou pode ser diferente. No exemplo abaixo, ele é definido como ID do CRM (que precisará ser vinculada ao email no gráfico de identidade).
 
 | ID do CRM | ID de conta |
 |---|---|
 | 12hsd123 | Adobe |
+| kr7812pq | Adobe |
 | f82jsd32 | Céu |
 | hg2023m2 | Céu |
 | b978bbw9 | Ubiquidade |
 | fs453ghi | Adobe |
 
-Esse conjunto de dados de mapeamento de pessoa para conta é elevado usando a compilação baseada em gráfico. Por exemplo, você fornece o email como o namespace a ser usado. O resultado é um conjunto de dados de mapeamento de pessoa para conta atualizado com IDs de pessoa elevadas.
+Essa pessoa para o conjunto de dados de mapeamento de conta é elevada usando a compilação baseada em gráfico. Observe que isso acontece no back-end e não é refletido nos dados do conjunto de dados real.
+Em nosso exemplo, usando links de gráfico de identidade entre a ID do CRM e os namespaces de email, o resultado é uma pessoa atualizada para o conjunto de dados de mapeamento de conta com IDs de pessoa elevadas.
 
 | ID do CRM | ID de pessoa elevada | ID de conta |
 |---|---|---|
 | 12hsd123 | matt@adobe.com | Adobe |
+| kr7812pq | emily@adobe.com | Adobe |
 | f82jsd32 | emily@sky.com | Céu |
 | hg2023m2 | cory@sky.com | Céu |
 | b978bbw9 | cassidy@ubiquity.com | Ubiquidade |
 | fs453ghi | carmen@adobe.com | Adobe |
 
-A compilação baseada em gráfico também é usada para elevar as IDs de pessoa no conjunto de dados do evento de experiência. Por exemplo, consulte o valor atualizado de **emily@adobe.com**.
-
-A compilação baseada em gráfico também é usada para elevar as IDs de pessoa no conjunto de dados do evento de experiência. Por exemplo, você configura o campo ID persistente (ECID) para ser usado como ID de pessoa persistente quando [habilita a compilação no conjunto de dados](#enable-b2b-person-to-account-stitching-on-event-datasets). Com base em `5678` como valor de ECID e `emily@adobe.com` como valor de Email, `emily@adobe.com` é definido como ID de pessoa elevada no evento relacionado.
+A compilação baseada em gráfico também é usada para elevar as IDs de pessoa no conjunto de dados do evento de experiência. Por exemplo, você configura o campo ID persistente (ECID) para ser usado como ID de pessoa persistente quando [habilita a compilação no conjunto de dados](#enable-b2b-person-to-account-stitching-on-event-datasets). Com base na pessoa com privilégios elevados para o conjunto de dados de mapeamento de conta `emily@adobe.com` está definido como ID de pessoa com privilégios elevados no evento relacionado.
 
 | Carimbo de data e hora | ID persistente | ID da conta original | ID de pessoa original | ID de pessoa elevada |
 |--|--|---|---|---|
@@ -110,12 +112,12 @@ A compilação baseada em gráfico também é usada para elevar as IDs de pessoa
 
 +++ Detalhes
 
-O conjunto de dados de pessoa para conta é usado mais uma vez para elevar as IDs de conta no conjunto de dados do evento de experiência. Por exemplo, consulte o valor adicionado **Sky** para emily@sky.com e **Adobe** para carmen@adobe.com. E o valor atualizado **Sky** (da Ubiquity) para cory@sky.com.
+O conjunto de dados de pessoa para conta é usado mais uma vez para elevar as IDs de conta no conjunto de dados do evento de experiência. Por exemplo, consulte o valor adicionado **Sky** para emily@sky.com e **Adobe** para carmen@adobe.com e emily@adobe.com. E o valor atualizado **Sky** (da Ubiquity) para cory@sky.com.
 
 | Carimbo de data e hora | ID persistente | ID da conta original | ID de pessoa original | ID da Conta com Elevação | ID de pessoa elevada |
 |---|---|---|---|---|---|
 | 1/3/25 | 1234 | Adobe | matt@adobe.com | Adobe | matt@adobe.com |
-| 1/3/25 | 5678 | | | **Céu** | **emily@sky.com** |
+| 1/3/25 | 5678 | | | **Adobe** | **emily@adobe.com** |
 | 3/4/25 | 9012 | Ubiquidade | cory@sky.com | **Céu** | cory@sky.com |
 | 3/7/25 | 4321 | Céu | emily@sky.com | Céu | emily@sky.com |
 | 5/5/25 | 6106 | | carmen@adobe.com | **Adobe** | carmen@adobe.com |
@@ -126,7 +128,7 @@ O conjunto de dados de pessoa para conta é usado mais uma vez para elevar as ID
 
 ### Resultado
 
-Este exemplo mostra como a compilação de pessoa B2B para conta atualiza seus dados de evento de experiência com identificadores de pessoa ausentes ou identificadores de conta ausentes e incorretos, com base no conjunto de dados de mapeamento de pessoa para conta fornecido como entrada.
+Este exemplo mostra como a compilação de pessoa B2B atualiza seus dados de evento de experiência com identificadores de pessoa ausentes ou identificadores de conta ausentes e incorretos, com base no conjunto de dados de mapeamento de pessoa para conta fornecido como entrada.
 
 
 ## Pré-requisitos
@@ -139,7 +141,7 @@ Antes de ativar a compilação de conta por uma pessoa B2B, prepare os seguintes
 
 >[!IMPORTANT]
 >
->O campo de ID de pessoa no seu conjunto de dados de **[!UICONTROL pessoa para conta]** deve ser marcado como uma identidade no esquema.
+>O campo ID de pessoa no conjunto de dados de pessoa para conta deve ser marcado como uma identidade no esquema.
 
 ## Habilitar compilação entre pessoa e conta {#enable-account-stitching}
 
@@ -175,7 +177,7 @@ Primeiro, você ativa e configura a compilação B2B no nível da conexão. Quan
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_start_time"
 >title="Hora de início"
->abstract="Selecione um campo de carimbo de data e hora que indique quando o relacionamento entre pessoa e conta se tornou ativo."
+>abstract="Selecione um campo de carimbo de data e hora que indique quando o relacionamento entre a pessoa e a conta se tornou ativo."
 
 
 >[!CONTEXTUALHELP]
@@ -211,8 +213,8 @@ Primeiro, você ativa e configura a compilação B2B no nível da conexão. Quan
       | Campo | Obrigatório | Descrição |
       |---|:---:|---|
       | **[!UICONTROL Conjunto de dados de Pessoa para Conta]** | ![Obrigatório](/help/assets/icons/Required.svg) | Selecione a pesquisa (conjunto de dados de série não temporal ou de registro) que mapeia pessoas para contas. |
-      | **[!UICONTROL ID de pessoa]** | ![Obrigatório](/help/assets/icons/Required.svg) | Selecione o campo no conjunto de dados que contém a ID de pessoa. Este campo deve ser marcado como uma identidade e não pode ser igual ao campo **[!UICONTROL ID da Conta]** ou ao campo **[!UICONTROL Hora de início]**. |
-      | **[!UICONTROL ID de conta]** | ![Obrigatório](/help/assets/icons/Required.svg) | Selecione o campo no conjunto de dados que contém a ID da conta. Este campo não pode ser igual ao campo **[!UICONTROL ID da pessoa]** ou ao campo **[!UICONTROL Hora de início]**. |
+      | **[!UICONTROL ID de pessoa]** | ![Obrigatório](/help/assets/icons/Required.svg) | Selecione o campo no conjunto de dados que contém as IDs de pessoa. O namespace deste campo pode ser diferente ou igual ao namespace do identificador de pessoa selecionado. Se forem diferentes, os dois namespaces precisam ser vinculados no gráfico de identidade.  Este campo deve ser marcado como uma identidade e não pode ser igual ao campo **[!UICONTROL ID da Conta]** ou ao campo **[!UICONTROL Hora de início]**. |
+      | **[!UICONTROL ID de conta]** | ![Obrigatório](/help/assets/icons/Required.svg) | Selecione o campo no conjunto de dados que contém os valores do identificador exclusivo de conta. As informações da ID da conta serão disponibilizadas nas linhas de qualquer conjunto de dados de evento com a compilação de Pessoa para Conta ativada. Este campo não pode ser igual ao campo **[!UICONTROL ID da pessoa]** ou ao campo **[!UICONTROL Hora de início]**. |
       | **Tempo de criação do mapeamento** | | Opcionalmente, selecione o campo que representa a data e a hora em que o mapeamento de pessoa para conta foi criado. Útil para cenários em que uma pessoa troca várias contas ao longo do tempo.<br/><br/>**Exemplo** (quando o campo **update_date** está selecionado):<table><thead><tr><th>update_date</th><th>pessoa</th><th>account</th></tr></thead><tbody><tr><td>20260401</td><td>a@b.com</td><td>Apple</td></tr><tr><td>20260501</td><td>a@b.com</td><td>Adobe</td></tr></tbody></table><ul><li>Para todos os eventos com um carimbo de data e hora no campo **[!UICONTROL update_date]** antes de 1º de maio de 2026: a@b.com é mapeado para o Apple.</li><li>Para todos os eventos com carimbo de data e hora no campo **[!UICONTROL update_date]** em ou após 1º de maio de 2026: a@b.com é mapeado para o Adobe.</li></ul>Quando nenhum tempo de mapeamento é especificado, a primeira conta lexicográfica é usada. Esse mesmo algoritmo também é usado quando dois nomes de conta diferentes têm exatamente o mesmo valor **[!UICONTROL update_date]** e uma hora de criação de mapeamento é especificada. |
 
       >[!NOTE]
@@ -271,7 +273,7 @@ Depois de configurar a pessoa B2B para configuração de compilação de conta e
 
 ## Agendamento de atualização de dados
 
-A compilação de conta deriva o mapa de identidade do seu [conjunto de dados de pessoa para conta](#prerequisites) diariamente e usa essas informações para atualizar conjuntos de dados habilitados para compilação a curto e longo prazo no seguinte agendamento:
+A compilação de conta deriva o mapa de identidade de sua [pessoa para o conjunto de dados de conta](#prerequisites) diariamente e usa essas informações para atualizar conjuntos de dados habilitados para compilação a curto e longo prazo no seguinte agendamento:
 
 | Reproduzir novamente | Frequência | Janela de dados |
 |---|---|---|
