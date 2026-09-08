@@ -6,23 +6,15 @@ feature: Stitching, Cross-Channel Analysis
 role: Admin
 autotag-review: '2026-05-19T11:01:07.331Z'
 TQID: 'https://experienceleague.adobe.com/-7rHOhYVCp-nSMqdE7YlAlCJ0zRQYvPOViMHSCNuKV8'
-product_v2:
-  - id: d3f42e9e-bb51-4077-a732-358b801d8b29
-  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
-feature_v2:
-  - id: b3197353-f189-4932-8378-3f3bc40e6071
-subfeature_v2:
-  - id: faea9abd-7024-4c5e-a5b4-87919e09b24b
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: ae08f7a010c6c8cdb262bd96e51c2b677a4cb70a
+product_v2: id: d3f42e9e-bb51-4077-a732-358b801d8b29id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+feature_v2: id: b3197353-f189-4932-8378-3f3bc40e6071
+subfeature_v2: id: faea9abd-7024-4c5e-a5b4-87919e09b24b
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: d00e9f03-e50b-4162-b143-0c0817c937c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: 4ab8bb6c0f68ae49128a2fe2a1eb9e87ccfa52a1
 workflow-type: tm+mt
-source-wordcount: 2230
-ht-degree: 16%
+source-wordcount: 2268
+ht-degree: 15%
 
 ---
 
@@ -69,7 +61,7 @@ A compilação de pessoa B2B para conta impede que os eventos sejam ignorados e 
 
 +++ Detalhes
 
-Para auxiliar uma pessoa B2B a fazer a compilação de conta, ao [definir as configurações de compilação B2B](#configure-b2b-person-to-account-stitching-settings), você fornece um namespace de identificador de pessoa principal (por exemplo, Email) e uma pessoa para o conjunto de dados de mapeamento de conta.
+Para auxiliar uma pessoa B2B a fazer a compilação de conta, ao [definir as configurações de compilação B2B](#configure-b2b-stitching-settings), você fornece um namespace de identificador de pessoa principal (por exemplo, Email) e uma pessoa para o conjunto de dados de mapeamento de conta.
 O namespace da ID de pessoa do conjunto de dados de pessoa para conta pode ser o mesmo que o principal (Email) ou pode ser diferente. No exemplo abaixo, ele é definido como ID do CRM (que precisará ser vinculada ao email no gráfico de identidade).
 
 | ID do CRM | ID de conta |
@@ -93,7 +85,7 @@ Em nosso exemplo, usando links de gráfico de identidade entre a ID do CRM e os 
 | b978bbw9 | cassidy@ubiquity.com | Ubiquidade |
 | fs453ghi | carmen@adobe.com | Adobe |
 
-A compilação baseada em gráfico também é usada para elevar as IDs de pessoa no conjunto de dados do evento de experiência. Por exemplo, você configura o campo ID persistente (ECID) para ser usado como ID de pessoa persistente quando [habilita a compilação no conjunto de dados](#enable-b2b-person-to-account-stitching-on-event-datasets). Com base na pessoa com privilégios elevados para o conjunto de dados de mapeamento de conta `emily@adobe.com` está definido como ID de pessoa com privilégios elevados no evento relacionado.
+A compilação baseada em gráfico também é usada para elevar as IDs de pessoa no conjunto de dados do evento de experiência. Por exemplo, você configura o campo ID persistente (ECID) para ser usado como ID de pessoa persistente quando [habilita a compilação no conjunto de dados](#enable-b2b-person-to-account-stitching-on-event-datasets). Supondo que `5678` (ID persistente) esteja vinculado a `emily@adobe.com` (ID de pessoa) no gráfico de identidade, `emily@adobe.com` esteja definido como ID de pessoa elevada no evento relacionado.
 
 | Carimbo de data e hora | ID persistente | ID da conta original | ID de pessoa original | ID de pessoa elevada |
 |--|--|---|---|---|
@@ -112,7 +104,7 @@ A compilação baseada em gráfico também é usada para elevar as IDs de pessoa
 
 +++ Detalhes
 
-O conjunto de dados de pessoa para conta é usado mais uma vez para elevar as IDs de conta no conjunto de dados do evento de experiência. Por exemplo, consulte o valor adicionado **Sky** para emily@sky.com e **Adobe** para carmen@adobe.com e emily@adobe.com. E o valor atualizado **Sky** (da Ubiquity) para cory@sky.com.
+O conjunto de dados de pessoa para conta é usado para elevar as IDs de conta no conjunto de dados do evento de experiência. Por exemplo, consulte o valor adicionado **Adobe** para carmen@adobe.com e emily@adobe.com. E o valor atualizado **Sky** (da Ubiquity) para cory@sky.com.
 
 | Carimbo de data e hora | ID persistente | ID da conta original | ID de pessoa original | ID da Conta com Elevação | ID de pessoa elevada |
 |---|---|---|---|---|---|
@@ -128,7 +120,7 @@ O conjunto de dados de pessoa para conta é usado mais uma vez para elevar as ID
 
 ### Resultado
 
-Este exemplo mostra como a compilação de pessoa B2B atualiza seus dados de evento de experiência com identificadores de pessoa ausentes ou identificadores de conta ausentes e incorretos, com base no conjunto de dados de mapeamento de pessoa para conta fornecido como entrada.
+Este exemplo mostra como a compilação de pessoa B2B atualiza seus dados de evento de experiência com identificadores de pessoa ausentes e identificadores de conta ausentes ou incorretos, com base nos dados do gráfico de identidade e no conjunto de dados de mapeamento de pessoa para conta fornecido como entrada.
 
 
 ## Pré-requisitos
@@ -232,7 +224,7 @@ Primeiro, você ativa e configura a compilação B2B no nível da conexão. Quan
 >id="connection_b2b_stitching_enable_person_to_account"
 >title="Habilitar compilação entre pessoa e conta"
 >abstract="Se habilitada, esse conjunto de dados usa a compilação de Pessoa para Conta B2B. Os valores de **[!UICONTROL ID de Pessoa Persistente]** serão elevados para os valores do **[!UICONTROL Namespace do identificador de pessoa]** configurado, em seguida, usados para pesquisar a ID da conta com base no conjunto de dados de pessoa para conta.<br/>Se desabilitado, este conjunto de dados não usa a compilação de Pessoa B2B para Conta e você precisa selecionar uma **[!UICONTROL ID de Conta]** necessária."
->additional-url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/stitching/b2b/b2b-person-to-account-stitching#configure-b2b-stitching-settings" text="Configurar pessoa B2B para configurações de compilação da conta"
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/b2b/b2b-person-to-account-stitching#configure-b2b-stitching-settings" text="Configurar pessoa B2B para configurações de compilação da conta"
 
 Depois de configurar a compilação B2B no nível da conexão, você deve permitir que a pessoa B2B contabilize a compilação individualmente para cada conjunto de dados de evento que você deseja compilar.
 
@@ -246,8 +238,8 @@ Depois de configurar a compilação B2B no nível da conexão, você deve permit
 
 Quando **[!UICONTROL Habilitar compilação de Pessoa para Conta]** está **ativado**, você configurou a pessoa B2B para compilar a conta para o conjunto de dados.
 
-* A configuração de uma ID de pessoa é obrigatória. Essa ID de pessoa é usada para pesquisar a ID da conta com base no [conjunto de dados de pessoa para conta](#prerequisites).
-* A configuração de uma ID de conta é opcional.
+* A configuração de uma ID de pessoa persistente é obrigatória. Essa ID de pessoa persistente é elevada para a ID de pessoa a partir do namespace do identificador de pessoa previamente configurado, em seguida, usada para pesquisar a ID de conta com base no [conjunto de dados de pessoa para conta](#prerequisites).
+* A configuração de uma ID de conta é opcional. Essa configuração é usada como um método de fallback, sempre que as informações da ID da conta relacionada não estiverem disponíveis no conjunto de dados de pessoa para conta.
 
 ![Pessoa B2B para compilação de conta no conjunto de dados do evento em](../assets/b2b-event-dataset-stitching-on.png)
 
