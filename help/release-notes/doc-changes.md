@@ -33,9 +33,9 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: e2ec268ef4a2d84d51089e7b59b3df5b0ad6f48d
+source-git-commit: 18b3b42cafd437749041bc1d408e60e77b42e1fc
 workflow-type: tm+mt
-source-wordcount: 7019
+source-wordcount: 7045
 ht-degree: 98%
 
 ---
@@ -49,6 +49,8 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 
 | Recurso | Descrição |
 |---|---|
+| **setembro de 2026** | |
+| Novas ações de atalho de redimensionamento | Os novos atalhos de teclado do Analysis Workspace agora permitem [redimensionar um painel ou uma visualização](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md#resize-panel-or-visualization) de modo mais amplo, mais estreito, mais alto ou mais curto. |
 | **agosto de 2026** | |
 | Esclarecimento de informações sobre a atualização de públicos | Ao [publicar públicos-alvo](/help/components/audiences/publish.md#audience-builder), o esclareceu que o número de públicos-alvo que podem ser agendados para atualização depende do seu direito ao Customer Journey Analytics e está entre 75 e 150. |
 | **julho de 2026** | |
