@@ -1,22 +1,21 @@
 ---
-title: Configurar a configuração dos Insights de conversa
+title: Criar Ou Editar Uma Configuração De Insights De Conversa
 description: Saiba como definir as configurações de Insights de conversa.
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin, User
 hold: true
-source-git-commit: 8e446c15e998e660b42a09681fe78b885711e41f
+source-git-commit: b29ee2f04a1775dca6a8fd93c3ac3050b67f0ceb
 workflow-type: tm+mt
-source-wordcount: '615'
+source-wordcount: '638'
 ht-degree: 8%
 ---
-# Definir configurações do Insights de conversa
+# Criar ou editar configurações
 
 
 Os Insights de conversa permitem analisar conversas (de modelos de idioma grandes (LLM) ou humanos) em escala e contextualizar essas conversas na jornada completa do cliente. Por meio dos Insights de conversa, é possível entender o impacto dos representantes nos resultados reais do usuário.
 
-
-## Criar ou editar configuração
+Por meio da interface de configuração do Conversation Insights, é possível criar ou editar rapidamente uma configuração e os artefatos associados (conexão, visualizações de dados e muito mais).
 
 Ao criar ou editar uma configuração de Insights de conversa, você especifica a sandbox e os conjuntos de dados de evento que contêm prompts, respostas e dados de feedback. Você também seleciona a conexão do Customer Journey Analytics à qual deseja adicionar esses conjuntos de dados. E a visualização de dados à qual você deseja adicionar as métricas e dimensões do Conversation Insights.
 
@@ -24,12 +23,12 @@ Somente administradores do sistema podem criar ou editar configurações de Insi
 
 Você cria ou edita configurações da [interface de Configurações de Insights de Conversa](./conversation-insights-manage.md).
 
-### Restaurar o conjunto de dados combinados ausente
+## Restaurar o conjunto de dados combinados ausente
 
 Se você editar uma configuração e o conjunto de dados misturado que foi gerado para a configuração não existir mais, selecione **[!UICONTROL Restaurar]** para regenerar o conjunto de dados misturado.
 
 
-### Etapas de configuração
+## Etapas de configuração
 
 Para cada configuração:
 
