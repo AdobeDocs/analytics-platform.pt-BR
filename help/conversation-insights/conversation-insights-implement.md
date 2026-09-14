@@ -19,7 +19,7 @@ Este artigo documenta as etapas de implementação necessárias.
 >[!PREREQUISITES]
 >
 >Você deve ter um ambiente do Experience Platform (organização e sandbox) disponível para coletar os dados.
-Sua organização do Adobe deve estar habilitada para os grupos de campo de conversação e agente experimental.
+>Sua organização do Adobe deve estar habilitada para os grupos de campo de conversação e agente experimental.
 
 ## Esquema e conjuntos de dados
 
