@@ -8,17 +8,15 @@ hide: true
 source-git-commit: 9df4c8cff6c0c044902453e5fb8380fbb5c5ac2d
 workflow-type: tm+mt
 source-wordcount: '170'
-ht-degree: 4%
-
+ht-degree: 18%
 ---
-
 
 # Configurações do componente de escopo {#scope-component-settings}
 
 >[!CONTEXTUALHELP]
 >id="dataview_component_metric_scope"
 >title="Escopo"
->abstract="Determine como um componente tem seu escopo definido quando usado em relatórios. Você pode selecionar entre baseado em eventos, baseado em perfis ou total."
+>abstract="Determine como um componente é colocado em escopo quando usado em relatórios. Você pode selecionar entre baseado em evento, baseado em perfil ou baseado no total."
 
 O escopo de um componente de métrica determina como o componente é usado em relatórios.
 

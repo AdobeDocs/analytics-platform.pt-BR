@@ -7,24 +7,30 @@ autotag-review: '2026-05-19T08:45:44.870Z'
 TQID: 'https://experienceleague.adobe.com/QgBD7vCkw4YA568XOLlwTnw8eZVZybXr3DFbM1ZKYDw'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+    internal-label: Exports
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
 source-git-commit: f5a7272f80aaba167974f2218bc84408d47f62d4
 workflow-type: tm+mt
-source-wordcount: 4217
-ht-degree: 21%
-
+source-wordcount: '4217'
+ht-degree: 30%
 ---
-
 # Criar um feed de dados
 
 {{release-limited-testing}}
@@ -54,8 +60,8 @@ Antes de criar um feed de dados, é importante ter uma compreensão básica dos 
 
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_notify"
->title="Notificar sobre problemas, quando estiverem concluídos e quando estiverem expirando"
->abstract="Especifique um ou mais endereços de email nos quais uma notificação deve ser entregue quando o feed de dados for concluído, expirar ou encontrar problemas. Separe vários endereços de email com vírgula."
+>title="Notifique-me de problemas, quando concluído e quando expirar"
+>abstract="Especifique um ou mais endereços de email para os quais uma notificação deve ser enviada quando o feed de dados terminar, estiver expirando ou encontrar problemas. Separe vários endereços de email com vírgulas."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -64,7 +70,7 @@ Antes de criar um feed de dados, é importante ter uma compreensão básica dos 
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_processing_delay"
 >title="Atraso no processamento"
->abstract="O tempo de espera por eventos de chegada tardia antes de processar um arquivo de feed de dados. Quaisquer ocorrências de chegada tardia que chegarem durante o período de tempo de atraso de processamento serão incluídas no feed de dados. <p>Atrasos de processamento são úteis por vários motivos, como para dar às implementações móveis uma oportunidade para que os dispositivos offline fiquem online e enviem dados ou para acomodar os processos do lado do servidor de sua organização no gerenciamento de arquivos processados anteriormente.</p><p>As sessões devem ser iniciadas após o limite do atraso de processamento para serem incluídas; as sessões que iniciam antes do limite e terminam dentro do atraso de processamento não são incluídas.</p><p>O Customer Journey Analytics determina dinamicamente o atraso ideal com base no tempo que os eventos de chegada tardia normalmente levam para o feed, mas você pode defini-lo manualmente para atrasar por 2, 3, 4 ou 8 horas.</p>"
+>abstract="O tempo de espera por eventos que chegam com atraso antes do processamento de um arquivo de feed de dados. Quaisquer ocorrências que chegaram com atraso durante o período de atraso no processamento serão incluídos no feed de dados. <p>Atrasos no processamento são úteis por vários motivos, por exemplo, para dar às implementações móveis uma oportunidade para que os dispositivos offline fiquem online e enviem dados ou para acomodar os processos do lado do servidor da organização no gerenciamento de arquivos processados anteriormente.</p><p>As sessões devem começar após o limite do atraso no processamento para serem incluídas; as sessões que começam antes do limite e terminam dentro do atraso no processamento não são incluídas.</p><p>O Customer Journey Analytics determina dinamicamente o atraso ideal com base no tempo que os eventos recebidos com atraso normalmente levam para chegar até o seu feed, mas você pode definir manualmente o atraso para 2, 3, 4 ou 8 horas.</p>"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -321,8 +327,8 @@ Antes de criar um feed de dados, é importante ter uma compreensão básica dos 
    | [!UICONTROL **Data de expiração**] <br/>Disponível somente para feeds em tempo real | A data em que o feed de dados expira e não é mais executado. A data é baseada no fuso horário da visualização de dados. |
    | [!UICONTROL **Data final**]<br/> Disponível somente para feeds de preenchimento retroativo | A data em que o feed de dados termina. A data final não pode ser no futuro. A data é baseada no fuso horário da visualização de dados. |
    | [!UICONTROL **Frequência**] | Selecione a frequência com que o feed de dados deve ser enviado. Eventos com carimbos de data e hora que caem na janela de frequência são incluídos na entrega do feed de dados. Os campos [!UICONTROL **Intervalo de datas de retrospectiva**] e [!UICONTROL **Atraso de processamento**] também podem afetar quais eventos são incluídos nos dados para a frequência de entrega escolhida.<p>Para feeds ao vivo, selecione para incluir uma hora de dados ou um dia de dados. Para feeds de preenchimento retroativo, este campo está bloqueado para **Diariamente**, o que significa que os dados são agrupados em partes diárias.</p><ul><li>**Diariamente**: os feeds contêm dados de um dia inteiro, da meia-noite a meia-noite no fuso horário da visualização de dados. <p>Essa opção é necessária para feeds de preenchimento retroativo e é opcional para feeds em tempo real.</p></li><li>**Por hora**: os feeds contêm dados de uma hora. <p>Essa opção está disponível somente para feeds em tempo real.</p></li></ul> |
-   | [!UICONTROL **Intervalo de datas de retrospectiva**] | Controla até que data o Customer Journey Analytics analisa ao processar a entrega do feed de dados. O padrão é 30 dias.<p>A janela de frequência (hora ou dia) determina quais eventos são incluídos no feed de dados, enquanto o **intervalo de datas da retrospectiva** fornece o contexto histórico necessário para classificar esses eventos corretamente.</p><p>A qualificação de segmento, a persistência de dimensão, o cálculo de sessão e as transformações de campo derivadas podem afetar os eventos incluídos.</p> <p>Antes de configurar esta opção, veja os detalhes e os exemplos descritos na seção abaixo, [Entenda o intervalo de datas da retrospectiva](#understand-the-lookback-date-range).</p> |
-   | [!UICONTROL **Atraso no processamento**] | Escolha o tempo de espera antes do processamento de um arquivo de feed de dados. O padrão é 2 horas. Todos os eventos de chegada tardia que chegam durante o atraso de processamento são incluídos no feed de dados. <p>Atrasos de processamento são úteis por vários motivos, como para dar às implementações móveis uma oportunidade para que os dispositivos offline fiquem online e enviem dados ou para acomodar os processos do lado do servidor de sua organização no gerenciamento de arquivos processados anteriormente. </p><p>As sessões devem ser iniciadas após o limite do atraso de processamento para serem incluídas; as sessões que iniciam antes do limite e terminam dentro do atraso de processamento não são incluídas.</p><p>O Customer Journey Analytics determina dinamicamente o atraso ideal com base no tempo que os eventos de chegada tardia normalmente levam para o feed, mas você pode defini-lo manualmente para atrasar por 2, 3, 4 ou 8 horas.</p> |
+   | [!UICONTROL **Intervalo de datas de retrospectiva**] | Controla até que data o Customer Journey Analytics analisa ao processar a entrega do feed de dados. O padrão é 30 dias.<p>A janela de frequência (hora ou dia) determina quais eventos são incluídos no feed de dados, enquanto o **intervalo de datas da retrospectiva** fornece o contexto histórico necessário para classificar esses eventos corretamente.</p><p>Qualificação de segmento, persistência de dimensão, cálculo de sessão e transformações de campo derivado podem afetar os eventos incluídos.</p> <p>Antes de configurar esta opção, veja os detalhes e os exemplos descritos na seção abaixo, [Entenda o intervalo de datas da retrospectiva](#understand-the-lookback-date-range).</p> |
+   | [!UICONTROL **Atraso no processamento**] | Escolha o tempo de espera antes do processamento de um arquivo de feed de dados. O padrão é 2 horas. Todos os eventos de chegada tardia que chegam durante o atraso de processamento são incluídos no feed de dados. <p>Atrasos no processamento são úteis por vários motivos, por exemplo, para dar às implementações móveis uma oportunidade para que os dispositivos offline fiquem online e enviem dados ou para acomodar os processos do lado do servidor da organização no gerenciamento de arquivos processados anteriormente. </p><p>As sessões devem começar após o limite do atraso no processamento para serem incluídas; as sessões que começam antes do limite e terminam dentro do atraso no processamento não são incluídas.</p><p>O Customer Journey Analytics determina dinamicamente o atraso ideal com base no tempo que os eventos recebidos com atraso normalmente levam para chegar até o seu feed, mas você pode definir manualmente o atraso para 2, 3, 4 ou 8 horas.</p> |
    | [!UICONTROL **Formato de compactação**] | Selecione o formato de compactação dos arquivos de saída do Parquet entregues ao destino da nuvem. Escolha entre os seguintes formatos:<ul><li>[!UICONTROL **Snappy**]: compactação e descompactação rápidas com tamanhos de arquivo moderados. Amplamente compatível com plataformas de dados modernas, como BigQuery, Snowflake e Apache Spark.</li><li>[!UICONTROL **GZip**]: amplamente compatível, inclusive com ferramentas que não oferecem suporte nativo ao Snappy. Recomendado se o pipeline downstream exigir um padrão de compactação amplamente reconhecido.</li><li>[!UICONTROL **Z Padrão (Zstd)**]: alta eficiência de compactação com descompactação rápida. Adequado se minimizar o tamanho do arquivo é uma prioridade e suas ferramentas suportam Zstd.</li></ul> |
 
 1. Na guia [!UICONTROL **Entrega**], na seção [!UICONTROL **Destino**], configure o destino para onde deseja que os dados sejam enviados.
@@ -350,14 +356,14 @@ Antes de criar um feed de dados, é importante ter uma compreensão básica dos 
 
 1. Selecione **[!UICONTROL Salvar]**.
 
-## Entender o intervalo de datas da pesquisa {#data-feed-lookback-date-range}
+## Noções básicas sobre o intervalo de datas da retrospectiva {#data-feed-lookback-date-range}
 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_lookback_date_range"
 >title="Intervalo de datas da retrospectiva"
->abstract="Controla a aparência retroativa do Customer Journey Analytics ao processar cada delivery.<p>A janela de frequência (hora ou dia) determina quais eventos são incluídos no feed de dados, enquanto o **intervalo de datas da retrospectiva** fornece o contexto histórico necessário para classificar esses eventos corretamente.</p><p>A qualificação de segmento, a persistência de dimensão, o cálculo de sessão e as transformações de campo derivadas podem afetar os eventos incluídos.</p><p>Uma pesquisa mais longa melhora a precisão; uma pesquisa mais curta melhora o desempenho.</p>"
+>abstract="Controla até que data o Customer Journey Analytics analisa ao processar cada entrega.<p>A janela de frequência (hora ou dia) determina quais eventos são incluídos no feed de dados, enquanto o **intervalo de datas da retrospectiva** fornece o contexto histórico necessário para classificar esses eventos corretamente.</p><p>Qualificação de segmento, persistência de dimensão, cálculo de sessão e transformações de campo derivado podem afetar os eventos incluídos.</p><p>A retrospectiva mais longa melhora a precisão; a mais curta melhora o desempenho.</p>"
 
 <!-- markdownlint-enable MD034 -->
 

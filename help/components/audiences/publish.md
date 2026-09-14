@@ -7,27 +7,36 @@ role: User
 TQID: https://experienceleague.adobe.com/BPbSzyh6eg3QC6NcAVgo06GAISzVH2CX35Z-Q32xMbE
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments, Segments (CJA)
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
   - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+    internal-label: Audiences
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 source-git-commit: 87de19a64e49f83c99df7980828b97a1da2c2d16
 workflow-type: tm+mt
-source-wordcount: 2520
-ht-degree: 93%
-
+source-wordcount: '2520'
+ht-degree: 96%
 ---
-
 # Criar e publicar públicos-alvo {#create-and-publish-audiences}
 
 <!-- markdownlint-disable MD034 -->
@@ -35,7 +44,7 @@ ht-degree: 93%
 >[!CONTEXTUALHELP]
 >id="components_audiences_refreshfrequency"
 >title="Frequência de atualização"
->abstract="A frequência com que a associação de um público-alvo é reavaliada.<br/>As solicitações únicas são avaliadas apenas uma vez e não contam para o limite de atualização."
+>abstract="A frequência com que a assinatura de um público-alvo é reavaliada.<br/>As solicitações únicas são avaliadas apenas uma vez e não são contabilizadas no limite de atualização."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -43,8 +52,8 @@ ht-degree: 93%
 
 >[!CONTEXTUALHELP]
 >id="components_audiences_audiencelimit"
->title="Atualizar limite de público"
->abstract="O número de públicos-alvo em seu ambiente configurados para atualização automática com uma frequência programada. Os limites estão entre 75 e 150, dependendo dos seus direitos do Customer Journey Analytics. Solicitações únicas não contam para esse limite."
+>title="Atualizar limite de público-alvo"
+>abstract="O número de públicos-alvo no ambiente configurados para atualização automática em uma frequência programada. Os limites estão entre 75 e 150, dependendo dos seus direitos no Customer Journey Analytics. As solicitações únicas não são contabilizadas nesse limite."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -89,7 +98,7 @@ Leia esta [visão geral](/help/components/audiences/audiences-overview.md) para 
    | Método de criação | Detalhes |
    | --- | --- |
    | Na interface de **[!UICONTROL Públicos-alvo]** publicados | Selecione **[!UICONTROL Componentes]** > **[!UICONTROL Públicos-alvo publicados]** no menu principal do Customer Journey Analytics. A interface Públicos-alvo é exibida. Selecione **[!UICONTROL Criar público-alvo]** para abrir o [!UICONTROL Construtor de públicos-alvo]. |
-   | De uma visualização no Analysis Workspace | Muitas visualizações no Analysis Workspace permitem criar um público-alvo usando o menu de contexto. Por exemplo, você pode selecionar **[!UICONTROL Criar público-alvo]** no menu de contexto de um item em uma [Tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) ou em um nó na [Tela de jornada](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md).<p>Usar esse método preenche previamente o segmento no construtor com a dimensão ou item de dimensão que você selecionou.</p><p>As visualizações a seguir permitem criar um público-alvo usando o menu do botão direito do mouse:</p><ul><li>[Tabela de coorte](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)</li><li>[Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)</li><li>[Fluxo](/help/analysis-workspace/visualizations/c-flow/flow.md)</li><li>[Tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)</li><li>[Tela da jornada](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)</li><li>Observação sobre [Mapa &#x200B;](/help/analysis-workspace/visualizations/map.md#create-an-audience-from-the-map-visualization)<br/>**:** essa visualização está na fase de teste limitado da versão e pode não estar disponível ainda em seu ambiente.</li><li>[Venn](/help/analysis-workspace/visualizations/venn.md)</li></ul><p>**Observação:** públicos-alvo não podem incluir métricas calculadas. Se você tentar criar um público-alvo que contenha uma métrica calculada, ela não será incluída na definição do público-alvo.</p> |
+   | De uma visualização no Analysis Workspace | Muitas visualizações no Analysis Workspace permitem criar um público-alvo usando o menu de contexto. Por exemplo, você pode selecionar **[!UICONTROL Criar público-alvo]** no menu de contexto de um item em uma [Tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) ou em um nó na [Tela de jornada](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md).<p>Usar esse método preenche previamente o segmento no construtor com a dimensão ou item de dimensão que você selecionou.</p><p>As visualizações a seguir permitem criar um público-alvo usando o menu do botão direito do mouse:</p><ul><li>[Tabela de coorte](/help/analysis-workspace/visualizations/cohort-table/cohort-analysis.md)</li><li>[Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md)</li><li>[Fluxo](/help/analysis-workspace/visualizations/c-flow/flow.md)</li><li>[Tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md)</li><li>[Tela da jornada](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md)</li><li>Observação sobre [Mapa ](/help/analysis-workspace/visualizations/map.md#create-an-audience-from-the-map-visualization)<br/>**:** essa visualização está na fase de teste limitado da versão e pode não estar disponível ainda em seu ambiente.</li><li>[Venn](/help/analysis-workspace/visualizations/venn.md)</li></ul><p>**Observação:** públicos-alvo não podem incluir métricas calculadas. Se você tentar criar um público-alvo que contenha uma métrica calculada, ela não será incluída na definição do público-alvo.</p> |
    | Na interface de criação e edição de segmentos | Marque a caixa que diz **[!UICONTROL Criar um público-alvo a partir deste segmento]**. Usar esse método preenche previamente o segmento. Consulte [Criar segmentos](/help/components/segments/seg-create.md) para obter mais informações. |
 
    {style="table-layout:auto"}
