@@ -9,22 +9,26 @@ autotag-review: '2026-05-19T08:44:26.806Z'
 TQID: 'https://experienceleague.adobe.com/R7c5-VutwSkyghNvwC2gZv2KUEJoa263AN0Tkdg3w4o'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+    internal-label: Exports
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: 4872f0078640fbd358a60a6d7baeb3ea575d3559
+    internal-label: Customer journeys
+source-git-commit: 555aef15933d87e5bbb3e3ec8b15d99a96ac25fe
 workflow-type: tm+mt
-source-wordcount: 1629
+source-wordcount: '1699'
 ht-degree: 0%
-
 ---
-
 # Comparar feeds de dados no Customer Journey Analytics e no Adobe Analytics
 
 {{release-limited-testing}}
@@ -40,6 +44,8 @@ Para obter uma comparação dos feeds de dados com outros métodos de exportaç�
 Os seguintes recursos estão disponíveis nos feeds de dados do Customer Journey Analytics, mas não nos feeds de dados do Adobe Analytics:
 
 * **Campos derivados**: componentes personalizados criados a partir de transformações baseadas em regras que podem ser incluídos no esquema do feed de dados. <!-- add benefit -->
+
+* **Configurações de componente**: as configurações de componente de visualização de dados, como persistência, desduplicação de métrica e segmentação de valor, podem transformar o valor de um componente diretamente na saída do feed de dados, sem exigir SQL.
 
 * **Compilação**: resolução de identidade entre dispositivos que vincula eventos entre dispositivos a uma única pessoa.
 
@@ -80,6 +86,7 @@ A tabela a seguir compara os principais conceitos e opções de configuração e
 | **Esquema**<br/> O esquema de feed de dados determina quais colunas estão disponíveis para inclusão em um feed de dados. | O esquema do feed de dados é baseado na configuração da visualização de dados.  Os componentes disponíveis para inclusão no esquema de feed de dados são um subconjunto dos componentes disponíveis na configuração da visualização de dados. | Uma lista estática predefinida de ~1.100+ variáveis. Muitas colunas são exportadas como **pares pré e pós-processados** (por exemplo, `eVar1` / `post_eVar1`), o que responde por grande parte da contagem de colunas. |
 | **Construtor de feed de dados**<br/> A interface usada para configurar quais colunas são incluídas em um feed de dados. | Usa um painel de componentes com as mesmas dimensões e métricas nomeadas disponíveis na visualização de dados, que corresponde à experiência do Analysis Workspace. | Usa uma lista simples de nomes de variáveis brutas (como `eVar1`, `prop5`) selecionados de um conjunto predefinido de ~1.100+ colunas. Os componentes não são nomeados ou descritos além do identificador de variável. |
 | **Campos derivados**<br/> Componentes personalizados definidos com o uso de transformações baseadas em regras aplicadas no momento do relatório. | Compatível. Os componentes de campo derivados podem ser incluídos no esquema de feed de dados ao lado de dimensões e métricas padrão. | Não suportado. |
+| **Configurações do componente**<br/> Configurações do componente de visualização de dados, como persistência, desduplicação de métrica e segmentação de valores, que transformam o valor de um componente no momento do relatório. | Compatível com a maioria das configurações. Essas configurações se aplicam à saída do feed de dados da mesma forma que se aplicam ao Analysis Workspace. | Não suportado. |
 | **Atualizações de componentes**<br/> Se as alterações na configuração de componentes se refletem na saída de feeds de dados passada e futura. | As alterações nos componentes na visualização de dados (como renomear ou remover uma dimensão) se propagam para feeds de dados futuros e também são refletidas em preenchimentos retroativos. | As alterações nos componentes do conjunto de relatórios se aplicam apenas aos dados coletados no futuro. |
 | **Pesquisas**<br/> Os conjuntos de dados de pesquisa no Customer Journey Analytics são equivalentes às classificações no Adobe Analytics. | Todas as pesquisas são incorporadas diretamente aos dados. | As classificações não estão incluídas nos feeds de dados do Adobe Analytics. |
 | **Definição de sessão**<br/> Como um limite de visita ou sessão é definido, o que afeta como os eventos são agrupados e atribuídos. | Definido na visualização de dados. | Definido no momento da coleta. |
