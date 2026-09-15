@@ -7,24 +7,30 @@ role: Admin
 hide: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+    internal-label: Data governance
   - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+    internal-label: Integrations
 subfeature_v2:
   - id: ffe2fd81-0630-49b3-a33b-4b8899e89c51
+    internal-label: Privacy
   - id: d3fb138f-79e4-4a81-aedb-76dd93560085
+    internal-label: Experience Platform integration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 source-git-commit: 4661a066f90991e6fb149c6909ef4a9f75cf02ac
 workflow-type: tm+mt
-source-wordcount: 1326
-ht-degree: 11%
-
+source-wordcount: '1326'
+ht-degree: 28%
 ---
-
 # Configurar relatório e filtragem de consentimento {#configure-consent-reporting}
 
 <!-- markdownlint-disable MD034 -->
@@ -32,7 +38,7 @@ ht-degree: 11%
 >[!CONTEXTUALHELP]
 >id="cja-consent-merge-policy"
 >title="Política de mesclagem"
->abstract="As políticas de mesclagem combinam dados de perfil de vários conjuntos de dados em perfis de cliente unificados usados para a criação de público-alvo. Selecione a política de mesclagem que corresponde ao conjunto de dados do Perfil que contém os dados de associação à política de consentimento (o campo `consentPoliciesIDMap`) sobre o qual você deseja criar relatórios. Ou consulte sua equipe de dados para saber quais públicos-alvo estão associados a cada política de mesclagem."
+>abstract="As políticas de mesclagem combinam dados de perfil de vários conjuntos de dados em perfis de cliente unificados usados para a criação de público-alvo. Selecione a política de mesclagem correspondente ao conjunto de dados de Perfil que contém os dados de assinatura da política de consentimento (o campo `consentPoliciesIDMap`) sobre os quais você deseja gerar relatórios. Ou consulte sua equipe de dados para saber quais públicos-alvo estão associados a cada política de mesclagem."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -50,7 +56,7 @@ ht-degree: 11%
 >[!CONTEXTUALHELP]
 >id="cja-consent-person-id"
 >title="ID de pessoa"
->abstract="Selecione um campo do esquema baseado em modelo que representa a ID de pessoa. A seleção é limitada à lista de campos no esquema marcados como &quot;Identidade&quot; e que têm um namespace de identidade."
+>abstract="Selecione um campo do esquema baseado no modelo que representa a ID de pessoa. A seleção é limitada à lista de campos do esquema que estão marcados como “Identidade” e têm um namespace de identidade."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -59,7 +65,7 @@ ht-degree: 11%
 >[!CONTEXTUALHELP]
 >id="cja-consent-identity-namespace"
 >title="Usar namespace de identidade primário"
->abstract="Ative esta opção se quiser que o Customer Journey Analytics localize a identidade no Mapa de identidade que está marcada com um atributo primário=verdadeiro e usa essa identidade como a ID de pessoa para essa linha. Essa identidade é a chave primária usada na Experience Platform para particionamento. <br/>Se deixar essa opção desativada, selecione um namespace no campo Namespace de identidade abaixo. O Customer Journey Analytics pesquisará cada linha do mapa de identidade para encontrar a chave desse namespace e usará a identidade sob esse namespace como a ID de pessoa para essa linha."
+>abstract="Habilite essa opção se quiser que o Customer Journey Analytics encontre a identidade no Mapa de identidade que está marcada com um atributo primary=true e use essa identidade como a ID de pessoa nessa linha. Essa identidade é a chave primária usada na Experience Platform para particionamento. <br/>Se deixar essa opção desativada, selecione um namespace no campo Namespace de identidade abaixo. O Customer Journey Analytics pesquisará cada linha do mapa de identidade para encontrar a chave desse namespace e usará a identidade sob esse namespace como a ID de pessoa para essa linha."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -68,7 +74,7 @@ ht-degree: 11%
 >[!CONTEXTUALHELP]
 >id="cja-consent-enable-reporting"
 >title="Habilitar relatórios"
->abstract="Habilite essa opção para usar o Analysis Workspace para relatar os dados de consentimento disponíveis em sua conexão. As dimensões e métricas da política de consentimento são adicionadas às visualizações de dados selecionadas."
+>abstract="Habilite essa opção para usar o Analysis Workspace para gerar relatórios sobre os dados de consentimento disponíveis na conexão. As dimensões e métricas da política de consentimento são adicionadas às visualizações de dados selecionadas."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -77,7 +83,7 @@ ht-degree: 11%
 >[!CONTEXTUALHELP]
 >id="cja-consent-enable-filtering"
 >title="Habilitar filtragem"
->abstract="Ative essa opção para excluir a assimilação de dados de visitantes que não consentem no Customer Journey Analytics. Quando ativados, os dados de um visitante são assimilados somente se o visitante corresponder a todas as políticas de consentimento ativadas abaixo. <br>Esta opção destina-se a organizações com requisitos para excluir dados de visitantes que não consentiram no momento da assimilação."
+>abstract="Habilite essa opção para excluir a ingestão de dados de visitantes que não deram consentimento no Customer Journey Analytics. Quando habilitada, os dados de um visitante são ingeridos somente se o visitante corresponder a todas as políticas de consentimento habilitadas abaixo. <br>Essa opção destina-se a organizações com requisitos para excluir dados de visitantes que não deram consentimento no momento da ingestão."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -112,7 +118,7 @@ Para criar um relatório de consentimento e uma configuração de filtragem:
 
    O relatório e a filtragem de consentimento são aplicados no nível da conexão. Todas as visualizações de dados em uma conexão configurada herdam o mesmo comportamento.
 
-1. No campo **[!UICONTROL ID de pessoa]**, selecione um campo do esquema baseado em modelo que represente a ID de pessoa. A seleção é limitada à lista de campos no esquema marcados como &quot;Identidade&quot; e que têm um namespace de identidade.
+1. No campo **[!UICONTROL ID de pessoa]**, selecione um campo do esquema baseado em modelo que represente a ID de pessoa. A seleção é limitada à lista de campos do esquema que estão marcados como “Identidade” e têm um namespace de identidade.
 
 1. Escolha se deseja habilitar relatórios para os dados de consentimento.
 

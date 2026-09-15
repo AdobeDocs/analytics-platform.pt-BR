@@ -8,32 +8,46 @@ autotag-review: '2026-05-19T09:53:18.849Z'
 TQID: 'https://experienceleague.adobe.com/wZ8vtE4BFc1ahBKdblSEAXBofZBPObbSJi4bA9MtxPY'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
+    internal-label: Templates, Templates (CJA)
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
   - id: c18d9e03-ac7d-4811-9c92-3e92ddc70ade
+    internal-label: Mobile experience
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 source-git-commit: bac086b2636f835a5dc494b9cd05eb7b560f0bed
 workflow-type: tm+mt
-source-wordcount: 21458
+source-wordcount: '21458'
 ht-degree: 97%
-
 ---
-
 # Usar modelos
 
 Os modelos (ou modelos da empresa) do Analysis Workspace fornecem insights rápidos sobre os casos de relatórios mais comuns. Confira abaixo alguns exemplos de perguntas às quais você pode responder com modelos:
@@ -637,8 +651,8 @@ Estes são os modelos disponíveis:
 
 >[!CONTEXTUALHELP]
 >id="template--consentpolicyoverview"
->title="Exibir visitantes com base nos dados de associação à política de consentimento da Adobe Experience Platform."
->abstract="**Isso pode ajudá-lo** como ponto de partida para relatórios sobre associação à política de consentimento do visitante. Quando uma visualização de dados é configurada para relatórios de consentimento, o Customer Journey Analytics disponibiliza automaticamente um modelo de análise de política de consentimento no Analysis Workspace. <br/>**Com base no que você aprende, é possível** fazer várias coisas, como excluir visitantes que não consentiram dos relatórios de análise."
+>title="Visualize os visitantes com base nos dados de assinatura da política de consentimento da Adobe Experience Platform."
+>abstract="**Isso pode ajudar você** como ponto de partida em relatórios sobre assinatura da política de consentimento de visitantes. Quando uma visualização de dados é configurada para relatórios de consentimento, o Customer Journey Analytics disponibiliza automaticamente um modelo de análise de política de consentimento no Analysis Workspace. <br/>**Com base no que aprender, você pode** fazer várias coisas, como excluir dos relatórios de análise os visitantes que não deram consentimento."
 
 >[!CONTEXTUALHELP]
 >id="template--countrygeoreport"
@@ -690,7 +704,7 @@ Estes são os modelos disponíveis:
 
 &#x200B;| Nome do modelo | Por que usar este modelo <!-- What do you do with it? What can it help you learn? and What are the potential actions? --> |
 | --- | --- |
-| [!UICONTROL **Visão geral da política de consentimento**] | Exibir visitantes com base nos dados de associação à política de consentimento da Adobe Experience Platform.<p>**Isso pode ajudá-lo** como ponto de partida para relatórios sobre associação à política de consentimento do visitante. Quando uma visualização de dados é configurada para relatórios de consentimento, o Customer Journey Analytics disponibiliza automaticamente um modelo de análise de política de consentimento no Analysis Workspace. <br/>**Com base no que você aprende, é possível** fazer várias coisas, como excluir visitantes que não consentiram dos relatórios de análise.</p> |
+| [!UICONTROL **Visão geral da política de consentimento**] | Visualize os visitantes com base nos dados de assinatura da política de consentimento da Adobe Experience Platform.<p>**Isso pode ajudar você** como ponto de partida em relatórios sobre assinatura da política de consentimento de visitantes. Quando uma visualização de dados é configurada para relatórios de consentimento, o Customer Journey Analytics disponibiliza automaticamente um modelo de análise de política de consentimento no Analysis Workspace. <br/>**Com base no que aprender, você pode** fazer várias coisas, como excluir dos relatórios de análise os visitantes que não deram consentimento.</p> |
 | **[!UICONTROL Visão geral do público-alvo]** | Veja quais públicos-alvo são representados entre as pessoas que visitam seu site.<p>**Isso pode ajudar** a entender melhor as informações gerais sobre os públicos-alvo, onde eles se originaram (RTCDP, Customer Journey Analytics e assim por diante), a sobreposição de públicos-alvo e muito mais.</p><p>**Com base no que aprender, é possível** fazer várias coisas, como usar os dados para direcionar os esforços de campanhas de marketing para esses públicos específicos ou criar experiências personalizadas para clientes que pertencem a vários públicos.</p><p>Esse modelo usa as dimensões Nome do público-alvo, Origem do público-alvo, Nome do público-alvo encerrado e Origem do público-alvo encerrado.</p><p>Para obter mais informações, consulte [Analisar públicos-alvo da Experience Platform na Customer Journey Analytics](/help/connections/audience-analysis/analyze-audiences.md).</p> |
 | [!UICONTROL **Visitantes novos versus recorrentes**] | Veja uma comparação entre novos visitantes e visitantes recorrentes. <p>**Isso pode ajudar** a entender melhor a eficácia do site na retenção da fidelidade do cliente ou a taxa com que você está adquirindo novos clientes.</p><p>**Com base no que aprender, você poderá** fazer várias coisas, como oferecer incentivos para compras futuras a visitantes novos, incentivando o seu retorno.</p><!-- This template uses the --> |
 | **ID de pessoa** | Visualize o comportamento individual de usuários em vários canais.<p>**Isso pode ajudar** a entender melhor a jornada completa do cliente e as interações em vários pontos de contato.</p><p>**Com base no que aprender, você poderá** fazer várias coisas, como personalizar as campanhas de marketing para direcionar melhor as preferências dos usuários.</p><!-- This template uses the --> |
@@ -739,7 +753,7 @@ Estes são os modelos disponíveis:
 >[!CONTEXTUALHELP]
 >id="template--firstouchchanneldetailrankedreport"
 >title="Veja os detalhes do primeiro canal de marketing que um(a) visitante utiliza durante o seu período de engajamento (30 dias por padrão)."
->abstract="**Isso pode ajudar** a entender melhor o que contribuiu para que a visita ocorresse por meio daquele canal de marketing. Por exemplo, se um visitante chegasse ao seu site e correspondesse ao canal de marketing &quot;Pesquisa paga”, você poderia usar os detalhes do canal para ver qual mecanismo de pesquisa foi usado ou qual palavra-chave foi pesquisada.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como aumentar o foco das campanhas de marketing em áreas mais eficazes.<br/>Este modelo usa a dimensão “Detalhes do canal de primeiro contato”."
+>abstract="**Isso pode ajudar** a entender melhor o que contribuiu para que o hit correspondesse a um canal de marketing. Por exemplo, se um visitante chegasse ao seu site e correspondesse ao canal de marketing &quot;Pesquisa paga”, você poderia usar os detalhes do canal para ver qual mecanismo de pesquisa foi usado ou qual palavra-chave foi pesquisada.<br/>**Com base no que aprender, você poderá** fazer várias coisas, como aumentar o foco das campanhas de marketing em áreas mais eficazes.<br/>Este modelo usa a dimensão “Detalhes do canal de primeiro contato”."
 
 >[!CONTEXTUALHELP]
 >id="template--campaignconversionreport"
@@ -813,9 +827,9 @@ Estes são os modelos disponíveis:
 | --- | --- |
 | [!UICONTROL **Canais de marketing**] > [!UICONTROL **Relatório de visão geral do canal**] | Por meio da atribuição personalizada, este modelo mostra como visitantes chegam ao seu site.<p>**Isso pode ajudar** a entender melhor quais dos seus canais de marketing são mais eficazes.</p><p>**Com base no que aprender, você poderá** fazer várias coisas, como aumentar o investimento em canais de marketing eficazes e livrar-se de canais de marketing menos eficazes.</p><p>Este modelo usa a dimensão “ID (variáveis/canal de marketing)” e a métrica “Receita”.</p> |
 | [!UICONTROL **Canais de marketing**] > [!UICONTROL **Canal de primeiro contato**] | Veja o primeiro canal de marketing com o qual um visitante corresponde durante seu período de engajamento (30 dias, por padrão). <p>**Isso pode ajudar** a entender melhor quais canais de marketing geram o tráfego inicial para o seu site.</p><p>**Com base no que aprender, você poderá** fazer várias coisas, como aumentar o foco das campanhas de marketing em áreas mais eficazes.</p><p>Este modelo usa a dimensão “Canal de primeiro contato”.</p> |
-| [!UICONTROL **Canais de marketing**] > [!UICONTROL **Detalhes do canal de primeiro contato**] | Veja os detalhes do primeiro canal de marketing que um(a) visitante utiliza durante o seu período de engajamento (30 dias por padrão).<p>**Isso pode ajudar** a entender melhor o que contribuiu para que a visita ocorresse por meio daquele canal de marketing. Por exemplo, se um visitante chegasse ao seu site e correspondesse ao canal de marketing &quot;Pesquisa paga”, você poderia usar os detalhes do canal para ver qual mecanismo de pesquisa foi usado ou qual palavra-chave foi pesquisada.</p><p>**Com base no que aprender, você poderá** fazer várias coisas, como aumentar o foco das campanhas de marketing em áreas mais eficazes.</p><p>Este modelo usa a dimensão “Detalhes do canal de primeiro contato”.</p> |
+| [!UICONTROL **Canais de marketing**] > [!UICONTROL **Detalhes do canal de primeiro contato**] | Veja os detalhes do primeiro canal de marketing que um(a) visitante utiliza durante o seu período de engajamento (30 dias por padrão).<p>**Isso pode ajudar** a entender melhor o que contribuiu para que o hit correspondesse a um canal de marketing. Por exemplo, se um visitante chegasse ao seu site e correspondesse ao canal de marketing &quot;Pesquisa paga”, você poderia usar os detalhes do canal para ver qual mecanismo de pesquisa foi usado ou qual palavra-chave foi pesquisada.</p><p>**Com base no que aprender, você poderá** fazer várias coisas, como aumentar o foco das campanhas de marketing em áreas mais eficazes.</p><p>Este modelo usa a dimensão “Detalhes do canal de primeiro contato”.</p> |
 | [!UICONTROL **Canais de marketing**] > [!UICONTROL **Canal de último contato**] | Confira o canal de marketing mais recente ao qual um visitante corresponde durante seu período de engajamento (30 dias, por padrão).<p>**Isso pode ajudar** a entender melhor quais canais de marketing geram o tráfego para o seu site que resulta em conversões.</p><p>**Com base no que aprender, você poderá** fazer várias coisas, como aumentar o foco das campanhas de marketing em áreas mais eficazes.</p><p>Este modelo usa a dimensão “Canal de último contato”.  </p> |
-| [!UICONTROL **Canais de marketing**] > [!UICONTROL **Detalhes do canal de último contato**] | Confira os detalhes do canal de marketing mais recente ao qual um visitante corresponde durante seu período de engajamento (30 dias, por padrão).<p>**Isso pode ajudar** a entender melhor o que contribuiu para que a visita ocorresse por meio daquele canal de marketing. Por exemplo, se um visitante chegasse ao seu site e correspondesse ao canal de marketing &quot;Pesquisa paga”, você poderia usar os detalhes do canal para ver qual mecanismo de pesquisa foi usado ou qual palavra-chave foi pesquisada.</p><p>**Com base no que aprender, você poderá** fazer várias coisas, como aumentar o foco das campanhas de marketing em áreas mais eficazes. </p><p>Este modelo usa a dimensão “Detalhes do canal de último contato”. </p> |
+| [!UICONTROL **Canais de marketing**] > [!UICONTROL **Detalhes do canal de último contato**] | Confira os detalhes do canal de marketing mais recente ao qual um visitante corresponde durante seu período de engajamento (30 dias, por padrão).<p>**Isso pode ajudar** a entender melhor o que contribuiu para que o hit correspondesse a um canal de marketing. Por exemplo, se um visitante chegasse ao seu site e correspondesse ao canal de marketing &quot;Pesquisa paga”, você poderia usar os detalhes do canal para ver qual mecanismo de pesquisa foi usado ou qual palavra-chave foi pesquisada.</p><p>**Com base no que aprender, você poderá** fazer várias coisas, como aumentar o foco das campanhas de marketing em áreas mais eficazes. </p><p>Este modelo usa a dimensão “Detalhes do canal de último contato”. </p> |
 | [!UICONTROL **Campanhas**] > [!UICONTROL **Código de rastreamento**] | Confira os nomes dos códigos de rastreamento no seu site. Você pode colocar links com diferentes valores de parâmetros de strings de consulta em diferentes lugares na internet.<p>**Isso pode ajudar** a entender melhor quais links foram os mais bem-sucedidos em termos de direcionar o tráfego para o seu site. Anexar strings de consulta de código de rastreamento é comum em emails, anúncios, publicações em redes sociais e outras atividades de marketing que a sua organização usa</p><p>**Com base no que aprendeu, você poderá** fazer várias coisas, como aumentar o foco das campanhas de marketing nas maiores fontes de receita.</p><p>Este modelo usa a dimensão “Código de rastreamento”. </p> |
 | [!UICONTROL **Campanhas**] > [!UICONTROL **Funil de conversão de campanhas**] | Veja o número de cliques e check-outs das suas campanhas. <p>**Isso pode ajudar** a entender melhor como as campanhas de marketing estão impulsionando a conversão.</p><p>**Com base no que aprender, você poderá** fazer várias coisas, como determinar quais campanhas de marketing estão gerando maior ROI.</p> |
 | [!UICONTROL **Campanhas**] > [!UICONTROL **Desempenho da campanha**] | Veja os detalhes do desempenho das suas campanhas de marketing.<p>**Isso pode ajudar** a entender melhor os vários indicadores de sucesso associados às campanhas, como receita, exibições de produtos, pedidos e assim por diante.</p><p>**Com base no que aprendeu, você poderá** fazer várias coisas, como aumentar o foco das campanhas de marketing nas maiores fontes de receita. </p><p>Este modelo usa as métricas “Receita”, “Exibições do produto”, “Adições ao carrinho”, “Pedidos” e “Unidades”. Ele também usa as dimensões “Código de rastreamento” e “Domínio de referência”. </p> |

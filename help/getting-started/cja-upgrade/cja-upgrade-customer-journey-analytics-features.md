@@ -8,25 +8,32 @@ exl-id: 4e6cacb9-4eca-4dfb-bce4-e69850507596
 TQID: https://experienceleague.adobe.com/8yBVFyHrc31-ac8XLV-aW-SWBfDZodlIXirICmdzpkY
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments, Segments (CJA)
   - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+    internal-label: Audiences
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
 workflow-type: tm+mt
-source-wordcount: 591
+source-wordcount: '591'
 ht-degree: 100%
-
 ---
-
 # Entenda os recursos exclusivos do Customer Journey Analytics {#feature-support-upgrade}
 
 <!-- markdownlint-disable MD034 -->
@@ -42,7 +49,7 @@ ht-degree: 100%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-stitch-datasets"
->title="Compilar ocorrências de vários conjuntos de dados"
+>title="Compilar hits de vários conjuntos de dados"
 >abstract="Se um dos seus conjuntos de dados não compartilhar um identificador principal (como uma ID da Experience Cloud), você ainda poderá compilar esses dados usando outra dimensão, como o nome de usuário de logon ou endereço de email."
 
 <!-- markdownlint-enable MD034 -->
@@ -101,7 +108,7 @@ Considere quais dos seguintes recursos do Customer Journey Analytics você desej
 | Recurso do Customer Journey Analytics | Função |
 |---------|----------|
 | [Vincular dados da web com dados de outros canais, como dados de centrais de atendimento](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-usecases/cross-channel/cross-channel) | O Customer Journey Analytics possui a habilidade da Experience Platform de armazenar toda espécie de esquemas de dados e tipos. Com o [Experience Data Model (XDM)](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=pt-BR), os dados podem ser representados e organizados uniformemente, para que estejam prontos para combinação e exploração. O Adobe Analytics foca predominantemente em dados de análise móveis e da Web com alguns recursos de [importação de dados](https://experienceleague.adobe.com/docs/analytics/import/home.html?lang=pt-BR). |
-| [Compile ocorrências de outros conjuntos de dados com uma dimensão personalizada](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/stitching/overview) | O Customer Journey Analytics permite [combinar dados](/help/connections/combined-dataset.md) de vários conjuntos de relatórios como se fossem um único conjunto de relatórios no Adobe Analytics. |
+| [Compile hits de outros conjuntos de dados com uma dimensão personalizada](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/stitching/overview) | O Customer Journey Analytics permite [combinar dados](/help/connections/combined-dataset.md) de vários conjuntos de relatórios como se fossem um único conjunto de relatórios no Adobe Analytics. |
 | [Integração com a Adobe Real-time CDP](/help/components/audiences/audiences-overview.md) | É possível [criar e publicar públicos-alvo](/help/components/audiences/audiences-overview.md) descobertos no Customer Journey Analytics no perfil do cliente em tempo real da Adobe Experience Platform para direcionamento e personalização de clientes. |
 | [Integração com o Adobe Target (A4T)](/help/integrations/at.md) | Os relatórios do Target no Customer Journey Analytics permitem [medir e relatar atividades do Adobe Target](/help/integrations/at.md) diretamente no Customer Journey Analytics. No entanto, a Adobe recomenda a integração com o Adobe Journey Optimizer para casos de uso de personalização. |
 | [Integrar ao Adobe Journey Optimizer](/help/integrations/ajo.md) | É possível configurar os dados gerados pelo Journey Optimizer para [executar análises avançadas no Customer Journey Analytics](/help/integrations/ajo.md). |
