@@ -4,26 +4,31 @@ description: Saiba como exibir, editar e excluir configurações de relatório e
 solution: Customer Journey Analytics
 feature: Privacy
 role: Admin
-hide: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+    internal-label: Data governance
 subfeature_v2:
   - id: ffe2fd81-0630-49b3-a33b-4b8899e89c51
+    internal-label: Privacy
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 7bb16378fc8813ca126cb786c5d36bf9daa0fe7d
+    internal-label: Privacy
+source-git-commit: ce6f9e474d274488e218e4dbd5f0666d41978681
 workflow-type: tm+mt
-source-wordcount: 452
+source-wordcount: '449'
 ht-degree: 5%
-
 ---
-
 # Gerenciar configurações de filtragem e relatório de consentimento
+
+{{release-limited-testing}}
 
 Depois de [criar um relatório de consentimento e uma configuração de filtragem](/help/connections/consent-reporting-filtering/consent-configure.md), você pode exibi-los, editá-los ou excluí-los.
 

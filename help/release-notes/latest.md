@@ -6,34 +6,50 @@ feature: Release Notes
 TQID: https://experienceleague.adobe.com/EQKhna8E33DddZQGWe3ASBKMY9r-UsfuUcJg7DMwH0w
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
+    internal-label: Templates, Templates (CJA)
   - id: ad5685a0-8296-4a0c-814c-658c10b4af12
+    internal-label: Content Analytics
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments, Segments (CJA)
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
   - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+    internal-label: Audiences
   - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+    internal-label: Connections
   - id: d3c978ee-1ff0-4475-968a-721e2dd99ef1
+    internal-label: Freeform tables
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
   - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+    internal-label: Exports
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: f3aad257d518373812176cb123d799b83cf45520
+    internal-label: Insights
+source-git-commit: 2e63ee2c2e2ac0652c5dde54f1d702d99831d72a
 workflow-type: tm+mt
-source-wordcount: 1261
-ht-degree: 20%
-
+source-wordcount: '1266'
+ht-degree: 19%
 ---
-
 # Notas de versão atuais do Customer Journey Analytics (setembro de 2026)
 
 **Última atualização**: 9 de setembro de 2026
@@ -46,7 +62,7 @@ Essas notas de versão abordam o período de lançamento de setembro de 2026. As
 | -----------|-----------|-----------|
 | **Plug-in do servidor MCP do Customer Journey Analytics**<br/> Use os novos plug-ins do servidor MCP do Customer Journey Analytics para ChatGPT e Claude para acessar rapidamente seus dados. <p>Para obter mais informações, consulte [Conectar-se ao ChatGPT](https://developer.adobe.com/analytics-mcp/docs/guides/chatgpt) e [Conectar-se ao Claude](https://developer.adobe.com/analytics-mcp/docs/guides/claude).</p> | 1 de setembro de 2026 | 1 de setembro de 2026 |
 | **Suporte para rótulos de uso de dados adicionais**<br> O Customer Journey Analytics agora oferece suporte aos seguintes rótulos de uso de dados adicionais para elementos em um conjunto de dados:<ul><li>C2 - Restringir a exportação de dados de terceiros (disponível agora)</li><li>C3 - Restringir combinação de dados diretamente identificáveis (disponível agora)</li><li>C9 - Restringir a ciência de dados (lançamento previsto para agosto ou setembro)</li></ul><p>Para obter mais informações, consulte [Rótulos, políticas e ações de marketing](/help/data-views/data-governance.md).</p> | | 3 de setembro de 2026 |
-| **Filtragem e relatórios de política de consentimento**<br> Agora você pode informar quais visitantes correspondem às suas políticas de consentimento da Adobe Experience Platform. (As dimensões e métricas da política de consentimento são adicionadas às visualizações de dados em sua conexão.)<p>Além disso, você pode excluir visitantes que não consentiram antes que seus dados sejam assimilados na Customer Journey Analytics.</p><p>(O link da documentação será disponibilizado em breve).<!--For more information, see Consent reporting and filtering overview.--></p> | | Setembro de 2026 |
+| **Filtragem e relatórios de política de consentimento**<br> Agora você pode informar quais visitantes correspondem às suas políticas de consentimento da Adobe Experience Platform. (As dimensões e métricas da política de consentimento são adicionadas às visualizações de dados em sua conexão.)<p>Além disso, você pode excluir visitantes que não consentiram antes que seus dados sejam assimilados na Customer Journey Analytics.</p><p>Para obter mais informações, consulte [Visão geral do relatório e da filtragem de consentimento](/help/connections/consent-reporting-filtering/consent-overview.md).</p> | | Setembro de 2026 |
 | **Limitar segmentos ao intervalo de datas do relatório**<br/> Os dados em um relatório do Workspace podem se estender além do intervalo de datas do relatório quando um segmento inclui componentes de intervalo de datas.<p>Uma nova opção está disponível e permite limitar os resultados ao intervalo de datas do relatório, independentemente de quaisquer componentes de data incluídos no segmento.</p><p>Essa opção está disponível ao criar ou modificar um segmento cujo container de nível superior é Pessoa.</p><p>Para obter mais informações, consulte [Criar segmentos](/help/components/segments/seg-builder.md#components).</p> | 26 de agosto de 2026 | 9 de setembro de 2026 |
 | **Analisar as experiências de clientes do LLM no Analysis Workspace com Insights de Conversa**<br/> A Customer Journey Analytics agora traz dados de chat não estruturados para o Analysis Workspace, permitindo que você relate as experiências de compra e navegação viabilizadas pelo LLM que ocorrem em suas propriedades.<p>Com esse recurso, você pode:</p><ul><li>Colete prompts, respostas e metadados de agentes de agentes de conversação (agentes personalizados da sua organização ou Adobe Brand Concierge) por meio do Web SDK.</li><li>Analise a intenção, o tom e o sentimento para que você possa entender o que os clientes estão perguntando, como seu agente responde e como seus clientes se sentem sobre as interações deles.</li><li>Analise em escala usando seu esquema, conjuntos de dados e visualizações de dados existentes e, em seguida, visualize os insights no Analysis Workspace.</li><li>Conecte conversas aos resultados vinculando as interações do agente às jornadas mais amplas do cliente para que você possa medir o impacto real na conversão, no engajamento e muito mais.</li></ul><p>Anteriormente, as experiências acionadas por LLM eram difíceis de medir e quase impossíveis de se conectar às jornadas existentes do cliente.</p><p>(Link para a documentação a seguir).</p> | | 22 de setembro de 2026 |
 | **Relatórios de população total**<br/> Agora é possível analisar e relatar entidades definidas em conjuntos de dados de perfil e pesquisa existentes em uma conexão do Customer Journey Analytics. Essa análise e esses relatórios vão além das séries de eventos com base no tempo de conjuntos de dados de eventos. <p>Essa capacidade permite novas classes de consultas, métricas e definições de público-alvo que refletem o escopo completo de uma base de clientes empresariais.</p><p>(Link para a documentação a seguir).</p> | | 22 de setembro de 2026 |

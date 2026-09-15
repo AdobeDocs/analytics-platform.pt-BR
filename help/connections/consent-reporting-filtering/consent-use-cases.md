@@ -4,27 +4,33 @@ description: Explore casos de uso para relatórios sobre a associação à polí
 solution: Customer Journey Analytics
 feature: Privacy
 role: Admin
-hide: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+    internal-label: Data governance
 subfeature_v2:
   - id: ffe2fd81-0630-49b3-a33b-4b8899e89c51
+    internal-label: Privacy
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 4661a066f90991e6fb149c6909ef4a9f75cf02ac
+    internal-label: Privacy
+source-git-commit: ce6f9e474d274488e218e4dbd5f0666d41978681
 workflow-type: tm+mt
-source-wordcount: 590
+source-wordcount: '590'
 ht-degree: 0%
-
 ---
-
 # Casos de uso de relatórios e filtragem de consentimento
+
+{{release-limited-testing}}
 
 O relatório e a filtragem de consentimento ajudam a relatar sobre a associação à política de consentimento do visitante e, opcionalmente, excluem visitantes que não consentiram antes que seus dados entrem no Customer Journey Analytics. Para obter informações gerais, consulte [Visão geral do relatório e da filtragem de consentimento](/help/connections/consent-reporting-filtering/consent-overview.md).
 
@@ -40,7 +46,7 @@ Este artigo descreve casos de uso de exemplo. Antes de analisá-las, familiarize
 
 * **A associação à política de consentimento vem do conjunto de dados de Perfil**: os relatórios refletem a associação à política de consentimento presente no campo `consentPoliciesIDMap` do conjunto de dados de Perfil. Um visitante deve ter um evento correspondente na conexão para aparecer no relatório.
 
-## Exemplo de casos de uso
+## Casos de uso de exemplo
 
 ### Caso de uso 1: Relatório de consentimento sem filtrar dados
 
