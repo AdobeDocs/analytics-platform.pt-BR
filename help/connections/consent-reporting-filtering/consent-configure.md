@@ -4,7 +4,6 @@ description: Saiba como criar uma configuração para ativar o relatório de con
 solution: Customer Journey Analytics
 feature: Privacy
 role: Admin
-hide: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -26,9 +25,9 @@ topic_v2:
     internal-label: Governance
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 4661a066f90991e6fb149c6909ef4a9f75cf02ac
+source-git-commit: ce6f9e474d274488e218e4dbd5f0666d41978681
 workflow-type: tm+mt
-source-wordcount: '1326'
+source-wordcount: '1325'
 ht-degree: 28%
 ---
 # Configurar relatório e filtragem de consentimento {#configure-consent-reporting}
@@ -55,7 +54,7 @@ ht-degree: 28%
 
 >[!CONTEXTUALHELP]
 >id="cja-consent-person-id"
->title="ID de pessoa"
+>title="ID da pessoa"
 >abstract="Selecione um campo do esquema baseado no modelo que representa a ID de pessoa. A seleção é limitada à lista de campos do esquema que estão marcados como “Identidade” e têm um namespace de identidade."
 
 <!-- markdownlint-enable MD034 -->
@@ -86,6 +85,8 @@ ht-degree: 28%
 >abstract="Habilite essa opção para excluir a ingestão de dados de visitantes que não deram consentimento no Customer Journey Analytics. Quando habilitada, os dados de um visitante são ingeridos somente se o visitante corresponder a todas as políticas de consentimento habilitadas abaixo. <br>Essa opção destina-se a organizações com requisitos para excluir dados de visitantes que não deram consentimento no momento da ingestão."
 
 <!-- markdownlint-enable MD034 -->
+
+{{release-limited-testing}}
 
 Os administradores do sistema podem ativar o relatório de consentimento e, opcionalmente, a filtragem de consentimento para uma ou mais conexões. Para obter informações gerais, consulte [Visão geral do relatório e da filtragem de consentimento](/help/connections/consent-reporting-filtering/consent-overview.md).
 
