@@ -202,4 +202,4 @@ Nem toda entrada **[!UICONTROL Nenhum valor]** sinaliza um problema. Interpretar
 
 >[!MORELIKETHIS]
 >
->[O manual completo para manipulação de **[!UICONTROL Nenhum valor]** no Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/the-complete-playbook-for-handling-no-value-in-adobe-cja-12769)
+>[O manual completo para manipulação de **[!UICONTROL Nenhum valor]** no Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/the-complete-playbook-for-handling-no-value-in-adobe-cja-12769?profile.language=pt)
