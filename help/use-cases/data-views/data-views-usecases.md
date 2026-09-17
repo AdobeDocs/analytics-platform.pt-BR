@@ -8,23 +8,28 @@ role: User
 TQID: https://experienceleague.adobe.com/qEgO-lqYk8ipVP99IBazrKAb7Jer-AN96-PY-f1KdPQ
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments, Segments (CJA)
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Reporting
+source-git-commit: 7a7ad0d310603850395e35edce7fa66c8c2ff329
 workflow-type: tm+mt
-source-wordcount: 1462
+source-wordcount: '1487'
 ht-degree: 24%
-
 ---
-
 # Casos de uso de visualizações de dados
 
 Esses casos de uso ilustram a flexibilidade e o potencial das visualizações de dados no Customer Journey Analytics.
@@ -41,11 +46,15 @@ Consulte o caso de uso [Usar dados de resumo](summary-data.md) para obter mais d
 
 Consulte os [casos de uso de extensão do BI](bi-extension-usecases.md) para saber como realizar vários casos de uso usando a extensão do Customer Journey Analytics BI.
 
+
+## Como lidar com Nenhum valor
+
+Consulte o artigo [Como lidar com Nenhum valor](./no-value.md) para obter detalhes sobre como lidar com vários cenários de caso de uso de **[!UICONTROL Nenhum valor]**.
+
+
 ## Criar uma métrica com base em um campo de esquema de sequência {#string}
 
 Por exemplo, ao criar uma visualização de dados, você pode criar uma métrica [!UICONTROL Pedidos] a partir de um campo de esquema [!UICONTROL Título da página] que seja uma sequência.
-
-
 
 1. Na guia **[!UICONTROL Componentes]**, arraste o **[!UICONTROL Título da Página]** para a seção **[!UICONTROL Métricas]** em [!UICONTROL Componentes incluídos].
 1. Destaque a métrica que você acabou de arrastar e renomeie-a para `Orders` nas **[!UICONTROL Configurações de componente]** em
@@ -73,9 +82,9 @@ Anteriormente, os números inteiros eram automaticamente tratados como métricas
 
 ## Usar dimensões numéricas como métricas em diagramas de fluxo {#numeric}
 
-Você pode usar uma dimensão numérica para inserir métricas na visualização [!UICONTROL &#x200B; Fluxo].
+Você pode usar uma dimensão numérica para inserir métricas na visualização [!UICONTROL  Fluxo].
 
-1. Na guia Visualizações de dados [Componentes](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-dataviews/create-dataview), arraste o campo de esquema [!UICONTROL Canais de marketing] para a área [!UICONTROL Métricas] em [!UICONTROL Componentes incluídos].
+1. Na guia Visualizações de dados [Componentes](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/create-dataview), arraste o campo de esquema [!UICONTROL Canais de marketing] para a área [!UICONTROL Métricas] em [!UICONTROL Componentes incluídos].
 2. No relatório do Espaço de trabalho, esse fluxo mostra [!UICONTROL Canais de marketing] fluindo para [!UICONTROL Pedidos]:
 
 ![Fluxo do Canal de marketing dos emails para Saída/pedidos.](../assets/flow.png)
@@ -86,7 +95,7 @@ Esse recurso é especificamente aplicável a campos com base em matriz. A funcio
 
 Por exemplo, use a funcionalidade de inclusão/exclusão nas Visualizações de dados para focalizar produtos que geraram vendas superiores a US$ 50. Portanto, se você tiver um pedido que inclua uma compra de produto de US$ 50 e uma compra de produto de US$ 25, a funcionalidade de inclusão/exclusão removerá a compra de produto de US$ 25, não o pedido inteiro.
 
-1. Na guia Visualizações de dados [Componentes](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-dataviews/create-dataview), arraste o campo de esquema **[!UICONTROL Receita]** para a área **[!UICONTROL Métricas]** em [!UICONTROL Componentes incluídos].
+1. Na guia Visualizações de dados [Componentes](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/create-dataview), arraste o campo de esquema **[!UICONTROL Receita]** para a área **[!UICONTROL Métricas]** em [!UICONTROL Componentes incluídos].
 1. Selecione a métrica e configure o seguinte no lado direito:
 a. Em **[!UICONTROL Formato]**, selecione **[!UICONTROL Moeda]**.
 b. Em **[!UICONTROL Moeda]**, selecione **[!UICONTROL USD]**.
@@ -125,11 +134,11 @@ Você pode determinar se uma sessão é realmente a primeira sessão de um usuá
 
 Uma dimensão e duas métricas facilitam esse relatório:
 
-* [Tipo de sessão](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-dataviews/component-reference) - Esta dimensão tem dois valores: [!UICONTROL Novo] e [!UICONTROL Retorno]. O item de linha [!UICONTROL Novo] inclui todo o comportamento (ou seja, métricas em relação a essa dimensão) de uma sessão que foi determinada como a primeira sessão definida por uma pessoa. Todo o restante está incluído no item da linha [!UICONTROL Retorno] (supondo que tudo pertença a uma sessão). Quando as métricas não fazem parte de nenhuma sessão, elas se encaixam no intervalo “Não aplicável” dessa dimensão.
+* [Tipo de sessão](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-reference) - Esta dimensão tem dois valores: [!UICONTROL Novo] e [!UICONTROL Retorno]. O item de linha [!UICONTROL Novo] inclui todo o comportamento (ou seja, métricas em relação a essa dimensão) de uma sessão que foi determinada como a primeira sessão definida por uma pessoa. Todo o restante está incluído no item da linha [!UICONTROL Retorno] (supondo que tudo pertença a uma sessão). Quando as métricas não fazem parte de nenhuma sessão, elas se encaixam no intervalo “Não aplicável” dessa dimensão.
 
-* [Primeiras sessões](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-dataviews/component-reference). A métrica Primeiras sessões é definida como a primeira sessão definida de uma pessoa na janela de relatórios.
+* [Primeiras sessões](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-reference). A métrica Primeiras sessões é definida como a primeira sessão definida de uma pessoa na janela de relatórios.
 
-* [Sessões de Retorno](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-dataviews/component-reference) A métrica de Sessões de Retorno é o número de sessões que não foram a primeira sessão de uma pessoa.—>
+* [Sessões de Retorno](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-reference) A métrica de Sessões de Retorno é o número de sessões que não foram a primeira sessão de uma pessoa.—>
 
 Para acessar os componentes:
 

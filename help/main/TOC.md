@@ -2,9 +2,9 @@
 user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Saiba mais sobre o Adobe Customer Journey Analytics e como usar o Analysis Workspace com dados da Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
-source-git-commit: 8e446c15e998e660b42a09681fe78b885711e41f
+source-git-commit: 0b2548c1caa15fe7e50c000178e691ea9743ff19
 workflow-type: tm+mt
-source-wordcount: '1493'
+source-wordcount: '1502'
 ht-degree: 90%
 ---
 # Guia do Adobe Customer Journey Analytics {#using}
@@ -511,6 +511,7 @@ ht-degree: 90%
       + [Agregar valor ao produto](/help/use-cases/b2b/b2b-edition/build-product-value.md)
   + Dados complexos {#complex-data}
     + [Uso de matrizes de objetos](../use-cases/object-arrays.md)
+    + [Sem tratamento de valor](../use-cases/data-views/no-value.md)
   + Dados entre canais {#cross-channel}
     + [Analisar dados entre canais](../use-cases/cross-channel/cross-channel.md)
     + [Importação de dados da central de atendimento e da Web](../use-cases/cross-channel/call-center.md)
@@ -520,6 +521,9 @@ ht-degree: 90%
     + [Exportar conjuntos de dados](../use-cases/data-export/export-datasets.md)
     + [Exportar tabela completa](../use-cases/data-export/export-full-table.md)
     + [Conjuntos de dados de exportação e Serviço de consultas](../use-cases/data-export/queryservice-export-datasets.md)
+    + [Exportação do Workspace](../use-cases/data-export/workspace-export.md)
+    + [Report Builder](../use-cases/data-export/report-builder.md)
+    + [API de relatórios](../use-cases/data-export/reporting-api.md)
   + Assimilação de dados {#data-ingestion}
     + [Assimilar e usar dados do Marketo Engage](../use-cases/data-ingestion/marketo.md)
     + [Ingerir e usar públicos-alvo da Experience Platform](../use-cases/data-ingestion/ingest-aep-segments.md)
