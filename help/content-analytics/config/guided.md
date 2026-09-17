@@ -9,29 +9,40 @@ autotag-review: '2026-05-19T08:54:42.845Z'
 TQID: 'https://experienceleague.adobe.com/kEqjocKd5pNypjQlF70HeF1bKuoG9Qi-AT6nJiIwuV0'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: ad5685a0-8296-4a0c-814c-658c10b4af12
+    internal-label: Content Analytics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c18d9e03-ac7d-4811-9c92-3e92ddc70ade
+    internal-label: Mobile experience
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 source-git-commit: e3936b74ba4b4cf23e1b7235e545091a8cb546ed
 workflow-type: tm+mt
-source-wordcount: 4806
-ht-degree: 54%
-
+source-wordcount: '4806'
+ht-degree: 56%
 ---
-
 
 # Configuração guiada do Content Analytics
 
@@ -99,7 +110,7 @@ O assistente de configuração guiada inclui quatro seções: [Detalhes](#detail
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_connection_header"
 >title="Conexão"
->abstract="Selecione uma conexão existente do Customer Journey Analytics para mesclar os dados do Content Analytics."
+>abstract="Selecione uma conexão do Customer Journey Analytics para mesclar seus dados do Content Analytics."
 
 Cada configuração requer um nome exclusivo. Por exemplo, `Example Content Analytics configuration`. O nome é necessário para salvar ou implementar uma configuração.
 
@@ -140,7 +151,7 @@ Se você já tiver selecionado uma conexão, mas quiser alterá-la:
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header"
 >title="Visualização de dados"
->abstract="Selecione uma visualização de dados existente do Customer Journey Analytics para mesclar os dados do Content Analytics com o."
+>abstract="Selecione uma visualização de dados existente do Customer Journey Analytics para mesclar seus dados do Content Analytics."
 
 >[!CONTEXTUALHELP]
 >id="aca_onboarding_dataview_header_alt"
@@ -245,7 +256,7 @@ Na seção **[!UICONTROL Canais]**, selecione os canais que deseja habilitar par
 
 Em seguida, você pode configurar o canal com mais detalhes. Esta configuração é diferente se você habilitar e configurar ou editar uma configuração para o canal [mobile](#mobile), [web](#web) ou [mídia paga](#paid-media).
 
-#### Dispositivo móvel
+#### Dispositivos móveis
 
 +++ Detalhes
 
@@ -382,7 +393,7 @@ Para o canal Web, você pode configurar [captura e definição de experiência](
 >id="aca_onboarding_datacollection_button"
 >title="Coleção de dados"
 >abstract="Defina qual propriedade de tags você deseja usar ou crie uma nova. Defina também as páginas e os ativos que deseja incluir ou excluir usando expressões regulares.<br/>Para uma implementação independente de tags, selecione **[!UICONTROL Criar novo]**.  É criada uma propriedade Tags, mas você não é obrigado a usá-la."
->additional-url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/content-analytics/configuration/tags-agnostic" text="Biblioteca JavaScript do Content Analytics"
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/configuration/tags-agnostic" text="Biblioteca JavaScript do Content Analytics"
 
 
 >[!CONTEXTUALHELP]

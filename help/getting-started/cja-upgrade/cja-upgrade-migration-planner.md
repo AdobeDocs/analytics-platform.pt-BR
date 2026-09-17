@@ -8,7 +8,7 @@ hide: true
 source-git-commit: 39d6847296cc385d501defda292b5b3cae98b46a
 workflow-type: tm+mt
 source-wordcount: '2338'
-ht-degree: 5%
+ht-degree: 16%
 ---
 # Migrar de tags para XDM {#upgrade-migration-planner}
 
@@ -19,7 +19,7 @@ ht-degree: 5%
 >[!CONTEXTUALHELP]
 >id="migration_intro"
 >title="Visão geral das migrações"
->abstract="Migre uma implementação de Marcas para o Adobe Experience Platform Web SDK ao atualizar para o Customer Journey Analytics.<br/>Continue com uma migração existente ou inicie uma nova."
+>abstract="Migre uma implementação de tags para o Adobe Experience Platform Web SDK ao atualizar para o Customer Journey Analytics.<br/>Continue com uma migração existente ou inicie uma nova."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -270,7 +270,7 @@ Você pode criar um novo conjunto de mapeamento [durante o processo de migraçã
 >[!CONTEXTUALHELP]
 >id="migration_mapping_field_group"
 >title="Preferência de grupo de campos"
->abstract="Escolha grupos de campos padrão para usar os grupos de campos do Adobe publicados quando possível. Isso promove a consistência máxima e retorna aos campos de locatário personalizados quando nenhum campo padrão está disponível.<br/>Escolha grupos de campos personalizados para usar campos personalizados de namespace de locatário quando possível. Isso promove a máxima flexibilidade."
+>abstract="Escolha grupos de campos padrão para usar grupos de campos publicados da Adobe quando possível. Isso promove a consistência máxima e retorna aos campos de locatário personalizados quando nenhum campo padrão está disponível.<br/>Escolha grupos de campos personalizados para usar campos personalizados de namespace de locatário quando possível. Isso promove a máxima flexibilidade."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -279,7 +279,7 @@ Você pode criar um novo conjunto de mapeamento [durante o processo de migraçã
 >[!CONTEXTUALHELP]
 >id="migration_mapping_lookback"
 >title="Período de pesquisa"
->abstract="Controla a distância a ser observada ao determinar quais variáveis estão recebendo dados ativamente. As variáveis que incluem dados dentro do período de lookback são incluídas no esquema."
+>abstract="Controla até que ponto retroceder ao determinar quais variáveis estão recebendo dados ativamente. As variáveis que incluem dados no período de pesquisa são incluídas no esquema."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -309,7 +309,7 @@ Você pode criar um novo conjunto de mapeamento [durante o processo de migraçã
 
    <!-- * [!UICONTROL **Ask each time**]: Prompt for each signal so you can decide individually. -->
 
-1. No campo [!UICONTROL **Período de lookback**], selecione o período retroativo a ser observado ao determinar quais variáveis estão recebendo dados ativamente. As variáveis que incluem dados dentro do período de lookback são incluídas no esquema.
+1. No campo [!UICONTROL **Período de lookback**], selecione o período retroativo a ser observado ao determinar quais variáveis estão recebendo dados ativamente. As variáveis que incluem dados no período de pesquisa são incluídas no esquema.
 
 1. Selecione [!UICONTROL **Criar conjunto de mapeamento**].
 
