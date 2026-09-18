@@ -8,35 +8,42 @@ exl-id: 14a90758-91eb-4610-8802-1edfdb8b9689
 TQID: https://experienceleague.adobe.com/J-5oxLDw4sLVFcXYQhN5cpTkH76C5wAfWFECrIydb-s
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+    internal-label: Exports
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
+    internal-label: Machine learning
+source-git-commit: 06d3fa4838d48567f1b9804992aa0f718937916d
 workflow-type: tm+mt
-source-wordcount: 3373
+source-wordcount: '3306'
 ht-degree: 5%
-
 ---
-
 # Serviço de consulta (Data Distiller) e conjuntos de dados de exportação
 
 Este artigo descreve como a combinação do Experience Platform Query Service (Data Distiller) e a exportação do conjunto de dados podem ser usadas para implementar os seguintes [casos de uso de exportação de dados](overview.md):
 
 - Validação de dados
-- Data Lake, Data Warehouse de ferramentas de BI
-- Prontidão para o aprendizado de máquina e inteligente artificial.
+- Data Lake, Data Warehouse para ferramentas de BI
+- Disponibilidade para inteligência artificial e aprendizado de máquina.
 
 
-A Adobe Analytics pode implementar esses casos de uso usando sua funcionalidade [Feeds de dados](https://experienceleague.adobe.com/pt-br/docs/analytics/export/analytics-data-feed/data-feed-overview). Os feeds de dados são uma maneira avançada de obter dados brutos do Adobe Analytics. Este artigo descreve como obter dados brutos semelhantes do Experience Platform para implementar os casos de uso mencionados acima. Quando aplicável, as funcionalidades descritas neste artigo são comparadas com os feeds de dados do Adobe Analytics para esclarecer diferenças nos dados e no processo.
+A Adobe Analytics pode implementar esses casos de uso usando sua funcionalidade [Feeds de dados](https://experienceleague.adobe.com/pt-br/docs/analytics/export/analytics-data-feed/data-feed-overview). Os feeds de dados são uma maneira eficiente de exportar dados brutos do Adobe Analytics. Este artigo descreve como exportar um tipo semelhante de dados brutos do Experience Platform para que você possa implementar os casos de uso mencionados acima. Quando aplicável, as funcionalidades descritas neste artigo são comparadas com os feeds de dados do Adobe Analytics para esclarecer diferenças nos dados e no processo.
 
 ## Introdução
 
@@ -53,8 +60,8 @@ A exportação de dados usando o Serviço de consulta (Data Distiller) e a expor
 Certifique-se de atender a todos os requisitos a seguir antes de usar a funcionalidade descrita neste caso de uso:
 
 - Uma implementação em funcionamento que coleta dados no data lake da Experience Platform.
-- Acesso ao complemento Data Distiller para garantir que você esteja autorizado a executar consultas em lote. Consulte [Pacote do Serviço de Consulta](https://experienceleague.adobe.com/pt-br/docs/experience-platform/query/packaging) para obter mais informações.
-- Acesso à funcionalidade Exportar conjuntos de dados, disponível após a compra do pacote do Real-Time CDP Prime ou Ultimate, Adobe Journey Optimizer ou Customer Journey Analytics. Consulte [Exportar conjuntos de dados para destinos de armazenamento na nuvem](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/ui/activate/export-datasets) para obter mais informações.
+- Acesso ao complemento Data Distiller para garantir que você esteja autorizado a executar consultas em lote. Os limites de linha de consulta e os tempos limite de execução dependem do seu direito. Consulte [Pacote do Serviço de Consulta](https://experienceleague.adobe.com/pt-br/docs/experience-platform/query/packaging) para obter mais informações.
+- Acesso à funcionalidade Exportar conjuntos de dados, disponível após a compra do pacote do Real-Time CDP Prime ou Ultimate, Adobe Journey Optimizer ou Customer Journey Analytics. Para saber mais, consulte [Exportar conjuntos de dados para destinos de armazenamento na nuvem](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/ui/activate/export-datasets).
 - Um ou mais destinos configurados (por exemplo: Amazon S3, Armazenamento da Google Cloud) para onde você pode exportar os dados brutos do feed de dados.
 
 
@@ -75,13 +82,13 @@ Você pode usar toda a funcionalidade do SQL ANSI padrão para instruções SELE
 
 #### Colunas de feed de dados
 
-Os campos XDM que você pode usar no query dependem da definição de esquema em que seus conjuntos de dados se baseiam. Entenda o esquema subjacente ao conjunto de dados. Consulte para obter mais informações o [guia da interface do usuário de conjuntos de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/catalog/datasets/user-guide).
+Os campos XDM disponíveis na sua consulta dependem do esquema do conjunto de dados. Entenda o esquema subjacente ao conjunto de dados. Consulte o [guia da interface do usuário de conjuntos de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/catalog/datasets/user-guide) para obter mais informações.
 
-Para ajudar você a definir o mapeamento entre as colunas do Feed de dados e os campos XDM, consulte [Mapeamento de campos do Analytics](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics). Consulte também a [Visão geral da interface do usuário de esquemas](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/ui/overview#defining-xdm-fields) para obter mais informações sobre como gerenciar recursos XDM, incluindo esquemas, classes, grupos de campos e tipos de dados.
+Para ajudar você a definir o mapeamento entre as colunas do Feed de dados e os campos XDM, consulte [Mapeamento de campos do Analytics](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/adobe-applications/mapping/analytics). Consulte também a [Visão geral da interface do usuário de esquemas](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/ui/overview#defining-xdm-fields) para obter informações sobre como gerenciar recursos XDM.
 
 Por exemplo, caso queira usar *nome da página* como parte do seu feed de dados:
 
-- Na interface do Feed de dados do Adobe Analytics, você selecionaria **[!UICONTROL pagename]** como coluna para adicionar à sua definição de feed de dados.
+- Na interface do Feed de dados do Adobe Analytics, selecione **[!UICONTROL pagename]** como coluna para adicionar à sua definição de feed de dados.
 - No Serviço de consulta, você inclui `web.webPageDetails.name` do conjunto de dados `sample_event_dataset_for_website_global_v1_1` (com base no **Esquema de evento de amostra para o site (Esquema de evento de experiência Global v1.1)**) em sua consulta. Consulte o [grupo de campos de esquema Detalhes da Web](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/field-groups/event/web-details) para obter mais informações.
 
 
@@ -90,13 +97,13 @@ Por exemplo, caso queira usar *nome da página* como parte do seu feed de dados:
 No Experience Platform, várias identidades estão disponíveis. Ao criar suas consultas, verifique se você está consultando identidades corretamente.
 
 
-Geralmente você encontra identidades em um grupo de campos separado. Em uma implementação, a ECID (`ecid`) pode ser definida como parte de um grupo de campos com um objeto `core`, o qual faz parte de um objeto `identification` (por exemplo: `_sampleorg.identification.core.ecid`). As ECIDs podem ser organizadas de forma diferente em seus esquemas.
+Geralmente você encontra identidades em um grupo de campos separado. Em uma implementação, a ECID (`ecid`) pode ser definida como parte de um grupo de campos com um objeto `core`, o qual faz parte de um objeto `identification` (por exemplo: `_sampleorg.identification.core.ecid`). As ECIDs são organizadas de forma diferente em seus esquemas.
 
 Como alternativa, você pode usar `identityMap` para consultar identidades. O `identityMap` é do tipo `Map` e usa uma [estrutura de dados aninhada](#nested-data-structure).
 
 Consulte [Definir campos de identidade na interface](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/ui/fields/identity) para obter mais informações sobre como definir campos de identidade na Experience Platform.
 
-Consulte [Identificadores primários em dados do Analytics](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/adobe-applications/analytics#primary-identifiers-in-analytics-data) para entender como as identidades do Adobe Analytics são mapeadas para identidades do Experience Platform ao usar o conector de origem do Analytics. Esse mapeamento pode servir como orientação para configurar suas identidades, mesmo quando não estiver usando o conector de origem do Analytics.
+Consulte [Identificadores primários em dados do Analytics](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/adobe-applications/analytics#primary-identifiers-in-analytics-data) para entender como as identidades do Adobe Analytics são mapeadas para identidades do Experience Platform ao usar o conector de origem do Analytics. Esse mapeamento serve como orientação para configurar suas identidades, mesmo quando não está usando o conector de origem do Analytics.
 
 
 #### Dados e identificação do nível de ocorrência
@@ -126,7 +133,7 @@ Com base na implementação, os dados de nível de ocorrência tradicionalmente 
 | `page_event_var_1` | `web.webInteraction.URL` | string | Uma variável usada somente em solicitações de imagem de rastreamento de link. Essa variável contém o URL do link de download, link de saída, ou link personalizado clicado. |
 | `page_event_var_2` | `web.webInteraction.name` | string | Uma variável usada somente em solicitações de imagem de rastreamento de link. Isso lista o nome personalizado do link, se for especificado. |
 | `paid_search` | `search.isPaid` | booleano | Um sinalizador que é definido se a ocorrência corresponder à detecção de pesquisa paga. |
-| `ref_type` | `web.webReferrertype` | string | Uma ID numérica que representa o tipo de referência para a ocorrência. |
+| `ref_type` | `web.webReferrertype` | string | Uma ID numérica que representa o tipo de referência para o hit. |
 
 #### Publicar colunas
 
@@ -189,8 +196,8 @@ Consulte [Trabalho com estruturas de dados aninhadas no Serviço de consultas](h
 Para consultas:
 
 - que usam dados de conjuntos de dados no data lake da Experience Platform,
-- estão aproveitando os recursos adicionais do Adobe Defined Functions e/ou do Spark SQL, e
-- que produziria resultados semelhantes a um feed de dados equivalente do Adobe Analytics,
+- usar os recursos adicionais do Adobe Defined Functions e/ou do Spark SQL, e
+- que fornece resultados semelhantes a um feed de dados equivalente do Adobe Analytics,
 
 consulte:
 
@@ -199,7 +206,7 @@ consulte:
 - [filtragem de bot](https://experienceleague.adobe.com/pt-br/docs/experience-platform/query/use-cases/bot-filtering)
 - e outros [casos de uso com suporte no guia do Serviço de Consulta](https://experienceleague.adobe.com/pt-br/docs/experience-platform/query/use-cases/overview).
 
-Veja abaixo um exemplo de como aplicar corretamente a atribuição entre sessões e isso ilustra como
+Veja abaixo um exemplo para aplicar corretamente a atribuição entre sessões e isso ilustra como
 
 - usar os últimos 90 dias como retrospectiva,
 - aplicar funções de janela como sessão e/ou atribuição e
@@ -211,9 +218,9 @@ Veja abaixo um exemplo de como aplicar corretamente a atribuição entre sessõe
 
   - Use uma tabela de status de processamento, `checkpoint_log`, para acompanhar o horário atual versus o último horário de assimilação. Consulte [este guia](https://experienceleague.adobe.com/pt-br/docs/experience-platform/query/key-concepts/incremental-load) para obter mais informações.
   - desabilite o descarte de colunas do sistema para que você possa usar `_acp_system_metadata.ingestTime`.
-  - Use um `SELECT` interno, na maioria das vezes, para coletar os campos que deseja usar e restringir os eventos ao seu período de pesquisa para cálculos de sessão e/ou atribuição. Por exemplo, 90 dias.
+  - Use um `SELECT` interno para coletar os campos que deseja usar e restringir os eventos ao seu período de pesquisa para cálculos de sessão e/ou atribuição. Por exemplo, 90 dias.
   - Use um próximo nível `SELECT` para aplicar suas funções de sessão e/ou janela de atribuição e outros cálculos.
-  - Use `INSERT INTO` na tabela de saída para restringir a retrospectiva apenas aos eventos que chegaram desde o último tempo de processamento. Para fazer isso, filtre por `_acp_system_metadata.ingestTime ` em relação ao tempo armazenado pela última vez na tabela de status de processamento.
+  - Para restringir a retrospectiva aos eventos que chegaram desde o último tempo de processamento, use `INSERT INTO` na tabela de saída. Para fazer isso, filtre por `_acp_system_metadata.ingestTime ` em relação ao tempo armazenado pela última vez na tabela de status de processamento.
 
   **Exemplo de funções da janela de sessão**
 
@@ -355,7 +362,7 @@ Veja abaixo um exemplo de como aplicar corretamente a atribuição entre sessõe
 
 ### Agendar consulta
 
-Você programa a consulta para garantir que ela seja executada e que os resultados sejam gerados no intervalo de sua preferência.
+Para garantir que a consulta seja executada e que os resultados sejam gerados no intervalo de sua preferência, programe a consulta.
 
 #### Uso do Editor de consultas
 
@@ -365,13 +372,13 @@ Você pode agendar uma consulta usando o Editor de consultas. Ao agendar a query
 #### Uso da API do Serviço de consulta
 
 Como alternativa, você pode usar as APIs RESTful para definir uma consulta e um agendamento para a consulta. Consulte o [Guia da API do Serviço de Consulta](https://experienceleague.adobe.com/pt-br/docs/experience-platform/query/api/getting-started) para obter mais informações.
-Defina o conjunto de dados de saída como parte da propriedade `ctasParameters` opcional ao criar a consulta ([Criar uma consulta](https://developer.adobe.com/experience-platform-apis/references/query-service/#tag/Queries/operation/createQuery)) ou ao criar o agendamento para uma consulta ([Criar uma consulta agendada](https://developer.adobe.com/experience-platform-apis/references/query-service/#tag/Schedules/operation/createSchedule)).
+Defina o conjunto de dados de saída como parte da propriedade `ctasParameters` opcional ao criar a consulta ([Criar uma consulta](https://developer.adobe.com/experience-platform-apis/references/query-service#operation/createQuery)) ou ao criar o agendamento para uma consulta [Criar uma consulta agendada](https://developer.adobe.com/experience-platform-apis/references/query-service#operation/createSchedule).
 
 
 
 ## Exportar conjuntos de dados
 
-Depois de criar e agendar sua consulta e verificar os resultados, você pode exportar os conjuntos de dados brutos para destinos de armazenamento na nuvem. Essa exportação está na terminologia dos Destinos do Experience Platform, conhecida como Destinos de exportação do conjunto de dados. Consulte [Exportar conjuntos de dados para destinos de armazenamento na nuvem](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/ui/activate/export-datasets) para obter uma visão geral.
+Crie e programe sua consulta e verifique os resultados para exportar os conjuntos de dados brutos para destinos de armazenamento na nuvem. Essa exportação é, na terminologia do Experience Platform Destinations, chamada de Destinos de exportação do conjunto de dados. Para obter uma visão geral, consulte [Exportar conjuntos de dados para destinos de armazenamento na nuvem](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/ui/activate/export-datasets).
 
 Os seguintes destinos de armazenamento na nuvem são compatíveis:
 
@@ -389,7 +396,7 @@ Os seguintes destinos de armazenamento na nuvem são compatíveis:
 
 #### Selecionar destino
 
-Depois de determinar para qual destino de armazenamento na nuvem você deseja exportar o conjunto de dados de saída, [selecione o destino](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/ui/activate/export-datasets#select-destination). Quando ainda não tiver configurado um destino para o armazenamento na nuvem de sua preferência, você deve [criar uma nova conexão de destino](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/ui/connect-destination).
+Determine para qual destino de armazenamento na nuvem você deseja exportar o conjunto de dados de saída. Em seguida, [selecione o destino](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/ui/activate/export-datasets#select-destination). Quando ainda não tiver configurado um destino para o armazenamento na nuvem de sua preferência, você deve [criar uma nova conexão de destino](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/ui/connect-destination).
 
 Como parte da configuração de um destino, você pode
 
@@ -400,18 +407,18 @@ Como parte da configuração de um destino, você pode
 
 #### Selecionar conjunto de dados
 
-Ao selecionar o destino, na próxima etapa **[!UICONTROL Selecionar conjuntos de dados]**, é necessário selecionar o conjunto de dados de saída na lista de conjuntos de dados. Se você tiver criado várias consultas programadas e quiser que os conjuntos de dados de saída enviem para o mesmo destino de armazenamento na nuvem, poderá selecionar os conjuntos de dados de saída correspondentes. Consulte [Selecionar seus conjuntos de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/ui/activate/export-datasets#select-datasets) para obter mais informações.
+Ao selecionar o destino, na próxima etapa **[!UICONTROL Selecionar conjuntos de dados]**, é necessário selecionar o conjunto de dados de saída na lista de conjuntos de dados. Se você tiver criado várias consultas programadas e quiser que os conjuntos de dados de saída sejam enviados para o mesmo destino de armazenamento na nuvem, poderá selecionar os conjuntos de dados de saída correspondentes. Consulte [Selecionar seus conjuntos de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/ui/activate/export-datasets#select-datasets) para obter mais informações.
 
 #### Programar exportação do conjunto de dados
 
-Por fim, você deseja agendar a exportação do seu conjunto de dados como parte da etapa **[!UICONTROL Agendamento]**. Nessa etapa, é possível definir o agendamento e se a exportação do conjunto de dados de saída deve ser incremental ou não. Consulte [Agendar exportação do conjunto de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/ui/activate/export-datasets#scheduling) para obter mais informações.
+Por fim, você deseja agendar a exportação do seu conjunto de dados como parte da etapa **[!UICONTROL Agendamento]**. Nessa etapa, defina o agendamento e se a exportação do conjunto de dados de saída é incremental. Consulte [Agendar exportação do conjunto de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/ui/activate/export-datasets#scheduling) para obter mais informações.
 
 
 #### Etapas finais
 
 [Revise](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/ui/activate/export-datasets#review) sua seleção e, quando estiver correto, comece a exportar seu conjunto de dados de saída para o destino de armazenamento na nuvem.
 
-Você deve [verificar](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/ui/activate/export-datasets#verify) uma exportação de dados bem-sucedida. Ao exportar conjuntos de dados, o Experience Platform cria um ou vários arquivos do `.json` ou do `.parquet` no local de armazenamento definido no seu destino. Espere que os novos arquivos sejam depositados no local de armazenamento de acordo com o agendamento de exportação configurado. O Experience Platform cria uma estrutura de pastas no local de armazenamento especificado como parte do destino selecionado, onde deposita os arquivos exportados. Uma nova pasta é criada para cada exportação, seguindo o padrão: `folder-name-you-provided/datasetID/exportTime=YYYYMMDDHHMM`. O nome de arquivo padrão é gerado aleatoriamente e garante que os nomes de arquivo exportados sejam exclusivos.
+[Verificar](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/ui/activate/export-datasets#verify) uma exportação de dados bem-sucedida. Ao exportar conjuntos de dados, o Experience Platform cria um ou vários arquivos do `.json` ou do `.parquet` no local de armazenamento do destino. Espere que os novos arquivos sejam depositados no local de armazenamento de acordo com o agendamento de exportação configurado. O Experience Platform cria uma estrutura de pastas no local de armazenamento especificado como parte do destino selecionado, onde deposita os arquivos exportados. Uma nova pasta é criada para cada exportação, seguindo o padrão: `folder-name-you-provided/datasetID/exportTime=YYYYMMDDHHMM`. O nome de arquivo padrão é gerado aleatoriamente e garante que os nomes de arquivo exportados sejam exclusivos.
 
 ### API do serviço de fluxo
 
@@ -423,35 +430,35 @@ Para exportar conjuntos de dados, verifique se você tem as [permissões necess�
 
 #### Recuperar conjuntos de dados qualificados
 
-Você pode [recuperar uma lista de conjuntos de dados qualificados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/api/export-datasets#retrieve-list-of-available-datasets) para exportação e verificar se o conjunto de dados de saída faz parte dessa lista usando a API [`GET /connectionSpecs/{id}/configs`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Configurations/operation/getDatasets).
+Você pode [recuperar uma lista de conjuntos de dados qualificados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/api/export-datasets#retrieve-list-of-available-datasets) para exportação e verificar se o conjunto de dados de saída faz parte dessa lista usando a API [`GET /connectionSpecs/{id}/configs`](https://developer.adobe.com/experience-platform-apis/references/destinations#operation/getDatasets).
 
 
 #### Criar conexão de origem
 
-Em seguida, você deve [criar uma conexão de origem](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/api/export-datasets#create-source-connection) para o conjunto de dados de saída, usando sua ID exclusiva, que você deseja exportar para o destino de armazenamento na nuvem. Você usa a API [`POST /sourceConnections`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Source-connections/operation/postSourceConnection).
+Em seguida, você deve [criar uma conexão de origem](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/api/export-datasets#create-source-connection) para o conjunto de dados de saída, usando sua ID exclusiva, que você deseja exportar para o destino de armazenamento na nuvem. Você usa a API [`POST /sourceConnections`](https://developer.adobe.com/experience-platform-apis/references/destinations#operation/postSourceConnection).
 
 #### Autenticar para destino (criar conexão base)
 
-Agora você deve [criar uma conexão base](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/api/export-datasets#create-base-connection) para autenticar e armazenar com segurança as credenciais no destino de armazenamento na nuvem usando a API [`POST /targetConection`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Target-connections/operation/postTargetConnection).
+Para autenticar e armazenar com segurança as credenciais no destino de armazenamento na nuvem, [crie uma conexão básica](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/api/export-datasets#create-base-connection) usando a API [`POST /targetConnection`](https://developer.adobe.com/experience-platform-apis/references/destinations#operation/postTargetConnection).
 
 
 #### Fornecer parâmetros de exportação
 
-Em seguida, você deve [criar uma conexão de destino adicional que armazene os parâmetros de exportação](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/api/export-datasets#create-target-connection) para seu conjunto de dados de saída usando, mais uma vez, a API [`POST /targetConection`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Target-connections/operation/postTargetConnection). Esses parâmetros de exportação incluem local, formato de arquivo, compactação e muito mais.
+Em seguida, você deve [criar uma conexão de destino adicional que armazene os parâmetros de exportação](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/api/export-datasets#create-target-connection) para seu conjunto de dados de saída usando, mais uma vez, a API [`POST /targetConnection`](https://developer.adobe.com/experience-platform-apis/references/destinations#operation/postTargetConnection). Esses parâmetros de exportação incluem local, formato de arquivo, compactação e muito mais.
 
 #### Configurar fluxo de dados
 
-Por fim, você [configurou o fluxo de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/api/export-datasets#create-dataflow) para garantir que o conjunto de dados de saída seja exportado para o destino de armazenamento na nuvem usando a API [`POST /flows`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Dataflows/operation/postFlow). Nesta etapa, você pode definir o agendamento da exportação, usando o parâmetro `scheduleParams`.
+Para garantir que seu conjunto de dados de saída seja exportado para o destino do armazenamento na nuvem, [configure o fluxo de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/api/export-datasets#create-dataflow) usando a API [`POST /flows`](https://developer.adobe.com/experience-platform-apis/references/destinations#operation/postFlow). Nesta etapa, você pode definir o agendamento da exportação, usando o parâmetro `scheduleParams`.
 
 #### Validar fluxo de dados
 
-Para [verificar execuções bem-sucedidas do fluxo de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/api/export-datasets#get-dataflow-runs), use a API [`GET /runs`](https://developer.adobe.com/experience-platform-apis/references/destinations/#tag/Dataflow-runs/operation/getFlowRuns), especificando a ID do fluxo de dados como parâmetro de consulta. Essa ID de fluxo de dados é um identificador retornado ao configurar o fluxo de dados.
+Para [verificar execuções bem-sucedidas do fluxo de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/api/export-datasets#get-dataflow-runs), use a API [`GET /runs`](https://developer.adobe.com/experience-platform-apis/references/destinations#operation/getFlowRuns), especificando a ID do fluxo de dados como parâmetro de consulta. Essa ID de fluxo de dados é um identificador retornado ao configurar o fluxo de dados.
 
-[Verificar](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/ui/activate/export-datasets#verify) uma exportação de dados bem-sucedida. Ao exportar conjuntos de dados, o Experience Platform cria um ou vários arquivos do `.json` ou do `.parquet` no local de armazenamento definido no seu destino. Espere que os novos arquivos sejam depositados no local de armazenamento de acordo com o agendamento de exportação configurado. O Experience Platform cria uma estrutura de pastas no local de armazenamento especificado como parte do destino selecionado, onde deposita os arquivos exportados. Uma nova pasta é criada para cada exportação, seguindo o padrão: `folder-name-you-provided/datasetID/exportTime=YYYYMMDDHHMM`. O nome de arquivo padrão é gerado aleatoriamente e garante que os nomes de arquivo exportados sejam exclusivos.
+[Verificar](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/ui/activate/export-datasets#verify) uma exportação de dados bem-sucedida. Ao exportar conjuntos de dados, o Experience Platform cria um ou vários arquivos do `.json` ou do `.parquet` no local de armazenamento do destino. Espere que os novos arquivos sejam depositados no local de armazenamento de acordo com o agendamento de exportação configurado. O Experience Platform cria uma estrutura de pastas no local de armazenamento especificado como parte do destino selecionado, onde deposita os arquivos exportados. Uma nova pasta é criada para cada exportação, seguindo o padrão: `folder-name-you-provided/datasetID/exportTime=YYYYMMDDHHMM`. O nome de arquivo padrão é gerado aleatoriamente e garante que os nomes de arquivo exportados sejam exclusivos.
 
-## Conclusão
+## Resumo
 
-Resumindo, emular a funcionalidade do Feed de dados do Adobe Analytics implica configurar consultas agendadas usando o Serviço de consulta e usando os resultados dessas consultas em exportações de conjunto de dados agendadas.
+A emulação da funcionalidade do feed de dados do Adobe Analytics implica configurar consultas agendadas usando o Serviço de consulta e usando os resultados dessas consultas em exportações agendadas de conjunto de dados.
 
 >[!IMPORTANT]
 >

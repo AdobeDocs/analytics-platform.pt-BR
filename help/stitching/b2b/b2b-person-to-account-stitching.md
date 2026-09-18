@@ -30,7 +30,7 @@ topic_v2:
 source-git-commit: 76379e1cd9a42f2b2651a66768c195776eabecff
 workflow-type: tm+mt
 source-wordcount: '2292'
-ht-degree: 20%
+ht-degree: 25%
 ---
 # Compilação de pessoa B2B para conta
 
@@ -153,12 +153,12 @@ Antes de ativar a compilação de conta por uma pessoa B2B, prepare os seguintes
 
 Primeiro, você ativa e configura a compilação B2B no nível da conexão. Quando a compilação B2B é configurada para uma conexão, você pode ativar a pessoa para compilar a conta em conjuntos de dados de evento individuais nessa conexão.
 
-### Configurar pessoa B2B para configurações de compilação da conta {#configure-b2b-stitching-settings}
+### Configurar as definições de compilação de pessoas a contas no B2B {#configure-b2b-stitching-settings}
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_open_configuration"
 >title="Configurar a compilação B2B"
->abstract="Selecione **[!UICONTROL Abrir configuração de compilação B2B]** para configurar pessoa B2B para compilação de conta. Se a conexão ainda não tiver sido salva, a configuração será rotulada com **[!UICONTROL _Alterações não salvas_]**."
+>abstract="Selecione **[!UICONTROL Abrir configuração de compilação B2B]** para configurar a compilação de pessoa para conta B2B. Se a conexão ainda não tiver sido salva, a configuração será rotulada com **[!UICONTROL _Alterações não salvas_]**."
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_person_identifier_namespace"
@@ -183,7 +183,7 @@ Primeiro, você ativa e configura a compilação B2B no nível da conexão. Quan
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_start_time"
 >title="Hora de início"
->abstract="Selecione um campo de carimbo de data e hora que indique quando o relacionamento entre a pessoa e a conta se tornou ativo."
+>abstract="Selecione um campo de carimbo de data e hora que indique quando a relação de pessoa para conta se tornou ativa."
 
 
 >[!CONTEXTUALHELP]
@@ -231,14 +231,14 @@ Primeiro, você ativa e configura a compilação B2B no nível da conexão. Quan
 
    1. O indicador **[!UICONTROL _Alterações não salvas_]** é exibido ao lado do botão **Abrir configuração de compilação B2B** até que você [salve](#save) a conexão.
 
-### Permitir que a pessoa B2B contabilize a compilação em conjuntos de dados do evento
+### Habilitar a compilação de pessoa para conta B2B nos conjuntos de dados de eventos
 
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_enable_person_to_account"
 >title="Habilitar compilação entre pessoa e conta"
->abstract="Se habilitada, esse conjunto de dados usa a compilação de Pessoa para Conta B2B. Os valores de **[!UICONTROL ID de Pessoa Persistente]** serão elevados para os valores do **[!UICONTROL Namespace do identificador de pessoa]** configurado, em seguida, usados para pesquisar a ID da conta com base no conjunto de dados de pessoa para conta.<br/>Se desabilitado, esse conjunto de dados não usa a compilação de Pessoa para Conta B2B e você precisa selecionar uma **[!UICONTROL ID de conta]** obrigatória."
->additional-url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/stitching/b2b/b2b-person-to-account-stitching#configure-b2b-stitching-settings" text="Configurar pessoa B2B para configurações de compilação da conta"
+>abstract="Se habilitada, esse conjunto de dados usa a compilação de Pessoa para Conta B2B. Os valores **[!UICONTROL ID persistente da pessoa]** serão elevados aos valores do **[!UICONTROL namespace de identificador de pessoa]** configurado e, em seguida, usados para pesquisar a ID da conta com base no conjunto de dados de pessoa para conta.<br/>Se desabilitado, esse conjunto de dados não usa a compilação de Pessoa para Conta B2B e você precisa selecionar uma **[!UICONTROL ID de conta]** obrigatória."
+>additional-url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/stitching/b2b/b2b-person-to-account-stitching#configure-b2b-stitching-settings" text="Configurar as definições de compilação de pessoas a contas no B2B"
 
 Depois de configurar a compilação B2B no nível da conexão, você deve permitir que a pessoa B2B contabilize a compilação individualmente para cada conjunto de dados de evento que você deseja compilar.
 
