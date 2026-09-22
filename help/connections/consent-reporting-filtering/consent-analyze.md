@@ -23,14 +23,12 @@ topic_v2:
     internal-label: Reporting
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
     internal-label: Governance
-source-git-commit: ce6f9e474d274488e218e4dbd5f0666d41978681
+source-git-commit: 5e12b8f14210de969beeb664d64fadeaa0b8af2e
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 7%
 ---
 # Analisar dados de política de consentimento
-
-{{release-limited-testing}}
 
 Você pode assimilar dados de política de consentimento de conjuntos de dados de perfil da Experience Platform em uma conexão do Customer Journey Analytics.
 

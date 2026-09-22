@@ -25,7 +25,7 @@ topic_v2:
     internal-label: Governance
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ce6f9e474d274488e218e4dbd5f0666d41978681
+source-git-commit: 5e12b8f14210de969beeb664d64fadeaa0b8af2e
 workflow-type: tm+mt
 source-wordcount: '1325'
 ht-degree: 28%
@@ -63,7 +63,7 @@ ht-degree: 28%
 
 >[!CONTEXTUALHELP]
 >id="cja-consent-identity-namespace"
->title="Usar namespace de identidade primário"
+>title="Usar namespace de identidade principal"
 >abstract="Habilite essa opção se quiser que o Customer Journey Analytics encontre a identidade no Mapa de identidade que está marcada com um atributo primary=true e use essa identidade como a ID de pessoa nessa linha. Essa identidade é a chave primária usada na Experience Platform para particionamento. <br/>Se deixar essa opção desativada, selecione um namespace no campo Namespace de identidade abaixo. O Customer Journey Analytics pesquisará cada linha do mapa de identidade para encontrar a chave desse namespace e usará a identidade sob esse namespace como a ID de pessoa para essa linha."
 
 <!-- markdownlint-enable MD034 -->
@@ -85,8 +85,6 @@ ht-degree: 28%
 >abstract="Habilite essa opção para excluir a ingestão de dados de visitantes que não deram consentimento no Customer Journey Analytics. Quando habilitada, os dados de um visitante são ingeridos somente se o visitante corresponder a todas as políticas de consentimento habilitadas abaixo. <br>Essa opção destina-se a organizações com requisitos para excluir dados de visitantes que não deram consentimento no momento da ingestão."
 
 <!-- markdownlint-enable MD034 -->
-
-{{release-limited-testing}}
 
 Os administradores do sistema podem ativar o relatório de consentimento e, opcionalmente, a filtragem de consentimento para uma ou mais conexões. Para obter informações gerais, consulte [Visão geral do relatório e da filtragem de consentimento](/help/connections/consent-reporting-filtering/consent-overview.md).
 
