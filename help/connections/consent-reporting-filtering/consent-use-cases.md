@@ -23,14 +23,12 @@ topic_v2:
     internal-label: Governance
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ce6f9e474d274488e218e4dbd5f0666d41978681
+source-git-commit: 5e12b8f14210de969beeb664d64fadeaa0b8af2e
 workflow-type: tm+mt
 source-wordcount: '590'
 ht-degree: 0%
 ---
 # Casos de uso de relatórios e filtragem de consentimento
-
-{{release-limited-testing}}
 
 O relatório e a filtragem de consentimento ajudam a relatar sobre a associação à política de consentimento do visitante e, opcionalmente, excluem visitantes que não consentiram antes que seus dados entrem no Customer Journey Analytics. Para obter informações gerais, consulte [Visão geral do relatório e da filtragem de consentimento](/help/connections/consent-reporting-filtering/consent-overview.md).
 

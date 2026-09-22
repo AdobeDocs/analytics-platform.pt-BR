@@ -27,14 +27,12 @@ topic_v2:
     internal-label: Governance
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ce6f9e474d274488e218e4dbd5f0666d41978681
+source-git-commit: 5e12b8f14210de969beeb664d64fadeaa0b8af2e
 workflow-type: tm+mt
 source-wordcount: '1311'
 ht-degree: 2%
 ---
 # Visão geral do relatório e da filtragem de consentimento
-
-{{release-limited-testing}}
 
 O relatório e a filtragem de consentimento usam os dados de associação da política de consentimento armazenados nos conjuntos de dados do Perfil do Adobe Experience Platform para ajudar você a relatar o consentimento do visitante. Além disso, você pode optar por excluir visitantes que não consentiram antes que seus dados sejam assimilados na Customer Journey Analytics.
 
