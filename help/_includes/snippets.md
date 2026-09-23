@@ -1,9 +1,8 @@
 ---
-source-git-commit: b0be8b726c4fab1bf9bb5f9462be84f39bdf184a
+source-git-commit: 3121bb0b99eb5b176b9a208fa242d90f6578adbd
 workflow-type: tm+mt
-source-wordcount: '5455'
-ht-degree: 98%
-
+source-wordcount: '5542'
+ht-degree: 97%
 ---
 # Trechos
 
@@ -326,3 +325,11 @@ Essa coluna de feed de dados do Analytics contém dados que não podem ser tradu
 ## Agente do usuário de feed de dados do CJA {#cja-df-ua}
 
 Não é possível coletar as informações do agente do usuário e as informações de pesquisa do dispositivo simultaneamente. O preenchimento dessas dimensões é mutuamente exclusivo. É necessário escolher entre coletar diretamente as informações do agente do usuário ou as informações de pesquisa do dispositivo (com base no agente do usuário) ao [Configurar uma sequência de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/datastreams/configure#geolocation-device-lookup).
+
+
+## Mensagem importante do conjunto de dados relacional {#relational-dataset-important}
+
+>[!IMPORTANT]
+>
+>Um conjunto de dados relacional é baseado em um tipo de esquema relacional. Os descritores de relacionamento definidos nesse esquema relacional não são relevantes e não se aplicam à definição e à configuração de uma conexão do Customer Journey Analytics em geral ou às configurações do conjunto de dados de um conjunto de dados relacional especificamente. <br/><br>Para relatórios e análises do Customer Journey Analytics, é necessário definir explicitamente em [configurações do conjunto de dados](/help/connections/create-connection.md#relational-dataset) como os dados de um conjunto de dados relacional são unidos a outros conjuntos de dados com base em uma ID de pessoa ou ID de conta comum.
+>
