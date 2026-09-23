@@ -236,7 +236,7 @@ Primeiro, você ativa e configura a compilação B2B no nível da conexão. Quan
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_enable_person_to_account"
->title="Habilitar compilação entre pessoa e conta"
+>title="Habilitar compilação de pessoa para conta"
 >abstract="Se habilitada, esse conjunto de dados usa a compilação de Pessoa para Conta B2B. Os valores **[!UICONTROL ID persistente da pessoa]** serão elevados aos valores do **[!UICONTROL namespace de identificador de pessoa]** configurado e, em seguida, usados para pesquisar a ID da conta com base no conjunto de dados de pessoa para conta.<br/>Se desabilitado, esse conjunto de dados não usa a compilação de Pessoa para Conta B2B e você precisa selecionar uma **[!UICONTROL ID de conta]** obrigatória."
 >additional-url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/stitching/b2b/b2b-person-to-account-stitching#configure-b2b-stitching-settings" text="Configurar as definições de compilação de pessoas a contas no B2B"
 
