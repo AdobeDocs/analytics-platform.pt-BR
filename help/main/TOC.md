@@ -2,9 +2,9 @@
 user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Saiba mais sobre o Adobe Customer Journey Analytics e como usar o Analysis Workspace com dados da Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
-source-git-commit: ed1569087178fe1941d13f481914db6982ed18a1
+source-git-commit: 137eef954a6300405aa2c045ff29008e1daa72ce
 workflow-type: tm+mt
-source-wordcount: '1502'
+source-wordcount: '1496'
 ht-degree: 90%
 ---
 # Guia do Adobe Customer Journey Analytics {#using}
@@ -428,14 +428,14 @@ ht-degree: 90%
     + [Gerenciar logs de exportação](/help/components/exports/manage-export-logs.md)
     + [Solução de problemas de exportações](/help/components/exports/troubleshoot-exports.md)
     + Feeds de dados {#cja-data-feeds}
-      + {hide-from-toc}[Visão geral do feed de dados](/help/components/exports/cja-data-feeds/data-feed-overview.md)
+      + {hide-from-toc}[Visão geral](/help/components/exports/cja-data-feeds/data-feed-overview.md)
       + {hide-from-toc}[Comparar feeds de dados do Adobe Analytics](/help/components/exports/cja-data-feeds/df-comparison.md)
       + {hide-from-toc}[Comparar Workspace e feeds de dados](/help/components/exports/cja-data-feeds/df-comparison-workspace.md)
       + {hide-from-toc}[Preparar para mapear colunas](/help/components/exports/cja-data-feeds/df-column-mapping-prep.md)
       + {hide-from-toc}[Mapear colunas](/help/components/exports/cja-data-feeds/aa-cja-column-reference.md)
-      + {hide-from-toc}[Criar um feed de dados](/help/components/exports/cja-data-feeds/create-feed.md)
+      + {hide-from-toc}[Criar feeds de dados](/help/components/exports/cja-data-feeds/create-feed.md)
       + {hide-from-toc}[Segmentação em feeds de dados](/help/components/exports/cja-data-feeds/df-segmentation.md)
-      + {hide-from-toc}[Usar campos derivados em feeds de dados](/help/components/exports/cja-data-feeds/df-derived-fields.md)
+      + {hide-from-toc}[Aplicar transformações de dados](/help/components/exports/cja-data-feeds/df-data-transformations.md)
   + Dicionário de dados {#data-dictionary}
     + [Visão geral](../components/data-dictionary/data-dictionary-overview.md)
     + [Exibir informações de componente no dicionário de dados](../components/data-dictionary/view-data-dictionary.md)

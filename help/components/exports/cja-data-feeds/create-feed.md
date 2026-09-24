@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: f5a7272f80aaba167974f2218bc84408d47f62d4
+source-git-commit: 2391b13373992de30834f846da2fb7b71f5279ee
 workflow-type: tm+mt
-source-wordcount: '4217'
-ht-degree: 30%
+source-wordcount: '4250'
+ht-degree: 31%
 ---
 # Criar um feed de dados
 
@@ -299,6 +299,10 @@ Antes de criar um feed de dados, é importante ter uma compreensão básica dos 
    +++
 
 1. (Opcional) Reordene os componentes na tela arrastando-os. A ordem definida é preservada como a ordem das colunas no arquivo de feed de dados exportado.
+
+1. (Opcional) Redimensione as colunas na tela de desenho arrastando a borda da coluna.
+
+   As larguras de coluna são salvas em um cookie e persistem na próxima vez que você retornar a esse feed de dados no mesmo navegador.
 
 1. (Opcional) Altere a ID do componente exibida na saída do feed de dados.
 
