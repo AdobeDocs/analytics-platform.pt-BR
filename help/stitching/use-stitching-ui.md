@@ -8,19 +8,21 @@ exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
 TQID: https://experienceleague.adobe.com/Nj-IePDbHxBtgiSxEAobJ0DGlJSaiTwpTXIPtCxDTHw
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: caf1e4497d5dbe370ce23481ee1fbf1b6db59bf6
+    internal-label: Admin
+source-git-commit: 79f124f639c35a97991690e18f6451fc20b02da9
 workflow-type: tm+mt
-source-wordcount: 1788
+source-wordcount: '1788'
 ht-degree: 20%
-
 ---
-
 # Habilitar compilação
 
 Você pode ativar a compilação em um ou mais conjuntos de dados de evento configurados como parte da conexão. O pacote do Customer Journey Analytics que você licenciou determina o número de conjuntos de dados de evento que podem ser habilitados para compilação.
@@ -53,7 +55,7 @@ Se você atender aos pré-requisitos, talvez queira executar algumas verificaç�
       {DATASET_TABLE_NAME}
     WHERE
       TO_TIMESTAMP(timestamp, '{FORMAT_STRING}') >= TIMESTAMP '{START_DATE}'
-      AND TO_TIMESTAMP(timestamp, 'FORMAT_STRING') < TIMESTAMP '{END_DATE}';
+      AND TO_TIMESTAMP(timestamp, '{FORMAT_STRING}') < TIMESTAMP '{END_DATE}';
     ```
 
     Em que:
@@ -80,7 +82,7 @@ Se você atender aos pré-requisitos, talvez queira executar algumas verificaç�
         {DATASET_TABLE_NAME}
       WHERE
         TO_TIMESTAMP(timestamp, '{FORMAT_STRING}') >= TIMESTAMP '{START_DATE}'
-        AND TO_TIMESTAMP(timestamp, 'FORMAT_STRING') < TIMESTAMP '{END_DATE}';
+        AND TO_TIMESTAMP(timestamp, '{FORMAT_STRING}') < TIMESTAMP '{END_DATE}';
       ```
 
       Em que:
