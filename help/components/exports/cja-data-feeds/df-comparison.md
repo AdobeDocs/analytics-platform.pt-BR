@@ -24,9 +24,9 @@ topic_v2:
     internal-label: Reporting
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 555aef15933d87e5bbb3e3ec8b15d99a96ac25fe
+source-git-commit: ede5644096e8b1169819fb94399d5360066ca529
 workflow-type: tm+mt
-source-wordcount: '1699'
+source-wordcount: '1746'
 ht-degree: 0%
 ---
 # Comparar feeds de dados no Customer Journey Analytics e no Adobe Analytics
@@ -93,6 +93,7 @@ A tabela a seguir compara os principais conceitos e opções de configuração e
 | **Segmentação**<br/> A capacidade de filtrar a saída do feed de dados usando segmentos. | Os segmentos aplicados à visualização de dados são herdados automaticamente pelo feed de dados. Segmentos adicionais também podem ser aplicados diretamente a um feed de dados individual. Para obter mais informações, consulte [Segmentação em feeds de dados](/help/components/exports/cja-data-feeds/df-segmentation.md). | Não suportado. Os feeds de dados exportam todos os dados coletados sem filtragem de segmento. |
 | **Métricas calculadas**<br/> As métricas personalizadas que você pode criar a partir das métricas existentes. | Não suportado | Não suportado |
 | **Modelo de persistência**<br/> Como ou se os valores de dimensão persistem de um evento para o próximo. | Flexível. As configurações de persistência da visualização de dados (alocação e expiração) são aplicadas no momento do relatório em que o feed é gerado. Dá suporte a todas as configurações de alocação disponíveis em uma visualização de dados: **Original**, **Mais Recente**, **Todos**, **Primeiro Conhecido** e **Último Conhecido**. | Somente **os modelos de atribuição mais recentes (último contato)** e **valores originais (primeiro contato)** são representados. A alocação linear é tratada da mesma forma que o último contato. |
+| **Manuseio de subeventos**<br/> Como os subeventos são representados na saída do feed de dados. | Representado em uma única linha, mas a hierarquia relacional é preservada. Para obter mais informações, consulte [Subeventos em feeds de dados](/help/components/exports/cja-data-feeds/df-sub-event.md). | Representado em uma única linha como uma string plana e delimitada. A análise da cadeia de caracteres requer lógica personalizada. |
 | **Formato de arquivo de saída**<br/> O formato usado para arquivos de saída de feed de dados entregues ao seu destino de nuvem. | Parquet<p>Suporta nativamente dados complexos aninhados e estruturados. Campos como `post_product_list` são representados como matrizes estruturadas/objetos aninhados. </p><p>Requer uma ferramenta sensível ao Parquet para leitura, como BigQuery, Snowflake ou Apache Spark.</p><p>A estrutura do schema é incorporada no arquivo de saída.</p> | TSV<p>Linhas planas legíveis por humanos. Não é compatível nativamente com dados estruturados; campos complexos, como listas de produtos, devem ser codificados como strings delimitadas proprietárias que exigem lógica de análise personalizada.</p> |
 | **Caminhos do arquivo de saída**<br/> A estrutura de diretório usada para os arquivos de saída entregues. | Usa **caminhos de partição no estilo Hive** (por exemplo, `year=2024/month=01/day=15/`), permitindo a remoção eficiente de partições ao consultar dados em ambientes de data lake, como Databricks ou Apache Spark. | Usa uma estrutura de diretório simples. Os caminhos de estilo Hive não são compatíveis. |
 | **Destinos de entrega**<br/> Os locais de armazenamento na nuvem para os quais os arquivos de saída do feed de dados podem ser enviados. | Amazon S3, Azure RBAC, Azure SAS, Google Cloud Platform. | Amazon S3, Azure RBAC, Azure SAS, Google Cloud Platform. <p>Também suporta **SFTP**.</p> |
