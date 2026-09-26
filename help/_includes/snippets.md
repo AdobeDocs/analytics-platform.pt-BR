@@ -1,8 +1,8 @@
 ---
-source-git-commit: 3121bb0b99eb5b176b9a208fa242d90f6578adbd
+source-git-commit: 2caa69c9a58df756d0991dac84ba8900b2a7bc5a
 workflow-type: tm+mt
-source-wordcount: '5542'
-ht-degree: 97%
+source-wordcount: '5602'
+ht-degree: 96%
 ---
 # Trechos
 
@@ -329,7 +329,10 @@ Não é possível coletar as informações do agente do usuário e as informaç�
 
 ## Mensagem importante do conjunto de dados relacional {#relational-dataset-important}
 
+Um conjunto de dados relacional é baseado em um tipo de esquema relacional. Os descritores de relacionamento definidos nesse esquema relacional **não se aplicam** à definição e configuração de uma conexão Customer Journey Analytics em geral ou às configurações de conjunto de dados para um conjunto de dados relacional especificamente.
+
+Além disso, no Customer Journey Analytics, os campos de esquemas XDM padrão **não se mesclam automaticamente** com campos nomeados semelhantes de esquemas relacionais.
 >[!IMPORTANT]
 >
->Um conjunto de dados relacional é baseado em um tipo de esquema relacional. Os descritores de relacionamento definidos nesse esquema relacional não são relevantes e não se aplicam à definição e à configuração de uma conexão do Customer Journey Analytics em geral ou às configurações do conjunto de dados de um conjunto de dados relacional especificamente. <br/><br>Para relatórios e análises do Customer Journey Analytics, é necessário definir explicitamente em [configurações do conjunto de dados](/help/connections/create-connection.md#relational-dataset) como os dados de um conjunto de dados relacional são unidos a outros conjuntos de dados com base em uma ID de pessoa ou ID de conta comum.
+>Para relatórios e análises do Customer Journey Analytics, você precisa definir explicitamente em [configurações do conjunto de dados](/help/connections/create-connection.md#relational-dataset) como os dados de um conjunto de dados relacional são unidos a outros conjuntos de dados com base em uma ID de pessoa ou ID de conta comum. <br/><br/>Considere usar a função [Mesclar Campos](/help/data-views/derived-fields/derived-fields.md#merge-fields) dos campos derivados para mesclar campos nomeados semelhantes (não parte de uma matriz de objetos) em esquemas XDM e esquemas relacionais. No momento, não existe nenhuma solução para mesclar campos entre XDM e esquemas relacionais em uma matriz de objetos.
 >

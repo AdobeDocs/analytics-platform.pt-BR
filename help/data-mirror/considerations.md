@@ -4,7 +4,6 @@ description: Entenda as considerações adicionais a serem consideradas quando q
 solution: Customer Journey Analytics
 feature: Basics
 role: Admin
-hold: true
 autotag-review: '2026-05-19T06:55:09.938Z'
 TQID: 'https://experienceleague.adobe.com/uZjXZUKUMeXLxxpTRrkCZrPsGhxseSxOtJ9X0ZjG5wU'
 product_v2:
@@ -28,14 +27,18 @@ topic_v2:
     internal-label: Customer journeys
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 3121bb0b99eb5b176b9a208fa242d90f6578adbd
+source-git-commit: 2caa69c9a58df756d0991dac84ba8900b2a7bc5a
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '889'
 ht-degree: 1%
 ---
 # Considerações sobre o Experience Platform Data Mirror
 
 Este artigo descreve fatores que você deve considerar ao configurar conjuntos de dados do Data Mirror.
+
+## Limitações
+
+{{relational-dataset-important}}
 
 ## Nova coluna para tabela de origem
 
@@ -103,10 +106,6 @@ A diferença de governança tem o seguinte impacto:
 
 * Mais controle manual e trabalho de configuração para você como cliente.
 * Você pode precisar de orientação explícita, de modo que não presuma que a rotulagem única por meio de grupos de campos é suficiente para a governança adequada.
-
-## Configurações do conjunto de dados
-
-{{relational-dataset-important}}
 
 ## Compilação
 
