@@ -31,10 +31,10 @@ topic_v2:
     internal-label: Troubleshooting
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 2caa69c9a58df756d0991dac84ba8900b2a7bc5a
+source-git-commit: 84ab190e018bc6beb9183aba038516b21289e49f
 workflow-type: tm+mt
-source-wordcount: '10488'
-ht-degree: 91%
+source-wordcount: '10597'
+ht-degree: 90%
 ---
 # Criar ou editar uma conexão {#create-or-edit-a-connection}
 
@@ -844,13 +844,13 @@ As configurações específicas de um conjunto de dados de resumo são:
 
 >[!NOTE]
 >
->Embora seja possível configurar e selecionar, por motivos de desempenho, é melhor evitar o uso de um conjunto de dados ad hoc para dados de série temporal (evento, resumo). Conjuntos de dados relacionais ou genéricos baseados em XDM são muito mais adequados para dados de séries temporal que conjuntos de dados ad hoc.
+>Embora seja possível configurar e selecionar, por motivos de desempenho você deve evitar usar um conjunto de dados ad hoc para dados de séries temporais (evento, resumo). Conjuntos de dados relacionais ou genéricos baseados em XDM são muito mais adequados para dados de séries temporal que conjuntos de dados ad hoc.
 
 As configurações específicas de um conjunto de dados ad hoc são:
 
 | Configuração | Tipo de conjunto de dados selecionado | Descrição |
 |---|---|---|
-| **[!UICONTROL Tipo de conjunto de dados]** | N/A | O tipo de dados no conjunto de dados ad hoc. Os valores possíveis são: **[!UICONTROL Evento]**, **[!UICONTROL Perfil]**, **[!UICONTROL Pesquisa]** e **[!UICONTROL Resumo]**. |
+| **[!UICONTROL Tipo de conjunto de dados]** | N/A | O tipo de dados no conjunto de dados ad hoc. Os valores possíveis são: **[!UICONTROL Evento]**, **[!UICONTROL Perfil]** (não disponível para [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}), **[!UICONTROL Pesquisa]** e **[!UICONTROL Resumo]**. Se você quiser usar dados de perfil ad hoc para uma conexão baseada em conta, selecione **[!UICONTROL Pesquisa]** como o **[!UICONTROL Tipo de conjunto de dados]** e use a **[!UICONTROL Chave]** e a **[!UICONTROL Chave de Correspondência]** para trazer os dados da conta. |
 | **[!UICONTROL ID de pessoa]** | Evento, perfil | Selecione um campo do esquema ad hoc ou relacional que representa a ID de pessoa. Esse campo pode ser qualquer campo do conjunto de dados. Selecione entre **[!UICONTROL Campos de namespace de identidade]** ou **[!UICONTROL Campos que não são de identidade]**. <br/>Você só pode selecionar um identificador de **[!UICONTROL Namespace de identidade]** se um ou mais campos do esquema ad hoc estiverem rotulados como uma identidade e tiverem um namespace de identidade. |
 | **[!UICONTROL Namespace de identidade]** | Evento | Selecione um namespace de identidade caso tenha selecionado uma ID de pessoa de **[!UICONTROL campos que não são de identidade]**. |
 | **[!UICONTROL Carimbo de data e hora]** | Evento, resumo | Selecione um campo do esquema ad hoc que representa o campo de carimbo de data e hora. Esse campo pode ser qualquer um dos campos disponíveis do tipo `DateTime`. |
@@ -871,7 +871,7 @@ As configurações específicas de um conjunto de dados relacional são:
 
 | Configuração | Tipo de conjunto de dados selecionado | Descrição |
 |---|---|---|
-| **[!UICONTROL Tipo de conjunto de dados]** | N/A | O tipo de dados no conjunto de dados relacional.<br/>Se o conjunto de dados contiver dados de série temporal, os valores possíveis são: **[!UICONTROL Evento]** e **[!UICONTROL Resumo]**. <br/>Se o conjunto de dados contiver dados de registro, os valores possíveis são: **[!UICONTROL Perfil]** e **[!UICONTROL Pesquisa]**. |
+| **[!UICONTROL Tipo de conjunto de dados]** | N/A | O tipo de dados no conjunto de dados relacional.<br/>Se o conjunto de dados contiver dados de série temporal, os valores possíveis são: **[!UICONTROL Evento]** e **[!UICONTROL Resumo]**. <br/>Se o conjunto de dados contiver dados de registro, os valores possíveis serão: **[!UICONTROL Perfil]** (não disponível para [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}) e **[!UICONTROL Pesquisa]**. Se você quiser usar dados de perfil relacional para uma conexão baseada em conta, selecione **[!UICONTROL Pesquisa]** como o **[!UICONTROL Tipo de conjunto de dados]** e use a **[!UICONTROL Chave]** e a **[!UICONTROL Chave correspondente]** para trazer os dados da conta. |
 | **[!UICONTROL ID de pessoa]** | Evento, perfil | Selecione um campo do esquema relacional que representa a ID de pessoa. A seleção limita-se à lista de campos do esquema relacional que estão marcados como “Identidade” e têm um namespace de identidade. |
 | **[!UICONTROL Carimbo de data e hora]** | Evento, resumo | O campo definido como descritor do carimbo de data e hora no esquema. Esse campo é preenchido automaticamente. |
 | **[!UICONTROL Chave]** | Pesquisa | A chave a ser usada para um conjunto de dados de pesquisa.<br/>Se um registro não contiver um valor da chave selecionada do conjunto de dados de pesquisa, o registro será ignorado. |
