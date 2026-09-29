@@ -7,25 +7,33 @@ exl-id: cc3d3ac9-c31f-4a8d-999c-78590512b57c
 TQID: https://experienceleague.adobe.com/DWTWJ2Bd9iEPO2awiiOLcUzUGPc-clZul3dNFcyWvxk
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: a8b1c240-f315-46e3-b813-f545c4279dd1
+    internal-label: Workspace basics
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments, Segments (CJA)
   - id: d3c978ee-1ff0-4475-968a-721e2dd99ef1
+    internal-label: Freeform tables
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
   - id: fa6ac035-8403-478b-9ce1-3fe29d211fca
+    internal-label: Annotations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: User
+source-git-commit: 6bcbf10e6bff660f57f598f6cf75b43eb75c7db3
 workflow-type: tm+mt
-source-wordcount: 459
+source-wordcount: '459'
 ht-degree: 88%
-
 ---
-
 # Criar projetos {#create-projects}
 
 
@@ -49,15 +57,15 @@ Agora que você criou um projeto do espaço de trabalho em branco, certifique-se
 * Adicionar [painéis](/help/analysis-workspace/c-panels/panels.md) ao seu projeto. Por exemplo, o **[!DNL Example Panel]** ➊.
 
 * Adicione [visualizações](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md) aos seus painéis. Por exemplo:
-   * Visualização de **[!DNL Line Graph]** [linha](/help/analysis-workspace/visualizations/line.md) ➋
-   * Visualização de **[!DNL Countries]** [tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) ➌
+  * Visualização de **[!DNL Line Graph]** [linha](/help/analysis-workspace/visualizations/line.md) ➋
+  * Visualização de **[!DNL Countries]** [tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) ➌
 * Adicionar [componentes](/help/components/overview.md) às suas visualizações. Por exemplo:
-   * [Dimensão](/help/components/dimensions/overview.md) de **[!DNL Store Country]** ➍
-   * [Métrica](/help/components/apply-create-metrics.md) **[!DNL People]** ➎
-   * [Métrica calculada](/help/components/calc-metrics/calc-metr-overview.md) **[!DNL Avg Order Value]** ➏
-   * [Segmento](/help/components/segments/seg-overview.md) **[!DNL Mobile App Sessions]** ➐
-   * [Intervalo de datas](/help/components/date-ranges/overview.md) **[!DNL Last Month]** ➑
-   * [Anotação](/help/components/annotations/overview.md) de **[!DNL Example]** ➒
+  * [Dimensão](/help/components/dimensions/overview.md) de **[!DNL Store Country]** ➍
+  * [Métrica](/help/components/apply-create-metrics.md) **[!DNL People]** ➎
+  * [Métrica calculada](/help/components/calc-metrics/calc-metr-overview.md) **[!DNL Avg Order Value]** ➏
+  * [Segmento](/help/components/segments/seg-overview.md) **[!DNL Mobile App Sessions]** ➐
+  * [Intervalo de datas](/help/components/date-ranges/overview.md) **[!DNL Last Month]** ➑
+  * [Anotação](/help/components/annotations/overview.md) de **[!DNL Example]** ➒
 
 
 ## Informações e configurações do projeto {#project-info-settings}
@@ -98,5 +106,11 @@ As configurações incluem:
 | [Exibir densidade](/help/analysis-workspace/build-workspace-project/view-density.md) | Permite ver mais dados na tela ao reduzir o preenchimento vertical do painel esquerdo, das tabelas de forma livre e das tabelas de coorte. |
 | Permitir comentários | Quando essa opção for habilitada, uma área de comentários ficará disponível no painel direito do projeto no Analysis Workspace. Para obter mais informações, consulte [Adicionar e gerenciar comentários em projetos](/help/analysis-workspace/build-workspace-project/comment-projects.md). |
 
+<!--
 
+Add this to the table above (second-to-last-row) when cached results releases: 
+
+- [Use cached results for faster loading](/help/analysis-workspace/build-workspace-project/cached-results.md) - When enabled, results load faster for 12 hours after someone first opens the project. Data continues to flow in the background. To load the latest results, refresh individual panels or the entire project. -
+
+-->
 
