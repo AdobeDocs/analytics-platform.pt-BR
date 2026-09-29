@@ -2,18 +2,31 @@
 title: Criar Ou Editar Uma Configuração De Insights De Conversa
 description: Saiba como definir as configurações de Insights de conversa.
 solution: Customer Journey Analytics
-feature: Content Analytics
+feature: AI Tools
 role: Admin, User
 hold: true
-source-git-commit: b29ee2f04a1775dca6a8fd93c3ac3050b67f0ceb
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: ae3aff40-b2f6-4df1-8c01-0b0720d1510f
+    internal-label: AI Tools
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 4eaf8820fd847426ba6a471e1bfbc7b397283905
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 8%
+source-wordcount: '654'
+ht-degree: 7%
 ---
 # Criar ou editar configurações
 
-
-Os Insights de conversa permitem analisar conversas (de modelos de idioma grandes (LLM) ou humanos) em escala e contextualizar essas conversas na jornada completa do cliente. Por meio dos Insights de conversa, é possível entender o impacto dos representantes nos resultados reais do usuário.
+O Conversation Insights permite analisar conversas a partir das experiências de agente que você oferece aos seus clientes. Essas experiências de agente podem ser baseadas em grandes modelos de linguagem (LLM) ou baseadas em conversas humanas. Por exemplo, um chatbot interagindo com um cliente ou transcrições da central de atendimento.
+Por meio dos Insights de conversa, é possível entender o impacto dos representantes nos resultados reais do usuário.
 
 Por meio da interface de configuração do Conversation Insights, é possível criar ou editar rapidamente uma configuração e os artefatos associados (conexão, visualizações de dados e muito mais).
 
@@ -88,7 +101,7 @@ Para cada configuração:
 
    * Selecione **[!UICONTROL Descartar]** para uma nova configuração que não foi criada.
 
-   * Selecione **[!UICONTROL Salvar para mais tarde]** para obter uma nova configuração que você deseja salvar, mas que não deseja criar o artefato para (atualizações em visualizações de dados, por exemplo). Portanto, é possível revisitar a configuração posteriormente e concluir a criação real da configuração.
+   * Selecione **[!UICONTROL Salvar para mais tarde]** para obter uma nova configuração que você deseja salvar, mas que não deseja criar o artefato para (atualizações em visualizações de dados, por exemplo). Você pode revisitar a configuração posteriormente e concluir a criação real da configuração.
 
    * Selecione **[!UICONTROL Criar]** para criar a nova configuração.
 
