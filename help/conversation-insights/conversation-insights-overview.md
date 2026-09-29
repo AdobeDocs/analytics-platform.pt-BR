@@ -2,17 +2,32 @@
 title: Visão geral dos insights da conversa
 description: Saiba mais sobre o valor e a terminologia dos Insights de conversa e saiba como os Insights de conversa funcionam.
 solution: Customer Journey Analytics
-feature: Content Analytics
+feature: AI Tools
 role: Admin, User
 hold: true
-source-git-commit: 39d6847296cc385d501defda292b5b3cae98b46a
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: ae3aff40-b2f6-4df1-8c01-0b0720d1510f
+    internal-label: AI Tools
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 4eaf8820fd847426ba6a471e1bfbc7b397283905
 workflow-type: tm+mt
-source-wordcount: '1104'
+source-wordcount: '1114'
 ht-degree: 1%
 ---
 # Insights de conversa
 
-O Conversation Insights permite analisar conversas a partir das experiências de agente que você oferece aos seus clientes. Essas experiências de agente podem ser baseadas em grandes modelos de linguagem (LLM) ou baseadas em conversas humanas. O Conversation Insights analisa as conversas em escala e fornece o contexto para essas conversas na jornada completa do cliente. Por meio dos Insights de conversa, é possível entender o impacto dos agentes nos resultados reais do usuário.
+O Conversation Insights permite analisar conversas a partir das experiências de agente que você oferece aos seus clientes. Essas experiências de agente podem ser baseadas em grandes modelos de linguagem (LLM) ou baseadas em conversas humanas. Por exemplo, um chatbot interagindo com um cliente ou transcrições da central de atendimento.
+
+O Conversation Insights analisa as conversas em escala e fornece o contexto para essas conversas na jornada completa do cliente. Por meio dos Insights de conversa, é possível entender o impacto dos agentes nos resultados reais do usuário.
 
 Os Insights de conversa abordam problemas que você possa ter. Como:
 
@@ -29,7 +44,7 @@ Com os Insights de conversa, você pode entender:
 * O que os usuários estão solicitando dos agentes.
 * Como as conversas afetam seus KPIs.
 
-Você pode determinar o desempenho de seus agentes em relação às diretivas, o grau de adesão dos agentes às diretrizes da marca e se o custo de execução dos agentes é justificado pelos resultados.
+Você pode determinar o desempenho de seus agentes em relação às diretivas, o grau de adesão dos agentes às diretrizes da marca e se os resultados justificam o custo de execução dos agentes.
 
 
 ## Conceitos
@@ -146,7 +161,7 @@ Os Insights de conversa são criados com base em três funcionalidades principai
 * **Extração de sinal e combinação de conversa**: transforma as solicitações e respostas não estruturadas (também conhecidas como transformações) em pontos de dados relatáveis, como intenção e sentimento. Assim, os usuários podem relatar esses pontos de dados em escala.
 * **Relatórios**: para determinar a eficácia e o ROI de um agente, analise as conversas em escala no contexto da jornada do cliente.
 
-O processo geral de coleta de dados, extração de sinais e combinação de conversas é mostrado abaixo.
+O processo geral de coleta de dados, extração de sinais e combinação de conversas é descrito abaixo.
 
 ![Ilustração de como funciona do Conversation Insights](assets/conversation-insights.png){zoomable="yes"}
 

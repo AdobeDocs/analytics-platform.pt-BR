@@ -2,10 +2,23 @@
 title: Gerenciar Configuração de Insights de Conversa
 description: Saiba como gerenciar configurações de Insights de conversa.
 solution: Customer Journey Analytics
-feature: Content Analytics
+feature: AI Tools
 role: Admin, User
 hold: true
-source-git-commit: b29ee2f04a1775dca6a8fd93c3ac3050b67f0ceb
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: ae3aff40-b2f6-4df1-8c01-0b0720d1510f
+    internal-label: AI Tools
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 4eaf8820fd847426ba6a471e1bfbc7b397283905
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 6%
@@ -71,7 +84,7 @@ Para editar uma configuração existente de Insights de conversa:
    * Marque a caixa de seleção ao lado da configuração que você deseja editar e selecione ![Editar](/help/assets/icons/Edit.svg) **[!UICONTROL Editar]** na barra de ações azul.
    * Selecione ![Mais](/help/assets/icons/More.svg) para a configuração que você deseja editar. No menu de contexto, selecione ![Editar](/help/assets/icons/Edit.svg) **[!UICONTROL Editar]**.
 
-1. Use a caixa de diálogo [**[!UICONTROL Configuração / _nome da configuração_]**](./conversation-insights-configure.md) para configurar os insights da conversa.
+1. Use a caixa de diálogo [**[!UICONTROL Configuração / _nome da configuração_]**](./conversation-insights-configure.md) para gerenciar os insights da conversa.
 
 ## Excluir uma configuração
 

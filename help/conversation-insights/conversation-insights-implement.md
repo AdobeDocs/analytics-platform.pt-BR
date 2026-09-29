@@ -2,12 +2,25 @@
 title: Implementar Insights de conversa
 description: Saiba como instrumentar seu aplicativo ou serviço de agente para Insights de conversa.
 solution: Customer Journey Analytics
-feature: Content Analytics
+feature: AI Tools
 role: Admin, User
 hold: true
-source-git-commit: b29ee2f04a1775dca6a8fd93c3ac3050b67f0ceb
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: ae3aff40-b2f6-4df1-8c01-0b0720d1510f
+    internal-label: AI Tools
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 4eaf8820fd847426ba6a471e1bfbc7b397283905
 workflow-type: tm+mt
-source-wordcount: '2257'
+source-wordcount: '2322'
 ht-degree: 6%
 ---
 # Implementar Insights de conversa
@@ -19,19 +32,19 @@ Este artigo documenta as etapas de implementação necessárias.
 >[!PREREQUISITES]
 >
 >* Você deve ter um ambiente do Experience Platform (organização e sandbox) disponível para coletar os dados.
->* Sua organização do Adobe deve estar habilitada para os grupos de campo de conversação e agente experimental.
+>* Sua organização da Adobe deve estar habilitada para os grupos de campo de agente e conversa.
 >
 
 ## Esquema e conjuntos de dados
 
-Configurar conjuntos de dados para os eventos principais de conversa: prompt, resposta, feedback. Esses conjuntos de dados podem ser baseados no mesmo esquema (por exemplo, um esquema genérico de Insights de conversa) ou em esquemas individuais.
-Você pode definir conjuntos de dados separados para prompts, respostas e feedback ou combinar dados em conjuntos de dados. Por exemplo, use um conjunto de dados para prompts e respostas e outro conjunto de dados para feedback. Ou use um único conjunto de dados para todos os eventos de conversa.
+Configurar conjuntos de dados para os eventos principais de conversa: prompt, resposta, feedback. Os conjuntos de dados de prompt, resposta e feedback devem estender o esquema base do Evento de Experiência XDM com o [grupo de campos Evento de Conversa](#conversation-event-field-group) e podem incluir, opcionalmente, o [grupo de campos Informações de Agente](#agentic-information-field-group) e outros [grupos de campos adicionais](#additional-field-groups).
 
-O esquema usado para os conjuntos de dados de prompt, resposta e feedback deve estender o esquema de base do Evento de experiência XDM com grupos de campos obrigatórios. E pode estender o esquema base do Evento de experiência XDM com grupos de campos adicionais.
+Você pode definir conjuntos de dados separados para prompts, respostas e feedback ou combinar dados em conjuntos de dados. Por exemplo, use um conjunto de dados para prompts e respostas e outro conjunto de dados para feedback. Ou use um único conjunto de dados para todos os eventos de conversa.
+Use o mesmo esquema subjacente para os conjuntos de dados.
 
 ### Grupo de campos Informações do Agente
 
-O grupo de campos **[!UICONTROL Informações da Agência]** é um grupo de campos obrigatório e usa o objeto `agenticExperience`.
+O grupo de campos **[!UICONTROL Informações da Agência]** é um grupo de campos opcional e usa o objeto `agenticExperience`. Considere usar esse grupo de campos se desejar rastrear informações de agente.
 
 +++ Detalhes
 
@@ -203,7 +216,7 @@ O objeto de conversa captura dados para:
 
 #### Conversa
 
-Um `conversationID` exclusivo identifica uma conversa. Por exemplo: `conversationID = "conv-001"`. O esquema também oferece suporte a `conversationName`. Um nome legível que descreve o contexto geral da conversa, como: `France Geography Q&A`.
+Um `conversationID` exclusivo identifica uma conversa. Por exemplo: `conversationID = "conv-001"`. O esquema também oferece suporte a `conversationName`. Um nome legível que descreve o contexto geral da conversa, como: `France Geography Q&A`. O nome da conversa é gerado automaticamente, mas você pode atualizar o nome gerado. O nome da conversa também é preenchido para `signals[].name`.
 
 O `conversationID` permite que todos os eventos de turnos relacionados sejam agrupados na mesma experiência de conversação.
 
@@ -216,7 +229,7 @@ Um turno é um ciclo de interação dentro de uma conversa.
 `conversationID = "conv-001"`
 `turnID = "turn-001"`
 
-Os mesmos `conversationID` e `turnID` são usados para correlacionar o prompt, a resposta e o feedback associados a esse turno. Essa correlação funciona em registros fornecidos separadamente ou que acabam em conjuntos de dados diferentes.
+Os mesmos `conversationID` e `turnID` são usados para correlacionar o prompt, a resposta e o feedback associados a esse turno. Essa correlação funciona em registros fornecidos separadamente ou que acabam em conjuntos de dados diferentes. Um `turnId` só precisa ser exclusivo na mesma conversa, mas pode ser reutilizado em conversas. Por exemplo, você pode ter `turn-001` como `turnID` em conversas com `conversationID` `conv-001` e `conv-002`.
 
 
 #### Aviso
@@ -231,7 +244,7 @@ Os campos de prompt importantes incluem:
 |---|---|
 | `prompt.source` | Quem ou o que produziu o prompt, geralmente o usuário final. |
 | `prompt.raw[]` | Um ou mais segmentos de conteúdo bruto. |
-| `prompt.raw[].text` | O texto ou conteúdo real do prompt. |
+| `prompt.raw[].text` | O texto do prompt real ou o link para o conteúdo (por exemplo, uma captura de tela). |
 | `prompt.raw[].purpose` | A finalidade do conteúdo, como entrada do usuário ou link. |
 
 Um prompt pode conter vários segmentos brutos. Por exemplo, um usuário insere texto e inclui um URL.
@@ -257,6 +270,8 @@ Os campos de resposta importantes incluem:
 | `response.raw[].purpose` | A finalidade do segmento de conteúdo. |
 
 Os tipos de origem documentados incluem:
+
+<!-- randy buck to provide additional details -->
 
 | Origem | Significado |
 |---|----|
@@ -287,7 +302,9 @@ Quando o feedback se aplicar a um turno específico, preserve os `conversationID
 
 #### Sinal
 
-Um sinal é uma observação analítica estruturada sobre o conteúdo da conversa. O serviço de extração de sinais extrai sinais.
+Um sinal é uma observação analítica estruturada sobre o conteúdo da conversa. O serviço de Sinal fornece sinais prontos para uso. Nenhuma ação é necessária para fornecer sinais, mas você pode adicionar sinais como parte da integração do.
+
+<!-- randy buck to provide additional details -->
 
 Um sinal tem os seguintes campos.
 
@@ -360,9 +377,6 @@ Consulte abaixo para obter os detalhes completos de um objeto de conversa.
 
 +++
 
-
-
-
 ### Grupos de campos adicionais
 
 Você pode adicionar grupos de campos opcionais ao esquema usado para conjuntos de dados de prompt, resposta e feedback. Por exemplo:
@@ -382,9 +396,9 @@ Você precisa definir um dos seguintes valores para `eventType` (String) para ca
 
 | Valor | Explicação |
 |---|---|
-| `conversation turn` | Concluir a ativação da conversa com prompt e resposta |
-| `conversation recommendation` | Recomendação baseada em conversa |
-| `conversation feedback` | Evento somente de feedback |
+| `conversation.turn` | Concluir a ativação da conversa com prompt e resposta |
+| `conversation.recommendation` | Recomendação baseada em conversa |
+| `conversation.feedback` | Evento somente de feedback |
 
 
 ### Tipo de Source
@@ -401,6 +415,8 @@ Você precisa definir um dos seguintes valores para `source` para cada objeto `p
 ### Tipo de finalidade (texto bruto)
 
 Você precisa definir um dos seguintes valores para o atributo `purpose` em qualquer elemento do objeto `raw` em um objeto `prompt`, `response` ou `feedback`.
+
+<!-- randy buck to provide details -->
 
 | Valor | Descrição |
 |---|---|

@@ -5,7 +5,7 @@ exl-id: b4ac37ca-213b-4118-85e1-8e8f98553c6c
 solution: Customer Journey Analytics
 feature: Connections
 role: Admin
-TQID: https://experienceleague.adobe.com/90JULA8fFxPQSbVLHr3hJ8o5algJAfNz9SjjLFecyJc
+TQID: 'https://experienceleague.adobe.com/90JULA8fFxPQSbVLHr3hJ8o5algJAfNz9SjjLFecyJc'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -21,6 +21,8 @@ subfeature_v2:
     internal-label: Calendar
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
     internal-label: Dimensions
+  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+    internal-label: Connections
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
@@ -31,10 +33,10 @@ topic_v2:
     internal-label: Troubleshooting
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 84ab190e018bc6beb9183aba038516b21289e49f
+source-git-commit: 6acb1ca076e28e8da4bbc1920837cea9216777e1
 workflow-type: tm+mt
-source-wordcount: '10597'
-ht-degree: 90%
+source-wordcount: '10738'
+ht-degree: 89%
 ---
 # Criar ou editar uma conexão {#create-or-edit-a-connection}
 
@@ -724,7 +726,29 @@ Todos os conjuntos de dados e tipos de conjunto de dados possuem [configuraçõe
 
 
 
-#### Conjunto de dados de evento
+#### Conjunto de dados de evento {#event-dataset-settings}
+
+<!-- RIdM: Lengthy contextual help due to not yey allowed public facing docs. Modify when public facing docs are allowed. -->
+
+>[!CONTEXTUALHELP]
+>id="connection_eventdataset_rowfilter"
+>title="Ativar filtragem de linha"
+>abstract="Os filtros de linha determinam quais eventos são assimilados na Customer Journey Analytics. Somente os eventos que correspondem às regras de inclusão são assimilados. Todos os outros eventos serão excluídos permanentemente e não estarão disponíveis para relatórios, segmentação ou análise no Customer Journey Analytics.<ul><li>É possível criar até 10 filtros.</li><li> As alterações nos filtros se aplicam somente aos novos dados assimilados após a alteração e não afetam retroativamente os dados assimilados anteriormente nem acionam um preenchimento retroativo histórico.</li></ul>"
+
+>[!CONTEXTUALHELP]
+>id="connection_eventdataset_rowfilter_field"
+>title="Campo"
+>abstract="Selecione um campo do conjunto de dados do evento a ser usado para a condição. Você pode usar qualquer campo de qualquer tipo."
+
+>[!CONTEXTUALHELP]
+>id="connection_eventdataset_rowfilter_operator"
+>title="Condição"
+>abstract="Selecione um operador. O operador é usado para validar o campo selecionado em relação aos valores."
+
+>[!CONTEXTUALHELP]
+>id="connection_eventdataset_rowfilter_values"
+>title="Valores"
+>abstract="Insira um ou mais valores. O valor exato da string é usado. Use uma vírgula para separar valores. Cada valor separado por vírgula é considerado distinto e é incluído na condição."
 
 As configurações específicas de um conjunto de dados de evento dependem do tipo de conexão.
 
