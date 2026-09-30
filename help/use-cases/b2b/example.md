@@ -5,25 +5,33 @@ solution: Customer Journey Analytics
 feature: Use Cases
 exl-id: e8ebf5e7-0b80-4d46-8a5f-b7ae832eda4f
 role: User
-TQID: https://experienceleague.adobe.com/vtwD-kgpmITrgGmc3SsY-xLkukMLtfwiyDWqc-OAQsI
+TQID: 'https://experienceleague.adobe.com/vtwD-kgpmITrgGmc3SsY-xLkukMLtfwiyDWqc-OAQsI'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
+    internal-label: Use cases
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
+    internal-label: Reporting
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1417
-ht-degree: 8%
-
+source-wordcount: '1417'
+ht-degree: 9%
 ---
-
 # Um exemplo de projeto B2B baseado em pessoas
 
 Este artigo ilustra um caso de uso em que você deseja relatar corretamente no Customer Journey Analytics os dados pessoais no contexto de uma configuração B2B típica com base em pessoas. Essa configuração é facilitada pela [Real-Time CDP B2B edition](https://experienceleague.adobe.com/pt-br/docs/experience-platform/rtcdp/intro/rtcdpb2b-intro/b2b-overview).  O caso de uso explica como definir, configurar e relatar dados B2B baseados em nível de perfil (pessoa) no Customer Journey Analytics.
@@ -55,7 +63,7 @@ Defina sua conexão para incluir todos os conjuntos de dados B2B relevantes da E
 -->
 
 
-A relação entre os esquemas de pesquisa B2B, o esquema de perfil e o esquema de evento é definida na configuração B2B no Experience Platform. Consulte Esquemas no [Real-Time Customer Data Platform B2B edition](https://experienceleague.adobe.com/pt-br/docs/experience-platform/rtcdp/schemas/b2b) e [Definir uma relação muitos para um entre dois esquemas no Real-Time Customer Data Platform B2B edition](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/tutorials/relationship-b2b).
+A relação entre os esquemas de pesquisa B2B, o esquema de perfil e o esquema de evento é definida na configuração B2B no Experience Platform. Consulte Esquemas no [Real-Time Customer Data Platform B2B edition](https://experienceleague.adobe.com/pt-br/docs/experience-platform/rtcdp/schemas/b2b) e [Definir uma relação muitos para um entre dois esquemas no Real-Time Customer Data Platform B2B edition](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/relationship-b2b).
 
 
 Para garantir uma configuração adequada de uma conexão que suporte pesquisas baseadas em pessoas de seus dados B2B, use a seguinte ilustração para obter uma visão geral e siga estas etapas:
@@ -80,14 +88,14 @@ Para garantir uma configuração adequada de uma conexão que suporte pesquisas 
    |---|---|---|---|
    | Conjunto de dados da atividade B2B | SourceKey <br/>**personKey.sourceKey** | | |
    | Conjunto de dados de pessoa B2B | SourceKey <br/>**b2b.personKey.sourceKey** | | |
-   | Conjunto de dados da conta B2B | | SourceKey <br/>**accountKey.sourceKey**&#x200B;❶ | SourceKey<br>(Conjunto de Dados de Pessoa B2B)<br/>**b2b.accountKey.sourceKey**&#x200B;❶ |
-   | Conjunto de dados de oportunidade B2B | | Chave do Source <br/>**opportunityKey.sourceKey**&#x200B;❷ | SourceKey<br/>(Conjunto de Dados de Relação de Oportunidade B2B)<br/>**opportunityKey.sourceKey**&#x200B;❷ |
-   | Conjunto de dados da campanha B2B | | SourceKey <br/>**campaignKey.sourceKey**&#x200B;❸ | SourceKey<br/>(Conjunto de Dados de Membro da Campanha B2B)<br/>**campaignKey.sourceKey**&#x200B;❸<br/> |
-   | Conjunto de dados da lista de marketing B2B | | SourceKey <br/>**marketingListKey.sourceKey**&#x200B;❹ | SourceKey<br/>(Conjunto de Dados de Membro da Lista de Marketing B2B)<br/>**marketingListKey.sourceKey**&#x200B;❹ |
-   | Conjunto de dados de relação pessoal da conta B2B | | SourceKey <br/>**personKey.sourceKey**&#x200B;❺ | Chave do Source<br/>(Conjuntos de dados de eventos)<br/>**personKey.sourceKey**&#x200B;❺ |
-   | Conjunto de dados de relação pessoal da oportunidade B2B | | SourceKey <br/>**personKey.sourceKey** y❻ | Chave do Source<br/>(Conjuntos de dados de eventos)<br/>**personKey.sourceKey**&#x200B;❻ |
-   | Conjunto de dados de membro da campanha B2B | | SourceKey <br/>**personKey.sourceKey**&#x200B;❼ | Chave do Source<br/>(Conjuntos de dados de eventos)<br/>**personKey.sourceKey**&#x200B;❼ |
-   | Conjunto de dados do membro da Lista de marketing B2B | | SourceKey <br/>**personKey.sourceKey**&#x200B;❽ | Chave do Source<br/>(Conjuntos de dados de eventos)<br/>**personKey.sourceKey**&#x200B;❽ |
+   | Conjunto de dados da conta B2B | | SourceKey <br/>**accountKey.sourceKey**❶ | SourceKey<br>(Conjunto de Dados de Pessoa B2B)<br/>**b2b.accountKey.sourceKey**❶ |
+   | Conjunto de dados de oportunidade B2B | | Chave do Source <br/>**opportunityKey.sourceKey**❷ | SourceKey<br/>(Conjunto de Dados de Relação de Oportunidade B2B)<br/>**opportunityKey.sourceKey**❷ |
+   | Conjunto de dados da campanha B2B | | SourceKey <br/>**campaignKey.sourceKey**❸ | SourceKey<br/>(Conjunto de Dados de Membro da Campanha B2B)<br/>**campaignKey.sourceKey**❸<br/> |
+   | Conjunto de dados da lista de marketing B2B | | SourceKey <br/>**marketingListKey.sourceKey**❹ | SourceKey<br/>(Conjunto de Dados de Membro da Lista de Marketing B2B)<br/>**marketingListKey.sourceKey**❹ |
+   | Conjunto de dados de relação pessoal da conta B2B | | SourceKey <br/>**personKey.sourceKey**❺ | Chave do Source<br/>(Conjuntos de dados de eventos)<br/>**personKey.sourceKey**❺ |
+   | Conjunto de dados de relação pessoal da oportunidade B2B | | SourceKey <br/>**personKey.sourceKey** y❻ | Chave do Source<br/>(Conjuntos de dados de eventos)<br/>**personKey.sourceKey**❻ |
+   | Conjunto de dados de membro da campanha B2B | | SourceKey <br/>**personKey.sourceKey**❼ | Chave do Source<br/>(Conjuntos de dados de eventos)<br/>**personKey.sourceKey**❼ |
+   | Conjunto de dados do membro da Lista de marketing B2B | | SourceKey <br/>**personKey.sourceKey**❽ | Chave do Source<br/>(Conjuntos de dados de eventos)<br/>**personKey.sourceKey**❽ |
 
 {style="table-layout:auto"}
 
