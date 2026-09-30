@@ -2,10 +2,10 @@
 user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Saiba mais sobre o Adobe Customer Journey Analytics e como usar o Analysis Workspace com dados da Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
-source-git-commit: 9d7c1ca888432c74251b3bc131efc97d19c4ef8b
+source-git-commit: 7357a8b929d72095aee7c154ea9e77791ac1a751
 workflow-type: tm+mt
-source-wordcount: '1504'
-ht-degree: 90%
+source-wordcount: '1510'
+ht-degree: 89%
 ---
 # Guia do Adobe Customer Journey Analytics {#using}
 
@@ -529,6 +529,7 @@ ht-degree: 90%
   + Assimilação de dados {#data-ingestion}
     + [Assimilar e usar dados do Marketo Engage](../use-cases/data-ingestion/marketo.md)
     + [Ingerir e usar públicos-alvo da Experience Platform](../use-cases/data-ingestion/ingest-aep-segments.md)
+    + {hide-from-toc}[Assimilar e use dados de mídia paga](/help/use-cases/data-ingestion/paid-media.md)
   + Visualizações de dados {#data-views}
     + [Casos de uso de visualizações de dados](/help/use-cases/data-views/data-views-usecases.md)
     + [Uso de dimensões e métricas de ligação](/help/use-cases/data-views/binding-dimensions-metrics.md)
