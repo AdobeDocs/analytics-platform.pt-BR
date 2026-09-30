@@ -17,9 +17,9 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 7afd51cbdbfc21c8512d0e11be87a6ab8245e366
+source-git-commit: 32dfb7790f57293ea297bdcb8319c3d3b187a2ae
 workflow-type: tm+mt
-source-wordcount: '1330'
+source-wordcount: '1336'
 ht-degree: 0%
 ---
 
@@ -56,7 +56,7 @@ Após 12 horas, os resultados em cache expiram. Na próxima vez que o projeto fo
 
 O Analysis Workspace armazena em cache os resultados do projeto como ele foi configurado originalmente, com suas visualizações de dados selecionadas, segmentos aplicados, intervalos de datas, seleções suspensas de painel e assim por diante. Todos que abrirem o projeto verão esses resultados em cache.
 
-Se alguém alterar a configuração do projeto, os resultados serão atualizados e [uma nova variação do projeto será armazenada em cache](#project-variations-are-cached-as-the-project-is-modified).
+Se alguém alterar a configuração do projeto ao visualizar o projeto em cache, os resultados serão carregados normalmente (não instantaneamente) e [uma nova variação de projeto será armazenada em cache](#project-variations-are-cached-as-the-project-is-modified).
 
 #### As variações de projeto são armazenadas em cache quando o projeto é modificado
 
@@ -80,19 +80,21 @@ Suponha que um projeto de Desempenho de campanha global inclua segmentos para di
 | --- | --- | --- |
 | 6:00 | Entrega programada do projeto | Normal (os resultados são armazenados em cache para uso futuro) |
 | 19:06 h | O usuário A abre o projeto | Instantâneo |
-| 19:06 h | O usuário A aplica o segmento das Américas | Normal (os resultados são armazenados em cache para uso futuro) |
+| 19:07 h | O usuário A aplica o segmento das Américas | Normal (os resultados são armazenados em cache para uso futuro) |
 | 20:01 h | O usuário B abre o projeto | Instantâneo |
-| 20:01 h | O usuário B aplica o segmento das Américas | Instantâneo |
-| 20:01 h | O usuário B aplica o segmento EMEA | Normal (os resultados são armazenados em cache para uso futuro) |
+| 20:05 h | O usuário B aplica o segmento das Américas | Instantâneo |
+| 20:12 h | O usuário B aplica o segmento EMEA | Normal (os resultados são armazenados em cache para uso futuro) |
 
 >[!ENDSHADEBOX]
 
-### Alterações que atualizam automaticamente os resultados em cache
+### Alterações que fazem com que os resultados em cache sejam atualizados com a próxima carga do projeto
 
 As seguintes alterações na configuração subjacente de um projeto fazem com que o Analysis Workspace atualize os resultados na próxima vez que alguém abrir o projeto, mesmo que a janela de 12 horas não tenha expirado:
 
 * Alterações em um componente na visualização de dados, como editar as [configurações do componente](/help/data-views/component-settings/overview.md) de uma dimensão ou métrica
+
 * Alterações em um [campo derivado](/help/data-views/derived-fields/derived-fields.md)
+
 * Alterações em uma definição de segmento usada no projeto
 
 Os resultados são carregados na velocidade normal e são armazenados em cache, o que inicia uma nova janela de 12 horas.
@@ -139,10 +141,12 @@ Qualquer pessoa que possa atualizar as configurações do projeto pode habilitar
 >
 >Os resultados em cache podem não ser um bom ajuste se você precisar ver dados do dia atual, dados de chegada tardia ou valores de pesquisa atualizados imediatamente. Antes de habilitar esta configuração, analise [Quando deixar os resultados em cache desabilitados em um projeto](#when-to-leave-cached-results-disabled-on-a-project).
 
-No projeto do Workspace, onde você deseja ativar os resultados em cache para carregamento quase instantâneo:
+No projeto do Workspace, onde você deseja ativar os resultados em cache para agilizar o carregamento:
 
 1. Vá para **[!UICONTROL Projetos]** > **[!UICONTROL Informações e configurações do projeto]**.
+
 1. Selecione **[!UICONTROL Usar resultados em cache para um carregamento mais rápido]**.
+
 1. Selecione **[!UICONTROL Salvar]**.
 
 ## Exibir quando os resultados em cache são mostrados em um projeto
@@ -150,6 +154,7 @@ No projeto do Workspace, onde você deseja ativar os resultados em cache para ca
 Um carimbo de data e hora é exibido na parte superior do projeto quando os resultados em cache são exibidos. O carimbo de data e hora especifica se todos os resultados são armazenados em cache ou apenas alguns resultados:
 
 * **[!UICONTROL Mostrando resultados de] [_data e hora_]**: todos os painéis no projeto mostram resultados em cache da data e hora mostradas.
+
 * **[!UICONTROL Mostrando alguns resultados de] [_data e hora_]**: alguns painéis mostram resultados em cache da data e hora mostradas, enquanto outros foram atualizados mais recentemente.
 
 ![Carimbo de data/hora no projeto em cache](assets/project-cache-timestamp.png)
@@ -184,5 +189,5 @@ Para carregar os resultados mais recentes de todos os painéis e iniciar uma nov
 
 Para carregar os resultados mais recentes apenas para um único painel:
 
-1. Selecione o ícone **[!UICONTROL Atualizar]** ![Atualizar](/help/assets/icons/Refresh.svg) na parte superior do projeto ao lado do carimbo de data/hora de um painel.
+1. Selecione o ícone **[!UICONTROL Atualizar]** ![Atualizar](/help/assets/icons/Refresh.svg) ao lado do carimbo de data/hora de um painel.
 
