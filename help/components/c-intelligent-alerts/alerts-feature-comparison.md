@@ -1,39 +1,45 @@
 ---
 description: Saiba como os alertas diferem do Adobe Analytics no Customer Journey Analytics
-title: Comparação de recursos de alertas com o Customer Journey Analytics e o Adobe Analytics
+title: Comparação de recursos de alertas entre o Customer Journey Analytics e o Adobe Analytics
 feature: Workspace Basics
 role: User, Admin
 exl-id: 04e819c4-9fb5-4459-9f8b-40d78385ed90
 TQID: https://experienceleague.adobe.com/NEm3Mu7q6RDKbCyG-PJzOFPrjJF4Y-unHgyBXyKd1HM
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: a8b1c240-f315-46e3-b813-f545c4279dd1
+    internal-label: Workspace basics
   - id: e4a0bad2-b448-47f1-9fa6-222ebdb3b5b0
+    internal-label: Alerts
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Reporting
+source-git-commit: 4f3c4a214bb9676ced6fe3c9627c969413013790
 workflow-type: tm+mt
-source-wordcount: 495
-ht-degree: 25%
-
+source-wordcount: '477'
+ht-degree: 23%
 ---
-
-# Comparação de recursos de alertas
+# Comparação de recursos de alertas entre o Customer Journey Analytics e o Adobe Analytics
 
 O processo de uso de alertas no Customer Journey Analytics é quase idêntico ao uso de alertas no Adobe Analytics. Entretanto, há diferenças importantes. As seções a seguir descrevem as principais diferenças.
 
-## Os alertas por hora não estão disponíveis
+## Os alertas por hora podem ser impraticáveis para determinados tipos de dados
 
-Os alertas por hora **não** estão disponíveis no Customer Journey Analytics, enquanto os alertas por hora estão disponíveis no Adobe Analytics. No Customer Journey Analytics, os alertas podem ser configurados com frequência diária, semanal ou mensal.
+Como você pode assimilar vários tipos de dados na Adobe Experience Platform, nem todos os dados que podem ser incluídos em um alerta são práticos para um alerta por hora. Determinados tipos de dados não podem ser assimilados de forma confiável e estar disponíveis dentro das restrições de uma hora.
 
-Você pode assimilar dados na Adobe Experience Platform de várias maneiras. Como resultado, a integridade e a disponibilidade dos dados não podem ser atingidas de forma confiável dentro das restrições de uma hora.  A flexibilidade da assimilação de dados implica que os alertas por hora são impraticáveis devido ao alto potencial para dados incompletos. Para obter mais informações, consulte [Os tempos de assimilação de dados variam](#data-ingestion-times-vary-in-customer-journey-analytics).
+Para obter mais informações, consulte [Os tempos de assimilação de dados variam](#data-ingestion-times-vary).
 
 ## Os tempos de assimilação de dados variam
 
@@ -59,8 +65,8 @@ Para obter mais informações sobre como ajustar o atraso e os fatores que devem
 
 <!-- Starting with "However," the rest of this information should probably go into the actual documentation where we document the option to adjust the delay. -->
 
-## Criar um alerta
+## Menos maneiras de criar alertas
 
-No Analysis Workspace no Adobe Analytics, você pode [criar alertas do Analysis Workspace de várias maneiras](https://experienceleague.adobe.com/pt-br/docs/analytics/components/alerts/alert-builder). No Customer Journey Analytics, você só pode [criar um alerta](alert-builder.md) no Analysis Workspace a partir de uma seleção em uma tabela de forma livre.
+No Analysis Workspace no Adobe Analytics, você pode [criar alertas do Analysis Workspace de várias maneiras](https://experienceleague.adobe.com/en/docs/analytics/components/alerts/alert-builder). No Customer Journey Analytics, você só pode [criar um alerta](alert-builder.md) no Analysis Workspace a partir de uma seleção em uma tabela de forma livre.
 
 O Adobe Analytics e o Customer Journey Analytics oferecem suporte à criação de alertas por meio do [Gerenciador de alertas](alert-manager.md)
