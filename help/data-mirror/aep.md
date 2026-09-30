@@ -9,24 +9,32 @@ autotag-review: '2026-05-19T07:18:47.007Z'
 TQID: 'https://experienceleague.adobe.com/nAfDMtaQvsVRAEm31fRwleirW8LaS-yS0tGTdReux0Y'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
   - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
   - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
 subfeature_v2:
   - id: bfef374d-acfd-4c57-bf74-a2b36053c545
+    internal-label: Data ingestion
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: 2b0204c229a7d53c0a497fe448c165acf84536ad
+    internal-label: Customer journeys
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 571
-ht-degree: 6%
-
+source-wordcount: '605'
+ht-degree: 5%
 ---
-
 # Configurar Experience Platform
 
 O Experience Platform Data Mirror for Customer Journey Analytics requer a configuração adequada de vários componentes do Experience Platform:
@@ -47,9 +55,9 @@ Você precisa criar um [esquema relacional](https://experienceleague.adobe.com/p
 * Definir os campos no esquema e seus atributos
 * Configure os atributos necessários para campos em um esquema relacional:
 
-   * **Chave primária**.
-   * **Descritor de versão**, que deve ser configurado como um número sequencial (tipo de campo Integer) ou como um tipo de campo DateTime. Quando você usa um tipo de campo DateTime, o descritor de versão define o carimbo de data e hora de uma modificação dos dados, por exemplo, para conter um último carimbo de data e hora modificado.
-   * **Descritor de carimbo de data/hora** (para dados de série temporal), que define o carimbo de data/hora imutável no momento em que um evento é capturado. O descritor de carimbo de data/hora não é necessário para um esquema relacional baseado em registro.
+  * **Chave primária**.
+  * **Descritor de versão**, que deve ser configurado como um número sequencial (tipo de campo Integer) ou como um tipo de campo DateTime. Quando você usa um tipo de campo DateTime, o descritor de versão define o carimbo de data e hora de uma modificação dos dados, por exemplo, para conter um último carimbo de data e hora modificado.
+  * **Descritor de carimbo de data/hora** (para dados de série temporal), que define o carimbo de data/hora imutável no momento em que um evento é capturado. O descritor de carimbo de data/hora não é necessário para um esquema relacional baseado em registro.
 
 
 
@@ -104,6 +112,6 @@ Após concluir a configuração do conector de origem, um fluxo de dados é cria
 
 >[!MORELIKETHIS]
 >
->[guia de início rápido do Data Mirror: Espelhar e usar dados relacionais](relational.md)
+>[Guia de início rápido do Data Mirror: espelhar e usar dados relacionais](relational.md)
 >[Data Mirror (documentação do Experience Platform)](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/data-mirror/overview)
 >[Esquemas relacionais (documentação do Experience Platform)](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/schema/relational)

@@ -5,34 +5,51 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: d35f8615-66f5-4823-b0b8-433852246dd2
-TQID: https://experienceleague.adobe.com/PAKNNU-oabmCvYh-YBzTyzMjlsYoPRXJaGIq06TmZ40
+TQID: 'https://experienceleague.adobe.com/PAKNNU-oabmCvYh-YBzTyzMjlsYoPRXJaGIq06TmZ40'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+    internal-label: Audiences
   - id: d3c978ee-1ff0-4475-968a-721e2dd99ef1
+    internal-label: Freeform tables
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+    internal-label: Measurement
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: edce3047747f1635c9790c8b19794a2f51e7460f
+    internal-label: Personalization
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 3372
+source-wordcount: '3372'
 ht-degree: 93%
-
 ---
-
 # Atualizar do Adobe Analytics para o Customer Journey Analytics
 
 Ao atualizar do Adobe Analytics para o Customer Journey Analytics, você pode seguir as [etapas de atualização recomendadas](#recommended-upgrade-steps-for-most-organizations). Ou você pode [gerar dinamicamente etapas de atualização](#dynamically-generate-upgrade-steps-for-your-organization) para as circunstâncias exclusivas da sua organização.
@@ -64,7 +81,7 @@ Depois de ter dados históricos suficientes usando o SDK da web da Experience Pl
 
    * Relatórios de alto desempenho e disponibilidade de dados porque a Adobe Experience Platform foi criada para potencializar casos de uso de personalização em tempo real
 
-   * Consolidar a implementação da coleta de dados do Adobe CX Enterprise entre outros produtos CX Enterprise (AJO, RTCDP e assim por diante)
+   * Consolidar a implementação da coleta de dados do Adobe CX Enterprise entre outros produtos da CX Enterprise (AJO, RTCDP e assim por diante)
 
    * Não dependente da nomenclatura do Adobe Analytics (prop, eVar, evento etc.)
 
@@ -237,7 +254,7 @@ Para gerar dinamicamente etapas de atualização para as circunstâncias únicas
    |---------|----------|---------|
    | Selecione a opção que descreve a implementação atual do Adobe Analytics. Essas informações podem afetar as opções alternativas de atualização que podem estar disponíveis ao atualizar para o Customer Journey Analytics. | Selecione uma opção: <ul><li>**AppMeasurement:**<br/> uma implementação JavaScript que carrega o AppMeasurement.js em uma página e envia dados para a Adobe usando o objeto s (por exemplo, s.eVar1).</li><li>**Extensão do Adobe Analytics (tags):** <br/>uma implementação de tags que carrega a coleção de dados da Adobe Experience Platform (anteriormente conhecida como Launch). A tag tem a extensão do Adobe Analytics instalada.</li><li>**Extensão do SDK da Web da Experience Platform (tags):**<br/> uma implementação de tags que carrega a coleção de dados da Adobe Experience Platform (anteriormente conhecida como Launch). A tag tem a extensão do SDK da web instalada.</li><li>**SDK da Web da Experience Platform (alloy.js):** uma implementação JavaScript que carrega a biblioteca de SDK da Web (alloy.js) em uma página e envia dados para a Adobe usando um conteúdo JSON.</li><li>**API de inserção de dados em massa:**<br/> uma implementação que usa a API de inserção de dados ou a API de inserção de dados em massa.</li><li>**SDK móvel da Experience Platform:**<br/> uma implementação que usa o SDK móvel da Adobe Experience Platform.</li><li>**AppMeasurement com uma ferramenta de gerenciamento de tags de terceiros:**<br/> uma implementação que usa uma ferramenta de gerenciamento de tags de terceiros.</li><li>**Um produto diferente do Adobe Analytics:**<br/> uma implementação que coleta dados para um produto diferente do Adobe Analytics, como o Google Analytics. Selecionar esta opção desabilita várias opções no guia de atualização que não se aplicam ao atualizar para o Customer Journey Analytics de um produto diferente do Adobe Analytics. </li><li>**Não sei:**<br/> se você não é a pessoa que gerencia a implementação, é possível selecionar temporariamente esta opção.</li></ul><p>Selecione se aplicável:<ul><li>**Nossa implementação atualmente usa o conector de origem do Analytics:**<br/> o conector de origem do Analytics permite aproveitar facilmente o Customer Journey Analytics, mas exige que você pague pelo Adobe Analytics e pelo Customer Journey Analytics. Este guia pode ajudar você a avançar para uma implementação independente do SDK da web.</li></ul></p> | <ul><li>[Entenda a implementação do Adobe Analytics e como ela afeta sua atualização para o Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-analytics-implementation.md#understand-your-adobe-analytics-implementation-and-how-it-affects-your-upgrade-to-customer-journey-analytics)</li><li>[Transição do conector de origem do Analytics para o SDK da Web no Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-from-source-connector.md)</li></ul> |
    | A maioria dos recursos do Adobe Analytics está prontamente disponível no Customer Journey Analytics. No entanto, os seguintes recursos exigem consideração durante o processo de atualização. Selecione qualquer uma que planeje usar. | Selecione todas as respostas corretas:<ul><li>**Dados históricos do Adobe Analytics:**</br> traga os dados históricos do seu conjunto de relatórios do Adobe Analytics para a Adobe Experience Platform e o Customer Journey Analytics.</li><li>**Componentes e projetos do Adobe Analytics:**</br> os componentes do Adobe Analytics incluem projetos (com suas tabelas de forma livre e visualizações associadas), segmentos e métricas calculadas.</li><li>**Sobreposição de mapa de atividades e rastreamento de links:**</br> uma extensão do navegador que permite ver dados de rastreamento de link como uma sobreposição no seu site.</li><li>**Dados de classificação:**</br> agrupe ou categorize dados como dimensões separadas.</li><li>**Canais de marketing:**</br> crie regras que categorizem como os clientes chegam ao seu site.</li><li>**Data Warehouse:**</br> exporte dados processados do Adobe Analytics em formato de planilha.</li><li>**Feeds de dados**: ainda não existe um recurso totalmente equivalente aos feeds de dados disponível no Customer Journey Analytics. No entanto, é possível obter funcionalidades semelhantes com recursos como a exportação de tabela completa, exportação de conjunto de dados da plataforma, integração de ferramentas de BI e a API de relatórios.</br></li><li>**Dados de mídia de transmissão:**</br> um complemento do Adobe Analytics e do Customer Journey Analytics especializado na coleta de dados de mídia, como áudio, vídeo ou conteúdo transmitido.</li></ul> | <ul><li>[Entenda o suporte de recursos do Adobe Analytics ao atualizar para o Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-adobe-analytics-features.md)</li></ul> |
-   | A maioria dos novos recursos estão prontamente disponíveis no Customer Journey Analytics. No entanto, os seguintes recursos exigem consideração durante o processo de atualização. Selecione qualquer uma que planeje usar. | Selecione todas as respostas corretas:<ul><li>**Unir dados coletados com dados de outras fontes (por exemplo, dados da central de contatos):**</br>(Recomendado) Vincule dados de várias propriedades da web, móveis e offline para criar uma única exibição consolidada do comportamento do cliente. Essa capacidade de combinar dados analíticos de outros canais é o principal caso de uso do Customer Journey Analytics.</li><li>**Compile ocorrências de outros conjuntos de dados usando uma dimensão personalizada:**<br/> se algum dos seus conjuntos de dados não compartilhar um identificador primário (como uma ID da Experience Cloud), você ainda poderá compilar esses dados usando outra dimensão, como o nome de usuário de logon ou endereço de email.</li><li>**Integração com o Adobe Journey Optimizer:**<br/> ofereça experiências conectadas, contextuais e personalizadas aos clientes.</li><li>**Integração com a Adobe Real-Time CDP:**<br/> combine dados de perfil de várias fontes para gerar públicos-alvo e segmentos com base nas características do usuário.</li><li>**Integração com o Adobe Target (A4T):**<br/> a Adobe recomenda a integração com o Adobe Journey Optimizer para casos de uso de personalização. A integração com o Adobe Target é possível, mas é uma solução temporária.</li><li>**Integração com o Adobe Audience Manager:**<br/> a Adobe recomenda a integração com a Adobe Real-time CDP para casos de uso baseados em público-alvo. A integração com o Audience Manager é possível, mas é uma solução temporária.</li></ul> | [Entenda os recursos exclusivos do Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-customer-journey-analytics-features.md) |
+   | A maioria dos novos recursos estão prontamente disponíveis no Customer Journey Analytics. No entanto, os seguintes recursos exigem consideração durante o processo de atualização. Selecione qualquer uma que planeje usar. | Selecione todas as respostas corretas:<ul><li>**Unir dados coletados com dados de outras fontes (por exemplo, dados da central de contatos):**</br>(Recomendado) Vincule dados de várias propriedades da web, móveis e offline para criar uma única exibição consolidada do comportamento do cliente. Essa capacidade de combinar dados analíticos de outros canais é o principal caso de uso do Customer Journey Analytics.</li><li>**Compile hits de outros conjuntos de dados usando uma dimensão personalizada:**<br/> se algum dos seus conjuntos de dados não compartilhar um identificador primário (como uma ID da Experience Cloud), você ainda poderá compilar esses dados usando outra dimensão, como o nome de usuário de logon ou endereço de email.</li><li>**Integração com o Adobe Journey Optimizer:**<br/> ofereça experiências conectadas, contextuais e personalizadas aos clientes.</li><li>**Integração com a Adobe Real-Time CDP:**<br/> combine dados de perfil de várias fontes para gerar públicos-alvo e segmentos com base nas características do usuário.</li><li>**Integração com o Adobe Target (A4T):**<br/> a Adobe recomenda a integração com o Adobe Journey Optimizer para casos de uso de personalização. A integração com o Adobe Target é possível, mas é uma solução temporária.</li><li>**Integração com o Adobe Audience Manager:**<br/> a Adobe recomenda a integração com a Adobe Real-time CDP para casos de uso baseados em público-alvo. A integração com o Audience Manager é possível, mas é uma solução temporária.</li></ul> | [Entenda os recursos exclusivos do Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-customer-journey-analytics-features.md) |
    | Selecione como você planeja usar o Adobe Analytics e o Customer Journey Analytics: | Selecione uma opção: <ul><li>**Pretendo migrar totalmente do Adobe Analytics para o Customer Journey Analytics:**<br/> (Recomendado) a Adobe recomenda que você faça a transição completa do Adobe Analytics para o Customer Journey Analytics. Durante o período de transição, você deve planejar a execução do Adobe Analytics junto com o Customer Journey Analytics para realizar comparações de dados lado a lado. Após se acostumar com os dados, desabilite o Adobe Analytics.</li><li>**Pretendo manter os dois produtos do Analytics:**<br/> (Não recomendado) se você selecionar esta opção, seu contrato com a Adobe incluirá o Adobe Analytics e o Customer Journey Analytics, o que pode ser mais caro para sua organização ao longo do tempo.</li></ul> | [Avalie quando é apropriado desabilitar o Adobe Analytics após atualizar para o Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-fully-move.md) |
    | Selecione como você deseja configurar o seu esquema do Customer Journey Analytics: | Selecione uma opção: <ul><li>**Quero usar um esquema adaptado à minha organização:**</br> (Recomendado) personalizar o esquema permite que a organização rastreie apenas o que é necessário e evita a sobrecarga associada a campos confusos e desnecessários. Esta opção inclui grupos de campos adicionados pelo SDK da Web e grupos de campos personalizados para sua organização.</li><li>**Quero usar o esquema padrão do Adobe Analytics:**</br> (Não recomendado) o esquema do Adobe Analytics contém mais de mil campos, o que pode resultar em um esquema desorganizado e complexo. Sua organização seria forçada a continuar aderindo ao conceito de props e eVars, que é um conceito legado não usado no Customer Journey Analytics. A integração com outros serviços da Adobe Experience Platform é mais difícil.</li></ul> | [Escolha seu esquema para o Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-schema-existing.md) |
    | Selecione a sua maneira preferida de implementar o Customer Journey Analytics: | <ul><li>**Implementação manual (alloy.js):**<br/> inclua a biblioteca do SDK da Web (alloy.js) em cada página do seu site.</li><li>**Tags:**<br/> (Recomendado) se você ainda não estiver usando tags, instale o carregador de tags no seu site. Se você já estiver usando tags, poderá adicionar a extensão do SDK da web à propriedade da tag. Essa opção inclui implementações que usam tags na coleção de dados da Adobe Experience Platform e em sistemas de gerenciamento de tags de terceiros.</li><li>**API:**<br/> use a API de coleção de dados para enviar dados diretamente para uma sequência de dados. Há suporte para os tipos não autenticados (cliente para servidor) e autenticados (servidor para servidor).</li></ul> | [Entenda as opções de implementação do SDK da Web ao atualizar para o Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-websdk-implementation.md) |

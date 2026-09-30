@@ -5,29 +5,40 @@ role: Developer, Admin
 solution: Customer Journey Analytics
 exl-id: dd273c71-fb5b-459f-b593-1aa5f3e897d2
 feature: Troubleshooting
-keywords: query service;Query service;sql syntax
-TQID: https://experienceleague.adobe.com/WT2Phz0aaiJ0Jp403fr6byx9QkncKjvRJpxl9yxPKLE
+keywords: serviço de consulta;Serviço de consulta;sontaxe de sql
+TQID: 'https://experienceleague.adobe.com/WT2Phz0aaiJ0Jp403fr6byx9QkncKjvRJpxl9yxPKLE'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: cbc7b6aa-4963-4ebf-9bb9-963336957623
+    internal-label: Troubleshooting
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Troubleshooting
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 770
+source-wordcount: '770'
 ht-degree: 100%
-
 ---
-
 # Comparar dados do conector de origem do Analytics com os dados do Adobe Analytics
 
 À medida que a organização adota o Customer Journey Analytics, é possível notar algumas diferenças nos dados do Adobe Analytics e do Customer Journey Analytics. Essas diferenças são normais e podem ocorrer por vários motivos. O Customer Journey Analytics foi projetado para permitir melhorias em algumas das limitações nos dados do Adobe Analytics. Essa flexibilidade pode causar algumas diferenças na forma como o Customer Journey Analytics interpreta os dados. Consulte este artigo para entender as possíveis diferenças na forma como o Customer Journey Analytics e o Adobe Analytics tratam os dados.
@@ -73,8 +84,8 @@ Se todas as configurações acima forem semelhantes e você quiser validar pelo 
 1. Nos [Feeds de dados](https://experienceleague.adobe.com/pt-br/docs/analytics/export/analytics-data-feed/data-feed-overview) do Adobe Analytics, gere arquivos de feed para o intervalo de datas desejado. Conte o número de linhas em cada arquivo, identificando e excluindo as seguintes linhas:
 
    * `exclude_hit` não é `0` (dados excluídos do Analysis Workspace em ambos os produtos)
-   * `hit_source` é `0`, `3`, `5`, `7`, `8`, `9` ou `10` (fontes de dados e outros dados sem ocorrência)
-   * `page_event` é `53` ou `63` (ocorrências keep-alive de mídia de transmissão)
+   * `hit_source` é `0`, `3`, `5`, `7`, `8`, `9` ou `10` (fontes de dados e outros dados que não de hit)
+   * `page_event` é `53` ou `63` (hits keep-alive de mídia de transmissão)
 
    As linhas que correspondem a qualquer um dos critérios acima são excluídas do fluxo de trabalho de assimilação do conector de origem do Analytics e, portanto, também devem ser excluídas ao contar linhas do feed de dados.
 

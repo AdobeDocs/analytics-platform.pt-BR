@@ -5,13 +5,23 @@ solution: Customer Journey Analytics
 feature: Connections
 role: Admin
 hide: true
-source-git-commit: e1c7ffa9a2ac58717ee0050d4e7019b6f3f94518
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+subfeature_v2:
+  - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+    internal-label: Connections
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
 source-wordcount: '2474'
 ht-degree: 13%
-
 ---
-
 # Pesquisas compartilhadas
 
 No Customer Journey Analytics, um conjunto de dados de pesquisa enriquece seus dados de evento com contexto adicional. Por exemplo, um conjunto de dados de catálogo de produtos que adiciona nomes de produtos, categorias e preços aos eventos de compra. Ou um conjunto de dados de metadados de campanha que adiciona detalhes da campanha aos eventos de marketing.
@@ -96,7 +106,7 @@ Os dados de amostra para cada conjunto de dados:
 
 >[!TAB Eventos]
 
-| Carimbo de data e hora | ID da pessoa | ID da Conta | ID da conta global | ID de oportunidade | Página |
+| Carimbo de data e hora | ID de pessoa | ID de conta | ID da conta global | ID de oportunidade | Página |
 |---|---|---|---|---|---|
 | 2025-01-29 07:01:57 | P-ABC | A-123 | A-123 | O-432 | Início |
 | 2025-02-28 05:32:13 | P-ABC | A-123 | A-123 | O-432 | Widget |
@@ -107,7 +117,7 @@ Os dados de amostra para cada conjunto de dados:
 
 >[!TAB Perfil]
 
-| ID da pessoa | Nome | ID da Conta | ID da conta global |
+| ID da pessoa | Nome | ID de conta | ID da conta global |
 |---|---|---|---|
 | P-ABC | John | A-123 | A-123 |
 | P-EFG | Kate | A-123 | A-123 |
@@ -116,7 +126,7 @@ Os dados de amostra para cada conjunto de dados:
 
 >[!TAB Conta]
 
-| ID da Conta | Nome | ID da conta global | País | Valor de tempo de vida |
+| ID de conta | Nome | ID da conta global | País | Valor de tempo de vida |
 |---|---|---|---|---:|
 | A-123 | Acme | A-123 | EUA | US$ 122 milhões |
 | A-456 | BigCo | A-789 | JP | US$ 23 milhões |
@@ -124,7 +134,7 @@ Os dados de amostra para cada conjunto de dados:
 
 >[!TAB Perfil de oportunidade]
 
-| ID da pessoa | ID de oportunidade | ID da conta global |
+| ID de pessoa | ID de oportunidade | ID da conta global |
 |---|---|---|
 | P-ABC | O-432 | A-123 |
 | P-ABC | O-543 | A-123 |
@@ -133,7 +143,7 @@ Os dados de amostra para cada conjunto de dados:
 
 >[!TAB Oportunidade]
 
-| ID de oportunidade | Nome | ID da Conta | ID da conta global | Status | Valor |
+| ID de oportunidade | Nome | ID de conta | ID da conta global | Status | Valor |
 |---|---|---|---|---|---:|
 | O-432 | Acme Express | A-123 | A-123 | Abertura | US$ 2 milhões |
 | O-543 | Acme CC | A-123 | A-123 | Fechado | US$ 1 milhão |
@@ -168,7 +178,7 @@ Para combinar as oportunidades com as contas, use o contêiner de oportunidades 
 
 >[!TAB Dados do evento]
 
-| Carimbo de data e hora | ID da pessoa | ID da Conta | ID da conta global | ID da oportunidade ![Link](/help/assets/icons/Link.svg) | Página |
+| Carimbo de data e hora | ID de pessoa | ID de conta | ID da conta global | ID da oportunidade ![Link](/help/assets/icons/Link.svg) | Página |
 |---|---|---|---|---|---|
 | 2025-01-29 07:01:57 | P-ABC | A-123 | A-123 | **O-432** | Início |
 | 2025-02-28 05:32:13 | P-ABC | A-123 | A-123 | **O-432** | Widget |
@@ -179,7 +189,7 @@ Para combinar as oportunidades com as contas, use o contêiner de oportunidades 
 
 >[!TAB Oportunidade]
 
-| ID da oportunidade ![Link](/help/assets/icons/Link.svg) | Nome | ID da Conta | ID da conta global | Status | Valor |
+| ID da oportunidade ![Link](/help/assets/icons/Link.svg) | Nome | ID de conta | ID da conta global | Status | Valor |
 |---|---|---|---|---|---:|
 | **O-432** | Acme Express | A-123 | A-123 | Abertura | **$2 milhão** |
 | **O-543** | Acme CC | A-123 | A-123 | Fechado | **$1M** |
@@ -201,7 +211,7 @@ Para corresponder as oportunidades com contas, use o contêiner de conta da subs
 
 >[!TAB Eventos]
 
-| Carimbo de data e hora | ID da pessoa | ID da conta ![Link](/help/assets/icons/Link.svg) | ID da conta global | ID de oportunidade | Página |
+| Carimbo de data e hora | ID de pessoa | ID da conta ![Link](/help/assets/icons/Link.svg) | ID da conta global | ID de oportunidade | Página |
 |---|---|---|---|---|---|
 | 2025-01-29 07:01:57 | P-ABC | **A-123** | A-123 | O-432 | Início |
 | 2025-02-28 05:32:13 | P-ABC | **A-123** | A-123 | O-432 | Widget |
@@ -236,7 +246,7 @@ Para combinar oportunidades com contas, use o contêiner pessoa como o caminho p
 
 >[!TAB Eventos]
 
-| Carimbo de data e hora | ID de pessoa ![Link](/help/assets/icons/Link.svg) | ID da Conta | ID da conta global | ID de oportunidade | Página |
+| Carimbo de data e hora | ID de pessoa ![Link](/help/assets/icons/Link.svg) | ID de conta | ID da conta global | ID de oportunidade | Página |
 |---|---|---|---|---|---|
 | 2025-01-29 07:01:57 | **P-ABC** | A-123 | A-123 | O-432 | Início |
 | 2025-02-28 05:32:13 | **P-ABC** | A-123 | A-123 | O-432 | Widget |
@@ -256,7 +266,7 @@ Para combinar oportunidades com contas, use o contêiner pessoa como o caminho p
 
 >[!TAB Pesquisa de oportunidade]
 
-| ID da oportunidade ![Link](/help/assets/icons/Link.svg) | Nome | ID da Conta | ID da conta global | Status | Valor |
+| ID da oportunidade ![Link](/help/assets/icons/Link.svg) | Nome | ID de conta | ID da conta global | Status | Valor |
 |---|---|---|---|---|---:|
 | **O-432** | Acme Express | A-123 | A-123 | Abertura | **$2 milhão** |
 | **O-543** (2x) | Acme CC | A-123 | A-123 | Fechado | US$ 1 milhão x 2 = **$2 milhões** |
@@ -282,7 +292,7 @@ Em vez de corresponder por contêiner, você também pode optar por corresponder
 
 >[!TAB Eventos]
 
-| Carimbo de data e hora | ID da pessoa | ID da Conta | ID da conta global | ID da oportunidade ![Link](/help/assets/icons/Link.svg) | Página |
+| Carimbo de data e hora | ID de pessoa | ID de conta | ID da conta global | ID da oportunidade ![Link](/help/assets/icons/Link.svg) | Página |
 |---|---|---|---|---|---|
 | 2025-01-29 07:01:57 | P-ABC | **A-123** | A-123 | **O-432** | Início |
 | 2025-02-28 05:32:13 | P-ABC | **A-123** | A-123 | **O-432** | Widget |
@@ -293,7 +303,7 @@ Em vez de corresponder por contêiner, você também pode optar por corresponder
 
 >[!TAB Oportunidade]
 
-| ID da oportunidade ![Link](/help/assets/icons/Link.svg) | Nome | ID da Conta | ID da conta global | Status | Valor |
+| ID da oportunidade ![Link](/help/assets/icons/Link.svg) | Nome | ID de conta | ID da conta global | Status | Valor |
 |---|---|---|---|---|---:|
 | **O-432** (3x) | Acme Express | A-123 | A-123 | Abertura | US$ 2 milhões x 3 = **$6 milhões** |
 | **O-543** | Acme CC | A-123 | A-123 | Fechado | **$1M** |

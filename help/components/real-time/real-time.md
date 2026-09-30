@@ -4,27 +4,37 @@ title: Visão geral do relatório em tempo real
 feature: Real-time Reporting
 role: User
 exl-id: 12fbb760-936d-4e30-958f-764febca5ae7
-TQID: https://experienceleague.adobe.com/Nvg6DVqDq-IwyPJgyDH2nOmNG41-aCRAYohlj7tjrj4
+TQID: 'https://experienceleague.adobe.com/Nvg6DVqDq-IwyPJgyDH2nOmNG41-aCRAYohlj7tjrj4'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
+  - id: d1779026-aeed-458e-a1c7-839d4acac922
+    internal-label: Real-time reporting
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: d682e1e729402bff7a3f6e3625402f57deee21ad
+    internal-label: Data collection
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 855
+source-wordcount: '855'
 ht-degree: 6%
-
 ---
-
 # Visão geral do relatório em tempo real
 
 O relatório em tempo real no Customer Journey Analytics exibe e atualiza dados e visualizações em um ou mais painéis no Analysis Workspace em tempo real.
@@ -43,16 +53,16 @@ Esta seção fornece uma visão geral dos casos de uso típicos valiosos e menos
 * Os casos de uso mais valiosos para relatórios em tempo real estão relacionados às principais vendas, promoções ou lançamentos de produtos.
 Como parte desse lançamento, você deseja saber:
 
-   * Como as vendas se comparam com sua última venda?
-   * Como esse lançamento de produto se compara ao último lançamento de produto?
-   * Suas promoções para esse dia ou evento importante realmente funcionam?
+  * Como as vendas se comparam com sua última venda?
+  * Como esse lançamento de produto se compara ao último lançamento de produto?
+  * Suas promoções para esse dia ou evento importante realmente funcionam?
 
 * Casos de uso relevantes, mas menos valiosos, para relatórios em tempo real são os casos de uso de validação.
 Você deseja validar, por exemplo:
 
-   * A jornada de campanha lançada recentemente está funcionando?
-   * Quando a nova página do produto entrou em funcionamento, você está coletando dados do cliente da página?
-   * Seu evento de mídia ao vivo está indo bem?
+  * A jornada de campanha lançada recentemente está funcionando?
+  * Quando a nova página do produto entrou em funcionamento, você está coletando dados do cliente da página?
+  * Seu evento de mídia ao vivo está indo bem?
 
 Não considere a geração de relatórios em tempo real para casos de uso de monitoramento de operações. Por exemplo, para responder à pergunta se um site está funcionando corretamente. Como o [botão de atualização em tempo real](use-real-time.md) é desabilitado automaticamente depois de 30 minutos e o relatório em tempo real para de ser atualizado, você não deve usar um relatório em tempo real como uma fonte confiável para esses casos de uso.
 
@@ -88,5 +98,5 @@ Esteja ciente da seguinte limitação para relatórios em tempo real:
 * Não é possível combinar a compilação com os relatórios em tempo real. Os relatórios em tempo real abordam dados de nível de evento e sessão e são menos relevantes para dados com base em pessoas.
 * Nenhuma métrica de mídia coletada de heartbeat está disponível, exceto as métricas de início e fechamento de mídia. Dessa forma, você ainda pode usar os relatórios em tempo real para ativar um caso de uso de mídia.
 * Ao usar as [opções de download ou exportação](/help/analysis-workspace/export/download-send.md) para baixar um projeto ou exportar dados de uma tabela de forma livre, considere o seguinte:
-   * Um projeto CSV baixado ou arquivo CSV exportado contém os dados em tempo real disponíveis no momento do download ou da exportação.
-   * Um projeto do PDF baixado contém dados que não são em tempo real, semelhantes aos dados que são mostrados quando a atualização em tempo real está desativada.
+  * Um projeto CSV baixado ou arquivo CSV exportado contém os dados em tempo real disponíveis no momento do download ou da exportação.
+  * Um projeto do PDF baixado contém dados que não são em tempo real, semelhantes aos dados que são mostrados quando a atualização em tempo real está desativada.

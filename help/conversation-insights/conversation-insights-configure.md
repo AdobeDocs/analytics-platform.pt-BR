@@ -18,15 +18,15 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 4eaf8820fd847426ba6a471e1bfbc7b397283905
+source-git-commit: 34bb13891eebb12875f3e355e73aade6b3eed750
 workflow-type: tm+mt
-source-wordcount: '654'
-ht-degree: 7%
+source-wordcount: '824'
+ht-degree: 20%
 ---
 # Criar ou editar configurações
 
 O Conversation Insights permite analisar conversas a partir das experiências de agente que você oferece aos seus clientes. Essas experiências de agente podem ser baseadas em grandes modelos de linguagem (LLM) ou baseadas em conversas humanas. Por exemplo, um chatbot interagindo com um cliente ou transcrições da central de atendimento.
-Por meio dos Insights de conversa, é possível entender o impacto dos representantes nos resultados reais do usuário.
+Por meio dos Insights de conversa, é possível entender o impacto dos agentes nos resultados reais do usuário.
 
 Por meio da interface de configuração do Conversation Insights, é possível criar ou editar rapidamente uma configuração e os artefatos associados (conexão, visualizações de dados e muito mais).
 
@@ -114,7 +114,47 @@ Para cada configuração:
 
 ## Verificação de visualização de dados
 
-(Explique as métricas e dimensões que você vê nos conjuntos de dados relevantes)
+As visualizações de dados configuradas em [Etapas de configuração](#configuration-steps) têm **[!UICONTROL Insights de Conversa]** como valor para **[!UICONTROL Integrações]** em [Visualizações de dados](/help/data-views/manage-dataviews.md).
+
+Para cada uma das visualizações de dados configuradas:
+
+* **Contêineres**: a [guia Contêineres](/help/data-views/create-dataview.md#containers) contém um novo **[!UICONTROL Nome do contêiner]**: **[!UICONTROL Conversação]** com **[!UICONTROL Nome de exibição]**: **[!UICONTROL Contêiner]** como um **[!UICONTROL Sistema]** **[!UICONTROL Tipo de contêiner]** adicional.
+* **Componentes**: você vê pastas adicionais de campo de esquema. Por exemplo: agentExperience e chat. Além disso, os seguintes componentes são adicionados automaticamente:
+
+  | Métricas | Tipo de dados de esquema | Caminho do esquema |
+  |---|---|---|
+  | Feedbacks do cliente | String | eventType |
+  | Sentimentos positivos | String | Campos derivados |
+  | Recomendações | String | eventType |
+  | Turnos | String | eventType |
+
+  | Dimensões | Tipo de dados de esquema | Caminho do esquema |
+  |---|---|---|
+  | ID do agente | String | `agenticExperience.agents.agentID` |
+  | Nome do agente | String | `agenticExperience.agents.name` |
+  | Nome do concierge | String | `agenticExperience.name` |
+  | Versão do concierge | String | `agenticExperience.version` |
+  | ID da conversa | String | `conversation.conversationID` |
+  | Nome da conversa | String | `conversation.conversationName` |
+  | Nome do sinal da conversa | String | `conversation.signals.name` |
+  | Valor booleano do resumo da conversa | Booleano | `conversation.signals.values.booleanValue` |
+  | Confiança do resumo da conversa | Duplo | `conversation.signals.values.confidence` |
+  | Chave de metadados do resumo da conversa | String | `conversation.signals.values.metadata.key` |
+  | Valor numérico do resumo da conversa | Duplo | `conversation.signals.values.numberValue` |
+  | Qualificadores do resumo da conversa | String | `conversation.signals.values.qualifiers` |
+  | Sinais de tom da conversa | String | `conversation.signals.attributes.tones.values` |
+  | Ambiente | String | `agenticExperience.environment` |
+  | Classificação do feedback | String | Campos derivados |
+  | Classificação de avaliação de feedback | String | `conversation.feedback.rating.classification` |
+  | Finalidade da seção de feedback | String | `conversation.feedback.raw.purpose` |
+  | Fonte do feedback | String | `conversation.feedback.source` |
+  | Frase | String | `conversation.signals.attributes.subjects.values.phrase` |
+  | Texto não processado da resposta | String | `conversation.response.raw.text` |
+  | Fonte da resposta | String | `conversation.response.source` |
+  | Classificação de sentimentos | String | Campos derivados |
+  | Nome da habilidade | String | `agenticExperience.agents.skills.name` |
+  | Versão da habilidade | String | `agenticExperience.agents.skills.version` |
+  | Valor | String | `agenticExperience.agents.skills.parameters.value` |
 
 
 <!--

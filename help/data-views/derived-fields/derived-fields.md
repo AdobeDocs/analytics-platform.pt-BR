@@ -5,30 +5,43 @@ solution: Customer Journey Analytics
 feature: Derived Fields
 exl-id: bcd172b2-cd13-421a-92c6-e8c53fa95936
 role: Admin
-TQID: https://experienceleague.adobe.com/zpiJFUF8RnIdFQWf29FBpRznWO3Ejs-j2szx69kdMNE
+TQID: 'https://experienceleague.adobe.com/zpiJFUF8RnIdFQWf29FBpRznWO3Ejs-j2szx69kdMNE'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
 subfeature_v2:
   - id: ad333ea6-e90d-4c8f-8d61-9f8690784d6f
+    internal-label: Templates
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: f3ca85c1-72de-4df2-97ed-05753cd77c47
+    internal-label: Derived fields
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: beb7a3c1-66ab-4786-b879-7621375b3c40
-source-git-commit: 3fcb9c403ace295c1a7e62c21d8bb444a4f9c011
+    internal-label: Email marketing
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 10602
+source-wordcount: '10602'
 ht-degree: 98%
-
 ---
-
 # Campos derivados {#derived-fields}
 
 >[!CONTEXTUALHELP]
@@ -1433,7 +1446,7 @@ Há algumas considerações importantes ao trabalhar com números estáticos na 
   - Esta fórmula é válida.
     ![Mais informações de matemática 5](assets/math-more-info-5.png)
 
-Use a função de matemática para cálculos baseados no nível de ocorrência. Use a função [Resumir](#summarize) para cálculos baseados em eventos, sessões ou escopos de pessoas.
+Use a função de matemática para cálculos baseados no nível de hit. Use a função [Resumir](#summarize) para cálculos baseados em eventos, sessões ou escopos de pessoas.
 
 +++
 
@@ -1582,7 +1595,7 @@ Você só pode selecionar campos que pertençam à tabela “Visita” ou “Eve
 
 [!UICONTROL Incluir repetições] determina como tratar valores repetidos para a função [!UICONTROL NEXT OU PREVIOUS].
 
-- Incluir repetições considera os valores anteriores ou seguintes. Se a opção de [!UICONTROL Incluir repetições] for selecionada, ela ignorará qualquer repetição sequencial de valores anteriores ou seguintes à ocorrência atual.
+- Incluir repetições considera os valores anteriores ou seguintes. Se a opção de [!UICONTROL Incluir repetições] for selecionada, ela ignorará qualquer repetição sequencial de valores anteriores ou seguintes ao hit atual.
 
 - Linhas sem valores (em branco) de um campo selecionado não terão valores anteriores ou seguintes retornados como parte da saída da função [!UICONTROL NEXT OR PREVIOUS].
 
@@ -1863,7 +1876,7 @@ Você cria um campo derivado `Add To Cart Revenue Size`. Você usa a função [!
 
 ## Mais informações {#summarize-more-info}
 
-Use a função Resumir para cálculos baseados em evento, sessão ou escopo de pessoa. Use a função [Matemática](#math) para cálculos baseados em nível de ocorrência.
+Use a função Resumir para cálculos baseados em evento, sessão ou escopo de pessoa. Use a função [Matemática](#math) para cálculos baseados em nível de hit.
 
 +++
 

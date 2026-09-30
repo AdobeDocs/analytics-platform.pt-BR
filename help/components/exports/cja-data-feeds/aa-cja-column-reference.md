@@ -8,33 +8,50 @@ autotag-review: '2026-05-19T09:53:49.596Z'
 TQID: 'https://experienceleague.adobe.com/Yt2CmGRpO6s8natf9s-KLsMBKHc-qdSQHvi3UyPyLgg'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: ae3aff40-b2f6-4df1-8c01-0b0720d1510f
+    internal-label: AI Tools
   - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
   - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+    internal-label: Integrations
   - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+    internal-label: Data governance
 subfeature_v2:
   - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+    internal-label: Exports
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+    internal-label: Measurement
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 66a8a96da6710d20b01b9315fe87ba38c54c2511
+    internal-label: Privacy
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 3921
+source-wordcount: '3921'
 ht-degree: 48%
-
 ---
-
 # Mapear colunas do feed de dados do Adobe Analytics para o Customer Journey Analytics
 
 {{release-limited-testing}}
@@ -298,7 +315,7 @@ A taxa de câmbio de quando a transação ocorreu. A Adobe faz parceria com a XE
 
 +++**`customer_perspective`**
 
-Determina se é uma ocorrência de plano de fundo móvel.
+Determina se é um hit móvel de segundo plano.
 
 {{cja-df-post}}
 
@@ -310,7 +327,7 @@ O Customer Journey Analytics não tem um conceito nativo de tipo de evento em qu
 
 +++**`cust_hit_time_gmt`**
 
-Somente conjuntos de relatório com carimbos de data e hora habilitados. O carimbo de data e hora enviado com a ocorrência, com base no horário UNIX®.
+Somente conjuntos de relatório com carimbos de data e hora habilitados. O carimbo de data e hora enviado com o hit, com base no horário UNIX®.
 
 O Customer Journey Analytics não tem um conceito de conjunto de relatórios de carimbo de data e hora versus não carimbo de data e hora. Em vez disso, use `xdm.timestamp` e ajuste as configurações do componente conforme desejado.
 
@@ -336,13 +353,13 @@ Profundidade de bits da paleta de cores. Usado como parte do cálculo da dimens�
 
 +++**`daily_visitor`**
 
-Um sinalizador que determina se a ocorrência é um novo visitante diário.
+Um sinalizador que determina se o hit é um novo visitante diário.
 
 +++
 
 +++**`dataprivacyconsentoptin`**
 
-A dimensão Aceitação do gerenciamento de consentimento. Vários valores podem estar presentes por ocorrência, separados por uma barra vertical (`\|`). Os valores válidos incluem `DMP` e `SELL`.
+A dimensão Aceitação do gerenciamento de consentimento. Vários valores podem estar presentes por hit, separados por uma barra vertical (`\|`). Os valores válidos incluem `DMP` e `SELL`.
 
 Se sua organização tiver uma plataforma de gerenciamento de dados, ela provavelmente preencherá os campos XDM desejados para essa dimensão.
 
@@ -350,7 +367,7 @@ Se sua organização tiver uma plataforma de gerenciamento de dados, ela provave
 
 +++**`dataprivacyconsentoptout`**
 
-A dimensão Recusa no gerenciamento de consentimento. Vários valores podem estar presentes por ocorrência, separados por uma barra vertical (`\|`). Os valores válidos incluem `SSF`, `DMP` e `SELL`.
+A dimensão Recusa no gerenciamento de consentimento. Vários valores podem estar presentes por hit, separados por uma barra vertical (`\|`). Os valores válidos incluem `SSF`, `DMP` e `SELL`.
 
 Se sua organização tiver uma plataforma de gerenciamento de dados, ela provavelmente preencherá os campos XDM desejados para essa dimensão.
 
@@ -358,7 +375,7 @@ Se sua organização tiver uma plataforma de gerenciamento de dados, ela provave
 
 +++**`date_time`**
 
-O horário da ocorrência em formato legível, com base no fuso horário do conjunto de relatórios.
+O horário do hit em formato legível, com base no fuso horário do conjunto de relatórios.
 
 Você pode usar `xdm.timestamp` e aplicar a configuração de componente **[!UICONTROL Data]** ou **[!UICONTROL Data-hora]** [Formato](/help/data-views/component-settings/format.md).
 
@@ -374,7 +391,7 @@ Habilitar **[!UICONTROL Pesquisa de rede]** ao [Configurar uma sequência de dad
 
 +++**`duplicated_from`**
 
-Somente usado em conjuntos de relatórios contendo uma cópia da ocorrência com regras VISTA. Indica de qual conjunto de relatórios a ocorrência foi copiada.
+Somente usado em conjuntos de relatórios contendo uma cópia do hit com regras VISTA. Indica de qual conjunto de relatórios o hit foi copiado.
 
 {{cja-df-na}}
 
@@ -394,7 +411,7 @@ O Customer Journey Analytics não tem um campo único que atue como um sinalizad
 
 +++**`duplicate_purchase`**
 
-Um sinalizador que determina se o evento de compra para esta ocorrência é ignorado por estar duplicado.
+Um sinalizador que determina se o evento de compra para este hit é ignorado por estar duplicado.
 
 Embora não haja uma tradução direta para essa coluna do feed de dados do Analytics, sua funcionalidade de agir para desduplicar compras ainda existe. Se estiver usando o grupo de campos [[!UICONTROL Detalhes do Commerce]](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/field-groups/event/commerce-details), você poderá definir [Configurações do componente de desduplicação de métrica](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-dataviews/component-settings/metric-deduplication), onde a **[!UICONTROL ID de Desduplicação]** é `xdm.commerce.purchases.id`.
 
@@ -420,7 +437,7 @@ Variáveis personalizadas 1-250. Usado nas dimensões do eVar. Cada organizaçã
 
 +++**`event_list`**
 
-Lista separada por vírgulas de IDs numéricas que representam eventos acionados na ocorrência. Inclui eventos comerciais e eventos personalizados 1-1000. Usa a pesquisa `event.tsv`.
+Lista separada por vírgulas de IDs numéricas que representam eventos acionados no hit. Inclui eventos comerciais e eventos personalizados 1-1000. Usa a pesquisa `event.tsv`.
 
 Essa coluna provavelmente mapeia dezenas de métricas separadas, dependendo da implementação. A Adobe recomenda o seguinte processo para mapear cada métrica respectiva no Customer Journey Analytics ao seu valor numérico representado nesta coluna de feed de dados do Analytics:
 
@@ -459,7 +476,7 @@ Se você deseja desduplicar a métrica Pedidos, consulte `duplicate_purchase`.
 
 +++**`exclude_hit`**
 
-Um sinalizador que determina se a ocorrência é excluída dos relatórios. A coluna `visit_num` não é incrementada para hits excluídos.
+Um sinalizador que determina se o hit é excluído dos relatórios. A coluna `visit_num` não é incrementada para hits excluídos.
 
 O Customer Journey Analytics não respeita as &quot;ocorrências excluídas&quot; prontas para uso. No entanto, é possível recriar essa funcionalidade se você tiver um campo XDM que sinaliza determinadas ocorrências a serem excluídas:
 
@@ -506,67 +523,67 @@ Uma ID numérica que representa o tipo do referenciador do primeiro referenciado
 
 +++**`first_hit_time_gmt`**
 
-Carimbo de data e hora da primeira ocorrência de um(a) visitante, com base no horário UNIX®.
+Carimbo de data e hora do primeiro hit de um(a) visitante, com base no horário UNIX®.
 
 +++
 
 +++**`geo_city`**
 
-O nome da cidade na qual a ocorrência foi originada, com base no IP. Usado na dimensão Cidades.
+O nome da cidade na qual o hit foi originado, com base no IP. Usado na dimensão Cidades.
 
 +++
 
 +++**`geo_country`**
 
-A abreviação do país no qual a ocorrência foi originada, com base no IP. Usado na dimensão Países.
+A abreviação do país no qual o hit foi originado, com base no IP. Usado na dimensão Países.
 
 +++
 
 +++**`geo_dma`**
 
-Uma ID numérica da área demográfica em que a ocorrência foi originada, com base no IP. Usado na dimensão US DMA.
+Uma ID numérica da área demográfica em que o hit foi originado, com base no IP. Usado na dimensão US DMA.
 
 +++
 
 +++**`geo_region`**
 
-O nome do estado ou região em que a ocorrência foi originada, com base no IP. Usado na dimensão Regiões.
+O nome do estado ou região em que o hit foi originado, com base no IP. Usado na dimensão Regiões.
 
 +++
 
 +++**`geo_zip`**
 
-O código postal no qual a ocorrência foi originada, com base no IP. Ajuda a preencher a dimensão CEP. Consulte também `zip`.
+O código postal no qual o hit foi originado, com base no IP. Ajuda a preencher a dimensão CEP. Consulte também `zip`.
 
 +++
 
 +++**`hitid_high`**
 
-Usado em combinação com `hitid_low` para identificar uma ocorrência.
+Usado em combinação com `hitid_low` para identificar um hit.
 
 +++
 
 +++**`hitid_low`**
 
-Usado em combinação com `hitid_high` para identificar uma ocorrência.
+Usado em combinação com `hitid_high` para identificar um hit.
 
 +++
 
 +++**`hit_source`**
 
-A origem da ocorrência. As fontes de ocorrência 1 e 2 são cobradas. <br>1: Solicitação de imagem padrão sem carimbo de data/hora <br>2: Solicitação de imagem padrão com carimbo de data/hora <br>3: Carregamento de fonte de dados ao vivo com carimbos de data/hora <br>4: Não utilizado <br>5: Carregamento de fonte de dados genérica <br>6: Deixar de ser utilizado; Carregamento completo da fonte de dados de processamento <br>7: Carregamento da fonte de dados TransactionID <br>8: Deixar de ser utilizado; Versões anteriores das fontes de dados do Adobe Advertising <br>9: Deixar de ser utilizado; Métricas de resumo do Adobe Social <br>10: Encaminhamento do Audience Manager usado
+A origem do hit. As fontes de ocorrência 1 e 2 são cobradas. <br>1: Solicitação de imagem padrão sem carimbo de data/hora <br>2: Solicitação de imagem padrão com carimbo de data/hora <br>3: Carregamento de fonte de dados ao vivo com carimbos de data/hora <br>4: Não utilizado <br>5: Carregamento de fonte de dados genérica <br>6: Deixar de ser utilizado; Carregamento completo da fonte de dados de processamento <br>7: Carregamento da fonte de dados TransactionID <br>8: Deixar de ser utilizado; Versões anteriores das fontes de dados do Adobe Advertising <br>9: Deixar de ser utilizado; Métricas de resumo do Adobe Social <br>10: Encaminhamento do Audience Manager usado
 
 +++
 
 +++**`hit_time_gmt`**
 
-O carimbo de data e hora de quando os servidores de coleta de dados de ocorrências da Adobe receberam a ocorrência, com base no horário UNIX®.
+O carimbo de data e hora de quando os servidores de coleta de dados de hits da Adobe receberam o hit, com base no horário UNIX®.
 
 +++
 
 +++**`hourly_visitor`**
 
-Um sinalizador que determina se a ocorrência é um novo visitante por hora.
+Um sinalizador que determina se o hit é um novo visitante por hora.
 
 +++
 
@@ -614,7 +631,7 @@ Uma ID numérica que representa o idioma do visitante.
 
 +++**`last_hit_time_gmt`**
 
-Carimbo de data e hora (em horário UNIX®) da ocorrência anterior. Usado para calcular a dimensão Dias desde a última visita.
+Carimbo de data e hora (em horário UNIX®) do hit anterior. Usado para calcular a dimensão Dias desde a última visita.
 
 +++
 
@@ -971,7 +988,7 @@ Listar valores de variáveis. Contém uma lista delimitada de valores personaliz
 
 +++**`mvvar1_instances`** - **`mvvar3_instances`**
 
-Os valores da variável de lista que foram definidos na ocorrência atual. Substitui o delimitador original por `--**--`. As colunas `post` normalmente não contêm dados.
+Os valores da variável de lista que foram definidos no hit atual. Substitui o delimitador original por `--**--`. As colunas `post` normalmente não contêm dados.
 
 {{cja-df-post}}
 
@@ -979,7 +996,7 @@ Os valores da variável de lista que foram definidos na ocorrência atual. Subst
 
 +++**`new_visit`**
 
-Um sinalizador que determina se a ocorrência atual é uma nova visita. Definido pela Adobe após 30 minutos de inatividade da visita.
+Um sinalizador que determina se o hit atual é uma nova visita. Definido pela Adobe após 30 minutos de inatividade da visita.
 
 +++
 
@@ -1017,7 +1034,7 @@ Semelhante a `pagename`, exceto que não retorna a `page_url`. Somente a coluna 
 
 +++**`page_event`**
 
-O tipo de ocorrência que é enviado na solicitação da imagem (ocorrência padrão, link de download, link personalizado, link de saída).
+O tipo de hit que é enviado na solicitação da imagem (hit padrão, link de download, link personalizado, link de saída).
 
 {{cja-df-post}}
 
@@ -1059,13 +1076,13 @@ A dimensão Páginas não encontradas, que é normalmente usada para páginas 40
 
 +++**`paid_search`**
 
-Um sinalizador que determina se a ocorrência corresponde à detecção de pesquisa paga.
+Um sinalizador que determina se o hit corresponde à detecção de pesquisa paga.
 
 +++
 
 +++**`persistent_cookie`**
 
-Usada na dimensão Suporte à cookie persistente. Indica se o visitante aceita cookies que não são descartados após cada ocorrência.
+Usada na dimensão Suporte à cookie persistente. Indica se o visitante aceita cookies que não são descartados após cada hit.
 
 {{cja-df-post}}
 
@@ -1115,7 +1132,7 @@ Identificador exclusivo de uma compra, definido usando a variável `purchaseID`.
 
 +++**`quarterly_visitor`**
 
-Um sinalizador que determina se a ocorrência é um novo visitante trimestral.
+Um sinalizador que determina se o hit é um novo visitante trimestral.
 
 +++
 
@@ -1136,7 +1153,7 @@ A dimensão Domínio referenciador. Com base na coluna `referrer`.
 +++**`ref_type`**
 
 
-Uma ID numérica que representa o tipo de referência da ocorrência. Usado na dimensão Tipo de referenciador.<br>1: Dentro do seu site<br>2: Outros sites<br>3: Mecanismos de pesquisa<br>4: Disco rígido<br>5: USENET<br>6: Digitado/Marcado (sem referenciador)<br>7: Email<br>8: Sem JavaScript<br>9: Redes sociais<br>10: Ferramentas de IA de conversação
+Uma ID numérica que representa o tipo de referência do hit. Usado na dimensão Tipo de referenciador.<br>1: Dentro do seu site<br>2: Outros sites<br>3: Mecanismos de pesquisa<br>4: Disco rígido<br>5: USENET<br>6: Digitado/Marcado (sem referenciador)<br>7: Email<br>8: Sem JavaScript<br>9: Redes sociais<br>10: Ferramentas de IA de conversação
 
 +++
 
@@ -1166,7 +1183,7 @@ Usado pela dimensão Todas as classificações da página de pesquisa. Indica em
 
 +++**`secondary_hit`**
 
-Um sinalizador que determina se a ocorrência é secundária. Normalmente origina-se da marcação de vários relatórios e regras VISTA que copiam ocorrências.
+Um sinalizador que determina se o hit é secundário. Normalmente origina-se da marcação de vários relatórios e regras VISTA que copiam hits.
 
 +++
 
@@ -1230,7 +1247,7 @@ Um identificador exclusivo, em que vários pontos de dados podem ser carregados 
 
 +++**`truncated_hit`**
 
-Um sinalizador que indica que a solicitação de imagem foi truncada (uma ocorrência parcial foi recebida). <br>Y: Ocorrência truncada; ocorrência parcial recebida <br>N: Ocorrência não truncada; ocorrência total recebida
+Um sinalizador que indica que a solicitação de imagem foi truncada (uma ocorrência parcial foi recebida). <br>Y: hit truncado; hit parcial recebido <br>N: hit não truncado; hit total recebido
 
 +++
 
@@ -1250,7 +1267,7 @@ Fora de uso. A ID numérica da ID do conjunto de relatórios. Use `username` no 
 
 +++**`username`**
 
-A ID de conjunto de relatórios da ocorrência.
+A ID de conjunto de relatórios do hit.
 
 +++
 
@@ -1472,7 +1489,7 @@ A dimensão Serviços de mídia de transmissão do tipo de feed de mídia.
 
 +++**`videogenre`**
 
-A dimensão Serviços de streaming de mídia de gênero. Essa dimensão permite vários valores delimitados por vírgula na mesma ocorrência.
+A dimensão Serviços de streaming de mídia de gênero. Essa dimensão permite vários valores delimitados por vírgula no mesmo hit.
 
 {{cja-df-post}}
 
@@ -1576,13 +1593,13 @@ A dimensão Erros nos serviços de mídia de transmissão.
 
 +++**`videoqoeextneralerrors`**
 
-A dimensão Serviços de mídia de streaming de IDs de erro externo. Essa dimensão permite vários valores na mesma ocorrência.
+A dimensão Serviços de mídia de streaming de IDs de erro externo. Essa dimensão permite vários valores no mesmo hit.
 
 +++
 
 +++**`videoqoeplayersdkerrors`**
 
-A dimensão Serviços de mídia de streaming de IDs de erro do Player SDK. Essa dimensão permite vários valores na mesma ocorrência.
+A dimensão Serviços de mídia de streaming de IDs de erro do Player SDK. Essa dimensão permite vários valores no mesmo hit.
 
 {{cja-df-post}}
 
@@ -1660,7 +1677,7 @@ Usado em combinação com `visid_high` para identificar exclusivamente um(a) vis
 
 +++**`visid_new`**
 
-Um sinalizador que determina se a ocorrência contém uma ID de visitante recém-gerada.
+Um sinalizador que determina se o hit contém uma ID de visitante recém-gerada.
 
 +++
 
@@ -1694,7 +1711,7 @@ A dimensão Número de visitas. Começa em 1, e incrementa a cada início de nov
 
 +++**`visit_page_num`**
 
-A dimensão Profundidade da ocorrência. Aumenta em 1 para cada ocorrência que o visitante gera. Redefine cada visita.
+A dimensão Profundidade da ocorrência. Aumenta em 1 para cada hit que o visitante gera. Redefine cada visita.
 
 +++
 
@@ -1740,19 +1757,19 @@ URL da primeira ocorrência da visita.
 
 +++**`visit_start_time_gmt`**
 
-Carimbo de data e hora (em horário UNIX®) da primeira ocorrência da visita.
+Carimbo de data e hora (em horário UNIX®) do primeiro hit da visita.
 
 +++
 
 +++**`weekly_visitor`**
 
-Um sinalizador que determina se a ocorrência é um novo visitante semanal.
+Um sinalizador que determina se o hit é um novo visitante semanal.
 
 +++
 
 +++**`yearly_visitor`**
 
-Um sinalizador que determina se a ocorrência é um novo visitante anual.
+Um sinalizador que determina se o hit é um novo visitante anual.
 
 +++
 

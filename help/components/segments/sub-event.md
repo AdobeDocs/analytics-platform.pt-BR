@@ -2,17 +2,25 @@
 title: Análise de sub-eventos
 description: Saiba como a análise de subeventos permite filtrar produtos individuais ou outros contêineres em um evento no Customer Jornada Analytics, eliminando a sangria de atribuição nos relatórios de produtos.
 feature: Segmentation
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
 subfeature_v2:
   - id: a544b409-2610-410d-a842-474ac1d0d54e
-source-git-commit: 8a5568b3b6136bc3f8b507f551fbb6d169e4b88a
+    internal-label: Segment Builder
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 680
+source-wordcount: '680'
 ht-degree: 8%
-
 ---
-
 # Análise de sub-evento
 
 A análise de subeventos permite analisar os dados do evento em um nível mais granular do que o nível do evento. Em vez de filtrar eventos inteiros, você pode segmentar em contêineres individuais dentro de eventos. Por exemplo:

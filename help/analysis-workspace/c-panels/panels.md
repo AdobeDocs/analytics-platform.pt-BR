@@ -4,30 +4,41 @@ title: Visão Geral Dos Painéis No Analysis Workspace
 feature: Panels
 exl-id: be3e34a0-06c1-4200-b965-96084c2912fd
 role: User
-TQID: https://experienceleague.adobe.com/4UiJUXEOGW3paTCi293AADuY1VYiu2egk0A4Oyv5uD8
+TQID: 'https://experienceleague.adobe.com/4UiJUXEOGW3paTCi293AADuY1VYiu2egk0A4Oyv5uD8'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: e634a07b-b7ca-4af3-a124-3024ce559e17
+    internal-label: Workspace panels
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Insights
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 2809
+source-wordcount: '2812'
 ht-degree: 41%
-
 ---
-
 # Visão geral dos painéis {#panels-overview}
 
 Um [!UICONTROL painel] é uma coleção de tabelas e visualizações. Você pode acessar os painéis utilizando o ícone no canto superior esquerdo do espaço de trabalho ou por meio de um [painel em branco](/help/analysis-workspace/c-panels/blank-panel.md). Os painéis são úteis quando você deseja organizar seus projetos de acordo com períodos, visualizações de dados ou casos de uso de análise.
@@ -148,12 +159,12 @@ Também é possível selecionar uma **[!UICONTROL predefinição]** no menu susp
 
      É possível selecionar o texto entre parênteses (por exemplo, **[!UICONTROL início fixo - rolagem diária]**) para estender o painel e especificar detalhes para **[!UICONTROL Início]** e **[!UICONTROL Fim]**.
 
-      1. Selecione **[!UICONTROL Início de]**, **[!UICONTROL Fim de]** ou **[!UICONTROL Dia fixo]**.
-      1. Ao selecionar **[!UICONTROL Início de]** ou **[!UICONTROL Fim de]**, você pode criar uma expressão completa. Por exemplo: **[!UICONTROL Fim do]** **[!UICONTROL ano atual]** **[!UICONTROL mais]** `1` **[!UICONTROL dia]**. Escolha o valor apropriado para cada parte individual da expressão.
-         * Selecione um valor para o atual. Por exemplo, **[!UICONTROL ano atual]**.
-         * Selecione um valor para o cálculo adicional. Por exemplo, **[!UICONTROL mais]**.
-         * Após definir um cálculo adicional, especifique um valor. Por exemplo, `1`.
-         * Depois de especificar um cálculo adicional, selecione o período a ser usado para o cálculo. Por exemplo, **[!UICONTROL dia]**.
+     1. Selecione **[!UICONTROL Início de]**, **[!UICONTROL Fim de]** ou **[!UICONTROL Dia fixo]**.
+     1. Ao selecionar **[!UICONTROL Início de]** ou **[!UICONTROL Fim de]**, você pode criar uma expressão completa. Por exemplo: **[!UICONTROL Fim do]** **[!UICONTROL ano atual]** **[!UICONTROL mais]** `1` **[!UICONTROL dia]**. Escolha o valor apropriado para cada parte individual da expressão.
+        * Selecione um valor para o atual. Por exemplo, **[!UICONTROL ano atual]**.
+        * Selecione um valor para o cálculo adicional. Por exemplo, **[!UICONTROL mais]**.
+        * Após definir um cálculo adicional, especifique um valor. Por exemplo, `1`.
+        * Depois de especificar um cálculo adicional, selecione o período a ser usado para o cálculo. Por exemplo, **[!UICONTROL dia]**.
 
      Selecione **[!UICONTROL Ocultar detalhes]** para ocultar os detalhes do cálculo de datas contínuas.
 
@@ -184,14 +195,14 @@ Para adicionar ou substituir segmentos ou detalhamentos (rápidos):
    ![Adicionar ou substituir na zona de destino](assets/add-or-replace-to-drop-zone.png)
 
    * Solte a seleção para criar os seguintes componentes:
-      * [Segmentar](#segment) para qualquer componente de segmento que você soltar ❷.
-      * [Segmento rápido](#quick-segment) para quaisquer componentes que não sejam de segmentos (intervalos de datas, métricas, dimensões, itens de dimensão) nos quais você solta ❸.
+     * [Segmentar](#segment) para qualquer componente de segmento que você soltar ❷.
+     * [Segmento rápido](#quick-segment) para quaisquer componentes que não sejam de segmentos (intervalos de datas, métricas, dimensões, itens de dimensão) nos quais você solta ❸.
    * Solte a seleção **enquanto mantém pressionada** (shift) para criar os seguintes componentes:
-      * Segmento estático [menu suspenso](#drop-down-menu) com itens para filtrar para os segmentos selecionados que você solta ❹.
-      * Segmento estático [menu suspenso](#drop-down-menu) com itens para filtrar para os intervalos de datas selecionados que você solta ❺.
-      * Segmento estático [menu suspenso](#drop-down-menu) com itens para filtrar para as métricas selecionadas que você solta ❻.
-      * Segmento estático [menu suspenso](#drop-down-menu) ou detalhamento [menu suspenso](#drop-down-menu) com itens para filtrar ou detalhar para a dimensão selecionada *itens* que você solta ❼.
-      * Segmento dinâmico [menu suspenso](#drop-down-menu) ou detalhamento [menu suspenso](#drop-down-menu) com itens para filtrar ou detalhar para as dimensões selecionadas nas quais você solta ❽.
+     * Segmento estático [menu suspenso](#drop-down-menu) com itens para filtrar para os segmentos selecionados que você solta ❹.
+     * Segmento estático [menu suspenso](#drop-down-menu) com itens para filtrar para os intervalos de datas selecionados que você solta ❺.
+     * Segmento estático [menu suspenso](#drop-down-menu) com itens para filtrar para as métricas selecionadas que você solta ❻.
+     * Segmento estático [menu suspenso](#drop-down-menu) ou detalhamento [menu suspenso](#drop-down-menu) com itens para filtrar ou detalhar para a dimensão selecionada *itens* que você solta ❼.
+     * Segmento dinâmico [menu suspenso](#drop-down-menu) ou detalhamento [menu suspenso](#drop-down-menu) com itens para filtrar ou detalhar para as dimensões selecionadas nas quais você solta ❽.
 
 
 ### Segmento

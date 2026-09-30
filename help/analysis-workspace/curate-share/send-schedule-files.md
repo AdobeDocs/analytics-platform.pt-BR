@@ -4,26 +4,36 @@ title: Visão Geral Da Preparação E Compartilhamento De Projetos
 feature: Curate and Share
 exl-id: d7f92e59-18e9-43cd-8121-3c970434aaee
 role: User
-TQID: https://experienceleague.adobe.com/xpqbnE4txVaifsGQr3dTbQBzo2G92BF9ShjquzRQBRE
+TQID: 'https://experienceleague.adobe.com/xpqbnE4txVaifsGQr3dTbQBzo2G92BF9ShjquzRQBRE'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: c38ed341-fab2-46df-9d72-88d8166edebb
+    internal-label: Workspace projects
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: a3b826fd-7a63-4a83-8736-83eee6668f44
+    internal-label: Curate and share
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: User
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 187
+source-wordcount: '187'
 ht-degree: 52%
-
 ---
-
 # Preparar e compartilhar a visão geral dos projetos
 
 Você pode preparar e compartilhar projetos ou enviar projetos como arquivos PDF ou CSV para recipients em sua organização ou com qualquer outra pessoa usando as opções disponíveis no menu **[!UICONTROL Compartilhar]** do Analysis Workspace ou ao selecionar **[!UICONTROL Compartilhar]** na parte superior direita da interface.

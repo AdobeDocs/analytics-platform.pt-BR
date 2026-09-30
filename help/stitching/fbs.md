@@ -9,23 +9,30 @@ autotag-review: '2026-05-19T09:20:59.053Z'
 TQID: 'https://experienceleague.adobe.com/V2OisDuYtD0SxUo8OlCEMKJ5wYEWS7nfxOp2IOMQWJQ'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
 subfeature_v2:
   - id: faea9abd-7024-4c5e-a5b4-87919e09b24b
+    internal-label: Stitching
+  - id: b7fb3355-1f54-4380-bce3-d444b226c0e9
+    internal-label: Cross channel analysis
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+    internal-label: Measurement
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Privacy
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1938
+source-wordcount: '1938'
 ht-degree: 82%
-
 ---
-
 # Compilação em campo
 
 Na compilação em campo, você especifica um conjunto de dados de evento, bem como a ID persistente (cookie) e a ID de pessoa para esse conjunto de dados. A compilação em campo tenta disponibilizar as informações da ID de pessoa para a análise de dados da Customer Journey Analytics, em todos os eventos anônimos que vêm com uma ID persistente específica.  Essas informações são recuperadas das linhas que têm uma ID de pessoa para essa ID persistente específica.
@@ -110,7 +117,7 @@ A compilação em campo oferece suporte ao uso do grupo de campos do [`identityM
 
 A compilação faz um mínimo de duas passagens de dados em um determinado conjunto de dados.
 
-- **Compilação em tempo real**: tenta compilar cada ocorrência (evento) à medida que elas chegam. As ocorrências de dispositivos que são *novos* para o conjunto de dados (nunca foram autenticadas) normalmente não são compiladas neste nível. As ocorrências de dispositivos já reconhecidos são compiladas imediatamente.
+- **Compilação em tempo real**: tenta compilar cada hit (evento) à medida que elas chegam. Os hits de dispositivos que são *novos* para o conjunto de dados (nunca foram autenticados) normalmente não são compilados neste nível. Os hits de dispositivos já reconhecidos são compilados imediatamente.
 
 - **Repetir compilação**: *repete* dados com base em identificadores exclusivos (IDs de pessoa). É nesse estágio que as ocorrências de dispositivos anteriormente desconhecidos (IDs persistentes) se tornam compiladas (para IDs de pessoa). Dois parâmetros determinam a repetição: **frequência** e **janela de pesquisa**. A Adobe oferece as seguintes combinações desses parâmetros:
   - **Pesquisa diária em uma frequência diária**: os dados são repetidos todos os dias com uma janela de pesquisa de 24 horas. Essa opção tem a vantagem de as repetições serem muito mais frequentes, mas as pessoas não autenticadas devem se autenticar no mesmo dia em que visitam o site.
