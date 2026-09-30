@@ -5,32 +5,47 @@ role: Admin
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: f932110a-ca9d-40d1-9459-064ef9cd23da
-TQID: https://experienceleague.adobe.com/oNFeGuF3o7WGgp6nxSFv1GAVMcXL3Pt9N3isQo0r6TA
+TQID: 'https://experienceleague.adobe.com/oNFeGuF3o7WGgp6nxSFv1GAVMcXL3Pt9N3isQo0r6TA'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
   - id: f8667931-f646-4dd3-af2a-b9d0cb8098ad
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Taxonomy
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1545
-ht-degree: 10%
-
+source-wordcount: '1545'
+ht-degree: 11%
 ---
-
 # Projete o seu esquema para uso com o Customer Journey Analytics {#upgrade-schema-architect}
 
 <!-- markdownlint-disable MD034 -->
@@ -110,14 +125,14 @@ No Adobe Analytics, muitas equipes tratam a variável `events` como o único mei
 Ao arquitetar um esquema, observe os fatos. Por exemplo, `error.type = "validation"`, `user.isLoggedIn = true`, `checkout.step = "shipping"`. Defina métricas na visualização de dados como contagens e contagens filtradas sobre esses fatos. Por exemplo:
 
 * `checkout.step` (enum/cadeia de caracteres) pode ligar:
-   * &quot;Check-out: etapa de envio atingida&quot; (contagem em que `checkout.step == "shipping"`)
-   * &quot;Check-out: etapa de pagamento atingida&quot;
+  * &quot;Check-out: etapa de envio atingida&quot; (contagem em que `checkout.step == "shipping"`)
+  * &quot;Check-out: etapa de pagamento atingida&quot;
 * `error.type` (enum/cadeia de caracteres) pode ligar:
-   * &quot;Erros de validação&quot;
-   * &quot;Erros de autorização&quot;
+  * &quot;Erros de validação&quot;
+  * &quot;Erros de autorização&quot;
 * `user.isLoggedIn` (booleano) pode ligar:
-   * &quot;Sessões autenticadas&quot;
-   * &quot;Conversões autenticadas&quot;
+  * &quot;Sessões autenticadas&quot;
+  * &quot;Conversões autenticadas&quot;
 
 >[!TIP]
 >
@@ -129,7 +144,7 @@ Algumas organizações precisam continuar os relatórios do Adobe Analytics ao a
 
 1. **Use caminhos de campo XDM reconhecidos e mapeados automaticamente pela Adobe Analytics:** Quando você envia campos XDM reconhecidos pela Edge Network para a Adobe Analytics, eles são [mapeados automaticamente](https://experienceleague.adobe.com/pt-br/docs/analytics/implementation/aep-edge/xdm-var-mapping) sem configuração extra.
 1. **Use campos XDM personalizados para conceitos específicos da organização:** Todos os campos XDM que não são mapeados automaticamente para uma variável do Analytics são encaminhados como [Variáveis de dados de contexto](https://experienceleague.adobe.com/pt-br/docs/analytics/implementation/vars/page-vars/contextdata) no Adobe Analytics.
-1. **Use as regras de processamento do Adobe Analytics para mapear essas variáveis de dados de contexto como props/eVars:** [As regras de processamento](https://experienceleague.adobe.com/pt-br/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) finalmente permitem mapear qualquer campo XDM personalizado em qualquer eVar ou prop. Esse conceito é compatível com relatórios de paridade no Adobe Analytics, mantendo seu esquema limpo e centralizado no Customer Journey Analytics.
+1. **Use as regras de processamento do Adobe Analytics para mapear essas variáveis de dados de contexto como props/eVars:** [As regras de processamento](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) finalmente permitem mapear qualquer campo XDM personalizado em qualquer eVar ou prop. Esse conceito é compatível com relatórios de paridade no Adobe Analytics, mantendo seu esquema limpo e centralizado no Customer Journey Analytics.
 
 ## Identificar participantes e definir propriedade
 
@@ -147,7 +162,7 @@ Defina um proprietário claro para alterações no esquema. Um esquema estável 
 O design do esquema deve refletir as expectativas de privacidade e governança, de acordo com as políticas de privacidade da sua organização. Considere os seguintes pontos ao arquitetar o esquema:
 
 * Colete somente o que for necessário para oferecer suporte a casos de uso definidos.
-* Certifique-se de que os requisitos de consentimento e uso de dados sejam refletidos em sua estratégia de coleta. Consulte [Usar o Web SDK para processar dados de consentimento do cliente](https://experienceleague.adobe.com/pt-br/docs/experience-platform/landing/governance-privacy-security/consent/sdk) para obter mais informações.
+* Certifique-se de que os requisitos de consentimento e uso de dados sejam refletidos em sua estratégia de coleta. Consulte [Usar o Web SDK para processar dados de consentimento do cliente](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/consent/sdk) para obter mais informações.
 * Considere como os campos confidenciais são rotulados e controlados nas ferramentas de governança do Adobe Experience Platform. Consulte [Adobe Customer Journey Analytics e governança de dados](/help/privacy/privacy-overview.md) para obter mais informações.
 
 ## Próximas etapas

@@ -5,33 +5,49 @@ role: User
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: ae66cd06-7ec1-4174-a3cf-939c3a66b840
-TQID: https://experienceleague.adobe.com/EQ6tDK5VUq5-OQOZtLCoaqh-HBHMsU9c8Bfizy9BcPs
+TQID: 'https://experienceleague.adobe.com/EQ6tDK5VUq5-OQOZtLCoaqh-HBHMsU9c8Bfizy9BcPs'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: aff2ef09-fc60-4018-9197-e2befd623064
+    internal-label: Anomaly detection
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+    internal-label: Audiences
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Machine learning
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1680
+source-wordcount: '1680'
 ht-degree: 100%
-
 ---
-
 # Comparar soluções do Customer Journey Analytics às soluções de BI
 
 Com o foco atual na experiência do cliente, as marcas exigem soluções avançadas para entender melhor a jornada integral do cliente. Entender por completo essa jornada do cliente permite analisar e obter informações valiosas sobre como os canais online e offline envolvem os clientes e levam ao aumento da conversão, retenção e fidelidade. Neste contexto, uma jornada do cliente pode ser um simples pedido online de uma refeição em uma franquia de sushi. Ou a compra de um carro novo, onde o cliente combina sua pesquisa online com visitas ao showroom do revendedor, finalizando a compra presencialmente.
@@ -84,9 +100,9 @@ Integrados a esses componentes de visualização, estão recursos inteligentes c
 
 * **Recursos de análise avançada** que se concentram especificamente em insights de jornada de cliente, como [diagramas de fluxo](/help/analysis-workspace/visualizations/c-flow/flow.md), [painel de atribuição](/help/analysis-workspace/c-panels/attribution.md), [diagramas de fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) e [detalhamentos de dimensão](/help/components/dimensions/t-breakdown-fa.md). Exemplos de visualizações prontas para uso são:
 
-   * [Análise de retenção do cliente por meio de tabelas de coorte/latência](/help/analysis-workspace/visualizations/cohort-table/cohort-use-cases.md), que permitem simplesmente arrastar e soltar métricas/dimensões em um construtor, gerando resultados em menos de 30 segundos,
+  * [Análise de retenção do cliente por meio de tabelas de coorte/latência](/help/analysis-workspace/visualizations/cohort-table/cohort-use-cases.md), que permitem simplesmente arrastar e soltar métricas/dimensões em um construtor, gerando resultados em menos de 30 segundos,
 
-   * Visualizações de [fallout](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md)/[fluxo](/help/analysis-workspace/visualizations/c-flow/create-flow.md). Configurado em menos de um minuto.
+  * Visualizações de [fallout](/help/analysis-workspace/visualizations/fallout/configuring-fallout.md)/[fluxo](/help/analysis-workspace/visualizations/c-flow/create-flow.md). Configurado em menos de um minuto.
 
 * **Recurso de segmentação em cada etapa da exploração progressiva**: sempre que achar relevante, publique novamente o seu público-alvo na Experience Platform e, em seguida, em um dos destinos compatíveis.
 
@@ -94,9 +110,9 @@ Integrados a esses componentes de visualização, estão recursos inteligentes c
 
 * **Curadoria e democratização**: os painéis criados no Customer Journey Analytics podem ser:
 
-   * [Preparados](/help/analysis-workspace/curate-share/curate.md) para exploração contínua por outras pessoas da organização,
-   * Exportados para o Excel usando o [Report Builder](/help/report-builder/rb-overview.md) (um plug-in dedicado),
-   * [Compartilhados](/help/analysis-workspace/curate-share/share-projects.md) em vários formatos, incluindo [PDF](/help/analysis-workspace/export/download-send.md), [CSV](/help/analysis-workspace/export/download-send.md) e através de um [aplicativo móvel dedicado](/help/mobile-app/home.md), com aqueles que estão interessados nos relatórios finais e/ou visualizações.
+  * [Preparados](/help/analysis-workspace/curate-share/curate.md) para exploração contínua por outras pessoas da organização,
+  * Exportados para o Excel usando o [Report Builder](/help/report-builder/rb-overview.md) (um plug-in dedicado),
+  * [Compartilhados](/help/analysis-workspace/curate-share/share-projects.md) em vários formatos, incluindo [PDF](/help/analysis-workspace/export/download-send.md), [CSV](/help/analysis-workspace/export/download-send.md) e através de um [aplicativo móvel dedicado](/help/mobile-app/home.md), com aqueles que estão interessados nos relatórios finais e/ou visualizações.
 
 Comparar os recursos de visualização do Customer Journey Analytics com o que as ferramentas de BI oferecem é uma tarefa difícil devido à variedade de visualizações disponíveis. Algumas ferramentas de BI têm visualizações mais avançadas, mas o Customer Journey Analytics se concentra em visualizações de jornada de cliente interativas e interoperáveis que permitem detalhar os dados em segundos, sem “cobrar” por cada consulta adicional.
 

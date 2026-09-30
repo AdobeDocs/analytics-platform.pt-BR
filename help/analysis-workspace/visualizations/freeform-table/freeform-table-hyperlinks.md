@@ -8,21 +8,26 @@ autotag-review: '2026-05-19T08:42:43.573Z'
 TQID: 'https://experienceleague.adobe.com/HnG-l4s4MLz-vmdQVtFzVQIC-lzsbAxWItNFFYHqv5I'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
 subfeature_v2:
   - id: ddf59f64-0e46-4986-a525-056acc143c70
+    internal-label: Workspace visualizations
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Customer journeys
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1627
+source-wordcount: '1627'
 ht-degree: 97%
-
 ---
-
 # Criar hiperlinks em tabelas de forma livre
 
 Você pode criar hiperlinks para itens de dimensão para torná-los clicáveis em uma tabela de forma livre no Analysis Workspace.
@@ -53,8 +58,8 @@ Considere o seguinte ao criar hiperlinks para um ou mais itens de dimensão:
 
 * A validade dos URLs não é verificada ao criar o hiperlink. Se você
 
-   * criar um hiperlink com um URL inválido ou
-   * criar um hiperlink que faça referência a um item de dimensão que não tenha um valor de URL (fazendo referência ao item de dimensão diretamente ou usando as variáveis `$value` ou `$breakdown`),
+  * criar um hiperlink com um URL inválido ou
+  * criar um hiperlink que faça referência a um item de dimensão que não tenha um valor de URL (fazendo referência ao item de dimensão diretamente ou usando as variáveis `$value` ou `$breakdown`),
 
   em seguida, os usuários que clicam no hiperlink veem uma mensagem de erro informando que o URL é inválido.
 
@@ -68,23 +73,23 @@ Para criar hiperlinks para um ou mais itens de dimensão:
 
    * **Criar um hiperlink para um único item de dimensão:** clique com o botão direito do mouse no item de dimensão na tabela para o qual deseja criar o hiperlink e selecione [!UICONTROL **Criar hiperlink**].
 
-      1. Abra o menu de contexto do item de dimensão.
-      1. Selecione [!UICONTROL **Criar hiperlink**] no menu de contexto.
+     1. Abra o menu de contexto do item de dimensão.
+     1. Selecione [!UICONTROL **Criar hiperlink**] no menu de contexto.
 
-         A caixa de diálogo [!UICONTROL **Criar hiperlink**] é exibida. O nome do item de dimensão para o qual você está criando um hiperlink é mostrado na caixa de diálogo.
+        A caixa de diálogo [!UICONTROL **Criar hiperlink**] é exibida. O nome do item de dimensão para o qual você está criando um hiperlink é mostrado na caixa de diálogo.
 
-         ![Criar hiperlink para caixa de diálogo de um único item](assets/hyperlink-dialog-single.png)
+        ![Criar hiperlink para caixa de diálogo de um único item](assets/hyperlink-dialog-single.png)
 
    * **Criar hiperlinks para todos os itens de dimensão em uma coluna de dimensão:** clique com o botão direito do mouse no nome da dimensão no cabeçalho da coluna de dimensão e selecione [!UICONTROL **Criar hiperlinks para todos os itens de dimensão**].
 
-      1. Abra o menu de contexto no cabeçalho da coluna de dimensão.
-      1. Selecione [!UICONTROL **Criar hiperlink para todos os itens de dimensão**] no menu de contexto.
+     1. Abra o menu de contexto no cabeçalho da coluna de dimensão.
+     1. Selecione [!UICONTROL **Criar hiperlink para todos os itens de dimensão**] no menu de contexto.
 
-         <!-- Do we really need a screenshot ![Create hyperlink for a dimension](assets/hyperlink-multiple-add.png) -->
+        <!-- Do we really need a screenshot ![Create hyperlink for a dimension](assets/hyperlink-multiple-add.png) -->
 
-         A caixa de diálogo [!UICONTROL **Criar hiperlinks para todos os itens de dimensão**] é exibida. O nome da dimensão para a qual você está criando hiperlinks é mostrado na caixa de diálogo.
+        A caixa de diálogo [!UICONTROL **Criar hiperlinks para todos os itens de dimensão**] é exibida. O nome da dimensão para a qual você está criando hiperlinks é mostrado na caixa de diálogo.
 
-         ![Caixa de diálogo Criar hiperlinks](assets/hyperlink-dialog-multiple.png)
+        ![Caixa de diálogo Criar hiperlinks](assets/hyperlink-dialog-multiple.png)
 
 1. Escolha entre as seguintes opções:
 
@@ -121,15 +126,15 @@ Para criar hiperlinks para um ou mais itens de dimensão:
 
    * **Editar um hiperlink para um único item de dimensão:**
 
-      1. Abra o menu de contexto do item de dimensão.
-      1. Selecione [!UICONTROL **Editar hiperlink**] no menu de contexto.
+     1. Abra o menu de contexto do item de dimensão.
+     1. Selecione [!UICONTROL **Editar hiperlink**] no menu de contexto.
 
      <!-- Do we really need a screenshot? ![Edit hyperlink for a single dimension item](assets/hyperlink-single-edit.png)-->
 
    * **Editar hiperlinks para todos os itens de dimensão em uma coluna de dimensão:**
 
-      1. Abra o menu de contexto no cabeçalho da coluna de dimensão.
-      1. Selecione **[!UICONTROL Editar hiperlink para todos os itens de dimensão]** no menu de contexto.
+     1. Abra o menu de contexto no cabeçalho da coluna de dimensão.
+     1. Selecione **[!UICONTROL Editar hiperlink para todos os itens de dimensão]** no menu de contexto.
 
      <!-- Do we really need a screenshot? ![Edit hyperlink for a dimension](assets/hyperlink-dimension-edit.png)-->
 
@@ -155,14 +160,14 @@ Para remover hiperlinks de itens de dimensão:
 
    * **Remover um hiperlink de um item de dimensão:**
 
-      1. Abra o menu de contexto do item de dimensão.
-      1. Selecione [!UICONTROL **Remover hiperlink**] no menu de contexto.
-         <!-- Do we really need a screenshot? ![Remove hyperlink from a single dimension item](assets/hyperlink-single-remove.png)-->
+     1. Abra o menu de contexto do item de dimensão.
+     1. Selecione [!UICONTROL **Remover hiperlink**] no menu de contexto.
+        <!-- Do we really need a screenshot? ![Remove hyperlink from a single dimension item](assets/hyperlink-single-remove.png)-->
 
    * **Remover hiperlinks de todos os itens de dimensão de uma coluna de dimensão:**
 
-      1. Abra o menu de contexto no cabeçalho da coluna de dimensão.
-      1. Selecione **[!UICONTROL Remover hiperlink de todos os itens de dimensão]** no menu de contexto.
+     1. Abra o menu de contexto no cabeçalho da coluna de dimensão.
+     1. Selecione **[!UICONTROL Remover hiperlink de todos os itens de dimensão]** no menu de contexto.
 
      <!-- Do we really need a screenshot? [Remove hyperlink from a dimension](assets/hyperlink-dimension-remove.png)-->
 

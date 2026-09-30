@@ -6,24 +6,32 @@ feature: Curate and Share
 mini-toc-levels: 3
 exl-id: 36b5133a-2cd3-4cf1-a6fa-93a02dba276a
 role: User
-TQID: https://experienceleague.adobe.com/9PqVAdD1FP8I5rNimNfSoUrVNOTmMAXaPgMMsYT8gGQ
+TQID: 'https://experienceleague.adobe.com/9PqVAdD1FP8I5rNimNfSoUrVNOTmMAXaPgMMsYT8gGQ'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: c38ed341-fab2-46df-9d72-88d8166edebb
+    internal-label: Workspace projects
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
+  - id: a3b826fd-7a63-4a83-8736-83eee6668f44
+    internal-label: Curate and share
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: User
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 838
+source-wordcount: '838'
 ht-degree: 50%
-
 ---
-
 # Enviar e agendar projetos
 
 Você pode enviar projetos Customer Journey Analytics como arquivos para usuários selecionados por email. Você pode enviar arquivos ad hoc ou pode configurar projetos para serem enviados de acordo com um cronograma.
@@ -97,7 +105,7 @@ Para enviar um arquivo por email de acordo com um agendamento para os recipients
 
 >[!NOTE]
 >
->A opção de proteger com senha um projeto agendado aparece somente para clientes do Customer Journey Analytics que compraram o produto complementar [Healthcare Shield](https://business.adobe.com/br/solutions/industries/healthcare.html).
+>A opção de proteger com senha um projeto agendado aparece somente para clientes do Customer Journey Analytics que compraram o produto complementar [Healthcare Shield](https://business.adobe.com/solutions/industries/healthcare.html).
 
 A Adobe usa a senha para criptografar projetos agendados, sejam eles enviados nos formatos .pdf ou .csv.
 
@@ -114,7 +122,7 @@ Os requisitos de senha estão em conformidade com os padrões da Adobe, exigindo
 ### Proteger com senha um novo projeto agendado
 
 1. Depois de salvar o projeto, acesse **[!UICONTROL Compartilhar]** > **[!UICONTROL Enviar arquivo agora]** ou **[!UICONTROL Compartilhar]** > **[!UICONTROL Enviar arquivo conforme agendado]**.
-1. Siga as instruções acima, em [Enviar arquivo agora](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html?lang=pt-BR#now) ou [Enviar arquivo agendado](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html?lang=pt-BR#schedule).
+1. Siga as instruções acima, em [Enviar arquivo agora](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html#now) ou [Enviar arquivo agendado](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/export/t-schedule-report.html#schedule).
 
 ### Proteger por senha um projeto agendado existente
 

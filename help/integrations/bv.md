@@ -3,13 +3,23 @@ title: Integração do Brand Visibility
 description: Integrar o Brand Visibility com o Customer Journey Analytics
 feature: Experience Platform Integration
 role: User
-source-git-commit: ab73c95a3ff0d57a4868d74266084a79c4c3721d
+product_v2:
+  - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
+feature_v2:
+  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+    internal-label: Integrations
+subfeature_v2:
+  - id: d3fb138f-79e4-4a81-aedb-76dd93560085
+    internal-label: Experience Platform integration
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
 source-wordcount: '2572'
 ht-degree: 2%
-
 ---
-
 
 # Integração do Adobe Brand Visibility
 
@@ -60,7 +70,7 @@ A segunda maneira é um bot ou agente que solicita as páginas diretamente. Isso
 O conector gerenciado do Brand Visibility fornece os dados para o Experience Platform como um conjunto de dados de resumo. Para medi-la no Customer Journey Analytics, você mesmo conclui duas etapas de configuração:
 
 1. Crie uma conexão que inclua o conjunto de dados do Brand Visibility. Consulte [Criar ou editar uma conexão](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-connections/create-connection){target="_blank"}.
-2. Crie uma visualização de dados nessa conexão. A visualização de dados disponibiliza as dimensões e métricas abaixo no Analysis Workspace. Consulte [Criar ou editar uma visualização de dados](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-dataviews/create-dataview){target="_blank"}.
+2. Crie uma visualização de dados nessa conexão. A visualização de dados disponibiliza as dimensões e métricas abaixo no Analysis Workspace. Consulte [Criar ou editar uma visualização de dados](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/create-dataview){target="_blank"}.
 
 O conjunto de dados:
 
@@ -178,4 +188,4 @@ Esse conjunto de dados captura somente o tráfego de bot dos logs de acesso do C
 
 ## Integração de saída
 
-Para obter informações sobre integração de saída, consulte [Integração do Customer Journey Analytics](https://experienceleague.adobe.com/pt-br/docs/brand-visibility/using/resources/customer-journey-analytics-integration){target="_blank"} na documentação sobre visibilidade da marca Adobe.
+Para obter informações sobre integração de saída, consulte [Integração do Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/brand-visibility/using/resources/customer-journey-analytics-integration){target="_blank"} na documentação sobre visibilidade da marca Adobe.

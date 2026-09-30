@@ -8,25 +8,34 @@ autotag-review: '2026-05-19T09:16:21.318Z'
 TQID: 'https://experienceleague.adobe.com/jx1pw9U5sw42999O132esMBoUcQ8hWuUKzzN3WLAcyY'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+    internal-label: Data governance
 subfeature_v2:
   - id: c5ed78d1-99be-42e1-b164-a20a3685241e
+    internal-label: Customer managed keys
+  - id: ffe2fd81-0630-49b3-a33b-4b8899e89c51
+    internal-label: Privacy
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+    internal-label: Governance
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Privacy
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 561
+source-wordcount: '561'
 ht-degree: 87%
-
 ---
-
 # Teclas gerenciadas pelo cliente
 
 O Adobe Customer Journey Analytics oferece a opção de os clientes do [Healthcare Shield](https://www.adobe.com/trust/compliance/hipaa-ready.html) e do Privacy &amp; Security Shield usarem as chaves gerenciadas pelo cliente (CMK) para dados do Customer Journey Analytics. Observe que esse processo é separado da [Configuração de CMK da Adobe Experience Platform](https://experienceleague.adobe.com/pt-br/docs/experience-platform/landing/governance-privacy-security/customer-managed-keys/overview). As chaves gerenciadas pelo cliente estão disponíveis apenas para organizações que adquiriram a oferta complementar do [Healthcare Shield ou Privacy &amp; Security Shield](https://experienceleague.adobe.com/pt-br/docs/events/customer-data-management-voices-recordings/governance/healthcare-shield).
@@ -39,7 +48,7 @@ Siga estas etapas para configurar a CMK para o Customer Journey Analytics em exe
 1. Verifique se, no Azure, você é um administrador com uma função privilegiada, como Administrador de aplicativos, Administrador de aplicativos na nuvem ou Administrador global. Consulte [Funções integradas do Microsoft Entra](https://learn.microsoft.com/pt-br/entra/identity/role-based-access-control/permissions-reference) para mais informações.
 1. Crie um novo cofre de chaves do Azure para ser usado somente com o Customer Journey Analytics. Consulte a [documentação do cofre de chaves do Microsoft Azure](https://learn.microsoft.com/pt-br/azure/key-vault/general/) para mais informações.
 1. Conceda acesso ao aplicativo Adobe Azure para sua chave no cofre de chaves. Você pode fazer isso usando um dos seguintes métodos:
-   * Conceder permissões por meio do consentimento de autorização através da seguinte URL: [https://login.microsoftonline.com/common/oauth2/authorize?response_type=code&client_id=251e3919-1940-4296-bb8b-6b9a5e8a4805&redirect_uri=https://experience.adobe.com&scope=user.read](https://login.microsoftonline.com/common/oauth2/authorize?response_type=code&client_id=251e3919-1940-4296-bb8b-6b9a5e8a4805&redirect_uri=https://experience.adobe.com&scope=user.read)
+   * Conceder permissões por meio do consentimento de autorização através da seguinte URL: [https://login.microsoftonline.com/common/oauth2/authorize?response_type=code&amp;client_id=251e3919-1940-4296-bb8b-6b9a5e8a4805&amp;redirect_uri=https://experience.adobe.com&amp;scope=user.read](https://login.microsoftonline.com/common/oauth2/authorize?response_type=code&client_id=251e3919-1940-4296-bb8b-6b9a5e8a4805&redirect_uri=https://experience.adobe.com&scope=user.read)
 
    * Siga as instruções em [Configurar chaves gerenciadas pelo cliente para uma conta existente](https://learn.microsoft.com/pt-br/azure/storage/common/customer-managed-keys-configure-cross-tenant-existing-account?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json&tabs=powershell-preview%2Cazure-portal#the-customer-grants-the-service-providers-app-access-to-the-key-in-the-key-vault). O ID do aplicativo da Adobe é:
 

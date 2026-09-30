@@ -9,23 +9,32 @@ autotag-review: '2026-05-19T09:50:41.180Z'
 TQID: 'https://experienceleague.adobe.com/EvPGghY3E7eoiJb6TcWnaOhneS6oQJj4bcwU3K2v3Ng'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+    internal-label: Integrations
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: e1bd5a34-b16e-477b-84cc-247fa0793f4b
+    internal-label: Analytics integration
+  - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
+    internal-label: Use cases
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Customer journeys
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 366
+source-wordcount: '366'
 ht-degree: 1%
-
 ---
-
 # Usar mapas de calor de métrica quântica com o Customer Journey Analytics
 
 Vincular o mapeamento de calor da métrica quântica aos dados do CJA permite entender melhor o envolvimento no nível da página e otimizar as páginas com base no comportamento do consumidor. O Workspace pode ser usado para entender os fluxos de usuários consumidores e ver quais caminhos os consumidores seguem de uma página para outra. Em seguida, clique em URLs de página com hiperlink para visualizar o mapa de calor de como os usuários se envolvem com o conteúdo. Ao vincular o mapeamento de calor de métrica quântica ao CJA, agora é possível associar interações no nível da página aos resultados de negócios, elevando sua análise ao próximo nível.

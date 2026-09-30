@@ -9,28 +9,40 @@ autotag-review: '2026-05-19T08:09:26.880Z'
 TQID: 'https://experienceleague.adobe.com/IsYrCVRcY1cd2xSYV7A-iJ2jx8Ku-oZ-BtHu8If-55Y'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: eed59de6-f140-4dd2-beca-afcbb0f6a2c5
+    internal-label: Upgrade
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+    internal-label: Measurement
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Personalization
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 696
+source-wordcount: '696'
 ht-degree: 54%
-
 ---
-
 # Alternativa de atualização: enviar a camada de dados para o Customer Journey Analytics {#data-collection-data-layer}
 
 <!-- markdownlint-disable MD034 -->
@@ -74,7 +86,7 @@ Veja a seguir as vantagens e desvantagens de usar essa alternativa de atualizaç
 
 | Vantagens | Desvantagens |
 |----------|---------|
-| <ul><li>**Mostra todas as vantagens de hospedar dados na Experience Edge Network**: <p>As vantagens incluem:</p><ul><li>Geração de relatórios com alto desempenho e disponibilidade de dados devido à capacidade da Adobe Experience Platform de potencializar [casos de uso de personalização em tempo real](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html?lang=pt-BR)</li><li>Consolidar a implementação da coleta de dados do Adobe CX Enterprise entre outros produtos CX Enterprise (AJO, RTCDP e assim por diante)</li><li>Não dependente da nomenclatura do Adobe Analytics (prop, eVar, evento etc.)</li></ul><li>**Usa a lógica da camada de dados atual**: este método usa a lógica da camada de dados atual no lugar de uma implementação convencional do Web SDK. Embora essa abordagem exija alguma configuração, ela não requer uma implementação completamente nova do zero e não requer o preenchimento de elementos de dados ou regras de tag. Ela permite mapear dados da camada de dados para o XDM, em vez de preencher um objeto XDM do zero.</li></ul> | <ul><li>**Requisito de mapeamento para envio de dados para a Platform**: quando sua organização estiver pronta para usar o Customer Journey Analytics, envie dados para um conjunto de dados na Adobe Experience Platform. <p>Como essa opção permite que você coloque toda a camada de dados do lado do cliente no objeto de dados e envie-a para a Adobe, isso resulta em uma quantidade significativa de dados que a Adobe não consegue interpretar prontamente. Para permitir que o Adobe interprete os dados, você deve usar o mapeamento de fluxo de dados para mapear cada campo individual para o campo XDM desejado.</p></li><li>**Implementação rígida**: a implementação está restrita ao que a camada de dados fornece no momento em que a ocorrência é enviada. Isso pode ser aceitável para organizações com necessidades básicas de dados, mas a maioria das organizações deve evitar esse tipo de implementação rígida em favor de uma implementação mais flexível que permita o preenchimento de elementos de dados.</li><li>**As alterações futuras são mais difíceis de implementar**: qualquer campo adicionado aos dados posteriormente deve ser mapeado para o XDM na sequência de dados.</li></ul> |
+| <ul><li>**Mostra todas as vantagens de hospedar dados na Experience Edge Network**: <p>As vantagens incluem:</p><ul><li>Geração de relatórios com alto desempenho e disponibilidade de dados devido à capacidade da Adobe Experience Platform de potencializar [casos de uso de personalização em tempo real](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html?lang=pt-BR)</li><li>Consolidar a implementação da coleta de dados do Adobe CX Enterprise entre outros produtos da CX Enterprise (AJO, RTCDP e assim por diante)</li><li>Não dependente da nomenclatura do Adobe Analytics (prop, eVar, evento etc.)</li></ul><li>**Usa a lógica da camada de dados atual**: este método usa a lógica da camada de dados atual no lugar de uma implementação convencional do Web SDK. Embora essa abordagem exija alguma configuração, ela não requer uma implementação completamente nova do zero e não requer o preenchimento de elementos de dados ou regras de tag. Ela permite mapear dados da camada de dados para o XDM, em vez de preencher um objeto XDM do zero.</li></ul> | <ul><li>**Requisito de mapeamento para envio de dados para a Platform**: quando sua organização estiver pronta para usar o Customer Journey Analytics, envie dados para um conjunto de dados na Adobe Experience Platform. <p>Como essa opção permite que você coloque toda a camada de dados do lado do cliente no objeto de dados e envie-a para a Adobe, isso resulta em uma quantidade significativa de dados que a Adobe não consegue interpretar prontamente. Para permitir que o Adobe interprete os dados, você deve usar o mapeamento de fluxo de dados para mapear cada campo individual para o campo XDM desejado.</p></li><li>**Implementação rígida**: a implementação está restrita ao que a camada de dados fornece no momento em que a ocorrência é enviada. Isso pode ser aceitável para organizações com necessidades básicas de dados, mas a maioria das organizações deve evitar esse tipo de implementação rígida em favor de uma implementação mais flexível que permita o preenchimento de elementos de dados.</li><li>**As alterações futuras são mais difíceis de implementar**: qualquer campo adicionado aos dados posteriormente deve ser mapeado para o XDM na sequência de dados.</li></ul> |
 
 {style="table-layout:auto"}
 

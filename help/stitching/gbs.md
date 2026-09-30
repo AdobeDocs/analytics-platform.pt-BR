@@ -9,24 +9,32 @@ autotag-review: '2026-05-19T09:24:07.100Z'
 TQID: 'https://experienceleague.adobe.com/f-HOhKLpbM4u4MAzzoUCc0cMvVIu1k3FXg4FShValVE'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
 subfeature_v2:
   - id: faea9abd-7024-4c5e-a5b4-87919e09b24b
+    internal-label: Stitching
+  - id: b7fb3355-1f54-4380-bce3-d444b226c0e9
+    internal-label: Cross channel analysis
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+    internal-label: Measurement
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 711e4bd71a4939eec96a6c454242e96b350fe4e2
+    internal-label: Privacy
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 2017
+source-wordcount: '2017'
 ht-degree: 64%
-
 ---
-
 # Compilação baseada em gráfico
 
 Na compilação baseada em gráfico, você especifica um conjunto de dados de evento, a ID persistente (cookie) desse conjunto de dados e o namespace de ID de pessoa desejado no gráfico de identidade. A compilação baseada em gráfico tenta disponibilizar as informações de ID de pessoa para a análise de dados do Customer Journey Analytics em qualquer evento. A ID persistente é usada para consultar o gráfico de identidade do Experience Platform Identity Service e obter a ID de pessoa do namespace especificado. Esse é o mesmo Serviço de identidade usado por outros aplicativos da Experience Platform, como o Real-Time Customer Data Platform (como mostrado na ilustração abaixo).
@@ -35,7 +43,7 @@ Na compilação baseada em gráfico, você especifica um conjunto de dados de ev
 
 >[!NOTE]
 >
->O [Serviço de Identidade](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/home) é um serviço principal da Experience Platform que não requer licenciamento adicional. Consulte [Noções básicas sobre a função do serviço de identidade na infraestrutura do Experience Platform](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/home#understanding-the-role-of-identity-service-within-the-experience-platform-infrastructure) para obter mais informações.
+>O [Serviço de Identidade](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/home) é um serviço principal da Experience Platform que não requer licenciamento adicional. Consulte [Noções básicas sobre a função do serviço de identidade na infraestrutura do Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home#understanding-the-role-of-identity-service-within-the-experience-platform-infrastructure) para obter mais informações.
 >
 
 Se as informações de ID de pessoa não puderem ser recuperadas para um evento, a ID persistente será usada para esse evento *não compilado*. Como resultado, em uma [visualização de dados](/help/data-views/data-views.md) associada a uma [conexão](/help/connections/overview.md) que contém o conjunto de dados habilitado para compilação, o componente de visualização de dados da ID de pessoa contém o valor da ID de pessoa ou o valor da ID persistente no nível do evento.
@@ -115,7 +123,7 @@ A compilação baseada em gráfico oferece suporte ao uso do [`identityMap` grup
 
 A compilação faz um mínimo de duas passagens de dados em um determinado conjunto de dados.
 
-- **Compilação em tempo real**: tenta compilar cada ocorrência (evento) à medida que elas chegam, usando a ID persistente para pesquisar a ID de pessoa para o namespace selecionado, consultando o gráfico de identidade. Se a ID de pessoa estiver disponível na pesquisa, essa ID de pessoa será compilada imediatamente.
+- **Compilação em tempo real**: tenta compilar cada hit (evento) à medida que elas chegam, usando a ID persistente para pesquisar a ID de pessoa para o namespace selecionado, consultando o gráfico de identidade. Se a ID de pessoa estiver disponível na pesquisa, essa ID de pessoa será compilada imediatamente.
 
 - **Repetir compilação**: *repete* dados com base em identidades atualizadas do gráfico de identidade. É nesse estágio que as ocorrências de dispositivos anteriormente desconhecidos (IDs persistentes) são compiladas, pois o gráfico de identidade resolveu a identidade de um namespace. Dois parâmetros determinam a repetição: **frequência** e **janela de pesquisa**. A Adobe oferece as seguintes combinações desses parâmetros:
   - **Pesquisa diária em uma frequência diária**: os dados são repetidos todos os dias com uma janela de pesquisa de 24 horas. Essa opção tem a vantagem de as repetições serem muito mais frequentes, mas as pessoas não autenticadas devem se autenticar no mesmo dia em que visitam o site.
@@ -231,7 +239,7 @@ Os seguintes pré-requisitos aplicam-se especificamente à compilação baseada 
   - Todos os conjuntos de dados que contêm essas identidades relevantes devem ser [habilitados para assimilação de dados do gráfico de identidade](faq.md#enable-a-dataset-for-the-identity-service). Essa ativação garante que as identidades recebidas sejam adicionadas ao gráfico ao longo do tempo de todas as fontes necessárias.
   - Se você já estiver usando o Perfil de dados do cliente em tempo real ou o Adobe Journey Optimizer por algum tempo, o gráfico já deverá estar configurado até certo ponto.<br/>Se o preenchimento retroativo de compilação histórica também for necessário para o conjunto de dados habilitado com compilação baseada em gráfico, o gráfico já deverá conter identidades históricas para todo o período para obter os resultados de compilação desejados.
 - Se quiser usar a compilação com base em gráficos e antecipar que o conjunto de dados do evento contribua para o gráfico de identidade, você deve [habilitar o conjunto de dados para o Serviço de identidade](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service).
-- A ID persistente e a ID de pessoa podem ser usadas com [identityMap](#identitymap). Ou a ID persistente e a ID de pessoa podem ser campos do esquema XDM, nesse caso, os campos devem ser [definidos como uma identidade](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/ui/fields/identity?lang=en) no esquema.
+- A ID persistente e a ID de pessoa podem ser usadas com [identityMap](#identitymap). Ou a ID persistente e a ID de pessoa podem ser campos do esquema XDM, nesse caso, os campos devem ser [definidos como uma identidade](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity?lang=en) no esquema.
 
 >[!NOTE]
 >

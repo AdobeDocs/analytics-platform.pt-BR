@@ -8,21 +8,26 @@ autotag-review: '2026-05-19T08:01:11.240Z'
 TQID: 'https://experienceleague.adobe.com/G3lsqQvpMi7qfHIF0n5bymHloch0SaHuqwpl-3T04Fs'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
 subfeature_v2:
   - id: ddf59f64-0e46-4986-a525-056acc143c70
+    internal-label: Workspace visualizations
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Customer journeys
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 306
+source-wordcount: '306'
 ht-degree: 83%
-
 ---
-
 # Marcador {#bullet}
 
 <!-- markdownlint-disable MD034 -->
@@ -45,7 +50,7 @@ ht-degree: 83%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta a visualização de Marcador na_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consulte o [Marcador](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph) da versão_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
+_Este artigo documenta a visualização de Marcador na_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consulte o [Marcador](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/bullet-graph) da versão_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 
@@ -57,7 +62,7 @@ O gráfico de marcadores apresenta uma só medida principal (por exemplo, receit
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualização de gráfico com marcadores](https://experienceleague.adobe.com/pt-br/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-bullet-graph-visualizations){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualização de gráfico com marcadores](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-bullet-graph-visualizations){target="_blank"} para ver um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 
@@ -68,7 +73,7 @@ Você pode definir configurações específicas para uma visualização de [!UIC
 
 | Configuração | Descrição |
 |---|---|
-| **[!UICONTROL Opções de marcador]** | Especifique valores para **[!UICONTROL Meta alta]**, **[!UICONTROL Meta intermediária]** e **[!UICONTROL Meta baixa]** na visualização de [!UICONTROL Marcador]. <br/>**[!UICONTROL Meta alta &#x200B;]**&#x200B;é a meta principal que você está almejando.**[!UICONTROL &#x200B; Meta baixa &#x200B;]**&#x200B;e&#x200B;**[!UICONTROL &#x200B; Meta intermediária &#x200B;]**&#x200B;criam intervalos abaixo da Meta alta. Observação: quando a opção&#x200B;**[!UICONTROL &#x200B; Porcentagens &#x200B;]**&#x200B;estiver marcada, insira metas como números inteiros. Por exemplo: `20` se a sua meta for vinte por cento. |
+| **[!UICONTROL Opções de marcador]** | Especifique valores para **[!UICONTROL Meta alta]**, **[!UICONTROL Meta intermediária]** e **[!UICONTROL Meta baixa]** na visualização de [!UICONTROL Marcador]. <br/>**[!UICONTROL Meta alta ]**é a meta principal que você está almejando.**[!UICONTROL  Meta baixa ]**e**[!UICONTROL  Meta intermediária ]**criam intervalos abaixo da Meta alta. Observação: quando a opção**[!UICONTROL  Porcentagens ]**estiver marcada, insira metas como números inteiros. Por exemplo: `20` se a sua meta for vinte por cento. |
 
 >[!MORELIKETHIS]
 >

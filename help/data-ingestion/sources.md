@@ -5,31 +5,45 @@ solution: Customer Journey Analytics
 feature: Basics
 exl-id: 813d3213-86b3-431a-821c-174e5e36d032
 role: Admin
-TQID: https://experienceleague.adobe.com/tkPB8BHD6t3LiIhTiLyoQYH-Ucknl1YyUm5MOcxujBY
+TQID: 'https://experienceleague.adobe.com/tkPB8BHD6t3LiIhTiLyoQYH-Ucknl1YyUm5MOcxujBY'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: c38ed341-fab2-46df-9d72-88d8166edebb
+    internal-label: Workspace projects
   - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+    internal-label: Connections
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Customer profiles
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 2150
+source-wordcount: '2150'
 ht-degree: 75%
-
 ---
-
 # Assimilar e usar dados usando conectores de origem
 
 Este guia de início rápido explica como você pode assimilar dados na Adobe Experience Platform usando um conector de origem para um provedor de dados e, em seguida, usar esses dados no Customer Journey Analytics.
@@ -89,7 +103,7 @@ Para configurar o esquema:
 
    1. Insira um **[!UICONTROL nome de exibição]** para o esquema e uma **[!UICONTROL descrição]** (opcional).
 
-      ![Janela Criar esquema mostrando os campos para nomear seu esquema &#x200B;](./assets/create-pr-schema-wizard-step-2.png)
+      ![Janela Criar esquema mostrando os campos para nomear seu esquema ](./assets/create-pr-schema-wizard-step-2.png)
 
    1. Selecione **[!UICONTROL Concluir]**.
 
@@ -194,11 +208,11 @@ Dependendo de onde você recebe os dados de fidelidade, é possível escolher o 
 
 Você pode assimilar dados de várias fontes. Veja a seguir apenas algumas das muitas fontes disponíveis:
 
-- Aplicativos do Adobe (os conectores de origem incluem [Adobe Analytics](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/adobe-applications/analytics), [Adobe Audience Manager](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/adobe-applications/audience-manager) e muito mais)
+- Aplicativos do Adobe (os conectores de origem incluem [Adobe Analytics](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/adobe-applications/analytics), [Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/audience-manager) e muito mais)
 
-- Armazenamento na nuvem (os conectores de origem incluem [Amazon S3](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/cloud-storage/s3), [Azure Blob](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/cloud-storage/blob) e muito mais)
+- Armazenamento na nuvem (os conectores de origem incluem [Amazon S3](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/s3), [Azure Blob](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/cloud-storage/blob) e muito mais)
 
-- Bancos de dados (os conectores de origem incluem [Snowflake](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/databases/snowflake), [Microsoft SQL Server](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/databases/sql-server) e muito mais)
+- Bancos de dados (os conectores de origem incluem [Snowflake](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/snowflake), [Microsoft SQL Server](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/databases/sql-server) e muito mais)
 
 Para configurar um conector de origem:
 
@@ -232,7 +246,7 @@ Consulte [Assimilar e usar dados do Adobe Analytics tradicional](./analytics.md)
 
 Consulte [Assimilar e usar dados de transmissão](./streaming.md) para obter informações sobre como usar o conector de origem da API HTTP.
 
-Consulte [Visão geral dos conectores de origem](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=pt-BR#terms-and-conditions) para obter uma visão geral dos conectores de origem, incluindo links para mais informações sobre cada conector.
+Consulte [Visão geral dos conectores de origem](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html#terms-and-conditions) para obter uma visão geral dos conectores de origem, incluindo links para mais informações sobre cada conector.
 
 
 ## Configurar uma conexão

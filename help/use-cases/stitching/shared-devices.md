@@ -9,28 +9,40 @@ autotag-review: '2026-05-19T09:47:24.777Z'
 TQID: 'https://experienceleague.adobe.com/8Xq8mUchtogMLiEuPVv-DWpkWtD5ubJGSQm2SRaZmps'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
   - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: faea9abd-7024-4c5e-a5b4-87919e09b24b
+    internal-label: Stitching
   - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
+    internal-label: Use cases
+  - id: b7fb3355-1f54-4380-bce3-d444b226c0e9
+    internal-label: Cross channel analysis
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: b4dd41a7-ccf8-4e9d-918e-acaab534a307
+    internal-label: Data quality
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Insights
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 743
+source-wordcount: '743'
 ht-degree: 18%
-
 ---
-
 # Dispositivos compartilhados
 
 Este artigo fornece contexto sobre dispositivos compartilhados, como manipular e mitigar dados de dispositivos compartilhados usando a [compilação](/help/stitching/overview.md), e compreender a exposição de dispositivos compartilhados em seus dados usando o Serviço de consulta.
@@ -68,7 +80,7 @@ A compilação pode atribuir dados de dispositivo compartilhado usando atribuiç
 
 ### Atribuição de última autenticação
 
-A última autenticação atribui toda a atividade desconhecida de um dispositivo compartilhado ao usuário que fez a última autenticação. O Serviço de identidade da Experience Platform cria o gráfico com base na atribuição de última autenticação e, como tal, é usado na compilação baseada em gráficos. Consulte [Regras de vinculação do gráfico de identidade](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/features/identity-graph-linking-rules/identity-optimization-algorithm#identity-optimization-algorithm-details) para obter mais informações.
+A última autenticação atribui toda a atividade desconhecida de um dispositivo compartilhado ao usuário que fez a última autenticação. O Serviço de identidade da Experience Platform cria o gráfico com base na atribuição de última autenticação e, como tal, é usado na compilação baseada em gráficos. Consulte [Regras de vinculação do gráfico de identidade](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/identity-optimization-algorithm#identity-optimization-algorithm-details) para obter mais informações.
 
 Quando a atribuição de última autenticação é usada na compilação, as IDs compiladas são resolvidas conforme mostrado na tabela abaixo.
 

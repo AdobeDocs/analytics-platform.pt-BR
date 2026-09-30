@@ -4,28 +4,39 @@ description: Traga dados gerados pelo Adobe Journey Optimizer e analise-os usand
 exl-id: 9333ada2-b4d6-419e-9ee1-5c96f06a3bfd
 feature: Experience Platform Integration
 role: Admin
-TQID: https://experienceleague.adobe.com/kmZ-AYMcKxwZftFSqJQpTH3zDTDT1CxlNw-MVO6Ikn4
+TQID: 'https://experienceleague.adobe.com/kmZ-AYMcKxwZftFSqJQpTH3zDTDT1CxlNw-MVO6Ikn4'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+    internal-label: Integrations
 subfeature_v2:
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: d3fb138f-79e4-4a81-aedb-76dd93560085
+    internal-label: Experience Platform integration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Experimentation
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 3841
+source-wordcount: '3841'
 ht-degree: 90%
-
 ---
-
 # Integrar o Journey Optimizer
 
 O [Adobe Journey Optimizer](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/get-started/get-started) ajuda a fornecer experiências conectadas, contextuais e personalizadas. Ele ajuda a apresentar seus clientes à próxima etapa da jornada do cliente.
@@ -59,7 +70,7 @@ A conexão tem o nome **[!UICONTROL Conexão Habilitada para AJO (*nome da sandb
 | Nome do conjunto de dados | Esquema | Tipo de conjunto de dados | Tipo de fonte de dados | ID de pessoa | Chave | Chave correspondente | Importar novos dados | Dados de preenchimento retroativo |
 |---|---|---|---|---|---|---|---|---|
 | [!UICONTROL Conjunto de dados de entidade do AJO] | [!UICONTROL Esquema de registro de entidade do AJO] | [!UICONTROL Pesquisa] | [!UICONTROL Outro] | - | ` _id` | `_experience. decisioning. propositions. scopeDetails. correlationID` | ![Status verde](assets/../../connections/assets/status-green.svg) Ativado | ![Status cinza](assets/../../connections/assets/status-gray.svg) Desativado |
-| [!UICONTROL Eventos de etapa da jornada] | [!UICONTROL Esquema de evento de etapa da jornada do Journey Orchestration] | [!UICONTROL Evento] | [!UICONTROL Outro] | [!UICONTROL IdentityMap(\&lt;primary\>)] | - | - | ![Status verde](assets/../../connections/assets/status-green.svg) Ativado | ![Status cinza](assets/../../connections/assets/status-gray.svg) Desativado |
+| [!UICONTROL Eventos de etapa da jornada] | [!UICONTROL Esquema de evento de etapa da jornada do Journey Orchestration] | [!UICONTROL Evento] | [!UICONTROL Outro] | [!UICONTROL  IdentityMap(\&lt;primary\>)] | - | - | ![Status verde](assets/../../connections/assets/status-green.svg) Ativado | ![Status cinza](assets/../../connections/assets/status-gray.svg) Desativado |
 | [!UICONTROL Conjunto de dados de eventos de experiência de rastreamento de email do AJO] | [!UICONTROL Esquema de evento de experiência de rastreamento de email do AJO] | [!UICONTROL Evento] | [!UICONTROL Outro] | [!UICONTROL IdentityMap(\&lt;primary\>)] | - | - | ![Status verde](assets/../../connections/assets/status-green.svg) Ativado | ![Status cinza](assets/../../connections/assets/status-gray.svg) Desativado |
 | [!UICONTROL Conjunto de dados de evento de feedback de mensagem do AJO] | [!UICONTROL Esquema de evento de feedback de mensagem do AJO] | [!UICONTROL Evento] | [!UICONTROL Outro] | [!UICONTROL IdentityMap(\&lt;primary\>)] | - | - | ![Status verde](assets/../../connections/assets/status-green.svg) Ativado | ![Status cinza](assets/../../connections/assets/status-gray.svg) Desativado |
 | [!UICONTROL Conjunto de dados de evento de experiência de rastreamento por push do AJO] | [!UICONTROL Esquema de evento de experiência de rastreamento por push do AJO] | [!UICONTROL Evento] | [!UICONTROL Outro] | [!UICONTROL IdentityMap(\&lt;primary\>)] | - | - | ![Status verde](assets/../../connections/assets/status-green.svg) Ativado | ![Status cinza](assets/../../connections/assets/status-gray.svg) Desativado |
@@ -79,7 +90,7 @@ Quando o complemento de mensagens transacionais de alta capacidade estiver ativa
 * **[!UICONTROL Widget de latência P95 de 7 dias consecutivos]**: mostra a latência P95 como um valor único, incluindo a alteração de porcentagem em relação à semana anterior.
 * **[!UICONTROL Widget de taxa de transferência P95 de 7 dias consecutivos]**: mostra a taxa de transferência P95 como um valor único, incluindo a alteração de porcentagem em relação à semana anterior.
 
-Para obter mais informações sobre esses conjuntos de dados e o complemento de mensagens transacionais de Alta Taxa de Transferência, consulte [Ativar modo de Alta Taxa de Transferência para campanhas acionadas por API](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/campaigns/api-triggered-campaigns/api-triggered-high-throughput) na documentação do Adobe Journey Optimizer.
+Para obter mais informações sobre esses conjuntos de dados e o complemento de mensagens transacionais de Alta Taxa de Transferência, consulte [Ativar modo de Alta Taxa de Transferência para campanhas acionadas por API](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/api-triggered-campaigns/api-triggered-high-throughput) na documentação do Adobe Journey Optimizer.
 
 ### Visualização de dados
 

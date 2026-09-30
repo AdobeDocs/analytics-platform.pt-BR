@@ -8,23 +8,30 @@ autotag-review: '2026-05-19T08:31:54.599Z'
 TQID: 'https://experienceleague.adobe.com/k-0eP4wFf0vl3zYmUDUOv1V9xI6utt7AOjJqCo2mAB4'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
 subfeature_v2:
   - id: ddf59f64-0e46-4986-a525-056acc143c70
+    internal-label: Workspace visualizations
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Insights
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 802
+source-wordcount: '802'
 ht-degree: 100%
-
 ---
-
 # Legendas inteligentes {#intelligent-captions}
 
 >[!CONTEXTUALHELP]
@@ -152,14 +159,14 @@ Os parâmetros a seguir controlam o acesso a legendas inteligentes:
 * **Acesso contratual**: se você não puder usar as legendas inteligentes, entre em contato com o administrador da sua organização ou com o Representante de conta da Adobe (Admin). Antes de usar legendas inteligentes em sua organização, você deve concordar com determinados termos legais relacionados à IA generativa.
 
 * **Permissões**: no [!UICONTROL Adobe Admin Console], a permissão [!UICONTROL Ferramentas de relatório] **[!UICONTROL Legendas inteligentes]** determina o acesso. Um [administrador do perfil de produto](https://helpx.adobe.com/br/enterprise/using/manage-product-profiles.html) precisa seguir estas etapas no [!UICONTROL Admin Console]:
-   1. Navegue até **[!UICONTROL Admin Console]** > **[!UICONTROL Produtos e serviços]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Perfis de produto]**.
-   1. Selecione o título do perfil de produto para o qual você deseja fornecer acesso às legendas inteligentes.
-   1. No perfil de produto específico, selecione **[!UICONTROL Permissões]**.
-   1. Selecione ![Editar](/help/assets/icons/Edit.svg) para editar as **[!UICONTROL Ferramentas de relatório]**.
-   1. Selecione ![AddCircle](/help/assets/icons/AddCircle.svg) para adicionar **Legendas inteligentes** a **[!UICONTROL itens de permissão incluídos]**.
+  1. Navegue até **[!UICONTROL Admin Console]** > **[!UICONTROL Produtos e serviços]** > **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Perfis de produto]**.
+  1. Selecione o título do perfil de produto para o qual você deseja fornecer acesso às legendas inteligentes.
+  1. No perfil de produto específico, selecione **[!UICONTROL Permissões]**.
+  1. Selecione ![Editar](/help/assets/icons/Edit.svg) para editar as **[!UICONTROL Ferramentas de relatório]**.
+  1. Selecione ![AddCircle](/help/assets/icons/AddCircle.svg) para adicionar **Legendas inteligentes** a **[!UICONTROL itens de permissão incluídos]**.
 
-      ![Adicionar permissão](./assets/intelligent-captions-permissions.png)
+     ![Adicionar permissão](./assets/intelligent-captions-permissions.png)
 
-   1. Clique em **[!UICONTROL Salvar]** para salvar as permissões.
+  1. Clique em **[!UICONTROL Salvar]** para salvar as permissões.
 
 Consulte [Controle de acesso](/help/technotes/access-control.md#access-control) para obter mais informações.

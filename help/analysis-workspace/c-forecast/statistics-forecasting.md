@@ -4,23 +4,28 @@ title: Técnicas estatísticas
 feature: Visualizations
 role: User
 exl-id: f042a6dd-6af5-4bdd-afc9-07546d8ded6e
-TQID: https://experienceleague.adobe.com/hbfehTAPC7nw96Wdm47bdX-D5c4cfTCeCtlHlINBBxI
+TQID: 'https://experienceleague.adobe.com/hbfehTAPC7nw96Wdm47bdX-D5c4cfTCeCtlHlINBBxI'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: d13dba12-733d-4914-8d92-d643658bbe5d
+    internal-label: Forecasting
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: User
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 552
+source-wordcount: '552'
 ht-degree: 4%
-
 ---
-
 # Técnicas estatísticas
 
 O serviço de previsão atualmente apoia o Profeta e tem sido mostrado para trabalhar de forma eficiente e confiável para a maioria dos dados. Prophet é um pacote de previsão de código aberto desenvolvido pela Meta. Ele decompõe os dados em componentes de tendências, sazonalidades e eventos. O modelo Profeta é eficiente e escalável bem para muitas aplicações de previsão. Além disso, o modelo funciona de forma robusta contra outliers e dados ausentes.

@@ -4,32 +4,47 @@ description: Página de destino do Customer Journey Analytics.
 solution: Customer Journey Analytics
 feature: Basics
 exl-id: 7f67c497-386b-4442-a502-6b492f35c6e6
-TQID: https://experienceleague.adobe.com/QBGCqJ3GBKAh4jfAAvA3sO6GXjJHGEAtaRXyASH8PhA
+TQID: 'https://experienceleague.adobe.com/QBGCqJ3GBKAh4jfAAvA3sO6GXjJHGEAtaRXyASH8PhA'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: b743a5d9-dc51-41ed-8b2f-86a1f8de430f
+    internal-label: Analytics dashboards
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: ad5685a0-8296-4a0c-814c-658c10b4af12
+    internal-label: Content Analytics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: cc092ab1-90ba-4bbc-b4c6-6249d87daf5c
+    internal-label: Audiences
   - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+    internal-label: Connections
   - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+    internal-label: Exports
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Insights
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 743
-ht-degree: 62%
-
+source-wordcount: '1063'
+ht-degree: 64%
 ---
-
 # Guia do Customer Journey Analytics
 
 Este guia de documentação técnica fornece ajuda para o Customer Journey Analytics. O Customer Journey Analytics permite migrar dados de cliente de qualquer canal escolhido (online e offline) para a Adobe Experience Platform. Em seguida, é possível analisar esses dados da mesma forma que faria usando os dados digitais existentes do Analysis Workspace.
@@ -173,7 +188,7 @@ Veja como o Customer Journey Analytics se compara ao Adobe Analytics. Além diss
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td><strong>Customer Journey Analytics</strong><br/>
-<a href="https://experienceleague.adobe.com/pt-br/docs/customer-journey-analytics-learn/tutorials/overview" target="_blank">Tutoriais</a> - <a href="https://helpx.adobe.com/br/legal/product-descriptions/customer-journey-analytics.html" target="_blank">Descrição do produto Customer Journey Analytics</a> - <a href="https://helpx.adobe.com/br/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html" target="_blank">Descrição do produto Adobe Analytics (complemento Customer Journey Analytics)</a> - <a href="https://helpx.adobe.com/br/legal/product-descriptions/customer-journey-analytics-b2b.html" target="_blank">Descrição do produto Customer Journey Analytics B2B edition</a> - <a href="https://developer.adobe.com/cja-apis/docs/" target="_blank">APIs Customer Journey Analytics</a> - <a href="/help/ai-assistant.md">Assistente de IA</a>
+<a href="https://experienceleague.adobe.com/pt-br/docs/customer-journey-analytics-learn/tutorials/overview" target="_blank">Tutoriais</a> - <a href="https://helpx.adobe.com/br/legal/product-descriptions/customer-journey-analytics.html" target="_blank">Descrição do produto Customer Journey Analytics</a> - <a href="https://helpx.adobe.com/br/legal/product-descriptions/adobe-analytics-addon-customer-journey-analytics.html" target="_blank">Descrição do produto Adobe Analytics (complemento Customer Journey Analytics)</a> - <a href="https://helpx.adobe.com/legal/product-descriptions/customer-journey-analytics-b2b.html" target="_blank">Descrição do produto Customer Journey Analytics B2B edition</a> - <a href="https://developer.adobe.com/cja-apis/docs/" target="_blank">APIs Customer Journey Analytics</a> - <a href="/help/ai-assistant.md">Assistente de IA</a>
 </td>
 <td><strong>Ingestão de dados</strong><br/><a href="/help/data-ingestion/data-ingestion.md">Visão geral</a> - <a href="/help/data-ingestion/analytics.md">Analytics</a> - <a href="/help/data-ingestion/aepwebsdk.md">SDK da Web</a> - <a href="/help/data-ingestion/aepmobilesdk.md">SDK móvel</a> - <a href="/help/data-ingestion/batch.md">Em lote</a> - <a href="/help/data-ingestion/streaming.md">Transmissão</a> - <a href="/help/data-ingestion/sources.md">Origens</a> - <a href="/help/data-ingestion/serverapi.md">API do servidor</a>
 </td>

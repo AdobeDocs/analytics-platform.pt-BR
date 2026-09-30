@@ -4,25 +4,32 @@ description: Saiba como usar tabelas de forma livre, que são a base para a aná
 feature: Visualizations
 exl-id: e5ba9089-c575-47b3-af85-b8b2179396ac
 role: User
-TQID: https://experienceleague.adobe.com/2eJdFymbKxJE6XjLm0FlWocfVSsCml5ac5n0Y8YAQY8
+TQID: 'https://experienceleague.adobe.com/2eJdFymbKxJE6XjLm0FlWocfVSsCml5ac5n0Y8YAQY8'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
   - id: ef46ac31-f951-48d6-bae5-51c52ab47fb8
+    internal-label: Exports
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: User
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 824
+source-wordcount: '824'
 ht-degree: 94%
-
 ---
-
 # Visão geral da tabela de forma livre {#freeform-table-overview}
 
 <!-- markdownlint-disable MD034 -->
@@ -37,7 +44,7 @@ ht-degree: 94%
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta a visualização da tabela de forma livre no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consulte a [tabela de forma livre](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/freeform-table) para a versão_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
+_Este artigo documenta a visualização da tabela de forma livre no_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consulte a [tabela de forma livre](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/freeform-table/freeform-table) para a versão_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 
@@ -60,7 +67,7 @@ A maneira mais rápida de criar uma tabela é soltar os componentes diretamente 
 
 Se preferir adicionar vários componentes à tabela primeiro e então renderizar os dados, selecione **[!UICONTROL Habilitar construtor de tabela]**. Com o construtor habilitado, é possível arrastar e soltar dimensões, detalhamentos, métricas e segmentos para criar tabelas que respondam a perguntas mais complexas. Atualizações de dados após selecionar **[!UICONTROL Criar]**.
 
-![Um Construtor de tabela de forma livre exibindo &#x200B;](assets/table-builder.png)
+![Um Construtor de tabela de forma livre exibindo ](assets/table-builder.png)
 
 ## Interações
 

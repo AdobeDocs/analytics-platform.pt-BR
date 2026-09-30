@@ -9,25 +9,36 @@ autotag-review: '2026-05-19T08:56:46.637Z'
 TQID: 'https://experienceleague.adobe.com/A3GkkNVAO9qpbOqCrZnf6PNJfRuwMaodJVOOuSRg0w8'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: e1471301-a189-438e-8d48-264a8db508a6
+    internal-label: Data views
   - id: d1d3b429-e0a8-4e2f-af0a-a48d23e366b7
+    internal-label: Connections
   - id: bfef374d-acfd-4c57-bf74-a2b36053c545
+    internal-label: Data ingestion
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
-source-git-commit: 2b0204c229a7d53c0a497fe448c165acf84536ad
+    internal-label: Customer journeys
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 441
+source-wordcount: '441'
 ht-degree: 0%
-
 ---
-
 # Configurar soluções nativas do Data warehouse
 
 Para oferecer suporte ao Experience Platform Data Mirror para Customer Journey Analytics, os dados que você deseja usar nas três soluções nativas de data warehouse com suporte ([[!DNL Azure Databricks]](#azure-databricks), [[!DNL Google BigQuery]](#google-bigquery), [[!DNL Snowflake]](#snowflake)) precisam de habilitação para alterar a captura de dados.
@@ -67,8 +78,8 @@ Para obter mais informações, leia o [[!DNL Azure Databricks] guia sobre como h
 
 Leia a documentação a seguir para obter as etapas sobre como habilitar a captura de dados de alteração para sua conexão de origem do [!DNL Azure Databricks]:
 
-* [Criar uma [!DNL Azure Databricks] conexão básica](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/api-tutorials/create/databases/databricks).
-* [Criar uma conexão de origem para um banco de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
+* [Criar uma [!DNL Azure Databricks] conexão básica](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/create/databases/databricks).
+* [Criar uma conexão de origem para um banco de dados](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
 
 ## [!DNL Google BigQuery]
 
@@ -78,8 +89,8 @@ Para obter mais informações, leia o manual sobre [instruções de linguagem de
 
 Leia a documentação a seguir para obter as etapas sobre como habilitar a captura de dados de alteração para sua conexão de origem do [!DNL Google BigQuery]:
 
-* [Criar uma [!DNL Google BigQuery] conexão básica](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/api-tutorials/create/databases/bigquery).
-* [Criar uma conexão de origem para um banco de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
+* [Criar uma [!DNL Google BigQuery] conexão básica](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/create/databases/bigquery).
+* [Criar uma conexão de origem para um banco de dados](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
 
 ## [!DNL Snowflake]
 
@@ -95,8 +106,8 @@ Para obter mais informações, leia o [[!DNL Snowflake] guia sobre como usar a c
 
 Leia a documentação a seguir para obter as etapas sobre como habilitar a captura de dados de alteração para sua conexão de origem do [!DNL Snowflake]:
 
-* [Criar uma [!DNL Snowflake] conexão básica](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/api-tutorials/create/databases/snowflake).
-* [Criar uma conexão de origem para um banco de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
+* [Criar uma [!DNL Snowflake] conexão básica](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/create/databases/snowflake).
+* [Criar uma conexão de origem para um banco de dados](https://experienceleague.adobe.com/en/docs/experience-platform/sources/api-tutorials/collect/database-nosql#create-a-source-connection).
 
 
 >[!MORELIKETHIS]

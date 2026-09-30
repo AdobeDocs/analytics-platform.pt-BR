@@ -5,26 +5,35 @@ exl-id: 48546227-029c-4cf9-9b7e-66d547769270
 solution: Customer Journey Analytics
 feature: Use Cases
 role: User
-TQID: https://experienceleague.adobe.com/FTWdLEx5SD4GMgi4XJKQ20-RVsg1oRFZtEMjPXkVuYQ
+TQID: 'https://experienceleague.adobe.com/FTWdLEx5SD4GMgi4XJKQ20-RVsg1oRFZtEMjPXkVuYQ'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
+  - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
+    internal-label: Use cases
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Insights
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1160
+source-wordcount: '1160'
 ht-degree: 88%
-
 ---
-
 # Importação de dados da central de atendimento e da Web
 
 O Customer Journey Analytics oferece a capacidade valiosa e robusta de combinar conjuntos de dados de diferentes fontes em um único projeto do Espaço de trabalho. Use este guia para entender como sua organização pode combinar dados do site com dados da central de atendimento. Por exemplo, você pode entender quais ações um cliente toma, qual conteúdo ele visualiza e quais termos ele pesquisa antes de ele entrar em contato com o suporte ao cliente. Você pode então determinar o conteúdo e as ferramentas de autoatendimento para melhorar, a fim de que os clientes possam resolver os problemas sozinhos sem precisar entrar em contato.
@@ -35,14 +44,14 @@ O Customer Journey Analytics oferece a capacidade valiosa e robusta de combinar 
 * Acesso à Adobe Experience Platform e ao Customer Journey Analytics
 * Se o seu conjunto de dados inclui registros de um sistema de resposta de voz interativo, a Adobe recomenda o processamento dos dados para incluir apenas interações de prompt antes de importá-las para a Plataforma.
 * Se o conjunto de dados inclui registros de chamadas, a Adobe recomenda incluir as seguintes colunas:
-   * A data/hora em que a chamada começou
-   * Motivo da chamada
-   * ID da central de atendimento
-   * ID do agente da central de atendimento
-   * Duração da chamada
-   * Resultado da chamada
-   * Custo da chamada (se disponível)
-   * Qualquer metadado de chamada adicional que sua organização quiser incluir
+  * A data/hora em que a chamada começou
+  * Motivo da chamada
+  * ID da central de atendimento
+  * ID do agente da central de atendimento
+  * Duração da chamada
+  * Resultado da chamada
+  * Custo da chamada (se disponível)
+  * Qualquer metadado de chamada adicional que sua organização quiser incluir
 
 ## Importação de dados da Web e da central de atendimento para a Plataforma
 

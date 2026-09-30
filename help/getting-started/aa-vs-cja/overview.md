@@ -9,25 +9,34 @@ autotag-review: '2026-05-19T09:13:47.721Z'
 TQID: 'https://experienceleague.adobe.com/MU9ywSyInHtsdzqvxO3yxTSY5bcDvdhnTUkhAgDHmZ4'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: eed59de6-f140-4dd2-beca-afcbb0f6a2c5
+    internal-label: Upgrade
+  - id: c0173fff-a288-46f9-94aa-2b9ca0aa9ac1
+    internal-label: Basics
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Data collection
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 895
+source-wordcount: '895'
 ht-degree: 100%
-
 ---
-
 # Comparação com o Adobe Analytics
 
 Esta seção da documentação explica como comparar e entender as diferenças entre o Adobe Customer Journey Analytics e o Adobe Analytics.
@@ -58,7 +67,7 @@ Consulte [Comparar o processamento de dados entre o Adobe Analytics e o Customer
 
 ## Terminologia
 
-O Customer Journey Analytics oferece flexibilidade na definição de dimensões e métricas, possibilitada pelos esquemas subjacentes baseados no Experience Data Model (XDM). Por exemplo, onde o Adobe Analytics usa visitantes, visitas e ocorrências, o Customer Journey Analytics usa pessoas, sessões e eventos como conceitos equivalentes (você pode alterar a nomenclatura como desejar).
+O Customer Journey Analytics oferece flexibilidade na definição de dimensões e métricas, possibilitada pelos esquemas subjacentes baseados no Experience Data Model (XDM). Por exemplo, onde o Adobe Analytics usa visitantes, visitas e hits, o Customer Journey Analytics usa pessoas, sessões e eventos como conceitos equivalentes (você pode alterar a nomenclatura como desejar).
 
 Consulte [Comparar terminologia de dados do Analytics transmitidos pelo conector de origem do Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/terminology.html?lang=pt-BR) para obter mais informações sobre as diferenças de terminologia.
 

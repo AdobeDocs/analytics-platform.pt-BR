@@ -4,27 +4,37 @@ title: Baixar Projetos E Dados
 feature: Curate and Share
 exl-id: 1d8384ca-888c-482c-ab3e-d1b579217560
 role: User
-TQID: https://experienceleague.adobe.com/GZEoPBNO5ELAQTN-44YR9A7zCWy-0hgVB98wNDsvXzE
+TQID: 'https://experienceleague.adobe.com/GZEoPBNO5ELAQTN-44YR9A7zCWy-0hgVB98wNDsvXzE'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: eb00932f-4d46-46bc-b1d8-10de7588db8d
+    internal-label: Data governance
+  - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: c38ed341-fab2-46df-9d72-88d8166edebb
+    internal-label: Workspace projects
+  - id: a3b826fd-7a63-4a83-8736-83eee6668f44
+    internal-label: Curate and share
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Governance
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 1251
+source-wordcount: '1251'
 ht-degree: 23%
-
 ---
-
 # Baixar projetos e dados
 
 Você pode baixar projetos e dados do Analysis Workspace no seu dispositivo local. Esse download pode ser copiado com dados, um arquivo CSV (dados de valores separados por vírgula) ou um documento PDF (formato de documento portátil).
@@ -81,7 +91,7 @@ A opção **[!UICONTROL Copiar para a área de transferência]** do menu de cont
 >Você pode usar a tecla de atalho **_cmd + c_** (macOS) ou **_ctrl + c_** (Windows) para copiar sua seleção para a área de transferência. Em seguida, use o **_cmd + v_** (macOS) ou o **_ctrl + v_** (Windows) para colar os dados.
 
 
-![A opção de “Copiar seleção para a área de transferência”. &#x200B;](assets/copy-clipboard.png){zoomable="yes"}
+![A opção de “Copiar seleção para a área de transferência”. ](assets/copy-clipboard.png){zoomable="yes"}
 
 ## Baixar dados em uma visualização como um arquivo CSV {#download-data}
 
@@ -131,8 +141,8 @@ Os seguintes recursos de uma tabela de forma livre são aplicados ao arquivo bai
 
 À medida que o arquivo é baixado, você vê as seguintes notificações:
 
-* Um **[!UICONTROL _Nome de tabela _-_Dimension _.csv azul foi solicitado._x _% concluído]**&#x200B;indicando o progresso. Para cancelar o download a qualquer momento, selecione **[!UICONTROL Cancelar download]**. Selecione ![CrossSize100](/help/assets/icons/CrossSize100.svg) se desejar fechar a mensagem, o que não cancela o download.
-* Uma notificação de conclusão **[!UICONTROL _do nome da tabela _-_Dimension _.csv foi baixada]**&#x200B;assim que o download do arquivo foi concluído. O arquivo é baixado na pasta de downloads configurada para o seu navegador.
+* Um **[!UICONTROL _Nome de tabela _-_Dimension _.csv azul foi solicitado._x _% concluído]**indicando o progresso. Para cancelar o download a qualquer momento, selecione **[!UICONTROL Cancelar download]**. Selecione ![CrossSize100](/help/assets/icons/CrossSize100.svg) se desejar fechar a mensagem, o que não cancela o download.
+* Uma notificação de conclusão **[!UICONTROL _do nome da tabela _-_Dimension _.csv foi baixada]**assim que o download do arquivo foi concluído. O arquivo é baixado na pasta de downloads configurada para o seu navegador.
 
 Se solicitar mais de um download por vez, você receberá uma notificação de que cada download adicional será enfileirado até que o download anterior seja concluído.
 

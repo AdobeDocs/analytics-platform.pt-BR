@@ -4,22 +4,26 @@ title: Exibir Previsões
 feature: Visualizations
 role: User
 exl-id: 4a8b602c-e6aa-4a46-bba9-642387e6af88
-TQID: https://experienceleague.adobe.com/fihJQOI-CyvGccQsB0VxvwR-iV0OkJSMENaiciYrgFc
+TQID: 'https://experienceleague.adobe.com/fihJQOI-CyvGccQsB0VxvwR-iV0OkJSMENaiciYrgFc'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
 subfeature_v2:
   - id: d13dba12-733d-4914-8d92-d643658bbe5d
+    internal-label: Forecasting
+  - id: bee1d787-7e5f-52f2-a27b-db3204cbc423
+    internal-label: Visualizations
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: User
+source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
 workflow-type: tm+mt
-source-wordcount: 372
+source-wordcount: '372'
 ht-degree: 5%
-
 ---
-
 # Exibir previsões
 
 Você pode exibir previsões em uma tabela de forma livre ou em um gráfico de linhas.
@@ -56,8 +60,8 @@ As previsões são exibidas no gráfico de linhas da seguinte maneira:
 
 * Os valores atuais das métricas no gráfico de linhas são indicados por uma barra vertical. Se você passar o mouse sobre essa linha vertical, será exibido um pop-up com a última data atual.
 * Os valores previstos para uma ou mais métricas são exibidos à direita da barra vertical usando linhas pontilhadas. Você pode passar o mouse sobre qualquer ponto de dados para obter uma métrica. Isso mostrará um pop-up com:
-   * data da previsão
-   * valor previsto para a métrica
-   * limite superior do valor previsto para a métrica
-   * limite inferior do valor previsto para a métrica
+  * data da previsão
+  * valor previsto para a métrica
+  * limite superior do valor previsto para a métrica
+  * limite inferior do valor previsto para a métrica
 * A área sombreada mostra a faixa de confiança da previsão.
