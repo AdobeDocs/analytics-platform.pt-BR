@@ -110,7 +110,7 @@ Use o processo a seguir para conectar uma origem e assimilar dados de mídia pag
 
 1. Verifique se você tem as permissões de origem do Experience Platform e o acesso à plataforma de anúncios necessários.
 1. No Experience Platform, vá para **[!UICONTROL Fontes]** > **[!UICONTROL Catálogo]** > **[!UICONTROL Advertising]**.
-1. 
+1. &#x200B;
    1. Verifique se você está na sandbox que contém os conjuntos de dados de mídia paga.
 1. Selecione o conector que deseja usar, como **[!DNL Meta Ads]**. Selecione **[!UICONTROL Configurar]** para criar uma nova conexão ou selecione **[!UICONTROL Adicionar dados]** para adicionar mais dados a uma conexão existente.
 1. Autentique com [!DNL OAuth 2.0] entrando com um usuário que tenha o acesso de nível de anunciante necessário.
