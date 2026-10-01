@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 5%
+source-wordcount: '296'
+ht-degree: 2%
 ---
 # Gerenciar configurações de análise de público{#manage-audience-analysis}
 
@@ -65,9 +65,9 @@ Para exibir as configurações de análise de público-alvo existentes:
 
    * **[!UICONTROL Status]**: o status da configuração. Os possíveis status são Concluído, Em andamento ou Falha. <!--true?-->
 
-   Você pode ocultar qualquer coluna selecionando o ícone Coluna ![ícone Coluna](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg), desmarcando todas as colunas que deseja ocultar e selecionando **[!UICONTROL Aplicar]**.
+   Você pode ocultar qualquer coluna selecionando o ícone Coluna ![ícone Coluna](/help/assets/icons2/ColumnSettings.svg), desmarcando todas as colunas que deseja ocultar e selecionando **[!UICONTROL Aplicar]**.
 
-1. (Opcional) Para filtrar a lista de configurações, selecione o **Ícone Filtro** do ![Filtro da análise de público-alvo](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg) e filtre por qualquer um dos seguintes critérios:
+1. (Opcional) Para filtrar a lista de configurações, selecione o **Ícone Filtro** do ![Filtro da análise de público-alvo](/help/assets/icons/Filter.svg) e filtre por qualquer um dos seguintes critérios:
 
    * **[!UICONTROL Conexão]**
 

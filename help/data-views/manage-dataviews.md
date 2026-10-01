@@ -9,24 +9,30 @@ autotag-review: '2026-05-19T10:45:24.919Z'
 TQID: 'https://experienceleague.adobe.com/fPYOLKGTjiZDeSWLRhvkywKht8Yoq4k54EOcazJw74M'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
   - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+    internal-label: Integrations
 subfeature_v2:
   - id: e1471301-a189-438e-8d48-264a8db508a6
+    internal-label: Data views
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Data management
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: 933
-ht-degree: 12%
-
+source-wordcount: '915'
+ht-degree: 10%
 ---
-
 # Gerenciar visualizações de dados
 
 
@@ -43,8 +49,8 @@ As seguintes colunas e ícones estão disponíveis na tabela:
 | Coluna ou ícone | Descrição |
 | --- | --- |
 | **[!UICONTROL Nome]** | O nome da visualização de dados. |
-| ![Informações](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) | Para exibir informações sobre o modo de exibição de dados, selecione ![InfoOutline](/help/assets/icons/InfoOutline.svg) ao lado do nome do modo de exibição de dados.<br/>Uma janela pop-up exibe detalhes sobre o modo de exibição de dados. |
-| ![Mais](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) | Selecione ![Mais](/help/assets/icons/More.svg) para abrir um menu de contexto. Você pode selecionar:<br/>![Editar](/help/assets/icons/Edit.svg) **[!UICONTROL Editar]** para [editar](#edit-data-views) uma exibição de dados.<br/>![Copiar](/help/assets/icons/Copy.svg) **[!UICONTROL Copiar]** para [copiar uma exibição de dados](#copy-data-views).<br/>![Excluir](/help/assets/icons/Delete.svg) **[!UICONTROL Excluir]** para [excluir](#delete-data-views) uma exibição de dados.<br/>![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Exportar para CSV]** para [exportar os detalhes da exibição de dados para um arquivo CSV](#export-data-views-to-csv).<br/>![ProjectAdd](/help/assets/icons/ProjectAdd.svg) **[!UICONTROL Criar projeto]** para [criar um novo projeto do Workspace](#create-project-from-data-views) para a exibição de dados.<br/>![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Habilitar para Data Insights Agent]** para habilitar uma exibição de dados para o Data Insights Agent.<br/>![RemoveCircle](/help/assets/icons/RemoveCircle.svg) **[!UICONTROL Disable para o Data Insights Agent]** para desabilitar uma exibição de dados para o Data Insights Agent. |
+| ![Informações](/help/assets/icons/InfoOutline.svg) | Para exibir informações sobre o modo de exibição de dados, selecione ![InfoOutline](/help/assets/icons/InfoOutline.svg) ao lado do nome do modo de exibição de dados.<br/>Uma janela pop-up exibe detalhes sobre o modo de exibição de dados. |
+| ![Mais](/help/assets/icons/More.svg) | Selecione ![Mais](/help/assets/icons/More.svg) para abrir um menu de contexto. Você pode selecionar:<br/>![Editar](/help/assets/icons/Edit.svg) **[!UICONTROL Editar]** para [editar](#edit-data-views) uma exibição de dados.<br/>![Copiar](/help/assets/icons/Copy.svg) **[!UICONTROL Copiar]** para [copiar uma exibição de dados](#copy-data-views).<br/>![Excluir](/help/assets/icons/Delete.svg) **[!UICONTROL Excluir]** para [excluir](#delete-data-views) uma exibição de dados.<br/>![FileCSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Exportar para CSV]** para [exportar os detalhes da exibição de dados para um arquivo CSV](#export-data-views-to-csv).<br/>![ProjectAdd](/help/assets/icons/ProjectAdd.svg) **[!UICONTROL Criar projeto]** para [criar um novo projeto do Workspace](#create-project-from-data-views) para a exibição de dados.<br/>![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Habilitar para Data Insights Agent]** para habilitar uma exibição de dados para o Data Insights Agent.<br/>![RemoveCircle](/help/assets/icons/RemoveCircle.svg) **[!UICONTROL Disable para o Data Insights Agent]** para desabilitar uma exibição de dados para o Data Insights Agent. |
 | **[!UICONTROL Conexão]** | O nome da conexão associada à visualização de dados. |
 | **[!UICONTROL Sandbox]** | O nome da sandbox associada à visualização de dados. |
 | **[!UICONTROL Proprietário]** | O proprietário da visualização de dados. |
@@ -59,7 +65,7 @@ Para configurar quais colunas serão exibidas na tabela, selecione ![ColumnSetti
 
 ## Pesquisar visualizações de dados
 
-Você pode pesquisar rapidamente por uma visualização de dados usando a caixa ![Pesquisar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg).
+Você pode pesquisar rapidamente por uma visualização de dados usando a caixa ![Pesquisar](/help/assets/icons/Search.svg).
 
 ## Filtrar visualizações de dados
 

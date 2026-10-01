@@ -19,10 +19,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 5%
+source-wordcount: '360'
+ht-degree: 2%
 ---
 # Exibir previsões
 
@@ -32,7 +32,7 @@ Você pode exibir previsões em uma tabela de forma livre ou em um gráfico de l
 
 Você pode exibir previsões em uma tabela de forma livre de série temporal. Quando [!UICONTROL Mostrar previsão] está habilitado para a tabela de Forma livre nas [preferências do usuário](../user-preferences.md), a previsão é mostrada automaticamente para a primeira coluna de métrica adicionada à tabela. Para qualquer coluna adicional:
 
-1. Selecione o ícone de configurações de coluna ![Configurações de coluna](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) no cabeçalho da coluna e verifique se **[!UICONTROL Mostrar previsão]** está selecionado na lista de opções. Para obter mais informações, consulte [Configurações de coluna](../visualizations/freeform-table/column-row-settings/column-settings.md).
+1. Selecione o ícone de configurações de coluna ![Configurações de coluna](/help/assets/icons2/Settings.svg) no cabeçalho da coluna e verifique se **[!UICONTROL Mostrar previsão]** está selecionado na lista de opções. Para obter mais informações, consulte [Configurações de coluna](../visualizations/freeform-table/column-row-settings/column-settings.md).
 
 1. Clique fora do menu **[!UICONTROL Configurações de coluna]** para salvar a configuração e exibir a tabela atualizada.
 
@@ -48,7 +48,7 @@ As previsões são mostradas na tabela a seguir:
 
 Um gráfico de linhas é a única visualização que permite exibir previsões.
 
-1. Selecione o ícone de configurações ![Configurações de coluna](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) no cabeçalho da visualização e verifique se **[!UICONTROL Mostrar previsão]** está selecionado na lista de opções.
+1. Selecione o ícone de configurações ![Configurações de coluna](/help/assets/icons2/Settings.svg) no cabeçalho da visualização e verifique se **[!UICONTROL Mostrar previsão]** está selecionado na lista de opções.
 
 1. (opcional) Para permitir que as previsões dimensionem o gráfico corretamente, selecione **[!UICONTROL Permitir que a previsão dimensione o eixo Y]**. Essa opção não está selecionada por padrão porque, às vezes, pode renderizar um gráfico menos legível.
 
