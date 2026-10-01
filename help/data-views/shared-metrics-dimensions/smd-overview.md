@@ -38,7 +38,7 @@ As métricas e dimensões compartilhadas fornecem um local central para gerencia
 Embora dimensões e métricas compartilhadas permitam que componentes comuns sejam usados em muitas visualizações de dados, elas não podem ser compartilhadas em conexões.
 
 ## Permissões
-* [Administradores de produtos](https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/access-control#product-administrator-role) também precisam das **Permissões para Gerenciar Políticas de Uso de Dados** e **Exibir Políticas de Uso de Dados** para todas as sandboxes nas [Permissões do Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home#permissions).
+* [Administradores de produtos](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/technotes/access-control#product-administrator-role) também precisam das **Permissões para Gerenciar Políticas de Uso de Dados** e **Exibir Políticas de Uso de Dados** para todas as sandboxes nas [Permissões do Experience Platform](https://experienceleague.adobe.com/pt-br/docs/experience-platform/access-control/home#permissions).
 
 ## Fluxo de trabalho
 
