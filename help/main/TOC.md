@@ -2,7 +2,7 @@
 user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Saiba mais sobre o Adobe Customer Journey Analytics e como usar o Analysis Workspace com dados da Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
-source-git-commit: 7357a8b929d72095aee7c154ea9e77791ac1a751
+source-git-commit: 4a005c03e46547810de8d27fcf85a041ab59a4d6
 workflow-type: tm+mt
 source-wordcount: '1510'
 ht-degree: 89%
@@ -316,14 +316,6 @@ ht-degree: 89%
     + [Biblioteca do JavaScript](/help/content-analytics/config/tags-agnostic.md)
     + [Coleção de dados](/help/content-analytics/config/datacollection.md)
 
-+ Painéis do Analytics {#cja-dashboards}
-  + [Visão geral](../mobile-app/home.md)
-  + [Tarefas do curador](../mobile-app/curator.md)
-  + [Criar cartões de pontuação móveis](../mobile-app/create-scorecard.md)
-  + [Gerenciar cartões de pontuação para dispositivos móveis](../mobile-app/manage-scorecard.md)
-  + [Configurar executivos para usar painéis](../mobile-app/set-up-execs.md)
-  + [Guia de início rápido do usuário executivo](../mobile-app/executive.md)
-
 + Análise guiada {#guided-analysis}
   + [Visão geral](../guided-analysis/overview.md)
   + [Crescimento ativo](../guided-analysis/types/active-growth.md)
@@ -341,12 +333,19 @@ ht-degree: 89%
   + [Perguntas frequentes](../guided-analysis/faq.md)
 
 + Insights de conversa {#conversation-insights}
-  + {hide-from-toc}[Visão geral](/help/conversation-insights/conversation-insights-overview.md)
-  + {hide-from-toc}[Configurar](/help/conversation-insights/conversation-insights-configure.md)
-  + {hide-from-toc}[Gerenciar](/help/conversation-insights/conversation-insights-manage.md)
-  + {hide-from-toc}[Implementar](/help/conversation-insights/conversation-insights-implement.md)
-  + {hide-from-toc}[Analisar](/help/conversation-insights/conversation-insights-analyze.md)
+  + [Visão geral](/help/conversation-insights/overview.md)
+  + [Configurar](/help/conversation-insights/configure.md)
+  + [Gerenciar](/help/conversation-insights/manage.md)
+  + [Implementar](/help/conversation-insights/implement.md)
+  + [Analisar](/help/conversation-insights/analyze.md)
 
++ Painéis do Analytics {#cja-dashboards}
+  + [Visão geral](../mobile-app/home.md)
+  + [Tarefas do curador](../mobile-app/curator.md)
+  + [Criar cartões de pontuação móveis](../mobile-app/create-scorecard.md)
+  + [Gerenciar cartões de pontuação para dispositivos móveis](../mobile-app/manage-scorecard.md)
+  + [Configurar executivos para usar painéis](../mobile-app/set-up-execs.md)
+  + [Guia de início rápido do usuário executivo](../mobile-app/executive.md)
 
 + Componentes {#cja-components}
   + [Visão geral](../components/overview.md)
