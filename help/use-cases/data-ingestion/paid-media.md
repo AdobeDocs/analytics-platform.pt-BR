@@ -186,5 +186,5 @@ Use a lista de verificação a seguir para validar a implementação.
 
 >[!MORELIKETHIS]
 >
->[Conector de origem do Meta Ads](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/advertising/meta-ads)
+>[Conector de origem do Meta Ads](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/advertising/meta-ads)
 >
