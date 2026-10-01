@@ -8,25 +8,32 @@ exl-id: 79bf235a-6f6e-4b04-bcd8-1ff884536648
 TQID: https://experienceleague.adobe.com/grwbNht938ivCsnzlFBzP8Ga8h1udmQLcZngxY6s0-4
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: ad5685a0-8296-4a0c-814c-658c10b4af12
+    internal-label: Content Analytics
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: e3936b74ba4b4cf23e1b7235e545091a8cb546ed
+    internal-label: Metadata
+source-git-commit: fec14c8ed1f94e16423682a165198dbda760f78d
 workflow-type: tm+mt
-source-wordcount: 1869
-ht-degree: 56%
-
+source-wordcount: '1943'
+ht-degree: 58%
 ---
-
 
 # Componentes do Content Analytics
 
@@ -172,58 +179,63 @@ Nas tabelas abaixo, ![gerado por IA](/help/assets/icons/AI.svg) indica um par 
 
 ## Mídia paga
 
-Esses componentes são adicionados a uma visualização de dados quando o canal **Mídia paga** é habilitado por meio de um [conector de origem da Mídia paga do Adobe Experience Platform](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/home) (por exemplo, Meta Ads ou Google Ads). Eles permitem que você emita relatórios sobre entidades de mídia paga, criativas e gastas com conteúdo da Web e móvel.
+Esses componentes são adicionados a uma visualização de dados quando o canal **Mídia paga** é habilitado por meio de um [conector de origem da Mídia paga do Adobe Experience Platform](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/home). Eles permitem que você emita relatórios sobre campanhas de mídia paga, conteúdo criativo e gastos com a Web e conteúdo móvel. A disponibilidade e os valores preenchidos dependem da rede de publicidade e dos relatórios.
 
 Os [Atributos do ativo](#asset-attributes) e os [Atributos da experiência](#experience-attributes) gerados por IA descritos acima também estão disponíveis para criações de mídia paga. O mesmo recurso é executado nos canais da Web, de dispositivos móveis e de mídia paga.
 
 ### Dimensões de mídia paga
 
+As dimensões abaixo incluem nomes, status e outros detalhes para contas de anúncios, campanhas, grupos de anúncios, anúncios, experiências e ativos.
+
 | Título | Descrição | Tipo |
 |---|---|---|
 | Rede de publicidade | A plataforma de publicidade da qual os dados de mídia paga foram assimilados. | Dimensão |
+| GUID da conta | Identificador exclusivo da conta publicitária. | Dimensão |
+| GUID da campanha | Identificador exclusivo da campanha de mídia paga. | Dimensão |
+| GUID do grupo de anúncios | Identificador exclusivo do grupo de anúncios. | Dimensão |
+| GUID do anúncio | Identificador exclusivo do anúncio individual. | Dimensão |
 | Nome da conta | Nome da conta do anúncio. | Dimensão |
 | Nome da campanha | Nome da campanha de mídia paga. | Dimensão |
-| Nome do Grupo de Publicidade | Nome do grupo de anúncios (conjunto de anúncios Meta/grupo de anúncios Google). | Dimensão |
+| Nome do grupo de anúncios | Nome do grupo ou conjunto de anúncios. | Dimensão |
 | Nome do anúncio | Nome do anúncio individual. | Dimensão |
 | Nome da experiência | Nome da experiência do anúncio (composição criativa). | Dimensão |
-| Nome do ativo | Nome do ativo criativo. | Dimensão |
+| Nome do ativo (Mídia paga) | Nome do ativo criativo. | Dimensão |
 | Status de campanha | Status da campanha. | Dimensão |
 | Status do Grupo de Publicidade | Status do grupo de publicidade. | Dimensão |
 | Status da Publicidade | Status do anúncio. | Dimensão |
-| Status de serviço | Status de fornecimento detalhado indicando se a entidade está fornecendo no momento. | Dimensão |
 | Moeda da conta | Moeda da conta de anúncio. | Dimensão |
 | Fuso horário da conta | Fuso horário da conta do anúncio. | Dimensão |
 | Tipo de conta | Tipo da conta de publicidade. | Dimensão |
-| Nome da Empresa da Conta | Nome comercial associado à conta do anúncio. | Dimensão |
+| Nome de negócios da conta | Nome comercial associado à conta do anúncio. | Dimensão |
 | Tipo de campanha | Tipo de canal principal da campanha. | Dimensão |
 | Objetivo da campanha | Objetivo ou meta da campanha. | Dimensão |
-| Estratégia de lance de campanha | Estratégia de lance para a campanha. | Dimensão |
+| Estratégia de lance da campanha | Estratégia de lance para a campanha. | Dimensão |
 | Tipo de orçamento da campanha | Tipo de alocação de orçamento para a campanha. | Dimensão |
 | Orçamento diário da campanha | Valor do orçamento diário, na moeda da conta de anúncio. | Dimensão |
 | Orçamento vitalício da campanha | Valor do orçamento vitalício, na moeda da conta de anúncio. | Dimensão |
 | Hora de início da campanha | Quando a campanha começou. | Dimensão |
 | Hora de término da campanha | Quando a campanha terminou. | Dimensão |
 | Tipo de grupo de anúncios | Tipo do grupo de publicidade. | Dimensão |
-| Estratégia de lance de grupo de anúncios | Estratégia de lance para o grupo de anúncios. | Dimensão |
-| Objetivo de otimização do grupo de publicidade | Meta de otimização para o grupo de anúncios. | Dimensão |
-| Horário de início do grupo de anúncios | Quando o grupo de anúncios começou. | Dimensão |
-| Hora de término do grupo do anúncio | Quando o grupo de anúncios terminou. | Dimensão |
+| Tipo de estratégia de lance do grupo de anúncios | Estratégia de lance para o grupo de anúncios. | Dimensão |
+| Meta de otimização do grupo de anúncios | Meta de otimização para o grupo de anúncios. | Dimensão |
+| Hora de início do grupo de anúncios | Quando o grupo de anúncios começou. | Dimensão |
+| Hora de término do grupo de anúncios | Quando o grupo de anúncios terminou. | Dimensão |
 | Tipo de anúncio | Tipo/formato do anúncio. | Dimensão |
-| Status da revisão do anúncio | Status de revisão/aprovação do anúncio. | Dimensão |
-| Tipo de Creative do anúncio | Tipo de criativo usado pelo anúncio. | Dimensão |
+| Status de entrega de anúncio | Status de entrega do anúncio. | Dimensão |
+| Status de revisão do anúncio | Status de revisão/aprovação do anúncio. | Dimensão |
+| Tipo de peça publicitária | Tipo de criativo usado pelo anúncio. | Dimensão |
 | Título do anúncio | Título do criativo do anúncio. | Dimensão |
-| Ad Call to action | Call-to-action do criativo do anúncio. | Dimensão |
+| Chamada para ação do anúncio | Call-to-action do criativo do anúncio. | Dimensão |
 | URL de destino do anúncio | URL de aterrissagem/destino do anúncio. | Dimensão |
 | Adicionar URL de exibição | URL de exibição mostrado no anúncio. | Dimensão |
 | Tipo de experiência | Tipo/formato da experiência do anúncio. | Dimensão |
-| URL da página inicial da experiência | URL da página de aterrissagem da experiência. | Dimensão |
-| Experience Call to action | Call-to-action da experiência. | Dimensão |
+| URL da página de destino da experiência | URL da página de aterrissagem da experiência. | Dimensão |
+| Chamada para ação da experiência | Call-to-action da experiência. | Dimensão |
 | Tipo do ativo | Tipo do ativo criativo (por exemplo, imagem ou vídeo). | Dimensão |
 | Largura do ativo | Largura do ativo, em pixels. | Dimensão |
 | Altura do ativo | Altura do ativo, em pixels. | Dimensão |
-| Taxa de proporção do ativo | Taxa de proporção do ativo. | Dimensão |
+| Proporção do ativo | Taxa de proporção do ativo. | Dimensão |
 | Orientação do ativo | Orientação do ativo. | Dimensão |
-| Tipo de dispositivo | Detalhamento do tipo de dispositivo para as métricas relatadas. | Dimensão |
 | Posicionamento | Detalhamento do posicionamento para as métricas relatadas. | Dimensão |
 | Plataforma | Detalhamento da plataforma para as métricas relatadas. | Dimensão |
 | País | Detalhamento por país das métricas relatadas. | Dimensão |
@@ -237,10 +249,10 @@ Os [Atributos do ativo](#asset-attributes) e os [Atributos da experiência](#exp
 |---|---|---|
 | Impressões | Número de vezes que o anúncio foi exibido. | Métrica |
 | Cliques | Número de cliques no anúncio. | Métrica |
-| Gastos | Valor gasto, na moeda da conta de anúncio. | Métrica |
+| Gastos | Valor gasto, conforme relatado pela plataforma de publicidade. | Métrica |
 | Conversões | Número total de conversões. | Métrica |
 | Valor de conversão | Valor total das conversões. | Métrica |
-| Alcance | Número de pessoas únicas que viram o anúncio. | Métrica |
+| Alcance | Alcance do público relatado pela plataforma de publicidade. A agregação de alcance entre linhas de relatório não desduplica pessoas. | Métrica |
 | Envolvimentos | Número de envolvimentos com o anúncio. | Métrica |
 | Exibições de vídeo | Total de visualizações do vídeo. | Métrica |
 | Conclusões de vídeo | Número de vídeos assistidos até a conclusão. | Métrica |
@@ -263,6 +275,8 @@ Os [Atributos do ativo](#asset-attributes) e os [Atributos da experiência](#exp
 {style="table-layout:fixed"}
 
 ### Métricas calculadas de mídia paga
+
+Essas métricas calculadas calculam as taxas a partir das métricas de base agregadas para o gráfico de relatórios, em vez de somar taxas individuais.
 
 | Título | Descrição | Tipo |
 |---|---|---|
