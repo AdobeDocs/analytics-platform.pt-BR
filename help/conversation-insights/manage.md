@@ -16,7 +16,7 @@ feature_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 4a005c03e46547810de8d27fcf85a041ab59a4d6
+source-git-commit: 84e89fe4ecbd4dd479c9dad12175a9a93e7578cb
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 6%
@@ -28,6 +28,7 @@ Depois de [criar configurações de Insights de Conversa](/help/conversation-ins
 Somente administradores do sistema podem gerenciar configurações de Insights de conversa.
 
 Para obter informações sobre Insights de conversa, consulte [Visão geral sobre Insights de conversa](/help/conversation-insights/overview.md).
+
 
 ## Exibir e filtrar configurações existentes
 

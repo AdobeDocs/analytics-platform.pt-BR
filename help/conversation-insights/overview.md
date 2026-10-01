@@ -17,7 +17,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 4a005c03e46547810de8d27fcf85a041ab59a4d6
+source-git-commit: 84e89fe4ecbd4dd479c9dad12175a9a93e7578cb
 workflow-type: tm+mt
 source-wordcount: '1114'
 ht-degree: 1%
@@ -151,6 +151,7 @@ Para identificar o aplicativo ou serviço do agente, para cada evento de Insight
 Se o aplicativo de experiência do agente suportar a invocação de habilidades que representam recursos chamados durante o processamento, você poderá adicionar essas invocações de habilidades como parte do grupo de campos de informações do agente.
 
 Para obter detalhes sobre a implementação, consulte o grupo de campos [informações sobre a agência](./implement.md#agentic-information-field-group) na documentação [Implementar Insights de Conversa](./implement.md).
+
 
 ## Como funciona
 
