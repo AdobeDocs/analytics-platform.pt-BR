@@ -4,7 +4,6 @@ description: Saiba mais sobre o valor e a terminologia dos Insights de conversa 
 solution: Customer Journey Analytics
 feature: AI Tools
 role: Admin, User
-hold: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -18,7 +17,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 4eaf8820fd847426ba6a471e1bfbc7b397283905
+source-git-commit: 4a005c03e46547810de8d27fcf85a041ab59a4d6
 workflow-type: tm+mt
 source-wordcount: '1114'
 ht-degree: 1%
@@ -69,7 +68,7 @@ Uma conversa é o nível de contêiner ou de agrupamento. Esse container é úti
 * Como o sentimento mudou em uma conversa?
 * Quais conversas acabaram levando a uma conversão?
 
-Para obter detalhes sobre a implementação, consulte o objeto [conversa](./conversation-insights-implement.md#conversation) na documentação [Implementar Insights de Conversa](./conversation-insights-implement.md).
+Para obter detalhes sobre a implementação, consulte o objeto [conversa](./implement.md#conversation) na documentação [Implementar Insights de Conversa](./implement.md).
 
 ### Girar
 
@@ -83,7 +82,7 @@ Uma curva típica consiste em
 
 A curva é o principal objeto analítico para fins de relatório. O serviço de liquidificador de conversações combina as informações disponíveis de prompt, resposta, feedback e sinal em registros no nível da curva.
 
-Para obter detalhes sobre a implementação, consulte o objeto [turn](./conversation-insights-implement.md#turn) na documentação [Implementar Insights de Conversa](./conversation-insights-implement.md).
+Para obter detalhes sobre a implementação, consulte o objeto [turn](./implement.md#turn) na documentação [Implementar Insights de Conversa](./implement.md).
 
 ### Aviso
 
@@ -103,7 +102,7 @@ O prompt é a principal entrada da qual os Insights de conversa podem obter info
 * O sentimento do usuário
 * Outros sinais suportados
 
-Para obter detalhes sobre a implementação, consulte o objeto [prompt](./conversation-insights-implement.md#prompt) na documentação [Implementar Insights de Conversa](./conversation-insights-implement.md).
+Para obter detalhes sobre a implementação, consulte o objeto [prompt](./implement.md#prompt) na documentação [Implementar Insights de Conversa](./implement.md).
 
 ### Resposta
 
@@ -119,7 +118,7 @@ Uma resposta do geralmente contém diferentes tipos de conteúdo. Por exemplo:
 
 Essa distinção é útil porque a análise precisa separar a resposta principal de links de suporte, citações, anúncios ou outros componentes de resposta.
 
-Para obter detalhes sobre a implementação, consulte o objeto [resposta](./conversation-insights-implement.md#response) na documentação [Implementar Insights de Conversa](./conversation-insights-implement.md).
+Para obter detalhes sobre a implementação, consulte o objeto [resposta](./implement.md#response) na documentação [Implementar Insights de Conversa](./implement.md).
 
 ### Feedback
 
@@ -134,13 +133,13 @@ O feedback pode conter:
 
 O feedback não está necessariamente disponível ao mesmo tempo que o prompt ou a resposta. Você pode enviar o feedback posteriormente do aplicativo ou serviço do agente depois que o usuário avaliar a resposta.
 
-Para obter detalhes sobre a implementação, consulte o objeto [feedback](./conversation-insights-implement.md#feedback) na documentação [Implementar Insights de Conversa](./conversation-insights-implement.md).
+Para obter detalhes sobre a implementação, consulte o objeto [feedback](./implement.md#feedback) na documentação [Implementar Insights de Conversa](./implement.md).
 
 ### Sinal
 
 Um sinal é uma observação analítica estruturada sobre o conteúdo da conversa. O serviço de extração de sinais extrai sinais.
 
-Para obter detalhes sobre a implementação, consulte o objeto [sinal](./conversation-insights-implement.md#signal) na documentação [Implementar Insights de Conversa](./conversation-insights-implement.md).
+Para obter detalhes sobre a implementação, consulte o objeto [sinal](./implement.md#signal) na documentação [Implementar Insights de Conversa](./implement.md).
 
 
 ### Agente
@@ -151,7 +150,7 @@ Para identificar o aplicativo ou serviço do agente, para cada evento de Insight
 
 Se o aplicativo de experiência do agente suportar a invocação de habilidades que representam recursos chamados durante o processamento, você poderá adicionar essas invocações de habilidades como parte do grupo de campos de informações do agente.
 
-Para obter detalhes sobre a implementação, consulte o grupo de campos [informações sobre a agência](./conversation-insights-implement.md#agentic-information-field-group) na documentação [Implementar Insights de Conversa](./conversation-insights-implement.md).
+Para obter detalhes sobre a implementação, consulte o grupo de campos [informações sobre a agência](./implement.md#agentic-information-field-group) na documentação [Implementar Insights de Conversa](./implement.md).
 
 ## Como funciona
 
@@ -167,8 +166,8 @@ O processo geral de coleta de dados, extração de sinais e combinação de conv
 
 | | Descrição |
 |---|---|
-| 1 | Instrumente o aplicativo ou serviço do seu agente para criar eventos que contenham prompts ![CommentText](/help/assets/icons2/CommentText.svg), respostas ![CommentReply](/help/assets/icons2/CommentReply.svg) e feedback ![Feedback](/help/assets/icons2/Feedback.svg) conjuntos de dados.<br/>Para obter detalhes sobre como instrumentar o aplicativo ou serviço do agente, consulte a [documentação de implementação](./conversation-insights-implement.md). |
-| 2 | O serviço de extração de sinal extrai sinais dos prompts ![CommentText](/help/assets/icons2/CommentText.svg), responde ![CommentReply](/help/assets/icons2/CommentReply.svg) e conjuntos de dados de feedback ![Feedback](/help/assets/icons2/Feedback.svg) como eventos de sinal ![OnAir](/help/assets/icons/OnAir.svg) e armazena esses eventos de sinal em um novo conjunto de dados.<br>Esta etapa é implementada como parte da definição de uma [configuração de Insights de Conversa](./conversation-insights-configure.md). |
-| 3 | O serviço de mesclagem de conversações mescla os eventos dos prompts ![CommentText](/help/assets/icons2/CommentText.svg), respostas ![CommentReply](/help/assets/icons2/CommentReply.svg), feedback ![Feedback](/help/assets/icons2/Feedback.svg) e sinaliza os conjuntos de dados de eventos ![OnAir](/help/assets/icons/OnAir.svg) e gera os eventos ![Merge](/help/assets/icons/Merge.svg)mesclados em um novo conjunto de dados.<br>Esta etapa é implementada como parte da definição de uma [configuração de Insights de Conversa](./conversation-insights-configure.md). |
-| 4 | O conjunto de dados ![Merge](/help/assets/icons/Merge.svg) combinado torna-se parte da conexão e os componentes definidos no esquema usado para o conjunto de dados combinado tornam-se parte da exibição de dados.<br>Esta etapa é implementada como parte da definição de uma [configuração de Insights de Conversa](./conversation-insights-configure.md). |
+| 1 | Instrumente o aplicativo ou serviço do seu agente para criar eventos que contenham prompts ![CommentText](/help/assets/icons2/CommentText.svg), respostas ![CommentReply](/help/assets/icons2/CommentReply.svg) e feedback ![Feedback](/help/assets/icons2/Feedback.svg) conjuntos de dados.<br/>Para obter detalhes sobre como instrumentar o aplicativo ou serviço do agente, consulte a [documentação de implementação](./implement.md). |
+| 2 | O serviço de extração de sinal extrai sinais dos prompts ![CommentText](/help/assets/icons2/CommentText.svg), responde ![CommentReply](/help/assets/icons2/CommentReply.svg) e conjuntos de dados de feedback ![Feedback](/help/assets/icons2/Feedback.svg) como eventos de sinal ![OnAir](/help/assets/icons/OnAir.svg) e armazena esses eventos de sinal em um novo conjunto de dados.<br>Esta etapa é implementada como parte da definição de uma [configuração de Insights de Conversa](./configure.md). |
+| 3 | O serviço de mesclagem de conversações mescla os eventos dos prompts ![CommentText](/help/assets/icons2/CommentText.svg), respostas ![CommentReply](/help/assets/icons2/CommentReply.svg), feedback ![Feedback](/help/assets/icons2/Feedback.svg) e sinaliza os conjuntos de dados de eventos ![OnAir](/help/assets/icons/OnAir.svg) e gera os eventos ![Merge](/help/assets/icons/Merge.svg)mesclados em um novo conjunto de dados.<br>Esta etapa é implementada como parte da definição de uma [configuração de Insights de Conversa](./configure.md). |
+| 4 | O conjunto de dados ![Merge](/help/assets/icons/Merge.svg) combinado torna-se parte da conexão e os componentes definidos no esquema usado para o conjunto de dados combinado tornam-se parte da exibição de dados.<br>Esta etapa é implementada como parte da definição de uma [configuração de Insights de Conversa](./configure.md). |
 

@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hold: true
 role: Admin
-source-git-commit: 7cd3764ebbab83530ebb42f2041aee4bd390d168
+source-git-commit: 42b73f2843244a02fd51301d8d99282ae5f309cd
 workflow-type: tm+mt
-source-wordcount: '1589'
+source-wordcount: '1710'
 ht-degree: 0%
 ---
 
@@ -28,8 +28,8 @@ Os dados de mídia paga são assimilados pelos conectores de origem do Experienc
 Certifique-se de ter o seguinte acesso no Experience Platform:
 
 * Permissão para exibir e gerenciar fontes.
-* Uma sandbox para trabalhar.
 * Permissão para criar esquemas, conjuntos de dados e fluxos de dados.
+* Uma sandbox selecionada para trabalhar. Você deve escolher a sandbox antes de prosseguir com as etapas de configuração.
 
 Se você usar [!DNL Meta Ads] como origem, verifique também os seguintes pré-requisitos:
 
@@ -75,23 +75,33 @@ O conjunto de dados de métricas de resumo pode incluir os seguintes grupos de m
 * **Engajamento social**: curtidas, comentários e comentários.
 * **Atribuição e caminho**: detalhes do modelo de atribuição, confiança, pesos, métricas de caminho e contribuição de canal.
 * **Qualidade e fraude**: pontuações de qualidade, indicadores de fraude, taxas de tráfego inválidas e métricas de segurança da marca.
-* **Detalhamentos dimensionais**: canal, rede de anúncios, tipo de dispositivo, faixa etária, gênero, país, cidade, idioma, dia da semana, categoria de público-alvo, formato criativo e tipo de detalhamento.
+* **Detalhamentos de dimensão**: os dados podem ser analisados por canal, rede de publicidade, tipo de dispositivo, faixa etária, gênero, país, cidade, idioma, dia da semana, categoria de público-alvo, formato criativo e outras dimensões, dependendo da plataforma de origem.
 
 ### Conjuntos de dados padrão
 
-Ao conectar uma fonte de mídia paga, o Adobe provisiona 12 conjuntos de dados de mídia paga padrão com base nas classes de esquema de mídia paga global e nos grupos de campo. Esses conjuntos de dados incluem os seis conjuntos de dados de pesquisa, o conjunto de dados de métricas de resumo e os conjuntos de dados de suporte. Todos os 12 conjuntos de dados devem estar presentes para que os dados de mídia paga sejam resolvidos corretamente downstream.
+Ao conectar uma fonte de mídia paga, o Adobe provisiona 12 conjuntos de dados de mídia paga padrão com base nas classes de esquema de mídia paga global e nos grupos de campo. Esses conjuntos de dados incluem seis conjuntos de dados de métricas de resumo, os seis conjuntos de dados de pesquisa e os conjuntos de dados de suporte. Todos os 12 conjuntos de dados de resumo e pesquisa devem estar presentes para que os dados de mídia paga sejam resolvidos corretamente downstream.
 
-* Pesquisa de campanha de mídia paga
-* Pesquisa de ativo de mídia paga
-* Pesquisa de experiência de mídia paga
-* Pesquisa de anúncio de mídia paga
-* Pesquisa de AdGroup de Mídia Paga
+Conjuntos de dados necessários:
+
+* Resumo da conta de mídia paga
+* Resumo da campanha de mídia paga
+* Resumo do grupo de anúncios de mídia paga
+* Resumo do anúncio de mídia paga
+* Resumo da experiência de mídia paga
+* Resumo de ativos de mídia paga
 * Pesquisa de conta de mídia paga
+* Pesquisa de campanha de mídia paga
+* Pesquisa de grupo de anúncios de mídia paga
+* Pesquisa de anúncio de mídia paga
+* Pesquisa de experiência de mídia paga
+* Pesquisa de ativo de mídia paga
+
+Conjuntos de dados compatíveis, por exemplo:
+
 * Pesquisa demográfica de anúncio de mídia paga
 * Resumo do posicionamento da experiência de mídia paga
 * Resumo geográfico do anúncio de mídia paga
 * Resumo do anúncio de mídia paga (métricas de resumo)
-* Resumo de ativos de mídia paga
 * Resumo demográfico do ativo de mídia paga
 
 ## Assimilar dados de mídia paga no Adobe Experience Platform
@@ -100,10 +110,12 @@ Use o processo a seguir para conectar uma origem e assimilar dados de mídia pag
 
 1. Verifique se você tem as permissões de origem do Experience Platform e o acesso à plataforma de anúncios necessários.
 1. No Experience Platform, vá para **[!UICONTROL Fontes]** > **[!UICONTROL Catálogo]** > **[!UICONTROL Advertising]**.
-1. Selecione o conector que deseja usar, como **[!DNL Meta Ads]**, e selecione **[!UICONTROL Configurar]**.
+1. &#x200B;
+   1. Verifique se você está na sandbox que contém os conjuntos de dados de mídia paga.
+1. Selecione o conector que deseja usar, como **[!DNL Meta Ads]**. Selecione **[!UICONTROL Configurar]** para criar uma nova conexão ou selecione **[!UICONTROL Adicionar dados]** para adicionar mais dados a uma conexão existente.
 1. Autentique com [!DNL OAuth 2.0] entrando com um usuário que tenha o acesso de nível de anunciante necessário.
 1. Selecione as contas de publicidade, entidades e dados do insight que você deseja assimilar.
-1. Confirme os target mappings para o esquema de mídia paga global e verifique se os conjuntos de dados de pesquisa e de métricas de resumo estão provisionados corretamente.
+1. Verifique se os conjuntos de dados de pesquisa e de métricas de resumo foram provisionados corretamente.
 1. Insira as configurações de fluxo de dados, confirme os conjuntos de dados de destino e configure a programação de assimilação.
 1. Salve o fluxo de dados e monitore as execuções em **[!UICONTROL Fontes]** > **[!UICONTROL Fluxos de dados]**.
 1. Valide se os conjuntos de dados de mídia paga padrão existem e contêm dados.
@@ -112,7 +124,7 @@ Antes de migrar para o Customer Journey Analytics, valide os dados assimilados:
 
 * Confirme se os valores de entidade `GUID` e ID nativa estão preenchidos de forma consistente nas métricas de resumo e nos conjuntos de dados de pesquisa.
 * Confirme se cada linha de métricas de resumo inclui um carimbo de data e hora.
-* Confirme se os principais campos de relatórios, como campanha, canal, rede de anúncios, impressões, cliques, gastos, região e tipo de dispositivo contêm valores.
+* Confirme se os principais campos de relatórios, como dimensões (por exemplo: `channel`, `adNetwork`) e métricas (por exemplo: `impressions`, `clicks`, `spend`) contêm valores. Observe que alguns campos como `region` podem não ser preenchidos por todas as plataformas de origem.
 * Confirme se os valores de moeda e fuso horário são consistentes em todas as contas relevantes.
 
 ## Trazer dados de mídia paga para o Customer Journey Analytics
@@ -124,9 +136,9 @@ A Customer Journey Analytics não cria relatórios diretamente sobre conjuntos d
 Use o processo a seguir para criar ou atualizar uma conexão:
 
 1. No Customer Journey Analytics, [crie ou edite uma conexão existente](/help/connections/create-connection.md).
-1. Selecione a sandbox que contém os conjuntos de dados de mídia paga.
-1. Adicione o conjunto de dados de métricas de resumo como dados de resumo.
-1. Adicione cada conjunto de dados de pesquisa como um conjunto de dados de pesquisa e associe o conjunto de dados aos dados de resumo pelos identificadores de entidade correspondentes para conta, campanha, grupo de anúncios, anúncio, ativo e experiência.
+1. Selecione a sandbox que contém os conjuntos de dados de mídia paga como parte da configuração de conexão.
+1. Adicione os conjuntos de dados de métricas de resumo como dados de resumo. Se vários conjuntos de dados de métricas de resumo estiverem disponíveis, use a [pesquisa](/help/connections/create-connection.md#add-datasets) para filtrar pelas classes `Paid Media` para identificar os conjuntos de dados corretos.
+1. Adicione cada conjunto de dados de pesquisa como um conjunto de dados de pesquisa. Una o conjunto de dados de pesquisa aos dados de resumo usando os identificadores GUID de entidade correspondentes (as chaves globais geradas pela Adobe) para conta, campanha, grupo de anúncios, anúncio, ativo e experiência. Algumas plataformas de origem também podem suportar associações em valores de ID nativos.
 1. Opcionalmente, adicione dados do evento de sequência de cliques se desejar relacionar dados de mídia paga agregados a metadados compartilhados, como IDs, códigos de rastreamento ou parâmetros `UTM`.
 1. Revise as [configurações específicas para cada conjunto de dados](/help/connections/create-connection.md#dataset-settings).
 1. Salve a conexão e confirme se a conexão começa a preencher os dados retroativamente.

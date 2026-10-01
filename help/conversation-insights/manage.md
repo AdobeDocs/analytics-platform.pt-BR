@@ -4,7 +4,6 @@ description: Saiba como gerenciar configurações de Insights de conversa.
 solution: Customer Journey Analytics
 feature: AI Tools
 role: Admin, User
-hold: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -13,23 +12,22 @@ feature_v2:
     internal-label: Components
   - id: ae3aff40-b2f6-4df1-8c01-0b0720d1510f
     internal-label: AI Tools
-role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 4eaf8820fd847426ba6a471e1bfbc7b397283905
+source-git-commit: 4a005c03e46547810de8d27fcf85a041ab59a4d6
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 6%
 ---
 # Gerenciar configurações
 
-Depois de [criar configurações de Insights de Conversa](/help/conversation-insights/conversation-insights-configure.md), você poderá exibir, editar ou excluir essas configurações.
+Depois de [criar configurações de Insights de Conversa](/help/conversation-insights/configure.md), você poderá exibir, editar ou excluir essas configurações.
 
 Somente administradores do sistema podem gerenciar configurações de Insights de conversa.
 
-Para obter informações sobre Insights de conversa, consulte [Visão geral sobre Insights de conversa](/help/conversation-insights/conversation-insights-overview.md).
+Para obter informações sobre Insights de conversa, consulte [Visão geral sobre Insights de conversa](/help/conversation-insights/overview.md).
 
 ## Exibir e filtrar configurações existentes
 
@@ -72,7 +70,7 @@ Para exibir as configurações existentes do Conversation Insights:
 Para criar uma nova configuração de Insights de conversa:
 
 1. Selecione **[!UICONTROL Criar configuração]**.
-1. Use a caixa de diálogo [**[!UICONTROL Criar configuração]**](./conversation-insights-configure.md) para configurar os insights da conversa.
+1. Use a caixa de diálogo [**[!UICONTROL Criar configuração]**](./configure.md) para configurar os insights da conversa.
 
 ## Editar uma configuração
 
@@ -84,7 +82,7 @@ Para editar uma configuração existente de Insights de conversa:
    * Marque a caixa de seleção ao lado da configuração que você deseja editar e selecione ![Editar](/help/assets/icons/Edit.svg) **[!UICONTROL Editar]** na barra de ações azul.
    * Selecione ![Mais](/help/assets/icons/More.svg) para a configuração que você deseja editar. No menu de contexto, selecione ![Editar](/help/assets/icons/Edit.svg) **[!UICONTROL Editar]**.
 
-1. Use a caixa de diálogo [**[!UICONTROL Configuração / _nome da configuração_]**](./conversation-insights-configure.md) para gerenciar os insights da conversa.
+1. Use a caixa de diálogo [**[!UICONTROL Configuração / _nome da configuração_]**](./configure.md) para gerenciar os insights da conversa.
 
 ## Excluir uma configuração
 

@@ -4,7 +4,6 @@ description: Saiba como instrumentar seu aplicativo ou serviço de agente para I
 solution: Customer Journey Analytics
 feature: AI Tools
 role: Admin, User
-hold: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -13,12 +12,11 @@ feature_v2:
     internal-label: Components
   - id: ae3aff40-b2f6-4df1-8c01-0b0720d1510f
     internal-label: AI Tools
-role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 99e0e43c34f77b6e42f8d3c4fdf5d2773569b3e7
+source-git-commit: 4a005c03e46547810de8d27fcf85a041ab59a4d6
 workflow-type: tm+mt
 source-wordcount: '2592'
 ht-degree: 5%
@@ -39,7 +37,7 @@ Este artigo documenta as etapas de implementação necessárias.
 
 Configurar conjuntos de dados para os eventos principais de conversa: prompt, resposta, feedback. Os conjuntos de dados de prompt, resposta e feedback devem estender o esquema base do Evento de Experiência XDM com o [grupo de campos Evento de Conversa](#conversation-event-field-group) e podem incluir, opcionalmente, o [grupo de campos Informações de Agente](#agentic-information-field-group) e outros [grupos de campos adicionais](#additional-field-groups).
 
-Você pode definir conjuntos de dados separados para prompts, respostas e feedback ou combinar dados em conjuntos de dados. Por exemplo, use um conjunto de dados para prompts e respostas e outro conjunto de dados para feedback. Ou use um conjunto de dados separado para cada tipo de evento de conversa, conforme ilustrado em [Como funciona](/help/conversation-insights/conversation-insights-overview.md#how-it-works).
+Você pode definir conjuntos de dados separados para prompts, respostas e feedback ou combinar dados em conjuntos de dados. Por exemplo, use um conjunto de dados para prompts e respostas e outro conjunto de dados para feedback. Ou use um conjunto de dados separado para cada tipo de evento de conversa, conforme ilustrado em [Como funciona](/help/conversation-insights/overview.md#how-it-works).
 
 Para ilustrar, use:
 

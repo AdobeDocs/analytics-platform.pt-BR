@@ -37,9 +37,9 @@ topic_v2:
     internal-label: Implementation
   - id: beb7a3c1-66ab-4786-b879-7621375b3c40
     internal-label: Email marketing
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: '10602'
+source-wordcount: '10578'
 ht-degree: 98%
 ---
 # Campos derivados {#derived-fields}
@@ -877,10 +877,10 @@ Você define um campo derivado de `Page Name (updated)`. Use a função [!UICONT
 
 A seguinte funcionalidade adicional está disponível na interface das regras de classificação:
 
-- Para limpar rapidamente todos os valores da tabela, selecione ![Apagar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Erase_18_N.svg) **[!UICONTROL Limpar todos os valores da tabela]**.
-- Para carregar um arquivo CSV com os valores originais para quando os valores forem iguais e novos valores para a substituição de valores, selecione ![CSV](https://spectrum.adobe.com/static/icons/workflow_18/Smock_FileCSV_18_N.svg) **[!UICONTROL Carregar CSV]**.
-- Para baixar um modelo e criar um arquivo CSV com os valores originais e novos para carregar, selecione ![Baixar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Download_18_N.svg) **[!UICONTROL Baixar modelo CSV]**.
-- Para baixar um arquivo CSV com todos os valores originais e novos preenchidos na interface de regras, selecione ![Baixar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Download_18_N.svg) **[!UICONTROL Baixar valores CSV]**.
+- Para limpar rapidamente todos os valores da tabela, selecione ![Apagar](/help/assets/icons/Erase.svg) **[!UICONTROL Limpar todos os valores da tabela]**.
+- Para carregar um arquivo CSV com os valores originais para quando os valores forem iguais e novos valores para a substituição de valores, selecione ![CSV](/help/assets/icons/FileCSV.svg) **[!UICONTROL Carregar CSV]**.
+- Para baixar um modelo e criar um arquivo CSV com os valores originais e novos para carregar, selecione ![Baixar](/help/assets/icons/Download.svg) **[!UICONTROL Baixar modelo CSV]**.
+- Para baixar um arquivo CSV com todos os valores originais e novos preenchidos na interface de regras, selecione ![Baixar](/help/assets/icons/Download.svg) **[!UICONTROL Baixar valores CSV]**.
 
 
 +++

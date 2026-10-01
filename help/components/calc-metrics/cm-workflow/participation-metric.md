@@ -6,22 +6,27 @@ exl-id: 0d102f0f-3bcc-4f3a-93d2-c2b991c636cb
 TQID: https://experienceleague.adobe.com/no7rAZUl25LTEPqwRyC7vY4XcottzPGRq-DCAR5ez54
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Admin
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: 232
-ht-degree: 9%
-
+source-wordcount: '226'
+ht-degree: 6%
 ---
-
 # Métricas de participação
 
 As Métricas de participação são usadas para quantificar como os valores individuais de uma dimensão (como Exibições de página) contribuem ou participam de sessões que contêm uma métrica específica (como Pedidos).
@@ -34,7 +39,7 @@ As etapas abaixo mostram como qualquer usuário com [Permissão de criação de 
 
 1. [Crie uma métrica calculada](cm-workflow.md) e, no [Construtor de métricas calculadas](cm-build-metrics.md), nomeie a métrica `Participation` ou algo semelhante.
 1. Arraste uma métrica contendo um evento bem-sucedido, por exemplo [!DNL Orders], para a área [!UICONTROL **[!UICONTROL Definição]**].
-1. Selecione ![engrenagem](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Settings_18_N.svg) para a métrica.
+1. Selecione ![engrenagem](/help/assets/icons2/Settings.svg) para a métrica.
 1. Na janela pop-up exibida, selecione **[!UICONTROL Usar um modelo de atribuição não padrão]** para definir o [modelo de atribuição](/help/components/calc-metrics/cm-workflow/m-metric-type-alloc.md) desse evento para **[!UICONTROL Participação]** e selecione **[!UICONTROL Sessão]** para o [!UICONTROL Contêiner]. Selecione **[!UICONTROL Aplicar]** para confirmar.
 
 

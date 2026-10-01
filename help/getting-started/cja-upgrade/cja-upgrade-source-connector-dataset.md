@@ -32,9 +32,9 @@ topic_v2:
     internal-label: Customer journeys
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: '905'
+source-wordcount: '899'
 ht-degree: 93%
 ---
 # Adicionar o conjunto de dados do conector de origem do Analytics à conexão {#upgrade-source-connector-dataset}
@@ -115,7 +115,7 @@ Para adicionar o conjunto de dados criado automaticamente à mesma conexão cria
 
 1. Na seção **[!UICONTROL Preenchimento retroativo de conjunto de dados]**, selecione **[!UICONTROL Solicitar preenchimento retroativo]**.
 
-1. Defina o período que deseja que o preenchimento retroativo de conexão no Customer Journey Analytics inclua inserindo as datas inicial e final ou clicando no ícone de calendário ![Calendário](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg).
+1. Defina o período que deseja que o preenchimento retroativo de conexão no Customer Journey Analytics inclua inserindo as datas inicial e final ou clicando no ícone de calendário ![Calendário](/help/assets/icons/Calendar.svg).
 
    Seja explícito ao especificar as datas solicitadas para preenchimento retroativo. Dependendo de vários fatores, você pode querer executar um dos seguintes procedimentos:
 

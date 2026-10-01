@@ -8,31 +8,44 @@ role: User
 TQID: https://experienceleague.adobe.com/qAYUiD5wa5PhvEjTi397PC4n0xX0rWKJSYaAjCR6jtg
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
   - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
 subfeature_v2:
   - id: a3b826fd-7a63-4a83-8736-83eee6668f44
+    internal-label: Curate and share, Curate and share (CJA)
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments, Segments (CJA)
   - id: c38ed341-fab2-46df-9d72-88d8166edebb
+    internal-label: Workspace projects
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
   - id: f21d8c43-b886-433b-93ea-5982cbfc16b7
+    internal-label: FAQ
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 28cfbe249f20361bf56f0a6216bc715dae5a6d3a
+    internal-label: Privacy
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: 2183
+source-wordcount: '2177'
 ht-degree: 90%
-
 ---
-
 # Compartilhar projetos {#share-projects}
 
 >[!CONTEXTUALHELP]
@@ -176,7 +189,7 @@ Para compartilhar o link do projeto com os usuários em sua organização:
 >
 >* Um projeto pode se tornar inacessível se muitos usuários tentarem acessar um determinado link ao mesmo tempo. Por padrão, mais de 190 pessoas podem acessar um único link a cada 5 minutos. Se sua organização atingir esse limite, aguarde 5 minutos e tente acessar o link novamente.
 >
->* Para as licenças [!DNL Healthcare Shield] e [!DNL Privacy & Security Shield], o recurso [!UICONTROL Compartilhar com qualquer pessoa] requer a autenticação do CX Enterprise. Para [!DNL Healthcare Shield] clientes, um aviso de &quot;conformidade com a HIPAA&quot; é exibido, mas você ainda pode usar esse recurso após a autenticação no CX Enterprise.
+>* Para as licenças [!DNL Healthcare Shield] e [!DNL Privacy & Security Shield], o recurso [!UICONTROL Compartilhar com qualquer pessoa] requer autenticação do CX Enterprise. Para [!DNL Healthcare Shield] clientes, um aviso de &quot;Conformidade com a HIPAA&quot; é exibido, mas você ainda pode usar esse recurso após a autenticação no CX Enterprise.
 
 >[!BEGINSHADEBOX]
 
@@ -211,7 +224,7 @@ Para compartilhar um projeto do Analysis Workspace com qualquer pessoa:
 
      * Se essa opção não estiver visível, a administração do Customer Journey Analytics não habilitou esse recurso.
 
-     * Se essa opção estiver ativada e você não puder desativá-la, a opção bloqueada significa que o administrador do Customer Journey Analytics requer a autenticação do CX Enterprise para qualquer pessoa que acessar os projetos da Analysis Workspace. Esse é sempre o caso de organizações que adquirem uma licença do Healthcare Shield.
+     * Se essa opção estiver ativada e você não puder desativá-la, a opção bloqueada significa que o administrador do Customer Journey Analytics exige autenticação do CX Enterprise para qualquer pessoa que acesse os projetos do Analysis Workspace. Esse é sempre o caso de organizações que adquirem uma licença do Healthcare Shield.
 
 1. Ao lado do campo **[!UICONTROL Compartilhar com qualquer pessoa (sem necessidade de fazer logon)]**, clique no ícone ![Link](/help/assets/icons/Link.svg) para copiar o link para a área de transferência do seu sistema.
 
@@ -219,7 +232,7 @@ Para compartilhar um projeto do Analysis Workspace com qualquer pessoa:
 
    Qualquer pessoa com a qual você compartilha o link pode visualizar o projeto do Analysis Workspace.
 
-1. (Opcional) É possível selecionar ![Gerar novo link](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Refresh_18_N.svg) para remover o acesso de usuários que receberam um link para o projeto anteriormente. É gerado um novo link que você pode compartilhar com os usuários que deseja que acessem o projeto.
+1. (Opcional) É possível selecionar ![Gerar novo link](/help/assets/icons/Refresh.svg) para remover o acesso de usuários que receberam um link para o projeto anteriormente. É gerado um novo link que você pode compartilhar com os usuários que deseja que acessem o projeto.
 
 1. Selecione **[!UICONTROL Fechar]** para fechar a caixa de diálogo compartilhar. Suas alterações são salvas automaticamente.
 

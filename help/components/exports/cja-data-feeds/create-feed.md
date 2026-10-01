@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 2391b13373992de30834f846da2fb7b71f5279ee
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: '4250'
-ht-degree: 31%
+source-wordcount: '4244'
+ht-degree: 30%
 ---
 # Criar um feed de dados
 
@@ -129,7 +129,7 @@ Antes de criar um feed de dados, é importante ter uma compreensão básica dos 
 
    Os segmentos aplicados aqui complementam quaisquer segmentos que já possam ter sido aplicados na visualização de dados.
 
-1. (Opcional) No painel à esquerda, use o campo **pesquisa** para localizar componentes específicos. Ou selecione o ícone **Classificar** ![Ícone Classificar componentes](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SortOrderDown_18_N.svg) para aplicar qualquer uma das seguintes opções de classificação:
+1. (Opcional) No painel à esquerda, use o campo **pesquisa** para localizar componentes específicos. Ou selecione o ícone **Classificar** ![Ícone Classificar componentes](/help/assets/icons/SortOrderDown.svg) para aplicar qualquer uma das seguintes opções de classificação:
 
    | Opção | Função |
    | --------- | ---------- |

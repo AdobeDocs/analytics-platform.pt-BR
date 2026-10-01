@@ -9,26 +9,34 @@ autotag-review: '2026-05-19T09:37:23.903Z'
 TQID: 'https://experienceleague.adobe.com/zguhaVwn2XtF0vSGqYAgjiL2IwUq-DMH-WUd0uQRnPc'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
   - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
 subfeature_v2:
   - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
+    internal-label: Use cases, Use cases (CJA)
   - id: b7fb3355-1f54-4380-bce3-d444b226c0e9
+    internal-label: Cross channel analysis
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Insights
+source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
 workflow-type: tm+mt
-source-wordcount: 638
+source-wordcount: '614'
 ht-degree: 100%
-
 ---
-
 # Análise entre canais {#cross-channel}
 
 <!-- markdownlint-disable MD034 -->
@@ -49,11 +57,11 @@ A análise entre canais permite uma visão única e consolidada do comportamento
 1. [Crie esquemas](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=pt-BR) para os dados que serão assimilados.
 1. [Crie conjuntos de dados](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html?lang=pt-BR) para os dados que serão assimilados.
 1. [Assimilar dados na Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-ingestion/understanding-data-ingestion.html?lang=pt-BR).
-   1. Dados baseados em eventos ![evento](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Events_18_N.svg) do site ou aplicativo móvel por meio do conector de origem da Edge Network ou do Analytics.
-   2. Dados de perfil ![perfil](https://spectrum.adobe.com/static/icons/workflow_18/Smock_User_18_N.svg) (por exemplo, de um sistema CRM, aplicativo de central de atendimento, aplicativo de fidelidade).
-   3. Dados de pesquisa ![pesquisa](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) (por exemplo, nome do produto, categoria de um sistema de informações do produto).
+   1. Dados baseados em eventos ![evento](/help/assets/icons/Events.svg) do site ou aplicativo móvel por meio do conector de origem da Edge Network ou do Analytics.
+   2. Dados de perfil ![perfil](/help/assets/icons/User.svg) (por exemplo, de um sistema CRM, aplicativo de central de atendimento, aplicativo de fidelidade).
+   3. Dados de pesquisa ![pesquisa](/help/assets/icons/Search.svg) (por exemplo, nome do produto, categoria de um sistema de informações do produto).
 
-1. Use uma ID de namespace comum em conjuntos de dados. Use a [Compilação](../../stitching/overview.md) para elevar qualquer ![atualização de dados](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DataRefresh_18_N.svg) do conjunto de dados baseado em eventos com relação ao fornecimento da ID comum em cada linha. Observe que o Customer Journey Analytics não usa atualmente os serviços de Perfil ou de Identidade da Experience Platform para compilações.
+1. Use uma ID de namespace comum em conjuntos de dados. Use a [Compilação](../../stitching/overview.md) para elevar qualquer ![atualização de dados](/help/assets/icons/DataRefresh.svg) do conjunto de dados baseado em eventos com relação ao fornecimento da ID comum em cada linha. Observe que o Customer Journey Analytics não usa atualmente os serviços de Perfil ou de Identidade da Experience Platform para compilações.
 1. Execute qualquer preparação de dados personalizada para garantir uma chave comum entre os conjuntos de dados de série temporal que serão assimilados no Customer Journey Analytics.
 1. Forneça aos dados de pesquisa uma ID primária que possa se associar a um campo nos dados do evento. Conta como linhas no licenciamento.
 1. Configure a mesma ID primária para os dados do perfil que foi configurada para os dados do evento.

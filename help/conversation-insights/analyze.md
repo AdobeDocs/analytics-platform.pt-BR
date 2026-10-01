@@ -4,7 +4,6 @@ description: Saiba como analisar insights da conversa.
 solution: Customer Journey Analytics
 feature: AI Tools
 role: Admin, User
-hold: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -18,7 +17,7 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 34bb13891eebb12875f3e355e73aade6b3eed750
+source-git-commit: 4a005c03e46547810de8d27fcf85a041ab59a4d6
 workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 0%
@@ -41,7 +40,7 @@ Para analisar conversas em escala e fornecer contexto para essas conversas na jo
 
 * Combine seus eventos de Insights de conversa com outros conjuntos de dados de evento e conjuntos de dados de perfil e pesquisa adicionais. Adicione esses conjuntos de dados à conexão selecionada para a configuração do Insights de conversa.
 * Adicione mais componentes (métricas e dimensões) às visualizações de dados selecionadas para a configuração de Insights de conversa.
-* ...
+
 
 +++ Exemplo de projeto
 

@@ -55,9 +55,9 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 2c0efe27451163d9fe4fe0f60bab11151a8ac6f1
+source-git-commit: 17af5df91a28b3a6e44528f88661b6dcc86d6cae
 workflow-type: tm+mt
-source-wordcount: '7162'
+source-wordcount: '7170'
 ht-degree: 96%
 ---
 
@@ -69,6 +69,8 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 
 | Recurso | Descrição |
 |---|---|
+| **outubro de 2026** | |
+| Insights de conversa | [Documentação](/help/conversation-insights/overview.md) para Insights de Conversa. |
 | **setembro de 2026** | |
 | Jornada comparação da tela de desenho em setas e fallout | Atualização da configuração &#39;[!UICONTROL Comparar com]&#39; em [Configurar uma visualização da tela de Jornada](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#configure-visualization-settings) para mostrar que a alteração de porcentagem entre os intervalos de datas agora é exibida em cada nó, seta e fallout na jornada. |
 | Publicações de blog incorporadas | Incorporou as seguintes postagens no blog:<ul><li>[O manual completo para lidar com &#39;Nenhum valor&#39; no Adobe CJA](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/the-complete-playbook-for-handling-no-value-in-adobe-cja-12769?profile.language=pt#M598)</li><li>[Detalhamento dos casos de uso de saída de dados do Adobe Experience Platform e Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/adobe-experience-platform-customer-journey-analytics-data-egress-use-cases-deep-dive-12725?profile.language=pt)</li></ul>em nosso artigo de casos de uso [exportação de dados](/help/use-cases/data-export/overview.md) e um novo caso de uso [Nenhum valor](/help/use-cases/data-views/no-value.md). |
@@ -81,7 +83,7 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | Análise de sub-evento | Documentação para [análise de subeventos](/help/components/segments/sub-event.md) e [contêineres personalizados](/help/data-views/create-dataview.md#custom-containers). |
 | Classificações em linha | Documentação de [classificações embutidas](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md#inline-classifications). |
 | **junho de 2026** | |
-| Novo guia do GA4 | Adicionada a [Transição do Google Analytics 4 para o Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/compare-aa-cja/ga-to-cja/home). |
+| Novo guia do GA4 | Adicionada a [Transição do Google Analytics 4 para o Customer Journey Analytics](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/compare-aa-cja/ga-to-cja/home). |
 | **Maio de 2026** | |
 | Biblioteca JavaScript para Content Analytics | Documentação sobre como implementar o Content Analytics para o canal da web usando a [Biblioteca JavaScript do Content Analytics](/help/content-analytics/config/tags-agnostic.md) sem precisar das Tags de coleção de dados da Experience Platform. |
 | Considerações sobre o Data Mirror | [Documentação](/help/data-mirror/considerations.md) que descreve os fatores que devem ser considerados ao configurar [conjuntos de dados do Data Mirror](/help/data-mirror/data-mirror.md). |

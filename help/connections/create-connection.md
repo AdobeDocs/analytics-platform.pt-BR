@@ -33,9 +33,9 @@ topic_v2:
     internal-label: Troubleshooting
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 6acb1ca076e28e8da4bbc1920837cea9216777e1
+source-git-commit: 91497f695a693fd15135dc5173e8a35537616e72
 workflow-type: tm+mt
-source-wordcount: '10738'
+source-wordcount: '10677'
 ht-degree: 89%
 ---
 # Criar ou editar uma conexão {#create-or-edit-a-connection}
@@ -560,7 +560,7 @@ Alternativamente, os tipos de conjunto de dados listados acima podem ser baseado
 
    | Coluna | Descrição |
    |---|---|
-   | **[!UICONTROL Conjunto de dados]** | Nome do conjunto de dados. Selecione o nome para acessar o conjunto de dados na Experience Platform. Selecione ![Informações](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) para exibir uma janela pop-up com mais detalhes sobre o conjunto de dados. Você pode selecionar **[!UICONTROL Editar na plataforma]** para editar o conjunto de dados diretamente na Experience Platform. |
+   | **[!UICONTROL Conjunto de dados]** | Nome do conjunto de dados. Selecione o nome para acessar o conjunto de dados na Experience Platform. Selecione ![InfoOutline](/help/assets/icons/InfoOutline.svg) para exibir um pop-up com mais detalhes para o conjunto de dados. Você pode selecionar **[!UICONTROL Editar na plataforma]** para editar o conjunto de dados diretamente na Experience Platform. |
    | **[!UICONTROL Tipo de conjunto de dados]** | O tipo de conjunto de dados: [Evento](#event-dataset), [Perfil](#profile-dataset), [Pesquisa](#lookup-dataset), [Resumo](#summary-dataset), [Ad hoc](#ad-hoc-dataset) ou [Relacional](#relational-dataset). |
    | **[!UICONTROL Número de registros]** | O total de registros no mês anterior do conjunto de dados na Experience Platform. |
    | **[!UICONTROL Esquema]** | O esquema do conjunto de dados. Selecione o nome para acessar o esquema na Experience Platform. |
@@ -568,10 +568,10 @@ Alternativamente, os tipos de conjunto de dados listados acima podem ser baseado
    | **[!UICONTROL ID do conjunto de dados]** | A ID do conjunto de dados. |
    | **[!UICONTROL Última atualização]** | O último carimbo de data e hora atualizado do conjunto de dados. |
 
-   * Para alterar as colunas exibidas para a lista de conjuntos de dados, selecione ![Configurações de coluna](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg) e selecione as colunas a serem exibidas na caixa de diálogo [!UICONTROL Personalizar tabela].
-   * Para pesquisar um conjunto de dados específico, use o campo ![Pesquisar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg).
-   * Para alternar entre mostrar ou ocultar os conjuntos de dados selecionados, clique em ![Selecionar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SelectBoxAll_18_N.svg) **[!UICONTROL Ocultar selecionados]** ou **[!UICONTROL Mostrar selecionados]**.
-   * Para remover um conjunto de dados da lista de conjuntos de dados selecionados, use ![Fechar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg). Para remover todos os conjuntos de dados selecionados, clique em **[!UICONTROL Limpar tudo]**.
+   * Para alterar as colunas exibidas para a lista de conjuntos de dados, selecione ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) e selecione as colunas a serem exibidas na caixa de diálogo [!UICONTROL Personalizar tabela].
+   * Para pesquisar um conjunto de dados específico, use o campo ![Pesquisar](/help/assets/icons/Search.svg).
+   * Para alternar entre mostrar ou ocultar os conjuntos de dados selecionados, selecione ![SelectBoxAll](/help/assets/icons/SelectBoxAll.svg) **[!UICONTROL Ocultar selecionados]** ou **[!UICONTROL Mostrar selecionados]**.
+   * Para remover um conjunto de dados da lista de conjuntos de dados selecionados, use ![Fechar](/help/assets/icons2/Close.svg). Para remover todos os conjuntos de dados selecionados, clique em **[!UICONTROL Limpar tudo]**.
    * Para exibir os detalhes de um conjunto de dados, selecione ![InfoOutline](/help/assets/icons/InfoOutline.svg).
 
 
@@ -623,7 +623,7 @@ Alternativamente, os tipos de conjunto de dados listados acima podem ser baseado
 
    | Coluna | Descrição |
    |---|---|
-   | **[!UICONTROL Conjunto de dados]** | Nome do conjunto de dados. Selecione o nome para acessar o conjunto de dados na Experience Platform. Selecione ![Informações](https://spectrum.adobe.com/static/icons/workflow_18/Smock_InfoOutline_18_N.svg) para exibir uma janela pop-up com mais detalhes sobre o conjunto de dados. Você pode selecionar **[!UICONTROL Editar na plataforma]** para editar o conjunto de dados diretamente na Experience Platform. |
+   | **[!UICONTROL Conjunto de dados]** | Nome do conjunto de dados. Selecione o nome para acessar o conjunto de dados na Experience Platform. Selecione ![Informações](/help/assets/icons/InfoOutline.svg) para exibir uma janela pop-up com mais detalhes sobre o conjunto de dados. Você pode selecionar **[!UICONTROL Editar na plataforma]** para editar o conjunto de dados diretamente na Experience Platform. |
    | **[!UICONTROL Tipo de conjunto de dados]** | O tipo de conjunto de dados: [Evento](#event-dataset), [Perfil](#profile-dataset), [Pesquisa](#lookup-dataset), [Resumo](#summary-dataset), [Ad hoc](#ad-hoc-dataset) ou [Relacional](#relational-dataset). |
    | **[!UICONTROL Número de registros]** | O total de registros no mês anterior do conjunto de dados na Experience Platform. |
    | **[!UICONTROL Esquema]** | O esquema do conjunto de dados. Selecione o nome para acessar o esquema na Experience Platform. |
@@ -631,10 +631,10 @@ Alternativamente, os tipos de conjunto de dados listados acima podem ser baseado
    | **[!UICONTROL ID do conjunto de dados]** | A ID do conjunto de dados. |
    | **[!UICONTROL Última atualização]** | O último carimbo de data e hora atualizado do conjunto de dados. |
 
-   * Para alterar as colunas exibidas para a lista de conjuntos de dados, selecione ![Configurações de coluna](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ColumnSettings_18_N.svg) e selecione as colunas a serem exibidas na caixa de diálogo [!UICONTROL Personalizar tabela].
-   * Para pesquisar um conjunto de dados específico, use o campo ![Pesquisar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg).
-   * Para alternar entre mostrar ou ocultar os conjuntos de dados selecionados, clique em ![Selecionar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_SelectBoxAll_18_N.svg) **[!UICONTROL Ocultar selecionados]** ou **[!UICONTROL Mostrar selecionados]**.
-   * Para remover um conjunto de dados da lista de conjuntos de dados selecionados, use ![Fechar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg). Para remover todos os conjuntos de dados selecionados, clique em **[!UICONTROL Limpar tudo]**.
+   * Para alterar as colunas exibidas para a lista de conjuntos de dados, selecione ![Configurações de coluna](/help/assets/icons/ColumnSetting.svg) e selecione as colunas a serem exibidas na caixa de diálogo [!UICONTROL Personalizar tabela].
+   * Para pesquisar um conjunto de dados específico, use o campo ![Pesquisar](/help/assets/icons/Search.svg).
+   * Para alternar entre mostrar ou ocultar os conjuntos de dados selecionados, clique em ![Selecionar](/help/assets/icons/SelectBoxAll.svg) **[!UICONTROL Ocultar selecionados]** ou **[!UICONTROL Mostrar selecionados]**.
+   * Para remover um conjunto de dados da lista de conjuntos de dados selecionados, use ![Fechar](/help/assets/icons/Close.svg). Para remover todos os conjuntos de dados selecionados, clique em **[!UICONTROL Limpar tudo]**.
    * Para exibir os detalhes de um conjunto de dados, selecione ![InfoOutline](/help/assets/icons/InfoOutline.svg).
 
 
