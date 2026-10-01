@@ -5,36 +5,46 @@ exl-id: 998a9f9b-cfa7-4b97-b32b-d50e35d01b39
 TQID: https://experienceleague.adobe.com/5sjpTMocv3547Xqg4VD6C5Gp-cRzNmyHTI5iE6P-JGA
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Governance
+source-git-commit: 2a01268e537fb7982f698ccf9c14b831edf8437f
 workflow-type: tm+mt
-source-wordcount: 1292
-ht-degree: 3%
-
+source-wordcount: '1337'
+ht-degree: 2%
 ---
-
 # Visão geral de métricas e dimensões compartilhadas
 
-As métricas e dimensões compartilhadas fornecem um local central para gerenciar dimensões e métricas que podem ser usadas em qualquer número de visualizações de dados. Esses componentes são especialmente valiosos para organizações que usam várias visualizações de dados, principalmente se essas visualizações de dados compartilham configurações de componentes comuns. As alterações feitas em métricas e dimensões compartilhadas se aplicam instantaneamente a todas as visualizações de dados às quais são compartilhadas. Ao editar uma visualização de dados individual, as dimensões e métricas compartilhadas podem ser identificadas por um ícone ![Componente compartilhado](/help/assets/icons/CCLibrary.svg) ao lado do nome do componente.
+As métricas e dimensões compartilhadas fornecem um local central para gerenciar dimensões e métricas que podem ser usadas em qualquer número de visualizações de dados. Esses componentes são especialmente valiosos para organizações que usam várias visualizações de dados, principalmente se essas visualizações de dados compartilham configurações de componentes comuns. As alterações feitas em métricas e dimensões compartilhadas se aplicam instantaneamente em cada visualização de dados em que são compartilhadas. Ao editar uma visualização de dados individual, você pode identificar dimensões e métricas compartilhadas por um ![ícone do componente compartilhado](/help/assets/icons/CCLibrary.svg) ao lado do nome do componente.
 
 Embora dimensões e métricas compartilhadas permitam que componentes comuns sejam usados em muitas visualizações de dados, elas não podem ser compartilhadas em conexões.
+
+## Permissões
+* [Administradores de produtos](https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/access-control#product-administrator-role) também precisam das **Permissões para Gerenciar Políticas de Uso de Dados** e **Exibir Políticas de Uso de Dados** para todas as sandboxes nas [Permissões do Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home#permissions).
 
 ## Fluxo de trabalho
 
 A maioria das organizações usa o seguinte fluxo de trabalho abrangente para desduplicar e manter dimensões e métricas ao longo do tempo:
 
-1. Importe componentes de cada visualização de dados que pode ser compartilhada entre várias visualizações de dados. Se a mesma dimensão ou métrica existir em várias visualizações de dados, a Adobe recomenda importar todas as instâncias desse componente. Embora essa prática recomendada importe duplicatas, elas são importadas para que possam ser desduplicadas e manter suas respectivas referências a projetos do Workspace.
+1. Importe componentes de cada visualização de dados que são compartilhados em várias visualizações de dados. Se a mesma dimensão ou métrica existir em várias visualizações de dados, a Adobe recomenda importar todas as instâncias desse componente. Embora essa prática recomendada importe duplicatas, elas são importadas para que possam ser desduplicadas e manter suas respectivas referências a projetos do Workspace.
 1. Revise todos os componentes que usam a mesma ID de componente, mas têm configurações de componente diferentes. Para cada grupo de componentes duplicados, selecione as configurações de componente desejadas a serem aplicadas a todos os outros componentes que compartilham essa ID de componente.
 1. Revise todos os componentes que usam a mesma ID de componente e também têm as mesmas configurações de componente. Essas dimensões ou métricas podem ser mescladas com facilidade e segurança.
 
