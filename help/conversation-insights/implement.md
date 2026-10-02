@@ -16,9 +16,9 @@ feature_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 84e89fe4ecbd4dd479c9dad12175a9a93e7578cb
+source-git-commit: 7bd10643bc54f5923f590f849d05890bffd77a2e
 workflow-type: tm+mt
-source-wordcount: '2592'
+source-wordcount: '2563'
 ht-degree: 5%
 ---
 # Implementar Insights de conversa
@@ -275,7 +275,7 @@ O grupo de campos **[!UICONTROL Informações da Agência]** é um grupo de camp
 | `agents[].name` | string | `"Chatbot Assistant"` | Nome do agente |
 | `agents[].version` | string | `"2.1.3"` | Versão do agente |
 | `agents[].score` | número | `0.92` | Pontuação de confiança do agente em seus valores retornados |
-| `agents[].skills[]` | matriz | Consulte objeto de habilidade abaixo | **Obsoleto** — em vez disso, use a matriz `skills[]` de nível superior abaixo, que possui a lista completa e ordenada de chamadas de habilidades e vincula cada uma a seu agente via `agentID` |
+| `agents[].skills[]` | matriz | Consulte objeto de habilidade abaixo | **Obsoleto**. Em vez disso, use a matriz `skills[]` de nível superior abaixo, que possui a lista completa e ordenada de chamadas de habilidades e vincula cada uma ao seu agente via `agentID` |
 | `agents[].skills[].name` | string | `"Intent Recognition"` | Nome da habilidade (matriz obsoleta) |
 | `agents[].skills[].version` | string | `"1.0.0"` | Versão da habilidade (matriz obsoleta) |
 | `agents[].skills[].score` | número | `0.95` | Pontuação de confiança de habilidade (0-1) (matriz obsoleta) |
@@ -429,11 +429,7 @@ Você pode adicionar grupos de campos opcionais ao esquema usado para conjuntos 
 * Grupo de campos **Detalhes da Web**. Para capturar detalhes da página da Web em que a conversa foi incorporada.
 * Grupo de campos **Detalhes do Commerce**. Para registrar os detalhes do produto recomendado mencionado como parte da conversa.
 
-
-
-O cliente é responsável por produzir os eventos de conversação de origem. A Adobe Platform realiza subsequentemente a extração de sinais e a combinação de dados. O cliente não precisa implementar os serviços de extração de sinal ou mistura.
-
-Este documento aborda os requisitos de entrada do MVP dos Insights de conversa e a Atualização do esquema de agente atual. Ela não inclui os recursos do Conversation Insights 1.0 ou os requisitos de versão posterior.
+O cliente é responsável por produzir os eventos de conversação de origem. O Adobe realiza extração de sinal e mistura de dados. O cliente não precisa implementar os serviços de extração de sinal ou mistura.
 
 ### Tipo de evento
 
