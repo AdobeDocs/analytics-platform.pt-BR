@@ -70,10 +70,10 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 2a01268e537fb7982f698ccf9c14b831edf8437f
 workflow-type: tm+mt
-source-wordcount: '1661'
-ht-degree: 96%
+source-wordcount: '1764'
+ht-degree: 74%
 ---
 # Controle de acesso
 
@@ -112,10 +112,10 @@ Por padrão, os administradores de produtos recebem as permissões necessárias 
 
 Além de ser adicionado como administrador de produto no **Perfil de produto do Customer Journey Analytics** no [Admin Console](https://adminconsole.adobe.com/enterprise/), permissões adicionais são necessárias para concluir as seguintes tarefas no Customer Journey Analytics:
 
-* Criar, atualizar e excluir [visualizações de dados](/help/data-views/data-views.md).
+* Criar, atualizar e excluir [visualizações de dados](/help/data-views/data-views.md)
 * Criar, atualizar e excluir [conexões](/help/connections/overview.md)
 
-  Para executar esta tarefa, os usuários precisam fazer parte de um **perfil de produto da Experience Platform** que conceda as seguintes permissões:
+  Para executar esta tarefa, os usuários devem fazer parte de uma **Função do Experience Platform** que fornece as seguintes permissões:
 
   | Categoria | Permissão | Descrição |
   |---|---|---|
@@ -125,10 +125,21 @@ Além de ser adicionado como administrador de produto no **Perfil de produto do 
   | [!UICONTROL Gerenciamento de dados] | [!UICONTROL Visualizar conjuntos de dados] | Acesso somente leitura para conjuntos de dados e esquemas. |
   | [!UICONTROL Identity Management] | [!UICONTROL Exibir namespaces de identidade] | Acesso somente leitura para namespaces de identidade. |
 
-  Para obter mais informações sobre permissões da Experience Platform, consulte [Gerenciar permissões de um perfil de produto](https://experienceleague.adobe.com/pt-br/docs/experience-platform/access-control/ui/permissions).
+  Para obter mais informações sobre Funções do Experience Platform, consulte [Visão geral do controle de acesso](https://experienceleague.adobe.com/pt-br/docs/experience-platform/access-control/home).
 
+* Gerenciar [Métricas e dimensões compartilhadas](/help/data-views/shared-metrics-dimensions/smd-overview.md)
 
-* Se o Journey Optimizer estiver integrado ao Customer Journey Analytics, onde existem conexões com o Journey Optimizer, as permissões das jornadas também precisarão ser adicionadas para acessar as conexões:
+  Para acessar o gerenciador de **Métricas e dimensões compartilhadas**, os usuários devem fazer parte de uma **Função do Experience Platform** que fornece as seguintes permissões:
+
+  | Categoria | Permissão | Descrição |
+  |---|---|---|
+  | [!UICONTROL Sandboxes] | [!UICONTROL Tudo] | Acesso a todas as sandboxes. |
+  | [!UICONTROL Governança de dados] | [!UICONTROL Exibir Políticas de Uso de Dados] | Acesso somente leitura para políticas de uso de dados pertencentes à sua organização. |
+  | [!UICONTROL Governança de dados] | [!UICONTROL Gerenciar Políticas de Uso de Dados] | Acesso para ler, criar, editar e excluir políticas de uso de dados. |
+
+  Para obter mais informações sobre permissões do Experience Platform, consulte [Sandboxes e permissões](https://experienceleague.adobe.com/pt-br/docs/experience-platform/access-control/home#sandboxes-and-permissions).
+
+* Se o Journey Optimizer estiver integrado ao Customer Journey Analytics, onde existem Conexões do Journey Optimizer, [permissões do Jornada](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/access-control/high-low-permissions#journey-capability) também deverão ser adicionadas para acessar Conexões:
 
   | Categoria | Permissão | Descrição |
   |---|---|---|
@@ -139,20 +150,21 @@ Além de ser adicionado como administrador de produto no **Perfil de produto do 
 
 * Exportar conjuntos de dados para [destinos](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/ui/activate/export-datasets)
 
-  Para executar esta tarefa, os usuários precisam fazer parte de um **perfil de produto da Experience Platform** que conceda as seguintes permissões:
+  Para executar esta tarefa, os usuários devem fazer parte de uma **Função do Experience Platform** que fornece as seguintes [permissões de destinos](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/home#access-controls):
 
   | Categoria | Permissão | Descrição |
   |---|---|---|
   | [!UICONTROL Destinos] | [!UICONTROL Gerenciar destinos] | Acesso para ler, criar e excluir conexões de destino e contas de destino. |
   | [!UICONTROL Destinos] | [!UICONTROL Ativar destinos] | Permitir que os usuários ativem segmentos para destinos existentes. Habilita a etapa de mapeamento no fluxo de trabalho de ativação. Esta permissão também exige que a permissão para visualizar destinos seja concedida ao usuário que deseja ativar dados para destinos. |
 
-  Para obter mais informações sobre permissões da Experience Platform, consulte [Gerenciar permissões de um perfil de produto](https://experienceleague.adobe.com/pt-br/docs/experience-platform/access-control/ui/permissions).
+  Para obter mais informações sobre permissões do Experience Platform, consulte [Sandboxes e permissões](https://experienceleague.adobe.com/pt-br/docs/experience-platform/access-control/home#sandboxes-and-permissions).
+
 
 * Usar a [extensão de BI](../data-views/bi-extension.md)
 
   Para que os usuários usem a extensão de BI, um administrador de produto
 
-  * precisa garantir que as permissões da Experience Platform referentes ao usuário incluam uma função que tenha o recurso de serviço de consulta com as opções de gerenciar consultas e gerenciar integração do serviço de consulta. Para obter mais informações sobre permissões da Experience Platform, consulte [Gerenciar permissões de um perfil de produto](https://experienceleague.adobe.com/pt-br/docs/experience-platform/access-control/ui/permissions).
+  * deve garantir que as permissões do Experience Platform para o usuário incluam uma função que tenha o recurso Serviço de consulta com as opções Gerenciar consultas e Gerenciar integração do serviço de consulta. Para obter mais informações sobre permissões do Experience Platform, consulte [Visão geral do controle de acesso](https://experienceleague.adobe.com/pt-br/docs/experience-platform/access-control/home).
 
     | Categoria | Permissão | Descrição |
     |---|---|---|
@@ -167,13 +179,13 @@ Além de ser adicionado como administrador de produto no **Perfil de produto do 
 
 Um perfil de produto é um conjunto de permissões. Os administradores de produtos criam perfis de produto e podem atribuir administradores de perfil de produto para gerenciar um ou mais perfis de produto. Um administrador de perfil de produto pode:
 
-* Gerenciar os perfis de produto atribuídos. Como adicionar ou remover usuários ou grupos de usuários e modificar as permissões dos perfis de produto.
+* Gerencie os perfis de produto atribuídos adicionando ou removendo usuários ou grupos de usuários e modificando as permissões dos perfis de produto.
 
 * No Customer Journey Analytics, edite as visualizações de dados que fazem parte de um perfil de produto atribuído. Os administradores de perfil de produto não podem criar novas visualizações de dados.
 
 ### Acesso no nível do usuário
 
-A tabela abaixo descreve as principais permissões de acesso para diferentes recursos do Customer Journey Analytics que você pode configurar para usuários relevantes. É possível gerenciar diferentes níveis de acesso do usuário por meio de perfis de produto. Um perfil de produto combina várias permissões, que você pode atribuir a usuários individuais ou grupos de usuários.
+A tabela abaixo descreve as principais permissões de acesso para diferentes recursos do Customer Journey Analytics que você pode configurar para usuários relevantes. É possível gerenciar diferentes níveis de acesso do usuário por meio de perfis de produtos. Um perfil de produto combina várias permissões, que você pode atribuir a usuários individuais ou grupos de usuários.
 
 A guia **[!UICONTROL Permissões]** faz parte de cada perfil de produto no [Admin Console](https://adminconsole.adobe.com/enterprise/).
 
@@ -216,18 +228,18 @@ Estes são alguns casos de uso que ilustram como o controle de acesso pode ser u
 
 ### Acesso de terceiros
 
-Você pode conceder acesso de administração de perfil de produto a um líder de equipe de uma empresa terceirizada com a qual sua empresa trabalha. Este administrador pode adicionar usuários da equipe da empresa a este perfil de produto. O administrador deste perfil de produto pode conceder acesso a visualizações de dados específicas e adicionar outros usuários da empresa terceirizada a este perfil de produto. O administrador de perfil de produto pode modificar as visualizações de dados para atender aos requisitos da equipe terceirizada.
+Você pode fornecer acesso de administração ao perfil de produto a um líder de equipe de terceiros com quem sua empresa trabalha. Este administrador pode adicionar usuários da equipe da empresa a este perfil de produto. O administrador deste perfil de produto pode conceder acesso a visualizações de dados específicas e adicionar outros usuários da empresa terceirizada a este perfil de produto. O administrador de perfil de produto pode modificar as visualizações de dados para atender aos requisitos da equipe terceirizada.
 
 ### Controle de acesso em nível de linha
 
-Considere que você deseje conceder aos usuários acesso aos dados somente de um dia. Esta é a forma como você limitaria o acesso a essas linhas específicas:
+Considere que você deseje conceder aos usuários acesso aos dados somente de um dia. Veja como limitar o acesso a essas linhas específicas:
 
 1. Crie um segmento em [!UICONTROL Configurações] de uma visualização de dados específica, em que [!UICONTROL Dia] seja igual à data que você deseja que eles tenham acesso aos dados. Consulte [Criar visualização de dados](/help/data-views/create-dataview.md#settings-filters) para obter mais informações.
 1. Salve a visualização de dados que aplica o segmento à parte de dados dos conjuntos de dados na conexão subjacente. Qualquer linha que não se ajuste à definição de segmento é excluída automaticamente da visualização de dados e não fica disponível para o Analysis Workspace ao usar essa visualização de dados.
-1. Crie um novo [Perfil de produto](#product-profile-admin-role) no Admin Console, adicione usuários ao perfil de produto e inclua apenas essa visualização de dados específica ao perfil de produto.
+1. Crie um novo [Perfil de produto](#product-profile-admin-role) no Admin Console, adicione usuários ao perfil de produto e inclua apenas essa visualização de dados específica no perfil de produto.
 
 ### Controle de acesso de nível de valor
 
-Os usuários que têm acesso a uma visualização de dados só podem trabalhar com as métricas e dimensões incluídas pelo administrador nesta visualização de dados. Os administradores podem usar as configurações de componente [Incluir/Excluir](/help/data-views/component-settings/include-exclude-values.md) ou [Classificação de valores](../data-views/component-settings/value-bucketing.md) em visualizações de dados para excluir ou agregar determinados valores de dimensão de uma visualização de dados.
+Os usuários que têm acesso a uma visualização de dados só podem trabalhar com as métricas e dimensões incluídas pelo administrador nesta visualização de dados. Os administradores podem usar as configurações de componente [Incluir/Excluir](/help/data-views/component-settings/include-exclude-values.md) ou [Classificação de valores](../data-views/component-settings/value-bucketing.md) em uma exibição de dados para excluir ou agregar determinados valores de dimensão de uma exibição de dados.
 
 Por exemplo: você pode criar uma métrica chamada *Hipertensão* em uma visualização de dados de um componente que contém dados individuais do paciente do conjunto de dados. Use a segmentação de valores para fornecer acesso somente a valores segmentados, de modo que os usuários dos dados não vejam os dados de pacientes individuais.

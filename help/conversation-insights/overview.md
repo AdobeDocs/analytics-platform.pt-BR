@@ -17,12 +17,14 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 4a005c03e46547810de8d27fcf85a041ab59a4d6
+source-git-commit: e550b7005c12bc5e2fb92bea44767bae0d7db3dc
 workflow-type: tm+mt
-source-wordcount: '1114'
+source-wordcount: '1117'
 ht-degree: 1%
 ---
 # Insights de conversa
+
+{{release-limited-testing}}
 
 O Conversation Insights permite analisar conversas a partir das experiências de agente que você oferece aos seus clientes. Essas experiências de agente podem ser baseadas em grandes modelos de linguagem (LLM) ou baseadas em conversas humanas. Por exemplo, um chatbot interagindo com um cliente ou transcrições da central de atendimento.
 
@@ -151,6 +153,7 @@ Para identificar o aplicativo ou serviço do agente, para cada evento de Insight
 Se o aplicativo de experiência do agente suportar a invocação de habilidades que representam recursos chamados durante o processamento, você poderá adicionar essas invocações de habilidades como parte do grupo de campos de informações do agente.
 
 Para obter detalhes sobre a implementação, consulte o grupo de campos [informações sobre a agência](./implement.md#agentic-information-field-group) na documentação [Implementar Insights de Conversa](./implement.md).
+
 
 ## Como funciona
 
