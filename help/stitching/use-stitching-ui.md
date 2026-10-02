@@ -4,6 +4,7 @@ description: Ative a compilação para conjuntos de dados de evento no Customer 
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
+hold: true
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
 TQID: 'https://experienceleague.adobe.com/Nj-IePDbHxBtgiSxEAobJ0DGlJSaiTwpTXIPtCxDTHw'
 product_v2:
@@ -24,10 +25,10 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 59d79c72fd52b3eb409c2554bef9daf7094b0287
 workflow-type: tm+mt
-source-wordcount: '1788'
-ht-degree: 20%
+source-wordcount: '1952'
+ht-degree: 18%
 ---
 # Habilitar compilação
 
@@ -41,16 +42,16 @@ Você precisa verificar e atender aos pré-requisitos do método de compilação
 
 ## Verificações de comprovação
 
-Se você atender aos pré-requisitos, talvez queira executar algumas verificações de comprovação nos dados no conjunto de dados do evento antes de ativar a compilação de identidade:
+Se você atender aos pré-requisitos, execute algumas verificações de comprovação nos dados no conjunto de dados do evento antes de ativar a compilação de identidade:
 
-* Se você for usar os campos [Esquema do Experience Data Model (XDM)](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/home) para ID persistente ou ID de pessoa, verifique se as identidades estão marcadas corretamente no esquema para o conjunto de dados do evento. [Consulte Visão geral do namespace de identidade](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/features/namespaces).
+* Se você usar os campos [Esquema do Experience Data Model (XDM)](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/home) para ID persistente ou ID de pessoa, verifique se as identidades estão marcadas corretamente no esquema para o conjunto de dados do evento. [Consulte Visão geral do namespace de identidade](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/features/namespaces).
 * Verifique a cobertura de identidade para ID persistente e ID de pessoa:
 
   * **[!UICONTROL ID Persistente]**
 
     Consulte 7 dias de dados nos quais o campo de ID persistente não é nulo e divida por uma consulta de 7 dias de dados para todos os eventos no conjunto de dados. Esse percentual deve estar acima de 95%.
 
-    Exemplo de uma consulta que você pode usar para verificação:
+    Exemplo de consulta para verificação:
 
     ```sql
     SELECT
@@ -74,10 +75,10 @@ Se você atender aos pré-requisitos, talvez queira executar algumas verificaç�
 
 
   * **[!UICONTROL ID de pessoa]**
-    * Para a compilação baseada em gráficos, verifique se o gráfico de identidade contém fragmentos que vinculam valores de ID do namespace de ID persistente e do namespace de ID de pessoa escolhidos. Você pode executar um teste acessando o [Visualizador de gráficos de identidade da Experience Platform](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"} e consultando o gráfico por alguns valores de ID persistentes de amostra. Verifique se esses valores de ID persistente estão vinculados aos valores de ID de pessoa no gráfico.
-    * Para a compilação em campo, consulte 7 dias de dados nos quais o campo de ID de pessoa não é nulo e divida por uma consulta de 7 dias de dados para todos os eventos no conjunto de dados. Idealmente, essa porcentagem deve ficar acima de 5%.
+    * Para a compilação baseada em gráficos, verifique se o gráfico de identidade contém fragmentos que vinculam valores de ID do namespace de ID persistente e do namespace de ID de pessoa escolhidos. Vá para o [visualizador de gráficos da Experience Platform Identity](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/features/identity-graph-viewer){target="_blank"} e consulte o gráfico usando alguns valores de ID persistentes de exemplo. Para verificar, verifique se esses valores de ID persistentes estão vinculados aos valores de ID de pessoa no gráfico.
+    * Para a compilação em campo, consulte 7 dias de dados nos quais o campo de ID de pessoa não é nulo e divida por uma consulta de 7 dias de dados para todos os eventos no conjunto de dados. Idealmente, essa porcentagem deve estar acima de 5%.
 
-      Exemplo de uma consulta que você pode usar para verificação:
+      Exemplo de consulta para verificação:
 
       ```sql
       SELECT
@@ -109,7 +110,7 @@ Você pode habilitar a identificação de identidade ao [adicionar](/help/connec
 >id="connection_changeto_identitygraph"
 >title="Alterar para gráfico de identidade"
 >abstract="Verifique se concluiu a configuração do gráfico de identidade antes de usá-lo para compilação."
->additional-url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/stitching/gbs" text="Compilação baseada em gráfico"
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/gbs" text="Compilação baseada em gráfico"
 
 >[!CONTEXTUALHELP]
 >id="connection_stitching_personid"
@@ -146,7 +147,7 @@ Você pode habilitar a identificação de identidade ao [adicionar](/help/connec
 
 ### Configurações do conjunto de dados
 
-Para habilitar a compilação, na seção **[!UICONTROL Configurações de conjuntos de dados]** do **[!UICONTROL Caixa de diálogo Adicionar conjuntos de dados]** ou **[!UICONTROL Editar conjunto de dados]**.
+Para habilitar a compilação, use a seção **[!UICONTROL Configurações de conjuntos de dados]** do **[!UICONTROL Caixa de diálogo Adicionar conjuntos de dados]** ou **[!UICONTROL Editar conjunto de dados]**.
 
 ![Opções de identificação ao habilitar o recurso](assets/identity-stitching-ui.png)
 
@@ -226,14 +227,14 @@ Além da interface padrão de **[!UICONTROL visualização de conjuntos de dados
 No Customer Journey Analytics, uma ID incorreta é um identificador:
 
 * com um valor de ID específico que se origina de uma ID persistente ou de um campo de ID de pessoa em conjuntos de dados habilitados para compilação, **e**
-* O está em mais de um milhão (1.000.000) eventos nos dados de conexão, no prazo de um mês.
+* aparece em mais de um milhão (1.000.000) de eventos nos dados de conexão mensalmente.
 
 Quando um valor de ID é marcado como uma ID incorreta, os eventos futuros que contêm esse valor de ID são descartados dos dados de conexão e não são exibidos no relatório.
 
 Exemplos de casos de uso de IDs inválidas:
 
 * Você tem valores personalizados ou de espaço reservado no campo de ID de pessoa (por exemplo, `undefined`). Esses valores também podem afetar a [compilação e relatório da qualidade dos dados](/help/stitching/faq.md#undefined-person-id-values).
-* Em uma configuração de compilação em campo, se várias pessoas compartilharem um dispositivo e o número total de transições entre usuários exceder 50.000. Nesse cenário, o processo de compilação para de usar as informações de ID de pessoa para esse dispositivo e, em vez disso, usa apenas informações de ID persistentes. Consequentemente, todos os eventos do conjunto de dados desse dispositivo são enviados para os dados de conexão com a identidade de ID persistente, com uma grande chance de causar uma situação de IDs inválidas.
+* Em uma configuração de compilação em campo, se várias pessoas compartilharem um dispositivo e o número total de transições entre usuários exceder 50.000. Nesse cenário, o processo de compilação para de usar as informações de ID de pessoa para esse dispositivo e, em vez disso, usa apenas informações de ID persistentes. Consequentemente, todos os eventos do conjunto de dados desse dispositivo são enviados para os dados de conexão com a identidade de ID persistente, provavelmente causando uma situação de IDs inválidas.
 
 
 >[!NOTE]
@@ -243,11 +244,21 @@ Exemplos de casos de uso de IDs inválidas:
 
 ### Salvar
 
-Depois de salvar uma conexão, o processo de compilação para conjuntos de dados habilitados para compilação é iniciado assim que a assimilação de dados para esses conjuntos de dados é iniciada.
+Depois de salvar uma conexão, o processo de compilação para conjuntos de dados habilitados para compilação começa assim que a assimilação de dados para esses conjuntos de dados se inicia.
+
+Depois de salvar uma conexão, o processo de habilitação da compilação nos conjuntos de dados configurados é acionado. Depois que a compilação é configurada, o serviço de compilação processa todos os dados transmitidos em tempo real e inicia o preenchimento retroativo dos conjuntos de dados do evento no Experience Platform e, posteriormente, os assimila na conexão do Customer Journey Analytics.
+
+Cada parte do processo adiciona alguns atrasos. Os tempos de processamento abaixo são medidas de proteção, não contratos de nível de serviço (SLAs), para uma configuração de conexão inicial válida que é salva e contém um conjunto de dados habilitado para compilação:
+
+* Os dados ao vivo são exibidos inicialmente no Customer Journey Analytics após algumas horas (menos de 17 horas). Os dados em tempo real começam com valores de carimbo de data e hora do evento que correspondem ao momento real em que a ativação da compilação foi concluída. Habilite a opção **[!UICONTROL Importar todos os novos dados]** para o conjunto de dados. Isso garante que os dados em tempo real comecem a fluir.
+
+  Quaisquer novos dados assimilados no conjunto de dados do evento de origem no Experience Platform aparecem no Customer Journey Analytics dentro de quatro horas.
+
+* Os dados preenchidos retroativamente (se solicitados inicialmente) são exibidos no Customer Journey Analytics quase ao mesmo tempo que os dados em tempo real, mas levam dias ou semanas (menos de 4 semanas) para serem processados, dependendo dos volumes envolvidos. Os dados preenchidos retroativamente começam com os valores de carimbo de data e hora do evento mais antigos.
 
 >[!CAUTION]
 >
->Para conjuntos de dados habilitados para compilação na interface de Conexões, o status de preenchimento retroativo é imediata e incorretamente relatado como ![Status verde](/help/assets/icons/StatusGreen.svg) **[!UICONTROL _x _preenchimentos retroativos concluídos]**&#x200B;para o número de preenchimentos retroativos concluídos. Use outras maneiras de verificar se os dados do conjunto de dados compilado são preenchidos retroativamente.
+>Para conjuntos de dados habilitados para compilação na interface de Conexões, o status de preenchimento retroativo não pode ser relatado no momento devido a uma limitação conhecida. Use outras maneiras de verificar se os dados do conjunto de dados compilado são preenchidos retroativamente.
 >
 
 
@@ -264,5 +275,5 @@ A compilação habilitada na interface de Conexões pode coexistir sem problemas
 
 Por exemplo, você tem conjuntos de dados compilados com base na Web no lago de dados como resultado de solicitações de compilação anteriores ou atuais. Você pode adicionar dados compilados de um conjunto de dados da central de atendimento usando a interface Conexões para combinar esses dados com os dados baseados na Web.
 
-Eventualmente, a Adobe migrará seus conjuntos de dados compilados com base em solicitação para a nova experiência de compilação em conexões.
+Eventualmente, o Adobe migra seus conjuntos de dados compilados com base em solicitação para a nova experiência de compilação em conexões.
 
