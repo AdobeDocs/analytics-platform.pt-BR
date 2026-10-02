@@ -25,9 +25,9 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 59d79c72fd52b3eb409c2554bef9daf7094b0287
+source-git-commit: 8800f7c1659785931edb7d9f7139f037a086511c
 workflow-type: tm+mt
-source-wordcount: '1952'
+source-wordcount: '1929'
 ht-degree: 18%
 ---
 # Habilitar compilação
@@ -110,7 +110,7 @@ Você pode habilitar a identificação de identidade ao [adicionar](/help/connec
 >id="connection_changeto_identitygraph"
 >title="Alterar para gráfico de identidade"
 >abstract="Verifique se concluiu a configuração do gráfico de identidade antes de usá-lo para compilação."
->additional-url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/stitching/gbs" text="Compilação baseada em gráfico"
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/stitching/gbs" text="Compilação baseada em gráfico"
 
 >[!CONTEXTUALHELP]
 >id="connection_stitching_personid"
@@ -244,13 +244,17 @@ Exemplos de casos de uso de IDs inválidas:
 
 ### Salvar
 
-Depois de salvar uma conexão, o processo de compilação para conjuntos de dados habilitados para compilação começa assim que a assimilação de dados para esses conjuntos de dados se inicia.
 
-Depois de salvar uma conexão, o processo de habilitação da compilação nos conjuntos de dados configurados é acionado. Depois que a compilação é configurada, o serviço de compilação processa todos os dados transmitidos em tempo real e inicia o preenchimento retroativo dos conjuntos de dados do evento no Experience Platform e, posteriormente, os assimila na conexão do Customer Journey Analytics.
 
-Cada parte do processo adiciona alguns atrasos. Os tempos de processamento abaixo são medidas de proteção, não contratos de nível de serviço (SLAs), para uma configuração de conexão inicial válida que é salva e contém um conjunto de dados habilitado para compilação:
+Depois de salvar uma conexão, o processo de habilitação da compilação nos conjuntos de dados configurados é acionado. Quando a compilação for configurada, o serviço de compilação processará todos os dados transmitidos em tempo real e iniciará o preenchimento retroativo dos conjuntos de dados do evento no Experience Platform e assimilará os dados na conexão do Customer Journey Analytics.
 
-* Os dados ao vivo são exibidos inicialmente no Customer Journey Analytics após algumas horas (menos de 17 horas). Os dados em tempo real começam com valores de carimbo de data e hora do evento que correspondem ao momento real em que a ativação da compilação foi concluída. Habilite a opção **[!UICONTROL Importar todos os novos dados]** para o conjunto de dados. Isso garante que os dados em tempo real comecem a fluir.
+Cada parte do processo adiciona alguns atrasos. Os tempos de processamento abaixo são medidas de proteção, não contratos de nível de serviço (SLAs).
+
+Para uma configuração de conexão inicial válida que é salva e contém um conjunto de dados habilitado para compilação:
+
+* Os dados ao vivo são exibidos inicialmente no Customer Journey Analytics após algumas horas (menos de 17 horas). Os dados em tempo real começam com valores de carimbo de data e hora do evento que correspondem ao momento real em que a ativação da compilação foi concluída.
+
+  Para garantir que os dados em tempo real comecem a fluir, habilite a opção **[!UICONTROL Importar todos os novos dados]** para o conjunto de dados.
 
   Quaisquer novos dados assimilados no conjunto de dados do evento de origem no Experience Platform aparecem no Customer Journey Analytics dentro de quatro horas.
 
