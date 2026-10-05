@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Use Cases
 hold: true
 role: Admin
-source-git-commit: 42b73f2843244a02fd51301d8d99282ae5f309cd
+source-git-commit: 4bb99471d256fe29dc54980a5da37cf2385b679f
 workflow-type: tm+mt
-source-wordcount: '1710'
+source-wordcount: '1704'
 ht-degree: 0%
 ---
 
@@ -43,7 +43,7 @@ A autenticação para o conector usa [!DNL OAuth 2.0]. Durante a configuração,
 
 ## Modelo de dados de mídia paga
 
-Os dados de mídia paga usam um esquema estrela. Um [conjunto de dados de métricas de resumo](#summary-metrics-dataset) atua como a tabela de fatos, e seis conjuntos de dados de pesquisa fornecem as dimensões relacionadas. Os conjuntos de dados de pesquisa são unidos ao conjunto de dados de métricas de resumo pela entidade `GUID` e valores de ID nativa para contas, campanhas, grupos de anúncios, anúncios, ativos e experiências.
+[Os conjuntos de dados de métricas de resumo](#summary-metrics-datasets) atuam como tabelas de fatos e os conjuntos de dados de pesquisa fornecem as dimensões relacionadas. Os conjuntos de dados de pesquisa são unidos aos conjuntos de dados de métricas de resumo pela entidade `GUID` e valores de ID nativos para contas, campanhas, grupos de anúncios, anúncios, ativos e experiências.
 
 Os conjuntos de dados de pesquisa compartilham dois blocos de construção comuns:
 
@@ -61,11 +61,11 @@ A tabela a seguir resume os seis conjuntos de dados de pesquisa.
 | Pesquisa de ativo | Propriedades de ativos, como dimensões, detalhes do arquivo, propriedades de imagem, URLs de mídia, metadados de uso, metadados de vídeo, descrição, subtipo, título e tipo |
 | Pesquisa de experiência | Agrupamentos criativos de nível de experiência, como ID de experiência, ativos, título, descrição e call to action |
 
-### Conjunto de dados de métricas de resumo
+### Conjuntos de dados de métricas de resumo
 
-O conjunto de dados Métricas de resumo de mídia paga é o conjunto de dados de resumo central. Cada linha geralmente representa uma entidade para um dia e inclui um carimbo de data e hora, um identificador, um tipo de evento, IDs de entidade e nomes desnormalizados para relatórios.
+Os conjuntos de dados de Métricas de resumo de mídia paga são os conjuntos de dados de resumo centrais. Cada linha em um conjunto de dados de resumo normalmente representa uma entidade para um dia e inclui um carimbo de data e hora, um identificador, um tipo de evento, IDs de entidade e nomes desnormalizados para relatórios.
 
-O conjunto de dados de métricas de resumo pode incluir os seguintes grupos de métricas:
+Cada conjunto de dados de métricas de resumo pode incluir os seguintes grupos de métricas:
 
 * **Desempenho principal**: impressões, cliques, taxa de cliques, compromissos, taxa de envolvimento, conversões, taxa de conversão, valor de conversão, clientes potenciais, cliques em links, downloads e instalações ou aberturas de aplicativos.
 * **Custo e orçamento**: gasto diário, orçamento alocado e restante, ritmo, saturação ou insuficiência, métricas de custo médio e valores de oferta.
@@ -79,9 +79,9 @@ O conjunto de dados de métricas de resumo pode incluir os seguintes grupos de m
 
 ### Conjuntos de dados padrão
 
-Ao conectar uma fonte de mídia paga, o Adobe provisiona 12 conjuntos de dados de mídia paga padrão com base nas classes de esquema de mídia paga global e nos grupos de campo. Esses conjuntos de dados incluem seis conjuntos de dados de métricas de resumo, os seis conjuntos de dados de pesquisa e os conjuntos de dados de suporte. Todos os 12 conjuntos de dados de resumo e pesquisa devem estar presentes para que os dados de mídia paga sejam resolvidos corretamente downstream.
+Ao conectar uma fonte de mídia paga, o Adobe provisiona 12 conjuntos de dados de mídia paga padrão com base nas classes de esquema de mídia paga global e nos grupos de campo. Esses conjuntos de dados incluem seis conjuntos de dados de métricas de resumo, seis conjuntos de dados de pesquisa e conjuntos de dados de suporte. Todos os 12 conjuntos de dados de resumo e pesquisa devem estar presentes para que os dados de mídia paga sejam resolvidos corretamente downstream.
 
-Conjuntos de dados necessários:
+#### Conjuntos de dados necessários
 
 * Resumo da conta de mídia paga
 * Resumo da campanha de mídia paga
@@ -96,7 +96,9 @@ Conjuntos de dados necessários:
 * Pesquisa de experiência de mídia paga
 * Pesquisa de ativo de mídia paga
 
-Conjuntos de dados compatíveis, por exemplo:
+#### Suporte a conjuntos de dados
+
+Por exemplo:
 
 * Pesquisa demográfica de anúncio de mídia paga
 * Resumo do posicionamento da experiência de mídia paga
@@ -110,8 +112,7 @@ Use o processo a seguir para conectar uma origem e assimilar dados de mídia pag
 
 1. Verifique se você tem as permissões de origem do Experience Platform e o acesso à plataforma de anúncios necessários.
 1. No Experience Platform, vá para **[!UICONTROL Fontes]** > **[!UICONTROL Catálogo]** > **[!UICONTROL Advertising]**.
-1. &#x200B;
-   1. Verifique se você está na sandbox que contém os conjuntos de dados de mídia paga.
+1. Verifique se você está na sandbox que contém os conjuntos de dados de mídia paga.
 1. Selecione o conector que deseja usar, como **[!DNL Meta Ads]**. Selecione **[!UICONTROL Configurar]** para criar uma nova conexão ou selecione **[!UICONTROL Adicionar dados]** para adicionar mais dados a uma conexão existente.
 1. Autentique com [!DNL OAuth 2.0] entrando com um usuário que tenha o acesso de nível de anunciante necessário.
 1. Selecione as contas de publicidade, entidades e dados do insight que você deseja assimilar.

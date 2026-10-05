@@ -33,7 +33,7 @@ topic_v2:
     internal-label: Troubleshooting
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 91497f695a693fd15135dc5173e8a35537616e72
+source-git-commit: cc31e50f01da63eaf1e7b6eb8465d187485b7816
 workflow-type: tm+mt
 source-wordcount: '10677'
 ht-degree: 89%
@@ -732,7 +732,7 @@ Todos os conjuntos de dados e tipos de conjunto de dados possuem [configuraçõe
 
 >[!CONTEXTUALHELP]
 >id="connection_eventdataset_rowfilter"
->title="Ativar filtragem de linha"
+>title="Habilitar filtragem de linha"
 >abstract="Os filtros de linha determinam quais eventos são assimilados na Customer Journey Analytics. Somente os eventos que correspondem às regras de inclusão são assimilados. Todos os outros eventos serão excluídos permanentemente e não estarão disponíveis para relatórios, segmentação ou análise no Customer Journey Analytics.<ul><li>É possível criar até 10 filtros.</li><li> As alterações nos filtros se aplicam somente aos novos dados assimilados após a alteração e não afetam retroativamente os dados assimilados anteriormente nem acionam um preenchimento retroativo histórico.</li></ul>"
 
 >[!CONTEXTUALHELP]
