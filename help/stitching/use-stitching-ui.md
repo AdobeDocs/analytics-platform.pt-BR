@@ -25,9 +25,9 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 8800f7c1659785931edb7d9f7139f037a086511c
+source-git-commit: 1ee7e0b046f370c956b083e494522cfbc892e092
 workflow-type: tm+mt
-source-wordcount: '1929'
+source-wordcount: '1979'
 ht-degree: 18%
 ---
 # Habilitar compilação
@@ -244,9 +244,7 @@ Exemplos de casos de uso de IDs inválidas:
 
 ### Salvar
 
-
-
-Depois de salvar uma conexão, o processo de habilitação da compilação nos conjuntos de dados configurados é acionado. Quando a compilação for configurada, o serviço de compilação processará todos os dados transmitidos em tempo real e iniciará o preenchimento retroativo dos conjuntos de dados do evento no Experience Platform e assimilará os dados na conexão do Customer Journey Analytics.
+Depois de salvar uma conexão, o processo de habilitação da compilação nos conjuntos de dados configurados é acionado. Depois que o serviço de compilação é configurado, o serviço processa os dados transmitidos em tempo real e qualquer preenchimento retroativo solicitado dos conjuntos de dados do evento no Experience Platform. Posteriormente, os dados são assimilados na conexão do Customer Journey Analytics.
 
 Cada parte do processo adiciona alguns atrasos. Os tempos de processamento abaixo são medidas de proteção, não contratos de nível de serviço (SLAs).
 
@@ -256,15 +254,16 @@ Para uma configuração de conexão inicial válida que é salva e contém um co
 
   Para garantir que os dados em tempo real comecem a fluir, habilite a opção **[!UICONTROL Importar todos os novos dados]** para o conjunto de dados.
 
-  Quaisquer novos dados assimilados no conjunto de dados do evento de origem no Experience Platform aparecem no Customer Journey Analytics dentro de quatro horas.
+  Os novos dados assimilados no conjunto de dados do evento de origem do Experience Platform aparecem no Customer Journey Analytics dentro de quatro horas.
 
-* Os dados preenchidos retroativamente (se solicitados inicialmente) são exibidos no Customer Journey Analytics quase ao mesmo tempo que os dados em tempo real, mas levam dias ou semanas (menos de 4 semanas) para serem processados, dependendo dos volumes envolvidos. Os dados preenchidos retroativamente começam com os valores de carimbo de data e hora do evento mais antigos.
+* Os dados preenchidos retroativamente (se solicitados inicialmente) são exibidos no Customer Journey Analytics quase ao mesmo tempo que os dados em tempo real, mas podem levar dias para serem totalmente processados, dependendo dos volumes envolvidos. Os dados preenchidos retroativamente começam com os valores de carimbo de data e hora do evento mais antigos.
 
->[!CAUTION]
->
->Para conjuntos de dados habilitados para compilação na interface de Conexões, o status de preenchimento retroativo não pode ser relatado no momento devido a uma limitação conhecida. Use outras maneiras de verificar se os dados do conjunto de dados compilado são preenchidos retroativamente.
->
+  >[!CAUTION]
+  >
+  >Para conjuntos de dados habilitados para compilação na interface de Conexões, o status de preenchimento retroativo não pode ser relatado no momento devido a uma limitação conhecida.
+  >
 
+  Use maneiras alternativas para verificar se os dados do conjunto de dados compilado são preenchidos retroativamente. Por exemplo, use a [Interface do usuário do Serviço de consulta do Experience Platform](https://experienceleague.adobe.com/pt-br/docs/experience-platform/query/ui/overview) para extrair do conjunto de dados a contagem de eventos para o período relevante. Compare essa contagem de eventos com a métrica de eventos em [relatórios do Customer Journey Analytics](/help/analysis-workspace/home.md) para o mesmo período. Se esses números corresponderem, o preenchimento retroativo será concluído.
 
 ## Limitações
 
