@@ -4,12 +4,11 @@ description: Saiba mais sobre a configuração automática de conjuntos de dados
 solution: Customer Journey Analytics
 feature: Content Analytics
 role: Admin
-source-git-commit: f83d40d33e90ba73f26129ab416f063f361edca7
+source-git-commit: 2727dce145b996192ac873dd43d5106b011ff736
 workflow-type: tm+mt
 source-wordcount: '1493'
 ht-degree: 4%
 ---
-
 # Configuração automática de mídia paga
 
 Ao ativar o Canal de mídia paga no Content Analytics e salvar a configuração, o Adobe atualiza a conexão selecionada e as visualizações de dados com a configuração de relatórios para os conjuntos de dados de mídia paga. Você não precisa recriar as dimensões, as métricas, a lógica de pesquisa ou os grupos de dados de resumo por conta própria.
@@ -65,7 +64,6 @@ Essa tabela descreve a cobertura do conjunto de dados, não uma garantia de que 
 Conjuntos de dados de pesquisa separados descrevem Conta, Campanha, Grupo de publicidade, Anúncio, Experiência e Ativo. Eles fornecem nomes e metadados usando GUIDs de entidade. Não existe emparelhamento um para um entre os conjuntos de dados de resumo e os seis conjuntos de dados de pesquisa.
 
 O agrupamento de dados de resumo reúne dimensões equivalentes; o agrupamento não totaliza os seis totais de métricas de desempenho.
-
 
 ## Componentes
 
