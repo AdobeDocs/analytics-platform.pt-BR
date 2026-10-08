@@ -38,7 +38,7 @@ topic_v2:
     internal-label: Data management
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
+source-git-commit: 1af0b3565fe054a5073f574d53b82f561df1abda
 workflow-type: tm+mt
 source-wordcount: '4800'
 ht-degree: 56%
@@ -393,7 +393,7 @@ Para o canal Web, você pode configurar [captura e definição de experiência](
 >id="aca_onboarding_datacollection_button"
 >title="Coleção de dados"
 >abstract="Defina qual propriedade de tags você deseja usar ou crie uma nova. Defina também as páginas e os ativos que deseja incluir ou excluir usando expressões regulares.<br/>Para uma implementação independente de tags, selecione **[!UICONTROL Criar novo]**.  É criada uma propriedade Tags, mas você não é obrigado a usá-la."
->additional-url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/content-analytics/configuration/tags-agnostic" text="Biblioteca JavaScript do Content Analytics"
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/configuration/tags-agnostic" text="Biblioteca JavaScript do Content Analytics"
 
 
 >[!CONTEXTUALHELP]
@@ -669,7 +669,7 @@ Consulte abaixo exemplos de como configurar o conector de origem do Google Ads e
 
 1. Na etapa ➋ **[!UICONTROL Selecionar contas]** do assistente, selecione as contas que deseja configurar.
 
-   ![Contas selecionadas do conector de origem do Meta Ads](paid-media-meta-select-account.png)
+   ![Contas selecionadas do conector de origem do Meta Ads](../assets/paid-media-meta-select-account.png)
 
    Selecione **[!UICONTROL Próximo]**.
 
