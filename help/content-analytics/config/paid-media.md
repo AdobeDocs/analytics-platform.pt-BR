@@ -3,11 +3,12 @@ title: Configuração automática de mídia paga do Content Analytics
 description: Saiba mais sobre a configuração automática de conjuntos de dados, conexão, visualizações de dados e muito mais.
 solution: Customer Journey Analytics
 feature: Content Analytics
+hold: true
 role: Admin
-source-git-commit: 2727dce145b996192ac873dd43d5106b011ff736
+source-git-commit: 684fef6a5e007d6dabe6518d7c7ec93a41dc6cdd
 workflow-type: tm+mt
-source-wordcount: '1493'
-ht-degree: 4%
+source-wordcount: '2179'
+ht-degree: 3%
 ---
 # Configuração automática de mídia paga
 
@@ -142,3 +143,45 @@ Para investigar, use detalhamentos adicionais para geografia e demografia. Use o
 | Custo por clique | Resumo do anúncio |
 
 
+### Correlacionar dados de mídia paga com dados de evento de experiência
+
+Combine o desempenho de mídia paga com dados comportamentais no site para entender como campanhas e anúncios são associados ao envolvimento do site, conversões e receita. Por exemplo, compare os cliques e os gastos da rede de publicidade com os pedidos atribuídos às visitas da mesma campanha.
+
+Para configurar esse relatório, inclua os conjuntos de dados de resumo de mídia paga e o conjunto de dados de evento no site na mesma conexão do Customer Journey Analytics. Capture identificadores estáveis de campanha, anúncio ou ativo suportado de parâmetros de URL da página inicial ou campos de evento existentes. Use campos derivados conforme necessário para analisar e mapear esses valores para os identificadores de mídia paga correspondentes, preservando o contexto de rede e conta necessário. Manter identificadores como cadeias de caracteres. Configure um Grupo de dados de resumo na visualização de dados para associar o evento correspondente e as dimensões de resumo. Habilitar o canal Mídia paga não configura automaticamente esse rastreamento e mapeamento de URL específico da implementação.
+
+
+| Opção de rastreamento | Considerações |
+|---|---|
+| Anúncios do Meta | Configure parâmetros de URL de destino usando identificadores dinâmicos como `campaign.id`, `adset.id` e `ad.id`, onde houver suporte. Capture os valores resolvidos em seu site. Habilitar o conector não adiciona automaticamente esses parâmetros aos URLs de anúncios. |
+| Google Ads | |
+| Ativos individuais | Os relatórios no nível do ativo de resultados downstream exigem um identificador capturado que mapeia para o ativo específico associado ao clique. Um parâmetro de URL personalizado pode suportar isso quando o formato do anúncio permite o rastreamento específico do ativo. Um identificador de anúncio por si só não pode distinguir vários ativos em um anúncio, e um parâmetro de ativo estático aplicado a um anúncio de vários ativos inteiro não identifica qual ativo foi associado ao clique. |
+
+No Analysis Workspace, use as métricas do **[!UICONTROL Resumo de anúncios]** para comparações de campanhas ou anúncios e as métricas do **[!UICONTROL Resumo de ativos]** para comparações de ativos com suporte. Aplique um modelo de atribuição e uma janela de retrospectiva às métricas de conversão no site que refletem sua pergunta de relatório.
+
+Observe que:
+
+* Os dados de mídia paga são dados de resumo agregados sem uma ID de pessoa. O comportamento no local são os dados do evento.
+* O agrupamento de dimensões correspondentes permite a geração de relatórios nessas fontes, mas não corresponde conversões de anúncios individuais de rede para conversões de site nem executa a compilação em nível de pessoa.
+* A comparação mostra uma associação, não um aumento causal.
+* Os resultados podem diferir devido às definições de conversão, janelas de atribuição, conversões de view-through ou modeladas, consentimento e datas ou fusos horários dos relatórios.
+* Valide a origem das visitas com tags de campanha, especialmente quando os parâmetros de rastreamento são reutilizados em canais.
+
+
+### Comparar o desempenho da campanha com o exemplo de pedidos no local
+
+Um URL de página de aterrissagem pode conter vários parâmetros de rastreamento. Neste exemplo, usamos a ID da campanha no `utm_id` para comparar o gasto da campanha com pedidos de sites.
+
+https://www.example.com/offer?utm_source=facebook&utm_medium=paid_social&utm_campaign=autumn_offer&utm_id=120218706543980215
+
+O parâmetro usado para esta comparação: `utm_id=120218706543980215`. Os outros parâmetros descrevem a origem, o meio e o rótulo da campanha, mas não são usados como campos correspondentes usados neste exemplo.
+
+Se o URL for capturado nos dados do evento do site, o conjunto de dados do evento do site e os conjuntos de dados de mídia paga farão parte da mesma conexão do Customer Journey Analytics:
+
+1. Identifique a campanha. Use um campo derivado para ler `utm_id` da URL e mapear seu valor para o identificador de campanha correspondente nos dados de mídia paga.
+1. Agrupe as dimensões correspondentes. Na visualização de dados, adicione a dimensão de campanha do site à dimensão de campanha paga `Summary Data Group`, preservando todos os membros existentes.
+1. Comparar gastos e pedidos. No Analysis Workspace, use a dimensão de campanha agrupada como as linhas de uma tabela de forma livre. Adicione o gasto de `Ad Summary` e o site `Orders` como colunas. Defina o modelo de atribuição e a janela de retrospectiva para `Orders`.
+
+
+A tabela mostra os gastos da rede de publicidade junto com os pedidos do site atribuídos a cada campanha. Duas campanhas com gastos de anúncio semelhantes podem ter números diferentes de ações downstream atribuídas do site. Use essa comparação para identificar campanhas e experiências de página de aterrissagem para investigação ou testes adicionais, em vez de avaliar o desempenho somente com base nas métricas de publicidade.
+
+O exemplo usa uma ID de campanha, mas a mesma abordagem pode usar grupos de anúncios, anúncios ou identificadores de ativos quando valores correspondentes podem ser capturados. Os atributos do Content Analytics, como **[!UICONTROL Cores de primeiro plano do ativo]**, permitem comparar as características criativas com o desempenho da mídia paga. Com o rastreamento específico do ativo e as dimensões de atributo de correspondência configuradas em ambas as fontes, é possível estender essa comparação para pedidos de sites atribuídos e usar os resultados para orientar testes criativos.
