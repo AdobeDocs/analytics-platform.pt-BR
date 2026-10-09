@@ -40,7 +40,7 @@ Verifique com o Adobe as duas partes da entrega:
 1. A Adobe confirmou que os registros estão sendo recebidos e detectados para o site relevante.
 
 O encaminhamento de log BYOCDN fornece os dados de solicitação de CDN do lado do servidor usados para análise de tráfego de agente automatizado. Os dados não dependem da execução das tags JavaScript em um navegador. O necessário
-O feed de log da CDN garante que o conjunto de dados de resumo de downstream contenha os dados de tráfego de agente de Visibilidade da marca desejados. Consulte a [referência de encaminhamento de log BYOCDN](https://experienceleague.adobe.com/en/docs/brand-visibility/using/log-forwarding/log-forwarding-overview) para obter mais informações.
+O feed de log da CDN garante que o conjunto de dados de resumo de downstream contenha os dados de tráfego de agente de Visibilidade da marca desejados. Consulte a [referência de encaminhamento de log BYOCDN](https://experienceleague.adobe.com/pt-br/docs/brand-visibility/using/log-forwarding/log-forwarding-overview) para obter mais informações.
 
 ### Informações necessárias
 

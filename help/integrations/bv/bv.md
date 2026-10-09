@@ -94,4 +94,4 @@ Consulte para obter mais informações:
 
 ## Integração de saída
 
-Para obter informações sobre integração de saída, consulte [Integração do Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/brand-visibility/using/resources/customer-journey-analytics-integration){target="_blank"} na documentação do Adobe Brand Visibility.
+Para obter informações sobre integração de saída, consulte [Integração do Customer Journey Analytics](https://experienceleague.adobe.com/pt-br/docs/brand-visibility/using/resources/customer-journey-analytics-integration){target="_blank"} na documentação do Adobe Brand Visibility.
