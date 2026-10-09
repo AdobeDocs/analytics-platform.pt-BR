@@ -31,7 +31,7 @@ ht-degree: 87%
 >[!CONTEXTUALHELP]
 >id="component_datadictionary"
 >title="Dicionário de dados"
->abstract="Quando esta opção estiver selecionada, o componente principal será compartilhado com todos que tiverem acesso aos componentes duplicados (os proprietários e todos com quem os componentes forem compartilhados). Esses usuários podem selecionar o componente principal na lista de componentes para projetos futuros. No entanto, não é possível editar o componente, mesmo que ele seja o proprietário de um componente duplicado que foi consolidado. <br/>Esta opção está disponível somente quando o componente principal é um segmento, uma métrica calculada ou um intervalo de datas. Métricas e dimensões estão sempre disponíveis para todos os usuários."
+>abstract="Quando esta opção estiver selecionada, o componente principal será compartilhado com todos que tiverem acesso aos componentes duplicados (os proprietários e todos com quem os componentes forem compartilhados). Esses usuários podem selecionar o componente principal na lista de componentes para projetos futuros. No entanto, não é possível editar o componente, mesmo que ele seja o proprietário de um componente duplicado que foi consolidado. <br/>Esta opção está disponível somente quando o componente principal é um segmento, uma métrica calculada ou um intervalo de datas. Métricas e dimensões estão sempre disponíveis para todos os usuários.
 >
 >When this option is deselected, the primary component still replaces duplicates in existing projects and segments, but users who didn't previously have access to it can't access it from the component list for future projects. "
 
