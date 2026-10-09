@@ -1,6 +1,6 @@
 ---
-title: Criar um esquema para o Customer Journey Analytics
-description: Saiba mais sobre o caminho recomendado ao atualizar do Adobe Analytics para o Customer Journey Analytics
+title: Criar e configurar uma conexão para usar com o Customer Journey Analytics
+description: Saiba como criar uma conexão do Customer Journey Analytics e adicionar seus conjuntos de dados do Experience Platform ao atualizar do Adobe Analytics.
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -38,10 +38,10 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
+source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
 workflow-type: tm+mt
-source-wordcount: '1672'
-ht-degree: 100%
+source-wordcount: '1682'
+ht-degree: 98%
 ---
 # Criar e configurar uma conexão para usar com o Customer Journey Analytics {#upgrade-create-connection}
 

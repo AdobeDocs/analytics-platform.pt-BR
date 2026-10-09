@@ -1,6 +1,6 @@
 ---
-title: Atualizar do Adobe Analytics para o Customer Journey Analytics
-description: Saiba mais sobre as etapas recomendadas ao atualizar do Adobe Analytics para o Customer Journey Analytics
+title: Preparar sua organização para atualizar para o Customer Journey Analytics
+description: Saiba como preparar sua organização para uma atualização do Adobe Analytics para o Customer Journey Analytics.
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -39,10 +39,10 @@ topic_v2:
     internal-label: Behavioral data
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
 workflow-type: tm+mt
-source-wordcount: '1186'
-ht-degree: 15%
+source-wordcount: '1189'
+ht-degree: 14%
 ---
 # Preparar sua organização para atualizar para o Customer Journey Analytics
 
@@ -173,7 +173,7 @@ Identifique campeões em toda a organização. Esses campeões devem ser:
 
   * [Tutoriais do Customer Journey Analytics](https://experienceleague.adobe.com/pt-br/docs/customer-journey-analytics-learn/tutorials/overview)
 
-  * [O que é o Customer Journey Analytics?](https://experienceleague.adobe.com/pt-br/docs/customer-journey-analytics-learn/tutorials/cja-basics/what-is-customer-journey-analytics)
+  * [O que é o Customer Journey Analytics?](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/cja-basics/what-is-customer-journey-analytics)
 
   * [Introdução ao Customer Journey Analytics](https://experienceleague.adobe.com/pt-br/docs/customer-journey-analytics-learn/tutorials/cja-basics/understanding-customer-journey-analytics)
 

@@ -41,9 +41,9 @@ topic_v2:
     internal-label: Privacy
   - id: f8667931-f646-4dd3-af2a-b9d0cb8098ad
     internal-label: Taxonomy
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
 workflow-type: tm+mt
-source-wordcount: '1545'
+source-wordcount: '1571'
 ht-degree: 11%
 ---
 # Projete o seu esquema para uso com o Customer Journey Analytics {#upgrade-schema-architect}
@@ -74,7 +74,7 @@ O pipeline de dados do Customer Journey Analytics contém áreas separadas para 
 
 ## Comparar esquemas com a coleção de dados da Adobe Analytics
 
-O Experience Data Model que a Customer Journey Analytics usa oferece muito mais flexibilidade do que a maioria das outras soluções do Analytics (incluindo o Adobe Analytics). Estabelecer um esquema sólido é a oportunidade de sua organização de evitar a transferência de restrições existentes em outros produtos do Analytics.
+Diferentemente do Adobe Analytics, o Customer Journey Analytics não mapeia automaticamente os dados recebidos para variáveis predefinidas. Seu esquema define os campos e as visualizações de dados determinam como eles são relatados. O Experience Data Model que a Customer Journey Analytics usa oferece muito mais flexibilidade do que a maioria das outras soluções do Analytics (incluindo o Adobe Analytics). Estabelecer um esquema sólido é a oportunidade de sua organização de evitar a transferência de restrições existentes em outros produtos do Analytics.
 
 | Hábito comum do Adobe Analytics | Melhor abordagem no XDM + Customer Journey Analytics |
 |---|---|
@@ -144,7 +144,7 @@ Algumas organizações precisam continuar os relatórios do Adobe Analytics ao a
 
 1. **Use caminhos de campo XDM reconhecidos e mapeados automaticamente pela Adobe Analytics:** Quando você envia campos XDM reconhecidos pela Edge Network para a Adobe Analytics, eles são [mapeados automaticamente](https://experienceleague.adobe.com/pt-br/docs/analytics/implementation/aep-edge/xdm-var-mapping) sem configuração extra.
 1. **Use campos XDM personalizados para conceitos específicos da organização:** Todos os campos XDM que não são mapeados automaticamente para uma variável do Analytics são encaminhados como [Variáveis de dados de contexto](https://experienceleague.adobe.com/pt-br/docs/analytics/implementation/vars/page-vars/contextdata) no Adobe Analytics.
-1. **Use as regras de processamento do Adobe Analytics para mapear essas variáveis de dados de contexto como props/eVars:** [As regras de processamento](https://experienceleague.adobe.com/pt-br/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) finalmente permitem mapear qualquer campo XDM personalizado em qualquer eVar ou prop. Esse conceito é compatível com relatórios de paridade no Adobe Analytics, mantendo seu esquema limpo e centralizado no Customer Journey Analytics.
+1. **Use as regras de processamento do Adobe Analytics para mapear essas variáveis de dados de contexto como props/eVars:** [As regras de processamento](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) finalmente permitem mapear qualquer campo XDM personalizado em qualquer eVar ou prop. Esse conceito é compatível com relatórios de paridade no Adobe Analytics, mantendo seu esquema limpo e centralizado no Customer Journey Analytics.
 
 ## Identificar participantes e definir propriedade
 
@@ -162,7 +162,7 @@ Defina um proprietário claro para alterações no esquema. Um esquema estável 
 O design do esquema deve refletir as expectativas de privacidade e governança, de acordo com as políticas de privacidade da sua organização. Considere os seguintes pontos ao arquitetar o esquema:
 
 * Colete somente o que for necessário para oferecer suporte a casos de uso definidos.
-* Certifique-se de que os requisitos de consentimento e uso de dados sejam refletidos em sua estratégia de coleta. Consulte [Usar o Web SDK para processar dados de consentimento do cliente](https://experienceleague.adobe.com/pt-br/docs/experience-platform/landing/governance-privacy-security/consent/sdk) para obter mais informações.
+* Certifique-se de que os requisitos de consentimento e uso de dados sejam refletidos em sua estratégia de coleta. Consulte [Usar o Web SDK para processar dados de consentimento do cliente](https://experienceleague.adobe.com/en/docs/experience-platform/landing/governance-privacy-security/consent/sdk) para obter mais informações.
 * Considere como os campos confidenciais são rotulados e controlados nas ferramentas de governança do Adobe Experience Platform. Consulte [Adobe Customer Journey Analytics e governança de dados](/help/privacy/privacy-overview.md) para obter mais informações.
 
 ## Próximas etapas

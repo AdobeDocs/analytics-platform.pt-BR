@@ -1,6 +1,6 @@
 ---
-title: Criar uma propriedade de tag e adicionar a extensão do SDK da web
-description: Saiba como criar uma propriedade de tag e adicionar a extensão do SDK da web
+title: Criar uma tag para sua propriedade
+description: Saiba como criar uma propriedade de tag ao atualizar do Adobe Analytics para o Customer Journey Analytics.
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -28,10 +28,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
 workflow-type: tm+mt
-source-wordcount: '316'
-ht-degree: 92%
+source-wordcount: '315'
+ht-degree: 86%
 ---
 # Criar uma tag para sua propriedade {#upgrade-tag-property}
 
@@ -62,6 +62,6 @@ Para criar uma tag para sua propriedade:
 
    Nomeie a tag, selecione **[!UICONTROL Web]** e insira um nome de domínio. Selecione **[!UICONTROL Salvar]** para continuar.
 
-   ![Criar uma propriedade da &#x200B;](assets/create-property.png)
+   ![Criar uma propriedade da ](assets/create-property.png)
 
 {{upgrade-final-step}}
