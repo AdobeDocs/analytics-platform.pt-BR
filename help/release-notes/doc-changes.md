@@ -55,9 +55,9 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 17af5df91a28b3a6e44528f88661b6dcc86d6cae
+source-git-commit: a7bea19dcd89472ee21c533e44e1f87f5d179838
 workflow-type: tm+mt
-source-wordcount: '7170'
+source-wordcount: '7183'
 ht-degree: 96%
 ---
 
@@ -71,6 +71,8 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 |---|---|
 | **outubro de 2026** | |
 | Insights de conversa | [Documentação](/help/conversation-insights/overview.md) para Insights de Conversa. |
+| Outubro de 2026 | |
+| Visibilidade da marca | Atualizada a documentação da [integração de entrada do Brand Visibility](/help/integrations/bv/bv.md#inbound-integration) com mais detalhes. |
 | **setembro de 2026** | |
 | Jornada comparação da tela de desenho em setas e fallout | Atualização da configuração &#39;[!UICONTROL Comparar com]&#39; em [Configurar uma visualização da tela de Jornada](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#configure-visualization-settings) para mostrar que a alteração de porcentagem entre os intervalos de datas agora é exibida em cada nó, seta e fallout na jornada. |
 | Publicações de blog incorporadas | Incorporou as seguintes postagens no blog:<ul><li>[O manual completo para lidar com &#39;Nenhum valor&#39; no Adobe CJA](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/the-complete-playbook-for-handling-no-value-in-adobe-cja-12769?profile.language=pt#M598)</li><li>[Detalhamento dos casos de uso de saída de dados do Adobe Experience Platform e Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/adobe-experience-platform-customer-journey-analytics-data-egress-use-cases-deep-dive-12725?profile.language=pt)</li></ul>em nosso artigo de casos de uso [exportação de dados](/help/use-cases/data-export/overview.md) e um novo caso de uso [Nenhum valor](/help/use-cases/data-views/no-value.md). |
@@ -78,7 +80,7 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | **agosto de 2026** | |
 | Esclarecimento de informações sobre a atualização de públicos | Ao [publicar públicos-alvo](/help/components/audiences/publish.md#audience-builder), o esclareceu que o número de públicos-alvo que podem ser agendados para atualização depende do seu direito ao Customer Journey Analytics e está entre 75 e 150. |
 | **julho de 2026** | |
-| Integração de entrada do Brand Visibility | Documentação para a [integração de entrada do Brand Visibility](/help/integrations/bv.md#inbound-integration). |
+| Visibilidade da marca | Documentação para a [integração de entrada do Brand Visibility](/help/integrations/bv/bv.md#inbound-integration). |
 | Interface de uso | Atualizações na documentação da [Interface de uso](/help/connections/manage-connections.md#usage) para Conexões. |
 | Análise de sub-evento | Documentação para [análise de subeventos](/help/components/segments/sub-event.md) e [contêineres personalizados](/help/data-views/create-dataview.md#custom-containers). |
 | Classificações em linha | Documentação de [classificações embutidas](/help/analysis-workspace/visualizations/freeform-table/column-row-settings/table-settings.md#inline-classifications). |

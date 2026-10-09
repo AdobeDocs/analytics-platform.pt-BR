@@ -1,6 +1,6 @@
 ---
-title: Integração do Brand Visibility
-description: Integrar o Brand Visibility com o Customer Journey Analytics
+title: Referência do conjunto de dados da integração de entrada do Brand Visibility
+description: Saiba mais sobre todos os detalhes dos conjuntos de dados usados para a integração do Brand Visibility com o Customer Journey Analytics
 feature: Experience Platform Integration
 role: User
 product_v2:
@@ -15,9 +15,9 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: a7bea19dcd89472ee21c533e44e1f87f5d179838
 workflow-type: tm+mt
-source-wordcount: '2572'
+source-wordcount: '2555'
 ht-degree: 2%
 ---
 
@@ -90,11 +90,11 @@ O Brand Visibility fornece essa chave para você na dimensão **URL da CDN**. El
 
 O Brand Visibility lê os logs de acesso da CDN no lado do servidor e extrai os registros em que a parte solicitante é um bot ou agente automatizado. Como os dados vêm da camada CDN, o Brand Visibility captura solicitações de bots que não acionam nenhuma tag do JavaScript. As ferramentas padrão do Web Analytics perdem totalmente esse tráfego.
 
-O conjunto de dados usa o grupo de campos **Resumo de Solicitações CDN**. Cada campo está localizado sob um objeto `cdn`, portanto, os nomes de campo nas tabelas abaixo assumem o formato `cdn.<name>`, por exemplo `cdn.url` e `cdn.botType`.
+O conjunto de dados usa o grupo de campos **Resumo de Solicitações CDN**. Cada campo está localizado sob um objeto `cdn`, portanto, os nomes de campo nas tabelas abaixo assumem a forma <code>cdn._name_</code>, por exemplo `cdn.url` e `cdn.botType`.
 
 Cada registro descreve uma combinação de host, caminho de URL, tipo de bot, provedor de CDN, código de status, referenciador, host encaminhado e tempo para o primeiro byte por uma hora. Quando a mesma combinação aparece mais de uma vez por hora, o Customer Journey Analytics combina esses registros em uma linha e aumenta a contagem de solicitações. Use a métrica **Contagem de Solicitações de CDN** para medir o volume. Não use contagem de linhas.
 
-### Dimensões
+## Dimensões
 
 As seguintes dimensões estão disponíveis para uso como componentes em uma visualização de dados após configurar uma conexão que inclui um conjunto de dados do Brand Visibility. A coluna **Campo** mostra o campo de origem no grupo de campos Resumo de Solicitações CDN.
 
@@ -165,7 +165,7 @@ Os códigos de status HTTP nesse conjunto de dados indicam se o agente de IA rec
 | 429 | Muitas solicitações | A taxa de CDN limitou o bot. Erros 429 persistentes em tipos de agentes de busca dinâmica significam que os usuários que fazem perguntas aos assistentes de IA sobre seu conteúdo receberão respostas incompletas ou ausentes. |
 | 504 | Tempo-limite do gateway | O CDN parou de aguardar a resposta da origem. O conteúdo não chegou à IA. Quando uma página expira, a IA não consegue acessar seu conteúdo e não pode incluí-lo em uma resposta. Um alto volume 504 em tipos de agentes de busca dinâmica é um risco direto de visibilidade da IA. |
 
-### Métricas
+## Métricas
 
 As métricas a seguir estão disponíveis para uso como componentes em uma visualização de dados após configurar uma conexão que inclui um conjunto de dados do Brand Visibility. A coluna **Campo** mostra o campo de origem no grupo de campos Resumo de Solicitações CDN.
 
@@ -176,16 +176,12 @@ As métricas a seguir estão disponíveis para uso como componentes em uma visua
 | Taxa de Erro da CDN | Derivado da Contagem de Erros da CDN | A contagem de erros como uma porcentagem do total de solicitações. |
 | Tempo Médio para o Primeiro Byte da CDN | `cdn.timeToFirstByte` | O tempo médio em milissegundos desde quando o CDN recebeu uma solicitação até o primeiro byte da resposta. As respostas em cache do CDN normalmente estão abaixo de 50 ms. As respostas fornecidas a partir da origem são normalmente de 300 ms a 700 ms. Os agentes de busca dinâmica de IA geralmente mostram valores muito mais altos, que correspondem às respostas de origem expiradas ou muito lentas. Valores médios altos em tipos de agentes de busca dinâmica merecem ser investigados como um risco de visibilidade da IA. |
 
-### Limites do conjunto de dados
+## Limites
 
 Esse conjunto de dados captura somente o tráfego de bot dos logs de acesso do CDN. Ele não contém o seguinte:
 
 * **Dados de sessões, conversões ou participação do usuário.** Um usuário que clica em uma resposta do AI executa o JavaScript na sua página, para que a visita esteja nos dados da Web existentes, não neste conjunto de dados. Você pode trazer ambos os conjuntos de dados para a Customer Journey Analytics e compará-los para o mesmo URL e host.
-* **Qualquer identificador de pessoa, como ECID.** Não é possível criar uma associação no nível de pessoa a partir deste conjunto de dados. A associação opera no nível do URL e do host.
+* **Qualquer identificador de pessoa, como ECID.** Não é possível executar uma associação no nível da pessoa a partir deste conjunto de dados. A associação opera no nível do URL e do host.
 * **Granularidade de tempo em subsegundos.** O carimbo de data e hora é por hora. Você não pode dividir o tráfego em uma hora em minutos ou segundos.
 * **Conteúdo da página ou HTML renderizado.** Esse conjunto de dados registra o fato da busca e seu resultado, não o que a IA leu da página.
 * **Dados de conversão.** Esse conjunto de dados não informa se uma resposta de IA levou uma pessoa a visitar seu site ou converter. Ele contém dados de resumo agregados da CDN, não dados de eventos baseados em pessoas, portanto, não vincula nenhuma solicitação a uma pessoa ou sessão individual.
-
-## Integração de saída
-
-Para obter informações sobre integração de saída, consulte [Integração do Customer Journey Analytics](https://experienceleague.adobe.com/pt-br/docs/brand-visibility/using/resources/customer-journey-analytics-integration){target="_blank"} na documentação sobre visibilidade da marca Adobe.
