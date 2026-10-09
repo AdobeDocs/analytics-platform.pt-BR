@@ -4,7 +4,6 @@ description: Ative a compilação para conjuntos de dados de evento no Customer 
 solution: Customer Journey Analytics
 feature: Stitching, Cross-Channel Analysis
 role: Admin
-hold: true
 exl-id: 9a1689d9-c1b7-42fe-9682-499e49843f76
 TQID: 'https://experienceleague.adobe.com/Nj-IePDbHxBtgiSxEAobJ0DGlJSaiTwpTXIPtCxDTHw'
 product_v2:
@@ -25,9 +24,9 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 1ee7e0b046f370c956b083e494522cfbc892e092
+source-git-commit: 49795b40eab1fcd1bfd472ccb756587adf9877b8
 workflow-type: tm+mt
-source-wordcount: '1979'
+source-wordcount: '1989'
 ht-degree: 18%
 ---
 # Habilitar compilação
@@ -250,7 +249,7 @@ Cada parte do processo adiciona alguns atrasos. Os tempos de processamento abaix
 
 Para uma configuração de conexão inicial válida que é salva e contém um conjunto de dados habilitado para compilação:
 
-* Os dados ao vivo são exibidos inicialmente no Customer Journey Analytics após algumas horas (menos de 17 horas). Os dados em tempo real começam com valores de carimbo de data e hora do evento que correspondem ao momento real em que a ativação da compilação foi concluída.
+* Os dados ao vivo são exibidos inicialmente no Customer Journey Analytics após algumas horas (menos de 14 horas). Novos dados ao vivo estão disponíveis em poucas horas. Os dados em tempo real começam com valores de carimbo de data e hora do evento que correspondem ao momento real em que a ativação da compilação foi concluída.
 
   Para garantir que os dados em tempo real comecem a fluir, habilite a opção **[!UICONTROL Importar todos os novos dados]** para o conjunto de dados.
 
@@ -258,12 +257,14 @@ Para uma configuração de conexão inicial válida que é salva e contém um co
 
 * Os dados preenchidos retroativamente (se solicitados inicialmente) são exibidos no Customer Journey Analytics quase ao mesmo tempo que os dados em tempo real, mas podem levar dias para serem totalmente processados, dependendo dos volumes envolvidos. Os dados preenchidos retroativamente começam com os valores de carimbo de data e hora do evento mais antigos.
 
+
   >[!CAUTION]
   >
-  >Para conjuntos de dados habilitados para compilação na interface de Conexões, o status de preenchimento retroativo não pode ser relatado no momento devido a uma limitação conhecida.
+  >Para conjuntos de dados que estão [habilitados para compilação](#enable-stitching) na interface de Conexões, o status de preenchimento retroativo não pode ser relatado devido a uma limitação conhecida.
   >
 
-  Use maneiras alternativas para verificar se os dados do conjunto de dados compilado são preenchidos retroativamente. Por exemplo, use a [Interface do usuário do Serviço de consulta do Experience Platform](https://experienceleague.adobe.com/pt-br/docs/experience-platform/query/ui/overview) para extrair do conjunto de dados a contagem de eventos para o período relevante. Compare essa contagem de eventos com a métrica de eventos em [relatórios do Customer Journey Analytics](/help/analysis-workspace/home.md) para o mesmo período. Se esses números corresponderem, o preenchimento retroativo será concluído.
+  Use maneiras alternativas para verificar se os dados do conjunto de dados compilado são preenchidos retroativamente. Por exemplo, use a [Interface do usuário do Serviço de consulta do Experience Platform](https://experienceleague.adobe.com/pt-br/docs/experience-platform/query/ui/overview) para extrair do conjunto de dados a contagem de eventos para o período relevante. Compare essa contagem de eventos com o valor de métrica **[!UICONTROL Eventos]** nos [Relatórios do Customer Journey Analytics](/help/analysis-workspace/home.md) para o mesmo período. Se esses números corresponderem, o preenchimento retroativo será concluído.
+
 
 ## Limitações
 

@@ -5,31 +5,41 @@ feature: Analytics Dashboards
 role: User, Admin
 exl-id: 12531600-7e88-4d56-a2a5-e5b346f91937
 solution: Customer Journey Analytics
-TQID: https://experienceleague.adobe.com/7K973UjBfK9BFYOQUia-JDb5yc4uZWMOzqHXXRR1nwc
+TQID: 'https://experienceleague.adobe.com/7K973UjBfK9BFYOQUia-JDb5yc4uZWMOzqHXXRR1nwc'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: b743a5d9-dc51-41ed-8b2f-86a1f8de430f
+    internal-label: Analytics dashboards
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: b21c7889-c659-4a99-a779-de1bae57e47e
+    internal-label: Scorecards
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Reporting
+source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
 workflow-type: tm+mt
-source-wordcount: 2770
+source-wordcount: '2770'
 ht-degree: 95%
-
 ---
-
 # Criar um cartão de pontuação para dispositivos móveis {#create-a-mobile-scorecard}
 
 <!-- markdownlint-disable MD034 -->
@@ -296,7 +306,7 @@ Para adicionar novos slides, passe o mouse sobre ou clique em um slide e selecio
    * Toque no ícone de duplicação para duplicar o slide já existente.
 1. Se você criar um slide em branco, arraste e solte componentes do painel esquerdo ou escolha um layout para preencher automaticamente o slide com os dados do bloco.
    ![Criar uma história de dados](assets/data-story2.png)
-Para excluir um slide, toque no ícone de lixeira.
+   Para excluir um slide, toque no ícone de lixeira.
 
 ### Personalizar uma história de dados {#customize-data-story}
 
@@ -308,7 +318,7 @@ As histórias de dados permitem personalizar tudo. Assim você pode compartilhar
 1. Altere o título, o tipo de gráfico e outras opções do bloco.
 1. Arraste um componente para o bloco.
    ![Criar uma história de dados](assets/data-story3.png)
-Quando você arrasta e solta um componente, como uma visualização, em um bloco, o componente é aplicado a todos os slides da matéria de dados.
+   Quando você arrasta e solta um componente, como uma visualização, em um bloco, o componente é aplicado a todos os slides da matéria de dados.
 1. Para aplicar uma alteração somente ao título, mantenha pressionada a tecla Shift para aplicar a alteração.
    ![Criar uma história de dados](assets/data-story4.png)
 

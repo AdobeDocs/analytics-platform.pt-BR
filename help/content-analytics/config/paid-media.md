@@ -5,9 +5,9 @@ solution: Customer Journey Analytics
 feature: Content Analytics
 hold: true
 role: Admin
-source-git-commit: e9274ad7899537837723e2eb9cd842c5449530ff
+source-git-commit: 29a21d57b6b50d873a4464d1a705c1b4855dd3ea
 workflow-type: tm+mt
-source-wordcount: '2309'
+source-wordcount: '2502'
 ht-degree: 2%
 ---
 # Configuração automática de mídia paga
@@ -59,12 +59,28 @@ A rede de anúncios específica determina quais conjuntos de dados de resumo sã
 | `paidmedia_asset_summary` <br/>`ad.asset.summary`<br/>`\| Asset Summary` | Ativo<br/>nenhum | ![Marca de seleção](/help/assets/icons2/Checkmark.svg) | ![Marca de seleção](/help/assets/icons2/Checkmark.svg) | | | ![Marca de seleção](/help/assets/icons2/Checkmark.svg) | Desempenho diário no nível do ativo<br/>em seu contexto de anúncio/campanha<br/>sem detalhamento demográfico ou geográfico. |
 | `paidmedia_assets_demographics` <br/> `ad.asset.demographics`<br/>`\| Asset Demo` | Ativo<br/>idade, gênero | ![Marca de seleção](/help/assets/icons2/Checkmark.svg) | | | | | Desempenho diário no nível do ativo<br/>em seu contexto de anúncio/campanha<br/>detalhado por idade e sexo. |
 
-
 Essa tabela descreve a cobertura do conjunto de dados, não uma garantia de que uma rede específica preencha cada métrica ou campo de metadados. Verifique os campos necessários para a análise. Um campo indisponível ou um detalhamento não compatível não é o mesmo que um valor zero medido para um campo.
+
+O agrupamento de dados de resumo reúne dimensões equivalentes; o agrupamento não totaliza os seis totais de métricas de desempenho.
+
+## Conjuntos de dados de pesquisa
 
 Conjuntos de dados de pesquisa separados descrevem Conta, Campanha, Grupo de publicidade, Anúncio, Experiência e Ativo. Eles fornecem nomes e metadados usando GUIDs de entidade. Não existe emparelhamento um para um entre os conjuntos de dados de resumo e os seis conjuntos de dados de pesquisa.
 
-O agrupamento de dados de resumo reúne dimensões equivalentes; o agrupamento não totaliza os seis totais de métricas de desempenho.
+Os conjuntos de dados de pesquisa compartilham dois blocos de construção comuns:
+
+* **Objeto de IDs de entidade**: armazena objetos de conta, anúncio, grupo de anúncios, ativo, campanha e experiência. Cada objeto contém uma chave global gerada pela Adobe e uma ID nativa da plataforma.
+* **Metadados principais de mídia paga**: armazena campos descritivos comuns, como nome, status, objetivo, meta de otimização, estratégia de licitação, tipo de orçamento, valores de orçamento, moeda, fuso horário, status de veiculação, datas, rede de anúncios, canal, caminho de hierarquia, rede e identificadores de portfólio.
+
+| Conjunto de dados de pesquisa | Conteúdo principal |
+|---|---|
+| Pesquisa de conta | Metadados a nível de conta, como nome, moeda, fuso horário, status, limite de gastos e datas de criação |
+| Pesquisa de campanha | Configurações de campanha para orçamento, agendamento, direcionamento, rastreamento de conversão, atribuição, posicionamentos, objetos promovidos, objetivo e IDs de catálogo ou armazenamento |
+| Pesquisa de grupo de anúncios | Metadados do grupo de anúncios, como vinculação de campanha, status, orçamento, metas de otimização e direcionamento |
+| Pesquisa de anúncio | Adicionar detalhes criativos, como ativos, variantes, dimensões, URLs de rastreamento, call to action, corpo de texto, títulos, URL de destino, status do delivery e status de revisão |
+| Pesquisa de ativo | Propriedades de ativos, como dimensões, detalhes do arquivo, propriedades de imagem, URLs de mídia, metadados de uso, metadados de vídeo, descrição, subtipo, título e tipo |
+| Pesquisa de experiência | Agrupamentos criativos de nível de experiência, como ID de experiência, ativos, título, descrição e call to action |
+
 
 ## Componentes
 

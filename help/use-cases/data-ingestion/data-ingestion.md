@@ -9,30 +9,42 @@ autotag-review: '2026-05-19T11:01:56.579Z'
 TQID: 'https://experienceleague.adobe.com/Uqoyk9k3hEOB90hzLtXhoYtmfX18wmXPHp-AWxgNIwU'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: b3197353-f189-4932-8378-3f3bc40e6071
+    internal-label: Data management
   - id: d76b9e53-27fb-4597-933f-419cc0dd46db
+    internal-label: Administration
   - id: e75a4a9c-d354-4ca4-9b02-1afeca73fa5e
+    internal-label: Integrations
 subfeature_v2:
   - id: bfef374d-acfd-4c57-bf74-a2b36053c545
+    internal-label: Data ingestion
   - id: bf2b169f-d8b2-488a-97b9-f3bc9532e35c
+    internal-label: Use cases
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
+    internal-label: Customer journeys
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+    internal-label: Administration
+source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
 workflow-type: tm+mt
-source-wordcount: 827
+source-wordcount: '827'
 ht-degree: 86%
-
 ---
-
 # Opções de ingestão de dados para o Customer Journey Analytics
 
 Você tem várias opções quando se trata de assimilar dados no Customer Journey Analytics. Algumas delas presumem que você deseja mover os dados tradicionais do Adobe Analytics, outras presumem que você assimila dados diretamente da Adobe Experience Platform. Essa referência fornece etapas de alto nível que devem seguidas, com links para informações mais detalhadas.
@@ -50,9 +62,9 @@ Esse fluxo de trabalho utiliza o conector de origem do Analytics e varia depende
 
 ## Assimilar dados via Adobe Experience Platform Web SDK e Edge Network
 
-O [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=pt-BR) é uma biblioteca JavaScript do lado do cliente que permite que os clientes do Adobe CX Enterprise interajam com os vários serviços no CX Enterprise por meio do Adobe Experience Platform Edge Network.
+A [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=pt-BR) é uma biblioteca JavaScript do lado do cliente que permite aos clientes da Adobe CX Enterprise interagir com os vários serviços na CX Enterprise por meio da Adobe Experience Platform Edge Network.
 
-1. [Configure a extensão do Adobe Experience Platform Web SDK nas tags](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/sdk/overview.html?lang=pt-BR) para enviar dados para o CX Enterprise a partir das propriedades da Web, por meio do Adobe Experience Platform Edge Network.
+1. [Configure a extensão do Adobe Experience Platform Web SDK nas marcas](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/sdk/overview.html?lang=pt-BR) para enviar dados para o CX Enterprise pelas propriedades da Web, por meio do Adobe Experience Platform Edge Network.
 1. Use o [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-getting-started.html?lang=pt-BR) para criar uma ou mais [conexões](/help/connections/create-connection.md) e [visualizações de dados](/help/data-views/data-views.md) que informarão seu relatórios entre canais.
 
 ## Assimilar dados com ingestão em lote e ingestão de transmissão
