@@ -4,24 +4,28 @@ title: Filtrar segmentos
 feature: Filters, Segments
 exl-id: 25e617da-8249-4332-970a-c2ef00bf42e3
 role: User
-TQID: https://experienceleague.adobe.com/Xyft76mCwW-VD9zI6rUDbbGDTnbAsd55hjLQjdhyje0
+TQID: 'https://experienceleague.adobe.com/Xyft76mCwW-VD9zI6rUDbbGDTnbAsd55hjLQjdhyje0'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: bcaa1b08-8269-4ff3-a0c2-f599783b6107
+    internal-label: Filters
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: User
+source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
 workflow-type: tm+mt
-source-wordcount: 168
+source-wordcount: '168'
 ht-degree: 29%
-
 ---
-
 # Filtrar a lista de segmentos
 
 Você pode filtrar a lista de segmentos. Usar um filtro em segmentos facilita a localização dos segmentos que estão disponíveis para você e o gerenciamento de segmentos no [Gerenciador de segmentos](seg-manage.md).

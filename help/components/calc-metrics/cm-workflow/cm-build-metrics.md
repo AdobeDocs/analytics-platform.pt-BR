@@ -3,29 +3,37 @@ description: Saiba mais sobre o construtor de métricas calculadas que fornece u
 title: Criar métricas
 feature: Calculated Metrics
 exl-id: 4d03a51d-c676-483c-98e2-d7283e8d71b0
-TQID: https://experienceleague.adobe.com/ilqzP7cMRQqi7-zoylBlfYGv-mgRqbC-66utGrNVFdY
+TQID: 'https://experienceleague.adobe.com/ilqzP7cMRQqi7-zoylBlfYGv-mgRqbC-66utGrNVFdY'
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: b1f5d324-a668-4e51-a59b-6fc0862d7310
+    internal-label: Metrics
   - id: bc7a5a86-1a70-451f-985c-037b65f091d1
+    internal-label: Segments
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
+    internal-label: Dimensions
   - id: e44e560d-5e5c-4a5f-9a87-eb8adbb817af
+    internal-label: Calculated metrics
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Experimentation
+source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
 workflow-type: tm+mt
-source-wordcount: 1693
+source-wordcount: '1699'
 ht-degree: 93%
-
 ---
-
 # Criar métricas calculadas {#build-metrics}
 
 >[!CONTEXTUALHELP]
@@ -84,8 +92,8 @@ A caixa de diálogo **[!UICONTROL Criador de métricas calculadas]** é usada pa
    A **[!UICONTROL Compatibilidade do produto]** indica se a métrica calculada pode ser usada em experimentação e exportação de tabela completa. Os valores possíveis são:
    * **[!UICONTROL Em qualquer lugar do Customer Journey Analytics]**: a métrica calculada pode ser usada em todo o Customer Journey Analytics.
    * **[!UICONTROL Não compatível em:]**
-      * **[!UICONTROL Experimentação]**: a métrica calculada pode ser usada em todo o Customer Journey Analytics, exceto no painel Experimentação.
-      * **[!UICONTROL Exportação de tabela completa]**: a métrica calculada pode ser usada em todo o Customer Journey Analytics, exceto ao exportar tabelas completas do Workspace. Nem todas as funções são suportadas ao exportar tabelas completas. Se precisar que a métrica calculada seja incluída ao exportar tabelas completas, use uma função compatível. Para obter mais informações, consulte [Funções de métrica calculada sem suporte](/help/analysis-workspace/export/export-cloud.md#unsupported-calculated-metric-functions) em [Exportar tabelas completas para a nuvem](/help/analysis-workspace/export/export-cloud.md).
+     * **[!UICONTROL Experimentação]**: a métrica calculada pode ser usada em todo o Customer Journey Analytics, exceto no painel Experimentação.
+     * **[!UICONTROL Exportação de tabela completa]**: a métrica calculada pode ser usada em todo o Customer Journey Analytics, exceto ao exportar tabelas completas do Workspace. Nem todas as funções são suportadas ao exportar tabelas completas. Se precisar que a métrica calculada seja incluída ao exportar tabelas completas, use uma função compatível. Para obter mais informações, consulte [Funções de métrica calculada sem suporte](/help/analysis-workspace/export/export-cloud.md#unsupported-calculated-metric-functions) em [Exportar tabelas completas para a nuvem](/help/analysis-workspace/export/export-cloud.md).
 
 1. Selecione:
    * Clique em **[!UICONTROL Salvar]** para salvar a métrica calculada.
@@ -155,22 +163,22 @@ Use o conceito de um container de segmento para criar uma [métrica segmentada]
 
 * Para adicionar um container de segmento a partir de uma dimensão:
 
-   1. Arraste e solte um componente ![Dimensões](/help/assets/icons/Dimensions.svg) **[!UICONTROL Dimensões]** do painel de componentes para **[!UICONTROL Arraste e solte métricas, dimensões, itens de dimensão, segmentos e/ou funções aqui]**. Você pode usar a ![Pesquisa](/help/assets/icons/Search.svg) na barra de componentes para procurar componentes específicos.
-   1. No pop-up **[!UICONTROL Criar segmento a partir da dimensão]**, defina a condição para o segmento. Selecione um valor na lista de operadores ou insira um valor. Por exemplo, **[!UICONTROL Mês]** **[!UICONTROL é igual a]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) `Sep 2024`.
-   1. Selecione **[!UICONTROL Concluído]**. Um container de segmento é adicionado à **[!UICONTROL Definição]**.
+  1. Arraste e solte um componente ![Dimensões](/help/assets/icons/Dimensions.svg) **[!UICONTROL Dimensões]** do painel de componentes para **[!UICONTROL Arraste e solte métricas, dimensões, itens de dimensão, segmentos e/ou funções aqui]**. Você pode usar a ![Pesquisa](/help/assets/icons/Search.svg) na barra de componentes para procurar componentes específicos.
+  1. No pop-up **[!UICONTROL Criar segmento a partir da dimensão]**, defina a condição para o segmento. Selecione um valor na lista de operadores ou insira um valor. Por exemplo, **[!UICONTROL Mês]** **[!UICONTROL é igual a]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) `Sep 2024`.
+  1. Selecione **[!UICONTROL Concluído]**. Um container de segmento é adicionado à **[!UICONTROL Definição]**.
 
 
 * Para adicionar um container de segmento a partir de um segmento, é possível usar:
 
-   * Arraste e solte um componente ![Segmentação](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segmentos]** do painel de componentes para **[!UICONTROL Arraste e solte métricas, dimensões, itens de dimensão, segmentos e/ou funções aqui]**. Você pode usar a ![Pesquisa](/help/assets/icons/Search.svg) na barra de componentes para pesquisar segmentos específicos.
-Isso adiciona automaticamente um container de segmento à **[!UICONTROL Definição]** usando o nome do segmento.
+  * Arraste e solte um componente ![Segmentação](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segmentos]** do painel de componentes para **[!UICONTROL Arraste e solte métricas, dimensões, itens de dimensão, segmentos e/ou funções aqui]**. Você pode usar a ![Pesquisa](/help/assets/icons/Search.svg) na barra de componentes para pesquisar segmentos específicos.
+    Isso adiciona automaticamente um container de segmento à **[!UICONTROL Definição]** usando o nome do segmento.
 
-   * Arraste e solte um componente de ![Segmentação](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segmento]** do painel de componentes em um container genérico. O container será transformado em um container de segmento.
+  * Arraste e solte um componente de ![Segmentação](/help/assets/icons/Segmentation.svg) **[!UICONTROL Segmento]** do painel de componentes em um container genérico. O container será transformado em um container de segmento.
 
-   * Selecione ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Adicionar]** de dentro de um container:
+  * Selecione ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Adicionar]** de dentro de um container:
 
-      1. Selecione **[!UICONTROL Segmento]**. Um container de segmento é adicionado à **[!UICONTROL Definição]**.
-      1. No novo container de segmento, selecione um segmento no menu suspenso [!UICONTROL *Selecionar...*].
+    1. Selecione **[!UICONTROL Segmento]**. Um container de segmento é adicionado à **[!UICONTROL Definição]**.
+    1. No novo container de segmento, selecione um segmento no menu suspenso [!UICONTROL *Selecionar...*].
 
   >[!TIP]
   >
@@ -190,13 +198,13 @@ Para adicionar um container de função, é possível usar:
 
 * Arrastar e soltar:
 
-   1. Arraste e solte um componente ![Função](/help/assets/icons/Effect.svg) **[!UICONTROL Funções]** do painel de componentes para **[!UICONTROL Arraste e solte métricas, dimensões, itens de dimensão, segmentos e/ou funções aqui]**. Você pode usar a ![Pesquisa](/help/assets/icons/Search.svg) na barra de componentes para procurar funções específicas.
-   1. Automaticamente, um container de função é adicionado à **[!UICONTROL Definição]** usando o nome da função.
+  1. Arraste e solte um componente ![Função](/help/assets/icons/Effect.svg) **[!UICONTROL Funções]** do painel de componentes para **[!UICONTROL Arraste e solte métricas, dimensões, itens de dimensão, segmentos e/ou funções aqui]**. Você pode usar a ![Pesquisa](/help/assets/icons/Search.svg) na barra de componentes para procurar funções específicas.
+  1. Automaticamente, um container de função é adicionado à **[!UICONTROL Definição]** usando o nome da função.
 
 * Selecione ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Adicionar]** em um container:
 
-   1. Selecione **[!UICONTROL Função]**.
-   1. No container, selecione uma função no menu suspenso [!UICONTROL *Selecionar...*].
+  1. Selecione **[!UICONTROL Função]**.
+  1. No container, selecione uma função no menu suspenso [!UICONTROL *Selecionar...*].
 
 O container de função recebe o nome do componente de função. Por exemplo, ![Função](/help/assets/icons/Effect.svg) **[!UICONTROL SQUARE ROOT (metric)]**. Selecione ![InfoOutline](/help/assets/icons/InfoOutline.svg) para exibir uma janela pop-up com detalhes sobre a função. Escolha **[!UICONTROL Saiba mais]** para obter mais informações sobre a função.
 
@@ -218,5 +226,5 @@ Para excluir um container, selecione ![Fechar](/help/assets/icons/Close.svg) no 
 >[!MORELIKETHIS]
 >
 >[Usar funções](cm-using-functions.md)
->[Segmentos &#x200B;](/help/components/segments/seg-overview.md)
+>[Segmentos ](/help/components/segments/seg-overview.md)
 >

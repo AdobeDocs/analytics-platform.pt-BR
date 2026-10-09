@@ -13,6 +13,8 @@ feature_v2:
     internal-label: Components
   - id: d76b9e53-27fb-4597-933f-419cc0dd46db
     internal-label: Administration
+  - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
 subfeature_v2:
   - id: df7fb1db-aa1b-4314-98ac-59dbfcc3044f
     internal-label: Dimensions
@@ -28,7 +30,7 @@ topic_v2:
     internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
 workflow-type: tm+mt
 source-wordcount: '704'
 ht-degree: 2%
@@ -88,7 +90,7 @@ O GA4 coleta automaticamente um conjunto de eventos por meio de sua SDK. A tabel
 
 No GA4, os eventos personalizados têm um nome e até 25 parâmetros. No Customer Journey Analytics, os eventos personalizados são mapeados para campos de esquema XDM personalizados definidos durante a implementação:
 
-* O **nome do evento** torna-se um valor de campo em um campo XDM (normalmente [`xdm.eventType`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/classes/experienceevent)).
+* O **nome do evento** torna-se um valor de campo em um campo XDM (normalmente [`xdm.eventType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/classes/experienceevent)).
 * Cada **parâmetro** torna-se um campo de esquema XDM separado. Qualquer campo XDM pode ser exposto como uma dimensão ou métrica ao [configurar uma visualização de dados](/help/data-views/component-settings/overview.md).
 
 >[!NOTE]
