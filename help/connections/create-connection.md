@@ -36,7 +36,7 @@ topic_v2:
 source-git-commit: cc31e50f01da63eaf1e7b6eb8465d187485b7816
 workflow-type: tm+mt
 source-wordcount: '10677'
-ht-degree: 89%
+ht-degree: 90%
 ---
 # Criar ou editar uma conexão {#create-or-edit-a-connection}
 
@@ -732,8 +732,8 @@ Todos os conjuntos de dados e tipos de conjunto de dados possuem [configuraçõe
 
 >[!CONTEXTUALHELP]
 >id="connection_eventdataset_rowfilter"
->title="Habilitar filtragem de linha"
->abstract="Os filtros de linha determinam quais eventos são assimilados na Customer Journey Analytics. Somente os eventos que correspondem às regras de inclusão são assimilados. Todos os outros eventos serão excluídos permanentemente e não estarão disponíveis para relatórios, segmentação ou análise no Customer Journey Analytics.<ul><li>É possível criar até 10 filtros.</li><li> As alterações nos filtros se aplicam somente aos novos dados assimilados após a alteração e não afetam retroativamente os dados assimilados anteriormente nem acionam um preenchimento retroativo histórico.</li></ul>"
+>title="Habilitar filtragem de linhas"
+>abstract="Os filtros de linhas determinam quais eventos são ingeridos no Customer Journey Analytics. Somente os eventos que correspondem às regras de inclusão são ingeridos. Todos os outros eventos serão excluídos permanentemente e não estarão disponíveis para relatórios, segmentação ou análise no Customer Journey Analytics.<ul><li>Você pode criar até 10 filtros.</li><li> As alterações nos filtros se aplicam somente aos novos dados ingeridos após a alteração e não afetam retroativamente os dados ingeridos anteriormente nem acionam um preenchimento retroativo histórico.</li></ul>"
 
 >[!CONTEXTUALHELP]
 >id="connection_eventdataset_rowfilter_field"

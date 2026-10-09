@@ -20,7 +20,7 @@ role_v2:
 source-git-commit: 32dfb7790f57293ea297bdcb8319c3d3b187a2ae
 workflow-type: tm+mt
 source-wordcount: '1336'
-ht-degree: 0%
+ht-degree: 5%
 ---
 
 # Usar resultados em cache em projetos do Workspace
@@ -28,7 +28,7 @@ ht-degree: 0%
 >[!CONTEXTUALHELP]
 >id="project_cached_results"
 >title="Usar resultados em cache para um carregamento mais rápido"
->abstract="Quando ativado, os resultados são carregados instantaneamente por 12 horas após um projeto ser aberto pela primeira vez por um usuário ou entregue por um agendamento. Qualquer pessoa que abrir o projeto durante esse período verá os mesmos resultados, mesmo que os dados continuem a fluir em segundo plano. Para carregar os resultados mais recentes, atualize os painéis individuais ou o projeto inteiro."
+>abstract="Quando habilitado, os resultados são carregados instantaneamente por 12 horas após um projeto ser aberto pela primeira vez por um usuário ou entregue por um agendamento. Qualquer pessoa que abrir o projeto durante esse período verá os mesmos resultados, mesmo que os dados continuem a fluir em segundo plano. Para carregar os resultados mais recentes, atualize os painéis individuais ou o projeto inteiro."
 
 {{release-limited-testing}}
 

@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
+source-git-commit: d7614102d54af57a3a084c8550041f8e04f4bc37
 workflow-type: tm+mt
-source-wordcount: '4244'
-ht-degree: 30%
+source-wordcount: '3881'
+ht-degree: 12%
 ---
 # Criar um feed de dados
 
@@ -68,27 +68,9 @@ Antes de criar um feed de dados, é importante ter uma compreensão básica dos 
 <!-- markdownlint-disable MD034 -->
 
 >[!CONTEXTUALHELP]
->id="cja_datafeed_processing_delay"
->title="Atraso no processamento"
->abstract="O tempo de espera por eventos que chegam com atraso antes do processamento de um arquivo de feed de dados. Quaisquer ocorrências que chegaram com atraso durante o período de atraso no processamento serão incluídos no feed de dados. <p>Atrasos no processamento são úteis por vários motivos, por exemplo, para dar às implementações móveis uma oportunidade para que os dispositivos offline fiquem online e enviem dados ou para acomodar os processos do lado do servidor da organização no gerenciamento de arquivos processados anteriormente.</p><p>As sessões devem começar após o limite do atraso no processamento para serem incluídas; as sessões que começam antes do limite e terminam dentro do atraso no processamento não são incluídas.</p><p>O Customer Journey Analytics determina dinamicamente o atraso ideal com base no tempo que os eventos recebidos com atraso normalmente levam para chegar até o seu feed, mas você pode definir manualmente o atraso para 2, 3, 4 ou 8 horas.</p>"
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja_datafeed_user-agent"
->title=""
->abstract="Os dados do agente do usuário e os dados de pesquisa de dispositivos não podem coexistir na mesma configuração de feed de dados."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja_datafeed_required_dimensions"
->title="Dimensões obrigatórias"
->abstract="Todo feed de dados deve incluir determinadas dimensões, identificadas por um rótulo **Obrigatório** ao lado do nome da dimensão. Essas dimensões fornecem a estrutura mínima necessária para a análise no nível do evento."
+>id="cja_datafeed_frequency_granularity"
+>title="Frequência e granularidade"
+>abstract="**Frequência de entrega** (feeds em tempo real): a frequência com que o feed de dados é entregue. As entregas por hora contêm dados de uma hora; as entregas diárias contêm dados de um dia. O intervalo de datas da retrospectiva e o atraso de processamento também podem afetar os eventos incluídos.<p>**Granularidade** (feeds de preenchimento retroativo): o intervalo de tempo usado para dividir os dados históricos. Cada bloco contém os dados de um dia e é entregue o mais rápido possível, não uma vez por dia. Este campo é sempre definido como Diário e não pode ser modificado.</p>"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -147,156 +129,7 @@ Antes de criar um feed de dados, é importante ter uma compreensão básica dos 
 
    <!--add screenshot-->
 
-   +++ Dimensões que são sempre incluídas nos feeds de dados
-
-   As seguintes dimensões são incluídas por padrão em todos os feeds de dados e não podem ser removidas:
-
-   | Nome da dimensão | Notas | Feeds de dados | Outros relatórios |
-   |---|---|---|---|
-   | Carimbo de data e hora UTC | A data e a hora em que o evento ocorreu, representadas no fuso horário UTC. Suporta granularidade de subsegundos (microssegundos). | Obrigatório | Não disponível |
-   | ID da linha | O identificador exclusivo de cada linha incluída no feed de dados. | Obrigatório | Não disponível |
-   | ID da sessão | O identificador exclusivo para cada sessão incluído no feed de dados. | Obrigatório | Não disponível |
-   | ID da pessoa | O identificador de pessoa para a visualização de dados e a conexão | Obrigatório | Padrão opcional |
-   | ID da conta [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | ID da conta ao usar o contêiner Conta | Obrigatório | Padrão opcional |
-
-   +++
-
-   +++ Dimensões que não podem ser incluídas nos feeds de dados
-
-   As dimensões padrão do Customer Journey Analytics não podem ser incluídas nos feeds de dados. A tabela a seguir lista essas dimensões:
-
-   | Nome da dimensão | Notas | Feeds de dados |
-   |---|---|---|
-   | 5 minutos | Intervalos de cinco minutos quando os eventos ocorreram (arredondados para baixo) | Não disponível |
-   | 15 minutos | Intervalos de 15 minutos quando os eventos ocorreram (arredondados para baixo) | Não disponível |
-   | 30 minutos | Intervalos de trinta minutos quando os eventos ocorreram (arredondados para baixo) | Não disponível |
-   | Dia | Dia em que um evento ocorreu | Não disponível |
-   | Dia da semana | Dia da semana em que um evento ocorreu | Não disponível |
-   | Dia do mês | Dia do mês em que um evento ocorreu | Não disponível |
-   | Hora | Hora em que um evento ocorreu (arredondada para baixo) | Não disponível |
-   | Hora do dia | Hora do dia em que um evento ocorreu (arredondada para baixo) | Não disponível |
-   | Minuto | Minuto em que um evento ocorreu (arredondado para baixo) | Não disponível |
-   | Minuto da hora | Minuto da hora em que um evento ocorreu (arredondado para baixo) | Não disponível |
-   | Mês | Mês em que um evento ocorreu | Não disponível |
-   | Mês do ano | Mês do ano em que um evento ocorreu | Não disponível |
-   | Trimestre | Trimestre em que ocorreu um evento | Não disponível |
-   | Trimestre do ano | Trimestre do ano em que um evento ocorreu | Não disponível |
-   | Second | Segundo em que ocorreu um evento (arredondado para baixo) | Não disponível |
-   | Semana | Semana em que um evento ocorreu | Não disponível |
-   | Semana do ano | Semana do ano em que um evento ocorreu | Não disponível |
-   | Ano | Ano em que um evento ocorreu | Não disponível |
-
-   +++
-
-   +++ Métricas que não podem ser incluídas nos feeds de dados
-
-   As seguintes métricas padrão do Customer Journey Analytics não podem ser incluídas nos feeds de dados:
-
-   | Nome da métrica | Notas | Feeds de dados |
-   |---|---|---|
-   | Perfil de visitantes do Adobe | | Não disponível |
-   | União de oportunidades da Adobe | | Não disponível |
-   | Perfil de oportunidades da Adobe | | Não disponível |
-   | União de contas do Adobe | | Não disponível |
-   | Perfil de contas do Adobe | | Não disponível |
-   | União de grupos de compra da Adobe | | Não disponível |
-   | Perfil de grupos de compra da Adobe | | Não disponível |
-   | União de contas globais da Adobe | | Não disponível |
-   | Perfil de contas globais da Adobe | | Não disponível |
-   | União de pessoas da Adobe | | Não disponível |
-   | Perfil de pessoas da Adobe | | Não disponível |
-
-   +++
-
-   +++ Dimensões que não podem ser usadas juntas nos feeds de dados
-
-   >[!IMPORTANT]
-   >
-   >Determinadas dimensões não podem ser usadas juntas em conjuntos de dados do Experience Platform e, portanto, não podem ser incluídas no mesmo feed de dados.
-   >
-   >Se você optar por incluir as dimensões **Agente do Usuário** ou **ID do Mobile** no feed de dados, as dimensões listadas abaixo não poderão ser adicionadas ao feed de dados.
-   >
-   >Se você usar o Web SDK, essa restrição será imposta nos fluxos de dados antes que os dados cheguem a um conjunto de dados do Experience Platform. Para obter mais informações, consulte [Configurar pesquisa de dispositivo](https://experienceleague.adobe.com/pt-br/docs/experience-platform/datastreams/configure#geolocation-device-lookup) em [Criar e configurar sequências de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/datastreams/configure) no guia Coleção de dados.
-
-   As seguintes dimensões não podem ser usadas junto com as dimensões **Agente de Usuário** ou **ID de Dispositivo Móvel**:
-
-   * Tipo de navegador
-   * Navegador
-   * Fabricante do dispositivo móvel
-   * Tipo de dispositivo móvel
-   * Suporte a Áudio Remoto
-   * DRM Remoto
-   * Java VM Móvel
-   * Serviços de Informação Remotos
-   * Suporte a Imagem Remota
-   * Intensidade de Cor Remota
-   * Protocolos de Rede Remota
-   * Número do dispositivo móvel
-   * Extensão máx. de email móvel
-   * Decoração de correio para dispositivo móvel
-   * Push To Talk para dispositivo móvel
-   * Largura da tela do dispositivo móvel
-   * Extensão máx. do URL do navegador para dispositivo móvel
-   * Sistema operacional de dispositivos móveis (descontinuado)
-   * Altura da tela do dispositivo móvel
-   * Suporte a Vídeo Remoto
-   * Suporte a Cookie Remoto
-   * Extensão max do marcador de dispositivo móvel
-   * Tamanho da tela do dispositivo móvel
-   * Nome do dispositivo móvel
-   * Tipos de sistema operacional
-   * Sistemas operacionais
-
-   +++
-
-   +++ Métricas que devem ser substituídas nos feeds de dados
-
-   As seguintes métricas do Customer Journey Analytics devem ser substituídas:
-
-   | Nome da métrica | Notas | Feeds de dados |
-   |---|---|---|
-   | Contas [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Com base na ID de conta especificada na conexão | Não disponível. Use a contagem distinta da ID da conta. |
-   | Grupo de compras [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Grupos de compras com base na ID do grupo de compras na conexão | Não disponível. Use a contagem distinta da ID do grupo de compra. |
-   | Eventos | Número de linhas de todos os conjuntos de dados de eventos em uma conexão | Não disponível. Use a contagem distinta da ID de linha. |
-   | Contas globais [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Com base na ID de contas globais na conexão | Não disponível. Use a contagem distinta da ID de contas globais. |
-   | Oportunidades [!BADGE B2B Edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Oportunidades baseadas na ID de oportunidade na conexão | Não disponível. Use a contagem distinta da ID de oportunidade. |
-   | Pessoas | Com base na ID de pessoa especificada em uma conexão | Não disponível. Use a contagem distinta da ID de pessoa. |
-   | Conversas | Número de conversas | Não disponível. Use a contagem distinta da ID de conversa. |
-   | Término da sessão | Número de eventos que foram o último evento de uma sessão | Não disponível |
-   | Início da sessão | Número de eventos que foram o primeiro evento de uma sessão | Não disponível |
-   | Sessões | Com base nas configurações de sessão da visualização de dados | Não disponível. Use a contagem distinta da ID da sessão. |
-   | Tempo gasto (segundos) | Soma o tempo entre dois valores de dimensão diferentes | Não disponível |
-
-   +++
-
-   +++ Componentes padrão opcionais
-
-   | Nome do componente | Tipo | Notas | Feeds de dados |
-   |---|---|---|---|
-   | AM/PM | Dimensão de separação de tempo | AM ou PM | Não disponível |
-   | ID do lote | Dimensão | Identificador para um lote do Experience Platform | Disponível |
-   | ID do conjunto de dados | Dimensão | Identificador para um conjunto de dados da Experience Platform | Disponível |
-   | Dia do mês | Dimensão de separação de tempo | 1-31 | Não disponível |
-   | Dia da semana | Dimensão de separação de tempo | de segunda a domingo | Não disponível |
-   | Dia do ano | Dimensão de separação de tempo | 1-366 | Não disponível |
-   | Profundidade do evento | Dimensão | Valor numérico sequencial (1, 2, 3, etc.) atribuído a cada interação de evento em uma sessão<p>Redefine no início de cada nova sessão</p> | Disponível |
-   | Hora do dia | Dimensão de separação de tempo | 0-23 | Não disponível |
-   | Mês do ano | Dimensão de separação de tempo | Janeiro-dezembro | Não disponível |
-   | Primeiras sessões | Métrica | A primeira sessão definida de uma pessoa na janela de relatórios | Não disponível |
-   | Sessões de retorno | Métrica | Sessões que não foram a primeira sessão de uma pessoa | Não disponível |
-   | Namespace da ID de pessoa | Dimensão | Tipo de ID no qual a ID de pessoa consiste (por exemplo, ID de email ou cookie) | Disponível |
-   | ID da Conta Global [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Dimensão | ID da conta global ao usar o contêiner da conta global | Disponível |
-   | ID da oportunidade [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Dimensão | ID da oportunidade ao usar o contêiner Oportunidade | Disponível |
-   | ID do Grupo de Compras [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} | Dimensão | ID do Grupo de compra ao usar o contêiner Grupo de compra | Disponível |
-   | Trimestre do ano | Dimensão de separação de tempo | T1, T2, T3, T4 | Não disponível |
-   | Repetir sessão | Métrica | Sessões que não foram a primeira sessão de uma pessoa | Não disponível |
-   | Tipo de sessão | Dimensão | Dois valores: Primeira Vez ou Retorno | Não disponível |
-   | Tempo gasto por evento | Dimensão | Segmenta a métrica Tempo gasto em segmentos de evento | Não disponível |
-   | Tempo gasto por sessão | Dimensão | Segmenta a métrica Tempo gasto em segmentos de sessão | Não disponível |
-   | Tempo gasto por pessoa | Dimensão | Segmenta a métrica Tempo gasto em segmentos de pessoa | Não disponível |
-   | Final de semana/Dia de semana | Dimensão de separação de tempo | Final de semana ou Dia de semana | Não disponível |
-
-   +++
+   Alguns componentes são obrigatórios, não são compatíveis ou têm restrições nos feeds de dados. Para obter detalhes, consulte [Disponibilidade de componentes em feeds de dados](/help/components/exports/cja-data-feeds/df-components.md).
 
 1. (Opcional) Reordene os componentes na tela arrastando-os. A ordem definida é preservada como a ordem das colunas no arquivo de feed de dados exportado.
 
@@ -330,9 +163,10 @@ Antes de criar um feed de dados, é importante ter uma compreensão básica dos 
    | [!UICONTROL **Data de início**] | A data em que o feed de dados começa. Para feeds ao vivo, isso deve ser hoje ou uma data futura. Para feeds de preenchimento retroativo, essa deve ser uma data passada na janela de retenção de dados da visualização de dados. A data de início é baseada no fuso horário da visualização de dados. |
    | [!UICONTROL **Data de expiração**] <br/>Disponível somente para feeds em tempo real | A data em que o feed de dados expira e não é mais executado. A data é baseada no fuso horário da visualização de dados. |
    | [!UICONTROL **Data final**]<br/> Disponível somente para feeds de preenchimento retroativo | A data em que o feed de dados termina. A data final não pode ser no futuro. A data é baseada no fuso horário da visualização de dados. |
-   | [!UICONTROL **Frequência**] | Selecione a frequência com que o feed de dados deve ser enviado. Eventos com carimbos de data e hora que caem na janela de frequência são incluídos na entrega do feed de dados. Os campos [!UICONTROL **Intervalo de datas de retrospectiva**] e [!UICONTROL **Atraso de processamento**] também podem afetar quais eventos são incluídos nos dados para a frequência de entrega escolhida.<p>Para feeds ao vivo, selecione para incluir uma hora de dados ou um dia de dados. Para feeds de preenchimento retroativo, este campo está bloqueado para **Diariamente**, o que significa que os dados são agrupados em partes diárias.</p><ul><li>**Diariamente**: os feeds contêm dados de um dia inteiro, da meia-noite a meia-noite no fuso horário da visualização de dados. <p>Essa opção é necessária para feeds de preenchimento retroativo e é opcional para feeds em tempo real.</p></li><li>**Por hora**: os feeds contêm dados de uma hora. <p>Essa opção está disponível somente para feeds em tempo real.</p></li></ul> |
-   | [!UICONTROL **Intervalo de datas de retrospectiva**] | Controla até que data o Customer Journey Analytics analisa ao processar a entrega do feed de dados. O padrão é 30 dias.<p>A janela de frequência (hora ou dia) determina quais eventos são incluídos no feed de dados, enquanto o **intervalo de datas da retrospectiva** fornece o contexto histórico necessário para classificar esses eventos corretamente.</p><p>Qualificação de segmento, persistência de dimensão, cálculo de sessão e transformações de campo derivado podem afetar os eventos incluídos.</p> <p>Antes de configurar esta opção, veja os detalhes e os exemplos descritos na seção abaixo, [Entenda o intervalo de datas da retrospectiva](#understand-the-lookback-date-range).</p> |
-   | [!UICONTROL **Atraso no processamento**] | Escolha o tempo de espera antes do processamento de um arquivo de feed de dados. O padrão é 2 horas. Todos os eventos de chegada tardia que chegam durante o atraso de processamento são incluídos no feed de dados. <p>Atrasos no processamento são úteis por vários motivos, por exemplo, para dar às implementações móveis uma oportunidade para que os dispositivos offline fiquem online e enviem dados ou para acomodar os processos do lado do servidor da organização no gerenciamento de arquivos processados anteriormente. </p><p>As sessões devem começar após o limite do atraso no processamento para serem incluídas; as sessões que começam antes do limite e terminam dentro do atraso no processamento não são incluídas.</p><p>O Customer Journey Analytics determina dinamicamente o atraso ideal com base no tempo que os eventos recebidos com atraso normalmente levam para chegar até o seu feed, mas você pode definir manualmente o atraso para 2, 3, 4 ou 8 horas.</p> |
+   | [!UICONTROL **Frequência**]<br/> Disponível somente para feeds em tempo real | Selecione a frequência com que o feed de dados deve ser enviado. Eventos com carimbos de data e hora que caem na janela de frequência são incluídos na entrega do feed de dados. Os campos [!UICONTROL **Intervalo de datas de retrospectiva**] e [!UICONTROL **Atraso de processamento**] também podem afetar quais eventos são incluídos nos dados para a frequência de entrega escolhida.<p>Selecione para incluir dados de uma hora ou de um dia.</p><ul><li>**Diariamente**: os feeds contêm dados de um dia inteiro, da meia-noite a meia-noite no fuso horário da visualização de dados.</li><li>**Por hora**: os feeds contêm dados de uma hora.</li></ul> |
+   | [!UICONTROL **Granularidade**]<br/> Disponível somente para feeds de preenchimento retroativo | O intervalo de tempo usado para dividir os dados históricos em partes. Cada bloco contém dados de um dia inteiro, da meia-noite à meia-noite no fuso horário da visualização de dados. <p>A granularidade determina como os dados são agrupados, não com que frequência são entregues. Os dados de preenchimento retroativo são entregues o mais rápido possível, não uma vez por dia.</p><p>Este campo é sempre definido como [!UICONTROL **Diariamente**] e não pode ser modificado.</p> |
+   | [!UICONTROL **Intervalo de datas de retrospectiva**] | Controla até que data o Customer Journey Analytics analisa ao processar a entrega do feed de dados. O padrão é 30 dias.<p>A janela de frequência (hora ou dia) determina quais eventos são incluídos no feed de dados, enquanto o **intervalo de datas da retrospectiva** fornece o contexto histórico necessário para classificar esses eventos corretamente.</p><p>Qualificação de segmento, persistência de dimensão, cálculo de sessão e transformações de campo derivado podem afetar os eventos incluídos.</p> <p>Antes de configurar esta opção, veja os detalhes e os exemplos descritos na seção abaixo, [Entenda o intervalo de datas da retrospectiva](#data-feed-lookback-date-range).</p> |
+   | [!UICONTROL **Atraso no processamento**] | Escolha o tempo que o Customer Journey Analytics aguarda antes de processar um arquivo de feed de dados. Todos os eventos de chegada tardia que chegam durante o atraso de processamento são incluídos no feed de dados. <p>O atraso mínimo de processamento é de 2 horas, mas alguns tipos de dados exigem um atraso mais longo. O atraso escolhido depende dos tipos de dados em sua conexão, como transmissão, lote, compilado, pesquisa ou dados de perfil.</p><p>Escolha um atraso suficientemente longo para que os dados mais lentos da conexão terminem o processamento. Se o atraso for muito curto, os dados que ainda estão sendo processados não serão incluídos no arquivo de feed de dados.</p><p>Antes de configurar esta opção, veja os detalhes e os exemplos descritos na seção abaixo, [Entenda o atraso de processamento](#data-feed-processing-delay).</p> |
    | [!UICONTROL **Formato de compactação**] | Selecione o formato de compactação dos arquivos de saída do Parquet entregues ao destino da nuvem. Escolha entre os seguintes formatos:<ul><li>[!UICONTROL **Snappy**]: compactação e descompactação rápidas com tamanhos de arquivo moderados. Amplamente compatível com plataformas de dados modernas, como BigQuery, Snowflake e Apache Spark.</li><li>[!UICONTROL **GZip**]: amplamente compatível, inclusive com ferramentas que não oferecem suporte nativo ao Snappy. Recomendado se o pipeline downstream exigir um padrão de compactação amplamente reconhecido.</li><li>[!UICONTROL **Z Padrão (Zstd)**]: alta eficiência de compactação com descompactação rápida. Adequado se minimizar o tamanho do arquivo é uma prioridade e suas ferramentas suportam Zstd.</li></ul> |
 
 1. Na guia [!UICONTROL **Entrega**], na seção [!UICONTROL **Destino**], configure o destino para onde deseja que os dados sejam enviados.
@@ -405,7 +239,14 @@ Nesse caso, os usuários são incluídos no feed de dados somente se atenderem *
 
 ### Cálculo de sessão
 
-Os limites da sessão são calculados usando dados dentro do intervalo de datas da retrospectiva. <!--Maybe this matters more regarding what the session ID is? Could it impact the Session ID? This could impact several factors, such as session-based persistence.-->
+Os limites da sessão são calculados usando todos os eventos no intervalo de datas de retrospectiva, não apenas os eventos na janela de entrega. Uma sessão iniciada antes da janela de entrega ainda é reconhecida como a mesma sessão.
+
+A ID da sessão é baseada na pessoa, na hora de início da sessão e nas configurações da sessão na visualização de dados. Uma sessão mantém a mesma ID de sessão em todos os deliveries, para que você possa ingressar em eventos de uma sessão que abrange vários deliveries por hora ou por dia.
+
+Leve em consideração o seguinte ao trabalhar com sessões em feeds de dados:
+
+* Se uma sessão começou antes do intervalo de datas da retrospectiva, seus eventos anteriores não estarão disponíveis, portanto, os valores da sessão podem ser diferentes do Analysis Workspace. Para obter mais informações, consulte [Entender as discrepâncias de dados entre os feeds de dados e o Analysis Workspace](/help/components/exports/cja-data-feeds/df-comparison-workspace.md).
+* A alteração das configurações de sessão na visualização de dados altera as IDs de sessão. As IDs de sessão em deliveries posteriores não corresponderão às IDs de sessão em deliveries anteriores.
 
 ### Persistência do Dimension
 
@@ -442,5 +283,84 @@ Nesse caso, a campanha original é exibida na saída do feed de dados somente se
 
 Quaisquer funções de campo derivadas que fazem referência a contêineres usam o intervalo de datas de retrospectiva nas exportações de feed de dados. Quais recursos de data existem em campos derivados? <!--Not sure how this applies.-->
 
+## Entender o atraso de processamento {#data-feed-processing-delay}
+
+<!-- markdownlint-disable MD034 -->
+
+>[!CONTEXTUALHELP]
+>id="cja_datafeed_processing_delay"
+>title="Atraso no processamento"
+>abstract="O tempo que o Customer Journey Analytics aguarda antes de processar um arquivo de feed de dados. Todos os eventos de chegada tardia que chegam durante o atraso de processamento são incluídos no feed de dados.<p>O atraso mínimo de processamento é de 2 horas, mas alguns tipos de dados exigem um atraso mais longo. Escolha um atraso suficientemente longo para que os dados mais lentos da sua conexão cheguem ao data lake da Experience Platform e sejam assimilados no Customer Journey Analytics. Se o atraso for muito curto, os dados que ainda estão sendo processados não serão incluídos no arquivo de feed de dados.</p><p>A costura pode levar até 4 horas. Para levar em conta isso, adicione 4 horas ao atraso para todos os dados compilados.</p>"
+
+<!-- markdownlint-enable MD034 -->
+
+### Como funciona o atraso de processamento
+
+O atraso de processamento é o tempo que o Customer Journey Analytics aguarda antes de processar um arquivo de feed de dados. Todos os eventos de chegada tardia que chegam durante o atraso de processamento são incluídos no feed de dados.
+
+Atrasos de processamento são necessários por vários motivos, como para levar em conta a latência do pipeline, para dar às implementações móveis uma oportunidade para que os dispositivos offline fiquem online e enviem dados ou para acomodar os processos do lado do servidor de sua organização no gerenciamento de arquivos processados anteriormente.
+
+O atraso mínimo de processamento é de 2 horas, mas alguns tipos de dados exigem um atraso mais longo.
+
+>[!BEGINSHADEBOX]
+
+**Exemplo:**
+
+Suponha que um feed de dados por hora inclua dados de 13h às 14h e o atraso de processamento seja de 2 horas. O processamento desse arquivo de feed de dados começa às 16h e inclui todos os dados que chegaram antes do início do processamento.
+
+>[!ENDSHADEBOX]
+
+### Escolha um atraso de processamento com base em seus dados
+
+Tipos diferentes de dados levam períodos variáveis para serem disponibilizados no Customer Journey Analytics. Os dados passam por duas fases de processamento, e o tempo de cada fase soma-se ao total.
+
+Escolha um atraso de processamento que seja longo o suficiente para que os dados mais lentos em sua conexão concluam ambas as fases. Se o atraso for muito curto, os dados que ainda estão sendo processados não serão incluídos no arquivo de feed de dados.
+
+#### Fase 1: os dados chegam ao data lake da Experience Platform
+
+Os tempos de chegada variam de acordo com o tipo de dados que você está coletando. Escolha um atraso que acomode o tipo de dados que você está coletando.
+
+* **Conjuntos de dados de evento da Edge Network ou assimilação de streaming**: os dados normalmente chegam ao data lake em 60 minutos (consulte [Latências](/help/technotes/guardrails.md#latencies)).
+
+* **Conjuntos de dados do conector de origem do Analytics**: os dados normalmente chegam ao data lake em 2,25 horas (consulte [Latências](/help/technotes/guardrails.md#latencies)).
+
+  <!--When using the Analytics Source Connector, the minimum processing delay increases from 2 hours to 6 hours (?) to account for the source connector data. (checking to see if this is feasible) -->
+
+* **Conjuntos de dados de outros conectores de origem**: a latência varia de acordo com o conector de origem e quando os lotes são enviados. O processamento de upstream no Experience Platform, como o Preparo de dados, pode adicionar mais tempo.
+
+* **Conjuntos de dados de pesquisa**: o tempo para que os dados cheguem ao data lake depende da frequência com que os dados são carregados. Os dados de pesquisa normalmente são carregados como uma cópia completa de um banco de dados, no qual apenas uma pequena porcentagem de registros foi alterada. Faça upload de dados de pesquisa em lotes menores para reduzir o tempo de processamento.
+
+  Em geral, pequenos uploads são processados dentro do atraso mínimo.
+
+  Uploads grandes (por exemplo, um upload semanal de milhões de registros) são processados com prioridade mais baixa e podem levar de 3 a 4 horas a mais. No caso de uploads grandes, os dados do evento não são atrasados, mas os valores de pesquisa podem não refletir as atualizações mais recentes.
+
+* **Conjuntos de dados de perfil**: o tempo para que os dados cheguem ao data lake depende da frequência com que os dados são carregados. Normalmente, os dados do perfil são assimilados em lotes grandes, como um instantâneo diário da tabela de perfil completa. Faça upload dos dados do perfil em lotes menores para reduzir o tempo de processamento.
+
+  Em geral, pequenos uploads são processados dentro do atraso mínimo.
+
+  Uploads grandes (por exemplo, um upload semanal de milhões de registros) são processados com prioridade mais baixa e podem levar de 3 a 4 horas a mais. No caso de uploads grandes, os dados do evento não são atrasados, mas os valores de perfil podem não refletir as atualizações mais recentes.
+
+#### Fase 2: os dados são assimilados do data lake na Customer Journey Analytics
+
+Isso pode levar até 90 minutos (consulte [Latências](/help/technotes/guardrails.md#latencies)).
+
+* **Conjuntos de dados compilados**: a compilação pode adicionar até 4 horas (consulte [Latências](/help/technotes/guardrails.md#latencies)). Se a compilação estiver ativada para a conexão, defina o atraso como pelo menos 6 horas e possivelmente 8 horas. Os dados atualizados por uma repetição de compilação geralmente não são incluídos em arquivos de feed de dados que já foram processados.
+
+  Quando a compilação é ativada, o atraso mínimo de processamento aumenta de 2 horas para 6 horas para levar em conta os dados compilados.
+
+>[!BEGINSHADEBOX]
+
+**Exemplo:**
+
+Se sua conexão incluir vários tipos de dados, escolha um atraso que acomode os dados mais lentos. No exemplo abaixo, são aproximadamente 8 horas.
+
+A costura pode adicionar até 4 horas para assimilação no Customer Journey Analytics. Para levar em conta isso, adicione 4 horas ao atraso para todos os dados compilados.
+
+| Fonte de dados | Fase 1: Chegada no data lake | Fase 2: Assimilação na Customer Journey Analytics | Total |
+| --- | --- | --- | --- |
+| Edge Network ou assimilação por transmissão | 60 minutos | 90 minutos <p>Sem compilação</p> | 2,5 horas |
+| Conector de origem do Analytics | 2,25 horas | 90 minutos + 4 horas para compilação <p>Com a compilação</p> | 7,75 horas |
+
+>[!ENDSHADEBOX]
 
 
