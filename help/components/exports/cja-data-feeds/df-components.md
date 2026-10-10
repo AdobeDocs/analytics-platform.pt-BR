@@ -17,10 +17,10 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: d7614102d54af57a3a084c8550041f8e04f4bc37
+source-git-commit: adc7e85339e89c181375c0d3ea5c228d473239a7
 workflow-type: tm+mt
-source-wordcount: '1391'
-ht-degree: 44%
+source-wordcount: '1419'
+ht-degree: 43%
 ---
 # Disponibilidade de componentes em feeds de dados
 
@@ -98,6 +98,8 @@ As seguintes métricas padrão do Customer Journey Analytics não podem ser incl
 
 <!-- markdownlint-disable MD034 -->
 
+<!-- pretty sure this isn't being used -->
+
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_user_agent"
 >title=""
@@ -109,14 +111,20 @@ As seguintes métricas padrão do Customer Journey Analytics não podem ser incl
 >
 >Determinadas dimensões não podem ser usadas juntas em conjuntos de dados do Experience Platform e, portanto, não podem ser incluídas no mesmo feed de dados.
 >
->Se você optar por incluir as dimensões **Agente do Usuário** ou **ID do Mobile** no feed de dados, as dimensões listadas abaixo não poderão ser adicionadas ao feed de dados.
+>Se você optar por incluir as dimensões **Agente de usuário** ou **ID de dispositivo móvel** no feed de dados, as dimensões listadas abaixo não poderão ser adicionadas ao feed de dados.
 >
 >Se você usar o Web SDK, essa restrição será imposta nos fluxos de dados antes que os dados cheguem a um conjunto de dados do Experience Platform. Para obter mais informações, consulte [Configurar pesquisa de dispositivo](https://experienceleague.adobe.com/pt-br/docs/experience-platform/datastreams/configure#geolocation-device-lookup) em [Criar e configurar sequências de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/datastreams/configure) no guia Coleção de dados.
 
 As seguintes dimensões não podem ser usadas junto com as dimensões **Agente de Usuário** ou **ID de Dispositivo Móvel**:
 
+>[!NOTE]
+>
+>A lista a seguir usa nomes de dimensão padrão. As dimensões renomeadas na visualização de dados aparecem nos feeds de dados com seus nomes personalizados.
+
+
 * Tipo de navegador
 * Navegador
+* ID do navegador
 * Fabricante do dispositivo móvel
 * Tipo de dispositivo móvel
 * Suporte a Áudio Remoto
@@ -141,6 +149,7 @@ As seguintes dimensões não podem ser usadas junto com as dimensões **Agente d
 * Nome do dispositivo móvel
 * Tipos de sistema operacional
 * Sistemas operacionais
+* ID do sistema operacional
 
 ## Métricas que exigem um substituto {#substitute-metrics}
 

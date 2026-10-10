@@ -1,6 +1,6 @@
 ---
-title: Criar um esquema para o Customer Journey Analytics
-description: Saiba mais sobre o caminho recomendado ao atualizar do Adobe Analytics para o Customer Journey Analytics
+title: Criar um conjunto de dados para usar com o Customer Journey Analytics
+description: Saiba como criar um conjunto de dados do Experience Platform para seus dados ao atualizar do Adobe Analytics para o Customer Journey Analytics.
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -36,10 +36,10 @@ topic_v2:
     internal-label: Data management
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 100%
+source-wordcount: '236'
+ht-degree: 91%
 ---
 # Criar um conjunto de dados para usar com o Customer Journey Analytics {#upgrade-create-dataset}
 

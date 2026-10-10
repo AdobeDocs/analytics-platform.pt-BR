@@ -1,6 +1,6 @@
 ---
-title: Criar um esquema para o Customer Journey Analytics
-description: Saiba mais sobre o caminho recomendado ao atualizar do Adobe Analytics para o Customer Journey Analytics
+title: Validar se os dados estão fluindo para o Customer Journey Analytics
+description: Saiba como validar se os dados estão fluindo para o Customer Journey Analytics após a atualização do Adobe Analytics.
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -34,10 +34,10 @@ topic_v2:
     internal-label: Data collection
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
 workflow-type: tm+mt
-source-wordcount: '138'
-ht-degree: 100%
+source-wordcount: '143'
+ht-degree: 88%
 ---
 # Validar se os dados estão fluindo para o Customer Journey Analytics {#validate-data}
 

@@ -1,6 +1,6 @@
 ---
-title: Métodos alternativos ao atualizar para o Customer Journey Analytics
-description: Saiba mais sobre os métodos alternativos ao atualizar para o Customer Journey Analytics
+title: 'Alternativa de atualização: use a coleção de dados do AppMeasurement com o SDK da web da Experience Platform e o Customer Journey Analytics'
+description: Saiba como usar sua lógica de coleta de dados de extensão do AppMeasurement ou Analytics existente com o Web SDK para enviar dados para o Customer Journey Analytics.
 role: Admin
 solution: Customer Journey Analytics
 feature: Basics
@@ -38,10 +38,10 @@ topic_v2:
     internal-label: Data collection
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
 workflow-type: tm+mt
-source-wordcount: '1384'
-ht-degree: 58%
+source-wordcount: '1471'
+ht-degree: 55%
 ---
 # Alternativa de atualização: use a coleção de dados do AppMeasurement com o SDK da web da Experience Platform e o Customer Journey Analytics {#data-collection-appmeasurement}
 
@@ -59,7 +59,7 @@ ht-degree: 58%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-appmeasurement-logic-step"
 >title="Altere a lógica do AppMeasurement para apontar para o SDK da web"
->abstract="esta etapa é exibida porque você optou por um atalho de implementação. Copie ou altere a lógica do AppMeasurement para preencher o objeto de dados, em vez do objeto s. Por exemplo, altere a atribuição de s.eVar1 para data.__adobe.analytics.eVar1 e repita o procedimento para todas as variáveis do Analytics."
+>abstract="Esta etapa aparece porque você optou por usar um atalho de implementação. Copie ou altere a lógica do AppMeasurement para preencher o objeto de dados, em vez do objeto s. Por exemplo, altere a atribuição de s.eVar1 para data.__adobe.analytics.eVar1 e repita o procedimento para todas as variáveis do Analytics."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -71,7 +71,7 @@ Você pode usar sua lógica de coleta de dados de extensão do AppMeasurement ou
 
 ## Vantagens e desvantagens
 
-Este método é mutuamente exclusivo com [o envio de toda a camada de dados para o Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-alternative-appmeasurement.md), pois ambos os métodos realizam a mesma tarefa. (Esse método é preferível ao envio de toda a camada de dados para a Adobe. Ele é mais refinado porque props e evars passam pelos dados.__ adobe.analytics._nome-da-variável_.)
+Este método é mutuamente exclusivo com [o envio de toda a camada de dados para o Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-alternative-data-layer.md), pois ambos os métodos realizam a mesma tarefa. (Esse método é preferível ao envio de toda a camada de dados para a Adobe. Ele é mais refinado porque props e evars passam pelos dados.__ adobe.analytics._nome-da-variável_.)
 
 Considere as seguintes vantagens e desvantagens de usar essa alternativa de atualização:
 
@@ -101,7 +101,7 @@ As etapas básicas para migrar uma implementação do Adobe Analytics (AppMeasur
 
    1. Envie todas as variáveis no formato AppMeasurement por meio do objeto de dados.
 
-      Para obter mais informações, consulte [Mapeamento de variável de objeto de dados para Adobe Analytics](https://experienceleague.adobe.com/pt-br/docs/analytics/implementation/aep-edge/data-var-mapping).
+      Se você também enviar esses dados para o Adobe Analytics, o Edge Network mapeará automaticamente esses campos de objetos de dados para variáveis do Adobe Analytics. Para obter a lista de campos com suporte, consulte [Mapeamento de campo de objeto de dados para o Adobe Analytics](https://experienceleague.adobe.com/pt-br/docs/analytics/implementation/aep-edge/data-var-mapping). O Customer Journey Analytics não usa esses mapeamentos. Em uma etapa posterior, mapeie os campos do objeto de dados para o esquema XDM do Customer Journey Analytics.
 
    1. Escolha seu esquema.
 
@@ -127,7 +127,7 @@ As etapas básicas para migrar uma implementação do Adobe Analytics (AppMeasur
 
    1. Use o mapeamento do fluxo de dados para mapear todos os campos no objeto de dados para o esquema XDM.
 
-      Para obter mais informações, consulte [Mapeamento](https://experienceleague.adobe.com/pt-br/docs/experience-platform/datastreams/data-prep?lang=en#mapping) em [Preparação de dados para coleção de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/datastreams/data-prep) na documentação do Experience Platform.
+      O Customer Journey Analytics pode usar somente os campos de objeto de dados que você mapeia para o esquema. Para obter mais informações, consulte [Mapeamento](https://experienceleague.adobe.com/pt-br/docs/experience-platform/datastreams/data-prep?lang=en#mapping) em [Preparação de dados para coleção de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/datastreams/data-prep) na documentação do Experience Platform.
 
 {{upgrade-final-step}}.
 
