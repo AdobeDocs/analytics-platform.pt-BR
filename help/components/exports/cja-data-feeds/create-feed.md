@@ -26,9 +26,9 @@ topic_v2:
     internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: d7614102d54af57a3a084c8550041f8e04f4bc37
+source-git-commit: 93107a7cf46e5d71bcb5c588eb7395fd1b88d150
 workflow-type: tm+mt
-source-wordcount: '3881'
+source-wordcount: '3924'
 ht-degree: 12%
 ---
 # Criar um feed de dados
@@ -125,11 +125,11 @@ Antes de criar um feed de dados, é importante ter uma compreensão básica dos 
    * **Botão de adição**: selecione o ícone de adição ![Adicionar](/help/assets/icons/Add.svg) ao lado de qualquer componente no painel esquerdo para adicioná-lo à tela.
    * **[!UICONTROL Mostrar tudo]**: selecione **[!UICONTROL Mostrar tudo]** na parte inferior da lista de componentes para abrir uma caixa de diálogo mostrando todos os componentes disponíveis. Marque a caixa de seleção ao lado de cada componente que você deseja adicionar e selecione **[!UICONTROL Adicionar selecionado]**. Quando um termo de pesquisa ou uma marca de filtro está ativa no painel à esquerda, o botão **[!UICONTROL Adicionar tudo]** também é exibido, permitindo adicionar todos os resultados filtrados de uma só vez.
 
-   Quando você adiciona um componente que pertence a um campo de matriz XDM (por exemplo, um campo de proposta do Adobe Journey Optimizer), ele aparece na tela como um grupo aninhado recolhível em vez de um item simples. O grupo reflete a estrutura de dados subjacente e as saídas como uma matriz aninhada no arquivo exportado.
+   Considere o seguinte ao adicionar campos:
 
-   <!--add screenshot-->
+   * Alguns componentes são obrigatórios, não são compatíveis ou têm restrições nos feeds de dados. Para obter detalhes, consulte [Disponibilidade de componentes em feeds de dados](/help/components/exports/cja-data-feeds/df-components.md).
 
-   Alguns componentes são obrigatórios, não são compatíveis ou têm restrições nos feeds de dados. Para obter detalhes, consulte [Disponibilidade de componentes em feeds de dados](/help/components/exports/cja-data-feeds/df-components.md).
+   * Ao adicionar um componente que pertence a um campo de matriz XDM (por exemplo, um campo de proposta do Adobe Journey Optimizer) ou um campo de mapa, uma caixa de diálogo solicita que você adicione outros componentes do mesmo subcontêiner. Na saída do feed de dados, todos esses componentes aparecem em uma única coluna. Para obter mais informações, consulte [Componentes de subcontêiner em feeds de dados](/help/components/exports/cja-data-feeds/df-sub-event.md)
 
 1. (Opcional) Reordene os componentes na tela arrastando-os. A ordem definida é preservada como a ordem das colunas no arquivo de feed de dados exportado.
 
@@ -342,9 +342,11 @@ Os tempos de chegada variam de acordo com o tipo de dados que você está coleta
 
 #### Fase 2: os dados são assimilados do data lake na Customer Journey Analytics
 
-Isso pode levar até 90 minutos (consulte [Latências](/help/technotes/guardrails.md#latencies)).
+Os tempos de assimilação de dados variam dependendo se a compilação do conjunto de dados está ativada.
 
-* **Conjuntos de dados compilados**: a compilação pode adicionar até 4 horas (consulte [Latências](/help/technotes/guardrails.md#latencies)). Se a compilação estiver ativada para a conexão, defina o atraso como pelo menos 6 horas e possivelmente 8 horas. Os dados atualizados por uma repetição de compilação geralmente não são incluídos em arquivos de feed de dados que já foram processados.
+* **Conjuntos de dados não compilados**: isso pode levar até 90 minutos (consulte [Latências](/help/technotes/guardrails.md#latencies)).
+
+* **Conjuntos de dados compilados**: a compilação pode adicionar até 4 horas além dos 90 minutos que leva para conjuntos de dados não compilados (consulte [Latências](/help/technotes/guardrails.md#latencies)). Se a compilação estiver ativada para a conexão, defina o atraso como pelo menos 6 horas e possivelmente 8 horas. Os dados atualizados por uma repetição de compilação geralmente não são incluídos em arquivos de feed de dados que já foram processados.
 
   Quando a compilação é ativada, o atraso mínimo de processamento aumenta de 2 horas para 6 horas para levar em conta os dados compilados.
 

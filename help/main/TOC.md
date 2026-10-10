@@ -2,9 +2,9 @@
 user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Saiba mais sobre o Adobe Customer Journey Analytics e como usar o Analysis Workspace com dados da Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
-source-git-commit: a7bea19dcd89472ee21c533e44e1f87f5d179838
+source-git-commit: f5e2a6604ee1bf2b5a5a393b402da24b66d9b81d
 workflow-type: tm+mt
-source-wordcount: '1518'
+source-wordcount: '1517'
 ht-degree: 89%
 ---
 # Guia do Adobe Customer Journey Analytics {#using}
@@ -65,7 +65,7 @@ ht-degree: 89%
       + [Implementar a tag do carregador para a extensão do SDK da web](/help/getting-started/cja-upgrade/cja-upgrade-tag-loader.md)
       + [Adicionar a lógica de coleta de dados XDM à tag](/help/getting-started/cja-upgrade/cja-upgrade-tag-xdm.md)
     + [Implementar o SDK da Web manualmente](/help/getting-started/cja-upgrade/cja-upgrade-manual.md)
-    + [Implementar o SDK da Web com a API](/help/getting-started/cja-upgrade/cja-upgrade-api.md)
+    + [Implementar o Web SDK com o pacote NPM](/help/getting-started/cja-upgrade/cja-upgrade-api.md)
     + [Criar uma conexão](/help/getting-started/cja-upgrade/cja-upgrade-connection.md)
     + [Criar uma visualização de dados](/help/getting-started/cja-upgrade/cja-upgrade-dataview.md)
     + [Criar um canal de marketing de campo derivado](/help/getting-started/cja-upgrade/cja-upgrade-marketing-channel.md)
@@ -438,7 +438,7 @@ ht-degree: 89%
       + {hide-from-toc}[Disponibilidade do componente](/help/components/exports/cja-data-feeds/df-components.md)
       + {hide-from-toc}[Segmentação em feeds de dados](/help/components/exports/cja-data-feeds/df-segmentation.md)
       + {hide-from-toc}[Aplicar transformações de dados](/help/components/exports/cja-data-feeds/df-data-transformations.md)
-      + {hide-from-toc}[Subeventos em feeds de dados](/help/components/exports/cja-data-feeds/df-sub-event.md)
+      + {hide-from-toc}[Componentes do subcontêiner](/help/components/exports/cja-data-feeds/df-sub-event.md)
   + Dicionário de dados {#data-dictionary}
     + [Visão geral](../components/data-dictionary/data-dictionary-overview.md)
     + [Exibir informações de componente no dicionário de dados](../components/data-dictionary/view-data-dictionary.md)
