@@ -15,9 +15,9 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: fb3ebdba335ce2dde30d37b8aff4e8f201dc5d9f
+source-git-commit: e3958dfbad19f5fdd78b2755817d21afad8f8e84
 workflow-type: tm+mt
-source-wordcount: '831'
+source-wordcount: '844'
 ht-degree: 3%
 ---
 
@@ -29,12 +29,14 @@ A IA se tornou um canal de descoberta principal. Os agentes do Large Language Mo
 
 >[!NOTE]
 >
->Você deve ter uma oferta de Visibilidade da marca paga provisionada e conectada à configuração do Experience Platform por meio do conector gerenciado.
+>Você deve ter uma oferta paga de Visibilidade da marca. Em seguida, você [configura e habilita](./configure.md) a origem do Adobe Brand Visibility na sandbox da Experience Platform.
+>
 
 
 >[!IMPORTANT]
 >
 >Como parte dessa integração, algum processamento temporário de dados do Brand Visibility ocorre nos Estados Unidos. Os dados são armazenados na região designada conforme configurado em seu contrato do Customer Journey Analytics.
+>
 
 
 ## Casos de uso
@@ -68,7 +70,7 @@ A segunda maneira é um bot ou agente que solicita as páginas diretamente. Isso
 
 ### Integrar o conjunto de dados
 
-O conector gerenciado do Brand Visibility fornece os dados para o Experience Platform como um conjunto de dados de resumo. Para medi-la no Customer Journey Analytics, você mesmo conclui duas etapas de configuração:
+Você habilita a origem do Adobe Brand Visibility no Experience Platform. A fonte entrega os dados para sua sandbox como um conjunto de dados de resumo. Para medir os dados no Customer Journey Analytics, você mesmo deve concluir mais duas etapas de configuração:
 
 1. Crie uma conexão que inclua o conjunto de dados do Brand Visibility.
 2. Crie uma visualização de dados nessa conexão. A visualização de dados disponibiliza as dimensões e métricas abaixo no Analysis Workspace.
@@ -94,4 +96,4 @@ Consulte para obter mais informações:
 
 ## Integração de saída
 
-Para obter informações sobre integração de saída, consulte [Integração do Customer Journey Analytics](https://experienceleague.adobe.com/pt-br/docs/brand-visibility/using/resources/customer-journey-analytics-integration){target="_blank"} na documentação do Adobe Brand Visibility.
+Para obter informações sobre integração de saída, consulte [Integração do Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/brand-visibility/using/resources/customer-journey-analytics-integration){target="_blank"} na documentação do Adobe Brand Visibility.
