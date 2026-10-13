@@ -26,7 +26,7 @@ topic_v2:
     internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 93107a7cf46e5d71bcb5c588eb7395fd1b88d150
+source-git-commit: 77f5caf20d2bf391563de20a572ce100cdcca61e
 workflow-type: tm+mt
 source-wordcount: '3924'
 ht-degree: 12%
@@ -129,7 +129,7 @@ Antes de criar um feed de dados, é importante ter uma compreensão básica dos 
 
    * Alguns componentes são obrigatórios, não são compatíveis ou têm restrições nos feeds de dados. Para obter detalhes, consulte [Disponibilidade de componentes em feeds de dados](/help/components/exports/cja-data-feeds/df-components.md).
 
-   * Ao adicionar um componente que pertence a um campo de matriz XDM (por exemplo, um campo de proposta do Adobe Journey Optimizer) ou um campo de mapa, uma caixa de diálogo solicita que você adicione outros componentes do mesmo subcontêiner. Na saída do feed de dados, todos esses componentes aparecem em uma única coluna. Para obter mais informações, consulte [Componentes de subcontêiner em feeds de dados](/help/components/exports/cja-data-feeds/df-sub-event.md)
+   * Quando você adiciona um componente que pertence a um campo de matriz XDM (por exemplo, um campo de proposta do Adobe Journey Optimizer) ou a um campo de mapa, uma caixa de diálogo solicita que você adicione outros componentes do mesmo subevento. Na saída do feed de dados, todos esses componentes aparecem em uma única coluna. Para obter mais informações, consulte [Componentes de subeventos em feeds de dados](/help/components/exports/cja-data-feeds/df-sub-event.md)
 
 1. (Opcional) Reordene os componentes na tela arrastando-os. A ordem definida é preservada como a ordem das colunas no arquivo de feed de dados exportado.
 
