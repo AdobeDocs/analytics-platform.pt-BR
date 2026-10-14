@@ -48,7 +48,7 @@ A experiência no produto para o Colaborador está disponível em um painel de c
 
 ### Escolha entre o Colaborador no Workspace e o aplicativo Colaborador
 
-A experiência no produto para o Colaborador tem muitos dos mesmos recursos que o [aplicativo do CX Enterprise Coworker](https://experienceleague.adobe.com/en/docs/cx-enterprise-coworker/content/chat/analytics-chat), incluindo as habilidades às quais você tem acesso. No entanto, há diferenças importantes que determinam quando você pode usar um sobre o outro:
+A experiência no produto para o Colaborador tem muitos dos mesmos recursos que o [aplicativo do CX Enterprise Coworker](https://experienceleague.adobe.com/pt-br/docs/cx-enterprise-coworker/content/chat/analytics-chat), incluindo as habilidades às quais você tem acesso. No entanto, há diferenças importantes que determinam quando você pode usar um sobre o outro:
 
 | | Experiência no produto para o Colaborador | Aplicativo de colaborador |
 | --- | --- | --- |
