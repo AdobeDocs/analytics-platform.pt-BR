@@ -55,10 +55,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a7bea19dcd89472ee21c533e44e1f87f5d179838
+source-git-commit: 7dc0d254bfdf55d9b0b9a13587292b4dab59af30
 workflow-type: tm+mt
-source-wordcount: '7183'
-ht-degree: 96%
+source-wordcount: '7222'
+ht-degree: 95%
 ---
 
 # Customer Journey Analytics - atualizações de documentação
@@ -70,8 +70,8 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | Recurso | Descrição |
 |---|---|
 | **outubro de 2026** | |
+| Canal de mídia paga do Content Analytics | [Documentação](/help/content-analytics/config/paid-media.md) abrangente sobre a configuração automática de conjuntos de dados e componentes de visualização de dados resultantes do uso de um conector de origem de mídia paga (como o Google Ads ou o Meta Ads) e da configuração e ativação do canal de mídia paga da Content Analytics. |
 | Insights de conversa | [Documentação](/help/conversation-insights/overview.md) para Insights de Conversa. |
-| Outubro de 2026 | |
 | Visibilidade da marca | Atualizada a documentação da [integração de entrada do Brand Visibility](/help/integrations/bv/bv.md#inbound-integration) com mais detalhes. |
 | **setembro de 2026** | |
 | Jornada comparação da tela de desenho em setas e fallout | Atualização da configuração &#39;[!UICONTROL Comparar com]&#39; em [Configurar uma visualização da tela de Jornada](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#configure-visualization-settings) para mostrar que a alteração de porcentagem entre os intervalos de datas agora é exibida em cada nó, seta e fallout na jornada. |
