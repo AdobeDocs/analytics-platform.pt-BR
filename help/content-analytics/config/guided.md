@@ -38,10 +38,10 @@ topic_v2:
     internal-label: Data management
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 1af0b3565fe054a5073f574d53b82f561df1abda
+source-git-commit: 7dc0d254bfdf55d9b0b9a13587292b4dab59af30
 workflow-type: tm+mt
-source-wordcount: '4800'
-ht-degree: 56%
+source-wordcount: '4844'
+ht-degree: 55%
 ---
 
 # Configuração guiada do Content Analytics
@@ -393,7 +393,7 @@ Para o canal Web, você pode configurar [captura e definição de experiência](
 >id="aca_onboarding_datacollection_button"
 >title="Coleção de dados"
 >abstract="Defina qual propriedade de tags você deseja usar ou crie uma nova. Defina também as páginas e os ativos que deseja incluir ou excluir usando expressões regulares.<br/>Para uma implementação independente de tags, selecione **[!UICONTROL Criar novo]**.  É criada uma propriedade Tags, mas você não é obrigado a usá-la."
->additional-url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/content-analytics/configuration/tags-agnostic" text="Biblioteca JavaScript do Content Analytics"
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/configuration/tags-agnostic" text="Biblioteca JavaScript do Content Analytics"
 
 
 >[!CONTEXTUALHELP]
@@ -705,6 +705,11 @@ Ao selecionar **[!UICONTROL Salvar]**, o Content Analytics automaticamente:
 * Atualiza a conexão do Customer Journey Analytics para incluir conjuntos de dados de mídia paga de todos os conectores de origem conectados nesta sandbox.
 * Habilita dimensões e métricas de mídia paga em todas as visualizações de dados selecionadas.
 * Exibe os canais de mídia paga como uma dimensão filtrável nos relatórios do Workspace.
+
+Consulte [Configuração automática de mídia paga](./paid-media.md) para obter detalhes sobre:
+
+* A configuração automática de conjuntos de dados de mídia paga resultante do primeiro uso de um conector de origem de mídia paga.
+* Os componentes de visualização de dados criados na configuração e ativação do canal de mídia paga no Content Analytics.
 
 ### Salvar {#paidmedia-save}
 

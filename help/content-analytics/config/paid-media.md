@@ -3,9 +3,8 @@ title: Configuração automática de mídia paga do Content Analytics
 description: Saiba mais sobre a configuração automática de conjuntos de dados, conexão, visualizações de dados e muito mais.
 solution: Customer Journey Analytics
 feature: Content Analytics
-hold: true
 role: Admin
-source-git-commit: 2a788aa5cf007a434e5b40c65aea0c887bc357e3
+source-git-commit: 7dc0d254bfdf55d9b0b9a13587292b4dab59af30
 workflow-type: tm+mt
 source-wordcount: '2545'
 ht-degree: 2%
@@ -207,6 +206,6 @@ O exemplo usa uma ID de campanha, mas a mesma abordagem pode usar grupos de anú
 
 Se quiser relatar e analisar o desempenho do ativo relacionado aos investimentos em mídia paga, considere adicionar um parâmetro UTM de ativo específico na configuração de mídia paga da rede de anúncios. Por exemplo, além dos parâmetros dinâmicos padrão como s`ite_source_name`, `campaign.id`, `adset.id` ou `placement`, adicione parâmetros estáticos personalizados, como `aca_asset_id=999999`.
 
-Esse parâmetro personalizado é adicionado ao URL da página inicial. Por exemplo: https://www.example.com/home.html?utm_content=120241705099850539%2Caca_asset_id%3D9999999%2Caca_placement%3DFacebook_Desktop_Feed&aca_id_2=8888888&utm_medium=paid&utm_source=fb&utm_id=120241705099830539&utm_term=120241705099840539&utm_campaign=120241705099830539
+Esse parâmetro personalizado é adicionado ao URL da página inicial. Por exemplo: https://www.example.com/home.html?utm_content=120241705099850539%2Caca_asset_id%3D9999999%2Caca_placement%3DFacebook_Desktop_Feed&amp;aca_id_2=8888888&amp;utm_medium=paid&amp;utm_source=fb&amp;utm_id=120241705099830539&amp;utm_term=120241705099840539&amp;utm_campaign=120241705099830539
 
 Agora você tem uma relação entre um ativo em uma página e seus dados de mídia paga. Use essa relação no Analysis Workspace para ver como os metadados de ativos do Content Analytics (por exemplo, **[!UICONTROL Cores de primeiro plano do ativo]**) contribuem para o sucesso da campanha de mídia paga.
