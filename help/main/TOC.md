@@ -2,11 +2,12 @@
 user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Saiba mais sobre o Adobe Customer Journey Analytics e como usar o Analysis Workspace com dados da Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
-source-git-commit: 7dc0d254bfdf55d9b0b9a13587292b4dab59af30
+source-git-commit: 65d4115d4c292cff7e074d37a91563d369072ba5
 workflow-type: tm+mt
-source-wordcount: '1520'
+source-wordcount: '1526'
 ht-degree: 88%
 ---
+
 # Guia do Adobe Customer Journey Analytics {#using}
 
 + [Guia do Adobe Customer Journey Analytics](../getting-started/cja-landing.md)
@@ -242,6 +243,9 @@ ht-degree: 88%
       + [Visão geral](../analysis-workspace/visualizations/journey-canvas/journey-canvas.md)
       + [Configurar](../analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
       + [Solução de problemas](../analysis-workspace/visualizations/journey-canvas/journey-canvas-troubleshooting.md)
+    + {hide-from-toc}[Revisão da conversa](../analysis-workspace/visualizations/conversation-insights/conversation-review.md)
+    + {hide-from-toc}[Resumos da conversa](../analysis-workspace/visualizations/conversation-insights/conversation-summaries.md)
+    + {hide-from-toc}[Tópicos de tendências](../analysis-workspace/visualizations/conversation-insights/trending-topics.md)
     + [Área (empilhada)](../analysis-workspace/visualizations/area.md)
     + [Barra (empilhada)](../analysis-workspace/visualizations/bar.md)
     + [Marcador](../analysis-workspace/visualizations/bullet-graph.md)
