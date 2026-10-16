@@ -43,7 +43,7 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 2c55e526968ca2f064f32c457ee112c07a0b10ff
 workflow-type: tm+mt
 source-wordcount: '2631'
 ht-degree: 10%
@@ -76,8 +76,8 @@ Este guia usa vários termos técnicos, do Experience Platform e do Customer Jou
 | **Conexão** | [Conexões](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-connections/overview) definem quais conjuntos de dados do Experience Platform são assimilados. Uma conexão define o link entre seu conjunto de dados (em que os dados são armazenados no AEP) e o Customer Journey Analytics (em que você os analisa). Uma conexão disponibiliza os dados coletados para os relatórios. |
 | **Visualização de dados** | Uma [visualização de dados](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-dataviews/data-views) é um container que permite determinar como interpretar dados de uma conexão. Uma visualização de dados especifica todas as dimensões e métricas disponíveis para você criar relatórios. Uma visualização de dados é como uma configuração que determina as linhas e colunas disponíveis para você usar na análise. |
 | **Analysis Workspace** | O [Analysis Workspace](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-workspace/home) é uma interface de navegador de arrastar e soltar usada para criar relatórios e análises do Content Analytics. |
-| **Experiência** | No Content Analytics, uma [experiência](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/content-analytics/content-analytics#terminology) se refere a todo o conteúdo de texto em uma página da Web que pode ser capturado e analisado com base no URL da página. |
-| **Ativo** | No Content Analytics, um [ativo](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/content-analytics/content-analytics#terminology) é um conteúdo individual e exclusivo, como uma imagem. |
+| **Experiência** | No Content Analytics, uma [experiência](https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/content-analytics#terminology) se refere a todo o conteúdo de texto em uma página da Web que pode ser capturado e analisado com base no URL da página. |
+| **Ativo** | No Content Analytics, um [ativo](https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/content-analytics#terminology) é um conteúdo individual e exclusivo, como uma imagem. |
 
 
 ## Visão geral da configuração
@@ -242,7 +242,7 @@ Para o Content Analytics, é necessário verificar se as seguintes permissões d
   * Acesso aos logs de auditoria
   * Compartilhar links do projeto com qualquer pessoa
   * Previsão
-  * Assistente de IA: conhecimento do produto
+  * Assistente de IA: conhecimento do produto <!-- FOLLOW-UP (waiting on PM): These two permissions haven't been updated in the product yet. Update when the PM confirms the Coworker permission name. -->
   * Data Insights Agent
   * Legendas inteligentes
 

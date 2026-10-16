@@ -28,7 +28,7 @@ topic_v2:
     internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
+source-git-commit: 2c55e526968ca2f064f32c457ee112c07a0b10ff
 workflow-type: tm+mt
 source-wordcount: '915'
 ht-degree: 10%
@@ -46,6 +46,8 @@ A interface de **[!UICONTROL Visualizações de dados]** mostra uma tabela de to
 
 As seguintes colunas e ícones estão disponíveis na tabela:
 
+<!-- FOLLOW-UP (engineering): The Data views table UI still shows a Data Insights Agent column, a Data Insights Agent Status pop-up, and Enable/Disable for Data Insights Agent context menu options. These presumably should change to Coworker. Log with engineering, then update the labels, descriptions, and the data-views-dia-status.png screenshot. -->
+
 | Coluna ou ícone | Descrição |
 | --- | --- |
 | **[!UICONTROL Nome]** | O nome da visualização de dados. |
@@ -54,7 +56,7 @@ As seguintes colunas e ícones estão disponíveis na tabela:
 | **[!UICONTROL Conexão]** | O nome da conexão associada à visualização de dados. |
 | **[!UICONTROL Sandbox]** | O nome da sandbox associada à visualização de dados. |
 | **[!UICONTROL Proprietário]** | O proprietário da visualização de dados. |
-| **[!UICONTROL Data Insights Agent]** ![InfoOutline](/help/assets/icons/InfoOutline.svg) | Indica se o [Data Insights Agent](/help/data-analysis-ai.md) está **[!UICONTROL Habilitado]** ou **[!UICONTROL Desabilitado]** para a exibição de dados. <br/>Selecione ![InfoOutline](/help/assets/icons/InfoOutline.svg) para mostrar um pop-up com **[!UICONTROL Status do Data Insights Agent]** em suas visualizações de dados. <br/>![uso do Data Insights Agent](/help/data-views/assets/data-views-dia-status.png) |
+| **[!UICONTROL Data Insights Agent]** ![InfoOutline](/help/assets/icons/InfoOutline.svg) | Indica se o [Data Insights Agent](/help/data-views/create-dataview.md#ai-settings) está **[!UICONTROL Habilitado]** ou **[!UICONTROL Desabilitado]** para a exibição de dados. <br/>Selecione ![InfoOutline](/help/assets/icons/InfoOutline.svg) para mostrar um pop-up com **[!UICONTROL Status do Data Insights Agent]** em suas visualizações de dados. <br/>![uso do Data Insights Agent](/help/data-views/assets/data-views-dia-status.png) |
 | **[!UICONTROL Integrações]** | Listar integrações com outras soluções. Por exemplo: Adobe Audience Analysis, Content Analytics, Brand Concierge, Journey Optimizer, GenStudio e Usage Analytics. |
 | **[!UICONTROL Usar no CJA]** | Indica se a visualização de dados é usada no Customer Journey Analytics. Este valor é apenas **[!UICONTROL Desativado]** para visualizações de dados que são geradas automaticamente como parte da integração com o Adobe Journey Optimizer. |
 | **[!UICONTROL Data de criação]** | O carimbo de data e hora quando a visualização de dados foi criada. |
@@ -166,7 +168,9 @@ Como alternativa, você pode:
 
 ## Ativar ou desativar visualizações de dados para o Data Insights Agent
 
-Você pode habilitar ou desabilitar uma exibição de dados para o [Data Insights Agent](/help/data-analysis-ai.md).
+<!-- FOLLOW-UP: This setting is still in the UI, but Data Insights Agent has been replaced by Coworker. Confirm with the SME what the setting does now and whether it will be renamed or removed. This also applies to the Data Insights Agent column above. -->
+
+Você pode habilitar ou desabilitar uma exibição de dados para o [Data Insights Agent](/help/data-views/create-dataview.md#ai-settings).
 
 1. Selecione ![Mais](/help/assets/icons/More.svg) ao lado do nome da exibição de dados.
 1. Selecione ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Enable para Data Insights Agent]** ou ![RemoveCircle](/help/assets/icons/RemoveCircle.svg) **[!UICONTROL Disable para Data Insights Agent]** no menu de contexto.

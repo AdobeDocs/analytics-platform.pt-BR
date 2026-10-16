@@ -41,17 +41,12 @@ topic_v2:
     internal-label: Governance
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 2c55e526968ca2f064f32c457ee112c07a0b10ff
 workflow-type: tm+mt
-source-wordcount: '1720'
+source-wordcount: '1660'
 ht-degree: 9%
 ---
 # Narrativa de dados: gere apresentações de slides a partir de relatórios do Workspace {#generate-powerpoint}
-
->[!NOTE]
->
->A Data Storytelling é uma habilidade no Data Insights Agent e está disponível para clientes qualificados por um tempo limitado. O acesso ao Data Insights Agent terminará em 31 de março de 2026. Para continuar usando o Data Insights Agent ou outros agentes da Adobe Experience Platform sem interrupção, entre em contato com o representante de conta da Adobe para saber mais sobre como licenciar o Adobe Experience Platform Agent Orchestrator.
-
 
 Usuários com [as permissões necessárias](#permission-requirements-to-generate-slides) podem gerar automaticamente apresentações .pptx com base em projetos do Analysis Workspace. Ao gerar essas apresentações de slides, a Customer Journey Analytics cria automaticamente uma história com base em seus dados, identificando os principais insights e convertendo-os em slides prontos para as partes interessadas.
 
