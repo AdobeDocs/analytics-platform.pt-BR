@@ -29,7 +29,7 @@ topic_v2:
 source-git-commit: 77f5caf20d2bf391563de20a572ce100cdcca61e
 workflow-type: tm+mt
 source-wordcount: '3924'
-ht-degree: 12%
+ht-degree: 20%
 ---
 # Criar um feed de dados
 
@@ -70,7 +70,7 @@ Antes de criar um feed de dados, é importante ter uma compreensão básica dos 
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_frequency_granularity"
 >title="Frequência e granularidade"
->abstract="**Frequência de entrega** (feeds em tempo real): a frequência com que o feed de dados é entregue. As entregas por hora contêm dados de uma hora; as entregas diárias contêm dados de um dia. O intervalo de datas da retrospectiva e o atraso de processamento também podem afetar os eventos incluídos.<p>**Granularidade** (feeds de preenchimento retroativo): o intervalo de tempo usado para dividir os dados históricos. Cada bloco contém os dados de um dia e é entregue o mais rápido possível, não uma vez por dia. Este campo é sempre definido como Diário e não pode ser modificado.</p>"
+>abstract="**Frequência de entrega** (feeds em tempo real): a frequência com que o feed de dados é entregue. As entregas horárias contêm o valor de uma hora de dados; as entregas diárias contêm o valor de um dia de dados. O intervalo de datas da retrospectiva e o atraso de processamento também podem afetar quais eventos são incluídos.<p>**Granularidade** (feeds de preenchimento retroativo): o intervalo de tempo usado para dividir os dados históricos. Cada bloco contém o valor de um dia de dados e é entregue o mais rápido possível, não uma vez por dia. Este campo é sempre definido como Diário e não pode ser modificado.</p>"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -166,7 +166,7 @@ Antes de criar um feed de dados, é importante ter uma compreensão básica dos 
    | [!UICONTROL **Frequência**]<br/> Disponível somente para feeds em tempo real | Selecione a frequência com que o feed de dados deve ser enviado. Eventos com carimbos de data e hora que caem na janela de frequência são incluídos na entrega do feed de dados. Os campos [!UICONTROL **Intervalo de datas de retrospectiva**] e [!UICONTROL **Atraso de processamento**] também podem afetar quais eventos são incluídos nos dados para a frequência de entrega escolhida.<p>Selecione para incluir dados de uma hora ou de um dia.</p><ul><li>**Diariamente**: os feeds contêm dados de um dia inteiro, da meia-noite a meia-noite no fuso horário da visualização de dados.</li><li>**Por hora**: os feeds contêm dados de uma hora.</li></ul> |
    | [!UICONTROL **Granularidade**]<br/> Disponível somente para feeds de preenchimento retroativo | O intervalo de tempo usado para dividir os dados históricos em partes. Cada bloco contém dados de um dia inteiro, da meia-noite à meia-noite no fuso horário da visualização de dados. <p>A granularidade determina como os dados são agrupados, não com que frequência são entregues. Os dados de preenchimento retroativo são entregues o mais rápido possível, não uma vez por dia.</p><p>Este campo é sempre definido como [!UICONTROL **Diariamente**] e não pode ser modificado.</p> |
    | [!UICONTROL **Intervalo de datas de retrospectiva**] | Controla até que data o Customer Journey Analytics analisa ao processar a entrega do feed de dados. O padrão é 30 dias.<p>A janela de frequência (hora ou dia) determina quais eventos são incluídos no feed de dados, enquanto o **intervalo de datas da retrospectiva** fornece o contexto histórico necessário para classificar esses eventos corretamente.</p><p>Qualificação de segmento, persistência de dimensão, cálculo de sessão e transformações de campo derivado podem afetar os eventos incluídos.</p> <p>Antes de configurar esta opção, veja os detalhes e os exemplos descritos na seção abaixo, [Entenda o intervalo de datas da retrospectiva](#data-feed-lookback-date-range).</p> |
-   | [!UICONTROL **Atraso no processamento**] | Escolha o tempo que o Customer Journey Analytics aguarda antes de processar um arquivo de feed de dados. Todos os eventos de chegada tardia que chegam durante o atraso de processamento são incluídos no feed de dados. <p>O atraso mínimo de processamento é de 2 horas, mas alguns tipos de dados exigem um atraso mais longo. O atraso escolhido depende dos tipos de dados em sua conexão, como transmissão, lote, compilado, pesquisa ou dados de perfil.</p><p>Escolha um atraso suficientemente longo para que os dados mais lentos da conexão terminem o processamento. Se o atraso for muito curto, os dados que ainda estão sendo processados não serão incluídos no arquivo de feed de dados.</p><p>Antes de configurar esta opção, veja os detalhes e os exemplos descritos na seção abaixo, [Entenda o atraso de processamento](#data-feed-processing-delay).</p> |
+   | [!UICONTROL **Atraso no processamento**] | Escolha o tempo que o Customer Journey Analytics aguarda antes de processar um arquivo de feed de dados. Todos os eventos recebidos com atraso durante o período de atraso do processamento são incluídos no feed de dados. <p>O atraso mínimo de processamento é de 2 horas, mas alguns tipos de dados exigem um atraso maior. O atraso escolhido depende dos tipos de dados em sua conexão, como transmissão, lote, compilado, pesquisa ou dados de perfil.</p><p>Escolha um atraso suficientemente longo para que os dados mais lentos da conexão terminem o processamento. Se o atraso for muito curto, os dados que ainda estão sendo processados não serão incluídos no arquivo de feed de dados.</p><p>Antes de configurar esta opção, veja os detalhes e os exemplos descritos na seção abaixo, [Entenda o atraso de processamento](#data-feed-processing-delay).</p> |
    | [!UICONTROL **Formato de compactação**] | Selecione o formato de compactação dos arquivos de saída do Parquet entregues ao destino da nuvem. Escolha entre os seguintes formatos:<ul><li>[!UICONTROL **Snappy**]: compactação e descompactação rápidas com tamanhos de arquivo moderados. Amplamente compatível com plataformas de dados modernas, como BigQuery, Snowflake e Apache Spark.</li><li>[!UICONTROL **GZip**]: amplamente compatível, inclusive com ferramentas que não oferecem suporte nativo ao Snappy. Recomendado se o pipeline downstream exigir um padrão de compactação amplamente reconhecido.</li><li>[!UICONTROL **Z Padrão (Zstd)**]: alta eficiência de compactação com descompactação rápida. Adequado se minimizar o tamanho do arquivo é uma prioridade e suas ferramentas suportam Zstd.</li></ul> |
 
 1. Na guia [!UICONTROL **Entrega**], na seção [!UICONTROL **Destino**], configure o destino para onde deseja que os dados sejam enviados.
@@ -290,17 +290,17 @@ Quaisquer funções de campo derivadas que fazem referência a contêineres usam
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_processing_delay"
 >title="Atraso no processamento"
->abstract="O tempo que o Customer Journey Analytics aguarda antes de processar um arquivo de feed de dados. Todos os eventos de chegada tardia que chegam durante o atraso de processamento são incluídos no feed de dados.<p>O atraso mínimo de processamento é de 2 horas, mas alguns tipos de dados exigem um atraso mais longo. Escolha um atraso suficientemente longo para que os dados mais lentos da sua conexão cheguem ao data lake da Experience Platform e sejam assimilados no Customer Journey Analytics. Se o atraso for muito curto, os dados que ainda estão sendo processados não serão incluídos no arquivo de feed de dados.</p><p>A costura pode levar até 4 horas. Para levar em conta isso, adicione 4 horas ao atraso para todos os dados compilados.</p>"
+>abstract="O tempo que o Customer Journey Analytics aguarda antes de processar um arquivo de feed de dados. Todos os eventos recebidos com atraso durante o período de atraso do processamento são incluídos no feed de dados.<p>O atraso mínimo de processamento é de 2 horas, mas alguns tipos de dados exigem um atraso maior. Escolha um atraso suficientemente longo para que os dados mais lentos da sua conexão cheguem ao data lake da Experience Platform e sejam ingeridos no Customer Journey Analytics. Se o atraso for muito curto, os dados que ainda estão sendo processados não serão incluídos no arquivo de feed de dados.</p><p>A unificação pode levar até 4 horas. Para considerar isso, adicione 4 horas ao atraso para quaisquer dados unificados.</p>"
 
 <!-- markdownlint-enable MD034 -->
 
 ### Como funciona o atraso de processamento
 
-O atraso de processamento é o tempo que o Customer Journey Analytics aguarda antes de processar um arquivo de feed de dados. Todos os eventos de chegada tardia que chegam durante o atraso de processamento são incluídos no feed de dados.
+O atraso de processamento é o tempo que o Customer Journey Analytics aguarda antes de processar um arquivo de feed de dados. Todos os eventos recebidos com atraso durante o período de atraso do processamento são incluídos no feed de dados.
 
 Atrasos de processamento são necessários por vários motivos, como para levar em conta a latência do pipeline, para dar às implementações móveis uma oportunidade para que os dispositivos offline fiquem online e enviem dados ou para acomodar os processos do lado do servidor de sua organização no gerenciamento de arquivos processados anteriormente.
 
-O atraso mínimo de processamento é de 2 horas, mas alguns tipos de dados exigem um atraso mais longo.
+O atraso mínimo de processamento é de 2 horas, mas alguns tipos de dados exigem um atraso maior.
 
 >[!BEGINSHADEBOX]
 
@@ -356,7 +356,7 @@ Os tempos de assimilação de dados variam dependendo se a compilação do conju
 
 Se sua conexão incluir vários tipos de dados, escolha um atraso que acomode os dados mais lentos. No exemplo abaixo, são aproximadamente 8 horas.
 
-A costura pode adicionar até 4 horas para assimilação no Customer Journey Analytics. Para levar em conta isso, adicione 4 horas ao atraso para todos os dados compilados.
+A costura pode adicionar até 4 horas para assimilação no Customer Journey Analytics. Para considerar isso, adicione 4 horas ao atraso para quaisquer dados unificados.
 
 | Fonte de dados | Fase 1: Chegada no data lake | Fase 2: Assimilação na Customer Journey Analytics | Total |
 | --- | --- | --- | --- |

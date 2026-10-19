@@ -39,7 +39,7 @@ topic_v2:
 source-git-commit: 4cdf80f86cea6a60e3b098c6efbaab0821a256c7
 workflow-type: tm+mt
 source-wordcount: '7372'
-ht-degree: 82%
+ht-degree: 83%
 ---
 # Configurar a visualização de uma tela de jornada
 
@@ -150,7 +150,7 @@ Consulte [Visão geral da tela de jornada](/help/analysis-workspace/visualizatio
 >[!CONTEXTUALHELP]
 >id="cja_journeycanvas_compare_percentages"
 >title="Comparar porcentagens"
->abstract="Compara a alteração percentual em cada nó, seta e fallout na jornada entre o intervalo de datas atual e o intervalo de datas de comparação selecionado, com base na métrica principal. Quando essa opção está desativada, a porcentagem do valor bruto é exibida em vez da alteração da porcentagem."
+>abstract="Compara a variação percentual em cada nó, seta e fallout na jornada entre o intervalo de datas atual e o intervalo de datas de comparação selecionado, com base na métrica principal. Quando essa opção está desabilitada, a porcentagem do valor bruto é exibida, em vez da variação percentual."
 
 <!-- markdownlint-enable MD034 -->
 
