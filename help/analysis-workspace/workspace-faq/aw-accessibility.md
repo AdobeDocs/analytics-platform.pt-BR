@@ -7,22 +7,26 @@ role: User
 TQID: https://experienceleague.adobe.com/555a8gxm8jBGyatt1Vp6e40Wj2gqgRl95oFiHC4NMhQ
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: a8b1c240-f315-46e3-b813-f545c4279dd1
+    internal-label: Workspace basics
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: Accessibility
+source-git-commit: 0932da0728fd386c366b3c9b3cec45115f4e7e4b
 workflow-type: tm+mt
-source-wordcount: 547
-ht-degree: 100%
-
+source-wordcount: '903'
+ht-degree: 60%
 ---
-
 # Acessibilidade no Analysis Workspace
 
 Saiba mais sobre o suporte de acessibilidade no [!UICONTROL Analysis Workspace], a principal ferramenta de análise do Customer Journey Analytics.
@@ -63,6 +67,48 @@ O [!UICONTROL Analysis Workspace] possui uma interface de arrastar e soltar. No 
 1. Pressione **[!UICONTROL Enter]** para selecioná-lo.
 1. Use as teclas de seta para navegar até a área onde deseja soltar o componente.
 1. Pressione **[!UICONTROL Enter]** para inserir o componente.
+
+### Navegação do teclado para colunas da tabela {#table-columns}
+
+Você pode redimensionar e reorganizar as colunas da tabela com o teclado. As mesmas teclas funcionam no macOS e no Windows.
+
+#### Redimensionar colunas {#resize-columns}
+
+Você pode redimensionar colunas em tabelas de forma livre e tabelas de coorte usando o separador de redimensionamento de coluna, que é o limite entre dois cabeçalhos de coluna.
+
+1. Pressione **[!UICONTROL Tab]** até que um separador de redimensionamento de coluna tenha foco.
+
+   Instruções para redimensionar a exibição enquanto o separador está em foco. Os leitores de tela anunciam essas instruções e a largura atual da coluna como uma porcentagem.
+
+1. Use as seguintes teclas para redimensionar a coluna. Uma coluna não pode ser redimensionada além de sua largura mínima ou máxima.
+
+   | Chave | Ação |
+   | --- | --- |
+   | **[!UICONTROL Seta para a esquerda]** | Restrinja a coluna à esquerda do separador em 10 pixels. |
+   | **[!UICONTROL Seta para a Direita]** | Amplie a coluna à esquerda do separador em 10 pixels. |
+   | **[!UICONTROL Inserir]** | Redefinir a largura da coluna. |
+
+#### Reorganizar colunas {#rearrange-columns}
+
+Em uma tabela de forma livre que pode ser editada, você pode mover uma coluna para a esquerda ou direita usando o menu **[!UICONTROL Reorganizar]** no cabeçalho da coluna.
+
+1. Pressione **[!UICONTROL Tab]** até que o botão **[!UICONTROL Reorganizar]** no cabeçalho da coluna tenha foco.
+1. Pressione **[!UICONTROL Enter]**, **[!UICONTROL Espaço]** ou **[!UICONTROL Seta para baixo]** para abrir o menu.
+1. Selecione **[!UICONTROL Mover coluna para esquerda]** ou **[!UICONTROL Mover coluna para direita]**.
+
+   Para fechar o menu sem mover a coluna, pressione **[!UICONTROL Esc]**. O foco retorna ao botão **[!UICONTROL Reorganizar]**.
+
+   Depois que você move uma coluna, os leitores de tela anunciam o nome da coluna e sua nova posição dentro do grupo.
+
+Considere o seguinte ao reorganizar as colunas com o teclado:
+
+* Uma coluna se move somente dentro de seu grupo de colunas irmãs, que são as colunas no mesmo nível sob o mesmo cabeçalho pai. Você não pode usar o teclado para mover uma coluna para um grupo diferente ou para copiar uma coluna.
+* Ao mover um cabeçalho pai, suas colunas e filtros aninhados se movem com ele.
+* **[!UICONTROL Mover coluna para a esquerda]** está desabilitado para a primeira coluna de um grupo. **[!UICONTROL Mover coluna para a direita]** está desabilitado para a última coluna de um grupo.
+* O botão **[!UICONTROL Reorganizar]** está disponível somente para colunas que também podem ser reorganizadas arrastando-se. Não está disponível para:
+  * Tabelas somente leitura ou tabelas com interações desabilitadas.
+  * Tabelas de forma livre com [várias colunas de dimensão](/help/analysis-workspace/visualizations/freeform-table/freeform-table-multidimensions.md), nas quais você não pode arrastar colunas.
+  * Colunas de data em tabelas de coorte.
 
 ### Atalhos de teclado (teclas de atalho)
 
