@@ -2114,8 +2114,8 @@ Você deseja usar o valor do parâmetro `cid` de uma string de consulta em um [!
 
 | [!DNL Page URL] |
 |----|
-| `https://www.adobe.com/?cid=abc123` |
-| `https://www.adobe.com/?em=email1234&cid=def123` |
+| `https://www.adobe.com/br/?cid=abc123` |
+| `https://www.adobe.com/br/?em=email1234&cid=def123` |
 | `https://www.adobe.com/landingpage?querystring1=test&test2=1234&cid=xyz123` |
 
 {style="table-layout:auto"}

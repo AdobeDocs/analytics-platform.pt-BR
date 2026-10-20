@@ -1017,5 +1017,5 @@ Esse cálculo é feito para cada conjunto de dados na conexão.
 >[!MORELIKETHIS]
 >
 >* [Visão geral da assimilação de dados](/help/data-ingestion/data-ingestion.md)
->* Blog: [como aproveitar os conjuntos de dados de evento, pesquisa e perfil no Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/how-to-leverage-event-lookup-and-profile-datasets-in-adobe-customer-journey-analytics-12699?profile.language=pt)
+>* Blog: [como aproveitar os conjuntos de dados de evento, pesquisa e perfil no Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/adobe-analytics-3/how-to-leverage-event-lookup-and-profile-datasets-in-adobe-customer-journey-analytics-12699?profile.language=pt&lang=pt)
 
