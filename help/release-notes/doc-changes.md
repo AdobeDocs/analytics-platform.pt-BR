@@ -55,10 +55,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 2c55e526968ca2f064f32c457ee112c07a0b10ff
+source-git-commit: 0932da0728fd386c366b3c9b3cec45115f4e7e4b
 workflow-type: tm+mt
-source-wordcount: '7309'
-ht-degree: 95%
+source-wordcount: '7341'
+ht-degree: 94%
 ---
 
 # Customer Journey Analytics - atualizações de documentação
@@ -70,6 +70,7 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | Recurso | Descrição |
 |---|---|
 | **outubro de 2026** | |
+| Navegação do teclado para colunas da tabela | Instruções documentadas sobre como [redimensionar](/help/analysis-workspace/workspace-faq/aw-accessibility.md#resize-columns) e [reorganizar](/help/analysis-workspace/workspace-faq/aw-accessibility.md#rearrange-columns) colunas de tabela no Analysis Workspace usando o teclado, incluindo comentários de leitores de tela. Também foi adicionada uma seção [Ações da coluna da tabela](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md#table-column-actions) às Teclas de atalho. |
 | Assistente de IA e Data Insights Agent substituídos por colega | Remoção do Assistente de IA e dos artigos do Data Insights Agent. O Adobe CX Enterprise Coworker substitui ambos os recursos. Para obter mais informações, consulte [Analisar dados com o Chat do Colaborador](https://experienceleague.adobe.com/pt-br/docs/coworker/content/chat/use-cases/data-insights/analytics-overview). Também atualizado o [suporte ao recurso Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md#cja-not-aa) para refletir a alteração. |
 | Canal de mídia paga do Content Analytics | [Documentação](/help/content-analytics/config/paid-media.md) abrangente sobre a configuração automática de conjuntos de dados e componentes de visualização de dados resultantes do uso de um conector de origem de mídia paga (como o Google Ads ou o Meta Ads) e da configuração e ativação do canal de mídia paga da Content Analytics. |
 | Insights de conversa | [Documentação](/help/conversation-insights/overview.md) para Insights de Conversa. |

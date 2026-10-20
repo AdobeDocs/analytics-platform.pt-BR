@@ -39,9 +39,9 @@ topic_v2:
     internal-label: Experimentation
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
     internal-label: Governance
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 6283ecbeab12a19fd5b7229dff772afaaedf3296
 workflow-type: tm+mt
-source-wordcount: '4127'
+source-wordcount: '4133'
 ht-degree: 48%
 ---
 # Configurações de componente {#component-settings}
@@ -51,7 +51,7 @@ ht-degree: 48%
 >[!CONTEXTUALHELP]
 >id="dataview_component_settings"
 >title="Configurações de componente"
->abstract="Visualize e configure o nome, a descrição e outras configurações relacionadas a um componente. Marque esta caixa para ocultar este componente de usuários não admins nos relatórios. Admins ainda podem acessar o componente selecionando **[!UICONTROL Mostrar todos os componentes]** em um projeto do espaço de trabalho."
+>abstract="Visualize e configure o nome, a descrição e outras configurações relacionadas a um componente. Marque esta caixa para ocultar este componente de usuários não administradores na interface do Analysis Workspace. Admins ainda podem acessar o componente selecionando **[!UICONTROL Mostrar todos os componentes]** em um projeto do espaço de trabalho."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -83,7 +83,7 @@ As informações a seguir descrevem as configurações que um componente de visu
 | [!UICONTROL ID de componente] | Obrigatório. A [API do Customer Journey Analytics](https://www.adobe.io/cja-apis/docs) usa esse campo para fazer referência ao componente. Cada componente em uma visualização de dados deve ser exclusivo. A Adobe gera automaticamente uma ID para cada componente; no entanto, você pode clicar no ícone editar e modificar a ID do componente. Alterar a ID do componente interrompe todos os projetos existentes do Workspace que contêm esse componente. Embora cada componente precise de uma ID exclusiva em uma única visualização de dados, é possível usar a mesma ID do componente em outras visualizações de dados. Se você usar a mesma ID do componente em outras visualizações de dados, será possível tornar os projetos do espaço de trabalho compatíveis entre as visualizações de dados. <br/>Para componentes baseados em perfil e pesquisa, a ID do componente tem um prefixo baseado na ID do conjunto de dados (por exemplo: `642b28fcc1f0ee1c074265a0.person.name.firstName`). Quando quiser reutilizar um perfil ou componente baseado em pesquisa (como `person.name.firstName`) no projeto do espaço de trabalho e configurar esse componente em diferentes visualizações de dados, forneça um nome exclusivo para a ID do componente (por exemplo: `myUniqueID.person.name.firstName`) em suas visualizações de dados. |
 | [!UICONTROL Caminho] | Obrigatório. Um campo não editável que mostra o caminho do esquema de onde o componente veio. |
 | [!UICONTROL Rótulos de uso de dados] | Quaisquer rótulos de uso de dados atribuídos a este componente no Adobe Experience Platform. [Saiba mais](/help/data-views/data-governance.md). |
-| [!UICONTROL Ocultar componente nos relatórios] | Permitem a preparação do componente fora da visualização de dados para não administradores. Os administradores ainda podem acessá-lo clicando em [!UICONTROL Mostrar todos os componentes] em um projeto do Analysis Workspace. |
+| [!UICONTROL Ocultar componente nos relatórios] | Impede que não administradores acessem o componente no Analysis Workspace. Os administradores ainda podem acessá-lo clicando em [!UICONTROL Mostrar todos os componentes]. Essa configuração se aplica somente à interface do Analysis Workspace e não restringe o acesso por meio das [APIs do CJA](https://developer.adobe.com/cja-apis/docs/). |
 
 {style="table-layout:auto"}
 
@@ -106,9 +106,9 @@ Os rótulos de contexto operam no nível do componente (dimensão ou métrica) e
 
 Por motivos de conveniência, os rótulos de contexto padrão inteligentes são aplicados automaticamente a componentes com base em campos com um caminho XDM específico. Por exemplo, o rótulo de contexto **[!UICONTROL Commerce: Categoria do Produto]** é aplicado automaticamente a uma dimensão **[!UICONTROL Nome da categoria]** baseada no caminho do esquema `productListItems.productCategories.categoryName`. No entanto, você pode mover o rótulo de contexto para um componente diferente sem qualquer problema.
 
-Para simplificar os modelos de projeto fornecidos pela Adobe, várias integrações (como Journey Optimizer, Content Analytics e muito mais) configuram visualizações de dados em que os componentes prontos para uso são construídos de uma maneira específica. Os rótulos de contexto apropriados são aplicados automaticamente. Novamente, basta mover qualquer um desses rótulos de contexto para outros componentes criados na visualização de dados, para que o componente personalizado seja usado.
+Para simplificar os modelos de projeto fornecidos pela Adobe, várias integrações (como Journey Optimizer, Content Analytics e muito mais) configuram visualizações de dados e adicionam rótulos de contexto a componentes pré-construídos. Você pode mover qualquer um desses rótulos de contexto para outros componentes criados na visualização de dados, e seu componente personalizado será usado.
 
-Os rótulos de contexto também são relevantes para a divulgação de modelos de projeto. Os modelos de projeto criam rapidamente a base de relatórios para vários casos de uso diferentes criados com propósitos específicos. No entanto, nem todos os modelos fazem sentido para cada visualização de dados e você não deseja mostrar modelos não aplicáveis. Os rótulos de contexto são usados para mostrar modelos com base no fato de os rótulos de contexto serem incluídos na visualização de dados selecionada.  Basta adicionar mais rótulos de contexto à visualização de dados (componentes) e mais modelos serão disponibilizados. Ou remova rótulos de contexto para ocultar modelos específicos.
+Os rótulos de contexto também são relevantes para a divulgação de modelos de projeto. Os modelos de projeto criam rapidamente a base de relatórios para vários casos de uso diferentes criados com propósitos específicos. No entanto, nem todos os modelos são aplicáveis a todas as visualizações de dados e você não deseja mostrar modelos não aplicáveis. Os rótulos de contexto são usados para mostrar modelos com base no fato de os rótulos de contexto serem incluídos na visualização de dados selecionada.  É possível adicionar mais rótulos de contexto à visualização de dados (componentes), e mais modelos ficam disponíveis. Como alternativa, você pode remover rótulos de contexto para ocultar modelos específicos.
 
 >[!NOTE]
 >
@@ -127,11 +127,11 @@ Os benefícios dos rótulos de contexto são:
 
 Os rótulos de contexto podem ser necessários nas seguintes situações:
 
-* Para definir um conjunto de componentes, você pode usar o nos relatórios de experimentação usando o [painel de Experimentação](/help/analysis-workspace/c-panels/experimentation.md) em projetos do Analysis Workspace.
+* Para definir um conjunto de componentes que você pode usar nos relatórios de experimentação usando o [painel de Experimentação](/help/analysis-workspace/c-panels/experimentation.md) em projetos Analysis Workspace.
 
   Consulte [Integrar ao Journey Optimizer](/help/integrations/ajo.md#data-view) e [Relatórios do Target](/help/integrations/at.md) para mais informações.
 
-* Para definir um conjunto de componentes, você pode usar a visualização [Mapa](/help/analysis-workspace/visualizations/map.md) em projetos Analysis Workspace.
+* Para definir um conjunto de componentes que você pode usar na visualização [Mapa](/help/analysis-workspace/visualizations/map.md) em projetos Analysis Workspace.
 
   Para obter mais informações, consulte [Adicionar rótulos de contexto em visualizações de dados](/help/analysis-workspace/visualizations/map.md#add-context-labels-in-data-views) em [Mapa](/help/analysis-workspace/visualizations/map.md).
 

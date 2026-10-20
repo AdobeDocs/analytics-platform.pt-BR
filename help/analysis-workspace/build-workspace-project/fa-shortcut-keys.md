@@ -8,22 +8,26 @@ role: User
 TQID: https://experienceleague.adobe.com/YWKW578JfolnUul64XLty6ehTVlsdsdTRAgHQG3wzbY
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: a8b1c240-f315-46e3-b813-f545c4279dd1
+    internal-label: Workspace basics
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 18b3b42cafd437749041bc1d408e60e77b42e1fc
+    internal-label: Insights
+source-git-commit: 0932da0728fd386c366b3c9b3cec45115f4e7e4b
 workflow-type: tm+mt
-source-wordcount: 488
-ht-degree: 78%
-
+source-wordcount: '527'
+ht-degree: 72%
 ---
-
 # Teclas de atalho
 
 Há teclas de atalho (atalhos do teclado) disponíveis no Analysis Workspace para simplificar a navegação, análise e democratização.
@@ -97,6 +101,10 @@ Observe que é possível usar os seguintes símbolos do teclado:
 | Redimensionamento mais curto | **[!UICONTROL *cmd + opt + shift + up *]** | **[!UICONTROL *ctrl + alt + shift + up *]** |
 
 A largura é redimensionada em etapas de uma coluna de grade e a altura é redimensionada em etapas de uma célula de grade (aproximadamente 25 pixels).
+
+## Ações de coluna da tabela
+
+Você pode redimensionar e reorganizar as colunas da tabela com o teclado. Essas ações não são teclas de atalho globais. Eles estão disponíveis quando um separador de redimensionamento de coluna ou o botão **[!UICONTROL Reorganizar]** do cabeçalho de coluna tem foco. Consulte [Navegação do teclado para colunas da tabela](/help/analysis-workspace/workspace-faq/aw-accessibility.md#table-columns).
 
 ## Ações de democratização
 

@@ -94,7 +94,7 @@ As seguintes métricas padrão do Customer Journey Analytics não podem ser incl
 | União de pessoas da Adobe | | Não disponível |
 | Perfil de pessoas da Adobe | | Não disponível |
 
-## Dimensões que não podem ser usadas juntas {#incompatible-dimensions}
+## Dimensões que não podem ser usadas em conjunto {#incompatible-dimensions}
 
 <!-- markdownlint-disable MD034 -->
 

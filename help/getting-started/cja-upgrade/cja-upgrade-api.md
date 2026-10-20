@@ -1,5 +1,5 @@
 ---
-title: Instalação do pacote NPM do Platform Web SDK
+title: Instalar o SDK da web da plataforma com o pacote NPM
 description: Saiba como instalar o Web SDK usando o pacote NPM ao atualizar do Adobe Analytics para o Customer Journey Analytics.
 role: Admin
 solution: Customer Journey Analytics
@@ -31,9 +31,9 @@ topic_v2:
 source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
 workflow-type: tm+mt
 source-wordcount: '146'
-ht-degree: 47%
+ht-degree: 60%
 ---
-# Instalação do pacote NPM do Platform Web SDK {#upgrade-manual}
+# Instalar o SDK da web da plataforma com o pacote NPM {#upgrade-manual}
 
 <!-- markdownlint-disable MD034 -->
 
