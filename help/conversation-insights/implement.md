@@ -477,7 +477,7 @@ Veja abaixo um exemplo do uso do grupo de campos Evento de conversa em vários c
     ]
   },
   "web": {
-    "webPageDetails": { "URL": "https://www.adobe.com", "name": "Home Page" }
+    "webPageDetails": { "URL": "https://www.adobe.com/br", "name": "Home Page" }
   },
   "agenticExperience":{
     "conciergeID":"concierge-abc123",
@@ -517,7 +517,7 @@ Veja abaixo um exemplo do uso do grupo de campos Evento de conversa em vários c
     ]
   },
   "web": {
-    "webPageDetails": { "URL": "https://www.adobe.com", "name": "Home Page" }
+    "webPageDetails": { "URL": "https://www.adobe.com/br", "name": "Home Page" }
   },
   "agenticExperience":{
     "conciergeID":"concierge-abc123",
@@ -558,7 +558,7 @@ Veja abaixo um exemplo do uso do grupo de campos Evento de conversa em vários c
     ]
   },
   "web": {
-    "webPageDetails": { "URL": "https://www.adobe.com", "name": "Home Page" }
+    "webPageDetails": { "URL": "https://www.adobe.com/br", "name": "Home Page" }
   },
   "conversation": {
     "conversationID": "conv-001",
@@ -591,7 +591,7 @@ Veja abaixo um exemplo do uso do grupo de campos Evento de conversa em vários c
     ]
   },
   "web": {
-    "webPageDetails": { "URL": "https://www.adobe.com", "name": "Home Page" }
+    "webPageDetails": { "URL": "https://www.adobe.com/br", "name": "Home Page" }
   },
   "agenticExperience":{
     "conciergeID":"concierge-xyz789",
@@ -696,7 +696,7 @@ Qualquer valor de string é aceitável; no entanto, o Adobe preenche os seguinte
     ]
   },
   "web":{
-    "webPageDetails":{ "URL":"https://www.adobe.com", "name":"Home Page" }
+    "webPageDetails":{ "URL":"https://www.adobe.com/br", "name":"Home Page" }
   },
   "agenticExperience":{
     "conciergeID":"concierge-abc123",
