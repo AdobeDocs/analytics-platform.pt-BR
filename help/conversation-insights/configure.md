@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: a02b8d1d6bae6ed8269668d49ed9559688001833
 workflow-type: tm+mt
-source-wordcount: '810'
-ht-degree: 15%
+source-wordcount: '1185'
+ht-degree: 12%
 ---
 # Criar ou editar configurações
 
@@ -64,7 +64,7 @@ Para cada configuração:
    | Campo | Descrição |
    |---------|----------|
    | **[!UICONTROL Nome]** | Especifique um nome para a configuração. |
-   | **[!UICONTROL Sandbox]** | Selecione a sandbox da Experience Platform que contém os conjuntos de dados de eventos de prompts, respostas e comentários que você deseja adicionar à sua conexão. |
+   | **[!UICONTROL Sandbox]** | Selecione a sandbox da Experience Platform que contém os conjuntos de dados de eventos de prompts, respostas e comentários que você deseja adicionar à sua conexão. Você será notificado se nenhum conjunto de dados compatível estiver disponível para a sandbox selecionada. |
 
 1. Na seção **[!UICONTROL Conjuntos de dados]**, especifique as seguintes informações:
 
@@ -75,6 +75,13 @@ Para cada configuração:
    | **[!UICONTROL Solicita o conjunto de dados do evento]** | Selecione o conjunto de dados que contém os dados do evento de prompts. |
    | **[!UICONTROL Conjunto de dados de evento de respostas]** | Selecione o conjunto de dados que contém os dados do evento de respostas. |
    | **[!UICONTROL Conjunto de dados do evento de comentários]** | Selecione o conjunto de dados que contém os dados do evento de feedback. |
+
+   Quando um conjunto de dados contém prompts e respostas, selecione o mesmo conjunto de dados para o **[!UICONTROL conjunto de dados de eventos de Prompts]** e o **[!UICONTROL conjunto de dados de eventos de Respostas]**.
+
+   A opção para [especificar conversações mescladas](#blend-specification) até **[!UICONTROL Configurar especificação mesclada]** está disponível somente uma vez:
+   * Essa configuração foi concluída.
+   * Todos os conjuntos de dados estão disponíveis.
+   * Você tem [permissões do Customer Journey Analytics para editar conexões](/help/technotes/access-control.md).
 
 1. Na seção **[!UICONTROL Conexão]**, se nenhuma conexão já estiver configurada, use **[!UICONTROL Selecionar uma conexão]** para selecionar uma conexão.
 
@@ -123,10 +130,52 @@ Para cada configuração:
 
    * Selecione **[!UICONTROL Sair]** para ignorar qualquer alteração na configuração.
 
+## Especificação de mesclagem
+
+
+>[!CONTEXTUALHELP]
+>id="conversationinsights_blend_specification"
+>title="Configurar especificação de mesclagem"
+>abstract="Você só poderá editar a especificação de mesclagem depois de concluir essa configuração do Conversation Insights, de todos os conjuntos de dados estarem disponíveis e de você ter permissões do Customer Journey Analytics para editar conexões."
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/access-control" text="Controle de acesso"
+
+
+>[!CONTEXTUALHELP]
+>id="conversationinsights_dataset_winner"
+>title="Conjunto de dados vencedor"
+>abstract="Selecione o conjunto de dados que determina o valor do campo ou dos campos nomeados correspondentemente (se um container) no conjunto de dados de conversa mesclada."
+
+Depois de criar uma configuração, você pode configurar [como as conversas dos conjuntos de dados de prompts, respostas, comentários e sinais são misturadas](/help/conversation-insights/overview.md#how-it-works).
+
+Essa especificação permite selecionar o conjunto de dados que determina o valor de campos nomeados correspondentemente (se um container) no conjunto de dados de conversa mesclada.
+
+Por exemplo: se você quiser que o nome do campo **[!UICONTROL Produzido por]** no conjunto de dados de conversação misturado seja definido a partir desse campo com nome semelhante no conjunto de dados de feedback, selecione **[!UICONTROL Conjunto de dados de feedback]** no menu suspenso **[!UICONTROL Vencedor do conjunto de dados]** para esse campo.
+
+Para especificar a conversa mesclada:
+
+1. Selecione **[!UICONTROL Configurar especificação de mistura]**.
+
+1. Na caixa de diálogo **[!UICONTROL Especificação de mesclagem]**, para cada **[!UICONTROL Nome do campo]**, revise o **[!UICONTROL vencedor do conjunto de dados]** sugerido e, opcionalmente, selecione um conjunto de dados diferente.
+
+   * Para cada campo habilitado, selecione opcionalmente outro **[!UICONTROL vencedor do Conjunto de Dados]**. Você pode selecionar entre **[!UICONTROL Conjunto de dados de prompts]**, **[!UICONTROL Conjunto de dados de respostas]** e **[!UICONTROL Conjunto de dados de feedback]**.
+   * Para cada campo de contêiner, opcionalmente selecione outro **[!UICONTROL vencedor do conjunto de dados]** para atualizar todos os campos que pertencem ao contêiner. Você pode selecionar entre **[!UICONTROL Conjunto de dados de prompts]**, **[!UICONTROL Conjunto de dados de respostas]** e **[!UICONTROL Conjunto de dados de feedback]**.
+   * Você não pode selecionar um **[!UICONTROL vencedor do conjunto de dados]** para campos compartilhados entre os conjuntos de dados da conversa (prompts, respostas, feedback e sinais). Esses campos fazem parte dos seguintes grupos de campos:
+
+     | Nome do campo | Grupo de campos | Conjunto de dados vencedor |
+     |---|---|---|
+     | **[!UICONTROL prompt]** | `conversation.prompt.*` | **[!UICONTROL Conjunto de dados de prompts]** |
+     | **[!UICONTROL response]** | `conversation.response.*` | **[!UICONTROL Conjunto de dados de respostas]** |
+     | **[!UICONTROL comentários]** | `conversation.feedback.*` | **[!UICONTROL Conjunto de dados de comentários]** |
+     | **[!UICONTROL agentExperience]** | `agentExperience.*` | **[!UICONTROL Conjunto de dados de respostas]** |
+     | **[!UICONTROL sinais]** | `conversation.signals.*` | **[!UICONTROL Conjunto de dados de sinais]** |
+
+   * Nenhuma seleção **[!UICONTROL Vencedora do Conjunto de Dados]** está disponível para campos de identidade específicos, como **[!UICONTROL ID de Conversa]** ou **[!UICONTROL ID de Virada]**.
+
+1. Selecione **[!UICONTROL Salvar]** para salvar a especificação. Selecione **[!UICONTROL Cancelar]** para cancelar a especificação.
 
 ## Verificação de visualização de dados
 
-As visualizações de dados configuradas em [Etapas de configuração](#configuration-steps) têm **[!UICONTROL Insights de Conversa]** como valor para **[!UICONTROL Integrações]** em [Visualizações de dados](/help/data-views/manage-dataviews.md).
+As visualizações de dados configuradas em [Etapas de configuração](#configuration-steps) têm **[!UICONTROL Insights de conversa]** como valor para **[!UICONTROL Integrações]** em [Visualizações de dados](/help/data-views/manage-dataviews.md).
 
 Para cada uma das visualizações de dados configuradas:
 
