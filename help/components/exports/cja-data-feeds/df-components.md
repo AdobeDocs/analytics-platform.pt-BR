@@ -17,10 +17,10 @@ role_v2:
     internal-label: Admin
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: adc7e85339e89c181375c0d3ea5c228d473239a7
+source-git-commit: 5006a5e7f48fb107cc32cf56051062cc88f35c8e
 workflow-type: tm+mt
-source-wordcount: '1419'
-ht-degree: 43%
+source-wordcount: '1548'
+ht-degree: 40%
 ---
 # Disponibilidade de componentes em feeds de dados
 
@@ -98,8 +98,6 @@ As seguintes métricas padrão do Customer Journey Analytics não podem ser incl
 
 <!-- markdownlint-disable MD034 -->
 
-<!-- pretty sure this isn't being used -->
-
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_user_agent"
 >title=""
@@ -107,20 +105,37 @@ As seguintes métricas padrão do Customer Journey Analytics não podem ser incl
 
 <!-- markdownlint-enable MD034 -->
 
->[!IMPORTANT]
->
->Determinadas dimensões não podem ser usadas juntas em conjuntos de dados do Experience Platform e, portanto, não podem ser incluídas no mesmo feed de dados.
->
->Se você optar por incluir as dimensões **Agente de usuário** ou **ID de dispositivo móvel** no feed de dados, as dimensões listadas abaixo não poderão ser adicionadas ao feed de dados.
+Determinadas dimensões não podem ser usadas juntas em conjuntos de dados do Experience Platform. Um feed de dados pode incluir dimensões de um dos grupos a seguir, mas não de ambos:
+
+* As dimensões **Agente de usuário** e **ID de dispositivo móvel**. <!--UI shows "Type identifier" for device.typeID; align with docs name "Mobile ID" (open question for Danny Carmen).-->
+
+* Dimensões de pesquisa de dispositivo, como navegador, dispositivo móvel e dimensões de sistema operacional. Para obter a lista completa, consulte [Dimensões de pesquisa de dispositivo](#device-lookup-dimensions).
+
+>[!NOTE]
 >
 >Se você usar o Web SDK, essa restrição será imposta nos fluxos de dados antes que os dados cheguem a um conjunto de dados do Experience Platform. Para obter mais informações, consulte [Configurar pesquisa de dispositivo](https://experienceleague.adobe.com/pt-br/docs/experience-platform/datastreams/configure#geolocation-device-lookup) em [Criar e configurar sequências de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/datastreams/configure) no guia Coleção de dados.
 
-As seguintes dimensões não podem ser usadas junto com as dimensões **Agente de Usuário** ou **ID de Dispositivo Móvel**:
+### Resolver conflitos de dimensão
+
+Quando você adiciona dimensões que não podem ser usadas juntas, é exibida uma caixa de diálogo listando quais dimensões serão adicionadas e quais não serão adicionadas ou serão removidas. O que acontece depende de onde o conflito está:
+
+* **As dimensões que você está adicionando estão em conflito com dimensões que já estão no feed de dados**: as dimensões que você está adicionando têm prioridade. A caixa de diálogo solicita que você adicione sua seleção e remova as dimensões conflitantes do feed de dados.
+
+* **As dimensões que você está adicionando estão em conflito**: as dimensões **Agente de usuário** e **ID de dispositivo móvel** têm prioridade. A caixa de diálogo solicita que você as adicione; as dimensões de pesquisa do dispositivo na sua seleção não são adicionadas.
+
+Para manter o feed de dados inalterado, selecione **[!UICONTROL Cancelar]**.
+
+<!--Open questions for Danny Carmen: behavior when a batch contains both groups and the feed already has conflicting dimensions; whether "add all" adds the full selection or only the listed dimensions.-->
+
+### Dimensões de pesquisa de dispositivo {#device-lookup-dimensions}
+
+As seguintes dimensões não podem ser incluídas no mesmo feed de dados que as dimensões **Agente de usuário** ou **ID de dispositivo móvel**.
 
 >[!NOTE]
 >
 >A lista a seguir usa nomes de dimensão padrão. As dimensões renomeadas na visualização de dados aparecem nos feeds de dados com seus nomes personalizados.
 
+<!--Engineering lists 30 device lookup fields; this list has 28. Likely missing: environment.operatingSystemIDStr and environment.browserIDStr. Confirm display names with Danny Carmen.-->
 
 * Tipo de navegador
 * Navegador
