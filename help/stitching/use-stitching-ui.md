@@ -24,9 +24,9 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 49795b40eab1fcd1bfd472ccb756587adf9877b8
+source-git-commit: 5f5e011198decd41ced888904b643d817959dab3
 workflow-type: tm+mt
-source-wordcount: '1989'
+source-wordcount: '1971'
 ht-degree: 18%
 ---
 # Habilitar compilação
@@ -252,8 +252,6 @@ Para uma configuração de conexão inicial válida que é salva e contém um co
 * Os dados ao vivo são exibidos inicialmente no Customer Journey Analytics após algumas horas (menos de 14 horas). Novos dados ao vivo estão disponíveis em poucas horas. Os dados em tempo real começam com valores de carimbo de data e hora do evento que correspondem ao momento real em que a ativação da compilação foi concluída.
 
   Para garantir que os dados em tempo real comecem a fluir, habilite a opção **[!UICONTROL Importar todos os novos dados]** para o conjunto de dados.
-
-  Os novos dados assimilados no conjunto de dados do evento de origem do Experience Platform aparecem no Customer Journey Analytics dentro de quatro horas.
 
 * Os dados preenchidos retroativamente (se solicitados inicialmente) são exibidos no Customer Journey Analytics quase ao mesmo tempo que os dados em tempo real, mas podem levar dias para serem totalmente processados, dependendo dos volumes envolvidos. Os dados preenchidos retroativamente começam com os valores de carimbo de data e hora do evento mais antigos.
 
