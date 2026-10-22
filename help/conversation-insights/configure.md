@@ -137,7 +137,7 @@ Para cada configuração:
 >id="conversationinsights_blend_specification"
 >title="Configurar especificação de mesclagem"
 >abstract="Você só poderá editar a especificação de mesclagem depois de concluir essa configuração do Conversation Insights, de todos os conjuntos de dados estarem disponíveis e de você ter permissões do Customer Journey Analytics para editar conexões."
->additional-url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/technotes/access-control" text="Controle de acesso"
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/access-control" text="Controle de acesso"
 
 
 >[!CONTEXTUALHELP]
