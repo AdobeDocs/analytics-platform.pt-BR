@@ -34,9 +34,9 @@ role_v2:
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 9e9722a8c5848cba2e657a9c538d61e9453b0d09
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '514'
 ht-degree: 9%
 ---
 # Transformar conjunto de dados para pesquisas B2B
@@ -56,9 +56,9 @@ Essa transformação só está disponível para conjuntos de dados com dados par
 
 >[!PREREQUISITES]
 >
->Para que a assimilação funcione corretamente, você deve validar se os conjuntos de dados de pesquisa B2B têm dados preenchidos para os seguintes campos (conforme definido nos esquemas de pesquisa B2B):
+>Para que a assimilação funcione corretamente, cada conjunto de dados na tabela a seguir deve conter o campo especificado preenchido com dados:
 >
->| Conjunto de dados que contém dados em conformidade com o esquema | Campo preenchido com dados |
+>| Conjunto de dados que contém dados em conformidade com o esquema | Campo obrigatório preenchido com dados |
 >|---|---|
 >| Relação pessoal da conta de negócios XDM | `accountPersonID` |
 >| Pessoa de oportunidade de negócios XDM | `opportunityPersonID` |
