@@ -21,10 +21,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: 21a2b0cc296d30de7f656a658d7e382c8c4ea835
 workflow-type: tm+mt
-source-wordcount: '1215'
-ht-degree: 31%
+source-wordcount: '1216'
+ht-degree: 29%
 ---
 # Operadores
 
@@ -47,9 +47,15 @@ O único caractere curinga aceito para operadores que oferecem suporte a curinga
 Por exemplo, você tem um nome de página chamado *Meu produto divertido*.
 
 * O **[!UICONTROL nome de página]** **[!UICONTROL correspondências]** `* product` da regra de segmento corresponderá ao nome de página acima.
-* No entanto, a regra **[!UICONTROL Nome da página]** **[!UICONTROL corresponde]** `My \* product` corresponde somente ao nome da página *Meu* Produto*.
+* No entanto, a regra **[!UICONTROL Nome da página]** **[!UICONTROL corresponde]** `My \* product` corresponde somente ao nome da página *Meu* produto*.
 
 ## Operadores padrão
+
+>[!NOTE]
+>
+>Quando você usa operadores padrão, os valores inseridos retornam resultados independentemente de letras maiúsculas ou minúsculas, exceto por **[!UICONTROL corresponde]** e **[!UICONTROL não corresponde]**.
+>
+>Por exemplo, **[!UICONTROL Nome da Página]** **[!UICONTROL igual]** `search results` retorna *Resultados da Pesquisa*, *resultados da pesquisa* e *RESULTADOS DA PESQUISA*.
 
 | Operador | A dimensão, segmento ou evento de métrica selecionado... |
 |--- |--- |
@@ -57,7 +63,7 @@ Por exemplo, você tem um nome de página chamado *Meu produto divertido*.
 | **[!UICONTROL não é igual a]** | Retorna todos os itens que não contêm a correspondência exata do valor inserido.  Observação: se estiver usando caracteres curingas, use o operador **[!UICONTROL não corresponde]**. |
 | **[!UICONTROL é igual a qualquer um de]** | Retorna itens que correspondem exatamente a qualquer valor no campo de entrada (até 500 itens). Por exemplo, inserir `Search Results, Homepage` para a dimensão **[!UICONTROL Nome da Página]** com este operador corresponderia a *Resultados da Pesquisa* e *Página Inicial* e contaria como 2 itens. O campo de entrada desse operador é delimitado por vírgulas. |
 | **[!UICONTROL não é igual a qualquer um de]** | Identifica itens que correspondem exatamente a qualquer valor no campo de entrada (até 500 itens) e retorna apenas itens sem esses valores. Por exemplo, inserir `Search Results, Homepage` com este operador para a dimensão **[!UICONTROL Nome da Página]** identificaria os *Resultados da Pesquisa* e a *Página Inicial* e, em seguida, **os excluiria** dos itens retornados. Esse exemplo contaria como 2 itens. O campo de entrada desse operador é delimitado por vírgulas. |
-| **[!UICONTROL contém]** | Retorna itens que se comparam às subsequências de caracteres dos valores inseridos. Por exemplo, se a regra for **[!UICONTROL Nome da Página]** **[!UICONTROL contém]** `Search`, ela corresponderá a qualquer página que tenha a subsequência de caracteres `Search` nela, incluindo *Resultados da Pesquisa*, *Pesquisa* e *Pesquisa*. A cláusula &quot;contains&quot; não diferencia maiúsculas de minúsculas no Adobe Analytics, mas faz isso no Customer Journey Analytics. |
+| **[!UICONTROL contém]** | Retorna itens que se comparam às subsequências de caracteres dos valores inseridos. Por exemplo, se a regra for **[!UICONTROL Nome da Página]** **[!UICONTROL contém]** `Search`, ela corresponderá a qualquer página que tenha a subsequência de caracteres `Search` nela, incluindo *Resultados da Pesquisa*, *Pesquisa* e *Pesquisa*. |
 | **[!UICONTROL não contém]** | Retorna o inverso da regra **[!UICONTROL contém]**. Especificamente, todos os itens que correspondem ao valor inserido serão excluídos dos valores inseridos. Por exemplo, se a regra for **[!UICONTROL Nome da Página]** **[!UICONTROL não contiver]** `Search`, ela não corresponderá a nenhuma página que tenha a subsequência de caracteres `Search` nela, incluindo *Resultados da Pesquisa*, *Pesquisa* e *Pesquisa*. Esses valores serão excluídos dos resultados. |
 | **[!UICONTROL contém tudo de]** | Retorna itens comparados às subsequências de caracteres, incluindo vários valores agrupados. Por exemplo, inserir `Search Results` com este operador para a dimensão **[!UICONTROL Nome da Página]** corresponderia a *Resultados da Pesquisa* e *Resultados da Pesquisa*, mas não a *Pesquisa* ou *Resultados* individualmente. A regra corresponderia a *Pesquisa* E *Resultados* encontrados juntos. O campo de entrada desse operador é delimitado por espaços (100 palavras). |
 | **[!UICONTROL não contém todos os]** | Identifica itens comparados com subsequências de caracteres, incluindo vários valores agrupados, e retorna somente itens sem esses valores. Por exemplo, inserir `Search Results` com este operador para a dimensão **[!UICONTROL Nome da Página]** identificará *Resultados da Pesquisa* e *Resultados da Pesquisa* (mas não *Pesquisa* ou *Resultados* individualmente) e excluirá esses itens. O campo de entrada desse operador é delimitado por espaços (100 palavras). |
@@ -67,8 +73,8 @@ Por exemplo, você tem um nome de página chamado *Meu produto divertido*.
 | **[!UICONTROL não começa com]** | Retorna todos os itens que não iniciam com o valor da cadeia de caracteres inserido. Este é o inverso do operador **[!UICONTROL inicia com]**. |
 | **[!UICONTROL termina com]** | Retorna itens que terminam com o valor da cadeia de caracteres inserido. |
 | **[!UICONTROL não termina com]** | Retorna todos os itens que não terminam com o valor da cadeia de caracteres inserido. Este é o inverso do operador **[!UICONTROL termina com]**. |
-| **[!UICONTROL correspondências]** | Retorna itens correspondentes com base no valor numérico ou de sequência. A cláusula **[!UICONTROL matches]** diferencia maiúsculas de minúsculas no Adobe Analytics e no Customer Journey Analytics. **Observação**: use este operador quando estiver usando recursos de curinga [3&rbrace;. &#x200B;](#wildcards)Exemplos de recurso de curinga:<ul><li>`a*e` corresponde a `ae`, `abcde`, `adobe` e `a whole sentence`</li><li>`adob*` corresponde a `adobe`, `adobe analytics` e `adobo recipe`</li><li>`*dobe` corresponde a `dobe`, `adobe` e `cute little dobe`</li></ul> |
-| **[!UICONTROL não corresponde]** | Retorna todos os itens que não contêm a correspondência exata do valor inserido. Observação: use este operador quando utilizar recursos de curinga [1&rbrace;.](#wildcards) |
+| **[!UICONTROL correspondências]** | Retorna itens correspondentes com base no valor numérico ou de sequência. **Observação**: use este operador quando estiver usando recursos de curinga [3}. ](#wildcards)Exemplos de recurso de curinga:<ul><li>`a*e` corresponde a `ae`, `abcde`, `adobe` e `a whole sentence`</li><li>`adob*` corresponde a `adobe`, `adobe analytics` e `adobo recipe`</li><li>`*dobe` corresponde a `dobe`, `adobe` e `cute little dobe`</li></ul> |
+| **[!UICONTROL não corresponde]** | Retorna todos os itens que não contêm a correspondência exata do valor inserido. Observação: use este operador quando utilizar recursos de curinga [1}.](#wildcards) |
 | **[!UICONTROL existe]** | Retorna o número de itens que existem. Por exemplo, se você avaliar a dimensão **[!UICONTROL Páginas não encontradas]** usando o operador **[!UICONTROL existe]**, o número de páginas de erro que existe é retornado. |
 | **[!UICONTROL não existe]** | Retorna todos os itens que não existem. Por exemplo, se você avaliar a dimensão **[!UICONTROL Páginas não encontradas]** usando o operador **[!UICONTROL não existe]**, o número de páginas nas quais esse erro não existia é retornado. |
 
@@ -97,6 +103,6 @@ Por exemplo, você tem um nome de página chamado *Meu produto divertido*.
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Distinct dimension counts](https://experienceleague.adobe.com/pt-br/docs/analytics-learn/tutorials/components/calculated-metrics/approximate-count-distinct-function-in-calculated-metrics){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Distinct dimension counts](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/components/calculated-metrics/approximate-count-distinct-function-in-calculated-metrics){target="_blank"} para ver um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
