@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 39d7aae2c47754899a2ac7d1a544a0b585d99b8b
+source-git-commit: bccb25182630e18943a52ceca621cdfd6696b819
 workflow-type: tm+mt
-source-wordcount: '4362'
-ht-degree: 15%
+source-wordcount: '4243'
+ht-degree: 16%
 ---
 # Criar um feed de dados
 
@@ -71,24 +71,6 @@ Antes de criar um feed de dados, é importante ter uma compreensão básica dos 
 >id="cja_datafeed_frequency_granularity"
 >title="Frequência e granularidade"
 >abstract="**Frequência de entrega** (feeds em tempo real): a frequência com que o feed de dados é entregue. As entregas horárias contêm o valor de uma hora de dados; as entregas diárias contêm o valor de um dia de dados. O intervalo de datas da retrospectiva e o atraso de processamento também podem afetar quais eventos são incluídos.<p>**Granularidade** (feeds de preenchimento retroativo): o intervalo de tempo usado para dividir os dados históricos. Cada bloco contém o valor de um dia de dados e é entregue o mais rápido possível, não uma vez por dia. Este campo é sempre definido como Diário e não pode ser modificado.</p>"
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja-df-export-file-name"
->title="Caminho ou nome de arquivo"
->abstract="Especifique um caminho ou nome de arquivo (ou ambos) para determinar para onde os arquivos são enviados no local selecionado. Para salvar arquivos na pasta de nível superior do local, especifique `/`.<br/>Para feeds ao vivo, você pode usar variáveis para tornar o caminho ou o nome do arquivo dinâmico. <br/>Por exemplo, se você especificar `${yyyy}/${MM}/${dd}/my-feed-${instance_id}-${idx}`, um feed ao vivo entregue em 15 de janeiro de 2027 terá o seguinte caminho de arquivo e nome: `[prefix_folder_name]/2027/01/15/my-feed-[UUID]-1.parquet` <br/>Selecione o link abaixo para obter uma lista de variáveis disponíveis."
-
-<!-- markdownlint-enable MD034 -->
-
-<!-- markdownlint-disable MD034 -->
-
->[!CONTEXTUALHELP]
->id="cja-df-export-file-name-override"
->title="Substituir caminho ou nome de arquivo padrão"
->abstract="Habilite esta opção para substituir o caminho padrão ou o nome de arquivo definido para este local. A substituição se aplica somente a esse feed de dados e determina para onde os arquivos do feed de dados são enviados."
 
 <!-- markdownlint-enable MD034 -->
 

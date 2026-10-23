@@ -49,14 +49,14 @@ topic_v2:
     internal-label: Implementation
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 952a54cc63b5d725c40c8f99cb1821e8b8e9f362
+source-git-commit: fbfd8f635d4a861d3d52dc2448ff8ae5d5f5b149
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1047'
 ht-degree: 22%
 ---
 # Notas de versão atuais do Customer Journey Analytics (outubro de 2026)
 
-**Última atualização**: 20 de outubro de 2026
+**Última atualização**: 22 de outubro de 2026
 
 Essas notas de versão abordam o período de outubro de 2026. As versões do Adobe Customer Journey Analytics operam em um [modelo de entrega contínua](releases.md) que permite uma abordagem escalável e em fases para a implantação de recursos. Sendo assim, essas notas de versão são atualizadas várias vezes por mês. Verifique-as regularmente.
 
@@ -69,7 +69,7 @@ Essas notas de versão abordam o período de outubro de 2026. As versões do Ado
 | **Integração com o Adobe Brand Visibility**<br/> Conecte o Adobe Brand Visibility aos dados do Customer Journey Analytics de sua organização para que você possa medir como a descoberta orientada por IA se traduz em envolvimento real com o site e em resultados comerciais.<p>Para obter mais informações, consulte [integração com o Adobe Brand Visibility](/help/integrations/bv/bv.md).</p> | | 8 de outubro de 2026 |
 | **Tela de Jornada: Comparar porcentagens**<br/> Ao comparar uma jornada com um período anterior, você pode habilitar a nova opção [!UICONTROL Comparar porcentagens] para mostrar a alteração nos pontos percentuais para cada nó, seta e fallout. Isso é útil ao comparar taxas, como retenção entre nós ou fallout, pois a comparação permanece precisa mesmo quando o número de pessoas na jornada é diferente entre os intervalos de datas.<p>Para obter mais informações, consulte &quot;Comparar porcentagens&quot; em [Configurar uma visualização da tela de Jornada](/help/analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md#configure-visualization-settings).</p> | | 19 de outubro de 2026 |
 | **Gerar automaticamente descrições de componentes** <br/>Agora você pode gerar descrições automaticamente para dimensões, métricas, métricas calculadas, segmentos e intervalos de datas. Isso permite que os usuários do Workspace entendam quais componentes usar, especialmente em organizações com grandes bibliotecas de componentes. <p>Você pode gerar uma descrição para um único componente ou gerar descrições para muitos componentes ao mesmo tempo.</p> <p>(O link da documentação será disponibilizado em breve).<!--For more information, see [Automatically generate descriptions](/help/components/add-component-descriptions.md#automatically-generate-descriptions).--></p> | | 28 de outubro de 2026 |
-| **Experiência no produto para o Colaborador**<br/> O Colaborador agora está disponível em um painel de chat no Analysis Workspace. O Colaborador usa o projeto aberto como contexto, para que você possa fazer perguntas sobre a análise sem explicar o que o projeto contém.<p>Usando a experiência no produto para o Colaborador, você pode:</p><ul><li>Resuma o projeto aberto, encontre insights e execute a análise de causa raiz.</li><li>Crie e edite o projeto com prompts em linguagem natural. Por exemplo, você pode adicionar painéis e tabelas, analisar dados, alterar tipos de visualização e intervalos de datas e criar segmentos.</li></ul><p>(Atualizações de documentação a serem seguidas.)<!-- For more information, see [Use the in-product experience for Coworker](/help/analysis-workspace/coworker.md). --></p> | 22 de outubro de 2026 (planejado originalmente para 15 de outubro de 2026) | A ser determinado |
+| **Experiência no produto para o Colaborador**<br/> O Colaborador agora está disponível em um painel de chat no Analysis Workspace. O Colaborador usa o projeto aberto como contexto, para que você possa fazer perguntas sobre a análise sem explicar o que o projeto contém.<p>Usando a experiência no produto para o Colaborador, você pode:</p><ul><li>Resuma o projeto aberto, encontre insights e execute a análise de causa raiz.</li><li>Crie e edite o projeto com prompts em linguagem natural. Por exemplo, você pode adicionar painéis e tabelas, analisar dados, alterar tipos de visualização e intervalos de datas e criar segmentos.</li></ul><p>(Atualizações de documentação a serem seguidas.)<!-- For more information, see [Use the in-product experience for Coworker](/help/analysis-workspace/coworker.md). --></p> | A ser definido (planejado originalmente para 15 de outubro de 2026) | A ser determinado |
 
 
 ### Correções no Customer Journey Analytics

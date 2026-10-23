@@ -22,17 +22,17 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: c6330935bb6b36fab622b7884e9182ebd4bdc610
 workflow-type: tm+mt
-source-wordcount: '466'
-ht-degree: 63%
+source-wordcount: '470'
+ht-degree: 60%
 ---
 # Práticas recomendadas de atribuição
 
 Escolher o modelo de atribuição correto para sua organização depende de várias considerações. Este artigo explora uma metodologia e algumas práticas recomendadas gerais:
 
 * [Análise exploratória](#exploratory-analysis)
-* [Atribuições baseadas em regras](#rule-base-attribution)
+* [Atribuição baseada em regras](#rule-based-attribution)
 * [Usar atribuição algorítmica](#use-algorithmic-attribution)
 
 ## Análise exploratória
@@ -46,11 +46,11 @@ Essa fase consiste inicialmente em entender o comportamento do cliente e definir
 * A proporção/distribuição desses comportamentos
 
 Por exemplo, se 50% dos clientes acessarem três canais antes da conversão, haverá alguma interação entre esses três canais?
-Você poderia então fazer uma análise de topo e fundo de funil para expandir sua compreensão.
+Para expandir sua compreensão, execute análise de funnel superior e inferior.
 
 ### Análise de topo de funil
 
-Os canais de análise de funil superior são usados para criar percepção da marca ou do produto. Por exemplo, o objetivo da maioria das publicidades de TV é a percepção de marca. Você pode usar o [modelo de atribuição de declínio de tempo](/help/analysis-workspace/attribution/models.md), já que as pessoas esquecerão seu anúncio de TV ao longo do tempo.
+Os canais de análise de funil superior são usados para criar percepção da marca ou do produto. Por exemplo, o objetivo da maioria das publicidades de TV é a percepção de marca. Use o [Modelo de atribuição de declínio de tempo](/help/analysis-workspace/attribution/models.md), pois as pessoas esquecerão seu anúncio de TV ao longo do tempo.
 
 ### Análise de fundo de funil
 
@@ -64,15 +64,19 @@ A finalidade dessa etapa é validar a sua hipótese.
 
 Suponha que sua hipótese seja: &quot;*Meu canal de primeiro contato tem mais impacto na conversão do que meu canal de último contato.*&quot;
 
-Nesse caso, você usaria o [modelo de atribuição Inverse J-shape](/help/analysis-workspace/attribution/models.md) para testar essa hipótese. Esse modelo concede 60% do crédito ao primeiro ponto de contato.
+Nesse caso, use o [modelo de atribuição Inverse J-shape](/help/analysis-workspace/attribution/models.md) para testar essa hipótese. Esse modelo concede 60% do crédito ao primeiro ponto de contato.
 
 **Exemplo 2**
 
-Suponha que sua hipótese seja: *&quot;Em um setor específico (como o de viagens), a janela de atribuição é de 60 ou 90 dias, não 30 dias, porque os clientes fazem muita pesquisa antes de comprar um produto.*&quot;
+Suponha que sua hipótese seja: *&quot;No setor de viagens, a janela de atribuição é de 60 ou 90 dias, não 30, porque os clientes pesquisam muito antes de comprar.&quot;*
 
-Nesse caso, você alteraria sua [janela de retrospectiva](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/attribution/models) para 90 dias.
+Nesse caso, altere sua [janela de retrospectiva](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/attribution/models) para 90 dias.
 
 ## Usar atribuição algorítmica
+
+>[!NOTE]
+>
+>Você deve ter o pacote Customer Journey Analytics **Ultimate** para usar atribuição algorítmica. Entre em contato com sua administração se não tiver certeza de qual pacote do Customer Journey Analytics você possui.
 
 Se você ainda não tiver um modelo de atribuição que forneça respostas satisfatórias para todas as suas perguntas, você pode usar a [atribuição algorítmica](/help/analysis-workspace/attribution/algorithmic.md). Como é muito difícil validar um grande número de hipóteses e combinações possíveis, a atribuição algorítmica usa algoritmos integrados para alocar crédito entre itens de dimensão.
 
