@@ -220,7 +220,7 @@ Na saída do feed de dados, `survey_question` e `survey_answer` são as IDs de c
 
 ### Mapa de identidade
 
-Cada identidade no campo [`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap) é exportada como um objeto. O objeto contém o namespace de identidade (a chave), juntamente com o identificador, o estado autenticado e o sinalizador principal. O namespace se repete para cada identidade nesse namespace.
+Cada identidade no campo [`identityMap`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/field-groups/profile/identitymap) é exportada como um objeto. O objeto contém o namespace de identidade (a chave), juntamente com o identificador, o estado autenticado e o sinalizador principal. O namespace se repete para cada identidade nesse namespace.
 
 Somente os atributos do mapa de identidade que existem como dimensões em sua visualização de dados e que você adiciona ao feed de dados são exportados.
 
