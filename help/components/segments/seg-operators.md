@@ -21,9 +21,9 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 21a2b0cc296d30de7f656a658d7e382c8c4ea835
+source-git-commit: ef2836930bd1fefb99115d4a73b9b0d4a178ccd3
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1211'
 ht-degree: 29%
 ---
 # Operadores
@@ -53,7 +53,7 @@ Por exemplo, você tem um nome de página chamado *Meu produto divertido*.
 
 >[!NOTE]
 >
->Quando você usa operadores padrão, os valores inseridos retornam resultados independentemente de letras maiúsculas ou minúsculas, exceto por **[!UICONTROL corresponde]** e **[!UICONTROL não corresponde]**.
+>Quando você usa operadores padrão, os resultados não diferenciam maiúsculas de minúsculas, exceto por **[!UICONTROL corresponde]** e **[!UICONTROL não corresponde]**.
 >
 >Por exemplo, **[!UICONTROL Nome da Página]** **[!UICONTROL igual]** `search results` retorna *Resultados da Pesquisa*, *resultados da pesquisa* e *RESULTADOS DA PESQUISA*.
 
@@ -73,8 +73,8 @@ Por exemplo, você tem um nome de página chamado *Meu produto divertido*.
 | **[!UICONTROL não começa com]** | Retorna todos os itens que não iniciam com o valor da cadeia de caracteres inserido. Este é o inverso do operador **[!UICONTROL inicia com]**. |
 | **[!UICONTROL termina com]** | Retorna itens que terminam com o valor da cadeia de caracteres inserido. |
 | **[!UICONTROL não termina com]** | Retorna todos os itens que não terminam com o valor da cadeia de caracteres inserido. Este é o inverso do operador **[!UICONTROL termina com]**. |
-| **[!UICONTROL correspondências]** | Retorna itens correspondentes com base no valor numérico ou de sequência. **Observação**: use este operador quando estiver usando recursos de curinga [3&rbrace;. &#x200B;](#wildcards)Exemplos de recurso de curinga:<ul><li>`a*e` corresponde a `ae`, `abcde`, `adobe` e `a whole sentence`</li><li>`adob*` corresponde a `adobe`, `adobe analytics` e `adobo recipe`</li><li>`*dobe` corresponde a `dobe`, `adobe` e `cute little dobe`</li></ul> |
-| **[!UICONTROL não corresponde]** | Retorna todos os itens que não contêm a correspondência exata do valor inserido. Observação: use este operador quando utilizar recursos de curinga [1&rbrace;.](#wildcards) |
+| **[!UICONTROL correspondências]** | Retorna itens correspondentes com base no valor numérico ou de sequência. **Observação**: use este operador quando estiver usando recursos de curinga [3}. ](#wildcards)Exemplos de recurso de curinga:<ul><li>`a*e` corresponde a `ae`, `abcde`, `adobe` e `a whole sentence`</li><li>`adob*` corresponde a `adobe`, `adobe analytics` e `adobo recipe`</li><li>`*dobe` corresponde a `dobe`, `adobe` e `cute little dobe`</li></ul> |
+| **[!UICONTROL não corresponde]** | Retorna todos os itens que não contêm a correspondência exata do valor inserido. Observação: use este operador quando utilizar recursos de curinga [1}.](#wildcards) |
 | **[!UICONTROL existe]** | Retorna o número de itens que existem. Por exemplo, se você avaliar a dimensão **[!UICONTROL Páginas não encontradas]** usando o operador **[!UICONTROL existe]**, o número de páginas de erro que existe é retornado. |
 | **[!UICONTROL não existe]** | Retorna todos os itens que não existem. Por exemplo, se você avaliar a dimensão **[!UICONTROL Páginas não encontradas]** usando o operador **[!UICONTROL não existe]**, o número de páginas nas quais esse erro não existia é retornado. |
 
@@ -103,6 +103,6 @@ Por exemplo, você tem um nome de página chamado *Meu produto divertido*.
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Distinct dimension counts](https://experienceleague.adobe.com/pt-br/docs/analytics-learn/tutorials/components/calculated-metrics/approximate-count-distinct-function-in-calculated-metrics){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Distinct dimension counts](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/components/calculated-metrics/approximate-count-distinct-function-in-calculated-metrics){target="_blank"} para ver um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
