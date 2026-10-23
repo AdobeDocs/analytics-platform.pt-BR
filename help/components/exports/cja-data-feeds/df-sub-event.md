@@ -14,10 +14,10 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 77f5caf20d2bf391563de20a572ce100cdcca61e
+source-git-commit: a4ea9270d5bf27234fa229e8ba3df5998ecea0e1
 workflow-type: tm+mt
-source-wordcount: '1286'
-ht-degree: 1%
+source-wordcount: '1303'
+ht-degree: 0%
 ---
 # Componentes de sub-eventos em feeds de dados
 
@@ -110,7 +110,7 @@ Para obter informações sobre como adicionar componentes, incluindo componentes
 
 Como os dados de subeventos [aparecem de forma diferente nos feeds de dados do Customer Journey Analytics](#sub-event-differences-between-adobe-analytics-and-customer-journey-analytics), as consultas usadas para eles são diferentes daquelas usadas para os feeds de dados do Adobe Analytics.
 
-Os exemplos a seguir mostram como localizar eventos que incluem um produto específico. Os exemplos usam a sintaxe do Google BigQuery. Outros data warehouses, como Snowflake e Databricks, oferecem suporte à mesma abordagem com pequenas diferenças de sintaxe.
+Os exemplos a seguir mostram como localizar eventos que incluem um produto específico. Os exemplos usam a sintaxe do Google BigQuery, onde `UNNEST` expande uma matriz em linhas. Outros data warehouses oferecem suporte à mesma abordagem com suas próprias funções de matriz, como `FLATTEN` no Snowflake ou `explode` no Databricks.
 
 +++ Consultar dados do produto nos feeds de dados do Customer Journey Analytics
 
@@ -133,7 +133,7 @@ A forma como você grava a consulta depende de se você deseja uma linha por eve
 
 **Retornar uma linha por evento**
 
-Para filtrar eventos sem alterar o número de linhas, use `UNNEST` dentro de uma subconsulta `EXISTS`:
+Para filtrar eventos sem alterar o número de linhas, use uma função de matriz, como `UNNEST` dentro de uma subconsulta `EXISTS`:
 
 ```sql
 SELECT row_id, timestamp_utc, product_list_items
@@ -149,7 +149,7 @@ Esta consulta retorna uma linha para cada evento correspondente, com a matriz `p
 
 **Retornar uma linha por produto correspondente**
 
-Para retornar uma linha para cada produto correspondente, mova `UNNEST` para a cláusula `FROM` externa:
+Para retornar uma linha para cada produto correspondente, mova a função de matriz para a cláusula externa `FROM`:
 
 ```sql
 SELECT f.row_id, f.timestamp_utc, item.product, item.quantity, item.revenue
