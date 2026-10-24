@@ -55,10 +55,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ef2836930bd1fefb99115d4a73b9b0d4a178ccd3
+source-git-commit: f7d853a3b658328f952b675f838ce314b7c30fb1
 workflow-type: tm+mt
-source-wordcount: '7364'
-ht-degree: 94%
+source-wordcount: '7412'
+ht-degree: 93%
 ---
 
 # Customer Journey Analytics - atualizações de documentação
@@ -70,6 +70,7 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | Recurso | Descrição |
 |---|---|
 | **outubro de 2026** | |
+| Bloquear seleção para visualizações | [Gerenciar fontes de dados](/help/analysis-workspace/visualizations/t-sync-visualization.md) reestruturadas para separar as definições de configuração da fonte de dados do bloqueio da seleção. Também esclareceu como a [seleção de bloqueio](/help/analysis-workspace/visualizations/t-sync-visualization.md#lock-selection) funciona quando uma visualização está bloqueada para linhas em uma tabela de forma livre, incluindo o que acontece quando as linhas de detalhamento bloqueadas não estão mais na tabela. |
 | Diferenciação de maiúsculas e minúsculas para operadores de segmento | Esclarecimento de que, quando você usa [operadores padrão](/help/components/segments/seg-operators.md#standard-operators), os resultados não diferenciam maiúsculas de minúsculas, exceto por **[!UICONTROL correspondências]** e **[!UICONTROL não correspondem]**. |
 | Navegação do teclado para colunas da tabela | Instruções documentadas sobre como [redimensionar](/help/analysis-workspace/workspace-faq/aw-accessibility.md#resize-columns) e [reorganizar](/help/analysis-workspace/workspace-faq/aw-accessibility.md#rearrange-columns) colunas de tabela no Analysis Workspace usando o teclado, incluindo comentários de leitores de tela. Também foi adicionada uma seção [Ações da coluna da tabela](/help/analysis-workspace/build-workspace-project/fa-shortcut-keys.md#table-column-actions) às Teclas de atalho. |
 | Assistente de IA e Data Insights Agent substituídos por colega | Remoção do Assistente de IA e dos artigos do Data Insights Agent. O Adobe CX Enterprise Coworker substitui ambos os recursos. Para obter mais informações, consulte [Analisar dados com o Chat do Colaborador](https://experienceleague.adobe.com/pt-br/docs/coworker/content/chat/use-cases/data-insights/analytics-overview). Também atualizado o [suporte ao recurso Customer Journey Analytics](/help/getting-started/aa-vs-cja/cja-aa.md#cja-not-aa) para refletir a alteração. |
