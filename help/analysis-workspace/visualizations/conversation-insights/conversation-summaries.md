@@ -46,7 +46,7 @@ Para criar e configurar uma visualização de **[!UICONTROL Resumos da conversa]
 
 1. Selecione **[!UICONTROL Build]** para criar a visualização. Selecione **[!UICONTROL Redefinir]** para redefinir os valores de configuração para os padrões. Selecione **[!UICONTROL Cancelar]** para cancelar a configuração.
 
-Para reconfigurar a visualização dos **[!UICONTROL Resumos da conversa]**, selecione ![Editar](/help/assets/icons/Edit.svg) ao lado de **[!UICONTROL Métrica: _métrica_]**ou **[!UICONTROL Métrica:_métrica_]** | **[!UICONTROL Segmentos: _segmentos_]**.
+Para reconfigurar a visualização dos **[!UICONTROL Resumos da conversa]**, selecione ![Editar](/help/assets/icons/Edit.svg) ao lado de **[!UICONTROL Métrica: _métrica_]**&#x200B;ou **[!UICONTROL Métrica:_métrica_]** | **[!UICONTROL Segmentos: _segmentos_]**.
 
 ## Usar
 
