@@ -4,10 +4,10 @@ title: Resumo de conversas
 feature: Visualizations
 role: User
 hide: true
-source-git-commit: ccaa957e79fba24292316c7447be786f57f03493
+source-git-commit: 2cca5dfaec6be8f22308e09a023e9e57bec387b7
 workflow-type: tm+mt
-source-wordcount: '329'
-ht-degree: 8%
+source-wordcount: '351'
+ht-degree: 10%
 ---
 # Resumos de conversa {#conversation-summaries}
 
@@ -30,9 +30,14 @@ A visualização mostra um resumo da métrica selecionada (por exemplo, Conversa
 ## Criar e configurar {#conversation-summaries-create-configure}
 
 >[!CONTEXTUALHELP]
->id="workspace_conversationsummaries_attribution"
->title="Atribuição de resumos de conversa"
->abstract="Habilite um modelo de atribuição não padrão para a métrica selecionada."
+>id="workspace_conversationsummaries_usenondefaultattributionmodel"
+>title="Usar modelo de atribuição não-padrão"
+>abstract="Ativar um modelo de atribuição não padrão para essa métrica."
+
+>[!CONTEXTUALHELP]
+>id="workspace_conversationsummaries_usenondefaultattributionmodel_disabled"
+>title="Usar modelo de atribuição não-padrão"
+>abstract="Modelos de atribuição não padrão não estão disponíveis para esta métrica."
 
 Para criar e configurar uma visualização de **[!UICONTROL Resumos da conversa]**:
 
@@ -41,12 +46,12 @@ Para criar e configurar uma visualização de **[!UICONTROL Resumos da conversa]
 1. Na configuração de visualização dos **[!UICONTROL resumos da conversa]**:
 
    1. Selecione uma **[!UICONTROL métrica]**. Por exemplo: **[!UICONTROL Conversas]**.
-   1. Opcionalmente, se quiser definir [atribuição](/help/analysis-workspace/attribution/models.md) na metrix, selecione **[!UICONTROL Definir atribuição]** e selecione **[!UICONTROL Modelo]**, **[!UICONTROL Contêiner]** e **[!UICONTROL Janela de pesquisa]**.
+   1. Opcionalmente, se quiser usar um modelo não padrão [atribuição](/help/analysis-workspace/attribution/models.md) na métrica, selecione **[!UICONTROL Usar modelo de atribuição não padrão]** e selecione **[!UICONTROL Modelo]**, **[!UICONTROL Contêiner]** e **[!UICONTROL Janela de pesquisa]**.
    1. Opcionalmente, é possível aplicar um segmento à visualização. Selecione um segmento no menu suspenso **[!UICONTROL Segmentos]**.
 
 1. Selecione **[!UICONTROL Build]** para criar a visualização. Selecione **[!UICONTROL Redefinir]** para redefinir os valores de configuração para os padrões. Selecione **[!UICONTROL Cancelar]** para cancelar a configuração.
 
-Para reconfigurar a visualização dos **[!UICONTROL Resumos da conversa]**, selecione ![Editar](/help/assets/icons/Edit.svg) ao lado de **[!UICONTROL Métrica: _métrica_]**&#x200B;ou **[!UICONTROL Métrica:_métrica_]** | **[!UICONTROL Segmentos: _segmentos_]**.
+Para reconfigurar a visualização dos **[!UICONTROL Resumos da conversa]**, selecione ![Editar](/help/assets/icons/Edit.svg) ao lado de **[!UICONTROL Métrica: _métrica_]**ou **[!UICONTROL Métrica:_métrica_]** | **[!UICONTROL Segmentos: _segmentos_]**.
 
 ## Usar
 

@@ -27,7 +27,7 @@ topic_v2:
     internal-label: Customer engagement
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
+source-git-commit: 2cca5dfaec6be8f22308e09a023e9e57bec387b7
 workflow-type: tm+mt
 source-wordcount: '945'
 ht-degree: 74%
@@ -39,7 +39,7 @@ As [!UICONTROL configurações de coluna] permitem definir a formatação da col
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Configurações de linha e coluna em uma tabela de forma livre](https://experienceleague.adobe.com/pt-br/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/row-and-column-settings-in-freeform-tables){target="_blank"} para assistir a um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Configurações de linha e coluna em uma tabela de forma livre](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/building-freeform-tables/row-and-column-settings-in-freeform-tables){target="_blank"} para assistir a um vídeo de demonstração.
 
 {{videoaa}}
 
@@ -99,7 +99,7 @@ A formatação condicional aplica formatação a limites superiores, intermediá
 >[!CONTEXTUALHELP]
 >id="workspace_freeformtable_column_usenondefaultattributionmodel_disabled"
 >title="Usar modelo de atribuição não padrão"
->abstract="O modo de atribuição não padrão não está disponível para esta métrica."
+>abstract="Modelos de atribuição não padrão não estão disponíveis para esta métrica."
 
 <!-- markdownlint-enable MD034 -->
 
