@@ -4,12 +4,12 @@ title: Tópicos em alta
 feature: Visualizations
 role: User
 hide: true
-source-git-commit: ccaa957e79fba24292316c7447be786f57f03493
+source-git-commit: 85311bf19368560ef54a3361edf2e7c13590929c
 workflow-type: tm+mt
-source-wordcount: '403'
-ht-degree: 7%
+source-wordcount: '424'
+ht-degree: 8%
 ---
-# Tópicos em alta
+# Tópicos em alta {#trending-topics}
 
 >[!CONTEXTUALHELP]
 >id="workspace_trendingtopics_button"
@@ -25,21 +25,26 @@ A visualização dos ![Feed](/help/assets/icons/Feed.svg) **[!UICONTROL Tópicos
 
 Você pode pesquisar tópicos específicos e comparar o número e a porcentagem de cada tópico em cada nível com outros intervalos de dados.
 
-## Criar e configurar
+## Criar e configurar {#trendimg-topics-create-and-configure}
 
 >[!CONTEXTUALHELP]
->id="workspace_trendingtopics_attribution"
->title="Atribuição de métrica de tópicos de tendência"
->abstract="Habilite um modelo de atribuição não padrão para a métrica selecionada."
+>id="workspace_trendingtopics_usenondefaultattributionmodel"
+>title="Usar modelo de atribuição não-padrão"
+>abstract="Ativar um modelo de atribuição não padrão para essa métrica."
 
-Para criar e configurar uma visualização de tópicos de tendência:
+>[!CONTEXTUALHELP]
+>id="workspace_trendingtopics_usenondefaultattributionmodel_disabled"
+>title="Usar modelo de atribuição não-padrão"
+>abstract="Modelos de atribuição não padrão não estão disponíveis para esta métrica."
+
+Para criar e configurar uma visualização de **[!UICONTROL Tópicos de tendência]**:
 
 1. Adicionar uma visualização de ![Feed](/help/assets/icons/Feed.svg) **[!UICONTROL Tópicos de tendência]**. Consulte [Adicionar uma visualização a um painel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
 
 1. Na configuração da visualização dos **[!UICONTROL Tópicos de tendência]**:
 
    1. Selecione uma **[!UICONTROL métrica de classificação]**. Por exemplo: **[!UICONTROL Conversas]**.
-   1. Opcionalmente, se você quiser definir a [atribuição](/help/analysis-workspace/attribution/models.md) na métrica, selecione **[!UICONTROL Definir atribuição]** e selecione o **[!UICONTROL Modelo]**, o **[!UICONTROL Contêiner]** e a **[!UICONTROL Janela de pesquisa]**.
+   1. Opcionalmente, se quiser usar um modelo não padrão [atribuição](/help/analysis-workspace/attribution/models.md) na métrica, selecione **[!UICONTROL Usar modelo de atribuição não padrão]** e selecione **[!UICONTROL Modelo]**, **[!UICONTROL Contêiner]** e **[!UICONTROL Janela de pesquisa]**.
 1. Selecione **[!UICONTROL Build]** para criar a visualização. Selecione **[!UICONTROL Redefinir]** para redefinir os valores de configuração para os padrões.
 
 Para reconfigurar a visualização dos tópicos de tendência, selecione ![Editar](/help/assets/icons/Edit.svg) ao lado de **[!UICONTROL Métrica de classificação: _métrica de classificação_ | Níveis de subtópico: _x_]**.
