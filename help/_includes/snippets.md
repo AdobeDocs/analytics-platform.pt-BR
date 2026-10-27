@@ -1,7 +1,7 @@
 ---
-source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
+source-git-commit: ccaa957e79fba24292316c7447be786f57f03493
 workflow-type: tm+mt
-source-wordcount: '5584'
+source-wordcount: '5605'
 ht-degree: 95%
 ---
 # Trechos
@@ -129,6 +129,7 @@ Um container de atribuição define o escopo desejado para a atribuição. As op
 
 * **Sessão:** analisa o período desde o início da sessão onde ocorreu uma conversão. As janelas de retrospectiva da sessão respeitam o [tempo-limite de Sessão](/help/data-views/create-dataview.md#session-settings) modificado em uma visualização de dados. Quando a opção **[!UICONTROL Sessão]** é selecionada, a [Janela de retrospectiva de atribuição](#atribution-lookback-window) é automaticamente definida como **[!UICONTROL Janela de relatórios]** e não pode ser alterada.
 * **Pessoa**: analisa as conversões do escopo do container de pessoa.
+* **Conversação**: verifica as conversões do escopo do contêiner de conversação. Este contêiner está disponível para [visualizações e componentes de Insights de conversa](/help/conversation-insights/overview.md).
 * **Conta global** [!BADGE B2B Edition]{type=Informative}: analisa as conversões do escopo do container de contas globais.
 * **Contas** [!BADGE B2B Edition]{type=Informative}: analisa as conversões do escopo do container de pessoa.
 * **Oportunidade** [!BADGE B2B Edition]{type=Informative}: analisa as conversões do escopo do container de oportunidade.

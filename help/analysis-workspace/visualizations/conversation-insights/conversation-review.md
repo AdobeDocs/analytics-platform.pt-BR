@@ -4,10 +4,10 @@ title: Revisão da conversa
 feature: Visualizations
 role: User
 hide: true
-source-git-commit: 65d4115d4c292cff7e074d37a91563d369072ba5
+source-git-commit: f1f19b229d06a69ae180bff7dc8648a350465aa0
 workflow-type: tm+mt
-source-wordcount: '60'
-ht-degree: 10%
+source-wordcount: '173'
+ht-degree: 9%
 ---
 # Revisão da conversa
 
@@ -19,7 +19,30 @@ ht-degree: 10%
 >[!CONTEXTUALHELP]
 >id="workspace_conversationreview_panel"
 >title="Revisão da conversa"
->abstract="Entenda o contexto e o fluxo de uma conversa individual, incluindo carimbos de data e hora, sinais (intenção, sentimento, tom e feedback). Configure quais sinais mostrar ou não."
+>abstract="Entenda o contexto e o fluxo de uma conversa individual, incluindo carimbos de data e hora e sinais. Configure quais sinais mostrar."
 
-![Chat](/help/assets/icons/Chat.svg)
 
+A visualização ![Chat](/help/assets/icons/Chat.svg) **[!UICONTROL Análise de conversa]** mostra a troca completa passo a passo como parte da conversa entre cliente e agente.
+
+A visualização ajuda você a entender o contexto e o fluxo de uma conversa individual, incluindo carimbos de data e hora e sinais. Você pode configurar quais sinais mostrar ou não.
+
+## Criar e configurar
+
+Para criar e configurar uma visualização de ![Chat](/help/assets/icons/Chat.svg) **[!UICONTROL Revisão da conversa]**:
+
+1. Adicione uma visualização de ![Chat](/help/assets/icons/Chat.svg) **[!UICONTROL Revisão da conversa]**. Consulte [Adicionar uma visualização a um painel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
+
+1. Na configuração de visualização **[!UICONTROL Análise de conversa]**:
+
+   1. Selecione uma **[!UICONTROL Conversa]**.
+
+1. Selecione **[!UICONTROL Build]** para criar a visualização. Selecione **[!UICONTROL Redefinir]** para redefinir os valores de configuração para os padrões. Selecione **[!UICONTROL Cancelar]** para cancelar a configuração.
+
+Para reconfigurar a visualização de **[!UICONTROL Revisão da conversa]**, selecione ![Editar](/help/assets/icons/Edit.svg) ao lado de **[!UICONTROL Conversação: _conversa_]**.
+
+## Usar
+
+Para usar a visualização:
+
+
+## Configurações
