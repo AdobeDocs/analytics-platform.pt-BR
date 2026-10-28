@@ -24,23 +24,37 @@ topic_v2:
     internal-label: Customer journeys
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: d08ee4bf4c5e53e16389c5d58971a97dd5f78c0e
 workflow-type: tm+mt
-source-wordcount: '132'
+source-wordcount: '190'
 ht-degree: 0%
 ---
 
 # Analisar Insights de Conversa
 
-## Análise simples
 
 Para analisar Insights de conversa, crie ou edite um projeto no Analysis Workspace e use uma das visualizações de dados configuradas como a visualização de dados para um ou mais painéis no seu projeto.
 
+## Análise simples
+
+Para criar tabelas ou visualizações de forma livre, use as métricas de conversa (**[!UICONTROL Rotações]**, **[!UICONTROL Conversas]**, **[!UICONTROL Sentimento]**, **[!UICONTROL Tom de conversa]** e muito mais) para mostrar uma visão geral das conversas.
+
 +++ Exemplo de projeto
 
-![Projeto de amostra básico para Insights de conversa](assets/conversation-insights-analyze-sample-project-basic.png)
+![Projeto de amostra básico para Insights de conversa](assets/conversation-insights-analyze-sample-project-basic.png){zoomable="yes"}
 
 +++
+
+## Análise detalhada
+
+Para executar uma análise detalhada das conversas, use as visualizações [Tópicos de tendência](/help/analysis-workspace/visualizations/conversation-insights/trending-topics.md), [Resumos da conversa](/help/analysis-workspace/visualizations/conversation-insights/conversation-summaries.md) e [Revisão da conversa](/help/analysis-workspace/visualizations/conversation-insights/conversation-review.md). Essas visualizações fornecem diferentes perspectivas sobre os dados da conversa.
+
++++ Exemplo de projeto
+
+![Projeto de amostra detalhado para Insights de conversa](assets/conversation-insights-analyze-sample-project-detailed.png){zoomable="yes"}
+
++++
+
 
 ## Análise de conversas em escala e em contexto
 
@@ -52,6 +66,6 @@ Para analisar conversas em escala e fornecer contexto para essas conversas na jo
 
 +++ Exemplo de projeto
 
-A determinar.
+Pendente.
 
 +++ 
