@@ -2,9 +2,9 @@
 user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Saiba mais sobre o Adobe Customer Journey Analytics e como usar o Analysis Workspace com dados da Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
-source-git-commit: 89dc7258649e9c16d6a43c15ced42e1af7c6009a
+source-git-commit: 11bc93e0adabd8e8109bda1734e1a098ce8bef1e
 workflow-type: tm+mt
-source-wordcount: '1521'
+source-wordcount: '1522'
 ht-degree: 88%
 ---
 
@@ -336,7 +336,7 @@ ht-degree: 88%
   + [Casos de uso do setor](../guided-analysis/industry-use-cases.md)
   + [Perguntas frequentes](../guided-analysis/faq.md)
 
-+ Insights de conversa {#conversation-insights}
++ Conversation Insights {#conversation-insights}
   + [Visão geral](/help/conversation-insights/overview.md)
   + [Configurar](/help/conversation-insights/configure.md)
   + [Gerenciar](/help/conversation-insights/manage.md)
@@ -524,6 +524,7 @@ ht-degree: 88%
   + Dados entre canais {#cross-channel}
     + [Analisar dados entre canais](../use-cases/cross-channel/cross-channel.md)
     + [Importação de dados da central de atendimento e da Web](../use-cases/cross-channel/call-center.md)
+    + {hide-from-toc}[Ingressar dados de mídia paga com dados da Web](../use-cases/cross-channel/paid-media-web.md)
   + Exportação de dados {#data-export}
     + [Visão geral](../use-cases/data-export/overview.md)
     + [Extensão BI](../use-cases/data-export/bi-extension.md)
@@ -536,7 +537,6 @@ ht-degree: 88%
   + Assimilação de dados {#data-ingestion}
     + [Assimilar e usar dados do Marketo Engage](../use-cases/data-ingestion/marketo.md)
     + [Ingerir e usar públicos-alvo da Experience Platform](../use-cases/data-ingestion/ingest-aep-segments.md)
-    + {hide-from-toc}[Assimilar e use dados de mídia paga](/help/use-cases/data-ingestion/paid-media.md)
   + Visualizações de dados {#data-views}
     + [Casos de uso de visualizações de dados](/help/use-cases/data-views/data-views-usecases.md)
     + [Uso de dimensões e métricas de ligação](/help/use-cases/data-views/binding-dimensions-metrics.md)
