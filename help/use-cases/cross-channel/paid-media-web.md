@@ -47,7 +47,7 @@ Os conjuntos de dados de resumo de mídia paga contêm métricas diárias sem um
 
 Você pode ingressar somente nos níveis cujas IDs aparecem nos URLs da página inicial ou nos campos de evento existentes. Por exemplo, a marcação somente de campanha suporta relatórios de campanha, mas não de nível de anúncio. As associações de nível de experiência e de nível de ativo exigem parâmetros de URL adicionais e estão fora do escopo deste guia.
 
-Consulte [Configurações do componente Grupo de dados de resumo](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-dataviews/summary-data) e [Configurações do componente Grupo de dados de resumo](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/summary-data-group) para referência.
+Consulte [Configurações do componente Grupo de dados de resumo](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-dataviews/summary-data) e [Configurações do componente Grupo de dados de resumo](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-dataviews/component-settings/summary-data-group) para referência.
 
 ### Escolher a chave de junção
 
@@ -81,7 +81,7 @@ Confirme se você tem:
 * [!DNL Customer Journey Analytics] Selecione ou superior, com acesso às funções de campo derivadas usadas aqui: [Análise de URL](/help/data-views/derived-fields/derived-fields.md#url-parse), [Caso Quando](/help/data-views/derived-fields/derived-fields.md#case-when), [Substituição de Regex](/help/data-views/derived-fields/derived-fields.md#regex-replace) e, para enriquecimento de nome, [Pesquisa](/help/data-views/derived-fields/derived-fields.md#lookup).
 * [!DNL Adobe Experience Platform] permissões para gerenciar esquemas, conjuntos de dados e fluxos de dados na sandbox de destino e acesso a conjuntos de dados e Serviço de consulta para verificação.
 * [!DNL Customer Journey Analytics] permissão para editar a conexão de destino e a visualização de dados.
-* Conectores de origem de mídia paga configurados na mesma sandbox e assimilação de conjuntos de dados de resumo e pesquisa. Para obter um conector de exemplo, consulte [origem do Meta Ads](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/advertising/meta-ads).
+* Conectores de origem de mídia paga configurados na mesma sandbox e assimilação de conjuntos de dados de resumo e pesquisa. Para obter um conector de exemplo, consulte [origem do Meta Ads](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/advertising/meta-ads).
 * Eventos do site que capturam o URL completo da página inicial, incluindo sua sequência de consulta, ou campos equivalentes contendo as IDs da rede.
 
 
@@ -158,7 +158,7 @@ Ignore a criação de esquema, conjunto de dados e sequência de dados se o site
 1. Nomeie o fluxo de dados e selecione seu esquema de evento como o esquema de mapeamento.
 1. Salve e selecione **[!UICONTROL Adicionar Serviço]** > **[!UICONTROL Adobe Experience Platform]**.
 1. Selecione a sandbox e o conjunto de dados do evento e, em seguida, **[!UICONTROL Salvar]**.
-1. Use a ID da sequência de dados para configurar o [Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/js-overview).
+1. Use a ID da sequência de dados para configurar o [Experience Platform Web SDK](https://experienceleague.adobe.com/pt-br/docs/experience-platform/collection/js/js-overview).
 
 Capture o seguinte:
 
@@ -363,7 +363,7 @@ Adicione o campo derivado de aterrissagens pagas como uma métrica e configure m
 
 Mantenha as métricas originais **[!UICONTROL Pedidos]** e **[!UICONTROL Receita]** inalteradas para preservar os relatórios existentes. É necessário habilitar explicitamente a substituição para esta configuração, mesmo quando os padrões exibidos parecem corresponder.
 
-Para crédito de conversão entre visitas recorrentes, considere um contêiner de **[!UICONTROL Pessoa]** e uma janela de retrospectiva apropriada. Consulte o [caso de uso de dados de resumo](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/data-views/summary-data).
+Para crédito de conversão entre visitas recorrentes, considere um contêiner de **[!UICONTROL Pessoa]** e uma janela de retrospectiva apropriada. Consulte o [caso de uso de dados de resumo](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-usecases/data-views/summary-data).
 
 Use a atribuição de métrica em vez de adicionar persistência às dimensões de ID da Web. Para evitar contagens inflacionadas interpretadas como aterrissagens, não persista nas IDs para eventos posteriores, pois isso altera quais eventos aparecem nas linhas da campanha.
 
