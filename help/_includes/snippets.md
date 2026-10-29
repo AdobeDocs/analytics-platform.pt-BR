@@ -1,7 +1,7 @@
 ---
-source-git-commit: ccaa957e79fba24292316c7447be786f57f03493
+source-git-commit: f886069ac388da7985beac80cdaaa7bd0a506439
 workflow-type: tm+mt
-source-wordcount: '5605'
+source-wordcount: '5607'
 ht-degree: 95%
 ---
 # Trechos
@@ -94,7 +94,7 @@ Este vídeo demonstra a funcionalidade usando o Adobe Analytics. No entanto, ess
 
 | Outros filtros | Descrição |
 |---|---|
-| ![Outros filtros](/help/assets/filter-other.png){width="300"} | A seção **[!UICONTROL Outros filtros]** permite filtrar por outros filtros predefinidos.<ul><li>Você pode selecionar uma ou mais das seguintes opções:<ul><li> **[!UICONTROL Exibir tudo]**</li><li>**[!UICONTROL Compartilhado comigo]**</li><li>**[!UICONTROL Meu]**</li><li>**[!UICONTROL Aprovado]**</li><li>**[!UICONTROL Favoritos]**</li></ul> O que você pode selecionar depende da sua função e das suas permissões.</li><li>É possível selecionar vários outros filtros. Os outros filtros disponíveis dependem das seleções feitas em outras seções no painel de filtros.</li><li>Os números indicam:<ul><li>**(1)**: o número de outros filtros selecionados (se um ou mais outros filtros forem selecionados).</li><li>**5︎⃣**: o número de outros filtros disponíveis para os itens resultantes do filtro atual.</li><li>4︎⃣: o número de itens associados ao outro filtro específico.</li></ul></li></ul> |
+| ![Outros filtros](/help/assets/filter-other.png){width="300"} | A seção **[!UICONTROL Outros filtros]** permite filtrar por outros filtros predefinidos.<ul><li>Você pode selecionar uma ou mais das seguintes opções:<ul><li> **[!UICONTROL Exibir tudo]**</li><li>**[!UICONTROL Compartilhado comigo]**</li><li>**[!UICONTROL Meu]**</li><li>**[!UICONTROL Aprovado]**</li><li>**[!UICONTROL Favoritos]**</li><li>**[!UICONTROL Descrição ausente]**</li></ul> O que você pode selecionar depende da sua função e das suas permissões.</li><li>É possível selecionar vários outros filtros. Os outros filtros disponíveis dependem das seleções feitas em outras seções no painel de filtros.</li><li>Os números indicam:<ul><li>**(1)**: o número de outros filtros selecionados (se um ou mais outros filtros forem selecionados).</li><li>**5︎⃣**: o número de outros filtros disponíveis para os itens resultantes do filtro atual.</li><li>4︎⃣: o número de itens associados ao outro filtro específico.</li></ul></li></ul> |
 
 ## Seção de filtro de intervalo de datas  {#daterangefiltersection}
 

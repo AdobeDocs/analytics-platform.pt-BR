@@ -25,10 +25,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: f886069ac388da7985beac80cdaaa7bd0a506439
 workflow-type: tm+mt
-source-wordcount: '1932'
-ht-degree: 73%
+source-wordcount: '1978'
+ht-degree: 71%
 ---
 # Criar segmentos {#build-segments}
 
@@ -63,7 +63,7 @@ A caixa de diálogo **[!UICONTROL Construtor de segmentos]** é usada para cri
    | **[!UICONTROL Visualização de dados]** | É possível selecionar a visualização de dados para o segmento.  O segmento que você define está disponível como um segmento na guia [Configurações](/help/data-views/create-dataview.md#settings-filters) de uma visualização de dados. |
    | **[!UICONTROL Segmento somente de projeto]** | Uma caixa de informações para explicar que o segmento só fica visível no projeto em que foi criado e que o segmento não será adicionado à sua lista de componentes. Habilite a opção **[!UICONTROL Tornar este segmento disponível para todos os seus projetos e adicioná-lo à sua lista de componentes]** para alterar essa configuração. Esta caixa de informações só fica visível quando você cria um [segmento rápido](seg-quick.md) e transforma as informações do segmento rápido em um segmento regular usando a opção **[!UICONTROL Abrir construtor]** na interface [!UICONTROL Segmento rápido]. |
    | **[!UICONTROL Título]** ![Obrigatório](/help/assets/icons/Required.svg) | Nomeie o segmento, por exemplo, `Last month mobile customers`. |
-   | **[!UICONTROL Descrição]** | Forneça uma descrição para o segmento, por exemplo, `Segment to define the mobile customers for the last month`. |
+   | **[!UICONTROL Descrição]** | <p>Forneça uma descrição para o segmento, por exemplo, `Segment to define the mobile customers for the last month`.</p><p>Para que o Adobe gere uma descrição para você, selecione **[!UICONTROL Gerar descrição]**. Essa opção só estará disponível depois que você criar a definição do segmento.</p><p>As descrições geradas incluem o texto **[!UICONTROL Gerado pelo Adobe usando IA]**, e você pode editá-las depois de gerá-las. Para obter mais informações, consulte [Gerar descrições automaticamente](/help/components/add-component-descriptions.md#automatically-generate-descriptions).</p> |
    | **[!UICONTROL Tags]** | Organize o segmento criando ou aplicando uma ou mais tags. Comece a digitar para encontrar as tags existentes que você pode selecionar. Ou pressione **[!UICONTROL ENTER]** para adicionar uma nova tag. Selecione ![CrossSize75](/help/assets/icons/CrossSize75.svg) para remover uma tag. |
    | **[!UICONTROL Definição]** ![Obrigatória](/help/assets/icons/Required.svg) | Defina o segmento usando o [Criador de definições](#definition-builder). |
 
@@ -163,7 +163,7 @@ Você pode criar segmentos que contêm intervalos de datas contínuos. Assim, é
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Intervalos de datas contínuos em segmentos](https://experienceleague.adobe.com/pt-br/docs/analytics-learn/tutorials/components/segmentation/rolling-date-ranges-in-segments){target="_blank"} para assistir a um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Intervalos de datas contínuos em segmentos](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/components/segmentation/rolling-date-ranges-in-segments){target="_blank"} para assistir a um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 

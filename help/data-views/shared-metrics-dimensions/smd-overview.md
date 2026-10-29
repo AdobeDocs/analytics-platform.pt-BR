@@ -26,7 +26,7 @@ role_v2:
 topic_v2:
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
     internal-label: Governance
-source-git-commit: d16771a675504a6330a59478f15bf6112ae444d6
+source-git-commit: a80a12b061bee5165667b361a9e4bc1888d86c95
 workflow-type: tm+mt
 source-wordcount: '1337'
 ht-degree: 2%
@@ -39,7 +39,7 @@ Embora dimensões e métricas compartilhadas permitam que componentes comuns sej
 
 ## Permissões
 
-* [Administradores de produtos](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/technotes/access-control#product-administrator-role) também precisam das **Permissões para Gerenciar Políticas de Uso de Dados** e **Exibir Políticas de Uso de Dados** para todas as sandboxes nas [Permissões do Experience Platform](https://experienceleague.adobe.com/pt-br/docs/experience-platform/access-control/home#permissions).
+* [Administradores de produtos](https://experienceleague.adobe.com/en/docs/analytics-platform/using/technotes/access-control#product-administrator-role) também precisam das **Permissões para Gerenciar Políticas de Uso de Dados** e **Exibir Políticas de Uso de Dados** para todas as sandboxes nas [Permissões do Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home#permissions).
 
 ## Fluxo de trabalho
 
@@ -49,7 +49,7 @@ A maioria das organizações usa o seguinte fluxo de trabalho abrangente para de
 1. Revise todos os componentes que usam a mesma ID de componente, mas têm configurações de componente diferentes. Para cada grupo de componentes duplicados, selecione as configurações de componente desejadas a serem aplicadas a todos os outros componentes que compartilham essa ID de componente.
 1. Revise todos os componentes que usam a mesma ID de componente e também têm as mesmas configurações de componente. Essas dimensões ou métricas podem ser mescladas com facilidade e segurança.
 
-## Gerenciador de [!UICONTROL Métricas e dimensões compartilhadas]
+## Gerenciador de [!UICONTROL Métricas e dimensões compartilhadas] {#smd-manager}
 
 **[!UICONTROL Customer Journey Analytics]** > **[!UICONTROL Visualizações de dados]** > **[!UICONTROL Métricas e dimensões compartilhadas]**
 

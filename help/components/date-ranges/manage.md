@@ -21,13 +21,11 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 28cfbe249f20361bf56f0a6216bc715dae5a6d3a
+source-git-commit: e9ee69c84d5a8992acacf44d1ba5c9231c9cda5f
 workflow-type: tm+mt
-source-wordcount: 590
-ht-degree: 25%
-
+source-wordcount: '657'
+ht-degree: 23%
 ---
-
 # Gerenciar intervalos de datas
 
 
@@ -73,6 +71,7 @@ Você pode executar ações em intervalos de datas usando a barra de ação ➋.
 | ![Editar](/help/assets/icons/Edit.svg) | **[!UICONTROL Renomear]** | Renomeie um único intervalo de datas selecionado. Quando selecionado, você pode renomear o intervalo de datas em linha. |
 | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **[!UICONTROL Aprovar]** | Aprove os intervalos de datas selecionados. |
 | ![Copiar](/help/assets/icons/Copy.svg) | **[!UICONTROL Copiar]** | Copiar os intervalos de datas selecionados. Novos intervalos de datas são criados com o mesmo nome e sufixo (Copiar) |
+| ![IA](/help/assets/icons/AI.svg) | **[!UICONTROL Gerar descrições]** | <p>Gerar descrições para os intervalos de datas selecionados, substituindo quaisquer descrições existentes.</p><p>Para evitar a substituição de descrições existentes, primeiro [filtre](#filter-panel) a lista para mostrar apenas intervalos de datas sem uma descrição (no filtro, em [!UICONTROL **Outros filtros**], selecione [!UICONTROL **Descrição ausente**]).</p><p>Uma confirmação será solicitada. Solicitações grandes são executadas em segundo plano e você recebe uma notificação quando elas são concluídas.</p><p>Consulte [Gerar descrições automaticamente](/help/components/add-component-descriptions.md#automatically-generate-descriptions) para obter mais informações.</p> |
 | ![FileCSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL Exportar para CSV]** | Exportar os intervalos de datas selecionados para um arquivo `Date ranges List.csv`. |
 
 ### Barra de filtros ativos
@@ -111,7 +110,8 @@ Você edita um intervalo de datas de duas maneiras:
 
 * Na lista [[!UICONTROL Intervalos de datas]](#date-ranges-list), selecione o título do intervalo de datas.
 
-Use o [Criador de intervalo de datas](/help/components/date-ranges/create.md#date-range-builder) para editar o intervalo de datas.Use o [gerenciador de intervalo de datas](/help/components/date-ranges/manage.md) para compartilhar, renomear ou excluir intervalos de datas.
+Use o [Criador de intervalo de datas](/help/components/date-ranges/create.md#date-range-builder) para editar o intervalo de datas.
+Use o [gerenciador de intervalo de datas](/help/components/date-ranges/manage.md) para compartilhar, renomear ou excluir intervalos de datas.
 
 
 <!--

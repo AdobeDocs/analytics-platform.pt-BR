@@ -29,10 +29,10 @@ role_v2:
 topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
     internal-label: Experimentation
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: f886069ac388da7985beac80cdaaa7bd0a506439
 workflow-type: tm+mt
-source-wordcount: '1699'
-ht-degree: 93%
+source-wordcount: '1747'
+ht-degree: 89%
 ---
 # Criar métricas calculadas {#build-metrics}
 
@@ -77,7 +77,7 @@ A caixa de diálogo **[!UICONTROL Criador de métricas calculadas]** é usada pa
    | **[!UICONTROL Métrica somente do projeto]** | Uma caixa de informações aparece na parte superior desta caixa de diálogo ao editar uma métrica calculada que foi criada para um único projeto, conforme descrito em [Criar métricas calculadas para um único projeto](/help/components/apply-create-metrics.md#create-calculated-metrics-for-a-single-project). <p>Se quiser disponibilizar essa métrica calculada para todos os projetos, selecione a opção **[!UICONTROL Disponibilizar essa métrica para todos os seus projetos e adicioná-la à sua lista de componentes]**.</p> |
    | **[!UICONTROL Título]** ![Obrigatório](/help/assets/icons/Required.svg) | Nomeie a métrica calculada, por exemplo, como `Conversion Rate`. |
    | **[!UICONTROL ID externo]** ![Obrigatório](/help/assets/icons/Required.svg) | O nome da métrica calculada ao usar uma ferramenta BI externa e a extensão BI. O valor é definido automaticamente como `undefined_xxx`, a menos que você substitua esse valor. |
-   | **[!UICONTROL Descrição]** | Forneça uma descrição para o segmento, por exemplo, `Calculated metric to define the conversion rate.` Não há necessidade de descrever a fórmula para a métrica calculada, pois a fórmula já é disponibilizada automaticamente em [!UICONTROL Resumo]. |
+   | **[!UICONTROL Descrição]** | <p>Forneça uma descrição para a métrica calculada, por exemplo, `Calculated metric to define the conversion rate.` Não há necessidade de descrever a fórmula para a métrica calculada, pois a fórmula já está automaticamente disponível no [!UICONTROL Resumo].</p><p>Para que o Adobe gere uma descrição para você, selecione **[!UICONTROL Gerar descrição]**. Esta opção só estará disponível após a criação da definição de métrica calculada.</p><p>As descrições geradas incluem o texto **[!UICONTROL Gerado pelo Adobe usando IA]**, e você pode editá-las depois de gerá-las. Para obter mais informações, consulte [Gerar descrições automaticamente](/help/components/add-component-descriptions.md#automatically-generate-descriptions).</p> |
    | **[!UICONTROL Formato]** | Selecione um formato para a métrica calculada: você pode selecionar entre **[!UICONTROL Decimal]**, **[!UICONTROL Hora]**, **[!UICONTROL Porcentagem]** e **[!UICONTROL Moeda]**. |
    | **[!UICONTROL Casas decimais]** | Especifique a quantidade de casas decimais para o formato selecionado. Habilitado somente quando o formato selecionado é “Decimal”, “Moeda” ou “Porcentagem”. |
    | **[!UICONTROL Exibir tendência ascendente como]** | Especifique se uma tendência ascendente da métrica calculada é exibida como ▲ **[!UICONTROL Boa (Verde)]** ou como ▼ **[!UICONTROL Ruim (Vermelho)]**. |
@@ -226,5 +226,5 @@ Para excluir um container, selecione ![Fechar](/help/assets/icons/Close.svg) no 
 >[!MORELIKETHIS]
 >
 >[Usar funções](cm-using-functions.md)
->[Segmentos &#x200B;](/help/components/segments/seg-overview.md)
+>[Segmentos ](/help/components/segments/seg-overview.md)
 >
