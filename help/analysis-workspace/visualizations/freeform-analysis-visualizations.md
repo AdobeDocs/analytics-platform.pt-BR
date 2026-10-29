@@ -25,10 +25,10 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 27b268c88c84b530d9fbbc454eae23cc43d4d041
 workflow-type: tm+mt
-source-wordcount: '1786'
-ht-degree: 88%
+source-wordcount: '2035'
+ht-degree: 78%
 ---
 # Visão geral das visualizações
 
@@ -125,6 +125,30 @@ Para editar um rótulo de legenda:
 1. Digite o texto do novo rótulo.
 1. Pressione **[!UICONTROL Enter]** para salvar.
 
+### Rótulos concisos
+
+Quando cada série na visualização compartilha a mesma métrica, segmento, item de dimensão ou intervalo de datas, cada rótulo de legenda o repete. Os rótulos podem ficar longos e o texto que os diferencia geralmente fica visível somente quando você passa o mouse sobre cada rótulo.
+
+A configuração **[!UICONTROL Rótulos concisos]** se concentra de forma inteligente nas informações que diferenciam um rótulo de outro. Ela remove qualquer métrica, segmento, item de dimensão ou nome de intervalo de datas somente quando o nome aparece em cada rótulo. Por exemplo, se um segmento for aplicado a cada coluna na tabela de origem, o segmento será removido dos rótulos da legenda. Se o segmento for aplicado a todas as colunas, exceto uma, os rótulos da legenda ainda incluirão o segmento. Para ver o rótulo completo, passe o mouse sobre um rótulo de legenda.
+
+Rótulos concisos estão desativados por padrão. Para ativar rótulos concisos para uma visualização:
+
+1. Selecione ![Configuração](/help/assets/icons/Setting.svg) **[!UICONTROL Configurações]** no cabeçalho da visualização.
+1. Selecione a guia **[!UICONTROL Configurações]**.
+1. Verifique se a **[!UICONTROL Legenda visível]** está selecionada. **[!UICONTROL Rótulos concisos]** estão disponíveis somente quando a legenda está visível.
+1. Selecione **[!UICONTROL rótulos concisos]**.
+
+Rótulos concisos estão disponíveis para as seguintes visualizações:
+
+* [Área e Área empilhada](area.md)
+* [Barra e barra empilhada](bar.md)
+* [Combinado](combo-charts.md)
+* [Rosca](donut.md)
+* [Histograma](histogram.md)
+* [Barra horizontal e barra horizontal empilhada](horizontal-bar.md)
+* [Linha](line.md)
+* [Venn](venn.md)
+
 
 ## Configurações
 
@@ -152,6 +176,7 @@ As configurações de visualização disponíveis dependem da visualização. A 
 | **[!UICONTROL Porcentagens]** | Exibir os valores em porcentagens. |
 | **[!UICONTROL 100% empilhada]** | Transformar o gráfico em uma visualização 100% empilhada.  Aplicável somente a uma visualização de área, barras e barras horizontais empilhadas. |
 | **[!UICONTROL Legenda visível]** | Mostrar o texto da legenda. |
+| **[!UICONTROL Rótulos concisos]** | Encurte os rótulos de legenda para se concentrar nas informações que diferenciam um rótulo de outro. Métrica, segmento, item de dimensão e nomes de intervalo de datas que aparecem em cada rótulo são removidos. Esta configuração está disponível somente quando **[!UICONTROL Legenda visível]** está selecionada e está desativada por padrão. Para obter mais informações, consulte [Rótulos concisos](#concise-labels). |
 | **[!UICONTROL Limite máximo de itens]** | Permite limitar a quantidade de itens exibidos em uma visualização. Quando selecionado, define a quantidade máxima de itens. |
 | **[!UICONTROL Mostrar anotações]** | Mostrar as anotações feitas nesta visualização. |
 | **[!UICONTROL Ocultar título]** | Ocultar o título da visualização. |
