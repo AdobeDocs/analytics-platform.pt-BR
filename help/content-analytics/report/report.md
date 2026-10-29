@@ -33,9 +33,9 @@ topic_v2:
     internal-label: Reporting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: 62a6bb436d59ab7a5a7be515afbe1f5f0f7817ee
 workflow-type: tm+mt
-source-wordcount: '1643'
+source-wordcount: '1650'
 ht-degree: 43%
 ---
 
@@ -228,4 +228,5 @@ Um projeto **[!UICONTROL Content Analytics - Dados de Resumo de Mídia Paga]** �
 >
 >[Componentes do Content Analytics](components.md)
 >[Usar modelos](/help/analysis-workspace/templates/use-templates.md#web-engagement)
+>[Ingressar em dados de mídia paga com dados da Web](/help/use-cases/cross-channel/paid-media-web.md)
 >

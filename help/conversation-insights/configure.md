@@ -30,12 +30,14 @@ topic_v2:
     internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: a02b8d1d6bae6ed8269668d49ed9559688001833
+source-git-commit: 113a215e26092c65d6eaf2c321f60d3f3a5015b8
 workflow-type: tm+mt
-source-wordcount: '1185'
+source-wordcount: '1187'
 ht-degree: 12%
 ---
 # Criar ou editar configurações
+
+{{release-limited-testing}}
 
 O Conversation Insights permite analisar conversas a partir das experiências de agente que você oferece aos seus clientes. Essas experiências de agente podem ser baseadas em grandes modelos de linguagem (LLM) ou baseadas em conversas humanas. Por exemplo, um chatbot interagindo com um cliente ou transcrições da central de atendimento.
 Por meio dos Insights de conversa, é possível entender o impacto dos agentes nos resultados reais do usuário.
@@ -147,7 +149,7 @@ Para cada configuração:
 
 Depois de criar uma configuração, você pode configurar [como as conversas dos conjuntos de dados de prompts, respostas, comentários e sinais são misturadas](/help/conversation-insights/overview.md#how-it-works).
 
-Essa especificação permite selecionar o conjunto de dados que determina o valor de campos nomeados correspondentemente (se um container) no conjunto de dados de conversa mesclada.
+Essa especificação permite selecionar o conjunto de dados que determina o valor do campo ou dos campos nomeados correspondentemente (se um container) no conjunto de dados de conversação combinado.
 
 Por exemplo: se você quiser que o nome do campo **[!UICONTROL Produzido por]** no conjunto de dados de conversação misturado seja definido a partir desse campo com nome semelhante no conjunto de dados de feedback, selecione **[!UICONTROL Conjunto de dados de feedback]** no menu suspenso **[!UICONTROL Vencedor do conjunto de dados]** para esse campo.
 

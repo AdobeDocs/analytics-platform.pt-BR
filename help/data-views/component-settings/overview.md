@@ -39,10 +39,10 @@ topic_v2:
     internal-label: Experimentation
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
     internal-label: Governance
-source-git-commit: 6283ecbeab12a19fd5b7229dff772afaaedf3296
+source-git-commit: f886069ac388da7985beac80cdaaa7bd0a506439
 workflow-type: tm+mt
-source-wordcount: '4133'
-ht-degree: 48%
+source-wordcount: '4342'
+ht-degree: 45%
 ---
 # Configurações de componente {#component-settings}
 
@@ -71,19 +71,19 @@ As informações a seguir descrevem as configurações que um componente de visu
 
 | Configuração | Descrição/Caso de uso |
 | --- | --- |
-| [!UICONTROL Tipo de componente] | Obrigatório. Permite alterar um componente de Métrica para Dimension ou o oposto. Alterar esta seleção suspensa desloca o componente para sua respectiva área de componentes incluídos. |
-| [!UICONTROL Nome do componente] | Obrigatório. Permite especificar o nome amigável que aparecerá no Analysis Workspace. É possível renomear um componente, dando a ele um nome específico para a visualização de dados. |
-| [!UICONTROL Descrição] | Opcional, mas recomendado. Fornece informações sobre o componente para outros usuários. |
-| [!UICONTROL Tags] | Opcional. Permitem marcar o componente com tags personalizadas ou prontas para uso para facilitar a pesquisa/filtragem na interface do usuário do Analysis Workspace. |
-| [!UICONTROL Rótulos de contexto] | Opcional. Um menu suspenso de [rótulos de contexto](#context-labels) disponíveis definidos pelo sistema que podem ser aplicados a um componente. |
-| [!UICONTROL Nome do campo de esquema] | O nome do campo de esquema. |
-| [!UICONTROL Tipo de conjunto de dados] | Obrigatório. Um campo não editável que mostra de qual tipo de conjunto de dados (evento, pesquisa ou perfil) o componente veio. |
-| [!UICONTROL Conjunto de dados] | Um campo não editável que mostra de qual conjunto de dados o componente se originou. Este campo pode conter vários conjuntos de dados. |
-| [!UICONTROL Tipo de esquema] | Um campo não editável que mostra o tipo de dados do componente. Embora você possa usar qualquer tipo de campo de esquema compatível na Platform, nem todos os tipos de campos são compatíveis com o Customer Journey Analytics. Os seguintes tipos de dados são compatíveis: `Integer`, `Int`, `Long`, `Double`, `Float`, `Number`, `Short`, `Byte`, `String` e `Boolean`. Atualmente, apenas o tipo de dados de esquema `String` é permitido em conjuntos de dados de pesquisa. |
-| [!UICONTROL ID de componente] | Obrigatório. A [API do Customer Journey Analytics](https://www.adobe.io/cja-apis/docs) usa esse campo para fazer referência ao componente. Cada componente em uma visualização de dados deve ser exclusivo. A Adobe gera automaticamente uma ID para cada componente; no entanto, você pode clicar no ícone editar e modificar a ID do componente. Alterar a ID do componente interrompe todos os projetos existentes do Workspace que contêm esse componente. Embora cada componente precise de uma ID exclusiva em uma única visualização de dados, é possível usar a mesma ID do componente em outras visualizações de dados. Se você usar a mesma ID do componente em outras visualizações de dados, será possível tornar os projetos do espaço de trabalho compatíveis entre as visualizações de dados. <br/>Para componentes baseados em perfil e pesquisa, a ID do componente tem um prefixo baseado na ID do conjunto de dados (por exemplo: `642b28fcc1f0ee1c074265a0.person.name.firstName`). Quando quiser reutilizar um perfil ou componente baseado em pesquisa (como `person.name.firstName`) no projeto do espaço de trabalho e configurar esse componente em diferentes visualizações de dados, forneça um nome exclusivo para a ID do componente (por exemplo: `myUniqueID.person.name.firstName`) em suas visualizações de dados. |
-| [!UICONTROL Caminho] | Obrigatório. Um campo não editável que mostra o caminho do esquema de onde o componente veio. |
-| [!UICONTROL Rótulos de uso de dados] | Quaisquer rótulos de uso de dados atribuídos a este componente no Adobe Experience Platform. [Saiba mais](/help/data-views/data-governance.md). |
-| [!UICONTROL Ocultar componente nos relatórios] | Impede que não administradores acessem o componente no Analysis Workspace. Os administradores ainda podem acessá-lo clicando em [!UICONTROL Mostrar todos os componentes]. Essa configuração se aplica somente à interface do Analysis Workspace e não restringe o acesso por meio das [APIs do CJA](https://developer.adobe.com/cja-apis/docs/). |
+| **[!UICONTROL Tipo de componente]** | Obrigatório. Permite alterar um componente de Métrica para Dimension ou o oposto. Alterar esta seleção suspensa desloca o componente para sua respectiva área de componentes incluídos. |
+| **[!UICONTROL Nome do componente]** | Obrigatório. Permite especificar o nome amigável que aparecerá no Analysis Workspace. É possível renomear um componente, dando a ele um nome específico para a visualização de dados. |
+| **[!UICONTROL Descrição]** | Opcional, mas recomendado. Descreve aos usuários a função desejada do componente para que eles saibam como ele pode ser usado. As descrições aparecem para os usuários no [Dicionário de dados](/help/components/data-dictionary/data-dictionary-overview.md) e em outras áreas do Customer Journey Analytics. <p>Você pode adicionar uma descrição de uma das seguintes maneiras:</p><ul><li>Digitar uma descrição manualmente</li><li>Selecione **[!UICONTROL Gerar descrição]** para que o Adobe gere uma descrição para você <p>As descrições geradas incluem o texto **[!UICONTROL Gerado pelo Adobe usando IA]**, e você pode editá-las depois de gerá-las.</p><p>Você pode gerar descrições apenas para métricas e dimensões já salvas na visualização de dados. Para campos derivados, gere a descrição aqui após o campo derivado ser salvo; não é possível gerar descrições do construtor de campos derivados.</p><p>Quando você gera descrições para uma métrica ou dimensão compartilhada em uma visualização de dados, a descrição se aplica a todas as visualizações de dados em que é compartilhada.</p></li></ul><p>Para gerar descrições para vários componentes ao mesmo tempo:</p><ol><li>(Opcional) Para manter as descrições existentes, mostrar apenas componentes sem uma: selecione ![Filtro](/help/assets/icons/Filter.svg) acima da lista **[!UICONTROL Componentes incluídos]** e, em **[!UICONTROL Outros]**, selecione **[!UICONTROL Descrição ausente]** e selecione **[!UICONTROL Aplicar]**. Gerar uma descrição substitui qualquer descrição existente.</li><li>Selecione os componentes na lista **[!UICONTROL Componentes incluídos]**.</li><li>Selecione **[!UICONTROL Gerar descrição]** e **[!UICONTROL Gerar descrições]** para confirmar.</li><li>Salve a visualização de dados. As descrições começam a ser geradas quando você salva.</li></ol><p>Para obter mais informações, consulte [Gerar descrições automaticamente](/help/components/add-component-descriptions.md#automatically-generate-descriptions).</p> |
+| **[!UICONTROL Tags]** | Opcional. Permite marcar o componente com tags personalizadas ou prontas para uso para facilitar a pesquisa/filtragem na interface do usuário do Analysis Workspace. |
+| **[!UICONTROL Rótulos de contexto]** | Opcional. Um menu suspenso de [rótulos de contexto](#context-labels) disponíveis definidos pelo sistema que podem ser aplicados a um componente. |
+| **[!UICONTROL Nome do campo de esquema]** | O nome do campo de esquema. |
+| **[!UICONTROL Tipo de conjunto de dados]** | Obrigatório. Um campo não editável que mostra de qual tipo de conjunto de dados (evento, pesquisa ou perfil) o componente veio. |
+| **[!UICONTROL Conjunto de dados]** | Um campo não editável que mostra de qual conjunto de dados o componente se originou. Este campo pode conter vários conjuntos de dados. |
+| **[!UICONTROL Tipo de esquema]** | Um campo não editável que mostra o tipo de dados do componente. Embora você possa usar qualquer tipo de campo de esquema compatível na Platform, nem todos os tipos de campos são compatíveis com o Customer Journey Analytics. Os seguintes tipos de dados são compatíveis: `Integer`, `Int`, `Long`, `Double`, `Float`, `Number`, `Short`, `Byte`, `String` e `Boolean`. Atualmente, apenas o tipo de dados de esquema `String` é permitido em conjuntos de dados de pesquisa. |
+| **[!UICONTROL ID de componente]** | Obrigatório. A [API do Customer Journey Analytics](https://www.adobe.io/cja-apis/docs) usa esse campo para fazer referência ao componente. Cada componente em uma visualização de dados deve ser exclusivo. A Adobe gera automaticamente uma ID para cada componente; no entanto, você pode clicar no ícone editar e modificar a ID do componente. Alterar a ID do componente interrompe todos os projetos existentes do Workspace que contêm esse componente. Embora cada componente precise de uma ID exclusiva em uma única visualização de dados, é possível usar a mesma ID do componente em outras visualizações de dados. Se você usar a mesma ID do componente em outras visualizações de dados, será possível tornar os projetos do espaço de trabalho compatíveis entre as visualizações de dados. <br/>Para componentes baseados em perfil e pesquisa, a ID do componente tem um prefixo baseado na ID do conjunto de dados (por exemplo: `642b28fcc1f0ee1c074265a0.person.name.firstName`). Quando quiser reutilizar um perfil ou componente baseado em pesquisa (como `person.name.firstName`) no projeto do espaço de trabalho e configurar esse componente em diferentes visualizações de dados, forneça um nome exclusivo para a ID do componente (por exemplo: `myUniqueID.person.name.firstName`) em suas visualizações de dados. |
+| **[!UICONTROL Caminho]** | Obrigatório. Um campo não editável que mostra o caminho do esquema de onde o componente veio. |
+| **[!UICONTROL Rótulos de uso de dados]** | Quaisquer rótulos de uso de dados atribuídos a este componente no Adobe Experience Platform. [Saiba mais](/help/data-views/data-governance.md). |
+| **[!UICONTROL Ocultar componente nos relatórios]** | Impede que não administradores acessem o componente no Analysis Workspace. Os administradores ainda podem acessá-lo clicando em [!UICONTROL Mostrar todos os componentes]. Essa configuração se aplica somente à interface do Analysis Workspace e não restringe o acesso por meio das [APIs do CJA](https://developer.adobe.com/cja-apis/docs/). |
 
 {style="table-layout:auto"}
 
@@ -94,7 +94,6 @@ As informações a seguir descrevem as configurações que um componente de visu
 Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Configurações do tipo de componente](https://experienceleague.adobe.com/pt-br/docs/customer-journey-analytics-learn/tutorials/data-views/component-type-settings-in-data-views){target="_blank"} para assistir a um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
-
 
 ## Rótulos de contexto
 

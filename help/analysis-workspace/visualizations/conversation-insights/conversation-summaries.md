@@ -4,7 +4,7 @@ title: Resumo de conversas
 feature: Visualizations
 role: User
 hide: true
-source-git-commit: 2cca5dfaec6be8f22308e09a023e9e57bec387b7
+source-git-commit: 113a215e26092c65d6eaf2c321f60d3f3a5015b8
 workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 10%
@@ -21,6 +21,7 @@ ht-degree: 10%
 >title="Resumos de conversa"
 >abstract="Resumir um grupo filtrado de conversas. Controlar o comprimento do resumo. Consulte declarações de clientes para validar a precisão dos sinais extraídos. Selecione uma cotação para abrir a repetição completa da conversa."
 
+{{release-limited-testing}}
 
 A visualização ![Resumir](/help/assets/icons/Summarize.svg) **[!UICONTROL Resumos da conversa]** permite resumir um grupo filtrado de conversas.
 

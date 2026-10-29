@@ -3,11 +3,10 @@ title: Associar Dados De Mídia Paga Com Dados Da Web No Customer Journey Analyt
 description: Una-se aos dados de resumo de mídia paga com os eventos do site no Adobe Customer Journey Analytics para comparar anúncios, cliques, pedidos, receita e retorno sobre o investimento em anúncios.
 solution: Customer Journey Analytics
 feature: Use Cases
-hide: true
 role: Admin
-source-git-commit: 11bc93e0adabd8e8109bda1734e1a098ce8bef1e
+source-git-commit: 62a6bb436d59ab7a5a7be515afbe1f5f0f7817ee
 workflow-type: tm+mt
-source-wordcount: '3907'
+source-wordcount: '3912'
 ht-degree: 3%
 ---
 # Associar dados de mídia paga com dados da Web
@@ -45,7 +44,12 @@ Os conjuntos de dados de resumo de mídia paga contêm métricas diárias sem um
 
 ## Entender a associação de relatórios
 
-Você pode ingressar somente nos níveis cujas IDs aparecem nos URLs da página inicial ou nos campos de evento existentes. Por exemplo, a marcação somente de campanha suporta relatórios de campanha, mas não de nível de anúncio. As associações de nível de experiência e de nível de ativo exigem parâmetros de URL adicionais e estão fora do escopo deste guia.
+Você pode ingressar somente nos níveis cujas IDs aparecem nos URLs da página inicial ou nos campos de evento existentes. Por exemplo, a marcação somente de campanha suporta relatórios de campanha, mas não de nível de anúncio.
+
+>[!NOTE]
+>
+>As associações de nível de experiência e nível de ativo do Content Analytics exigem parâmetros de URL adicionais e estão fora do escopo deste guia.
+
 
 Consulte [Configurações do componente Grupo de dados de resumo](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-dataviews/summary-data) e [Configurações do componente Grupo de dados de resumo](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-dataviews/component-settings/summary-data-group) para referência.
 
@@ -93,7 +97,7 @@ Identifique os parâmetros de consulta que contêm sua campanha, grupo de anúnc
 |---|---|---|---|
 | Meta IDs no URL do site | <code>campaign_id={{campaign.id}}</code> | <code>adset_id={{adset.id}}</code> | <code>ad_id={{ad.id}}</code> |
 | IDs do Meta em parâmetros UTM | <code>utm_campaign={{campaign.id}}</code> | <code>utm_term={{adset.id}}</code> | <code>utm_content={{ad.id}}</code> |
-| IDs do Google Ads em parâmetros UTM | <code>utm_campaign={campaignid}</code> | <code>utm_term={adgroupid}</code> | <code>utm_content={creative}</code> |
+| IDs do Google Ads em parâmetros UTM | <code>utm_campaign={{campaigns}}</code> | <code>utm_term={{adgroupid}}</code> | <code>utm_content={{creative}}</code> |
 
 Para a marcação UTM do Meta, um valor de origem como `utm_source=fb` pode identificar a rede. Para a marcação UTM do Google Ads, use um valor de origem como `utm_source=google`.
 
@@ -122,10 +126,10 @@ Abra a visualização de dados que você planeja usar e inspecione os componente
 
 | | Ponto inicial | Configuração existente | Etapas a seguir |
 |---|---|---|---|
-| A | Content Analytics com mídia paga ou pela Web | Conjuntos de dados e componentes de mídia paga, além de conjuntos de dados de evento e pesquisa do Content Analytics | Adicione o conjunto de dados do evento do site, se necessário, e configure os campos derivados da Web e grupos de relatórios |
-| B | Content Analytics somente com mídia paga | Conjuntos de dados e componentes de mídia paga; conjuntos de dados de pesquisa de conteúdo compartilhado também podem estar presentes | Adicione seu conjunto de dados de evento do site e configure os campos derivados da Web e grupos de relatórios |
-| C | Mídia paga sem provisionamento do Content Analytics | Existem conjuntos de dados de mídia paga no Experience Platform, mas a conexão e a visualização de dados não contêm a configuração de mídia paga | Adicione o site e os conjuntos de dados de mídia paga, em seguida, crie a mídia paga e os componentes da Web |
-| D | Content Analytics sem mídia paga | Somente componentes do Content Analytics | Ative o canal de mídia paga na configuração do Content Analytics e siga o caminho de configuração existente |
+| A | Content Analytics com mídia paga ou pela Web | [Conjuntos de dados e componentes de mídia paga](/help/content-analytics/config/paid-media.md), além de conjuntos de dados de evento e pesquisa do Content Analytics. | Adicione o conjunto de dados do evento do site, se necessário, e configure os campos derivados da Web e grupos de relatórios. |
+| B | Content Analytics somente com mídia paga | [Conjuntos de dados e componentes de mídia paga](/help/content-analytics/config/paid-media.md); conjuntos de dados de pesquisa de conteúdo compartilhado também podem estar presentes. | Adicione o conjunto de dados do evento do site e configure os campos derivados da Web e grupos de relatórios. |
+| C | Mídia paga sem provisionamento do Content Analytics | Existem conjuntos de dados de mídia paga no Experience Platform, mas a conexão e a visualização de dados não contêm a configuração de mídia paga. | Adicione o site e os conjuntos de dados de mídia paga, em seguida, crie a mídia paga e os componentes da Web. |
+| D | Content Analytics sem mídia paga | Somente componentes do Content Analytics. | Ative o canal de mídia paga na configuração do Content Analytics e siga o caminho de configuração existente. |
 
 Não remova nem modifique conjuntos de dados provisionados pelo sistema ou componentes somente leitura ao estender uma conexão gerenciada pelo Content Analytics.
 
@@ -143,10 +147,10 @@ Ignore a criação de esquema, conjunto de dados e sequência de dados se o site
 
    | Grupo de campos | Dados exigidos |
    |---|---|
-   | AEP Web SDK ExperienceEvent | URL da página, exibições de página, referenciador e outro contexto da Web |
-   | Detalhes do Commerce | Contagem de compras, valor do pedido, moeda, ID de compra e detalhes do produto |
-   | Detalhes de marketing de campanha, opcional | Códigos de rastreamento se sua implementação os capturar separadamente |
-   | IdentityMap, se ainda não estiver presente | O identificador de pessoa, como ECID |
+   | AEP Web SDK ExperienceEvent | URL da página, exibições de página, referenciador e outro contexto da Web. |
+   | Detalhes do Commerce | Contagem de compras, valor do pedido, moeda, ID de compra e detalhes do produto. |
+   | Detalhes de marketing de campanha, opcional | Códigos de rastreamento se sua implementação os capturar separadamente. |
+   | IdentityMap, se ainda não estiver presente | O identificador de pessoa, como ECID. |
 
 1. Salve o esquema. A ativação de perfil não é necessária para este caso de uso de relatórios.
 1. Vá para **[!UICONTROL Gerenciamento de Dados]** > **[!UICONTROL Conjuntos de Dados]** > **[!UICONTROL Criar conjunto de dados]** > **[!UICONTROL Criar conjunto de dados do esquema]**.
@@ -195,11 +199,11 @@ Para assimilar o conjunto de dados do evento da Web na Customer Journey Analytic
 
    | Configuração | Valor |
    |---|---|
-   | ID da pessoa | `identityMap` com o namespace ECID ou com o campo de ID de pessoa da implementação |
+   | ID de pessoa | `identityMap` com o namespace ECID ou com o campo de ID de pessoa da implementação. |
    | Carimbo de data e hora | `timestamp` |
    | Tipo de fonte de dados | Dados da Web |
    | Importar todos os novos dados | Habilitado |
-   | Preencher retroativamente todos os dados existentes | Ativado para o período histórico necessário |
+   | Preencher retroativamente todos os dados existentes | Ativado para o período histórico necessário. |
 
 1. Adicione o conjunto de dados e salve a conexão.
 
@@ -286,11 +290,11 @@ Criar um campo derivado por nível de relatório. A estrutura a seguir lida com 
 
 | Regra | Função | Configuração |
 |---|---|---|
-| 1 | [Análise de URL](/help/data-views/derived-fields/derived-fields.md#url-parse) | Leia o parâmetro Meta específico do nível no URL da página |
-| 2 | [Análise de URL](/help/data-views/derived-fields/derived-fields.md#url-parse) | Leia o parâmetro UTM específico do nível no URL da página |
-| 3 | [Análise de URL](/help/data-views/derived-fields/derived-fields.md#url-parse) | Ler `s_kwcid` da URL da página |
-| 4 | [Substituição de Regex](/help/data-views/derived-fields/derived-fields.md#regex-replace) | Aplicar a expressão específica de nível à regra 3; saída `$1` |
-| 5 | [Caso Quando](/help/data-views/derived-fields/derived-fields.md#case-when) | Se a regra 3 estiver definida, retornar a regra 4; caso contrário, se a regra 1 estiver definida, retornar a regra 1; caso contrário, retornar a regra 2 |
+| 1 | [Análise de URL](/help/data-views/derived-fields/derived-fields.md#url-parse) | Leia o parâmetro Meta específico do nível no URL da página. |
+| 2 | [Análise de URL](/help/data-views/derived-fields/derived-fields.md#url-parse) | Leia o parâmetro UTM específico do nível no URL da página. |
+| 3 | [Análise de URL](/help/data-views/derived-fields/derived-fields.md#url-parse) | Ler `s_kwcid` da URL da página. |
+| 4 | [Substituição de Regex](/help/data-views/derived-fields/derived-fields.md#regex-replace) | Aplicar a expressão específica de nível à regra 3; saída `$1`. |
+| 5 | [Caso Quando](/help/data-views/derived-fields/derived-fields.md#case-when) | Se a regra 3 estiver definida, retornar a regra 4; caso contrário, se a regra 1 estiver definida, retornar a regra 1; caso contrário, retornar a regra 2. |
 
 Use os seguintes valores:
 

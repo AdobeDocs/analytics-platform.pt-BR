@@ -7,20 +7,23 @@ role: User
 TQID: https://experienceleague.adobe.com/hXe1cEXGvuuBSd0bpavJGEJpEXng2zctXUxPinGu4es
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
+    internal-label: Customer Journey Analytics
 feature_v2:
   - id: c73c4213-d623-4126-81f4-80b42e5e2656
+    internal-label: Analysis Workspace
   - id: ce577701-5b9e-4fe4-8fa3-4eedea976da4
+    internal-label: Components
 subfeature_v2:
   - id: cb6c7d24-631f-46e5-9e39-3a2705f73962
+    internal-label: Calendar
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+    internal-label: User
+source-git-commit: 8ab47e74ee442d97e8e7b1b9e92129025a5b1d1f
 workflow-type: tm+mt
-source-wordcount: 542
-ht-degree: 92%
-
+source-wordcount: '589'
+ht-degree: 85%
 ---
-
 # Criar intervalos de datas
 
 
@@ -64,6 +67,11 @@ A caixa de diálogo **[!UICONTROL Novo intervalo de datas]** ou **[!UICONTROL Ed
 
 1. Especifique um **[!UICONTROL Título]** para o intervalo de datas Por exemplo, **[!UICONTROL Trimestral]**.
 1. Opcionalmente, especifique uma **[!UICONTROL Descrição]**.
+
+   Para que o Adobe gere uma descrição para você, selecione **[!UICONTROL Gerar descrição]**. Essa opção só estará disponível depois que você criar a definição de intervalo de datas.
+
+   As descrições geradas incluem o texto **[!UICONTROL Gerado pelo Adobe usando IA]**, e você pode editá-las depois de gerá-las. Para obter mais informações, consulte [Gerar descrições automaticamente](/help/components/add-component-descriptions.md#automatically-generate-descriptions).
+
 1. Organize o segmento criando ou aplicando uma ou mais **[!UICONTROL Marcas]**. Comece a digitar para encontrar as tags existentes que você pode selecionar. Ou pressione **[!UICONTROL ENTER]** para adicionar uma nova tag. Selecione ![CrossSize75](/help/assets/icons/CrossSize75.svg) para remover uma tag. |
 1. Selecione um **[!UICONTROL Intervalo de datas]**, escolhendo primeiro a data inicial e, em seguida, a data final.
 Também é possível selecionar uma **[!UICONTROL predefinição]** no menu suspenso [!UICONTROL *Selecionar uma predefinição*].

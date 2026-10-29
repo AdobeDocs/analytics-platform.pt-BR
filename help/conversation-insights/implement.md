@@ -30,12 +30,14 @@ topic_v2:
     internal-label: Data collection
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: 113a215e26092c65d6eaf2c321f60d3f3a5015b8
 workflow-type: tm+mt
 source-wordcount: '2563'
 ht-degree: 5%
 ---
 # Implementar Insights de conversa
+
+{{release-limited-testing}}
 
 Para produzir dados de conversa como Eventos de experiência XDM e garantir que esses eventos de experiência de conversa terminem no Adobe Experience Platform como conjuntos de dados, instrumente seu aplicativo de agente ou serviço para usar Insights de conversa.
 

@@ -32,10 +32,10 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: f886069ac388da7985beac80cdaaa7bd0a506439
 workflow-type: tm+mt
-source-wordcount: '903'
-ht-degree: 32%
+source-wordcount: '970'
+ht-degree: 30%
 ---
 # Gerenciar métricas calculadas
 
@@ -88,6 +88,7 @@ Use ![ColumnSetting](/help/assets/icons/ColumnSetting.svg) para especificar quai
 | ![Editar](/help/assets/icons/Edit.svg) | **[!UICONTROL Renomear]** | Renomear uma única métrica calculada selecionada. Quando selecionada, você pode renomear a métrica calculada em linha. |
 | ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) | **[!UICONTROL Aprovar]** | Aprove as métricas calculadas selecionadas. Consulte [Aprovar métricas calculadas](cm-approving.md). |
 | ![Copiar](/help/assets/icons/Copy.svg) | **[!UICONTROL Copiar]** | Copie as métricas calculadas selecionadas. Novas métricas calculadas são criadas com o mesmo nome e sufixo `(Copy)` |
+| ![IA](/help/assets/icons/AI.svg) | **[!UICONTROL Gerar descrições]** | <p>Gerar descrições para as métricas calculadas selecionadas, substituindo quaisquer descrições existentes.</p><p>Para evitar a substituição de descrições existentes, primeiro [filtre](#filter-panel) a lista para mostrar apenas métricas calculadas sem uma descrição (no filtro, em [!UICONTROL **Outros filtros**], selecione [!UICONTROL **Descrição ausente**]).</p><p>Uma confirmação será solicitada. Solicitações grandes são executadas em segundo plano e você recebe uma notificação quando elas são concluídas.</p><p>Consulte [Gerar descrições automaticamente](/help/components/add-component-descriptions.md#automatically-generate-descriptions) para obter mais informações.</p> |
 | ![FileCSV](/help/assets/icons/FileCSV.svg) | **[!UICONTROL Exportar para CSV]** | Exportar as métricas calculadas para um arquivo `Calculated  metric List.csv`. |
 
 ### Barra de filtros ativos
