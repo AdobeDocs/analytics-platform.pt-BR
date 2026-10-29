@@ -147,4 +147,4 @@ Para gerar descrições para vários componentes no Dicionário de Dados:
 
    Uma mensagem de confirmação mostra o número de descrições adicionadas.
 
-   Se você selecionou um grande número de componentes, as descrições são geradas em segundo plano. Quando a solicitação for concluída, você receberá uma [notificação](https://experienceleague.adobe.com/en/docs/core-services/interface/features/account-preferences#view-notifications) no aplicativo que mostra quantas descrições foram geradas e quantas falharam.
+   Se você selecionou um grande número de componentes, as descrições são geradas em segundo plano. Quando a solicitação for concluída, você receberá uma [notificação](https://experienceleague.adobe.com/pt-br/docs/core-services/interface/features/account-preferences#view-notifications) no aplicativo que mostra quantas descrições foram geradas e quantas falharam.
