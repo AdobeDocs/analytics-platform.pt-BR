@@ -4,7 +4,6 @@ description: Use a experiência no produto para o Colaborador resumir o projeto 
 role: User, Admin
 solution: Customer Journey Analytics
 feature: AI Tools
-hold: true
 product_v2:
   - id: e98b7246-966c-4318-9e95-cad2f7a17dc7
     internal-label: Customer Journey Analytics
@@ -23,14 +22,12 @@ topic_v2:
     internal-label: Reporting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 2c55e526968ca2f064f32c457ee112c07a0b10ff
+source-git-commit: 67e9700015c9c8de24871feb4eedc4392ce72a3a
 workflow-type: tm+mt
-source-wordcount: '1945'
+source-wordcount: '1905'
 ht-degree: 0%
 ---
 # Usar a experiência no produto para o Colaborador
-
-{{release-limited-testing}}
 
 A experiência no produto para o Colaborador está disponível em um painel de chat no lado direito do Analysis Workspace. O Colaborador usa o projeto aberto como contexto, para que você possa fazer perguntas sobre a análise ou solicitar que o Colaborador crie o projeto sem precisar explicar o que ele contém.
 
@@ -42,15 +39,18 @@ A experiência no produto para o Colaborador está disponível em um painel de c
 
   Se você não conseguir acessar o Coworker no Workspace, entre em contato com o administrador. Para obter mais informações, consulte [Preferências da Organização IMS](/help/analysis-workspace/user-preferences.md#ims-organization-preferences). <!-- need to update this section with the new toggle -->
 
-<!-- FOLLOW-UP: Coworker permissions are still being finalized. The Coworker permission name below is a placeholder. Confirm the name, category, and Admin Console steps with the SME. -->
-
-* **Permissões**: no [!UICONTROL Adobe Admin Console], a permissão [!UICONTROL Ferramentas de Relatório] **[!UICONTROL Colaborador]** determina o acesso ao Colaborador. Um [administrador de perfil de produto](https://helpx.adobe.com/br/enterprise/using/manage-product-profiles.html) deve adicionar essa permissão ao perfil de produto. Para obter mais informações, consulte [Controle de acesso](/help/technotes/access-control.md#access-control).
-
 * **Acesso à visualização de dados**: o colaborador usa suas permissões de visualização de dados e Analysis Workspace existentes. Ele não pode acessar dados ou componentes aos quais você ainda não tem acesso.
+
+<!--
+FOLLOW-UP: Coworker permissions are still being finalized. The Coworker permission name below is a placeholder. Confirm the name, category, and Admin Console steps with the SME.
+
+* **Permissions**: In the [!UICONTROL Adobe Admin Console], the [!UICONTROL Reporting Tools] **[!UICONTROL Coworker]** permission determines access to Coworker. A [product profile administrator](https://helpx.adobe.com/enterprise/using/manage-product-profiles.html) must add this permission to your product profile. For more information, see [Access control](/help/technotes/access-control.md#access-control).
+
+-->
 
 ### Escolha entre o Colaborador no Workspace e o aplicativo Colaborador
 
-A experiência no produto para o Colaborador tem muitos dos mesmos recursos que o [aplicativo do CX Enterprise Coworker](https://experienceleague.adobe.com/pt-br/docs/coworker/content/chat/use-cases/data-insights/analytics-chat), incluindo as habilidades às quais você tem acesso. No entanto, há diferenças importantes que determinam quando você pode usar um sobre o outro:
+A experiência no produto para o Colaborador tem muitos dos mesmos recursos que o [aplicativo do CX Enterprise Coworker](https://experienceleague.adobe.com/en/docs/coworker/content/chat/use-cases/data-insights/analytics-chat), incluindo as habilidades às quais você tem acesso. No entanto, há diferenças importantes que determinam quando você pode usar um sobre o outro:
 
 | | Experiência no produto para o Colaborador | Aplicativo de colaborador |
 | --- | --- | --- |
