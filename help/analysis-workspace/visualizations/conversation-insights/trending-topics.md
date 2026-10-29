@@ -4,7 +4,7 @@ title: Tópicos em alta
 feature: Visualizations
 role: User
 hide: true
-source-git-commit: 85311bf19368560ef54a3361edf2e7c13590929c
+source-git-commit: 113a215e26092c65d6eaf2c321f60d3f3a5015b8
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 8%
@@ -21,6 +21,8 @@ ht-degree: 8%
 >title="Tópicos em alta"
 >abstract="Analisar tópicos de tendência com base na métrica de classificação selecionada. Selecione tópicos para detalhar até cinco níveis de profundidade. Pesquise tópicos específicos e compare tópicos a outros intervalos de datas."
 
+{{release-limited-testing}}
+
 A visualização dos ![Feed](/help/assets/icons/Feed.svg) **[!UICONTROL Tópicos de tendência]** permite explorar e analisar os tópicos de tendência como parte dos insights da conversa.
 
 Você pode pesquisar tópicos específicos e comparar o número e a porcentagem de cada tópico em cada nível com outros intervalos de dados.
@@ -36,6 +38,7 @@ Você pode pesquisar tópicos específicos e comparar o número e a porcentagem 
 >id="workspace_trendingtopics_usenondefaultattributionmodel_disabled"
 >title="Usar modelo de atribuição não-padrão"
 >abstract="Modelos de atribuição não padrão não estão disponíveis para esta métrica."
+
 
 Para criar e configurar uma visualização de **[!UICONTROL Tópicos de tendência]**:
 
@@ -57,7 +60,7 @@ Para usar a visualização:
 
 * Passe o mouse sobre um tópico para ver um pop-up com mais detalhes. ➊
 
-* Para ver os subtópicos de tendência de um tópico em um nível inferior, selecione um tópico em um nível específico. Se nenhum tópico estiver disponível em um subnível, você verá ![DataRemove](/help/assets/icons/DataRemove.svg) **[!UICONTROL Nenhum subtópico encontrado para _topic > subtopic > ...]**.
+* Para ver os subtópicos de tendência de um tópico em um nível inferior, selecione um tópico em um nível específico. Se nenhum tópico estiver disponível em um subnível, você verá ![DataRemove](/help/assets/icons/DataRemove.svg) **[!UICONTROL Nenhum subtópico encontrado para _tópico > subtópico_ > ...]**.
 
 * Use a ![Pesquisa](/help/assets/icons/Search.svg) **[!UICONTROL _Pesquisar tópicos_]** para pesquisar tópicos rapidamente. ➋
 

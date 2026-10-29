@@ -33,9 +33,9 @@ topic_v2:
     internal-label: Reporting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: 62a6bb436d59ab7a5a7be515afbe1f5f0f7817ee
 workflow-type: tm+mt
-source-wordcount: '1643'
+source-wordcount: '1650'
 ht-degree: 43%
 ---
 
@@ -219,7 +219,7 @@ Para usar o modelo:
 
 1. Selecione **[!UICONTROL Espaço de trabalho]** no menu principal.
 1. Verifique se você selecionou uma visualização de dados configurada para o Content Analytics.
-1. Procure ou use segmentos (**[!UICONTROL Web]** para **[!UICONTROL Canal]** e **[!UICONTROL Envolvimento]** para **[!UICONTROL Caso de Uso]**&#x200B;s) para localizar e selecionar o modelo **[!UICONTROL Content Analytics de mídia paga]**.
+1. Procure ou use segmentos (**[!UICONTROL Web]** para **[!UICONTROL Canal]** e **[!UICONTROL Envolvimento]** para **[!UICONTROL Caso de Uso]**s) para localizar e selecionar o modelo **[!UICONTROL Content Analytics de mídia paga]**.
 1. Selecione **[!UICONTROL Usar modelo]**.
 
 Um projeto **[!UICONTROL Content Analytics - Dados de Resumo de Mídia Paga]** é aberto no [Analysis Workspace](/help/analysis-workspace/home.md). O projeto consiste no **[!UICONTROL Desempenho de Mídia Paga]** [painel](/help/analysis-workspace/c-panels/panels.md), com [tabelas de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) e [visualizações](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md). Use o painel para analisar o alcance, o engajamento, os gastos e a eficiência da mídia paga em redes, contas, campanhas, experiências e ativos. As métricas e dimensões no painel permanecem intencionalmente na estrutura de resumo de ativos de mídia paga; não combine conjuntos de dados de resumo com dados do evento.
@@ -228,4 +228,5 @@ Um projeto **[!UICONTROL Content Analytics - Dados de Resumo de Mídia Paga]** �
 >
 >[Componentes do Content Analytics](components.md)
 >[Usar modelos](/help/analysis-workspace/templates/use-templates.md#web-engagement)
+>[Ingressar em dados de mídia paga com dados da Web](/help/use-cases/cross-channel/paid-media-web.md)
 >

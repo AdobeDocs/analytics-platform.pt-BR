@@ -3,11 +3,10 @@ title: Associar Dados De Mídia Paga Com Dados Da Web No Customer Journey Analyt
 description: Una-se aos dados de resumo de mídia paga com os eventos do site no Adobe Customer Journey Analytics para comparar anúncios, cliques, pedidos, receita e retorno sobre o investimento em anúncios.
 solution: Customer Journey Analytics
 feature: Use Cases
-hide: true
 role: Admin
-source-git-commit: c5a7403374f26ebc641f3491a88dc14c5f8693c6
+source-git-commit: 62a6bb436d59ab7a5a7be515afbe1f5f0f7817ee
 workflow-type: tm+mt
-source-wordcount: '3910'
+source-wordcount: '3912'
 ht-degree: 3%
 ---
 # Associar dados de mídia paga com dados da Web
@@ -45,9 +44,14 @@ Os conjuntos de dados de resumo de mídia paga contêm métricas diárias sem um
 
 ## Entender a associação de relatórios
 
-Você pode ingressar somente nos níveis cujas IDs aparecem nos URLs da página inicial ou nos campos de evento existentes. Por exemplo, a marcação somente de campanha suporta relatórios de campanha, mas não de nível de anúncio. As associações de nível de experiência e de nível de ativo exigem parâmetros de URL adicionais e estão fora do escopo deste guia.
+Você pode ingressar somente nos níveis cujas IDs aparecem nos URLs da página inicial ou nos campos de evento existentes. Por exemplo, a marcação somente de campanha suporta relatórios de campanha, mas não de nível de anúncio.
 
-Consulte [Configurações do componente Grupo de dados de resumo](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-dataviews/summary-data) e [Configurações do componente Grupo de dados de resumo](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-dataviews/component-settings/summary-data-group) para referência.
+>[!NOTE]
+>
+>As associações de nível de experiência e nível de ativo do Content Analytics exigem parâmetros de URL adicionais e estão fora do escopo deste guia.
+
+
+Consulte [Configurações do componente Grupo de dados de resumo](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-dataviews/summary-data) e [Configurações do componente Grupo de dados de resumo](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/summary-data-group) para referência.
 
 ### Escolher a chave de junção
 
@@ -81,7 +85,7 @@ Confirme se você tem:
 * [!DNL Customer Journey Analytics] Selecione ou superior, com acesso às funções de campo derivadas usadas aqui: [Análise de URL](/help/data-views/derived-fields/derived-fields.md#url-parse), [Caso Quando](/help/data-views/derived-fields/derived-fields.md#case-when), [Substituição de Regex](/help/data-views/derived-fields/derived-fields.md#regex-replace) e, para enriquecimento de nome, [Pesquisa](/help/data-views/derived-fields/derived-fields.md#lookup).
 * [!DNL Adobe Experience Platform] permissões para gerenciar esquemas, conjuntos de dados e fluxos de dados na sandbox de destino e acesso a conjuntos de dados e Serviço de consulta para verificação.
 * [!DNL Customer Journey Analytics] permissão para editar a conexão de destino e a visualização de dados.
-* Conectores de origem de mídia paga configurados na mesma sandbox e assimilação de conjuntos de dados de resumo e pesquisa. Para obter um conector de exemplo, consulte [origem do Meta Ads](https://experienceleague.adobe.com/pt-br/docs/experience-platform/sources/connectors/advertising/meta-ads).
+* Conectores de origem de mídia paga configurados na mesma sandbox e assimilação de conjuntos de dados de resumo e pesquisa. Para obter um conector de exemplo, consulte [origem do Meta Ads](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/advertising/meta-ads).
 * Eventos do site que capturam o URL completo da página inicial, incluindo sua sequência de consulta, ou campos equivalentes contendo as IDs da rede.
 
 
@@ -122,10 +126,10 @@ Abra a visualização de dados que você planeja usar e inspecione os componente
 
 | | Ponto inicial | Configuração existente | Etapas a seguir |
 |---|---|---|---|
-| A | Content Analytics com mídia paga ou pela Web | Conjuntos de dados e componentes de mídia paga, além de conjuntos de dados de evento e pesquisa do Content Analytics | Adicione o conjunto de dados do evento do site, se necessário, e configure os campos derivados da Web e grupos de relatórios |
-| B | Content Analytics somente com mídia paga | Conjuntos de dados e componentes de mídia paga; conjuntos de dados de pesquisa de conteúdo compartilhado também podem estar presentes | Adicione seu conjunto de dados de evento do site e configure os campos derivados da Web e grupos de relatórios |
-| C | Mídia paga sem provisionamento do Content Analytics | Existem conjuntos de dados de mídia paga no Experience Platform, mas a conexão e a visualização de dados não contêm a configuração de mídia paga | Adicione o site e os conjuntos de dados de mídia paga, em seguida, crie a mídia paga e os componentes da Web |
-| D | Content Analytics sem mídia paga | Somente componentes do Content Analytics | Ative o canal de mídia paga na configuração do Content Analytics e siga o caminho de configuração existente |
+| A | Content Analytics com mídia paga ou pela Web | [Conjuntos de dados e componentes de mídia paga](/help/content-analytics/config/paid-media.md), além de conjuntos de dados de evento e pesquisa do Content Analytics. | Adicione o conjunto de dados do evento do site, se necessário, e configure os campos derivados da Web e grupos de relatórios. |
+| B | Content Analytics somente com mídia paga | [Conjuntos de dados e componentes de mídia paga](/help/content-analytics/config/paid-media.md); conjuntos de dados de pesquisa de conteúdo compartilhado também podem estar presentes. | Adicione o conjunto de dados do evento do site e configure os campos derivados da Web e grupos de relatórios. |
+| C | Mídia paga sem provisionamento do Content Analytics | Existem conjuntos de dados de mídia paga no Experience Platform, mas a conexão e a visualização de dados não contêm a configuração de mídia paga. | Adicione o site e os conjuntos de dados de mídia paga, em seguida, crie a mídia paga e os componentes da Web. |
+| D | Content Analytics sem mídia paga | Somente componentes do Content Analytics. | Ative o canal de mídia paga na configuração do Content Analytics e siga o caminho de configuração existente. |
 
 Não remova nem modifique conjuntos de dados provisionados pelo sistema ou componentes somente leitura ao estender uma conexão gerenciada pelo Content Analytics.
 
@@ -143,10 +147,10 @@ Ignore a criação de esquema, conjunto de dados e sequência de dados se o site
 
    | Grupo de campos | Dados exigidos |
    |---|---|
-   | AEP Web SDK ExperienceEvent | URL da página, exibições de página, referenciador e outro contexto da Web |
-   | Detalhes do Commerce | Contagem de compras, valor do pedido, moeda, ID de compra e detalhes do produto |
-   | Detalhes de marketing de campanha, opcional | Códigos de rastreamento se sua implementação os capturar separadamente |
-   | IdentityMap, se ainda não estiver presente | O identificador de pessoa, como ECID |
+   | AEP Web SDK ExperienceEvent | URL da página, exibições de página, referenciador e outro contexto da Web. |
+   | Detalhes do Commerce | Contagem de compras, valor do pedido, moeda, ID de compra e detalhes do produto. |
+   | Detalhes de marketing de campanha, opcional | Códigos de rastreamento se sua implementação os capturar separadamente. |
+   | IdentityMap, se ainda não estiver presente | O identificador de pessoa, como ECID. |
 
 1. Salve o esquema. A ativação de perfil não é necessária para este caso de uso de relatórios.
 1. Vá para **[!UICONTROL Gerenciamento de Dados]** > **[!UICONTROL Conjuntos de Dados]** > **[!UICONTROL Criar conjunto de dados]** > **[!UICONTROL Criar conjunto de dados do esquema]**.
@@ -158,7 +162,7 @@ Ignore a criação de esquema, conjunto de dados e sequência de dados se o site
 1. Nomeie o fluxo de dados e selecione seu esquema de evento como o esquema de mapeamento.
 1. Salve e selecione **[!UICONTROL Adicionar Serviço]** > **[!UICONTROL Adobe Experience Platform]**.
 1. Selecione a sandbox e o conjunto de dados do evento e, em seguida, **[!UICONTROL Salvar]**.
-1. Use a ID da sequência de dados para configurar o [Experience Platform Web SDK](https://experienceleague.adobe.com/pt-br/docs/experience-platform/collection/js/js-overview).
+1. Use a ID da sequência de dados para configurar o [Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/js-overview).
 
 Capture o seguinte:
 
@@ -195,11 +199,11 @@ Para assimilar o conjunto de dados do evento da Web na Customer Journey Analytic
 
    | Configuração | Valor |
    |---|---|
-   | ID de pessoa | `identityMap` com o namespace ECID ou com o campo de ID de pessoa da implementação |
+   | ID de pessoa | `identityMap` com o namespace ECID ou com o campo de ID de pessoa da implementação. |
    | Carimbo de data e hora | `timestamp` |
    | Tipo de fonte de dados | Dados da Web |
    | Importar todos os novos dados | Habilitado |
-   | Preencher retroativamente todos os dados existentes | Ativado para o período histórico necessário |
+   | Preencher retroativamente todos os dados existentes | Ativado para o período histórico necessário. |
 
 1. Adicione o conjunto de dados e salve a conexão.
 
@@ -286,11 +290,11 @@ Criar um campo derivado por nível de relatório. A estrutura a seguir lida com 
 
 | Regra | Função | Configuração |
 |---|---|---|
-| 1 | [Análise de URL](/help/data-views/derived-fields/derived-fields.md#url-parse) | Leia o parâmetro Meta específico do nível no URL da página |
-| 2 | [Análise de URL](/help/data-views/derived-fields/derived-fields.md#url-parse) | Leia o parâmetro UTM específico do nível no URL da página |
-| 3 | [Análise de URL](/help/data-views/derived-fields/derived-fields.md#url-parse) | Ler `s_kwcid` da URL da página |
-| 4 | [Substituição de Regex](/help/data-views/derived-fields/derived-fields.md#regex-replace) | Aplicar a expressão específica de nível à regra 3; saída `$1` |
-| 5 | [Caso Quando](/help/data-views/derived-fields/derived-fields.md#case-when) | Se a regra 3 estiver definida, retornar a regra 4; caso contrário, se a regra 1 estiver definida, retornar a regra 1; caso contrário, retornar a regra 2 |
+| 1 | [Análise de URL](/help/data-views/derived-fields/derived-fields.md#url-parse) | Leia o parâmetro Meta específico do nível no URL da página. |
+| 2 | [Análise de URL](/help/data-views/derived-fields/derived-fields.md#url-parse) | Leia o parâmetro UTM específico do nível no URL da página. |
+| 3 | [Análise de URL](/help/data-views/derived-fields/derived-fields.md#url-parse) | Ler `s_kwcid` da URL da página. |
+| 4 | [Substituição de Regex](/help/data-views/derived-fields/derived-fields.md#regex-replace) | Aplicar a expressão específica de nível à regra 3; saída `$1`. |
+| 5 | [Caso Quando](/help/data-views/derived-fields/derived-fields.md#case-when) | Se a regra 3 estiver definida, retornar a regra 4; caso contrário, se a regra 1 estiver definida, retornar a regra 1; caso contrário, retornar a regra 2. |
 
 Use os seguintes valores:
 
@@ -363,7 +367,7 @@ Adicione o campo derivado de aterrissagens pagas como uma métrica e configure m
 
 Mantenha as métricas originais **[!UICONTROL Pedidos]** e **[!UICONTROL Receita]** inalteradas para preservar os relatórios existentes. É necessário habilitar explicitamente a substituição para esta configuração, mesmo quando os padrões exibidos parecem corresponder.
 
-Para crédito de conversão entre visitas recorrentes, considere um contêiner de **[!UICONTROL Pessoa]** e uma janela de retrospectiva apropriada. Consulte o [caso de uso de dados de resumo](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-usecases/data-views/summary-data).
+Para crédito de conversão entre visitas recorrentes, considere um contêiner de **[!UICONTROL Pessoa]** e uma janela de retrospectiva apropriada. Consulte o [caso de uso de dados de resumo](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-usecases/data-views/summary-data).
 
 Use a atribuição de métrica em vez de adicionar persistência às dimensões de ID da Web. Para evitar contagens inflacionadas interpretadas como aterrissagens, não persista nas IDs para eventos posteriores, pois isso altera quais eventos aparecem nas linhas da campanha.
 
