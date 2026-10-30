@@ -22,12 +22,16 @@ topic_v2:
     internal-label: Reporting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 67e9700015c9c8de24871feb4eedc4392ce72a3a
+source-git-commit: 88e67c92fc170b340149c9ab73ad5eea2122da2b
 workflow-type: tm+mt
-source-wordcount: '1905'
-ht-degree: 0%
+source-wordcount: '1960'
+ht-degree: 1%
 ---
 # Usar a experiência no produto para o Colaborador
+
+>[!AVAILABILITY]
+>
+>A funcionalidade descrita nesta seção está na fase de teste limitado da versão e pode não estar disponível ainda em seu ambiente. Além disso, o Co-worker usa IA gerativa, que pode produzir resultados imprecisos ou inesperados. Revise as respostas do colaborador e as alterações feitas em seu projeto antes de agir com elas ou compartilhar o projeto.
 
 A experiência no produto para o Colaborador está disponível em um painel de chat no lado direito do Analysis Workspace. O Colaborador usa o projeto aberto como contexto, para que você possa fazer perguntas sobre a análise ou solicitar que o Colaborador crie o projeto sem precisar explicar o que ele contém.
 
