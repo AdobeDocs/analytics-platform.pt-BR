@@ -7,19 +7,19 @@ hide: true
 source-git-commit: 113a215e26092c65d6eaf2c321f60d3f3a5015b8
 workflow-type: tm+mt
 source-wordcount: '424'
-ht-degree: 8%
+ht-degree: 16%
 ---
-# Tópicos em alta {#trending-topics}
+# Tópicos de tendência {#trending-topics}
 
 >[!CONTEXTUALHELP]
 >id="workspace_trendingtopics_button"
->title="Tópicos em alta"
+>title="Tópicos de tendência"
 >abstract="Crie uma visualização que mostre um detalhamento hierárquico habilitado para detalhamento de tópicos de tendência com ocorrências e porcentagens para ajudar você a identificar temas significativos em conversas."
 
 >[!CONTEXTUALHELP]
 >id="workspace_trendingtopics_panel"
->title="Tópicos em alta"
->abstract="Analisar tópicos de tendência com base na métrica de classificação selecionada. Selecione tópicos para detalhar até cinco níveis de profundidade. Pesquise tópicos específicos e compare tópicos a outros intervalos de datas."
+>title="Tópicos de tendência"
+>abstract="Analise os assuntos em alta com base na métrica de classificação selecionada. Selecione tópicos para aprofundar a pesquisa em até cinco níveis. Pesquise tópicos específicos e compare-os com outros intervalos de datas."
 
 {{release-limited-testing}}
 

@@ -53,7 +53,7 @@ A criação de uma visualização de dados envolve criar métricas e dimensões 
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Criar ou editar uma visualização de dados](https://experienceleague.adobe.com/pt-br/docs/customer-journey-analytics-learn/tutorials/data-views/overview-of-configuring-data-views-for-cja){target="_blank"} para assistir a um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Criar ou editar uma visualização de dados](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/data-views/overview-of-configuring-data-views-for-cja){target="_blank"} para assistir a um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 
@@ -126,7 +126,7 @@ Esta seção é visível somente para admins provisionados com o Journey Optimiz
 >[!CONTEXTUALHELP]
 >id="cja-enable-data-insights-data-view"
 >title="Habilitar para o Data Insights Agent"
->abstract="Essa opção habilita a visualização de dados para uso com o Data Insights Agent. O Data Insights Agent é um agente de conversação de IA generativa que ajuda você a analisar rapidamente seus dados com solicitações de texto. Ele cria visualizações relevantes no Analysis Workspace, usando componentes da visualização de dados e os seus dados reais."
+>abstract="Essa opção habilita a visualização de dados para uso com o Data Insights Agent. O Data Insights Agent é um agente de conversa com IA generativa que ajuda você a analisar rapidamente seus dados por meio de prompts de texto. Ele cria visualizações relevantes no Analysis Workspace, usando componentes da visualização de dados e os seus dados reais."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -172,13 +172,13 @@ Determina o nome dos containers para a visualização de dados. Os nomes dos con
 
 | Nome do container | Nome de exibição (padrão) | Descrição |
 | --- | --- | --- |
-| globalAccount | [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Conta Global &#x200B;]** | O container [!UICONTROL Conta global] inclui todas as sessões e eventos para contas globais no intervalo de tempo especificado. Se sua organização usa um termo diferente, é possível renomear o container aqui. |
+| globalAccount | [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Conta Global ]** | O container [!UICONTROL Conta global] inclui todas as sessões e eventos para contas globais no intervalo de tempo especificado. Se sua organização usa um termo diferente, é possível renomear o container aqui. |
 | pessoa | **[!UICONTROL Pessoa]** | O container [!UICONTROL Pessoa] inclui todas as sessões e eventos de pessoas dentro do intervalo de tempo especificado. Se sua organização usar um termo diferente (por exemplo, &quot;Visitante&quot; ou &quot;Usuário&quot;), você poderá renomear o container aqui. |
 | session | **[!UICONTROL Sessão]** | O container [!UICONTROL Sessão] permite identificar as interações de página, campanhas ou conversões de uma sessão específica. Você pode renomear o container como &quot;Visita&quot; ou com qualquer outro termo que desejar. |
-| oportunidade | [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Oportunidade &#x200B;]** | O container [!UICONTROL Oportunidade] inclui todas as sessões e eventos para oportunidades no intervalo de tempo especificado. Se sua organização usa um termo diferente, é possível renomear o container aqui. |
-| purchaseGroup | [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Grupo de compras &#x200B;]** | O container [!UICONTROL Grupo de compra] inclui todas as sessões e eventos para grupos de compra no intervalo de tempo especificado. Se sua organização usa um termo diferente, é possível renomear o container aqui. |
+| oportunidade | [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Oportunidade ]** | O container [!UICONTROL Oportunidade] inclui todas as sessões e eventos para oportunidades no intervalo de tempo especificado. Se sua organização usa um termo diferente, é possível renomear o container aqui. |
+| purchaseGroup | [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Grupo de compras ]** | O container [!UICONTROL Grupo de compra] inclui todas as sessões e eventos para grupos de compra no intervalo de tempo especificado. Se sua organização usa um termo diferente, é possível renomear o container aqui. |
 | evento | **[!UICONTROL Evento]** | O container [!UICONTROL Evento] define eventos individuais em um conjunto de dados. Se sua organização usar um termo diferente (por exemplo, &quot;Hits&quot; ou &quot;Visualizações de página&quot;), você poderá renomear o container aqui. |
-| account | [!BADGE Conta &#x200B;]**{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**B2B edition | O container [!UICONTROL Conta] inclui todas as sessões e eventos para contas no intervalo de tempo especificado. Se sua organização usa um termo diferente, é possível renomear o container aqui. |
+| account | [!BADGE Conta ]**]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL B2B edition | O container [!UICONTROL Conta] inclui todas as sessões e eventos para contas no intervalo de tempo especificado. Se sua organização usa um termo diferente, é possível renomear o container aqui. |
 
 Para renomear contêineres do sistema:
 
@@ -263,7 +263,7 @@ Se você arrastar uma pasta de campos de esquema a partir do painel esquerdo, os
    * [[!UICONTROL Desduplicação de métrica]](component-settings/metric-deduplication.md)
    * [[!UICONTROL Sem opções de valor]](component-settings/no-value-options.md)
    * [[!UICONTROL Persistência]](component-settings/persistence.md)
-   * [[!UICONTROL Classificação de valor]](component-settings/value-bucketing.md)
+   * [[!UICONTROL Agrupar valores em buckets]](component-settings/value-bucketing.md)
 
 1. Selecione **[!UICONTROL Salvar e continuar]** para continuar configurando sua visualização de dados nova ou existente. Selecione **[!UICONTROL Salvar]** para salvar a configuração da visualização de dados existente.
 
