@@ -38,9 +38,9 @@ topic_v2:
     internal-label: Data management
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 7dc0d254bfdf55d9b0b9a13587292b4dab59af30
+source-git-commit: 80d2b7da2e2b6c12a44d7e9bffd821e58dbeeecc
 workflow-type: tm+mt
-source-wordcount: '4844'
+source-wordcount: '4894'
 ht-degree: 55%
 ---
 
@@ -298,6 +298,8 @@ Para o canal móvel, você pode configurar a [captura e definição de experiên
 
 Nesta seção, você pode optar por incluir experiências nos dados móveis coletados com o Content Analytics.  Para o canal móvel, uma experiência é o que você registrou como uma experiência usando o Adobe Experience Platform SDK para Content Analytics.
 
+As dimensões de experiência são ativadas por padrão no conjunto de dados e na visualização de dados. A seleção **[!UICONTROL Incluir experiências]** é para habilitar experiências do Content Analytics na coleção de dados.
+
 Por padrão, **[!UICONTROL Incluir experiências]** está desabilitado.
 
 Considere incluir experiências somente quando tiver instrumentado o aplicativo móvel para registrar experiências e rastrear visualizações de experiência e cliques de experiência.
@@ -393,7 +395,7 @@ Para o canal Web, você pode configurar [captura e definição de experiência](
 >id="aca_onboarding_datacollection_button"
 >title="Coleção de dados"
 >abstract="Defina qual propriedade de tags você deseja usar ou crie uma nova. Defina também as páginas e os ativos que deseja incluir ou excluir usando expressões regulares.<br/>Para uma implementação independente de tags, selecione **[!UICONTROL Criar novo]**.  É criada uma propriedade Tags, mas você não é obrigado a usá-la."
->additional-url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/content-analytics/configuration/tags-agnostic" text="Biblioteca JavaScript do Content Analytics"
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/configuration/tags-agnostic" text="Biblioteca JavaScript do Content Analytics"
 
 
 >[!CONTEXTUALHELP]
@@ -470,6 +472,8 @@ Inclua experiências somente nos seguintes casos:
 
 * As páginas do site devem ser reproduzíveis usando o URL da página.
 * O conteúdo de texto visualizado por qualquer usuário possa ser reproduzido usando o URL da página e não dependa de cookies ou outros mecanismos de personalização.
+
+As dimensões de experiência são ativadas por padrão no conjunto de dados e na visualização de dados. A seleção **[!UICONTROL Incluir experiências]** é para habilitar experiências do Content Analytics na coleção de dados.
 
 >[!IMPORTANT]
 >
