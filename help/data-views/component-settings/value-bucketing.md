@@ -29,8 +29,7 @@ workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 100%
 ---
-# Configurações do componente [!UICONTROL 
-Agrupamento de valores em buckets] {#value-bucketing-component-settings}
+# Configurações do componente [!UICONTROL Agrupamento de valores em buckets] {#value-bucketing-component-settings}
 
 <!-- markdownlint-disable MD034 -->
 
