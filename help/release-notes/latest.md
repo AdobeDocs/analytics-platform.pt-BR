@@ -49,7 +49,7 @@ topic_v2:
     internal-label: Implementation
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 665ce95d0b2979bb4f3b26f5d5e5c0df75894f19
+source-git-commit: a963f146b42f3e67e3b67ea63f84d45ce09a0fb5
 workflow-type: tm+mt
 source-wordcount: '1298'
 ht-degree: 17%
@@ -107,4 +107,3 @@ Essas notas de versão abordam o período de outubro de 2026. As versões do Ado
 >* [Notas de versão da Coleção de mídia de streaming](https://experienceleague.adobe.com/docs/media-analytics/using/additional-resources/release-notes.html?lang=pt-BR)
 >* [notas de versão do CX Enterprise](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=pt-BR)
 >* [Atualizações na documentação do Customer Journey Analytics](/help/release-notes/doc-changes.md)
-

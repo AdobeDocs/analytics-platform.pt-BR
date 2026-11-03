@@ -7,19 +7,19 @@ hide: true
 source-git-commit: 113a215e26092c65d6eaf2c321f60d3f3a5015b8
 workflow-type: tm+mt
 source-wordcount: '351'
-ht-degree: 10%
+ht-degree: 20%
 ---
-# Resumos de conversa {#conversation-summaries}
+# Resumos da conversa {#conversation-summaries}
 
 >[!CONTEXTUALHELP]
 >id="workspace_conversationsummaries_button"
->title="Resumos de conversa"
+>title="Resumos da conversa"
 >abstract="Crie uma visualização que resume um grupo filtrado de conversas."
 
 >[!CONTEXTUALHELP]
 >id="workspace_conversationsummaries_panel"
->title="Resumos de conversa"
->abstract="Resumir um grupo filtrado de conversas. Controlar o comprimento do resumo. Consulte declarações de clientes para validar a precisão dos sinais extraídos. Selecione uma cotação para abrir a repetição completa da conversa."
+>title="Resumos da conversa"
+>abstract="Resumir um grupo filtrado de conversas. Controlar o comprimento do resumo. Veja citações representativas de clientes para validar a precisão dos sinais extraídos. Selecione uma cotação para abrir a repetição completa da conversa."
 
 {{release-limited-testing}}
 

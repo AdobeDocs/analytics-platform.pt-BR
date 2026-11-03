@@ -126,7 +126,7 @@ Esta seção é visível somente para admins provisionados com o Journey Optimiz
 >[!CONTEXTUALHELP]
 >id="cja-enable-data-insights-data-view"
 >title="Habilitar para o Data Insights Agent"
->abstract="Essa opção habilita a visualização de dados para uso com o Data Insights Agent. O Data Insights Agent é um agente de conversação de IA generativa que ajuda você a analisar rapidamente seus dados com solicitações de texto. Ele cria visualizações relevantes no Analysis Workspace, usando componentes da visualização de dados e os seus dados reais."
+>abstract="Essa opção habilita a visualização de dados para uso com o Data Insights Agent. O Data Insights Agent é um agente de conversa com IA generativa que ajuda você a analisar rapidamente seus dados por meio de prompts de texto. Ele cria visualizações relevantes no Analysis Workspace, usando componentes da visualização de dados e os seus dados reais."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -263,7 +263,7 @@ Se você arrastar uma pasta de campos de esquema a partir do painel esquerdo, os
    * [[!UICONTROL Desduplicação de métrica]](component-settings/metric-deduplication.md)
    * [[!UICONTROL Sem opções de valor]](component-settings/no-value-options.md)
    * [[!UICONTROL Persistência]](component-settings/persistence.md)
-   * [[!UICONTROL Classificação de valor]](component-settings/value-bucketing.md)
+   * [[!UICONTROL Agrupar valores em buckets]](component-settings/value-bucketing.md)
 
 1. Selecione **[!UICONTROL Salvar e continuar]** para continuar configurando sua visualização de dados nova ou existente. Selecione **[!UICONTROL Salvar]** para salvar a configuração da visualização de dados existente.
 
