@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: bccb25182630e18943a52ceca621cdfd6696b819
+source-git-commit: 22ec8a3fc4334e49e06986fdf52b27f3e97bef75
 workflow-type: tm+mt
-source-wordcount: '4243'
-ht-degree: 16%
+source-wordcount: '4056'
+ht-degree: 13%
 ---
 # Criar um feed de dados
 
@@ -70,7 +70,7 @@ Antes de criar um feed de dados, é importante ter uma compreensão básica dos 
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_frequency_granularity"
 >title="Frequência e granularidade"
->abstract="**Frequência de entrega** (feeds em tempo real): a frequência com que o feed de dados é entregue. As entregas horárias contêm o valor de uma hora de dados; as entregas diárias contêm o valor de um dia de dados. O intervalo de datas da retrospectiva e o atraso de processamento também podem afetar quais eventos são incluídos.<p>**Granularidade** (feeds de preenchimento retroativo): o intervalo de tempo usado para dividir os dados históricos. Cada bloco contém o valor de um dia de dados e é entregue o mais rápido possível, não uma vez por dia. Este campo é sempre definido como Diário e não pode ser modificado.</p>"
+>abstract="**Frequência de entrega** (feeds em tempo real): a frequência com que o feed de dados é entregue. As entregas horárias contêm o valor de uma hora de dados; as entregas diárias contêm o valor de um dia de dados.<p>Cada delivery também verifica uma janela de processamento contínua de 30 dias para qualificar segmentos, calcular sessões e manter valores de dimensão. A janela de processamento e o atraso de processamento podem afetar os eventos incluídos.</p><p>**Granularidade** (feeds de preenchimento retroativo): o intervalo de tempo usado para dividir os dados históricos. Cada bloco contém o valor de um dia de dados e é entregue o mais rápido possível, não uma vez por dia. Este campo é sempre definido como Diário e não pode ser modificado.</p>"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -174,9 +174,8 @@ Antes de criar um feed de dados, é importante ter uma compreensão básica dos 
    | [!UICONTROL **Data de início**] | A data em que o feed de dados começa. Para feeds ao vivo, isso deve ser hoje ou uma data futura. Para feeds de preenchimento retroativo, essa deve ser uma data passada na janela de retenção de dados da visualização de dados. A data de início é baseada no fuso horário da visualização de dados. |
    | [!UICONTROL **Data de expiração**] <br/>Disponível somente para feeds em tempo real | A data em que o feed de dados expira e não é mais executado. A data é baseada no fuso horário da visualização de dados. |
    | [!UICONTROL **Data final**]<br/> Disponível somente para feeds de preenchimento retroativo | A data em que o feed de dados termina. A data final não pode ser no futuro. A data é baseada no fuso horário da visualização de dados. |
-   | [!UICONTROL **Frequência**]<br/> Disponível somente para feeds em tempo real | Selecione a frequência com que o feed de dados deve ser enviado. Eventos com carimbos de data e hora que caem na janela de frequência são incluídos na entrega do feed de dados. Os campos [!UICONTROL **Intervalo de datas de retrospectiva**] e [!UICONTROL **Atraso de processamento**] também podem afetar quais eventos são incluídos nos dados para a frequência de entrega escolhida.<p>Selecione para incluir dados de uma hora ou de um dia.</p><ul><li>**Diariamente**: os feeds contêm dados de um dia inteiro, da meia-noite a meia-noite no fuso horário da visualização de dados.</li><li>**Por hora**: os feeds contêm dados de uma hora.</li></ul> |
+   | [!UICONTROL **Frequência**]<br/> Disponível somente para feeds em tempo real | Selecione a frequência com que o feed de dados deve ser enviado. Eventos com carimbos de data e hora que caem na janela de frequência são incluídos na entrega do feed de dados. <p>Selecione para incluir dados de uma hora ou de um dia.</p><ul><li>**Diariamente**: os feeds contêm dados de um dia inteiro, da meia-noite a meia-noite no fuso horário da visualização de dados.</li><li>**Por hora**: os feeds contêm dados de uma hora.</li></ul> <p>Cada delivery também usa uma janela de processamento contínua de 30 dias, que leva e inclui a janela de frequência, para qualificar segmentos, calcular sessões e persistir valores de dimensão. A janela de processamento e o campo [!UICONTROL **Atraso de processamento**] podem afetar os eventos incluídos. Para obter mais informações, consulte [Entender a janela de processamento](#data-feed-processing-window) e [Entender o atraso de processamento](#data-feed-processing-delay).</p> |
    | [!UICONTROL **Granularidade**]<br/> Disponível somente para feeds de preenchimento retroativo | O intervalo de tempo usado para dividir os dados históricos em partes. Cada bloco contém dados de um dia inteiro, da meia-noite à meia-noite no fuso horário da visualização de dados. <p>A granularidade determina como os dados são agrupados, não com que frequência são entregues. Os dados de preenchimento retroativo são entregues o mais rápido possível, não uma vez por dia.</p><p>Este campo é sempre definido como [!UICONTROL **Diariamente**] e não pode ser modificado.</p> |
-   | [!UICONTROL **Intervalo de datas de retrospectiva**] | Controla até que data o Customer Journey Analytics analisa ao processar a entrega do feed de dados. O padrão é 30 dias.<p>A janela de frequência (hora ou dia) determina quais eventos são incluídos no feed de dados, enquanto o **intervalo de datas da retrospectiva** fornece o contexto histórico necessário para classificar esses eventos corretamente.</p><p>Qualificação de segmento, persistência de dimensão, cálculo de sessão e transformações de campo derivado podem afetar os eventos incluídos.</p> <p>Antes de configurar esta opção, veja os detalhes e os exemplos descritos na seção abaixo, [Entenda o intervalo de datas da retrospectiva](#data-feed-lookback-date-range).</p> |
    | [!UICONTROL **Atraso no processamento**] | O tempo que o Customer Journey Analytics aguarda antes de processar um arquivo de feed de dados. Todos os eventos recebidos com atraso durante o período de atraso do processamento são incluídos no feed de dados. <p>Escolha um atraso suficientemente longo para que os dados mais lentos da conexão terminem o processamento. Se o atraso for muito curto, os dados que ainda estão sendo processados não serão incluídos no arquivo de feed de dados.</p><p>O atraso mínimo de processamento é de 2 horas. O padrão é baseado nos conjuntos de dados da sua conexão. Por exemplo, se a compilação estiver ativada, o padrão será 6 horas. Alguns tipos de dados exigem um atraso mais longo. O atraso escolhido depende dos tipos de dados em sua conexão, como transmissão, lote, compilado, pesquisa ou dados de perfil.</p><p>Antes de configurar esta opção, veja os detalhes e os exemplos descritos na seção abaixo, [Entenda o atraso de processamento](#data-feed-processing-delay).</p> |
    | [!UICONTROL **Formato de compactação**] | Selecione o formato de compactação dos arquivos de saída do Parquet entregues ao destino da nuvem. Escolha entre os seguintes formatos:<ul><li>[!UICONTROL **Snappy**]: compactação e descompactação rápidas com tamanhos de arquivo moderados. Amplamente compatível com plataformas de dados modernas, como BigQuery, Snowflake e Apache Spark.</li><li>[!UICONTROL **GZip**]: amplamente compatível, inclusive com ferramentas que não oferecem suporte nativo ao Snappy. Recomendado se o pipeline downstream exigir um padrão de compactação amplamente reconhecido.</li><li>[!UICONTROL **Z Padrão (Zstd)**]: alta eficiência de compactação com descompactação rápida. Adequado se minimizar o tamanho do arquivo é uma prioridade e suas ferramentas suportam Zstd.</li></ul> |
 
@@ -207,31 +206,19 @@ Antes de criar um feed de dados, é importante ter uma compreensão básica dos 
 
 1. Selecione **[!UICONTROL Salvar]**.
 
-## Noções básicas sobre o intervalo de datas da retrospectiva {#data-feed-lookback-date-range}
+## Entender a janela de processamento {#data-feed-processing-window}
 
-<!-- markdownlint-disable MD034 -->
+A **janela de processamento** é um período contínuo de 30 dias que antecede e inclui a janela de frequência (hora ou dia) selecionada. O Customer Journey Analytics usa os dados na janela de processamento para processar cada entrega de feed de dados. A janela de processamento é sempre de 30 dias e não pode ser alterada.
 
->[!CONTEXTUALHELP]
->id="cja_datafeed_lookback_date_range"
->title="Intervalo de datas da retrospectiva"
->abstract="Controla até que data o Customer Journey Analytics analisa ao processar cada entrega.<p>A janela de frequência (hora ou dia) determina quais eventos são incluídos no feed de dados, enquanto o **intervalo de datas da retrospectiva** fornece o contexto histórico necessário para classificar esses eventos corretamente.</p><p>Qualificação de segmento, persistência de dimensão, cálculo de sessão e transformações de campo derivado podem afetar os eventos incluídos.</p><p>A retrospectiva mais longa melhora a precisão; a mais curta melhora o desempenho.</p>"
+A janela de frequência determina quais eventos são incluídos no delivery. A janela de processamento fornece o contexto histórico necessário para classificar esses eventos corretamente, como quais segmentos eles se qualificam, a qual sessão pertencem e quais valores de dimensão persistem para eles.
 
-<!-- markdownlint-enable MD034 -->
+A janela de processamento, junto com a janela de frequência, funciona de forma semelhante à janela de relatórios do Analysis Workspace. Entretanto, há [diferenças importantes](/help/components/exports/cja-data-feeds/df-comparison-workspace.md#processing-window). Essas diferenças podem resultar em discrepâncias de dados entre os relatórios do Workspace e os deliveries do feed de dados.
 
-O intervalo de datas de pesquisa controla a aparência retroativa do Customer Journey Analytics ao processar cada entrega de feed de dados.
-
-Os eventos ainda devem ter carimbos de data e hora que se enquadrem na janela de frequência (hora ou dia) a serem incluídos na entrega, mas os dados que se enquadram no **intervalo de datas de retrospectiva** fornecem o contexto histórico necessário para classificar esses eventos corretamente.
-
-Ao configurar essa opção, considere os seguintes conceitos importantes:
-
-* Um intervalo de datas de pesquisa mais longo normalmente resulta em dados mais precisos; um intervalo mais curto resulta em melhor desempenho do delivery.
-* O intervalo de datas de pesquisa, junto com a janela de frequência, funciona de forma semelhante ao intervalo de datas do relatório do Analysis Workspace. Entretanto, há [diferenças importantes](/help/components/exports/cja-data-feeds/df-comparison-workspace.md#differences). Essas diferenças podem resultar em discrepâncias de dados entre os relatórios do Workspace e os deliveries do feed de dados.
-
-Qualificação de segmento, cálculo de sessão, persistência de dimensão e transformações de campo derivadas são consideradas ao processar dados dentro do intervalo de datas de lookback:
+Qualificação de segmento, cálculo de sessão, persistência de dimensão e transformações de campo derivadas são consideradas ao processar dados na janela de processamento:
 
 ### Qualificação de segmento
 
-Quando um segmento é aplicado à definição do feed de dados, os dados dentro do intervalo de datas da retrospectiva determinam quais eventos, sessões ou pessoas se qualificam para o segmento. A configuração de contêiner do segmento determina o escopo. (Os contêineres possíveis são: Pessoa, Sessão ou Evento. B2B inclui os seguintes contêineres adicionais: Conta global, Conta, Oportunidade, Grupo de compras.)
+Quando um segmento é aplicado à definição do feed de dados, os dados na janela de processamento determinam quais eventos, sessões ou pessoas se qualificam para o segmento. A configuração de contêiner do segmento determina o escopo. (Os contêineres possíveis são: Pessoa, Sessão ou Evento. B2B inclui os seguintes contêineres adicionais: Conta global, Conta, Oportunidade, Grupo de compras.)
 
 >[!BEGINSHADEBOX]
 
@@ -244,35 +231,33 @@ Para fazer isso, aplique um segmento ao feed de dados chamado _Usuários na Camp
 Nesse caso, os usuários são incluídos no feed de dados somente se atenderem **às duas** condições a seguir:
 
 * O usuário tinha um evento com um carimbo de data e hora que está na janela de frequência do feed de dados (a hora ou o dia especificado do feed de dados).
-* O usuário qualificado para o _segmento B_ da campanha **em algum momento dentro do intervalo de datas da retrospectiva**.
+* O usuário qualificado para o _segmento B_ da campanha **em algum momento na janela de processamento**.
 
-  Para um evento de qualificação ocorrido há 9 dias, isso significa que o usuário **seria incluído** no feed de dados se o intervalo de datas da retrospectiva fosse definido como 30 dias, mas o usuário **não seria incluído** no feed de dados se o intervalo de datas da retrospectiva fosse definido como 7 dias.
+  Por exemplo, um usuário que se qualificou para o segmento há 9 dias **está incluído** no feed de dados. Um usuário que se qualificou pela última vez há 45 dias **não foi incluído**, pois esse evento está fora da janela de processamento de 30 dias.
 
 >[!ENDSHADEBOX]
 
 ### Cálculo de sessão
 
-Os limites da sessão são calculados usando todos os eventos no intervalo de datas de retrospectiva, não apenas os eventos na janela de entrega. Uma sessão iniciada antes da janela de entrega ainda é reconhecida como a mesma sessão.
+Os limites da sessão são calculados usando todos os eventos na janela de processamento, não apenas os eventos na janela de frequência. Uma sessão iniciada antes da janela de frequência ainda é reconhecida como a mesma sessão.
 
 A ID da sessão é baseada na pessoa, na hora de início da sessão e nas configurações da sessão na visualização de dados. Uma sessão mantém a mesma ID de sessão em todos os deliveries, para que você possa ingressar em eventos de uma sessão que abrange vários deliveries por hora ou por dia.
 
 Leve em consideração o seguinte ao trabalhar com sessões em feeds de dados:
 
-* Se uma sessão começou antes do intervalo de datas da retrospectiva, seus eventos anteriores não estarão disponíveis, portanto, os valores da sessão podem ser diferentes do Analysis Workspace. Para obter mais informações, consulte [Entender as discrepâncias de dados entre os feeds de dados e o Analysis Workspace](/help/components/exports/cja-data-feeds/df-comparison-workspace.md).
+* Se uma sessão foi iniciada antes da janela de processamento, seus eventos anteriores não estarão disponíveis, portanto, os valores da sessão podem ser diferentes do Analysis Workspace. Para obter mais informações, consulte [Entender as discrepâncias de dados entre os feeds de dados e o Analysis Workspace](/help/components/exports/cja-data-feeds/df-comparison-workspace.md).
 * A alteração das configurações de sessão na visualização de dados altera as IDs de sessão. As IDs de sessão em deliveries posteriores não corresponderão às IDs de sessão em deliveries anteriores.
 
 ### Persistência do Dimension
 
 Ao definir a persistência em uma dimensão individual, você também define uma expiração para determinar por quanto tempo o item de dimensão persiste além do evento em que está definido.
 
-O intervalo de datas de pesquisa afeta a persistência da dimensão quando a expiração é definida como uma das seguintes opções na visualização de dados:
+A janela de processamento afeta a persistência da dimensão quando a expiração é definida como uma das seguintes opções na visualização de dados:
 
-* [!UICONTROL **Janela de relatório de pessoa**]: o intervalo de datas da retrospectiva torna-se a nova janela de relatório para cada dimensão na definição de feed de dados que usa [!UICONTROL **Janela de relatório de pessoa**] como sua expiração.
-* [!UICONTROL **Tempo personalizado**]: se o tempo personalizado selecionado se estender além do intervalo de datas da pesquisa, o tempo personalizado será ignorado e o intervalo de datas da pesquisa será usado para a expiração da dimensão para cada dimensão na definição de feed de dados que usa [!UICONTROL **Tempo personalizado**] como sua expiração. Valores que ocorreram antes do intervalo de datas da retrospectiva não são considerados.
+* [!UICONTROL **Janela de relatório de pessoa**]: a janela de processamento se torna a nova janela de relatório para cada dimensão na definição de feed de dados que usa [!UICONTROL **Janela de relatório de pessoa**] como sua expiração.
+* [!UICONTROL **Tempo personalizado**]: se o tempo personalizado selecionado se estender além da janela de processamento, o tempo personalizado será ignorado e a janela de processamento será usada para a expiração de cada dimensão na definição de feed de dados que usa [!UICONTROL **Tempo personalizado**] como sua expiração. Os valores que ocorreram antes da janela de processamento não são considerados.
 
   Para obter mais informações sobre como configurar a persistência em dimensões na visualização de dados, consulte [Configurações do componente de Persistência](/help/data-views/component-settings/persistence.md).
-
-Para obter os dados mais precisos, considere definir o intervalo de datas de pesquisa com um valor igual ou maior que o conjunto de persistência em dimensões em seus dados. No entanto, lembre-se de que um intervalo de datas de lookback mais curto resulta em melhor desempenho para as entregas do feed de dados.
 
 >[!BEGINSHADEBOX]
 
@@ -286,15 +271,15 @@ Nesse caso, a campanha original é exibida na saída do feed de dados somente se
 
 * O usuário tinha um evento com um carimbo de data e hora que está na janela de frequência do feed de dados (a hora ou o dia especificado do feed de dados).
 
-* O usuário se qualificou para a campanha original **em algum momento dentro do intervalo de datas da retrospectiva**.
+* O usuário se qualificou para a campanha original **em algum momento na janela de processamento**.
 
-  Se o usuário se qualificou para a campanha original há 9 dias, a campanha original **será incluída** no feed de dados se o intervalo de datas da retrospectiva for definido como 30 dias, mas a campanha original **não será incluída** no feed de dados se o intervalo de datas da retrospectiva for definido como 7 dias.
+  Se o usuário se qualificou para a campanha original há 9 dias, a campanha original **é incluída** no feed de dados. Se o usuário se qualificou há 45 dias, a campanha original **não foi incluída**, pois está fora da janela de processamento de 30 dias.
 
 >[!ENDSHADEBOX]
 
 ### Transformações de campo derivadas
 
-Quaisquer funções de campo derivadas que fazem referência a contêineres usam o intervalo de datas de retrospectiva nas exportações de feed de dados. Quais recursos de data existem em campos derivados? <!--Not sure how this applies.-->
+Quaisquer funções de campo derivadas que referenciam contêineres usam a janela de processamento nas exportações do feed de dados. Quais recursos de data existem em campos derivados? <!--Not sure how this applies.-->
 
 ## Entender o atraso de processamento {#data-feed-processing-delay}
 

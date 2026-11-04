@@ -24,13 +24,11 @@ topic_v2:
     internal-label: Reporting
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+source-git-commit: 7190b05d8c3d66a6f76ed256af3424ba3c971855
 workflow-type: tm+mt
-source-wordcount: 1117
+source-wordcount: '1119'
 ht-degree: 75%
-
 ---
-
 # Configurações de componente de [!UICONTROL Persistência] {#persistence-component-settings}
 
 <!-- markdownlint-disable MD034 -->
@@ -64,7 +62,7 @@ ht-degree: 75%
 | --- | --- |
 | [!UICONTROL Definir persistência] | Habilite a persistência para a dimensão. Se a persistência não estiver habilitada, a dimensão se relacionará somente às métricas que existem no mesmo evento. Essa configuração é desativada pelo padrão. |
 | [!UICONTROL Alocação] | Especifique o modelo de alocação usado em uma dimensão para persistência. As opções são:<ul><li>**[!UICONTROL Mais recente]**: os valores na dimensão persistem até serem substituídos por valores subsequentes</li><li> **[!UICONTROL Original]**: o primeiro valor desta dimensão persiste e não é substituído por valores subsequentes</li><li>**[!UICONTROL Todos]**: todos os valores desta dimensão persistem simultaneamente</li><li>**[!UICONTROL Primeiro valor conhecido]**: o primeiro valor desta dimensão é usado e será aplicado a todos os eventos anteriores e posteriores.</li><li>**[!UICONTROL Último valor conhecido]**: o último valor desta dimensão é usado e será aplicado a todos os eventos anteriores e posteriores.</li></ul> |
-| [!UICONTROL Expiração] | Especifique a janela de persistência para uma dimensão. As opções são: <ul><li>**[!UICONTROL Sessão]** (padrão)</li><li>**[!UICONTROL Pessoa]**</li><li>**[!UICONTROL Hora personalizada]**</li><li>**[!UICONTROL Métrica]**</li></ul>. Talvez seja necessário poder expirar a dimensão em uma compra (como termos de pesquisa interna ou outros casos de uso de merchandising). O tempo máximo de expiração que pode ser definido é de 90 dias. Se você selecionar uma alocação de [!UICONTROL Todos], somente a expiração de [!UICONTROL Sessão] ou [!UICONTROL Pessoa] estará disponível. |
+| [!UICONTROL Expiração] | Especifique a janela de persistência para uma dimensão. As opções são: <ul><li>**[!UICONTROL Sessão]** (padrão)</li><li>**[!UICONTROL Janela de relatório da pessoa]**</li><li>**[!UICONTROL Hora personalizada]**</li><li>**[!UICONTROL Métrica]**</li></ul>. Talvez seja necessário poder expirar a dimensão em uma compra (como termos de pesquisa interna ou outros casos de uso de merchandising). O tempo máximo de expiração que pode ser definido é de 90 dias. Se você selecionar uma alocação de [!UICONTROL Todos], somente a expiração de [!UICONTROL Sessão] ou [!UICONTROL Pessoa] estará disponível. |
 
 {style="table-layout:auto"}
 
@@ -126,7 +124,7 @@ Consulte [Uso de dimensões e métricas de ligação no Customer Journey Analyti
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimensões de vinculação](https://experienceleague.adobe.com/pt-br/docs/customer-journey-analytics-learn/tutorials/data-views/binding-dimensions-in-data-views){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Dimensões de vinculação](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/data-views/binding-dimensions-in-data-views){target="_blank"} para ver um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 
