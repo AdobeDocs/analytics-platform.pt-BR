@@ -29,9 +29,9 @@ topic_v2:
     internal-label: Customer journeys
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 6cecd447699645d21f5b198cdde1796dd49e80f6
+source-git-commit: c244c7d5c08f2059046603d09b09fbe70f8bff07
 workflow-type: tm+mt
-source-wordcount: '2328'
+source-wordcount: '2330'
 ht-degree: 24%
 ---
 # Compilação de pessoa B2B para conta
@@ -150,7 +150,7 @@ Antes de ativar a compilação de conta por uma pessoa B2B, prepare os seguintes
 >[!IMPORTANT]
 >
 >* O campo ID de pessoa no conjunto de dados de pessoa para conta deve ser marcado como uma identidade no esquema.
->* O conjunto de dados de pesquisa de pessoa para conta usa o esquema B2B padrão com base na classe de relação pessoal da conta comercial XDM ou um esquema relacional personalizado em que os campos ID de pessoa e ID de conta são cadeias de caracteres simples. Esquemas que usam o objeto de matriz `personComponents` para recuperar informações de ID de conta não têm suporte para conjuntos de dados de pessoa para conta.
+>* O conjunto de dados de pesquisa de pessoa para conta pode usar o esquema B2B padrão com base na classe de relação pessoal da conta comercial XDM ou um esquema relacional personalizado em que os campos ID de pessoa e ID de conta são cadeias de caracteres simples. Esquemas que usam o objeto de matriz **[!UICONTROL personComponents]** para recuperar informações de ID de conta não têm suporte para conjuntos de dados de pessoa para conta.
 
 ## Habilitar compilação entre pessoa e conta {#enable-account-stitching}
 
