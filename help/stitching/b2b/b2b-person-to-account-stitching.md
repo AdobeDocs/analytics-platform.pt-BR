@@ -29,10 +29,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: c244c7d5c08f2059046603d09b09fbe70f8bff07
 workflow-type: tm+mt
-source-wordcount: '2292'
-ht-degree: 25%
+source-wordcount: '2330'
+ht-degree: 24%
 ---
 # Compilação de pessoa B2B para conta
 
@@ -46,7 +46,7 @@ Sem a identificação de pessoa por conta, qualquer evento que não contenha uma
 
 A compilação de pessoa para conta executa as seguintes operações em seus conjuntos de dados:
 
-* **Elevar a identidade da pessoa**: assim como a [abordagem de compilação B2C](/help/stitching/overview.md), você configurará um campo contendo IDs de pessoa persistentes. Usando o gráfico de identidade, a ID de pessoa persistente em cada evento é elevada a uma ID de pessoa a partir do namespace do identificador de pessoa configurado.
+* **Elevar a identidade da pessoa**: assim como a [abordagem de compilação B2C](/help/stitching/overview.md), você configura um campo contendo IDs de pessoa persistentes. Usando o gráfico de identidade, a ID de pessoa persistente em cada evento é elevada a uma ID de pessoa a partir do namespace do identificador de pessoa configurado.
 * **Adicionar identidades de conta ausentes**: depois de obter as informações de ID de pessoa para um evento, o [mapeamento de pessoa para conta](#prerequisites) é usado para derivar e adicionar as informações de identidade da conta. Qualquer identidade de conta disponível no próprio evento é usada como um método de fallback.
 
 ## Como funciona a compilação de pessoa B2B para conta
@@ -70,7 +70,7 @@ No Customer Journey Analytics B2B edition, os eventos sem ID de conta neste conj
 A compilação de pessoa B2B para conta impede que os eventos sejam ignorados e não assimilados usando as seguintes operações:
 
 * [Elevar identidades de pessoas](#elevate-person-identities).
-* [Adicionar identidades de conta ausentes](#add-missing-account-identitiers).
+* [Adicionar identidades de conta ausentes](#add-missing-account-identities).
 
 
 ### Elevar identidades de pessoas
@@ -78,7 +78,7 @@ A compilação de pessoa B2B para conta impede que os eventos sejam ignorados e 
 +++ Detalhes
 
 Para auxiliar uma pessoa B2B a fazer a compilação de conta, ao [definir as configurações de compilação B2B](#configure-b2b-stitching-settings), você fornece um namespace de identificador de pessoa principal (por exemplo, Email) e uma pessoa para o conjunto de dados de mapeamento de conta.
-O namespace da ID de pessoa do conjunto de dados de pessoa para conta pode ser o mesmo que o principal (Email) ou pode ser diferente. No exemplo abaixo, ele é definido como ID do CRM (que precisará ser vinculada ao email no gráfico de identidade).
+O namespace da ID de pessoa do conjunto de dados de pessoa para conta pode ser o mesmo que o principal (Email) ou pode ser diferente. No exemplo abaixo, ele é definido como ID do CRM (que precisa ser vinculada ao email no gráfico de identidade).
 
 | ID do CRM | ID de conta |
 |---|---|
@@ -89,8 +89,8 @@ O namespace da ID de pessoa do conjunto de dados de pessoa para conta pode ser o
 | b978bbw9 | Ubiquidade |
 | fs453ghi | Adobe |
 
-Essa pessoa para o conjunto de dados de mapeamento de conta é elevada usando a compilação baseada em gráfico. Observe que isso acontece no back-end e não é refletido nos dados do conjunto de dados real.
-Em nosso exemplo, usando links de gráfico de identidade entre a ID do CRM e os namespaces de email, o resultado é uma pessoa atualizada para o conjunto de dados de mapeamento de conta com IDs de pessoa elevadas.
+Essa pessoa para o conjunto de dados de mapeamento de conta é elevada usando a compilação baseada em gráfico. Isso acontece em segundo plano e não é refletido nos dados do conjunto de dados real.
+No exemplo, usando links de gráfico de identidade entre a ID do CRM e os namespaces de email, o resultado é uma pessoa atualizada para o conjunto de dados de mapeamento de conta com IDs de pessoa elevadas.
 
 | ID do CRM | ID de pessoa elevada | ID de conta |
 |---|---|---|
@@ -136,7 +136,7 @@ O conjunto de dados de pessoa para conta é usado para elevar as IDs de conta no
 
 ### Resultado
 
-Este exemplo mostra como a compilação de pessoa B2B atualiza seus dados de evento de experiência com identificadores de pessoa ausentes e identificadores de conta ausentes ou incorretos, com base nos dados do gráfico de identidade e no conjunto de dados de mapeamento de pessoa para conta fornecido como entrada.
+Este exemplo mostra como a compilação de pessoa B2B atualiza seus dados de evento de experiência com identificadores de pessoa ausentes e identificadores de conta ausentes ou incorretos, com base nos dados do gráfico de identidade e na pessoa fornecida para o conjunto de dados de mapeamento de conta.
 
 
 ## Pré-requisitos
@@ -149,7 +149,8 @@ Antes de ativar a compilação de conta por uma pessoa B2B, prepare os seguintes
 
 >[!IMPORTANT]
 >
->O campo ID de pessoa no conjunto de dados de pessoa para conta deve ser marcado como uma identidade no esquema.
+>* O campo ID de pessoa no conjunto de dados de pessoa para conta deve ser marcado como uma identidade no esquema.
+>* O conjunto de dados de pesquisa de pessoa para conta pode usar o esquema B2B padrão com base na classe de relação pessoal da conta comercial XDM ou um esquema relacional personalizado em que os campos ID de pessoa e ID de conta são cadeias de caracteres simples. Esquemas que usam o objeto de matriz **[!UICONTROL personComponents]** para recuperar informações de ID de conta não têm suporte para conjuntos de dados de pessoa para conta.
 
 ## Habilitar compilação entre pessoa e conta {#enable-account-stitching}
 
@@ -174,7 +175,7 @@ Primeiro, você ativa e configura a compilação B2B no nível da conexão. Quan
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_person"
->title="ID de pessoa"
+>title="ID da pessoa"
 >abstract="Selecione o campo no conjunto de dados que contém as IDs de pessoa. O namespace deste campo pode ser diferente ou igual ao namespace do identificador de pessoa selecionado. Se forem diferentes, os dois namespaces precisam ser vinculados no gráfico de identidade."
 
 >[!CONTEXTUALHELP]
@@ -277,7 +278,7 @@ Depois de configurar a pessoa B2B para configuração de compilação de conta e
 
 >[!IMPORTANT]
 >
->Depois que uma conexão é salva, a configuração de compilação da pessoa B2B para conta se torna imutável. Para exibir suas configurações depois de salvar, selecione **Abrir configuração de compilação B2B**. Todos os campos aparecem em um estado somente leitura. Além disso, se o conjunto de dados usado para [mapeamento de pessoa para conta](#prerequisites) for excluído no Experience Platform, a configuração de compilação será excluída e a conexão entrará em um estado inválido, sinalizado com uma mensagem de aviso na interface do usuário.
+>Depois que uma conexão é salva, a configuração de compilação da pessoa B2B para conta se torna imutável. Para exibir suas configurações depois de salvar, selecione **Abrir configuração de compilação B2B**. Todos os campos aparecem em um estado somente leitura. Além disso, se o conjunto de dados [mapeamento de pessoa para conta](#prerequisites) for excluído no Experience Platform, a configuração de compilação será excluída e a conexão será inválida, sinalizada por um aviso.
 
 ## Agendamento de atualização de dados
 
