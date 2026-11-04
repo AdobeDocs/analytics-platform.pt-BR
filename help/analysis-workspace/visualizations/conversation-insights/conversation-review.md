@@ -3,11 +3,10 @@ description: Use a visualização de revisão de conversa para revisar uma conve
 title: Revisão da conversa
 feature: Visualizations
 role: User
-hide: true
-source-git-commit: 113a215e26092c65d6eaf2c321f60d3f3a5015b8
+source-git-commit: 6b84720eae3c0c6cd6cfd204591fb9d5f1f5cdb0
 workflow-type: tm+mt
-source-wordcount: '188'
-ht-degree: 8%
+source-wordcount: '193'
+ht-degree: 16%
 ---
 # Revisão da conversa
 
@@ -24,7 +23,7 @@ ht-degree: 8%
 >abstract="Entenda o contexto e o fluxo de uma conversa individual, incluindo carimbos de data e hora e sinais. Configure quais sinais mostrar."
 
 
-A visualização ![Chat](/help/assets/icons/Chat.svg) **[!UICONTROL Análise de conversa]** mostra a troca completa passo a passo entre cliente e agente.
+A visualização ![Chat](/help/assets/icons/Chat.svg) **[!UICONTROL Análise de conversa]** mostra a troca completa passo a passo entre o cliente e o agente como parte dos [Insights de conversa](/help/conversation-insights/overview.md).
 
 A visualização ajuda você a entender o contexto e o fluxo de uma conversa individual, incluindo carimbos de data e hora e sinais. Você pode configurar quais sinais mostrar ou não.
 

@@ -2,7 +2,7 @@
 user-guide-title: Guia do Customer Journey Analytics
 user-guide-description: Saiba mais sobre o Adobe Customer Journey Analytics e como usar o Analysis Workspace com dados da Experience Platform.
 breadcrumb-title: Guia do Customer Journey Analytics
-source-git-commit: 62a6bb436d59ab7a5a7be515afbe1f5f0f7817ee
+source-git-commit: e498c374e8bfe12d7adda6ff9e7870a86f91dd5c
 workflow-type: tm+mt
 source-wordcount: '1522'
 ht-degree: 88%
@@ -166,7 +166,7 @@ ht-degree: 88%
     + {hide-from-toc}[Escopo](/help/data-views/component-settings/scope.md)
     + [Substring](../data-views/component-settings/substring.md)
     + [Grupo de dados de resumo](../data-views/component-settings/summary-data-group.md)
-    + [Classificação de valor](../data-views/component-settings/value-bucketing.md)
+    + [Agrupar valores em buckets](../data-views/component-settings/value-bucketing.md)
   + [Referência de componente padrão](../data-views/component-reference.md)
   + [Extensão BI](../data-views/bi-extension.md)
   + [Campos derivados](../data-views/derived-fields/derived-fields.md)
@@ -241,9 +241,9 @@ ht-degree: 88%
       + [Visão geral](../analysis-workspace/visualizations/journey-canvas/journey-canvas.md)
       + [Configurar](../analysis-workspace/visualizations/journey-canvas/configure-journey-canvas.md)
       + [Solução de problemas](../analysis-workspace/visualizations/journey-canvas/journey-canvas-troubleshooting.md)
-    + {hide-from-toc}[Revisão da conversa](../analysis-workspace/visualizations/conversation-insights/conversation-review.md)
-    + {hide-from-toc}[Resumos da conversa](../analysis-workspace/visualizations/conversation-insights/conversation-summaries.md)
-    + {hide-from-toc}[Tópicos de tendências](../analysis-workspace/visualizations/conversation-insights/trending-topics.md)
+    + [Revisão da conversa](../analysis-workspace/visualizations/conversation-insights/conversation-review.md)
+    + [Resumos da conversa](../analysis-workspace/visualizations/conversation-insights/conversation-summaries.md)
+    + [Tópicos de tendência](../analysis-workspace/visualizations/conversation-insights/trending-topics.md)
     + [Área (empilhada)](../analysis-workspace/visualizations/area.md)
     + [Barra (empilhada)](../analysis-workspace/visualizations/bar.md)
     + [Marcador](../analysis-workspace/visualizations/bullet-graph.md)
@@ -368,7 +368,7 @@ ht-degree: 88%
   + Dimensões {#dimensions}
     + [Visão geral](../components/dimensions/overview.md)
     + [Visualizar dimensões](../components/dimensions/view-dimensions.md)
-    + [Analisar dimensões](../components/dimensions/t-breakdown-fa.md)
+    + [Detalhar dimensões](../components/dimensions/t-breakdown-fa.md)
     + [Dimensões de separação de tempo](../components/dimensions/time-parting-dimensions.md)
     + [Dimensões de alta cardinalidade](../components/dimensions/high-cardinality.md)
   + [Métricas](../components/apply-create-metrics.md)

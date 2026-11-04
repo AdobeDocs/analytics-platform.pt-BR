@@ -3,11 +3,10 @@ description: Use a visualização de resumos de conversa para resumir as convers
 title: Resumo de conversas
 feature: Visualizations
 role: User
-hide: true
-source-git-commit: 113a215e26092c65d6eaf2c321f60d3f3a5015b8
+source-git-commit: 30311dc0e753778c6e5316d82ffba25748d8315e
 workflow-type: tm+mt
-source-wordcount: '351'
-ht-degree: 20%
+source-wordcount: '407'
+ht-degree: 17%
 ---
 # Resumos da conversa {#conversation-summaries}
 
@@ -23,7 +22,7 @@ ht-degree: 20%
 
 {{release-limited-testing}}
 
-A visualização ![Resumir](/help/assets/icons/Summarize.svg) **[!UICONTROL Resumos da conversa]** permite resumir um grupo filtrado de conversas.
+A visualização dos ![Resumos de conversa **[!UICONTROL IA](/help/assets/icons/AI.svg)]** permite resumir um grupo filtrado de conversas como parte dos [Insights de conversa](/help/conversation-insights/overview.md).
 
 A visualização mostra um resumo da métrica selecionada (por exemplo, Conversas) e exibe subtópicos ou comentários textuais quando você configura a visualização para incluir subtópicos.
 
@@ -42,7 +41,7 @@ A visualização mostra um resumo da métrica selecionada (por exemplo, Conversa
 
 Para criar e configurar uma visualização de **[!UICONTROL Resumos da conversa]**:
 
-1. Adicionar uma visualização de ![Resumir](/help/assets/icons/Summarize.svg) **[!UICONTROL Resumos da conversa]**. Consulte [Adicionar uma visualização a um painel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
+1. Adicione uma visualização de ![Resumos de conversa](/help/assets/icons/AI.svg) **[!UICONTROL IA]**. Consulte [Adicionar uma visualização a um painel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
 
 1. Na configuração de visualização dos **[!UICONTROL resumos da conversa]**:
 
@@ -52,7 +51,7 @@ Para criar e configurar uma visualização de **[!UICONTROL Resumos da conversa]
 
 1. Selecione **[!UICONTROL Build]** para criar a visualização. Selecione **[!UICONTROL Redefinir]** para redefinir os valores de configuração para os padrões. Selecione **[!UICONTROL Cancelar]** para cancelar a configuração.
 
-Para reconfigurar a visualização dos **[!UICONTROL Resumos da conversa]**, selecione ![Editar](/help/assets/icons/Edit.svg) ao lado de **[!UICONTROL Métrica: _métrica_]**&#x200B;ou **[!UICONTROL Métrica:_métrica_]** | **[!UICONTROL Segmentos: _segmentos_]**.
+Para reconfigurar a visualização dos **[!UICONTROL Resumos da conversa]**, selecione ![Editar](/help/assets/icons/Edit.svg) ao lado de **[!UICONTROL Métrica: _métrica_]**ou **[!UICONTROL Métrica:_métrica_]** | **[!UICONTROL Segmentos: _segmentos_]**.
 
 ## Usar
 
@@ -72,6 +71,13 @@ Para usar a visualização:
 
 * Se você tiver [subtópicos incluídos](#settings), selecione **[!UICONTROL Subtópicos]** para exibir subtópicos ou **[!UICONTROL Comentários integrais]** para exibir comentários integrais.
 * Quando você tiver selecionado **[!UICONTROL Comentários textuais]**, selecione ![FileSearch](/help/assets/icons/FileSearch.svg) para abrir uma nova visualização de [**[!UICONTROL Revisão da conversa]**](./conversation-review.md) para a conversa específica da qual o comentário textual faz parte.
+
+Para navegar rapidamente por várias revisões de conversas:
+
+1. Crie uma [tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) com **[!UICONTROL ID de Conversa]** e **[!UICONTROL Nome de Conversa]** como dimensões.
+1. Selecione a tabela de forma livre como fonte de dados para a visualização **[!UICONTROL Análise de conversa]**.
+
+Selecione uma conversa na tabela de forma livre para atualizar a **[!UICONTROL Revisão da conversa]** automaticamente com os detalhes dessa conversa selecionada.
 
 ## Configurações
 
