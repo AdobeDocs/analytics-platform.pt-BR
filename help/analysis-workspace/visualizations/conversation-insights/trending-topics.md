@@ -3,8 +3,7 @@ description: Use a visualização de tópicos de tendência para explorar tópic
 title: Tópicos em alta
 feature: Visualizations
 role: User
-hide: true
-source-git-commit: 113a215e26092c65d6eaf2c321f60d3f3a5015b8
+source-git-commit: e498c374e8bfe12d7adda6ff9e7870a86f91dd5c
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 16%
@@ -23,7 +22,7 @@ ht-degree: 16%
 
 {{release-limited-testing}}
 
-A visualização dos ![Feed](/help/assets/icons/Feed.svg) **[!UICONTROL Tópicos de tendência]** permite explorar e analisar os tópicos de tendência como parte dos insights da conversa.
+A visualização ![Detalhamento](/help/assets/icons/Breakdown.svg) **[!UICONTROL Tópicos de tendências]** permite explorar e analisar os tópicos de tendências como parte dos [Insights de conversa](/help/conversation-insights/overview.md).
 
 Você pode pesquisar tópicos específicos e comparar o número e a porcentagem de cada tópico em cada nível com outros intervalos de dados.
 
@@ -42,7 +41,7 @@ Você pode pesquisar tópicos específicos e comparar o número e a porcentagem 
 
 Para criar e configurar uma visualização de **[!UICONTROL Tópicos de tendência]**:
 
-1. Adicionar uma visualização de ![Feed](/help/assets/icons/Feed.svg) **[!UICONTROL Tópicos de tendência]**. Consulte [Adicionar uma visualização a um painel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
+1. Adicionar uma visualização de ![Detalhamento](/help/assets/icons/Breakdown.svg) **[!UICONTROL Tópicos de tendência]**. Consulte [Adicionar uma visualização a um painel](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md#add-visualizations-to-a-panel).
 
 1. Na configuração da visualização dos **[!UICONTROL Tópicos de tendência]**:
 
