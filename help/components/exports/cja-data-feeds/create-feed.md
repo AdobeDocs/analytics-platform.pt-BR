@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 22ec8a3fc4334e49e06986fdf52b27f3e97bef75
+source-git-commit: 6db3ace5744a4277477c2a712c12fdd9a5f57c82
 workflow-type: tm+mt
-source-wordcount: '4056'
-ht-degree: 13%
+source-wordcount: '4331'
+ht-degree: 12%
 ---
 # Criar um feed de dados
 
@@ -70,7 +70,7 @@ Antes de criar um feed de dados, é importante ter uma compreensão básica dos 
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_frequency_granularity"
 >title="Frequência e granularidade"
->abstract="**Frequência de entrega** (feeds em tempo real): a frequência com que o feed de dados é entregue. As entregas horárias contêm o valor de uma hora de dados; as entregas diárias contêm o valor de um dia de dados.<p>Cada delivery também verifica uma janela de processamento contínua de 30 dias para qualificar segmentos, calcular sessões e manter valores de dimensão. A janela de processamento e o atraso de processamento podem afetar os eventos incluídos.</p><p>**Granularidade** (feeds de preenchimento retroativo): o intervalo de tempo usado para dividir os dados históricos. Cada bloco contém o valor de um dia de dados e é entregue o mais rápido possível, não uma vez por dia. Este campo é sempre definido como Diário e não pode ser modificado.</p>"
+>abstract="**Frequência de entrega** (feeds em tempo real): a frequência com que o feed de dados é entregue. As entregas horárias contêm o valor de uma hora de dados; as entregas diárias contêm o valor de um dia de dados.<p>Cada delivery também verifica uma janela de processamento contínua de 30 dias para qualificar segmentos, calcular sessões e manter valores de dimensão. Tanto a janela de processamento quanto o atraso de processamento podem afetar os eventos incluídos.</p><p>**Granularidade** (feeds de preenchimento retroativo): o intervalo de tempo usado para dividir os dados históricos. Cada bloco contém o valor de um dia de dados e é entregue o mais rápido possível, não uma vez por dia. Este campo é sempre definido como Diário e não pode ser modificado.</p>"
 
 <!-- markdownlint-enable MD034 -->
 
@@ -117,7 +117,7 @@ Antes de criar um feed de dados, é importante ter uma compreensão básica dos 
    | --------- | ---------- |
    | [!UICONTROL **Recomendado**] | Classifica componentes com aqueles recomendados no topo da lista. Os componentes usados com mais frequência e mais recentemente por você ou outras pessoas em sua organização são mostrados em uma posição superior na lista. |
    | [!UICONTROL **Ordem alfabética**] | Classifica os componentes em ordem alfabética. |
-   | [!UICONTROL **Categórico**] | Classifica componentes semelhantes a [!UICONTROL **Recomendado**], exceto que as métricas calculadas e as métricas padrão são agrupadas separadamente, em vez de serem misturadas. |
+   | [!UICONTROL **Categórico**] | Classifica componentes semelhantes a [!UICONTROL **Recomendado**], exceto que os componentes são agrupados separadamente em vez de serem misturados. |
 
 1. Adicione componentes à configuração do feed de dados. O painel esquerdo mostra apenas componentes válidos para feeds de dados.
 
@@ -139,13 +139,7 @@ Antes de criar um feed de dados, é importante ter uma compreensão básica dos 
 
 1. (Opcional) Altere a ID de saída de um componente. A ID de saída é o nome da coluna na saída do feed de dados.
 
-   Por padrão, a ID de saída é a ID do componente no snake_case. A alteração da ID de saída afeta somente esse feed de dados. Isso não altera a ID do componente na visualização de dados. A visualização do esquema mostra a ID do componente e a ID de saída.
-
-   1. Passe o mouse sobre um componente na tela e selecione o ícone de informações ![Informações](/help/assets/icons/InfoOutline.svg).
-
-   1. Selecione o ícone de edição ![Editar](/help/assets/icons/Edit.svg) ao lado da ID e especifique uma nova ID de saída.
-
-      <!--add screenshot-->
+   Por padrão, a ID de saída é a ID do componente no snake_case. A alteração da ID de saída afeta somente esse feed de dados. Isso não altera a ID do componente na visualização de dados. Na visualização do esquema, o valor `id` é a ID de saída.
 
    As IDs de saída devem:
 
@@ -156,6 +150,36 @@ Antes de criar um feed de dados, é importante ter uma compreensão básica dos 
 
    IDs de saída não podem começar com `_cja`, que é reservado para uso do Adobe.
 
+   Você pode alterar as IDs de saída uma por vez ou em massa:
+
+   +++ Para alterar a ID de saída de um único componente
+
+   1. Passe o mouse sobre um componente na tela e selecione o ícone de informações ![Informações](/help/assets/icons/InfoOutline.svg).
+
+   1. Selecione o ícone de edição ![Editar](/help/assets/icons/Edit.svg) ao lado da ID e especifique uma nova ID de saída.
+
+      <!--add screenshot-->
+
+   +++
+
+   +++ Para alterar várias IDs de saída de uma só vez
+
+   1. Abaixo do painel **[!UICONTROL Visualização do esquema]**, selecione **[!UICONTROL IDs de saída para edição em massa]**.
+
+   1. Selecione **[!UICONTROL Copiar]** e cole o JSON em um editor de texto ou outra ferramenta.
+
+   1. Atualize os valores `id`, que são as IDs de saída. Você não pode alterar nomes (`name`) ou tipos (`type` e `dataType`) de componentes.
+
+   1. Cole o JSON editado de volta na caixa de diálogo, substituindo o JSON existente, e selecione **[!UICONTROL Validar]**.
+
+   1. Revise o número de IDs alteradas, IDs inalteradas e erros. Se houver erros, selecione **[!UICONTROL Voltar]** para corrigi-los.
+
+   1. Selecione **[!UICONTROL Aplicar alterações]**.
+
+   <!--SME CHECK: How are JSON entries matched to components (order or name)? What happens if entries are reordered, removed, or added? Where are error details shown?-->
+
+   +++
+
 1. (Opcional) Use os painéis **[!UICONTROL Resumo do feed]** e **[!UICONTROL Visualização do esquema]** no lado direito da página para examinar sua estrutura de dados antes de continuar:
 
    * O **[!UICONTROL Resumo do feed]** mostra uma contagem ativa do total de componentes, colunas, dimensões e métricas que você adicionou.
@@ -164,7 +188,7 @@ Antes de criar um feed de dados, é importante ter uma compreensão básica dos 
 
    <!--add screenshot-->
 
-1. Na guia [!UICONTROL **Entrega**], na seção [!UICONTROL **Agendamento**], escolha o tipo de feed que deseja criar (ativo ou preenchimento retroativo) e especifique a janela de relatórios, a frequência e outras opções de configuração:
+1. Na guia [!UICONTROL **Entrega**], na seção [!UICONTROL **Agendamento**], escolha o tipo de feed que deseja criar (ativo ou preenchimento retroativo) e especifique a frequência, o atraso de processamento e outras opções de configuração:
 
    <!--add screenshot-->
 
@@ -174,10 +198,10 @@ Antes de criar um feed de dados, é importante ter uma compreensão básica dos 
    | [!UICONTROL **Data de início**] | A data em que o feed de dados começa. Para feeds ao vivo, isso deve ser hoje ou uma data futura. Para feeds de preenchimento retroativo, essa deve ser uma data passada na janela de retenção de dados da visualização de dados. A data de início é baseada no fuso horário da visualização de dados. |
    | [!UICONTROL **Data de expiração**] <br/>Disponível somente para feeds em tempo real | A data em que o feed de dados expira e não é mais executado. A data é baseada no fuso horário da visualização de dados. |
    | [!UICONTROL **Data final**]<br/> Disponível somente para feeds de preenchimento retroativo | A data em que o feed de dados termina. A data final não pode ser no futuro. A data é baseada no fuso horário da visualização de dados. |
-   | [!UICONTROL **Frequência**]<br/> Disponível somente para feeds em tempo real | Selecione a frequência com que o feed de dados deve ser enviado. Eventos com carimbos de data e hora que caem na janela de frequência são incluídos na entrega do feed de dados. <p>Selecione para incluir dados de uma hora ou de um dia.</p><ul><li>**Diariamente**: os feeds contêm dados de um dia inteiro, da meia-noite a meia-noite no fuso horário da visualização de dados.</li><li>**Por hora**: os feeds contêm dados de uma hora.</li></ul> <p>Cada delivery também usa uma janela de processamento contínua de 30 dias, que leva e inclui a janela de frequência, para qualificar segmentos, calcular sessões e persistir valores de dimensão. A janela de processamento e o campo [!UICONTROL **Atraso de processamento**] podem afetar os eventos incluídos. Para obter mais informações, consulte [Entender a janela de processamento](#data-feed-processing-window) e [Entender o atraso de processamento](#data-feed-processing-delay).</p> |
+   | [!UICONTROL **Frequência**]<br/> Disponível somente para feeds em tempo real | Selecione a frequência com que o feed de dados deve ser enviado. Eventos com carimbos de data e hora que caem na janela de frequência são incluídos na entrega do feed de dados. <p>Selecione para incluir dados de uma hora ou de um dia.</p><ul><li>**Diariamente**: os feeds contêm dados de um dia inteiro, da meia-noite a meia-noite no fuso horário da visualização de dados.</li><li>**Por hora**: os feeds contêm dados de uma hora.</li></ul> <p>Cada delivery também usa uma janela de processamento contínua de 30 dias, que leva e inclui a janela de frequência, para qualificar segmentos, calcular sessões e persistir valores de dimensão. A janela de processamento e a configuração [!UICONTROL **Atraso de processamento**] podem afetar os eventos incluídos. Para obter mais informações, consulte [Entender a janela de processamento](#data-feed-processing-window) e [Entender o atraso de processamento](#data-feed-processing-delay).</p> |
    | [!UICONTROL **Granularidade**]<br/> Disponível somente para feeds de preenchimento retroativo | O intervalo de tempo usado para dividir os dados históricos em partes. Cada bloco contém dados de um dia inteiro, da meia-noite à meia-noite no fuso horário da visualização de dados. <p>A granularidade determina como os dados são agrupados, não com que frequência são entregues. Os dados de preenchimento retroativo são entregues o mais rápido possível, não uma vez por dia.</p><p>Este campo é sempre definido como [!UICONTROL **Diariamente**] e não pode ser modificado.</p> |
    | [!UICONTROL **Atraso no processamento**] | O tempo que o Customer Journey Analytics aguarda antes de processar um arquivo de feed de dados. Todos os eventos recebidos com atraso durante o período de atraso do processamento são incluídos no feed de dados. <p>Escolha um atraso suficientemente longo para que os dados mais lentos da conexão terminem o processamento. Se o atraso for muito curto, os dados que ainda estão sendo processados não serão incluídos no arquivo de feed de dados.</p><p>O atraso mínimo de processamento é de 2 horas. O padrão é baseado nos conjuntos de dados da sua conexão. Por exemplo, se a compilação estiver ativada, o padrão será 6 horas. Alguns tipos de dados exigem um atraso mais longo. O atraso escolhido depende dos tipos de dados em sua conexão, como transmissão, lote, compilado, pesquisa ou dados de perfil.</p><p>Antes de configurar esta opção, veja os detalhes e os exemplos descritos na seção abaixo, [Entenda o atraso de processamento](#data-feed-processing-delay).</p> |
-   | [!UICONTROL **Formato de compactação**] | Selecione o formato de compactação dos arquivos de saída do Parquet entregues ao destino da nuvem. Escolha entre os seguintes formatos:<ul><li>[!UICONTROL **Snappy**]: compactação e descompactação rápidas com tamanhos de arquivo moderados. Amplamente compatível com plataformas de dados modernas, como BigQuery, Snowflake e Apache Spark.</li><li>[!UICONTROL **GZip**]: amplamente compatível, inclusive com ferramentas que não oferecem suporte nativo ao Snappy. Recomendado se o pipeline downstream exigir um padrão de compactação amplamente reconhecido.</li><li>[!UICONTROL **Z Padrão (Zstd)**]: alta eficiência de compactação com descompactação rápida. Adequado se minimizar o tamanho do arquivo é uma prioridade e suas ferramentas suportam Zstd.</li></ul> |
+   | [!UICONTROL **Formato de compactação**] | Selecione o formato de compactação dos arquivos de saída do Parquet entregues ao destino da nuvem. Escolha entre os seguintes formatos:<ul><li>[!UICONTROL **Snappy**]: compactação e descompactação rápidas com tamanhos de arquivo moderados. Amplamente compatível com plataformas de dados modernas, como BigQuery, Snowflake e Apache Spark.</li><li>[!UICONTROL **GZip**]: amplamente compatível, inclusive com ferramentas que não oferecem suporte nativo ao Snappy. Recomendado se o pipeline downstream exigir um padrão de compactação amplamente reconhecido.</li><li>[!UICONTROL **Z Padrão (Zstd)**]: alta eficiência de compactação com descompactação rápida. Adequado se minimizar o tamanho do arquivo é uma prioridade e suas ferramentas suportam Zstd.</li></ul><p>Todos os formatos compactam os dados dentro de cada arquivo do Parquet, uma coluna de cada vez, de modo que o data warehouse ainda pode ler somente as colunas de que um query precisa.</p><p>Para obter informações sobre as vantagens do Parquet e como consultar ou carregar os arquivos após serem entregues, consulte [Trabalhar com arquivos Parquet em feeds de dados](/help/components/exports/cja-data-feeds/df-parquet.md).</p> |
 
 1. Na guia [!UICONTROL **Entrega**], na seção [!UICONTROL **Destino**], configure o destino para onde deseja que os dados sejam enviados.
 
@@ -250,14 +274,23 @@ Leve em consideração o seguinte ao trabalhar com sessões em feeds de dados:
 
 ### Persistência do Dimension
 
-Ao definir a persistência em uma dimensão individual, você também define uma expiração para determinar por quanto tempo o item de dimensão persiste além do evento em que está definido.
+Ao definir a persistência em uma dimensão, você também define uma expiração que determina por quanto tempo o item de dimensão persiste além do evento em que está definido.
 
-A janela de processamento afeta a persistência da dimensão quando a expiração é definida como uma das seguintes opções na visualização de dados:
+A janela de processamento limita a persistência para cada configuração de expiração. Os valores definidos antes da janela de processamento não são considerados, exceto com a expiração de [!UICONTROL **Tempo personalizado**]:
 
-* [!UICONTROL **Janela de relatório de pessoa**]: a janela de processamento se torna a nova janela de relatório para cada dimensão na definição de feed de dados que usa [!UICONTROL **Janela de relatório de pessoa**] como sua expiração.
-* [!UICONTROL **Tempo personalizado**]: se o tempo personalizado selecionado se estender além da janela de processamento, o tempo personalizado será ignorado e a janela de processamento será usada para a expiração de cada dimensão na definição de feed de dados que usa [!UICONTROL **Tempo personalizado**] como sua expiração. Os valores que ocorreram antes da janela de processamento não são considerados.
+* [!UICONTROL **Sessão**]: os valores persistem até o final da sessão. Se uma sessão tiver sido iniciada antes da janela de processamento, os valores definidos antes da janela de processamento não serão considerados.
+* [!UICONTROL **Janela de relatório da pessoa**]: a janela de processamento de 30 dias é usada como expiração. Somente os valores definidos na janela de processamento persistem.
+* [!UICONTROL **Tempo personalizado**]: os valores persistem para o tempo personalizado definido na dimensão. Se o tempo personalizado for maior que a janela de processamento de 30 dias, o feed de dados olhará para trás antes do início da janela de processamento (até 90 dias) para que os valores de dimensão definidos antes da janela de processamento possam persistir para eventos no delivery.
 
-  Para obter mais informações sobre como configurar a persistência em dimensões na visualização de dados, consulte [Configurações do componente de Persistência](/help/data-views/component-settings/persistence.md).
+  <!--FOLLOW-UP: Remove this note when the persistence back-end change (AN-495620) ships. Also remove the matching sentence in df-comparison-workspace.md (Dimension persistence bullet).-->
+
+  >[!NOTE]
+  >
+  >Atualmente, as expirações de Tempo personalizado estão limitadas à janela de processamento de 30 dias. Se o tempo personalizado for superior a 30 dias, a janela de processamento será usada como a expiração, e os valores definidos antes da janela de processamento não serão considerados. Em breve, haverá suporte para horários personalizados que se estenderão além da janela de processamento.
+
+* [!UICONTROL **Métrica**]: os valores persistem até que a métrica selecionada ocorra. Os valores definidos antes da janela de processamento não são considerados.
+
+Para obter mais informações sobre como configurar a persistência em dimensões na visualização de dados, consulte [Configurações do componente de Persistência](/help/data-views/component-settings/persistence.md). Para obter informações sobre como a persistência nos feeds de dados difere do Analysis Workspace, consulte [Entender as discrepâncias de dados entre os feeds de dados e o Analysis Workspace](/help/components/exports/cja-data-feeds/df-comparison-workspace.md#processing-window).
 
 >[!BEGINSHADEBOX]
 
@@ -265,7 +298,7 @@ A janela de processamento afeta a persistência da dimensão quando a expiraçã
 
 Suponha que, em seu feed de dados, você queira saber qual usuário de campanha de marketing viu originalmente antes de acessar seu site.
 
-Para fazer isso, defina a persistência na dimensão Campanhas com Original como o modelo de alocação.
+Para fazer isso, você define a persistência na dimensão Campanhas com Original como o modelo de alocação e [!UICONTROL **Janela de relatório de pessoas**] como a expiração.
 
 Nesse caso, a campanha original é exibida na saída do feed de dados somente se os usuários atenderem **ambos** das seguintes condições:
 

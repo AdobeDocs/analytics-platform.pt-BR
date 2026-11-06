@@ -14,9 +14,9 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: a4ea9270d5bf27234fa229e8ba3df5998ecea0e1
+source-git-commit: bd396cb4909d131ed60c97e7101cf85946555e38
 workflow-type: tm+mt
-source-wordcount: '1303'
+source-wordcount: '1320'
 ht-degree: 0%
 ---
 # Componentes de sub-eventos em feeds de dados
@@ -102,7 +102,7 @@ Campos do mesmo subevento aparecem na tela de desenho como um grupo aninhado rec
 
 Esse grupo reflete a estrutura de dados subjacente.
 
-Na saída do feed de dados, todos esses componentes aparecem como uma matriz aninhada em uma única coluna.
+Na saída do feed de dados, todos esses componentes aparecem como uma matriz aninhada em uma única coluna. Os arquivos Parquet suportam matrizes aninhadas nativamente. Para obter mais informações, consulte [Trabalhar com arquivos Parquet em feeds de dados](/help/components/exports/cja-data-feeds/df-parquet.md).
 
 Para obter informações sobre como adicionar componentes, incluindo componentes de subeventos, a um feed de dados, consulte [Criar um feed de dados](/help/components/exports/cja-data-feeds/create-feed.md).
 
@@ -220,7 +220,7 @@ Na saída do feed de dados, `survey_question` e `survey_answer` são as IDs de c
 
 ### Mapa de identidade
 
-Cada identidade no campo [`identityMap`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/field-groups/profile/identitymap) é exportada como um objeto. O objeto contém o namespace de identidade (a chave), juntamente com o identificador, o estado autenticado e o sinalizador principal. O namespace se repete para cada identidade nesse namespace.
+Cada identidade no campo [`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap) é exportada como um objeto. O objeto contém o namespace de identidade (a chave), juntamente com o identificador, o estado autenticado e o sinalizador principal. O namespace se repete para cada identidade nesse namespace.
 
 Somente os atributos do mapa de identidade que existem como dimensões em sua visualização de dados e que você adiciona ao feed de dados são exportados.
 

@@ -26,9 +26,9 @@ topic_v2:
     internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 34959e37a7040bcd861a506968895ad6f051b686
+source-git-commit: bd396cb4909d131ed60c97e7101cf85946555e38
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '562'
 ht-degree: 1%
 ---
 # Visão geral dos feeds de dados
@@ -37,7 +37,7 @@ ht-degree: 1%
 
 Os feeds de dados exportam dados brutos no nível do evento do Customer Journey Analytics para um destino na nuvem. Você pode usar esses dados em outras plataformas fora da Adobe, como um data warehouse.
 
-Os feeds de dados são criados a partir dos componentes em uma visualização de dados. Cada dimensão e métrica incluída se torna uma coluna no feed de dados, e as configurações de visualização de dados, como persistência, campos derivados e segmentos, são aplicadas aos dados. Os arquivos são entregues no formato Parquet.
+Os feeds de dados são criados a partir dos componentes em uma visualização de dados. Cada dimensão e métrica incluída se torna uma coluna no feed de dados, e as configurações de visualização de dados, como persistência, campos derivados e segmentos, são aplicadas aos dados. Os arquivos foram entregues no [formato Parquet](/help/components/exports/cja-data-feeds/df-parquet.md).
 
 Você pode criar os seguintes tipos de feeds de dados:
 
@@ -71,13 +71,15 @@ Use os artigos a seguir para planejar, migrar e criar feeds de dados.
 
 ### Planejar os feeds de dados
 
-* [Comparar feeds de dados no Customer Journey Analytics e no Adobe Analytics](/help/components/exports/cja-data-feeds/df-comparison.md): entenda as diferenças nos recursos e conceitos se você já usou feeds de dados do Adobe Analytics.
-
 * [Entenda as discrepâncias de dados entre os feeds de dados e o Analysis Workspace](/help/components/exports/cja-data-feeds/df-comparison-workspace.md): saiba por que a saída do feed de dados pode não corresponder aos relatórios no Analysis Workspace.
 
 * [Disponibilidade de componentes em feeds de dados](/help/components/exports/cja-data-feeds/df-components.md): saiba quais dimensões e métricas são necessárias, não suportadas ou restritas em feeds de dados.
 
+* [Trabalhar com arquivos Parquet em feeds de dados](/help/components/exports/cja-data-feeds/df-parquet.md): saiba por que os feeds de dados usam o Parquet e como consultar ou carregar os arquivos no data warehouse.
+
 ### Migrar de feeds de dados do Adobe Analytics
+
+1. [Comparar feeds de dados no Customer Journey Analytics e no Adobe Analytics](/help/components/exports/cja-data-feeds/df-comparison.md): entenda as diferenças nos recursos e conceitos se você já usou feeds de dados do Adobe Analytics.
 
 1. [Preparar para mapear colunas do feed de dados](/help/components/exports/cja-data-feeds/df-column-mapping-prep.md): entenda os fatores que afetam como as colunas do Adobe Analytics são mapeadas para o Customer Journey Analytics.
 
