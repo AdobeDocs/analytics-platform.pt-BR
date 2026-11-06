@@ -31,9 +31,9 @@ role_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '720'
+source-wordcount: '719'
 ht-degree: 65%
 ---
 # Configurar usuários executivos para usar painéis
@@ -83,7 +83,7 @@ Após o download e a instalação, os usuários executivos podem fazer logon no 
 
    A tela **[!UICONTROL Escolher uma empresa]** é exibida. Essa tela lista as empresas de logon às quais o usuário executivo pertence.
 
-1. Faça com que eles toquem no nome da empresa de logon ou na CX Enterprise Org que se aplica ao cartão de pontuação que você compartilhou.
+1. Faça com que eles toquem no nome da empresa de logon ou na organização da Adobe que se aplica ao cartão de pontuação que você compartilhou.
 
    A lista do cartão de pontuação mostra todos os cartões de pontuação que foram compartilhados com o executivo na empresa de logon.
 

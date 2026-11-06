@@ -22,9 +22,9 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '1300'
+source-wordcount: '1297'
 ht-degree: 0%
 ---
 
@@ -95,7 +95,7 @@ O GA4 usa um modelo de identidade em cascata para identificar usuários:
 2. Sinais do Google (se o usuário estiver conectado a uma conta do Google com personalização ativada)
 3. ID do dispositivo (ID do cliente baseada em cookie)
 
-Na maioria das implementações, essa ID de pessoa é uma ECID (Experience Cloud ID). O recurso **[!UICONTROL Costura]** opcional pode então resolver identidades entre canais e dispositivos usando métodos baseados em gráfico ou em campo, permitindo que uma sessão de aplicativo móvel e uma sessão de navegador de desktop sejam associadas à mesma pessoa.
+Na maioria das implementações, essa ID de pessoa é uma ECID. O recurso **[!UICONTROL Costura]** opcional pode então resolver identidades entre canais e dispositivos usando métodos baseados em gráfico ou em campo, permitindo que uma sessão de aplicativo móvel e uma sessão de navegador de desktop sejam associadas à mesma pessoa.
 
 Como a resolução de identidade difere entre as plataformas, as contagens no nível do usuário raramente correspondem exatamente. Essa discrepância é esperada e não indica um problema de qualidade de dados.
 

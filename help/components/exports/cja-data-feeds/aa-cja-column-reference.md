@@ -47,9 +47,9 @@ topic_v2:
     internal-label: Data management
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '3921'
+source-wordcount: '3918'
 ht-degree: 48%
 ---
 # Mapear colunas do feed de dados do Adobe Analytics para o Customer Journey Analytics
@@ -667,7 +667,7 @@ Localização (abaixo de 1 m)
 
 +++**`mcvisid`**
 
-ID de visitante da Experience Cloud. Número de 128 bits que consiste em dois números concatenados de 64 bits preenchidos com 19 dígitos.
+ECID. Número de 128 bits que consiste em dois números concatenados de 64 bits preenchidos com 19 dígitos.
 
 +++
 
@@ -966,7 +966,7 @@ Resolução do dispositivo móvel. `[Width] x [Height]` em pixels.
 +++
 
 +++**`mobile_id`**
-Se o(a) visitante estiver usando um dispositivo móvel, o ID numérico do dispositivo.
+Se o usuário estiver usando um dispositivo móvel, o ID numérico do dispositivo.
 
 {{cja-df-lookup}}
 

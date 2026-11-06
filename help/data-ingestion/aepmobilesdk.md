@@ -45,10 +45,10 @@ topic_v2:
     internal-label: Data management
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '3512'
-ht-degree: 63%
+source-wordcount: '3504'
+ht-degree: 61%
 ---
 # Assimilar dados por meio do Mobile SDK
 
@@ -147,7 +147,7 @@ Para configurar o esquema:
 
    ![Objeto de identificação](./assets/identification-field-mobile.png)
 
-   O objeto de identificação adiciona recursos de identificação ao esquema. No seu caso, você deseja identificar perfis usando seu aplicativo móvel com a Experience Cloud ID e o endereço de email. Há muitos outros atributos disponíveis para rastrear a identificação da pessoa (por exemplo, ID do cliente, ID de fidelidade).
+   O objeto de identificação adiciona recursos de identificação ao esquema. No seu caso, você deseja identificar perfis usando seu aplicativo móvel com a ECID e o endereço de email. Há muitos outros atributos disponíveis para rastrear a identificação da pessoa (por exemplo, ID do cliente, ID de fidelidade).
 
    Selecione **[!UICONTROL Aplicar]** para adicionar esse objeto ao esquema.
 
@@ -155,7 +155,7 @@ Para configurar o esquema:
 
    ![Especificar ECID como identidade](./assets/specify-identity-mobile.png)
 
-   Você está especificando a Experience Cloud Identity como a identidade principal que o serviço Adobe Experience Platform Identity pode usar para combinar (compilar) o comportamento dos perfis com a mesma ECID.
+   Você está especificando a ECID como a identidade principal que o serviço de identidade da Adobe Experience Platform pode usar para combinar (compilar) o comportamento de perfis com a mesma ECID.
 
    Selecione **[!UICONTROL Aplicar]**. Você verá um ícone de impressão digital no atributo ecid.
 
@@ -183,7 +183,7 @@ Para configurar o esquema:
 
 1. Selecione **[!UICONTROL Salvar]** para salvar o esquema.
 
-Você criou um esquema mínimo que modela os dados que você pode capturar de seu aplicativo móvel. O esquema permite que os perfis sejam identificados usando a Experience Cloud Identity e o endereço de email. Ao ativar o esquema para perfil, você garante que os dados capturados do aplicativo móvel sejam adicionados ao Perfil do cliente em tempo real.
+Você criou um esquema mínimo que modela os dados que você pode capturar de seu aplicativo móvel. O esquema permite que os perfis sejam identificados usando a ECID e o endereço de email. Ao ativar o esquema para perfil, você garante que os dados capturados do aplicativo móvel sejam adicionados ao Perfil do cliente em tempo real.
 
 Além dos dados de comportamento, também é possível capturar dados de atributos de perfil do aplicativo móvel (por exemplo, detalhes de perfis que estão assinando um boletim informativo).
 
@@ -195,7 +195,7 @@ Para capturar dados do perfil, você deve:
 
 - Adicionar um objeto de identificação com base no grupo de campos Profile Core v2.
 
-- Defina a Experience Cloud ID como identificador principal e o email como identificador.
+- Defina a ECID como identificador principal e o email como identificador.
 
 - Habilitar o esquema do perfil
 

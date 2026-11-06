@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '1999'
-ht-degree: 64%
+source-wordcount: '1997'
+ht-degree: 63%
 ---
 # Compilação baseada em gráfico
 
@@ -232,7 +232,7 @@ A tabela a seguir representa os mesmos dados acima, mas mostra o efeito que uma 
 
 Os seguintes pré-requisitos aplicam-se especificamente à compilação baseada em gráfico:
 
-- O conjunto de dados de eventos na Adobe Experience Platform ao qual você deseja aplicar a compilação precisa ter uma coluna que identifique um perfil em cada linha, a **ID persistente**. Por exemplo, uma ID de visitante gerada por uma biblioteca de AppMeasurement do Adobe Analytics ou uma ECID gerada pelo serviço de identidade da Experience Platform.
+- O conjunto de dados de eventos na Adobe Experience Platform ao qual você deseja aplicar a compilação precisa ter uma coluna que identifique um perfil em cada linha, a **ID persistente**. Por exemplo, uma ID de visitante gerada por uma biblioteca AppMeasurement do Adobe Analytics ou uma ECID gerada pela Edge Network.
 - O gráfico de identidade do Experience Platform Identity Service deve ser configurado no nível da sandbox, antes de ativar a compilação baseada em gráfico.
   - O gráfico de identidade deve ter um namespace (por exemplo, `Email` ou `Phone`) que você deseja usar durante a compilação para resolver a ID de pessoa.
   - O gráfico de identidade deve ser preenchido com informações de identidades de qualquer conjunto de dados relevante (do tipo *evento* ou *perfil* e que contenha pelo menos dois namespaces úteis com valores de ID).
