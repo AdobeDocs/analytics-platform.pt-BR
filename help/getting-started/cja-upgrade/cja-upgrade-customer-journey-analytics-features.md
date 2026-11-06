@@ -33,10 +33,10 @@ topic_v2:
     internal-label: Implementation
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '591'
-ht-degree: 100%
+source-wordcount: '589'
+ht-degree: 94%
 ---
 # Entenda os recursos exclusivos do Customer Journey Analytics {#feature-support-upgrade}
 
@@ -54,7 +54,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-stitch-datasets"
 >title="Compilar hits de vários conjuntos de dados"
->abstract="Se um dos seus conjuntos de dados não compartilhar um identificador principal (como uma ID da Experience Cloud), você ainda poderá compilar esses dados usando outra dimensão, como o nome de usuário de logon ou endereço de email."
+>abstract="Se qualquer um dos seus conjuntos de dados não compartilhar um identificador principal (como uma ECID), você ainda poderá compilar esses dados usando outra dimensão, como nome de usuário de logon ou endereço de email."
 
 <!-- markdownlint-enable MD034 -->
 

@@ -26,10 +26,10 @@ topic_v2:
     internal-label: Customer experience
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '402'
-ht-degree: 100%
+source-wordcount: '399'
+ht-degree: 91%
 ---
 # Estratégia de lançamento de recursos do Customer Journey Analytics
 
@@ -41,9 +41,9 @@ O [!UICONTROL Analysis Workspace] usa sinalizadores de recursos (também conheci
 
 * **Teste limitado**: uma versão em fases começa com testes feitos por usuários internos da Adobe. Ela é então disponibilizada para um pequeno grupo de contas de clientes para garantir que o recurso atenda às necessidades e expectativas do cliente.
 
-* **Início da implantação**: a implantação de uma versão em fases começa com a fase de teste limitado. A versão é redimensionada de 0% a 100% de disponibilidade aos clientes ao longo de alguns meses. A implementação em fases acontece no nível da organização CX Enterprise, de modo que todos os usuários autorizados em uma organização recebam a mesma experiência.
+* **Início da implantação**: a implantação de uma versão em fases começa com a fase de teste limitado. A versão é redimensionada de 0% a 100% de disponibilidade aos clientes ao longo de alguns meses. A implantação em fases acontece no nível da organização da Adobe, de modo que todos os usuários autorizados em uma organização recebem a mesma experiência.
 
-* **Disponibilidade geral (GA)**: o recurso está disponível para 100% das organizações CX Enterprise autorizadas e o seu lançamento está concluído.
+* **Disponibilidade Geral (GA)**: o recurso está disponível para 100% das organizações autorizadas e a versão do recurso está concluída.
 
 Com cada versão de recurso, a linha do tempo de RTP para GA pode variar. O objetivo é manter as versões curtas, para que, dentro de 2 meses do início do lançamento (RTP), um recurso tenha GA.
 

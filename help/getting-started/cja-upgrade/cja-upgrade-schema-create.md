@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '1294'
-ht-degree: 100%
+source-wordcount: '1286'
+ht-degree: 94%
 ---
 # Criar um esquema personalizado para usar com o Customer Journey Analytics {#create-custom-schema}
 
@@ -153,7 +153,7 @@ Para criar um esquema personalizado:
 
    ![Objeto de identificação](assets/identification-field.png)
 
-   O objeto de identificação adiciona recursos de identificação ao esquema. No seu caso, você deseja identificar os perfis que visitam seu site usando a Experience Cloud ID e o endereço de email. Há muitos outros atributos disponíveis para rastrear a identificação da pessoa (por exemplo, ID do cliente, ID de fidelidade).
+   O objeto de identificação adiciona recursos de identificação ao esquema. No seu caso, você deseja identificar os perfis que visitam seu site usando a ECID e o endereço de email. Há muitos outros atributos disponíveis para rastrear a identificação da pessoa (por exemplo, ID do cliente, ID de fidelidade).
 
    Selecione **[!UICONTROL Aplicar]** para adicionar esse objeto ao esquema.
 
@@ -161,7 +161,7 @@ Para criar um esquema personalizado:
 
    ![Especificar ECID como identidade](./assets/specify-identity.png)
 
-   Você está especificando a Experience Cloud Identity como a identidade principal que o serviço Adobe Experience Platform Identity pode usar para combinar (compilar) o comportamento dos perfis com a mesma ECID.
+   Você está especificando a ECID como a identidade principal que o serviço de identidade da Adobe Experience Platform pode usar para combinar (compilar) o comportamento de perfis com a mesma ECID.
 
    Selecione **[!UICONTROL Aplicar]**. Você verá um ícone de impressão digital no atributo ecid.
 
@@ -189,7 +189,7 @@ Para criar um esquema personalizado:
 
 1. Selecione **[!UICONTROL Salvar]** para salvar o esquema.
 
-   Você criou um esquema mínimo que modela os dados que pode capturar de seu site. O esquema permite que os perfis sejam identificados usando a Experience Cloud Identity e o endereço de email. Ao habilitar o esquema para o perfil, você garante que os dados capturados de seu site sejam adicionados ao Perfil do cliente em tempo real.
+   Você criou um esquema mínimo que modela os dados que pode capturar de seu site. O esquema permite que os perfis sejam identificados usando a ECID e o endereço de email. Ao habilitar o esquema para o perfil, você garante que os dados capturados de seu site sejam adicionados ao Perfil do cliente em tempo real.
 
    Ao lado dos dados de comportamento, você também pode capturar os dados do atributo de perfil do site (por exemplo, detalhes de perfis que assinam um boletim informativo).
 
@@ -201,7 +201,7 @@ Para criar um esquema personalizado:
 
    * Adicionar um objeto de identificação com base no grupo de campos Profile Core v2.
 
-   * Defina a Experience Cloud ID como identificador principal e o email como identificador.
+   * Defina a ECID como identificador principal e o email como identificador.
 
    * Habilitar o esquema do perfil
 

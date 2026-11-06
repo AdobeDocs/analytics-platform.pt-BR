@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '1999'
-ht-degree: 64%
+source-wordcount: '1997'
+ht-degree: 63%
 ---
 # Compilação baseada em gráfico
 
@@ -43,7 +43,7 @@ Na compilação baseada em gráfico, você especifica um conjunto de dados de ev
 
 >[!NOTE]
 >
->O [Serviço de Identidade](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/home) é um serviço principal da Experience Platform que não requer licenciamento adicional. Consulte [Noções básicas sobre a função do serviço de identidade na infraestrutura do Experience Platform](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/home#understanding-the-role-of-identity-service-within-the-experience-platform-infrastructure) para obter mais informações.
+>O [Serviço de Identidade](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/home) é um serviço principal da Experience Platform que não requer licenciamento adicional. Consulte [Noções básicas sobre a função do serviço de identidade na infraestrutura do Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home#understanding-the-role-of-identity-service-within-the-experience-platform-infrastructure) para obter mais informações.
 >
 
 Se as informações de ID de pessoa não puderem ser recuperadas para um evento, a ID persistente será usada para esse evento *não compilado*. Como resultado, em uma [visualização de dados](/help/data-views/data-views.md) associada a uma [conexão](/help/connections/overview.md) que contém o conjunto de dados habilitado para compilação, o componente de visualização de dados da ID de pessoa contém o valor da ID de pessoa ou o valor da ID persistente no nível do evento.
@@ -232,14 +232,14 @@ A tabela a seguir representa os mesmos dados acima, mas mostra o efeito que uma 
 
 Os seguintes pré-requisitos aplicam-se especificamente à compilação baseada em gráfico:
 
-- O conjunto de dados de eventos na Adobe Experience Platform ao qual você deseja aplicar a compilação precisa ter uma coluna que identifique um perfil em cada linha, a **ID persistente**. Por exemplo, uma ID de visitante gerada por uma biblioteca de AppMeasurement do Adobe Analytics ou uma ECID gerada pelo serviço de identidade da Experience Platform.
+- O conjunto de dados de eventos na Adobe Experience Platform ao qual você deseja aplicar a compilação precisa ter uma coluna que identifique um perfil em cada linha, a **ID persistente**. Por exemplo, uma ID de visitante gerada por uma biblioteca AppMeasurement do Adobe Analytics ou uma ECID gerada pela Edge Network.
 - O gráfico de identidade do Experience Platform Identity Service deve ser configurado no nível da sandbox, antes de ativar a compilação baseada em gráfico.
   - O gráfico de identidade deve ter um namespace (por exemplo, `Email` ou `Phone`) que você deseja usar durante a compilação para resolver a ID de pessoa.
   - O gráfico de identidade deve ser preenchido com informações de identidades de qualquer conjunto de dados relevante (do tipo *evento* ou *perfil* e que contenha pelo menos dois namespaces úteis com valores de ID).
   - Todos os conjuntos de dados que contêm essas identidades relevantes devem ser [habilitados para assimilação de dados do gráfico de identidade](faq.md#enable-a-dataset-for-the-identity-service). Essa ativação garante que as identidades recebidas sejam adicionadas ao gráfico ao longo do tempo de todas as fontes necessárias.
   - Se você já estiver usando o Perfil de dados do cliente em tempo real ou o Adobe Journey Optimizer por algum tempo, o gráfico já deverá estar configurado até certo ponto.<br/>Se o preenchimento retroativo de compilação histórica também for necessário para o conjunto de dados habilitado com compilação baseada em gráfico, o gráfico já deverá conter identidades históricas para todo o período para obter os resultados de compilação desejados.
 - Se quiser usar a compilação com base em gráficos e antecipar que o conjunto de dados do evento contribua para o gráfico de identidade, você deve [habilitar o conjunto de dados para o Serviço de identidade](/help/stitching/faq.md#enable-a-dataset-for-the-identity-service).
-- A ID persistente e a ID de pessoa podem ser usadas com [identityMap](#identitymap). Ou a ID persistente e a ID de pessoa podem ser campos do esquema XDM, nesse caso, os campos devem ser [definidos como uma identidade](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/ui/fields/identity?lang=en) no esquema.
+- A ID persistente e a ID de pessoa podem ser usadas com [identityMap](#identitymap). Ou a ID persistente e a ID de pessoa podem ser campos do esquema XDM, nesse caso, os campos devem ser [definidos como uma identidade](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/identity?lang=en) no esquema.
 
 >[!NOTE]
 >

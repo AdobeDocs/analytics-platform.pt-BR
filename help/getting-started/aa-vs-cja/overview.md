@@ -32,10 +32,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '895'
-ht-degree: 100%
+source-wordcount: '892'
+ht-degree: 98%
 ---
 # Comparação com o Adobe Analytics
 
@@ -85,7 +85,7 @@ Consulte [Conjuntos de relatórios virtuais, visualizações de dados, sandboxes
 
 ## Identidades
 
-O Customer Journey Analytics é compatível com as identidades definidas nos esquemas com os quais seus conjuntos de dados estão em conformidade. Sendo assim, as identidades são um conceito fundamental da Experience Platform que o Customer Journey Analytics usa ao configurar uma [conexão](../../connections/overview.md) (definindo a ID de pessoa para cada conjunto de dados) e ao aplicar a [compilação](../../stitching/overview.md) para a análise entre canais. Uma identidade importante usada pelos SDKs e pela API da Experience Platform é a Experience Cloud ID (ECID).
+O Customer Journey Analytics é compatível com as identidades definidas nos esquemas com os quais seus conjuntos de dados estão em conformidade. Sendo assim, as identidades são um conceito fundamental da Experience Platform que o Customer Journey Analytics usa ao configurar uma [conexão](../../connections/overview.md) (definindo a ID de pessoa para cada conjunto de dados) e ao aplicar a [compilação](../../stitching/overview.md) para a análise entre canais. Uma identidade importante usada pelos SDKs e pela API do Experience Platform é a ECID.
 
 O Adobe Analytics usa um conjunto mais definitivo de campos de identidade, como a Adobe Analytics ID (AAID). Ao usar o conector de origem do Analytics, esses campos de identificação do Adobe Analytics recebem tratamento especial. Consulte [AAID, ECID, AACUSTOMID e o conector de origem do Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/compare-aa-cja/cja-aa-comparison/aaid-ecid-adc.html?lang=pt-BR) para obter mais informações.
 

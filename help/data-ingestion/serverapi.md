@@ -41,10 +41,10 @@ topic_v2:
     internal-label: Data management
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '2447'
-ht-degree: 62%
+source-wordcount: '2439'
+ht-degree: 60%
 ---
 # Assimilar dados por meio da API do servidor do Edge Network
 
@@ -143,7 +143,7 @@ Para configurar o esquema:
 
    ![Objeto de identificação](./assets/identification-field-gaming.png)
 
-   O objeto de identificação adiciona recursos de identificação ao esquema. No seu caso, você quer identificar os perfis que estão jogando usando a Experience Cloud Id e o endereço de email que eles usam para fazer logon no console de jogos deles. Há muitos outros atributos disponíveis para rastrear a identificação da sua pessoa.
+   O objeto de identificação adiciona recursos de identificação ao esquema. No seu caso, você quer identificar os perfis que estão jogando usando a ECID e o endereço de email que eles usam para fazer logon no console de jogos deles. Há muitos outros atributos disponíveis para rastrear a identificação da sua pessoa.
 
    Selecione **[!UICONTROL Aplicar]** para adicionar esse objeto ao esquema.
 
@@ -151,7 +151,7 @@ Para configurar o esquema:
 
    ![Especificar ECID como identidade](./assets/specify-identity-gaming.png)
 
-   Você está especificando a Experience Cloud Identity como a identidade principal que o serviço Adobe Experience Platform Identity pode usar para combinar (compilar) o comportamento dos perfis com a mesma ECID.
+   Você está especificando a ECID como a identidade principal que o serviço de identidade da Adobe Experience Platform pode usar para combinar (compilar) o comportamento de perfis com a mesma ECID.
 
    Selecione **[!UICONTROL Aplicar]**. Você verá um ícone de impressão digital no atributo ecid.
 
@@ -179,7 +179,7 @@ Para configurar o esquema:
 
 1. Selecione **[!UICONTROL Salvar]** para salvar o esquema.
 
-Você criou um esquema mínimo que modela os dados que você pode capturar do seu jogo. O esquema permite que os perfis sejam identificados usando a Experience Cloud Identity e o endereço de email. Ao ativar o esquema para perfil, você garante que os dados capturados do seu jogo de console sejam adicionados ao Perfil do cliente em tempo real.
+Você criou um esquema mínimo que modela os dados que você pode capturar do seu jogo. O esquema permite que os perfis sejam identificados usando a ECID e o endereço de email. Ao ativar o esquema para perfil, você garante que os dados capturados do seu jogo de console sejam adicionados ao Perfil do cliente em tempo real.
 
 Ao lado dos dados de comportamento, você também pode capturar dados de atributos de perfil do seu console (por exemplo, detalhes de perfis conectados ao console).
 
@@ -191,7 +191,7 @@ Para capturar dados do perfil, você deve:
 
 - Adicionar um objeto de identificação com base no grupo de campos Profile Core v2.
 
-- Defina a Experience Cloud ID como identificador principal e o email como identificador.
+- Defina a ECID como identificador principal e o email como identificador.
 
 - Habilitar o esquema do perfil
 
@@ -267,7 +267,7 @@ Para configurar seu armazenamento de dados:
 
 Sua sequência de dados agora está configurada para encaminhar os dados coletados do jogo para seu conjunto de dados no Adobe Experience Platform.
 
-Consulte [Visão geral dos conjuntos de dados](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=pt-BR) para obter mais informações sobre como configurar um conjunto de dados e como lidar com dados confidenciais.
+Consulte [Visão geral dos conjuntos de dados](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html) para obter mais informações sobre como configurar um conjunto de dados e como lidar com dados confidenciais.
 
 ## Usar a API do Edge Network Server
 
@@ -306,7 +306,7 @@ curl -X POST "https://server.adobedc.net/ee/v2/interact?dataStreamId={DATASTREAM
 
 Na solicitação POST de exemplo, `{DATASTREAM_ID}` aponta para o identificador da sequência de dados de exemplo que você configurou anteriormente. `{sandbox}` é o nome exclusivo da sua sandbox, identificando o caminho para o grupo de campos Luz oculta personalizada.
 
-Consulte [Coleta de dados interativa](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html?lang=pt-BR) e [Coleta de dados não interativa](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/non-interactive-data-collection.html?lang=pt-BR) para obter mais informações sobre como usar a API do Edge Network Server.
+Consulte [Coleta de dados interativa](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/interactive-data-collection.html?lang=pt-BR) e [Coleta de dados não interativa](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/data-collection/non-interactive-data-collection.html) para obter mais informações sobre como usar a API do Edge Network Server.
 
 ## Configurar uma conexão
 

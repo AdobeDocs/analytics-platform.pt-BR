@@ -43,10 +43,10 @@ topic_v2:
     internal-label: Data collection
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '2323'
-ht-degree: 95%
+source-wordcount: '2322'
+ht-degree: 94%
 ---
 # Perguntas frequentes
 
@@ -61,9 +61,9 @@ Não, o [!UICONTROL Private Device Graph] ou o [!UICONTROL Device Coop] não sã
 +++
 
 
-+++**Preciso da [!UICONTROL Experience Cloud ID] (ECID) para o [!UICONTROL Customer Journey Analytics]?**
++++**Preciso de uma ECID para o [!UICONTROL Customer Journey Analytics]?**
 
-Não, o [!UICONTROL Customer Journey Analytics] é compatível com qualquer ID em um conjunto de dados, seja [!UICONTROL ECID] ou outra ID escolhida.
+Não, o [!UICONTROL Customer Journey Analytics] oferece suporte a qualquer ID em um conjunto de dados, seja ECID ou outra ID escolhida.
 
 +++
 
@@ -181,7 +181,7 @@ A Adobe alterou recentemente a forma do processamento de dados no Customer Journ
 
 ## &#x200B;5. Definir janela contínua para retenção de dados de [!UICONTROL Conexão] {#data-retention}
 
-A configuração [**[!UICONTROL Habilitar janela de dados contínua &#x200B;]**](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=pt-BR#create-connection) permite definir a retenção de dados do Customer Journey Analytics como uma janela contínua em meses (três meses, seis meses, etc). Ela é definida no nível de uma [!UICONTROL conexão], não no nível de um [!UICONTROL conjunto de dados]. A retenção de dados tem por base os carimbos de data e hora do conjunto de dados do evento e se aplica somente aos conjuntos de dados do evento. Não há configuração de retenção de dados para o perfil ou conjuntos de dados de pesquisa, pois não há carimbos de data e hora aplicáveis.
+A configuração [**[!UICONTROL Habilitar janela de dados contínua ]**](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=pt-BR#create-connection) permite definir a retenção de dados do Customer Journey Analytics como uma janela contínua em meses (três meses, seis meses, etc). Ela é definida no nível de uma [!UICONTROL conexão], não no nível de um [!UICONTROL conjunto de dados]. A retenção de dados tem por base os carimbos de data e hora do conjunto de dados do evento e se aplica somente aos conjuntos de dados do evento. Não há configuração de retenção de dados para o perfil ou conjuntos de dados de pesquisa, pois não há carimbos de data e hora aplicáveis.
 
 O principal benefício é armazenar ou relatar apenas dados que sejam aplicáveis e úteis, além de excluir dados mais antigos que não sejam mais úteis. Isso ajuda você a ficar dentro dos limites do contrato e reduz o risco de custo excedente.
 

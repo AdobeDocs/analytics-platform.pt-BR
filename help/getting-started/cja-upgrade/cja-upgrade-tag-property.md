@@ -28,9 +28,9 @@ topic_v2:
     internal-label: Customer journeys
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '316'
 ht-degree: 86%
 ---
 # Criar uma tag para sua propriedade {#upgrade-tag-property}
@@ -48,7 +48,7 @@ ht-degree: 86%
 
 Você pode usar o recurso de tags na Adobe Experience Platform para implementar o código no seu site a fim de coletar dados. Esta solução de gerenciamento de tags permite implantar o código do junto com outros requisitos de marcação. As tags oferecem integração perfeita com a Adobe Experience Platform usando a extensão do SDK da Web da Adobe Experience Platform.
 
-As informações abaixo descrevem como criar uma tag para sua propriedade. Para mais informações, consulte a [Configuração da extensão de tags do SDK da web](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration) na documentação da Experience Platform. O Web SDK inclui o Experience Platform Identity Service, portanto, não é necessário adicionar a extensão [!UICONTROL Experience Cloud ID Service] à sua marca.
+As informações abaixo descrevem como criar uma tag para sua propriedade. Para mais informações, consulte a [Configuração da extensão de tags do SDK da web](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration) na documentação da Experience Platform. A Web SDK obtém a ECID da Edge Network, portanto, não é necessário adicionar a extensão [!UICONTROL Serviço da Experience Cloud ID] à sua tag.
 
 Basicamente, uma propriedade é basicamente um container que você preenche com extensões, regras, elementos de dados e bibliotecas à medida que implanta tags no site. Muitas pessoas criam uma propriedade para cada site (ou grupo de sites intimamente relacionados) em que desejam implantar o mesmo conjunto de tags. Para obter mais informações sobre propriedades, consulte [Propriedades](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/admin/companies-and-properties) na documentação de coleção de dados da Experience Platform.
 
@@ -62,6 +62,6 @@ Para criar uma tag para sua propriedade:
 
    Nomeie a tag, selecione **[!UICONTROL Web]** e insira um nome de domínio. Selecione **[!UICONTROL Salvar]** para continuar.
 
-   ![Criar uma propriedade da &#x200B;](assets/create-property.png)
+   ![Criar uma propriedade da ](assets/create-property.png)
 
 {{upgrade-final-step}}

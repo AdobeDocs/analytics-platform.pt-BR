@@ -28,10 +28,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
+source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
 workflow-type: tm+mt
-source-wordcount: '1926'
-ht-degree: 82%
+source-wordcount: '1923'
+ht-degree: 81%
 ---
 # Compilação em campo
 
@@ -235,11 +235,11 @@ Os seguintes pré-requisitos se aplicam especificamente à compilação em campo
 
 - O conjunto de dados do evento na Adobe Experience Platform, ao qual você deseja aplicar a compilação, deve ter duas colunas que ajudem a identificar perfis:
 
-  - Uma **ID persistente**, um identificador disponível em cada linha. Por exemplo, uma ID de visitante gerada por uma biblioteca AppMeasurement do Adobe Analytics ou uma ECID gerada pelo Adobe Experience Platform Identity Service.
+  - Uma **ID persistente**, um identificador disponível em cada linha. Por exemplo, uma ID de visitante gerada por uma biblioteca AppMeasurement do Adobe Analytics ou uma ECID gerada pela Edge Network.
   - Uma **ID de pessoa**, um identificador disponível apenas em algumas linhas. Por exemplo, um nome de usuário ou endereço de email com hash quando um perfil é autenticado. Você pode usar praticamente qualquer identificador que desejar. A compilação considera que esse campo mantém as informações reais da ID de pessoa. Para obter melhores resultados de compilação, uma ID de pessoa deve ser enviada nos eventos do conjunto de dados pelo menos uma vez para cada ID persistente. Se você planeja incluir esse conjunto de dados em uma conexão do Customer Journey Analytics, é preferível que os outros conjuntos de dados também tenham um identificador comum semelhante.
 
 <!--
-- Both columns (persistent ID and person ID) must be defined as an identity field with an identity namespace in the schema for the dataset you want to stitch. When using identity stitching in Real-time Customer Data Platform, using the [`identityMap` field group](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/schema/composition#identity), you still need to add identity fields with an identity namespace. This identification of identity fields is required as Customer Journey Analytics stitching does not support the `identityMap` field group. When adding an identity field in the schema, while also using the `identityMap` field group, do not set the additional identity field as a primary identity. Setting an additional identity field as primary identity interferes with the `identityMap` field group used for Real-time Customer Data Platform.
+- Both columns (persistent ID and person ID) must be defined as an identity field with an identity namespace in the schema for the dataset you want to stitch. When using identity stitching in Real-time Customer Data Platform, using the [`identityMap` field group](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#identity), you still need to add identity fields with an identity namespace. This identification of identity fields is required as Customer Journey Analytics stitching does not support the `identityMap` field group. When adding an identity field in the schema, while also using the `identityMap` field group, do not set the additional identity field as a primary identity. Setting an additional identity field as primary identity interferes with the `identityMap` field group used for Real-time Customer Data Platform.
 
 -->
 
