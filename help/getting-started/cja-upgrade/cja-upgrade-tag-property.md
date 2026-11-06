@@ -62,6 +62,6 @@ Para criar uma tag para sua propriedade:
 
    Nomeie a tag, selecione **[!UICONTROL Web]** e insira um nome de domínio. Selecione **[!UICONTROL Salvar]** para continuar.
 
-   ![Criar uma propriedade da ](assets/create-property.png)
+   ![Criar uma propriedade da &#x200B;](assets/create-property.png)
 
 {{upgrade-final-step}}
