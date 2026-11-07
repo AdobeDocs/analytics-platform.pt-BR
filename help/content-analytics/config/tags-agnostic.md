@@ -25,13 +25,11 @@ topic_v2:
     internal-label: Customer journeys
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
-source-wordcount: 484
+source-wordcount: '484'
 ht-degree: 5%
-
 ---
-
 
 # Biblioteca JavaScript do Content Analytics
 
@@ -73,7 +71,7 @@ Use o `npm` para instalar a biblioteca.
 
 Carregue a biblioteca diretamente do CDN.
 
-1. Inicialize a [biblioteca JavaScript Web SDK](https://experienceleague.adobe.com/pt-br/docs/experience-platform/collection/js/install/library) e carregue o pacote Content Analytics:
+1. Inicialize a [biblioteca JavaScript Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/install/library) e carregue o pacote Content Analytics:
 
    ```html
    <!-- 1. Load and configure Alloy first -->
@@ -95,7 +93,7 @@ Carregue a biblioteca diretamente do CDN.
    ```
 
    em que
-   * `alloy/2.x.x` refere-se à versão que você deseja usar da [biblioteca JavaScript do Web SDK](https://experienceleague.adobe.com/pt-br/docs/experience-platform/collection/js/install/library).
+   * `alloy/2.x.x` refere-se à versão que você deseja usar da [biblioteca JavaScript do Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/install/library).
    * `content-analytics/1.x.x` refere-se à versão que você deseja usar da biblioteca SDK do Content Analytics.
 
 2. A compilação autônoma expõe `window.contentAnalytics` como a função de inicialização.

@@ -35,7 +35,7 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '1849'
 ht-degree: 81%
@@ -114,7 +114,7 @@ Assista ao vídeo para saber mais sobre como criar histórias de dados em projet
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Histórias de dados para projetos de cartão de pontuação para dispositivos móveis](https://experienceleague.adobe.com/pt-br/docs/customer-journey-analytics-learn/tutorials/dashboards/create-a-mobile-scorecard){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Histórias de dados para projetos de cartão de pontuação para dispositivos móveis](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/dashboards/create-a-mobile-scorecard){target="_blank"} para ver um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 

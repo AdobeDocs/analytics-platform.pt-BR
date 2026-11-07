@@ -32,7 +32,7 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '982'
 ht-degree: 92%
@@ -84,7 +84,7 @@ Para obter informações sobre como usar a zona de destino do segmento em um pai
 
    * Arraste uma ou mais dimensões do painel esquerdo para a zona de destino de segmentos para criar um segmento rápido, conforme descrito em [Adicionar segmentos a um projeto](#add-filters-to-a-project).
 
-1. Opcionalmente, é possível detalhar dimensões e itens de dimensão no Analysis Workspace com outros componentes. Para obter mais informações, consulte [Analisar dimensões no Workspace](/help/components/dimensions/t-breakdown-fa.md).
+1. Opcionalmente, é possível detalhar dimensões e itens de dimensão no Analysis Workspace com outros componentes. Para obter mais informações, consulte [Detalhar dimensões no Workspace](/help/components/dimensions/t-breakdown-fa.md).
 
 Para obter mais informações sobre como usar dimensões no Analysis Workspace, consulte [Visualizar dimensões](/help/components/dimensions/view-dimensions.md), [Detalhar dimensões](/help/components/dimensions/t-breakdown-fa.md) e [Dimensões com separação de tempo](/help/components/dimensions/time-parting-dimensions.md).
 

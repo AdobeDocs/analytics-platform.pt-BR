@@ -23,16 +23,16 @@ role_v2:
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '243'
-ht-degree: 69%
+ht-degree: 64%
 ---
 # Barra (empilhada)
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta as visualizações de Barras e Barras empilhadas em_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consulte [Barras e Barras empilhadas](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/bar) para a versão_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
+_Este artigo documenta as visualizações de Barras e Barras empilhadas em_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consulte [Barras e Barras empilhadas](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/bar) para a versão_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
 
 
 >[!ENDSHADEBOX]
@@ -54,7 +54,7 @@ A visualização de barra tem uma opção padrão e uma opção empilhada.
 
 A visualização de ![GraphBarVertical](/help/assets/icons/GraphBarVertical.svg) **[!UICONTROL Barra]** mostra barras verticais que representam vários valores em uma ou mais métricas.
 
-![Visualização de barra vertical, mostrando várias métricas, incluindo visualizações da página, visitas, entradas e saídas.](assets/bar.png)
+![Visualização de barra vertical mostrando várias métricas, incluindo Exibições de página, Visitas, Entradas e Saídas.](assets/bar.png)
 
 Um menu suspenso de granularidade nas configurações de visualização permite alterar uma visualização de tendências (por exemplo, linha, barra) de diária para semanal, mensal etc.
 
@@ -80,7 +80,7 @@ Use a opção **[!UICONTROL 100% empilhada]** em ![Setting](/help/assets/icons/S
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualização de área](https://experienceleague.adobe.com/pt-br/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-bar-visualizations){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualização de área](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-bar-visualizations){target="_blank"} para ver um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 

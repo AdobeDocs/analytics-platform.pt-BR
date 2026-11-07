@@ -45,7 +45,7 @@ topic_v2:
     internal-label: Data management
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '3516'
 ht-degree: 82%
@@ -270,7 +270,7 @@ Para configurar seu armazenamento de dados:
 
 O conjunto de dados agora está configurado para encaminhar os dados coletados de seu site para seu conjunto de dados na Adobe Experience Platform.
 
-Consulte [Visão geral dos conjuntos de dados](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=pt-BR) para obter mais informações sobre como configurar um conjunto de dados e como lidar com dados confidenciais.
+Consulte [Visão geral dos conjuntos de dados](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html) para obter mais informações sobre como configurar um conjunto de dados e como lidar com dados confidenciais.
 
 
 
@@ -286,7 +286,7 @@ Para implementar o código em seu site para realmente coletar dados, use o recur
 
    Nomeie a tag, selecione **[!UICONTROL Web]** e insira um nome de domínio. Selecione **[!UICONTROL Salvar]** para continuar.
 
-   ![Criar uma propriedade da &#x200B;](./assets/create-property.png)
+   ![Criar uma propriedade da ](./assets/create-property.png)
 
 ### Configurar sua tag
 
@@ -315,7 +315,7 @@ Para criar e configurar a extensão do SDK da Web da Adobe Experience Platform:
 
    Selecione **[!UICONTROL Salvar]**.
 
-Consulte [Configurar a extensão do SDK da Web da Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration.html?lang=pt-BR) para obter mais informações.
+Consulte [Configurar a extensão do SDK da Web da Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration.html) para obter mais informações.
 
 A Web SDK obtém a ECID da Edge Network, portanto, não é necessário adicionar a extensão de tag do [!UICONTROL Experience Cloud ID Service] à propriedade.
 

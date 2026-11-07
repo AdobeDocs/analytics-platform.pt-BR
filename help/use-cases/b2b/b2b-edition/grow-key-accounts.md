@@ -28,7 +28,7 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 3%
@@ -65,7 +65,7 @@ Você deseja melhorar a comunicação entre as equipes de vendas, marketing e pr
 
 Você pode usar estes recursos do Customer Journey Analytics B2B edition:
 
-![Caso de uso B2B - aumentar contas principais - colaboração - compartilhar](assets/b2b-uc-grow-key-accounts-share.png)
+![Caso de uso B2B - crescer contas de chaves - colaboração - compartilhar](assets/b2b-uc-grow-key-accounts-share.png)
 
 1. [Anotações](/help/components/annotations/overview.md)
 1. [Alertas inteligentes](/help/components/c-intelligent-alerts/intelligent-alerts.md)

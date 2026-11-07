@@ -39,7 +39,7 @@ topic_v2:
     internal-label: Data management
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
     internal-label: Customer profiles
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '2044'
 ht-degree: 83%
@@ -270,7 +270,7 @@ Para criar um conector de origem da API HTTP:
 
 Você pode copiar o URL do ponto de acesso de transmissão e usá-lo para configurar seu aplicativo de fidelidade para transmitir dados para o conjunto de dados de fidelidade da Adobe Experience Platform.
 
-Consulte [Criar uma conexão de transmissão da API HTTP usando a interface do usuário](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html?lang=pt-BR) para obter um tutorial muito mais abrangente que explique:
+Consulte [Criar uma conexão de transmissão da API HTTP usando a interface do usuário](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/streaming/http.html) para obter um tutorial muito mais abrangente que explique:
 
 - como usar autenticação,
 - como mapear dados quando os dados recebidos não são compatíveis com o esquema XDM e

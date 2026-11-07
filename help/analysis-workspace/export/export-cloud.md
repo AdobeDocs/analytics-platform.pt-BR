@@ -41,9 +41,9 @@ topic_v2:
     internal-label: Reporting
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
     internal-label: Governance
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
-source-wordcount: '3275'
+source-wordcount: '3276'
 ht-degree: 58%
 ---
 # Exportação de tabelas completas para a nuvem {#full-table-export}
@@ -81,7 +81,7 @@ Use o processo a seguir para exportar tabelas completas para a nuvem:
 
 1. [Exportar uma tabela completa do Workspace](#export-full-tables)
 
-1. Acesse dados na nuvem na sua conta de nuvem e [Gerencie exportações na Adobe](/help/components/exports/manage-exports.md)
+1. Acesse dados na nuvem na sua conta de nuvem e [Gerenciar exportações na Adobe](/help/components/exports/manage-exports.md)
 
 ![O processo completo de exportação de tabelas descrito nas etapas de 1 a 4.](assets/export-full-table-process.png)
 

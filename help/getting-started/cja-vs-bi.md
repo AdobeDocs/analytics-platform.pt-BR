@@ -43,10 +43,10 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '1680'
-ht-degree: 100%
+ht-degree: 99%
 ---
 # Comparar soluções do Customer Journey Analytics às soluções de BI
 
@@ -60,7 +60,7 @@ Esta seção da documentação explica as diferenças fundamentais entre o Custo
 
 Um obstáculo frequente com abordagens tradicionais para analisar jornadas de clientes é que elas não são centradas no cliente. Cada equipe coleta dados em silos, analisando e otimizando experiências com base nos dados aos quais tem acesso.
 
-![Fluxo de trabalho tradicional de BI conforme descrito nesta seção](./assets/biworkflow.png)
+![Fluxo de trabalho de BI tradicional conforme descrito nesta seção](./assets/biworkflow.png)
 
 Se quiser entender como uma campanha digital específica afeta uma ação offline armazenada em um silo de dados diferente, emita uma solicitação para a fila da equipe de BI. A equipe de BI registra a consulta necessária para adquirir e transformar os dados. Depois que os dados brutos são recuperados, a equipe de BI cria a visualização. Os dados são compartilhados com você, enquanto passa o tempo procurando insights e extraindo dados para ativação em outros sistemas.
 

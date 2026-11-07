@@ -19,16 +19,16 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '236'
-ht-degree: 65%
+ht-degree: 58%
 ---
 # Barra horizontal (empilhada)
 
 >[!BEGINSHADEBOX]
 
-_Este artigo documenta a barra horizontal e as visualizações de barra horizontal empilhada em_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _&#x200B;**Customer Journey Analytics**._<br/>_Consulte [Barra horizontal e barra horizontal empilhada](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/horizontal-bar) para a versão_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _&#x200B;**Adobe Analytics** deste artigo._
+_Este artigo documenta a barra horizontal e as visualizações de barra horizontal empilhada em_ ![CustomerJourneyAnalytics](/help/assets/icons/CustomerJourneyAnalytics.svg) _**Customer Journey Analytics**._<br/>_Consulte [Barra horizontal e barra horizontal empilhada](https://experienceleague.adobe.com/pt-br/docs/analytics/analyze/analysis-workspace/visualizations/horizontal-bar) para a versão_ ![AdobeAnalytics](/help/assets/icons/AdobeAnalytics.svg) _**Adobe Analytics** deste artigo._
 
 >[!ENDSHADEBOX]
 
@@ -46,7 +46,7 @@ A visualização da barra horizontal tem uma opção padrão e empilhada.
 <!-- markdownlint-enable MD034 -->
 
 
-A visualização ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) **[!UICONTROL Barra horizontal]** mostra barras horizontais que representam vários valores em uma ou mais métricas.
+A visualização ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) **[!UICONTROL Horizontal bar]** mostra barras horizontais que representam vários valores de uma ou mais métricas.
 
 ![Barra horizontal mostrando métricas incluindo exibições de página, velocidade de página, visitas, entradas e saídas.](assets/horizontal-bar.png)
 
@@ -72,7 +72,7 @@ Use a opção **[!UICONTROL 100% empilhado]** em ![Configurações](/help/ass
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualização de área](https://experienceleague.adobe.com/pt-br/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-bar-visualizations){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Visualização de área](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/visualizations/add-bar-visualizations){target="_blank"} para ver um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 

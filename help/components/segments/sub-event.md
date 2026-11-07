@@ -16,7 +16,7 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '680'
 ht-degree: 8%
@@ -59,7 +59,7 @@ Você definiu um **[!UICONTROL Detalhes do produto]** [contêiner personalizado]
 
 No construtor de segmentação ou como parte de um **[!UICONTROL Segmento rápido]**, você especifica **[!UICONTROL Incluir]** o **[!UICONTROL Dimension]** **[!UICONTROL product_category]** **[!UICONTROL igual]** **[!UICONTROL Trajes profissionais]** no contêiner **[!UICONTROL Detalhes do produto]**.
 
-![Painel que mostra a segmentação no nível de subevento para conjuntos profissionais de categorias de produtos](./assets/product-category-segmentation-subevents.png)
+![Painel que mostra a segmentação no nível do subevento para conjuntos profissionais de categorias de produtos](./assets/product-category-segmentation-subevents.png)
 
 Como resultado, todos os pedidos contendo pelo menos **[!UICONTROL Conjuntos Profissionais]** **[!UICONTROL product_category]** são considerados, e somente a receita de produtos pertencentes a **[!UICONTROL Conjuntos Profissionais]** **[!UICONTROL product_category]** são incluídos na métrica **[!UICONTROL Receita]**.
 Ao relatar categorias, somente os **[!UICONTROL Conjuntos Profissionais]** **[!UICONTROL product_category]** serão relatados.

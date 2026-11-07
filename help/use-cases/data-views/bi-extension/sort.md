@@ -26,7 +26,7 @@ role_v2:
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '738'
 ht-degree: 1%
@@ -215,7 +215,7 @@ GROUP BY 1
       1. Selecione **[!UICONTROL Decimais]** no menu suspenso **[!UICONTROL Formatar]** e verifique se `0` está inserido em **[!UICONTROL Decimais]**.
          ![Campo de métrica personalizado do pesquisador](../assets/uc5-looker-customfield.png)
       1. Selecione **[!UICONTROL Salvar]**.
-1. Selecione **&#x200B;**&#x200B;(**[!UICONTROL Decrescente, Ordem de classificação: 1]**) na coluna **[!UICONTROL Receita de compra]**.
+1. Selecione **** (**[!UICONTROL Decrescente, Ordem de classificação: 1]**) na coluna **[!UICONTROL Receita de compra]**.
 1. Selecione **[!UICONTROL Executar]**.
 1. Selecione **[!UICONTROL ‣ Visualização]**.
 
@@ -260,7 +260,7 @@ FETCH NEXT 500 ROWS ONLY
 
    ![Resultados do Jupyter Notebook](../assets/uc11-jupyter-results.png)
 
-A consulta é executada pela extensão BI, conforme definido no Jupyter Notebook.
+A consulta é executada pela extensão BI conforme definido no Jupyter Notebook.
 
 
 >[!TAB RStudio]

@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Implementation
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '1129'
-ht-degree: 100%
+ht-degree: 99%
 ---
 # Visão geral da assimilação de dados
 
@@ -137,5 +137,5 @@ Consulte [Assimilar e usar dados ad hoc](./adhoc.md)
 
 >[!MORELIKETHIS]
 >
->Blog: [Análise detalhada do processamento e da assimilação de dados no Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-closer-look-at-data-processing-amp-ingestion-in-adobe-customer/ba-p/665091?profile.language=pt)
+>Blog: [Análise detalhada do processamento e da assimilação de dados no Adobe Customer Journey Analytics](https://experienceleaguecommunities.adobe.com/t5/adobe-analytics-blogs/a-closer-look-at-data-processing-amp-ingestion-in-adobe-customer/ba-p/665091)
 

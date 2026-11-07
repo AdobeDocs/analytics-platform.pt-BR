@@ -30,10 +30,10 @@ topic_v2:
     internal-label: Governance
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '212'
-ht-degree: 93%
+ht-degree: 90%
 ---
 # Falta de permissões
 
@@ -56,7 +56,7 @@ Por exemplo, depois de criar uma [Conexão](../connections/overview.md) e uma�
    * Você deve ser um usuário no perfil de produto “Todos os usuários da AEP padrão”. Pergunte ao administrador se você não tem permissões para adicionar a si mesmo a este perfil. Consulte [Hierarquia e fluxo de trabalho de controle de acesso](https://experienceleague.adobe.com/pt-br/docs/experience-platform/access-control/home#access-control-hierarchy-and-workflow) para obter mais informações.
 
 
-1. Acesse a interface da Adobe Experience Platfom.
+1. Navegue até a interface do Adobe Experience Platform.
 
 1. Selecione **[!UICONTROL Permissões]** no painel esquerdo.
 

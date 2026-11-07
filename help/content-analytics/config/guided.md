@@ -38,7 +38,7 @@ topic_v2:
     internal-label: Data management
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 80d2b7da2e2b6c12a44d7e9bffd821e58dbeeecc
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '4894'
 ht-degree: 55%
@@ -395,7 +395,7 @@ Para o canal Web, você pode configurar [captura e definição de experiência](
 >id="aca_onboarding_datacollection_button"
 >title="Coleção de dados"
 >abstract="Defina qual propriedade de tags você deseja usar ou crie uma nova. Defina também as páginas e os ativos que deseja incluir ou excluir usando expressões regulares.<br/>Para uma implementação independente de tags, selecione **[!UICONTROL Criar novo]**.  É criada uma propriedade Tags, mas você não é obrigado a usá-la."
->additional-url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/content-analytics/configuration/tags-agnostic" text="Biblioteca JavaScript do Content Analytics"
+>additional-url="https://experienceleague.adobe.com/en/docs/analytics-platform/using/content-analytics/configuration/tags-agnostic" text="Biblioteca JavaScript do Content Analytics"
 
 
 >[!CONTEXTUALHELP]
