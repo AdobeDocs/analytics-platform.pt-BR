@@ -286,7 +286,7 @@ Para implementar o código em seu site para realmente coletar dados, use o recur
 
    Nomeie a tag, selecione **[!UICONTROL Web]** e insira um nome de domínio. Selecione **[!UICONTROL Salvar]** para continuar.
 
-   ![Criar uma propriedade da ](./assets/create-property.png)
+   ![Criar uma propriedade da &#x200B;](./assets/create-property.png)
 
 ### Configurar sua tag
 

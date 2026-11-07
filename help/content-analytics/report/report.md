@@ -219,7 +219,7 @@ Para usar o modelo:
 
 1. Selecione **[!UICONTROL Espaço de trabalho]** no menu principal.
 1. Verifique se você selecionou uma visualização de dados configurada para o Content Analytics.
-1. Procure ou use segmentos (**[!UICONTROL Web]** para **[!UICONTROL Canal]** e **[!UICONTROL Envolvimento]** para **[!UICONTROL Caso de Uso]**s) para localizar e selecionar o modelo **[!UICONTROL Content Analytics de mídia paga]**.
+1. Procure ou use segmentos (**[!UICONTROL Web]** para **[!UICONTROL Canal]** e **[!UICONTROL Envolvimento]** para **[!UICONTROL Caso de Uso]**&#x200B;s) para localizar e selecionar o modelo **[!UICONTROL Content Analytics de mídia paga]**.
 1. Selecione **[!UICONTROL Usar modelo]**.
 
 Um projeto **[!UICONTROL Content Analytics - Dados de Resumo de Mídia Paga]** é aberto no [Analysis Workspace](/help/analysis-workspace/home.md). O projeto consiste no **[!UICONTROL Desempenho de Mídia Paga]** [painel](/help/analysis-workspace/c-panels/panels.md), com [tabelas de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) e [visualizações](/help/analysis-workspace/visualizations/freeform-analysis-visualizations.md). Use o painel para analisar o alcance, o engajamento, os gastos e a eficiência da mídia paga em redes, contas, campanhas, experiências e ativos. As métricas e dimensões no painel permanecem intencionalmente na estrutura de resumo de ativos de mídia paga; não combine conjuntos de dados de resumo com dados do evento.

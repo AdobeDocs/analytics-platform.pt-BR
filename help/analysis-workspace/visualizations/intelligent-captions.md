@@ -58,7 +58,7 @@ Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Legendas 
 
 Para iniciar legendas inteligentes geradas automaticamente em uma visualização, selecione ![Legendas inteligentes](/help/assets/icons/AI.svg) na parte superior direita da visualização. Essa seleção gera insights de linguagem natural.
 
-![Inicie a janela de análise mostrando as legendas inteligentes para tendências de exibições de produtos. ](assets/intelligent-captions.gif)
+![Inicie a janela de análise mostrando as legendas inteligentes para tendências de exibições de produtos. &#x200B;](assets/intelligent-captions.gif)
 
 
 Lembre-se:
