@@ -37,7 +37,7 @@ topic_v2:
     internal-label: Implementation
   - id: beb7a3c1-66ab-4786-b879-7621375b3c40
     internal-label: Email marketing
-source-git-commit: 58ed911b3d2c719dd05082c463fe66403e207ef9
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '10578'
 ht-degree: 98%
@@ -649,14 +649,14 @@ Você define um campo derivado de `Product Finding Methods (new)`. Você cria as
 
 ## Caso de uso 3 {#casewhen-uc3}
 
-Trabalhando para uma agência de viagens, você gostaria de medir a duração do percurso para viagens reservadas, para poder relatar a duração dos percursos por período.
+Sendo uma agência de viagens, você gostaria de agrupar viagens reservadas em buckets por duração de viagem, para poder fazer um relatório das durações de viagens agrupadas em buckets.
 
 Suposições:
 
 - A organização está coletando a duração do percurso em um campo numérico.
-- Ela gostaria de agrupar durações de um a três dias em um compartimento chamado “[!DNL short trip]”
-- Ela gostaria de agrupar durações de quatro a sete dias em um compartimento chamado “[!DNL medium trip]”
-- Eles gostariam de agrupar mais de oito dias em um compartimento chamado “[!DNL long trip]”
+- A agência gostaria de agrupar durações de um a três dias em um bucket chamado “[!DNL short trip]”
+- A agência gostaria de agrupar durações de quatro a sete dias em um bucket chamado “[!DNL medium trip]”
+- A agência gostaria de agrupar durações de mais de oito dias em um bucket chamado “[!DNL long trip]”
 - 132 viagens foram reservadas por um período de um dia
 - 110 viagens foram reservadas por um período de dois dias
 - 105 viagens foram reservadas por um período de três dias
@@ -699,7 +699,7 @@ O relatório desejado deve ficar assim:
 
 ### Campo derivado {#casewhen-uc3-derivedfield}
 
-Você define um campo derivado de `Trip Duration (bucketed)`. Você cria a seguinte regra [!UICONTROL CASE WHEN] no construtor de regras. Essa regra aplica a lógica para agrupar os antigos valores do campo [!UICONTROL Duração da viagem] em três valores: `short trip`, `medium  trip` e `long trip`.
+Você define um campo derivado de `Trip Duration (bucketed)`. Você cria a seguinte regra [!UICONTROL CASE WHEN] no construtor de regras. Essa regra aplica a lógica para agrupar em buckets os antigos valores do campo [!UICONTROL Duração da viagem] em três valores: `short trip`, `medium  trip` e `long trip`.
 
 ![Captura de tela da regra “case when” 3](assets/case-when-3.png)
 

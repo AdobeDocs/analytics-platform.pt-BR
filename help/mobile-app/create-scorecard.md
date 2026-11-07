@@ -35,9 +35,9 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
     internal-label: Reporting
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
-source-wordcount: '2770'
+source-wordcount: '2771'
 ht-degree: 95%
 ---
 # Criar um cartão de pontuação para dispositivos móveis {#create-a-mobile-scorecard}
@@ -57,7 +57,7 @@ As informações a seguir instruem os curadores de dados do Customer Journey Ana
 
 >[!BEGINSHADEBOX]
 
-Confira ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Criar um cartão de pontuação móvel](https://experienceleague.adobe.com/pt-br/docs/customer-journey-analytics-learn/tutorials/dashboards/create-a-mobile-scorecard){target="_blank"} para ver um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Criar um cartão de pontuação móvel](https://experienceleague.adobe.com/pt-br/docs/customer-journey-analytics-learn/tutorials/dashboards/create-a-mobile-scorecard){target="_blank"} para ver um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 

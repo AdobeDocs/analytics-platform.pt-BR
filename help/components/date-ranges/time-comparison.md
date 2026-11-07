@@ -21,13 +21,11 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: a4b5baeec55de64b1fbaf009b9da34c93cf12f24
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
-source-wordcount: 798
-ht-degree: 75%
-
+source-wordcount: '798'
+ht-degree: 73%
 ---
-
 # Comparação de datas
 
 A comparação de datas no Analysis Workspace permite pegar qualquer coluna contendo um intervalo de datas e criar uma comparação de data comum, como: ano a ano, trimestre a trimestre, mês a mês e assim por diante.
@@ -91,7 +89,7 @@ Agora é possível adicionar um período a cada coluna na tabela. Isso permite a
 
 1. O período é inserido acima da coluna selecionada:
 
-   ![Tabela de forma livre com as ocorrências do período atual do calendário e do mês anterior.](assets/add-time-period-column2.png)
+   ![Tabela de forma livre que mostra as Ocorrências do período atual do calendário e do mês anterior.](assets/add-time-period-column2.png)
 
 1. É possível adicionar quantas colunas desejar, assim como misturar e correlacionar diferentes intervalos de data:
 

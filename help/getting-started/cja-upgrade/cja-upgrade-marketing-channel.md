@@ -27,7 +27,7 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '291'
 ht-degree: 100%
@@ -38,7 +38,7 @@ ht-degree: 100%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-marketing-channel"
->title="Criar um campo derivado de canal de marketing"
+>title="Criar um canal de marketing de campo derivado"
 >abstract="Campos derivados são criados em uma visualização de dados.<br><br>O uso de uma configuração de canal de marketing padrão leva apenas alguns minutos, mas criar uma configuração de canal de marketing altamente personalizada pode levar várias horas."
 
 <!-- markdownlint-enable MD034 -->

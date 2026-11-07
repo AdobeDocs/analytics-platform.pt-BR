@@ -32,16 +32,16 @@ topic_v2:
     internal-label: Reporting
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '1338'
-ht-degree: 64%
+ht-degree: 63%
 ---
 # Compare o processamento de dados do Adobe Analytics e do Customer Journey Analytics
 
 Geralmente, é necessário ter a capacidade de processar dados antes que sejam úteis para os relatórios. Você pode processar esses dados em vários estágios na jornada, desde a coleta de dados até a geração do relatório ou da visualização.
 
-No Adobe Analytics, a maior parte desse processamento de dados ocorre imediatamente após a coleta dos dados. Funcionalidades como as regras VISTA, regras de processamento e regras de processamento de canais de marketing estão disponíveis para permitir esse **processamento durante a coleta**.
+No Adobe Analytics, a maior parte desse processamento de dados ocorre imediatamente após a coleta dos dados. Funcionalidades como Regras VISTA, Regras de processamento, Regras de processamento de canais de marketing estão disponíveis para dar suporte a este **processamento de tempo de coleta**.
 Os dados são armazenados e, ao criar o relatório, é possível aplicar processamento adicional. Por exemplo: detalhar dimensões, aplicar segmentações ou selecionar um modelo de atribuição diferente. Este **processamento durante o relatório** acontece em tempo real.
 
 No Adobe Analytics, o processamento durante o relatório geralmente é mais curto do que o realizado durante a coleta.
@@ -72,7 +72,7 @@ A tabela abaixo define a terminologia dos diferentes tipos de lógica de process
 | Lógica de segmento | Avaliação das regras de segmento de evento/visita/pessoa (evento/sessão/pessoa). | Exemplo: pessoas que compraram sapatos vermelhos. |
 | Métricas calculadas | Avaliação de métricas personalizadas criadas pelo cliente. As métricas calculadas podem ser baseadas em fórmulas complexas, incluindo segmentos. | Por exemplo, o número de pessoas que compraram sapatos vermelhos. |
 | Lógica de atribuição | Lógica para calcular atribuição. | Exemplo: persistência do eVar. |
-| Configurações de componente | Aplicação de personalizações a métricas ou dimensões, como atribuição, comportamento, formato e outros | Exemplo: classificação de valor para combinar valores numéricos com base em um intervalo |
+| Configurações de componente | Aplicação de personalizações a métricas ou dimensões, como atribuição, comportamento, formato e outros | Exemplo: agrupamento de valores em buckets para combinar valores numéricos com base em um intervalo |
 | Campos derivados | Lógica que se aplica ao esquema ou aos campos padrão como parte da definição de componentes em uma visualização de dados. | Exemplo: criação de uma nova dimensão de canal de marketing |
 
 {style="table-layout:auto"}

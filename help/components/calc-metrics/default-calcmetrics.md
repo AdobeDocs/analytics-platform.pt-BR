@@ -23,10 +23,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: cd12bd7f6943be6c58694af1374d32a1639d1578
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '549'
-ht-degree: 83%
+ht-degree: 80%
 ---
 # Modelos de métricas calculadas
 
@@ -44,7 +44,7 @@ O Customer Journey Analytics fornece os seguintes modelos de métricas calculada
 | **[!UICONTROL Taxa de sessão multicanal]** | A proporção de sessões que incluíram vários canais (como tráfego na web e tráfego móvel), em comparação com às que incluíram apenas um canal. |
 | **[!UICONTROL Taxa de pessoa multicanal]** | A proporção de pessoas que participaram de vários canais em comparação às que participaram apenas de um canal. |
 | **[!UICONTROL Sessões de aplicativo móvel]** | O número de sessões que ocorreram no aplicativo móvel. |
-| **[!UICONTROL Sessões de canal cruzado da Web+Aplicativo]** | O número de sessões que ocorreram e que incluíram tráfego na web e tráfego móvel. |
+| **[!UICONTROL Sessões de canal cruzado da Web+Aplicativo]** | O número de sessões que ocorreram e que incluíram tráfego da Web e tráfego móvel. |
 | **[!UICONTROL Custo de chamadas]** | O custo total de chamadas para a central de atendimento. <!-- <p>Summary: Call length</p> --> |
 | **[!UICONTROL Duração média da chamada]** | A duração média das chamadas feitas para a central de atendimento. |
 | **[!UICONTROL Custo médio por chamada]** | O custo médio de chamadas feitas para a central de atendimento. |

@@ -37,10 +37,10 @@ topic_v2:
     internal-label: Data management
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '3765'
-ht-degree: 81%
+ht-degree: 77%
 ---
 # Extensão de BI do Customer Journey Analytics
 
@@ -48,7 +48,7 @@ ht-degree: 81%
 
 O [!DNL Customer Journey Analytics BI extension] habilita o acesso SQL às [visualizações de dados](./data-views.md) definidas no Customer Journey Analytics. Seus engenheiros(as) de dados e analistas podem estar mais familiarizados(as) com o Power BI, o Tableau Desktop ou outras ferramentas de business intelligence e visualização (mais conhecidas como ferramentas de BI). Agora é possível criar relatórios e painéis com base nas mesmas visualizações de dados que usuários(as) do Customer Journey Analytics usam para criar seus projetos do Analysis Workspace.
 
-O [Serviço de consultas](https://experienceleague.adobe.com/pt-br/docs/experience-platform/query/home) da Adobe Experience Platform é a interface SQL para dados disponíveis no data lake da Experience Platform. Com o [!DNL Customer Journey Analytics BI extension] habilitado, a funcionalidade de [!DNL Query Service] é estendida para ver suas visualizações de dados do Customer Journey Analytics como tabelas ou visualizações em uma sessão do [!DNL Query Service]. Como resultado, as ferramentas de business intelligence que usam o [!DNL Query Service] como interface PostgresSQL se beneficiam perfeitamente dessa funcionalidade estendida.
+O [Serviço de consultas](https://experienceleague.adobe.com/pt-br/docs/experience-platform/query/home) da Adobe Experience Platform é a interface SQL para dados disponíveis no data lake da Experience Platform. Com o [!DNL Customer Journey Analytics BI extension] habilitado, a funcionalidade de [!DNL Query Service] é estendida para ver suas visualizações de dados do Customer Journey Analytics como tabelas ou visualizações em uma sessão do [!DNL Query Service]. Como resultado, as ferramentas de business intelligence que usam o [!DNL Query Service] como interface PostgreSQL se beneficiam perfeitamente dessa funcionalidade estendida.
 
 Os principais benefícios são:
 
@@ -113,7 +113,7 @@ Para usar a funcionalidade [!DNL Customer Journey Analytics BI extension], você
 
 ### SQL
 
-É possível usar a funcionalidade diretamente em instruções do SQL usando o Editor de consultas ou um cliente de interface de linha de comando (CLI) PostgresSQL padrão.
+Você pode usar a funcionalidade diretamente em instruções SQL usando o Editor de consultas ou um cliente de interface de linha de comando (CLI) PostgreSQL padrão.
 
 +++ Editor de consultas
 
@@ -130,9 +130,9 @@ Na Adobe Experience Platform:
 +++
 
 
-+++ CLI do PostgresSQL
++++ CLI do PostgreSQL
 
-1. Procure e copie suas credenciais do PostgresSQL na Adobe Experience Platform:
+1. Procure e copie suas credenciais do PostgreSQL no Adobe Experience Platform:
 
    1. Selecione **[!UICONTROL ** Consultas **]** no painel esquerdo (em **[!UICONTROL **&#x200B; GERENCIAMENTO DE DADOS &#x200B;**]**).
 
@@ -157,7 +157,7 @@ Atualmente, o [!DNL Customer Journey Analytics BI extension] é compatível e te
 
 +++ Power BI
 
-1. Procure os detalhes de suas credenciais do PostgresSQL na Adobe Experience Platform:
+1. Pesquise os detalhes das credenciais do PostgreSQL no Adobe Experience Platform:
 
    1. Selecione **[!UICONTROL ** Consultas **]** no painel esquerdo (em **[!UICONTROL **&#x200B; GERENCIAMENTO DE DADOS &#x200B;**]**).
 
@@ -173,9 +173,9 @@ Atualmente, o [!DNL Customer Journey Analytics BI extension] é compatível e te
 
    1. Selecione **[!UICONTROL Mais...]** no painel esquerdo.
 
-   1. Na tela **Obter dados**, pesquise por `PostgresSQL` e selecione o **[!UICONTROL **&#x200B; Banco de dados PostgresSQL &#x200B;**]** na lista.
+   1. Na tela **Obter Dados**, pesquise por `PostgreSQL` e selecione o **[!UICONTROL **&#x200B; banco de dados PostgreSQL &#x200B;**]** na lista.
 
-   1. Na caixa de diálogo **[!UICONTROL **&#x200B; Banco de dados PostgressSQL &#x200B;**]**:
+   1. Na caixa de diálogo **[!UICONTROL **&#x200B; Banco de dados PostgreSQL &#x200B;**]**:
 
       1. Cole o parâmetro **[!UICONTROL ** Host **]** das [!UICONTROL Credenciais] de consultas da Experience Platform no campo de texto **[!UICONTROL **&#x200B; Servidor &#x200B;**]**.
 
@@ -200,7 +200,7 @@ Atualmente, o [!DNL Customer Journey Analytics BI extension] é compatível e te
 
 +++Tableau Desktop
 
-1. Procure os detalhes de suas credenciais do PostgresSQL na Adobe Experience Platform:
+1. Pesquise os detalhes das credenciais do PostgreSQL no Adobe Experience Platform:
 
    1. Selecione **[!UICONTROL ** Consultas **]** no painel esquerdo (em **[!UICONTROL **&#x200B; GERENCIAMENTO DE DADOS &#x200B;**]**).
 
@@ -214,9 +214,9 @@ Atualmente, o [!DNL Customer Journey Analytics BI extension] é compatível e te
 
    1. Selecione **[!UICONTROL ** Mais **]** em **[!UICONTROL **&#x200B; Para um servidor &#x200B;**]** no painel esquerdo.
 
-   1. Selecione **[!UICONTROL **&#x200B; PostgresSQL &#x200B;**]** na lista.
+   1. Selecione **[!UICONTROL **&#x200B; PostgreSQL &#x200B;**]** na lista.
 
-   1. Na caixa de diálogo [!UICONTROL PostgresSQL]:
+   1. No diálogo [!UICONTROL PostgreSQL]:
 
       1. Cole o parâmetro **[!UICONTROL ** Host **]** das [!UICONTROL Credenciais] de consultas da Experience Platform no campo de texto **[!UICONTROL **&#x200B; Servidor &#x200B;**]**.
 
@@ -246,7 +246,7 @@ Atualmente, o [!DNL Customer Journey Analytics BI extension] é compatível e te
 
 +++ Pesquisador
 
-1. Procure os detalhes de suas credenciais do PostgresSQL na Adobe Experience Platform:
+1. Pesquise os detalhes das credenciais do PostgreSQL no Adobe Experience Platform:
 
    1. Selecione **[!UICONTROL ** Consultas **]** no painel esquerdo (em **[!UICONTROL **&#x200B; GERENCIAMENTO DE DADOS &#x200B;**]**).
 
@@ -273,7 +273,7 @@ Atualmente, o [!DNL Customer Journey Analytics BI extension] é compatível e te
 
 +++ Jupyter Notebook
 
-1. Procure os detalhes de suas credenciais do PostgresSQL na Adobe Experience Platform:
+1. Pesquise os detalhes das credenciais do PostgreSQL no Adobe Experience Platform:
 
    1. Selecione **[!UICONTROL ** Consultas **]** no painel esquerdo (em **[!UICONTROL **&#x200B; GERENCIAMENTO DE DADOS &#x200B;**]**).
 
@@ -297,7 +297,7 @@ Atualmente, o [!DNL Customer Journey Analytics BI extension] é compatível e te
 
 +++ RStudio
 
-1. Procure os detalhes de suas credenciais do PostgresSQL na Adobe Experience Platform:
+1. Pesquise os detalhes das credenciais do PostgreSQL no Adobe Experience Platform:
 
    1. Selecione **[!UICONTROL ** Consultas **]** no painel esquerdo (em **[!UICONTROL **&#x200B; GERENCIAMENTO DE DADOS &#x200B;**]**).
 
@@ -355,7 +355,7 @@ Por padrão, o esquema das suas visualizações de dados usa estruturas aninhada
 
 ### Padrões e limitações
 
-Os seguintes padrões e limitações adicionais se aplicam ao uso da Extensão de BI:
+Os seguintes padrões e limitações adicionais se aplicam ao uso da Extensão BI:
 
 * A extensão de BI requer um limite de linha para os resultados da consulta. O padrão é 50, mas você pode substituí-lo no SQL usando `LIMIT n`, onde `n` é 1 - 50000.
 * A extensão de BI requer um intervalo de datas para limitar as linhas usadas para cálculos. O padrão é os últimos 30 dias, mas é possível substituí-lo na cláusula `WHERE` do SQL usando as colunas especiais [`timestamp`](#timestamp) ou [`daterange`](#date-range).

@@ -31,9 +31,9 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
-source-wordcount: '1680'
+source-wordcount: '1679'
 ht-degree: 14%
 ---
 # Ingerir e usar públicos-alvo da Experience Platform
@@ -363,7 +363,7 @@ Na interface da Experience Platform:
    1. (opcional) Insira uma **[!UICONTROL Descrição]**.
    1. Selecione **[!UICONTROL Concluir]**.
 1. Configure seu esquema para conter um grupo de campos personalizado (chamado, por exemplo, **[!UICONTROL Associação de público-alvo]**) que contém dois campos chamados **[!UICONTROL audienceMembershipId]** e **[!UICONTROL audienceMembershipName]**.
-1. Verifique se o campo **[!UICONTROL personID]** é uma **[!UICONTROL Identidade]**, **[!UICONTROL Identidade primária]** e se tem **[!UICONTROL Email]** como o I&#x200B;**[!UICONTROL namespace de identidade]**.
+1. Verifique se o campo **[!UICONTROL personID]** é uma **[!UICONTROL Identidade]**, **[!UICONTROL Identidade primária]** e se tem **[!UICONTROL Email]** como o **[!UICONTROL Namespace de identidade]**.
 
    ![Segmento para exportação](assets/segment-for-export.png)
 

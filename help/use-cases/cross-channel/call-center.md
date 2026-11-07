@@ -29,7 +29,7 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 88%
@@ -133,11 +133,11 @@ Você pode obter insights sobre o que um cliente estava tentando fazer antes de 
 
 ### Histograma
 
-Quantos clientes ligaram uma vez, duas vezes ou mais de 6 vezes? Algumas dessas pessoas nunca visitam o site. Use a visualização do histograma para determinar quantas pessoas se encaixam em cada grupo. Para pessoas que nunca visitam o site, veja como incentivá-las a usar o autoatendimento.
+Quantos clientes ligaram uma vez, duas vezes ou mais de 6 vezes? Algumas dessas pessoas nunca visitam o site. Use a visualização de histograma para determinar quantas pessoas se encaixam em cada bucket. Para pessoas que nunca visitam o site, veja como incentivá-las a usar o autoatendimento.
 
 1. Clique na guia **[!UICONTROL Visualizações]** à esquerda e arraste uma visualização de histograma para a tela do espaço de trabalho.
 2. Clique na guia **[!UICONTROL Componentes]** à esquerda e arraste a métrica de chamadas para a visualização do histograma.
-3. Clique em **[!UICONTROL Mostrar configurações avançadas]** no centro da visualização e personalize os segmentos desejados.
+3. Clique em **[!UICONTROL Mostrar configurações avançadas]** no centro da visualização e personalize os buckets desejados.
 4. Clique em **[!UICONTROL Criar]**.
 
 <!--
@@ -163,7 +163,7 @@ Slide 4
 
 Create a bunch of segments - facets to their business. Segments were used because they didn't have all of these in the same dimension, so they could create everything in this report as a single dimension (really segments)
 
-wanted to understand when someone interacts with a facet, whats the highest percentage of people that abandon that channel to call them. not from volume perspective, but percentage perspective.
+wanted to understand when someone interacts with a facet, what's the highest percentage of people that abandon that channel to call them. not from volume perspective, but percentage perspective.
 
 use sequential segments, but you lose the ability to use attribution IQ
 

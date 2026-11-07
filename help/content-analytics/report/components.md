@@ -29,10 +29,10 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: fec14c8ed1f94e16423682a165198dbda760f78d
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '1943'
-ht-degree: 58%
+ht-degree: 57%
 ---
 
 # Componentes do Content Analytics
@@ -73,7 +73,7 @@ Nas tabelas abaixo, ![gerado por IA](/help/assets/icons/AI.svg) indica um par 
 | Título | Descrição | Tipo |
 |---|---|---|
 | Atributos da experiência | ![Gerado por IA](/help/assets/icons/AI.svg) Lista completa de todos os nomes e valores do atributo de experiência | Campo derivado da dimensão<br> |
-| Pontuação de legibilidade da experiência | ![Gerado por IA](/help/assets/icons/AI.svg) Pontuação de legibilidade da experiência | Dimensão |
+| Pontuação de legibilidade da experiência | ![IA gerada](/help/assets/icons/AI.svg) Pontuação de legibilidade da experiência | Dimensão |
 | Palavras-chave da experiência | ![Gerado por IA](/help/assets/icons/AI.svg) Palavras-chave da experiência. | Campo derivado da dimensão<br> |
 | Estratégias de persuasão da experiência | ![Gerado por IA](/help/assets/icons/AI.svg)  Estratégias de persuasão que estão presentes na experiência dada. Os valores possíveis são: Identidade social, Prova social, Autoridade, Concretização, Pé na porta, Superação da reatância, Reciprocidade, Ancoragem e Comparação, Impacto social, Escassez e Antropomorfismo. | Campo derivado da dimensão<br/> |
 | Narrativas da experiência | ![Gerado por IA](/help/assets/icons/AI.svg) Narrativas que a experiência está criando com base na relevância do ponto de vista de um(a) profissional de marketing. | Campo derivado da dimensão<br/> |

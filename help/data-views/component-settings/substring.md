@@ -22,13 +22,11 @@ role_v2:
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 28959f1ea858dee686e6d13025621c4a6164c319
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
-source-wordcount: 955
+source-wordcount: '955'
 ht-degree: 91%
-
 ---
-
 # Configurações do componente de substring {#substring-component-settings}
 
 <!-- markdownlint-disable MD034 -->
@@ -55,9 +53,9 @@ Pegue uma parte de uma string com base em sua posição no início ou no fim de 
 * **[!UICONTROL Fim da string]**: o fim da string.
 * **[!UICONTROL Posição]**: um número estático de caracteres da esquerda ou direita, dependendo do método.
 * **[!UICONTROL String]**: corresponder a um caractere ou sequência de caracteres para indicar o início ou o fim de uma string. Esse menu suspenso também revela opções adicionais:
-   * **[!UICONTROL Corresponder]**: a string que será correspondida. Se a entrada não tiver correspondência com esse campo, [Nenhuma opção de valor](no-value-options.md) será aplicada.
-   * **[!UICONTROL Índice]**: o critério **[!UICONTROL Corresponder]** pode ser apresentado várias vezes em uma string. Esse número inteiro determina qual correspondência deve iniciar ou finalizar a saída, dependendo do método. Por exemplo, um índice de `1` representa a primeira correspondência. Se o índice for superior ao número de correspondências disponíveis, [Nenhuma opção de valor](no-value-options.md) será aplicada.
-   * **[!UICONTROL Incluir string]**: uma caixa de seleção que inclui a string **[!UICONTROL Corresponder]** na saída, se habilitada.
+  * **[!UICONTROL Corresponder]**: a string que será correspondida. Se a entrada não tiver correspondência com esse campo, [Nenhuma opção de valor](no-value-options.md) será aplicada.
+  * **[!UICONTROL Índice]**: o critério **[!UICONTROL Corresponder]** pode ser apresentado várias vezes em uma string. Esse número inteiro determina qual correspondência deve iniciar ou finalizar a saída, dependendo do método. Por exemplo, um índice de `1` representa a primeira correspondência. Se o índice for superior ao número de correspondências disponíveis, [Nenhuma opção de valor](no-value-options.md) será aplicada.
+  * **[!UICONTROL Incluir string]**: uma caixa de seleção que inclui a string **[!UICONTROL Corresponder]** na saída, se habilitada.
 * **[!UICONTROL Comprimento]**: um número inteiro que especifica a contagem de caracteres a ser incluída após a posição inicial da saída. Disponível somente no menu suspenso **[!UICONTROL Para]**.
 
 ## Delimitador
@@ -65,9 +63,9 @@ Pegue uma parte de uma string com base em sua posição no início ou no fim de 
 Use esse método para campos que usam um delimitador para separar vários valores de string. Você pode extrair um elemento individual para usar como saída ou converter a string em um elemento de esquema da matriz de objetos.
 
 * **[!UICONTROL Critério]**: como você deseja tratar a lista delimitada de valores.
-   * **[!UICONTROL Da Esquerda]**: comece a partir do início da lista delimitada e conte para a frente.
-   * **[!UICONTROL Da direita]**: comece no final da lista delimitada e conte para trás.
-   * **[!UICONTROL Converter em matriz]**: trate essa dimensão como se fosse um elemento de esquema da matriz de objetos. A dimensão se torna disponível como um [contêiner personalizado](/help/data-views/create-dataview.md#containers-1) que pode ser selecionado na visualização de dados e usado para a [análise de subeventos](/help/components/segments/sub-event.md) em um projeto de espaço de trabalho.
+  * **[!UICONTROL Da Esquerda]**: comece a partir do início da lista delimitada e conte para a frente.
+  * **[!UICONTROL Da direita]**: comece no final da lista delimitada e conte para trás.
+  * **[!UICONTROL Converter em matriz]**: trate essa dimensão como se fosse um elemento de esquema da matriz de objetos. A dimensão se torna disponível como um [contêiner personalizado](/help/data-views/create-dataview.md#containers-1) que pode ser selecionado na visualização de dados e usado para a [análise de subeventos](/help/components/segments/sub-event.md) em um projeto de espaço de trabalho.
 * **[!UICONTROL Delimitador]**: o delimitador usado pelo campo.
 * **[!UICONTROL Índice]**: presente somente se o critério for Da esquerda/direita. O número do elemento como se ele estivesse em uma matriz. Por exemplo, se a entrada da string for `"Fox,Turtle,Rabbit,Wolf"` com um índice de 3, a saída é `"Rabbit"`. Se o índice for maior que o número de elementos delimitados, [Nenhuma opção de valor](no-value-options.md) será aplicada.
 

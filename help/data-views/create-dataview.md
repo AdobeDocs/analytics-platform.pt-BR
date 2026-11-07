@@ -41,7 +41,7 @@ topic_v2:
     internal-label: Governance
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: f886069ac388da7985beac80cdaaa7bd0a506439
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '3192'
 ht-degree: 76%
@@ -172,7 +172,7 @@ Determina o nome dos containers para a visualização de dados. Os nomes dos con
 
 | Nome do container | Nome de exibição (padrão) | Descrição |
 | --- | --- | --- |
-| globalAccount | [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Conta Global &#x200B;]** | O container [!UICONTROL Conta global] inclui todas as sessões e eventos para contas globais no intervalo de tempo especificado. Se sua organização usa um termo diferente, é possível renomear o container aqui. |
+| globalAccount | [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Conta Global &#x200B;]** | O contêiner [!UICONTROL Conta Global] inclui todas as sessões e eventos para contas globais dentro do intervalo de tempo especificado. Se sua organização usa um termo diferente, é possível renomear o container aqui. |
 | pessoa | **[!UICONTROL Pessoa]** | O container [!UICONTROL Pessoa] inclui todas as sessões e eventos de pessoas dentro do intervalo de tempo especificado. Se sua organização usar um termo diferente (por exemplo, &quot;Visitante&quot; ou &quot;Usuário&quot;), você poderá renomear o container aqui. |
 | session | **[!UICONTROL Sessão]** | O container [!UICONTROL Sessão] permite identificar as interações de página, campanhas ou conversões de uma sessão específica. Você pode renomear o container como &quot;Visita&quot; ou com qualquer outro termo que desejar. |
 | oportunidade | [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}<br/>**[!UICONTROL Oportunidade &#x200B;]** | O container [!UICONTROL Oportunidade] inclui todas as sessões e eventos para oportunidades no intervalo de tempo especificado. Se sua organização usa um termo diferente, é possível renomear o container aqui. |

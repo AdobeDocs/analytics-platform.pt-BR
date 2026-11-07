@@ -19,10 +19,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '236'
-ht-degree: 65%
+ht-degree: 58%
 ---
 # Barra horizontal (empilhada)
 
@@ -46,7 +46,7 @@ A visualização da barra horizontal tem uma opção padrão e empilhada.
 <!-- markdownlint-enable MD034 -->
 
 
-A visualização ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) **[!UICONTROL Barra horizontal]** mostra barras horizontais que representam vários valores em uma ou mais métricas.
+A visualização ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) **[!UICONTROL Horizontal bar]** mostra barras horizontais que representam vários valores de uma ou mais métricas.
 
 ![Barra horizontal mostrando métricas incluindo exibições de página, velocidade de página, visitas, entradas e saídas.](assets/horizontal-bar.png)
 

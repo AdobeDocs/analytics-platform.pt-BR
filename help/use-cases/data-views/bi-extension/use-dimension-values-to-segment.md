@@ -26,7 +26,7 @@ role_v2:
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '798'
 ht-degree: 0%
@@ -121,7 +121,7 @@ O ![AlertRed](/help/assets/icons/AlertRed.svg) Tableau Desktop não oferece supo
    1. Na lista de campos, selecione **[!UICONTROL ‣ Categoria do Produto]**.
 1. Verifique se **[!UICONTROL é]** como a seleção do filtro.
 
-As Pesquisas de ![AlertRed](/help/assets/icons/AlertRed.svg) não mostram a lista de valores possíveis para **[!UICONTROL Categoria do Produto]**.
+O Pesquisador ![AlertRed](/help/assets/icons/AlertRed.svg) não mostra a lista de valores possíveis para **[!UICONTROL Categoria do Produto]**.
 
 ![Contagem distinta do pesquisador](../assets/uc10-looker-result.png)
 

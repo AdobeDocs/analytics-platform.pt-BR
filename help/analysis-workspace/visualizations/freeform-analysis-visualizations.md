@@ -25,7 +25,7 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 27b268c88c84b530d9fbbc454eae23cc43d4d041
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '2035'
 ht-degree: 78%
@@ -50,7 +50,7 @@ Os seguintes tipos de visualização estão disponíveis no Analysis Workspace:
 | ![ConversionFunnel](/help/assets/icons/ConversionFunnel.svg) | [Fallout](/help/analysis-workspace/visualizations/fallout/fallout-flow.md) | Uma visualização de fallout mostra onde os visitantes saíram e onde continuaram em uma sequência predefinida de páginas. |
 | ![GraphPathing](/help/assets/icons/GraphPathing.svg) | [Fluxo](/help/analysis-workspace/visualizations/c-flow/flow.md) | Uma visualização de fluxo mostra os caminhos percorridos pelos clientes nos seus sites e aplicativos. |
 | ![ViewTable](/help/assets/icons/ViewTable.svg)</p> | [Tabela de forma livre](/help/analysis-workspace/visualizations/freeform-table/freeform-table.md) | Uma visualização de tabela de forma livre é uma visualização interativa. A visualização de tabela de forma livre é a base para a análise de dados no Workspace. |
-| ![GraphHistogram](/help/assets/icons/Histogram.svg) | [Histograma](/help/analysis-workspace/visualizations/histogram.md) | Uma visualização de histograma agrupa pessoas, visitas ou eventos em compartimentos com base no volume de uma métrica. |
+| ![GraphHistogram](/help/assets/icons/Histogram.svg) | [Histograma](/help/analysis-workspace/visualizations/histogram.md) | Uma visualização de histograma agrupa pessoas, visitas ou eventos em buckets com base no volume de uma métrica. |
 | ![GraphBarHorizontal](/help/assets/icons/GraphBarHorizontal.svg) | [Barra horizontal](/help/analysis-workspace/visualizations/horizontal-bar.md) | Uma visualização de barras horizontais mostra barras horizontais que representam vários valores de uma ou mais métricas. |
 | ![GraphBarHorizontalStacked](/help/assets/icons/GraphBarHorizontalStacked.svg) | [Barra horizontal empilhada](/help/analysis-workspace/visualizations/horizontal-bar.md) | Uma visualização de barras horizontais empilhadas mostra barras horizontais que representam vários valores de uma ou mais métricas. |
 | ![Branch3](/help/assets/icons/Branch3.svg) | [Tela da jornada](/help/analysis-workspace/visualizations/journey-canvas/journey-canvas.md) | Uma visualização da tela da jornada ajuda a analisar e obter insights sobre as jornadas que você fornece aos usuários e clientes. |
@@ -105,7 +105,7 @@ Quando você adiciona uma visualização simples, por exemplo, uma visualizaçã
 * Para revelar uma visualização recolhida, selecione ![ChevronLeft](/help/assets/icons/ChevronLeft.svg).
 * Para excluir uma visualização, selecione ![CrossSize400](/help/assets/icons/CrossSize400.svg). Para desfazer a ação, selecione **[!UICONTROL Editar]** > **[!UICONTROL Desfazer]** (**[!UICONTROL *cmd+z *]**|**[!UICONTROL * ctrl+z *]**).
 * Para retornar uma visualização à altura padrão, selecione ![ImageResize](/help/assets/icons/Resize.svg).
-* Para mover uma visualização dentro de um painel, arraste-a e solte-a sempre que um ![Mover](/help/assets/icons/Move.svg) estiver visível (normalmente quando você passa o mouse sobre o cabeçalho).
+* Para mover uma visualização em um painel, arraste-a e solte-a sempre que um ![Mover](/help/assets/icons/Move.svg) estiver visível (geralmente quando você passa o mouse sobre o cabeçalho).
 
 
 

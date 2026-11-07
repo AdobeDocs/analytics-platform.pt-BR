@@ -26,7 +26,7 @@ role_v2:
 topic_v2:
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '2013'
 ht-degree: 10%
@@ -327,7 +327,7 @@ O pesquisador dá suporte aos seguintes cenários para o parâmetro `FLATTEN`. C
    ORDER BY 1,2;
    ```
 
-   Execute o shell. Você deve ver a saída simular na captura de tela abaixo.
+   Execute o shell. Você deve ver uma saída semelhante à captura de tela abaixo.
 
    ![Etapa 5](../assets/jupyter-config-step3.png) da Configuração do Jupyter Notebook
 
@@ -415,7 +415,7 @@ O Jupyter Notebook dá suporte aos seguintes cenários para o parâmetro `FLATTE
    glimpse(dv)
    ```
 
-1. Execute o pedaço. Você deve ver a saída simular na captura de tela abaixo.
+1. Execute o pedaço. Você deve ver uma saída semelhante à captura de tela abaixo.
 
    ![Etapa 2](../assets/rstudio-config-step2.png) da configuração do Studio
 

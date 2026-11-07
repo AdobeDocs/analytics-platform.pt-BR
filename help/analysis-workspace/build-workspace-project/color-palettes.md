@@ -17,13 +17,11 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 8a3e3079823883d40e596680f860f8036a86baa2
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
-source-wordcount: 219
-ht-degree: 91%
-
+source-wordcount: '219'
+ht-degree: 87%
 ---
-
 # Paletas de cores de visualização {#visualization-color-palettes}
 
 <!-- markdownlint-disable MD034 -->
@@ -47,7 +45,7 @@ ht-degree: 91%
 Lembre-se:
 
 * Há seis paletas de cores predefinidas para escolher. A paleta padrão e a segunda listada foram otimizadas para obter o melhor contraste e são mais acessíveis para daltônicos.
-* As outras paletas foram otimizadas para aprimorar a harmonia de cores.
+* As outras paletas foram otimizadas para harmonia de cores.
 
 ## Para alterar a paleta de cores:
 

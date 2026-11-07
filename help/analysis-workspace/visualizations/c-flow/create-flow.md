@@ -25,10 +25,10 @@ topic_v2:
     internal-label: Reporting
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '1852'
-ht-degree: 80%
+ht-degree: 79%
 ---
 # Configurar uma visualização de fluxo {#configure-a-flow-visualization}
 
@@ -152,7 +152,7 @@ Suponhamos que você queira rastrear o caminho que os usuários percorreram para
 
 Um resumo da configuração de fluxo é exibido na parte superior das visualizações. Os caminhos no diagrama são proporcionais. Caminhos com mais atividade parecem mais grossos.
 
-![Exemplo de saída de fluxo mostrando a configuração Termina com Visitas, Dimensão de definição de caminho: Página e Container de fluxo: visitantes.](assets/flow-output.png)
+![Exemplo de saída de fluxo mostrando Termina com Visitas, Dimensão de definição de caminho: Página e Contêiner de fluxo: Visitantes.](assets/flow-output.png)
 
 Para detalhar ainda mais os dados, você tem várias opções:
 

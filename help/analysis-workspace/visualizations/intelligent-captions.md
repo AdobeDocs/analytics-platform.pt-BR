@@ -27,10 +27,10 @@ topic_v2:
     internal-label: Customer journeys
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: ff8dd2ce69882beaf23249929b0a3803dbec3550
+source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
 workflow-type: tm+mt
 source-wordcount: '802'
-ht-degree: 100%
+ht-degree: 98%
 ---
 # Legendas inteligentes {#intelligent-captions}
 
@@ -58,7 +58,7 @@ Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Legendas 
 
 Para iniciar legendas inteligentes geradas automaticamente em uma visualização, selecione ![Legendas inteligentes](/help/assets/icons/AI.svg) na parte superior direita da visualização. Essa seleção gera insights de linguagem natural.
 
-![Inicie a janela de análise mostrando as legendas inteligentes para tendências de exibições de produtos. ](assets/intelligent-captions.gif)
+![Inicie a janela de análise mostrando as legendas inteligentes para tendências de exibições de produtos. &#x200B;](assets/intelligent-captions.gif)
 
 
 Lembre-se:
