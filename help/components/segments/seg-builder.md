@@ -25,10 +25,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: f886069ac388da7985beac80cdaaa7bd0a506439
+source-git-commit: 24613d361b6b3058b1c4911a9df3654da91b2c88
 workflow-type: tm+mt
-source-wordcount: '1978'
-ht-degree: 71%
+source-wordcount: '1962'
+ht-degree: 67%
 ---
 # Criar segmentos {#build-segments}
 
@@ -80,7 +80,7 @@ A caixa de diálogo **[!UICONTROL Construtor de segmentos]** é usada para cri
 
 ## Construtor de definições
 
-Use o construtor de definições para construir a definição de segmento. Nessa construção, você usa componentes, containers, operadores e lógica.
+Use o construtor de definições para construir a definição de segmento. Nessa construção, você usa componentes, contêineres, operadores e lógica.
 
 Você pode configurar o tipo e o escopo da sua definição:
 
@@ -88,6 +88,10 @@ Você pode configurar o tipo e o escopo da sua definição:
 1. Selecione o escopo da sua definição no menu suspenso **[!UICONTROL Incluir]** ou **[!UICONTROL Excluir]**: **[!UICONTROL Evento]**, **[!UICONTROL Sessão]**, **[!UICONTROL Pessoa]**, **[!UICONTROL Conta Global]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, **[!UICONTROL Conta]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, **[!UICONTROL Oportunidade]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"} ou **[!UICONTROL Compra Grupo]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}.
 
 É sempre possível alterar essas configurações posteriormente.
+
+>[!NOTE]
+>
+>A interface do construtor de segmentos não oferece suporte a todas as definições de segmento criadas por meio da [API](https://developer.adobe.com/cja-apis/docs/endpoints/segments/#create-a-segment). Esta página pode carregar sem sucesso ou gerar erros para esses segmentos.
 
 ### Componentes
 
@@ -111,7 +115,7 @@ Para adicionar um componente:
 
    Esta opção é exibida somente quando a [!UICONTROL **Pessoa**] é selecionada como o escopo (contêiner) da sua definição no menu suspenso **[!UICONTROL Incluir]** ou **[!UICONTROL Excluir]**.
 
-   **OBSERVAÇÃO**: esta funcionalidade está na fase de Teste Limitado da versão e pode ainda não estar disponível em seu ambiente. Essa observação será removida quando a funcionalidade estiver em disponibilidade geral. Para obter informações sobre o processo de lançamento do Customer Journey Analytics, consulte [Lançamentos de recursos do Customer Journey Analytics](/help/release-notes/releases.md).
+
 
 1. (Opcional) Modifique o operador padrão.
 
@@ -137,7 +141,7 @@ Para excluir um componente:
 * Para adicionar um componente existente ao container, arraste e solte o componente no container.
 * Para adicionar outro componente ao container, arraste e solte um componente do painel de componentes no container. Use a linha de inserção azul como guia.
 * Para adicionar outro componente fora do container, arraste e solte um componente do painel de componentes fora do container, mas dentro do container da definição principal. Use a linha de inserção azul como guia.
-* Para modificar a lógica entre componentes em um container, entre containers ou entre um container e um componente, selecione a opção  apropriada entre **[!UICONTROL E]**, **[!UICONTROL Ou]** e **[!UICONTROL Então]**. Ao selecionar Then, você transforma o segmento em um segmento sequencial. Veja [Criar segmento sequencial](seg-sequential-build.md) para mais informações.
+* Para modificar a lógica entre componentes, contêineres ou um contêiner e um componente, selecione o **[!UICONTROL And]**, **[!UICONTROL Or]**, **[!UICONTROL Then]** apropriado. Ao selecionar Then, você transforma o segmento em um segmento sequencial. Veja [Criar segmento sequencial](seg-sequential-build.md) para mais informações.
 * Para alternar o nível de contêiner, selecione ![Globo](/help/assets/icons/Globe.svg) **[!UICONTROL Conta Global]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, ![Conta](/help/assets/icons/Account.svg) **[!UICONTROL Conta]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, ![Oportunidade](/help/assets/icons/Opportunity.svg) **[!UICONTROL Oportunidade]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, ![Grupo de Compras](/help/assets/icons/BuyingGroup.svg) **[!UICONTROL Grupo de Compras]** [!BADGE B2B edition]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-overview/cja-b2b/cja-b2b-edition" newtab=true tooltip="Customer Journey Analytics B2B Edition"}, ![PáginaDaWeb](/help/assets/icons/WebPage.svg) **[!UICONTROL Evento]**, ![Visita](/help/assets/icons/Visit.svg) **[!UICONTROL Sessão]**, ![Usuário](/help/assets/icons/User.svg) **[!UICONTROL Pessoa]** ou ![Camada](/help/assets/icons/Layer.svg) **[!UICONTROL Objeto]**. Ao selecionar ![Camada](/help/assets/icons/Layer.svg) **[!UICONTROL Objeto]**, selecione o [contêiner personalizado](/help/data-views/create-dataview.md#containers-1) a ser usado. Por exemplo, Produtos ou Assets de conteúdo.
 
 Você pode usar a ![Configuração](/help/assets/icons/Setting.svg) de um container para realizar as seguintes ações:
@@ -163,7 +167,7 @@ Você pode criar segmentos que contêm intervalos de datas contínuos. Assim, é
 
 >[!BEGINSHADEBOX]
 
-Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Intervalos de datas contínuos em segmentos](https://experienceleague.adobe.com/pt-br/docs/analytics-learn/tutorials/components/segmentation/rolling-date-ranges-in-segments){target="_blank"} para assistir a um vídeo de demonstração.
+Consulte ![VideoCheckedOut](/help/assets/icons/VideoCheckedOut.svg) [Intervalos de datas contínuos em segmentos](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/components/segmentation/rolling-date-ranges-in-segments){target="_blank"} para assistir a um vídeo de demonstração.
 
 >[!ENDSHADEBOX]
 
@@ -203,7 +207,7 @@ Ou defina 52 segmentos: 50 segmentos para os estados dos EUA, um para celular e 
 
 
 
-Ao usar uma dimensão no Construtor de segmentos, você tem opções para especificar o modelo de atribuição para essa dimensão. O modelo de atribuição selecionado determina se os dados se qualificam para a condição especificada para o componente de dimensão.
+Ao usar uma dimensão no Construtor de segmentos, você tem a opção de especificar o modelo de atribuição dessa dimensão. O modelo de atribuição selecionado determina se os dados se qualificam para a condição especificada para o componente de dimensão.
 
 Selecione ![Configuração](/help/assets/icons/Setting.svg) dentro do componente de dimensão e escolha um dos modelos de atribuição na janela pop-up:
 
