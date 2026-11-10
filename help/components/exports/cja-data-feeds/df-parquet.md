@@ -14,7 +14,7 @@ role_v2:
     internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: bd396cb4909d131ed60c97e7101cf85946555e38
+source-git-commit: f77f416ad958b28a8489d7a6eb13100ba699236e
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 0%
@@ -35,7 +35,9 @@ O Parquet é mais adequado para a saída do feed de dados do que CSV, TSV ou JSO
 
 * **Campos aninhados**: Parquet representa campos aninhados, como uma lista de produtos, nativamente. CSV e TSV podem representá-los somente codificando-os em strings. Para obter mais informações, consulte [Componentes de subeventos em feeds de dados](/help/components/exports/cja-data-feeds/df-sub-event.md).
 
-* **Grandes exportações**: o Parquet geralmente reduz os custos de armazenamento e transferência. Também evita a análise de texto e a adivinhação de tipos ao carregar os dados.
+* **Esquema interno**: cada arquivo do Parquet armazena seu próprio esquema, incluindo nomes de colunas, tipos de dados e estruturas aninhadas. Como o esquema está no arquivo, o data warehouse pode criar tabelas diretamente dos arquivos. Você não precisa fornecer um arquivo de cabeçalho ou uma definição de esquema separados, e o data warehouse não precisa inferir tipos de dados.
+
+* **Grandes exportações**: o Parquet geralmente reduz os custos de armazenamento e transferência. Também evita a análise de texto ao carregar os dados.
 
 ## Como o Parquet se compara ao CSV, TSV e JSON
 
@@ -49,7 +51,6 @@ A tabela a seguir detalha as diferenças entre Parquet, CSV, TSV e JSON:
 
 | Característica | Parquet | CSV ou TSV | JSON |
 | --- | --- | --- | --- |
-| **Tamanho do arquivo** | Menor. A compactação é incorporada ao arquivo e as ferramentas descompactam somente as colunas lidas em uma consulta. | Maior. A compactação, como gzip, se aplica a todo o arquivo, portanto, as ferramentas devem descompactar todo o arquivo para lê-lo e geralmente não podem lê-lo em paralelo. | Maior. Os nomes de campos são repetidos em cada registro. |
 | **Velocidade da consulta** | Rápido. Uma consulta lê somente as colunas necessárias. | Mais devagar. Linhas inteiras devem ser lidas e analisadas. | Mais devagar. Linhas inteiras devem ser lidas e analisadas. |
 | **Tipos de dados** | Digitado. O esquema é incorporado no arquivo. | Não tipado. Todos os valores são texto e os tipos são inferidos quando você carrega os dados. | Digitado vagamente. |
 | **Dados aninhados** | Matrizes e objetos são suportados nativamente. | Não suportado. Matrizes e objetos devem ser nivelados ou codificados como cadeias de caracteres. | Matrizes e objetos são suportados nativamente. |
