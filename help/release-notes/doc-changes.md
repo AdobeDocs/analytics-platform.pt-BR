@@ -55,9 +55,9 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
+source-git-commit: 930ce593b744f0afc0e97dda1acf48e009e9e30a
 workflow-type: tm+mt
-source-wordcount: '7452'
+source-wordcount: '7485'
 ht-degree: 92%
 ---
 
@@ -69,6 +69,8 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 
 | Recurso | Descrição |
 |---|---|
+| **novembro de 2026** | |
+| Escopo de desduplicação de métrica | Removido o cuidado aplicado quando o escopo de desduplicação de uma [métrica era definido como Pessoa](/help/data-views/component-settings/metric-deduplication.md), que afirmava que a métrica era avaliada por meses completos do calendário. Para uma métrica com um escopo de desduplicação definido como Pessoa, a desduplicação agora se aplica somente na janela de relatórios selecionada. |
 | **outubro de 2026** | |
 | Medidas de proteção para visualizações de dados | Atualizado o [painel de controle](/help/technotes/guardrails.md) para o número máximo de visualizações de dados de uma organização (de 2.000 a 5.000). |
 | Associar dados de mídia paga com dados da Web | [Guia do caso de uso](/help/use-cases/cross-channel/paid-media-web.md) sobre como unir dados de mídia paga com dados da Web. |
@@ -165,7 +167,7 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | Coleção de mídia: atualizações do conector de origem da Adobe para o novo XDM de relatórios de mídia | O Conector de origem do Analytics mapeia automaticamente dados de mídia de streaming no Adobe Analytics para os mesmos campos usados pelo SDK da web. Antes, os dados eram mapeados para os locais antigo e novo, mas somente o novo local será usado no futuro. [Saiba mais](https://experienceleague.adobe.com/pt-br/docs/analytics/implementation/aep-edge/xdm-var-mapping) |
 | **Fevereiro de 2025** |  |
 | Coleção de mídia: atualizações do conector de origem da Adobe para o novo XDM de relatórios de mídia | O conector de origem do Analytics [mapeia os dados de transmissão de mídia no Adobe Analytics](https://experienceleague.adobe.com/pt-br/docs/analytics/implementation/aep-edge/xdm-var-mapping) automaticamente para os mesmos campos usados pelo SDK da web. Antes, os dados eram mapeados para os locais antigo e novo, mas somente o novo local será usado no futuro. |
-| Extensão BI: compatibilidade expandida | A extensão BI do Customer Journey Analytics agora é compatível com [Looker, Jupyter Notebook e R Studio](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-usecases/data-views/bi-extension-usecases). |
+| Extensão BI: compatibilidade expandida | A extensão BI do Customer Journey Analytics agora é compatível com [Looker, Jupyter Notebook e R Studio](/help/use-cases/data-views/bi-extension-usecases.md). |
 | **Janeiro de 2025** |  |
 | Experiência de uso de conexões atualizada | A guia [Uso](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-connections/manage-connections?lang=en#connections-usage) em Conexão agora fornece visualizações aprimoradas para estes tipos de linhas reportáveis: dados históricos, assimilados e principais. Você também pode exibir e analisar os dados de uso por conexão, conjunto de dados, sandbox ou tag. |
 | Métricas de uso | Atualização da documentação sobre a interface de [métricas de uso](/help/connections/manage-connections.md#usage) aprimorada. |

@@ -36,13 +36,11 @@ topic_v2:
     internal-label: Personalization
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: a05097c6a462301be1f1e45e0c1aa3cfa0676ff6
+source-git-commit: 1523b216a48e0bedb57d2afcb5f95e8e2efdadda
 workflow-type: tm+mt
-source-wordcount: 780
-ht-degree: 76%
-
+source-wordcount: '780'
+ht-degree: 67%
 ---
-
 
 # Configure o Content Analytics
 
@@ -73,9 +71,9 @@ Antes de configurar o Content Analytics, verifique se os seguintes pré-requisit
 * Se você implementou o [SDK da web usando o JavaScript](https://experienceleague.adobe.com/pt-br/docs/experience-platform/collection/js/install/library){target="_blank"} para coleta regular de dados comportamentais, verifique se está usando o nome padrão <code>alloy</code> para a biblioteca do JavaScript.
 * Você tem uma função de admin de produto do Customer Journey Analytics, com permissões adicionais para gerenciar conexões e visualizações de dados.
 * Se decidir coletar experiências do Content Analytics, certifique-se de configurar e atualizar o controle de versão do Content Analytics com base nas alterações nas suas páginas da Web.
-* Você deve ter [permissões para a coleta de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/collection/permissions){target="_blank"}:
-  * [Experience Platform](https://experienceleague.adobe.com/pt-br/docs/experience-platform/collection/permissions#adobe-experience-platform-permissions){target="_blank"} permissões.
-  * [Permissões de Coleção de dados do Experience Platform](https://experienceleague.adobe.com/pt-br/docs/experience-platform/collection/permissions#adobe-experience-platform-data-collection-permissions){target="_blank"}.
+* Você deve ter [permissões para a coleta de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/admin/user-permissions){target="_blank"}:
+  * [Experience Platform](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/admin/user-permissions#platform-permissions){target="_blank"} permissões.
+  * [Permissões de Coleção de dados do Experience Platform](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/admin/user-permissions#admin-console){target="_blank"}.
 * Você considerou cuidadosamente as seguintes opções de configuração:
 
   * Seu site é adequado para relatórios de experiência. Criar um relatório de experiência adequado só é possível quando as seguintes condições são atendidas:
@@ -88,9 +86,9 @@ Antes de configurar o Content Analytics, verifique se os seguintes pré-requisit
 
 * Verifique se as extensões do [Experience Platform Edge Network](https://developer.adobe.com/client-sdks/edge/edge-network/) e do [Experience Platform Identity for Edge Network](https://developer.adobe.com/client-sdks/edge/identity-for-edge-network/) estão habilitadas para o aplicativo móvel.
 * Você tem uma função de admin de produto do Customer Journey Analytics, com permissões adicionais para gerenciar conexões e visualizações de dados.
-* Você deve ter [permissões para a coleta de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/collection/permissions){target="_blank"}:
-  * [Experience Platform](https://experienceleague.adobe.com/pt-br/docs/experience-platform/collection/permissions#adobe-experience-platform-permissions){target="_blank"} permissões.
-  * [Permissões de Coleção de dados do Experience Platform](https://experienceleague.adobe.com/pt-br/docs/experience-platform/collection/permissions#adobe-experience-platform-data-collection-permissions){target="_blank"}.
+* Você deve ter [permissões para a coleta de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/admin/user-permissions){target="_blank"}:
+  * [Experience Platform](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/admin/user-permissions#platform-permissions){target="_blank"} permissões.
+  * [Permissões de Coleção de dados do Experience Platform](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/admin/user-permissions#admin-console){target="_blank"}.
 
 
 

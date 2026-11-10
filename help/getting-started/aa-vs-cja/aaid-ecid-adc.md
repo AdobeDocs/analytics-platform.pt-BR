@@ -31,10 +31,10 @@ topic_v2:
     internal-label: Customer experience
   - id: d00e9f03-e50b-4162-b143-0c0817c937c2
     internal-label: Customer journeys
-source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
+source-git-commit: 1523b216a48e0bedb57d2afcb5f95e8e2efdadda
 workflow-type: tm+mt
-source-wordcount: '623'
-ht-degree: 90%
+source-wordcount: '624'
+ht-degree: 88%
 ---
 # AAID, ECID, AACUSTOMID e o conector de origem do Analytics
 
@@ -48,7 +48,7 @@ No conector de origem do Analytics, a AAID é transformada em `HEX(post_visid_hi
 
 ## ECID
 
-A ECID, também conhecida como MCID (Marketing Cloud ID), é um campo de identificador de dispositivo separado, preenchido no Adobe Analytics quando o Analytics é implementado usando o [Serviço de ID de visitante](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=pt-BR) (AppMeasurement) ou o Web SDK. A ECID é representada pela coluna `mcvisid` nos feeds de dados do Adobe Analytics.
+A ECID, também conhecida como MCID (Marketing Cloud ID), é um campo de identificador de dispositivo separado, preenchido no Adobe Analytics quando o Analytics é implementado usando o [Serviço de ID de visitante](https://experienceleague.adobe.com/pt-br/docs/id-service/using/implementation/implementation-guides) (AppMeasurement) ou o Web SDK. A ECID é representada pela coluna `mcvisid` nos feeds de dados do Adobe Analytics.
 
 Se uma ECID existir em um evento, a AAID poderá se basear na ECID, dependendo se o [período de carência](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/grace-period.html?lang=pt-BR) do Analytics está configurado. Consulte também: [Solicitações do Analytics e da ECID](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/legacy-analytics.html?lang=pt-BR).
 
