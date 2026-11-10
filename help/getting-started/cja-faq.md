@@ -43,10 +43,10 @@ topic_v2:
     internal-label: Data collection
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 86424aaa6a40c7d3fb4f8ae6559f9ec2dfa4c6dd
+source-git-commit: 1523b216a48e0bedb57d2afcb5f95e8e2efdadda
 workflow-type: tm+mt
-source-wordcount: '2322'
-ht-degree: 94%
+source-wordcount: '2334'
+ht-degree: 93%
 ---
 # Perguntas frequentes
 
@@ -181,7 +181,7 @@ A Adobe alterou recentemente a forma do processamento de dados no Customer Journ
 
 ## &#x200B;5. Definir janela contínua para retenção de dados de [!UICONTROL Conexão] {#data-retention}
 
-A configuração [**[!UICONTROL Habilitar janela de dados contínua &#x200B;]**](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=pt-BR#create-connection) permite definir a retenção de dados do Customer Journey Analytics como uma janela contínua em meses (três meses, seis meses, etc). Ela é definida no nível de uma [!UICONTROL conexão], não no nível de um [!UICONTROL conjunto de dados]. A retenção de dados tem por base os carimbos de data e hora do conjunto de dados do evento e se aplica somente aos conjuntos de dados do evento. Não há configuração de retenção de dados para o perfil ou conjuntos de dados de pesquisa, pois não há carimbos de data e hora aplicáveis.
+A configuração [**[!UICONTROL Habilitar janela de dados contínua ]**](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=pt-BR#create-connection) permite definir a retenção de dados do Customer Journey Analytics como uma janela contínua em meses (três meses, seis meses, etc). Ela é definida no nível de uma [!UICONTROL conexão], não no nível de um [!UICONTROL conjunto de dados]. A retenção de dados tem por base os carimbos de data e hora do conjunto de dados do evento e se aplica somente aos conjuntos de dados do evento. Não há configuração de retenção de dados para o perfil ou conjuntos de dados de pesquisa, pois não há carimbos de data e hora aplicáveis.
 
 O principal benefício é armazenar ou relatar apenas dados que sejam aplicáveis e úteis, além de excluir dados mais antigos que não sejam mais úteis. Isso ajuda você a ficar dentro dos limites do contrato e reduz o risco de custo excedente.
 
@@ -285,7 +285,7 @@ Leia mais sobre as [implicações da exclusão de conjuntos de dados e conexões
 
 A Adobe CX Enterprise usa a RDC (Coleta de dados regionais) para que as interações entre seus visitantes e as soluções da Adobe e de terceiros ocorram o mais próximo possível de seus visitantes. Depois que os dados são coletados regionalmente em um Centro de Coleta de Dados (DCC, também conhecido como local da borda, parte da rede de borda da Platform), eles são encaminhados por uma conexão segura para as soluções relevantes com base na configuração do fluxo de dados e/ou encaminhamento de eventos.
 
-![Fluxo de dados usando redes de borda](https://experienceleague.adobe.com/docs/experience-platform/assets/collection.png)
+Para ver um diagrama de como os dados fluem pela Edge Network, consulte [Visão geral da coleção de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/collection/home).
 
 O processo de coleta de dados regionais usa as seguintes etapas:
 
@@ -315,4 +315,4 @@ Quando os dados chegam ao data center regional, a configuração da sequência d
 O Customer Journey Analytics exige conjuntos de dados da Adobe Experience Platform, portanto, a configuração de encaminhamento de eventos/sequência de dados precisa que o serviço da Adobe Experience Platform encaminhe os dados do data center regional para o data center em que sua instância da Adobe Experience Platform está localizada. O Customer Journey Analytics e seus serviços e infraestrutura de suporte são implantados na mesma instância da Adobe Experience Platform.
 
 
-Consulte [Visão geral da coleção de dados](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html?lang=pt-BR) para obter mais informações sobre o processo de coleção de dados além da rede de borda da Adobe Experience Platform e seus data centers regionais.
+Consulte [Visão geral da coleção de dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/collection/home) para obter mais informações sobre o processo de coleção de dados além da rede de borda da Adobe Experience Platform e seus data centers regionais.
