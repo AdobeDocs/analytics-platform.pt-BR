@@ -70,10 +70,10 @@ topic_v2:
     internal-label: Data management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 2c55e526968ca2f064f32c457ee112c07a0b10ff
+source-git-commit: a48eccd77887e94bce5c0ef18bd070877601ddbd
 workflow-type: tm+mt
-source-wordcount: '1764'
-ht-degree: 73%
+source-wordcount: '1773'
+ht-degree: 71%
 ---
 # Controle de acesso
 
@@ -137,9 +137,9 @@ Além de ser adicionado como administrador de produto no **Perfil de produto do 
   | [!UICONTROL Governança de dados] | [!UICONTROL Exibir Políticas de Uso de Dados] | Acesso somente leitura para políticas de uso de dados pertencentes à sua organização. |
   | [!UICONTROL Governança de dados] | [!UICONTROL Gerenciar Políticas de Uso de Dados] | Acesso para ler, criar, editar e excluir políticas de uso de dados. |
 
-  Para obter mais informações sobre permissões do Experience Platform, consulte [Sandboxes e permissões](https://experienceleague.adobe.com/pt-br/docs/experience-platform/access-control/home#sandboxes-and-permissions).
+  Para obter mais informações sobre permissões do Experience Platform, consulte [Sandboxes e permissões](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home#sandboxes-and-permissions).
 
-* Se o Journey Optimizer estiver integrado ao Customer Journey Analytics, onde existem Conexões do Journey Optimizer, [permissões do Jornada](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/access-control/high-low-permissions#journey-capability) também deverão ser adicionadas para acessar Conexões:
+* Se o Journey Optimizer estiver integrado ao Customer Journey Analytics, onde existem Conexões do Journey Optimizer, [permissões do Jornada](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/high-low-permissions#journey-capability) também deverão ser adicionadas para acessar Conexões:
 
   | Categoria | Permissão | Descrição |
   |---|---|---|
@@ -150,14 +150,14 @@ Além de ser adicionado como administrador de produto no **Perfil de produto do 
 
 * Exportar conjuntos de dados para [destinos](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/ui/activate/export-datasets)
 
-  Para executar esta tarefa, os usuários devem fazer parte de uma **Função do Experience Platform** que fornece as seguintes [permissões de destinos](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/home#access-controls):
+  Para executar esta tarefa, os usuários devem fazer parte de uma **Função do Experience Platform** que fornece as seguintes [permissões de destinos](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/home#access-controls):
 
   | Categoria | Permissão | Descrição |
   |---|---|---|
   | [!UICONTROL Destinos] | [!UICONTROL Gerenciar destinos] | Acesso para ler, criar e excluir conexões de destino e contas de destino. |
   | [!UICONTROL Destinos] | [!UICONTROL Ativar destinos] | Permitir que os usuários ativem segmentos para destinos existentes. Habilita a etapa de mapeamento no fluxo de trabalho de ativação. Esta permissão também exige que a permissão para visualizar destinos seja concedida ao usuário que deseja ativar dados para destinos. |
 
-  Para obter mais informações sobre permissões do Experience Platform, consulte [Sandboxes e permissões](https://experienceleague.adobe.com/pt-br/docs/experience-platform/access-control/home#sandboxes-and-permissions).
+  Para obter mais informações sobre permissões do Experience Platform, consulte [Sandboxes e permissões](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home#sandboxes-and-permissions).
 
 
 * Usar a [extensão de BI](../data-views/bi-extension.md)
@@ -195,7 +195,7 @@ A guia **[!UICONTROL Permissões]** faz parte de cada perfil de produto no [Admi
 
 | Categoria | Permissão | Descrição |
 | --- | --- | ---|
-| [!UICONTROL Visualizações de dados] | *nome da visualização de dados* | Se você alternar a configuração **[!UICONTROL Incluir automaticamente]** para **[!UICONTROL Ativado]**, os usuários que fazem parte desse perfil de produto poderão visualizar todas as visualizações de dados existentes e recém-criadas. Se esta configuração estiver definida como **[!UICONTROL Desativado]**, será possível selecionar visualizações de dados específicas às quais os usuários têm acesso. |
+| [!UICONTROL Visualizações de dados] | *nome da visualização de dados* | Se você alternar a opção **[!UICONTROL Incluir automaticamente]** para **[!UICONTROL Ativado]**, os usuários que fazem parte desse perfil de produto poderão exibir todas as visualizações de dados existentes e recém-criadas. Isso inclui visualizações de dados criadas pelo Adobe para você.<p>Se esta configuração estiver definida como **[!UICONTROL Desativado]**, será possível selecionar visualizações de dados específicas às quais os usuários têm acesso.  </p> |
 | [!UICONTROL Ferramentas de relatório] | [!UICONTROL Acesso à análise guiada] | Permite que os usuários acessem a [Análise guiada](/help/guided-analysis/overview.md). |
 | [!UICONTROL Ferramentas de relatório] | [!UICONTROL Criação de métricas calculadas] | Permite que os usuários criem [métricas calculadas](/help/components/calc-metrics/calc-metr-overview.md). Os usuários podem marcar, compartilhar, excluir e renomear apenas as métricas calculadas que criam ou as métricas calculadas que compartilham com eles. |
 | [!UICONTROL Ferramentas de relatório] | [!UICONTROL Criação de segmentos] | Permite que os usuários criem [segmentos](/help/components/segments/seg-overview.md). Os usuários podem marcar, compartilhar, excluir e renomear apenas os segmentos que criam ou os segmentos compartilhados com eles. |
@@ -245,3 +245,6 @@ Considere que você deseje conceder aos usuários acesso aos dados somente de um
 Os usuários que têm acesso a uma visualização de dados só podem trabalhar com as métricas e dimensões incluídas pelo administrador nesta visualização de dados. Os administradores podem usar as configurações de componente [Incluir/Excluir](/help/data-views/component-settings/include-exclude-values.md) ou [Classificação de valores](../data-views/component-settings/value-bucketing.md) em uma exibição de dados para excluir ou agregar determinados valores de dimensão de uma exibição de dados.
 
 Por exemplo: você pode criar uma métrica chamada *Hipertensão* em uma visualização de dados de um componente que contém dados individuais do paciente do conjunto de dados. Use a segmentação de valores para fornecer acesso somente a valores segmentados, de modo que os usuários dos dados não vejam os dados de pacientes individuais.
+
+
+
