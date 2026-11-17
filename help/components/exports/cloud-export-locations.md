@@ -25,7 +25,7 @@ role_v2:
 source-git-commit: bccb25182630e18943a52ceca621cdfd6696b819
 workflow-type: tm+mt
 source-wordcount: '3601'
-ht-degree: 15%
+ht-degree: 21%
 ---
 # Configurar locais de exportação na nuvem {#configure-cloud-export-locations}
 
@@ -43,7 +43,7 @@ ht-degree: 15%
 >[!CONTEXTUALHELP]
 >id="cja-export-file-name"
 >title="Caminho ou nome de arquivo"
->abstract="Especifique um caminho ou nome de arquivo (ou ambos) para determinar para onde os arquivos são enviados no local selecionado. Para salvar arquivos na pasta de nível superior do local, especifique `/`.<br/>Você pode usar variáveis para tornar dinâmico o caminho ou o nome do arquivo. <br/>Por exemplo, se você especificar `${yyyy}/${MM}/${dd}/my-report-${instance_id}-${idx}`, uma exportação enviada para este local em 15 de janeiro de 2027 terá o seguinte caminho de arquivo e nome: `[prefix_folder_name]/2027/01/15/my-report-[UUID]-1.csv` <br/>Selecione o link abaixo para obter uma lista de variáveis disponíveis."
+>abstract="Especifique um caminho ou nome de arquivo (ou ambos) para determinar para onde os arquivos são enviados no local selecionado. Para salvar arquivos na pasta de nível superior do local, especifique `/`.<br/>Você pode usar variáveis para tornar dinâmico o caminho ou o nome do arquivo. <br/>Por exemplo, se você especificar `${yyyy}/${MM}/${dd}/my-report-${instance_id}-${idx}`, uma exportação enviada para esse local em 15 de janeiro de 2027 teria o seguinte caminho e nome de arquivo: `[prefix_folder_name]/2027/01/15/my-report-[UUID]-1.csv` <br/>Clique no link abaixo para ver uma lista das variáveis disponíveis."
 
 <!-- markdownlint-enable MD034 -->
 
@@ -132,11 +132,11 @@ Para obter informações sobre como gerenciar locais existentes, incluindo exibi
 
    1. Abra o [Microsoft Azure Storage Explorer](https://azure.microsoft.com/en-us/products/storage/storage-explorer/).
 
-   1. Vá para [!UICONTROL **Contas de Armazenamento**] > [!UICONTROL **(Contêineres Anexados)**] > [!UICONTROL **Contêineres Blob**] > **[!UICONTROL cjaexport-_number_]**>*** your_container_name &#x200B;***.
+   1. Vá para [!UICONTROL **Contas de Armazenamento**] > [!UICONTROL **(Contêineres Anexados)**] > [!UICONTROL **Contêineres Blob**] > **[!UICONTROL cjaexport-_number_]**>*** your_container_name ***.
 
       >[!NOTE]
       >
-      >O nome da pasta **[!UICONTROL cjaexport-_number_]**&#x200B;é o nome padrão fornecido pelo Azure Storage Explorer. Se você tiver apenas uma única conexão associada ao URI SAS (o que é normal), o nome desta pasta será&#x200B;**[!UICONTROL cjaexport-1]**.
+      >O nome da pasta **[!UICONTROL cjaexport-_number_]**é o nome padrão fornecido pelo Azure Storage Explorer. Se você tiver apenas uma única conexão associada ao URI SAS (o que é normal), o nome desta pasta será&#x200B;**[!UICONTROL cjaexport-1]**.
 
 
       ![Acessar arquivos no gerenciador de armazenamento do Azure](assets/azure-storage-explorer-access.png)

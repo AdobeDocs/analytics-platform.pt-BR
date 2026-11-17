@@ -33,7 +33,7 @@ topic_v2:
 source-git-commit: 113a215e26092c65d6eaf2c321f60d3f3a5015b8
 workflow-type: tm+mt
 source-wordcount: '1187'
-ht-degree: 12%
+ht-degree: 17%
 ---
 # Criar ou editar configurações
 
@@ -138,14 +138,14 @@ Para cada configuração:
 >[!CONTEXTUALHELP]
 >id="conversationinsights_blend_specification"
 >title="Configurar especificação de mesclagem"
->abstract="Você só poderá editar a especificação de mesclagem depois de concluir essa configuração do Conversation Insights, de todos os conjuntos de dados estarem disponíveis e de você ter permissões do Customer Journey Analytics para editar conexões."
+>abstract="Você só poderá editar a especificação de mesclagem depois de concluir essa configuração do Conversation Insights, todos os conjuntos de dados estiverem disponíveis e você tiver permissões do Customer Journey Analytics para editar conexões."
 >additional-url="https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/technotes/access-control" text="Controle de acesso"
 
 
 >[!CONTEXTUALHELP]
 >id="conversationinsights_dataset_winner"
->title="Conjunto de dados vencedor"
->abstract="Selecione o conjunto de dados que determina o valor do campo ou dos campos nomeados correspondentemente (se um container) no conjunto de dados de conversa mesclada."
+>title="Vencedor do conjunto de dados"
+>abstract="Selecione o conjunto de dados que determina o valor para o campo ou campos com nomes correspondentes (se for um contêiner) no conjunto de dados de conversas mescladas."
 
 Depois de criar uma configuração, você pode configurar [como as conversas dos conjuntos de dados de prompts, respostas, comentários e sinais são misturadas](/help/conversation-insights/overview.md#how-it-works).
 
@@ -163,7 +163,7 @@ Para especificar a conversa mesclada:
    * Para cada campo de contêiner, opcionalmente selecione outro **[!UICONTROL vencedor do conjunto de dados]** para atualizar todos os campos que pertencem ao contêiner. Você pode selecionar entre **[!UICONTROL Conjunto de dados de prompts]**, **[!UICONTROL Conjunto de dados de respostas]** e **[!UICONTROL Conjunto de dados de feedback]**.
    * Você não pode selecionar um **[!UICONTROL vencedor do conjunto de dados]** para campos compartilhados entre os conjuntos de dados da conversa (prompts, respostas, feedback e sinais). Esses campos fazem parte dos seguintes grupos de campos:
 
-     | Nome do campo | Grupo de campos | Conjunto de dados vencedor |
+     | Nome do campo | Grupo de campos | Vencedor do conjunto de dados |
      |---|---|---|
      | **[!UICONTROL prompt]** | `conversation.prompt.*` | **[!UICONTROL Conjunto de dados de prompts]** |
      | **[!UICONTROL response]** | `conversation.response.*` | **[!UICONTROL Conjunto de dados de respostas]** |

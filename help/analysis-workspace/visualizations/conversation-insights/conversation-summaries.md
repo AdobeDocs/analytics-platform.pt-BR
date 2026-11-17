@@ -6,7 +6,7 @@ role: User
 source-git-commit: 30311dc0e753778c6e5316d82ffba25748d8315e
 workflow-type: tm+mt
 source-wordcount: '407'
-ht-degree: 17%
+ht-degree: 22%
 ---
 # Resumos da conversa {#conversation-summaries}
 
@@ -18,11 +18,11 @@ ht-degree: 17%
 >[!CONTEXTUALHELP]
 >id="workspace_conversationsummaries_panel"
 >title="Resumos da conversa"
->abstract="Resumir um grupo filtrado de conversas. Controlar o comprimento do resumo. Veja citações representativas de clientes para validar a precisão dos sinais extraídos. Selecione uma cotação para abrir a repetição completa da conversa."
+>abstract="Resumir um grupo filtrado de conversas. Controlar o comprimento do resumo. Veja citações representativas de clientes para validar a precisão dos sinais extraídos. Selecione uma citação para abrir a reprodução completa da conversa."
 
 {{release-limited-testing}}
 
-A visualização dos ![Resumos de conversa **[[!UICONTROL IA]](/help/assets/icons/AI.svg)]** permite resumir um grupo filtrado de conversas como parte dos [Insights de conversa](/help/conversation-insights/overview.md).
+A visualização dos ![Resumos de conversa **[!UICONTROL IA](/help/assets/icons/AI.svg)]** permite resumir um grupo filtrado de conversas como parte dos [Insights de conversa](/help/conversation-insights/overview.md).
 
 A visualização mostra um resumo da métrica selecionada (por exemplo, Conversas) e exibe subtópicos ou comentários textuais quando você configura a visualização para incluir subtópicos.
 
@@ -32,7 +32,7 @@ A visualização mostra um resumo da métrica selecionada (por exemplo, Conversa
 >[!CONTEXTUALHELP]
 >id="workspace_conversationsummaries_usenondefaultattributionmodel"
 >title="Usar modelo de atribuição não-padrão"
->abstract="Ativar um modelo de atribuição não padrão para essa métrica."
+>abstract="Habilite um modelo de atribuição não padrão para esta métrica."
 
 >[!CONTEXTUALHELP]
 >id="workspace_conversationsummaries_usenondefaultattributionmodel_disabled"
@@ -51,7 +51,7 @@ Para criar e configurar uma visualização de **[!UICONTROL Resumos da conversa]
 
 1. Selecione **[!UICONTROL Build]** para criar a visualização. Selecione **[!UICONTROL Redefinir]** para redefinir os valores de configuração para os padrões. Selecione **[!UICONTROL Cancelar]** para cancelar a configuração.
 
-Para reconfigurar a visualização dos **[!UICONTROL Resumos da conversa]**, selecione ![Editar](/help/assets/icons/Edit.svg) ao lado de **[!UICONTROL Métrica: _métrica_]**&#x200B;ou **[!UICONTROL Métrica:_métrica_]** | **[!UICONTROL Segmentos: _segmentos_]**.
+Para reconfigurar a visualização dos **[!UICONTROL Resumos da conversa]**, selecione ![Editar](/help/assets/icons/Edit.svg) ao lado de **[!UICONTROL Métrica: _métrica_]**ou **[!UICONTROL Métrica:_métrica_]** | **[!UICONTROL Segmentos: _segmentos_]**.
 
 ## Usar
 

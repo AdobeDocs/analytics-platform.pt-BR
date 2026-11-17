@@ -29,7 +29,7 @@ topic_v2:
 source-git-commit: 6db3ace5744a4277477c2a712c12fdd9a5f57c82
 workflow-type: tm+mt
 source-wordcount: '4331'
-ht-degree: 12%
+ht-degree: 14%
 ---
 # Criar um feed de dados
 
@@ -321,7 +321,7 @@ Quaisquer funções de campo derivadas que referenciam contêineres usam a janel
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_processing_delay"
 >title="Atraso no processamento"
->abstract="O tempo que o sistema aguarda antes de processar um arquivo de feed de dados. Todos os eventos atrasados que chegam durante o atraso são incluídos no feed.<p>O atraso mínimo de processamento é de 2 horas, mas alguns tipos de dados exigem mais tempo. Escolha um atraso suficientemente longo para os dados mais lentos em sua conexão. Se o atraso de processamento for muito curto, alguns dados podem não ser incluídos no feed.</p>"
+>abstract="A quantidade de tempo que o sistema aguarda antes de processar um arquivo de feed de dados. Quaisquer eventos atrasados que cheguem durante o período de atraso são incluídos no feed.<p>O atraso mínimo de processamento é de 2 horas, mas alguns tipos de dados exigem mais tempo. Escolha um atraso suficientemente longo para os dados mais lentos em sua conexão. Se o atraso de processamento for muito curto, alguns dados podem não ser incluídos no feed.</p>"
 
 <!-- markdownlint-enable MD034 -->
 
