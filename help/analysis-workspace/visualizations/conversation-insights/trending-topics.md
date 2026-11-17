@@ -6,14 +6,14 @@ role: User
 source-git-commit: e498c374e8bfe12d7adda6ff9e7870a86f91dd5c
 workflow-type: tm+mt
 source-wordcount: '424'
-ht-degree: 16%
+ht-degree: 25%
 ---
 # Tópicos de tendência {#trending-topics}
 
 >[!CONTEXTUALHELP]
 >id="workspace_trendingtopics_button"
 >title="Tópicos de tendência"
->abstract="Crie uma visualização que mostre um detalhamento hierárquico habilitado para detalhamento de tópicos de tendência com ocorrências e porcentagens para ajudar você a identificar temas significativos em conversas."
+>abstract="Crie uma visualização que mostre um detalhamento hierárquico de assuntos em alta, incluindo o número de ocorrências e as porcentagens, para ajudá-lo a identificar temas importantes nas conversas."
 
 >[!CONTEXTUALHELP]
 >id="workspace_trendingtopics_panel"
@@ -31,7 +31,7 @@ Você pode pesquisar tópicos específicos e comparar o número e a porcentagem 
 >[!CONTEXTUALHELP]
 >id="workspace_trendingtopics_usenondefaultattributionmodel"
 >title="Usar modelo de atribuição não-padrão"
->abstract="Ativar um modelo de atribuição não padrão para essa métrica."
+>abstract="Habilite um modelo de atribuição não padrão para esta métrica."
 
 >[!CONTEXTUALHELP]
 >id="workspace_trendingtopics_usenondefaultattributionmodel_disabled"

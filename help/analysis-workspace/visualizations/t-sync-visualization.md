@@ -27,7 +27,7 @@ topic_v2:
 source-git-commit: f7d853a3b658328f952b675f838ce314b7c30fb1
 workflow-type: tm+mt
 source-wordcount: '520'
-ht-degree: 18%
+ht-degree: 22%
 ---
 # Gerenciar fontes de dados {#manage-data-sources}
 
@@ -39,7 +39,7 @@ ht-degree: 18%
 >[!CONTEXTUALHELP]
 >id="workspace_freeformtable_lockselection_showtable"
 >title="Mostrar tabela"
->abstract="Selecionar **[!UICONTROL Mostrar tabela]** gera uma nova fonte de dados para a visualização atual, separada da fonte de dados original."
+>abstract="Selecione a opção **[!UICONTROL Mostrar tabela]** para gerar uma nova fonte de dados para a visualização atual, separada da fonte de dados original."
 
 >[!CONTEXTUALHELP]
 >id="workspace_freeformtable_showtable"

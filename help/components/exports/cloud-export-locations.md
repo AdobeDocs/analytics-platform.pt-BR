@@ -25,7 +25,7 @@ role_v2:
 source-git-commit: bccb25182630e18943a52ceca621cdfd6696b819
 workflow-type: tm+mt
 source-wordcount: '3601'
-ht-degree: 15%
+ht-degree: 21%
 ---
 # Configurar locais de exportação na nuvem {#configure-cloud-export-locations}
 
@@ -43,7 +43,7 @@ ht-degree: 15%
 >[!CONTEXTUALHELP]
 >id="cja-export-file-name"
 >title="Caminho ou nome de arquivo"
->abstract="Especifique um caminho ou nome de arquivo (ou ambos) para determinar para onde os arquivos são enviados no local selecionado. Para salvar arquivos na pasta de nível superior do local, especifique `/`.<br/>Você pode usar variáveis para tornar dinâmico o caminho ou o nome do arquivo. <br/>Por exemplo, se você especificar `${yyyy}/${MM}/${dd}/my-report-${instance_id}-${idx}`, uma exportação enviada para este local em 15 de janeiro de 2027 terá o seguinte caminho de arquivo e nome: `[prefix_folder_name]/2027/01/15/my-report-[UUID]-1.csv` <br/>Selecione o link abaixo para obter uma lista de variáveis disponíveis."
+>abstract="Especifique um caminho ou nome de arquivo (ou ambos) para determinar para onde os arquivos são enviados no local selecionado. Para salvar arquivos na pasta de nível superior do local, especifique `/`.<br/>Você pode usar variáveis para tornar dinâmico o caminho ou o nome do arquivo. <br/>Por exemplo, se você especificar `${yyyy}/${MM}/${dd}/my-report-${instance_id}-${idx}`, uma exportação enviada para esse local em 15 de janeiro de 2027 teria o seguinte caminho e nome de arquivo: `[prefix_folder_name]/2027/01/15/my-report-[UUID]-1.csv` <br/>Clique no link abaixo para ver uma lista das variáveis disponíveis."
 
 <!-- markdownlint-enable MD034 -->
 

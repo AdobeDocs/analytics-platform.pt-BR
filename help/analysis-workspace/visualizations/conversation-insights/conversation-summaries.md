@@ -6,7 +6,7 @@ role: User
 source-git-commit: 30311dc0e753778c6e5316d82ffba25748d8315e
 workflow-type: tm+mt
 source-wordcount: '407'
-ht-degree: 17%
+ht-degree: 22%
 ---
 # Resumos da conversa {#conversation-summaries}
 
@@ -18,7 +18,7 @@ ht-degree: 17%
 >[!CONTEXTUALHELP]
 >id="workspace_conversationsummaries_panel"
 >title="Resumos da conversa"
->abstract="Resumir um grupo filtrado de conversas. Controlar o comprimento do resumo. Veja citações representativas de clientes para validar a precisão dos sinais extraídos. Selecione uma cotação para abrir a repetição completa da conversa."
+>abstract="Resumir um grupo filtrado de conversas. Controlar o comprimento do resumo. Veja citações representativas de clientes para validar a precisão dos sinais extraídos. Selecione uma citação para abrir a reprodução completa da conversa."
 
 {{release-limited-testing}}
 
@@ -32,7 +32,7 @@ A visualização mostra um resumo da métrica selecionada (por exemplo, Conversa
 >[!CONTEXTUALHELP]
 >id="workspace_conversationsummaries_usenondefaultattributionmodel"
 >title="Usar modelo de atribuição não-padrão"
->abstract="Ativar um modelo de atribuição não padrão para essa métrica."
+>abstract="Habilite um modelo de atribuição não padrão para esta métrica."
 
 >[!CONTEXTUALHELP]
 >id="workspace_conversationsummaries_usenondefaultattributionmodel_disabled"
