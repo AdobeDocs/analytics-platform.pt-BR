@@ -32,17 +32,17 @@ topic_v2:
     internal-label: Reporting
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 06501e010875aa3838948e7b977f85b508f66299
+source-git-commit: 388edf58e0950e0d018ce08b2aa2d0a562252c5a
 workflow-type: tm+mt
-source-wordcount: '1338'
-ht-degree: 63%
+source-wordcount: '1373'
+ht-degree: 57%
 ---
 # Compare o processamento de dados do Adobe Analytics e do Customer Journey Analytics
 
 Geralmente, é necessário ter a capacidade de processar dados antes que sejam úteis para os relatórios. Você pode processar esses dados em vários estágios na jornada, desde a coleta de dados até a geração do relatório ou da visualização.
 
-No Adobe Analytics, a maior parte desse processamento de dados ocorre imediatamente após a coleta dos dados. Funcionalidades como Regras VISTA, Regras de processamento, Regras de processamento de canais de marketing estão disponíveis para dar suporte a este **processamento de tempo de coleta**.
-Os dados são armazenados e, ao criar o relatório, é possível aplicar processamento adicional. Por exemplo: detalhar dimensões, aplicar segmentações ou selecionar um modelo de atribuição diferente. Este **processamento durante o relatório** acontece em tempo real.
+No Adobe Analytics, a maior parte desse processamento de dados ocorre imediatamente após a coleta dos dados e é permanente depois de ser enviada para o conjunto de relatórios. Funcionalidades como Regras VISTA, Regras de processamento e Regras de processamento de canais de marketing estão disponíveis para dar suporte a este **processamento de tempo de coleta**.
+No momento do relatório, é possível aplicar processamento adicional, como detalhamento de dimensões, aplicação de segmentação ou seleção de um modelo de atribuição diferente. Este **processamento durante o relatório** acontece em tempo real.
 
 No Adobe Analytics, o processamento durante o relatório geralmente é mais curto do que o realizado durante a coleta.
 
@@ -52,11 +52,13 @@ Por outro lado, o Customer Journey Analytics foi projetado para exigir tempo mí
 
 ![Processamento durante o relatório do Customer Journey Analytics](../assets/cja-processing.png)
 
-Entender as diferenças no processamento de dados dos vários recursos de relatório pode ser útil para compreender quais métricas estão disponíveis e onde, além do por que elas podem ser diferentes.
+Entender as diferenças no processamento de dados para os vários recursos de relatório ajuda a entender quais métricas estão disponíveis, onde e por que elas podem ser diferentes.
 
 Por exemplo, *visitas* é definida como uma métrica no Adobe Analytics no momento do processamento de dados. E *sessões* é calculada como uma métrica no Customer Journey Analytics no momento do relatório. Como resultado, as duas métricas podem ser diferentes com base nas regras para a definição da sessão em uma visualização de dados do Customer Journey Analytics.
 
-Além disso, visitas e sessões como uma métrica não estão disponíveis em conjuntos de dados criados pelo conector de origem do Analytics. E, portanto, exigiria que você definisse a sessão na lógica da consulta para fazer comparações.
+Além disso, o Analytics identifica *Visitantes únicos* pelo [método de identificação](https://experienceleague.adobe.com/pt-br/docs/analytics/implementation/id/overview) que estiver disponível no momento da coleta de dados. O Customer Journey Analytics identifica *Pessoas* pelo campo configurado como a ID de Pessoa no evento [configurações do conjunto de dados](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-connections/create-connection#dataset-settings) da conexão.
+
+
 
 ## Terminologia {#terms}
 
