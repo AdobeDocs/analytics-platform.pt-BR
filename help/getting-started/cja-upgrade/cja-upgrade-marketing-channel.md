@@ -27,7 +27,7 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 1f480cda20e0b2d54dd42b909bfa8bf8a2bc0c95
+source-git-commit: da6fd038a1ec8a662550b5c31382e18dca18a9c3
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 57%
@@ -72,7 +72,7 @@ Para usar canais de marketing no Customer Journey Analytics com o Experience Pla
 
 {{upgrade-final-step}}
 
-&#x200B;# Diferenças entre canais de marketing no Adobe Analytics e no Customer Journey Analytics
+## Diferenças entre canais de marketing no Adobe Analytics e no Customer Journey Analytics
 
 Embora os campos derivados ofereçam lógica de processamento baseada em regras semelhante para canais de marketing no Adobe Analytics, as diferenças arquitetônicas entre as duas plataformas podem fazer com que os resultados sejam diferentes entre as duas plataformas.
 

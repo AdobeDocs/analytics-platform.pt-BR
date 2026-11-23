@@ -39,7 +39,7 @@ topic_v2:
     internal-label: Behavioral data
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 614a234f8db9783dacaf9d2f3c21a5afd5ea02ef
+source-git-commit: a46dfefa38e5c4d7f4daa51871b4de75bf5304e1
 workflow-type: tm+mt
 source-wordcount: '1189'
 ht-degree: 14%
@@ -181,4 +181,4 @@ Identifique campeões em toda a organização. Esses campeões devem ser:
 
 ## Siga as etapas de atualização recomendadas
 
-Quando estiver pronto para iniciar o processo de atualização, siga as [etapas de atualização recomendadas](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#recommended-upgrade-steps-for-most-organizations) ou as etapas de atualização geradas dinamicamente no Guia de Atualização do Customer Journey Analytics. Para acessar o guia do Customer Journey Analytics, clique na guia **[!UICONTROL Espaço de trabalho]** e selecione **[!UICONTROL Atualizar para o Customer Journey Analytics]** no painel esquerdo. Siga as instruções na tela.
+Quando estiver pronto para iniciar o processo de atualização, siga as [etapas de atualização recomendadas](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md#upgrade-process) ou as etapas de atualização geradas dinamicamente no Guia de Atualização do Customer Journey Analytics. Para acessar o guia do Customer Journey Analytics, clique na guia **[!UICONTROL Espaço de trabalho]** e selecione **[!UICONTROL Atualizar para o Customer Journey Analytics]** no painel esquerdo. Siga as instruções na tela.

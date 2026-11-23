@@ -55,10 +55,10 @@ topic_v2:
     internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 930ce593b744f0afc0e97dda1acf48e009e9e30a
+source-git-commit: a46dfefa38e5c4d7f4daa51871b4de75bf5304e1
 workflow-type: tm+mt
-source-wordcount: '7485'
-ht-degree: 92%
+source-wordcount: '7516'
+ht-degree: 91%
 ---
 
 # Customer Journey Analytics - atualizações de documentação
@@ -70,6 +70,7 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | Recurso | Descrição |
 |---|---|
 | **novembro de 2026** | |
+| Usar o Colaborador ao atualizar para o Customer Journey Analytics | Atualização do [Upgrade do Adobe Analytics para o Customer Journey Analytics](/help/getting-started/cja-upgrade/cja-upgrade-recommendations.md) com links para novos recursos do Adobe CX Enterprise Coworker, como gerar etapas de atualização e validar seus dados. |
 | Escopo de desduplicação de métrica | Removido o cuidado aplicado quando o escopo de desduplicação de uma [métrica era definido como Pessoa](/help/data-views/component-settings/metric-deduplication.md), que afirmava que a métrica era avaliada por meses completos do calendário. Para uma métrica com um escopo de desduplicação definido como Pessoa, a desduplicação agora se aplica somente na janela de relatórios selecionada. |
 | **outubro de 2026** | |
 | Medidas de proteção para visualizações de dados | Atualizado o [painel de controle](/help/technotes/guardrails.md) para o número máximo de visualizações de dados de uma organização (de 2.000 a 5.000). |
@@ -162,7 +163,7 @@ Foram feitas as seguintes atualizações na documentação do Customer Journey A
 | **Março de 2025** | |
 | Casos de uso do Quantum Metric | Adição de casos de uso para coleta de dados do [Quantum Metric](/help/use-cases/third-party/quantum-metric/qm-overview.md). |
 | Modelo de uso do produto | Um novo modelo do Workspace permite exibir como o produto Customer Journey Analytics é usado na sua organização. [Saiba mais](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-workspace/templates/use-templates). |
-| Guia de atualização do Customer Journey Analytics | Permite gerar um guia passo a passo para atualizar do Adobe Analytics para o Customer Journey Analytics. Para começar a gerar seu guia personalizado, faça logon no [!DNL Customer Journey Analytics] e selecione **[!UICONTROL Atualizar para o Customer Journey Analytics]** na guia **[!UICONTROL Workspace]**. [Saiba mais](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/compare-aa-cja/upgrade-to-cja/cja-upgrade-recommendations#recommended-upgrade-steps-for-most-organizations) |
+| Guia de atualização do Customer Journey Analytics | Permite gerar um guia passo a passo para atualizar do Adobe Analytics para o Customer Journey Analytics. Para começar a gerar seu guia personalizado, faça logon no [!DNL Customer Journey Analytics] e selecione **[!UICONTROL Atualizar para o Customer Journey Analytics]** na guia **[!UICONTROL Workspace]**. [Saiba mais](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/compare-aa-cja/upgrade-to-cja/cja-upgrade-recommendations#upgrade-process) |
 | Atualizações do item de linha “Nenhum valor” em dimensões numéricas | Para dimensões numéricas, essa atualização permite usar o item de dimensão “Nenhum valor” em um segmento e executar um detalhamento em um relatório no item de linha “Nenhum valor”. [Saiba mais](https://experienceleague.adobe.com/pt-br/docs/analytics-platform/using/cja-dataviews/component-settings/no-value-options#numeric) |
 | Coleção de mídia: atualizações do conector de origem da Adobe para o novo XDM de relatórios de mídia | O Conector de origem do Analytics mapeia automaticamente dados de mídia de streaming no Adobe Analytics para os mesmos campos usados pelo SDK da web. Antes, os dados eram mapeados para os locais antigo e novo, mas somente o novo local será usado no futuro. [Saiba mais](https://experienceleague.adobe.com/pt-br/docs/analytics/implementation/aep-edge/xdm-var-mapping) |
 | **Fevereiro de 2025** |  |
