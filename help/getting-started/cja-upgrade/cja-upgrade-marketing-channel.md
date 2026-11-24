@@ -38,7 +38,7 @@ ht-degree: 57%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-marketing-channel"
->title="Criar um canal de marketing de campo derivado"
+>title="Criar um campo derivado de canal de marketing"
 >abstract="Campos derivados são criados em uma visualização de dados.<br><br>O uso de uma configuração de canal de marketing padrão leva apenas alguns minutos, mas criar uma configuração de canal de marketing altamente personalizada pode levar várias horas."
 
 <!-- markdownlint-enable MD034 -->

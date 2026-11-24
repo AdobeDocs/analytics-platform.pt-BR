@@ -459,7 +459,7 @@ Quando uma linha do conjunto de dados é selecionada na tabela de conjuntos de d
 
 >[!CONTEXTUALHELP]
 >id="connections_usage_aca_monthlyreportablerows"
->title="Linhas mensais do Content Analytics"
+>title="Linhas do Content Analytics mensal"
 >abstract="Rastreia o número de linhas do Content Analytics disponíveis para relatórios. Linhas relatáveis são as linhas assimiladas menos as linhas que são ignoradas e excluídas durante a assimilação. As linhas relatáveis servem como uma métrica principal para cobrança e uso de dados."
 
 >[!CONTEXTUALHELP]
@@ -501,7 +501,7 @@ Quando uma linha do conjunto de dados é selecionada na tabela de conjuntos de d
 
 >[!CONTEXTUALHELP]
 >id="connections_breakdown_aca_monthlyreportablerows"
->title="Linhas mensais do Content Analytics"
+>title="Linhas do Content Analytics mensal"
 >abstract="As linhas do Content Analytics mensal são valores de snapshot, não totais agregados. Esses valores são atualizados dinamicamente com base no último mês do intervalo de datas selecionado. Os valores refletem o instantâneo do mês selecionado."
 
 
@@ -617,7 +617,7 @@ A interface **[!UICONTROL Uso do Content Analytics]** consiste em dois painéis:
 
 * Um painel combinado, mostrando dois subpainéis para:
 
-  +++ Linhas mensais do Content Analytics
+  +++ Linhas do Content Analytics mensal
 
   O subpainel **[!UICONTROL Linhas mensais do Content Analytics]** mede o número total de registros mensais do Content Analytics adicionados ao sistema a cada mês, fornecendo ao insight taxas de crescimento e assimilação de dados. O subpainel fornece um resumo do total de linhas assimiladas deste mês e a mudança em relação ao mês anterior.
 

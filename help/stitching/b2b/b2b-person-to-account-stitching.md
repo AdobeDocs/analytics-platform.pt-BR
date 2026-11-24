@@ -185,7 +185,7 @@ Primeiro, você ativa e configura a compilação B2B no nível da conexão. Quan
 
 >[!CONTEXTUALHELP]
 >id="connection_b2b_stitching_start_time"
->title="Hora de início"
+>title="Hora inicial"
 >abstract="Selecione um campo de carimbo de data e hora que indique quando a relação de pessoa para conta se tornou ativa."
 
 
