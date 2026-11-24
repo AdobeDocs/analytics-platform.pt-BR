@@ -29,7 +29,7 @@ topic_v2:
 source-git-commit: 6db3ace5744a4277477c2a712c12fdd9a5f57c82
 workflow-type: tm+mt
 source-wordcount: '4331'
-ht-degree: 14%
+ht-degree: 15%
 ---
 # Criar um feed de dados
 
@@ -70,7 +70,7 @@ Antes de criar um feed de dados, é importante ter uma compreensão básica dos 
 >[!CONTEXTUALHELP]
 >id="cja_datafeed_frequency_granularity"
 >title="Frequência e granularidade"
->abstract="**Frequência de entrega** (feeds em tempo real): a frequência com que o feed de dados é entregue. As entregas horárias contêm o valor de uma hora de dados; as entregas diárias contêm o valor de um dia de dados.<p>Cada delivery também verifica uma janela de processamento contínua de 30 dias para qualificar segmentos, calcular sessões e manter valores de dimensão. Tanto a janela de processamento quanto o atraso de processamento podem afetar os eventos incluídos.</p><p>**Granularidade** (feeds de preenchimento retroativo): o intervalo de tempo usado para dividir os dados históricos. Cada bloco contém o valor de um dia de dados e é entregue o mais rápido possível, não uma vez por dia. Este campo é sempre definido como Diário e não pode ser modificado.</p>"
+>abstract="**Frequência de entrega** (feeds em tempo real): a frequência com que o feed de dados é entregue. As entregas horárias contêm o valor de uma hora de dados; as entregas diárias contêm o valor de um dia de dados.<p>Cada entrega também verifica uma janela de processamento contínua de 30 dias para qualificar segmentos, calcular sessões e manter valores de dimensão. Tanto a janela quanto o atraso do processamento podem afetar os eventos incluídos.</p><p>**Granularidade** (feeds de preenchimento retroativo): o intervalo de tempo usado para dividir os dados históricos. Cada bloco contém o valor de um dia de dados e é entregue o mais rápido possível, não uma vez por dia. Este campo é sempre definido como Diário e não pode ser modificado.</p>"
 
 <!-- markdownlint-enable MD034 -->
 

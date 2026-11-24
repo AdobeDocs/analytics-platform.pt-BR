@@ -38,7 +38,7 @@ ht-degree: 57%
 
 >[!CONTEXTUALHELP]
 >id="cja-upgrade-marketing-channel"
->title="Criar um canal de marketing de campo derivado"
+>title="Criar um campo derivado de canal de marketing"
 >abstract="Campos derivados são criados em uma visualização de dados.<br><br>O uso de uma configuração de canal de marketing padrão leva apenas alguns minutos, mas criar uma configuração de canal de marketing altamente personalizada pode levar várias horas."
 
 <!-- markdownlint-enable MD034 -->
@@ -76,7 +76,7 @@ Para usar canais de marketing no Customer Journey Analytics com o Experience Pla
 
 Embora os campos derivados ofereçam lógica de processamento baseada em regras semelhante para canais de marketing no Adobe Analytics, as diferenças arquitetônicas entre as duas plataformas podem fazer com que os resultados sejam diferentes entre as duas plataformas.
 
-* A configuração [Substituir Canal de Último Contato](https://experienceleague.adobe.com/pt-br/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-channels#override-best-practices) só tem suporte no Adobe Analytics
+* A configuração [Substituir Canal de Último Contato](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/c-channels#override-best-practices) só tem suporte no Adobe Analytics
 
-* A [Expiração do Canal de marketing](https://experienceleague.adobe.com/pt-br/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/visitor-engagement) começa após um período de inatividade, enquanto a expiração da persistência de Customer Journey Analytics é baseada na instanciação do valor.
+* A [Expiração do Canal de marketing](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/marketing-channels/visitor-engagement) começa após um período de inatividade, enquanto a expiração da persistência de Customer Journey Analytics é baseada na instanciação do valor.
 
